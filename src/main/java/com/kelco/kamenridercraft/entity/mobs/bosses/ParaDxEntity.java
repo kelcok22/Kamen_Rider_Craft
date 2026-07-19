@@ -33,7 +33,7 @@ public class ParaDxEntity extends BaseHenchmenEntity {
 				ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 				if (RiderDriverItem.getFormItem(belt,1)!= ExAidRiderItems.KNOCK_OUT_FIGHTER_GASHAT.get()) {
 					RiderDriverItem.setFormItem(belt, ExAidRiderItems.KNOCK_OUT_FIGHTER_GASHAT.get(), 1);
-					if (this.getTarget() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)){
+					if (this.getTarget() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)){
 						playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_2"));
 					}
 				}

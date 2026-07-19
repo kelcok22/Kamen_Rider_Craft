@@ -33,7 +33,7 @@ public class ChapEntity extends BaseHenchmenEntity {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
 
-                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                         LocalDate localdate = LocalDate.now();
                         if (localdate.getMonthValue() == 4 && localdate.getDayOfMonth() == 1)
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shadow_moon.a1"));

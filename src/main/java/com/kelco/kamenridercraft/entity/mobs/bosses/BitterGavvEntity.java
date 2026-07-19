@@ -31,7 +31,7 @@ public class BitterGavvEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
             if (this.getHealth()<75 && playerIn.getInventory().countItem(GavvRiderItems.NYELV_MIMIC_KEY.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= GavvRiderItems.MARBLEBREACOOKIE_GOCHIZO.get()) {
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.marble_breacookie"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.marble_breacookie"));
                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GavvRiderItems.BAKEMAGNUM.get()));
                 RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GavvRiderItems.MARBLEBREACOOKIE_GOCHIZO.get(), 1);
             }

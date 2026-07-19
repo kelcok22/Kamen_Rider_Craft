@@ -28,7 +28,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModConfiguredFeatures {
-
     public static final DeferredRegister<Feature<?>> FEATURE = DeferredRegister.create(BuiltInRegistries.FEATURE,KamenRiderCraftCore.MOD_ID);
 
     public static final Holder<Feature<?>> HELHEIM_VINES = FEATURE.register("helheim_vines", () -> new HelheimVineFeature(NoneFeatureConfiguration.CODEC));
@@ -53,8 +52,6 @@ public class ModConfiguredFeatures {
 
     }
 
-
-
     public static void register(IEventBus eventBus) {
         FEATURE.register(eventBus);
     }
@@ -62,8 +59,6 @@ public class ModConfiguredFeatures {
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
     }
-
-
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstrapContext<ConfiguredFeature<?, ?>> context,
                                                                                           ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {

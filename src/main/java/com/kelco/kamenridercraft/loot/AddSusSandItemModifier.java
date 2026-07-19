@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
+import org.jetbrains.annotations.NotNull;
 
 public class AddSusSandItemModifier extends LootModifier {
 	    public static final Supplier<MapCodec<AddSusSandItemModifier>> CODEC_SUPPLIER = Suppliers.memoize(()
@@ -26,25 +27,23 @@ public class AddSusSandItemModifier extends LootModifier {
 	    }
 
 	    @Override
-	    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+	    protected @NotNull ObjectArrayList<ItemStack> doApply(@NotNull ObjectArrayList<ItemStack> generatedLoot, LootContext lootContext) {
 			for (LootItemCondition condition : this.conditions) {
-				if (!condition.test(context)) {
+				if (!condition.test(lootContext)) {
 	        		return generatedLoot;
 				}
 			}
 
-			if(context.getRandom().nextFloat() < 0.5f) {
+			if(lootContext.getRandom().nextFloat() < 0.5f) {
 				generatedLoot.clear();
 				generatedLoot.add(new ItemStack(this.item));
 
 			}
-
 			return generatedLoot;
 		}
 
 	    @Override
-	    public MapCodec<? extends IGlobalLootModifier> codec() {
+	    public @NotNull MapCodec<? extends IGlobalLootModifier> codec() {
 	        return CODEC_SUPPLIER.get();
 	    }
 	}
-

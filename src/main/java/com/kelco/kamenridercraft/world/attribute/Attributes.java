@@ -230,26 +230,9 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> HAZARD_LEVEL = ATTRIBUTES.register("hazard_level",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.hazard_level",
-                    0,
-                    0,
-                    10
-            ).setSyncable(true)
-    );
 
     @SubscribeEvent
     public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
         eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
-        // eMod.getTypes().forEach(entity -> eMod.add(entity, HEAD_SIZE));
     }
-
-//    @SubscribeEvent
-//    public static void addAttributes(EntityAttributeModificationEvent event) {
-//        event.add(EntityType.PLAYER, POSING);
-//        event.add(EntityType.PLAYER, POSE_COOLDOWN);
-//        event.add(EntityType.PLAYER, HAZARD_LEVEL);
-//    }
-
 }

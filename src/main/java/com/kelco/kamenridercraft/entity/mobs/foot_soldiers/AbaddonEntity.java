@@ -44,13 +44,13 @@ public class AbaddonEntity extends BaseHenchmenEntity {
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.ABADDON_COMMANDER.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.abaddon"));
                         }
                         break;
                     case 1:
                         boss = MobsCore.EDEN.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eden"));
                         }
                         break;

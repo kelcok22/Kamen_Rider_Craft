@@ -35,19 +35,19 @@ public class FoundationXMasqueradeEntity extends BaseHenchmenEntity {
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.ETERNAL.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.eternal"));
                         }
                         break;
                     case 1:
                         boss = MobsCore.COMMANDER_DOPANT.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.commander_dopant"));
                         }
                         break;
                     case 2:
                         boss = MobsCore.MUCHIRI.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.muchiri"));
                         }
                         break;

@@ -8,30 +8,23 @@ public class ModGameRules {
     public static GameRules.Key<GameRules.IntegerValue> RULE_SUMMONED_ITEM_DURABILITY;
     public static GameRules.Key<GameRules.BooleanValue> RULE_GOLD_DRIVE_WEAPON_STEAL;
     public static GameRules.Key<GameRules.IntegerValue> RULE_BOSS_SPAWN_PERCENTAGE;
-    public static GameRules.Key<GameRules.BooleanValue> RULE_BOSS_HENSHIN_ANNOUCEMENTS;
+    public static GameRules.Key<GameRules.BooleanValue> RULE_BOSS_HENSHIN_ANNOUNCEMENTS;
     public static GameRules.Key<GameRules.BooleanValue> RULE_MOON_GRAVITY;
     public static GameRules.Key<GameRules.BooleanValue> RULE_HAPPY_MODE;
 
     public static void register(IEventBus eventBus) {
-        RULE_REIWA_RIDEWATCHES = GameRules.register(
-                "reiwaRidewatches", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+        RULE_REIWA_RIDEWATCHES = GameRules.register("reiwaRidewatches", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 
-        RULE_SUMMONED_ITEM_DURABILITY = GameRules.register(
-                "summonedItemDurability", GameRules.Category.PLAYER, GameRules.IntegerValue.create(100));
+        RULE_SUMMONED_ITEM_DURABILITY = GameRules.register("summonedItemDurability", GameRules.Category.PLAYER, GameRules.IntegerValue.create(100));
 
-        RULE_GOLD_DRIVE_WEAPON_STEAL = GameRules.register(
-                "gordDriveWeaponYoink", GameRules.Category.MOBS, GameRules.BooleanValue.create(false));
+        RULE_GOLD_DRIVE_WEAPON_STEAL = GameRules.register("gordDriveWeaponYoink", GameRules.Category.MOBS, GameRules.BooleanValue.create(false));
 
-        RULE_BOSS_SPAWN_PERCENTAGE = GameRules.register(
-                "bossSpawnPercentage", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(20));
+        RULE_BOSS_SPAWN_PERCENTAGE = GameRules.register("bossSpawnPercentage", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(20));
 
-        RULE_BOSS_HENSHIN_ANNOUCEMENTS = GameRules.register(
-                "bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true));
+        RULE_BOSS_HENSHIN_ANNOUNCEMENTS = GameRules.register("bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true));
 
-        RULE_MOON_GRAVITY = GameRules.register(
-                "doMoonGravity", GameRules.Category.UPDATES, GameRules.BooleanValue.create(true));
+        RULE_MOON_GRAVITY = GameRules.register("doMoonGravity", GameRules.Category.UPDATES, GameRules.BooleanValue.create(true));
 
-        RULE_HAPPY_MODE = GameRules.register(
-                "youtubeFriendly", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+        RULE_HAPPY_MODE = GameRules.register("youtubeFriendly", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
     }
 }

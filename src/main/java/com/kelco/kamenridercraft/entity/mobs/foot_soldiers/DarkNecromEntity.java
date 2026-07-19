@@ -42,7 +42,7 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
             if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
 
                 BaseHenchmenEntity boss = MobsCore.DARK_GHOST.get().create(this.level());
-                if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                     playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dark_ghost"));
                 }
 

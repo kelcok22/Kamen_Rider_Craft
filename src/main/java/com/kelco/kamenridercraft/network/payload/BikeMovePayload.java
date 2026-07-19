@@ -5,7 +5,7 @@ import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
 
 public record BikeMovePayload(int id, float yBody ,float yHead,float wheelRot) implements CustomPacketPayload {
     public static final Type<BikeMovePayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "bike_move"));
@@ -19,7 +19,7 @@ public record BikeMovePayload(int id, float yBody ,float yHead,float wheelRot) i
     );
 
     @Override
-    public Type<? extends CustomPacketPayload> type() {
+    public @NotNull Type<? extends CustomPacketPayload> type() {
         return TYPE;
     }
 }

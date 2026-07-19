@@ -39,7 +39,7 @@ public class EngineBrosEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
             if (playerIn.getInventory().countItem(BuildRiderItems.GEAR_REMOCON.get())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.GEAR_HELL_BROS.get()) {
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.hell_bros2"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.hell_bros2"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

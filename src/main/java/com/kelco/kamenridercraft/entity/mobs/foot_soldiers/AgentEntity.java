@@ -87,34 +87,34 @@ public class AgentEntity extends BaseHenchmenEntity {
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.BITTER_GAVV.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_gavv"));
                         }
                         break;
                     case 1:
                         if (getVariant() == ORANGE_A || getVariant() == ORANGE_B) {
                             boss = MobsCore.NYELV_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nyelv"));
                             }
                         } else if (getVariant() == PINK_A || getVariant() == PINK_B) {
                             boss = MobsCore.GLOTTA_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.glotta"));
                             }
                         } else if (getVariant() == BLUE_A || getVariant() == BLUE_B) {
                             boss = MobsCore.JEEB_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.jeeb"));
                             }
                         } else if (getVariant() == WHITE_A || getVariant() == WHITE_B) {
                             boss = MobsCore.SHIITA_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shiita"));
                             }
                         } else if (getVariant() == RED_A || getVariant() == RED_B) {
                             boss = MobsCore.LANGO_STOMACH.get().create(this.level());
-                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.lango"));
                             }
                         }

@@ -24,7 +24,6 @@ public class ModPlacedFeature {
         register(context, HELHEIM_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HELHEIM_TREE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f, 2),
                         RiderBlocks.HELHEIM_SAPLING.get()));
-
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

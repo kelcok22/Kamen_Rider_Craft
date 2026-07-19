@@ -42,7 +42,7 @@ public class BarlckxsEntity extends BaseHenchmenEntity {
                     key.setPickUpDelay(0);
                     playerIn.level().addFreshEntity(key);
                     playerIn.sendSystemMessage(Component.translatable("loot.kamenridercraft.ohma_zi_o_ridewatch"));
-                    if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
+                    if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.barlckxs_bio_rider"));
                     this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
                     this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

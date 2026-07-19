@@ -29,7 +29,7 @@ public class BookOfRuinItem extends BaseItem {
 
             FalchionEntity falchion = MobsCore.FALCHION.get().create(level);
             if (falchion != null) {
-                if (level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
+                if (level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
                     player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion"));
                 falchion.moveTo((player.getX() + look.x * 3), player.getY(), (player.getZ() + look.z * 3), player.getYRot(), 0.0F);
                 level.addFreshEntity(falchion);

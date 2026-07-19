@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 
+import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
@@ -29,7 +30,7 @@ public class WRiderKicks {
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
 
             if (!user.onGround()) {
-                user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+                Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
                 cancelAbility(user, "", 0);
                 return;
             }
@@ -40,13 +41,13 @@ public class WRiderKicks {
         }
 
         if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 180) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             cancelAbility(user, "", 0);
             return;
         }
 
         if (user.getData(ABILITY_TICK) > 21 && user.onGround()) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }
@@ -69,7 +70,7 @@ public class WRiderKicks {
         switch (user.getData(ABILITY_TICK)) {
             case 20:
                 if (user.onGround()) {
-                    user.getAttribute(Attributes.WIND).setBaseValue(30);
+                    Objects.requireNonNull(user.getAttribute(Attributes.WIND)).setBaseValue(30);
                     PacketDistributor.sendToAllPlayers(new AnimPayload("w.joker_extreme_kick_start", "attack", false, user.getStringUUID()));
                     Vec3 initialVec = user.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 1.45D, initialVec.z);
@@ -84,7 +85,7 @@ public class WRiderKicks {
             case 48:
                 PacketDistributor.sendToAllPlayers(new AnimPayload("w.joker_extreme_kick", "attack", true, user.getStringUUID()));
                 ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION_EMITTER, user.getX(), user.getY(), user.getZ(), 10, 0, 0, 0, 0);
-                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
+                Objects.requireNonNull(user.getAttribute(CHANGE_KICK_MODEL)).setBaseValue(1);
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
                 if (y < 0.5) {

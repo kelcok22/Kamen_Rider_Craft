@@ -259,7 +259,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 RiderFormChangeItem form = getFormItem(itemStack, n + 1);
                 form.OnTransformation(itemStack, rider);
                 if (rider instanceof Player player && !player.isCreative()) {
-                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "pose"));
+                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "pose", false));
                 }
             }
         }

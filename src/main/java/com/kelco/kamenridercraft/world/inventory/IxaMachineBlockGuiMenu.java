@@ -11,24 +11,25 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.neoforged.neoforge.items.SlotItemHandler;
+import org.jetbrains.annotations.NotNull;
 
 public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
     public final IxaMachineBlockEntity blockEntity;
     private final Level level;
     private final ContainerData data;
 
-    public IxaMachineBlockGuiMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(11));
+    public IxaMachineBlockGuiMenu(int containerID, Inventory inv, FriendlyByteBuf extraData) {
+        this(containerID, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(11));
     }
 
-    public IxaMachineBlockGuiMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
-        super(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), pContainerId);
+    public IxaMachineBlockGuiMenu(int containerID, Inventory inventory, BlockEntity entity, ContainerData containerData) {
+        super(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), containerID);
         this.blockEntity = ((IxaMachineBlockEntity) entity);
-        this.level = inv.player.level();
-        this.data = data;
+        this.level = inventory.player.level();
+        this.data = containerData;
 
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
+        addinventory(inventory);
+        addPlayerHotbar(inventory);
 
         this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 36, 24));
         this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 36, 49));
@@ -74,18 +75,20 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
 
     // THIS YOU HAVE TO DEFINE!
     private static final int TE_INVENTORY_SLOT_COUNT = 11;  // must be the number of slots you have!
+
     @Override
-    public ItemStack quickMoveStack(Player playerIn, int pIndex) {
+    public @NotNull ItemStack quickMoveStack(@NotNull Player player, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);
-        if (sourceSlot == null || !sourceSlot.hasItem()) return ItemStack.EMPTY;  //EMPTY_ITEM
+        if (!sourceSlot.hasItem()) {
+            return ItemStack.EMPTY;  //EMPTY_ITEM
+        }
         ItemStack sourceStack = sourceSlot.getItem();
         ItemStack copyOfSourceStack = sourceStack.copy();
 
         // Check if the slot clicked is one of the vanilla container slots
         if (pIndex < VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT) {
             // This is a vanilla container slot so merge the stack into the tile inventory
-            if (!moveItemStackTo(sourceStack, TE_INVENTORY_FIRST_SLOT_INDEX, TE_INVENTORY_FIRST_SLOT_INDEX
-                    + TE_INVENTORY_SLOT_COUNT, false)) {
+            if (!moveItemStackTo(sourceStack, TE_INVENTORY_FIRST_SLOT_INDEX, TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT, false)) {
                 return ItemStack.EMPTY;  // EMPTY_ITEM
             }
         } else if (pIndex < TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT) {
@@ -102,27 +105,28 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
         } else {
             sourceSlot.setChanged();
         }
-        sourceSlot.onTake(playerIn, sourceStack);
+        sourceSlot.onTake(player, sourceStack);
         return copyOfSourceStack;
     }
 
     @Override
-    public boolean stillValid(Player player) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                player, RiderBlocks.IXA_MACHINE_BLOCK.get());
+    public boolean stillValid(@NotNull Player player) {
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), player, RiderBlocks.IXA_MACHINE_BLOCK.get());
     }
 
-    private void addPlayerInventory(Inventory playerInventory) {
+
+    private void addinventory(Inventory inventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
+                this.addSlot(new Slot(inventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
             }
         }
     }
 
-    private void addPlayerHotbar(Inventory playerInventory) {
+
+    private void addPlayerHotbar(Inventory inventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
+            this.addSlot(new Slot(inventory, i, 8 + i * 18, 142));
         }
     }
 }

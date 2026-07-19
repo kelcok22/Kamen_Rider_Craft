@@ -27,6 +27,9 @@
 					"rotation": [-33, 20, 0]
 				}
 			}
+		},
+		"zeztz.henshin_pose": {
+			"loop": true
 		}
 	}
 }

@@ -24,10 +24,11 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
+import java.util.Objects;
 import java.util.UUID;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
-import static com.kelco.kamenridercraft.client.KamenRiderCraftClient.*;
+import static com.kelco.kamenridercraft.KamenRiderCraftCoreClient.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.util.AnimationUtil.*;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
@@ -52,18 +53,19 @@ public class ClientPayloadHandler {
             if (!context.player().getStringUUID().equals(data.id())) {
                 switch (data.attributeName()) {
                     case "ball_rot" -> {
-                        entity.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.BALL_ROT).getBaseValue());
-                        entity.getAttribute(Attributes.BALL_ROT).setBaseValue(data.valueChange());
+                        Objects.requireNonNull(entity.getAttribute(Attributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(entity.getAttribute(Attributes.BALL_ROT)).getBaseValue());
+                        Objects.requireNonNull(entity.getAttribute(Attributes.BALL_ROT)).setBaseValue(data.valueChange());
                     }
                     case "wheel_rot" -> {
-                        entity.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
-                        entity.getAttribute(Attributes.WHEEL_ROT).setBaseValue(data.valueChange());
+                        Objects.requireNonNull(entity.getAttribute(Attributes.WHEEL_ROT_OLD)).setBaseValue(Objects.requireNonNull(entity.getAttribute(Attributes.WHEEL_ROT)).getBaseValue());
+                        Objects.requireNonNull(entity.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(data.valueChange());
                     }
                     case "cape_rot" -> {
-                        entity.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue(entity.getAttribute(Attributes.CAPE_ROT).getBaseValue());
-                        entity.getAttribute(Attributes.CAPE_ROT).setBaseValue(data.valueChange());
+                        Objects.requireNonNull(entity.getAttribute(Attributes.CAPE_ROT_OLD)).setBaseValue(Objects.requireNonNull(entity.getAttribute(Attributes.CAPE_ROT)).getBaseValue());
+                        Objects.requireNonNull(entity.getAttribute(Attributes.CAPE_ROT)).setBaseValue(data.valueChange());
                     }
-                    case "wing_out" -> entity.getAttribute(Attributes.WINGS_OUT).setBaseValue(data.valueChange());
+                    case "wing_out" ->
+                            Objects.requireNonNull(entity.getAttribute(Attributes.WINGS_OUT)).setBaseValue(data.valueChange());
                 }
             }
         }
@@ -92,7 +94,7 @@ public class ClientPayloadHandler {
                 if (riderName.equals("ooo")) {
                     animation = oooAnimCheck(posingRider);
                 } else if (riderName.equals("ghost") || riderName.equals("specter") || riderName.equals("necrom")) {
-                    if (posingRider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getValue() >= 1) {
+                    if (Objects.requireNonNull(posingRider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).getValue() >= 1) {
                         animation = getAnim("default.hoodie_off");
                     } else {
                         animation = getAnim("default.hoodie_on");
@@ -106,14 +108,18 @@ public class ClientPayloadHandler {
             animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.poseName()));
         }
         try {
+            assert Minecraft.getInstance().level != null;
             AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+            assert animationTarget != null;
             PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
 
             assert controller != null;
-            controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC));
-            if (controller.getCurrentAnimation() != null) {
+            if (controller.isPlayingTriggeredAnimation()) {
+                controller.removeAllModifiers();
                 controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeOut(5, EasingType.EASE_IN_ELASTIC), animation);
             } else {
+                controller.removeAllModifiers();
+                controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC));
                 controller.triggerAnimation(animation);
             }
         } catch (Exception e) {
@@ -126,7 +132,9 @@ public class ClientPayloadHandler {
         if (posingRider != null) {
             Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, data.move()));
             try {
+                assert Minecraft.getInstance().level != null;
                 AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
+                assert animationTarget != null;
                 PlayerAnimationController controller = switch (data.controller()) {
                     case "attack" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
@@ -137,8 +145,9 @@ public class ClientPayloadHandler {
                     default ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 };
+                assert controller != null;
 
-                if (!data.forceNextPose() && controller.getCurrentAnimation() != null) {
+                if (!data.forceNextPose() && Objects.requireNonNull(controller).isPlayingTriggeredAnimation()) {
                     controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
                 } else {
                     controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
@@ -167,8 +176,14 @@ public class ClientPayloadHandler {
                 };
 
                 if (controller != null && controller.isPlayingTriggeredAnimation()) {
-                    Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.reset"));
-                    controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
+                    controller.removeAllModifiers();
+                    if (data.abruptStop()) {
+                        controller.stopTriggeredAnimation();
+                    } else {
+                        Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.reset"));
+                        controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
+                    }
+
                 }
             }
         } catch (Exception e) {

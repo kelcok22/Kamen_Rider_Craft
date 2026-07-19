@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.abilities.misc_abilities.MiscAbilities;
 import com.kelco.kamenridercraft.abilities.punches.GenericRiderPunches;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -19,6 +20,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Objects;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
@@ -28,6 +30,7 @@ public class AbilityUtil {
     public static void calculateAbility(LivingEntity user, String ability) {
         if (!user.level().isClientSide() && user.getData(ABILITY_TICK) == 0 && user.getData(ABILITY_COOLDOWN) == 0 && !user.isSleeping()) {
             AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
+            assert abilityMeter != null;
             boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.riderName.toLowerCase().contains("ohma"));
             switch (ability) {
                 case "rider_punch", "ground_rider_punch":
@@ -45,9 +48,17 @@ public class AbilityUtil {
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
-                            user.setData(USED_ABILITY, ability);
+                            if (ability.equalsIgnoreCase("joker_memory_kick") && getFormItem(user.getItemBySlot(EquipmentSlot.FEET), 1).asItem() == WRiderItems.CYCLONE_MEMORY.get()) {
+                                user.setData(USED_ABILITY, ability);
+                            } else if (!ability.equalsIgnoreCase("joker_memory_kick")) {
+                                user.setData(USED_ABILITY, ability);
+                            }
                         } else if (!costMeter) {
-                            user.setData(USED_ABILITY, ability);
+                            if (ability.equalsIgnoreCase("joker_memory_kick") && getFormItem(user.getItemBySlot(EquipmentSlot.FEET), 1).asItem() == WRiderItems.CYCLONE_MEMORY.get()) {
+                                user.setData(USED_ABILITY, ability);
+                            } else if (!ability.equalsIgnoreCase("joker_memory_kick")) {
+                                user.setData(USED_ABILITY, ability);
+                            }
                         }
                     }
                     break;
@@ -165,14 +176,14 @@ public class AbilityUtil {
             user.setData(ABILITY_TICK, 0);
             user.setInvulnerable(false);
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
-                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
+                Objects.requireNonNull(user.getAttribute(CHANGE_KICK_MODEL)).setBaseValue(0);
             }
             if (user instanceof Player) {
                 if (!afterAnimation.isEmpty()) {
                     PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", false, user.getStringUUID()));
                     user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
                 } else if (delayAnimationEndTicks == 0) {
-                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
+                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack", false));
                 } else {
                     user.setData(DELAY_ANIMATION_END, true);
                     user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);

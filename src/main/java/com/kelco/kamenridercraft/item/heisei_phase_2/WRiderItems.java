@@ -258,26 +258,44 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.STEP, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 0.1);
-				}
-			}.changeModel("accel_bike.geo.json").isBike().isGlowing().has_basic_model().model_has_different_name("accel_memory"));
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+					super.transformationEffect(itemstack, player,tick);
+
+					if (tick==30d){
+						RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
+						AnimationUtil.playPose(player,"accel.henshin_bike_pose");
+					}
+					if (tick==20d){
+						AnimationUtil.forceStopPosing(player);
+						((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}}
+			}.setFormDelay(20).changeModel("accel_bike.geo.json").isBike().isGlowing().has_basic_model().model_has_different_name("accel_memory"));
 
 	public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","accel","acceldriver_belt",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 0.1);
-				}
-			}.addSwitchForm(ACCEL_MEMORY_BIKE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+					super.transformationEffect(itemstack, player,tick);
+					if (tick==30d){
+						AnimationUtil.playPose(player,"accel.henshin_pose");
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
+					}
+					if (tick==15d){
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.5F, 1F);
+						((ServerLevel) player.level()).sendParticles(ParticleTypes.SMOKE,
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}
+					if (tick==1d){
+						((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}}
+			}.setFormDelay(1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_trial","accel","acceldriver_belt_t",
@@ -289,7 +307,10 @@ public class WRiderItems {
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-
+					if (tick==30d){
+						AnimationUtil.playPose(player,"accel.henshin_trial_pose");
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
+					}
                     if (tick==29d){
                         RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.NOTE_BLOCK_CHIME, SoundSource.PLAYERS, 1.0F, 0.595f);
@@ -320,16 +341,27 @@ public class WRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 0.1);
-					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 0.1);
-				}
-			}.changeModel("accel.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+					super.transformationEffect(itemstack, player,tick);
+					if (tick==30d){
+						AnimationUtil.playPose(player,"accel.henshin_pose");
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
+					}
+					if (tick==15d){
+						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.5F, 1F);
+						((ServerLevel) player.level()).sendParticles(ParticleTypes.SMOKE,
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}
+					if (tick==1d){
+						((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+						((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+								player.getX(), player.getY()+1,
+								player.getZ(), 100, 0, 0, 0, 0.1);
+					}}
+			}.setFormDelay(1).changeModel("accel.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CYCLONE_SKULL_MEMORY = ITEMS.register("skull_cyclone_memory",

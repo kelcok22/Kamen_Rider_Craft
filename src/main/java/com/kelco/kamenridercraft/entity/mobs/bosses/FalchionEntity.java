@@ -50,7 +50,7 @@ public class FalchionEntity extends BaseHenchmenEntity {
                 RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), SaberRiderItems.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1);
                 this.moveControl = new MoveControl(this);
                 this.setNoGravity(false);
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                     player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion_siren"));
                 }
             }

@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.events;
 
 import com.kelco.kamenridercraft.block.RiderBlocks;
-import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.client.models.DoggaModel;
 import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
 import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
@@ -31,13 +30,9 @@ import com.kelco.kamenridercraft.item.reiwa.*;
 import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
-import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
-import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
-import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -80,7 +75,6 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
-import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
@@ -94,7 +88,6 @@ import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
-import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -127,8 +120,8 @@ public class ModCommonEvents {
 
             if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
                 if (event.getBreaker() instanceof Player player) {
-                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() & player.getAttribute(Attributes.TOJIMA).getValue() < 100)
-                        player.getAttribute(Attributes.TOJIMA).setBaseValue(player.getAttribute(Attributes.TOJIMA).getValue() + 1);
+                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() & Objects.requireNonNull(player.getAttribute(Attributes.TOJIMA)).getValue() < 100)
+                        Objects.requireNonNull(player.getAttribute(Attributes.TOJIMA)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.TOJIMA)).getValue() + 1);
                 }
             }
 
@@ -143,29 +136,6 @@ public class ModCommonEvents {
             }
         }
 
-        @SubscribeEvent
-        public void clientTick(ClientTickEvent.Post event) {
-            Player player = Minecraft.getInstance().player;
-            if (player != null) {
-                AttributeInstance heldKeyOne = player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE);
-                AttributeInstance heldKeyTwo = player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO);
-
-                if (KeyBindings.INSTANCE.BeltKey.consumeClick())
-                    PacketDistributor.sendToServer(new BeltKeyPayload(0));
-                if (KeyBindings.INSTANCE.AbilityKeyOne.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyTwo.isDown() && heldKeyOne.getValue() <= 0) {
-                    PacketDistributor.sendToServer(new AbilityKeyPayload(1));
-                } else if (!KeyBindings.INSTANCE.AbilityKeyOne.isDown() && heldKeyOne.getValue() >= 1) {
-                    PacketDistributor.sendToServer(new AbilityKeyPayload(3));
-                }
-                if (KeyBindings.INSTANCE.AbilityKeyTwo.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyOne.isDown() && heldKeyTwo.getValue() <= 0) {
-                    PacketDistributor.sendToServer(new AbilityKeyPayload(2));
-                } else if (!KeyBindings.INSTANCE.AbilityKeyTwo.isDown() && heldKeyTwo.getValue() >= 1) {
-                    PacketDistributor.sendToServer(new AbilityKeyPayload(4));
-                }
-                if (KeyBindings.INSTANCE.PoseKey.consumeClick())
-                    PacketDistributor.sendToServer(new PoseKeyPayload(0));
-            }
-        }
 
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
@@ -258,32 +228,30 @@ public class ModCommonEvents {
                                 float wheel = 0;
                                 if (Z > 0) wheel = -0.1f;
                                 if (Z < 0) wheel = 0.1f;
-                                player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
+                                Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).getBaseValue() + wheel);
                                 float ball = 0;
                                 if (X > 0) {
                                     ball = 0.5f;
-                                    if (Z == 0) wheel = -0.1f;
                                 }
                                 if (X < 0) {
                                     ball = -0.5f;
-                                    if (Z == 0) wheel = -0.1f;
                                 }
-                                player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
-                                player.getAttribute(Attributes.WHEEL_ROT).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue() + wheel);
+                                Objects.requireNonNull(player.getAttribute(Attributes.BALL_ROT)).setBaseValue(ball);
+                                Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).getBaseValue() + wheel);
                             }
                         }
                     }
                 }
-                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() != 0)
-                    player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() - 1);
-                if (player.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue() <= 0)
-                    player.getAttribute(Attributes.IS_TRANSFORMING).setBaseValue(0);
+                if (Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() != 0)
+                    Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() - 1);
+                if (Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() <= 0)
+                    Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(0);
             }
 
             if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(Attributes.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(Attributes.CLIMBING).getValue()), initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (Objects.requireNonNull(entity.getAttribute(Attributes.CLIMBING)).getValue()), initialVec.z);
                     entity.setDeltaMovement(climbVec.scale(0.97D));
                 }
             }

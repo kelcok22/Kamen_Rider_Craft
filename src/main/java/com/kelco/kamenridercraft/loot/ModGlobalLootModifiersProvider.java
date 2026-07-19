@@ -23,7 +23,6 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-
         add("egg_chicken_memory",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("entities/chicken")).build(),
                 LootItemRandomChanceCondition.randomChance(0.1f).build()},

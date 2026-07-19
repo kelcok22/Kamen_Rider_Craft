@@ -81,7 +81,7 @@ public class MakamouNinjaGroupEntity extends BaseHenchmenEntity {
         if (this.isDeadOrDying() && chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
             BaseHenchmenEntity boss = MobsCore.KABUKI.get().create(this.level());
             if (boss != null) {
-                if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                     playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.kabuki"));
                 }
                 boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);

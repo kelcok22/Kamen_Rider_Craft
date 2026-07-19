@@ -12,34 +12,32 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.loot.LootModifier;
+import org.jetbrains.annotations.NotNull;
 
 public class AddItemModifier extends LootModifier {
-	    public static final Supplier<MapCodec<AddItemModifier>> CODEC_SUPPLIER = Suppliers.memoize(()
-	            -> RecordCodecBuilder.mapCodec(addItemModifierInstance -> AddItemModifier.codecStart(addItemModifierInstance).and(BuiltInRegistries.ITEM.byNameCodec()
-	            .fieldOf("item").forGetter(addItemModifierInstance1 -> addItemModifierInstance1.item)).apply(addItemModifierInstance, AddItemModifier::new)));
+    public static final Supplier<MapCodec<AddItemModifier>> CODEC_SUPPLIER = Suppliers.memoize(() -> RecordCodecBuilder.mapCodec(addItemModifierInstance -> AddItemModifier.codecStart(addItemModifierInstance).and(BuiltInRegistries.ITEM.byNameCodec().fieldOf("item").forGetter(addItemModifierInstance1 -> addItemModifierInstance1.item)).apply(addItemModifierInstance, AddItemModifier::new)));
 
-	    private final Item item;
+    private final Item item;
 
-	    public AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
-	        super(conditionsIn);
-	        this.item = item;
-	    }
+    public AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
+        super(conditionsIn);
+        this.item = item;
+    }
 
-	    @Override
-	    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-			for (LootItemCondition condition : this.conditions) {
-				if (!condition.test(context)) {
-	        		return generatedLoot;
-				}
-			}
-			generatedLoot.add(new ItemStack(this.item));
+    @Override
+    protected @NotNull ObjectArrayList<ItemStack> doApply(@NotNull ObjectArrayList<ItemStack> generatedLoot, @NotNull LootContext lootContext) {
+        for (LootItemCondition condition : this.conditions) {
+            if (!condition.test(lootContext)) {
+                return generatedLoot;
+            }
+        }
+        generatedLoot.add(new ItemStack(this.item));
 
-			return generatedLoot;
-		}
+        return generatedLoot;
+    }
 
-	    @Override
-	    public MapCodec<? extends IGlobalLootModifier> codec() {
-	        return CODEC_SUPPLIER.get();
-	    }
-	}
-
+    @Override
+    public @NotNull MapCodec<? extends IGlobalLootModifier> codec() {
+        return CODEC_SUPPLIER.get();
+    }
+}

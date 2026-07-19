@@ -37,7 +37,7 @@ public class JeebEntity extends BaseHenchmenEntity {
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn  && this.getHealth()<30
                 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= GavvRiderItems.HENSHIN_BELT_BITTER_GAVV.get()
         && playerIn.getInventory().countItem(GavvRiderItems.SHIITA_MIMIC_KEY.asItem())!=0) {
-            if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_jeeb"));
+            if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.bitter_jeeb"));
             this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
             this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
             this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

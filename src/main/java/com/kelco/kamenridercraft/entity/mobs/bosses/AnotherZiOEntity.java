@@ -46,7 +46,7 @@ public class AnotherZiOEntity extends BaseHenchmenEntity {
             int rand = generator.nextInt(2);
             if (hasWatch) {
                 RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.ANOTHER_ZI_O_II_WATCH.get(), 1);
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_zi_o_ii"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.another_zi_o_ii"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(10.0D);
                 this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);

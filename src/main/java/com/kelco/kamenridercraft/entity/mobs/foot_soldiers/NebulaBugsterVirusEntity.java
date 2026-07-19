@@ -47,14 +47,14 @@ public class NebulaBugsterVirusEntity extends BugsterVirusEntity {
                     case 0:
                         boss = MobsCore.KAISER.get().create(this.level());
                         if (boss != null) {
-                            if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.kaiser"));
                             }
                         }
                         break;
                     case 1:
                         boss = MobsCore.KAISER_REVERSE.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.kaiser_reverse"));
                         }
                         break;

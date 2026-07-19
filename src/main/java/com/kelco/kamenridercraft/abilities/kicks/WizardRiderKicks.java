@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 
+import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
@@ -40,7 +41,7 @@ public class WizardRiderKicks {
         }
 
         if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 400 || (user.getData(ABILITY_TICK) <= 41 && user.fallDistance > 1.5)) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             cancelAbility(user, "", 0);
             return;
         }
@@ -62,11 +63,11 @@ public class WizardRiderKicks {
             user.hurtMarked = true;
 
             cancelAbility(user, "wizard.land", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             return;
         } else if (user.getData(ABILITY_TICK) < 20 && !user.onGround()) {
             cancelAbility(user, "", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             return;
         }
 
@@ -109,6 +110,9 @@ public class WizardRiderKicks {
                 Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(30);
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;
+                break;
+            case 58:
+                PacketDistributor.sendToAllPlayers(new AnimPayload("wizard.kick_loop", "attack", true, user.getStringUUID()));
                 break;
         }
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);

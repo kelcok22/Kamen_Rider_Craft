@@ -82,7 +82,7 @@ public class BossBlock extends BaseBlock {
                 if (boss != null) {
                     boss.moveTo(pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, 0, 0.0F);
                     wolrd.addFreshEntity(boss);
-                    if (!TEXT.isEmpty() && wolrd.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                    if (!TEXT.isEmpty() && wolrd.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                         for (Component text : TEXT) {
                             player.sendSystemMessage(text);
                         }

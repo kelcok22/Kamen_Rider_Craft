@@ -56,4 +56,3 @@ public class ClientUpdateStructureBlockExpansion {
         buf.writeInt(size.getZ());
     }
 }
-

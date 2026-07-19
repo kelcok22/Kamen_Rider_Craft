@@ -55,14 +55,14 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
                                     this.level().setBlockAndUpdate(pos1, RiderBlocks.MIGHTY_BLOCK.get().defaultBlockState());
                             }
 
-                            if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                            if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                                 playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm"));
                             }
                         }
                         break;
                     case 1:
                         boss = MobsCore.GRAPHITE_BUGSTER.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) {
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.graphite"));
                         }
                         break;

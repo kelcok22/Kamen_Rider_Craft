@@ -37,7 +37,15 @@ public class AnimationUtil {
         if (poser instanceof Player && poser.level() instanceof ServerLevel) {
             poser.setData(IS_POSING, false);
             poser.setData(POSE_COOLDOWN, 20);
-            PacketDistributor.sendToAllPlayers(new EndAnimationPayload(poser.getStringUUID(), "pose"));
+            PacketDistributor.sendToAllPlayers(new EndAnimationPayload(poser.getStringUUID(), "pose", false));
+        }
+    }
+
+    public static void forceStopPosing(LivingEntity poser) {
+        if (poser instanceof Player && poser.level() instanceof ServerLevel) {
+            poser.setData(IS_POSING, false);
+            poser.setData(POSE_COOLDOWN, 20);
+            PacketDistributor.sendToAllPlayers(new EndAnimationPayload(poser.getStringUUID(), "pose", true));
         }
     }
 

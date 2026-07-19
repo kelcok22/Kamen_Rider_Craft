@@ -4,23 +4,21 @@ import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.util.Mth;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class OrangeWizardParticles extends TextureSheetParticle {
-    protected OrangeWizardParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet,
-                                    double xSpeed, double ySpeed, double zSpeed) {
-        super(level, x-0.25, y, z,1,-0.5,0);
+    protected OrangeWizardParticles(ClientLevel level, double x, double y, double z, SpriteSet spriteSet, double xSpeed, double ySpeed, double zSpeed) {
+        super(level, x - 0.25, y, z, 1, -0.5, 0);
 
         this.friction = 0.8f;
-
         this.lifetime = 20;
         this.setSpriteFromAge(spriteSet);
-this.scale(10);
+        this.scale(10);
 
         this.rCol = 1f;
         this.gCol = 0.5f;
         this.bCol = 0f;
-
     }
 
     public float getQuadSize(float scaleFactor) {
@@ -29,23 +27,24 @@ this.scale(10);
 
 
     @Override
-    public ParticleRenderType getRenderType() {
+    public @NotNull ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
+
     @Override
     public int getLightColor(float partialTick) {
-        float f = ((float)this.age + partialTick) / (float)this.lifetime;
+        float f = ((float) this.age + partialTick) / (float) this.lifetime;
         f = Mth.clamp(f, 0.0F, 1.0F);
         int i = super.getLightColor(partialTick);
         int j = i & 0xFF;
         int k = i >> 16 & 0xFF;
-        j += (int)(f * 15.0F * 16.0F);
+        j += (int) (f * 15.0F * 16.0F);
         if (j > 240) {
             j = 240;
         }
-
         return j | k << 16;
     }
+
     public static class Provider implements ParticleProvider<SimpleParticleType> {
         private final SpriteSet spriteSet;
 
@@ -55,8 +54,7 @@ this.scale(10);
 
         @Nullable
         @Override
-        public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel clientLevel,
-                                       double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed) {
+        public Particle createParticle(@NotNull SimpleParticleType simpleParticleType, @NotNull ClientLevel clientLevel, double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed) {
             return new OrangeWizardParticles(clientLevel, pX, pY, pZ, this.spriteSet, pXSpeed, pYSpeed, pZSpeed);
         }
     }

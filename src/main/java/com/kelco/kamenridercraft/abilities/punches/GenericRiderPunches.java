@@ -8,6 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 
+import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
@@ -42,12 +43,12 @@ public class GenericRiderPunches {
     public static void genericRiderPunch(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
             user.setData(ABILITY_COOLDOWN, 100);
-            user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
+            Objects.requireNonNull(user.getAttribute(CHANGE_KICK_MODEL)).setBaseValue(1);
             PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.rider_floor_jump" : "default.rider_jump", "attack", false, user.getStringUUID()));
 
             if (!user.onGround()) {
                 Vec3 initialVec = user.getDeltaMovement();
-                Vec3 climbVec = new Vec3(initialVec.x, 1.125D, initialVec.z);
+                Vec3 climbVec = new Vec3(initialVec.x, 1.2D, initialVec.z);
                 user.setDeltaMovement(climbVec.scale(0.97D));
             }
 
@@ -62,7 +63,7 @@ public class GenericRiderPunches {
 
         if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
             cancelAbility(user, "default.land", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }
@@ -79,6 +80,9 @@ public class GenericRiderPunches {
                     ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 1.0, user.getZ(), 1, 0, 0, 0, 0);
                 }
                 break;
+            case 7:
+                PacketDistributor.sendToAllPlayers(new AnimPayload("default.flip", "attack", false, user.getStringUUID()));
+                break;
             case 17:
                 PacketDistributor.sendToAllPlayers(new AnimPayload("default.punch", "attack", false, user.getStringUUID()));
                 break;
@@ -91,6 +95,9 @@ public class GenericRiderPunches {
                 Vec3 look = new Vec3(user.getLookAngle().x * 0.1, y * 0.04, user.getLookAngle().z * 0.1).scale(20);
                 user.setDeltaMovement(look.scale(0.97D));
                 user.hurtMarked = true;
+                break;
+            case 25:
+                PacketDistributor.sendToAllPlayers(new AnimPayload("default.punch_loop", "attack", false, user.getStringUUID()));
                 break;
         }
 

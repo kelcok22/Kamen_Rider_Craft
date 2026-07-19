@@ -31,7 +31,7 @@ public class NoxEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<30
                 && playerIn.getInventory().countItem(ZeztzRiderItems.PLASMA_CAPSEM.get().asItem())!=0 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= ZeztzRiderItems.NOX_DRIVER.get()) {
-            if(this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox"));
+            if(this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox"));
 
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.NOX_DRIVER.get()));
         }

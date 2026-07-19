@@ -14,7 +14,6 @@ import java.util.List;
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 
 public class AddStructuresToPools {
-    @SuppressWarnings("unchecked")
     public static void addModStructures(MinecraftServer server) throws NoSuchFieldException {
         String[] villageHouseList = {"humagear", "shocker", "toy_collector", "candy", "agent", "butler"};
 
@@ -22,7 +21,6 @@ public class AddStructuresToPools {
             return;
         }
         Registry<StructureTemplatePool> templatePoolRegistry = server.registryAccess().registry(Registries.TEMPLATE_POOL).get();
-
 
         addStructuresToVillages(templatePoolRegistry, villageHouseList);
     }

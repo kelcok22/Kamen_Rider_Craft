@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
 
+import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
@@ -51,17 +52,17 @@ public class KivaRiderKicks {
             user.hurtMarked = true;
 
             cancelAbility(user, "kiva.land", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             return;
         } else if (user.getData(ABILITY_TICK) < 55 && !user.onGround()) {
             cancelAbility(user, "", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             return;
         }
 
         switch (user.getData(ABILITY_TICK)) {
             case 45:
-                user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(1);
+                Objects.requireNonNull(user.getAttribute(CHANGE_KICK_MODEL)).setBaseValue(1);
                 ((ServerLevel) user.level()).sendParticles(ParticleTypes.EXPLOSION, user.getX() + user.getLookAngle().x * 0.75, user.getY() + 1, user.getZ() + user.getLookAngle().x * 0.75, 1, 0, 0, 0, 0);
                 break;
             case 60:

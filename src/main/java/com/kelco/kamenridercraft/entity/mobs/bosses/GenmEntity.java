@@ -42,7 +42,7 @@ public class GenmEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if (!this.level().isClientSide() && source.getEntity() instanceof Player player) {
             if (this.getHealth() < 30 && player.getInventory().countItem(ExAidRiderItems.BAKUSOU_BIKE_GASHAT.get().asItem()) != 0 && this.getItemBySlot(EquipmentSlot.FEET).getItem() != ExAidRiderItems.GASHACON_BUGVISOR_GENM.get()) {
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS))
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
                     player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm_dangerous_zombie"));
                 this.setHealth(45);
                 this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_GENM.get()));

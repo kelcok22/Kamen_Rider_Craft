@@ -30,6 +30,9 @@
 					"position": [1, -1, 0]
 				}
 			}
+		},
+		"nox.henshin_pose": {
+			"loop": true
 		}
 	}
 }

@@ -9,6 +9,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.neoforged.neoforge.network.PacketDistributor;
 
+import java.util.Objects;
+
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
@@ -26,7 +28,7 @@ public class KabutoRiderKicks {
 
         if (!user.onGround() || user.isInWater() || user.getData(ABILITY_TICK) >= 90) {
             cancelAbility(user, "", 0);
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() - 100);
+            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
             return;
         }
 
@@ -50,6 +52,5 @@ public class KabutoRiderKicks {
         }
 
         user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
-
     }
 }

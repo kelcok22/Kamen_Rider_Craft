@@ -56,7 +56,7 @@ public class LivingEntityMixin {
         if (rider.getData(DELAY_ANIMATION_END) && rider instanceof Player) {
             if (!(rider.getData(DELAY_ANIMATION_END_TICKS) > 1)) {
                 rider.setData(DELAY_ANIMATION_END, false);
-                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(rider.getStringUUID(), "attack"));
+                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(rider.getStringUUID(), "attack", false));
             } else {
                 rider.setData(DELAY_ANIMATION_END_TICKS, rider.getData(DELAY_ANIMATION_END_TICKS) - 1);
             }

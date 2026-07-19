@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.kelco.kamenridercraft.world.level.levelgen.feature;
 
 import com.kelco.kamenridercraft.block.RiderBlocks;
@@ -23,12 +18,8 @@ public class HelheimVineFeature extends Feature<NoneFeatureConfiguration> {
     public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> p_160628_) {
         WorldGenLevel worldgenlevel = p_160628_.level();
         BlockPos blockpos = p_160628_.origin();
-        p_160628_.config();
-        if (!worldgenlevel.isEmptyBlock(blockpos)) {
-            return false;
-        } else {
+        if (worldgenlevel.isEmptyBlock(blockpos)) {
             Direction[] var4 = Direction.values();
-            int var5 = var4.length;
 
             for (Direction direction : var4) {
                 if (direction != Direction.DOWN && VineBlock.isAcceptableNeighbour(worldgenlevel, blockpos.relative(direction), direction)) {
@@ -36,8 +27,7 @@ public class HelheimVineFeature extends Feature<NoneFeatureConfiguration> {
                     return true;
                 }
             }
-
-            return false;
         }
+        return false;
     }
 }

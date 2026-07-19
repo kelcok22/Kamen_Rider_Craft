@@ -36,7 +36,7 @@ public class EvolEntity extends BaseHenchmenEntity {
     	if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn) {
             if (this.getHealth()<100 && playerIn.getInventory().countItem(RiderBlocks.PANDORA_BOX.get().asItem())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER.get()
             && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER_KAIJIN.get()) {
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evol_black_hole"));
 		    	this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.5);
 		    	this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.5);
 		    	this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
@@ -44,7 +44,7 @@ public class EvolEntity extends BaseHenchmenEntity {
 		    	RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.EVOL_TRIGGER.get(), 1);
                 this.moveControl = new FlyingBossControl(this, 20);
     	    } else if(this.getHealth()<50 && playerIn.getInventory().countItem(BuildRiderItems.LAST_PANDORA_PANEL_BLACK.get())!=0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= BuildRiderItems.EVOL_TRIGGER_KAIJIN.get()) {
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evolto"));
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.evolto"));
                 this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);
                 this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(1);
                 this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(15.0D);
