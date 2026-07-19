@@ -326,7 +326,7 @@ public class KuugaRiderItems {
 	public static final DeferredItem<Item> DRAGON_ROD = ITEMS.register("dragon_rod",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
 	public static final DeferredItem<Item> PEGASUS_BOWGUN = ITEMS.register("pegasus_bowgun",
-			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F, true, 15F, 5, 1, 60, 30).setProjectile("spectral_arrow").setRequiresDraw(60, true).setParticles("warped", "smoke").setRepairItem(KUUGA_GROWING.get()).addToList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(KUUGA_GROWING.get()).addToList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 	public static final DeferredItem<Item> TITAN_SWORD = ITEMS.register("titan_sword",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.KUUGA_CHANGING_ITEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).changeRepairItem(KUUGA_GROWING.get()));
     public static final DeferredItem<Item> RISING_BEAT_ARMOR = ITEMS.register("rising_beat_armor",

@@ -20,9 +20,9 @@ import net.neoforged.neoforge.network.PacketDistributor;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class AbilityUtil {
     public static void calculateAbility(LivingEntity user, String ability) {
@@ -167,16 +167,16 @@ public class AbilityUtil {
             if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
                 user.getAttribute(CHANGE_KICK_MODEL).setBaseValue(0);
             }
-            if (delayAnimationEndTicks == 0 && user instanceof Player) {
-                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
-            } else {
-                user.setData(DELAY_ANIMATION_END, true);
-                user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
-            }
-            if (!afterAnimation.isEmpty() && user instanceof Player) {
-                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
-                PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", user.getStringUUID()));
-                user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
+            if (user instanceof Player) {
+                if (!afterAnimation.isEmpty()) {
+                    PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", false, user.getStringUUID()));
+                    user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
+                } else if (delayAnimationEndTicks == 0) {
+                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack"));
+                } else {
+                    user.setData(DELAY_ANIMATION_END, true);
+                    user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);
+                }
             }
         }
     }

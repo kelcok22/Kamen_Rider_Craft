@@ -1482,7 +1482,7 @@ public class OOORiderItems {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> TAJASPINNER = ITEMS.register("tajaspinner",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), 5, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).isSwordGun().changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAGABURYU = ITEMS.register("medagaburyu",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.CELL_MEDAL).setDamage(14).setCooldown(20).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(CELL_MEDAL.get()));
@@ -1498,7 +1498,7 @@ public class OOORiderItems {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> BIRTH_BUSTER = ITEMS.register("birth_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).setCooldown(1).setProjectile(BaseBlasterItem.BlasterProjectile.CELL_MEDAL).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(CELL_MEDAL.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setProjectile("cell_medal").changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
 
 
 	public static final DeferredItem<Item> O_SCANNER = ITEMS.register("o_scanner",

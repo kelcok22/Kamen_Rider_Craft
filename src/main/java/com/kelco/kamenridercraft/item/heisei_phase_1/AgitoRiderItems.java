@@ -17,6 +17,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import static com.kelco.kamenridercraft.item.base_items.NeoBaseBlasterItem.BlasterPreset.AUTO_BLASTER;
+
 public class AgitoRiderItems {
 
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -474,7 +476,7 @@ public class AgitoRiderItems {
 	public static final DeferredItem<Item> GA_04_ANTARES = ITEMS.register("ga_04_antares",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GX_05_KERBEROS = ITEMS.register("gx_05_kerberos",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).setFiretype("hold").setProjColor("yellow").setProjShape("medium").setCooldown(60).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), -4, -2.4F).setPreset(AUTO_BLASTER).changeRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GX_LAUNCHER = ITEMS.register("gx_launcher",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("gx").setCooldown(80).setExplosionPower(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GK_06_UNICORN = ITEMS.register("gk_06_unicorn",

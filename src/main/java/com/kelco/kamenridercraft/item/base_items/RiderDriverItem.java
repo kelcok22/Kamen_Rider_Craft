@@ -338,7 +338,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getBeltModel());
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, getFormItem(itemStack, 1).getBeltModel());
     }
 
     public ResourceLocation getModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {

@@ -168,9 +168,11 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
         if (reinforcementChance > 0 && this.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD && serverLevel.getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)) {
             if ((this.getTarget() != null && !(this.getLastAttacker() instanceof Monster) && this.getLastAttacker() == this.getTarget()) && this.random.nextFloat() * 100 <= reinforcementChance) {
                 LivingEntity reinforcement = (LivingEntity) this.getType().create(this.level());
-                reinforcement.setPos(this.getX() - 10, this.getY(), this.getZ() + 10);
+                int tempRandX = Mth.floor(this.getX()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
+                int tempRandZ = Mth.floor(this.getZ()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
+                reinforcement.setPos(tempRandX, this.getY(), tempRandZ);
 
-                for (int i = 0; i < 50; ++i){
+                for (int i = 0; i < 100; ++i){
                     int randX = Mth.floor(this.getX()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
                     int randY = Mth.floor(this.getY()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
                     int randZ = Mth.floor(this.getZ()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
@@ -180,7 +182,7 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
                         reinforcement.setPos(randX, this.getY(), randZ);
                         continue;
                     }
-                    reinforcement.setPos(randX, randY, randZ);
+                    reinforcement.setPos(tempRandX, this.getY(), tempRandZ);
                 }
 
                 reinforcement.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(0);
