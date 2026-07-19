@@ -281,6 +281,7 @@ public class WRiderItems {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
 					super.transformationEffect(itemstack, player,tick);
 					if (tick==30d){
+						RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
 						AnimationUtil.playPose(player,"accel.henshin_pose");
 						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
 					}
@@ -295,7 +296,7 @@ public class WRiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
+			}.addSwitchForm(ACCEL_MEMORY_BIKE.get()).setFormDelay(1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_trial","accel","acceldriver_belt_t",

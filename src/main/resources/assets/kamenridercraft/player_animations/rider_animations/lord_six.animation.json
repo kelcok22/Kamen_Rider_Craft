@@ -27,6 +27,89 @@
 					"rotation": [10, -7, -4]
 				}
 			}
+		},
+		"lord_six.henshin_pose": {
+			"animation_length": 1.25,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 40, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, -40, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 10, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"post": [0, -37.5, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"post": [-24.0905, -30.7092, -12.5924],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [-24.0905, -30.7092, -12.5924],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": {
+							"post": [0.6214, -26.696, 3.7715],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": {
+							"post": [-17.2589, -45.2229, 3.4589],
+							"lerp_mode": "catmullrom"
+						},
+						"0.125": {
+							"post": [-144.4103, -34.8079, 3.2819],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3333": {
+							"post": [-144.4103, -34.8079, 3.2819],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-35.5632, 21.276, 9.1718],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-1.53209, -1, -1.28558],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
 		}
 	}
 }
