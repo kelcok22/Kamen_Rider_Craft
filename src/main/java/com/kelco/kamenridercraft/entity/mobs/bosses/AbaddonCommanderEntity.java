@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 
 import net.minecraft.world.entity.EntityType;
@@ -20,6 +21,7 @@ public class AbaddonCommanderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeroOneRiderItems.ZERO_ONE_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeroOneRiderItems.ZERO_ONE_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.SLASH_ABADDO_RISER_R.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 	    this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeroOneRiderItems.SLASHABADDORISER_SWORD.get()));
        switch (this.getRandom().nextInt(4)) {
          case 0:

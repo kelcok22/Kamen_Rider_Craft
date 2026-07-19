@@ -128,6 +128,7 @@ public class ArkZeroEntity extends BaseHenchmenEntity {
                 this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeroOneRiderItems.ZERO_ONE_CHESTPLATE.get()));
                 this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeroOneRiderItems.ZERO_ONE_LEGGINGS.get()));
                 this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeroOneRiderItems.ARK_DRIVER_ZERO.get()));
+                RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
             }
 
         } else {

@@ -45,6 +45,7 @@ public class CronusEntity extends BaseHenchmenEntity {
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.FEET,new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 		this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II.get()));
 	}
 

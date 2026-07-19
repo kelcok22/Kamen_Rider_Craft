@@ -25,6 +25,7 @@ public class BitterGavvEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GavvRiderItems.GAVV_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GavvRiderItems.BITTER_GAVVGABLADE.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GavvRiderItems.HENSHIN_BELT_BITTER_GAVV.get()));
+            RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
     @Override
     public void actuallyHurt(DamageSource source, float amount) {

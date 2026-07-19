@@ -26,6 +26,7 @@ public class BarlckxsEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_BARLCKXS.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.BARLCKXS_SWORD.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
 
     @Override

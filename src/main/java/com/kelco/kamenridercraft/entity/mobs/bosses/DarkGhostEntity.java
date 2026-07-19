@@ -28,6 +28,7 @@ public class DarkGhostEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GhostRiderItems.GHOST_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GhostRiderItems.GHOST_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.DARK_GHOST_DRIVER.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
 
 	@Override

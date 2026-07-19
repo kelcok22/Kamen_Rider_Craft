@@ -45,6 +45,7 @@ public class AncientOOOEntity extends BaseHenchmenEntity {
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.ANCIENT_OOODRIVER.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(OOORiderItems.MEDAJALIBUR.get()));
 	}
 

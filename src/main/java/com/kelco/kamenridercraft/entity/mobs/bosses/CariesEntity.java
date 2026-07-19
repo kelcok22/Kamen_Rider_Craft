@@ -31,6 +31,7 @@ public class CariesEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GavvRiderItems.GAVV_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GavvRiderItems.GAVV_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GavvRiderItems.HENSHIN_BELT_CARIES_GAVV.get()));
+            RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
