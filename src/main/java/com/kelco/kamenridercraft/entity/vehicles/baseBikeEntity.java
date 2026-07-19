@@ -293,10 +293,8 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                             if (this.playerJumpPendingScale > 0.0F && !isJumping) {
                                 this.executeRidersJump(this.playerJumpPendingScale, new Vec3(0, pos.y, z));
                             }
-
                             this.playerJumpPendingScale = 0.0F;
                         }
-
                     }
                 }
                 super.travel(new Vec3(0, pos.y, z));
