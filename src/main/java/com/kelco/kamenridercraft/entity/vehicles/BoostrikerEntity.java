@@ -20,6 +20,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
@@ -32,13 +33,13 @@ public class BoostrikerEntity extends baseBikeEntity {
 		NAME_MODEL ="boostriker";
 		}
 
-	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+	protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
 		super.defineSynchedData(builder);
 		builder.define(DATA_RIDER_LOGO, "geats");
 	}
 
 	@Override
-	public void addAdditionalSaveData(CompoundTag compound) {
+	public void addAdditionalSaveData(@NotNull CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.putString("riderLogo", this.getRiderLogo());
 	}
@@ -47,7 +48,7 @@ public class BoostrikerEntity extends baseBikeEntity {
 	 * (abstract) Protected helper method to read subclass entity data from NBT.
 	 */
 	@Override
-	public void readAdditionalSaveData(CompoundTag compound) {
+	public void readAdditionalSaveData(@NotNull CompoundTag compound) {
 		super.readAdditionalSaveData(compound);
 		this.entityData.set(DATA_RIDER_LOGO, compound.getString("riderLogo"));
 	}
@@ -94,7 +95,7 @@ public class BoostrikerEntity extends baseBikeEntity {
 	}
 
 	@Override
-	public void positionRider(Entity entity, MoveFunction moveFunction) {
+	public void positionRider(@NotNull Entity entity, @NotNull MoveFunction moveFunction) {
 		if (entity instanceof LivingEntity passenger) {
 			moveFunction.accept(entity, getX(), getY() + 0.4f, getZ());
 

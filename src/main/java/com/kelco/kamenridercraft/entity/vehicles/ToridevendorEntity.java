@@ -15,6 +15,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class ToridevendorEntity extends baseBikeEntity {
 
@@ -59,7 +60,7 @@ public class ToridevendorEntity extends baseBikeEntity {
 	}
 
 	@Override
-	public void die(DamageSource p_21809_) {
+	public void die(@NotNull DamageSource p_21809_) {
 		super.die(p_21809_);
 		this.spawnAtLocation(OOORiderItems.TORA_CANDROID.get());
 

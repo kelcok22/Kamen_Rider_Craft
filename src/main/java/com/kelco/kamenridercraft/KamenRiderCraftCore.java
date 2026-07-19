@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft;
 
-import com.kelco.kamenridercraft.attachments.AbilityAttachments;
 import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
@@ -171,7 +170,7 @@ public class KamenRiderCraftCore {
 
         Attributes.ATTRIBUTES.register(modEventBus);
         AttachmentTypes.register(modEventBus);
-        AbilityAttachments.register(modEventBus);
+        //AbilityAttachments.register(modEventBus);
         EffectCore.register(modEventBus);
 
         ModMenus.register(modEventBus);
@@ -712,27 +711,50 @@ public class KamenRiderCraftCore {
         public static void register(final RegisterPayloadHandlersEvent event) {
             PayloadRegistrar registrar = event.registrar("kamenridercraft");
             registrar = registrar.executesOn(HandlerThread.MAIN);
-            registrar.playBidirectional(CompleteSwingPayload.TYPE, CompleteSwingPayload.STREAM_CODEC, new DirectionalPayloadHandler<>(ClientPayloadHandler::handleCompleteSwing, ServerPayloadHandler::handleCompleteSwing));
 
-            registrar.commonToClient(EndAnimationPayload.TYPE, EndAnimationPayload.STREAM_CODEC, ClientPayloadHandler::endAnimations);
+            registrar.playBidirectional(CompleteSwingPayload.TYPE,
+            CompleteSwingPayload.STREAM_CODEC,
+            new DirectionalPayloadHandler<>(ClientPayloadHandler::handleCompleteSwing, ServerPayloadHandler::handleCompleteSwing));
 
-            registrar.commonToClient(StartPosePayload.TYPE, StartPosePayload.STREAM_CODEC, ClientPayloadHandler::startPoseAnimations);
+            registrar.commonToClient(EndAnimationPayload.TYPE,
+            EndAnimationPayload.STREAM_CODEC,
+            ClientPayloadHandler::endAnimations);
 
-            registrar.commonToClient(AnimPayload.TYPE, AnimPayload.STREAM_CODEC, ClientPayloadHandler::startAnim);
+            registrar.commonToClient(StartPosePayload.TYPE,
+            StartPosePayload.STREAM_CODEC,
+            ClientPayloadHandler::startPoseAnimations);
 
-            registrar.playToServer(BeltKeyPayload.TYPE, BeltKeyPayload.STREAM_CODEC, ServerPayloadHandler::handleBeltKeyPress);
+            registrar.commonToClient(AnimPayload.TYPE,
+            AnimPayload.STREAM_CODEC,
+            ClientPayloadHandler::startAnim);
 
-            registrar.playToClient(AttributeChangeClientPayload.TYPE, AttributeChangeClientPayload.STREAM_CODEC, ClientPayloadHandler::handleAttributeClientChange);
+            registrar.playToServer(BeltKeyPayload.TYPE,
+            BeltKeyPayload.STREAM_CODEC,
+            ServerPayloadHandler::handleBeltKeyPress);
 
-            registrar.playToServer(AttributeChangePayload.TYPE, AttributeChangePayload.STREAM_CODEC, ServerPayloadHandler::handleAttributeChange);
+            registrar.playToClient(AttributeChangeClientPayload.TYPE,
+            AttributeChangeClientPayload.STREAM_CODEC,
+            ClientPayloadHandler::handleAttributeClientChange);
 
-            registrar.playToServer(ClimbCollisionPayload.TYPE, ClimbCollisionPayload.STREAM_CODEC, ServerPayloadHandler::handleClimbing);
+            registrar.playToServer(AttributeChangePayload.TYPE,
+            AttributeChangePayload.STREAM_CODEC,
+            ServerPayloadHandler::handleAttributeChange);
 
-            registrar.playToServer(AbilityKeyPayload.TYPE, AbilityKeyPayload.STREAM_CODEC, ServerPayloadHandler::handleAbilityKeyPress);
+            registrar.playToServer(ClimbCollisionPayload.TYPE,
+            ClimbCollisionPayload.STREAM_CODEC,
+            ServerPayloadHandler::handleClimbing);
 
-            registrar.playToServer(PoseKeyPayload.TYPE, PoseKeyPayload.STREAM_CODEC, ServerPayloadHandler::handlePoseKeyPress);
+            registrar.playToServer(AbilityKeyPayload.TYPE,
+            AbilityKeyPayload.STREAM_CODEC,
+            ServerPayloadHandler::handleAbilityKeyPress);
 
-            registrar.playToServer(BikeMovePayload.TYPE, BikeMovePayload.STREAM_CODEC, ServerPayloadHandler::handleBikeMove);
+            registrar.playToServer(PoseKeyPayload.TYPE,
+            PoseKeyPayload.STREAM_CODEC,
+            ServerPayloadHandler::handlePoseKeyPress);
+
+            registrar.playToServer(BikeMovePayload.TYPE,
+            BikeMovePayload.STREAM_CODEC,
+            ServerPayloadHandler::handleBikeMove);
         }
     }
 

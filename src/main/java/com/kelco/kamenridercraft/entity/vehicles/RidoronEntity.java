@@ -8,6 +8,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class RidoronEntity extends baseBikeEntity {
 
@@ -21,7 +22,7 @@ public class RidoronEntity extends baseBikeEntity {
 
 	// Adjust the rider's position while riding
 	@Override
-	public void positionRider(Entity entity, MoveFunction moveFunction) {
+	public void positionRider(@NotNull Entity entity, @NotNull MoveFunction moveFunction) {
 		if (entity instanceof LivingEntity passenger) {
 			moveFunction.accept(entity, getX(), getY() + 0.2f, getZ());
 

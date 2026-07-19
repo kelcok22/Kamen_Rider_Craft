@@ -47,7 +47,6 @@ public class ServerPayloadHandler {
     }
 
     public static void handleBikeMove(final BikeMovePayload data, final IPayloadContext context) {
-
         if (context.player().level().getEntity(data.id()) != null) {
             if (context.player().level().getEntity(data.id()) instanceof baseBikeEntity bike) {
                 bike.yRotO = bike.getYRot();

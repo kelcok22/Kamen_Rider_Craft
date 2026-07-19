@@ -14,6 +14,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class BoostrikerGeatsModeEntity extends baseBikeEntity {
 	public BoostrikerGeatsModeEntity(EntityType<? extends baseBikeEntity> entityType, Level level) {
@@ -50,7 +51,7 @@ public class BoostrikerGeatsModeEntity extends baseBikeEntity {
 	}
 
 	@Override
-	public void positionRider(Entity entity, MoveFunction moveFunction) {
+	public void positionRider(@NotNull Entity entity, @NotNull MoveFunction moveFunction) {
 		if (entity instanceof LivingEntity passenger) {
 			moveFunction.accept(entity, getX(), getY() + 0.4f, getZ());
 
