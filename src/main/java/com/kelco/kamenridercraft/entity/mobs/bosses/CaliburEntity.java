@@ -26,6 +26,7 @@ public class CaliburEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.JAKEN_CALIBURDRIVER.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.ANKOKUKEN_KURAYAMI.get()));
     }
 

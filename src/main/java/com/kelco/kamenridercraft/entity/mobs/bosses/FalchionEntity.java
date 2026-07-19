@@ -31,6 +31,7 @@ public class FalchionEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.HAKEN_BLADRIVER_FALCHION.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.MUMEIKEN_KYOMU.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
         this.moveControl = new FlyingBossControl(this, 20);
     }
 
