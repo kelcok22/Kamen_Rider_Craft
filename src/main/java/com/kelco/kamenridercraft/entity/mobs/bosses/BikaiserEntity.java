@@ -21,6 +21,7 @@ public class BikaiserEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuildRiderItems.BUILD_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuildRiderItems.NEBULASTEAM_GUN.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.NEBULA_STEAM_GUN_KAISER.get()));
+            RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
             RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.GEAR_BI_KAISER.get(), 1);
     }
 

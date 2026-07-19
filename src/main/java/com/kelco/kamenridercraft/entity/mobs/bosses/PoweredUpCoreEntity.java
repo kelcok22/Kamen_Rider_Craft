@@ -50,12 +50,9 @@ public class  PoweredUpCoreEntity extends BaseHenchmenEntity {
         this.setPathfindingMalus(PathType.LAVA, 8.0F);
         this.setPathfindingMalus(PathType.DANGER_FIRE, 0.0F);
         this.setPathfindingMalus(PathType.DAMAGE_FIRE, 0.0F);
-
-
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
-
         ItemStack belt = new ItemStack(OOORiderItems.POWERED_UP_CORE_DRIVER.get());
         RiderDriverItem.setUpdateForm(belt);
         RiderDriverItem.setFormItem(belt, WRiderItems.MEMORY_MEMORY.asItem(), 4);

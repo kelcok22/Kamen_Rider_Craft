@@ -50,8 +50,8 @@ public class CoreEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
-
         ItemStack belt = new ItemStack(OOORiderItems.CORE_DRIVER.get());
+        RiderDriverItem.setUpdateForm(belt);
         RiderDriverItem.setFormItem(belt, WRiderItems.MEMORY_MEMORY.asItem(), 4);
         this.setItemSlot(EquipmentSlot.FEET,belt);
     }
