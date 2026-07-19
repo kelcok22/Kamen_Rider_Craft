@@ -562,15 +562,15 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> KINGROUZER = ITEMS.register("kingrouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> GARRENROUZER = ITEMS.register("garrenrouzer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(BLADECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 	public static final DeferredItem<Item> GARREN_KINGROUZER = ITEMS.register("garren_kingrouzer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(BLADECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 	public static final DeferredItem<Item> CHALICE_ARROW = ITEMS.register("chalice_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(BLADECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 	public static final DeferredItem<Item> WILD_SLASHER = ITEMS.register("wild_slasher",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).setRepairItem(BLADECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 	public static final DeferredItem<Item> LEANGLEROUZER = ITEMS.register("leanglerouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LEANGLE_KINGROUZER = ITEMS.register("leangle_kingrouzer",
@@ -580,8 +580,7 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> LANCEROUZER = ITEMS.register("lancerouzer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 	public static final DeferredItem<Item> LARCROUZER = ITEMS.register("larcrouzer",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
-
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(BLADECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGONFLY_SOMERSAULT = ITEMS.register("dragonfly_somersault",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));

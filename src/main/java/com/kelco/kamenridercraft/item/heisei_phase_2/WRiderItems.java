@@ -885,7 +885,8 @@ public class WRiderItems {
 
 
 	public static final DeferredItem<Item> TRIGGER_MAGNUM = ITEMS.register("trigger_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BURST_BLASTER).setRepairItem(GAIA_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+
 
 	public static final DeferredItem<Item>METAL_SHAFT = ITEMS.register("metal_shaft",
 			() -> new MetalShaftItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
@@ -902,14 +903,14 @@ public class WRiderItems {
 	public static final DeferredItem<Item> ETERNAL_EDGE = ITEMS.register("eternal_edge",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
 
-	public static final DeferredItem<Item> SKILL_MAGNUM = ITEMS.register("skull_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem( GAIA_MEMORY.get()));
+	public static final DeferredItem<Item> SKULL_MAGNUM = ITEMS.register("skull_magnum",
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BURST_BLASTER).setRepairItem(GAIA_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> ENGINE_BLADE = ITEMS.register("engine_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> BOMB_MAGNUM = ITEMS.register("bomb_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BURST_BLASTER).setRepairItem(GAIA_MEMORY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> NASCA_BLADE = ITEMS.register("nasca_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));

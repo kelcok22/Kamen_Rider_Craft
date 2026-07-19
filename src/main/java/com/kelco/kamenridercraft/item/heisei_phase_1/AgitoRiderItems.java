@@ -468,9 +468,9 @@ public class AgitoRiderItems {
 	public static final DeferredItem<Item> GUARD_ACCELLER = ITEMS.register("guard_acceller",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GM_01_SCORPION = ITEMS.register("gm_01_scorpion",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).setProjColor("yellow").setProjShape("medium").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GG_02_SALAMANDER = ITEMS.register("gg_02_salamander",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setCooldown(20).setExplosionPower(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GS_03_DESTROYER = ITEMS.register("gs_03_destroyer",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GA_04_ANTARES = ITEMS.register("ga_04_antares",
@@ -478,11 +478,11 @@ public class AgitoRiderItems {
 	public static final DeferredItem<Item> GX_05_KERBEROS = ITEMS.register("gx_05_kerberos",
 			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), -4, -2.4F).setPreset(AUTO_BLASTER).changeRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GX_LAUNCHER = ITEMS.register("gx_launcher",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("gx").setCooldown(80).setExplosionPower(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.ROCKET).setModelAndTexture("gx_rocket", "rocket").setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GK_06_UNICORN = ITEMS.register("gk_06_unicorn",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> GH_09_ORTHRUS = ITEMS.register("gh_09_orthrus",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BURST_BLASTER).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 	public static final DeferredItem<Item> GZ_10_OROCHI = ITEMS.register("gz_10_orochi",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 	public static final DeferredItem<Item> G3_SHIELD = ITEMS.register("g3_shield",
@@ -492,11 +492,11 @@ public class AgitoRiderItems {
 
 
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 4, 1f, new Item.Properties().rarity(Rarity.RARE)).setProjectile(BaseBlasterItem.BlasterProjectile.ROCKET).setProjColor("g4").setProjShape("g4").setCooldown(60).setExplosionPower(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.ROCKET).setMaxAmmo(4).setFireRate(15).setReloadTime(200).singleFire(false).setExplosivePower(2).setModelAndTexture("g4_rocket", "rocket").setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
-	public static final DeferredItem<Item>V1_SHOT = ITEMS.register("v1_shot",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LASER).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).setProjColor("yellow").setProjShape("medium").changeRepairItem(SEED_OF_AGITO.get()));
+	public static final DeferredItem<Item> V1_SHOT = ITEMS.register("v1_shot",
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> JUDGEMENT_STAFF = ITEMS.register("judgment_staff",

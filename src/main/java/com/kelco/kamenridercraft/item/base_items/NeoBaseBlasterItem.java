@@ -466,6 +466,27 @@ public class NeoBaseBlasterItem extends BaseItem {
         return this;
     }
 
+    public NeoBaseBlasterItem setMaxAmmo(int maxAmmo) {
+        this.maxAmmo = maxAmmo;
+        tag.putInt("ammo", maxAmmo);
+        return this;
+    }
+
+    public NeoBaseBlasterItem setFireRate(int firingRate) {
+        this.firingRate = firingRate;
+        return this;
+    }
+
+    public NeoBaseBlasterItem setReloadTime(int reloadTime) {
+        this.reloadTime = reloadTime;
+        return this;
+    }
+
+    public NeoBaseBlasterItem singleFire(boolean singleFire) {
+        this.singleFire = multiFire;
+        return this;
+    }
+
     public NeoBaseBlasterItem setHoldAnimation(String anim) {
         holdAnimation = anim.toLowerCase();
         return this;
