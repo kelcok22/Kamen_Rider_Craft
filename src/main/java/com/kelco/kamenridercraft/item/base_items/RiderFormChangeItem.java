@@ -665,8 +665,10 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public void transformationEffect(ItemStack itemStack, LivingEntity entity, Double tick) {
+        if (!(entity instanceof Player)) {
+            tick = 1D;
+        }
         if (tick == 30) transformationEffect(itemStack, entity);
         if (tick == 1) RiderDriverItem.UpdateOldFormItem(itemStack);
-
     }
 }
