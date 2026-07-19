@@ -136,6 +136,7 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 		}
         super.tick();
         this.tickLerp();
+
         if (this.isControlledByLocalInstance()) {
             this.move(MoverType.SELF, this.getDeltaMovement());
         } else {
@@ -143,18 +144,6 @@ public class baseBikeEntity extends Mob implements GeoEntity {
         }
 
         super.tick();
-
-        this.checkInsideBlocks();
-        List<Entity> list = this.level().getEntities(this, this.getBoundingBox().inflate((double)0.2F, (double)-0.01F, (double)0.2F), EntitySelector.pushableBy(this));
-        if (!list.isEmpty()) {
-            boolean flag = !this.level().isClientSide && !(this.getControllingPassenger() instanceof Player);
-
-            for(Entity entity : list) {
-                if (!entity.hasPassenger(this)) {
-                        this.push(entity);
-                }
-            }
-        }
 	}
 
     public double lerpTargetX() {
@@ -179,19 +168,6 @@ public class baseBikeEntity extends Mob implements GeoEntity {
 
     public Direction getMotionDirection() {
         return this.getDirection().getClockWise();
-    }
-
-
-
-    public void push(Entity entity) {
-        if (entity instanceof Boat) {
-            if (entity.getBoundingBox().minY < this.getBoundingBox().maxY) {
-                super.push(entity);
-            }
-        } else if (entity.getBoundingBox().minY <= this.getBoundingBox().minY) {
-            super.push(entity);
-        }
-
     }
 
     protected double getDefaultGravity() {
@@ -272,39 +248,21 @@ if(this.level().isClientSide) {
         float z = 0;
         this.fallDistance = 0;
         if (this.isVehicle()) {
-
             LivingEntity passenger = getControllingPassenger();
             if (passenger != null) {
                 this.yRotO = getYRot();
                 this.xRotO = getXRot();
-
                 z = passenger.zza;
-
                 if (z <= 0) z *= 0.25f;
                 if (this.onGround()) {
                     if (z > 0) {
-                        this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume() / 4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
-                        if (this.getSpeed() < 0.2) {
-                            if (level() instanceof ServerLevel sl) {
-                                sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
-                                        this.getX(), this.getY(),
-                                        this.getZ(), 10, 0, 0, 0, 0);
-                            }
-
-                            //this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
-                        }
-
                         if (this.getSpeed() < 0.6) this.setSpeed(this.getSpeed() + MAX_SPEED);
                         setYRot(yRotO - passenger.xxa * 5F);
                         setXRot(passenger.getXRot() * 3f);
-
                         setRot(getYRot(), getXRot());
                         this.yBodyRot = this.getYRot();
                         this.yHeadRot = this.yBodyRot;
-
                     } else if (z < 0) {
-                        this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume() / 4, (this.random.nextFloat() - this.random.nextFloat()) * 0.1F + 1.0F);
-
                         if (this.getSpeed() < 1) this.setSpeed(this.getSpeed() + MAX_SPEED);
                         setYRot(yRotO + passenger.xxa * 5F);
                         setXRot(-passenger.getXRot() * 3f);
@@ -314,14 +272,6 @@ if(this.level().isClientSide) {
                         this.yHeadRot = this.yBodyRot;
                     } else {
                         if (this.getSpeed() != 0) {
-                            if (this.getSpeed() > 0.6)
-                                this.playSound(SoundEvents.BOAT_PADDLE_LAND, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
-                            if (level() instanceof ServerLevel sl) {
-                                sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
-                                        this.getX(), this.getY(),
-                                        this.getZ(), 10, 0, 0, 0, 0);
-                            }
-
                             this.setSpeed(0f);
                         }
                     }
@@ -330,7 +280,7 @@ if(this.level().isClientSide) {
             }
         }
         super.travel(new Vec3(0, pos.y, z));
-        PacketDistributor.sendToServer(new BikeMovePayload(this.getId(),this.yBodyRot,this.yHeadRot,this.getWheelRotation()));
+        PacketDistributor.sendToServer(new BikeMovePayload(this.getId(),this.yBodyRot,this.yHeadRot,this.getWheelRotation(),this.getSpeed()));
     }
 }
 	}

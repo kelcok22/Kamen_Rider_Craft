@@ -7,7 +7,11 @@ import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.*;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -45,11 +49,26 @@ public class ServerPayloadHandler {
     public static void handleBikeMove(final BikeMovePayload data, final IPayloadContext context) {
 
         if (context.player().level().getEntity(data.id()) != null) {
-                if (context.player().level().getEntity(data.id())instanceof baseBikeEntity bike){
-                    bike.yRotO = bike.getYRot();
-                    bike.xRotO = bike.getXRot();
-                    bike.yBodyRot = data.yBody();
-                    bike.yHeadRot = data.yHead();
+            if (context.player().level().getEntity(data.id()) instanceof baseBikeEntity bike) {
+                bike.yRotO = bike.getYRot();
+                bike.xRotO = bike.getXRot();
+                bike.yBodyRot = data.yBody();
+                bike.yHeadRot = data.yHead();
+                if (data.speed() != 0){
+                    context.player().level().playSound(bike, bike.blockPosition(), SoundEvents.BOAT_PADDLE_LAND, SoundSource.PLAYERS, 0.25F, (bike.getRandom().nextFloat() - bike.getRandom().nextFloat()) * 0.1F + 1.0F);
+                if (context.player().level() instanceof ServerLevel sl) {
+                    if (data.speed() < 0.2) {
+                        sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                bike.getX(), bike.getY(),
+                                bike.getZ(), 10, 0, 0, 0, 0);
+                    }
+                    //this.playSound(SoundEvents.ALLAY_THROW, this.getSoundVolume(), (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+                 else if (data.speed() > 0.6) {
+                        context.player().level().playSound(bike, bike.blockPosition(), SoundEvents.BOAT_PADDLE_LAND, SoundSource.PLAYERS, 0.25F, (bike.getRandom().nextFloat() - bike.getRandom().nextFloat()) * 0.2F + 1.0F);
+                        sl.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, bike.getX(), bike.getY(), bike.getZ(), 10, 0, 0, 0, 0);
+                    }
+                }
+                }
             }
         }
     }

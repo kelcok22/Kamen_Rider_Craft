@@ -7,7 +7,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
-public record BikeMovePayload(int id, float yBody ,float yHead,float wheelRot) implements CustomPacketPayload {
+public record BikeMovePayload(int id, float yBody ,float yHead,float wheelRot,float speed) implements CustomPacketPayload {
     public static final Type<BikeMovePayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath("kamenridercraft", "bike_move"));
 
     public static final StreamCodec<ByteBuf, BikeMovePayload> STREAM_CODEC = StreamCodec.composite(
@@ -15,6 +15,7 @@ public record BikeMovePayload(int id, float yBody ,float yHead,float wheelRot) i
             ByteBufCodecs.FLOAT, BikeMovePayload::yBody,
             ByteBufCodecs.FLOAT, BikeMovePayload::yHead,
             ByteBufCodecs.FLOAT, BikeMovePayload::wheelRot,
+            ByteBufCodecs.FLOAT, BikeMovePayload::speed,
             BikeMovePayload::new
     );
 
