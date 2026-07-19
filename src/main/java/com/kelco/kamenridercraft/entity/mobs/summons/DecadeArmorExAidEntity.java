@@ -34,6 +34,7 @@ public class DecadeArmorExAidEntity extends BaseSummonEntity {
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZiORiderItems.ZI_O_CHESTPLATE.get()));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZiORiderItems.ZI_O_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZiORiderItems.ZIKU_DRIVER_ZI_O.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.RIDE_HEISABER.get()));
 		RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZiORiderItems.DECADE_EX_AID_RIDEWATCH_R.get(), 1);
 		this.addRequiredForm((RiderFormChangeItem) ZiORiderItems.DECADE_EX_AID_RIDEWATCH_L.get(), 1);

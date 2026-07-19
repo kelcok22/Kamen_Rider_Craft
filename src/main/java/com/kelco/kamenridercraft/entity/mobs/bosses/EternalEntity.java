@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -33,7 +34,7 @@ public class EternalEntity extends BaseHenchmenEntity {
 		RiderFormChangeItem Gimmick = ((RiderFormChangeItem)belt[rand]);
 				
 		ItemStack LOST_DRIVER = new ItemStack(WRiderItems.LOSTDRIVER_ETERNAL.get());
-		
+        RiderDriverItem.setUpdateForm(LOST_DRIVER);
 		RiderDriverItem.setFormItem(LOST_DRIVER,Gimmick, 1);
 		
         this.setItemSlot(EquipmentSlot.FEET, LOST_DRIVER );

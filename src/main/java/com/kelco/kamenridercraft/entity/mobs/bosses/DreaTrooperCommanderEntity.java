@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,7 +20,9 @@ public class DreaTrooperCommanderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GotchardRiderItems.GOTCHARD_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GotchardRiderItems.GOTCHARD_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GotchardRiderItems.GOTCHARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GotchardRiderItems.DREADRIVER.get()));
+        ItemStack rider = new ItemStack(GotchardRiderItems.DREADRIVER.get());
+        RiderDriverItem.setUpdateForm(rider);
+        this.setItemSlot(EquipmentSlot.FEET, rider);
 
         switch (this.getRandom().nextInt(5)) {
             case 0:

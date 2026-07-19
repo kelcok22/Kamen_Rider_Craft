@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.registries.Registries;
@@ -32,6 +33,7 @@ public class GenmEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GAMER_DRIVER_GENM.get()));
 
         ItemStack belt = new ItemStack(ExAidRiderItems.GAMER_DRIVER_GENM.get());
+        RiderDriverItem.setUpdateForm(belt);
         RiderDriverItem.setFormItem(belt, ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT.get(), 1);
 
         this.setItemSlot(EquipmentSlot.FEET, belt);

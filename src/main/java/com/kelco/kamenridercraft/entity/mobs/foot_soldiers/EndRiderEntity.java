@@ -33,6 +33,7 @@ public class EndRiderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GeatsRiderItems.GEATS_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GeatsRiderItems.GEATS_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_THE_END_RIDER.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
 
 

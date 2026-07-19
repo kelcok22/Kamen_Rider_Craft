@@ -20,7 +20,9 @@ public class KaiserEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuildRiderItems.BUILD_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuildRiderItems.BUILD_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuildRiderItems.NEBULASTEAM_GUN.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.NEBULA_STEAM_GUN_KAISER.get()));
+            ItemStack rider = new ItemStack(BuildRiderItems.NEBULA_STEAM_GUN_KAISER.get());
+            RiderDriverItem.setUpdateForm(rider);
+            this.setItemSlot(EquipmentSlot.FEET, rider);
             RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.GEAR_REMOCON_BLUE.get(), 1);
     }
 

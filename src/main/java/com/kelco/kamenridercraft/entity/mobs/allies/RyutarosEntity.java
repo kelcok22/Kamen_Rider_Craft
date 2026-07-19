@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DenORiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -120,7 +121,9 @@ public class RyutarosEntity extends BaseAllyEntity implements RangedAttackMob {
                         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DenORiderItems.DEN_OHELMET.get()));
                         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DenORiderItems.DEN_OCHESTPLATE.get()));
                         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DenORiderItems.DEN_OLEGGINGS.get()));
-                        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(DenORiderItems.DEN_O_BELT.get()));
+                        ItemStack rider = new ItemStack(DenORiderItems.DEN_O_BELT.get());
+                        RiderDriverItem.setUpdateForm(rider);
+                        this.setItemSlot(EquipmentSlot.FEET, rider);
                         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DenORiderItems.DEN_GASHER_GUN.get()));
                         RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), DenORiderItems.RIDER_TICKET_GUN.get(), 1);
                         if (!player.getAbilities().instabuild) {

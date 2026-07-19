@@ -107,7 +107,9 @@ public class oScannerItem extends BaseItem {
                         summon.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
                         summon.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
                         summon.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));
-                        summon.setItemSlot(EquipmentSlot.FEET, new ItemStack(OOORiderItems.OOODRIVER.get()));
+                        ItemStack rider = new ItemStack(OOORiderItems.OOODRIVER.get());
+                        RiderDriverItem.setUpdateForm(rider);
+                        summon.setItemSlot(EquipmentSlot.FEET, rider);
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KUWAGATA_MEDAL.get(), 1);
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), OOORiderItems.KAMAKIRI_MEDAL.get(), 2);
 

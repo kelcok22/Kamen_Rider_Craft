@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
@@ -31,7 +32,9 @@ public class EngineBrosEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BuildRiderItems.BUILD_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BuildRiderItems.BUILD_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BuildRiderItems.NEBULASTEAM_GUN.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BuildRiderItems.NEBULA_STEAM_GUN_HELL_BROS.get()));
+            ItemStack rider = new ItemStack(BuildRiderItems.NEBULA_STEAM_GUN_HELL_BROS.get());
+            RiderDriverItem.setUpdateForm(rider);
+            this.setItemSlot(EquipmentSlot.FEET, rider);
             RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.GEAR_ENGINE.get(), 1);
     }
     @Override

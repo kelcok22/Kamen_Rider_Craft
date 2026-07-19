@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import net.minecraft.core.particles.ParticleTypes;
@@ -33,10 +35,9 @@ public class ShadowmoonEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BlackRiderItems.BLACKCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BlackRiderItems.BLACKLEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BlackRiderItems.SATANSABER.get()));
-        Random generator = new Random();
-		int rand = generator.nextInt(belt.length);
-	
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(belt[rand]));
+        ItemStack rider = new ItemStack(BlackRiderItems.SHADOW_CHARGER.get());
+        RiderDriverItem.setUpdateForm(rider);
+        this.setItemSlot(EquipmentSlot.FEET, rider);
     }
 
 

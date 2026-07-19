@@ -236,6 +236,7 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 			this.REQUIRED_ARMOR.set(EquipmentSlot.CHEST.getIndex(), player.getItemBySlot(EquipmentSlot.CHEST));
 			this.REQUIRED_ARMOR.set(EquipmentSlot.LEGS.getIndex(), player.getItemBySlot(EquipmentSlot.LEGS));
 			this.REQUIRED_ARMOR.set(EquipmentSlot.FEET.getIndex(), player.getItemBySlot(EquipmentSlot.FEET));
+            RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 	  	}
 	  }
    

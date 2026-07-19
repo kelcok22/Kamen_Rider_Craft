@@ -61,7 +61,6 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(RyukiRiderItems.RYUKICHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(RyukiRiderItems.RYUKILEGGINGS.get()));
         //this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Ryuki_Rider_Items.RYUKIDRIVER.get()));
-
     }
 
     protected void addBehaviourGoals() {

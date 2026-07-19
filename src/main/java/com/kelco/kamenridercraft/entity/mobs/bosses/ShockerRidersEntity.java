@@ -30,7 +30,6 @@ public class ShockerRidersEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));
         Random generator = new Random();
 		int rand = generator.nextInt(belt.length);
-	
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(belt[rand]));
     }
 

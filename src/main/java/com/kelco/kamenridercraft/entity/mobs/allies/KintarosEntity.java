@@ -102,7 +102,9 @@ public class KintarosEntity extends BaseAllyEntity {
 						this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(DenORiderItems.DEN_OHELMET.get()));
 						this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(DenORiderItems.DEN_OCHESTPLATE.get()));
 						this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(DenORiderItems.DEN_OLEGGINGS.get()));
-						this.setItemSlot(EquipmentSlot.FEET, new ItemStack(DenORiderItems.DEN_O_BELT.get()));
+                        ItemStack rider = new ItemStack(DenORiderItems.DEN_O_BELT.get());
+                        RiderDriverItem.setUpdateForm(rider);
+                        this.setItemSlot(EquipmentSlot.FEET, rider);
 						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DenORiderItems.DEN_GASHER_AX.get()));
 						RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), DenORiderItems.RIDER_TICKET_AX.get(), 1);
 						if (!player.getAbilities().instabuild) {

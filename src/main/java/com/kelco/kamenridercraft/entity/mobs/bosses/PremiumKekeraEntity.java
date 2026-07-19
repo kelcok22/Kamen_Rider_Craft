@@ -26,7 +26,9 @@ public class PremiumKekeraEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(GeatsRiderItems.GEATS_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GeatsRiderItems.GEATS_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GeatsRiderItems.GEATS_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.RAISE_RISER_BELT_KEKERA.get()));
+        ItemStack rider = new ItemStack(GeatsRiderItems.RAISE_RISER_BELT_KEKERA.get());
+        RiderDriverItem.setUpdateForm(rider);
+        this.setItemSlot(EquipmentSlot.FEET, rider);
         RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), GeatsRiderItems.KEKERA_BLACK_RAISE_RISER_CARD.get(), 1);
     }
 

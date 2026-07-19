@@ -39,6 +39,7 @@ public class ViceEntity extends BaseSummonEntity {
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ReviceRiderItems.REVICE_CHESTPLATE.get()));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ReviceRiderItems.REVICE_LEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ReviceRiderItems.BUDDY_BUCKLE.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 	}
 
 	public static AttributeSupplier.Builder setAttributes() {

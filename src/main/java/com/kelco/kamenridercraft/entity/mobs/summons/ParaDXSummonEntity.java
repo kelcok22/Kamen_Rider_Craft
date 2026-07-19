@@ -37,6 +37,7 @@ public class ParaDXSummonEntity extends BaseSummonEntity {
 		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
 		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
 		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GAMER_DRIVER_EX_AID.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 		RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ExAidRiderItems.MIGHTY_BROTHERS_XX_GASHAT_L.get(), 1);
 		RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ModdedItemCore.BLANK_FORM.get(), 2);
 		this.addRequiredForm((RiderFormChangeItem) ExAidRiderItems.MIGHTY_BROTHERS_XX_GASHAT_L.get(), 1);

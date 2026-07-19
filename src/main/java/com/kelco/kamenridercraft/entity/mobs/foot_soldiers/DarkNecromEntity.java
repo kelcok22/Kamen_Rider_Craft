@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
@@ -30,6 +31,7 @@ public class DarkNecromEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(GhostRiderItems.GHOST_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(GhostRiderItems.GHOST_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GhostRiderItems.PROTO_MEGA_ULORDER_RED.get()));
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
 
 

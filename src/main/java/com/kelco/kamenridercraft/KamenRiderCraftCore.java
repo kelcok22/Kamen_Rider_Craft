@@ -17,6 +17,7 @@ import com.kelco.kamenridercraft.client.renderer.base_renderers.BaseProjectileRe
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.villager.RiderVillagers;
 import com.kelco.kamenridercraft.events.ModClientEvents;
 import com.kelco.kamenridercraft.events.ModCommonEvents;
@@ -220,7 +221,7 @@ public class KamenRiderCraftCore {
                     model.setAllVisible(false);
                     if (tag != 1) {
                         model.head.visible = true;
-                    } else if (event.getEntity() instanceof BaseHenchmenEntity) {
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
                         model.head.visible = false;
                     }
                     if (tag == 3) {
@@ -229,17 +230,17 @@ public class KamenRiderCraftCore {
                         model.leftArm.visible = true;
                         model.rightArm.visible = true;
                         model.body.visible = true;
-                    } else if (event.getEntity() instanceof BaseHenchmenEntity) {
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
                         model.leftLeg.visible = false;
                         model.rightLeg.visible = false;
                         model.leftArm.visible = false;
                         model.rightArm.visible = false;
                         model.body.visible = false;
                     }
-                } else if (event.getEntity() instanceof BaseHenchmenEntity) {
+                } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
                     model.setAllVisible(true);
                 }
-            } else if (event.getEntity() instanceof BaseHenchmenEntity) {
+            } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
                 model.setAllVisible(true);
             }
         }

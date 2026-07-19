@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
+import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.DifficultyInstance;
@@ -34,6 +35,7 @@ public class GmRiderEntity extends BaseHenchmenEntity {
         } else {
             NAME = "gm_rider_chirami";
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GM_CHIRAMI.get()));
+            RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
         }
     }
 
