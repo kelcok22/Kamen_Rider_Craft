@@ -774,7 +774,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.changeModel("mugen.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").addSwitchForm(DARKNESS_CAPSEM_DRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.changeModel("mugen.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> VOID_CAPSEM = ITEMS.register("void_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));

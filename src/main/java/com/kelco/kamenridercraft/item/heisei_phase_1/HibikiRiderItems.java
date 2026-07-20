@@ -384,11 +384,11 @@ public class HibikiRiderItems {
             }.has_basic_model().model_has_different_name("armor_of_the_ogre_belt"));
 
     public static final DeferredItem<Item> HIBIKIHELMET = ITEMS.register("hibikihead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> HIBIKICHESTPLATE = ITEMS.register("hibikitroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> HIBIKILEGGINGS = ITEMS.register("hibikilegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
 
 
     public static final DeferredItem<Item> HIBIKIDRIVER = ITEMS.register("hibikidriver",
