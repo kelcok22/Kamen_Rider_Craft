@@ -924,7 +924,7 @@ public class OOORiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 30, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1d).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+			}.setFormDelay(1d).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("blokees_kujaku_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kujaku_blokees","ooo","ooodriver_belt",
@@ -936,7 +936,7 @@ public class OOORiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 30, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1d).changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+			}.setFormDelay(1d).changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BLOKEES_CONDOR_MEDAL = ITEMS.register("blokees_condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor_blokees","ooo","ooodriver_belt",
@@ -948,7 +948,7 @@ public class OOORiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 30, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> FOUNDATION_X_TAKA_MEDAL = ITEMS.register("foundation_x_taka_medal",
