@@ -30,7 +30,7 @@ public class ClientAbilityUtil {
         if (belt != null) {
             var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
             switch (abilitySlot) {
-                case 1:
+                case 2:
                     if (beltCheck.numBaseFormItems != 1) {
                         for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                             if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
@@ -43,7 +43,7 @@ public class ClientAbilityUtil {
                         returnedAbility.add(priority + getFormItem(belt, 1).getSlotOneAbility());
                     }
                     break;
-                case 2:
+                case 1:
                     if (beltCheck.numBaseFormItems != 1) {
                         for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                             if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotTwoAbility().isEmpty()) {
