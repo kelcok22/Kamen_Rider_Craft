@@ -924,19 +924,19 @@ public class OOORiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 30, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1d).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
+			}.setFormDelay(1d).changeModel("ooo_taka_tajado.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
 
-	public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("blokees_kujaku_medal",
-			() -> new RiderFormChangeItem(new Item.Properties(),"_kujaku_blokees","ooo","ooodriver_belt",
-					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
-					super.transformationEffect(itemstack, player,tick);
-					if (tick==1d) {
-						((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-								player.getX(), player.getY()+1,
-								player.getZ(), 30, 0, 0, 0, 0.1);
-					}}
-			}.setFormDelay(1d).changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
+public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("blokees_kujaku_medal",
+        () -> new RiderFormChangeItem(new Item.Properties(),"_kujaku_blokees","ooo","ooodriver_belt",
+                new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+            public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                super.transformationEffect(itemstack, player,tick);
+                if (tick==1d) {
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 30, 0, 0, 0, 0.1);
+                }}
+        }.setFormDelay(1d).changeSlot(2).changeModel("ooo_kujaku.geo.json").hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BLOKEES_CONDOR_MEDAL = ITEMS.register("blokees_condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor_blokees","ooo","ooodriver_belt",

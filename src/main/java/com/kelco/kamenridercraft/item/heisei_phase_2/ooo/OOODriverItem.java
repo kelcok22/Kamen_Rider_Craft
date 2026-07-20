@@ -166,7 +166,7 @@ public class OOODriverItem extends RiderDriverItem {
 
         if (slot == EquipmentSlot.HEAD & (getFormItem(itemstack, 1, henshinTick).getFormName(false).equals("_taka")
                 & getFormItem(itemstack, 2, henshinTick).getFormName(false).equals("_kujaku")
-                & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_condor")) || (getFormItem(itemstack, 1, henshinTick).getFormName(false).contains("_blokees"))) {
+                & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_condor"))) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/ooo_taka_tajado.geo.json");
         }
         if (getFormItem(itemstack, num, henshinTick).hasWingsIfFlying() && Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1) {
