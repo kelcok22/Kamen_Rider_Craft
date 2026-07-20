@@ -1487,7 +1487,7 @@ public class OOORiderItems {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.CELL_MEDAL).setDamage(14).setCooldown(20).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(CELL_MEDAL.get()));
 
 	public static final DeferredItem<Item> TAJASPINNER_ETERNITY = ITEMS.register("tajaspinner_eternity",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).IsSwordGun().setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).changeRepairItem(CELL_MEDAL.get()));
+			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), 9, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).isSwordGun().changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DEEPEST_HARPOON = ITEMS.register("deepest_harpoon",

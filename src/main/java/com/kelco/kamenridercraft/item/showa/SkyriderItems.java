@@ -48,7 +48,7 @@ public class SkyriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("rider_kick", 1).setSlotTwoAbility("flight_boost", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> ORIGINAL_TORNADO_CORE = ITEMS.register("original_tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_original","skyrider","tornado_belt",
@@ -68,7 +68,7 @@ public class SkyriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("rider_kick", 1).setSlotTwoAbility("flight_boost", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).has_basic_model());
+            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).has_basic_model());
 
     public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","gangan_g","gangan_g_belt_belt")

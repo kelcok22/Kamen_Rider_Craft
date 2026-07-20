@@ -81,6 +81,8 @@ public class ClientAbilityUtil {
             case "wonder_shrink" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/small.png");
             case "gatling" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/gatling.png");
             case "cannon" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/cannon.png");
+            case "fish" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/fish.png");
+            case "warp" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/warp.png");
             default -> null;
         };
     }

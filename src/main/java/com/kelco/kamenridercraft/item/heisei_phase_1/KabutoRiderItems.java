@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.ClockUpPadItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.HyperZecterBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterRBeltItem;
@@ -66,7 +67,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_kick", 1).isGlowing().addSwitchForm(KABUTO_ZECTER_MASK.get()).setSlotOneAbility("clock_up", 1).setSlotTwoAbility("kabuto_kick", 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(KABUTO_ZECTER_MASK.get()).setSlotTwoAbility("kabuto_kick", 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> THEBEE_ZECTER_MASK = ITEMS.register("thebee_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "thebee", "zect_buckle_thebee_belt_masked",
@@ -97,7 +98,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(THEBEE_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(THEBEE_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DRAKE_ZECTER_MASK = ITEMS.register("drake_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "drake", "zect_buckle_belt",
@@ -129,7 +130,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(DRAKE_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(DRAKE_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> SASWORD_ZECTER_MASK = ITEMS.register("sasword_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "sasword", "zect_buckle_belt",
@@ -161,7 +162,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(SASWORD_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(SASWORD_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_ZECTER_MASK = ITEMS.register("gatack_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "gatack", "gatack_rider_belt_m",
@@ -191,7 +192,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(GATACK_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(GATACK_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_HYPER_ZECTER = ITEMS.register("gatack_hyper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "_hyper", "gatack", "gatack_rider_belt_hyper",
@@ -210,7 +211,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.isGlowing());
+            }.setSlotOneAbility("clock_up", 1).isGlowing());
 
     public static final DeferredItem<Item> KICKHOPPER_ZECTER = ITEMS.register("kickhopper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kickhopper", "kickhopper_zect_buckle_belt",
@@ -225,7 +226,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> PUNCHHOPPER_ZECTER = ITEMS.register("punchhopper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "punchhopper", "punchhopper_zect_buckle_belt",
@@ -240,7 +241,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_KABUTO_ZECTER_MASK = ITEMS.register("dark_kabuto_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "dark_kabuto", "dark_kabuto_rider_belt_m",
@@ -270,7 +271,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.changeModel("kabuto.geo.json").isGlowing().addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).changeModel("kabuto.geo.json").isGlowing().addSwitchForm(DARK_KABUTO_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_HYPER_ZECTER = ITEMS.register("dark_hyper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "_hyper", "dark_kabuto", "dark_kabuto_rider_belt_hyper",
@@ -289,7 +290,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.changeModel("kabuto_hyper.geo.json").isGlowing().addAlternative(GATACK_HYPER_ZECTER.get()));
+            }.setSlotOneAbility("clock_up", 1).changeModel("kabuto_hyper.geo.json").isGlowing().addAlternative(GATACK_HYPER_ZECTER.get()));
 
     public static final DeferredItem<Item> CAUCASUS_ZECTER_MASK = ITEMS.register("caucasus_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "caucasus", "zect_buckle_caucasus_belt",
@@ -323,7 +324,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(CAUCASUS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(CAUCASUS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> HERCUS_ZECTER_MASK = ITEMS.register("hercus_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "hercus", "zect_buckle_hercus_belt",
@@ -353,7 +354,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(HERCUS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(HERCUS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> KETAROS_ZECTER_MASK = ITEMS.register("ketaros_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "ketaros", "zect_buckle_ketaros_belt",
@@ -383,7 +384,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(KETAROS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(KETAROS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GIRAFFA_ZECTER = ITEMS.register("giraffa_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "giraffa", "giraffa_rider_belt",
@@ -398,7 +399,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> LADY_ZECTER = ITEMS.register("lady_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "lady", "zect_buckle_belt",
@@ -413,7 +414,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> HYPER_ZECTER = ITEMS.register("hyper_zecter",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_hyper", "kabuto", "kabuto_rider_belt_hyper",
@@ -432,7 +433,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(DARK_HYPER_ZECTER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().addAlternative(DARK_HYPER_ZECTER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> GATACK_HYPER_ZECTER_CLOCK_UP = ITEMS.register("gatack_hyper_zecter_clock_up",
             () -> new RiderFormChangeItem(new Item.Properties(), "_hyper_clock_up", "gatack", "gatack_rider_belt_hyper",
@@ -451,7 +452,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.isGlowing().changeModel("gatack_hyper.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem) GATACK_HYPER_ZECTER.get()).has_basic_model().model_has_different_name("hyper_zecter"));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().changeModel("gatack_hyper.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem) GATACK_HYPER_ZECTER.get()).has_basic_model().model_has_different_name("hyper_zecter"));
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
@@ -468,7 +469,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 500, 0, 0, 0, 1);
                 }
-            }.hasFlyingWings("kabuto_hyper_clock_up.geo.json").isGlowing().hasTimeout(400, 1200, (RiderFormChangeItem) HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).has_basic_model().model_has_different_name("hyper_zecter"));
+            }.setSlotOneAbility("clock_up", 1).hasFlyingWings("kabuto_hyper_clock_up.geo.json").isGlowing().hasTimeout(400, 1200, (RiderFormChangeItem) HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).has_basic_model().model_has_different_name("hyper_zecter"));
 
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
@@ -536,7 +537,7 @@ public class KabutoRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chophopper", CHOPHOPPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()).has_basic_model());
 
     public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_KUNAI = ITEMS.register("kabuto_kunai",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM)

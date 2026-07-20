@@ -529,15 +529,14 @@ public class GeatsRiderItems {
 
 	public static final DeferredItem<Item> SHARK_RAISE_BUCKLE = ITEMS.register("shark_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shark","geats","desire_driver_belt_geats",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.FISH, 40, 4,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setSlotOneAbility("fish", 1).changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MAGNUM_RAISE_BUCKLE_FEVER = ITEMS.register("magnum_raise_buckle_fever",

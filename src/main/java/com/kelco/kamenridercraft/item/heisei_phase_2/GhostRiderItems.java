@@ -1419,7 +1419,7 @@ public class GhostRiderItems {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM).changeRepairItem(BLANK_GHOST_EYECON.get()));
 
 	public static final DeferredItem<Item> SUNGLASSESLASHER = ITEMS.register("sunglasseslasher_sword",
-			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), 12F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SWORD_GUN).setRepairItem(BLANK_GHOST_EYECON.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), 13F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SWORD_GUN).setRepairItem(BLANK_GHOST_EYECON.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAN_GUN_HAND_ROD = ITEMS.register("gan_gun_hand_rod",
 			() -> new NeoBaseBlasterItem(new Item.Properties(), 6F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SWORD_GUN).setRepairItem(BLANK_GHOST_EYECON.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
