@@ -151,7 +151,6 @@ public class AbilityUtil {
             }
             if (belt != null) {
                 var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
-                System.out.println("checking");
                 switch (abilitySlot) {
                     case 1:
                         if (beltCheck.numBaseFormItems != 1) {

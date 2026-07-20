@@ -120,7 +120,6 @@ public class MiscAbilities {
             pearl.setPos(pearl.getX(), player.getY(0.5D) + 0.5D, pearl.getZ());
             pearl.addDeltaMovement(player.getLookAngle().scale(3));
             player.level().addFreshEntity(pearl);
-            System.out.println("thrown");
             AbilityUtil.cancelAbility(user, "", 0);
         }
 

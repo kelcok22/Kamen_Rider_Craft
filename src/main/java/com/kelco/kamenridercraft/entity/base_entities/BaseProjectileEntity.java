@@ -113,10 +113,8 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
                     serverLevel.sendParticles(ParticleTypes.WHITE_SMOKE, getX(), getY(), getZ(), 10, 0, 0, 0, 0.05);
                     break;
                 case "effect_ball":
-                    System.out.println(texture);
                     if (texture.equalsIgnoreCase("lightning_ball")) {
                         serverLevel.sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(), getX(), getY(), getZ(), 5, 0, 0, 0, 0);
-
                     } else if (texture.equalsIgnoreCase("fire_ball")) {
                         serverLevel.sendParticles(ParticleTypes.SMALL_FLAME, getX(), getY(), getZ(), 10, 0, 0, 0, 0.05);
                     }

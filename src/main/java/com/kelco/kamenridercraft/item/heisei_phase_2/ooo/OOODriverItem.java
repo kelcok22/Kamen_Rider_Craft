@@ -65,7 +65,8 @@ public class OOODriverItem extends RiderDriverItem {
             case "ancient_taka_medal greeed_absorption_core ancient_batta_medal" -> "ancient_tatoba_greed";
             case "kuwagata_medal kamakiri_medal batta_medal" -> "gatakiriba";
             case "lion_medal tora_medal cheetah_medal" -> "latorartar";
-            case "taka_medal kujaku_medal condor_medal", "blokees_taka_medal blokees_kujaku_medal blokees_condor_medal" -> "tajadol";
+            case "taka_medal kujaku_medal condor_medal" -> "tajadol";
+            case "blokees_taka_medal blokees_kujaku_medal blokees_condor_medal" -> "blokees_tajadol";
             case "taka_ankh_medal kujaku_medal condor_medal" -> "tajadol_fe";
             case "taka_eternity_medal kujaku_eternity_medal condor_eternity_medal" -> "tajadol_eternity";
             case "shachi_medal unagi_medal tako_medal" -> "shauta";
@@ -104,7 +105,8 @@ public class OOODriverItem extends RiderDriverItem {
         boolean fly = Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1;
         double henshinTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
         String combo = getCombo(getFormItem(itemstack, 1, henshinTick), getFormItem(itemstack, 2, henshinTick), getFormItem(itemstack, 3, henshinTick));
-        if (equipmentSlot!=EquipmentSlot.FEET&getFormItem(itemstack, 1, Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue())== ModdedItemCore.BLANK_FORM.asItem())return "blank";
+        if (equipmentSlot != EquipmentSlot.FEET & getFormItem(itemstack, 1, Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue()) == ModdedItemCore.BLANK_FORM.asItem())
+            return "blank";
         switch (equipmentSlot) {
             case EquipmentSlot.FEET:
                 if (((RiderDriverItem) itemstack.getItem()).beltText == null || !((RiderDriverItem) itemstack.getItem()).beltText.isEmpty()) {
@@ -112,7 +114,7 @@ public class OOODriverItem extends RiderDriverItem {
                 }
                 break;
             case EquipmentSlot.HEAD:
-                if (combo.contains("tajadol")&getFormItem(itemstack, 1, henshinTick)==OOORiderItems.TAKA_MEDAL.asItem()) {
+                if (combo.contains("tajadol") & getFormItem(itemstack, 1, henshinTick) == OOORiderItems.TAKA_MEDAL.asItem()) {
                     return riderName + "_taka_tajado";
                 } else if (rider.getMainHandItem().getItem() == OOORiderItems.MEDAGABURYU.get() & combo.equals("tatoba")) {
                     return riderName + "_taka_purple";
@@ -164,11 +166,9 @@ public class OOODriverItem extends RiderDriverItem {
 
         if (slot == EquipmentSlot.HEAD & (getFormItem(itemstack, 1, henshinTick).getFormName(false).equals("_taka")
                 & getFormItem(itemstack, 2, henshinTick).getFormName(false).equals("_kujaku")
-                & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_condor")) || (getFormItem(itemstack, 1, henshinTick).getFormName(false).equals("_blokees_taka")
-                & getFormItem(itemstack, 2, henshinTick).getFormName(false).equals("_blokees_kujaku")
-                & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_blokees_condor")))
+                & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_condor")) || (getFormItem(itemstack, 1, henshinTick).getFormName(false).contains("_blokees"))) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/ooo_taka_tajado.geo.json");
-
+        }
         if (getFormItem(itemstack, num, henshinTick).hasWingsIfFlying() && Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num, henshinTick).getFlyingModel(this.riderName));
         } else
