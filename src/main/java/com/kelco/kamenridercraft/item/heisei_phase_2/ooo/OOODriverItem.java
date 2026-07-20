@@ -18,6 +18,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
 
 public class OOODriverItem extends RiderDriverItem {
 
@@ -64,7 +65,7 @@ public class OOODriverItem extends RiderDriverItem {
             case "ancient_taka_medal greeed_absorption_core ancient_batta_medal" -> "ancient_tatoba_greed";
             case "kuwagata_medal kamakiri_medal batta_medal" -> "gatakiriba";
             case "lion_medal tora_medal cheetah_medal" -> "latorartar";
-            case "taka_medal kujaku_medal condor_medal" -> "tajadol";
+            case "taka_medal kujaku_medal condor_medal", "blokees_taka_medal blokees_kujaku_medal blokees_condor_medal" -> "tajadol";
             case "taka_ankh_medal kujaku_medal condor_medal" -> "tajadol_fe";
             case "taka_eternity_medal kujaku_eternity_medal condor_eternity_medal" -> "tajadol_eternity";
             case "shachi_medal unagi_medal tako_medal" -> "shauta";
@@ -100,10 +101,10 @@ public class OOODriverItem extends RiderDriverItem {
 
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
-        double henshinTick = rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
+        boolean fly = Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1;
+        double henshinTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
         String combo = getCombo(getFormItem(itemstack, 1, henshinTick), getFormItem(itemstack, 2, henshinTick), getFormItem(itemstack, 3, henshinTick));
-        if (equipmentSlot!=EquipmentSlot.FEET&getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())== ModdedItemCore.BLANK_FORM.asItem())return "blank";
+        if (equipmentSlot!=EquipmentSlot.FEET&getFormItem(itemstack, 1, Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue())== ModdedItemCore.BLANK_FORM.asItem())return "blank";
         switch (equipmentSlot) {
             case EquipmentSlot.FEET:
                 if (((RiderDriverItem) itemstack.getItem()).beltText == null || !((RiderDriverItem) itemstack.getItem()).beltText.isEmpty()) {
@@ -134,7 +135,7 @@ public class OOODriverItem extends RiderDriverItem {
     }
 
     public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
-        double henshinTick = livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
+        double henshinTick = Objects.requireNonNull(livingEntity.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
         if (currentSlot == EquipmentSlot.FEET) {
             return getFormItem(itemstack, 1, henshinTick).getIsBeltGlowing();
         }
@@ -153,7 +154,7 @@ public class OOODriverItem extends RiderDriverItem {
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         int num = 1;
-        double henshinTick = rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
+        double henshinTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
 
         if (slot == EquipmentSlot.CHEST) {
             num = 2;
@@ -166,7 +167,7 @@ public class OOODriverItem extends RiderDriverItem {
                 & getFormItem(itemstack, 3, henshinTick).getFormName(false).equals("_condor"))
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/ooo_taka_tajado.geo.json");
 
-        if (getFormItem(itemstack, num, henshinTick).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+        if (getFormItem(itemstack, num, henshinTick).hasWingsIfFlying() && Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num, henshinTick).getFlyingModel(this.riderName));
         } else
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, num, henshinTick).getModel(this.riderName));
