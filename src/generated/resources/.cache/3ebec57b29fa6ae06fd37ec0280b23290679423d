@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-12T19:49:02.0770601	Item Models: kamenridercraft
+// 1.21.1	2026-07-20T12:11:43.098228	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -135,6 +135,7 @@ b8f319581ac8e7c125b13d0eceb2f9067f5ed23a assets/kamenridercraft/models/item/clea
 edf5bb8933373ba3aae76b6fe8dab70cc3e35e47 assets/kamenridercraft/models/item/clear_vent.json
 a378d0bb30b37b4ad33c3c9ae236d872d89873a2 assets/kamenridercraft/models/item/cobra_vistamp_lovekov.json
 17eaeb2c7f47828705a485219626e45b74ac3fff assets/kamenridercraft/models/item/code_capsem.json
+7408c2e40f37dddb0a82945f7d3353c5cab2009b assets/kamenridercraft/models/item/code_capsem_seventeen.json
 4d1baac3e16004959a3c5fe100c44e268ffb4ba7 assets/kamenridercraft/models/item/coffee.json
 78198f20d9d7b7aab8c7d82954077ba2f82427d7 assets/kamenridercraft/models/item/colorful_commercial.json
 951df5ff79070cbce8122dda8ef9684754994874 assets/kamenridercraft/models/item/corn_snack.json
@@ -212,6 +213,7 @@ d7980eee4186c04607c7bbedf7c44cfb15d059bd assets/kamenridercraft/models/item/eter
 b1f2db05f3dde80bb56b7108e7ce45b34f9c9e58 assets/kamenridercraft/models/item/evol_trigger_kaijin.json
 3857ec454154ff3b1f3ec7679ff3d4e532259d1b assets/kamenridercraft/models/item/evol_x_full_bottle.json
 59c1ca0b3493b1fe88211eed23baf15f01ba4f70 assets/kamenridercraft/models/item/exdreamrise_capsem.json
+a6e0738ca8ce8acecbe382d154c77ea2973efde4 assets/kamenridercraft/models/item/exdreamrise_capsem_dawn.json
 87cd3c4f65090b1679873d35aa4c78c9d99187fc assets/kamenridercraft/models/item/extra_capsem.json
 793ee052b2e77a04f05fcc13f66d0563398573eb assets/kamenridercraft/models/item/ex_aid_capsem.json
 26658d18be3506f769879eb838bc3370a2f7472b assets/kamenridercraft/models/item/ex_aid_full_bottle.json
@@ -457,7 +459,9 @@ df3cab92f918c11d717031b7abce4b2ddcf02cd5 assets/kamenridercraft/models/item/lang
 c1a9772272e509ab06aff9def156d2bd5f2407b5 assets/kamenridercraft/models/item/lord_baron.json
 6f2eb8f98d10eb2a3f4770964a11176bdea26bc5 assets/kamenridercraft/models/item/lord_booster_capsem.json
 55a534df216578fcc8bb7c8bbb1d59a335eb443b assets/kamenridercraft/models/item/lord_invoker_five.json
+c27f46e2a544c97bab6dd9383af799f7c3fbcf68 assets/kamenridercraft/models/item/lord_invoker_seventeen.json
 035ee8b07b4cb34a15b669c2e742caaf7361d495 assets/kamenridercraft/models/item/lord_invoker_six.json
+6e5b11406550abb8fb956c392339bc0001b14f63 assets/kamenridercraft/models/item/lord_invoker_thirteen.json
 c5a9c7f13483aebdda7205db87b6453ca03d0bab assets/kamenridercraft/models/item/lord_invoker_three.json
 0394f6bbfd94c70a04bd1cd1bf29b55070291d23 assets/kamenridercraft/models/item/lovekov_belt.json
 a378d0bb30b37b4ad33c3c9ae236d872d89873a2 assets/kamenridercraft/models/item/lovekov_snake_woman.json

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/lord_invoker_seventeen"
+    "layer0": "kamenridercraft:item/code_capsem_seventeen"
   }
 }
