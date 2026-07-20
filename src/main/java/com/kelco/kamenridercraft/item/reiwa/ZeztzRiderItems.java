@@ -653,7 +653,30 @@ public class ZeztzRiderItems {
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CLEAR_CAPSEM = ITEMS.register("clear_capsem",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_three","lord_invoker_three_belt_clear",
+                    new MobEffectInstance(EffectCore.STEALTH, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "lord_three.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }}
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_BOOSTER_CAPSEM = ITEMS.register("lord_booster_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_booster","lord_three","lord_invoker_three_belt_booster",
