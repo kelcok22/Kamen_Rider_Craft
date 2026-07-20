@@ -456,7 +456,6 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.CANNON, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -464,7 +463,7 @@ public class OOORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }
-            }.addToList(SPECIAL_NAME_MEDALS));
+            }.setSlotOneAbility("canon", 1).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_NEW_MEDAL = ITEMS.register("kani_new_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kani","ooo","ooodriver_belt",

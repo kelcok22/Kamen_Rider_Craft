@@ -154,8 +154,7 @@ public class GotchardRiderItems {
 
 	public static final DeferredItem<Item> GENGENCHOUCHO_RIDE_CHEMY_CARD = ITEMS.register("gengenchoucho_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),"_bullet_choucho","gotchard","gotchardriver_belt",
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.GATLING, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -168,7 +167,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_BulletChoucho).addToList(NEED_ITEM_BulletChoucho)
+			}.setSlotOneAbility("gatling", 1).isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_BulletChoucho).addToList(NEED_ITEM_BulletChoucho)
 					.addToList(ChemyRiserItem.insectChemy).addToList(ChemyRiserItem.allChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> BAKUONZEMI_RIDE_CHEMY_CARD = ITEMS.register("bakuonzemi_ride_chemy_card",
@@ -324,8 +323,7 @@ public class GotchardRiderItems {
 
 	public static final DeferredItem<Item> PILETS_RIDE_CHEMY_CARD = ITEMS.register("pilets_ride_chemy_card",
 			() -> new RideChemyCardItem(new Item.Properties(),"_mad_pilets","gotchard","gotchardriver_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-					new MobEffectInstance(EffectCore.CANNON,40,1,true,false)){
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -338,7 +336,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_MadPilets).addToList(NEED_ITEM_MadPilets).addToList(ChemyRiserItem.jobChemy)
+			}.setSlotOneAbility("canon", 1).isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_MadPilets).addToList(NEED_ITEM_MadPilets).addToList(ChemyRiserItem.jobChemy)
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).addToList(ChemyRiserItem.allChemy).has_basic_model());
 
 	public static final DeferredItem<Item> WRESTLER_G_RIDE_CHEMY_CARD = ITEMS.register("wrestler_g_ride_chemy_card",
@@ -615,8 +613,7 @@ public class GotchardRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
-					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.CANNON, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -629,7 +626,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
+			}.setSlotOneAbility("canon", 1).isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_BatKingRobo).addToList(NEED_ITEM_BatKingRobo)
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).addToList(ChemyRiserItem.allChemy).addToList(ChemyRiserItem.animalChemy).has_basic_model());
 

@@ -76,9 +76,8 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.GATLING, 40, 0,true,false))
-			.changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").IsBeltGlowing().isGlowing());
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.setSlotOneAbility("gatling", 1).changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").IsBeltGlowing().isGlowing());
 
 	public static final DeferredItem<Item> FAIZ_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_blaster","faiz","faiz_driver_belt_b",
@@ -104,9 +103,8 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-					new MobEffectInstance(EffectCore.GATLING, 40, 0,true,false))
-			.changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing());
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
+					.setSlotOneAbility("gatling", 1).changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing());
 
 	public static final DeferredItem<Item> FAIZ_GOLD_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_gold_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_gold_blaster","faiz","faiz_driver_belt_g_b",
@@ -172,8 +170,7 @@ public class FaizRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 3,true,false),
-                    new MobEffectInstance(EffectCore.CANNON, 40, 3,true,false)){
+                    new MobEffectInstance(EffectCore.BOOST, 40, 3,true,false)){
                 public void transformationEffect(ItemStack itemStack, LivingEntity player) {
                     super.transformationEffect(itemStack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -183,7 +180,7 @@ public class FaizRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            });
+            }.setSlotOneAbility("canon", 1));
 
     public static final DeferredItem<Item> FLYING_ATTACKER = ITEMS.register("flying_attacker",
             () -> new RiderFormChangeItem(new Item.Properties(),"_flying_attacker","psyga","psyga_driver_belt",
@@ -191,7 +188,6 @@ public class FaizRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 3,true,false),
-                    new MobEffectInstance(EffectCore.CANNON, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
                 public void transformationEffect(ItemStack itemStack, LivingEntity player) {
                     super.transformationEffect(itemStack, player);
@@ -199,7 +195,7 @@ public class FaizRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addAlternative(FLYING_ATTACKER_RIOTROOPER.get()).changeBeltModel("geo/belts/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+            }.setSlotOneAbility("canon", 1).addAlternative(FLYING_ATTACKER_RIOTROOPER.get()).changeBeltModel("geo/belts/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORGA_MISSION_MEMORY = ITEMS.register("orga_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","orga","orga_driver_belt",

@@ -411,7 +411,6 @@ public class GavvRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_bakucan","gavv","henshin_belt_gavv_belt_bakucan",
 					new MobEffectInstance(EffectCore.BIG, 40, 0,true,false)
 					,new MobEffectInstance(EffectCore.GRAVITY, 40, 0,true,false)
-					,new MobEffectInstance(EffectCore.CANNON, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -429,7 +428,7 @@ public class GavvRiderItems {
 							player.getX(), player.getY() + 2,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(CANDY,3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+			}.setSlotOneAbility("canon", 1).isGlowing().addToList(CANDY,3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PARTEA_GOCHIZO = ITEMS.register("partea_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_partea","gavv","henshin_belt_gavv_belt_partea",

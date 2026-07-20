@@ -216,8 +216,7 @@ public class DriveRiderItems {
                     , new MobEffectInstance(MobEffects.REGENERATION, 40, 4, true, false)
                     , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.SATURATION, 40, 4, true, false)
-                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)
-                    , new MobEffectInstance(EffectCore.CANNON, 40, 0, true, false)) {
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     AnimationUtil.playPose(player, "drive.henshin_pose");
@@ -225,7 +224,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addAlternative(BASIC_TIRE.get()).addIncompatibleForm(SHIFT_FORMULA.asItem()).changeSlot(2)
+            }.setSlotOneAbility("canon", 1).addAlternative(BASIC_TIRE.get()).addIncompatibleForm(SHIFT_FORMULA.asItem()).changeSlot(2)
                     .model_has_different_name("tridoronshift").has_basic_model());
 
     public static final DeferredItem<Item> SHIFT_TRIDORON_NOT_ALL = ITEMS.register("tridoronshift_not_all",
@@ -364,8 +363,7 @@ public class DriveRiderItems {
 
     public static final DeferredItem<Item> ATTACK_123 = ITEMS.register("attack123_tire",
             () -> new RiderFormChangeItem(new Item.Properties(), "attack123_tire", "drive", "drivedriver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
-                    , new MobEffectInstance(EffectCore.CANNON, 40, 0, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     AnimationUtil.playPose(player, "drive.henshin_pose");
@@ -379,7 +377,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(), 1).addNeedItemList(NEED_ITEM_ATTACK_123)
+            }.setSlotOneAbility("canon", 1).addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(), 1).addNeedItemList(NEED_ITEM_ATTACK_123)
                     .changeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
     public static List<Item> NEED_ITEM_PEOPLE_SAVER = new ArrayList<>();
@@ -460,8 +458,7 @@ public class DriveRiderItems {
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_MIDNIGHT_SHADOW = ITEMS.register("midnightshadow",
-            () -> new RiderFormChangeItem(new Item.Properties(), "midnight_shadow_tire", "drive", "drivedriver_belt",
-                    new MobEffectInstance(EffectCore.CANNON, 40, 0, true, false)) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "midnight_shadow_tire", "drive", "drivedriver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     AnimationUtil.playPose(player, "drive.henshin_pose");
@@ -469,7 +466,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+            }.setSlotOneAbility("canon", 1).addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(ATTACK_123.get()).changeSlot(2).addToList(NEED_ITEM_ATTACK_123).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 

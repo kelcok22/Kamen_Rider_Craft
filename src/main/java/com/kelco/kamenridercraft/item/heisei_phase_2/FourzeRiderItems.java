@@ -97,8 +97,7 @@ public class FourzeRiderItems {
 	public static final DeferredItem<Item> FOURZE_MAGNET_STATES = ITEMS.register("fourze_magnetstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_magnet","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)
-					,new MobEffectInstance(EffectCore.CANNON, 40, 2,true,false)){
+					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -109,7 +108,7 @@ public class FourzeRiderItems {
 							player.getZ(), 50, 0, 0, 0, 0.1);
 
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.setSlotOneAbility("canon", 1).changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cosmic","fourze","fourze_driver_belt",
@@ -249,9 +248,8 @@ public class FourzeRiderItems {
 					.addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
 	public static final DeferredItem<Item> LAUNCHER_ASTROSWITCH = ITEMS.register("launcher_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),"_launcher_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(EffectCore.CANNON, 40, 0,true,false))
-					.changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
+			() -> new RiderFormChangeItem(new Item.Properties(),"_launcher_module","fourze","fourze_driver_belt")
+					.setSlotTwoAbility("canon", 1).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
 	public static final DeferredItem<Item> DRILL_ASTROSWITCH = ITEMS.register("drill_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_drill_module","fourze","fourze_driver_belt",
@@ -334,9 +332,8 @@ public class FourzeRiderItems {
 					.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> GATLING_ASTROSWITCH = ITEMS.register("gatling_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),"_gatling_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(EffectCore.GATLING, 40, 0,true,false))
-					.changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
+			() -> new RiderFormChangeItem(new Item.Properties(),"_gatling_module","fourze","fourze_driver_belt")
+					.setSlotOneAbility("gatling", 1).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
 	public static final DeferredItem<Item> FIRE_ASTROSWITCH = ITEMS.register("fire_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fire_module","fourze","fourze_driver_belt",
@@ -449,9 +446,8 @@ public class FourzeRiderItems {
 					.changeSlot(4).alsoChange5thSlot(FOURZE_ROCKET_STATES.get()).alsoChange1stSlot(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_LAUNCHER_ASTROSWITCH = ITEMS.register("super_launcher_switch",
-			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_super_launcher_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(EffectCore.CANNON, 40, 6,true,false))
-					.changeSlot(2).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_super_launcher_module","fourze","fourze_driver_belt")
+					.setSlotTwoAbility("canon", 1).changeSlot(2).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_DRILL_ASTROSWITCH = ITEMS.register("super_drill_switch",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
@@ -614,9 +610,8 @@ public class FourzeRiderItems {
 					.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZX_ASTROSWITCH = ITEMS.register("zx_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),"_zx_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(EffectCore.CANNON, 40, 3,true,false))
-					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(),"_zx_module","fourze","fourze_driver_belt")
+					.setSlotOneAbility("canon", 1).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_ASTROSWITCH = ITEMS.register("black_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_black_module","fourze","fourze_driver_belt",
@@ -684,9 +679,8 @@ public class FourzeRiderItems {
 					.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_ASTROSWITCH = ITEMS.register("ooo_switch",
-			() -> new RiderFormChangeItem(new Item.Properties(),"_ooo_module","fourze","fourze_driver_belt",
-					new MobEffectInstance(EffectCore.CANNON, 40, 1,true,false))
-					.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(),"_ooo_module","fourze","fourze_driver_belt")
+					.setSlotOneAbility("canon", 1).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIN_CHAN_ASTROSWITCH = ITEMS.register("shin_chan_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shin_chan","fourze","fourze_driver_belt",

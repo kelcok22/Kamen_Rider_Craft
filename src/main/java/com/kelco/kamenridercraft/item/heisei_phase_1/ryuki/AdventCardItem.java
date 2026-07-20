@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_1.ryuki;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.effects.EffectCore;
+import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
@@ -33,6 +34,7 @@ public class AdventCardItem extends BaseItem {
     private ArrayList<Item> weapons;
     public String special;
     public Item visor;
+    private static String[] effects;
 
     public AdventCardItem(Properties properties, String rider, Item visor, Item... weapons) {
         super(properties);
@@ -138,7 +140,12 @@ public class AdventCardItem extends BaseItem {
                             player.addEffect(new MobEffectInstance(EffectCore.FIRE_ARMOR, 200, 2, true, true));
                             break;
                         case "meteorbullet_vent":
-                            player.addEffect(new MobEffectInstance(EffectCore.CANNON, 200, 2, true, true));
+                            BaseProjectileEntity baseProjectile = new BaseProjectileEntity(player.level(), player, "rocket", 8, 2, effects);
+                            baseProjectile.setTexture("rocket");
+                            baseProjectile.setModel("rocket");
+                            baseProjectile.setGlowing(false);
+                            baseProjectile.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2f, 1F);
+                            player.level().addFreshEntity(baseProjectile);
                             break;
                         case "nasty_vent":
                             for (LivingEntity enemy : nearbyEnemies) {

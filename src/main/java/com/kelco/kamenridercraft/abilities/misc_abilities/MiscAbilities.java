@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.abilities.misc_abilities;
 
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
+import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -18,6 +19,8 @@ import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOL
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
 
 public class MiscAbilities {
+    private static String[] effects;
+
     public static void flightBoost(LivingEntity user) {
         if (!user.level().isClientSide()) {
             user.setData(ABILITY_COOLDOWN, 75);
@@ -49,6 +52,40 @@ public class MiscAbilities {
                 AbilityUtil.cancelAbility(user, "", 0);
             }
             user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+        }
+    }
+
+    public static void gatling(LivingEntity user) {
+        if (!user.level().isClientSide()) {
+            user.setData(ABILITY_COOLDOWN, 150);
+            if (user.getData(ABILITY_TICK) <= 50) {
+                BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, "laser", 8, 0, effects);
+                baseProjectile.setTexture("yellow_laser");
+                baseProjectile.setModel("short_laser");
+                baseProjectile.setGlowing(true);
+                baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 3F);
+                user.level().addFreshEntity(baseProjectile);
+            }
+            if (user.getData(ABILITY_TICK) >= 50) {
+                AbilityUtil.cancelAbility(user, "", 0);
+                return;
+            }
+            user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+        }
+    }
+
+    public static void canon(LivingEntity user) {
+        if (!user.level().isClientSide()) {
+            user.setData(ABILITY_COOLDOWN, 150);
+            if (user.getData(ABILITY_TICK) == 0) {
+                BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, "rocket", 8, 2, effects);
+                baseProjectile.setTexture("rocket");
+                baseProjectile.setModel("rocket");
+                baseProjectile.setGlowing(false);
+                baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F);
+                user.level().addFreshEntity(baseProjectile);
+            }
+            AbilityUtil.cancelAbility(user, "", 0);
         }
     }
 
@@ -99,7 +136,7 @@ public class MiscAbilities {
         if (!user.level().isClientSide()) {
             user.setData(ABILITY_COOLDOWN, 10);
             if (user.getData(ABILITY_TICK) == 0) {
-                if (user.hasEffect(EffectCore.SMALL) && Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() < 9) {
+                if (user.hasEffect(EffectCore.SMALL) && Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() < 6) {
                     user.addEffect(new MobEffectInstance(EffectCore.SMALL, 300, Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() + 1, true, false));
                 } else if (user.hasEffect(EffectCore.BIG)) {
                     if (Objects.requireNonNull(user.getEffect(EffectCore.BIG)).getAmplifier() > 0) {

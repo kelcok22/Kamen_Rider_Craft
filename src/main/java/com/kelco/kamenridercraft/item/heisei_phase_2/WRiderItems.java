@@ -672,7 +672,6 @@ public class WRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","terror_dopant","gaia_driver_belt_terror",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.CANNON, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -680,13 +679,12 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.setSlotOneAbility("canon", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> TABOO_MEMORY = ITEMS.register("taboo_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","terror_dopant","gaia_driver_belt_taboo",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.CANNON, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -694,7 +692,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.setSlotOneAbility("canon", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> CLAYDOLL_MEMORY = ITEMS.register("claydoll_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","claydoll_dopant","gaia_driver_belt_taboo",

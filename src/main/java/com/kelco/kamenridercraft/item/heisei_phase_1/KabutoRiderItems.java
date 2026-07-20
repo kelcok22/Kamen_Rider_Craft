@@ -166,7 +166,6 @@ public class KabutoRiderItems {
     public static final DeferredItem<Item> GATACK_ZECTER_MASK = ITEMS.register("gatack_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "gatack", "gatack_rider_belt_m",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
-                    new MobEffectInstance(EffectCore.CANNON, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -177,7 +176,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.isGlowing());
+            }.setSlotOneAbility("canon", 1).isGlowing());
 
     public static final DeferredItem<Item> GATACK_ZECTER = ITEMS.register("gatack_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gatack", "gatack_rider_belt",
