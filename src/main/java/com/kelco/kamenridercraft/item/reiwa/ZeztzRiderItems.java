@@ -69,7 +69,7 @@ public class ZeztzRiderItems {
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model());
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("code_capsem"));
 
 
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
@@ -460,7 +460,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().has_basic_model());
+            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().has_basic_model().model_has_different_name("exdreamrise_capsem"));
 
     public static final DeferredItem<Item> EXDREAMRISE_CAPSEM = ITEMS.register("exdreamrise_capsem",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","zeztz_exdream","zeztz_exdream_driver_belt",
@@ -962,11 +962,11 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> LORD_INVOKER_SEVENTEEN = ITEMS.register("lord_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_seventeen", CODE_CAPSEM_SEVENTEEN,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THIRTEEN = ITEMS.register("lord_invoker_thirteen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_thirteen", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
