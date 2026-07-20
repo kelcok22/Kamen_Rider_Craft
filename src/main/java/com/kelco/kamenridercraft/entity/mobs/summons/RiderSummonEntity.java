@@ -83,5 +83,4 @@ public class RiderSummonEntity extends BaseSummonEntity {
       if (player instanceof ServerPlayer serverplayer) CriteriaTriggers.SUMMONED_ENTITY.trigger(serverplayer, this);
       super.bindToPlayer(player);
     }
-
 }
