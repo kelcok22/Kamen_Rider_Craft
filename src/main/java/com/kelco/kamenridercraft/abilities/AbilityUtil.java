@@ -70,7 +70,7 @@ public class AbilityUtil {
                         user.setData(USED_ABILITY, "flight_boost");
                     }
                     break;
-                case "clock_up", "grow", "shrink", "gatling", "canon":
+                case "clock_up", "grow", "shrink", "gatling", "cannon":
                     if (costMeter && abilityMeter.getValue() >= 100) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
                         user.setData(USED_ABILITY, ability);
@@ -136,8 +136,8 @@ public class AbilityUtil {
                 case "gatling":
                     MiscAbilities.gatling(user);
                     break;
-                case "canon":
-                    MiscAbilities.canon(user);
+                case "cannon":
+                    MiscAbilities.cannon(user);
                     break;
             }
         }

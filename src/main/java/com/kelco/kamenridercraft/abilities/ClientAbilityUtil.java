@@ -80,7 +80,7 @@ public class ClientAbilityUtil {
             case "wonder_grow", "grow" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/big.png");
             case "wonder_shrink" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/small.png");
             case "gatling" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/gatling.png");
-            case "canon" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/canon.png");
+            case "cannon" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/cannon.png");
             default -> null;
         };
     }

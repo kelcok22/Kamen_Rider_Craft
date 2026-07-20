@@ -463,7 +463,7 @@ public class OOORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }
-            }.setSlotOneAbility("canon", 1).addToList(SPECIAL_NAME_MEDALS));
+            }.setSlotOneAbility("cannon", 1).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> KANI_NEW_MEDAL = ITEMS.register("kani_new_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kani","ooo","ooodriver_belt",

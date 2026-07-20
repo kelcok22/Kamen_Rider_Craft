@@ -176,7 +176,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("canon", 1).isGlowing());
+            }.setSlotOneAbility("cannon", 1).isGlowing());
 
     public static final DeferredItem<Item> GATACK_ZECTER = ITEMS.register("gatack_zecter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gatack", "gatack_rider_belt",

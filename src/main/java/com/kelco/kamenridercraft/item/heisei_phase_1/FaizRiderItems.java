@@ -180,7 +180,7 @@ public class FaizRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("canon", 1));
+            }.setSlotOneAbility("cannon", 1));
 
     public static final DeferredItem<Item> FLYING_ATTACKER = ITEMS.register("flying_attacker",
             () -> new RiderFormChangeItem(new Item.Properties(),"_flying_attacker","psyga","psyga_driver_belt",
@@ -195,7 +195,7 @@ public class FaizRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("canon", 1).addAlternative(FLYING_ATTACKER_RIOTROOPER.get()).changeBeltModel("geo/belts/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+            }.setSlotOneAbility("cannon", 1).addAlternative(FLYING_ATTACKER_RIOTROOPER.get()).changeBeltModel("geo/belts/psyga_belt.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORGA_MISSION_MEMORY = ITEMS.register("orga_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","orga","orga_driver_belt",

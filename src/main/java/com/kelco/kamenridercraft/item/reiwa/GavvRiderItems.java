@@ -428,7 +428,7 @@ public class GavvRiderItems {
 							player.getX(), player.getY() + 2,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("canon", 1).isGlowing().addToList(CANDY,3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+			}.setSlotOneAbility("cannon", 1).isGlowing().addToList(CANDY,3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> PARTEA_GOCHIZO = ITEMS.register("partea_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_partea","gavv","henshin_belt_gavv_belt_partea",

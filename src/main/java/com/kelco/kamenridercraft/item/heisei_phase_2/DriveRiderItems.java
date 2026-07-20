@@ -224,7 +224,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("canon", 1).addAlternative(BASIC_TIRE.get()).addIncompatibleForm(SHIFT_FORMULA.asItem()).changeSlot(2)
+            }.setSlotOneAbility("cannon", 1).addAlternative(BASIC_TIRE.get()).addIncompatibleForm(SHIFT_FORMULA.asItem()).changeSlot(2)
                     .model_has_different_name("tridoronshift").has_basic_model());
 
     public static final DeferredItem<Item> SHIFT_TRIDORON_NOT_ALL = ITEMS.register("tridoronshift_not_all",
@@ -377,7 +377,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("canon", 1).addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(), 1).addNeedItemList(NEED_ITEM_ATTACK_123)
+            }.setSlotOneAbility("cannon", 1).addNeedForm(SHIFT_TRIDORON_NOT_ALL.get(), 1).addNeedItemList(NEED_ITEM_ATTACK_123)
                     .changeSlot(2).model_has_different_name("tridoronshift").has_basic_model());
 
     public static List<Item> NEED_ITEM_PEOPLE_SAVER = new ArrayList<>();
@@ -466,7 +466,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("canon", 1).addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+            }.setSlotOneAbility("cannon", 1).addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(ATTACK_123.get()).changeSlot(2).addToList(NEED_ITEM_ATTACK_123).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 

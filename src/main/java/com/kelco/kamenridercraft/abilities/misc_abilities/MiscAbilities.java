@@ -74,17 +74,15 @@ public class MiscAbilities {
         }
     }
 
-    public static void canon(LivingEntity user) {
+    public static void cannon(LivingEntity user) {
         if (!user.level().isClientSide()) {
             user.setData(ABILITY_COOLDOWN, 150);
-            if (user.getData(ABILITY_TICK) == 0) {
-                BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, "rocket", 8, 2, effects);
-                baseProjectile.setTexture("rocket");
-                baseProjectile.setModel("rocket");
-                baseProjectile.setGlowing(false);
-                baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F);
-                user.level().addFreshEntity(baseProjectile);
-            }
+            BaseProjectileEntity baseProjectile = new BaseProjectileEntity(user.level(), user, "rocket", 8, 2, effects);
+            baseProjectile.setTexture("rocket");
+            baseProjectile.setModel("rocket");
+            baseProjectile.setGlowing(false);
+            baseProjectile.shootFromRotation(user, user.getXRot(), user.getYRot(), 0.0F, 2f, 1F);
+            user.level().addFreshEntity(baseProjectile);
             AbilityUtil.cancelAbility(user, "", 0);
         }
     }

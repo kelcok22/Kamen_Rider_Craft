@@ -679,7 +679,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.setSlotOneAbility("canon", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.setSlotOneAbility("cannon", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> TABOO_MEMORY = ITEMS.register("taboo_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","terror_dopant","gaia_driver_belt_taboo",
@@ -692,7 +692,7 @@ public class WRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.setSlotOneAbility("canon", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			}.setSlotOneAbility("cannon", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> CLAYDOLL_MEMORY = ITEMS.register("claydoll_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","claydoll_dopant","gaia_driver_belt_taboo",

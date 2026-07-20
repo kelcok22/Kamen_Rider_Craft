@@ -336,7 +336,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("canon", 1).isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_MadPilets).addToList(NEED_ITEM_MadPilets).addToList(ChemyRiserItem.jobChemy)
+			}.setSlotOneAbility("cannon", 1).isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_MadPilets).addToList(NEED_ITEM_MadPilets).addToList(ChemyRiserItem.jobChemy)
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).addToList(ChemyRiserItem.allChemy).has_basic_model());
 
 	public static final DeferredItem<Item> WRESTLER_G_RIDE_CHEMY_CARD = ITEMS.register("wrestler_g_ride_chemy_card",
@@ -626,7 +626,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("canon", 1).isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
+			}.setSlotOneAbility("cannon", 1).isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_BatKingRobo).addToList(NEED_ITEM_BatKingRobo)
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).addToList(ChemyRiserItem.allChemy).addToList(ChemyRiserItem.animalChemy).has_basic_model());
 
