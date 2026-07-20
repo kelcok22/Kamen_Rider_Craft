@@ -70,9 +70,17 @@ public class AbilityUtil {
                         user.setData(USED_ABILITY, "flight_boost");
                     }
                     break;
-                case "clock_up", "grow":
+                case "clock_up", "grow", "shrink":
                     if (costMeter && abilityMeter.getValue() >= 100) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
+                        user.setData(USED_ABILITY, ability);
+                    } else if (!costMeter) {
+                        user.setData(USED_ABILITY, ability);
+                    }
+                    break;
+                case "wonder_grow", "wonder_shrink":
+                    if (costMeter && abilityMeter.getValue() >= 30) {
+                        abilityMeter.setBaseValue(abilityMeter.getValue() - 30);
                         user.setData(USED_ABILITY, ability);
                     } else if (!costMeter) {
                         user.setData(USED_ABILITY, ability);
@@ -115,6 +123,12 @@ public class AbilityUtil {
                     break;
                 case "grow":
                     MiscAbilities.grow(user);
+                    break;
+                case "wonder_grow":
+                    MiscAbilities.wonderGrow(user);
+                    break;
+                case "wonder_shrink":
+                    MiscAbilities.wonderShrink(user);
                     break;
                 case "special_turbo":
                     MiscAbilities.specialTurbo(user);

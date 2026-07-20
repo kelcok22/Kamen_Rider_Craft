@@ -2,13 +2,17 @@ package com.kelco.kamenridercraft.abilities.misc_abilities;
 
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.player.Player;
+
+import java.util.Objects;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
@@ -55,6 +59,66 @@ public class MiscAbilities {
                 user.addEffect(new MobEffectInstance(EffectCore.BIG, 300, 2, true, false));
             }
             if (user.getData(ABILITY_TICK) >= 50) {
+                AbilityUtil.cancelAbility(user, "", 0);
+            }
+            user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+        }
+    }
+
+    public static void wonderGrow(LivingEntity user) {
+        if (!user.level().isClientSide()) {
+            user.setData(ABILITY_COOLDOWN, 10);
+            if (user.getData(ABILITY_TICK) == 0) {
+                if (user.hasEffect(EffectCore.BIG) && Objects.requireNonNull(user.getEffect(EffectCore.BIG)).getAmplifier() < 9) {
+                    user.addEffect(new MobEffectInstance(EffectCore.BIG, 300, Objects.requireNonNull(user.getEffect(EffectCore.BIG)).getAmplifier() + 1, true, false));
+                } else if (user.hasEffect(EffectCore.SMALL)) {
+                    if (Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() > 0) {
+                        int amplifier = Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() - 1;
+                        user.removeEffect(EffectCore.SMALL);
+                        user.addEffect(new MobEffectInstance(EffectCore.SMALL, 300, amplifier, true, false));
+                    } else {
+                        user.removeEffect(EffectCore.SMALL);
+                    }
+                } else if (user.hasEffect(EffectCore.BIG)) {
+                    AbilityUtil.cancelAbility(user, "", 0);
+                    AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
+                    assert abilityMeter != null;
+                    abilityMeter.setBaseValue(abilityMeter.getValue() + 30);
+                } else {
+                    user.addEffect(new MobEffectInstance(EffectCore.BIG, 300, 0, true, false));
+                }
+            }
+            if (user.getData(ABILITY_TICK) >= 10) {
+                AbilityUtil.cancelAbility(user, "", 0);
+            }
+            user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);
+        }
+    }
+
+    public static void wonderShrink(LivingEntity user) {
+        if (!user.level().isClientSide()) {
+            user.setData(ABILITY_COOLDOWN, 10);
+            if (user.getData(ABILITY_TICK) == 0) {
+                if (user.hasEffect(EffectCore.SMALL) && Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() < 9) {
+                    user.addEffect(new MobEffectInstance(EffectCore.SMALL, 300, Objects.requireNonNull(user.getEffect(EffectCore.SMALL)).getAmplifier() + 1, true, false));
+                } else if (user.hasEffect(EffectCore.BIG)) {
+                    if (Objects.requireNonNull(user.getEffect(EffectCore.BIG)).getAmplifier() > 0) {
+                        int amplifier = Objects.requireNonNull(user.getEffect(EffectCore.BIG)).getAmplifier() - 1;
+                        user.removeEffect(EffectCore.BIG);
+                        user.addEffect(new MobEffectInstance(EffectCore.BIG, 300, amplifier, true, false));
+                    } else {
+                        user.removeEffect(EffectCore.BIG);
+                    }
+                } else if (user.hasEffect(EffectCore.SMALL)) {
+                    AbilityUtil.cancelAbility(user, "", 0);
+                    AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
+                    assert abilityMeter != null;
+                    abilityMeter.setBaseValue(abilityMeter.getValue() + 30);
+                } else {
+                    user.addEffect(new MobEffectInstance(EffectCore.SMALL, 300, 0, true, false));
+                }
+            }
+            if (user.getData(ABILITY_TICK) >= 10) {
                 AbilityUtil.cancelAbility(user, "", 0);
             }
             user.setData(ABILITY_TICK, user.getData(ABILITY_TICK) + 1);

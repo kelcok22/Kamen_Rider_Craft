@@ -24,7 +24,9 @@ import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Objects;
 
+import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.setFormItem;
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class RiotrooperEntity extends BaseHenchmenEntity {
@@ -106,9 +108,10 @@ public class RiotrooperEntity extends BaseHenchmenEntity {
                 this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FaizRiderItems.AXEL_RAY_GUN.get()));
                 break;
             case 3:
-                if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver) {
-                    driver.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), FaizRiderItems.FLYING_ATTACKER_RIOTROOPER.get(), 1);
-                    this.getAttribute(Attributes.FLYING_SPEED).setBaseValue(0.5);
+                if (this.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) {
+                    RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
+                    setFormItem(this.getItemBySlot(EquipmentSlot.FEET), FaizRiderItems.FLYING_ATTACKER_RIOTROOPER.get(), 1);
+                    Objects.requireNonNull(this.getAttribute(Attributes.FLYING_SPEED)).setBaseValue(0.5);
                     this.moveControl = new FlyingBossControl(this, 20);
                 }
                 break;
