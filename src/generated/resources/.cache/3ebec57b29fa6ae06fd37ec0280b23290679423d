@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-20T16:53:15.6228719	Item Models: kamenridercraft
+// 1.21.1	2026-07-21T02:20:09.1122581	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -803,6 +803,7 @@ a37bd41b96bbf1ed4d027b316660c5d2fdd44ab4 assets/kamenridercraft/models/item/zero
 a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero_one_ride_chemy_card.json
 8c06f9a4950fcf3b5debf633a419756f26a38e6a assets/kamenridercraft/models/item/zero_two_ride_chemy_card.json
 526b224ae6019c9cd80b7afcec573d9b389c8ee3 assets/kamenridercraft/models/item/zeztz_and_code_zeroider_capsem.json
+03549f412915582c56d5ddf98657f29e606156ea assets/kamenridercraft/models/item/zeztz_blank.json
 3ed954f18f84603a6db0f3d7dcd4983ecfbaf2f3 assets/kamenridercraft/models/item/zeztz_darkness_belt.json
 23ed1a4a44583566ec5c1081af648359e8d030f5 assets/kamenridercraft/models/item/zeztz_driver.json
 4bf1cca66da62b2e5680defa5ffa1f1919ec2be2 assets/kamenridercraft/models/item/zeztz_exdream_driver.json

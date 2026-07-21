@@ -122,8 +122,8 @@ public class GamerDriverItem extends RiderDriverItem {
                     || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_POPPY.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_LAZER.get())
                     && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR_II.get())) belt = "bugster_buckle";
 
-            if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/lv_1_belt.geo.json")) {
-                if (!isTransformed(rider)) belt = getFormItem(itemstack, 1).getBeltTex() + "_un";
+            if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
+                belt = getFormItem(itemstack, 1).getBeltTex() + "_un";
             }
 
             return "belts/" + belt;
@@ -154,6 +154,7 @@ public class GamerDriverItem extends RiderDriverItem {
         return riderName + getFormItem(itemstack, 1).getFormName(false);
 
     }
+
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
