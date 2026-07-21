@@ -10,6 +10,8 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -28,6 +30,9 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.joml.Vector3f;
+
+import java.util.Random;
 
 public class ZeztzRiderItems {
 
@@ -72,23 +77,30 @@ public class ZeztzRiderItems {
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("code_capsem"));
 
 
+    public static final DeferredItem<Item> ZEZTZ_BLANK = ITEMS.register("zeztz_blank",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_darkness","zeztz","zeztz_driver_belt")
+                    .changeModel("zeztz.geo.json").has_basic_model().model_has_different_name("void_capsem"));
+
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
+                    Random generator = new Random();
                     if (tick == 22d) {
                         AnimationUtil.playPose(player, "zeztz.henshin_pose");
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,10).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,10).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TRANSFORM_CAPSEM = ITEMS.register("transform_capsem",
@@ -104,11 +116,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addToList(CapsemDropper.CAPSEM,5).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addToList(CapsemDropper.CAPSEM,5).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WING_CAPSEM = ITEMS.register("wing_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_physicam_wing","zeztz","zeztz_driver_belt_wing",
@@ -123,11 +137,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
@@ -142,11 +158,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MACHINERY_CAPSEM = ITEMS.register("machinery_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_machinery","zeztz","zeztz_driver_belt_technolom_machinery",
@@ -161,16 +179,28 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PROJECTION_CAPSEM_METAMATERIAM = ITEMS.register("projection_capsem_metamateriam",
             () -> new RiderFormChangeItem(new Item.Properties(),"","metamateriam","metamateriam_belt",
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }
+            }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing());
+
+    public static final DeferredItem<Item> PROJECTION_CAPSEM = ITEMS.register("projection_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_projection","zeztz","zeztz_driver_belt_technolom_projection",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -179,18 +209,10 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing());
-
-    public static final DeferredItem<Item> PROJECTION_CAPSEM = ITEMS.register("projection_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_projection","zeztz","zeztz_driver_belt_technolom_projection",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
@@ -210,7 +232,7 @@ public class ZeztzRiderItems {
                         }
                     }
                 }
-            }.addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }}.setFormDelay(10).addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
@@ -226,11 +248,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BARRIER_CAPSEM = ITEMS.register("barrier_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
@@ -244,11 +268,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
@@ -262,11 +288,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).setSlotOneAbility("wonder_shrink", 1).setSlotTwoAbility("wonder_grow", 1).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).setSlotOneAbility("wonder_shrink", 1).setSlotTwoAbility("wonder_grow", 1).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GRAVITY_CAPSEM = ITEMS.register("gravity_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
@@ -280,11 +308,13 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
+                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
+                    }
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PLASMA_CAPSEM_METAMATERIAM = ITEMS.register("plasma_capsem_metamateriam",
             () -> new RiderFormChangeItem(new Item.Properties(),"_inazuma_plasma","metamateriam","metamateriam_belt_inazuma_plasma",
