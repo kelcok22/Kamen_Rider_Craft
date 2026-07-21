@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EntityType;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.level.levelgen.Heightmap;
 
+import java.util.Objects;
 import java.util.Random;
 
 
@@ -32,10 +34,10 @@ public class MirrorNoisesEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity.getEffect(EffectCore.MIRROR_NOISES).getDuration() > 200) {
+        if (Objects.requireNonNull(livingEntity.getEffect(EffectCore.MIRROR_NOISES)).getDuration() > 200) {
             livingEntity.level().playLocalSound(livingEntity, ModSounds.MIRROR_NOISES.get(), SoundSource.RECORDS, 1, new Random().nextInt(10));
         }
-        if (livingEntity.level() instanceof ServerLevel serverLevel && livingEntity.getEffect(EffectCore.MIRROR_NOISES).getDuration() < 2) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL && Objects.requireNonNull(livingEntity.getEffect(EffectCore.MIRROR_NOISES)).getDuration() < 2) {
             BaseHenchmenEntity boss = MobsCore.MIRROR_RIDER.get().create(livingEntity.level());
             if (boss != null) {
                 BlockPos pos = livingEntity.blockPosition();
