@@ -516,7 +516,7 @@ public class RiderBlocks {
                     .strength(2f)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
 
     public static final DeferredBlock<Block> IMAGIN_SAND_BLOCK = registerBlock("imagin_sand_block",
-            () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
+            () -> new BaseFallingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
                     .strength(0.5f)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
 
 
