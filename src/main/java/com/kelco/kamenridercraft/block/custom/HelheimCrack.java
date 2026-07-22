@@ -28,93 +28,87 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
 import java.util.HashSet;
 import java.util.List;
 
 
 public class HelheimCrack extends BaseBlock {
-
-
-
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
 
-	  public static VoxelShape SHAPE = Block.box(0, 0, 0, 16,32, 16);
+    public static VoxelShape SHAPE = Block.box(0, 0, 0, 16, 32, 16);
 
-	public HelheimCrack(Properties properties, VoxelShape shape ) {
-		
-		super(properties);
-		SHAPE =shape;
-	}
-	
-	   @Override
-	    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
-	        return SHAPE;
-	    }
+    public HelheimCrack(Properties properties, VoxelShape shape) {
 
-	    @Override
-	    public RenderShape getRenderShape(BlockState pState) {
-	        return RenderShape.MODEL;
-	    }
+        super(properties);
+        SHAPE = shape;
+    }
 
-	   public static boolean isShapeFullBlock(VoxelShape p_49917_) {
-		      return false;
-		   }
+    @Override
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        return SHAPE;
+    }
+
+    @Override
+    public RenderShape getRenderShape(BlockState pState) {
+        return RenderShape.MODEL;
+    }
+
+    public static boolean isShapeFullBlock(VoxelShape p_49917_) {
+        return false;
+    }
 
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_53681_) {
         p_53681_.add(FACING);
-     }
+    }
 
-     public BlockState getStateForPlacement(BlockPlaceContext p_53679_) {
+    public BlockState getStateForPlacement(BlockPlaceContext p_53679_) {
         return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
-     }
+    }
 
-     public PushReaction getPistonPushReaction(BlockState p_53683_) {
+    public PushReaction getPistonPushReaction(BlockState p_53683_) {
         return PushReaction.DESTROY;
-     }
+    }
 
 
+    public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity, BlockPos pos) {
 
+        if (otherDim.getBlockState(pos) != RiderBlocks.HELHEIM_CRACK.get().defaultBlockState()) {
+            otherDim.setBlockAndUpdate(pos, RiderBlocks.HELHEIM_CRACK.get().defaultBlockState());
+        }
 
-	public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity, BlockPos pos) {
+        entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
+        while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox()))
+            entity.teleportRelative(0.0, 2.0, 0.0);
 
-		if (otherDim.getBlockState(pos)!= RiderBlocks.HELHEIM_CRACK.get().defaultBlockState()){
-			otherDim.setBlockAndUpdate(pos, RiderBlocks.HELHEIM_CRACK.get().defaultBlockState());
-		}
+        entity.addEffect(new MobEffectInstance(EffectCore.PORTAL_COOLDOWN, 200, 0, true, true));
+        entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
+    }
 
-		entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
-		while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) entity.teleportRelative(0.0, 2.0, 0.0);
+    @Override
+    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        if (entity.canUsePortal(false) && entity instanceof Player player && !player.hasEffect(EffectCore.PORTAL_COOLDOWN)) {
+            ResourceKey<Level> HELHEIM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:helheim"));
+            MinecraftServer Server = player.getServer();
 
-		entity.addEffect(new MobEffectInstance(EffectCore.PORTAL_COOLDOWN, 200, 0, true, true));
-		entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
-	}
+            if (!level.isClientSide()) {
+                List<TamableAnimal> nearbyAllies = level.getEntitiesOfClass(TamableAnimal.class, entity.getBoundingBox().inflate(30), entity2 ->
+                        (entity2.getOwner() == player && !entity2.isOrderedToSit()));
+                if (level.dimension() == HELHEIM) {
+                    for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.overworld(), ally, pos);
+                    teleportToDimension(Server.overworld(), player, pos);
+                } else {
+                    for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.getLevel(HELHEIM), ally, pos);
+                    teleportToDimension(Server.getLevel(HELHEIM), player, pos);
+                }
+            }
+        }
+    }
 
-	@Override
-	protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-		if (entity.canUsePortal(false) && entity instanceof Player player && !player.hasEffect(EffectCore.PORTAL_COOLDOWN)){
-			ResourceKey<Level> HELHEIM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:helheim"));
-			MinecraftServer Server = player.getServer();
-
-			if (!level.isClientSide()) {
-				List<TamableAnimal> nearbyAllies = level.getEntitiesOfClass(TamableAnimal.class, entity.getBoundingBox().inflate(30), entity2 ->
-						(entity2.getOwner() == player && !entity2.isOrderedToSit()));
-				if (level.dimension() == HELHEIM) {
-					for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.overworld(), ally,pos);
-					teleportToDimension(Server.overworld(), player,pos);
-				} else {
-					for (LivingEntity ally : nearbyAllies) teleportToDimension(Server.getLevel(HELHEIM), ally,pos);
-					teleportToDimension(Server.getLevel(HELHEIM), player,pos);
-				}
-			}
-		}
-	}
-
-
-
-	public HelheimCrack AddToTabList(List<Block> TabList) {
-		TabList.add(this);
-		return this;
-	}
-
+    public HelheimCrack addToList(List<Block> TabList) {
+        TabList.add(this);
+        return this;
+    }
 }

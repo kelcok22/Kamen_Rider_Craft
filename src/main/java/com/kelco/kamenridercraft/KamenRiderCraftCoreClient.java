@@ -83,31 +83,31 @@ public class KamenRiderCraftCoreClient {
 
     @SubscribeEvent
     public static void registerPlayerAnimations() {
-        // Poses
+
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(POSE_LAYER_ID, 17500,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
-        //Rider Henshin Sequence
+
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(HENSHIN_LAYER_ID, 18500,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
-        // Rider Attacks
+
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(ATTACK_LAYER_ID, 25000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
-        // Bike Riding
+
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID, 20000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
-        // Rider Walk Modifications
+
         PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_WALK_ID, 16000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
@@ -115,5 +115,3 @@ public class KamenRiderCraftCoreClient {
         );
     }
 }
-
-

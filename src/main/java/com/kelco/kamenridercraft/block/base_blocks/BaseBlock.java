@@ -7,12 +7,8 @@ import net.minecraft.world.level.block.Block;
 import java.util.List;
 
 public class BaseBlock extends Block {
-
-
-
 	public BaseBlock(Properties prop) {
 		super(prop);
-		
 	}
 
 	public BaseBlock is_basic_cube() {
@@ -20,9 +16,8 @@ public class BaseBlock extends Block {
 		return this;
 	}
 
-	public BaseBlock AddToTabList(List<Block> TabList) {
+	public BaseBlock addToList(List<Block> TabList) {
 		TabList.add(this);
 		return this;
 	}
-
 }
