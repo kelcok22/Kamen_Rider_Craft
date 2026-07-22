@@ -564,7 +564,7 @@ public class WizardRiderItems {
 			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARD_RING = ITEMS.register("black_ring",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","black_wizard","wizardriver_belt",
+			() -> new RiderFormChangeItem(new Item.Properties(),"","black_wizard","wizardriver_belt_black",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {

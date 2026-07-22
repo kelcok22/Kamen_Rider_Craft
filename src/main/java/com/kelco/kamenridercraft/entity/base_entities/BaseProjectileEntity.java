@@ -115,7 +115,6 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
                 case "effect_ball":
                     if (texture.equalsIgnoreCase("lightning_ball")) {
                         serverLevel.sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(), getX(), getY(), getZ(), 5, 0, 0, 0, 0);
-
                     } else if (texture.equalsIgnoreCase("fire_ball")) {
                         serverLevel.sendParticles(ParticleTypes.SMALL_FLAME, getX(), getY(), getZ(), 10, 0, 0, 0, 0.05);
                     }
@@ -269,7 +268,7 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     }
 
     public BaseProjectileEntity setTexture(String texture) {
-        texture = texture;
+        this.texture = texture;
         entityData.set(TEXTURE, texture);
         return this;
     }
@@ -279,7 +278,7 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     }
 
     public BaseProjectileEntity setModel(String model) {
-        model = model;
+        this.model = model;
         entityData.set(MODEL, model);
         return this;
     }
@@ -289,7 +288,7 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     }
 
     public BaseProjectileEntity setGlowing(boolean isGlowing) {
-        glowing = isGlowing;
+        this.glowing = isGlowing;
         entityData.set(GLOWING, isGlowing);
         return this;
     }

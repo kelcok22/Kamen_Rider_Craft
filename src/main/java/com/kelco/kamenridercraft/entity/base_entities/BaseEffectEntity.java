@@ -115,7 +115,6 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
         super.tick();
         if (!this.level().isClientSide()) {
             if (!this.startAnimation && this.getTexture().contains("wizard_circle")) {
-                System.out.println("play");
                 triggerAnim("effect", "logo_spin");
                 this.startAnimation = true;
             }

@@ -499,8 +499,7 @@ public class DriveRiderItems {
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DIMENSION_CAB = ITEMS.register("dimension_cab",
-            () -> new RiderFormChangeItem(new Item.Properties(), "dimension_cab_tire", "drive", "drivedriver_belt",
-                    new MobEffectInstance(EffectCore.WARP, 40, 0, true, false)) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "dimension_cab_tire", "drive", "drivedriver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     AnimationUtil.playPose(player, "drive.henshin_pose");
@@ -508,7 +507,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+            }.setSlotOneAbility("warp",1).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 

@@ -62,14 +62,6 @@ public class AbilityUtil {
                         }
                     }
                     break;
-                case "flight_boost":
-                    if (costMeter && abilityMeter.getValue() >= 30) {
-                        abilityMeter.setBaseValue(abilityMeter.getValue() - 30);
-                        user.setData(USED_ABILITY, "flight_boost");
-                    } else if (!costMeter) {
-                        user.setData(USED_ABILITY, "flight_boost");
-                    }
-                    break;
                 case "clock_up", "grow", "shrink", "gatling", "cannon":
                     if (costMeter && abilityMeter.getValue() >= 100) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() - 100);
@@ -78,7 +70,7 @@ public class AbilityUtil {
                         user.setData(USED_ABILITY, ability);
                     }
                     break;
-                case "wonder_grow", "wonder_shrink":
+                case "wonder_grow", "wonder_shrink", "fish", "warp", "flight_boost":
                     if (costMeter && abilityMeter.getValue() >= 30) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() - 30);
                         user.setData(USED_ABILITY, ability);
@@ -139,6 +131,12 @@ public class AbilityUtil {
                 case "cannon":
                     MiscAbilities.cannon(user);
                     break;
+                case "fish":
+                    MiscAbilities.fishAbility(user);
+                    break;
+                case "warp":
+                    MiscAbilities.warp(user);
+                    break;
             }
         }
     }
@@ -156,8 +154,9 @@ public class AbilityUtil {
                 switch (abilitySlot) {
                     case 1:
                         if (beltCheck.numBaseFormItems != 1) {
-                            for (int n = 1; n <= beltCheck.numBaseFormItems - 1; n++) {
+                            for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                                 if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
+
                                     String priority = Integer.toString(RiderDriverItem.getFormItem(belt, 1).getSlotOneAbilityPriotiy());
                                     returnedAbility.add(priority + getFormItem(belt, n).getSlotOneAbility());
                                 }
@@ -200,10 +199,10 @@ public class AbilityUtil {
             }
             if (user instanceof Player) {
                 if (!afterAnimation.isEmpty()) {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", false, user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload(afterAnimation, "attack", true, user.getStringUUID()));
                     user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
                 } else if (delayAnimationEndTicks == 0) {
-                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack", false));
+                    PacketDistributor.sendToAllPlayers(new EndAnimationPayload(user.getStringUUID(), "attack", true));
                 } else {
                     user.setData(DELAY_ANIMATION_END, true);
                     user.setData(DELAY_ANIMATION_END_TICKS, delayAnimationEndTicks);

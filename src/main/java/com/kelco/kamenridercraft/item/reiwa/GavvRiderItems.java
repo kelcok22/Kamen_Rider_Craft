@@ -209,8 +209,7 @@ public class GavvRiderItems {
 	public static final DeferredItem<Item> FISHINGGUMMY_GOCHIZO = ITEMS.register("tsurigummy_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fishingummy","gavv","henshin_belt_gavv_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
-					,new MobEffectInstance(EffectCore.FISH, 40, 0,true,false)){
+					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GUMMI_PARTICLES.get(),
@@ -223,7 +222,7 @@ public class GavvRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 34, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(GUMMY,1).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
+			}.setSlotOneAbility("fish", 1).isGlowing().addToList(GUMMY,1).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAVV_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZAKUZAKUCHIPS_GOCHIZO = ITEMS.register("zakuzakuchips_gochizo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zakuzaku_chips","gavv","henshin_belt_gavv_belt_zakuzaku",

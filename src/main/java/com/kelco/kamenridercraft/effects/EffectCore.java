@@ -227,15 +227,6 @@ public class EffectCore {
 
 
 
-    public static final Holder<MobEffect> WARP = EFFECT.register("warp",
-            () -> new WarpEffect(MobEffectCategory.BENEFICIAL, 0x267d07));
-
-    public static final Holder<MobEffect> FISH = EFFECT.register("fish",
-            () -> new FishEffect(MobEffectCategory.NEUTRAL, 0x267d07));
-
-
-
-
     public static final Holder<MobEffect> REFLECT = EFFECT.register("reflect",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
 

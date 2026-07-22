@@ -114,7 +114,6 @@ public class GhostDriverItem extends RiderDriverItem {
         } else if (Objects.equals(rider, "ghost") & getFormItem(itemstack, 1) == GhostRiderItems.ORE_GHOST_EYECON.get() & item.getStoredNum() == 2 ||
                 Objects.equals(rider, "ghost") & getFormItem(itemstack, 1) == GhostRiderItems.MUGEN_GHOST_EYECON.get()
                 || Objects.equals(rider, "specter") & getFormItem(itemstack, 1) == GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()
-                || Objects.equals(rider, "necrom") & getFormItem(itemstack, 1) == GhostRiderItems.YUJOU_BURST_GHOST_EYECON.get()
                 || Objects.equals(rider, "specter") & item.getStoredNum() != 0 || Objects.equals(rider, "zero_specter") & item.getStoredNum() != 0
                 || Objects.equals(rider, "kanon_specter") & item.getStoredNum() != 0 || Objects.equals(rider, "zero_ghost") & item.getStoredNum() != 0) {
             return "_base";

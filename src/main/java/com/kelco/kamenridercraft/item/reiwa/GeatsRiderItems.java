@@ -529,15 +529,14 @@ public class GeatsRiderItems {
 
 	public static final DeferredItem<Item> SHARK_RAISE_BUCKLE = ITEMS.register("shark_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shark","geats","desire_driver_belt_geats",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(EffectCore.FISH, 40, 4,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setSlotOneAbility("fish", 1).changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MAGNUM_RAISE_BUCKLE_FEVER = ITEMS.register("magnum_raise_buckle_fever",
@@ -1840,51 +1839,51 @@ public class GeatsRiderItems {
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_ZIIN = ITEMS.register("raise_riser_belt_ziin",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziin",ZIIN_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_KEKERA = ITEMS.register("raise_riser_belt_kekera",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kekera",KEKERA_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_KYUUN = ITEMS.register("raise_riser_belt_kyuun",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyuun",KYUUN_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_BEROBA = ITEMS.register("raise_riser_belt_beroba",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beroba",BEROBA_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GLARE = ITEMS.register("vision_driver_glare",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"glare",PROVIDENCE_CARD_GLARE ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GLARE2 = ITEMS.register("vision_driver_glare2",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"glare2",PROVIDENCE_CARD_GLARE ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GAZER = ITEMS.register("vision_driver_gazer",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer",PROVIDENCE_CARD_GAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GAZER_SUEL = ITEMS.register("vision_driver_gazer_suel",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_suel",PROVIDENCE_CARD_GAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_JYAMATO_GAZER = ITEMS.register("vision_driver_jyamato_glare",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jyamato_glare",PROVIDENCE_CARD_GAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZILLION_DRIVER = ITEMS.register("zillion_driver",
 			() -> new ZillionDriverItem(ArmorMaterials.DIAMOND,"regad",SIRIUS_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZILLION_DRIVER_GAZER_ZERO = ITEMS.register("zillion_driver_gazer_zero",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RISE_DRIVER_GAZER_ZERO = ITEMS.register("laser_raise_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziingazer",PROVIDENCE_CARD_ZIINGAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",

@@ -30,7 +30,7 @@ public class ClientAbilityUtil {
         if (belt != null) {
             var beltCheck = ((RiderDriverItem) user.getItemBySlot(EquipmentSlot.FEET).getItem());
             switch (abilitySlot) {
-                case 1:
+                case 2:
                     if (beltCheck.numBaseFormItems != 1) {
                         for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                             if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotOneAbility().isEmpty()) {
@@ -43,7 +43,7 @@ public class ClientAbilityUtil {
                         returnedAbility.add(priority + getFormItem(belt, 1).getSlotOneAbility());
                     }
                     break;
-                case 2:
+                case 1:
                     if (beltCheck.numBaseFormItems != 1) {
                         for (int n = 1; n <= beltCheck.numBaseFormItems; n++) {
                             if (getFormItem(belt, n) != null && getFormItem(belt, n) instanceof RiderFormChangeItem item && !item.getSlotTwoAbility().isEmpty()) {
@@ -81,6 +81,8 @@ public class ClientAbilityUtil {
             case "wonder_shrink" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/small.png");
             case "gatling" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/gatling.png");
             case "cannon" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/cannon.png");
+            case "fish" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/fish.png");
+            case "warp" -> ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/mob_effect/warp.png");
             default -> null;
         };
     }

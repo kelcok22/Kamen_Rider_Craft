@@ -122,8 +122,8 @@ public class GamerDriverItem extends RiderDriverItem {
                     || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_POPPY.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_LAZER.get())
                     && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR_II.get())) belt = "bugster_buckle";
 
-            if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/lv_1_belt.geo.json")) {
-                if (!isTransformed(rider)) belt = getFormItem(itemstack, 1).getBeltTex() + "_un";
+            if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
+                belt = getFormItem(itemstack, 1).getBeltTex() + "_un";
             }
 
             return "belts/" + belt;
@@ -155,10 +155,11 @@ public class GamerDriverItem extends RiderDriverItem {
 
     }
 
+
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
         if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/riderbelt.geo.json");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/gamer_driver_belt.geo.json");
         }
 
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, getFormItem(itemstack, 1).getBeltModel());

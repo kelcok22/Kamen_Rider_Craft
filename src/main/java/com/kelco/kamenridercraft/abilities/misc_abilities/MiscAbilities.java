@@ -3,20 +3,27 @@ package com.kelco.kamenridercraft.abilities.misc_abilities;
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.ThrownEnderpearl;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 import java.util.Objects;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
+import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 
 public class MiscAbilities {
     private static String[] effects;
@@ -40,9 +47,16 @@ public class MiscAbilities {
         if (!user.level().isClientSide()) {
             user.setData(ABILITY_COOLDOWN, 100);
             if (user.getData(ABILITY_TICK) == 0) {
-                user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20, true, false));
-                if (user instanceof Player player) {
-                    player.displayClientMessage(Component.translatable("attack.kamenridercraft.clock_up"), true);
+                if (user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && getFormItem(user.getItemBySlot(EquipmentSlot.FEET), 1).toString().contains("hyper")) {
+                    user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 40, true, false));
+                    if (user instanceof Player player) {
+                        player.displayClientMessage(Component.translatable("attack.kamenridercraft.hyper_clock_up"), true);
+                    }
+                } else {
+                    user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 20, true, false));
+                    if (user instanceof Player player) {
+                        player.displayClientMessage(Component.translatable("attack.kamenridercraft.clock_up"), true);
+                    }
                 }
             }
             if (user.getData(ABILITY_TICK) >= 250) {
@@ -85,6 +99,30 @@ public class MiscAbilities {
             user.level().addFreshEntity(baseProjectile);
             AbilityUtil.cancelAbility(user, "", 0);
         }
+    }
+
+    public static void fishAbility(LivingEntity user) {
+        if (!user.level().isClientSide() && user instanceof Player player) {
+            user.setData(ABILITY_COOLDOWN, 100);
+            Item fish = Items.SALMON;
+            if (user.isOnFire()) {
+                fish = Items.COOKED_SALMON;
+            }
+            player.drop(new ItemStack(fish, 1), false);
+            AbilityUtil.cancelAbility(user, "", 0);
+        }
+    }
+
+    public static void warp(LivingEntity user) {
+        if (!user.level().isClientSide() && user instanceof Player player) {
+            user.setData(ABILITY_COOLDOWN, 150);
+            ThrownEnderpearl pearl = new ThrownEnderpearl(player.level(), player);
+            pearl.setPos(pearl.getX(), player.getY(0.5D) + 0.5D, pearl.getZ());
+            pearl.addDeltaMovement(player.getLookAngle().scale(3));
+            player.level().addFreshEntity(pearl);
+            AbilityUtil.cancelAbility(user, "", 0);
+        }
+
     }
 
     public static void grow(LivingEntity user) {

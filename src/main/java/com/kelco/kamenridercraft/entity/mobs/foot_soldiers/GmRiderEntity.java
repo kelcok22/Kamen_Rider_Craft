@@ -34,8 +34,8 @@ public class GmRiderEntity extends BaseHenchmenEntity {
             this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GM.get()));
         } else {
             NAME = "gm_rider_chirami";
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GM_CHIRAMI.get()));
             RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
+            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(GeatsRiderItems.DESIRE_DRIVER_GM_CHIRAMI.get()));
         }
     }
 
@@ -92,6 +92,7 @@ public class GmRiderEntity extends BaseHenchmenEntity {
     @Nullable
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34297_, DifficultyInstance p_34298_, MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_) {
         p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
+        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
 
         switch (p_34297_.getRandom().nextInt(16)) {
             case 0:

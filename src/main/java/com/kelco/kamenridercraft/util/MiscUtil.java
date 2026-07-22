@@ -17,7 +17,7 @@ public class MiscUtil {
             case "super_taka_medal super_tora_medal super_batta_medal" -> "super_tatoba";
             case "kuwagata_medal kamakiri_medal batta_medal" -> "gatakiriba";
             case "lion_medal tora_medal cheetah_medal" -> "latorartar";
-            case "taka_medal kujaku_medal condor_medal" -> "tajadol";
+            case "taka_medal kujaku_medal condor_medal",  "blokees_taka_medal blokees_kujaku_medal blokees_condor_medal" -> "tajadol";
             case "taka_eternity_medal kujaku_eternity_medal condor_eternity_medal" -> "tajadol_eternity";
             case "shachi_medal unagi_medal tako_medal" -> "shauta";
             case "sai_medal gorilla_medal zou_medal" -> "sagohzo";

@@ -93,16 +93,16 @@ public class ServerPayloadHandler {
         Player player = context.player();
         switch (data.key()) {
             case 1:
-                player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE).setBaseValue(1);
+                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE)).setBaseValue(1);
                 break;
             case 2:
-                player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO).setBaseValue(1);
+                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO)).setBaseValue(1);
                 break;
             case 3:
-                player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE).setBaseValue(0);
+                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE)).setBaseValue(0);
                 return;
             case 4:
-                player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO).setBaseValue(0);
+                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO)).setBaseValue(0);
                 return;
         }
 
