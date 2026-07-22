@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "dye",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:helheim_plant"
+		}
+	],
+	"result": {
+		"id": "minecraft:purple_dye"
+	}
+}
