@@ -297,22 +297,22 @@ public class WRiderItems {
 						if (player instanceof Player) {
 							PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "attack", false));
 						}
-						RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
-						AnimationUtil.playPose(player,"accel.henshin_pose");
-						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
-					}
-					if (tick==15d){
-						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.5F, 1F);
-						((ServerLevel) player.level()).sendParticles(ParticleTypes.SMOKE,
-								player.getX(), player.getY()+1,
-								player.getZ(), 100, 0, 0, 0, 0.1);
-					}
-					if (tick==1d){
-						((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-								player.getX(), player.getY()+1,
-								player.getZ(), 100, 0, 0, 0, 0.1);
-					}}
-			}.addSwitchForm(ACCEL_MEMORY_BIKE.get()).setFormDelay(1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
+                        if(RiderDriverItem.getFormItem(itemstack,0)==ACCEL_MEMORY_BIKE.asItem())RiderDriverItem.SetOldFormItem(itemstack,ACCEL_MEMORY.get(),1);
+                        AnimationUtil.playPose(player,"accel.henshin_pose");
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BLAZE_BURN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick==15d){
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.FIRE_EXTINGUISH, SoundSource.PLAYERS, 0.5F, 1F);
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.SMOKE,
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
+                    if (tick==1d){
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }}
+            }.setFormDelay(1d).addSwitchForm(ACCEL_MEMORY_BIKE.get()).setFormDelay(1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_G, 5));
 
 	public static final DeferredItem<Item> TRIAL_MEMORY = ITEMS.register("trial_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_trial","accel","acceldriver_belt_t",
