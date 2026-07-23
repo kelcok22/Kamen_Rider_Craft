@@ -115,7 +115,7 @@ public class ModdedItemCore {
 
 
     public static final DeferredItem<Item> BASE_SWORD = ITEMS.register("base_sword",
-            () -> new BaseSwordItem(Tiers.IRON, 3, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> BASE_BIKE = ITEMS.register("base_bike",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
