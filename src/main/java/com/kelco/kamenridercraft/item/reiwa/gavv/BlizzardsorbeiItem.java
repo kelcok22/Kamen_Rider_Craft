@@ -29,7 +29,7 @@ public class BlizzardsorbeiItem extends RiderFormChangeItem {
         ItemStack itemstack = player.getItemInHand(interactionHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
+        if (!level.isClientSide() && player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
                 && RiderDriverItem.getFormItem(BELT, 1) == GavvRiderItems.BLIZZARDSORBEI_GOCHIZO.get()) {
             List<WhippedSoldierEntity> soldiers = level.getEntitiesOfClass(WhippedSoldierEntity.class, player.getBoundingBox().inflate(10), entity -> entity.getOwner() == player);
             if (soldiers.size() == 2 && soldiers.get(0).getAttributeValue(Attributes.SCALE) == 1.0) {

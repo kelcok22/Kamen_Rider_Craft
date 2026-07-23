@@ -123,7 +123,7 @@ public class RidewatchItem extends RiderFormChangeItem {
         ItemStack itemstack = player.getItemInHand(usedHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
+        if (!level.isClientSide() && player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
                 && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.GRAND_ZI_O_RIDEWATCH.get() && (this != ZiORiderItems.BIO_RIDER_RIDEWATCH.get() && this != ZiORiderItems.GENM_RIDEWATCH.get())
                 || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
                 || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get()
