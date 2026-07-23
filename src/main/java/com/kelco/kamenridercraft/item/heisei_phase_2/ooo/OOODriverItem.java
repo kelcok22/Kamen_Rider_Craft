@@ -114,7 +114,7 @@ public class OOODriverItem extends RiderDriverItem {
                 }
                 break;
             case EquipmentSlot.HEAD:
-                if (combo.contains("tajadol") & getFormItem(itemstack, 1, henshinTick) == OOORiderItems.TAKA_MEDAL.asItem()) {
+                if (combo.contains("tajadol") & (getFormItem(itemstack, 1, henshinTick) == OOORiderItems.TAKA_MEDAL.asItem() || getFormItem(itemstack, 1, henshinTick) == OOORiderItems.TAKA_ANKH_MEDAL.asItem())) {
                     return riderName + "_taka_tajado";
                 } else if (rider.getMainHandItem().getItem() == OOORiderItems.MEDAGABURYU.get() & combo.equals("tatoba")) {
                     return riderName + "_taka_purple";
