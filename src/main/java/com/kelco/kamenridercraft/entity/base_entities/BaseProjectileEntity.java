@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.TraceableEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.ProjectileDeflection;
@@ -249,22 +250,22 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
     protected void onHitEntity(EntityHitResult result) {
         super.onHitEntity(result);
         Entity hitEntity = result.getEntity();
-        if (getOwner() instanceof LivingEntity owner) {
-            hitEntity.hurt(hitEntity.damageSources().mobProjectile(this, owner), damage);
-        } else {
-            hitEntity.hurt(hitEntity.damageSources().generic(), damage);
-        }
-        if (projectile.equalsIgnoreCase("rocket")) {
-            boolean flag = level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
-            level().explode(null, getX() + getLookAngle().x * 8, getY() + 1, getZ() + getLookAngle().z * 8, explosionPower, flag, Level.ExplosionInteraction.MOB);
-        } else if (texture.equalsIgnoreCase("lightning_ball")) {
-            if (hitEntity instanceof LivingEntity hurtLivingEntity) {
-                hurtLivingEntity.addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 200, 30, false, false));
+        if (!hitEntity.level().isClientSide() && hitEntity != getOwner() && hitEntity instanceof LivingEntity livingEntity && !(hitEntity instanceof ArmorStand)) {
+            if (getOwner() instanceof LivingEntity owner) {
+                livingEntity.hurt(livingEntity.damageSources().mobProjectile(this, owner), damage);
+            } else {
+                livingEntity.hurt(livingEntity.damageSources().generic(), damage);
             }
-        } else if (texture.equalsIgnoreCase("fire_ball")) {
-            hitEntity.igniteForSeconds(10);
+            if (projectile.equalsIgnoreCase("rocket")) {
+                boolean flag = level().getLevelData().getGameRules().getRule(GameRules.RULE_MOBGRIEFING).get();
+                level().explode(null, getX() + getLookAngle().x * 8, getY() + 1, getZ() + getLookAngle().z * 8, explosionPower, flag, Level.ExplosionInteraction.MOB);
+            } else if (texture.equalsIgnoreCase("lightning_ball")) {
+                livingEntity.addEffect(new MobEffectInstance(EffectCore.ELECTRIC_SHOCK, 200, 30, false, false));
+            } else if (texture.equalsIgnoreCase("fire_ball")) {
+                hitEntity.igniteForSeconds(10);
+            }
+            discard();
         }
-        discard();
     }
 
     public BaseProjectileEntity setTexture(String texture) {
