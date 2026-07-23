@@ -156,7 +156,7 @@ public class WRiderItems {
 	public static final DeferredItem<Item> TRIGGER_MEMORY = ITEMS.register("trigger_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_trigger","w","wdriver_belt",
 					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
                     if (tick==1d) {
