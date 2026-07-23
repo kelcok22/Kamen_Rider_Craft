@@ -1,6 +1,37 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "kamenridercraft:item/den_gasher_gun"
-    }
+	"format_version": "1.21.11",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/den_gasher_gun"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 45],
+			"translation": [0, 0.5, -4.25],
+			"scale": [0.85, 0.85, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 0.5, -4.25],
+			"scale": [0.85, 0.85, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [0, 5, 0.75],
+			"scale": [0.85, 0.85, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [0, 5, -0.75],
+			"scale": [0.85, 0.85, 1]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.7, 0.7, 1]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 8.5, 1.5]
+		}
+	}
 }

@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.11",
 	"parent": "item/generated",
 	"textures": {
 		"layer0": "kamenridercraft:item/desire_driver_dooms_geats"
@@ -27,15 +28,17 @@
 			"scale": [1, 1, 0.5]
 		},
 		"gui": {
-			"scale": [2, 2, 1]
+			"translation": [0, -0.75, 0],
+			"scale": [1.16, 1.16, 1.16]
 		},
 		"head": {
-			"rotation": [0, 180, 0],
+			"rotation": [0, -180, 0],
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
-			"rotation": [0, 180, 0],
-			"scale": [2, 2, 1]
+			"rotation": [0, -180, 0],
+			"translation": [0, 0, 0.5],
+			"scale": [1.26, 1.26, 1]
 		}
 	}
 }
