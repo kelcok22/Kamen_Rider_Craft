@@ -34,6 +34,7 @@ public class GamerDriverItem extends RiderDriverItem {
 
         extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
         numBaseFormItems = 2;
+        unlimitedBeltTextures = 1;
     }
 
     public GamerDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> armorFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
@@ -41,6 +42,17 @@ public class GamerDriverItem extends RiderDriverItem {
 
         extraBaseFormItem = Lists.newArrayList((RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get(), (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.get());
         numBaseFormItems = 2;
+        unlimitedBeltTextures = 1;
+    }
+
+    @Override
+    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num) {
+        Item formItem = getFormItem(itemstack, 2);
+        if (formItem == ModdedItemCore.BLANK_FORM.get()){
+            return "blank";
+        } else {
+            return "gamer_driver_belt" + getFormItem(itemstack, 2).getFormName(false);
+        }
     }
 
     public void summonParaDX(Player player) {

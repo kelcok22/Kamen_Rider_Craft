@@ -178,7 +178,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+            }.setFormToArmor().changeSlot(2).IsBeltGlowing().changeModel("robot_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> DOREMIFA_BEAT_GASHAT = ITEMS.register("doremifa_beat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"beat_gamer","ex_aid","gamer_driver_mighty_action_x",
