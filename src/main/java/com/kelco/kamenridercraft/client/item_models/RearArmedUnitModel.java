@@ -2,23 +2,23 @@ package com.kelco.kamenridercraft.client.item_models;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.item.base_items.GeoBlasterItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.RearArmedUnitItem;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
-public class RearArmedUnitModel extends GeoModel<GeoBlasterItem> {
+public class RearArmedUnitModel extends GeoModel<RearArmedUnitItem> {
     @Override
-    public ResourceLocation getModelResource(GeoBlasterItem animatable) {
+    public ResourceLocation getModelResource(RearArmedUnitItem animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/item/rear_armed_unit.geo.json");
     }
 
     @Override
-    public ResourceLocation getTextureResource(GeoBlasterItem animatable) {
+    public ResourceLocation getTextureResource(RearArmedUnitItem animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/item/rear_armed_unit.png");
     }
 
     @Override
-    public ResourceLocation getAnimationResource(GeoBlasterItem animatable) {
+    public ResourceLocation getAnimationResource(RearArmedUnitItem animatable) {
         return null;
     }
 }
