@@ -13,6 +13,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class FullBottleItem extends RiderFormChangeItem {
     private Boolean hazard = false;
@@ -57,11 +58,11 @@ public class FullBottleItem extends RiderFormChangeItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         ItemStack itemstack = player.getItemInHand(usedHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (level.isClientSide() && !player.hasEffect(EffectCore.FORM_LOCK) && BELT.getItem() instanceof RiderDriverItem belt) {
+        if (!level.isClientSide() && !player.hasEffect(EffectCore.FORM_LOCK) && BELT.getItem() instanceof RiderDriverItem belt) {
             if (canChange(player, belt, BELT)) {
                 RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), BuildRiderItems.FULL_BOTTLE.get(), 3);
                 super.use(level, player, usedHand);

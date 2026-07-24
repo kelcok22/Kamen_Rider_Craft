@@ -6,9 +6,9 @@
 				"identifier": "geometry.unknown",
 				"texture_width": 64,
 				"texture_height": 128,
-				"visible_bounds_width": 3,
-				"visible_bounds_height": 2.5,
-				"visible_bounds_offset": [0, 0.75, 0]
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
 			},
 			"bones": [
 				{
@@ -33,6 +33,22 @@
 					"name": "BikeBody",
 					"parent": "armorBody",
 					"pivot": [0.5, 0, 0]
+				},
+				{
+					"name": "Shape46",
+					"parent": "BikeBody",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 19.5, -12.6], "size": [1, 2, 1], "uv": [6, 12]}
+					]
+				},
+				{
+					"name": "Shape47",
+					"parent": "BikeBody",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 19.5, -10.6], "size": [1, 2, 1], "uv": [6, 12]}
+					]
 				},
 				{
 					"name": "Shape1",
@@ -367,7 +383,7 @@
 					"rotation": [14.94928, 0, 0],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-3.5, 8, -8], "size": [7, 4, 1], "uv": [2, 45]}
+						{"origin": [-1.5, 8, -8], "size": [3, 4, 1], "uv": [6, 45]}
 					]
 				},
 				{
@@ -447,12 +463,29 @@
 					]
 				},
 				{
+					"name": "Shape16",
+					"parent": "BikeBody",
+					"pivot": [-1, 20.5, -12],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3, 15.5, -14], "size": [6, 5, 6], "inflate": 0.3, "uv": [40, 81]}
+					]
+				},
+				{
 					"name": "Shape44",
 					"parent": "BikeBody",
 					"pivot": [-20, 21, -8],
 					"mirror": true,
 					"cubes": [
-						{"origin": [-6, 18, -10], "size": [12, 3, 1], "uv": [38, 74]}
+						{"origin": [-6, 18.4, -9.1], "size": [12, 3, 1], "uv": [38, 74]}
+					]
+				},
+				{
+					"name": "Shape45",
+					"parent": "BikeBody",
+					"pivot": [-20, 21, -8],
+					"cubes": [
+						{"origin": [-0.5, 19.7, -14.1], "size": [1, 2, 1], "pivot": [-0.5, 20.2, -13.1], "rotation": [45, 0, 0], "uv": [6, 12]}
 					]
 				},
 				{
@@ -460,7 +493,36 @@
 					"parent": "BikeBody",
 					"pivot": [14.5, 23, 0],
 					"cubes": [
-						{"origin": [21, -8.5, -19.6], "size": [16, 16, 7], "inflate": -5, "pivot": [14.5, -1, 0], "rotation": [-90, 180, 0], "uv": [18, 105], "mirror": true},
+						{
+							"origin": [-8, 10.1, -4],
+							"size": [16, 16, 7],
+							"inflate": -5,
+							"pivot": [0, 18.1, -0.5],
+							"rotation": [-90, 180, 0],
+							"uv": {
+								"north": {"uv": [41, 112], "uv_size": [-16, 16]},
+								"east": {"uv": [48, 112], "uv_size": [-7, 16]},
+								"south": {"uv": [64, 112], "uv_size": [-16, 16]},
+								"west": {"uv": [25, 112], "uv_size": [-7, 16]},
+								"up": {"uv": [41, 109], "uv_size": [-7, 3]},
+								"down": {"uv": [57, 112], "uv_size": [-15, -3]}
+							}
+						},
+						{
+							"origin": [-9.81, 5, -3.5],
+							"size": [16, 16, 7],
+							"inflate": -5,
+							"pivot": [-1.81, 13, 0],
+							"rotation": [90, 0, 90],
+							"uv": {
+								"north": {"uv": [0, 11], "uv_size": [0, 0]},
+								"east": {"uv": [1, 11], "uv_size": [0, 0]},
+								"south": {"uv": [0, 112], "uv_size": [16, 16]},
+								"west": {"uv": [0, 10], "uv_size": [0, 0]},
+								"up": {"uv": [1, 10], "uv_size": [0, 0]},
+								"down": {"uv": [2, 10], "uv_size": [0, 0]}
+							}
+						},
 						{"origin": [-3, 10.5, -2], "size": [6, 6, 3], "uv": [0, 0]}
 					]
 				},
@@ -509,6 +571,24 @@
 					"name": "armorRightBoot",
 					"parent": "bipedRightLeg",
 					"pivot": [2.5, 12, 0]
+				},
+				{
+					"name": "wizard_circle5",
+					"pivot": [25, 24, -19],
+					"cubes": [
+						{
+							"origin": [-16, 1, -21],
+							"size": [32, 32, 0],
+							"uv": {
+								"north": {"uv": [0, 74], "uv_size": [32, 32]},
+								"east": {"uv": [64, 9], "uv_size": [0, 4]},
+								"south": {"uv": [64, 10], "uv_size": [0, 3]},
+								"west": {"uv": [64, 9], "uv_size": [0, 4]},
+								"up": {"uv": [62, 10], "uv_size": [2, 0]},
+								"down": {"uv": [62, 11], "uv_size": [2, 0]}
+							}
+						}
+					]
 				}
 			]
 		}

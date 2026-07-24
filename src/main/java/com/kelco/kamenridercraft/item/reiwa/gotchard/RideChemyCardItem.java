@@ -14,6 +14,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class RideChemyCardItem extends RiderFormChangeItem {
     public RideChemyCardItem(Properties properties,  String formName, String riderName, String beltTex, MobEffectInstance... effects) {
@@ -31,7 +32,7 @@ public class RideChemyCardItem extends RiderFormChangeItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         if (canSummonGotcharbrothers(player)) {
             RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
             if (summon != null) {

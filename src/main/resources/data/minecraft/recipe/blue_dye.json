@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "dye",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:blue_rose"
+		}
+	],
+	"result": {
+		"id": "minecraft:blue_dye"
+	}
+}

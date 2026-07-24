@@ -87,7 +87,7 @@ public class SaberRidewatchItem extends RiderFormChangeItem {
         ItemStack itemstack = player.getItemInHand(usedHand);
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (level.getGameRules().getBoolean(ModGameRules.RULE_REIWA_RIDEWATCHES) && player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
+        if (!level.isClientSide() && level.getGameRules().getBoolean(ModGameRules.RULE_REIWA_RIDEWATCHES) && player.isShiftKeyDown() && BELT.getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)
                 && (RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.UNFINISHED_OHMA_ZI_O_DRIVER_L.get()
                 || RiderDriverItem.getFormItem(BELT, 1) == ZiORiderItems.OHMA_ZI_O_RIDEWATCH.get())) {
             summon(level, player);

@@ -23,6 +23,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.cache.GeckoLibCache;
 
 import javax.annotation.Nullable;
@@ -626,13 +627,13 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
 
         ItemStack itemStack = player.getItemInHand(usedHand);
 
         ItemStack BELT = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (!player.hasEffect(EffectCore.FORM_LOCK)) {
+        if (!level.isClientSide() && !player.hasEffect(EffectCore.FORM_LOCK)) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
                 if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown())
                     shiftItem.use(level, player, usedHand);

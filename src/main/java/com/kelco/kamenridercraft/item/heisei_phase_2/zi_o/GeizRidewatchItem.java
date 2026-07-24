@@ -44,7 +44,7 @@ public class GeizRidewatchItem extends RiderFormChangeItem {
         ItemStack itemstack = player.getItemInHand(interactionHand);
         Item BELT = player.getItemBySlot(EquipmentSlot.FEET).getItem();
 
-        if (player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
+        if (!level.isClientSide() && player.isShiftKeyDown() && BELT instanceof RiderDriverItem driver && driver.isTransformed(player)
         && (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1) == ZiORiderItems.GEIZ_MAJESTY_RIDEWATCH.get())) {
             summonWeapon(level, player);
             return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());

@@ -7,10 +7,7 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.EnergyItemHolderItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.ExAidEnergyItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.GamerDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.RiderGashatCaseItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -101,7 +98,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("lv_1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.changeModel("snipe_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT = ITEMS.register("bang_bang_shooting_gashat",
@@ -114,8 +111,8 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(BANG_BANG_SHOOTING_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
+            }.addSwitchForm(BANG_BANG_SHOOTING_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_LV_1 = ITEMS.register("bakusou_bike_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","lazer","gamer_driver_bakusou_bike_lv_1",
@@ -127,7 +124,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("lv_1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.changeModel("lazer_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_UNDER = ITEMS.register("bakusou_bike_gashat_under",
@@ -1899,6 +1896,12 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> GASHACON_MAGNUM = ITEMS.register("gashacon_magnum_gun",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
+
+    public static final DeferredItem<Item> FRONT_ARMED_UNIT = ITEMS.register("front_armed_unit",
+            () -> new FrontArmedUnitItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).changeRepairItem(BLANK_GASHAT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+
+    public static final DeferredItem<Item> REAR_ARMED_UNIT = ITEMS.register("rear_armed_unit",
+            () -> new RearArmedUnitItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).changeRepairItem(BLANK_GASHAT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_A = ITEMS.register("gashacon_sparrow_sickle_a",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)

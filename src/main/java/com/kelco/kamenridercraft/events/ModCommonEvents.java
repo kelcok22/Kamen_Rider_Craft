@@ -882,7 +882,6 @@ public class ModCommonEvents {
         event.registerLayerDefinition(DoggaModel.LAYER_LOCATION, DoggaModel::createBodyLayer);
     }
 
-    @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         EntityAttributes.addEntityAttributes(event);
     }
@@ -980,7 +979,5 @@ public class ModCommonEvents {
 
 
         event.register(MobsCore.ANKH.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, AnkhEntity::checkAnkhSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
-
-
     }
 }
