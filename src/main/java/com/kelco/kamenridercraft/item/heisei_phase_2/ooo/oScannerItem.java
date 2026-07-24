@@ -47,8 +47,6 @@ public class oScannerItem extends BaseItem {
                 String medalOne = RiderDriverItem.getFormItem(Belt, 1).toString();
                 String medalTwo = RiderDriverItem.getFormItem(Belt, 2).toString();
                 String medalThree = RiderDriverItem.getFormItem(Belt, 3).toString();
-                System.out.println((oooComboCheck(medalOne, medalTwo, medalThree)));
-                System.out.println(medalOne + medalTwo + medalThree);
 
                 switch (oooComboCheck(medalOne, medalTwo, medalThree)) {
                     case "tajadol":
