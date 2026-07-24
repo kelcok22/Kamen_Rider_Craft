@@ -44,9 +44,11 @@ public class oScannerItem extends BaseItem {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt
                     && belt == OOORiderItems.OOODRIVER.get() && belt.isTransformed(player)) {
                 ItemStack Belt = player.getItemBySlot(EquipmentSlot.FEET);
-                String medalOne = RiderDriverItem.getFormItem(Belt, 1).getFormName(false);
-                String medalTwo = RiderDriverItem.getFormItem(Belt, 2).getFormName(false);
-                String medalThree = RiderDriverItem.getFormItem(Belt, 3).getFormName(false);
+                String medalOne = RiderDriverItem.getFormItem(Belt, 1).toString();
+                String medalTwo = RiderDriverItem.getFormItem(Belt, 2).toString();
+                String medalThree = RiderDriverItem.getFormItem(Belt, 3).toString();
+                System.out.println((oooComboCheck(medalOne, medalTwo, medalThree)));
+                System.out.println(medalOne + medalTwo + medalThree);
 
                 switch (oooComboCheck(medalOne, medalTwo, medalThree)) {
                     case "tajadol":
