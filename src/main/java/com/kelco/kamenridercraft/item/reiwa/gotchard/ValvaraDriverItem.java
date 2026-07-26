@@ -22,7 +22,7 @@ public class ValvaraDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot equipmentSlot, LivingEntity rider) {
         if (getFormItem(itemstack, 1) == GotchardRiderItems.DAIOHNI_GT_RIDE_CHEMY_CARD.get()) {
             if (!rider.getMainHandItem().isEmpty() | !rider.getOffhandItem().isEmpty())
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/valvarad_rider_gt_off.geo.json");
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/valvarad_rider_gt_off.geo.json");
             else
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 1).getModel(this.riderName));
         }
