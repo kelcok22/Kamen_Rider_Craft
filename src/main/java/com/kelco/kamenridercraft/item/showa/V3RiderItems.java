@@ -33,8 +33,8 @@ public class V3RiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"","v3","double_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
-                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)) {
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -46,9 +46,9 @@ public class V3RiderItems {
     public static final DeferredItem<Item> BLUE_DOUBLE_TYPHOON_CORE = ITEMS.register("blue_double_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_blue","v3","double_typhoon_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
-                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
@@ -64,7 +64,8 @@ public class V3RiderItems {
 
     public static final DeferredItem<Item> RIDERMAN_BELT_CORE = ITEMS.register("riderman_belt_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","riderman","riderman_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION,200, 0,true,false)
                     ,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
