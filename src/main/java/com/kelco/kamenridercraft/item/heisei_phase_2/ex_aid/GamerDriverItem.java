@@ -16,6 +16,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -161,6 +162,10 @@ public class GamerDriverItem extends RiderDriverItem {
                     return riderName + "_nocape";
                 }
 
+            }
+
+            if (getFormItem(itemstack, 2).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats")))) {
+                return riderName + "_lv3";
             }
         }
         return riderName + getFormItem(itemstack, 1).getFormName(false);
