@@ -3,11 +3,14 @@ package com.kelco.kamenridercraft.client.renderer.layers;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.FastColor;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;
@@ -15,6 +18,9 @@ import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
+import software.bernie.geckolib.resource.GeoGlowingTextureMeta;
+
+import java.util.List;
 
 
 public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
@@ -29,10 +35,10 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + belt.getUnlimitedTextures(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1) + ".png");
     }
 
+
     @Nullable
     protected RenderType getRenderType(T animatable, int run, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
-        if (getTextureResource(animatable, run, entity, belt, slot).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))return null;
-        if (getTextureResource(animatable, run, entity, belt, slot).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))return null;
+        if (getTextureResource(animatable, run, entity, belt, slot).getPath().isBlank())return null;
         return RenderType.entityTranslucent(getTextureResource(animatable, run, entity, belt, slot));
     }
 

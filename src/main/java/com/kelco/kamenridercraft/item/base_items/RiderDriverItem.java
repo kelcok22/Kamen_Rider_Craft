@@ -128,7 +128,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public static boolean isTransforming(LivingEntity rider) {
-        if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem) || rider.level().isClientSide())
+        if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem))
             return false;
         return Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() != 0;
     }
@@ -145,8 +145,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public void beltTick(ItemStack stack, Level level, LivingEntity rider, int slotId) {
-        if (!rider.level().isClientSide()) {
-            if (stack.has(DataComponents.CUSTOM_DATA)) {
+        if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = Objects.requireNonNull(stack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
                 if (tag.getBoolean("Update_form") && slotId == 36) onFormChange(stack, rider, tag);
                 if (!isTransformed(rider) || slotId != 36) tag.putBoolean("Update_form", true);
@@ -163,7 +162,6 @@ public class RiderDriverItem extends RiderArmorItem {
             } else {
                 setUpdateForm(stack);
             }
-        }
     }
 
 
@@ -210,7 +208,6 @@ public class RiderDriverItem extends RiderArmorItem {
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        if (!entity.level().isClientSide()) {
             if (entity instanceof LivingEntity rider && stack == rider.getItemBySlot(EquipmentSlot.FEET)) {
                 this.beltTick(stack, level, rider, slotId);
                 this.giveEffects(rider);
@@ -234,7 +231,6 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
                 if (player.hasEffect(EffectCore.FORM_TIMEOUT)) this.timeoutForms(player, stack);
             }
-        }
     }
 
 
