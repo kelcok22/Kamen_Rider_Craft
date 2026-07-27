@@ -167,6 +167,10 @@ public class GamerDriverItem extends RiderDriverItem {
             if (getFormItem(itemstack, 2).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats")))) {
                 return riderName + "_lv3";
             }
+
+            if (getFormItem(itemstack, 2).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats_visor")))) {
+                return riderName + "_lv3_visor";
+            }
         }
         return riderName + getFormItem(itemstack, 1).getFormName(false);
 
