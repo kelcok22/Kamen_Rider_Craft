@@ -140,7 +140,7 @@ public class GamerDriverItem extends RiderDriverItem {
             }
 
             return "belts/" + belt;
-        } else if (equipmentSlot == EquipmentSlot.CHEST) {
+        } else if (equipmentSlot == EquipmentSlot.HEAD) {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
             if (belt == ExAidRiderItems.GAMER_DRIVER_BRAVE.get() & getFormItem(itemstack, 2) == ExAidRiderItems.DOREMIFA_BEAT_GASHAT.get()
                     & rider.hasEffect(EffectCore.CHRISTMAS)) {
@@ -189,9 +189,10 @@ public class GamerDriverItem extends RiderDriverItem {
     public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
         if (currentSlot == EquipmentSlot.FEET) {
-            return getFormItem(itemstack, 1).getIsBeltGlowing();
+            return false;
+            //return getFormItem(itemstack, 1).getIsBeltGlowing();
         } else if (isTransformed(livingEntity)) {
-            if (Objects.requireNonNull(currentSlot) == EquipmentSlot.CHEST) {
+            if (Objects.requireNonNull(currentSlot) == EquipmentSlot.HEAD) {
                 return getFormItem(itemstack, 2).getIsGlowing();
             }
             return getFormItem(itemstack, 1).getIsGlowing();
@@ -201,7 +202,7 @@ public class GamerDriverItem extends RiderDriverItem {
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
-        if (slot == EquipmentSlot.CHEST) {
+        if (slot == EquipmentSlot.HEAD) {
             if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getFlyingModel(this.riderName));
             } else if (Objects.equals(getFormItem(itemstack, 2).getModel(this.riderName), "default.geo.json")) {
@@ -217,10 +218,10 @@ public class GamerDriverItem extends RiderDriverItem {
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
 
         switch (currentSlot) {
-            case HEAD -> {
+            case CHEST -> {
                 return true;
             }
-            case CHEST -> {
+            case HEAD -> {
                 if (getFormItem(itemstack, 2) != ModdedItemCore.BLANK_FORM.get()) return true;
             }
             default -> {
