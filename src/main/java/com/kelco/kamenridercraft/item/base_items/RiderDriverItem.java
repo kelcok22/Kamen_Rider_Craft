@@ -408,7 +408,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public static void setFormItem(ItemStack itemStack, Item item, int slot) {
-        if (!itemStack.has(DataComponents.CUSTOM_DATA)) itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) setUpdateForm(itemStack);
         if (itemStack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
                 if (!form.getString("slot_tex" + slot).equals(item.toString())) {
@@ -424,9 +424,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public static void UpdateOldFormItem(ItemStack itemStack) {
-        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
-            itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
+            if (!itemStack.has(DataComponents.CUSTOM_DATA)) setUpdateForm(itemStack);
         if (itemStack.getItem() instanceof RiderDriverItem driver) {
             Consumer<CompoundTag> data = form -> {
                 for (int n = 1; n <= driver.numBaseFormItems; n++) {
@@ -438,9 +436,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public static void SetOldFormItem(ItemStack itemStack, Item formItem, int slot) {
-        if (!itemStack.has(DataComponents.CUSTOM_DATA)) {
-            itemStack.set(DataComponents.CUSTOM_DATA, CustomData.EMPTY);
-        }
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) setUpdateForm(itemStack);
         if (itemStack.getItem() instanceof RiderDriverItem) {
             Consumer<CompoundTag> data = form -> {
                 form.putString("slot_tex_old" + slot, formItem.toString());
