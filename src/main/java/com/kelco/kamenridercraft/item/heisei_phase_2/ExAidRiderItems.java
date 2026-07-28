@@ -1037,7 +1037,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item>  MIGHTY_BROTHERS_XX_GASHAT_R = ITEMS.register("mighty_brothers_xx_gashat_r",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lvxxr","ex_aid","gamer_driver_mighty_brothers_xx",
@@ -1054,7 +1054,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addSwitchForm(MIGHTY_BROTHERS_XX_GASHAT_L.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
+                    .isGlowing().IsBeltGlowing().addSwitchForm(MIGHTY_BROTHERS_XX_GASHAT_L.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> MIGHTY_BROTHERS_XX_GASHAT = ITEMS.register("mighty_brothers_xx_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_lvx","ex_aid","gamer_driver_mighty_brothers_x",
@@ -1074,7 +1074,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().changeModel("lv_1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").addShiftForm(MIGHTY_BROTHERS_XX_GASHAT_R.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 20));
+                    .isGlowing().changeModel("ex_aid_lvx.geo.json").IsBeltGlowing().changeBeltModel("geo/belts/lv_1_belt.geo.json").addShiftForm(MIGHTY_BROTHERS_XX_GASHAT_R.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 20));
 
     public static final DeferredItem<Item> DOCTOR_MIGHTY_XX_GASHAT = ITEMS.register("doctor_mighty_xx_gashat",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
