@@ -1707,6 +1707,15 @@ public class MobsCore {
 
     public static final DeferredItem<DeferredSpawnEggItem> BOOSTRIKER_BUFFA_MODE_SPAWN_EGG = ITEMS.register("boostriker_buffa_mode_spawn_egg",
             () -> new DeferredSpawnEggItem(BOOSTRIKER_BUFFA_MODE,  0xffffff, 0x222222, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<CodeZeroEntity>> CODE_ZERO = MOBLIST.register("code_zero",
+            () -> EntityType.Builder.of(CodeZeroEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":code_zero"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<CodeZeroiderEntity>> CODE_ZEROIDER = MOBLIST.register("code_zeroider",
+            () -> EntityType.Builder.of(CodeZeroiderEntity::new, MobCategory.MISC).clientTrackingRange(8).sized(0.6F, 1.25F).build( KamenRiderCraftCore.MOD_ID + ":code_zeroider"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> CODE_ZEROIDER_SPAWN_EGG = ITEMS.register("code_zeroider_spawn_egg",
+            () -> new DeferredSpawnEggItem(CODE_ZEROIDER,  0xffffff, 0x222222, new Item.Properties()));
     
 
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",

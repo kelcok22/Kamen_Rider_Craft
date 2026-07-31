@@ -538,6 +538,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.CARIES.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.NOX.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.CODE_ZERO.get(), CodeZeroRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHIN_NO_0.get(), BasicEntityRenderer::new);
@@ -571,6 +572,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BOOSTRIKER_TYCOON_MODE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BOOSTRIKER_NA_GO_MODE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.BOOSTRIKER_BUFFA_MODE.get(), BikeRenderer::new);
+            event.registerEntityRenderer(MobsCore.CODE_ZEROIDER.get(), BikeRenderer::new);
 
             event.registerEntityRenderer(MobsCore.RIDER_SUMMON.get(), SummonedEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.COMPLETE_SUMMON.get(), SummonedEntityRenderer::new);
@@ -1584,6 +1586,7 @@ public class KamenRiderCraftCore {
                 }
                 event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
+                event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
                 event.accept(MobsCore.NOX_SPAWN_EGG);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
 
@@ -1986,6 +1989,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.BOOSTRIKER_TYCOON_MODE_SPAWN_EGG);
                 event.accept(MobsCore.BOOSTRIKER_NA_GO_MODE_SPAWN_EGG);
                 event.accept(MobsCore.BOOSTRIKER_BUFFA_MODE_SPAWN_EGG);
+                event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
 
                 for (int i = 0; i < CreativeTabRegistry.Misc_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.Misc_TAB_ITEM.get(i));

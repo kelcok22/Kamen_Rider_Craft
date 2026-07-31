@@ -278,6 +278,7 @@ public class EntityAttributes {
         event.put(MobsCore.CARIES.get(), CariesEntity.setAttributes().build());
 
         event.put(MobsCore.NOX.get(), NoxEntity.setAttributes().build());
+        event.put(MobsCore.CODE_ZERO.get(), CodeZeroEntity.setAttributes().build());
     }
 
 
@@ -311,6 +312,7 @@ public class EntityAttributes {
         event.put(MobsCore.BOOSTRIKER_TYCOON_MODE.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.BOOSTRIKER_NA_GO_MODE.get(), baseBikeEntity.setAttributes().build());
         event.put(MobsCore.BOOSTRIKER_BUFFA_MODE.get(), baseBikeEntity.setAttributes().build());
+        event.put(MobsCore.CODE_ZEROIDER.get(), baseBikeEntity.setAttributes().build());
     }
 
 

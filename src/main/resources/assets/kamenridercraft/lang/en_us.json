@@ -8823,6 +8823,7 @@
 "item.kamenridercraft.breakam_breaker_knuckle": "Breakam Breaker (Knuckle Mode)",
 "item.kamenridercraft.breakam_breaker_shoot": "Breakam Breaker (Shoot Mode)",
 "item.kamenridercraft.mugen_sword": "Mugen's Sword",
+  "item.kamenridercraft.code_zeroider_spawn_egg": "Code Zeroider",
 
 "item.kamenridercraft.my_th_logo": "My-th Logo",
 "item.kamenridercraft.my_th_head": "My-th Helmet",
@@ -9346,6 +9347,7 @@
 "entity.kamenridercraft.caries": "Kamen Rider Caries",
 
 "entity.kamenridercraft.nox_mob": "Nox Knight",
+  "entity.kamenridercraft.code_zero": "Zero",
 
 "entity.kamenridercraft.bicycle": "Bicycle",
 "entity.kamenridercraft.acrobatter": "Acrobatter",
@@ -9376,6 +9378,7 @@
 "entity.kamenridercraft.boostriker_tycoon_mode": "Boostriker Tycoon Mode",
 "entity.kamenridercraft.boostriker_na_go_mode": "Boostriker Na-Go Mode",
 "entity.kamenridercraft.boostriker_buffa_mode": "Boostriker Buffa Mode",
+  "entity.kamenridercraft.code_zeroider": "Code Zeroider",
 
 "entity.kamenridercraft.taka_can": "Taka Candroid",
 "entity.kamenridercraft.tako_can": "Tako Candroid",
