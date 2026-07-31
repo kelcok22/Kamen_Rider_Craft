@@ -32,6 +32,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.joml.Vector3f;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class ZeztzRiderItems {
@@ -97,7 +98,7 @@ public class ZeztzRiderItems {
                     if (tick == 19d) {
                         RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
-                    if (tick == 10d) {
+                    if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
             }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(CapsemDropper.CAPSEM,10).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
@@ -966,8 +967,16 @@ public class ZeztzRiderItems {
 
 
     public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties()){
+                public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
+                    var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformingTick % 6 == 0||transformingTick<3) {
+                        if (currentSlot == EquipmentSlot.FEET) return getFormItem(itemStack, 1, 0).getIsBeltGlowing();
+                        else if (isTransformed(rider)) return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
+                    }
+                    return false;
+                }
+            }.has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())

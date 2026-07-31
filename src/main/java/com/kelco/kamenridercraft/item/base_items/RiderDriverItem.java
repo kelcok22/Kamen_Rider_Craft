@@ -452,7 +452,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
         var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
         if (currentSlot == EquipmentSlot.FEET)
-            return getFormItem(itemStack, 1, 0).getIsBeltGlowing();
+            return  getFormItem(itemStack, 1, 0).getIsBeltGlowing();
         else if (isTransformed(rider))
             return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
         return false;
