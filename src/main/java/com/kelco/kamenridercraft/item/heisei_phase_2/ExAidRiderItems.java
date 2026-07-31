@@ -243,7 +243,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+            }.setFormToArmor().isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW = ITEMS.register("drago_knight_hunter_z_gashat_claw",
             () -> new RiderFormChangeItem(new Item.Properties(),"hunter_gamer_claw","lazer","gamer_driver_mighty_action_x",
