@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.reiwa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.CapsemDropper;
-import com.kelco.kamenridercraft.block.machine.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
@@ -11,7 +10,6 @@ import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
-import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -30,7 +28,6 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.joml.Vector3f;
 
 import java.util.Objects;
 import java.util.Random;
@@ -524,6 +521,37 @@ public class ZeztzRiderItems {
                                 player.getZ(), 50, 0, 0, 0, 1);                    }}
             }.setFormDelay(19).addAlternative(EXDREAMRISE_CAPSEM_DAWN.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> AGENT_CAPSEM = ITEMS.register("agent_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","zeztz_agendream","zeztz_agendream_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
+                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> ZEZTZ_AND_CODE_ZEROIDER_CAPSEM = ITEMS.register("zeztz_and_code_zeroider_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_impact_zeroider","zeztz","zeztz_driver_belt_impact_zeroider",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -955,6 +983,9 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_exdream_driver_buckle",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ZEZTZ_AGENDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_agendream_driver_buckle",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
             () -> new CapsemCylinderItem().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -980,6 +1011,10 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> ZEZTZ_AGENDREAM_DRIVER = ITEMS.register("zeztz_agendream_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_agendream", AGENT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
