@@ -1095,9 +1095,10 @@ public class RiderBlocks {
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
 
+
+
     public static final DeferredBlock<Block> HAYABUSA_KUN = registerBlock("hayabusa_kun",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
-
 
     public static final DeferredBlock<Block> UTAN = registerBlock("utan",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
@@ -1114,6 +1115,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> FERBUS = registerBlock("ferbus",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
+
 
 
     public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",
