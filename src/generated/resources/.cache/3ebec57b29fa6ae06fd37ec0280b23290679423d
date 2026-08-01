@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-21T02:20:09.1122581	Item Models: kamenridercraft
+// 1.21.1	2026-07-31T20:33:30.5066954	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
@@ -499,6 +499,7 @@ be7b63aa196fd83c84f9c65180fe50401dbe4669 assets/kamenridercraft/models/item/moos
 7954a579377eefc2a29ccb3370bee8f86f00fc24 assets/kamenridercraft/models/item/morinagaramune_gochizo.json
 5b450bb389e4a1c4b374b4300f1f67d579698c7a assets/kamenridercraft/models/item/mugen_driver.json
 1a89f51eb57e32f3c2dca48b3e665fef22e6f482 assets/kamenridercraft/models/item/my_th_driver.json
+89e07f83a8a4ed3791c0b28d57e65e7a55bf50b7 assets/kamenridercraft/models/item/my_th_driver_hammer_on.json
 cca1453fb32a74f4644c9a51ddd42633a087d025 assets/kamenridercraft/models/item/my_th_head.json
 f82f8bba43ec4de0cc4fbc6c15ede5e4030fe335 assets/kamenridercraft/models/item/my_th_legs.json
 66e0b59086a8a8ad5b780749e2d7304581db6695 assets/kamenridercraft/models/item/my_th_troso.json
@@ -582,6 +583,7 @@ acb1e14cc7c8d27cac1bdfa9ad998a9ce55fe5cf assets/kamenridercraft/models/item/revi
 50ceb4d926ad1f44d13b75d95a5a6ebeb05ea30e assets/kamenridercraft/models/item/revi_ride_chemy_card.json
 b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhino_super_viral_core.json
 314438fefd6a1e7cb0128ffc9ec507f1c5f8c46e assets/kamenridercraft/models/item/ridegg_1.json
+314438fefd6a1e7cb0128ffc9ec507f1c5f8c46e assets/kamenridercraft/models/item/ridegg_1_rid.json
 1f1e0658a7c7e162219798477ca1764da00677bd assets/kamenridercraft/models/item/riderman_gochizo.json
 8dc9e413eff4eb380745fb754e2726946d63dbd8 assets/kamenridercraft/models/item/rider_case.json
 744f2caf73151f7129329cac6b7ecb32cacf553d assets/kamenridercraft/models/item/rider_gashat_case.json
