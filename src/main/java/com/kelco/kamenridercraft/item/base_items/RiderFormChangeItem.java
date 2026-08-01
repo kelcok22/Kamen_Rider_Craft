@@ -241,7 +241,7 @@ public class RiderFormChangeItem extends BaseItem {
     public String getFlyingModel(String riderName) {
         if (flyingModel != null)
             return flyingModel;
-        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getRiderName(riderName) + formName + "_wing.geo.json");
+        ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getRiderName(riderName) + formName + "_wing.geo.json");
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + "_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
     }
 
