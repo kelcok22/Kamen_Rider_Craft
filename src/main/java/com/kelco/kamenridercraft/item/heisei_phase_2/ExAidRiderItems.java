@@ -705,7 +705,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addAlternative(DANGEROUS_ZOBIE_LAZER.get()));
+                    .isGlowing().changeModel("genm_lvx.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addAlternative(DANGEROUS_ZOBIE_LAZER.get()));
 
     public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT= ITEMS.register("dangerous_zombie_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_lvx","genm","gamer_driver_dangerous_zombie",
@@ -726,7 +726,7 @@ public class ExAidRiderItems {
             }
                     .addAlternative(DANGEROUS_ZOBIE_GASHAT_BD.get()).addNeedForm(PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN.get(),1)
                     .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("genm_lvx.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT = ITEMS.register("unfinished_kamen_rider_chronicle_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ride_player","ride_player_belt",
