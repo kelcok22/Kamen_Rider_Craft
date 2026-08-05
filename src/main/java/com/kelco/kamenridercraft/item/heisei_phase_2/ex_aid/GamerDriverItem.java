@@ -150,7 +150,7 @@ public class GamerDriverItem extends RiderDriverItem {
                     & rider.hasEffect(EffectCore.CHRISTMAS)) {
                 return "beat_gamer_christmas";
             } else return getFormItem(itemstack, 2).getFormName(false);
-        } else {
+        }else {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
             if (belt == ExAidRiderItems.GAMER_DRIVER_EX_AID.get() & getFormItem(itemstack, 1) == ExAidRiderItems.MIGHTY_ACTION_X_GASHAT_LV_1.get()
                     & rider.hasEffect(EffectCore.CHRISTMAS)) {
@@ -162,10 +162,18 @@ public class GamerDriverItem extends RiderDriverItem {
                         getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_TANK_GASHAT.get() ||
                         getFormItem(itemstack, 2) == ExAidRiderItems.XEVIOUS_GASHAT.get()) {
                     return riderName + "_jet";
-                } else if (getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_SIMULATION_GASHAT.get()) {
+                } else if (getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_SIMULATION_GASHAT.get() ||
+                        getFormItem(itemstack, 2) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()){
                     return riderName + "_nocape";
                 }
 
+            }
+
+            if (belt == ExAidRiderItems.GAMER_DRIVER_BRAVE.get()) {
+                if (getFormItem(itemstack, 2) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get() ||
+                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT.get()) {
+                    return riderName + "_hunter";
+                }
             }
 
             if (getFormItem(itemstack, 2).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats")))) {
