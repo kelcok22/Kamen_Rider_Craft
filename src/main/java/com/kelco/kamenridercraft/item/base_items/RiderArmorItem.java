@@ -28,7 +28,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class RiderArmorItem extends ArmorItem implements GeoItem {
+public class RiderArmorItem extends ArmorItem  implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private Item changedRepairItem = ModdedItemCore.RIDER_CIRCUIT.get();
 

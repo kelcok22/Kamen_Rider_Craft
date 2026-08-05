@@ -1,8 +1,11 @@
 package com.kelco.kamenridercraft.client.renderer.layers;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.models.RiderArmorLayerModel;
 import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
+import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -11,11 +14,17 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FastColor;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;
+import org.joml.Matrix4f;
 import software.bernie.geckolib.animatable.GeoAnimatable;
+import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.constant.DataTickets;
+import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import software.bernie.geckolib.resource.GeoGlowingTextureMeta;
@@ -23,24 +32,85 @@ import software.bernie.geckolib.resource.GeoGlowingTextureMeta;
 import java.util.List;
 
 
-public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> {
+public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T> {
 
     public RiderRenderLayer(GeoRenderer<T> renderer) {
         super(renderer);
     }
 
-    protected ResourceLocation getTextureResource(T animatable, int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
-        if (slot == EquipmentSlot.FEET)
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" + belt.getUnlimitedBeltTextures(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1) + ".png");
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + belt.getUnlimitedTextures(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1) + ".png");
+    public static void matchModelPartRot(GeoBone from, GeoBone to) {
+        to.updateRotation(from.getRotX(), from.getRotY(), from.getRotZ());
     }
 
 
+
+    protected void applyBaseTransformations(BakedGeoModel bakedModel,BakedGeoModel newModel) {
+        String[] boneNames = new String[] {"armorHead","armorBody","armorRightArm","armorLeftArm","armorRightLeg","armorLeftLeg"};
+        for (int n = 0; n < boneNames.length; n++) {
+            GeoBone bakedHead = bakedModel.getBone(boneNames[n]).orElse(null);
+            GeoBone head = newModel.getBone(boneNames[n]).orElse(null);
+            if (head != null & bakedHead != null) {
+                matchModelPartRot(bakedHead, head);
+                head.updatePosition(bakedHead.getPosX(), bakedHead.getPosY(), bakedHead.getPosZ());
+            }
+        }
+    }
+    protected void applyCustomAnimations(BakedGeoModel bakedModel, LivingEntity entity,float PartialTick) {
+        GeoBone wizard_circle5 = bakedModel.getBone("wizard_circle5").orElse(null);
+        double GetTransforming = entity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
+
+        float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - PartialTick);
+        if (wizard_circle5 != null) {
+            if (RiderDriverItem.isTransforming(entity)) {
+                wizard_circle5.setScaleX(1.1f);
+                wizard_circle5.setScaleY(1.1f);
+                wizard_circle5.setScaleZ(1.1f);
+                wizard_circle5.setPosX(2.5f);
+                wizard_circle5.setPosZ(30 - Transforming);
+                wizard_circle5.setHidden(false);
+            } else {
+                wizard_circle5.setHidden(true);
+                wizard_circle5.setPosZ(0);
+            }
+        }
+    }
+
+    protected ResourceLocation getTextureResource(int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
+        if (slot == EquipmentSlot.FEET)
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" + belt.getUnlimitedBeltModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + ".png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + belt.getUnlimitedModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + ".png");
+    }
+
+    protected ResourceLocation getGlowTextureResource(int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
+        if (slot == EquipmentSlot.FEET)
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" + belt.getUnlimitedBeltModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + "_glowmask.png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + belt.getUnlimitedModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + "_glowmask.png");
+    }
+
+    protected String getModelResource(int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
+        if (slot == EquipmentSlot.FEET)
+            return belt.getUnlimitedBeltModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[1];
+        return belt.getUnlimitedModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[1];
+    }
+
+    public GeoModel<T> getGeoModel(String name) {
+        return new RiderArmorLayerModel(){
+            @Override
+            public ResourceLocation getModelResource( RiderArmorItem animatable) {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/"+name+".geo.json");
+            }
+        };
+    }
+
+    public BakedGeoModel getBakedModel(T animatable,GeoModel<T> model) {
+        return getGeoModel().getBakedModel(model.getModelResource(animatable, getRenderer()));
+    }
+
     @Nullable
-    protected RenderType getRenderType(T animatable, int run, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
-        if (getTextureResource(animatable, run, entity, belt, slot).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))return null;
-        if (getTextureResource(animatable, run, entity, belt, slot).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))return null;
-        return RenderType.entityTranslucent(getTextureResource(animatable, run, entity, belt, slot));
+    protected RenderType getRenderType(ResourceLocation text) {
+        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))return null;
+        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))return null;
+        return RenderType.entityTranslucent(text);
     }
 
     /**
@@ -56,10 +126,21 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
             if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                 if (belt.unlimitedTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.HEAD) {
                     for (int n = 0; n < belt.unlimitedTextures; n++) {
-                        renderType = getRenderType(animatable, n, RIDER, belt, EquipmentSlot.HEAD);
-
+                        ResourceLocation text = getTextureResource(n,RIDER,belt,EquipmentSlot.HEAD);
+                        ResourceLocation glowText = getGlowTextureResource(n,RIDER,belt,EquipmentSlot.HEAD);
+                        renderType = getRenderType(text);
+                        String model = getModelResource(n,RIDER,belt, EquipmentSlot.HEAD);
+                        BakedGeoModel bakedGeoModel = model!= null ? getBakedModel(animatable,getGeoModel(model)):bakedModel;
+                        if(model!= null)applyBaseTransformations(bakedModel,bakedGeoModel);
+                        if(model!= null)applyCustomAnimations(bakedGeoModel,RIDER,partialTick);
                         if (renderType != null) {
-                            getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderType,
+                            getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
+                                    bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
+                                    getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
+                        }
+                        if (!glowText.getPath().isEmpty()){
+                            renderType=  RenderType.breezeEyes(glowText);
+                            getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }
@@ -67,10 +148,13 @@ public class RiderRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T>
                 }
                 if (belt.unlimitedBeltTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.FEET) {
                     for (int n = 0; n < belt.unlimitedBeltTextures; n++) {
-                        renderType = getRenderType(animatable, n, RIDER, belt, EquipmentSlot.FEET);
-
+                        ResourceLocation text = getTextureResource(n,RIDER,belt,EquipmentSlot.FEET);
+                        renderType = getRenderType(text);
+                        String model = getModelResource(n,RIDER,belt, EquipmentSlot.FEET);
+                        BakedGeoModel bakedGeoModel = model!= null ? getBakedModel(animatable, getGeoModel(model)):bakedModel;
+                        if(model!= null)applyBaseTransformations(bakedModel,bakedGeoModel);
                         if (renderType != null) {
-                            getRenderer().reRender(bakedModel, poseStack, bufferSource, animatable, renderType,
+                            getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }

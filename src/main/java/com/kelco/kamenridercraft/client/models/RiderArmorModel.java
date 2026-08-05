@@ -15,23 +15,25 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
+import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 
 import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
 import static com.kelco.kamenridercraft.world.attribute.Attributes.WINGS_OUT;
 
-public class RiderArmorModel extends GeoModel<RiderArmorItem> {
+public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
 
 
     public RiderArmorModel() {
     }
 
     @Override
-    public ResourceLocation getModelResource(RiderArmorItem animatable, @Nullable GeoRenderer<RiderArmorItem> renderer) {
+    public ResourceLocation getModelResource(T animatable, @Nullable GeoRenderer<T> renderer) {
         if (renderer instanceof RiderArmorRenderer riderRenderer) {
             LivingEntity rider = riderRenderer.GetEntity();
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
@@ -43,17 +45,17 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
                 }
             }
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default.geo.json");
+        return getModelResource(animatable);
     }
 
     @Override
-    public ResourceLocation getModelResource(RiderArmorItem animatable) {
+    public ResourceLocation getModelResource(T animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/default.geo.json");
     }
 
 
     @Override
-    public ResourceLocation getTextureResource(RiderArmorItem animatable, @Nullable GeoRenderer<RiderArmorItem> renderer) {
+    public ResourceLocation getTextureResource(T animatable, @Nullable GeoRenderer<T> renderer) {
         if (renderer instanceof RiderArmorRenderer riderRenderer) {
             LivingEntity RIDER = riderRenderer.GetEntity();
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
@@ -66,26 +68,23 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
     }
 
     @Override
-    public ResourceLocation getTextureResource(RiderArmorItem animatable) {
+    public ResourceLocation getTextureResource(T animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");
     }
 
 
     @Override
-    public ResourceLocation getAnimationResource(RiderArmorItem animatable) {
+    public ResourceLocation getAnimationResource(T animatable) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/default_rider.animation.json");
     }
 
     @Override
-    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
-
+    public void setCustomAnimations(T an, long instanceId, AnimationState<T> state) {
 
         Entity entity = state.getData(DataTickets.ENTITY);
 
         if (entity instanceof LivingEntity RIDER) {
-
             double GetTransforming = RIDER.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
-
             double GetBallOld = RIDER.getAttribute(Attributes.BALL_ROT_OLD).getBaseValue();
             double GetBall = RIDER.getAttribute(Attributes.BALL_ROT).getBaseValue();
             double GetWheelOld = RIDER.getAttribute(Attributes.WHEEL_ROT_OLD).getBaseValue();
@@ -133,7 +132,7 @@ public class RiderArmorModel extends GeoModel<RiderArmorItem> {
             }
 
             if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                belt.setCustomAnimations(an, instanceId, state);
+                belt.setCustomAnimations( an, instanceId, (AnimationState<RiderArmorItem>) state);
 
                 GeoBone parkaGhost = this.getAnimationProcessor().getBone("parkaGhost");
                 if (parkaGhost != null) {

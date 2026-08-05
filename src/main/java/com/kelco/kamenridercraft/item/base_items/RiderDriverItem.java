@@ -110,6 +110,7 @@ public class RiderDriverItem extends RiderArmorItem {
         GeoItem.registerSyncedAnimatable(this);
     }
 
+
     /**
      * Checks if a {@link LivingEntity} has transformed by equipping this item and its associated armor set.
      *
@@ -334,9 +335,16 @@ public class RiderDriverItem extends RiderArmorItem {
     public String getUnlimitedTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         return "blank";
     }
+    public String[] getUnlimitedModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
+        return new String[]{getUnlimitedTextures(itemStack,rider,riderName,num),null};
+    }
 
     public String getUnlimitedBeltTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         return "blank";
+    }
+
+    public String[] getUnlimitedBeltModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
+        return new String[]{getUnlimitedBeltTextures(itemStack,rider,riderName,num),null};
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {

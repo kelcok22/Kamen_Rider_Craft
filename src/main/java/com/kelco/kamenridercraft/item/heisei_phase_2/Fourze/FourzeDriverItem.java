@@ -79,27 +79,26 @@ public class FourzeDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
+    public String[] getUnlimitedModels(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
         boolean fly = livingEntity instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
         if (num == 1) {
             if (getFormItem(itemstack, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get() & getFormItem(itemstack, 1) != null) {
-                return riderName + getFormItem(itemstack, 1).getFormName(fly);
-            } else return "blank";
-        }
-        if (num == 2) {
+                return new String[]{riderName + getFormItem(itemstack, 1).getFormName(fly),null};
+            }
+        } else if (num == 2) {
             if (getFormItem(itemstack, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() & getFormItem(itemstack, 2) != null) {
-                return riderName + getFormItem(itemstack, 2).getFormName(fly);
-            } else return "blank";
+                return new String[]{riderName + getFormItem(itemstack, 2).getFormName(fly),null};
+            }
         } else if (num == 3) {
             if (getFormItem(itemstack, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get() & getFormItem(itemstack, 3) != null) {
-                return riderName + getFormItem(itemstack, 3).getFormName(fly);
-            } else return "blank";
+                return new String[]{riderName + getFormItem(itemstack, 3).getFormName(fly),null};
+            }
         } else if (num == 4) {
             if (getFormItem(itemstack, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get() & getFormItem(itemstack, 4) != null) {
-                return riderName + getFormItem(itemstack, 4).getFormName(fly);
-            } else return "blank";
+                return new String[]{riderName + getFormItem(itemstack, 4).getFormName(fly),null};
+            }
         }
-        return "blank";
+        return new String[]{"blank",null};
     }
 
     @Override
@@ -214,10 +213,12 @@ public class FourzeDriverItem extends RiderDriverItem {
                 return true;
             }
             case HEAD -> {
-                if (Objects.equals(part, "rightLeg")) return true;
+                return true;
+                /**if (Objects.equals(part, "rightLeg")) return true;
                 if (Objects.equals(part, "leftLeg")) return true;
                 if (Objects.equals(part, "rightArm")) return true;
                 if (Objects.equals(part, "leftArm")) return true;
+                 **/
             }
         }
         return false;
