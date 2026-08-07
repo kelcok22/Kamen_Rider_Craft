@@ -7,6 +7,8 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -25,7 +27,9 @@ import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -980,6 +984,41 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
+            () -> new RiderFormChangeItem(new Item.Properties(),"ider","code_zero","blank",
+                    new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 4,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
+                    new MobEffectInstance(EffectCore.STEP, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+
+                    if (tick==30d){
+                        if (player instanceof Player && player.onGround()) {
+                            Vec3 initialVec = player.getDeltaMovement();
+                            Vec3 climbVec = new Vec3(initialVec.x, 1, initialVec.z);
+                            player.setDeltaMovement(climbVec.scale(0.97D));
+                            player.hurtMarked = true;
+                            PacketDistributor.sendToAllPlayers(new AnimPayload("accel.henshin_bike_pose", "attack", false, player.getStringUUID()));
+                        }
+                        RiderDriverItem.SetOldFormItem(itemstack,ZEROIDER_CORE.get(),1);
+                    }
+                    if (tick==20d){
+                        if (player instanceof Player) {
+                            PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "attack", true));
+                        }
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }}
+            }.setFormDelay(20).changeModel("code_zeroider.geo.json").isBike().has_basic_model().model_has_different_name("zeroider_core"));
+
+    public static final DeferredItem<Item> ZEROIDER_CORE = ITEMS.register("zeroider_core",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","code_zero","blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
+                    .changeModel("zero.geo.json").addSwitchForm(ZEROIDER_CORE_BIKE.get()).IsBeltGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_exdream_driver_buckle",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1065,6 +1104,9 @@ public class ZeztzRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_thirteen", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ZEROIDER_CONTROL = ITEMS.register("zeroider_control",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"code_zero", ZEROIDER_CORE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)

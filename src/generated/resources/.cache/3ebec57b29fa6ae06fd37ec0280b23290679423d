@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-01T01:55:47.6917847	Item Models: kamenridercraft
+// 1.21.1	2026-08-07T12:25:13.2780346	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -801,6 +801,8 @@ b48590b84c67fd15e919d7a10d34f7e67e6db147 assets/kamenridercraft/models/item/yoac
 5c26bae1953ef27c95d01cc5a39bbc8a75f00f9b assets/kamenridercraft/models/item/young_ichinose_treasure.json
 b2d07447099d039d55535fa6f8e37d5f045123f7 assets/kamenridercraft/models/item/zakuzakuchips_gochizo_barbecue.json
 edb8931fd61570d7eb6f9bb7e6fc465c6f701f35 assets/kamenridercraft/models/item/zakuzakuchips_gochizo_garlic.json
+14438da38e92046b263fa14e7f75b59de4a42912 assets/kamenridercraft/models/item/zeroider_core.json
+14438da38e92046b263fa14e7f75b59de4a42912 assets/kamenridercraft/models/item/zeroider_core_bike.json
 a37bd41b96bbf1ed4d027b316660c5d2fdd44ab4 assets/kamenridercraft/models/item/zero_one_capsem.json
 243e721f590e2791002754861fcfb00faa658be9 assets/kamenridercraft/models/item/zero_one_gochizo.json
 a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero_one_ride_chemy_card.json

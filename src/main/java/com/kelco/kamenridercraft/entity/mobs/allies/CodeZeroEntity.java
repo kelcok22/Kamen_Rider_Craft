@@ -5,12 +5,16 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.NeutralMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -34,15 +38,15 @@ import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 
-public class CodeZeroEntity extends BaseAllyEntity implements GeoEntity {
-
-    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+public class CodeZeroEntity extends BaseAllyEntity  {
 
     public CodeZeroEntity(EntityType<? extends CodeZeroEntity> entityType, Level level) {
         super(entityType, level);
-        NAME = "code_zero";
-        this.setPersistenceRequired();
-
+        NAME="zero";
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.ZEROIDER_CONTROL.get()));
     }
 
     public static AttributeSupplier.Builder setAttributes() {
@@ -124,20 +128,5 @@ public class CodeZeroEntity extends BaseAllyEntity implements GeoEntity {
         return false;
     }
 
-    @Override
-    public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return this.cache;
-    }
-
-    // Add our generic idle animation controller
-    @Override
-    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
-
-        RawAnimation IDLE = RawAnimation.begin().thenLoop("animation.auto_vajin.idle");
-        RawAnimation WALK = RawAnimation.begin().thenLoop("animation.auto_vajin.walk");
-        RawAnimation SIT = RawAnimation.begin().thenPlay("animation.auto_vajin.sit");
-
-        controllers.add(new AnimationController<>(this, "Walk/Idle", 0, state -> state.setAndContinue(!isInSittingPose() ? state.isMoving() ? WALK : IDLE : SIT)));
-    }
 
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/lord_invoker_thirteen"
+    "layer0": "kamenridercraft:item/zeroider_core"
   }
 }
