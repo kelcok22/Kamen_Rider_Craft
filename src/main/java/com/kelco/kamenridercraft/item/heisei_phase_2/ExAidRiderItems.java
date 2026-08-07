@@ -1137,7 +1137,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .setFormToArmor().changeSlot(2).hasCape().changeModel("fantasy_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
     public static final DeferredItem<Item> BANG_BANG_SIMULATION_GASHAT = ITEMS.register("bang_bang_simulation_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"simulation_gamer","snipe","gamer_driver_taddle_fantasy",
