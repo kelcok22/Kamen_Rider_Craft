@@ -1156,7 +1156,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .setSlotTwoAbility("cannon", 1).setFormToArmor().changeSlot(2).changeModel("simulation_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
     public static final DeferredItem<Item> GASHAT_GEAR_DUAL = ITEMS.register("gashat_gear_dual",
             () -> new RiderFormChangeItem(new Item.Properties(),"","para_dx_lv99","gamer_driver_gashat_gear_dual",
