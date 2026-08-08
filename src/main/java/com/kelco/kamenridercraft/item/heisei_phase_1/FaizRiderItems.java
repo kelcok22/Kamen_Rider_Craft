@@ -104,7 +104,7 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-					.setSlotOneAbility("gatling", 1).changeModel("faiz_blaster_bloody_cannons.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing());
+					.setSlotOneAbility("gatling", 1).changeModel("faiz_blaster_bloody_cannons.geo.json").isGold().changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing());
 
 	public static final DeferredItem<Item> FAIZ_GOLD_BLASTER_MISSION_MEMORY = ITEMS.register("faiz_gold_blaster_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_gold_blaster","faiz","faiz_driver_belt_g_b",
@@ -121,7 +121,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()).changeModel("faiz_blaster.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			}.addSwitchForm(FAIZ_GOLD_BLASTER_BLOODY_CANNONS.get()).changeModel("faiz_blaster.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KAIXA_MISSION_MEMORY = ITEMS.register("kaixa_mission_memory",

@@ -783,7 +783,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGold().isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT= ITEMS.register("kamen_rider_chronicle_gashat",
@@ -1376,7 +1376,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).changeModel("ex_aid_muteki.geo.json").hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(GameCreator.BLANK_HYPER_GASHAT, 20));
+                    .isGold().isGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).changeModel("ex_aid_muteki.geo.json").hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(GameCreator.BLANK_HYPER_GASHAT, 20));
 
     public static final DeferredItem<Item> GEMEDEUS_HYPER_MUTEKI_GASHAT = ITEMS.register("gamedeus_hyper_muteki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","gamedeus_muteki","gamer_driver_gamedeus_hyper_muteki",
@@ -1448,7 +1448,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().hasStaticWings().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+                    .isGold().isGlowing().hasStaticWings().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 

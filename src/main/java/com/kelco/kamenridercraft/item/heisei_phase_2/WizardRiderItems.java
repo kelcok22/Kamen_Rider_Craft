@@ -561,7 +561,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARD_RING = ITEMS.register("black_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","black_wizard","wizardriver_belt_black",

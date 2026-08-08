@@ -278,7 +278,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(GOLD_SPINO_VISTAMP_VICE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
+			}.isGold().isGlowing().addAlternative(GOLD_SPINO_VISTAMP_VICE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRUE_REX_VISTAMP = ITEMS.register("true_rex_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_shin","revi","revice_driver_belt_tr",
@@ -1131,7 +1131,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
+			}.isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> KRAKEN_VISTAMP = ITEMS.register("kraken_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","orteca","demons_driver_belt",

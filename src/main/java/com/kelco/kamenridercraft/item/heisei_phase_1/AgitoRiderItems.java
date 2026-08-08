@@ -182,7 +182,7 @@ public class AgitoRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeModel("gills_exceed.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			}.isGold().isGlowing().changeModel("gills_exceed.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> ANOTHER_AGITO = ITEMS.register("another_agito",

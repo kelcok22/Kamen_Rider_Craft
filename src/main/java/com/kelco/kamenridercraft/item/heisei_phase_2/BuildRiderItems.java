@@ -291,7 +291,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.canUseHazard().bestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.canUseHazard().bestMatch(DRAGON_FULL_BOTTLE_BUILD.get()).isGold().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> KAIZOKU_FULL_BOTTLE = ITEMS.register("kaizoku_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_kaizoku","build","build_driver_belt",
@@ -829,7 +829,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.bestMatch(SCORPION_FULL_BOTTLE.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
+			}.bestMatch(SCORPION_FULL_BOTTLE.get()).changeSlot(2).isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PANDORA_BOTTLE = ITEMS.register("pandora_bottle",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(PandoraBox.PANDORA_BOTTLE).has_basic_model());
@@ -939,7 +939,7 @@ public class BuildRiderItems {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+					.isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_DRAGON_FULL_BOTTLE = ITEMS.register("silver_dragon_full_bottle",
 			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_silver_dragon","build","build_driver_belt",
@@ -1202,7 +1202,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> NORTH_BLIZZARD_FULL_BOTTLE = ITEMS.register("north_blizzard_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","grease_blizzard","build_driver_belt_blizzard",

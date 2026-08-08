@@ -8712,6 +8712,8 @@
 "kamenridercraft.name.lord_seventeen": "Debatable Rider: Lord Seventeen",
 "item.kamenridercraft.lord_invoker_thirteen": "Lord Invoker",
 "kamenridercraft.name.lord_thirteen": "Debatable Rider: Lord Thirteen",
+  "item.kamenridercraft.zeroider_control": "zeroider_control",
+  "kamenridercraft.name.lord_thirteen": "CODE: Zero",
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -8777,6 +8779,10 @@
 "item.kamenridercraft.charadeco_capsem": "Zeztz Capsem (Charadeco ver.)",
 "item.kamenridercraft.gochizo_capsem": "Gochizo Capsem",
 "item.kamenridercraft.void_capsem": "Void Capsem",
+
+  "item.kamenridercraft.zeroider_core": "Zeroider Core",
+  "kamenridercraft:zeroider_core.form": "Form: Robot Mode",
+  "kamenridercraft:zeroider_core_bike.form": "Form: Bike Mode",
 
 "item.kamenridercraft.impact_capsem_gold": "Impact Capsem (Gold Ver.)",
 "item.kamenridercraft.transform_capsem_gold": "Transform Capsem (Gold Ver.)",

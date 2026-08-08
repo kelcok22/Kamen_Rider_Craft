@@ -116,7 +116,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("buffa").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).isGold().hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUNKJACK_CORE_ID = ITEMS.register("punkjack_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","punkjack","desire_driver_belt_punkjack",
@@ -272,7 +272,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("gya_go").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("gya_go").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).isGold().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SEEKER_CORE_ID = ITEMS.register("seeker_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","seeker","desire_driver_belt_seeker",
@@ -360,7 +360,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").isGold().hasStaticWings().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DISCORE_ID = ITEMS.register("discore_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","jyamato","desire_driver_belt_jyamato",
@@ -512,7 +512,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers));
+			}.changeSlot(2).setOffhandSlot(3).isGold().addCompatibilityList(BaseDesireDriverUsers));
 
 	public static final DeferredItem<Item> FANTASY_RAISE_BUCKLE = ITEMS.register("fantasy_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_fantasy","na_go","desire_driver_belt_geats",
@@ -525,7 +525,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addAlternative(FANTASY_RAISE_BUCKLE_GYA_GO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addAlternative(FANTASY_RAISE_BUCKLE_GYA_GO.get()).isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHARK_RAISE_BUCKLE = ITEMS.register("shark_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shark","geats","desire_driver_belt_geats",
@@ -549,7 +549,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).isGold().addToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> BOOST_RAISE_BUCKLE_FEVER = ITEMS.register("boost_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_boost_slot","geats","desire_driver_belt_geats",
@@ -560,7 +560,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).isGold().addToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> ZOMBIE_RAISE_BUCKLE_FEVER = ITEMS.register("zombie_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zombie_slot","geats","desire_driver_belt_geats",
@@ -572,7 +572,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_zombie.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
+			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_zombie.geo.json").isGold().addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> NINJA_RAISE_BUCKLE_FEVER = ITEMS.register("ninja_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ninja_slot","geats","desire_driver_belt_geats",
@@ -585,7 +585,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).isGold().addToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> MONSTER_RAISE_BUCKLE_FEVER = ITEMS.register("monster_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_monster_slot","geats","desire_driver_belt_geats",
@@ -597,7 +597,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).isGold().addToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> BEAT_RAISE_BUCKLE_FEVER = ITEMS.register("beat_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_beat_slot","geats","desire_driver_belt_geats",
@@ -610,7 +610,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(FeverSlotItem.FEVER_SLOT));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).isGold().addToList(FeverSlotItem.FEVER_SLOT));
 
 	public static final DeferredItem<Item> ARROW_RAISE_BUCKLE_FEVER = ITEMS.register("arrow_raise_buckle_fever",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_arrow_slot","geats","desire_driver_belt_geats",
@@ -887,7 +887,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_SWORD_RAISE_BUCKLE = ITEMS.register("bujin_sword_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_bujin_sword","tycoon","desire_driver_belt_geats",
@@ -1643,7 +1643,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.isGold().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_ZIINGAZER = ITEMS.register("providence_card_ziingazer",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","ziingazer","laser_raise_driver_belt",
@@ -1676,7 +1676,7 @@ public class GeatsRiderItems {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
-				}}.IsBeltGlowing());
+				}}.isGold().IsBeltGlowing());
 
 	public static final DeferredItem<Item> SIRIUS_CARD = ITEMS.register("sirius_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","regad","zillion_driver_belt",
@@ -1692,7 +1692,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.addSwitchForm(SIRIUS_CARD_OMEGA.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.isGold().addSwitchForm(SIRIUS_CARD_OMEGA.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIRIUS_CARD_GAZER_ZERO = ITEMS.register("sirius_card_gazer_zero",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","gazer_zero","zillion_driver_gazer_zero_belt",

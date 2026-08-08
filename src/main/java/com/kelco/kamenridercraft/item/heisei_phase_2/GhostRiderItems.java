@@ -264,7 +264,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.changeModel("yujou_burst_necrom_damashii.geo.json").changeSlot(2));
+			}.isGold().changeModel("yujou_burst_necrom_damashii.geo.json").changeSlot(2));
 
 	public static final DeferredItem<Item> YUJOU_BURST_GHOST_EYECON = ITEMS.register("yujou_burst_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_yujou_burst","necrom","necrom_belt_yujou",
@@ -708,7 +708,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}}
-			}.addNum(2).changeModel("pythagoras_damashii.geo.json").changeSlot(2).hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.addNum(2).changeModel("pythagoras_damashii.geo.json").changeSlot(2).isGold().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SANTA_GHOST_EYECON = ITEMS.register("santa_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"santa_damashii","ghost","ghostdriver_belt",
@@ -842,7 +842,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 70, 0, 0, 0, 1);
 				}}
-			}.changeModel("tenkatoitsu_damashii.geo.json").hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeModel("tenkatoitsu_damashii.geo.json").isGold().hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINSENGUMI_GHOST_EYECON = ITEMS.register("shinsengumi_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"shinsengumi_damashii","ghost","ghostdriver_belt",
@@ -1288,7 +1288,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> EYECON_DRIVER_G = ITEMS.register("eyecon_driver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ghost_grateful",UNFINISHED_EYECON_DRIVER_G , GHOST_HELMET,GHOST_CHESTPLATE,GHOST_LEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))

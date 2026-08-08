@@ -79,7 +79,7 @@ public class FourzeRiderItems {
 					player.level().addFreshEntity(thunder);
 
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.isGold().changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
 
 	public static final DeferredItem<Item> FOURZE_FIRE_STATES = ITEMS.register("fourze_firestates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fire","fourze","fourze_driver_belt",

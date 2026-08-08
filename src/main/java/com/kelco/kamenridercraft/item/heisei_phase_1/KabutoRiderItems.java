@@ -324,7 +324,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("clock_up", 1).isGlowing().addSwitchForm(CAUCASUS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
+            }.setSlotOneAbility("clock_up", 1).isGold().isGlowing().addSwitchForm(CAUCASUS_ZECTER_MASK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));
 
     public static final DeferredItem<Item> HERCUS_ZECTER_MASK = ITEMS.register("hercus_zecter_mask",
             () -> new RiderFormChangeItem(new Item.Properties(), "_masked", "hercus", "zect_buckle_hercus_belt",

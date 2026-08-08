@@ -263,7 +263,7 @@ public class RyukiRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+            }.isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA_RYUGA = ITEMS.register("survive_rekka_ryuga",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_survive","ryuga","v_buckle_belt_ryuga_s",

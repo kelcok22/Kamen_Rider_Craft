@@ -658,7 +658,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .isGold().addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SILVER_RINGO_LOCKSEED = ITEMS.register("silver_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "silver_arms", "gaim", "sengoku_driver_belt",

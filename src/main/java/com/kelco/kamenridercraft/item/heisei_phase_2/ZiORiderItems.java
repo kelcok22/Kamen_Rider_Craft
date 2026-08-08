@@ -200,7 +200,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGold().isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> OHMA_ZI_O_RIDEWATCH = ITEMS.register("ohma_zi_o_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), "_ohma", "zi_o", "ziku_driver_zi_o_belt_ohma",
@@ -224,7 +224,7 @@ public class ZiORiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGold().isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIZ_RIDEWATCH = ITEMS.register("geiz_ridewatch",
             () -> new GeizRidewatchItem(new Item.Properties(), "", "geiz", "ziku_driver_geiz_belt",
@@ -293,7 +293,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGold().isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> TSUKUYOMI_RIDEWATCH = ITEMS.register("tsukuyomi_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "tsukuyomi", "ziku_driver_tsukuyomi_belt",
@@ -1852,7 +1852,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGold().isGlowing().IsBeltGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_R = ITEMS.register("unfinished_ohma_zi_o_driver_r",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
@@ -2194,7 +2194,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GINGA_SCOPE = ITEMS.register("ginga_scope",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ginga", "ginga_driver_belt",

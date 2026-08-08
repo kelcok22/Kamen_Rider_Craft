@@ -251,7 +251,7 @@ public class GotchardRiderItems {
 					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).addToList(ChemyRiserItem.allChemy).addToList(ChemyRiserItem.insectChemy).has_basic_model());
 
 	public static final DeferredItem<Item> KAISERBEE_RIDE_CHEMY_CARD = ITEMS.register("kaiserbee_ride_chemy_card",
-			() -> new RiderFormChangeItem(new Item.Properties(),"","","").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM)
+			() -> new RiderFormChangeItem(new Item.Properties(),"","","").isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM)
 					.addToList(ChemyRiserItem.allChemy).addToList(ChemyRiserItem.insectChemy).has_basic_model());
 
 	public static final DeferredItem<Item> KAMANTIS_RIDE_CHEMY_CARD = ITEMS.register("kamantis_ride_chemy_card",
@@ -564,7 +564,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
+			}.isGold().isGlowing().changeBeltModel("geo/belts/gotchard_belt_big.geo.json")
 					.addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_GoldMechanichor).addToList(NEED_ITEM_GoldMechanichor)
 					.addToList(ChemyRiserItem.vehicleChemy).addToList(ChemyRiserItem.allChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
@@ -1175,7 +1175,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_Platina).addToList(NEED_ITEM_Platina).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+			}.isGold().isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_Platina).addToList(NEED_ITEM_Platina).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> HOPPER1_RIDE_CHEMY_CARD_ULTIMA = ITEMS.register("hopper1_ride_chemy_card_ultima",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"","gotchard","gotchardriver_belt_daybreak",
@@ -1317,7 +1317,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedForm(NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).addNeedItemList(NEED_ITEM_Miracle).addToList(NEED_ITEM_Miracle).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+			}.isGold().isGlowing().addNeedForm(NIJIGON_RIDE_CHEMY_CARD_EXTRA.get()).addNeedItemList(NEED_ITEM_Miracle).addToList(NEED_ITEM_Miracle).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> GIGANTLINER_RIDE_CHEMY_CARD = ITEMS.register("gigantliner_ride_chemy_card",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.RARE), HOPPER101_RIDE_CHEMY_CARD.get()).addToList(NEED_ITEM_Miracle).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -1347,7 +1347,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedItemList(NEED_ITEM_LegendLiner).addToList(NEED_ITEM_LegendLiner).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+			}.isGold().isGlowing().addNeedItemList(NEED_ITEM_LegendLiner).addToList(NEED_ITEM_LegendLiner).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> LEGENDARY_LEGEND_RIDE_CHEMY_CARD_FS = ITEMS.register("legendary_legend_ride_chemy_card_fs",
 			() -> new CopyFormChangeItem(new Item.Properties().rarity(Rarity.RARE), GIGANTLINER_RIDE_CHEMY_CARD_FS.get()).addToList(NEED_ITEM_LegendLiner).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
@@ -1734,7 +1734,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
+			}.isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM).has_basic_model());
 
 	public static final DeferredItem<Item> SANTACLAUS_RIDE_CHEMY_CARD = ITEMS.register("santaclaus_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
@@ -1760,7 +1760,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_ExceedMighty).has_basic_model().model_has_different_name("kuuga_ride_chemy_card"));
+			}.isGold().isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_ExceedMighty).has_basic_model().model_has_different_name("kuuga_ride_chemy_card"));
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD = ITEMS.register("kuuga_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),"","legend","legendriver_belt",
@@ -1867,7 +1867,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_CycloneTaToBa).has_basic_model().model_has_different_name("w_ride_chemy_card"));
+			}.isGold().isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_CycloneTaToBa).has_basic_model().model_has_different_name("w_ride_chemy_card"));
 
 	public static final DeferredItem<Item> W_RIDE_CHEMY_CARD = ITEMS.register("w_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),"","legend","legendriver_belt",
@@ -1906,7 +1906,7 @@ public class GotchardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_FullFullRocket).has_basic_model().model_has_different_name("fourze_ride_chemy_card"));
+			}.isGold().isGlowing().addCompatibilityList(Gotchards).addNeedItemList(NEED_ITEM_FullFullRocket).has_basic_model().model_has_different_name("fourze_ride_chemy_card"));
 
 	public static final DeferredItem<Item> FOURZE_RIDE_CHEMY_CARD = ITEMS.register("fourze_ride_chemy_card",
 			() -> new LegendChemyCardItem(new Item.Properties(),"","legend","legendriver_belt",

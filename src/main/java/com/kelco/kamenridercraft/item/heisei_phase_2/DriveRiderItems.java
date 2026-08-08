@@ -494,7 +494,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
+            }.addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).isGold()
                     .addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
@@ -970,7 +970,7 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }
-                    .addAlternative(SHIFT_VIRAL_CORE.get()).isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addAlternative(SHIFT_VIRAL_CORE.get()).isGlowing().isGold().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MEGAHEX_VIRAL_CORE = ITEMS.register("megahex_viral_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_zzz", "megahex", "blank",
@@ -1028,7 +1028,7 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing()
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .isGold().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROIDMUDE_CORE_002 = ITEMS.register("roidmude_core_002",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
@@ -1082,7 +1082,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.isGold().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROIDMUDE_CORE_108 = ITEMS.register("roidmude_core_108",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));

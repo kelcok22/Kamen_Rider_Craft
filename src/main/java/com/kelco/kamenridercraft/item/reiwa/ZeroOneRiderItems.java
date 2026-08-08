@@ -692,7 +692,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.isGlowing());
+			}.isGold().isGlowing());
 
 	public static final DeferredItem<Item> FIGHTING_JACKAL_PROGRISEKEY = ITEMS.register("fighting_jackal_progrisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","raider_jackal","raid_riser_belt_jackal",
@@ -833,7 +833,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing());
+			}.isGold().isGlowing());
 
 	public static final DeferredItem<Item> AMAZING_CAUCASUS_PROGRISEKEY = ITEMS.register("amazing_caucasus_progrisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","thouser","zaia_thousandriver_belt",
@@ -847,7 +847,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(AMAZING_CAUCASUS_PROGRISEKEY_ZERO_ONE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM).addToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 2));
+			}.isGold().isGlowing().addAlternative(AMAZING_CAUCASUS_PROGRISEKEY_ZERO_ONE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM).addToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 2));
 
 	public static final DeferredItem<Item> AWAKING_ARSINO_ZETSUMERISEKEY = ITEMS.register("awaking_arsino_zetsumerisekey",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM).addToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 2));

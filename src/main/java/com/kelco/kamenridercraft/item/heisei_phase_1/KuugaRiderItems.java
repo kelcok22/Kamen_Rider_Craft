@@ -207,7 +207,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_RISING_ULTIMATE_BLACK_EYES = ITEMS.register("kuuga_rising_ultimate_black_eyes",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_rising_ultimate_black_eyes","kuuga","arcle_belt_ru",
@@ -223,7 +223,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGold().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_SUPER_RISING_ULTIMATE = ITEMS.register("kuuga_super_rising_ultimate",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_super_rising_ultimate","kuuga","arcle_belt_u",
@@ -242,7 +242,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGold().IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KUUGA_BLACK_RISING_MIGHTY = ITEMS.register("kuuga_black_rising_mighty",
