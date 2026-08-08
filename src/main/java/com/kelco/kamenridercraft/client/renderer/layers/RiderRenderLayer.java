@@ -138,12 +138,12 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }
-                        if (!glowText.getPath().isEmpty()){
+                        /**if (!glowText.getPath().isEmpty()){
                             renderType=  RenderType.breezeEyes(glowText);
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
-                        }
+                        }**/
                     }
                 }
                 if (belt.unlimitedBeltTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.FEET) {
