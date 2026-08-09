@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.client.renderer.layers;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.models.RiderArmorLayerModel;
 import com.kelco.kamenridercraft.client.renderer.RiderArmorRenderer;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -75,23 +76,18 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
         }
     }
 
-    protected ResourceLocation getTextureResource(int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
+    protected ResourceLocation getTextureResource(RenderLayerInfo renderLayerInfo,EquipmentSlot slot) {
         if (slot == EquipmentSlot.FEET)
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" + belt.getUnlimitedBeltModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + ".png");
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + belt.getUnlimitedModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + ".png");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" +renderLayerInfo.GetTexture()+".png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.GetTexture()+ ".png");
     }
 
-    protected ResourceLocation getGlowTextureResource(int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
+    protected ResourceLocation getGlowTextureResource(RenderLayerInfo renderLayerInfo,EquipmentSlot slot)  {
         if (slot == EquipmentSlot.FEET)
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" + belt.getUnlimitedBeltModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + "_glowmask.png");
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + belt.getUnlimitedModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[0] + "_glowmask.png");
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" +  renderLayerInfo.GetTexture() + "_glowmask.png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.GetTexture()+ "_glowmask.png");
     }
 
-    protected String getModelResource(int n, LivingEntity entity, RiderDriverItem belt, EquipmentSlot slot) {
-        if (slot == EquipmentSlot.FEET)
-            return belt.getUnlimitedBeltModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[1];
-        return belt.getUnlimitedModels(entity.getItemBySlot(EquipmentSlot.FEET), entity, belt.riderName, n + 1)[1];
-    }
 
     public GeoModel<T> getGeoModel(String name) {
         return new RiderArmorLayerModel(){
@@ -126,10 +122,10 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
             if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                 if (belt.unlimitedTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.HEAD) {
                     for (int n = 0; n < belt.unlimitedTextures; n++) {
-                        ResourceLocation text = getTextureResource(n,RIDER,belt,EquipmentSlot.HEAD);
-                        ResourceLocation glowText = getGlowTextureResource(n,RIDER,belt,EquipmentSlot.HEAD);
-                        renderType = getRenderType(text);
-                        String model = getModelResource(n,RIDER,belt, EquipmentSlot.HEAD);
+                        RenderLayerInfo renderLayerInfo = belt.getUnlimitedModels(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER, belt.riderName, n + 1);
+                        ResourceLocation text = getTextureResource(renderLayerInfo,EquipmentSlot.HEAD);
+                         renderType = getRenderType(text);
+                        String model = renderLayerInfo.GetModel();
                         BakedGeoModel bakedGeoModel = model!= null ? getBakedModel(animatable,getGeoModel(model)):bakedModel;
                         if(model!= null)applyBaseTransformations(bakedModel,bakedGeoModel);
                         if(model!= null)applyCustomAnimations(bakedGeoModel,RIDER,partialTick);
@@ -138,19 +134,20 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }
-                        /**if (!glowText.getPath().isEmpty()){
-                            renderType=  RenderType.breezeEyes(glowText);
+                        if (renderLayerInfo.GetIsGlow()){
+                            renderType=  RenderType.breezeEyes(getGlowTextureResource(renderLayerInfo,EquipmentSlot.HEAD));
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
-                        }**/
+                        }
                     }
                 }
                 if (belt.unlimitedBeltTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.FEET) {
                     for (int n = 0; n < belt.unlimitedBeltTextures; n++) {
-                        ResourceLocation text = getTextureResource(n,RIDER,belt,EquipmentSlot.FEET);
+                        RenderLayerInfo renderLayerInfo = belt.getUnlimitedBeltModels(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER, belt.riderName, n + 1);
+                        ResourceLocation text = getTextureResource(renderLayerInfo,EquipmentSlot.FEET);
                         renderType = getRenderType(text);
-                        String model = getModelResource(n,RIDER,belt, EquipmentSlot.FEET);
+                        String model = renderLayerInfo.GetModel();
                         BakedGeoModel bakedGeoModel = model!= null ? getBakedModel(animatable, getGeoModel(model)):bakedModel;
                         if(model!= null)applyBaseTransformations(bakedModel,bakedGeoModel);
                         if (renderType != null) {

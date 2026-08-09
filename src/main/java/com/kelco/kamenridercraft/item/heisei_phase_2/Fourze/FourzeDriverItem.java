@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.Fourze;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -79,26 +80,26 @@ public class FourzeDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public String[] getUnlimitedModels(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
+    public RenderLayerInfo getUnlimitedModels(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
         boolean fly = livingEntity instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
         if (num == 1) {
             if (getFormItem(itemstack, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get() & getFormItem(itemstack, 1) != null) {
-                return new String[]{riderName + getFormItem(itemstack, 1).getFormName(fly),null};
+                return new RenderLayerInfo(riderName + getFormItem(itemstack, 1).getFormName(fly),null);
             }
         } else if (num == 2) {
             if (getFormItem(itemstack, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() & getFormItem(itemstack, 2) != null) {
-                return new String[]{riderName + getFormItem(itemstack, 2).getFormName(fly),null};
+                return new RenderLayerInfo(riderName + getFormItem(itemstack, 2).getFormName(fly),null);
             }
         } else if (num == 3) {
             if (getFormItem(itemstack, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get() & getFormItem(itemstack, 3) != null) {
-                return new String[]{riderName + getFormItem(itemstack, 3).getFormName(fly),null};
+                return new RenderLayerInfo(riderName + getFormItem(itemstack, 3).getFormName(fly),null);
             }
         } else if (num == 4) {
             if (getFormItem(itemstack, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get() & getFormItem(itemstack, 4) != null) {
-                return new String[]{riderName + getFormItem(itemstack, 4).getFormName(fly),null};
+                return new RenderLayerInfo(riderName + getFormItem(itemstack, 4).getFormName(fly),null);
             }
         }
-        return new String[]{"blank",null};
+        return new RenderLayerInfo("blank",null);
     }
 
     @Override

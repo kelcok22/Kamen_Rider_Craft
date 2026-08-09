@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
@@ -335,16 +336,16 @@ public class RiderDriverItem extends RiderArmorItem {
     public String getUnlimitedTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         return "blank";
     }
-    public String[] getUnlimitedModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
-        return new String[]{getUnlimitedTextures(itemStack,rider,riderName,num),null};
+    public RenderLayerInfo getUnlimitedModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
+        return new RenderLayerInfo(getUnlimitedTextures(itemStack,rider,riderName,num),null);
     }
 
     public String getUnlimitedBeltTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         return "blank";
     }
 
-    public String[] getUnlimitedBeltModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
-        return new String[]{getUnlimitedBeltTextures(itemStack,rider,riderName,num),null};
+    public RenderLayerInfo getUnlimitedBeltModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
+        return new RenderLayerInfo(getUnlimitedBeltTextures(itemStack,rider,riderName,num),null);
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
