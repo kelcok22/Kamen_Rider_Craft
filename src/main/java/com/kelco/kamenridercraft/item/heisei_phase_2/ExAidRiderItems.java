@@ -934,10 +934,10 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> TADDLE_LEGACY_GASHAT_TRUE = ITEMS.register("taddle_legacy_gashat_true",
             () -> new RiderFormChangeItem(new Item.Properties(),"legacy_gamer","brave","gamer_driver_taddle_legacy",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
@@ -1463,7 +1463,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> KAIGEN_GHOST_GASHAT_LV_1 = ITEMS.register("kaigan_ghost_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ghost_lv1","ex_aid","gamer_driver_kaigan_ghost_lv_1",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 4,true,false),
                     new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1481,6 +1481,7 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_ghost","ex_aid","gamer_driver_kaigan_ghost",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.GHOST, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1497,7 +1498,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> FULL_THROTTLE_DRIVE_GASHAT = ITEMS.register("full_throttle_drive_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_drive","ex_aid","gamer_driver_full_throttle_drive",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1511,8 +1512,8 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> TOUKENDEN_GAIM_GASHAT = ITEMS.register("toukenden_gaim_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_gaim","ex_aid","gamer_driver_toukenden_gaim",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+                    new  MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -1528,6 +1529,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> MAGIC_THE_WIZARD_GASHAT_LV_1 = ITEMS.register("magic_the_wizard_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wizard_lv1","genm","gamer_driver_magic_the_wizard_lv_1",
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1540,8 +1542,8 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> MAGIC_THE_WIZARD_GASHAT = ITEMS.register("magic_the_wizard_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wizard","genm","gamer_driver_magic_the_wizard",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
-                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -1552,14 +1554,13 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.addSwitchForm(MAGIC_THE_WIZARD_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+            }.setSlotOneAbility("wizard_kick_flame",1).addSwitchForm(MAGIC_THE_WIZARD_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> SPACE_GALAXY_FOUZE_GASHAT = ITEMS.register("space_galaxy_fourze_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_fourze","genm","gamer_driver_space_galaxy_fourze",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -1575,9 +1576,9 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> JUNGLE_OOO_GASHAT = ITEMS.register("jungle_ooo_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ooo","genm","gamer_driver_jungle_ooo",
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -1596,10 +1597,9 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> DETECTICE_DOUBLE_GASHAT = ITEMS.register("detective_double_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_w","ex_aid","gamer_driver_detective_double",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -1629,8 +1629,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> DOKIDOKI_MAKAI_CASTLE_KIVA_GASHAT = ITEMS.register("dokidoki_makai_castle_kiva_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kiva","ex_aid","gamer_driver_dokidoki_makai_castle_kiva",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1639,7 +1638,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+            }.setSlotOneAbility("kiva_kick",1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TIME_EXPRESS_DEN_O_GASHAT = ITEMS.register("time_express_den_o_gashat",
@@ -1661,8 +1660,8 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> INSECT_WARS_KABUTO_GASHAT = ITEMS.register("insect_wars_kabuto_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kabuto","ex_aid","gamer_driver_full_throttle_drive",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false)){
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -1670,7 +1669,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+            }.setSlotOneAbility("clock_up",1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIKO_MASTER_HIBIKI_GASHAT = ITEMS.register("taiko_master_hibiki_gashat",
@@ -1691,7 +1690,7 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> KING_OF_POKER_BLADE_GASHAT = ITEMS.register("king_of_poker_blade_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_blade","genm","gamer_driver_king_of_poker_blade",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)){
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -1704,7 +1703,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> MOSHI_MOSHI_FAIZ_GASHAT = ITEMS.register("moshi_moshi_faiz_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_faiz","genm","gamer_driver_moshi_moshi_faiz",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -1719,9 +1718,9 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> MIRROR_LABRYINTH_RYUKI_GASHAT = ITEMS.register("mirror_labryinth_ryuki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ryuki","ex_aid","gamer_driver_mirror_labyrinth_ryuki",
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
@@ -1737,7 +1736,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> AGITO_OF_THE_SUN_GASHAT = ITEMS.register("agito_of_the_sun_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_agito","genm","gamer_driver_agito_of_the_sun",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1751,6 +1750,7 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> ADVENTURE_GUY_KUUGA_GASHAT = ITEMS.register("adventure_guy_kuuga_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kuuga","ex_aid","gamer_driver_adventure_guy_kuuga",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1759,14 +1759,14 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+            }.setSlotOneAbility("rider_kick",1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> LETS_GO_ICHIGOU_GASHAT = ITEMS.register("lets_go_ichigou_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ichigou","ex_aid","gamer_driver_lets_go_ichigou",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
