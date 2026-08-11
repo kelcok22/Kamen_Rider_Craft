@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -47,6 +48,7 @@ import java.util.function.Consumer;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.USED_ABILITY;
+import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendToPath;
 
 
 public class RiderDriverItem extends RiderArmorItem {
@@ -336,16 +338,28 @@ public class RiderDriverItem extends RiderArmorItem {
     public String getUnlimitedTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         return "blank";
     }
-    public RenderLayerInfo getUnlimitedModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
-        return new RenderLayerInfo(getUnlimitedTextures(itemStack,rider,riderName,num),null);
-    }
 
     public String getUnlimitedBeltTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         return "blank";
     }
 
-    public RenderLayerInfo getUnlimitedBeltModels(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
-        return new RenderLayerInfo(getUnlimitedBeltTextures(itemStack,rider,riderName,num),null);
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
+
+      if(slot==EquipmentSlot.FEET){
+
+          String texture =  getText(itemStack,EquipmentSlot.FEET,rider,riderName);
+            ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+ texture+ "_glowmask.png");
+          if(this.getGlowForSlot(itemStack, EquipmentSlot.FEET, rider)){layerInfo.add(new RenderLayerInfo(RenderType.breezeEyes(location),null));}
+
+          if (unlimitedBeltTextures != 0) {
+            for (int n = 0; n < unlimitedBeltTextures; n++) {
+                layerInfo.add(new RenderLayerInfo("belts/"+getUnlimitedBeltTextures(itemStack, rider, this.riderName, n+1), null));
+            }
+        }}else if (unlimitedTextures != 0&slot ==EquipmentSlot.HEAD&isTransformed(rider)) {
+            for (int n = 0; n < unlimitedTextures; n++) {
+                layerInfo.add(new RenderLayerInfo(getUnlimitedTextures(itemStack, rider, this.riderName, n+1), null));
+            }
+        }
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
@@ -459,9 +473,9 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
-        var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+       double transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
         if (currentSlot == EquipmentSlot.FEET)
-            return  getFormItem(itemStack, 1, 0).getIsBeltGlowing();
+            return  getFormItem(itemStack, 1).getIsBeltGlowing();
         else if (isTransformed(rider))
             return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
         return false;

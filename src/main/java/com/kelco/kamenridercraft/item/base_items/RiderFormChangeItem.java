@@ -177,10 +177,6 @@ public class RiderFormChangeItem extends BaseItem {
         return setShowPlayer;
     }
 
-    public Boolean getIsGlowing() {
-        return isGlowing;
-    }
-
     public Boolean getA1() {
         return A1;
     }
@@ -213,9 +209,9 @@ public class RiderFormChangeItem extends BaseItem {
         return useBike;
     }
 
-    public Boolean getIsBeltGlowing() {
-        return isBeltGlowing;
-    }
+    public Boolean getIsBeltGlowing() {return isBeltGlowing;}
+
+    public Boolean getIsGlowing() {return isGlowing;}
 
     public Boolean getHasStaticWings() {
         return hasStaticWings;

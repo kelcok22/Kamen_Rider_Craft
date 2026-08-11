@@ -29,7 +29,6 @@ import java.util.Objects;
 public class FourzeDriverItem extends RiderDriverItem {
     public FourzeDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties);
-        unlimitedTextures = 4;
     }
 
     @Override
@@ -80,26 +79,24 @@ public class FourzeDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public RenderLayerInfo getUnlimitedModels(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
-        boolean fly = livingEntity instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
-        if (num == 1) {
-            if (getFormItem(itemstack, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get() & getFormItem(itemstack, 1) != null) {
-                return new RenderLayerInfo(riderName + getFormItem(itemstack, 1).getFormName(fly),null);
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
+        //if (slot==EquipmentSlot.FEET)layerInfo.add(new RenderLayerInfo("hunter_gamer","hunter_gamer").isglowing("hunter_gamer_glowmask"));
+
+        if (slot==EquipmentSlot.HEAD&isTransformed(rider)) {
+            boolean fly = rider instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
+            if (getFormItem(itemStack, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get() & getFormItem(itemStack, 1) != null) {
+                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 1).getFormName(fly), null));
             }
-        } else if (num == 2) {
-            if (getFormItem(itemstack, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() & getFormItem(itemstack, 2) != null) {
-                return new RenderLayerInfo(riderName + getFormItem(itemstack, 2).getFormName(fly),null);
+            if (getFormItem(itemStack, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() & getFormItem(itemStack, 2) != null) {
+                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 2).getFormName(fly), null));
             }
-        } else if (num == 3) {
-            if (getFormItem(itemstack, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get() & getFormItem(itemstack, 3) != null) {
-                return new RenderLayerInfo(riderName + getFormItem(itemstack, 3).getFormName(fly),null);
+            if (getFormItem(itemStack, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get() & getFormItem(itemStack, 3) != null) {
+                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 3).getFormName(fly), null));
             }
-        } else if (num == 4) {
-            if (getFormItem(itemstack, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get() & getFormItem(itemstack, 4) != null) {
-                return new RenderLayerInfo(riderName + getFormItem(itemstack, 4).getFormName(fly),null);
+            if (getFormItem(itemStack, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get() & getFormItem(itemStack, 4) != null) {
+                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 4).getFormName(fly), null));
             }
         }
-        return new RenderLayerInfo("blank",null);
     }
 
     @Override

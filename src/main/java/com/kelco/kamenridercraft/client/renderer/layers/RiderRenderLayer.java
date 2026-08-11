@@ -30,6 +30,7 @@ import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 import software.bernie.geckolib.resource.GeoGlowingTextureMeta;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -76,23 +77,13 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
         }
     }
 
-    protected ResourceLocation getTextureResource(RenderLayerInfo renderLayerInfo,EquipmentSlot slot) {
-        if (slot == EquipmentSlot.FEET)
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" +renderLayerInfo.GetTexture()+".png");
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.GetTexture()+ ".png");
-    }
-
-    protected ResourceLocation getGlowTextureResource(RenderLayerInfo renderLayerInfo,EquipmentSlot slot)  {
-        if (slot == EquipmentSlot.FEET)
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/" +  renderLayerInfo.GetTexture() + "_glowmask.png");
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.GetTexture()+ "_glowmask.png");
-    }
 
 
-    public GeoModel<T> getGeoModel(String name) {
+    public GeoModel<T> getGeoModel(String name,EquipmentSlot slot) {
         return new RiderArmorLayerModel(){
             @Override
             public ResourceLocation getModelResource( RiderArmorItem animatable) {
+                if (slot==EquipmentSlot.FEET)  return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/"+name+".geo.json");
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/"+name+".geo.json");
             }
         };
@@ -120,37 +111,25 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
         if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
             LivingEntity RIDER = renderer2.GetEntity();
             if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                if (belt.unlimitedTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.HEAD) {
-                    for (int n = 0; n < belt.unlimitedTextures; n++) {
-                        RenderLayerInfo renderLayerInfo = belt.getUnlimitedModels(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER, belt.riderName, n + 1);
-                        ResourceLocation text = getTextureResource(renderLayerInfo,EquipmentSlot.HEAD);
-                         renderType = getRenderType(text);
+                List<RenderLayerInfo> layerInfo = new ArrayList<>();;
+                belt.SetUnlimitedModels(layerInfo,RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER,renderer2.getCurrentSlot());
+
+                if (!layerInfo.isEmpty()) {
+                    for (RenderLayerInfo renderLayerInfo : layerInfo) {
+
+                        renderType = renderLayerInfo.GetRenderType();
                         String model = renderLayerInfo.GetModel();
-                        BakedGeoModel bakedGeoModel = model!= null ? getBakedModel(animatable,getGeoModel(model)):bakedModel;
-                        if(model!= null)applyBaseTransformations(bakedModel,bakedGeoModel);
-                        if(model!= null)applyCustomAnimations(bakedGeoModel,RIDER,partialTick);
+
+                        BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model,renderer2.getCurrentSlot())) : bakedModel;
+                        if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
+                        if (model != null) applyCustomAnimations(bakedGeoModel, RIDER, partialTick);
                         if (renderType != null) {
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }
-                        if (renderLayerInfo.GetIsGlow()){
-                            renderType=  RenderType.breezeEyes(getGlowTextureResource(renderLayerInfo,EquipmentSlot.HEAD));
-                            getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
-                                    bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
-                                    getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
-                        }
-                    }
-                }
-                if (belt.unlimitedBeltTextures != 0 & renderer2.getCurrentSlot() == EquipmentSlot.FEET) {
-                    for (int n = 0; n < belt.unlimitedBeltTextures; n++) {
-                        RenderLayerInfo renderLayerInfo = belt.getUnlimitedBeltModels(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER, belt.riderName, n + 1);
-                        ResourceLocation text = getTextureResource(renderLayerInfo,EquipmentSlot.FEET);
-                        renderType = getRenderType(text);
-                        String model = renderLayerInfo.GetModel();
-                        BakedGeoModel bakedGeoModel = model!= null ? getBakedModel(animatable, getGeoModel(model)):bakedModel;
-                        if(model!= null)applyBaseTransformations(bakedModel,bakedGeoModel);
-                        if (renderType != null) {
+                        if (renderLayerInfo.GetIsGlow()) {
+                            renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.GetGlowTexture()+ ".png"));
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());

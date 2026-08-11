@@ -29,24 +29,7 @@ import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendTo
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
         super(new RiderArmorModel());
-        if (equipmentSlot == EquipmentSlot.FEET) {
-            addRenderLayer(new AutoGlowingGeoLayer<>(this) {
-                @Nullable
-                protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
-                    if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
-                        LivingEntity RIDER = renderer2.GetEntity();
-                        if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                            if (renderer.getTextureLocation(animatable).getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath())) {
-                                return null;
-                            }
-                            return belt.getGlowForSlot(RIDER.getItemBySlot(EquipmentSlot.FEET), equipmentSlot, RIDER) ? AutoGlowingTexture.getRenderType(getTextureResource(animatable)) : null;
-
-                        }
-                    }
-                    return null;
-                }
-            });
-        } else {
+        if (equipmentSlot != EquipmentSlot.FEET)  {
             addRenderLayer(new AutoGlowingGeoLayer<>(this) {
                 @Nullable
                 protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
