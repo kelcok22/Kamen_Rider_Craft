@@ -8713,7 +8713,11 @@
 "item.kamenridercraft.lord_invoker_thirteen": "Lord Invoker",
 "kamenridercraft.name.lord_thirteen": "Debatable Rider: Lord Thirteen",
   "item.kamenridercraft.zeroider_control": "zeroider_control",
-  "kamenridercraft.name.lord_thirteen": "CODE: Zero",
+  "kamenridercraft.name.code_zero": "CODE: Zero",
+  "item.kamenridercraft.lord_invoker_zero": "Lord Invoker",
+  "kamenridercraft.name.lord_zero": "Debatable Rider: Lord Zero",
+  "item.kamenridercraft.lord_invoker_two": "Lord Invoker",
+  "kamenridercraft.name.lord_two": "Debatable Rider: Lord Two",
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -8779,6 +8783,10 @@
 "item.kamenridercraft.charadeco_capsem": "Zeztz Capsem (Charadeco ver.)",
 "item.kamenridercraft.gochizo_capsem": "Gochizo Capsem",
 "item.kamenridercraft.void_capsem": "Void Capsem",
+  "item.kamenridercraft.break_code_down_capsem": "Break Code Down Capsem",
+  "kamenridercraft:break_code_down_capsem.form": "Form: Break CODE Down",
+  "kamenridercraft:break_code_down_capsem_six.form": "Form: Break CODE Down",
+  "kamenridercraft:break_code_down_capsem_five.form": "Form: Break CODE Down",
 
   "item.kamenridercraft.zeroider_core": "Zeroider Core",
   "kamenridercraft:zeroider_core.form": "Form: Robot Mode",

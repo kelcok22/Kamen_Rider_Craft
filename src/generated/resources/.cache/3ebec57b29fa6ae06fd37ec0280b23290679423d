@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 // 1.21.1	2026-08-11T22:52:32.6429154	Item Models: kamenridercraft
+=======
+// 1.21.1	2026-08-12T23:53:30.0672302	Item Models: kamenridercraft
+>>>>>>> Stashed changes
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -468,6 +472,8 @@ c27f46e2a544c97bab6dd9383af799f7c3fbcf68 assets/kamenridercraft/models/item/lord
 035ee8b07b4cb34a15b669c2e742caaf7361d495 assets/kamenridercraft/models/item/lord_invoker_six.json
 6e5b11406550abb8fb956c392339bc0001b14f63 assets/kamenridercraft/models/item/lord_invoker_thirteen.json
 c5a9c7f13483aebdda7205db87b6453ca03d0bab assets/kamenridercraft/models/item/lord_invoker_three.json
+1bc5990337ba8e2ef507742fc9d4b2efa2a82245 assets/kamenridercraft/models/item/lord_invoker_two.json
+e1304a8c80e66131a4415655f6b7e604382a4371 assets/kamenridercraft/models/item/lord_invoker_zero.json
 0394f6bbfd94c70a04bd1cd1bf29b55070291d23 assets/kamenridercraft/models/item/lovekov_belt.json
 a378d0bb30b37b4ad33c3c9ae236d872d89873a2 assets/kamenridercraft/models/item/lovekov_snake_woman.json
 28f699ea644de835bdc85cd37acd76cf60beeeaf assets/kamenridercraft/models/item/macentaurus_ride_chemy_card.json

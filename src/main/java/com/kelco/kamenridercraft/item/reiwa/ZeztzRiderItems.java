@@ -761,6 +761,108 @@ public class ZeztzRiderItems {
                 }
             } .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_ZERO = ITEMS.register("break_code_down_capsem_zero",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_zero","blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+
+                    }}
+            }.setFormDelay(19).changeModel("lord_zero.geo.json").isGlowing());
+
+    public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_TWO = ITEMS.register("break_code_down_capsem_two",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_two","lord_invoker_movie_belt",
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }}
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_ZERO.get()).changeModel("lord_six_movie.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
+
+
+    public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_SIX = ITEMS.register("break_code_down_capsem_six",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_six","lord_invoker_movie_belt",
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }}
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_TWO.get()).changeModel("lord_six_movie.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
+
+    public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_FIVE = ITEMS.register("break_code_down_capsem_five",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_five","lord_invoker_movie_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }}
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_SIX.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
+
+    public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM = ITEMS.register("break_code_down_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_three","lord_invoker_movie_belt",
+                    new MobEffectInstance(EffectCore.STEALTH, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "lord_three.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }}
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_FIVE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PUNISH_CAPSEM = ITEMS.register("punish_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_belt",
@@ -1079,6 +1181,14 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> LORD_INVOKER_SIX = ITEMS.register("lord_invoker_six",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_six", PANIC_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> LORD_INVOKER_ZERO = ITEMS.register("lord_invoker_zero",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_zero", BREAK_CODE_DOWN_CAPSEM_ZERO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> LORD_INVOKER_TWO = ITEMS.register("lord_invoker_two",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_two", BREAK_CODE_DOWN_CAPSEM_TWO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> METAMATERIAM_BELT = ITEMS.register("metamateriam_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metamateriam", PROJECTION_CAPSEM_METAMATERIAM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
