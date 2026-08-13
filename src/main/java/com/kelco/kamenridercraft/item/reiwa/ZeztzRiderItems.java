@@ -836,7 +836,7 @@ public class ZeztzRiderItems {
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_SIX.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_SIX.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing());
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM = ITEMS.register("break_code_down_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_three","lord_invoker_movie_belt",
@@ -862,7 +862,7 @@ public class ZeztzRiderItems {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_FIVE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_FIVE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PUNISH_CAPSEM = ITEMS.register("punish_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_belt",
