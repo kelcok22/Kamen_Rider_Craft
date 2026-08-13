@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item.base_items;
 
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import net.minecraft.core.component.DataComponents;
@@ -19,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -81,13 +81,13 @@ public class BaseItem extends Item {
     }
 
 
-    public ItemStack getCraftingRemainingItem(ItemStack stack) {
+    public @NotNull ItemStack getCraftingRemainingItem(ItemStack stack) {
         if (stack.getItem() instanceof BaseItem) {
             if (!hasCraftingRemainingItem(stack)) {
                 return ItemStack.EMPTY;
             }
             ItemStack save = new ItemStack(craftingRemainingItem);
-            if (!stack.getItem().toString().contains("sample") || !stack.getItem().toString().contains("vial")) {
+            if (!stack.getItem().toString().contains("sample") && !stack.getItem().toString().contains("vial")) {
                 save.applyComponents(stack.getComponents());
             }
             return save;
