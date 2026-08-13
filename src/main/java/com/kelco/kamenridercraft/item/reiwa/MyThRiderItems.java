@@ -46,6 +46,19 @@ public class MyThRiderItems {
                 }
             }.isGlowing().IsBeltGlowing().addAlternative(RIDEGG_1_RID.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
+    public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","maou","maou_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+
+
     public static final DeferredItem<Item> HARINEZUMI_SEED_X_EGGS = ITEMS.register("harinezumi_seed_x_egg",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hedgehog","my_th","my_th_driver_belt_hedgehog",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -71,6 +84,9 @@ public class MyThRiderItems {
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON = ITEMS.register("my_th_driver_hammer_on",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDEGG_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> MAOU_DRIVER = ITEMS.register("maou_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_EDGE = ITEMS.register("my_th_edge",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
