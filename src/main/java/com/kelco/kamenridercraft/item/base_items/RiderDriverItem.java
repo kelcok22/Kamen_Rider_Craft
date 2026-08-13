@@ -190,9 +190,11 @@ public class RiderDriverItem extends RiderArmorItem {
                             && effect.getEffect() != EffectCore.GREEED &&
                             effect.getEffect() != EffectCore.BUGSTER)
                             || rider instanceof Player) {
-                        int duration = effect.getDuration() + 1;
-                        if (effect.getEffect() == MobEffects.NIGHT_VISION) {
-                            duration = 401;
+                        int duration = 45;
+                        if (effect.getEffect() == EffectCore.FORM_TIMEOUT || effect.getEffect() == EffectCore.FORM_LOCK) {
+                            duration = effect.getDuration();
+                        } else if (effect.getEffect() == MobEffects.NIGHT_VISION) {
+                            duration = 305;
                         }
                         rider.addEffect(new MobEffectInstance(effect.getEffect(), duration, effect.getAmplifier(), true, false));
                     }
