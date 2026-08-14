@@ -28,7 +28,7 @@ import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendTo
 
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
-        super(new RiderArmorModel());
+        super(new RiderArmorModel<>());
         if (equipmentSlot != EquipmentSlot.FEET)  {
             addRenderLayer(new AutoGlowingGeoLayer<>(this) {
                 @Nullable

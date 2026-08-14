@@ -7,35 +7,27 @@ import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.Render
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
-import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.FastColor;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.Nullable;
-import org.joml.Matrix4f;
-import software.bernie.geckolib.animatable.GeoAnimatable;
-import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
-import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
-import software.bernie.geckolib.resource.GeoGlowingTextureMeta;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 
 public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T> {
-
     public RiderRenderLayer(GeoRenderer<T> renderer) {
         super(renderer);
     }
@@ -45,21 +37,21 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
     }
 
 
-
-    protected void applyBaseTransformations(BakedGeoModel bakedModel,BakedGeoModel newModel) {
-        String[] boneNames = new String[] {"armorHead","armorBody","armorRightArm","armorLeftArm","armorRightLeg","armorLeftLeg"};
-        for (int n = 0; n < boneNames.length; n++) {
-            GeoBone bakedHead = bakedModel.getBone(boneNames[n]).orElse(null);
-            GeoBone head = newModel.getBone(boneNames[n]).orElse(null);
+    protected void applyBaseTransformations(BakedGeoModel bakedModel, BakedGeoModel newModel) {
+        String[] boneNames = new String[]{"armorHead", "armorBody", "armorRightArm", "armorLeftArm", "armorRightLeg", "armorLeftLeg"};
+        for (String boneName : boneNames) {
+            GeoBone bakedHead = bakedModel.getBone(boneName).orElse(null);
+            GeoBone head = newModel.getBone(boneName).orElse(null);
             if (head != null & bakedHead != null) {
                 matchModelPartRot(bakedHead, head);
                 head.updatePosition(bakedHead.getPosX(), bakedHead.getPosY(), bakedHead.getPosZ());
             }
         }
     }
-    protected void applyCustomAnimations(BakedGeoModel bakedModel, LivingEntity entity,float PartialTick) {
+
+    protected void applyCustomAnimations(BakedGeoModel bakedModel, LivingEntity entity, float PartialTick) {
         GeoBone wizard_circle5 = bakedModel.getBone("wizard_circle5").orElse(null);
-        double GetTransforming = entity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
+        double GetTransforming = Objects.requireNonNull(entity.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
 
         float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - PartialTick);
         if (wizard_circle5 != null) {
@@ -78,25 +70,27 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
     }
 
 
-
-    public GeoModel<T> getGeoModel(String name,EquipmentSlot slot) {
-        return new RiderArmorLayerModel(){
+    public GeoModel<T> getGeoModel(String name, EquipmentSlot slot) {
+        return new RiderArmorLayerModel() {
             @Override
-            public ResourceLocation getModelResource( RiderArmorItem animatable) {
-                if (slot==EquipmentSlot.FEET)  return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/"+name+".geo.json");
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/"+name+".geo.json");
+            public ResourceLocation getModelResource(RiderArmorItem animatable) {
+                if (slot == EquipmentSlot.FEET)
+                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/" + name + ".geo.json");
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + name + ".geo.json");
             }
         };
     }
 
-    public BakedGeoModel getBakedModel(T animatable,GeoModel<T> model) {
+    public BakedGeoModel getBakedModel(T animatable, GeoModel<T> model) {
         return getGeoModel().getBakedModel(model.getModelResource(animatable, getRenderer()));
     }
 
     @Nullable
     protected RenderType getRenderType(ResourceLocation text) {
-        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))return null;
-        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))return null;
+        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))
+            return null;
+        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))
+            return null;
         return RenderType.entityTranslucent(text);
     }
 
@@ -107,20 +101,19 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
      */
     @Override
     public void render(PoseStack poseStack, T animatable, BakedGeoModel bakedModel, @Nullable RenderType renderType, MultiBufferSource bufferSource, @Nullable VertexConsumer buffer, float partialTick, int packedLight, int packedOverlay) {
-
         if (this.getRenderer() instanceof RiderArmorRenderer renderer2) {
             LivingEntity RIDER = renderer2.GetEntity();
             if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                List<RenderLayerInfo> layerInfo = new ArrayList<>();;
-                belt.SetUnlimitedModels(layerInfo,RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER,renderer2.getCurrentSlot());
+                List<RenderLayerInfo> layerInfo = new ArrayList<>();
+                belt.SetUnlimitedModels(layerInfo, RIDER.getItemBySlot(EquipmentSlot.FEET), RIDER, renderer2.getCurrentSlot());
 
                 if (!layerInfo.isEmpty()) {
                     for (RenderLayerInfo renderLayerInfo : layerInfo) {
 
-                        renderType = renderLayerInfo.GetRenderType();
-                        String model = renderLayerInfo.GetModel();
+                        renderType = renderLayerInfo.getRenderType();
+                        String model = renderLayerInfo.getModel();
 
-                        BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model,renderer2.getCurrentSlot())) : bakedModel;
+                        BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model, renderer2.getCurrentSlot())) : bakedModel;
                         if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
                         if (model != null) applyCustomAnimations(bakedGeoModel, RIDER, partialTick);
                         if (renderType != null) {
@@ -128,8 +121,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                         }
-                        if (renderLayerInfo.GetIsGlow()) {
-                            renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.GetGlowTexture()+ ".png"));
+                        if (renderLayerInfo.isGlowing()) {
+                            renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.getGlowTexture() + ".png"));
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
                                     getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
@@ -141,5 +134,3 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
 
     }
 }
-
-
