@@ -1682,12 +1682,16 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.WHITE_WALLPLATE_WALL);
                 event.accept(RiderBlocks.GREY_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.GREY_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.GREY_WALLPLATE_WALL);
                 event.accept(RiderBlocks.WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.WALLPLATE_SLAB);
+                event.accept(RiderBlocks.WALLPLATE_WALL);
                 event.accept(RiderBlocks.BLACK_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.BLACK_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.BLACK_WALLPLATE_WALL);
                 event.accept(RiderBlocks.RED_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.RED_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.RED_WALLPLATE_WALL);
                 event.accept(RiderBlocks.YELLOW_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.YELLOW_WALLPLATE_GRATE_STAIRS);
                 event.accept(RiderBlocks.YELLOW_WALLPLATE_SLAB);
@@ -1695,8 +1699,10 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_SLAB);
                 event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_GRATE_SLAB);
+                event.accept(RiderBlocks.LIGHT_GREEN_WALLPLATE_WALL);
                 event.accept(RiderBlocks.GREEN_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.GREEN_WALLPLATE_SLAB);
+                event.accept(RiderBlocks.GREEN_WALLPLATE_WALL);
                 event.accept(RiderBlocks.CYAN_WALLPLATE_STAIRS);
                 event.accept(RiderBlocks.CYAN_WALLPLATE_SLAB);
                 event.accept(RiderBlocks.CYAN_WALLPLATE_WALL);

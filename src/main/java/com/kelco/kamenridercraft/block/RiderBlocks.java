@@ -870,6 +870,9 @@ public class RiderBlocks {
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
 
+    public static final DeferredBlock<WallBlock> WALLPLATE_WALL = registerBlock("wallplate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
+
     public static final DeferredBlock<Block> HAZARD_WALLPLATE = registerBlock("hazard_wallplate",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
@@ -891,6 +894,9 @@ public class RiderBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
+
+    public static final DeferredBlock<WallBlock> BLACK_WALLPLATE_WALL = registerBlock("black_wallplate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
 
     public static final DeferredBlock<DoorBlock> JAIL_DOOR = registerBlock("jail_door",
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f).noOcclusion()));
@@ -928,6 +934,9 @@ public class RiderBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).strength(2f)));
 
+    public static final DeferredBlock<WallBlock> GREY_WALLPLATE_WALL = registerBlock("grey_wallplate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
+
     public static final DeferredBlock<Block> YELLOW_WALLPLATE = registerBlock("yellow_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
@@ -939,7 +948,6 @@ public class RiderBlocks {
     public static final DeferredBlock<StairBlock> YELLOW_WALLPLATE_GRATE_STAIRS = registerBlock("yellow_wallplate_grate_stairs",
             () -> new StairBlock(RiderBlocks.YELLOW_WALLPLATE.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().noOcclusion().strength(2f).requiresCorrectToolForDrops()));
-
 
     public static final DeferredBlock<SlabBlock> YELLOW_WALLPLATE_SLAB = registerBlock("yellow_wallplate_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -962,6 +970,9 @@ public class RiderBlocks {
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
 
+    public static final DeferredBlock<WallBlock> RED_WALLPLATE_WALL = registerBlock("red_wallplate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
+
     public static final DeferredBlock<Block> GREEN_WALLPLATE = registerBlock("green_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_DECOR));
@@ -974,6 +985,9 @@ public class RiderBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
+
+    public static final DeferredBlock<WallBlock> GREEN_WALLPLATE_WALL = registerBlock("green_wallplate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
 
     public static final DeferredBlock<Block> LIGHT_GREEN_WALLPLATE = registerBlock("light_green_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -992,6 +1006,9 @@ public class RiderBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GREEN).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()
                     .requiresCorrectToolForDrops().strength(2f)));
+
+    public static final DeferredBlock<WallBlock> LIGHT_GREEN_WALLPLATE_WALL = registerBlock("light_green_wallplate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f)));
 
     public static final DeferredBlock<Block> CYAN_WALLPLATE = registerBlock("cyan_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)

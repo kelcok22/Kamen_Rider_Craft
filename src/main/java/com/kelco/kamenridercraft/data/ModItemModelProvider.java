@@ -54,6 +54,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(RiderBlocks.CYAN_WALLPLATE_WALL, RiderBlocks.CYAN_WALLPLATE);
         wallItem(RiderBlocks.BLUE_WALLPLATE_WALL, RiderBlocks.BLUE_WALLPLATE);
         wallItem(RiderBlocks.LIGHT_BLUE_WALLPLATE_WALL, RiderBlocks.LIGHT_BLUE_WALLPLATE);
+        wallItem(RiderBlocks.RED_WALLPLATE_WALL, RiderBlocks.RED_WALLPLATE);
+        wallItem(RiderBlocks.BLACK_WALLPLATE_WALL, RiderBlocks.BLACK_WALLPLATE);
+        wallItem(RiderBlocks.GREEN_WALLPLATE_WALL, RiderBlocks.GREEN_WALLPLATE);
+        wallItem(RiderBlocks.LIGHT_GREEN_WALLPLATE_WALL, RiderBlocks.LIGHT_GREEN_WALLPLATE);
+        wallItem(RiderBlocks.GREY_WALLPLATE_WALL, RiderBlocks.GREY_WALLPLATE);
+        wallItem(RiderBlocks.WALLPLATE_WALL, RiderBlocks.WALLPLATE);
 
         basicItem(RiderBlocks.HELHEIM_DOOR.asItem());
         basicItem(RiderBlocks.WONDERWOOD_DOOR.asItem());

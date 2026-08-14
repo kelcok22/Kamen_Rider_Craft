@@ -97,6 +97,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         wallBlock(RiderBlocks.CYAN_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.CYAN_WALLPLATE.get()));
         wallBlock(RiderBlocks.BLUE_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.BLUE_WALLPLATE.get()));
         wallBlock(RiderBlocks.LIGHT_BLUE_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.LIGHT_BLUE_WALLPLATE.get()));
+        wallBlock(RiderBlocks.GREEN_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.GREEN_WALLPLATE.get()));
+        wallBlock(RiderBlocks.LIGHT_GREEN_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.LIGHT_GREEN_WALLPLATE.get()));
+        wallBlock(RiderBlocks.RED_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.RED_WALLPLATE.get()));
+        wallBlock(RiderBlocks.BLACK_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.BLACK_WALLPLATE.get()));
+        wallBlock(RiderBlocks.WALLPLATE_WALL.get(), blockTexture(RiderBlocks.WALLPLATE.get()));
+        wallBlock(RiderBlocks.GREY_WALLPLATE_WALL.get(), blockTexture(RiderBlocks.GREY_WALLPLATE.get()));
 
 
         blockItem(RiderBlocks.KURUMA_BRICK);

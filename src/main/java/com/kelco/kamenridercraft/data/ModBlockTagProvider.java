@@ -48,6 +48,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WALLS).add(RiderBlocks.BLUE_WALLPLATE_WALL.get());
         tag(BlockTags.WALLS).add(RiderBlocks.LIGHT_BLUE_WALLPLATE_WALL.get());
         tag(BlockTags.WALLS).add(RiderBlocks.WHITE_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.BLACK_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.RED_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.GREY_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.GREEN_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.LIGHT_GREEN_WALLPLATE_WALL.get());
+        tag(BlockTags.WALLS).add(RiderBlocks.WALLPLATE_WALL.get());
 
     }
 }
