@@ -35,7 +35,7 @@ import java.util.function.Supplier;
 public class BossBlock extends BaseBlock {
     private List<Component> bossText = Lists.newArrayList();
     private Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss;
-    private List<Block> bossBlock;
+    private List<Block> spawnedBlocks;
     private int num;
 
     public BossBlock(Properties prop, Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss) {
@@ -46,7 +46,7 @@ public class BossBlock extends BaseBlock {
     public BossBlock(Properties prop, Supplier<? extends EntityType<? extends BaseHenchmenEntity>> boss, Block... block) {
         super(prop);
         this.boss = boss;
-        bossBlock = Lists.newArrayList(block);
+        spawnedBlocks = Lists.newArrayList(block);
     }
 
     public BossBlock addLine(Component text) {
@@ -58,44 +58,42 @@ public class BossBlock extends BaseBlock {
     public void playerDestroy(@NotNull Level level, @NotNull Player player, @NotNull BlockPos blockPos, @NotNull BlockState blockState, @Nullable BlockEntity blockEntity, @NotNull ItemStack itemStack) {
         if (!level.isClientSide()) {
             HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
-            if (!(level.getDifficulty() == Difficulty.PEACEFUL) && (level.getDifficulty() == Difficulty.HARD ||
-                    !level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_REQUIRE_TRANSFORMATION) ||
-                    (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)) ||
+            if ((level.getDifficulty() != Difficulty.PEACEFUL) && (!level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_REQUIRE_TRANSFORMATION) ||
+                    level.getDifficulty() == Difficulty.HARD || (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)) ||
                     player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("sentai") ||
-                    player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("power"))) {
-                if (bossBlock != null) {
-                    if (num == 1) {
-                        for (int n = 0; n < 40; n++) {
-                            Random generator = new Random();
-                            int posX = (blockPos.getX() - 10) + generator.nextInt(20);
-                            int posY = blockPos.getY() + generator.nextInt(6);
-                            int posZ = (blockPos.getZ() - 10) + generator.nextInt(20);
-                            BlockPos pos1 = new BlockPos(posX, posY, posZ);
-                            if (level.isEmptyBlock(pos1)) {
-                                level.setBlockAndUpdate(pos1, bossBlock.get(generator.nextInt(bossBlock.size())).defaultBlockState());
-                            }
-                        }
-                    } else {
-                        for (int n = 0; n < 40; n++) {
-                            Random generator = new Random();
-                            int posX = (blockPos.getX() - 10) + generator.nextInt(20);
-                            int posY = blockPos.getY();
-                            int posZ = (blockPos.getZ() - 10) + generator.nextInt(20);
-                            BlockPos pos1 = new BlockPos(posX, posY, posZ);
-                            BlockState blockBelow = level.getBlockState(new BlockPos(posX, posY - 1, posZ));
-                            if (level.isEmptyBlock(pos1) && !(blockBelow.is(TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace("flowers"))) || blockBelow.is(TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace("replacable_by_trees"))))) {
-                                level.setBlockAndUpdate(pos1, bossBlock.get(generator.nextInt(bossBlock.size())).defaultBlockState());
-                            }
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("power") ||
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("ultra"))) {
+                if (num == 1) {
+                    for (int n = 0; n < 40; n++) {
+                        Random generator = new Random();
+                        int posX = (blockPos.getX() - 10) + generator.nextInt(20);
+                        int posY = blockPos.getY() + generator.nextInt(6);
+                        int posZ = (blockPos.getZ() - 10) + generator.nextInt(20);
+                        BlockPos pos1 = new BlockPos(posX, posY, posZ);
+                        if (level.isEmptyBlock(pos1) && spawnedBlocks != null) {
+                            level.setBlockAndUpdate(pos1, spawnedBlocks.get(generator.nextInt(spawnedBlocks.size())).defaultBlockState());
                         }
                     }
-                    BaseHenchmenEntity boss = this.boss.get().create(level);
-                    if (boss != null) {
-                        boss.moveTo(blockPos.getX() + 0.5, blockPos.getY(), blockPos.getZ() + 0.5, 0, 0.0F);
-                        level.addFreshEntity(boss);
-                        if (!bossText.isEmpty() && level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                            for (Component text : bossText) {
-                                player.sendSystemMessage(text);
-                            }
+                } else {
+                    for (int n = 0; n < 40; n++) {
+                        Random generator = new Random();
+                        int posX = (blockPos.getX() - 10) + generator.nextInt(20);
+                        int posY = blockPos.getY();
+                        int posZ = (blockPos.getZ() - 10) + generator.nextInt(20);
+                        BlockPos pos1 = new BlockPos(posX, posY, posZ);
+                        BlockState blockBelow = level.getBlockState(new BlockPos(posX, posY - 1, posZ));
+                        if (spawnedBlocks != null && level.isEmptyBlock(pos1) && !(blockBelow.is(TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace("flowers"))) || blockBelow.is(TagKey.create(Registries.BLOCK, ResourceLocation.withDefaultNamespace("replacable_by_trees"))))) {
+                            level.setBlockAndUpdate(pos1, spawnedBlocks.get(generator.nextInt(spawnedBlocks.size())).defaultBlockState());
+                        }
+                    }
+                }
+                BaseHenchmenEntity boss = this.boss.get().create(level);
+                if (boss != null) {
+                    boss.moveTo(blockPos.getX() + 0.5, blockPos.getY(), blockPos.getZ() + 0.5, 0, 0.0F);
+                    level.addFreshEntity(boss);
+                    if (!bossText.isEmpty() && level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                        for (Component text : bossText) {
+                            player.sendSystemMessage(text);
                         }
                     }
                 }
@@ -110,8 +108,7 @@ public class BossBlock extends BaseBlock {
 
     @Override
     public void appendHoverText(@NotNull ItemStack itemStack, Item.@NotNull TooltipContext tooltipContext, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-        if (FMLEnvironment.dist.isClient() && (Minecraft.getInstance().level.getDifficulty() != Difficulty.HARD
-                && Minecraft.getInstance().level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))) {
+        if (FMLEnvironment.dist.isClient() && (Minecraft.getInstance().level.getDifficulty() != Difficulty.HARD)) {
             tooltipComponents.add(Component.translatable("tooltip.kamenridercraft:boss_block"));
         }
         super.appendHoverText(itemStack, tooltipContext, tooltipComponents, tooltipFlag);

@@ -44,11 +44,11 @@ public class BossBlockHokutoTrio extends BaseBlock {
     public void playerDestroy(@NotNull Level level, @NotNull Player player, @NotNull BlockPos blockPos, @NotNull BlockState blockState, @Nullable BlockEntity blockEntity, @NotNull ItemStack itemStack) {
         if (!level.isClientSide()) {
             HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
-            if (!(level.getDifficulty() == Difficulty.PEACEFUL) && (level.getDifficulty() == Difficulty.HARD ||
-                    !level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_REQUIRE_TRANSFORMATION) ||
-                    (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)) ||
+            if ((level.getDifficulty() != Difficulty.PEACEFUL) && (!level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_REQUIRE_TRANSFORMATION) ||
+                    level.getDifficulty() == Difficulty.HARD || (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driver && driver.isTransformed(player)) ||
                     player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("sentai") ||
-                    player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("power"))) {
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("power") ||
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem().toString().contains("ultra"))) {
                 BaseHenchmenEntity boss = MobsCore.OWL_LOST_SMASH.get().create(level);
                 BaseHenchmenEntity boss2 = MobsCore.STAG_LOST_SMASH.get().create(level);
                 BaseHenchmenEntity boss3 = MobsCore.CASTLE_LOST_SMASH.get().create(level);
@@ -72,8 +72,7 @@ public class BossBlockHokutoTrio extends BaseBlock {
 
     @Override
     public void appendHoverText(@NotNull ItemStack itemStack, Item.@NotNull TooltipContext tooltipContext, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag) {
-        if (FMLEnvironment.dist.isClient() && (Minecraft.getInstance().level.getDifficulty() != Difficulty.HARD
-                && Minecraft.getInstance().level.getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))) {
+        if (FMLEnvironment.dist.isClient() && (Minecraft.getInstance().level.getDifficulty() != Difficulty.HARD)) {
             tooltipComponents.add(Component.translatable("tooltip.kamenridercraft:boss_block"));
         }
         super.appendHoverText(itemStack, tooltipContext, tooltipComponents, tooltipFlag);

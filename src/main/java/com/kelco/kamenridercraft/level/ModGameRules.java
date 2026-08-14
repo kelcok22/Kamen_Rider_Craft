@@ -25,7 +25,7 @@ public class ModGameRules {
 
         RULE_BOSS_HENSHIN_ANNOUNCEMENTS = GameRules.register("bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true));
 
-        RULE_BOSS_REQUIRE_TRANSFORMATION = GameRules.register("bossRequireTransformation", GameRules.Category.SPAWNING, GameRules.BooleanValue.create(true));
+        RULE_BOSS_REQUIRE_TRANSFORMATION = GameRules.register("bossRequiresTransformation", GameRules.Category.SPAWNING, GameRules.BooleanValue.create(true));
 
 
         RULE_MOON_GRAVITY = GameRules.register("doMoonGravity", GameRules.Category.UPDATES, GameRules.BooleanValue.create(true));
