@@ -132,5 +132,4 @@ public class BaseItem extends Item {
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
-
 }

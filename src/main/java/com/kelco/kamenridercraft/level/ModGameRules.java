@@ -9,6 +9,8 @@ public class ModGameRules {
     public static GameRules.Key<GameRules.BooleanValue> RULE_GOLD_DRIVE_WEAPON_STEAL;
     public static GameRules.Key<GameRules.IntegerValue> RULE_BOSS_SPAWN_PERCENTAGE;
     public static GameRules.Key<GameRules.BooleanValue> RULE_BOSS_HENSHIN_ANNOUNCEMENTS;
+    public static GameRules.Key<GameRules.BooleanValue> RULE_BOSS_REQUIRE_TRANSFORMATION;
+
     public static GameRules.Key<GameRules.BooleanValue> RULE_MOON_GRAVITY;
     public static GameRules.Key<GameRules.BooleanValue> RULE_HAPPY_MODE;
 
@@ -22,6 +24,9 @@ public class ModGameRules {
         RULE_BOSS_SPAWN_PERCENTAGE = GameRules.register("bossSpawnPercentage", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(20));
 
         RULE_BOSS_HENSHIN_ANNOUNCEMENTS = GameRules.register("bossHenshinAnnouncements", GameRules.Category.CHAT, GameRules.BooleanValue.create(true));
+
+        RULE_BOSS_REQUIRE_TRANSFORMATION = GameRules.register("bossRequireTransformation", GameRules.Category.SPAWNING, GameRules.BooleanValue.create(true));
+
 
         RULE_MOON_GRAVITY = GameRules.register("doMoonGravity", GameRules.Category.UPDATES, GameRules.BooleanValue.create(true));
 
