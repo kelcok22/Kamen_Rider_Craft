@@ -98,11 +98,11 @@ public class BossBlock extends BaseBlock {
                             }
                         }
                     }
-                } else if (!itemStack.getTagEnchantments().keySet().contains(enchantmentRegistryLookup.get(Enchantments.SILK_TOUCH).get())) {
-                    ItemStack fakeItem = new ItemStack(itemStack.getItem());
-                    fakeItem.enchant(enchantmentRegistryLookup.get(Enchantments.SILK_TOUCH).get(), 10);
-                    super.playerDestroy(level, player, blockPos, blockState, blockEntity, fakeItem);
                 }
+            } else if (!itemStack.getTagEnchantments().keySet().contains(enchantmentRegistryLookup.get(Enchantments.SILK_TOUCH).get())) {
+                ItemStack fakeItem = new ItemStack(itemStack.getItem());
+                fakeItem.enchant(enchantmentRegistryLookup.get(Enchantments.SILK_TOUCH).get(), 10);
+                super.playerDestroy(level, player, blockPos, blockState, blockEntity, fakeItem);
             }
         }
         super.playerDestroy(level, player, blockPos, blockState, blockEntity, itemStack);
