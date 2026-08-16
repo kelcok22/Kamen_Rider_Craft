@@ -1,1 +1,0 @@
-Initial test for GitHub display
