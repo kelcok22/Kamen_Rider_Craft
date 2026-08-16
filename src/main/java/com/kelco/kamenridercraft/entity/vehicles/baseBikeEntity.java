@@ -5,10 +5,6 @@ import com.kelco.kamenridercraft.network.payload.BikeMovePayload;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
@@ -43,9 +39,6 @@ import javax.annotation.Nullable;
 
 
 public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJumping {
-
-    private static final EntityDataAccessor<Float> WHEEL_ROT = SynchedEntityData.defineId(baseBikeEntity.class, EntityDataSerializers.FLOAT);
-
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     public String NAME = "skullboilder";
     public String NAME_MODEL = "hardboilder";
@@ -87,43 +80,15 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
         return false;
     }
 
-    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
-        super.defineSynchedData(builder);
-        builder.define(WHEEL_ROT, 0f);
-    }
-
-    public Float getWheelRotation() {
-        return this.entityData.get(WHEEL_ROT);
-    }
-
-    public baseBikeEntity SetWheelRotation(Float Name) {
-        this.entityData.set(WHEEL_ROT, Name + getWheelRotation());
-        this.wheelRot = Name + getWheelRotation();
-        return this;
-    }
-
-    @Override
-    public void addAdditionalSaveData(@NotNull CompoundTag compound) {
-        super.addAdditionalSaveData(compound);
-        compound.putFloat("wheel_rotation", wheelRot);
-    }
-
-    @Override
-    public void readAdditionalSaveData(@NotNull CompoundTag compound) {
-        super.readAdditionalSaveData(compound);
-        this.entityData.set(WHEEL_ROT, compound.getFloat("wheel_rotation"));
-    }
-
-
     public static AttributeSupplier.Builder setAttributes() {
-        return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D).add(Attributes.ATTACK_DAMAGE, 2.0D);
+        return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D)
+                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT, 0D);
     }
 
     @Nullable
-    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor p_34297_, @NotNull DifficultyInstance p_34298_, @NotNull MobSpawnType p_34299_, @Nullable SpawnGroupData p_34300_) {
-        p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
-
-        return p_34300_;
+    public SpawnGroupData finalizeSpawn(@NotNull ServerLevelAccessor serverLevelAccessor, @NotNull DifficultyInstance difficultyInstance, @NotNull MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData) {
+        spawnGroupData = super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData);
+        return spawnGroupData;
     }
 
     @Override
@@ -185,7 +150,6 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
             this.lerpPositionAndRotationStep(this.lerpSteps, this.lerpX, this.lerpY, this.lerpZ, this.lerpYRot, this.lerpXRot);
             --this.lerpSteps;
         }
-
     }
 
 
@@ -298,7 +262,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                     }
                 }
                 super.travel(new Vec3(0, pos.y, z));
-                PacketDistributor.sendToServer(new BikeMovePayload(this.getId(), this.yBodyRot, this.yHeadRot, this.getWheelRotation(), this.getSpeed()));
+                PacketDistributor.sendToServer(new BikeMovePayload(this.getId(), this.yBodyRot, this.yHeadRot, (float) getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT).getBaseValue(), this.getSpeed()));
             }
         }
     }
@@ -386,7 +350,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                 }
             }
 
-            SetWheelRotation(wheel);
+            getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT).setBaseValue(getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT).getValue() + wheel);
 
             assert entityData != null;
             EntityModelData newEntityData = new EntityModelData(false, false, entityData.netHeadYaw() + wheel, front_fork);
@@ -448,11 +412,10 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
         this.setIsJumping(true);
         this.hasImpulse = true;
         CommonHooks.onLivingJump(this);
-        if (travelVector.z > (double)0.0F) {
-            float f = Mth.sin(this.getYRot() * ((float)Math.PI / 180F));
-            float f1 = Mth.cos(this.getYRot() * ((float)Math.PI / 180F));
+        if (travelVector.z > (double) 0.0F) {
+            float f = Mth.sin(this.getYRot() * ((float) Math.PI / 180F));
+            float f1 = Mth.cos(this.getYRot() * ((float) Math.PI / 180F));
             this.setDeltaMovement(this.getDeltaMovement().add((-0.4F * f * playerJumpPendingScale), 0.0F, (0.4F * f1 * playerJumpPendingScale)));
         }
-
     }
 }

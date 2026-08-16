@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.client.models;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -45,9 +46,9 @@ public class BikeModel<T extends baseBikeEntity> extends GeoModel<T> {
         baseBikeEntity animatable = state.getAnimatable();
         if (front_fork != null) front_fork.setRotY(entityData.headPitch());
         if (front_fork2 != null) front_fork2.setRotY(entityData.headPitch());
-        if (f_wheel2 != null) f_wheel2.setRotX(entityData2.getWheelRotation());
-        if (f_wheel != null) f_wheel.setRotX(entityData2.getWheelRotation());
-        if (b_wheel != null) b_wheel.setRotX(entityData2.getWheelRotation());
-        if (pedals != null) pedals.setRotX(entityData2.getWheelRotation());
+        if (f_wheel2 != null) f_wheel2.setRotX((float) animatable.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+        if (f_wheel != null) f_wheel.setRotX((float) animatable.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+        if (b_wheel != null) b_wheel.setRotX((float) animatable.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
+        if (pedals != null) pedals.setRotX((float) animatable.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
     }
 }
