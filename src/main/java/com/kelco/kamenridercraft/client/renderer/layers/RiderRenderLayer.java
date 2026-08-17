@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -49,24 +50,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
         }
     }
 
-    protected void applyCustomAnimations(BakedGeoModel bakedModel, LivingEntity entity, float PartialTick) {
-        GeoBone wizard_circle5 = bakedModel.getBone("wizard_circle5").orElse(null);
-        double GetTransforming = Objects.requireNonNull(entity.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-
-        float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - PartialTick);
-        if (wizard_circle5 != null) {
-            if (RiderDriverItem.isTransforming(entity)) {
-                wizard_circle5.setScaleX(1.1f);
-                wizard_circle5.setScaleY(1.1f);
-                wizard_circle5.setScaleZ(1.1f);
-                wizard_circle5.setPosX(2.5f);
-                wizard_circle5.setPosZ(30 - Transforming);
-                wizard_circle5.setHidden(false);
-            } else {
-                wizard_circle5.setHidden(true);
-                wizard_circle5.setPosZ(0);
-            }
-        }
+    protected void applyCustomAnimations(RenderLayerInfo renderLayerInfo, BakedGeoModel bakedModel, ItemStack stack, LivingEntity entity, float partialTick) {
+        renderLayerInfo.ApplyMovement(bakedModel,stack,entity,partialTick);
     }
 
 
@@ -87,9 +72,9 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
 
     @Nullable
     protected RenderType getRenderType(ResourceLocation text) {
-        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath()))
-            return null;
-        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath()))
+        if (text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/belts/blank.png")).getPath())||
+                text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png")).getPath())||
+                text.getPath().equals((ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/tire/no_tire.png")).getPath()))
             return null;
         return RenderType.entityTranslucent(text);
     }
@@ -114,11 +99,11 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                         String model = renderLayerInfo.getModel();
 
                         BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model, renderer2.getCurrentSlot())) : bakedModel;
-                        poseStack.scale(renderLayerInfo.getScaleX(), renderLayerInfo.getScaleY(), renderLayerInfo.getScaleZ());
+                        //poseStack.scale(renderLayerInfo.getScaleX(), renderLayerInfo.getScaleY(), renderLayerInfo.getScaleZ());
                         //poseStack.translate(renderLayerInfo.getX(), renderLayerInfo.getY(), renderLayerInfo.getZ());
 
                         if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
-                        if (model != null) applyCustomAnimations(bakedGeoModel, RIDER, partialTick);
+                        if (model != null) applyCustomAnimations(renderLayerInfo,bakedGeoModel,RIDER.getItemBySlot(EquipmentSlot.FEET) ,RIDER, partialTick);
                         if (renderType != null) {
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,

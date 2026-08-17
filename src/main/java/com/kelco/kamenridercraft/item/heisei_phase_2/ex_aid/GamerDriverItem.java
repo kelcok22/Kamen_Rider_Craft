@@ -234,11 +234,8 @@ public class GamerDriverItem extends RiderDriverItem {
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
 
         switch (currentSlot) {
-            case CHEST -> {
+            case CHEST ,HEAD -> {
                 return true;
-            }
-            case HEAD -> {
-                if (getFormItem(itemstack, 2) != ModdedItemCore.BLANK_FORM.get()) return true;
             }
             default -> {
             }

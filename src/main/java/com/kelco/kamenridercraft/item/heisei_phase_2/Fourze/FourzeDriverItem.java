@@ -80,7 +80,6 @@ public class FourzeDriverItem extends RiderDriverItem {
 
     @Override
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
-        //if (slot==EquipmentSlot.FEET)layerInfo.add(new RenderLayerInfo("hunter_gamer","hunter_gamer").isglowing("hunter_gamer_glowmask"));
 
         if (slot==EquipmentSlot.HEAD&isTransformed(rider)) {
             boolean fly = rider instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
@@ -97,6 +96,7 @@ public class FourzeDriverItem extends RiderDriverItem {
                 layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 4).getFormName(fly), null));
             }
         }
+        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
     }
 
     @Override
