@@ -58,7 +58,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "Novice Trades:$(li)1 $(l:gavv/items/gochizo#doppudding_gochizo)Doppudding Gochizo$(/l) for 1 $(l:gavv/items/heatpress)Hitpress$(/l)$(li)1 $(l:gavv/items/gochizo#purujelly_gochizo)Purujelly Gochizo$(/l) for 2 $(l:gavv/items/heatpress)Hitpresses$(/l)"
+			"text": "Novice Trades:$(li)1 $(l:gavv/items/gochizo#doppudding_gochizo)Doppudding Gochizo$(/l) for 1 $(l:gavv/items/heatpress)Hitpress$(/l)$(li)1 $(l:gavv/items/gochizo#purujelly_gochizo)Purujelly Gochizo$(/l) for 2 $(l:gavv/items/heatpress)Hitpresses$(/l)$(li)Apprentice Trades:$(li)$(l:misc/blocks/decor_blocks#dark_treat)Dark Treat$(/l) for 3 $(l:gavv/items/heatpress)Hitpresses$(/l)$(li)Gochizo Jar for 3 emeralds$(br2)Journeyman Trades:$(li)$(l:gavv/items/gochizo#purujelly_noir_gochizo)Purujelly Noir Gochizo$(/l) for 5 $(l:gavv/items/heatpress)Hitpresses$(/l)"
 		},
 		{
 			"type": "patchouli:entity",
