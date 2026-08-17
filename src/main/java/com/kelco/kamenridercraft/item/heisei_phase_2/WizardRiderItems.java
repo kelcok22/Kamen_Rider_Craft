@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
@@ -24,6 +25,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -33,6 +35,8 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class WizardRiderItems {
 
@@ -922,7 +926,6 @@ public class WizardRiderItems {
 						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
-
 			}.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> BEAST_DRIVER = ITEMS.register("beastdriver",

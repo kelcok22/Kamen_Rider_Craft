@@ -350,9 +350,8 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
-
+        //if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("ferbus","ferbus"));
       if(slot==EquipmentSlot.FEET){
-
           String texture =  getText(itemStack,EquipmentSlot.FEET,rider,riderName);
             ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+ texture+ "_glowmask.png");
           if(this.getGlowForSlot(itemStack, EquipmentSlot.FEET, rider)){layerInfo.add(new RenderLayerInfo(RenderType.breezeEyes(location),null));}

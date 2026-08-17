@@ -99,6 +99,8 @@ public class DriveDriverItem extends RiderDriverItem {
             return "tire/kourin_arabull_tire";
         } else if (Objects.equals(riderName, "mach") & getFormItem(itemstack, 2) == DriveRiderItems.SHIFT_SPIN_MIXER.get() && getFormItem(itemstack, 1) != DriveRiderItems.SHIFT_DEAD_HEAT_MACH.get()) {
             return "tire/kourin_mazerl_tire";
+        }else if (getFormItem(itemstack, 2) == DriveRiderItems.BASIC_TIRE.get()) {
+                return "blank";
         }
         return "tire/" + getFormItem(itemstack, 2).getFormName(fly);
     }

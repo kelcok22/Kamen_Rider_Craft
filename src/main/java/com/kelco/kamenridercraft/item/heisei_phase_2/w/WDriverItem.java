@@ -2,12 +2,14 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.w;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
@@ -36,24 +38,12 @@ public class WDriverItem extends RiderDriverItem {
     public WDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties);
         hasBasicBeltInfo = false;
-        unlimitedBeltTextures = 1;
     }
 
-    @Override
-    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num) {
-        Item formItem = getFormItem(itemstack, 1);
-		if (riderName != "w") {
-			return "blank";
-		} else if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
-			return "wdriver_belt_xtreme";
-		} else {
-			return "wdriver_belt" + getFormItem(itemstack, 2).getFormName(false);
-		}
-    }
+
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-
         tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
         Item formItem = getFormItem(stack, 1);
         Item formItem2 = getFormItem(stack, 2);
@@ -141,6 +131,29 @@ public class WDriverItem extends RiderDriverItem {
 		} else {
 			return super.getModelResource(itemstack, animatable, slot, rider);
 		}
+    }
+
+    public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
+        double transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        if (currentSlot == EquipmentSlot.FEET)
+            return  true;
+        else if (isTransformed(rider))
+            return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
+        return false;
+    }
+
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        if(slot==EquipmentSlot.FEET){
+            String texture;
+            Item formItem = getFormItem(itemStack, 1);
+            if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
+                texture="belts/wdriver_belt_xtreme";
+            } else {
+                texture= "belts/wdriver_belt" + getFormItem(itemStack, 2).getFormName(false);
+            }
+            layerInfo.add(new RenderLayerInfo(texture,null,texture+"_glowmask"));
+        }
     }
 
     @Override

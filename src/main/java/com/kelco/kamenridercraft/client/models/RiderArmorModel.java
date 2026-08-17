@@ -37,11 +37,12 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
         if (renderer instanceof RiderArmorRenderer riderRenderer) {
             LivingEntity rider = riderRenderer.GetEntity();
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
+
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem) {
                 if (slot == EquipmentSlot.FEET) {
                     return riderDriverItem.getBeltModelResource(rider.getItemBySlot(EquipmentSlot.FEET), animatable, slot, rider);
                 } else {
-                    return riderDriverItem.getModelResource(rider.getItemBySlot(EquipmentSlot.FEET), animatable, slot, rider);
+                    if(riderDriverItem.isTransformed(rider))return riderDriverItem.getModelResource(rider.getItemBySlot(EquipmentSlot.FEET), animatable, slot, rider);
                 }
             }
         }
@@ -60,8 +61,8 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
             LivingEntity RIDER = riderRenderer.GetEntity();
             EquipmentSlot slot = riderRenderer.getCurrentSlot();
             ItemStack BELT = RIDER.getItemBySlot(EquipmentSlot.FEET);
-            if (BELT.getItem() instanceof RiderDriverItem DRIVER && (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER))) {
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + DRIVER.getText(BELT, slot, RIDER, DRIVER.riderName) + ".png");
+            if (BELT.getItem() instanceof RiderDriverItem DRIVER) {
+               if (slot == EquipmentSlot.FEET || DRIVER.isTransformed(RIDER)) return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + DRIVER.getText(BELT, slot, RIDER, DRIVER.riderName) + ".png");
             }
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blank.png");
