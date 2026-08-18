@@ -172,7 +172,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static String[] BaseGamerDriverUsers = new String[] {"ex_aid","genm","brave","snipe"};
 
