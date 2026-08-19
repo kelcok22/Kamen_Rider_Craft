@@ -62,7 +62,7 @@ public class ZeinCardBaseItem extends BaseItem implements ZeinCard {
     public void activateCard(Level level, LivingEntity livingEntity, ItemStack stack) {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(effect);
+        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(new MobEffectInstance(effect));
         if (zeinItemList.isEmpty() && !(livingEntity instanceof Player)) {
             livingEntity.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
         } else {

@@ -59,7 +59,7 @@ public class GrandZiOCardItem extends FinalKamenRideCardItem implements ZeinCard
     public void activateCard(Level level, LivingEntity livingEntity, ItemStack stack) {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(effect);
+        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(new MobEffectInstance(effect));
         ItemStack weapon = new ItemStack(ZiORiderItems.SAIKYO_ZIKAN_GIRADE.get(), 1);
         weapon.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.zein", weapon.getHoverName()));
         weapon.set(DataComponents.REPAIR_COST, Integer.MAX_VALUE);

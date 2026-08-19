@@ -77,7 +77,7 @@ public class AttackRideCardItem extends BaseItem {
     public void attackride(Level level, Player player) {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-        for (MobEffectInstance effect : EFFECTS) player.addEffect(effect);
+        for (MobEffectInstance effect : EFFECTS) player.addEffect(new MobEffectInstance(effect));
         for (Item item : ITEMS) {
             ItemStack stack = new ItemStack(item, 1);
             stack.set(DataComponents.ITEM_NAME, Component.translatable("owner.kamenridercraft.decade", stack.getHoverName()));

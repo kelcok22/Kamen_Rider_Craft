@@ -61,7 +61,7 @@ public class ZeinCardItem extends FinalKamenRideCardItem implements ZeinCard {
     public void activateCard(Level level, LivingEntity livingEntity, ItemStack itemStack) {
         HolderLookup.RegistryLookup<Enchantment> lookup = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
 
-        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(effect);
+        for (MobEffectInstance effect : zeinEffectList) livingEntity.addEffect(new MobEffectInstance(effect));
         if (zeinItemList.isEmpty() && !(livingEntity instanceof Player))
             livingEntity.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
         else for (String string : zeinItemList) {
