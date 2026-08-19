@@ -40,7 +40,7 @@ public class ZeinRiderCardItem extends RiderCardItem implements ZeinCard {
 
     @Override
     public void activateCard(Level level, LivingEntity living, ItemStack stack) {
-        for (MobEffectInstance effect : zeinEffectList) living.addEffect(effect);
+        for (MobEffectInstance effect : zeinEffectList) living.addEffect(new MobEffectInstance(effect));
         if (living instanceof ServerPlayer player) {
             CriteriaTriggers.ITEM_DURABILITY_CHANGED.trigger(player, stack, stack.getDamageValue() + 1);
         }
