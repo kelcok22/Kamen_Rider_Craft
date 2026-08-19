@@ -350,7 +350,12 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
-        //if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("ferbus","ferbus"));
+
+        for (int n = 0; n < numBaseFormItems; n++) {
+            RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
+           form.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+            }
+
       if(slot==EquipmentSlot.FEET){
           String texture =  getText(itemStack,EquipmentSlot.FEET,rider,riderName);
             ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+ texture+ "_glowmask.png");
