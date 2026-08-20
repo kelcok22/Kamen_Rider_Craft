@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
@@ -698,5 +699,8 @@ public class RiderFormChangeItem extends BaseItem {
             transformationEffect(itemStack, entity);
         if (tick == 1)
             RiderDriverItem.UpdateOldFormItem(itemStack);
+    }
+
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
     }
 }
