@@ -1607,7 +1607,7 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.BLACK_SUN_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.BLACK_SUN_TAB_ITEM.get(i));
                 }
-                event.accept(RiderBlocks.AMAZON_CELL_EXTRACTOR);
+                event.accept(RiderBlocks.KAIJIN_STONE_GENERATOR);
 
             } else if (event.getTab() == CreativeTabRegistry.GTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.G_TAB_ITEM.size(); i++) {
