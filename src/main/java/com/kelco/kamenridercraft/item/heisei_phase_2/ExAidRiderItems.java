@@ -61,7 +61,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSlotOneAbility("rider_kick",1).addSwitchForm(MIGHTY_ACTION_X_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 20));
+                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 20));
 
     public static final DeferredItem<Item> TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("taddle_quest_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","brave","gamer_driver_taddle_quest_lv_1",
@@ -87,7 +87,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(TADDLE_QUEST_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 15));
+                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("bang_bang_shooting_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","snipe","gamer_driver_bang_bang_shooting_lv_1",
@@ -115,7 +115,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(BANG_BANG_SHOOTING_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
+                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_LV_1 = ITEMS.register("bakusou_bike_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","lazer","gamer_driver_bakusou_bike_lv_1",
@@ -139,7 +139,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json"));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json"));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT = ITEMS.register("bakusou_bike_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv2_bike","lazer","blank",
@@ -172,7 +172,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static String[] BaseGamerDriverUsers = new String[] {"ex_aid","genm","brave","snipe"};
 
@@ -371,7 +371,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("proto_taddle_quest_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_proto_brave_lv1","brave","gamer_driver_proto_bang_bang_shooting_lv_1",
@@ -966,7 +966,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
+                    .setFormToArmor().changeModel("legacy_gamer.geo.json").hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
 
     public static final DeferredItem<Item> HURRICANE_NINJA_GASHAT = ITEMS.register("hurricane_ninja_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"","fuma","gamer_driver_hurricane_ninja",

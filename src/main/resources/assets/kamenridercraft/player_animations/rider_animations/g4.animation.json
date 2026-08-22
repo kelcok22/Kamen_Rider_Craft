@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"g4.animation.pose": {
+		"g4.pose": {
 			"loop": "hold_on_last_frame",
 			"bones": {
 				"torso": {
