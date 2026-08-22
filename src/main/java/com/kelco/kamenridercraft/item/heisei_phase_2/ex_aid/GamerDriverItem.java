@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.ServerConfig;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.ParaDXSummonEntity;
@@ -11,6 +12,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
@@ -46,15 +48,18 @@ public class GamerDriverItem extends RiderDriverItem {
         unlimitedBeltTextures = 1;
     }
 
-    @Override
-    public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity rider, String riderName, int num) {
-        Item formItem = getFormItem(itemstack, 2);
-        if (formItem == ModdedItemCore.BLANK_FORM.get()){
-            return "blank";
-        } else {
-            return "gamer_driver_belt" + getFormItem(itemstack, 2).getFormName(false);
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        if(slot==EquipmentSlot.FEET){
+            String texture;
+            RiderFormChangeItem formItem = getFormItem(itemStack, 2);
+            if(formItem != ModdedItemCore.BLANK_FORM.get()) {
+                texture = "belts/gamer_driver_belt_" + formItem.getFormName(false);
+                layerInfo.add(new RenderLayerInfo(texture, null, texture + "_glowmask"));
+            }
         }
     }
+
 
     public void summonParaDX(Player player) {
         ParaDXSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(player.level());

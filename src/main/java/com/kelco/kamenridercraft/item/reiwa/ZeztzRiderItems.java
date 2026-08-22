@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.block.machine.CapsemDropper;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
@@ -54,7 +55,6 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
@@ -72,7 +72,6 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
@@ -80,8 +79,13 @@ public class ZeztzRiderItems {
 
 
     public static final DeferredItem<Item> ZEZTZ_BLANK = ITEMS.register("zeztz_blank",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_darkness","zeztz","zeztz_driver_belt")
-                    .changeModel("zeztz.geo.json").has_basic_model().model_has_different_name("void_capsem"));
+            () -> new RiderFormChangeItem(new Item.Properties(),"_darkness","zeztz","zeztz_driver_belt") {
+        public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+        super.transformationEffect(itemstack, player, tick);
+        RiderDriverItem.resetFormItem(itemstack);
+     }
+
+}.changeModel("zeztz.geo.json").has_basic_model().model_has_different_name("void_capsem"));
 
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt",
@@ -89,7 +93,6 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    Random generator = new Random();
                     if (tick == 22d) {
                         AnimationUtil.playPose(player, "zeztz.henshin_pose");
                     }
@@ -664,19 +667,23 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt_shock",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                    super.transformationEffect(itemstack, player, tick);
-                    if (tick == 22d) {
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+
+                    if (tick == 192d) {
                         AnimationUtil.playPose(player, "zeztz.henshin_pose");
                     }
-                    if (tick == 20d) {
+                    if (tick == 190d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-
-                    if (tick == 19d) {
+                    if (tick == 189d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19) .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("shock_capsem"));
+                    }
+                 if (tick < 189d&tick > 20d) {
+                     ((ServerLevel) player.level()).sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 20, 0.5, 0.5, 0.5, 1);
+                }if (tick == 2) RiderDriverItem.revertFormItem(itemStack,1);
+                }
+            }.setFormDelay(1).setHenshinTick(200).isAttackForm().needBaseForm().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("shock_capsem"));
 
     public static final DeferredItem<Item> SHOCK_CAPSEM = ITEMS.register("shock_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","lord_five","lord_invoker_five_belt",
@@ -1142,10 +1149,12 @@ public class ZeztzRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties()){
                 public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
                     var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if(getFormItem(itemStack, 1, 0).GetIsAttackForm())return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
                     if (transformingTick % 6 == 0||transformingTick<3) {
                         if (currentSlot == EquipmentSlot.FEET) return getFormItem(itemStack, 1, 0).getIsBeltGlowing();
                         else if (isTransformed(rider)) return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
                     }
+
                     return false;
                 }
             }.has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));

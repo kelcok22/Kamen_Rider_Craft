@@ -232,7 +232,9 @@ public class RiderDriverItem extends RiderArmorItem {
                             form.putDouble("rider_kick_tick", 0);
                             form.putDouble("render_type", 0);
                             form.putBoolean("Update_form", true);
+                            if (getFormItem(stack, 1).GetIsAttackForm())form.putString("slot_tex" + 1, form.getString("slot_tex_old" + 1));
                             form.putString("slot_tex_old" + 1, ModdedItemCore.BLANK_FORM.asItem().toString());
+
                         };
                         CustomData.update(DataComponents.CUSTOM_DATA, stack, data);
                     }
@@ -251,7 +253,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putBoolean("Update_form", false);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
-            Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(30);
+            Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(getFormItem(itemStack,1).getHenshinTick());
             Objects.requireNonNull(rider.getAttribute(Attributes.CAPE_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(Attributes.BALL_ROT)).setBaseValue(0);
@@ -455,7 +457,12 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
-
+    public static void revertFormItem(ItemStack itemStack, int slot) {
+        Item form = RiderDriverItem.getFormItem(itemStack, 1, 200);
+        if (form != ModdedItemCore.BLANK_FORM.asItem())
+            RiderDriverItem.setFormItem(itemStack, RiderDriverItem.getFormItem(itemStack, 1, 200), slot);
+        else RiderDriverItem.resetFormItem(itemStack);
+    }
     public static void UpdateOldFormItem(ItemStack itemStack) {
             if (!itemStack.has(DataComponents.CUSTOM_DATA)) setUpdateForm(itemStack);
         if (itemStack.getItem() instanceof RiderDriverItem driver) {
@@ -477,6 +484,7 @@ public class RiderDriverItem extends RiderArmorItem {
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
         }
     }
+
 
     public void setExtraFormItem(ItemStack itemStack, Item ITEM, int SLOT, CompoundTag tag) {
     }
@@ -557,6 +565,7 @@ public class RiderDriverItem extends RiderArmorItem {
         super.appendHoverText(itemStack, tooltipContext, tooltipComponents, tooltipFlag);
     }
 
+
     public static RiderFormChangeItem getFormItem(ItemStack itemStack, int slot, double num) {
         RiderDriverItem belt = (RiderDriverItem) itemStack.getItem();
         RiderFormChangeItem baseFormItem = (slot >= 2 ? belt.extraBaseFormItem.get(slot - 2) : belt.baseFormItem);
@@ -566,7 +575,7 @@ public class RiderDriverItem extends RiderArmorItem {
             ResourceLocation UsedFormItem = ResourceLocation.parse(tag.getString("slot_tex" + slot));
             ResourceLocation UsedFormItemOld = ResourceLocation.parse(tag.getString("slot_tex_old" + slot));
             if (BuiltInRegistries.ITEM.get(UsedFormItem) instanceof RiderFormChangeItem formItem) {
-                if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && num > formItem.getFormDelay())
+                if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && (num > formItem.getFormDelay()||tag.getBoolean("Update_form")&num!=0))
                     return formItem2;
                 else if (num > formItem.getFormDelay()) return (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.asItem();
                 return formItem;

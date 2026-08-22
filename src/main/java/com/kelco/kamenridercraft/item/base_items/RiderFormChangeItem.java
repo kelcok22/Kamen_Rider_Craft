@@ -68,6 +68,7 @@ public class RiderFormChangeItem extends BaseItem {
     private Item switchItem;
     private Boolean resetForm = false;
     private Boolean resetToMainForm = false;
+    private Boolean attackForm = false;
 
     private Boolean isGold = false;
 
@@ -108,7 +109,7 @@ public class RiderFormChangeItem extends BaseItem {
     private int slotTwoAbilityPriority = 0;
 
     private Double formDelay = 30d;
-
+    private Double henshinTick = 30d;
 
     public RiderFormChangeItem(Properties properties, String formName, String riderName, String beltTex, MobEffectInstance... effects) {
         super(properties);
@@ -145,6 +146,9 @@ public class RiderFormChangeItem extends BaseItem {
         return formDelay;
     }
 
+    public Double getHenshinTick() {
+        return henshinTick;
+    }
 
     public List<RiderFormChangeItem> getAlternative() {
         return alternative;
@@ -224,6 +228,10 @@ public class RiderFormChangeItem extends BaseItem {
 
     public Boolean getIsResetFormMain() {
         return resetToMainForm;
+    }
+
+    public Boolean GetIsAttackForm() {
+        return attackForm;
     }
 
     public Item getStiftItem() {
@@ -312,6 +320,11 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem setHenshinTick (double num) {
+        henshinTick = num;
+        return this;
+    }
+
     public RiderFormChangeItem isGold() {
         isGold = true;
         return this;
@@ -389,6 +402,11 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem resetFormToBaseIfMain() {
         resetToMainForm = true;
+        return this;
+    }
+
+    public RiderFormChangeItem isAttackForm() {
+        attackForm= true;
         return this;
     }
 
