@@ -26,7 +26,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredItem;
+import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 
 import java.util.List;
 import java.util.Objects;
@@ -152,7 +154,9 @@ public class WDriverItem extends RiderDriverItem {
             } else {
                 texture= "belts/wdriver_belt" + getFormItem(itemStack, 2).getFormName(false);
             }
-            layerInfo.add(new RenderLayerInfo(texture,null,texture+"_glowmask"));
+            ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+ ".png");
+            if (ModList.get().isLoaded("iris"))layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+            else layerInfo.add(new RenderLayerInfo(texture,null,texture+ "_glowmask"));
         }
     }
 

@@ -26,7 +26,9 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredItem;
+import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 
 import java.util.List;
 import java.util.Objects;
@@ -55,7 +57,9 @@ public class GamerDriverItem extends RiderDriverItem {
             RiderFormChangeItem formItem = getFormItem(itemStack, 2);
             if(formItem != ModdedItemCore.BLANK_FORM.get()) {
                 texture = "belts/gamer_driver_belt_" + formItem.getFormName(false);
-                layerInfo.add(new RenderLayerInfo(texture, null, texture + "_glowmask"));
+                ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+ ".png");
+                if (ModList.get().isLoaded("iris"))layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+                else layerInfo.add(new RenderLayerInfo(texture,null,texture+ "_glowmask"));
             }
         }
     }
@@ -210,8 +214,7 @@ public class GamerDriverItem extends RiderDriverItem {
     public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
 
         if (currentSlot == EquipmentSlot.FEET) {
-            return false;
-            //return getFormItem(itemstack, 1).getIsBeltGlowing();
+            return getFormItem(itemstack, 1).getIsBeltGlowing();
         } else if (isTransformed(livingEntity)) {
             if (Objects.requireNonNull(currentSlot) == EquipmentSlot.HEAD) {
                 return getFormItem(itemstack, 2).getIsGlowing();

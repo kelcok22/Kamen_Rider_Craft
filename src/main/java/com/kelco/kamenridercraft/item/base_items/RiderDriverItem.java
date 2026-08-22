@@ -32,12 +32,14 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.component.ItemContainerContents;
 import net.minecraft.world.level.Level;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -360,8 +362,11 @@ public class RiderDriverItem extends RiderArmorItem {
 
       if(slot==EquipmentSlot.FEET){
           String texture =  getText(itemStack,EquipmentSlot.FEET,rider,riderName);
-            ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+ texture+ "_glowmask.png");
-          if(this.getGlowForSlot(itemStack, EquipmentSlot.FEET, rider)){layerInfo.add(new RenderLayerInfo(RenderType.breezeEyes(location),null));}
+            ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+ ".png");
+          if(this.getGlowForSlot(itemStack, EquipmentSlot.FEET, rider)){
+              if (ModList.get().isLoaded("iris"))layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+              else layerInfo.add(new RenderLayerInfo(texture,null,texture));
+          }
 
           if (unlimitedBeltTextures != 0) {
             for (int n = 0; n < unlimitedBeltTextures; n++) {
@@ -372,6 +377,8 @@ public class RiderDriverItem extends RiderArmorItem {
                 layerInfo.add(new RenderLayerInfo(getUnlimitedTextures(itemStack, rider, this.riderName, n+1), null));
             }
         }
+
+
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
