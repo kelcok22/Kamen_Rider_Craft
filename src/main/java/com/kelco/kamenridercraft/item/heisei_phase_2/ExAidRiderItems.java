@@ -720,7 +720,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeSlot(2).addNeedForm(GIRI_GIRI_CHAMBARA_GASHAT.get(),2).has_basic_model().model_has_different_name("dangerous_zombie_gashat"));
+            }.changeSlot(2).addNeedForm(GIRI_GIRI_CHAMBARA_GASHAT.get(),2).changeModel("chambara_gamer.geo.json").has_basic_model().model_has_different_name("dangerous_zombie_gashat"));
 
     public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT_BD= ITEMS.register("dangerous_zombie_gashat_bd",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lvx","genm_bugvisor","gamer_driver_dangerous_zombie",
