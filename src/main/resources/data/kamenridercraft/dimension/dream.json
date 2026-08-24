@@ -1,0 +1,11 @@
+{
+	"type": "kamenridercraft:dream",
+	"generator": {
+		"type": "minecraft:noise",
+		"settings": "kamenridercraft:dream",
+		"biome_source": {
+			"type": "minecraft:fixed",
+			"biome": "kamenridercraft:dream"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "structures": [
+    {
+      "structure": "kamenridercraft:nightmare_garden",
+      "weight": 4
+    },
+    {
+      "structure": "kamenridercraft:nightmare_city",
+      "weight": 4
+    },
+    {
+      "structure": "kamenridercraft:nightmare_prison",
+      "weight": 3
+    },
+    {
+      "structure": "kamenridercraft:nightmare_warehouse",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "linear",
+    "salt": 6742678,
+    "spacing": 21,
+    "separation": 10,
+    "frequency_reduction_method": "default"
+  }
+}

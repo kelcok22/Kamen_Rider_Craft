@@ -14,6 +14,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -57,8 +58,11 @@ public class GamerDriverItem extends RiderDriverItem {
             RiderFormChangeItem formItem = getFormItem(itemStack, 2);
             if(formItem != ModdedItemCore.BLANK_FORM.get()) {
                 texture = "belts/gamer_driver_belt_" + formItem.getFormName(false);
-                ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+ ".png");
-                if (ModList.get().isLoaded("iris"))layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+                ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+".png");
+                if (ModList.get().isLoaded("iris")){
+                    layerInfo.add(new RenderLayerInfo(RenderType.entityTranslucent(location),null));
+                    layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+                }
                 else layerInfo.add(new RenderLayerInfo(texture,null,texture+ "_glowmask"));
             }
         }
