@@ -478,7 +478,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .changeSlot(2).changeModel("robot_gamer.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DOREMIFA_BEAT_GASHAT = ITEMS.register("proto_doremifa_beat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_beat_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -494,7 +494,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .changeSlot(2).changeModel("beat_gamer.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_JET_COMBAT_GASHAT_LAZER = ITEMS.register("proto_jet_combat_gashat_lazer",
@@ -510,7 +510,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotTwoAbility("gattling",1).addNeedForm(BAKUSOU_BIKE_GASHAT_TURBO.get(), 1).changeSlot(2));
+            }.setSlotTwoAbility("gattling",1).isGlowing().changeModel("combat_gamer.geo.json").addNeedForm(BAKUSOU_BIKE_GASHAT_TURBO.get(), 1).changeSlot(2));
 
     public static final DeferredItem<Item> PROTO_JET_COMBAT_GASHAT = ITEMS.register("proto_jet_combat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_combat_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -525,7 +525,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotTwoAbility("gattling",1).addAlternative(PROTO_JET_COMBAT_GASHAT_LAZER.get()).setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            }.setSlotTwoAbility("gattling",1).isGlowing().changeModel("combat_gamer.geo.json").addAlternative(PROTO_JET_COMBAT_GASHAT_LAZER.get()).setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_GIRI_GIRI_CHAMBARA_GASHAT = ITEMS.register("proto_giri_giri_chambara_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_chambara_gamer","lazer","gamer_driver_bakusou_bike",
@@ -541,7 +541,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeSlot(2)
-                    .alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).isGlowing().changeModel("chambara_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER = ITEMS.register("proto_shakariki_sports_gashat_lazer",
@@ -560,7 +560,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .addNeedForm(BAKUSOU_BIKE_GASHAT_TURBO.get(), 1).changeSlot(2));
+                    .addNeedForm(BAKUSOU_BIKE_GASHAT_TURBO.get(), 1).isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2));
 
 
     public static final DeferredItem<Item> PROTO_SHAKARIKI_SPORTS_GASHAT = ITEMS.register("proto_shakariki_sports_gashat",
@@ -579,7 +579,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addAlternative(PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addAlternative(PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER.get()).isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW = ITEMS.register("proto_drago_knight_hunter_z_gashat_claw",
@@ -597,7 +597,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeSlot(2)
-                    .alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()));
+                    .changeModel("hunter_gamer.geo.json").isGlowing().alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()));
 
     public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_GUN = ITEMS.register("proto_drago_knight_hunter_z_gashat_gun",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_hunter_gamer_gun","snipe","gamer_driver_mighty_action_x",
@@ -614,7 +614,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW.get()).changeSlot(2));
+                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW.get()).isGlowing().changeModel("hunter_gamer.geo.json").changeSlot(2));
 
     public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BLADE = ITEMS.register("proto_drago_knight_hunter_z_gashat_blade",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_hunter_gamer_blade","brave","gamer_driver_mighty_action_x",
@@ -631,7 +631,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_GUN.get()).changeSlot(2));
+                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_GUN.get()).isGlowing().changeModel("hunter_gamer.geo.json").changeSlot(2));
 
     public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG = ITEMS.register("proto_drago_knight_hunter_z_gashat_fang",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_hunter_gamer_fang","ex_aid","gamer_driver_mighty_action_x",
@@ -648,7 +648,44 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BLADE.get()).changeSlot(2));
+                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BLADE.get()).isGlowing().changeModel("hunter_gamer.geo.json").changeSlot(2));
+
+    public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE = ITEMS.register("proto_drago_knight_hunter_z_gashat_brave",
+            () -> new RiderFormChangeItem(new Item.Properties(),"proto_hunter_gamer_brave","brave","gamer_driver_mighty_action_x",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.RADAR, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.setFormToArmor().isGlowing().changeModel("hunter_gamer.geo.json").isGlowing().addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).changeSlot(2));
+
+    public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE = ITEMS.register("proto_drago_knight_hunter_z_gashat_snipe",
+            () -> new RiderFormChangeItem(new Item.Properties(),"proto_hunter_gamer_brave","snipe","gamer_driver_mighty_action_x",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.RADAR, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.setFormToArmor().isGlowing().changeModel("hunter_gamer.geo.json").isGlowing().addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get()).changeSlot(2));
+
 
     public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT = ITEMS.register("proto_drago_knight_hunter_z_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_hunter_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -667,7 +704,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()).addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).isGlowing().changeSlot(2).changeModel("hunter_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN = ITEMS.register("proto_mighty_action_x_gashat_origin",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv0","genm","gamer_driver_proto_mighty_action_x_origin",

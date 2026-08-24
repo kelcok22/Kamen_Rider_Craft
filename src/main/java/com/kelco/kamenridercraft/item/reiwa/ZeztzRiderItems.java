@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
+import com.kelco.kamenridercraft.item.reiwa.zeztz.DreamTestItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -1140,23 +1141,23 @@ public class ZeztzRiderItems {
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
-    /**
-     {
-     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
-     var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-     if(getFormItem(itemStack, 1, 0).GetIsAttackForm())return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
-     if (transformingTick % 6 == 0||transformingTick<3) {
-     if (currentSlot == EquipmentSlot.FEET) return getFormItem(itemStack, 1, 0).getIsBeltGlowing();
-     else if (isTransformed(rider)) return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
-     }
-
-     return false;
-     }
-     }
-     */
     public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            {
+                public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
+                    var transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+
+                    if (currentSlot == EquipmentSlot.FEET) return getFormItem(itemStack, 1, 0).getIsBeltGlowing();
+                    else {
+                        if (getFormItem(itemStack, 1, 0).GetIsAttackForm())
+                            return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
+                        else if (transformingTick % 6 == 0 || transformingTick < 3) {
+                            if (isTransformed(rider)) return getFormItem(itemStack, 1, transformingTick).getIsGlowing();
+                        }
+                        return false;
+                    }
+                }
+            }.has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
@@ -1289,6 +1290,9 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> MUGEN_SWORD = ITEMS.register("mugen_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
+
+    public static final DeferredItem<Item> DREAM_TEST_ITEM = ITEMS.register("dream_test_item",
+            () -> new DreamTestItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 

@@ -101,7 +101,6 @@ public class EffectCore {
     public static final Holder<MobEffect> FIRE_ARMOR = EFFECT.register("fire_armor",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
 
-
     public static final Holder<MobEffect> EXPLOSION = EFFECT.register("explosion",
             () -> new ExplosionEffect(MobEffectCategory.HARMFUL, 0x565656));
 
@@ -116,8 +115,6 @@ public class EffectCore {
 
     public static final Holder<MobEffect> EXPLOSION_SHOT = EFFECT.register("explosion_shot",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xf7c208));
-
-
 
     public static final Holder<MobEffect> FLYING = EFFECT.register("flying",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xffffff)
@@ -150,13 +147,11 @@ public class EffectCore {
             () -> new BlizzardEffect(MobEffectCategory.BENEFICIAL, 0x5feaff));
 
 
-
     public static final Holder<MobEffect> NOTE = EFFECT.register("note",
             () -> new NoteEffect(MobEffectCategory.BENEFICIAL, 0x2d2d2d));
 
     public static final Holder<MobEffect> DRILL = EFFECT.register("drill",
             () -> new DrillEffect(MobEffectCategory.BENEFICIAL, 0xe5d90e));
-
 
     public static final Holder<MobEffect> GRAVITY = EFFECT.register("gravity",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
@@ -165,8 +160,6 @@ public class EffectCore {
     public static final Holder<MobEffect> LOW_GRAVITY = EFFECT.register("low_gravity",
             () -> new LowGravityEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
                     .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.low_gravity"), -0.1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-
-
 
     public static final Holder<MobEffect> LONG_ARM = EFFECT.register("long_arm",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xe60052)
@@ -180,8 +173,6 @@ public class EffectCore {
 
     public static final Holder<MobEffect> STEALTH = EFFECT.register("stealth",
             () -> new StealthEffect(MobEffectCategory.BENEFICIAL, 0x8f62e8));
-
-
 
     public static final Holder<MobEffect> SMALL = EFFECT.register("small",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x1d8519)
@@ -204,7 +195,6 @@ public class EffectCore {
                     .addAttributeModifier(Attributes.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.wide"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
 
 
-
     public static final Holder<MobEffect> RETURN = EFFECT.register("return",
             () -> new ReturnEffect(MobEffectCategory.BENEFICIAL, 0xb3b3b3));
 
@@ -213,7 +203,6 @@ public class EffectCore {
 
     public static final Holder<MobEffect> PORTAL_COOLDOWN = EFFECT.register("portal_cooldown",
             () -> new UncurableEffect(MobEffectCategory.NEUTRAL, 0x6300e6));
-
 
 
     public static final Holder<MobEffect> BIND = EFFECT.register("bind",
@@ -226,13 +215,11 @@ public class EffectCore {
             () -> new InsomniaEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
 
-
     public static final Holder<MobEffect> REFLECT = EFFECT.register("reflect",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
 
     public static final Holder<MobEffect> CHRISTMAS = EFFECT.register("christmas",
             () -> new ChristmasEffect(MobEffectCategory.BENEFICIAL, 0x4eff00));
-
 
 
     public static final Holder<MobEffect> SLEEP = EFFECT.register("sleep",
@@ -245,8 +232,6 @@ public class EffectCore {
             () -> new TimeEffect(MobEffectCategory.NEUTRAL, 0xffed9e)
                     .addAttributeModifier(Attributes.HAS_TIME, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
-
-
     public static final Holder<MobEffect> GREEED = EFFECT.register("greeed",
             () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
 
@@ -257,14 +242,11 @@ public class EffectCore {
     public static final Holder<MobEffect> MIRROR_NOISES = EFFECT.register("mirror_noises",
             () -> new MirrorNoisesEffect(MobEffectCategory.HARMFUL, 0xc4c4c4));
 
-
-
     public static final Holder<MobEffect> SELF_MENDING = EFFECT.register("self_mending",
             () -> new SelfMendEffect(MobEffectCategory.BENEFICIAL, 0xFFAEC9));
 
     public static final Holder<MobEffect> GROUP_MENDING = EFFECT.register("group_mending",
             () -> new GroupMendEffect(MobEffectCategory.BENEFICIAL, 0xFF4281));
-
 
 
     public static final Holder<MobEffect> PULL = EFFECT.register("pull",
@@ -316,7 +298,8 @@ public class EffectCore {
                     .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.pause"), 100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
-
+    public static final Holder<MobEffect> DREAMING= EFFECT.register("dreaming",
+            () -> new DreamingEffect(MobEffectCategory.BENEFICIAL, 0xe02f39));
 
     public static final Holder<MobEffect> FORM_TIMEOUT = EFFECT.register("form_timeout",
             () -> new UncurableEffect(MobEffectCategory.HARMFUL, 0xffffff));

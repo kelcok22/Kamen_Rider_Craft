@@ -155,7 +155,10 @@ public class WDriverItem extends RiderDriverItem {
                 texture= "belts/wdriver_belt" + getFormItem(itemStack, 2).getFormName(false);
             }
             ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+ ".png");
-            if (ModList.get().isLoaded("iris"))layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+            if (ModList.get().isLoaded("iris")){
+                layerInfo.add(new RenderLayerInfo(RenderType.entityTranslucent(location),null));
+                layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
+            }
             else layerInfo.add(new RenderLayerInfo(texture,null,texture+ "_glowmask"));
         }
     }
