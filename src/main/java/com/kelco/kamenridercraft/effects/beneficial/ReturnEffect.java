@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.effects.beneficial;
 
 
+import com.kelco.kamenridercraft.util.DimensionUtil;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
@@ -19,23 +20,10 @@ public class ReturnEffect extends InstantenousMobEffect {
         super(mobEffectCategory, color);
     }
 
-    public static void teleportToDimension(ServerLevel otherDim, ServerPlayer entity) {
-        DimensionTransition respawn = entity.findRespawnPositionAndUseSpawnBlock(false, DimensionTransition.DO_NOTHING);
-        if (entity.isPassenger()) {
-            entity.stopRiding();
-        }
-        entity.teleportTo(otherDim, respawn.pos().x(), Mth.clamp(respawn.pos().y(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), respawn.pos().z(), new HashSet<>(), 0, 0);
-        while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {
-            entity.teleportRelative(0.0, 2.0, 0.0);
-        }
-        entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
-    }
-
-
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         if (livingEntity instanceof ServerPlayer serverPlayer && !livingEntity.level().isClientSide())
-            teleportToDimension(livingEntity.getServer().overworld(), serverPlayer);
+            DimensionUtil.returnToSpawn(livingEntity.getServer().overworld(), serverPlayer);
         return false;
     }
 }

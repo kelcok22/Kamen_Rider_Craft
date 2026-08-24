@@ -31,6 +31,7 @@ import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.DimensionUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.particles.ParticleTypes;
@@ -43,6 +44,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -68,6 +70,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureStart;
+import net.minecraft.world.level.portal.DimensionTransition;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
@@ -90,6 +93,7 @@ import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
@@ -139,14 +143,20 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
-
             if (event.getEntity().getAttribute(Attributes.TOJIMA).getValue() > 99 & event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem())
                 event.getEntity().addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 30, 3, false, false));
 
-
             ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
+            ResourceKey<Level> DREAM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
             if (event.getEntity().level().dimension() == MOON && event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_MOON_GRAVITY)) {
                 event.getEntity().addEffect(new MobEffectInstance(EffectCore.LOW_GRAVITY, 30, 7, false, false));
+            }else if (event.getEntity().level().dimension() == DREAM&event.getEntity().position().y<-2){
+                if (event.getEntity()instanceof ServerPlayer serverPlayer && !event.getEntity().level().isClientSide()){
+                    DimensionUtil.returnToSpawn(event.getEntity().getServer().overworld(), serverPlayer);
+                }
+            }
+            if (event.getEntity().level().dimension() != DREAM&!event.getEntity().level().isClientSide()){
+                event.getEntity().removeEffect(EffectCore.DREAMING);
             }
 
             LocalDate localdate = LocalDate.now();

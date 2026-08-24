@@ -12,20 +12,20 @@
     "grass_color": 7119193,
     "foliage_color": 7119193,
     "mood_sound": {
-      "sound": "minecraft:ambient.cave",
+      "sound": "kamenridercraft:play_back",
       "tick_delay": 6000,
       "block_search_extent": 8,
       "offset": 2
     },
     "music": {
-      "sound": "minecraft:music.overworld.grove",
+      "sound": "kamenridercraft:visions",
       "min_delay": 12000,
       "max_delay": 24000,
       "replace_current_music": false
     },
     "particle": {
       "options": {
-        "type": "kamenridercraft:gummi_particles_1"
+        "type": "kamenridercraft:butterfly_particles"
       },
       "probability": 0.001
     }

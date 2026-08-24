@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.item.reiwa.zeztz;
 
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
@@ -13,6 +14,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.player.Player;
@@ -48,6 +50,7 @@ public class DreamTestItem extends BaseItem {
                     TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", "nightmare_garden"));
                     blockpos =otherDim.findNearestMapStructure(tag, entity.blockPosition(), 100, true);
                     assert blockpos != null;
+                    entity.addEffect(new MobEffectInstance(EffectCore.DREAMING, 8400,0,true,true));
                 entity.teleportTo(otherDim, blockpos.getX(), 1, blockpos.getZ(), new HashSet<>(), 0, 0);
             } else {
                 double X = respawn.pos().x();
