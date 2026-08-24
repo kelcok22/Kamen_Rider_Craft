@@ -22,9 +22,12 @@ public class LevelRendererMixin {
     @WrapOperation(method = "renderSky", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;setShaderTexture(ILnet/minecraft/resources/ResourceLocation;)V", ordinal = 1))
     public void renderEarth(int shaderTexture, ResourceLocation textureId, Operation<Void> original) {
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
+        ResourceKey<Level> DREAM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
         if (this.level.dimension() == MOON) {
             RenderSystem.setShaderTexture(shaderTexture, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/environment/earth_phases.png"));
-        } else {
+        } else if (this.level.dimension() == DREAM) {
+            RenderSystem.setShaderTexture(shaderTexture, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/environment/red_moon_phases.png"));
+        } else{
             original.call(shaderTexture, textureId);
         }
     }

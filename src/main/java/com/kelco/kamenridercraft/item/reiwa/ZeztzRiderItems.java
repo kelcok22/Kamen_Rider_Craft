@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
+import com.kelco.kamenridercraft.item.reiwa.zeztz.DreamTestItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -1294,6 +1295,9 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> MUGEN_SWORD = ITEMS.register("mugen_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
+
+    public static final DeferredItem<Item> DREAM_TEST_ITEM = ITEMS.register("dream_test_item",
+            () -> new DreamTestItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 
