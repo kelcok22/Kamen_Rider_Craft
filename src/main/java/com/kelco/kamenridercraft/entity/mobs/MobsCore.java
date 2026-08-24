@@ -1515,6 +1515,23 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> NOX_SPAWN_EGG = ITEMS.register("nox_spawn_egg",
             () -> new DeferredSpawnEggItem(NOX, 0xDDEAEF, 0xF55C25, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<DawnEntity>> DAWN = MOBLIST.register("dawn",
+            () -> EntityType.Builder.of(DawnEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":dawn"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> DAWN_SPAWN_EGG = ITEMS.register("dawn_spawn_egg",
+            () -> new DeferredSpawnEggItem(DAWN, 0xCF0047, 0xCC00A4, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<LordThreeEntity>> LORD_THREE = MOBLIST.register("lord_three",
+            () -> EntityType.Builder.of(LordThreeEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":lord_three"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> LORD_THREE_SPAWN_EGG = ITEMS.register("lord_three_spawn_egg",
+            () -> new DeferredSpawnEggItem(LORD_THREE, 0xE8F400, 0x511BC5, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ZeztzDarknessNightmareEntity>> ZEZTZ_DARKNESS_NIGHTMARE = MOBLIST.register("zeztz_darkness_nightmare",
+            () -> EntityType.Builder.of(ZeztzDarknessNightmareEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":zeztz_darkness_nightmare"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> ZEZTZ_DARKNESS_NIGHTMARE_SPAWN_EGG = ITEMS.register("zeztz_darkness_nightmare_spawn_egg",
+            () -> new DeferredSpawnEggItem(ZEZTZ_DARKNESS_NIGHTMARE, 0x505050, 0x252525, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<BattaAugmentEntity>> BATTA_AUGMENT = MOBLIST.register("batta_augment",
             () -> EntityType.Builder.of(BattaAugmentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":batta_augment"));

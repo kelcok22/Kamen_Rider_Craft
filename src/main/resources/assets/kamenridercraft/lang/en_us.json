@@ -740,6 +740,11 @@
 "henshin.kamenridercraft.caries_c3":"§5Horror! Destroy!",
 "henshin.kamenridercraft.nox_knight":"<Nox Knight> §6Gisou.\n§fInvoke Knight System - §6Erase!",
 "henshin.kamenridercraft.nox":"<Kamen Rider Nox> §9Henshin!\n§8Hahahahahaha! Rider! §9Nox! §6Nox! §fNox! §5Shadow!",
+"henshin.kamenridercraft.dawn":"<Kamen Rider Dawn> §8Henshin!\n§dDawn! §4Dawn!! §5Dawn!!! Nightmare Rider! - §5Punish!",
+"henshin.kamenridercraft.lord_three":"<Lord Three> §7Gisou.\n§eInvoke Lord System - §5Extra!",
+"henshin.kamenridercraft.lord_three_booster":"§eEnforce Lord System - §5Booster!",
+"henshin.kamenridercraft.zeztz_darkness_nightmare":"<Zeztz Darkness Nightmare> §0Begone.",
+"henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"§0Darkness!",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
 "attack.kamenridercraft.special_turbo":"§CULTIMATE FORM~!!! SPECIAL TURBO!",
@@ -9386,6 +9391,11 @@
 "entity.kamenridercraft.caries": "Kamen Rider Caries",
 
 "entity.kamenridercraft.nox_mob": "Nox Knight",
+"entity.kamenridercraft.nox": "Kamen Rider Nox",
+"entity.kamenridercraft.dawn": "Kamen Rider Dawn",
+"entity.kamenridercraft.lord_three": "Lord Three",
+"entity.kamenridercraft.zeztz_darkness_nightmare": "Zeztz Darkness Nightmare",
+
 "entity.kamenridercraft.code_zero": "Zero",
 
 "entity.kamenridercraft.bicycle": "Bicycle",
@@ -9692,6 +9702,9 @@
 "item.kamenridercraft.caries_spawn_egg": "Kamen Rider Caries Spawn Egg",
 
 "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
+"item.kamenridercraft.dawn_spawn_egg": "Dawn Spawn Egg",
+"item.kamenridercraft.lord_three_spawn_egg": "Lord Three Spawn Egg",
+"item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "Zeztz Darkness Nightmare Spawn Egg",
 
 "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
 "item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",

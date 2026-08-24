@@ -538,6 +538,9 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.CARIES.get(), BasicEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.NOX.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.DAWN.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.LORD_THREE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CODE_ZERO.get(), AllyEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
@@ -1587,7 +1590,6 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
-                event.accept(MobsCore.NOX_SPAWN_EGG);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
 
             } else if (event.getTab() == CreativeTabRegistry.My_thTab.get()) {
@@ -1963,7 +1965,9 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.CARIES_SPAWN_EGG);
 
                 event.accept(MobsCore.NOX_SPAWN_EGG);
-
+                event.accept(MobsCore.DAWN_SPAWN_EGG);
+                event.accept(MobsCore.LORD_THREE_SPAWN_EGG);
+                event.accept(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.RiderMiscTab.get()) {
 

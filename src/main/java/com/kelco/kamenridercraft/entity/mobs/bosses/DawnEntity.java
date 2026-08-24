@@ -2,10 +2,8 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
-import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -26,18 +24,25 @@ import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 
-public class NoxEntity extends BaseHenchmenEntity {
-    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(NoxEntity.class, EntityDataSerializers.BYTE);
-    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
-		public NoxEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+public class DawnEntity extends BaseHenchmenEntity {
+    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(DawnEntity.class, EntityDataSerializers.BYTE);
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS);
+		public DawnEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="nox_knight";
+        NAME="dawn";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.KNIGHT_INVOKER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeztzRiderItems.BREAKAM_BUSTER.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.DAWN_BELT.get()));
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeztzRiderItems.BREAKAM_DAWN_SOUKEN_R.get()));
+        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ZeztzRiderItems.BREAKAM_DAWN_SOUKEN_L.get()));
+
     }
+    protected void customServerAiStep() {
+        super.customServerAiStep();
+        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+
 
     public void readAdditionalSaveData(CompoundTag p_31474_) {
         super.readAdditionalSaveData(p_31474_);
@@ -61,42 +66,12 @@ public class NoxEntity extends BaseHenchmenEntity {
         this.bossEvent.removePlayer(p_31488_);
     }
 
-    @Override
-    public void actuallyHurt(DamageSource source, float amount) {
-        super.actuallyHurt(source, amount);
-        if(!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth()<30
-                && playerIn.getInventory().countItem(ZeztzRiderItems.PLASMA_CAPSEM.get().asItem())!=0 && this.getItemBySlot(EquipmentSlot.FEET).getItem()!= ZeztzRiderItems.NOX_DRIVER.get()) {
-            if(this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox"));
-
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.NOX_DRIVER.get()));
-        }
-         }
-
-    protected void customServerAiStep() {
-        super.customServerAiStep();
-
-        if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.NOX_DRIVER.get()){
-            ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.SHADOW_CAPSEM.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.BLUE) {
-                this.bossEvent.setColor(BossEvent.BossBarColor.BLUE);
-                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.nox").withStyle(ChatFormatting.BLUE));
-            }
-        }
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());}
-
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
         builder.define(DATA_FLAGS_ID, (byte)0);
     }
 
-    void setCharged(boolean p_32241_) {
-        byte b0 = this.entityData.get(DATA_FLAGS_ID);
-        if (p_32241_) {
-            b0 = (byte) (b0 | 1);
-        }
-       }
-
-	public static AttributeSupplier.Builder setAttributes() {
+    public static AttributeSupplier.Builder setAttributes() {
 		return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 128.0D)
         		.add(Attributes.MOVEMENT_SPEED, 0.30F)

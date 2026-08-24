@@ -4,6 +4,10 @@
 		"kamenridercraft:core",
 		"kamenridercraft:powered_up_core",
 		"kamenridercraft:cronus",
-		"kamenridercraft:zein"
+		"kamenridercraft:zein",
+    	"kamenridercraft:nox_mob",
+    	"kamenridercraft:dawn",
+    	"kamenridercraft:lord_three",
+    	"kamenridercraft:zeztz_darkness_nightmare"
 	]
 }

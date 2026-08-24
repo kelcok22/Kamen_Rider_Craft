@@ -739,8 +739,13 @@
 "henshin.kamenridercraft.bocca_jaldak":"<ボッカ・ジャルダック> §b最後のグラニュートハンターはお前か？",
 "henshin.kamenridercraft.caries":"ホラー！ズキー！",
 "henshin.kamenridercraft.caries_c3":"§5ホラー！デストロイ！",
-"henshin.kamenridercraft.nox_knight":"<ノクスナイト> §6擬装。\n§fインヴォークナイトシステム！§6イレイス！",
+"henshin.kamenridercraft.nox_knight":"<ノクスナイト> §6擬装。\n§fインヴォークナイトシステム！ - §6イレイス！",
 "henshin.kamenridercraft.nox":"<仮面ライダーノクス> §9変身！\n§8ハッハッハッハッハッハッ！ライダー！§9ノクス！§6ノクス！§fノクス！§5シャドウ！",
+"henshin.kamenridercraft.dawn":"<仮面ライダードォーン> §8変身！\n§dドォーン・§4ドォーン・§5ドォーン！ナイトメアライダー！ - §5パニッシュ！",
+"henshin.kamenridercraft.lord_three":"<ロードスリー> §7擬装。\n§eインヴォークロードシステム！ - §5エクストラ！",
+"henshin.kamenridercraft.lord_three_booster":"§eエンフォースロードシステム！ - §5ブースター!",
+"henshin.kamenridercraft.zeztz_darkness_nightmare":"<ゼッツダークネスナイトメア> §0消え失せろ。",
+"henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"<ゼッツダークネスナイトメア> §0消え失せろ。",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
 "attack.kamenridercraft.special_turbo":"§Cアルティメットフォ～ム!!! スペシャルターボ!",
@@ -9383,6 +9388,10 @@
 "entity.kamenridercraft.caries": "仮面ライダーカリエス",
 
 "entity.kamenridercraft.nox_mob": "ノクスナイト",
+"entity.kamenridercraft.nox": "仮面ライダーノクス",
+"entity.kamenridercraft.dawn": "仮面ライダーノクス",
+"entity.kamenridercraft.lord_three": "ロードスリー",
+"entity.kamenridercraft.zeztz_darkness_nightmare": "ゼッツダークネスナイトメア",
 "entity.kamenridercraft.code_zero": "ゼロ",
 
 "entity.kamenridercraft.bicycle": "自転車",
@@ -9689,6 +9698,9 @@
 "item.kamenridercraft.caries_spawn_egg": "仮面ライダーカリエススポーンエッグ",
 
 "item.kamenridercraft.nox_spawn_egg": "ノクスナイトスポーンエッグ",
+"item.kamenridercraft.dawn_spawn_egg": "仮面ライダードォーンポーンエッグ",
+"item.kamenridercraft.lord_three_spawn_egg": "ロードスリーポーンエッグ",
+"item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "ゼッツダークネスナイトメアポーンエッグ",
 
 "item.kamenridercraft.bicycle_spawn_egg": "自転車",
 "item.kamenridercraft.acrobatter_spawn_egg": "アクロバッター",

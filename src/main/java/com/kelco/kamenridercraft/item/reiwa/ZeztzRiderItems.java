@@ -5,14 +5,12 @@ import com.kelco.kamenridercraft.block.machine.CapsemDropper;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
-import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -33,9 +31,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.Objects;
-import java.util.Random;
 
 public class ZeztzRiderItems {
 
@@ -1179,7 +1174,7 @@ public class ZeztzRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dawn", PUNISH_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> KIGHT_INVOKER = ITEMS.register("knight_invoker",
+    public static final DeferredItem<Item> KNIGHT_INVOKER = ITEMS.register("knight_invoker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1215,7 +1210,7 @@ public class ZeztzRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mugen", DAYDREAM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> KIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
+    public static final DeferredItem<Item> KNIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight_seventeen", CODE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 

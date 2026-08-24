@@ -278,6 +278,9 @@ public class EntityAttributes {
         event.put(MobsCore.CARIES.get(), CariesEntity.setAttributes().build());
 
         event.put(MobsCore.NOX.get(), NoxEntity.setAttributes().build());
+        event.put(MobsCore.DAWN.get(), DawnEntity.setAttributes().build());
+        event.put(MobsCore.LORD_THREE.get(), LordThreeEntity.setAttributes().build());
+        event.put(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE.get(), ZeztzDarknessNightmareEntity.setAttributes().build());
         event.put(MobsCore.CODE_ZERO.get(), CodeZeroEntity.setAttributes().build());
     }
 
