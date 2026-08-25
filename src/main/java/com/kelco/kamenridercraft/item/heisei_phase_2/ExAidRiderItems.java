@@ -15,6 +15,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -775,7 +777,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().changeModel("genm_lvx.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addAlternative(DANGEROUS_ZOBIE_LAZER.get()));
+                    .isGlowing().changeModel("genm_lvx.geo.json").IsBeltGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addAlternative(DANGEROUS_ZOBIE_LAZER.get()));
 
     public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT= ITEMS.register("dangerous_zombie_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_lvx","genm","gamer_driver_dangerous_zombie",
@@ -796,7 +798,7 @@ public class ExAidRiderItems {
             }
                     .addAlternative(DANGEROUS_ZOBIE_GASHAT_BD.get()).addNeedForm(PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN.get(),1)
                     .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().changeModel("genm_lvx.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("genm_lvx.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT = ITEMS.register("unfinished_kamen_rider_chronicle_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ride_player","ride_player_belt",
@@ -822,7 +824,11 @@ public class ExAidRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
@@ -830,7 +836,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGold().isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGold().isGlowing().IsBeltGlowing().changeModel("chronos.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT= ITEMS.register("kamen_rider_chronicle_gashat",
@@ -850,7 +856,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+                    .isGlowing().IsBeltGlowing().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .changeBeltModel("geo/belts/gamer_driver_belt.geo.json").changeModel("chronos.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHAT_RED_EYES= ITEMS.register("toki_meki_crisis_gashat_red_eyes",
@@ -865,7 +871,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .changeModel("poppy.geo.json").isGlowing());
+                    .changeModel("poppy.geo.json").IsBeltGlowing().isGlowing());
 
     public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHAT= ITEMS.register("toki_meki_crisis_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"","poppy","gashacon_bugvisor_ii_poppy",
@@ -879,7 +885,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().changeModel("poppy.geo.json").addSwitchForm(TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("poppy.geo.json").IsBeltGlowing().addSwitchForm(TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MIGHTY_CREATOR_VRX_GASHAT = ITEMS.register("mighty_creator_vrx_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_creator","ex_aid","gamer_driver_mighty_creator_vrx",
