@@ -112,7 +112,8 @@
               "search_radius": 50,
               "skip_existing_chunks": false
             }
-          ]
+          ],
+          "set_name": "pandora_tower"
         },
         {
           "type": "item",
@@ -127,7 +128,8 @@
               "search_radius": 50,
               "skip_existing_chunks": false
             }
-          ]
+          ],
+          "set_name": "kuuga_ruin"
         },
         {
           "type": "item",
@@ -142,7 +144,8 @@
               "search_radius": 50,
               "skip_existing_chunks": false
             }
-          ]
+          ],
+          "set_name": "castle_doran"
         },
         {
           "type": "item",
@@ -157,7 +160,8 @@
               "search_radius": 50,
               "skip_existing_chunks": false
             }
-          ]
+          ],
+          "set_name": "oopart"
         }
       ],
       "rolls": {

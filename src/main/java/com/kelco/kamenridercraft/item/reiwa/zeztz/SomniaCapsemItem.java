@@ -20,11 +20,12 @@ public class SomniaCapsemItem extends BaseItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-        if (level.isClientSide() && usedHand == InteractionHand.MAIN_HAND) {
+        if (!level.isClientSide() && usedHand == InteractionHand.MAIN_HAND) {
             List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(50), entity ->
                     (entity instanceof Mob));
             for (LivingEntity enemy : nearbyEnemies) {
-                if (enemy.getName().getString().contains("nightmare") && enemy.getName().getString().contains("dawn")) {
+                if (enemy.toString().toLowerCase().contains("nightmare") || enemy.toString().toLowerCase().contains("dawn")) {
+                    System.out.println(enemy);
                     enemy.addEffect(new MobEffectInstance(EffectCore.FLAT, 200, 0, true, true));
                 }
             }
