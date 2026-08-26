@@ -197,6 +197,8 @@ public class RiderDriverItem extends RiderArmorItem {
                             duration = effect.getDuration();
                         } else if (effect.getEffect() == MobEffects.NIGHT_VISION) {
                             duration = 305;
+                        } else if (effect.getEffect() == EffectCore.SMALL || effect.getEffect() == EffectCore.BIG) {
+                            duration = 1;
                         }
                         rider.addEffect(new MobEffectInstance(effect.getEffect(), duration, effect.getAmplifier(), true, false));
                     }
