@@ -1026,7 +1026,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
 
     public static final DeferredItem<Item> PAC_ADVENTURE_GASHAT = ITEMS.register("pac_adventure_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"pac_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1901,7 +1901,7 @@ public class ExAidRiderItems {
                     .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_FUMA = ITEMS.register("gamer_driver_fuuma",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"fuma",HURRICANE_NINJA_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
+            () -> new GamerDriverFumaItem(ArmorMaterials.DIAMOND,"fuma",HURRICANE_NINJA_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
                     .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_ANOTHER_PARA_DX = ITEMS.register("gamer_driver_anotherparadox",
