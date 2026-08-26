@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.DreamTestItem;
+import com.kelco.kamenridercraft.item.reiwa.zeztz.SomniaCapsemItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -1091,6 +1092,10 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> CODE_SOMNIA_CAPSEM = ITEMS.register("code_somnia_capsem",
+            () -> new SomniaCapsemItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
             () -> new RiderFormChangeItem(new Item.Properties(),"ider","code_zero","blank",
