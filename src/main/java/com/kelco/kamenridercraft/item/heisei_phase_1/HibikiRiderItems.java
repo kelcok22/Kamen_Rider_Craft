@@ -146,6 +146,9 @@ public class HibikiRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CHERRY_LEAVES,
+                            player.getX(), player.getY()+3,
+                            player.getZ(), 100, 1, 1, 1, 1);
                 }
             }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM));//WehN cuStOm chErRy peTal pARtIcLe
 

@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.item.reiwa.zeztz;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
@@ -28,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 import java.util.function.Consumer;
 
 public class DreamTestItem extends BaseItem {
@@ -35,7 +38,7 @@ public class DreamTestItem extends BaseItem {
             super(properties);
         }
 
-        public void teleportToDimension(ItemStack itemStack, ServerLevel otherDim, ServerPlayer entity) {
+        public void teleportToDimension(ServerLevel otherDim, ServerPlayer entity) {
             ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
             DimensionTransition respawn = entity.findRespawnPositionAndUseSpawnBlock(false, DimensionTransition.DO_NOTHING);
 
@@ -44,11 +47,17 @@ public class DreamTestItem extends BaseItem {
             }
             if (otherDim.dimension() == CITY) {
                 BlockPos blockpos;
-                while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {
+                while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox ())) {
                     entity.teleportRelative(0.0, 5.0, 0.0);
                 }
-                    TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", "nightmare_garden"));
-                    blockpos =otherDim.findNearestMapStructure(tag, entity.blockPosition(), 100, true);
+
+                String[] structureList= new String[] {"nightmare_garden","nightmare_prison","nightmare_city"};
+                Random rand= new Random();
+                String structure = structureList[rand.nextInt(structureList.length)];
+                if (entity.getInventory().countItem(ZeztzRiderItems.DUALMARE_CAPSEM.get())!=0) structure="nightmare_warehouse";
+                TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", structure));
+
+                    blockpos =otherDim.findNearestMapStructure(tag, entity.blockPosition(), 100, false);
                     assert blockpos != null;
                     entity.addEffect(new MobEffectInstance(EffectCore.DREAMING, 8400,0,true,true));
                 entity.teleportTo(otherDim, blockpos.getX(), 1, blockpos.getZ(), new HashSet<>(), 0, 0);
@@ -77,14 +86,14 @@ public class DreamTestItem extends BaseItem {
                 List<TamableAnimal> nearbyAllies = level.getEntitiesOfClass(TamableAnimal.class, player.getBoundingBox().inflate(30), entity ->
                         (entity.getOwner() == player && !entity.isOrderedToSit() && !entity.isSleeping()));
                 if (level.dimension() == MOON) {
-                        this.teleportToDimension(itemStack, Server.overworld(), serverPlayer);
+                        this.teleportToDimension(Server.overworld(), serverPlayer);
                         for (LivingEntity ally : nearbyAllies)
                             ally.teleportTo(Server.overworld(), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
                 } else {
                     double X = player.position().x;
                     double Y = player.position().y;
                     double Z = player.position().z;
-                    this.teleportToDimension(itemStack, Server.getLevel(MOON), serverPlayer);
+                    this.teleportToDimension(Server.getLevel(MOON), serverPlayer);
                     for (LivingEntity ally : nearbyAllies)
                         ally.teleportTo(Objects.requireNonNull(Server.getLevel(MOON)), player.getX(), player.getY() + 1, player.getZ(), new HashSet<>(), 0, 0);
                 }

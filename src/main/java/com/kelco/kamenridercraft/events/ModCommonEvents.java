@@ -85,11 +85,13 @@ import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
+import net.neoforged.neoforge.event.level.SleepFinishedTimeEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
+import java.awt.desktop.ScreenSleepEvent;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
@@ -156,6 +158,15 @@ public class ModCommonEvents {
                 }
                 if (event.getEntity().level().dimension() != DREAM) {
                     event.getEntity().removeEffect(EffectCore.DREAMING);
+                }else{
+                       if (event.getEntity() instanceof ServerPlayer serverPlayer) {
+                           StructureManager structureManager = ((ServerLevel) event.getEntity().level()).structureManager();
+                           TagKey<Structure> nightmareKey = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "nightmare"));
+                           StructureStart nightmareLocation = structureManager.getStructureWithPieceAt(event.getEntity().blockPosition(), nightmareKey);
+
+                           if (!nightmareLocation.isValid())
+                            DimensionUtil.returnToSpawn(event.getEntity().getServer().overworld(), serverPlayer);
+                    }
                 }
 
                 LocalDate localdate = LocalDate.now();
@@ -366,7 +377,6 @@ public class ModCommonEvents {
 
                 Item GOCHIZO = getGochizoDrop(event.getItem(), event.getEntity().level(), player);
                 Item CUP_GOCHIZO = getCupGochizoDrop(event.getItem());
-
 
                 if (event.getItem().getItem() == GaimRiderItems.HELHEIM_FRUIT.asItem() & player.getInventory().countItem(GaimRiderItems.GURONBARYAMU.get()) > 0 & player.getItemBySlot(EquipmentSlot.FEET).getItem() == GaimRiderItems.SENGOKU_DRIVER_BARON.asItem()) {
                     RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) GaimRiderItems.LORD_BARON.get();
