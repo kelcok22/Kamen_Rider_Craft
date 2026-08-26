@@ -24,7 +24,7 @@ public class SomniaCapsemItem extends BaseItem {
             List<LivingEntity> nearbyEnemies = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(50), entity ->
                     (entity instanceof Mob));
             for (LivingEntity enemy : nearbyEnemies) {
-                if (enemy.toString().toLowerCase().contains("nightmare") && enemy.toString().toLowerCase().contains("dawn")) {
+                if (enemy.toString().toLowerCase().contains("nightmare") || enemy.toString().toLowerCase().contains("dawn")) {
                     enemy.addEffect(new MobEffectInstance(EffectCore.FLAT, 200, 0, true, true));
                 }
             }
