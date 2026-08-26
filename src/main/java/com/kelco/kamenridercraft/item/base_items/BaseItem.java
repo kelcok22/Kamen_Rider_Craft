@@ -23,7 +23,6 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class BaseItem extends Item {
-
     public UseAnim Animation;
     private Item craftingRemainingItem = null;
     private Boolean hasHoverText = false;
@@ -91,7 +90,6 @@ public class BaseItem extends Item {
                 save.applyComponents(stack.getComponents());
             }
             return save;
-
         } else {
             return new ItemStack(this.getCraftingRemainingItem());
         }

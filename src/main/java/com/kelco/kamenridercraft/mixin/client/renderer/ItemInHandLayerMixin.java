@@ -49,7 +49,6 @@ public class ItemInHandLayerMixin {
                     ci.cancel();
                 }
             }
-
         }
     }
 }

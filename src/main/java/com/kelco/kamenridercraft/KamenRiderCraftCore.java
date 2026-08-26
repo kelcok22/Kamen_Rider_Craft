@@ -276,6 +276,8 @@ public class KamenRiderCraftCore {
             event.registerBlockEntityRenderer(ModBlockEntities.PANDORA_PANEL_BE.get(), PandoraPanelBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.PLINTH_BE.get(), PlinthBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.GOCHIZO_JAR_BE.get(), GochizoJarBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.MIND_DOOR_BE.get(), MindDoorRenderer::new);
+
         }
 
         @SubscribeEvent

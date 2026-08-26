@@ -8,7 +8,7 @@
     "items.MilkBucketItemMixin",
     "block.GochizoCakeBlock",
     "compat.JMCGochizoCakeBlock",
-    "livingentity.LivingEntityMixin",
+    "entities.LivingEntityMixin",
     "structure.JigsawExpansion",
     "structure.JigsawPlacementExpansion",
     "structure.PlaceCommandUnlimit",
