@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:kuuga/n_daguva_zeba_belt",
-			"text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)'s equipment"
+			"text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)'s equipment"
 		}
 	]
 }

@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:knight_invoker"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zeztz.nox_knight.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zeztz.nox_knight.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+      "parent": "kamenridercraft:zeztz/zeztz",
+      "criteria": {
+        "requirement": {
+          "trigger": "minecraft:player_killed_entity",
+          "conditions": {
+            "entity": {
+              "type": "kamenridercraft:nox_mob"
+            }
+          }
+        }
+      }
+}

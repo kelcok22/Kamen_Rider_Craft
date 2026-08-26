@@ -64,7 +64,7 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:kuuga/kuuga_rising_mighty",
-          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -76,7 +76,7 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:kuuga/kuuga_rising_dragon",
-          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -88,7 +88,7 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:kuuga/kuuga_rising_pegasus",
-          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -100,7 +100,7 @@
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:kuuga/kuuga_rising_titan",
-          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -179,7 +179,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_black_rising_mighty",
 			"title": " ",
-          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -197,15 +197,15 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "n_daguva_zeba_ultimate",
-			"title": "N.Daguva.Zeba Ultimate Amadam",
-			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to craft N.Daguva.Zeba's $(l:kuuga/devices/n_daguva_zeba_belt)Gedorudo$(/l)"
+			"title": "N·Daguva·Zeba Ultimate Amadam",
+			"text": "Appears in:$(li)Kamen Rider Kuuga (2000, TV show)$(br2)Used to craft N·Daguva·Zeba's $(l:kuuga/devices/n_daguva_zeba_belt)Gedorudo$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:n_daguva_zeba_ultimate",
 			"title": " ",
-          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N.Daguva.Zeba$(/l)"
+          "text": "Drops from:$(li)$(l:kuuga/mobs/n_daguva_zeba)N·Daguva·Zeba$(/l)"
 		}
 	]
 }

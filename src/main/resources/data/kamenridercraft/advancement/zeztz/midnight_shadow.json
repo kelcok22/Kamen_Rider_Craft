@@ -1,0 +1,51 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:nox_driver"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zeztz.midnight_shadow.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zeztz.midnight_shadow.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:zeztz/nox",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zeztz_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zeztz_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zeztz_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:nox_driver"
+							],    "predicates": {
+                            "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:midnight_shadow_capsem\"}"
+                          }
+						}
+					}
+				}
+			}
+		}
+	}
+}

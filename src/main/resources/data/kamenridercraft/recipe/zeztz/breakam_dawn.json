@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"category": "equipment",
-	"group": "lord_three",
+	"group": "dawn",
 	"pattern": [
 		"XMX",
 		"XSX",
@@ -15,11 +15,11 @@
 			"item": "kamenridercraft:base_sword"
 		},
 		"M": {
-			"item": "kamenridercraft:extra_capsem"
+			"item": "kamenridercraft:punish_capsem"
 		}
 	},
 	"result": {
-		"id": "kamenridercraft:breakam_breaker_blade"
+		"id": "kamenridercraft:breakam_dawn"
 	}
 }
 

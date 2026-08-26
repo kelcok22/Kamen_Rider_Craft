@@ -1,0 +1,93 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:dualmare_capsem"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.zeztz.dualmare.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.zeztz.dualmare.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:zeztz/plasma_booster",
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:zeztz_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:zeztz_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:zeztz_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:zeztz_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dualmare_capsem\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:zeztz_head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:zeztz_troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:zeztz_legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:zeztz_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dualmare_capsem_orderm\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "1",
+        "2"
+      ]
+    ]
+  }
+}
