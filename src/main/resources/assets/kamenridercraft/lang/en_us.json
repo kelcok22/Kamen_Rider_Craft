@@ -8834,6 +8834,15 @@
 
 "item.kamenridercraft.gozyuger_capsem": "Gozyuger Capsem",
 
+"item.kamenridercraft.agent_number_ring_zero": "Agent Number Ring (Code Number: Zero)",
+"item.kamenridercraft.agent_number_ring_one": "Agent Number Ring (Code Number: One)",
+"item.kamenridercraft.agent_number_ring_two": "Agent Number Ring (Code Number: Two)",
+"item.kamenridercraft.agent_number_ring_three": "Agent Number Ring (Code Number: Three)",
+"item.kamenridercraft.agent_number_ring_four": "Agent Number Ring (Code Number: Four)",
+"item.kamenridercraft.agent_number_ring_five": "Agent Number Ring (Code Number: Five)",
+"item.kamenridercraft.agent_number_ring_six": "Agent Number Ring (Code Number: Six)",
+"item.kamenridercraft.agent_number_ring_seven": "Agent Number Ring (Code Number: Seven)",
+
 "item.kamenridercraft.zeztz_exdream_driver_buckle": "Zeztz Exdream Driver Buckle",
 "item.kamenridercraft.zeztz_agendream_driver_buckle": "Zeztz Agendream Driver Buckle",
 "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
@@ -9965,6 +9974,7 @@
 "block.kamenridercraft.kiva_throne": "Gold Throne",
 "block.kamenridercraft.glass_door": "Glass Door",
 "block.kamenridercraft.gold_door": "Gold Door",
+"block.kamenridercraft.mind_door": "Mind's Door",
 "block.kamenridercraft.cornerstore_sign": "Cornerstore Sign Block",
 
 "block.kamenridercraft.pandora_box": "Pandora Box",

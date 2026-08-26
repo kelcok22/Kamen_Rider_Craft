@@ -8791,8 +8791,8 @@
 "kamenridercraft:break_code_down_capsem_six.form": "フォーム: ブレイクコードダウン",
 "kamenridercraft:break_code_down_capsem_five.form": "フォーム: ブレイクコードダウン",
 "item.kamenridercraft.code_somnia_capsem": "コード：ソムニアカプセム",
-  "item.kamenridercraft.chaos_capsem": "カオスカプセム",
-  "item.kamenridercraft.phantom_capsem": "ファントムカプセム",
+"item.kamenridercraft.chaos_capsem": "カオスカプセム",
+"item.kamenridercraft.phantom_capsem": "ファントムカプセム",
 
 
 "item.kamenridercraft.zeroider_core": "ゼロイダーコア",
@@ -8828,6 +8828,15 @@
 "item.kamenridercraft.legend_capsem": "レジェンドカプセム",
 
 "item.kamenridercraft.gozyuger_capsem": "ゴジュウジャーカプセム",
+
+"item.kamenridercraft.agent_number_ring_zero": "エージェントナンバーリング（コードナンバー: ゼロ）",
+"item.kamenridercraft.agent_number_ring_one": "エージェントナンバーリング（コードナンバー: ワン）",
+"item.kamenridercraft.agent_number_ring_two": "エージェントナンバーリング（コードナンバー: ツー）",
+"item.kamenridercraft.agent_number_ring_three": "エージェントナンバーリング（コードナンバー: スリー）",
+"item.kamenridercraft.agent_number_ring_four": "エージェントナンバーリング（コードナンバー: フォー）",
+"item.kamenridercraft.agent_number_ring_five": "エージェントナンバーリング（コードナンバー: ファイブ）",
+"item.kamenridercraft.agent_number_ring_six": "エージェントナンバーリング（コードナンバー: シックス）",
+"item.kamenridercraft.agent_number_ring_seven": "エージェントナンバーリング（コードナンバー: セブン）",
 
 "item.kamenridercraft.impact_capsem_gold": "インパクトカプセム（ゴールドver.）",
 "item.kamenridercraft.transform_capsem_gold": "トランスフォームカプセム（ゴールドver.）",
@@ -9957,6 +9966,7 @@
 "block.kamenridercraft.kiva_throne": "金の玉座",
 "block.kamenridercraft.glass_door": "硝子のドアー",
 "block.kamenridercraft.gold_door": "金のドアー",
+"block.kamenridercraft.mind_door": "心の扉",
 "block.kamenridercraft.cornerstore_sign": "コンビニの看板ブロック",
 
 "block.kamenridercraft.pandora_box": "パンドラボックス",

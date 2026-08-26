@@ -1,20 +1,20 @@
 {
 	"display": {
 		"icon": {
-			"id": "kamenridercraft:midnight_shadow_capsem"
+			"id": "kamenridercraft:knight_invoker_seventeen"
 		},
 		"title": {
-			"translate": "advancements.kamenridercraft.zeztz.midnight_shadow.title"
+			"translate": "advancements.kamenridercraft.zeztz.knight_seventeen.title"
 		},
 		"description": {
-			"translate": "advancements.kamenridercraft.zeztz.midnight_shadow.description"
+			"translate": "advancements.kamenridercraft.zeztz.knight_seventeen.description"
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "kamenridercraft:zeztz/nox",
+	"parent": "kamenridercraft:zeztz/nox_knight",
 	"criteria": {
 		"requirement": {
 			"trigger": "minecraft:inventory_changed",
@@ -38,10 +38,8 @@
 						},
 						"feet": {
 							"items": [
-								"kamenridercraft:nox_driver"
-							],    "predicates": {
-                            "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:midnight_shadow_capsem\"}"
-                          }
+								"kamenridercraft:knight_invoker_seventeen"
+							]
 						}
 					}
 				}

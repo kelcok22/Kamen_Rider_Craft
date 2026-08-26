@@ -1003,6 +1003,9 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> CHARADECO_CAPSEM = ITEMS.register("charadeco_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> TELEMAGA_CAPSEM = ITEMS.register("telemaga_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> GOCHIZO_CAPSEM = ITEMS.register("gochizo_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1092,6 +1095,10 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item>LEGEND_CAPSEM = ITEMS.register("legend_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
 
     public static final DeferredItem<Item> CODE_SOMNIA_CAPSEM = ITEMS.register("code_somnia_capsem",
             () -> new SomniaCapsemItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
@@ -1301,6 +1308,30 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> DREAM_TEST_ITEM = ITEMS.register("dream_test_item",
             () -> new DreamTestItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_ZERO = ITEMS.register("agent_number_ring_zero",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_ONE = ITEMS.register("agent_number_ring_one",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_TWO = ITEMS.register("agent_number_ring_two",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_THREE = ITEMS.register("agent_number_ring_three",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_FOUR = ITEMS.register("agent_number_ring_four",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_FIVE = ITEMS.register("agent_number_ring_five",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_SIX = ITEMS.register("agent_number_ring_six",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> AGENT_NUMBER_RING_SEVEN = ITEMS.register("agent_number_ring_seven",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 
