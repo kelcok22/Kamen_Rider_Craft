@@ -1594,6 +1594,7 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
+                event.accept(RiderBlocks.MIND_DOOR);
 
             } else if (event.getTab() == CreativeTabRegistry.My_thTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.MY_TH_TAB_ITEM.size(); i++) {

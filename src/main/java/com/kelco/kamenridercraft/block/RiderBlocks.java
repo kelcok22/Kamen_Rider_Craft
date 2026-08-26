@@ -1074,7 +1074,7 @@ public class RiderBlocks {
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f).noOcclusion()));
 
     public static final DeferredBlock<MindDoorBlock> MIND_DOOR = registerBlock("mind_door",
-            () -> new MindDoorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_DOOR).requiresCorrectToolForDrops().strength(2f).noOcclusion()));
+            () -> new MindDoorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK).strength(2f).noOcclusion()));
 
     public static final DeferredBlock<DoorBlock> RABBIT_HUTCH_DOOR = registerBlock("rabbit_hutch_door",
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(2f).noOcclusion()));

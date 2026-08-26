@@ -1,3 +1,5 @@
 {
-	"parent": "block/air"
+	"textures": {
+		"particle": "kamenridercraft:block/mind_door"
+	}
 }
