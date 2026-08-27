@@ -48,7 +48,9 @@ public class LivingEntityMixin {
     @Inject(method = "startSleeping", at = @At("HEAD"), cancellable = true)
     public void preSleeping(BlockPos bedPos, CallbackInfo ci) {
         LivingEntity livingEntity = ((LivingEntity) (Object) this);
-        if (livingEntity instanceof ServerPlayer rider && !rider.hasEffect(EffectCore.INSOMNIA) && rider.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/can_dream")))) {
+        if (livingEntity instanceof ServerPlayer rider &&
+                (!rider.hasEffect(EffectCore.INSOMNIA) && !rider.isCreative() || rider.isCreative()) &&
+                rider.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/can_dream")))) {
             rider.stopSleeping();
             Level level = rider.level();
             ResourceKey<Level> dreamDimension = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
