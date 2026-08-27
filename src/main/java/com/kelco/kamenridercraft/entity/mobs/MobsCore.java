@@ -1533,6 +1533,18 @@ public class MobsCore {
     public static final DeferredItem<DeferredSpawnEggItem> ZEZTZ_DARKNESS_NIGHTMARE_SPAWN_EGG = ITEMS.register("zeztz_darkness_nightmare_spawn_egg",
             () -> new DeferredSpawnEggItem(ZEZTZ_DARKNESS_NIGHTMARE, 0x505050, 0x252525, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<PhantomGoreNightmareEntity>> PHANTOM_GORE_NIGHTMARE = MOBLIST.register("phantom_gore_nightmare",
+            () -> EntityType.Builder.of(PhantomGoreNightmareEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":phantom_gore_nightmare"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> PHANTOM_GORE_NIGHTMARE_SPAWN_EGG = ITEMS.register("phantom_gore_nightmare_spawn_egg",
+            () -> new DeferredSpawnEggItem(PHANTOM_GORE_NIGHTMARE, 0xFDC2DB, 0xF05A22, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<OblivionGoreNightmareEntity>> OBLIVION_GORE_NIGHTMARE = MOBLIST.register("oblivion_gore_nightmare",
+            () -> EntityType.Builder.of(OblivionGoreNightmareEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":oblivion_gore_nightmare"));
+
+    public static final DeferredItem<DeferredSpawnEggItem> OBLIVION_GORE_NIGHTMARE_SPAWN_EGG = ITEMS.register("oblivion_gore_nightmare_spawn_egg",
+            () -> new DeferredSpawnEggItem(OBLIVION_GORE_NIGHTMARE, 0x8E8B8B, 0xBE0000, new Item.Properties()));
+
     public static final DeferredHolder<EntityType<?>, EntityType<BattaAugmentEntity>> BATTA_AUGMENT = MOBLIST.register("batta_augment",
             () -> EntityType.Builder.of(BattaAugmentEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":batta_augment"));
 

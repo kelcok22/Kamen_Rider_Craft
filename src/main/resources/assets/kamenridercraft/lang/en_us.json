@@ -8724,6 +8724,10 @@
 "kamenridercraft.name.lord_zero": "Debatable Rider: Lord Zero",
 "item.kamenridercraft.lord_invoker_two": "Lord Invoker",
 "kamenridercraft.name.lord_two": "Debatable Rider: Lord Two",
+"item.kamenridercraft.phantom_gore_nightmare_belt": "Phantom Gore Nightmare Belt",
+"kamenridercraft.name.phantom_gore_nightmare": "Kaijin: Phantom Gore Nightmare",
+"item.kamenridercraft.oblivion_gore_nightmare_belt": "Oblivion Gore Nightmare Belt",
+"kamenridercraft.name.oblivion_gore_nightmare": "Kaijin: Oblivion Gore Nightmare",
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -8796,6 +8800,9 @@
 "kamenridercraft:break_code_down_capsem_six.form": "Form: Break CODE Down",
 "kamenridercraft:break_code_down_capsem_five.form": "Form: Break CODE Down",
 "item.kamenridercraft.code_somnia_capsem": "Code: Somnia Capsem",
+"item.kamenridercraft.chaos_capsem": "Chaos Capsem",
+"item.kamenridercraft.phantom_capsem": "Phantom Capsem",
+
 
 "item.kamenridercraft.zeroider_core": "Zeroider Core",
 "kamenridercraft:zeroider_core.form": "Form: Robot Mode",
@@ -9720,6 +9727,9 @@
 "item.kamenridercraft.dawn_spawn_egg": "Dawn Spawn Egg",
 "item.kamenridercraft.lord_three_spawn_egg": "Lord Three Spawn Egg",
 "item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "Zeztz Darkness Nightmare Spawn Egg",
+"item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "Phantom Gore Nightmare Spawn Egg",
+"item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "Oblivion Gore Nightmare Spawn Egg",
+
 
 "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
 "item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",
@@ -10092,6 +10102,7 @@
 "block.kamenridercraft.eld_boss_block": "Eld Boss Block",
 "block.kamenridercraft.bocca_boss_block": "Bocca Jaldak Boss Block",
 "block.kamenridercraft.caries_boss_block": "Caries Boss Block",
+"block.kamenridercraft.lord_three_boss_block": "Lord Three Boss Block",
 "container.astroswitchPanel": "Astroswitch Rack",
 
 "tag.item.kamenridercraft.arsenal.all_melee": "Rider Melee Weapons",
@@ -10225,6 +10236,7 @@
 "tag.item.kamenridercraft.gear.advent_cards.sword_vent": "Sword Vent Cards",
 "tag.item.kamenridercraft.gear.advent_cards.trick_vent": "Trick Vent Cards",
 "tag.item.kamenridercraft.gear.advent_decks": "Card Decks",
+"tag.item.kamenridercraft.gear.agent_number_rings": "Agent Number Rings",
 "tag.item.kamenridercraft.gear.alchemist_rings": "Alchemist Rings",
 "tag.item.kamenridercraft.gear.all_items": "Rider Items",
 "tag.item.kamenridercraft.gear.alter_ride_books": "Alter Ride Books",

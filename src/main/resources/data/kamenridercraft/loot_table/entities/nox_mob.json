@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:shadow_capsem"
+          "name": "kamenridercraft:agent_number_ring_four"
         }
       ],
       "conditions": [
@@ -20,6 +20,10 @@
               }
             }
           }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
         }
       ]
     },
@@ -42,11 +46,12 @@
               }
             }
           }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
         }
       ]
-    }, {
-      "condition": "minecraft:random_chance",
-      "chance": 0.5
     },
     {
       "rolls": 1,
@@ -74,21 +79,13 @@
           "name": "kamenridercraft:erase_capsem"
         },
         {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:void_capsem"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "equipment": {
-              "feet": {
-                "items": "kamenridercraft:knight_invoker"
-              }
+          "rolls": 1,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "kamenridercraft:void_capsem"
             }
-          }
+          ]
         }
       ]
     }

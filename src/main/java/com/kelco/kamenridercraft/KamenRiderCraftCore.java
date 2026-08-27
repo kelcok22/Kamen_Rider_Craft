@@ -543,6 +543,8 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.DAWN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LORD_THREE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.PHANTOM_GORE_NIGHTMARE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.OBLIVION_GORE_NIGHTMARE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CODE_ZERO.get(), AllyEntityRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
@@ -1581,6 +1583,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.CARIES_SPAWN_EGG);
                 event.accept(RiderBlocks.BOCCA_BOSS_BLOCK);
                 event.accept(RiderBlocks.CARIES_BOSS_BLOCK);
+                event.accept(RiderBlocks.LORD_THREE_BOSS_BLOCK);
                 event.accept(RiderBlocks.GOCHIZO_JAR);
                 event.accept(RiderBlocks.DARK_TREAT_GLASS);
                 event.accept(RiderBlocks.CANDY_SHOP);
@@ -1972,7 +1975,8 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.DAWN_SPAWN_EGG);
                 event.accept(MobsCore.LORD_THREE_SPAWN_EGG);
                 event.accept(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE_SPAWN_EGG);
-
+                event.accept(MobsCore.PHANTOM_GORE_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.OBLIVION_GORE_NIGHTMARE_SPAWN_EGG);
             } else if (event.getTab() == CreativeTabRegistry.RiderMiscTab.get()) {
 
                 event.accept(MobsCore.BICYCLE_SPAWN_EGG);

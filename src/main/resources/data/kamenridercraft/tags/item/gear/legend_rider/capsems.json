@@ -26,9 +26,11 @@
 		"kamenridercraft:geats_capsem",
 		"kamenridercraft:gotchard_capsem",
 		"kamenridercraft:gavv_capsem",
+    	"kamenridercraft:legend_capsem",
 		"kamenridercraft:gochizo_capsem",
 		"kamenridercraft:song_capsem",
 		"kamenridercraft:sweets_capsem",
-		"kamenridercraft:charadeco_capsem"
+		"kamenridercraft:charadeco_capsem",
+    	"kamenridercraft:telemaga_capsem"
 	]
 }

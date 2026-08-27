@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zeztz",
+  "pattern": [
+    "ZOT",
+    "REF",
+    "VXS"
+  ],
+  "key": {
+    "Z": {
+      "item": "kamenridercraft:agent_number_ring_zero"
+    },
+    "O": {
+      "item": "kamenridercraft:agent_number_ring_one"
+    },
+    "T": {
+      "item": "kamenridercraft:agent_number_ring_two"
+    },
+    "R": {
+      "item": "kamenridercraft:agent_number_ring_three"
+    },
+    "F": {
+      "item": "kamenridercraft:agent_number_ring_four"
+    },
+    "V": {
+      "item": "kamenridercraft:agent_number_ring_five"
+    },
+    "X": {
+      "item": "kamenridercraft:agent_number_ring_six"
+    },
+    "S": {
+      "item": "kamenridercraft:agent_number_ring_seven"
+    },
+    "E": {
+      "item": "kamenridercraft:exdream_capsem"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:agendream_capsem"
+  }
+}

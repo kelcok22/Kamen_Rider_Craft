@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -25,6 +26,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
@@ -92,6 +94,17 @@ public class LordThreeEntity extends BaseHenchmenEntity {
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
         builder.define(DATA_FLAGS_ID, (byte)0);
+    }
+
+    public void remove(@NotNull RemovalReason removalReason) {
+        if (this.isDeadOrDying()) {
+            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get()) != 0) {
+                ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get(), 1), 0, 0, 0);
+                kiwamiLockseed.setPickUpDelay(0);
+                level().addFreshEntity(kiwamiLockseed);
+            }
+        }
+        super.remove(removalReason);
     }
 
     public static AttributeSupplier.Builder setAttributes() {

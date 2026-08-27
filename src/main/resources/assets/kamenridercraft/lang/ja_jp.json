@@ -8718,7 +8718,10 @@
 "kamenridercraft.name.lord_zero": "疑似ライダー: ロードゼロ",
 "item.kamenridercraft.lord_invoker_two": "ロードインヴォーカー",
 "kamenridercraft.name.lord_two": "疑似ライダー: ロードツー",
-
+"item.kamenridercraft.phantom_gore_nightmare_belt": "ファントムゴアナイトメアベルト",
+"kamenridercraft.name.phantom_gore_nightmare": "怪人: ファントムゴアナイトメア",
+"item.kamenridercraft.oblivion_gore_nightmare_belt": "オブリビオンゴアナイトメアベルト",
+"kamenridercraft.name.oblivion_gore_nightmare": "怪人: オブリビオンゴアナイトメア",
 
 "item.kamenridercraft.code_capsem": "コードカプセム",
 "item.kamenridercraft.impact_capsem": "インパクトカプセム",
@@ -9410,6 +9413,8 @@
 "entity.kamenridercraft.dawn": "仮面ライダーノクス",
 "entity.kamenridercraft.lord_three": "ロードスリー",
 "entity.kamenridercraft.zeztz_darkness_nightmare": "ゼッツダークネスナイトメア",
+"entity.kamenridercraft.phantom_gore_nightmare": "ファントムゴアナイトメア",
+"entity.kamenridercraft.oblivion_gore_nightmare": "オブリビオンゴアナイトメア",
 "entity.kamenridercraft.code_zero": "ゼロ",
 
 "entity.kamenridercraft.bicycle": "自転車",
@@ -9719,6 +9724,8 @@
 "item.kamenridercraft.dawn_spawn_egg": "仮面ライダードォーンポーンエッグ",
 "item.kamenridercraft.lord_three_spawn_egg": "ロードスリーポーンエッグ",
 "item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "ゼッツダークネスナイトメアポーンエッグ",
+"item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "ファントムゴアナイトメアポーンエッグ",
+"item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "オブリビオンゴアナイトメアポーンエッグ",
 
 "item.kamenridercraft.bicycle_spawn_egg": "自転車",
 "item.kamenridercraft.acrobatter_spawn_egg": "アクロバッター",
@@ -10084,6 +10091,7 @@
 "block.kamenridercraft.eld_boss_block": "仮面ライダーエルドボスブロック",
 "block.kamenridercraft.bocca_boss_block": "ボッカ・ジャルダックボスブロック",
 "block.kamenridercraft.caries_boss_block": "仮面ライダーカリエスボスブロック",
+"block.kamenridercraft.lord_three_boss_block": "ロードスリーボスブロック",
 "container.astroswitchPanel": "アストロスイッチパネル",
 
 "tag.item.kamenridercraft.arsenal.all_melee": "ライダー近距離武器",
@@ -10217,6 +10225,7 @@
 "tag.item.kamenridercraft.gear.advent_cards.sword_vent": "ソードベントカード",
 "tag.item.kamenridercraft.gear.advent_cards.trick_vent": "トリックベントカード",
 "tag.item.kamenridercraft.gear.advent_decks": "カードデッキ",
+"tag.item.kamenridercraft.gear.agent_number_rings": "エージェントナンバーリング",
 "tag.item.kamenridercraft.gear.alchemist_rings": "錬金術師リング",
 "tag.item.kamenridercraft.gear.all_items": "ライダーアイテム",
 "tag.item.kamenridercraft.gear.alter_ride_books": "オルターライドブック",

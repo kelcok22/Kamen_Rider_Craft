@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "zeztz",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:transform_capsem"
+		},
+		{
+			"item": "kamenridercraft:wing_capsem"
+		},
+		{
+			"item": "kamenridercraft:machinery_capsem"
+		},
+		{
+			"item": "kamenridercraft:projection_capsem"
+		},
+		{
+			"item": "kamenridercraft:barrier_capsem"
+		},
+		{
+			"item": "kamenridercraft:gravity_capsem"
+		},
+		{
+			"item": "kamenridercraft:darkness_capsem"
+		},
+		{
+          "item": "kamenridercraft:shock_capsem"
+		},
+		{
+			"item": "kamenridercraft:panic_capsem"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:exdream_capsem"
+	}
+}

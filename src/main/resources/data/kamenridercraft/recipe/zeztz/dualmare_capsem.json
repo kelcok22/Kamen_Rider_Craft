@@ -1,36 +1,42 @@
 {
-	"type": "minecraft:crafting_shapeless",
-	"group": "zeztz",
-	"ingredients": [
-		{
-			"item": "kamenridercraft:impact_capsem"
-		},
-		{
-			"item": "kamenridercraft:stream_capsem"
-		},
-		{
-			"item": "kamenridercraft:recovery_capsem"
-		},
-		{
-			"item": "kamenridercraft:wonder_capsem"
-		},
-		{
-			"item": "kamenridercraft:plasma_capsem"
-		},
-		{
-			"item": "kamenridercraft:booster_capsem"
-		},
-		{
-			"item": "kamenridercraft:erase_capsem"
-		},
-		{
-			"item": "kamenridercraft:extra_capsem"
-		},
-		{
-			"item": "kamenridercraft:panic_capsem"
-		}
-	],
-	"result": {
-		"id": "kamenridercraft:dualmare_capsem"
-	}
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "zeztz",
+  "pattern": [
+    "IPS",
+    "EZX",
+    "RBW"
+  ],
+  "key": {
+    "I": {
+      "item": "kamenridercraft:impact_capsem"
+    },
+    "P": {
+      "item": "kamenridercraft:plasma_capsem"
+    },
+    "S": {
+      "item": "kamenridercraft:stream_capsem"
+    },
+    "E": {
+      "item": "kamenridercraft:erase_capsem"
+    },
+    "Z": {
+      "item": "kamenridercraft:agent_number_ring_seven"
+    },
+    "X": {
+      "item": "kamenridercraft:extra_capsem"
+    },
+    "R": {
+      "item": "kamenridercraft:recovery_capsem"
+    },
+    "B": {
+      "item": "kamenridercraft:booster_capsem"
+    },
+    "W": {
+      "item": "kamenridercraft:wonder_capsem"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:dualmare_capsem"
+  }
 }

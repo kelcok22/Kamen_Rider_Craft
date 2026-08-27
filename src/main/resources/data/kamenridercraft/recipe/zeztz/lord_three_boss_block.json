@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "lord_three",
+  "pattern": [
+    "RCR",
+    "VCX",
+    "RCR"
+  ],
+  "key": {
+    "R": {
+      "item": "kamenridercraft:rider_circuit"
+    },
+    "C": {
+      "item": "kamenridercraft:code_capsem"
+    },
+    "V": {
+      "item": "kamenridercraft:agent_number_ring_five"
+    },
+    "X": {
+      "item": "kamenridercraft:agent_number_ring_six"
+    },
+    "result": {
+      "id": "kamenridercraft:lord_three_boss_block"
+    }
+  }
+}

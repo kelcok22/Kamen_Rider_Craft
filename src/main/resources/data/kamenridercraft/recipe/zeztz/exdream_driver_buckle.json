@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zeztz",
+	"pattern": [
+		"RDR",
+		"SCP",
+		"RYR"
+	],
+	"key": {
+		"R": {
+			"item": "kamenridercraft:code_capsem"
+		},
+      "D": {
+        "item": "kamenridercraft:dualmare_capsem"
+      },
+      "S": {
+        "item": "kamenridercraft:shadow_capsem"
+      },
+      "P": {
+        "item": "kamenridercraft:punish_capsem"
+      },
+      "Y": {
+        "item": "kamenridercraft:capsem_cylinder"
+      },
+      "C": {
+        "item": "kamenridercraft:coffee"
+      }
+
+	},
+	"result": {
+		"id": "kamenridercraft:exdream_driver_buckle"
+	}
+}

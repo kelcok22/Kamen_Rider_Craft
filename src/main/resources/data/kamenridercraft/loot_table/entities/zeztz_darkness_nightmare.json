@@ -27,6 +27,40 @@
           "name": "kamenridercraft:darkness_capsem"
         }
       ]
-            }
+  },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:code_zeroider_spawn_egg"
+        },
+        {
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.25
+          }
         ]
-        }
+        }, {
+          "rolls": 1,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "name": "kamenridercraft:agent_number_ring_zero"
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+      ]
+    }
+        ]
+
+    }
+    ]
+  }

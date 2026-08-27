@@ -1,19 +1,15 @@
 {
-	"type": "minecraft:crafting_shaped",
-	"group": "music_disc",
-	"pattern": [
-		"S",
-		"D"
-	],
-	"key": {
-		"S": {
-			"item": "kamenridercraft:song_capsem"
-		},
-		"D": {
-			"tag": "c:music_discs"
-		}
-	},
-	"result": {
-		"id": "kamenridercraft:visions_music_disc"
-	}
+  "type": "minecraft:crafting_shapeless",
+  "group": "music_disc",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:song_capsem"
+    },
+    {
+      "tag": "c:music_discs"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:visions_music_disc"
+  }
 }
