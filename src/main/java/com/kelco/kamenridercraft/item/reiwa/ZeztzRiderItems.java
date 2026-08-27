@@ -7,7 +7,6 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.CapsemCylinderItem;
-import com.kelco.kamenridercraft.item.reiwa.zeztz.DreamTestItem;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.SomniaCapsemItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
@@ -949,6 +948,19 @@ public class ZeztzRiderItems {
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> CHAOS_CAPSEM = ITEMS.register("chaos_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","oblivion","blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
+                    .has_basic_model().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> PHANTOM_CAPSEM = ITEMS.register("phantom_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","phantom","blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
+                    .has_basic_model().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+
     public static final DeferredItem<Item> DARKNESS_CAPSEM_DRIVER = ITEMS.register("darkness_capsem_driver",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz_darkness","zeztz_driver_belt_darkness",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -1101,7 +1113,7 @@ public class ZeztzRiderItems {
 
 
     public static final DeferredItem<Item> CODE_SOMNIA_CAPSEM = ITEMS.register("code_somnia_capsem",
-            () -> new SomniaCapsemItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new SomniaCapsemItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
@@ -1305,9 +1317,6 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> MUGEN_SWORD = ITEMS.register("mugen_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
-
-    public static final DeferredItem<Item> DREAM_TEST_ITEM = ITEMS.register("dream_test_item",
-            () -> new DreamTestItem(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_ZERO = ITEMS.register("agent_number_ring_zero",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));

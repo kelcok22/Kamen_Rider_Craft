@@ -141,7 +141,7 @@ public class LivingEntityMixin {
 
             blockpos = otherDim.findNearestMapStructure(tag, entity.blockPosition(), 100, false);
             entity.addEffect(new MobEffectInstance(EffectCore.DREAMING, 8400, 0, true, true));
-            entity.teleportTo(otherDim, blockpos.getX(), 1, blockpos.getZ(), new HashSet<>(), 0, 0);
+            entity.teleportTo(otherDim, blockpos.getX(), 2, blockpos.getZ(), new HashSet<>(), 0, 0);
         } else {
             entity.teleportTo(otherDim, respawn.pos().x(), respawn.pos().y(), respawn.pos().z(), new HashSet<>(), 0, 0);
             while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {
