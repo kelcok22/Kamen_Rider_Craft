@@ -64,11 +64,53 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> TACKLE_BOAR = ITEMS.register("tackle_boar",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SEALABLE_KICK_LOCUST = ITEMS.register("sealable_kick_locust",
+			() -> new RiderFormChangeItem(new Item.Properties(), "_locust", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("kick_locust"));
+
 	public static final DeferredItem<Item> KICK_LOCUST = ITEMS.register("kick_locust",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(), "_locust", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_KICK_LOCUST.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+
+	public static final DeferredItem<Item> SEALABLE_THUNDER_DEER = ITEMS.register("sealable_thunder_deer",
+			() -> new RiderFormChangeItem(new Item.Properties(), "_deer", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+					new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("thunder_deer"));
 
 	public static final DeferredItem<Item> THUNDER_DEER = ITEMS.register("thunder_deer",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(), "_deer", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+					new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_THUNDER_DEER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_TRILOBITE = ITEMS.register("metal_trilobite",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
@@ -304,8 +346,29 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> CHOP_HEAD = ITEMS.register("chop_head",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
+	public static final DeferredItem<Item> SEALABLE_FLOAT_DRAGONFLY = ITEMS.register("sealable_float_dragonfly",
+			() -> new RiderFormChangeItem(new Item.Properties(), "_dragonfly", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+					new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("float_dragonfly"));
+
 	public static final DeferredItem<Item> FLOAT_DRAGONFLY = ITEMS.register("float_dragonfly",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(), "_dragonfly", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+					new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_FLOAT_DRAGONFLY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRILL_SHELL = ITEMS.register("drill_shell",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
@@ -316,14 +379,57 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> BIO_PLANT = ITEMS.register("bio_plant",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
+public static final DeferredItem<Item> SEALABLE_REFLECT_MOTH = ITEMS.register("sealable_reflect_moth",
+			() -> new RiderFormChangeItem(new Item.Properties(), "_moth", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+					new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("reflect_moth"));
+
 	public static final DeferredItem<Item> REFLECT_MOTH = ITEMS.register("reflect_moth",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(), "_moth", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+					new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_REFLECT_MOTH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> RECOVER_CAMEL = ITEMS.register("recover_camel",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
+public static final DeferredItem<Item> SEALABLE_SHUFFLE_CENTIPEDE = ITEMS.register("sealable_shuffle_centipede",
+			() -> new RiderFormChangeItem(new Item.Properties(), "_centipede", "undead", "sealable_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+					new MobEffectInstance(EffectCore.POISON_PUNCH, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.has_basic_model().model_has_different_name("float_dragonfly"));
+
 	public static final DeferredItem<Item> SHUFFLE_CENTIPEDE = ITEMS.register("shuffle_centipede",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			() -> new RiderFormChangeItem(new Item.Properties(), "_centipede", "undead", "unsealed_undead_buckle_belt",
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+					new MobEffectInstance(EffectCore.POISON_PUNCH, 40, 0, true, false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addSwitchForm(SEALABLE_SHUFFLE_CENTIPEDE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> FUSION_WOLF = ITEMS.register("fusion_wolf",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));

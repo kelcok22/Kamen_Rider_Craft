@@ -51,7 +51,7 @@ public class MindDoorBlock extends BaseEntityBlock {
 
         if (rider instanceof ServerPlayer serverPlayer && level.dimension() == dreamDimension) {
             if (!serverPlayer.isCreative()) {
-                rider.addEffect(new MobEffectInstance(EffectCore.INSOMNIA, 1200, 0, false, false));
+                rider.addEffect(new MobEffectInstance(EffectCore.INSOMNIA, 1200, 0, false, true));
             }
             DimensionTransition respawn = serverPlayer.findRespawnPositionAndUseSpawnBlock(false, DimensionTransition.DO_NOTHING);
             double X = respawn.pos().x();
