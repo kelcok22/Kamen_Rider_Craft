@@ -6,11 +6,14 @@ import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.core.Holder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
@@ -33,6 +36,8 @@ public class BasicArmorItem extends net.minecraft.world.item.ArmorItem implement
     public String model = "default";
     public Boolean glowing = false;
 
+    private MobEffectInstance effect;
+
     public BasicArmorItem(Holder<ArmorMaterial> armorMaterial, Type type, Properties properties, String name, String model) {
         super(armorMaterial, type, properties.stacksTo(1));
         this.name = name;
@@ -44,6 +49,18 @@ public class BasicArmorItem extends net.minecraft.world.item.ArmorItem implement
         return this;
     }
 
+    public BasicArmorItem setEffect(MobEffectInstance effectInstance) {
+        effect = effectInstance;
+        return this;
+    }
+
+    @Override
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        if (entity instanceof LivingEntity livingEntity && !level.isClientSide() && slotId >= 36 && slotId <= 39 && effect != null) {
+            livingEntity.addEffect(effect);
+        }
+            super.inventoryTick(stack, level, entity, slotId, isSelected);
+    }
 
     @Override
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {

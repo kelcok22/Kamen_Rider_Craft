@@ -952,13 +952,13 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"","oblivion_gore_nightmare","oblivion_gore_nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
-                   .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PHANTOM_CAPSEM = ITEMS.register("phantom_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","phantom_gore_nightmare","phantom_gore_nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
-                   .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DARKNESS_CAPSEM_DRIVER = ITEMS.register("darkness_capsem_driver",
@@ -1261,7 +1261,7 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> ZEROIDER_CONTROL = ITEMS.register("zeroider_control",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"code_zero", ZEROIDER_CORE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
@@ -1327,6 +1327,11 @@ public class ZeztzRiderItems {
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
+    public static final DeferredItem<Item> INSOMNIA_VISOR = ITEMS.register("insomnia_visor",
+            () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(), "zero_dream", "zero_dream").isGlowing()
+                    .setEffect(new MobEffectInstance(EffectCore.INSOMNIA, 40, 0, true, false))
+                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> AGENT_NUMBER_RING_ZERO = ITEMS.register("agent_number_ring_zero",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1352,5 +1357,4 @@ public class ZeztzRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
-
 }

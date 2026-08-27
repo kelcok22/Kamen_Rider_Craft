@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.renderer;
 
 import com.kelco.kamenridercraft.client.models.BasicArmorModel;
 import com.kelco.kamenridercraft.item.base_items.BasicArmorItem;
+import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -14,14 +15,20 @@ import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.util.RenderUtil;
 
+import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendToPath;
+
 public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
 
     public BasicArmorRenderer(LivingEntity livingEntity, EquipmentSlot equipmentSlot) {
-
         super(new BasicArmorModel());
-
         if (livingEntity.getItemBySlot(equipmentSlot).getItem() instanceof BasicArmorItem belt) {
-            if (belt.glowing) addRenderLayer(new AutoGlowingGeoLayer<>(this));
+            if (belt.glowing) addRenderLayer(new AutoGlowingGeoLayer<>(this) {
+                @Nullable
+                protected RenderType getRenderType(BasicArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
+                    ResourceLocation path = appendToPath(getTextureLocation(animatable), "_glowmask");
+                    return RenderType.breezeEyes(path);
+                }
+            });
         }
     }
 
