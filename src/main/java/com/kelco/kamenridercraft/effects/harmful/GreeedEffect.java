@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EntityType;
@@ -28,7 +29,7 @@ public class GreeedEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         Random rand = new Random();
-        if (livingEntity.level() instanceof ServerLevel serverLevel) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL) {
             BaseHenchmenEntity boss = MobsCore.YUMMY.get().create(livingEntity.level());
             if ((amplifier < 50 ? rand.nextInt(500 - (amplifier * 10)) : 0) == 0 && boss != null) {
                 BlockPos pos = livingEntity.blockPosition();

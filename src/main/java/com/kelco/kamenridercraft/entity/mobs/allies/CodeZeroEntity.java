@@ -10,7 +10,11 @@ import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.OutgoingChatMessage;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
@@ -36,6 +40,8 @@ import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animation.AnimationController;
 import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
+
+import java.util.Random;
 
 
 public class CodeZeroEntity extends BaseAllyEntity  {
@@ -115,6 +121,13 @@ public class CodeZeroEntity extends BaseAllyEntity  {
         return InteractionResult.PASS;
     }
 
+    @Override
+    public boolean isDeadOrDying() {
+        if (!level().isClientSide() && getHealth() <= 0 && new Random().nextInt(100) > 98 && getOwner() instanceof ServerPlayer player) {
+            player.sendSystemMessage(Component.translatable("dream.kamenridercraft.zero"));
+        }
+        return super.isDeadOrDying();
+    }
 
     private void tryToTame(Player player) {
         this.tame(player);

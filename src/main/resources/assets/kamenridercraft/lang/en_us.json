@@ -432,6 +432,7 @@
 "effect.kamenridercraft.climbing":"Climbing",
 "effect.kamenridercraft.rider_spirit":"Rider Spirit",
 "effect.kamenridercraft.insomnia":"Insomnia",
+"effect.kamenridercraft.dreaming":"Dreaming",
 
 "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
 "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",
@@ -806,6 +807,8 @@
 "attack.kamenridercraft.choco_decoration":"§4Decoration!",
 "attack.kamenridercraft.zaku_decoration":"§eDecoration!",
 "attack.kamenridercraft.atari":"§bAtari!",
+
+"dream.kamenridercraft.zero":"I believe in my dream!",
 
 "bike.kamenridercraft.boostriker": "§cBoostriker!",
 
@@ -8899,7 +8902,7 @@
 
 "item.kamenridercraft.ridegg_1": "Ride X-Eggs 1",
 "kamenridercraft:ridegg_1.form": "Form: Base Form",
-"item.kamenridercraft.ride_x_eggs_1_maou": "Ride X-Eggs 1 (Maou Ver.)",
+"item.kamenridercraft.ride_x_eggs_1_maou": "Ride X-Eggs 1 Fire",
 "item.kamenridercraft.harinezumi_seed_x_egg": "Harinezumi Seed X-Eggs",
 "kamenridercraft:harinezumi_seed_x_egg.form": "Form: Hedgehog Plus",
 "item.kamenridercraft.zou_seed_x_egg": "Zou Seed X-Eggs",
