@@ -746,7 +746,7 @@
 "henshin.kamenridercraft.lord_three":"<ロードスリー> §7擬装。\n§eインヴォークロードシステム！ - §5エクストラ！",
 "henshin.kamenridercraft.lord_three_booster":"§eエンフォースロードシステム！ - §5ブースター!",
 "henshin.kamenridercraft.zeztz_darkness_nightmare":"<ゼッツダークネスナイトメア> §0消え失せろ。",
-"henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"<ゼッツダークネスナイトメア> §0消え失せろ。",
+"henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"§5ダークネス！",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
 "attack.kamenridercraft.special_turbo":"§Cアルティメットフォ～ム!!! スペシャルターボ!",
@@ -8689,9 +8689,7 @@
 "item.kamenridercraft.zeztz_driver": "ゼッツドライバー",
 "kamenridercraft.name.zeztz": "ライダー: 仮面ライダーゼッツ",
 "item.kamenridercraft.zeztz_exdream_driver": "ゼッツエクスドリームドライバー",
-"kamenridercraft.name.zeztz_exdream": "ライダー: 仮面ライダーゼッツエクスドリーム",
-"item.kamenridercraft.zeztz_agendream_driver": "ゼッツエージェンドリームドライバー",
-"kamenridercraft.name.zeztz_agendream": "ライダー: 仮面ライダーゼッツエージェンドリーム",
+"kamenridercraft.name.zeztz_exdream": "ライダー: 仮面ライダーゼッツ",
 "item.kamenridercraft.knight_invoker": "ナイトインヴォーカー",
 "kamenridercraft.name.nox_knight": "疑似ライダー: ノクスナイト",
 "item.kamenridercraft.nox_driver": "ノクスドライバー",
@@ -8759,6 +8757,7 @@
 "item.kamenridercraft.exdreamrise_capsem": "エクスドリームライズカプセム",
 "kamenridercraft:exdreamrise_capsem.form": "フォーム: エクスドリーム",
 "item.kamenridercraft.agent_capsem": "エージェントカプセム",
+"kamenridercraft:agent_capsem.form": "フォーム: エージェンドリーム",
 "item.kamenridercraft.zeztz_and_code_zeroider_capsem": "ゼッツ&コードゼロイダーカプセム",
 "kamenridercraft:zeztz_and_code_zeroider_capsem.form": "フォーム: インパクトゼロイダー",
 "item.kamenridercraft.charge_capsem": "チャージカプセム",
@@ -8853,7 +8852,6 @@
 "item.kamenridercraft.wing_capsem_gold": "ウイングカプセム（ゴールドver.）",
 
 "item.kamenridercraft.zeztz_exdream_driver_buckle": "ゼッツエクスドリームドライバーバックル",
-"item.kamenridercraft.zeztz_agendream_driver_buckle": "ゼッツエージェンドリームドライバーバックル",
 "item.kamenridercraft.capsem_cylinder": "カプセムシリンダー",
 
 "item.kamenridercraft.zeztz_horse_armor": "ゼッツ馬鎧",

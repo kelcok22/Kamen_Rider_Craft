@@ -528,7 +528,7 @@ public class ZeztzRiderItems {
             }.setFormDelay(19).addAlternative(EXDREAMRISE_CAPSEM_DAWN.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_CAPSEM = ITEMS.register("agent_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","zeztz_agendream","zeztz_agendream_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_agendream","zeztz_exdream","zeztz_agendream_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
@@ -1022,6 +1022,12 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> TELEMAGA_CAPSEM = ITEMS.register("telemaga_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> FASHION_CAPSEM = ITEMS.register("fashion_capsem",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> CAPSEM_DROPPER_CAPSEM = ITEMS.register("capsem_dropper_capsem",
+            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> GOCHIZO_CAPSEM = ITEMS.register("gochizo_capsem",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1158,9 +1164,6 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_exdream_driver_buckle",
             () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> ZEZTZ_AGENDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_agendream_driver_buckle",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
-
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
             () -> new CapsemCylinderItem().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1192,11 +1195,7 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
-
-    public static final DeferredItem<Item> ZEZTZ_AGENDREAM_DRIVER = ITEMS.register("zeztz_agendream_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_agendream", AGENT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
@@ -1364,10 +1363,10 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> AGENT_NUMBER_RING_SEVEN = ITEMS.register("agent_number_ring_seven",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> SEVENTEEN_NECKLACE = ITEMS.register("seventeen_necklace",
+    public static final DeferredItem<Item> THIRTEEN_EAR_CUFF = ITEMS.register("thirteen_ear_cuff",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item> THIRTEEN_EAR_CUFF = ITEMS.register("thirteen_ear_cuff",
+    public static final DeferredItem<Item> SEVENTEEN_NECKLACE = ITEMS.register("seventeen_necklace",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
