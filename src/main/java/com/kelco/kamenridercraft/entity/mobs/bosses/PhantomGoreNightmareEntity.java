@@ -1,7 +1,9 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -10,11 +12,13 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
@@ -23,14 +27,13 @@ import javax.annotation.Nullable;
 public class PhantomGoreNightmareEntity extends BaseHenchmenEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(PhantomGoreNightmareEntity.class, EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
-		public PhantomGoreNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+    public PhantomGoreNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="dawn";
+        NAME="phantom_gore_nightmare";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.PHANTOM_GORE_NIGHTMARE_BELT.get()));
-
     }
     protected void customServerAiStep() {
         super.customServerAiStep();
@@ -66,12 +69,10 @@ public class PhantomGoreNightmareEntity extends BaseHenchmenEntity {
     }
 
     public static AttributeSupplier.Builder setAttributes() {
-		return Monster.createMonsterAttributes()
-        		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
-        		.add(Attributes.ATTACK_DAMAGE, 2.0D)
-        		.add(Attributes.MAX_HEALTH, 60.0D);
-     }
-    
-
+        return Monster.createMonsterAttributes()
+                .add(Attributes.FOLLOW_RANGE, 128.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.30F)
+                .add(Attributes.ATTACK_DAMAGE, 2.0D)
+                .add(Attributes.MAX_HEALTH, 60.0D);
+    }
 }

@@ -8,20 +8,20 @@
     "RCR"
   ],
   "key": {
-    "R": {
-      "item": "kamenridercraft:rider_circuit"
-    },
     "C": {
       "item": "kamenridercraft:code_capsem"
+    },
+    "R": {
+      "item": "kamenridercraft:rider_circuit"
     },
     "V": {
       "item": "kamenridercraft:agent_number_ring_five"
     },
     "X": {
       "item": "kamenridercraft:agent_number_ring_six"
-    },
-    "result": {
-      "id": "kamenridercraft:lord_three_boss_block"
     }
+  },
+  "result": {
+    "id": "kamenridercraft:lord_three_boss_block"
   }
 }

@@ -3,40 +3,40 @@
   "category": "equipment",
   "group": "zeztz",
   "pattern": [
-    "ZOT",
-    "REF",
-    "VXS"
+    "SBW",
+    "ULG",
+    "RDZ"
   ],
   "key": {
-    "Z": {
+    "S": {
       "item": "kamenridercraft:agent_number_ring_zero"
     },
-    "O": {
+    "B": {
       "item": "kamenridercraft:agent_number_ring_one"
     },
-    "T": {
+    "W": {
       "item": "kamenridercraft:agent_number_ring_two"
     },
-    "R": {
+    "U": {
       "item": "kamenridercraft:agent_number_ring_three"
     },
-    "F": {
+    "L": {
+      "item": "kamenridercraft:exdreamrise_capsem"
+    },
+    "G": {
       "item": "kamenridercraft:agent_number_ring_four"
     },
-    "V": {
+    "R": {
       "item": "kamenridercraft:agent_number_ring_five"
     },
-    "X": {
+    "D": {
       "item": "kamenridercraft:agent_number_ring_six"
     },
-    "S": {
+    "Z": {
       "item": "kamenridercraft:agent_number_ring_seven"
-    },
-    "E": {
-      "item": "kamenridercraft:exdream_capsem"
     }
   },
   "result": {
-    "id": "kamenridercraft:agendream_capsem"
+    "id": "kamenridercraft:agent_capsem"
   }
 }

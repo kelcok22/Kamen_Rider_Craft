@@ -8854,6 +8854,9 @@
 "item.kamenridercraft.agent_number_ring_six": "Agent Number Ring (Code Number: Six)",
 "item.kamenridercraft.agent_number_ring_seven": "Agent Number Ring (Code Number: Seven)",
 
+"item.kamenridercraft.seventeen_necklace": "Code Number: Seventeen's Cat Necklace",
+"item.kamenridercraft.thirteen_ear_cuff": "Code Number: Thirteen's Ear Cuff",
+
 "item.kamenridercraft.zeztz_exdream_driver_buckle": "Zeztz Exdream Driver Buckle",
 "item.kamenridercraft.zeztz_agendream_driver_buckle": "Zeztz Agendream Driver Buckle",
 "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
@@ -9421,6 +9424,8 @@
 "entity.kamenridercraft.dawn": "Kamen Rider Dawn",
 "entity.kamenridercraft.lord_three": "Lord Three",
 "entity.kamenridercraft.zeztz_darkness_nightmare": "Zeztz Darkness Nightmare",
+"entity.kamenridercraft.phantom_gore_nightmare": "Phantom Gore Nightmare",
+"entity.kamenridercraft.oblivion_gore_nightmare": "Oblivion Gore Nightmare",
 
 "entity.kamenridercraft.code_zero": "Zero",
 

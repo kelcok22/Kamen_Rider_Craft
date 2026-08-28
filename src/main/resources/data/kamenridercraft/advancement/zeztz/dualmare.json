@@ -17,8 +17,6 @@
   "parent": "kamenridercraft:zeztz/plasma_booster",
   "criteria": {
     "1": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "player": {
@@ -90,4 +88,4 @@
       ]
     ]
   }
-}
+

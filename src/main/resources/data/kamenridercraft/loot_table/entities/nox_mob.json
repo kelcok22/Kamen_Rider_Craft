@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:agent_number_ring_four"
+          "name": "kamenridercraft:zeroider_core"
         }
       ],
       "conditions": [
@@ -26,13 +26,12 @@
           "chance": 0.5
         }
       ]
-    },
-    {
+    },{
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:zeroider_core"
+          "name": "kamenridercraft:agent_number_ring_four"
         }
       ],
       "conditions": [
@@ -77,15 +76,15 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:erase_capsem"
-        },
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:item",
-              "name": "kamenridercraft:void_capsem"
-            }
-          ]
+          "type": "minecraft:item",
+          "name": "kamenridercraft:void_capsem"
         }
       ]
     }

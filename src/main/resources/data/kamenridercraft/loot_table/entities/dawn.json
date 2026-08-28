@@ -27,73 +27,36 @@
           "name": "kamenridercraft:punish_capsem"
         }
       ]
-    },
-    {
+    }, {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:agent_number_ring_one"
-        },
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
         {
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.5
-            },
-            {
-              "rolls": 1,
-              "entries": [
-                {
-                  "type": "minecraft:item",
-                  "name": "kamenridercraft:agent_number_ring_zero"
-                },
-                {
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.5
-                    }
-                  ]
-                }
-              ]
-            },{
-              "rolls": 1,
-              "entries": [
-                {
-                  "type": "minecraft:item",
-                  "name": "kamenridercraft:agent_number_ring_zero"
-                },
-                {
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.5
-                    }
-                  ]
-                }
-              ]
-            },{
-              "rolls": 1,
-              "entries": [
-                {
-                  "type": "minecraft:item",
-                  "name": "kamenridercraft:telemaga_capsem"
-                },
-                {
-                  "conditions": [
-                    {
-                      "condition": "minecraft:random_chance",
-                      "chance": 0.25
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:telemaga_capsem"
         }
       ]
     }
-  ]
-}
+      ]
+    }
 

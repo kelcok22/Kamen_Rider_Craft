@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "zeztz",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:plasma_capsem"
+		},
+		{
+			"tag": "kamenridercraft:void_capsem"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:code_capsem",
+      "count": 2
+	}
+}

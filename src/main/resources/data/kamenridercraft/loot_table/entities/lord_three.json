@@ -6,21 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:agent_number_ring_three"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.5
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "kamenridercraft:code_capsem",
           "functions": [
             {
@@ -40,23 +25,41 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:extra_capsem"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:clear_capsem"
         },
         {
-          "rolls": 1,
-          "entries": [
-            {
-              "type": "minecraft:item",
-              "name": "kamenridercraft:clear_capsem"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "kamenridercraft:shock_capsem"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "kamenridercraft:panic_capsem"
-            }
-          ]
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:shock_capsem"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "kamenridercraft:panic_capsem"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:agent_number_ring_three"
         }
       ]
     }

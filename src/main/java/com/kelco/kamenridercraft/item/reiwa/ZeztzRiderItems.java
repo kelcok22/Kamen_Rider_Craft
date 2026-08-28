@@ -1356,5 +1356,11 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> AGENT_NUMBER_RING_SEVEN = ITEMS.register("agent_number_ring_seven",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> SEVENTEEN_NECKLACE = ITEMS.register("seventeen_necklace",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> THIRTEEN_EAR_CUFF = ITEMS.register("thirteen_ear_cuff",
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
