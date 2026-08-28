@@ -111,9 +111,9 @@
               "zoom": 1,
               "search_radius": 50,
               "skip_existing_chunks": false
-            }
-          ],
-          "set_name": "pandora_tower"
+            },
+            { "function": "minecraft:set_name", "name": { "translate": "item.kamenridercraft.map.pandora_tower", "underlined": true } }
+          ]
         },
         {
           "type": "item",
@@ -127,9 +127,9 @@
               "zoom": 1,
               "search_radius": 50,
               "skip_existing_chunks": false
-            }
-          ],
-          "set_name": "kuuga_ruin"
+            },
+            { "function": "minecraft:set_name", "name": { "translate": "item.kamenridercraft.map.kuuga_ruin", "underlined": true } }
+          ]
         },
         {
           "type": "item",
@@ -143,7 +143,8 @@
               "zoom": 1,
               "search_radius": 50,
               "skip_existing_chunks": false
-            }
+            },
+            { "function": "minecraft:set_name", "name": { "translate": "item.kamenridercraft.map.castle_doran", "underlined": true } }
           ],
           "set_name": "castle_doran"
         },
@@ -159,9 +160,9 @@
               "zoom": 1,
               "search_radius": 50,
               "skip_existing_chunks": false
-            }
-          ],
-          "set_name": "oopart"
+            },
+            { "function": "minecraft:set_name", "name": { "translate": "item.kamenridercraft.map.oopart", "underlined": true } }
+          ]
         }
       ],
       "rolls": {
