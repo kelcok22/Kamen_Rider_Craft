@@ -243,7 +243,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeSlot(2)
-                    .alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()));
+                    .IsBeltGlowing().isGlowing().alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()));
 
     public static final DeferredItem<Item> SHAKARIKI_SPORTS_GASHAT = ITEMS.register("shakariki_sports_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"sports_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1325,7 +1325,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
 
     public static final DeferredItem<Item> MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("maximum_mighty_x_gashat",
@@ -1350,7 +1350,7 @@ public class ExAidRiderItems {
 
                 }
             }.addSwitchForm(MAXIMUM_MIGHTY_X_GASHAT_lv2.get())
-                    .isGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
 
 
     public static final DeferredItem<Item> GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0 = ITEMS.register("god_maximum_mighty_x_gashat_lv0",
@@ -1372,7 +1372,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").changeModel("ex_aid.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
 
     public static final DeferredItem<Item> GOD_MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("god_maximum_mighty_x_gashat",
@@ -1397,8 +1397,8 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
-                    .changeModel("lv_max.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
+                    .addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
 
     public static final DeferredItem<Item> MAXIMUM_ZOMBIE_GASHAT = ITEMS.register("maximum_zombie_gashat",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
@@ -1425,7 +1425,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.setSlotOneAbility("rider_kick",1).isGold().isGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).changeModel("ex_aid_muteki.geo.json").hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(GameCreator.BLANK_HYPER_GASHAT, 20));
+            }.setSlotOneAbility("rider_kick",1).isGold().isGlowing().IsBeltGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).changeModel("ex_aid_muteki.geo.json").hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(GameCreator.BLANK_HYPER_GASHAT, 20));
 
     public static final DeferredItem<Item> GEMEDEUS_HYPER_MUTEKI_GASHAT = ITEMS.register("gamedeus_hyper_muteki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","gamedeus_muteki","gamer_driver_gamedeus_hyper_muteki",
