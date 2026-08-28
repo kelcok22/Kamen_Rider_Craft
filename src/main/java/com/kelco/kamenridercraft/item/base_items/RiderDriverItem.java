@@ -367,7 +367,7 @@ public class RiderDriverItem extends RiderArmorItem {
             ResourceLocation location =ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+texture+ ".png");
           if(this.getGlowForSlot(itemStack, EquipmentSlot.FEET, rider)){
               if (ModList.get().isLoaded("iris"))layerInfo.add(new RenderLayerInfo(AutoGlowingTexture.getRenderType(location),null));
-              else layerInfo.add(new RenderLayerInfo(texture,null,texture));
+              else layerInfo.add(new RenderLayerInfo(texture,null,texture+"_glowmask"));
           }
 
           if (unlimitedBeltTextures != 0) {
