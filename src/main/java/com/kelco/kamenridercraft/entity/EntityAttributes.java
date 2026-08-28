@@ -281,8 +281,9 @@ public class EntityAttributes {
         event.put(MobsCore.DAWN.get(), DawnEntity.setAttributes().build());
         event.put(MobsCore.LORD_THREE.get(), LordThreeEntity.setAttributes().build());
         event.put(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE.get(), ZeztzDarknessNightmareEntity.setAttributes().build());
-        event.put(MobsCore.PHANTOM_GORE_NIGHTMARE.get(), ZeztzDarknessNightmareEntity.setAttributes().build());
-        event.put(MobsCore.OBLIVION_GORE_NIGHTMARE.get(), ZeztzDarknessNightmareEntity.setAttributes().build());
+        event.put(MobsCore.PHANTOM_GORE_NIGHTMARE.get(), PhantomGoreNightmareEntity.setAttributes().build());
+        event.put(MobsCore.CATASTROPHE_GORE_NIGHTMARE.get(), CatastropheGoreNightmareEntity.setAttributes().build());
+        event.put(MobsCore.OBLIVION_GORE_NIGHTMARE.get(), OblivionGoreNightmareEntity.setAttributes().build());
         event.put(MobsCore.CODE_ZERO.get(), CodeZeroEntity.setAttributes().build());
     }
 

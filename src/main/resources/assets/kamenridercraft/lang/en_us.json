@@ -8731,6 +8731,8 @@
 "kamenridercraft.name.phantom_gore_nightmare": "Kaijin: Phantom Gore Nightmare",
 "item.kamenridercraft.oblivion_gore_nightmare_belt": "Oblivion Gore Nightmare Belt",
 "kamenridercraft.name.oblivion_gore_nightmare": "Kaijin: Oblivion Gore Nightmare",
+  "item.kamenridercraft.catastrophe_gore_nightmare_belt": "Catastrophe Gore Nightmare Belt",
+  "kamenridercraft.name.catastrophe_gore_nightmare": "Kaijin: Catastrophe Gore Nightmare",
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -9426,6 +9428,7 @@
 "entity.kamenridercraft.zeztz_darkness_nightmare": "Zeztz Darkness Nightmare",
 "entity.kamenridercraft.phantom_gore_nightmare": "Phantom Gore Nightmare",
 "entity.kamenridercraft.oblivion_gore_nightmare": "Oblivion Gore Nightmare",
+  "entity.kamenridercraft.catastrophe_gore_nightmare": "Catastrophe Gore Nightmare",
 
 "entity.kamenridercraft.code_zero": "Zero",
 
@@ -9738,6 +9741,7 @@
 "item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "Zeztz Darkness Nightmare Spawn Egg",
 "item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "Phantom Gore Nightmare Spawn Egg",
 "item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "Oblivion Gore Nightmare Spawn Egg",
+  "item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "Catastrophe Gore Nightmare Spawn Egg",
 
 
 "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
