@@ -745,7 +745,7 @@
 "henshin.kamenridercraft.lord_three":"<Lord Three> §7Gisou.\n§eInvoke Lord System - §5Extra!",
 "henshin.kamenridercraft.lord_three_booster":"§eEnforce Lord System - §5Booster!",
 "henshin.kamenridercraft.zeztz_darkness_nightmare":"<Zeztz Darkness Nightmare> §0Begone.",
-"henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"§0Darkness!",
+"henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"§5Darkness!",
 
 "attack.kamenridercraft.predictive_ai":"§9- Predictive AI Activate -",
 "attack.kamenridercraft.special_turbo":"§CULTIMATE FORM~!!! SPECIAL TURBO!",
@@ -8694,9 +8694,7 @@
 "item.kamenridercraft.zeztz_driver": "Zeztz Driver",
 "kamenridercraft.name.zeztz": "Rider: Kamen Rider Zeztz",
 "item.kamenridercraft.zeztz_exdream_driver": "Zeztz Exdream Driver",
-"kamenridercraft.name.zeztz_exdream": "Rider: Kamen Rider Zeztz Exdream",
-"item.kamenridercraft.zeztz_agendream_driver": "Zeztz Agendream Driver",
-"kamenridercraft.name.zeztz_agendream": "Rider: Kamen Rider Zeztz Agendream",
+"kamenridercraft.name.zeztz_exdream": "Rider: Kamen Rider Zeztz",
 "item.kamenridercraft.knight_invoker": "Knight Invoker",
 "kamenridercraft.name.nox_knight": "Debatable Rider: Nox Knight",
 "item.kamenridercraft.nox_driver": "Nox Driver",
@@ -8767,6 +8765,7 @@
 "item.kamenridercraft.exdreamrise_capsem": "Exdreamrise Capsem",
 "kamenridercraft:exdreamrise_capsem.form": "Form: Exdream",
 "item.kamenridercraft.agent_capsem": "Agent Capsem",
+"kamenridercraft:agent_capsem.form": "Form: Agendream",
 "item.kamenridercraft.zeztz_and_code_zeroider_capsem": "Zeztz & CODE Zeroider Capsem",
 "kamenridercraft:zeztz_and_code_zeroider_capsem.form": "Form: Impact Zeroider",
 "item.kamenridercraft.charge_capsem": "Charge Capsem",
@@ -8860,7 +8859,6 @@
 "item.kamenridercraft.thirteen_ear_cuff": "Code Number: Thirteen's Ear Cuff",
 
 "item.kamenridercraft.zeztz_exdream_driver_buckle": "Zeztz Exdream Driver Buckle",
-"item.kamenridercraft.zeztz_agendream_driver_buckle": "Zeztz Agendream Driver Buckle",
 "item.kamenridercraft.capsem_cylinder": "Capsem Cylinder",
 
 "item.kamenridercraft.zeztz_horse_armor": "Zeztz Horse Armor",

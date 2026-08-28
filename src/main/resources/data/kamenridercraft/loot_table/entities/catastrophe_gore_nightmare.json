@@ -12,8 +12,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 5
-              }
+                "max": 7              }
             }
           ]
         }
@@ -24,22 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:darkness_capsem"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.5
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "kamenridercraft:agent_number_ring_zero"
+          "name": "kamenridercraft:agent_number_ring_seven"
         }
       ]
     },
@@ -54,10 +38,10 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:code_zeroider_spawn_egg"
+          "name": "kamenridercraft:capsem_dropper_capsem"
         }
       ]
     }
-  ]
-}
+      ]
+    }
 

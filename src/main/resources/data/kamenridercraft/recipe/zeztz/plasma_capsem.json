@@ -6,11 +6,11 @@
 			"item": "kamenridercraft:plasma_capsem"
 		},
 		{
-			"tag": "kamenridercraft:void_capsem"
+			"item": "kamenridercraft:void_capsem"
 		}
 	],
 	"result": {
-		"id": "kamenridercraft:code_capsem",
+		"id": "kamenridercraft:plasma_capsem",
       "count": 2
 	}
 }

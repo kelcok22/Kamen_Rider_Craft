@@ -73,6 +73,6 @@ public class PhantomGoreNightmareEntity extends BaseHenchmenEntity {
                 .add(Attributes.FOLLOW_RANGE, 128.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.30F)
                 .add(Attributes.ATTACK_DAMAGE, 2.0D)
-                .add(Attributes.MAX_HEALTH, 60.0D);
+                .add(Attributes.MAX_HEALTH, 100.0D);
     }
 }

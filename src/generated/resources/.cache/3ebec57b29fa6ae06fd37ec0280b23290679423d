@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-28T17:26:01.9555013	Item Models: kamenridercraft
+// 1.21.1	2026-08-28T18:08:31.9482109	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -118,6 +118,7 @@ f7aab005c85d29b7a3548c78b5e112a78c2220e7 assets/kamenridercraft/models/item/buro
 18cde50cce20edfc5f9c6d952c89259ed400539d assets/kamenridercraft/models/item/buttobasoul_full_bottle.json
 84115d377e782ab7c5e633e842b6b3349d431e71 assets/kamenridercraft/models/item/byunbei_gochizo.json
 35ab2b90adbe15dcaa569cd3960238da97435c14 assets/kamenridercraft/models/item/capsem_cylinder.json
+4476e63068a7cd2d5bd2ea487d9653fd80d15c7e assets/kamenridercraft/models/item/capsem_dropper_capsem.json
 e48191714a4f848569cb9bf274097d08d12e96bf assets/kamenridercraft/models/item/caramelmel_gochizo.json
 cd428ab5446f04fd981d9798c4650748e862686c assets/kamenridercraft/models/item/carery_ride_chemy_card.json
 1aa38e42e59e0d21d10d9016f585d148a6b206b8 assets/kamenridercraft/models/item/catastrophe_gore_nightmare_belt.json
@@ -836,8 +837,6 @@ a37bd41b96bbf1ed4d027b316660c5d2fdd44ab4 assets/kamenridercraft/models/item/zero
 243e721f590e2791002754861fcfb00faa658be9 assets/kamenridercraft/models/item/zero_one_gochizo.json
 a894ce629b6111acc7fa487c6a2a54f209954e1b assets/kamenridercraft/models/item/zero_one_ride_chemy_card.json
 8c06f9a4950fcf3b5debf633a419756f26a38e6a assets/kamenridercraft/models/item/zero_two_ride_chemy_card.json
-280e7e46ab08b86b26c6381e4a46e3d5fc9b0672 assets/kamenridercraft/models/item/zeztz_agendream_driver.json
-477a46f736cef2421378ae9dca2bba9643e5a8b0 assets/kamenridercraft/models/item/zeztz_agendream_driver_buckle.json
 526b224ae6019c9cd80b7afcec573d9b389c8ee3 assets/kamenridercraft/models/item/zeztz_and_code_zeroider_capsem.json
 03549f412915582c56d5ddf98657f29e606156ea assets/kamenridercraft/models/item/zeztz_blank.json
 3ed954f18f84603a6db0f3d7dcd4983ecfbaf2f3 assets/kamenridercraft/models/item/zeztz_darkness_belt.json
