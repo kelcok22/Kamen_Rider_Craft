@@ -15,6 +15,7 @@ public class ModSounds {
 
     public static final Supplier<SoundEvent> MIRROR_NOISES = registerSoundEvent("mirror_noises");
 
+    public static final Supplier<SoundEvent> DREAM_MAZE = registerSoundEvent("dream_maze");
 
     private static Supplier<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name);

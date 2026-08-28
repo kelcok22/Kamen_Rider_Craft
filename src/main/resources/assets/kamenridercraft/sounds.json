@@ -390,5 +390,13 @@
         "stream": true
       }
     ]
+  },
+  "dream_maze": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:dream_maze",
+        "stream": true
+      }
+    ]
   }
 }
