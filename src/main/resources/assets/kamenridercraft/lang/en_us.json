@@ -8729,8 +8729,8 @@
 "kamenridercraft.name.phantom_gore_nightmare": "Kaijin: Phantom Gore Nightmare",
 "item.kamenridercraft.oblivion_gore_nightmare_belt": "Oblivion Gore Nightmare Belt",
 "kamenridercraft.name.oblivion_gore_nightmare": "Kaijin: Oblivion Gore Nightmare",
-  "item.kamenridercraft.catastrophe_gore_nightmare_belt": "Catastrophe Gore Nightmare Belt",
-  "kamenridercraft.name.catastrophe_gore_nightmare": "Kaijin: Catastrophe Gore Nightmare",
+"item.kamenridercraft.catastrophe_gore_nightmare_belt": "Catastrophe Gore Nightmare Belt",
+"kamenridercraft.name.catastrophe_gore_nightmare": "Kaijin: Catastrophe Gore Nightmare",
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -9419,6 +9419,7 @@
 "entity.kamenridercraft.bocca_jaldak": "Bocca Jaldak",
 "entity.kamenridercraft.caries": "Kamen Rider Caries",
 
+"entity.kamenridercraft.baby_nightmare": "Baby Nightmare",
 "entity.kamenridercraft.nox_mob": "Nox Knight",
 "entity.kamenridercraft.nox": "Kamen Rider Nox",
 "entity.kamenridercraft.dawn": "Kamen Rider Dawn",
@@ -9426,7 +9427,7 @@
 "entity.kamenridercraft.zeztz_darkness_nightmare": "Zeztz Darkness Nightmare",
 "entity.kamenridercraft.phantom_gore_nightmare": "Phantom Gore Nightmare",
 "entity.kamenridercraft.oblivion_gore_nightmare": "Oblivion Gore Nightmare",
-  "entity.kamenridercraft.catastrophe_gore_nightmare": "Catastrophe Gore Nightmare",
+"entity.kamenridercraft.catastrophe_gore_nightmare": "Catastrophe Gore Nightmare",
 
 "entity.kamenridercraft.code_zero": "Zero",
 
@@ -9733,13 +9734,14 @@
 "item.kamenridercraft.bocca_jaldak_spawn_egg": "Bocca Jaldak Spawn Egg",
 "item.kamenridercraft.caries_spawn_egg": "Kamen Rider Caries Spawn Egg",
 
+"item.kamenridercraft.baby_nightmare_spawn_egg": "Baby Nightmare Spawn Egg",
 "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
 "item.kamenridercraft.dawn_spawn_egg": "Dawn Spawn Egg",
 "item.kamenridercraft.lord_three_spawn_egg": "Lord Three Spawn Egg",
 "item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "Zeztz Darkness Nightmare Spawn Egg",
 "item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "Phantom Gore Nightmare Spawn Egg",
 "item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "Oblivion Gore Nightmare Spawn Egg",
-  "item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "Catastrophe Gore Nightmare Spawn Egg",
+"item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "Catastrophe Gore Nightmare Spawn Egg",
 
 
 "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
@@ -9765,10 +9767,10 @@
 "item.kamenridercraft.boostriker_na_go_mode_spawn_egg": "Boostriker Na-Go Mode",
 "item.kamenridercraft.boostriker_buffa_mode_spawn_egg": "Boostriker Buffa Mode",
 
-  "item.kamenridercraft.map.kuuga_ruin": "Kuuga Ruin Map",
-  "item.kamenridercraft.map.pandora_tower": "Pandora Tower Map",
-  "item.kamenridercraft.map.oopart": "Out Of Place Artefact Map",
-  "item.kamenridercraft.map.castle_doran": "Castle Doran Map",
+"item.kamenridercraft.map.kuuga_ruin": "Kuuga Ruin Map",
+"item.kamenridercraft.map.pandora_tower": "Pandora Tower Map",
+"item.kamenridercraft.map.oopart": "Out Of Place Artefact Map",
+"item.kamenridercraft.map.castle_doran": "Castle Doran Map",
 
 "block.kamenridercraft.astroswitch_panel": "Astroswitch Panel",
 "block.kamenridercraft.shocker_logo": "Shocker Base Logo",

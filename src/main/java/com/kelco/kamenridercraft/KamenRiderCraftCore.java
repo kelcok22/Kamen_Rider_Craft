@@ -539,6 +539,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BOCCA_JALDAK.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.CARIES.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.BABY_NIGHTMARE.get(), BabyNightmareRenderer::new);
             event.registerEntityRenderer(MobsCore.NOX.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DAWN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LORD_THREE.get(), BasicEntityRenderer::new);
@@ -1972,6 +1973,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.BOCCA_JALDAK_SPAWN_EGG);
                 event.accept(MobsCore.CARIES_SPAWN_EGG);
 
+                event.accept(MobsCore.BABY_NIGHTMARE_SPAWN_EGG);
                 event.accept(MobsCore.NOX_SPAWN_EGG);
                 event.accept(MobsCore.DAWN_SPAWN_EGG);
                 event.accept(MobsCore.LORD_THREE_SPAWN_EGG);

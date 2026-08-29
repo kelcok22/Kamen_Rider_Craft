@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:stream_capsem"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:recovery_capsem"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:wonder_capsem"
+		},
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:code_capsem"
+		}
+	  ]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:code_capsem",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}
