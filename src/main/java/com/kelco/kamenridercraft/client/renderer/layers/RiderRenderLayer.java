@@ -48,6 +48,9 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
             if (head != null & bakedHead != null) {
                 matchModelPartRot(bakedHead, head);
                 head.updatePosition(bakedHead.getPosX(), bakedHead.getPosY(), bakedHead.getPosZ());
+                head.setScaleX(bakedHead.getScaleX());
+                head.setScaleY(bakedHead.getScaleY());
+                head.setScaleZ(bakedHead.getScaleZ());
             }
         }
     }

@@ -357,6 +357,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
 
+        //if(slot==EquipmentSlot.HEAD&isTransformed(rider))layerInfo.add(new RenderLayerInfo("ferbus", "ferbus"));
+
         for (int n = 0; n < numBaseFormItems; n++) {
             RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
            form.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
