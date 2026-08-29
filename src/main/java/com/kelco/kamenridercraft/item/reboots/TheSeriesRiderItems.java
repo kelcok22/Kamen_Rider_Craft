@@ -33,7 +33,7 @@ public class TheSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().model_has_different_name("typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE_NEXT = ITEMS.register("the_next_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_next","ichigo_the","typhoon_belt_the_first",
@@ -46,7 +46,7 @@ public class TheSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().model_has_different_name("typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE_NIGO = ITEMS.register("the_typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nigo_the_first","typhoon_belt_the_first_nigo",

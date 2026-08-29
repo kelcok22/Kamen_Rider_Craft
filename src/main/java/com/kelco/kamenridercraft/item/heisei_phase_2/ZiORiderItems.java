@@ -254,7 +254,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().model_has_different_name("geiz_revive_ridewatch").has_basic_model());
+            }.isGlowing().IsBeltGlowing().setModelName("geiz_revive_ridewatch").useBasicModel());
 
     public static final DeferredItem<Item> GEIZ_REVIVE_RIDEWATCH = ITEMS.register("geiz_revive_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_revive_goretsu", "geiz", "ziku_driver_geiz_belt_revive",
@@ -991,7 +991,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_GHOST_RIDEWATCH.get())
-                    .isGlowing().IsBeltGlowing().model_has_different_name("ghost_ridewatch").has_basic_model());
+                    .isGlowing().IsBeltGlowing().setModelName("ghost_ridewatch").useBasicModel());
 
     public static final DeferredItem<Item> GHOST_RIDEWATCH = ITEMS.register("ghost_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_ghost", "geiz", "ziku_driver_geiz_belt_ghost",
@@ -1083,7 +1083,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().model_has_different_name("ex_aid_ridewatch").has_basic_model());
+            }.isGlowing().IsBeltGlowing().setModelName("ex_aid_ridewatch").useBasicModel());
 
     public static final DeferredItem<Item> EX_AID_RIDEWATCH = ITEMS.register("ex_aid_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_ex_aid", "zi_o", "ziku_driver_zi_o_belt_ex_aid",
@@ -1159,7 +1159,7 @@ public class ZiORiderItems {
                 }
             }
                     .addAlternative(DECADE_BUILD_RIDEWATCH.get())
-                    .isGlowing().IsBeltGlowing().model_has_different_name("build_ridewatch").has_basic_model());
+                    .isGlowing().IsBeltGlowing().setModelName("build_ridewatch").useBasicModel());
 
     public static final DeferredItem<Item> BUILD_RIDEWATCH = ITEMS.register("build_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_build", "zi_o", "ziku_driver_zi_o_belt_build",
@@ -1778,7 +1778,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
+            }.isGlowing().IsBeltGlowing().setModelName("ginga_miridewatch").useBasicModel());
 
     public static final DeferredItem<Item> GINGA_TAIYO_MIRIDEWATCH = ITEMS.register("ginga_taiyo_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ginga_taiyo", "woz", "beyondriver_belt",
@@ -1796,7 +1796,7 @@ public class ZiORiderItems {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.addNeedForm(GINGA_FINALY_MIRIDEWATCH.get(), 1).addAlternative(GINGA_FINALY_MIRIDEWATCH.get())
-                    .isGlowing().IsBeltGlowing().model_has_different_name("ginga_miridewatch").has_basic_model());
+                    .isGlowing().IsBeltGlowing().setModelName("ginga_miridewatch").useBasicModel());
 
     public static final DeferredItem<Item> GINGA_MIRIDEWATCH = ITEMS.register("ginga_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_ginga_wakusei", "woz", "beyondriver_belt",
@@ -2167,7 +2167,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> QUIZ_TOPPER = ITEMS.register("quiz_topper",
@@ -2211,11 +2211,11 @@ public class ZiORiderItems {
 
     public static final DeferredItem<Item> RIDESTRIKER_RIDEWATCH = ITEMS.register("ridestriker_ridewatch",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.RIDESTRIKER)
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> WOZ_TIME_MAJIN_RIDEWATCH = ITEMS.register("woz_time_majin_ridewatch",
-            () -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).has_basic_model());
+            () -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> OHMA_ADVENT_CALENDAR = ITEMS.register("ohma_advent_calendar",
             () -> new OhmaAdventCalendarItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
@@ -2576,16 +2576,16 @@ public class ZiORiderItems {
                     .changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> TAKA_RIDEWATCH = ITEMS.register("taka_ridewatch",
-            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.taka"), MobsCore.TAKA_WATCHROID).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).has_basic_model());
+            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.taka"), MobsCore.TAKA_WATCHROID).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> KODAMA_RIDEWATCH = ITEMS.register("kodama_ridewatch",
-            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.kodama"), MobsCore.KODAMA_SUIKA_ARMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).has_basic_model());
+            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.kodama"), MobsCore.KODAMA_SUIKA_ARMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> QUESTIOABLE_WATCH = ITEMS.register("questionable_watch",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> TOY_ROBOT = ITEMS.register("toy_robot",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<BaseThrowableItem> MANHOLE_COVER = ITEMS.register("manhole_cover",
             () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -4.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(Items.IRON_INGOT));

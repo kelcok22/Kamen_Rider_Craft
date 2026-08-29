@@ -35,7 +35,7 @@ public class GRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM).KeepItem());
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> GHELMET = ITEMS.register("ghead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));

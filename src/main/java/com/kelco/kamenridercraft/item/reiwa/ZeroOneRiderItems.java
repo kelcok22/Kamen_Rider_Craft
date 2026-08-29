@@ -972,7 +972,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey"));
+			}.isGlowing().useBasicModel().setModelName("crowding_hopper_progrisekey"));
 
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY_R = ITEMS.register("crowding_hopper_progrisekey_r",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","abaddon_r","slash_abaddo_riser_belt",
@@ -985,7 +985,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey"));
+			}.isGlowing().useBasicModel().setModelName("crowding_hopper_progrisekey"));
 
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY_SHOT = ITEMS.register("crowding_hopper_progrisekey_shot",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","abaddon_shot","shot_abaddo_riser_belt",
@@ -998,7 +998,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey"));
+			}.isGlowing().useBasicModel().setModelName("crowding_hopper_progrisekey"));
 
 	public static final DeferredItem<Item> CROWDING_HOPPER_PROGRISEKEY = ITEMS.register("crowding_hopper_progrisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","abaddon","slash_abaddo_riser_belt",
@@ -1011,7 +1011,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("crowding_hopper_progrisekey").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+			}.isGlowing().useBasicModel().setModelName("crowding_hopper_progrisekey").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TRICERATOPS_ZETSUMERISEKEY = ITEMS.register("triceratops_zetsumerisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","zaia","zaia_thousandriver_belt",
@@ -1332,7 +1332,7 @@ public class ZeroOneRiderItems {
 
 	public static final DeferredItem<Item> HIDEN_RISEPHONE = ITEMS.register("hiden_risephone",
 			() -> new SummonBikeItem(new Item.Properties(), MobsCore.RISEHOPPER)
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));
 
 	public static final DeferredItem<Item> AIMS_RISEPHONE = ITEMS.register("aims_risephone",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZERO_ONE_TAB_ITEM));

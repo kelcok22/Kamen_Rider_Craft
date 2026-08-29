@@ -51,15 +51,15 @@ public class SaberRiderItems {
 
 	public static final DeferredItem<Item> SABER_BLANK_1 = ITEMS.register("saber_blank_1",
 			() -> new RiderFormChangeItem(new Item.Properties(),"blank","saber","seiken_swordriver_belt")
-					.model_has_different_name("blank_wonder_ride_book").has_basic_model());
+					.setModelName("blank_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> SABER_BLANK_2 = ITEMS.register("saber_blank_2",
 			() -> new RiderFormChangeItem(new Item.Properties(),"blank","saber","seiken_swordriver_belt")
-					.model_has_different_name("blank_wonder_ride_book").has_basic_model());
+					.setModelName("blank_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> SABER_BLANK_3 = ITEMS.register("saber_blank_3",
 			() -> new RiderFormChangeItem(new Item.Properties(),"blank","saber","seiken_swordriver_belt")
-					.model_has_different_name("blank_wonder_ride_book").has_basic_model());
+					.setModelName("blank_wonder_ride_book").useBasicModel());
 
 
 	public static final DeferredItem<Item> BRAVE_DRAGON_WONDER_RIDE_BOOK_XROSS = ITEMS.register("brave_dragon_wonder_ride_book_xross",
@@ -78,7 +78,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.addNum(3).resetFormToBase().has_basic_model().model_has_different_name("brave_dragon_wonder_ride_book"));
+			}.addNum(3).resetFormToBase().useBasicModel().setModelName("brave_dragon_wonder_ride_book"));
 
 	public static final DeferredItem<Item> BRAVE_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("brave_dragon_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"brave_dragon","saber","seiken_swordriver_belt"
@@ -104,7 +104,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.changeSlot(2).has_basic_model().model_has_different_name("storm_eagle_wonder_ride_book"));
+			}.changeSlot(2).useBasicModel().setModelName("storm_eagle_wonder_ride_book"));
 
 	public static final DeferredItem<Item> STORM_EAGLE_WONDER_RIDE_BOOK = ITEMS.register("storm_eagle_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"storm_eagle","saber","seiken_swordriver_belt"
@@ -132,7 +132,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.changeSlot(3).has_basic_model().model_has_different_name("saiyuu_journey_wonder_ride_book"));
+			}.changeSlot(3).useBasicModel().setModelName("saiyuu_journey_wonder_ride_book"));
 
 	public static final DeferredItem<Item> SAIYUU_JOURNEY_WONDER_RIDE_BOOK = ITEMS.register("saiyuu_journey_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"saiyuu_journey","saber","seiken_swordriver_belt"
@@ -171,7 +171,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.changeSlot(2).has_basic_model().model_has_different_name("lion_senki_wonder_ride_book"));
+			}.changeSlot(2).useBasicModel().setModelName("lion_senki_wonder_ride_book"));
 
 	public static final DeferredItem<Item> LION_SENKI_WONDER_RIDE_BOOK = ITEMS.register("lion_senki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"lion_senki","blades","seiken_swordriver_belt"
@@ -236,7 +236,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.changeSlot(3).has_basic_model().model_has_different_name("lamp_do_alngina_wonder_ride_book"));
+			}.changeSlot(3).useBasicModel().setModelName("lamp_do_alngina_wonder_ride_book"));
 
 	public static final DeferredItem<Item> LAMP_DO_ALNGINA_WONDER_RIDE_BOOK = ITEMS.register("lamp_do_alngina_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"lamp_do_alngina","espada","seiken_swordriver_belt"
@@ -263,7 +263,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("genbu_shinwa_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("genbu_shinwa_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> GENBU_SHINWA_WONDER_RIDE_BOOK = ITEMS.register("genbu_shinwa_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"genbu_shinwa","blades","seiken_swordriver_belt"
@@ -290,7 +290,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("jackun_to_domamenoki_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("jackun_to_domamenoki_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK_BUSTER = ITEMS.register("jackun_to_domamenoki_wonder_ride_book_buster",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_jackun","buster","sword_of_logos_buckle_belt"
@@ -304,7 +304,7 @@ public class SaberRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
 			}.addAlternative(JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK_KENZAN.get())
-					.isGlowing().model_has_different_name("jackun_to_domamenoki_wonder_ride_book").has_basic_model());
+					.isGlowing().setModelName("jackun_to_domamenoki_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> JACKUN_TO_DOMAMENOKI_WONDER_RIDE_BOOK = ITEMS.register("jackun_to_domamenoki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"jackun_to_domamenoki","saber","seiken_swordriver_belt"
@@ -329,7 +329,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("sarutobi_ninjaden_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("sarutobi_ninjaden_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> SARUTOBI_NINJADEN_WONDER_RIDE_BOOK = ITEMS.register("sarutobi_ninjaden_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"sarutobi_ninjaden","saber","seiken_swordriver_belt"
@@ -356,7 +356,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("kobuta_3_kyoudai_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("kobuta_3_kyoudai_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK_KENZAN = ITEMS.register("kobuta_3_kyoudai_wonder_ride_book_kenzan",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kobuta_3_kyoudai","kenzan","sword_of_logos_buckle_belt"
@@ -371,7 +371,7 @@ public class SaberRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
 			}.addAlternative(KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK_SLASH.get())
-					.isGlowing().model_has_different_name("kobuta_3_kyoudai_wonder_ride_book").has_basic_model());
+					.isGlowing().setModelName("kobuta_3_kyoudai_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> KOBUTA_3KYOUDAI_WONDER_RIDE_BOOK = ITEMS.register("kobuta_3_kyoudai_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"kobuta_3_kyoudai","saber","seiken_swordriver_belt"
@@ -396,7 +396,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("hanselnuts_to_gretel_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("hanselnuts_to_gretel_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> HANSELNUTS_TO_GRETEL_WONDER_RIDE_BOOK = ITEMS.register("hanselnuts_to_gretel_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"hanselnuts_to_gretel","saber","seiken_swordriver_belt"
@@ -425,7 +425,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("bremen_no_rock_band_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("bremen_no_rock_band_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> BREMEN_NO_ROCK_BAND_WONDER_RIDE_BOOK_SLASH = ITEMS.register("bremen_no_rock_band_wonder_ride_book_slash",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_bremen_no_rock_band","slash","sword_of_logos_buckle_belt"
@@ -440,7 +440,7 @@ public class SaberRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
 			}.addAlternative(BREMEN_NO_ROCK_BAND_WONDER_RIDE_BOOK_BUSTER.get())
-					.isGlowing().model_has_different_name("bremen_no_rock_band_wonder_ride_book").has_basic_model());
+					.isGlowing().setModelName("bremen_no_rock_band_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> BREMEN_NO_ROCK_BAND_WONDER_RIDE_BOOK = ITEMS.register("bremen_no_rock_band_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"bremen_no_rock_band","saber","seiken_swordriver_belt"
@@ -465,7 +465,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			} .isGlowing().model_has_different_name("jaaku_dragon_wonder_ride_book").has_basic_model());
+			} .isGlowing().setModelName("jaaku_dragon_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> JAAKU_DRAGON_WONDER_RIDE_BOOK = ITEMS.register("jaaku_dragon_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"jaaku_dragon","blades","seiken_swordriver_belt"
@@ -507,7 +507,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.isGlowing().model_has_different_name("kin_no_buki_gin_no_buki_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("kin_no_buki_gin_no_buki_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> KIN_NO_BUKI_GIN_NO_BUKI_WONDER_RIDE_BOOK = ITEMS.register("kin_no_buki_gin_no_buki_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","saikou","seiken_saikou_driver_belt_saikou"
@@ -542,7 +542,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.isGlowing().model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("x_swordman_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK_POWERFUL = ITEMS.register("x_swordman_wonder_ride_book_powerful",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_x_swordman_powerful","saikou","seiken_saikou_driver_belt_p"
@@ -561,7 +561,7 @@ public class SaberRiderItems {
 				}
 			}
 					.addNeedForm(X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL.get(), 1).addAlternative(X_SWORDMAN_WONDER_RIDE_BOOK_COLORFUL.get())
-					.model_has_different_name("x_swordman_wonder_ride_book").has_basic_model());
+					.setModelName("x_swordman_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> X_SWORDMAN_WONDER_RIDE_BOOK = ITEMS.register("x_swordman_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_x_swordman_wonderful","saikou","seiken_saikou_driver_belt_w"
@@ -675,7 +675,7 @@ public class SaberRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().model_has_different_name("eternal_phoenix_wonder_ride_book").has_basic_model());
+			}.isGlowing().setModelName("eternal_phoenix_wonder_ride_book").useBasicModel());
 
 	public static final DeferredItem<Item> ETERNAL_PHOENIX_WONDER_RIDE_BOOK = ITEMS.register("eternal_phoenix_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"eternal_phoenix","blades","seiken_swordriver_belt"
@@ -970,7 +970,7 @@ public class SaberRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> WONDER_STORY = ITEMS.register("wonder_story",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_IJINROKU_WONDER_RIDE_BOOK = ITEMS.register("ghost_ijinroku_wonder_ride_book",
 			() -> new RiderFormChangeItem(new Item.Properties(),"saber_ghost_ijinroku","saber","seiken_swordriver_belt"
@@ -993,7 +993,7 @@ public class SaberRiderItems {
 
 	public static final DeferredItem<Item> DIAGOSPEEDY_WONDER_RIDE_BOOK = ITEMS.register("diago_speedy_wonder_ride_book",
 			() -> new SummonBikeItem(new Item.Properties(), MobsCore.DIAGOSPEEDY)
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SABER_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SABER_HELMET = ITEMS.register("saberhead",

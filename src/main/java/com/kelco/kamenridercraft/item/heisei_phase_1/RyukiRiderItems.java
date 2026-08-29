@@ -138,7 +138,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.has_basic_model().model_has_different_name("goldphoenix_advent"));
+			}.useBasicModel().setModelName("goldphoenix_advent"));
 
 	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT = ITEMS.register("goldphoenix_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","odin","v_buckle_belt_odin",
@@ -660,11 +660,11 @@ public class RyukiRiderItems {
 
 	public static final DeferredItem<Item> FIREWALL_VENT = ITEMS.register("fire_wall_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), "firewall_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> METEORBULLET_VENT = ITEMS.register("meteor_bullet_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), "meteorbullet_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> WING_LANCER_VENT = ITEMS.register("wing_lancer_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), WING_LANCER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
@@ -682,11 +682,11 @@ public class RyukiRiderItems {
 
 	public static final DeferredItem<Item> NASTY_VENT = ITEMS.register("nasty_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "nasty_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLUST_VENT = ITEMS.register("blust_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "blust_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_BLADE_VENT = ITEMS.register("dark_blade_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), DARK_BLADE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
@@ -749,14 +749,14 @@ public class RyukiRiderItems {
 
 	public static final DeferredItem<Item> TIME_VENT = ITEMS.register("time_vent",
 			() -> new AdventCardItem(new Item.Properties(), "odin", GOLD_VISOR.get(), "time_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEST_CLAW_VENT = ITEMS.register("dest_claw_vent",
 			() -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), DEST_CLAW.get(), DEST_CLAW1.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> FREEZE_VENT = ITEMS.register("freeze_vent",
 			() -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), "freeze_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAZELLE_STAB_VENT = ITEMS.register("gazelle_stab_vent",
 			() -> new AdventCardItem(new Item.Properties(), "imperer", GAZELLE_VISOR.get(), GAZELLE_STAB.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
@@ -792,7 +792,7 @@ public class RyukiRiderItems {
 
 	public static final DeferredItem<Item> CLEAR_VENT = ITEMS.register("clear_vent",
 			() -> new AdventCardItem(new Item.Properties(), "verde", BIO_VISOR.get(), "clear_vent")
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SLASH_DAGGER_VENT = ITEMS.register("slash_dagger_vent",
 			() -> new AdventCardItem(new Item.Properties(), "alternative", SLASH_VISOR.get(), SLASH_DAGGER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
@@ -812,41 +812,41 @@ public class RyukiRiderItems {
 	 **/
 
 	public static final DeferredItem<Item> BLANK_DECK = ITEMS.register("advent_deck_blank",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> RYUKI_DECK = ITEMS.register("advent_deck_ryuki",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> KNIGHT_DECK = ITEMS.register("advent_deck_knight",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> ZOLDA_DECK = ITEMS.register("advent_deck_zolda",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> OUJA_DECK = ITEMS.register("advent_deck_ouja",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> SCISSORS_DECK = ITEMS.register("advent_deck_scissors",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> RAIA_DECK = ITEMS.register("advent_deck_raia",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> GAI_DECK = ITEMS.register("advent_deck_gai",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> TIGER_DECK = ITEMS.register("advent_deck_tiger",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> IMPERER_DECK = ITEMS.register("advent_deck_imperer",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> VERDE_DECK = ITEMS.register("advent_deck_verde",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> FEMME_DECK = ITEMS.register("advent_deck_femme",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> RYUGA_DECK = ITEMS.register("advent_deck_ryuga",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> ODIN_DECK = ITEMS.register("advent_deck_odin",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> ABYSS_DECK = ITEMS.register("advent_deck_abyss",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> FATALE_DECK = ITEMS.register("advent_deck_fatale",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> ALTERNATIVE_DECK = ITEMS.register("advent_deck_alternative",
-			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+			() -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
     public static final DeferredItem<Item> BLADE_DECK = ITEMS.register("advent_deck_blade",
-            () -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).KeepItem());
+            () -> new AdventDeckItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).keepItem());
 	public static final DeferredItem<Item> RYUKI_SURVIVE_DECK = ITEMS.register("advent_deck_ryuki_survive",
 			() -> new AdventDeckItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 	public static final DeferredItem<Item> KNIGHT_SURVIVE_DECK = ITEMS.register("advent_deck_knight_survive",

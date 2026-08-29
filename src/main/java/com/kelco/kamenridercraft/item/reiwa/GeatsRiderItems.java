@@ -1660,7 +1660,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().IsBeltGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().IsBeltGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SIRIUS_CARD_OMEGA = ITEMS.register("sirius_card_omega",
@@ -2033,17 +2033,17 @@ public class GeatsRiderItems {
 					.alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_WISH_CARD = ITEMS.register("bujin_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.bujin_wish_card.1"), Component.translatable("lore.kamenridercraft.bujin_wish_card.2"))))).has_basic_model().model_has_different_name("jyamashin_wish_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.bujin_wish_card.1"), Component.translatable("lore.kamenridercraft.bujin_wish_card.2"))))).useBasicModel().setModelName("jyamashin_wish_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FANTASY_WISH_CARD = ITEMS.register("fantasy_wish_card",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.fantasy_wish_card.1"), Component.translatable("lore.kamenridercraft.fantasy_wish_card.2"))))).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUROTO_DAN_CARD = ITEMS.register("kuroto_dan_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.kuroto_dan_card.1"), Component.translatable("lore.kamenridercraft.kuroto_dan_card.2"))))).has_basic_model().model_has_different_name("jyamashin_wish_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.kuroto_dan_card.1"), Component.translatable("lore.kamenridercraft.kuroto_dan_card.2"))))).useBasicModel().setModelName("jyamashin_wish_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DGP_WINNERS_COIN = ITEMS.register("dgp_winners_coin",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
 
 	public static void register(net.neoforged.bus.api.IEventBus eventBus) {
 		ITEMS.register(eventBus);

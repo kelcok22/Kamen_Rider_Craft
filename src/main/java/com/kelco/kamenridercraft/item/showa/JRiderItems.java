@@ -38,7 +38,7 @@ public class JRiderItems {
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
                     ,new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false)
                     ,new MobEffectInstance(EffectCore.BIG, 40, 2,true,false))
-                    .isGlowing().model_has_different_name("j_stone").has_basic_model());
+                    .isGlowing().setModelName("j_stone").useBasicModel());
 
     public static final DeferredItem<Item>  J_STONE = ITEMS.register("j_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),"","j","blank",
@@ -53,7 +53,7 @@ public class JRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().setSlotOneAbility("grow", 2).setSlotTwoAbility("rider_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).KeepItem());
+            }.isGlowing().setSlotOneAbility("grow", 2).setSlotTwoAbility("rider_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).keepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",

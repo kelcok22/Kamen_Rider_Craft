@@ -924,7 +924,7 @@ public class OOORiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 30, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1d).changeModel("ooo_taka_tajado.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
+			}.setFormDelay(1d).changeModel("ooo_taka_tajado.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).useBasicModel().addToList(SPECIAL_NAME_MEDALS));
 
 public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("blokees_kujaku_medal",
         () -> new RiderFormChangeItem(new Item.Properties(),"_kujaku_blokees","ooo","ooodriver_belt",
@@ -936,7 +936,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }}
-        }.setFormDelay(1d).changeSlot(2).changeModel("ooo_kujaku.geo.json").hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
+        }.setFormDelay(1d).changeSlot(2).changeModel("ooo_kujaku.geo.json").hasFlyingWings( "ooo_kujaku.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).useBasicModel().addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BLOKEES_CONDOR_MEDAL = ITEMS.register("blokees_condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor_blokees","ooo","ooodriver_belt",
@@ -948,7 +948,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 								player.getX(), player.getY()+1,
 								player.getZ(), 30, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).has_basic_model().addToList(SPECIAL_NAME_MEDALS));
+			}.setFormDelay(1d).changeSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).useBasicModel().addToList(SPECIAL_NAME_MEDALS));
 
 
 	public static final DeferredItem<Item> FOUNDATION_X_TAKA_MEDAL = ITEMS.register("foundation_x_taka_medal",
@@ -1195,7 +1195,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 					player.level().addFreshEntity(thunder);
 
 				}
-			}.isGlowing().changeBeltModel("geo/belts/ooo_belt.geo.json").has_basic_model().model_has_different_name("shocker_medal"));
+			}.isGlowing().changeBeltModel("geo/belts/ooo_belt.geo.json").useBasicModel().setModelName("shocker_medal"));
 
 	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","birth_driver_belt",
@@ -1592,7 +1592,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 			() -> new BaseItem(new Item.Properties()).addToList(RidevendorVendingModeEntity.CANDROID,1).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOMORROWS_UNDERWEAR = ITEMS.register("tomorrows_underwear",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOMORROWS_UNDERWEAR_ON_A_STICK = ITEMS.register("tomorrows_underwear_on_a_stick",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));

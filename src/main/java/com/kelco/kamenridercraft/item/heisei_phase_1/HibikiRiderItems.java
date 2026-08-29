@@ -384,7 +384,7 @@ public class HibikiRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.has_basic_model().model_has_different_name("armor_of_the_ogre_belt"));
+            }.useBasicModel().setModelName("armor_of_the_ogre_belt"));
 
     public static final DeferredItem<Item> HIBIKIHELMET = ITEMS.register("hibikihead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));

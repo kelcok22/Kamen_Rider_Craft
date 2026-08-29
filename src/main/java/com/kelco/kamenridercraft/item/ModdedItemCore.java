@@ -35,15 +35,15 @@ public class ModdedItemCore {
 
     public static final DeferredItem<Item> TAKOYAKI = ITEMS.register("takoyaki",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().build()))
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 1), 1.0F).build()))
-                    .SetItemAnimation(UseAnim.DRINK).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> VIENNA_COFFEE = ITEMS.register("vienna_coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).alwaysEdible().build()))
-                    .SetItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> PUDDING = ITEMS.register("pudding",
             () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
@@ -59,19 +59,19 @@ public class ModdedItemCore {
 
     public static final DeferredItem<Item> TRANSFORM_ONE_SHOT = ITEMS.register("transform_one_shot",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 3), 1.0F).build()))
-                    .SetItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> MILK_BOTTLE = ITEMS.register("milk_bottle",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 500, 4), 1.0F).build()))
-                    .SetItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> PUZZLE_PIECE = ITEMS.register("puzzle_piece",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(0).fast().saturationModifier(0f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 40, 2), 1.0F).build()))
-                    .HasHoverTex().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useHoverTex().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIYAKI = ITEMS.register("taiyaki",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(1.2f).alwaysEdible().build()))
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DONUT = ITEMS.register("donut",
@@ -79,11 +79,11 @@ public class ModdedItemCore {
 
     public static final DeferredItem<Item> MAYO = ITEMS.register("mayo",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
-                    .SetItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> MAYO_DONUT = ITEMS.register("mayo_donut",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CANDY_WRAPPER = ITEMS.register("candy_wrapper",
@@ -108,10 +108,10 @@ public class ModdedItemCore {
             () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> DANGO = ITEMS.register("dango",
-            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> CORN_SNACK = ITEMS.register("corn_snack",
-            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BASE_SWORD = ITEMS.register("base_sword",
@@ -121,19 +121,19 @@ public class ModdedItemCore {
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> GENERIC_RIDER_CASE = ITEMS.register("rider_case",
-            () -> new RiderCaseItem().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new RiderCaseItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "shocker_combatman", "shocker_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
-                    .hasSD().setShowFace().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .hasSD().setShowFace().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CARD_WARRIOR_KAMEN_RIDER_MANGA = ITEMS.register("card_warrior_kamen_rider_manga",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM).KeepItem());
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM).keepItem());
 
 
     public static final DeferredItem<Item> DRAGREDER = ITEMS.register("dragreder",

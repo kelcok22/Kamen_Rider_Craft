@@ -24,7 +24,7 @@ public class ShinIchigoRiderItems {
 
 
     public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.register("prana_infused_rider_circuit",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE = ITEMS.register("shin_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_ichigo","shin_typhoon_belt",
@@ -37,7 +37,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2 = ITEMS.register("shin_typhoon_core2",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_nigo","shin_typhoon_belt2",
@@ -50,7 +50,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().model_has_different_name("shin_typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("shin_typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2_1 = ITEMS.register("shin_typhoon_core_2_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_2_1","shin_typhoon_belt2",
@@ -63,7 +63,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().model_has_different_name("shin_typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("shin_typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ULTIMATE_HALF_TYPHOON_CORE = ITEMS.register("ultimate_half_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_no_0","ultimate_half_typhoon_belt",
@@ -76,7 +76,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().changeModel("shin_no_0.geo.json").hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.isGlowing().changeModel("shin_no_0.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",

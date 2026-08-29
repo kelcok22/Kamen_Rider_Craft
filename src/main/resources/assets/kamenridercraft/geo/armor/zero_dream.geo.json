@@ -20,8 +20,8 @@
 					"parent": "bipedHead",
 					"pivot": [0, 24, 0],
 					"cubes": [
-						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.9, "uv": [0, 0]},
-						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [0, 16]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 1, "uv": [0, 0]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.6, "uv": [0, 16]},
 						{"origin": [3, 30.5, -6], "size": [0, 3, 3], "pivot": [3, 32, -4.5], "rotation": [-20, 5, -11], "uv": [0, -2]},
 						{"origin": [4, 30.5, -6], "size": [0, 3, 3], "pivot": [4, 32, -4.5], "rotation": [-28, -42, 11], "uv": [0, -2]}
 					]

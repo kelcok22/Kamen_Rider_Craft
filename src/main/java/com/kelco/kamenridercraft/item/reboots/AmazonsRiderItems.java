@@ -24,7 +24,7 @@ public class AmazonsRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_CELL_VIAL = ITEMS.register("amazon_cell_vial",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).changeKeptItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> OMEGA_AMAZON_CELL_VIAL = ITEMS.register("omega_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_omega","blank",
@@ -37,7 +37,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("amazon_sigma.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
+            }.changeModel("amazon_sigma.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 5).changeKeptItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> ALPHA_AMAZON_CELL_VIAL = ITEMS.register("alpha_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_alpha","blank",
@@ -50,7 +50,7 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("amazon_alpha.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 5).KeepDifItem(EMPTY_VIAL.get()));
+            }.changeModel("amazon_alpha.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 5).changeKeptItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> SIGMA_AMAZON_CELL_VIAL = ITEMS.register("sigma_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_sigma","blank",
@@ -63,10 +63,10 @@ public class AmazonsRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("amazon_sigma.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 2).KeepDifItem(EMPTY_VIAL.get()));
+            }.changeModel("amazon_sigma.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 2).changeKeptItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> NEO_AMAZON_CELL_VIAL = ITEMS.register("neo_amazon_cell_vial",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 1).KeepDifItem(EMPTY_VIAL.get()));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellMutator.AMAZON_CELL, 1).changeKeptItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> CONDORER_CORE_ALPHA = ITEMS.register("condorer_core_alpha",
             () -> new RiderFormChangeItem(new Item.Properties(),"","amazon_alpha","amazons_driver_alpha_belt",

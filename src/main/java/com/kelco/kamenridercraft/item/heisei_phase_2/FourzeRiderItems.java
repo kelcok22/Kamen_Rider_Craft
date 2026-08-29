@@ -62,7 +62,7 @@ public class FourzeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 7, 0, 0, 0, 0.05);
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_ELEK_STATES = ITEMS.register("fourze_elekstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_elek","fourze","fourze_driver_belt",
@@ -79,7 +79,7 @@ public class FourzeRiderItems {
 					player.level().addFreshEntity(thunder);
 
 				}
-			}.isGold().changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.isGold().changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_FIRE_STATES = ITEMS.register("fourze_firestates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fire","fourze","fourze_driver_belt",
@@ -92,7 +92,7 @@ public class FourzeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_MAGNET_STATES = ITEMS.register("fourze_magnetstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_magnet","fourze","fourze_driver_belt",
@@ -108,7 +108,7 @@ public class FourzeRiderItems {
 							player.getZ(), 50, 0, 0, 0, 0.1);
 
 				}
-			}.setSlotOneAbility("cannon", 1).changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.setSlotOneAbility("cannon", 1).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cosmic","fourze","fourze_driver_belt",
@@ -123,7 +123,7 @@ public class FourzeRiderItems {
 							player.getZ(), 300, 0, 0, 0, 0.1);
 
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rocket","fourze","fourze_driver_belt",
@@ -139,7 +139,7 @@ public class FourzeRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.05);
 
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_LAUNCHER_STATES = ITEMS.register("fourze_launcherstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_launcher","fourze","fourze_driver_belt",
@@ -155,7 +155,7 @@ public class FourzeRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.05);
 
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_FUSION_STATES = ITEMS.register("fourze_meteor_fusionstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_meteor_fusion","fourze","fourze_driver_belt",
@@ -172,7 +172,7 @@ public class FourzeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 150, 0, 0, 0, 0.05);
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_METEOR_NADESHIKO_FUSION_STATES = ITEMS.register("fourze_meteor_nadeshiko_fusionstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_meteor_nadeshiko_fusion","fourze","fourze_driver_belt",
@@ -194,7 +194,7 @@ public class FourzeRiderItems {
 
 				}
 			}
-					.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+					.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> FOURZE_ROCKET_DRILL_STATES = ITEMS.register("fourze_rocketdrillstates",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rocket_drill","fourze","fourze_driver_belt",
@@ -210,25 +210,25 @@ public class FourzeRiderItems {
 							player.getZ(), 100, 0, 0, 0, 0.05);
 
 				}
-			}.changeSlot(5).model_has_different_name("astroswitch").has_basic_model());
+			}.changeSlot(5).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> BLANK_CIRCLE_ASTROSWITCH = ITEMS.register("circle_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false))
-					.model_has_different_name("astroswitch").has_basic_model());
+					.setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> BLANK_CROSS_ASTROSWITCH = ITEMS.register("cross_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt")
-					.changeSlot(2).model_has_different_name("astroswitch").has_basic_model());
+					.changeSlot(2).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> BLANK_TRIANGLE_ASTROSWITCH = ITEMS.register("triangle_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt")
-					.changeSlot(3).model_has_different_name("astroswitch").has_basic_model());
+					.changeSlot(3).setModelName("astroswitch").useBasicModel());
 
 	public static final DeferredItem<Item> BLANK_SQUARE_ASTROSWITCH = ITEMS.register("square_astroswitch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt")
-					.changeSlot(4).model_has_different_name("astroswitch").has_basic_model());
+					.changeSlot(4).setModelName("astroswitch").useBasicModel());
 
 
 	public static final DeferredItem<Item> NADESHIKO_ROCKET_ASTROSWITCH = ITEMS.register("rocket_nadeshiko_switch",
@@ -238,7 +238,7 @@ public class FourzeRiderItems {
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)
 					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)
 					,new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false))
-					.isGlowing().model_has_different_name("rocket_switch").has_basic_model());
+					.isGlowing().setModelName("rocket_switch").useBasicModel());
 
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rocket_module","fourze","fourze_driver_belt"
@@ -539,7 +539,7 @@ public class FourzeRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fusion_module","fourze","fourze_driver_belt",
 					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false))
 					.changeSlot(4).resetFormToBase().alsoChange5thSlot(FOURZE_FUSION_STATES.get())
-					.model_has_different_name("fusion_switch").has_basic_model());
+					.setModelName("fusion_switch").useBasicModel());
 
 	public static final DeferredItem<Item> FUSION_ASTROSWITCH = ITEMS.register("fusion_switch",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_fusion_nadeshiko_module","fourze","fourze_driver_belt",
@@ -736,7 +736,7 @@ public class FourzeRiderItems {
 
 
 	public static final DeferredItem<Item> ASTROSWITCH_CASE = ITEMS.register("astroswitch_case",
-			() -> new AstroswitchCaseItem().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
+			() -> new AstroswitchCaseItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
 
 

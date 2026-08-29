@@ -37,7 +37,7 @@ public class DecadeRiderItems {
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/decade")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_CAMERA = ITEMS.register("decade_camera",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).KeepItem());
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM).keepItem());
 
 	public static final DeferredItem<Item> BLANK_CARD = ITEMS.register("blank_card",
 			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_card")).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
@@ -187,7 +187,7 @@ public class DecadeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().has_basic_model().model_has_different_name("diend_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.IsBeltGlowing().useBasicModel().setModelName("diend_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_CARD_POWER_UP = ITEMS.register("diend_power_up_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","diend","diend_belt",
@@ -651,7 +651,7 @@ public class DecadeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("kuuga_growing_card"));
+			}.IsBeltGlowing().isGlowing().useBasicModel().setModelName("kuuga_growing_card"));
 
 	public static final DeferredItem<Item> KUUGA_GROWING_CARD = ITEMS.register("kuuga_growing_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_growing","decade","decadriver_belt",
@@ -1689,7 +1689,7 @@ public class DecadeRiderItems {
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}
 			}.hasStaticWings().isGlowing().addCompatibilityList(new String[] {"neo_decade"}).changeRiderName("decade")
-					.IsBeltGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+					.IsBeltGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KUUGA_BALL = ITEMS.register("kuuga_ball",
@@ -1701,7 +1701,7 @@ public class DecadeRiderItems {
 							player.getX(), player.getY(),
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.isBike().isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.isBike().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHALICE_FINAL_FORM_RIDE = ITEMS.register("final_form_ride_chalice_choco",
             () -> new RiderFormChangeItem(new Item.Properties(),"_final_form_ride","chalice","blank",
@@ -1714,7 +1714,7 @@ public class DecadeRiderItems {
                             player.getX(), player.getY(),
                             player.getZ(), 200, 0, 0, 0, 1);
                 }
-            }.hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+            }.hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
@@ -1881,7 +1881,7 @@ public class DecadeRiderItems {
 					.addItem(AmazonRiderItems.GAGA_ARMLET.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GACKT_CARD = ITEMS.register("gackt_card",
-			() -> new BaseItem(new Item.Properties()).KeepItem().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).keepItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

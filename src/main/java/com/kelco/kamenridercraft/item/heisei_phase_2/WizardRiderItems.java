@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
@@ -25,7 +24,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -35,8 +33,6 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 public class WizardRiderItems {
 
@@ -664,7 +660,7 @@ public class WizardRiderItems {
 
 	public static final DeferredItem<Item> BIG_WIZARD_RING_COLOR_VER = ITEMS.register("big_ring_color_ver",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.BIG, 500,4,true,true))
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMALL_WIZARD_RING = ITEMS.register("small_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.SMALL, 500,20,true,true))
@@ -805,56 +801,56 @@ public class WizardRiderItems {
 
 	public static final DeferredItem<Item> FLAME_WIZARD_RING_COLOR_VER = ITEMS.register("flame_ring_color_ver",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 500,0,true,true))
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING_COLOR_VER = ITEMS.register("water_ring_color_ver",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.WATER_BREATHING, 500,0,true,true))
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_WIZARD_RING = ITEMS.register("kuuga_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KuugaRiderItems.ARCLE.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KuugaRiderItems.ARCLE.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_WIZARD_RING = ITEMS.register("agito_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) AgitoRiderItems.ALTERING.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) AgitoRiderItems.ALTERING.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUKI_WIZARD_RING = ITEMS.register("ryuki_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) RyukiRiderItems.RYUKIDRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) RyukiRiderItems.RYUKIDRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_WIZARD_RING = ITEMS.register("faiz_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FaizRiderItems.FAIZ_DRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FaizRiderItems.FAIZ_DRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_WIZARD_RING = ITEMS.register("blade_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) BladeRiderItems.BLAYBUCKLE.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) BladeRiderItems.BLAYBUCKLE.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_WIZARD_RING = ITEMS.register("hibiki_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) HibikiRiderItems.HIBIKIDRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) HibikiRiderItems.HIBIKIDRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_WIZARD_RING = ITEMS.register("kabuto_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KabutoRiderItems.KABUTO_RIDER_BELT.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KabutoRiderItems.KABUTO_RIDER_BELT.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_WIZARD_RING = ITEMS.register("den_o_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DenORiderItems.DEN_O_BELT.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DenORiderItems.DEN_O_BELT.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVA_WIZARD_RING = ITEMS.register("kiva_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KivaRiderItems.KIVAT_BELT.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KivaRiderItems.KIVAT_BELT.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_WIZARD_RING = ITEMS.register("decade_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DecadeRiderItems.DECADRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DecadeRiderItems.DECADRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUBLE_WIZARD_RING = ITEMS.register("double_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.WDRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.WDRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_WIZARD_RING = ITEMS.register("accel_ring",
 			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.ACCELDRIVER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_WIZARD_RING = ITEMS.register("ooo_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.OOODRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.OOODRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_WIZARD_RING = ITEMS.register("birth_ring",
 			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.BIRTH_DRIVER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_WIZARD_RING = ITEMS.register("fourze_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FourzeRiderItems.FOURZE_DRIVER.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FourzeRiderItems.FOURZE_DRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> FOURZE_ENGAGE_WIZARD_RING = ITEMS.register("fourze_engage_ring",
@@ -998,7 +994,7 @@ public class WizardRiderItems {
 					.overrideBeltText("uzai_belt_belt").hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
-			() -> new BaseItem(new Item.Properties()).KeepItem().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).keepItem().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN = ITEMS.register("wizarswordgun",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)

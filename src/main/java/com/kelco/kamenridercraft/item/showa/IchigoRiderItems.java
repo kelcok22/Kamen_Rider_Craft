@@ -4,7 +4,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -39,7 +38,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).isGlowing().has_basic_model().model_has_different_name("typhoon_core"));
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).isGlowing().useBasicModel().setModelName("typhoon_core"));
 
     public static final DeferredItem<Item> TYPHOON_CORE = ITEMS.register("typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ichigo","typhoon_belt",
@@ -181,7 +180,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).hasSD().changeModel("ichigo.geo.json").isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("flipped_rider_kick", 1).hasSD().changeModel("ichigo.geo.json").isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TAKI_VAMPIRE_CORE = ITEMS.register("taki_vampire_core",
@@ -189,7 +188,7 @@ public class IchigoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false))
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_CORE = ITEMS.register("gaia_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","gaia","gaia_belt_belt",
@@ -202,7 +201,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CYBORG_SUPER_ENERGY_CONVERTER_CORE = ITEMS.register("cyborg_super_energy_converter_core",
@@ -219,7 +218,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().IsBeltGlowing().setShowFace().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().IsBeltGlowing().setShowFace().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHOCKER_RIDER_TYPHOON_CORE = ITEMS.register("shocker_rider_typhoon_core",
@@ -248,7 +247,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> NOPHOON_CORE = ITEMS.register("nophoon_core",
@@ -363,7 +362,7 @@ public class IchigoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER3_VS_THE_DEMON_OF_GENERAL_BLACK = ITEMS.register("rider3_vs_the_demon_of_general_black",
             () -> new RiderFormChangeItem(new Item.Properties(),"_manga","sango","typhoon_belt_original",

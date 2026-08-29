@@ -32,7 +32,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().hasCape().model_has_different_name("ridegg_1").has_basic_model());
+            }.isGlowing().IsBeltGlowing().hasCape().setModelName("ridegg_1").useBasicModel());
 
     public static final DeferredItem<Item> RIDEGG_1 = ITEMS.register("ridegg_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"","my_th","my_th_driver_belt",
@@ -44,7 +44,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addAlternative(RIDEGG_1_RID.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addAlternative(RIDEGG_1_RID.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
             () -> new RiderFormChangeItem(new Item.Properties(),"","maou","maou_driver_belt",
@@ -56,7 +56,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
 
     public static final DeferredItem<Item> HARINEZUMI_SEED_X_EGGS = ITEMS.register("harinezumi_seed_x_egg",
@@ -70,7 +70,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_HELMET = ITEMS.register("my_th_head",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));

@@ -171,10 +171,10 @@ public class KivaRiderItems {
 			}.IsBeltGlowing().isGlowing().hasCape().addNeedItem(WAKE_UP_FUESTLE.get()).addNeedItem(GARULU_FUESTLE.get()).addNeedItem(BASSHAA_FUESTLE.get()).addNeedItem(DOGGA_FUESTLE.get()));
 
 	public static final DeferredItem<Item> DORAN_FUESTLE = ITEMS.register("doranfuestle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> BUROON_FUESTLE = ITEMS.register("buroonfuestle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> TATSULOT = ITEMS.register("tatsulot",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_emperor","kiva","kivat_belt_e",
@@ -242,13 +242,13 @@ public class KivaRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAKE_GARULU_FUESTLE = ITEMS.register("fakegarulufuestle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> FAKE_BASSHAA_FUESTLE = ITEMS.register("fakebasshaafuestle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> FAKE_DOGGA_FUESTLE = ITEMS.register("fakedoggafuestle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> RISER_FUESTLE = ITEMS.register("risingfuestle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_rising","ixa","ixa_belt",
@@ -324,7 +324,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).has_basic_model().model_has_different_name("keyfuestle"));
+			}.isGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).useBasicModel().setModelName("keyfuestle"));
 
 
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
@@ -420,7 +420,7 @@ public class KivaRiderItems {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.has_basic_model().model_has_different_name("moose_fangire_belt"));
+			}.useBasicModel().setModelName("moose_fangire_belt"));
 
 	public static final DeferredItem<Item> KIVAHELMET = ITEMS.register("kivahead",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
@@ -628,16 +628,16 @@ public class KivaRiderItems {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> BLOODY_ROSE = ITEMS.register("bloody_rose",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARULU_STATUE = ITEMS.register("garulu_statue",
-			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.GARULU).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.GARULU).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> BASSHAA_STATUE = ITEMS.register("basshaa_statue",
-			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.BASSHAA).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.BASSHAA).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static final DeferredItem<Item> DOGGA_STATUE = ITEMS.register("dogga_statue",
-			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.DOGGA).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).has_basic_model());
+			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.DOGGA).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).useBasicModel());
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

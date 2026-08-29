@@ -33,7 +33,6 @@ import java.util.List;
 import java.util.Objects;
 
 public class RiderFormChangeItem extends BaseItem {
-
     private String formName;
     private int slot = 1;
     private int offhandSlot = 10;

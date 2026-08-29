@@ -43,7 +43,7 @@ public class ZORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM).KeepItem());
+            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZO_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item>  NEONOID_CORE = ITEMS.register("neonoid_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","doras","doras_core",

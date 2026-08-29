@@ -68,11 +68,11 @@ public class SkyriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).has_basic_model());
+            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","gangan_g","gangan_g_belt_belt")
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  SKYRIDERHELMET = ITEMS.register("skyriderhead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));

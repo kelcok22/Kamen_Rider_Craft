@@ -261,7 +261,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("gold_spino_vistamp"));
+			}.isGlowing().useBasicModel().setModelName("gold_spino_vistamp"));
 
 
 	public static final DeferredItem<Item> GOLD_SPINO_VISTAMP = ITEMS.register("gold_spino_vistamp",
@@ -600,7 +600,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().model_has_different_name("kirin_vistamp").has_basic_model());
+			}.isGlowing().setModelName("kirin_vistamp").useBasicModel());
 
 	public static final DeferredItem<Item> KIRIN_VISTAMP = ITEMS.register("kirin_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kirin","revi","revice_driver_belt_ki",
@@ -624,7 +624,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().model_has_different_name("niwatori_vistamp").has_basic_model());
+			}.isGlowing().setModelName("niwatori_vistamp").useBasicModel());
 
 	public static final DeferredItem<Item> NIWATORI_VISTAMP = ITEMS.register("niwatori_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_niwatori","revi","revice_driver_belt_ni",
@@ -648,7 +648,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isBike().isGlowing().model_has_different_name("niwatori_vistamp").has_basic_model());
+			}.isBike().isGlowing().setModelName("niwatori_vistamp").useBasicModel());
 
 	public static final DeferredItem<Item> FUNKOROGASHI_VISTAMP = ITEMS.register("funkorogashi_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_funkorogashi","revi","revice_driver_belt_fu",
@@ -866,7 +866,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("cobra_vistamp"));
+			}.isGlowing().useBasicModel().setModelName("cobra_vistamp"));
 
 	public static final DeferredItem<Item> COBRA_VISTAMP = ITEMS.register("cobra_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","jeanne","libera_driver_belt",
@@ -1096,7 +1096,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("cobra_vistamp"));
+			}.isGlowing().useBasicModel().setModelName("cobra_vistamp"));
 
 	public static final DeferredItem<Item> TRI_CHIMERA_VISTAMP = ITEMS.register("tri_chimera_vistamp",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","daimon","chimera_driver_daimon_belt",
@@ -1295,7 +1295,7 @@ public class ReviceRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().model_has_different_name("jackal_vistamp").addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
+			}.isGlowing().useBasicModel().setModelName("jackal_vistamp").addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> OBLIVION_STAMP = ITEMS.register("oblivion_stamp",
@@ -1353,7 +1353,7 @@ public class ReviceRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIFF_STAMP = ITEMS.register("giff_stamp",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).KeepItem());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).keepItem());
 
 	public static final DeferredItem<Item> DIABLO_STAMP = ITEMS.register("diablo_stamp",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM));

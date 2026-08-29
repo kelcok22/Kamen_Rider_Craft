@@ -41,7 +41,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeModel("dan_o.geo.json").has_basic_model().model_has_different_name("rider_ticket"));
+			}.changeModel("dan_o.geo.json").useBasicModel().setModelName("rider_ticket"));
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEW_DEN_O = ITEMS.register("rider_ticket_new_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_plat","new_den_o","new_den_o_belt_p",
@@ -77,7 +77,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.has_basic_model().model_has_different_name("rider_ticket_sword"));
+			}.useBasicModel().setModelName("rider_ticket_sword"));
 
 	public static final DeferredItem<Item> RIDER_TICKET_SWORD = ITEMS.register("rider_ticket_sword",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","den_o","den_o_belt",
@@ -150,7 +150,7 @@ public class DenORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.isGlowing().model_has_different_name("ktaros"));
+            }.isGlowing().setModelName("ktaros"));
 
     public static final DeferredItem<Item> KTAROS_PUNCH = ITEMS.register("ktaros_punch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_punch","den_o","den_o_belt_c",
@@ -175,7 +175,7 @@ public class DenORiderItems {
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
             }.isGlowing().addNeedForm(KTAROS_CLIMAX.get(), 1).addAlternative(KTAROS_CLIMAX.get())
-                    .model_has_different_name("ktaros"));
+                    .setModelName("ktaros"));
 
 	public static final DeferredItem<Item> KTAROS = ITEMS.register("ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_kick","den_o","den_o_belt_c",
@@ -200,7 +200,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 25, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).model_has_different_name("ktaros").addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).setModelName("ktaros").addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_KTAROS = ITEMS.register("super_ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_super_climax","den_o","den_o_belt_c",
@@ -473,7 +473,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeBeltModel("geo/belts/lv_1_belt.geo.json").has_basic_model().model_has_different_name("rider_ticket_sword"));
+			}.changeBeltModel("geo/belts/lv_1_belt.geo.json").useBasicModel().setModelName("rider_ticket_sword"));
 
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",

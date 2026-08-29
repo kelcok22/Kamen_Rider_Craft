@@ -132,7 +132,7 @@ public class AgitoRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().has_basic_model().model_has_different_name("another_agito").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().useBasicModel().setModelName("another_agito").addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
@@ -340,7 +340,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasFlyingWings("g6.geo.json").isGlowing().IsBeltGlowing().has_basic_model().addToList(GSystemChipProgrammer.G_CHIP, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+            }.hasFlyingWings("g6.geo.json").isGlowing().IsBeltGlowing().useBasicModel().addToList(GSystemChipProgrammer.G_CHIP, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> G7_CHIP = ITEMS.register("g7",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"","g7","g_buckle_belt_7",
@@ -357,7 +357,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",

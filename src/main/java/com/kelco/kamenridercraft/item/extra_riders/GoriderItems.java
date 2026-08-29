@@ -34,7 +34,7 @@ public class GoriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).KeepItem());
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> AORIDER_CARD = ITEMS.register("aorider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ao_rider","typhoon_belt_aorider",
@@ -48,7 +48,7 @@ public class GoriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).KeepItem());
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> KIRIDER_CARD = ITEMS.register("kirider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ki_rider","typhoon_belt_kirider",
@@ -62,7 +62,7 @@ public class GoriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).KeepItem());
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> MOMORIDER_CARD = ITEMS.register("momorider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),"","momo_rider","typhoon_belt_momorider",
@@ -76,7 +76,7 @@ public class GoriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).KeepItem());
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> MIDORIDER_CARD = ITEMS.register("midorider_card",
             () -> new RiderFormChangeItem(new Item.Properties(),"","mido_rider","typhoon_belt_midorider",
@@ -90,7 +90,7 @@ public class GoriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).KeepItem());
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GORIDER_TAB_ITEM).keepItem());
 
 
     public static final DeferredItem<Item> AKARIDERHELMET = ITEMS.register("akariderhead",

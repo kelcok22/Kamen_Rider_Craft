@@ -33,7 +33,7 @@ public class GhostRiderItems {
 			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ghost")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANK_GHOST_EYECON = ITEMS.register("blank_ghost_eyecon",
-			() -> new BlankGhostEyeconItem(new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			() -> new BlankGhostEyeconItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> ORE_DAMASHII = ITEMS.register("ore_damashii",
 			() -> new RiderFormChangeItem(new Item.Properties(),"ore_damashii","ghost","ghostdriver_belt",
@@ -1206,7 +1206,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon"));
+			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).useBasicModel().setModelName("transform_gamma_eyecon"));
 
 	public static final DeferredItem<Item> TRANSFORM_GAMMA_EYECON = ITEMS.register("transform_gamma_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gamma_superior","gamma_superior_belt",
@@ -1234,7 +1234,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).has_basic_model().model_has_different_name("transform_gamma_eyecon").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
+			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).useBasicModel().setModelName("transform_gamma_eyecon").addToList(KamenRiderCraftCore.CreativeTabRegistry.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_knife_damashii","gamma_superior","gamma_superior_belt_knife_damashii",

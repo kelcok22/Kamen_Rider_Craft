@@ -44,7 +44,7 @@ public class ShinRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasSD().changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM).KeepItem());
+            }.hasSD().changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_3_CELL_SAMPLE = ITEMS.register("cyborg_soldier_level_3_cell_sample",
             () -> new RiderFormChangeItem(new Item.Properties(),"","cyborg_soldier_level_3","blank",
@@ -59,7 +59,7 @@ public class ShinRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM).KeepDifItem(AmazonsRiderItems.EMPTY_VIAL.get()));
+            }.changeModel("ichigo.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_TAB_ITEM).changeKeptItem(AmazonsRiderItems.EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item>  CYBORG_SOLDIER_LEVEL_2_CORE = ITEMS.register("cyborg_soldier_level_2_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","cyborg_soldier_level_2","blank",

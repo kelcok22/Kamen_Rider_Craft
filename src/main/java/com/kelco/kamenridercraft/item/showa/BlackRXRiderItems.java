@@ -113,7 +113,7 @@ public class BlackRXRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().has_basic_model().model_has_different_name("green_king_stone").addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
+            }.isGlowing().useBasicModel().setModelName("green_king_stone").addToList(KamenRiderCraftCore.CreativeTabRegistry.RX_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RXHELMET = ITEMS.register("rxhead",

@@ -36,7 +36,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_HARUMA = ITEMS.register("chaos_ring_haruma",
             () -> new RiderFormChangeItem(new Item.Properties(),"","haruma","chaos_driver_haruma_belt",
@@ -51,7 +51,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_SHION = ITEMS.register("chaos_ring_shion",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shion","chaos_driver_shion_belt",
@@ -63,7 +63,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_JIGEN = ITEMS.register("chaos_ring_jigen",
             () -> new RiderFormChangeItem(new Item.Properties(),"","jigen","chaos_driver_jigen_belt",
@@ -78,7 +78,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().changeModel("haruma.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().changeModel("haruma.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_ARAKI = ITEMS.register("chaos_ring_araki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","araki","chaos_driver_araki_belt",
@@ -93,7 +93,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_KAMUI = ITEMS.register("chaos_ring_kamui",
             () -> new RiderFormChangeItem(new Item.Properties(),"","kamui","chaos_driver_kamui_belt",
@@ -108,7 +108,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_AGATA = ITEMS.register("chaos_ring_agata",
             () -> new RiderFormChangeItem(new Item.Properties(),"","agata","chaos_driver_agata_belt",
@@ -120,7 +120,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.IsBeltGlowing().setShowFace().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> CHAOS_RING_LOQ_Q = ITEMS.register("chaos_ring_loq_q",
             () -> new RiderFormChangeItem(new Item.Properties(),"_q","loq","chaos_driver_loq_belt",
@@ -135,7 +135,7 @@ public class RideKamensItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.setShowFace().isGlowing().IsBeltGlowing().has_basic_model().model_has_different_name("chaos_ring_loq"));
+            }.setShowFace().isGlowing().IsBeltGlowing().useBasicModel().setModelName("chaos_ring_loq"));
 
     public static final DeferredItem<Item> CHAOS_RING_LOQ = ITEMS.register("chaos_ring_loq",
             () -> new RiderFormChangeItem(new Item.Properties(),"","loq","chaos_driver_loq_belt",
@@ -167,7 +167,7 @@ public class RideKamensItems {
                         }
                     }
                 }
-            }.addSwitchForm(RideKamensItems.CHAOS_RING_LOQ_Q.get()).setShowFace().isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).KeepItem());
+            }.addSwitchForm(RideKamensItems.CHAOS_RING_LOQ_Q.get()).setShowFace().isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM).keepItem());
 
 
     public static final DeferredItem<Item> RIDE_KAMENS_HELMET = ITEMS.register("ride_kamens_head",
@@ -218,7 +218,7 @@ public class RideKamensItems {
 
     public static final DeferredItem<Item> ENERGY_DRINK = ITEMS.register("energy_drink",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
-                    .SetItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

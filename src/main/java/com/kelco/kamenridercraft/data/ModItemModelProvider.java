@@ -34,7 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         for (BaseItem baseItem : BASIC_ITEM_MODEL) {
             ResourceLocation item = Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(baseItem));
-            String item2 = baseItem.Model_Name == null ? item.getPath() : baseItem.Model_Name;
+            String item2 = baseItem.modelName == null ? item.getPath() : baseItem.modelName;
             this.getBuilder(item.toString()).parent(new ModelFile.UncheckedModelFile("item/generated")).texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), "item/" + item2));
 
         }

@@ -15,25 +15,24 @@ import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = KamenRiderCraftCore.MOD_ID)
 public class DataGenerators {
-@SubscribeEvent
+    @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
-
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-      //  generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-      //          List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
+        //  generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
+        //          List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
-       BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
-       generator.addProvider(event.includeServer(), blockTagsProvider);
+        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTagsProvider);
 
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
 
-    generator.addProvider(event.includeClient(), new ModGlobalLootModifiersProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeClient(), new ModGlobalLootModifiersProvider(packOutput, lookupProvider));
 
-    generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
     }
 }

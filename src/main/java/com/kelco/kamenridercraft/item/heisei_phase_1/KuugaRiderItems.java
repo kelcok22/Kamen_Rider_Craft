@@ -191,7 +191,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_RISING_ULTIMATE = ITEMS.register("kuuga_rising_ultimate",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_rising_ultimate","kuuga","arcle_belt_ru",
@@ -223,7 +223,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGold().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).isGold().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_SUPER_RISING_ULTIMATE = ITEMS.register("kuuga_super_rising_ultimate",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_super_rising_ultimate","kuuga","arcle_belt_u",
@@ -257,7 +257,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().has_basic_model().model_has_different_name("kuuga_amazing_mighty").addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().useBasicModel().setModelName("kuuga_amazing_mighty").addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_TOUMA = ITEMS.register("kuuga_touma",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_touma","kuuga","arcle_belt",
@@ -272,7 +272,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().IsBeltGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().IsBeltGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_MANGA = ITEMS.register("kuuga_manga",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","kuuga_manga","arcle_belt_manga",
@@ -300,7 +300,7 @@ public class KuugaRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_punch", 1).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+			}.setSlotOneAbility("rider_punch", 1).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> KUUGAHELMET = ITEMS.register("kuugahead",

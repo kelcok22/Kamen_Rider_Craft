@@ -452,7 +452,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("clock_up", 1).isGlowing().changeModel("gatack_hyper.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem) GATACK_HYPER_ZECTER.get()).has_basic_model().model_has_different_name("hyper_zecter"));
+            }.setSlotOneAbility("clock_up", 1).isGlowing().changeModel("gatack_hyper.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem) GATACK_HYPER_ZECTER.get()).useBasicModel().setModelName("hyper_zecter"));
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
@@ -469,7 +469,7 @@ public class KabutoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 500, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("clock_up", 1).hasFlyingWings("kabuto_hyper_clock_up.geo.json").isGlowing().hasTimeout(400, 1200, (RiderFormChangeItem) HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).has_basic_model().model_has_different_name("hyper_zecter"));
+            }.setSlotOneAbility("clock_up", 1).hasFlyingWings("kabuto_hyper_clock_up.geo.json").isGlowing().hasTimeout(400, 1200, (RiderFormChangeItem) HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).useBasicModel().setModelName("hyper_zecter"));
 
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",
@@ -488,7 +488,7 @@ public class KabutoRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "chophopper", "chophopper_zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false))
-                    .has_basic_model().model_has_different_name("kickhopper_zecter"));
+                    .useBasicModel().setModelName("kickhopper_zecter"));
 
 
     public static final DeferredItem<Item> KABUTOHELMET = ITEMS.register("kabutohead",

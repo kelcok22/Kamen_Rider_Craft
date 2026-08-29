@@ -282,7 +282,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).changeSlot(2).model_has_different_name("gaim_logo").has_basic_model());
+                    .addCompatibilityList(Can_use_Jimber_Arms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> JIMBER_LEMON_ENERGY_LOCKSEED = ITEMS.register("jimber_lemon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_lemon_arms", "gaim", "sengoku_driver_belt",
@@ -297,7 +297,7 @@ public class GaimRiderItems {
                 }
             }
                     .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
-                    .model_has_different_name("lemon_energy_lockseed").has_basic_model());
+                    .setModelName("lemon_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> LEMON_ENERGY_LOCKSEED = ITEMS.register("lemon_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_lemon_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -327,7 +327,7 @@ public class GaimRiderItems {
                 }
             }
                     .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
-                    .model_has_different_name("cherry_energy_lockseed").has_basic_model());
+                    .setModelName("cherry_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> CHERRY_ENERGY_LOCKSEED = ITEMS.register("cherry_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_cherry_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -358,7 +358,7 @@ public class GaimRiderItems {
                 }
             }
                     .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
-                    .model_has_different_name("peach_energy_lockseed").has_basic_model());
+                    .setModelName("peach_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> PEACH_ENERGY_LOCKSEED = ITEMS.register("peach_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_peach_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -391,7 +391,7 @@ public class GaimRiderItems {
                 }
             }
                     .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
-                    .model_has_different_name("melon_energy_lockseed").has_basic_model());
+                    .setModelName("melon_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> MELON_ENERGY_LOCKSEED = ITEMS.register("melon_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_melon_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -439,7 +439,7 @@ public class GaimRiderItems {
                 }
             }
                     .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
-                    .model_has_different_name("dragon_fruits_energy_lockseed").has_basic_model());
+                    .setModelName("dragon_fruits_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("dragon_fruits_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_dragon_fruits_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -564,7 +564,7 @@ public class GaimRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.resetFormToBase().has_basic_model().model_has_different_name("helheim_fruit"));
+            }.resetFormToBase().useBasicModel().setModelName("helheim_fruit"));
 
     public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "yomotsu_heguri_arms", "ryugen", "sengoku_driver_belt",
@@ -714,7 +714,7 @@ public class GaimRiderItems {
                 }
             }
                     .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase()
-                    .model_has_different_name("forbidden_ringo_lockseed").has_basic_model());
+                    .setModelName("forbidden_ringo_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> FORBIBBEN_LOCKSEED = ITEMS.register("forbidden_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "baron_ringo_arms", "baron", "sengoku_driver_belt",
@@ -902,7 +902,7 @@ public class GaimRiderItems {
                     .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_BANANA_LOCKSEED = ITEMS.register("black_banana_lockseed",
-            () -> new CopyFormChangeItem(new Item.Properties(),BANANA_LOCKSEED.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+            () -> new CopyFormChangeItem(new Item.Properties(),BANANA_LOCKSEED.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DONGURI_LOCKSEED = ITEMS.register("proto_donguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_donguri_arms", "gaim", "sengoku_driver_belt",
@@ -988,7 +988,7 @@ public class GaimRiderItems {
 
                 }
             }.changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> DARK_LEMON_ENERGY_LOCKSEED = ITEMS.register("dark_lemon_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "jimbar_black_arms", "gaim", "sengoku_driver_belt",
@@ -1343,17 +1343,17 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SAKURA_HURRICANE = ITEMS.register("sakura_hurricane",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.SAKURA_HURRICANE)
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ROSE_ATTACKER = ITEMS.register("rose_attacker",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.ROSE_ATTACKER)
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DANDELINER = ITEMS.register("dandeliner",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> TULIP_HOPPER = ITEMS.register("tulip_hopper",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     /**
      * dandeliner
@@ -1377,7 +1377,7 @@ public class GaimRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.has_basic_model());
+            }.useBasicModel());
 
 
     public static final DeferredItem<Item> MEGAHEX_KIWAMI = ITEMS.register("megahex_kiwami",
@@ -1400,7 +1400,7 @@ public class GaimRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).has_basic_model().model_has_different_name("megahex_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+            }.addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).useBasicModel().setModelName("megahex_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",
@@ -1413,7 +1413,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_GAIM_CORE = ITEMS.register("basic_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GAIM = ITEMS.register("sengoku_driver_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gaim", ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS,
@@ -1443,7 +1443,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_BARON_CORE = ITEMS.register("basic_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "baron", "sengoku_driver_belt_baron",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BARON = ITEMS.register("sengoku_driver_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1452,7 +1452,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_RYUGEN_CORE = ITEMS.register("basic_ryugen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ryugen", "sengoku_driver_belt_ryugen",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_RYUGEN = ITEMS.register("sengoku_driver_ryugen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "ryugen", BUDOU_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1461,7 +1461,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_ZENGETSU_CORE = ITEMS.register("basic_zangetsu_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "zangetsu", "sengoku_driver_belt_zangetsu",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_ZENGETSU = ITEMS.register("sengoku_driver_zangetsu",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "zangetsu", MELON_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1470,7 +1470,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_GRIDON_CORE = ITEMS.register("basic_gridon_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gridon", "sengoku_driver_belt_gridon",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GRIDON = ITEMS.register("sengoku_driver_gridon",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gridon", DONGURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1479,7 +1479,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_KUROKAGE_CORE = ITEMS.register("basic_kurokage_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kurokage", "sengoku_driver_belt_kurokage",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KUROKAGE = ITEMS.register("sengoku_driver_kurokage",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage", MATSUBOKKURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1488,7 +1488,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_BRAVO_CORE = ITEMS.register("basic_bravo_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "bravo", "sengoku_driver_belt_bravo",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BRAVO = ITEMS.register("sengoku_driver_bravo",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "bravo", DURIAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1497,7 +1497,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_KNUCKLE_CORE = ITEMS.register("basic_knuckle_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "knuckle", "sengoku_driver_belt_knuckle",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KNUCKLE = ITEMS.register("sengoku_driver_knuckle",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "knuckle", KURUMI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1506,7 +1506,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_BUJIN_GAIM_CORE = ITEMS.register("basic_bujin_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "bujin_gaim", "sengoku_driver_belt_bujin_gaim",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BUJIN_GAIM = ITEMS.register("sengoku_driver_bujin_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "bujin_gaim", BLOOD_ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1515,7 +1515,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_FIFTEEN_CORE = ITEMS.register("basic_fifteen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fifteen", "sengoku_driver_belt_fifteen",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_FIFTEEN = ITEMS.register("sengoku_driver_fifteen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1524,7 +1524,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_MARS_CORE = ITEMS.register("basic_mars_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "mars", "sengoku_driver_belt_mars",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_MARS = ITEMS.register("sengoku_driver_mars",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "mars", GOLDEN_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1533,7 +1533,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_KAMURO_CORE = ITEMS.register("basic_kamuro_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kamuro", "sengoku_driver_belt_kamuro",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KAMURO = ITEMS.register("sengoku_driver_kamuro",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kamuro", SILVER_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1542,7 +1542,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_JAM_CORE = ITEMS.register("basic_jam_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "jam", "sengoku_driver_belt_jam",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_JAM = ITEMS.register("sengoku_driver_jam",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "jam", BLACK_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1551,7 +1551,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_KUROKAGE_TOOPERS_CORE = ITEMS.register("basic_kurokage_troopers_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kurokage_troopers", "sengoku_driver_belt_kurokage_trooper",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KUROKAGE_TOOPERS = ITEMS.register("sengoku_driver_kurokage_troopers",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage_troopers", MATSUBOKKURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1560,7 +1560,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_IDUNN_CORE = ITEMS.register("basic_idunn_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "idunn", "sengoku_driver_belt_idunn",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_IDUNN = ITEMS.register("sengoku_driver_idunn",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "idunn", FORBIBBEN_LOCKSEED_BASE, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1569,7 +1569,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_DUKE_CORE = ITEMS.register("basic_duke_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "duke_sengoku", "sengoku_driver_belt_duke",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_DUKE = ITEMS.register("sengoku_driver_duke",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "duke_sengoku", LEMON_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1578,7 +1578,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_BLACK_BARON_CORE = ITEMS.register("basic_black_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "black_baron", "sengoku_driver_belt_black_baron",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BLACK_BARON = ITEMS.register("sengoku_driver_black_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "black_baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1587,7 +1587,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_SAVER_CORE = ITEMS.register("basic_saver_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "saver", "sengoku_driver_belt_saver",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_SAVER = ITEMS.register("sengoku_driver_saver",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "saver", ZAKURO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1596,7 +1596,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_MAJA_CORE = ITEMS.register("basic_maja_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "maja", "sengoku_driver_belt_maja",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_MAJA = ITEMS.register("sengoku_driver_maja",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "maja", MAJA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1605,7 +1605,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_SYLPHI_CORE = ITEMS.register("basic_sylphi_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "sylphi", "sengoku_driver_belt_sylphi",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_SYLPHI = ITEMS.register("sengoku_driver_sylphi",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "sylphi", HELEIM_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1618,7 +1618,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_PROTO_GAIM_CORE = ITEMS.register("basic_proto_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_gaim", "sengoku_driver_belt_proto_gaim",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GAIM = ITEMS.register("sengoku_driver_proto_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_gaim", PROTO_ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1627,7 +1627,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_PROTO_BARON_CORE = ITEMS.register("basic_proto_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_baron", "sengoku_driver_belt_proto_baron",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_BARON = ITEMS.register("sengoku_driver_proto_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_baron", PROTO_BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1636,7 +1636,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_PROTO_RYUGEN_CORE = ITEMS.register("basic_proto_ryugen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_ryugen", "sengoku_driver_belt_proto_ryugen",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_RYUGEN = ITEMS.register("sengoku_driver_proto_ryugen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_ryugen", PROTO_BUDOU_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1645,7 +1645,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_PROTO_GRIDON_CORE = ITEMS.register("basic_proto_gridon_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_gridon", "sengoku_driver_belt_proto_gridon",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GRIDON = ITEMS.register("sengoku_driver_proto_gridon",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_gridon", PROTO_DONGURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1654,7 +1654,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_PROTO_BRAVO_CORE = ITEMS.register("basic_proto_bravo_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_bravo", "sengoku_driver_belt_proto_bravo",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_KUROKAGE = ITEMS.register("sengoku_driver_proto_bravo",
@@ -1669,7 +1669,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> GENESIS_CORE = ITEMS.register("genesis_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "duke", "genesis_driver_belt",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .model_has_different_name("gaim_logo").has_basic_model());
+                    .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> GENESIS_DRIVER_ZANGETSU_SHIN = ITEMS.register("genesis_driver_zangetsu_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "zangetsu_shin", MELON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
@@ -1865,7 +1865,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> HELHEIM_FRUIT = ITEMS.register("helheim_fruit",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 500, 2), 1.0F).build()))
-                    .HasHoverTex().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .useHoverTex().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {

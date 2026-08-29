@@ -53,7 +53,7 @@ public class BuildRiderItems {
 
 	public static final DeferredItem<Item> NEBULA_GAS_SAMPLE = ITEMS.register("nebula_gas_sample",
 			() -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(EffectCore.HAZARD_LEVEL, 500, 0), 1.0F).build()))
-					.SetItemAnimation(UseAnim.DRINK).KeepDifItem(AmazonsRiderItems.EMPTY_VIAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+					.setItemAnimation(UseAnim.DRINK).changeKeptItem(AmazonsRiderItems.EMPTY_VIAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FULL_BOTTLE= ITEMS.register("full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","","build_driver_belt")
@@ -136,7 +136,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.changeModel("default_wings_armor.geo.json").model_has_different_name("taka_full_bottle").has_basic_model());
+			}.changeModel("default_wings_armor.geo.json").setModelName("taka_full_bottle").useBasicModel());
 
 	public static final DeferredItem<Item> TAKA_FULL_BOTTLE = ITEMS.register("taka_full_bottle",
 			() -> new FullBottleItem(new Item.Properties(),"_taka","build","build_driver_belt",
@@ -268,7 +268,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.model_has_different_name("dragon_full_bottle").has_basic_model());
+			}.setModelName("dragon_full_bottle").useBasicModel());
 
 	public static final DeferredItem<Item> DRAGON_FULL_BOTTLE = ITEMS.register("dragon_full_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","cross_z","build_driver_belt_cross_z",
@@ -832,7 +832,7 @@ public class BuildRiderItems {
 			}.bestMatch(SCORPION_FULL_BOTTLE.get()).changeSlot(2).isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(FullbottlePurifier.FULLBOTTLE_PURIFIER));
 
 	public static final DeferredItem<Item> PANDORA_BOTTLE = ITEMS.register("pandora_bottle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(PandoraBox.PANDORA_BOTTLE).has_basic_model());
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM).addToList(PandoraBox.PANDORA_BOTTLE).useBasicModel());
 
 	public static final DeferredItem<Item> RABBIT_TANK_SPARKLING = ITEMS.register("rabbittank_sparkling_full_bottle",
 			() -> new FullBottleItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_sparkling","build","build_driver_belt",
@@ -887,7 +887,7 @@ public class BuildRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.alsoChange1stSlot(RABBIT_FULL_BOTTLE.get()).alsoChange2ndSlot(TANK_FULL_BOTTLE.get()).changeSlot(3)
-					.model_has_different_name("fullfull_rabbit_tank_bottle").has_basic_model());
+					.setModelName("fullfull_rabbit_tank_bottle").useBasicModel());
 
 	public static final DeferredItem<Item> FULLFULL_RABBIT_TANK_BOTTLE = ITEMS.register("fullfull_rabbit_tank_bottle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_rabbit","build","build_driver_belt",
@@ -1354,7 +1354,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).addNeedItemList(NEED_ITEM_EVOLTO).model_has_different_name("evol_trigger").has_basic_model());
+			}.addNeedItem(LAST_PANDORA_PANEL_BLACK.get()).addNeedItemList(NEED_ITEM_EVOLTO).setModelName("evol_trigger").useBasicModel());
 
 	public static final DeferredItem<Item> EVOL_TRIGGER = ITEMS.register("evol_trigger",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_black_hole","evol","evol_driver_belt_b",
@@ -1394,7 +1394,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.isGlowing().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			}.isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAD_ROGUE_BOTTLES = ITEMS.register("mad_rogue_bottles",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","mad_rogue","evol_driver_belt_mad_rogue",
@@ -1576,7 +1576,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedItemList(NEED_ITEM_BI_KAISER).model_has_different_name("gear_engine_red").has_basic_model());
+			}.isGlowing().addNeedItemList(NEED_ITEM_BI_KAISER).setModelName("gear_engine_red").useBasicModel());
 
 	public static final DeferredItem<Item> GEAR_ENGINE_RED = ITEMS.register("gear_engine_red",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_reverse","kaiser","blank",
@@ -1624,7 +1624,7 @@ public class BuildRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedItemList(NEED_ITEM_HELL_BROS).model_has_different_name("gear_engine").has_basic_model());
+			}.isGlowing().addNeedItemList(NEED_ITEM_HELL_BROS).setModelName("gear_engine").useBasicModel());
 
 	public static final DeferredItem<Item> GEAR_ENGINE = ITEMS.register("gear_engine",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_engine","hell_bros","blank",
@@ -1655,38 +1655,38 @@ public class BuildRiderItems {
 			}.isGlowing().addShiftForm(GEAR_HELL_BROS.get()).addToList(NEED_ITEM_HELL_BROS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUTTOBASOUL_FULL_BOTTLE= ITEMS.register("buttobasoul_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GANBARIZING_FULL_BOTTLE= ITEMS.register("ganbarizing_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAMEN_RIDER_FULL_BOTTLE= ITEMS.register("kamen_rider_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_SENTAI_FULL_BOTTLE= ITEMS.register("super_sentai_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EX_AID_FULL_BOTTLE= ITEMS.register("ex_aid_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_FULL_BOTTLE= ITEMS.register("ghost_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_FULL_BOTTLE= ITEMS.register("drive_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIM_FULL_BOTTLE= ITEMS.register("gaim_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_FULL_BOTTLE= ITEMS.register("wizard_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_FULL_BOTTLE= ITEMS.register("fourze_full_bottle",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUILD_PHONE = ITEMS.register("build_phone",
 			() -> new SummonBikeItem(new Item.Properties(), MobsCore.MACEHINE_BUILDER)
-					.has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
+					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BUILD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BUILD_HELMET = ITEMS.register("buildhead",

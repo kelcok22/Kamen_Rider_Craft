@@ -37,7 +37,7 @@ public class CrossSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.hasSD().isGlowing().hasCape().has_basic_model().model_has_different_name("green_king_stone"));
+            }.hasSD().isGlowing().hasCape().useBasicModel().setModelName("green_king_stone"));
 
 
     public static final DeferredItem<Item> TYPHOON_CORE_ARTIST = ITEMS.register("typhoon_core_artist",

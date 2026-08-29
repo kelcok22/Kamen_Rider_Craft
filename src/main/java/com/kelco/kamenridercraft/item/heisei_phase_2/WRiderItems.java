@@ -284,7 +284,7 @@ public class WRiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 0.1);
 					}}
-			}.setFormDelay(20).changeModel("accel_bike.geo.json").isBike().isGlowing().has_basic_model().model_has_different_name("accel_memory"));
+			}.setFormDelay(20).changeModel("accel_bike.geo.json").isBike().isGlowing().useBasicModel().setModelName("accel_memory"));
 
 	public static final DeferredItem<Item> ACCEL_MEMORY = ITEMS.register("accel_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","accel","acceldriver_belt",
@@ -392,7 +392,7 @@ public class WRiderItems {
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}}
 			}.setFormDelay(1d).isGlowing().addNeedForm(CYCLONE_MEMORY.get(),1).changeSlot(2)
-					.model_has_different_name("skull_memory").has_basic_model());
+					.setModelName("skull_memory").useBasicModel());
 
 	public static final DeferredItem<Item> SKULL_MEMORY_CRYSTAL = ITEMS.register("skull_memory_crystal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_crystal","skulll_crystal","lostdriver_belt",
@@ -406,7 +406,7 @@ public class WRiderItems {
 								player.getX(), player.getY()+1,
 								player.getZ(), 100, 0, 0, 0, 0.1);
 					}}
-			}.hasCape().isGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).has_basic_model().model_has_different_name("skull_memory"));
+			}.hasCape().isGlowing().addAlternative(CYCLONE_SKULL_MEMORY.get()).useBasicModel().setModelName("skull_memory"));
 
 
 	public static final DeferredItem<Item> SKULL_MEMORY = ITEMS.register("skull_memory",
@@ -749,7 +749,7 @@ public class WRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
     public static final DeferredItem<Item> SHINIGAMI_HAKASE_MEMORY  = ITEMS.register("shinigami_hakase_dopant_memory",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
     public static final DeferredItem<Item> UNICON_MEMORY = ITEMS.register("unicorn_memory",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
@@ -764,7 +764,7 @@ public class WRiderItems {
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> COMMANDER_MEMORY_ENHANCING_ADAPTER = ITEMS.register("commander_memory_enhancing_adapter",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).KeepDifItem(COMMANDER_MEMORY.get()));
+			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeKeptItem(COMMANDER_MEMORY.get()));
 
 
 	public static final DeferredItem<Item> MEMORY_MEMORY = ITEMS.register("memory_memory",
@@ -783,10 +783,10 @@ public class WRiderItems {
 			}.changeSlot(4).addSwitchForm(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> JOKER_DOPANT_MEMORY_BROKEN = ITEMS.register("joker_dopant_memory_broken",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static final DeferredItem<Item> JOKER_DOPANT_MEMORY = ITEMS.register("joker_dopant_memory",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	//public static final DeferredItem<Item> ROAD_MEMORY = ITEMS.register("road_memory",
 	//		() -> new BaseCityItem(new Item.Properties(),10).addToList(RiderTabs.W_TAB_ITEM));
@@ -914,7 +914,7 @@ public class WRiderItems {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> T2_MEMORY_CASE = ITEMS.register("t2_memory_case",
-			() -> new T2MemoryCaseItem().has_basic_model().model_has_different_name("rider_case").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
+			() -> new T2MemoryCaseItem().useBasicModel().setModelName("rider_case").addToList(KamenRiderCraftCore.CreativeTabRegistry.W_TAB_ITEM));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

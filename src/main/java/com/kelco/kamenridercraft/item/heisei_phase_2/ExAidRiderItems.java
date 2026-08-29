@@ -759,7 +759,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeSlot(2).addNeedForm(GIRI_GIRI_CHAMBARA_GASHAT.get(),2).changeModel("chambara_gamer.geo.json").has_basic_model().model_has_different_name("dangerous_zombie_gashat"));
+            }.changeSlot(2).addNeedForm(GIRI_GIRI_CHAMBARA_GASHAT.get(),2).changeModel("chambara_gamer.geo.json").useBasicModel().setModelName("dangerous_zombie_gashat"));
 
     public static final DeferredItem<Item> DANGEROUS_ZOBIE_GASHAT_BD= ITEMS.register("dangerous_zombie_gashat_bd",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lvx","genm_bugvisor","gamer_driver_dangerous_zombie",
@@ -2240,13 +2240,13 @@ public class ExAidRiderItems {
     // Ghost x Ex-Aid maybe use for the Ex-Aid Ghost Eyecon
 
     public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
-            () -> new RiderGashatCaseItem().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new RiderGashatCaseItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
             () -> new EnergyItemHolderItem().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> WONDERSWAN = ITEMS.register("wonderswan",
-            () -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
 

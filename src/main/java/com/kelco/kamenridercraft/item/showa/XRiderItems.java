@@ -88,7 +88,7 @@ public class XRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.hasSD().hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            }.hasSD().hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_REBORN_CORE = ITEMS.register("apollogeist_reborn_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_reborn","apollogeist","apollogeist_belt",
@@ -107,7 +107,7 @@ public class XRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            }.hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",

@@ -255,7 +255,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_FAIZ_MISSION_MEMORY.get()).changeModel("next_faiz.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
+			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_FAIZ_MISSION_MEMORY.get()).changeModel("next_faiz.geo.json").useBasicModel().setModelName("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_kaixa","next_kaixa_driver_belt_a",
@@ -270,7 +270,7 @@ public class FaizRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).changeModel("next_kaixa.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").has_basic_model().model_has_different_name("faiz_axel_mission_memory"));
+			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).changeModel("next_kaixa.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").useBasicModel().setModelName("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> MUEZ_MISSION_MEMORY = ITEMS.register("muez_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","muez","muez_driver_belt",
@@ -308,24 +308,24 @@ public class FaizRiderItems {
                     .changeModel("seeda.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_MISSION_MEMORY_TOY = ITEMS.register("faiz_mission_memory_toy",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 	public static final DeferredItem<Item> KAIXA_MISSION_MEMORY_TOY = ITEMS.register("kaixa_mission_memory_toy",
-			() -> new BaseItem(new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ALPHA_MISSION_MEMORY = ITEMS.register("alpha_mission_memory",
             () -> new RiderFormChangeItem(new Item.Properties(),"","alpha","alpha_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+                    .isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BETA_MISSION_MEMORY = ITEMS.register("beta_mission_memory",
             () -> new RiderFormChangeItem(new Item.Properties(),"","beta","beta_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false))
-                    .isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
+                    .isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> FAIZHELMET = ITEMS.register("faizhead",

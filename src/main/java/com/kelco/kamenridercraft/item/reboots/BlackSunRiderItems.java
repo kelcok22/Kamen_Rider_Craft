@@ -25,7 +25,7 @@ public class BlackSunRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).addToList(KaijinStoneGenerator.KING_STONE, 20));
 
     public static final DeferredItem<Item> CREATION_KING_EXTRACT_VIAL = ITEMS.register("creation_king_extract_vial",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).KeepDifItem(AmazonsRiderItems.EMPTY_VIAL.get()));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM).changeKeptItem(AmazonsRiderItems.EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> HEAT_HEAVEN = ITEMS.register("heat_heaven",
             () -> new BaseItem(new Item.Properties().food(Foods.CARROT)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_SUN_TAB_ITEM));

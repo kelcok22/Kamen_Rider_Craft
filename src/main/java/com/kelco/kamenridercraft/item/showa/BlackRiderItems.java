@@ -106,7 +106,7 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.isGlowing().hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hajime_sorayama","shadow_moon","shadow_charger_belt",

@@ -23,45 +23,30 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class BaseItem extends Item {
-    public UseAnim Animation;
+    public UseAnim useAnim;
     private Item craftingRemainingItem = null;
     private Boolean hasHoverText = false;
-    public String Model_Name = null;
+    public String modelName = null;
 
     public BaseItem(Properties prop) {
         super(prop);
 
     }
 
-    public BaseItem KeepDifItem(Item Dif) {
-        craftingRemainingItem = Dif;
-        return this;
-    }
-
-    public BaseItem KeepItem() {
-        craftingRemainingItem = this;
-        return this;
-    }
-
-    public BaseItem HasHoverTex() {
-        hasHoverText = true;
-        return this;
-    }
-
-    public BaseItem has_basic_model() {
+    public BaseItem useBasicModel() {
         ModItemModelProvider.BASIC_ITEM_MODEL.add(this);
         return this;
     }
 
-    public BaseItem model_has_different_name(String Name) {
-        Model_Name = Name;
+    public BaseItem setModelName(String Name) {
+        modelName = Name;
         return this;
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         ItemStack itemStack = player.getItemInHand(usedHand);
-        FoodProperties foodproperties = itemStack.getFoodProperties(player);
+        FoodProperties foodProperties = itemStack.getFoodProperties(player);
 
         ResourceLocation potions = ResourceLocation.fromNamespaceAndPath("c", "potions");
         ResourceLocation drinks = ResourceLocation.fromNamespaceAndPath("c", "drinks");
@@ -69,7 +54,7 @@ public class BaseItem extends Item {
         boolean isPotion = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, potions)).stream().anyMatch(e -> e == itemStack.getItem());
         boolean isDrink = BuiltInRegistries.ITEM.getOrCreateTag(TagKey.create(Registries.ITEM, drinks)).stream().anyMatch(e -> e == itemStack.getItem());
 
-        if ((foodproperties != null || isDrink || isPotion) && player.hasEffect(EffectCore.GHOST)) {
+        if (player.hasEffect(EffectCore.GHOST) && (foodProperties != null || isDrink || isPotion)) {
             return InteractionResultHolder.fail(itemStack);
         }
         return super.use(level, player, usedHand);
@@ -79,6 +64,16 @@ public class BaseItem extends Item {
         return this.builtInRegistryHolder().is(tag);
     }
 
+    @Override
+    public UseAnim getUseAnimation(ItemStack stack) {
+        if (useAnim != null) return useAnim;
+        else return stack.has(DataComponents.FOOD) ? UseAnim.EAT : UseAnim.NONE;
+    }
+
+    public BaseItem setItemAnimation(UseAnim Anim) {
+        useAnim = Anim;
+        return this;
+    }
 
     public @NotNull ItemStack getCraftingRemainingItem(ItemStack stack) {
         if (stack.getItem() instanceof BaseItem) {
@@ -95,20 +90,18 @@ public class BaseItem extends Item {
         }
     }
 
-    public BaseItem SetItemAnimation(UseAnim Anim) {
-        Animation = Anim;
-        return this;
-    }
-
-
     public boolean hasCraftingRemainingItem(ItemStack stack) {
         return ((BaseItem) stack.getItem()).craftingRemainingItem != null;
     }
 
-    @Override
-    public UseAnim getUseAnimation(ItemStack stack) {
-        if (Animation != null) return Animation;
-        else return stack.has(DataComponents.FOOD) ? UseAnim.EAT : UseAnim.NONE;
+    public BaseItem keepItem() {
+        craftingRemainingItem = this;
+        return this;
+    }
+
+    public BaseItem changeKeptItem(Item item) {
+        craftingRemainingItem = item;
+        return this;
     }
 
     public BaseItem addToList(List<Item> TabList, int num) {
@@ -123,11 +116,16 @@ public class BaseItem extends Item {
         return this;
     }
 
+    public BaseItem useHoverTex() {
+        hasHoverText = true;
+        return this;
+    }
+
     @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack itemStack, Item.TooltipContext tooltipContext, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         if (hasHoverText) {
-            tooltipComponents.add(Component.translatable("tooltip." + stack.getItem()));
+            tooltipComponents.add(Component.translatable("tooltip." + itemStack.getItem()));
         }
-        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+        super.appendHoverText(itemStack, tooltipContext, tooltipComponents, tooltipFlag);
     }
 }
