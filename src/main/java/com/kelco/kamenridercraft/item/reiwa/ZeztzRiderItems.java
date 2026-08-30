@@ -78,8 +78,6 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().setModelName("code_capsem"));
-
-
     public static final DeferredItem<Item> ZEZTZ_BLANK = ITEMS.register("zeztz_blank",
             () -> new RiderFormChangeItem(new Item.Properties(),"_darkness","zeztz","zeztz_driver_belt") {
         public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
@@ -587,7 +585,6 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-
 
                     public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
