@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.block.machine;
 
 
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -65,13 +66,20 @@ public class CapsemDropper extends MachineBlock {
     private Item getCapsemDrop(Player player) {
  		Random generator = new Random();
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-        int rand = generator.nextInt(CAPSEM.size());
+        List<Item> CAPSEM_PLUS = new ArrayList<>(CAPSEM);
 
+        if (player.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get())!=0){
+            for (int i = 0; i < 20; i++) {
+                CAPSEM_PLUS.add(ZeztzRiderItems.HEART_OF_IMPACT_CAPSEM.get());
+            }
+        }
+
+        int rand = generator.nextInt(CAPSEM_PLUS.size());
         if (player.level().dimension() == CITY) {
             rand = generator.nextInt(LEGEND_CAPSEM.size());
             return LEGEND_CAPSEM.get(rand);
         }
-        return CAPSEM.get(rand);
+        return CAPSEM_PLUS.get(rand);
  	}
 
 
