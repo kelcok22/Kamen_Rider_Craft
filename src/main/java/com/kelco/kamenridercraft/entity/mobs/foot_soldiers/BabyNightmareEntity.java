@@ -2,13 +2,22 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
+import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import net.minecraft.world.Difficulty;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.gameevent.GameEvent;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -55,7 +64,22 @@ public class BabyNightmareEntity extends BaseHenchmenEntity implements GeoEntity
                 .add(Attributes.MAX_HEALTH, 30.0D)
                 .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
     }
-    // Add our generic idle animation controller
+
+    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+        ItemStack itemstack = player.getItemInHand(hand);
+        Item item = itemstack.getItem();
+        if (itemstack.is(ZeztzRiderItems.CODE_SOMNIA_CAPSEM.get()) && player.level().getDifficulty() != Difficulty.PEACEFUL) {
+
+            BaseHenchmenEntity boss = MobsCore.OBLIVION_GORE_NIGHTMARE.get().create(this.level());
+            if (boss != null) {
+                boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), this.getXRot());
+                this.level().addFreshEntity(boss);
+            }
+        }
+        this.discard();
+        return InteractionResult.SUCCESS;}
+
+                        // Add our generic idle animation controller
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
 

@@ -8846,6 +8846,7 @@
 "item.kamenridercraft.agent_number_ring_five": "エージェントナンバーリング（コードナンバー: ファイブ）",
 "item.kamenridercraft.agent_number_ring_six": "エージェントナンバーリング（コードナンバー: シックス）",
 "item.kamenridercraft.agent_number_ring_seven": "エージェントナンバーリング（コードナンバー: セブン）",
+"item.kamenridercraft.agent_number_ring_eight": "エージェントナンバーリング（コードナンバー: エイト）",
 
 "item.kamenridercraft.seventeen_necklace": "コードナンバー: セブンティーンの猫ネックレス",
 "item.kamenridercraft.thirteen_ear_cuff": "コードナンバー: サーティーンの耳飾り",
@@ -8873,7 +8874,7 @@
 "item.kamenridercraft.breakam_breaker_blade": "ブレイカムブレイカー（ブレードモード）",
 "item.kamenridercraft.breakam_breaker_knuckle": "ブレイカムブレイカー（ナックルモード）",
 "item.kamenridercraft.breakam_breaker_shoot": "ブレイカムブレイカー（シュートモード）",
-"item.kamenridercraft.mugen_sword": "夢現の長剣",
+"item.kamenridercraft.mugen_sword": "仮面ライダー夢現の刀",
 "item.kamenridercraft.code_zeroider_spawn_egg": "コードゼロイダー",
 
 "item.kamenridercraft.my_th_logo": "マイスクレスト",
@@ -10433,6 +10434,7 @@
 "tag.item.kamenridercraft.gear.form_items.zangetsu": "斬月のフォームアイテム",
 "tag.item.kamenridercraft.gear.form_items.zero-one": "ゼロワンのフォームアイテム",
 "tag.item.kamenridercraft.gear.form_items.zeztz": "ゼッツのフォームアイテム",
+"tag.item.kamenridercraft.gear.form_items.zeztz_exdream": "ゼッツのエクスドリームドライバーのフォームアイテム",
 "tag.item.kamenridercraft.gear.form_items.zi-o": "ジオウのフォームアイテム",
 "tag.item.kamenridercraft.gear.form_items.zolda": "ゾルダのフォームアイテム",
 "tag.item.kamenridercraft.gear.fuestles": "フエッスル",

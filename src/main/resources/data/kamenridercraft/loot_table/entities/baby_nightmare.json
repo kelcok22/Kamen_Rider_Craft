@@ -4,20 +4,24 @@
 	{
 	  "rolls": 1,
 	  "entries": [
-		{
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "kamenridercraft:impact_capsem"
+        },
+        {
 		  "type": "minecraft:item",
-		  "name": "kamenridercraft:stream_capsem"
+          "weight": 1,
+		  "name": "kamenridercraft:transform_capsem"
 		},
 		{
 		  "type": "minecraft:item",
-		  "name": "kamenridercraft:recovery_capsem"
+          "weight": 1,
+		  "name": "kamenridercraft:wing_capsem"
 		},
 		{
 		  "type": "minecraft:item",
-		  "name": "kamenridercraft:wonder_capsem"
-		},
-		{
-		  "type": "minecraft:item",
+          "weight": 1,
 		  "name": "kamenridercraft:code_capsem"
 		}
 	  ]

@@ -95,11 +95,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:zeztz_horse_armor",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
           "name": "kamenridercraft:gumgumgum_gochizo",
           "weight": 1
         },
