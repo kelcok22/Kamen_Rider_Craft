@@ -9,6 +9,7 @@
 		"kamenridercraft:dualmare_capsem",
 		"kamenridercraft:exdreamrise_capsem",
 		"kamenridercraft:agent_capsem",
+		"kamenridercraft:heart_of_impact_capsem",
 		"kamenridercraft:zeztz_and_code_zeroider_capsem",
 		"kamenridercraft:charge_capsem",
 		"kamenridercraft:erase_capsem",
@@ -19,6 +20,7 @@
     	"kamenridercraft:phantom_capsem",
     	"kamenridercraft:chaos_capsem",
 		"kamenridercraft:daydream_capsem",
-		"#kamenridercraft:gear/legend_rider/capsems"
+		"#kamenridercraft:gear/legend_rider/capsems",
+		"kamenridercraft:code_somnia_capsem"
 	]
 }

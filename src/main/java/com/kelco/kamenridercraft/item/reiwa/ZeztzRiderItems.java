@@ -558,6 +558,53 @@ public class ZeztzRiderItems {
                                 player.getZ(), 50, 0, 0, 0, 1);                    }}
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> HEART_OF_IMPACT_CAPSEM_IMPACT = ITEMS.register("heart_of_impact_capsem_impact",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_impact","zeztz_exdream","zeztz_exdream_driver_belt_impact",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }}
+            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
+
+    public static final DeferredItem<Item> HEART_OF_IMPACT_CAPSEM = ITEMS.register("heart_of_impact_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_heart_of_impact","zeztz_exdream","zeztz_agendream_driver_belt_impact",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "zeztz.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+
+                    if (tick == 19d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+            }.setFormDelay(19).addSwitchForm(HEART_OF_IMPACT_CAPSEM_IMPACT.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> ZEZTZ_AND_CODE_ZEROIDER_CAPSEM = ITEMS.register("zeztz_and_code_zeroider_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_impact_zeroider","zeztz","zeztz_driver_belt_impact_zeroider",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),

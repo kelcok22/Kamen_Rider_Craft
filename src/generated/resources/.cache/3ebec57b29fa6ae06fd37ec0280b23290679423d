@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-28T18:08:31.9482109	Item Models: kamenridercraft
+// 1.21.1	2026-08-30T00:16:18.3407022	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -368,6 +368,7 @@ c37b9eecbd3298147f22917de0e36e4b5c581c4a assets/kamenridercraft/models/item/hagi
 e7c91f36746fe717606b030c645d387d513cad01 assets/kamenridercraft/models/item/happyclover_ride_chemy_card.json
 5baa591548c51d4592f68d17a4f25d1aabdbefb2 assets/kamenridercraft/models/item/happyturn_gochizo.json
 3f47a409b01740e3aa28ce3f72b599ea7091ffb3 assets/kamenridercraft/models/item/harinezumi_seed_x_egg.json
+1a47c54e8999805920b98a43aa1358d5a587e5c1 assets/kamenridercraft/models/item/heart_of_impact_capsem.json
 342466db82dd5a419888850254ed714946e24c59 assets/kamenridercraft/models/item/heatpress.json
 769c40204716b79903a33a0f47bf83daf86b30bb assets/kamenridercraft/models/item/helheim_button.json
 f86d141373dc18bc1d67980dd839817c41b040f1 assets/kamenridercraft/models/item/helheim_door.json
