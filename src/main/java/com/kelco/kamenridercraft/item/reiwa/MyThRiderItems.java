@@ -46,6 +46,21 @@ public class MyThRiderItems {
                 }
             }.isGlowing().IsBeltGlowing().addAlternative(RIDEGG_1_RID.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
+    public static final DeferredItem<Item> RIDE_X_EGGS_1_ORIGIN = ITEMS.register("ride_x_eggs_1_origin",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","black_my_th","my_th_driver_belt_black_my_th",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().IsBeltGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+
     public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
             () -> new RiderFormChangeItem(new Item.Properties(),"","maou","maou_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -81,6 +96,9 @@ public class MyThRiderItems {
 
     public static final DeferredItem<Item> MY_TH_DRIVER = ITEMS.register("my_th_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"my_th",RIDEGG_1 ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON_BLACK = ITEMS.register("my_th_driver_hammer_on_black",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_my_th",RIDE_X_EGGS_1_ORIGIN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON = ITEMS.register("my_th_driver_hammer_on",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDEGG_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));

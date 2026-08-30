@@ -8893,6 +8893,8 @@
 "kamenridercraft.name.my_th": "Rider: Kamen Rider My-th",
 "item.kamenridercraft.my_th_driver_hammer_on": "My-th Driver Hammer On",
 "kamenridercraft.name.rid": "Rider: Kamen Rider Rid",
+"item.kamenridercraft.my_th_driver_hammer_on_black": "My-th Driver Hammer On",
+"kamenridercraft.name.black_my_th": "Rider: Black Kamen Rider My-th",
 "item.kamenridercraft.my_th_driver_slash_on": "My-th Driver Slash On",
 "kamenridercraft.name.tigre": "Rider: Kamen Rider Tigre",
 "item.kamenridercraft.my_th_driver_slash_on_datt": "My-th Driver Slash On",
@@ -8910,6 +8912,8 @@
 
 "item.kamenridercraft.ridegg_1": "Ride X-Eggs 1",
 "kamenridercraft:ridegg_1.form": "Form: Base Form",
+"item.kamenridercraft.ride_x_eggs_1_origin": "Ride X-Eggs 1 Origin",
+"kamenridercraft:ride_x_eggs_1_origin.form": "Form: Base Form",
 "item.kamenridercraft.ride_x_eggs_1_maou": "Ride X-Eggs 1 Fire",
 "item.kamenridercraft.harinezumi_seed_x_egg": "Harinezumi Seed X-Eggs",
 "kamenridercraft:harinezumi_seed_x_egg.form": "Form: Hedgehog Plus",
