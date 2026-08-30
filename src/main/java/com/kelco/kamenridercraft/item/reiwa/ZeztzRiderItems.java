@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.reiwa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.CapsemDropper;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
@@ -13,6 +14,7 @@ import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -34,6 +36,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.Objects;
 
 public class ZeztzRiderItems {
@@ -584,7 +587,9 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+
+
+                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
                         AnimationUtil.playPose(player, "zeztz.henshin_pose");
@@ -1168,9 +1173,13 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item>LEGEND_CAPSEM = ITEMS.register("legend_capsem",
             () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
-
     public static final DeferredItem<Item> CODE_SOMNIA_CAPSEM = ITEMS.register("code_somnia_capsem",
             () -> new SomniaCapsemItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> NIGHTMARE_CAPSEM = ITEMS.register("nigtmare_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","nightmare","nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false)));
 
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
@@ -1311,6 +1320,18 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> OBLIVION_GORE_NIGHTMARE_BELT = ITEMS.register("oblivion_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oblivion_gore_nightmare", CHAOS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> GUN_NIGHTMARE_BELT = ITEMS.register("gun_nightmare_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gun_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().overrideBeltText("gun_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> WOLF_NIGHTMARE_BELT = ITEMS.register("wolf_nightmare_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wolf_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().overrideBeltText("wolf_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> CAT_NIGHTMARE_BELT = ITEMS.register("cat_nightmare_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cat_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEROIDER_CONTROL = ITEMS.register("zeroider_control",
