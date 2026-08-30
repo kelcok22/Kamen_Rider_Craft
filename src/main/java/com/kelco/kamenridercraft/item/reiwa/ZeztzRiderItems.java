@@ -1176,7 +1176,7 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> NIGHTMARE_CAPSEM = ITEMS.register("nigtmare_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nightmare","nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false)));
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false)).isGlowing());
 
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",

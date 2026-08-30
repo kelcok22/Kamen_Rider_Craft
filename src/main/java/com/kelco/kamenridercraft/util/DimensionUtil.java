@@ -14,8 +14,8 @@ public class DimensionUtil {
         if (entity.isPassenger()) {
             entity.stopRiding();
         }
-        entity.teleportTo(otherDim, respawn.pos().x(), Mth.clamp(respawn.pos().y(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), respawn.pos().z(), new HashSet<>(), 0, 0);
-        while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {
+        entity.teleportTo(respawn.newLevel(), respawn.pos().x(), Mth.clamp(respawn.pos().y(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), respawn.pos().z(), new HashSet<>(), 0, 0);
+        while (!respawn.newLevel().noCollision(entity) || respawn.newLevel().containsAnyLiquid(entity.getBoundingBox())) {
             entity.teleportRelative(0.0, 2.0, 0.0);
         }
         entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
