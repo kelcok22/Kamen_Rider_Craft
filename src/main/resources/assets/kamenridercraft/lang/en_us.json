@@ -8725,12 +8725,19 @@
 "kamenridercraft.name.lord_zero": "Debatable Rider: Lord Zero",
 "item.kamenridercraft.lord_invoker_two": "Lord Invoker",
 "kamenridercraft.name.lord_two": "Debatable Rider: Lord Two",
+"item.kamenridercraft.gun_nightmare_belt": "Gun Nightmare Belt",
+"kamenridercraft.name.gun_nightmare": "Kaijin: Gun Nightmare",
+"item.kamenridercraft.wolf_nightmare_belt": "Wolf Nightmare Belt",
+"kamenridercraft.name.wolf_nightmare": "Kaijin: Wolf Nightmare",
+"item.kamenridercraft.cat_nightmare_belt": "Cat Nightmare Belt",
+"kamenridercraft.name.cat_nightmare": "Kaijin: Cat Nightmare",
+"item.kamenridercraft.catastrophe_gore_nightmare_belt": "Catastrophe Gore Nightmare Belt",
+"kamenridercraft.name.catastrophe_gore_nightmare": "Kaijin: Catastrophe Gore Nightmare",
 "item.kamenridercraft.phantom_gore_nightmare_belt": "Phantom Gore Nightmare Belt",
 "kamenridercraft.name.phantom_gore_nightmare": "Kaijin: Phantom Gore Nightmare",
 "item.kamenridercraft.oblivion_gore_nightmare_belt": "Oblivion Gore Nightmare Belt",
 "kamenridercraft.name.oblivion_gore_nightmare": "Kaijin: Oblivion Gore Nightmare",
-"item.kamenridercraft.catastrophe_gore_nightmare_belt": "Catastrophe Gore Nightmare Belt",
-"kamenridercraft.name.catastrophe_gore_nightmare": "Kaijin: Catastrophe Gore Nightmare",
+
 
 "item.kamenridercraft.code_capsem": "CODE Capsem",
 "item.kamenridercraft.impact_capsem": "Impact Capsem",
@@ -9428,14 +9435,16 @@
 "entity.kamenridercraft.caries": "Kamen Rider Caries",
 
 "entity.kamenridercraft.baby_nightmare": "Baby Nightmare",
+"entity.kamenridercraft.nightmare": "Nightmare",
 "entity.kamenridercraft.nox_mob": "Nox Knight",
 "entity.kamenridercraft.nox": "Kamen Rider Nox",
 "entity.kamenridercraft.dawn": "Kamen Rider Dawn",
 "entity.kamenridercraft.lord_three": "Lord Three",
+"entity.kamenridercraft.catastrophe_gore_nightmare": "Catastrophe Gore Nightmare",
 "entity.kamenridercraft.zeztz_darkness_nightmare": "Zeztz Darkness Nightmare",
 "entity.kamenridercraft.phantom_gore_nightmare": "Phantom Gore Nightmare",
 "entity.kamenridercraft.oblivion_gore_nightmare": "Oblivion Gore Nightmare",
-"entity.kamenridercraft.catastrophe_gore_nightmare": "Catastrophe Gore Nightmare",
+
 
 "entity.kamenridercraft.code_zero": "Zero",
 
@@ -9743,6 +9752,7 @@
 "item.kamenridercraft.caries_spawn_egg": "Kamen Rider Caries Spawn Egg",
 
 "item.kamenridercraft.baby_nightmare_spawn_egg": "Baby Nightmare Spawn Egg",
+"item.kamenridercraft.nightmare_spawn_egg": "Nightmare Spawn Egg",
 "item.kamenridercraft.nox_spawn_egg": "Nox Knight Spawn Egg",
 "item.kamenridercraft.dawn_spawn_egg": "Dawn Spawn Egg",
 "item.kamenridercraft.lord_three_spawn_egg": "Lord Three Spawn Egg",
