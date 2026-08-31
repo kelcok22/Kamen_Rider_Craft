@@ -87,7 +87,7 @@ public class ZeztzRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
                    if (transformationTick>10){
-                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (slot==EquipmentSlot.HEAD&!RiderDriverItem.getFormItem(itemStack,1).GetIsAttackForm())layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
 
