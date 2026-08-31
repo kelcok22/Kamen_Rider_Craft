@@ -176,6 +176,7 @@ public class GamerDriverItem extends RiderDriverItem {
                         getFormItem(itemstack, 2) == ExAidRiderItems.XEVIOUS_GASHAT.get()) {
                     return riderName + "_jet";
                 } else if (getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_SIMULATION_GASHAT.get() ||
+                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_JET_COMBAT_GASHAT.get() ||
                         getFormItem(itemstack, 2) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get() ||
                         getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()){
                     return riderName + "_nocape";
@@ -185,7 +186,8 @@ public class GamerDriverItem extends RiderDriverItem {
 
             if (belt == ExAidRiderItems.GAMER_DRIVER_BRAVE.get()) {
                 if (getFormItem(itemstack, 2) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get()) {
+                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get()||
+                        getFormItem(itemstack, 2) == ExAidRiderItems.NIGHT_OF_SAFARI_GASHAT.get()){
                     return riderName + "_hunter";
                 }
             }
