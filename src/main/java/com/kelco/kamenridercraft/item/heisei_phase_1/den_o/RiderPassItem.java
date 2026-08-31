@@ -51,8 +51,8 @@ public class RiderPassItem extends BaseItem {
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         ItemStack itemstack = player.getItemInHand(interactionHand);
         ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
-
-        if (!level.isClientSide()) {
+        ResourceKey<Level> dreamWorld = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
+        if (level.dimension()!=dreamWorld&&!level.isClientSide()) {
             MinecraftServer Server = player.getServer();
             assert Server != null;
 

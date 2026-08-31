@@ -75,8 +75,8 @@ public class GateSwitchItem extends BaseItem {
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         ItemStack itemstack = player.getItemInHand(interactionHand);
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
-
-        if (player instanceof ServerPlayer serverPlayer && !level.isClientSide()) {
+        ResourceKey<Level> dreamWorld = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
+        if (level.dimension()!=dreamWorld&&player instanceof ServerPlayer serverPlayer && !level.isClientSide()) {
             MinecraftServer Server = player.getServer();
             assert Server != null;
             if (level.dimension() == MOON) {

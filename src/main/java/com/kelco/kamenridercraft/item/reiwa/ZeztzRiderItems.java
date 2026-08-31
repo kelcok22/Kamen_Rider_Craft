@@ -78,19 +78,19 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().setModelName("code_capsem"));
-    public static final DeferredItem<Item> ZEZTZ_BLANK = ITEMS.register("zeztz_blank",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_darkness","zeztz","zeztz_driver_belt") {
-        public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-        super.transformationEffect(itemstack, player, tick);
-        RiderDriverItem.resetFormItem(itemstack);
-     }
-
-}.changeModel("zeztz.geo.json").useBasicModel().setModelName("void_capsem"));
 
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                   if (transformationTick>10){
+                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -99,13 +99,10 @@ public class ZeztzRiderItems {
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
-                    }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(10).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,10).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(20).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,10).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TRANSFORM_CAPSEM = ITEMS.register("transform_capsem",
@@ -113,6 +110,12 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 2,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -120,9 +123,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -134,6 +134,12 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
                     new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -141,9 +147,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -155,6 +158,12 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -162,9 +171,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -176,6 +182,12 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.DRILL, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -183,9 +195,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -206,6 +215,12 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_projection","zeztz","zeztz_driver_belt_technolom_projection",
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -213,9 +228,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -245,6 +257,12 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.SELF_MENDING, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -252,9 +270,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -265,6 +280,12 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -272,9 +293,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -285,6 +303,12 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -292,9 +316,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
@@ -305,6 +326,12 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
                     new MobEffectInstance(EffectCore.LOW_GRAVITY, 40, 3,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick>10){
+                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -312,9 +339,6 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 20d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                    }
-                    if (tick == 19d) {
-                        RiderDriverItem.SetOldFormItem(itemstack, ZEZTZ_BLANK.asItem(), 1);
                     }
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);

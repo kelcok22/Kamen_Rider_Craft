@@ -78,8 +78,8 @@ public class BaseCityItem extends BaseItem {
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         ItemStack itemStack = player.getItemInHand(interactionHand);
         ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-
-        if (player instanceof ServerPlayer serverPlayer) {
+        ResourceKey<Level> dreamWorld = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
+        if (level.dimension()!=dreamWorld&&player instanceof ServerPlayer serverPlayer) {
             MinecraftServer Server = player.getServer();
             assert player.getServer() != null;
             assert Server != null;

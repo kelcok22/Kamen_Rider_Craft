@@ -134,7 +134,6 @@ public class LivingEntityMixin {
             while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox())) {
                 entity.teleportRelative(0.0, 5.0, 0.0);
             }
-
             String[] structureList = new String[]{"nightmare_garden", "nightmare_prison", "nightmare_city"};
             Random rand = new Random();
             String structure = structureList[rand.nextInt(structureList.length)];
@@ -145,7 +144,6 @@ public class LivingEntityMixin {
             else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_ONE.get())structure = "nightmare_prison";
             else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_FOUR.get())structure = "nightmare_garden";
             else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_SEVEN.get())structure = "nightmare_city";
-
 
             TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", structure));
 

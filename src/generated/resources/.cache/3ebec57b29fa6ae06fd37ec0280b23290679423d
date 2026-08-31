@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-30T00:16:18.3407022	Item Models: kamenridercraft
+// 1.21.1	2026-08-31T02:40:06.1158771	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -123,6 +123,7 @@ e48191714a4f848569cb9bf274097d08d12e96bf assets/kamenridercraft/models/item/cara
 cd428ab5446f04fd981d9798c4650748e862686c assets/kamenridercraft/models/item/carery_ride_chemy_card.json
 1aa38e42e59e0d21d10d9016f585d148a6b206b8 assets/kamenridercraft/models/item/catastrophe_gore_nightmare_belt.json
 2d7f3737f0a68a22544e3ddfb2d3c6ae76a9f4f3 assets/kamenridercraft/models/item/catchula_ride_chemy_card.json
+3a1aa2c100cac54cc4b06f2a9575ebf30ba4f404 assets/kamenridercraft/models/item/cat_nightmare_belt.json
 55b088b8241201d26ac204aea4794215002503ba assets/kamenridercraft/models/item/chalice_rouze_spirit.json
 55b088b8241201d26ac204aea4794215002503ba assets/kamenridercraft/models/item/chalice_rouze_spirit_steve.json
 87323e18027204035d3b3d39047b8554e7e578b5 assets/kamenridercraft/models/item/chaos_capsem.json
@@ -356,6 +357,7 @@ b4e2ef4ace4901eda8afd8304be2b6051fc4141a assets/kamenridercraft/models/item/gree
 59cfeed258ff0cbd78d4d7f17e692e3d28106ea0 assets/kamenridercraft/models/item/grey_wallplate_wall.json
 68a5c05aa01c0cd00ba0b6868e6f336cede6703c assets/kamenridercraft/models/item/gumgumgum_gochizo.json
 f12bebc3301a4c0a46ae0de7f98539f1d86382cf assets/kamenridercraft/models/item/gun_capsem.json
+8da27d17cee6a77bdf289ae5b229ef7d6b560c4e assets/kamenridercraft/models/item/gun_nightmare_belt.json
 9215724e6d600d6a36ad5245a4201c90bc5e8ef1 assets/kamenridercraft/models/item/gurucan_gochizo_matcha_milk.json
 2d844462feb1994d9067df85e5873283b41dac35 assets/kamenridercraft/models/item/gurucan_gochizo_orange.json
 8a396385d4deb31252aab8c80a1d675557b50818 assets/kamenridercraft/models/item/gurucan_gochizo_valen.json
@@ -811,6 +813,7 @@ cb7805abcab74b1dd79ca63a25312820dc31ed6d assets/kamenridercraft/models/item/wiza
 d275ccc4ddb1834d5370c02b44d244d69d1a36ec assets/kamenridercraft/models/item/wizard_infinity_ride_chemy_card.json
 6e2dbf7b745f3c31322bdadb11df87387ba899e4 assets/kamenridercraft/models/item/wizard_ride_chemy_card.json
 97a562a3eaaee1acd49dc765660c1e25b26ca855 assets/kamenridercraft/models/item/wolf_capsem.json
+1fc5c99e5d18d625ab68c051ccf40ed0f5f4a097 assets/kamenridercraft/models/item/wolf_nightmare_belt.json
 d08eed2b28e988baf6bceb78eced2641a608fae2 assets/kamenridercraft/models/item/wonderswan.json
 185ece7dbef84a1e307baa559f9673796f39cd85 assets/kamenridercraft/models/item/wonderwood_door.json
 1f95411e6fbeddb4a76145bdfde1bdd553323f77 assets/kamenridercraft/models/item/wonder_capsem.json
