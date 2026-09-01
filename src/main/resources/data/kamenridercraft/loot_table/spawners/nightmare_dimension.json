@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:play_back_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:insomnia_visor",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "kamenridercraft:code_capsem",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:coffee",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:agent_ring_five",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:agent_ring_six",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:thirteen_ear_cuff",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:zeztz_horse_armor",
+          "weight": 2
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "kamenridercraft:spawners/nightmare_dimension"
+}
