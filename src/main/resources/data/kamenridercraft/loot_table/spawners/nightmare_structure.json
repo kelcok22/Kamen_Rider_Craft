@@ -37,12 +37,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:agent_ring_five",
+          "name": "kamenridercraft:agent_number_ring_five",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:agent_ring_six",
+          "name": "kamenridercraft:agent_number_ring_six",
           "weight": 2
         },
         {
@@ -59,5 +59,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "kamenridercraft:spawners/nightmare_dimension"
+  "random_sequence": "kamenridercraft:spawners/nightmare_structure"
 }
