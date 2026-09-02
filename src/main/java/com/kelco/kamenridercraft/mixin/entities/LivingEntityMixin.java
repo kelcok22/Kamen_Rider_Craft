@@ -138,12 +138,14 @@ public class LivingEntityMixin {
             Random rand = new Random();
             String structure = structureList[rand.nextInt(structureList.length)];
             if (entity.getInventory().countItem(ZeztzRiderItems.DUALMARE_CAPSEM.get()) != 0) structure = "nightmare_warehouse";
+            if (entity.getInventory().countItem(ZeztzRiderItems.EXDREAMRISE_CAPSEM.get()) != 0) structure = "white_nightmare_garden";
 
             ItemStack ring = entity.getInventory().getItem(40);
             if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_ZERO.get())structure = "nightmare_warehouse";
             else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_ONE.get())structure = "nightmare_prison";
             else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_FOUR.get())structure = "nightmare_garden";
             else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_SEVEN.get())structure = "nightmare_city";
+            else if (ring.getItem()==ZeztzRiderItems.AGENT_NUMBER_RING_TWO.get())structure = "white_nightmare_garden";
 
             TagKey<Structure> tag = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath("kamenridercraft", structure));
 

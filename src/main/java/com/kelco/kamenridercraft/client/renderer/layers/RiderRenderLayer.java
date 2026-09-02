@@ -99,7 +99,7 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                 if (!layerInfo.isEmpty()) {
                     for (RenderLayerInfo renderLayerInfo : layerInfo) {
 
-                        renderType = renderLayerInfo.getRenderType();
+                        renderType = renderLayerInfo.getRenderType(partialTick,RIDER);
                         String model = renderLayerInfo.getModel();
 
                         BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model, renderer2.getCurrentSlot())) : bakedModel;

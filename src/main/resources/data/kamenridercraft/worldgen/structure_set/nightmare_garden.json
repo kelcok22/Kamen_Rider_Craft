@@ -15,6 +15,10 @@
     {
       "structure": "kamenridercraft:nightmare_warehouse",
       "weight": 2
+    },
+    {
+      "structure": "kamenridercraft:white_nightmare_garden",
+      "weight": 2
     }
   ],
   "placement": {

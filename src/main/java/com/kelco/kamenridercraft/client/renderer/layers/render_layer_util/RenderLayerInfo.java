@@ -67,9 +67,7 @@ public class RenderLayerInfo {
         }
     }
 
-    public RenderType getRenderType() {
-        return renderType;
-    }
+    public RenderType getRenderType(float partialTick,LivingEntity RIDER) {return renderType;}
     public String getGlowTexture() {
         return GlowTexture;
     }

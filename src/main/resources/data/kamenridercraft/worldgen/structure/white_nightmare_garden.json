@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:jigsaw",
+	"start_pool": "kamenridercraft:zeztz/white_nightmare_garden_start",
+	"size": 7,
+	"max_distance_from_center": 128,
+	"biomes": "#kamenridercraft:has_structure/nightmares",
+	"step": "surface_structures",
+	"terrain_adaptation": "none",
+	"start_height": {
+		"absolute": 1
+	},
+	"use_expansion_hack": false,
+	"spawn_overrides": {}
+}
