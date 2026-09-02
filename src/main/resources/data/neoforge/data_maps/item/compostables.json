@@ -1,7 +1,18 @@
 {
   "values": {
     "kamenridercraft:helheim_sapling": {
-      "chance": 0.3
-    }
+      "chance": 0.3},
+    "kamenridercraft:buffa_rider_core_id_cracked": {
+      "chance": 0.8},
+    "kamenridercraft:togechi_rider_core_id_cracked": {
+      "chance": 0.8},
+    "kamenridercraft:letter_rider_core_id_cracked": {
+      "chance": 0.8},
+    "kamenridercraft:ginpen_rider_core_id_cracked": {
+      "chance": 0.8},
+    "kamenridercraft:shirowe_rider_core_id_cracked": {
+      "chance": 0.8},
+    "kamenridercraft:nudge_sparrow_rider_core_id_cracked": {
+      "chance": 0.8}
   }
 }
