@@ -25,7 +25,7 @@ public class CatastropheGoreNightmareEntity extends BaseHenchmenEntity {
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
     public CatastropheGoreNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="phantom_gore_nightmare";
+        NAME="nightmare";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));

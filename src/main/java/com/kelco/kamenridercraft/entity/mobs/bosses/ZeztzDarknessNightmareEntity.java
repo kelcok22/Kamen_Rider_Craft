@@ -31,7 +31,7 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
     public ZeztzDarknessNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="zeztz_darkness_nightmare";
+        NAME="nightmare";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));

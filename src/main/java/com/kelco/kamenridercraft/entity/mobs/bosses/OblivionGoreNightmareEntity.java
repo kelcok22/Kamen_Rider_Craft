@@ -25,7 +25,7 @@ public class OblivionGoreNightmareEntity extends BaseHenchmenEntity {
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
 		public OblivionGoreNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="oblivion_gore_nightmare";
+        NAME="nightmare";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
