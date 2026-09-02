@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/void_capsem"
+    "layer0": "kamenridercraft:item/zeztz_ride_x_eggs"
   }
 }

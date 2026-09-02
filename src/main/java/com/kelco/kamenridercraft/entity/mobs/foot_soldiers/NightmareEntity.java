@@ -35,6 +35,22 @@ public class NightmareEntity extends BaseHenchmenEntity {
         RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
 
+    public void remove(RemovalReason p_149847_) {
+        if (this.isDeadOrDying()) {
+            double chance = this.random.nextDouble();
+            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                BaseHenchmenEntity boss = MobsCore.DAWN.get().create(this.level());
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                }
+            }
+        }
+        super.remove(p_149847_);
+    }
+
 
     public static AttributeSupplier.Builder setAttributes() {
 

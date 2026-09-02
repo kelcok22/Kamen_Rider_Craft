@@ -8793,6 +8793,7 @@
 "item.kamenridercraft.extra_capsem": "Extra Capsem",
 "kamenridercraft:extra_capsem.form": "Form: Base Form",
 "item.kamenridercraft.shock_capsem": "Shock Capsem",
+"kamenridercraft:impact_capsem_shock.form": "Form: Physicam Impact (Shock Capsem)",
 "item.kamenridercraft.panic_capsem": "Panic Capsem",
 "item.kamenridercraft.clear_capsem": "Clear Capsem",
 "kamenridercraft:clear_capsem.form": "Form: Clear",
@@ -8926,6 +8927,8 @@
 "kamenridercraft:harinezumi_seed_x_egg.form": "Form: Hedgehog Plus",
 "item.kamenridercraft.zou_seed_x_egg": "Zou Seed X-Eggs",
 "kamenridercraft:zou_seed_x_egg.form": "Form: Elephant Plus",
+
+"item.kamenridercraft.zeztz_ride_x_eggs": "Zeztz Ride X-Eggs",
 
 "item.kamenridercraft.my_th_edge": "My-Th Edge",
 
@@ -10530,6 +10533,7 @@
 "tag.item.kamenridercraft.gear.legend_rider.lockseeds": "Legend Rider Lockseeds",
 "tag.item.kamenridercraft.gear.legend_rider.raise_buckles": "Legend Rider Raise Buckles",
 "tag.item.kamenridercraft.gear.legend_rider.ride_chemy_cards": "Legend Rider Chemy Cards",
+"tag.item.kamenridercraft.gear.legend_rider.ride_x_eggs": "Legend Ride X-Eggs",
 "tag.item.kamenridercraft.gear.legend_rider.rider_cards": "Legend Rider Cards",
 "tag.item.kamenridercraft.gear.legend_rider.ridewatches": "Legend Rider Ridewatches",
 "tag.item.kamenridercraft.gear.legend_rider.signal_bikes": "Legend Rider Signal Bikes",

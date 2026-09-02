@@ -8785,6 +8785,7 @@
 "item.kamenridercraft.extra_capsem": "エクストラカプセム",
 "kamenridercraft:extra_capsem.form": "フォーム: 基本フォーム",
 "item.kamenridercraft.shock_capsem": "ショックカプセム",
+"kamenridercraft:impact_capsem_shock.form": "フォーム: フィジカムインパクト（ショックカプセム）",
 "item.kamenridercraft.panic_capsem": "パニックカプセム",
 "item.kamenridercraft.clear_capsem": "クリアカプセム",
 "kamenridercraft:clear_capsem.form": "フォーム: クリア",
@@ -8916,6 +8917,8 @@
 "kamenridercraft:harinezumi_seed_x_egg.form": "フォーム: ヘッジホッグプラス",
 "item.kamenridercraft.zou_seed_x_egg": "ゾウシードエグズ",
 "kamenridercraft:zou_seed_x_egg.form": "フォーム: エレファントプラス",
+
+"item.kamenridercraft.zeztz_ride_x_eggs": "ゼッツライドエグズ",
 
 "item.kamenridercraft.my_th_edge": "マイスエッジ",
 
@@ -10504,7 +10507,8 @@
 "tag.item.kamenridercraft.gear.legend_rider.gochizo": "レジェンドライダーゴチゾウ",
 "tag.item.kamenridercraft.gear.legend_rider.lockseeds": "レジェンドライダーロックシード",
 "tag.item.kamenridercraft.gear.legend_rider.raise_buckles": "レジェンドライダーレイズバックル",
-"tag.item.kamenridercraft.gear.legend_rider.ride_chemy_cards": "レジェンドライダーケミカーカード",
+"tag.item.kamenridercraft.gear.legend_rider.ride_chemy_cards": "レジェンドライダーケミーカード",
+"tag.item.kamenridercraft.gear.legend_rider.ride_x_eggs": "レジェンドライダーライドエグズ",
 "tag.item.kamenridercraft.gear.legend_rider.rider_cards": "レジェンドライダーカード",
 "tag.item.kamenridercraft.gear.legend_rider.ridewatches": "レジェンドライダーライドウォッチ",
 "tag.item.kamenridercraft.gear.legend_rider.signal_bikes": "レジェンドライダーシグナルバイク",
