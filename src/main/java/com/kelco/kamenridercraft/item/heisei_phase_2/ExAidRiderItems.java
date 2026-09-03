@@ -1039,7 +1039,7 @@ public class ExAidRiderItems {
 
                 }
             }.setFormToArmor()
-                    .changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("pac_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> FAMITSA_GASHAT = ITEMS.register("famitsa_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"famista_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1052,7 +1052,7 @@ public class ExAidRiderItems {
 
                 }
             }.setFormToArmor()
-                    .changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("famista_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> XEVIOUS_GASHAT = ITEMS.register("xevious_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"xevious_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1065,7 +1065,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotTwoAbility("gattling",1).setFormToArmor()
-                    .changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("xevious_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GALAXIAN_GASHAT = ITEMS.register("galaxian_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"galaxian_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1078,7 +1078,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotTwoAbility("cannon",1).setFormToArmor()
-                    .changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("galaxian_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIKO_NO_TATSUJIN_GASHAT = ITEMS.register("taiko_no_tatsujin_gashat",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
