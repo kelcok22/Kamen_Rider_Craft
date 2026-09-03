@@ -814,6 +814,26 @@ public class ExAidRiderItems {
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
+    public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER= ITEMS.register("kamen_rider_chronicle_gashat_bugster",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_cronus","chronicle_bugster","gashacon_bugvisor_ii_chronicle_bugster_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }
+                    .isGlowing().changeModel("chronicle_bugster.geo.json"));
+
+
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS= ITEMS.register("kamen_rider_chronicle_gashat_gamedeus",
             () -> new RiderFormChangeItem(new Item.Properties(),"_gamedeus","chronos","gamer_driver_chronicle",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
@@ -836,7 +856,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGold().isGlowing().IsBeltGlowing().changeModel("chronos.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGold().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER.get()).isGlowing().IsBeltGlowing().changeModel("chronos.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT= ITEMS.register("kamen_rider_chronicle_gashat",
@@ -1934,8 +1954,8 @@ public class ExAidRiderItems {
                     .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_lazer").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONICLE_BUGTER = ITEMS.register("gashacon_bugvisor_ii_chronicle_bugster",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronicle_bugster",KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_chronicle_bugster_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+            () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronicle_bugster",KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> PARA_DX_BELT = ITEMS.register("paradoxbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"para_dx",PERFECT_PUZZLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
