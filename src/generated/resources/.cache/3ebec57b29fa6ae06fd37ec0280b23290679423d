@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-02T22:27:35.4390777	Item Models: kamenridercraft
+// 1.21.1	2026-09-03T16:27:22.695116	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -35,6 +35,7 @@ c2060c54ff2b161a00ad568bbe4fbb460484766f assets/kamenridercraft/models/item/artc
 de1cee1fbf117971ec212a6326bb0ade279a1ecf assets/kamenridercraft/models/item/astroswitch_case.json
 fac1a058ff13c14abbc2dd8460fb7dca4b935d98 assets/kamenridercraft/models/item/atropos_origami.json
 ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/attack123_tire.json
+3615fb19674c880f7ab26733a1481baaf3d9bcd4 assets/kamenridercraft/models/item/baby_nightmare_belt.json
 8b472876e3c9f27df35d2175be48f77e086a037e assets/kamenridercraft/models/item/bakibakistick_gochizo.json
 3eb9e09e2cbb11e833a3bda80951245efe043f1c assets/kamenridercraft/models/item/bakuonzemi_ride_chemy_card.json
 e96c9876c94195f97eec16ceb095b68ddea02e80 assets/kamenridercraft/models/item/bambamboo_ride_chemy_card.json
