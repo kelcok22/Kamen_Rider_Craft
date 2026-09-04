@@ -1596,8 +1596,6 @@ public class KamenRiderCraftCore {
                 for (int i = 0; i < CreativeTabRegistry.ZEZTZ_TAB_ITEM.size(); i++) {
                     event.accept(CreativeTabRegistry.ZEZTZ_TAB_ITEM.get(i));
                 }
-                event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
-                event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
                 event.accept(RiderBlocks.MIND_DOOR);
@@ -2065,6 +2063,7 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.GOT_BOOST_MUSIC_DISC);
                 event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
+                event.accept(MusicDiscItems.DREAM_MAZE_MUSIC_DISC);
                 event.accept(MusicDiscItems.MASKED_RIDER_MUSIC_DISC);
             }
         }
