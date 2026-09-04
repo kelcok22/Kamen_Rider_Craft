@@ -50,9 +50,6 @@ public class MindDoorBlock extends BaseEntityBlock {
         ResourceKey<Level> dreamDimension = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
 
         if (rider instanceof ServerPlayer serverPlayer && level.dimension() == dreamDimension) {
-            if (!serverPlayer.isCreative()) {
-                rider.addEffect(new MobEffectInstance(EffectCore.INSOMNIA, 1200, 0, false, true));
-            }
             DimensionTransition respawn = serverPlayer.findRespawnPositionAndUseSpawnBlock(false, DimensionTransition.DO_NOTHING);
             double X = respawn.pos().x();
             double Y = respawn.pos().y();

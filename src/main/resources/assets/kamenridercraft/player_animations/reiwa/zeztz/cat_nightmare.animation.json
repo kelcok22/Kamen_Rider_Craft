@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"cat_nightmare.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-10, 14, 7],
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"rotation": [13.85, -12.6, -10.3805],
+					"position": [-0.76, 0, -0.95]
+				},
+				"torso": {
+					"rotation": [12, 1, -5]
+				},
+				"right_arm": {
+					"rotation": [-52, 19.5, 67],
+					"position": [1, -1.6, -0.25]
+				},
+				"left_arm": {
+					"rotation": [24, -34, 24],
+					"position": [-0.25, 0.2, 1]
+				},
+				"right_leg": {
+					"rotation": [58, 41, 18],
+					"position": [0.5, 0.1, 1.1]
+				},
+				"left_leg": {
+					"rotation": [-5, -30, 0],
+					"position": [0.48, 0, 1.1]
+				}
+			}
+		}
+	}
+}

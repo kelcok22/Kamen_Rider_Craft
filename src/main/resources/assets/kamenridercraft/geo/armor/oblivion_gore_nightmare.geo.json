@@ -4,9 +4,9 @@
 		{
 			"description": {
 				"identifier": "geometry.unknown",
-				"texture_width": 128,
+				"texture_width": 64,
 				"texture_height": 64,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 5.5,
 				"visible_bounds_offset": [0, 2.25, 0]
 			},
@@ -31,21 +31,27 @@
 							"size": [8, 8, 8],
 							"inflate": 0.5,
 							"pivot": [0, 32.5, -4.5],
-							"rotation": [-22.5, 0, 0],
+							"rotation": [22.5, 0, -180],
 							"uv": {
-								"south": {"uv": [88, 8], "uv_size": [8, 8]},
-								"up": {"uv": [72, 0], "uv_size": [8, 8]}
+								"up": {"uv": [56, 0], "uv_size": [8, 8]}
 							}
 						},
-						{"origin": [5, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [65, 16]},
+						{
+							"origin": [5, 24, -4],
+							"size": [8, 8, 8],
+							"inflate": 0.5,
+							"uv": {
+								"north": {"uv": [56, 28], "uv_size": [8, 8]}
+							}
+						},
 						{
 							"origin": [5, 24, -13],
 							"size": [8, 8, 8],
 							"inflate": 0.5,
 							"pivot": [4.5, 28, -4.5],
-							"rotation": [0, 45, 0],
+							"rotation": [180, 45, 0],
 							"uv": {
-								"south": {"uv": [80, 8], "uv_size": [8, 8]}
+								"south": {"uv": [64, 36], "uv_size": [-8, 8]}
 							}
 						},
 						{
@@ -53,12 +59,19 @@
 							"size": [8, 8, 8],
 							"inflate": 0.5,
 							"pivot": [-4.5, 28, -4.5],
-							"rotation": [0, -45, 0],
+							"rotation": [180, -45, 0],
 							"uv": {
-								"south": {"uv": [64, 8], "uv_size": [8, 8]}
+								"south": {"uv": [56, 36], "uv_size": [8, 8]}
 							}
 						},
-						{"origin": [-13, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [65, 32]}
+						{
+							"origin": [-13, 24, -4],
+							"size": [8, 8, 8],
+							"inflate": 0.5,
+							"uv": {
+								"north": {"uv": [64, 28], "uv_size": [-8, 8]}
+							}
+						}
 					]
 				},
 				{
@@ -77,8 +90,7 @@
 							"size": [8, 12, 4],
 							"inflate": 0.5,
 							"uv": {
-								"north": {"uv": [56, 16], "uv_size": [8, 12]},
-								"south": {"uv": [56, 28], "uv_size": [8, 12]}
+								"north": {"uv": [56, 16], "uv_size": [8, 12]}
 							}
 						}
 					]
