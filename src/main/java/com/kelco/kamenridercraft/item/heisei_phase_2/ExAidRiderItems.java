@@ -1011,7 +1011,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().setFormToArmor().changeSlot(2));
+                    .isGlowing().IsBeltGlowing().hasCape().changeModel("true_brave.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").setFormToArmor().changeSlot(2));
 
     public static final DeferredItem<Item> TADDLE_LEGACY_GASHAT = ITEMS.register("taddle_legacy_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"legacy_gamer","brave","gamer_driver_taddle_legacy",
