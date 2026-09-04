@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:dream_maze_music_disc",
+          "name": "kamenridercraft:play_back_music_disc",
           "weight": 1
         },
         {
