@@ -27,7 +27,19 @@
           "name": "kamenridercraft:agent_number_ring_eight"
         }
       ]
-    },
+    },{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dream_maze_music_disc",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.25
+            }
+          ]
+        },
     {
       "rolls": 1,
       "entries": [
@@ -44,5 +56,7 @@
       ]
     }
   ]
+}
+]
 }
 

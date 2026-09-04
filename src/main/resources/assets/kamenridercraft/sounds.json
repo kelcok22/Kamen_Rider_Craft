@@ -375,6 +375,14 @@
       }
     ]
   },
+  "dream_maze_full": {
+    "sounds": [
+      {
+        "name": "kamenridercraft:dream_maze_full",
+        "stream": true
+      }
+    ]
+  },
   "masked_rider": {
     "sounds": [
       {
