@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"amaki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 22.5, 0]
+				},
+				"head": {
+					"rotation": [7, -15, 0]
+				},
+				"torso": {
+					"rotation": [0, 0, -2.5]
+				},
+				"right_arm": {
+					"rotation": [-71, -21, 1],
+					"position": [-1, -1, 1]
+				},
+				"left_arm": {
+					"rotation": [-73, -14, -78],
+					"position": [1, -1, 0]
+				},
+				"right_leg": {
+					"rotation": [11, 32, 5],
+					"position": [-0.25, 0, -0.75]
+				},
+				"left_leg": {
+					"rotation": [-8, -15, -8],
+					"position": [0.75, 0, 0]
+				}
+			}
+		}
+	}
+}

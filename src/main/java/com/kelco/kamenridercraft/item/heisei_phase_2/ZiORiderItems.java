@@ -1461,7 +1461,9 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:plasma_capsem", "kamenridercraft:inazuma_blaster")
                     .addAltWeapon("kamenridercraft:booster_capsem", "kamenridercraft:inazuma_blaster_greatsword")
                     .addAltWeapon("kamenridercraft:dualmare_capsem", "kamenridercraft:triple_zeztzer")
-                    .addAltBelt("kamenridercraft:exdreamrise_capsem", "kamenridercraft:zeztz_exdream_driver").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltBelt("kamenridercraft:exdreamrise_capsem", "kamenridercraft:zeztz_exdream_driver")
+                    .addAltBelt("kamenridercraft:agent_capsem", "kamenridercraft:zeztz_exdream_driver")
+                    .addAltBelt("kamenridercraft:heart_of_impact_capsem", "kamenridercraft:zeztz_exdream_driver").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonsRiderItems.AMAZONS_DRIVER_ALPHA.get())
@@ -1533,61 +1535,116 @@ public class ZiORiderItems {
             }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDEWATCH = ITEMS.register("kuuga_ultimate_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)KuugaRiderItems.ARCLE.get()).setSummonForm((RiderFormChangeItem)KuugaRiderItems.KUUGA_ULTIMATE.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_SHINING_RIDEWATCH = ITEMS.register("agito_shining_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)AgitoRiderItems.ALTERING.get()).setSummonForm((RiderFormChangeItem)AgitoRiderItems.AGITO_SHINING.get())
+                    .addSummonWeapon(AgitoRiderItems.SHINING_CALIBER_TWIN.get()).addSummonWeapon(AgitoRiderItems.SHINING_CALIBER_TWIN.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_SURVIVE_RIDEWATCH = ITEMS.register("ryuki_survive_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)RyukiRiderItems.RYUKIDRIVER.get()).setSummonForm((RiderFormChangeItem)RyukiRiderItems.SURVIVE_REKKA.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_BLASTER_RIDEWATCH = ITEMS.register("faiz_blaster_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)FaizRiderItems.FAIZ_DRIVER.get()).setSummonForm((RiderFormChangeItem)FaizRiderItems.FAIZ_BLASTER_MISSION_MEMORY.get())
+                    .addSummonWeapon(FaizRiderItems.FAIZ_BLASTER.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_KING_RIDEWATCH = ITEMS.register("blade_king_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)BladeRiderItems.BLAYBUCKLE.get()).setSummonForm((RiderFormChangeItem)BladeRiderItems.EVOLUTION_CAUCASUS.get())
+                    .addSummonWeapon(BladeRiderItems.KINGROUZER.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_ARMED_RIDEWATCH = ITEMS.register("hibiki_armed_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)HibikiRiderItems.HIBIKIDRIVER.get()).setSummonForm((RiderFormChangeItem)HibikiRiderItems.HENSHIN_ONSA_ARMED.get())
+                    .addSummonWeapon(HibikiRiderItems.ARMED_SABER.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_HYPER_RIDEWATCH = ITEMS.register("kabuto_hyper_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)KabutoRiderItems.KABUTO_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)KabutoRiderItems.HYPER_ZECTER.get())
+                    .addSummonWeapon(KabutoRiderItems.PERFECT_ZECTER.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_LINER_RIDEWATCH = ITEMS.register("den_o_liner_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)DenORiderItems.DEN_O_BELT.get()).setSummonForm((RiderFormChangeItem)DenORiderItems.DEN_O_LINER_FORM.get())
+                    .addSummonWeapon(DenORiderItems.DENKAMEN_SWORD.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_EMPEROR_RIDEWATCH = ITEMS.register("kiva_emperor_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)KivaRiderItems.KIVAT_BELT.get()).setSummonForm((RiderFormChangeItem)KivaRiderItems.TATSULOT.get())
+                    .addSummonWeapon(KivaRiderItems.ZANVAT_SWORD.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_COMPLETE_RIDEWATCH = ITEMS.register("decade_complete_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)DecadeRiderItems.DECADRIVER.get()).setSummonForm((RiderFormChangeItem)DecadeRiderItems.K_TOUCH.get())
+                    .addSummonWeapon(DecadeRiderItems.RIDE_BOOKER.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> W_XTREME_RIDEWATCH = ITEMS.register("w_xtreme_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)WRiderItems.WDRIVER.get()).setSummonForm((RiderFormChangeItem)WRiderItems.XTREME_MEMORY.get())
+                    .addSummonWeapon(WRiderItems.PRISM_BICKER.get()).addSummonWeapon(WRiderItems.SHIELD_PRISM_BICKER.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> OOO_PUTOTYRA_RIDEWATCH = ITEMS.register("ooo_putotyra_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)OOORiderItems.OOODRIVER.get()).setSummonForm((RiderFormChangeItem)OOORiderItems.PTERA_MEDAL.get())
+            .addSummonWeapon(OOORiderItems.MEDAGABURYU.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_COSMIC_RIDEWATCH = ITEMS.register("fourze_cosmic_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)FourzeRiderItems.FOURZE_DRIVER.get()).setSummonForm((RiderFormChangeItem)FourzeRiderItems.COSMIC_ASTROSWITCH.get())
+                    .addSummonWeapon(FourzeRiderItems.BARIZUN_SWORD.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> WIZARD_INFINITY_RIDEWATCH = ITEMS.register("wizard_infinity_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)WizardRiderItems.WIZARDRIVER.get()).setSummonForm((RiderFormChangeItem)WizardRiderItems.INFINITY_WIZARD_RING.get())
+            .addSummonWeapon(WizardRiderItems.AXCALIBUR.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_KIWAMI_RIDEWATCH = ITEMS.register("gaim_kiwami_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)GaimRiderItems.SENGOKU_DRIVER_GAIM.get()).setSummonForm((RiderFormChangeItem)GaimRiderItems.KIWAMI_LOCKSEED.get())
+            .addSummonWeapon(GaimRiderItems.DJ_GUN_TAIKEN_MODE.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_TRIDORON_RIDEWATCH = ITEMS.register("drive_tridoron_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)DriveRiderItems.DRIVE_DRIVER.get()).setSummonForm((RiderFormChangeItem)DriveRiderItems.SHIFT_TRIDORON_NOT_ALL.get())
+            .addSummonWeapon(DriveRiderItems.TRAILER_HOU.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GHOST_MUGEN_RIDEWATCH = ITEMS.register("ghost_mugen_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)GhostRiderItems.GHOST_DRIVER.get()).setSummonForm((RiderFormChangeItem)GhostRiderItems.MUGEN_DAMASHII.get())
+            .addSummonWeapon(GhostRiderItems.GAN_GUN_SABER_BLADE.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> EX_AID_MUTEKI_RIDEWATCH = ITEMS.register("ex_aid_muteki_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)ExAidRiderItems.GAMER_DRIVER_EX_AID.get()).setSummonForm((RiderFormChangeItem)ExAidRiderItems.HYPER_MUTEKI_GASHAT.get())
+            .addSummonWeapon(ExAidRiderItems.GASHACON_KEY_SLASHER.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BUILD_GENIUS_RIDEWATCH = ITEMS.register("build_genius_ridewatch",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
+                    .setSummonBelt((RiderDriverItem)BuildRiderItems.BUILD_DRIVER.get()).setSummonForm((RiderFormChangeItem)BuildRiderItems.GENIUS_FULL_BOTTLE.get())
+            .addSummonWeapon(BuildRiderItems.FULLBOTTLE_BUSTER.get())
+            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUSOULGER_RIDEWATCH = ITEMS.register("ryusoulger_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));

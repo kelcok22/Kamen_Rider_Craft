@@ -31,6 +31,115 @@
 					"position": [0, 0, 2]
 				}
 			}
+		},
+		"hibiki.henshin_onsa_kurenai.pose": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4167,
+			"bones": {
+				"body": {
+					"rotation": [0, 47.5, 0],
+					"position": [0, -0.5, 0]
+				},
+				"left_leg": {
+					"rotation": [5, -39, -15],
+					"position": [1, 0, 1]
+				},
+				"right_leg": {
+					"rotation": [-5, 20, 0],
+					"position": [0, 0, -1]
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0833": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1667": [-53, -45, 19],
+						"0.2083": [-130, -35, 74],
+						"0.25": [-128, 37, 112]
+					},
+					"position": [0, 0.5, -3]
+				},
+				"left_arm": {
+					"rotation": [-22, -26, -46],
+					"position": [0, -1, 1.5]
+				},
+				"head": {
+					"rotation": [4, -45, 4]
+				},
+				"torso": {
+					"rotation": [5, 0, 0],
+					"position": [0, -0.25, 0]
+				}
+			}
+		},
+		"hibiki.henshin_onsa_armed.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -2, 0]
+				},
+				"torso": {
+					"rotation": [12, -24, -5],
+					"position": [-0.5, 0, -2.5]
+				},
+				"left_leg": {
+					"rotation": [-12.5, 0, -5],
+					"position": [0, 2, -1]
+				},
+				"right_leg": {
+					"rotation": [42, -3, 4],
+					"position": [0, 0, -1]
+				},
+				"head": {
+					"rotation": [10, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"right_arm": {
+					"rotation": [-82, 7, -42],
+					"position": [0, 0, -5]
+				},
+				"left_arm": {
+					"rotation": [9, -19, -100],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"hibiki.akanetaka.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 35, 0],
+					"position": [0, -2, 0]
+				},
+				"torso": {
+					"rotation": [13, -41, -9]
+				},
+				"left_leg": {
+					"rotation": [140, -60, -165],
+					"position": [0.75, 1, 2.5]
+				},
+				"right_leg": {
+					"rotation": [-32, -21, 9],
+					"position": [0, 0, -1]
+				},
+				"head": {
+					"rotation": [21.5, -23, -5],
+					"position": [0, 0, -1]
+				},
+				"right_arm": {
+					"rotation": [-118, 42, 51],
+					"position": [1, 0, -6]
+				},
+				"left_arm": {
+					"rotation": [-63, 16, -43],
+					"position": [-1, -1, 2]
+				},
+				"leftItem": {
+					"rotation": [0, 27.5, 0]
+				}
+			}
 		}
 	}
 }

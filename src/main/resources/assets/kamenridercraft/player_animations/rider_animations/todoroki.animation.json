@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"todoroki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 5, 0],
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"rotation": [0, -2.5, 0]
+				},
+				"right_arm": {
+					"rotation": [-78, 36, -74],
+					"position": [-1, 0, 1]
+				},
+				"left_arm": {
+					"rotation": [-128, 74, 50],
+					"position": [1, -2, 0]
+				},
+				"right_leg": {
+					"rotation": [-27.5, 67.5, 0]
+				},
+				"left_leg": {
+					"rotation": [5, -12.5, -30]
+				}
+			}
+		}
+	}
+}
