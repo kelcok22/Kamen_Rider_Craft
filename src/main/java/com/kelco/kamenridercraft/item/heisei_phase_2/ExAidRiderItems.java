@@ -744,7 +744,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv0.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DANGEROUS_ZOBIE_LAZER = ITEMS.register("dangerous_zombie_gashat_lazer",
             () -> new RiderFormChangeItem(new Item.Properties(),"chambara_gamer","lazer","gamer_driver_bakusou_bike",
