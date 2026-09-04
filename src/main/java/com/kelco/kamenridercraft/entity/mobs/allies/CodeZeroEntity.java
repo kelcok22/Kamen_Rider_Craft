@@ -2,12 +2,15 @@ package com.kelco.kamenridercraft.entity.mobs.allies;
 
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.NewMoleImaginSandEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
+import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
@@ -42,6 +45,8 @@ import software.bernie.geckolib.animation.RawAnimation;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.Random;
+
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 
 public class CodeZeroEntity extends BaseAllyEntity  {
@@ -121,12 +126,13 @@ public class CodeZeroEntity extends BaseAllyEntity  {
         return InteractionResult.PASS;
     }
 
-    @Override
-    public boolean isDeadOrDying() {
-        if (!level().isClientSide() && getHealth() <= 0 && new Random().nextInt(100) > 98 && getOwner() instanceof ServerPlayer player) {
-            player.sendSystemMessage(Component.translatable("dream.kamenridercraft.zero"));
+    public void remove(RemovalReason p_149847_) {
+        if (this.isDeadOrDying()) {
+            if (!level().isClientSide() && new Random().nextInt(100) > 98 && getOwner() instanceof ServerPlayer player) {
+                player.sendSystemMessage(Component.translatable("dream.kamenridercraft.zero"));
+            }
         }
-        return super.isDeadOrDying();
+        super.remove(p_149847_);
     }
 
     private void tryToTame(Player player) {

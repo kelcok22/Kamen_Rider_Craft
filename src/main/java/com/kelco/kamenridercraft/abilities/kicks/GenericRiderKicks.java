@@ -64,14 +64,14 @@ public class GenericRiderKicks {
             case 16:
                 PacketDistributor.sendToAllPlayers(new AnimPayload("default.flip", "attack", true, user.getStringUUID()));
                 break;
-            case 24:
+            case 22:
                 if (user.getData(USED_ABILITY).equalsIgnoreCase("flipped_rider_kick")) {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", "attack", false, user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.flipped_kick", "attack", true, user.getStringUUID()));
                 } else {
-                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", "attack", false, user.getStringUUID()));
+                    PacketDistributor.sendToAllPlayers(new AnimPayload("default.kick", "attack", true, user.getStringUUID()));
                 }
                 break;
-            case 25:
+            case 23:
                 user.setDeltaMovement(0, 0, 0);
                 double y = user.getLookAngle().y;
                 if (y < 0.5) {
