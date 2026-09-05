@@ -468,6 +468,19 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+    public static void setFormItemNoExtra(ItemStack itemStack, Item item, int slot) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) setUpdateForm(itemStack);
+        if (itemStack.getItem() instanceof RiderDriverItem driver) {
+            Consumer<CompoundTag> data = form -> {
+                if (!form.getString("slot_tex" + slot).equals(item.toString())) {
+                    form.putString("slot_tex" + slot, item.toString());
+                    form.putBoolean("Update_form", true);
+                }
+            };
+
+            CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);}
+    }
+
     public static void revertFormItem(ItemStack itemStack, int slot) {
         Item form = RiderDriverItem.getFormItem(itemStack, 1, 200);
         if (form != ModdedItemCore.BLANK_FORM.asItem())
