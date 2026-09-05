@@ -243,8 +243,8 @@ public class FourzeRiderItems {
 	public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rocket_module","fourze","fourze_driver_belt"
 					,new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false))
-					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ELEK_STATES.get())
-					.addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
+					.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get())
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
 					.addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
 	public static final DeferredItem<Item> LAUNCHER_ASTROSWITCH = ITEMS.register("launcher_switch",
