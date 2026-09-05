@@ -1517,7 +1517,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGold().isGlowing().hasStaticWings().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+                    .isGold().isGlowing().IsBeltGlowing().changeModel("genm_bugvisor_totema.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
