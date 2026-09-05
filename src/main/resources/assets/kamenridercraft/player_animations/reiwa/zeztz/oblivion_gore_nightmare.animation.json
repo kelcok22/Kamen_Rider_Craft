@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"oblivion_gore_nightmare.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [31, 34, 47],
+					"position": [0, -3, 0]
+				},
+				"head": {
+					"rotation": [-40, -16, 33]
+				},
+				"right_arm": {
+					"rotation": [0, 18, 20]
+				},
+				"left_arm": {
+					"rotation": [-95, 72, -19],
+					"position": [0, -1, -1]
+				},
+				"right_leg": {
+					"rotation": [34, 9, -12],
+					"position": [1, -1, 0]
+				},
+				"left_leg": {
+					"rotation": [7, -41, -63],
+					"position": [-0.4, 1.2, -1]
+				}
+			}
+		}
+	}
+}
