@@ -599,7 +599,7 @@ public class RiderDriverItem extends RiderArmorItem {
             ResourceLocation UsedFormItem = ResourceLocation.parse(tag.getString("slot_tex" + slot));
             ResourceLocation UsedFormItemOld = ResourceLocation.parse(tag.getString("slot_tex_old" + slot));
             if (BuiltInRegistries.ITEM.get(UsedFormItem) instanceof RiderFormChangeItem formItem) {
-                if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && (num > formItem.getFormDelay()||tag.getBoolean("Update_form")&formItem2!=ModdedItemCore.BLANK_FORM.asItem()))
+                if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && (num > formItem.getFormDelay()))
                     return formItem2;
                 else if (num > formItem.getFormDelay()) return (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.asItem();
                 return formItem;
