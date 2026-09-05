@@ -160,6 +160,9 @@ public class ModMusic {
     public static final Supplier<SoundEvent> DREAM_MAZE = registerSoundEvent("dream_maze_full");
     public static final ResourceKey<JukeboxSong> DREAM_MAZE_KEY = createSong("dream_maze_full");
 
+    public static final Supplier<SoundEvent> ONE_SHOT = registerSoundEvent("one_shot");
+    public static final ResourceKey<JukeboxSong> ONE_SHOT_KEY = createSong("one_shot");
+
     public static final Supplier<SoundEvent> MASKED_RIDER = registerSoundEvent("masked_rider");
     public static final ResourceKey<JukeboxSong> MASKED_RIDER_KEY = createSong("masked_rider");
 

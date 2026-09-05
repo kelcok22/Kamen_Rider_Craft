@@ -382,7 +382,14 @@
         "stream": true
       }
     ]
-  },
+  },  "one_shot": {
+  "sounds": [
+    {
+      "name": "kamenridercraft:one_shot",
+      "stream": true
+    }
+  ]
+},
   "masked_rider": {
     "sounds": [
       {

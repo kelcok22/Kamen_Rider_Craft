@@ -2064,6 +2064,7 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.VISIONS_MUSIC_DISC);
                 event.accept(MusicDiscItems.PLAY_BACK_MUSIC_DISC);
                 event.accept(MusicDiscItems.DREAM_MAZE_MUSIC_DISC);
+                event.accept(MusicDiscItems.ONE_SHOT_MUSIC_DISC);
                 event.accept(MusicDiscItems.MASKED_RIDER_MUSIC_DISC);
             }
         }

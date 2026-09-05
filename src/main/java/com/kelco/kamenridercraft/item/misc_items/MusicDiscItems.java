@@ -155,6 +155,9 @@ public class MusicDiscItems {
     public static final DeferredItem<Item> DREAM_MAZE_MUSIC_DISC = ITEMS.register("dream_maze_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModMusic.DREAM_MAZE_KEY).stacksTo(1)));
 
+    public static final DeferredItem<Item> ONE_SHOT_MUSIC_DISC = ITEMS.register("one_shot_music_disc",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModMusic.ONE_SHOT_KEY).stacksTo(1)));
+
     public static final DeferredItem<Item> MASKED_RIDER_MUSIC_DISC = ITEMS.register("masked_rider_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModMusic.MASKED_RIDER_KEY).stacksTo(1)));
 

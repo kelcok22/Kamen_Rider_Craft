@@ -346,7 +346,9 @@
 "item.kamenridercraft.dream_maze_full.desc": "ホセフホースター - 『Dream Maze』",
 "item.kamenridercraft.dream_maze_music_disc.desc": "ホセフホースター - 『Dream Maze』",
 
-
+"item.kamenridercraft.one_shot_music_disc": "『One Shot』 レコード",
+"item.kamenridercraft.one_shot.desc": "ホセフホースター - 『One Shot』",
+"item.kamenridercraft.one_shot_music_disc.desc": "ホセフホースター - 『One Shot』",
 
 "effect.kamenridercraft.boost":"ブースト",
 "effect.kamenridercraft.anti_poison":"アンチ毒",
