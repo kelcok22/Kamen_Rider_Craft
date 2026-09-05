@@ -108,7 +108,7 @@ public class FourzeDriverItem extends RiderDriverItem {
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_MAGNET_STATES.get() && getFormItem(belt, 4) != FourzeRiderItems.MAGNET_ASTROSWITCH_S.get())
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_ROCKET_STATES.get() && getFormItem(belt, 1) != FourzeRiderItems.ROCKET_ASTROSWITCH.get())
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_ROCKET_STATES.get() && getFormItem(belt, 4) != FourzeRiderItems.SUPER_ROCKET_ASTROSWITCH.get())) {
-            setFormItem(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+            setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
         }
 
         if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()
@@ -116,11 +116,11 @@ public class FourzeDriverItem extends RiderDriverItem {
             if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
                     || getFormItem(belt, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get()
                     || getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get()) {
-                setFormItem(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
-                setFormItem(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+                setFormItemNoExtra(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
             } else if (getFormItem(belt, 4) != FourzeRiderItems.FUSION_ASTROSWITCH.get()
                     & getFormItem(belt, 4) != FourzeRiderItems.FUSION_ASTROSWITCH_OG.get()) {
-                setFormItem(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
             }
         }
 
@@ -130,31 +130,31 @@ public class FourzeDriverItem extends RiderDriverItem {
                     || getFormItem(belt, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get()
                     || getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get()
                     || getFormItem(belt, 2) != FourzeRiderItems.SUPER_LAUNCHER_ASTROSWITCH.get()) {
-                setFormItem(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
-                setFormItem(belt, FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.asItem(), 2);
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+                setFormItemNoExtra(belt, FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.asItem(), 2);
 
             }
         }
 
         if ((getFormItem(belt, 1) != FourzeRiderItems.ROCKET_ASTROSWITCH.get() && getFormItem(belt, 4) == FourzeRiderItems.SUPER_ROCKET_ASTROSWITCH.get())) {
-            setFormItem(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
+            setFormItemNoExtra(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
         }
 
         if ((getFormItem(belt, 1) == FourzeRiderItems.MAGNET_ASTROSWITCH_N.get()
                 && getFormItem(belt, 4) == FourzeRiderItems.MAGNET_ASTROSWITCH_S.get())
                 && (getFormItem(belt, 5) != FourzeRiderItems.FOURZE_MAGNET_STATES.get())) {
-            setFormItem(belt, FourzeRiderItems.FOURZE_MAGNET_STATES.asItem(), 5);
+            setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_MAGNET_STATES.asItem(), 5);
         }
         if ((getFormItem(belt, 1) == FourzeRiderItems.CLEAR_DRILL_ASTROSWITCH.get())
                 && (getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get())) {
-            setFormItem(belt, FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.asItem(), 1);
+            setFormItemNoExtra(belt, FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.asItem(), 1);
         }
         if ((getFormItem(belt, 5) == FourzeRiderItems.SHIN_CHAN_ASTROSWITCH.get())) {
             if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
                     || getFormItem(belt, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get()
                     || getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get()
                     || getFormItem(belt, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get()) {
-                setFormItem(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
             }
         }
 

@@ -19,7 +19,6 @@ public class ItemMixin {
     public void use(Level level, Player player, InteractionHand usedHand, CallbackInfoReturnable<InteractionResultHolder> ci) {
         ItemStack itemstack = player.getItemInHand(usedHand);
         FoodProperties foodproperties = itemstack.getFoodProperties(player);
-        var item = ((Item) (Object) this);
 
         if (foodproperties != null && player.hasEffect(EffectCore.GHOST)) {
             ci.setReturnValue(InteractionResultHolder.fail(itemstack));

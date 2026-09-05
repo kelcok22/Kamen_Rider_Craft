@@ -79,6 +79,12 @@ public class RosyuoEntity extends BaseHenchmenEntity {
     }
 
     public static AttributeSupplier.Builder setAttributes() {
-        return Monster.createMonsterAttributes().add(Attributes.FOLLOW_RANGE, 135.0D).add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.ATTACK_DAMAGE, 2D).add(Attributes.ARMOR, 3.0D).add(Attributes.SCALE, 1.3D).add(Attributes.MAX_HEALTH, 250.0D);
+        return Monster.createMonsterAttributes()
+                .add(Attributes.FOLLOW_RANGE, 135.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.3F)
+                .add(Attributes.ATTACK_DAMAGE, 2D)
+                .add(Attributes.ARMOR, 3.0D)
+                .add(Attributes.SCALE, 1.3D)
+                .add(Attributes.MAX_HEALTH, 250.0D);
     }
 }

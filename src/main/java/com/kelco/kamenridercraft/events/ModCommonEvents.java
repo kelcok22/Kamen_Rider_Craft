@@ -85,13 +85,11 @@ import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockDropsEvent;
-import net.neoforged.neoforge.event.level.SleepFinishedTimeEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
-import java.awt.desktop.ScreenSleepEvent;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
@@ -102,10 +100,7 @@ import static com.kelco.kamenridercraft.attachments.AttachmentTypes.USED_ABILITY
 
 
 public class ModCommonEvents {
-
-
     public static class CommonEvents {
-
         private static ResourceLocation lootTable;
         private static final ResourceLocation LOOT_TABLE_PATH = lootTable;
 
@@ -164,8 +159,12 @@ public class ModCommonEvents {
                            TagKey<Structure> nightmareKey = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "nightmare"));
                            StructureStart nightmareLocation = structureManager.getStructureWithPieceAt(event.getEntity().blockPosition(), nightmareKey);
 
-                           if (!nightmareLocation.isValid())
-                            DimensionUtil.returnToSpawn(event.getEntity().getServer().overworld(), serverPlayer);
+                           if (!nightmareLocation.isValid() && !serverPlayer.isSpectator()) {
+                               DimensionUtil.returnToSpawn(event.getEntity().getServer().overworld(), serverPlayer);
+                               if (!serverPlayer.isCreative()) {
+                                   serverPlayer.addEffect(new MobEffectInstance(EffectCore.INSOMNIA, 1200, 0, false, true));
+                               }
+                           }
                     }
                 }
 

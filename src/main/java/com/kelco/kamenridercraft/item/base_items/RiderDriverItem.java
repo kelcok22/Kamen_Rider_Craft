@@ -468,6 +468,19 @@ public class RiderDriverItem extends RiderArmorItem {
         }
     }
 
+    public static void setFormItemNoExtra(ItemStack itemStack, Item item, int slot) {
+        if (!itemStack.has(DataComponents.CUSTOM_DATA)) setUpdateForm(itemStack);
+        if (itemStack.getItem() instanceof RiderDriverItem driver) {
+            Consumer<CompoundTag> data = form -> {
+                if (!form.getString("slot_tex" + slot).equals(item.toString())) {
+                    form.putString("slot_tex" + slot, item.toString());
+                    form.putBoolean("Update_form", true);
+                }
+            };
+
+            CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);}
+    }
+
     public static void revertFormItem(ItemStack itemStack, int slot) {
         Item form = RiderDriverItem.getFormItem(itemStack, 1, 200);
         if (form != ModdedItemCore.BLANK_FORM.asItem())
@@ -586,7 +599,7 @@ public class RiderDriverItem extends RiderArmorItem {
             ResourceLocation UsedFormItem = ResourceLocation.parse(tag.getString("slot_tex" + slot));
             ResourceLocation UsedFormItemOld = ResourceLocation.parse(tag.getString("slot_tex_old" + slot));
             if (BuiltInRegistries.ITEM.get(UsedFormItem) instanceof RiderFormChangeItem formItem) {
-                if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && (num > formItem.getFormDelay()||tag.getBoolean("Update_form")&formItem2!=ModdedItemCore.BLANK_FORM.asItem()))
+                if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && (num > formItem.getFormDelay()))
                     return formItem2;
                 else if (num > formItem.getFormDelay()) return (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.asItem();
                 return formItem;

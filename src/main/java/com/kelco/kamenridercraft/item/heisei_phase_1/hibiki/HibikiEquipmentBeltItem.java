@@ -6,8 +6,6 @@ import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -21,19 +19,14 @@ public class HibikiEquipmentBeltItem extends RiderDriverItem {
     }
 
     @Override
-    public String getUnlimitedTextures(ItemStack itemStack, LivingEntity livingEntity, String riderName, int num) {
+    public String getUnlimitedTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
+        Item ongeki = HibikiRiderItems.ONGEKIBO_REKKA.get();
+        Item leftHandItem = rider.getMainArm() == HumanoidArm.LEFT? rider.getMainHandItem().getItem() : rider.getOffhandItem().getItem();
+        Item rightHandItem = rider.getMainArm() == HumanoidArm.LEFT? rider.getOffhandItem().getItem() : rider.getMainHandItem().getItem();
+
         if (getFormItem(itemStack, 1) == HibikiRiderItems.HENSHIN_ONSA_ARMED.get()) {
-            if ((livingEntity instanceof Player || livingEntity instanceof Mob) && livingEntity.getMainArm() == HumanoidArm.LEFT) {
-                if (num == 1 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_l";
-                else if (num == 2 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_r";
-            } else {
-                if (num == 1 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_l";
-                else if (num == 2 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_r";
-            }
+            if (num == 1 && leftHandItem != ongeki) return "ongekibo_rekka_l";
+            else if (num == 2 && rightHandItem != ongeki) return "ongekibo_rekka_r";
         }
         return "blank";
     }
@@ -42,17 +35,12 @@ public class HibikiEquipmentBeltItem extends RiderDriverItem {
     public String getUnlimitedBeltTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
         if (num == 1 && !rider.isHolding(HibikiRiderItems.HENSHIN_ONSA.get())) return "henshin_onsa";
         else if (getFormItem(itemStack, 1) != HibikiRiderItems.HENSHIN_ONSA_ARMED.get()) {
-            if ((rider instanceof Player || rider instanceof Mob) && rider.getMainArm() == HumanoidArm.LEFT) {
-                if (num == 2 && rider.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_l";
-                else if (num == 3 && rider.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_r";
-            } else {
-                if (num == 2 && rider.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_l";
-                else if (num == 3 && rider.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_r";
-            }
+            Item ongeki = HibikiRiderItems.ONGEKIBO_REKKA.get();
+            Item leftHandItem = rider.getMainArm() == HumanoidArm.LEFT? rider.getMainHandItem().getItem() : rider.getOffhandItem().getItem();
+            Item rightHandItem = rider.getMainArm() == HumanoidArm.LEFT? rider.getOffhandItem().getItem() : rider.getMainHandItem().getItem();
+
+            if (num == 2 && leftHandItem != ongeki) return "ongekibo_rekka_l";
+            else if (num == 3 && rightHandItem != ongeki) return "ongekibo_rekka_r";
         } else if (num == 2 && !rider.isHolding(HibikiRiderItems.ARMED_SABER.get())) return "armed_saber";
 
         return "blank";

@@ -26,11 +26,9 @@ import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.event.EventHooks;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
@@ -244,13 +242,11 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
             setPos(d7, d2, d3);
             checkInsideBlocks();
         }
-
     }
 
     protected void onHitEntity(EntityHitResult result) {
-        super.onHitEntity(result);
         Entity hitEntity = result.getEntity();
-        if (!hitEntity.level().isClientSide() && hitEntity != getOwner() && hitEntity instanceof LivingEntity livingEntity && !(hitEntity instanceof ArmorStand)) {
+        if (!level().isClientSide() && hitEntity instanceof LivingEntity livingEntity && hitEntity != getOwner() && !(hitEntity instanceof ArmorStand)) {
             if (getOwner() instanceof LivingEntity owner) {
                 livingEntity.hurt(livingEntity.damageSources().mobProjectile(this, owner), damage);
             } else {
@@ -264,8 +260,9 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
             } else if (texture.equalsIgnoreCase("fire_ball")) {
                 hitEntity.igniteForSeconds(10);
             }
-            discard();
         }
+        super.onHitEntity(result);
+        discard();
     }
 
     public BaseProjectileEntity setTexture(String texture) {
