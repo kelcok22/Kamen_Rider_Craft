@@ -1202,6 +1202,12 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false)).isGlowing());
 
+    public static final DeferredItem<Item> NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW = ITEMS.register("nightmare_capsem_midnight",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_midnight","shadow_nightmare","shadow_nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).isGlowing());
+
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
             () -> new RiderFormChangeItem(new Item.Properties(),"ider","code_zero","blank",
@@ -1345,6 +1351,10 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> CAT_NIGHTMARE_BELT = ITEMS.register("cat_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cat_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> SHADOW_NIGHTMARE_BELT = ITEMS.register("shadow_nightmare_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().overrideBeltText("shadow_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_GORE_NIGHTMARE_BELT = ITEMS.register("catastrophe_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"catastrophe_gore_nightmare", CATASTROPHE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())

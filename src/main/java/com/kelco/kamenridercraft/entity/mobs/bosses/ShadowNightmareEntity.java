@@ -2,8 +2,6 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.ChatFormatting;
@@ -20,7 +18,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
@@ -30,17 +27,16 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
-public class LordThreeEntity extends BaseHenchmenEntity {
-    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(LordThreeEntity.class, EntityDataSerializers.BYTE);
-    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.YELLOW, BossEvent.BossBarOverlay.PROGRESS);
-		public LordThreeEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+public class ShadowNightmareEntity extends BaseHenchmenEntity {
+    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(ShadowNightmareEntity.class, EntityDataSerializers.BYTE);
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.PROGRESS);
+		public ShadowNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="nox_knight";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.LORD_INVOKER_THREE.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeztzRiderItems.BREAKAM_BREAKER_BLADE.get()));
     }
 
     public void readAdditionalSaveData(CompoundTag p_31474_) {
@@ -69,12 +65,12 @@ public class LordThreeEntity extends BaseHenchmenEntity {
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth() < 30 && playerIn.getInventory().countItem(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get()) >= 1) {
-            if (playerIn.getInventory().countItem(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get()) != 0) {
-                if (playerIn.getInventory().countItem(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get()) {
+        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth() < 30 && playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) >= 1) {
+            if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
+                if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()) {
                     if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
-                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.lord_three_booster"));
-                                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get(), 1);
+                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.midnight_shadow_nightmare"));
+                                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get(), 1);
                 }
             }
         }
@@ -82,11 +78,11 @@ public class LordThreeEntity extends BaseHenchmenEntity {
     protected void customServerAiStep() {
 
         super.customServerAiStep();
-        if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.LORD_INVOKER_THREE.get()){
+        if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)!= ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.PURPLE) {
+            if (RiderDriverItem.getFormItem(belt,1)!= ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.RED) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.PURPLE);
-                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.lord_three_booster").withStyle(ChatFormatting.DARK_PURPLE));
+                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.midnight_shadow_nightmare").withStyle(ChatFormatting.RED));
             }
         }
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());}
@@ -98,8 +94,8 @@ public class LordThreeEntity extends BaseHenchmenEntity {
 
     public void remove(@NotNull RemovalReason removalReason) {
         if (this.isDeadOrDying()) {
-            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get()) != 0) {
-                ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get(), 1), 0, 0, 0);
+            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
+                ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get(), 1), 0, 0, 0);
                 kiwamiLockseed.setPickUpDelay(0);
                 level().addFreshEntity(kiwamiLockseed);
             }

@@ -751,6 +751,8 @@
 "henshin.kamenridercraft.dawn":"<仮面ライダードォーン> §8変身！\n§dドォーン・§4ドォーン・§5ドォーン！ナイトメアライダー！ - §5パニッシュ！",
 "henshin.kamenridercraft.lord_three":"<ロードスリー> §7擬装。\n§eインヴォークロードシステム！ - §5エクストラ！",
 "henshin.kamenridercraft.lord_three_booster":"§eエンフォースロードシステム！ - §5ブースター!",
+"henshin.kamenridercraft.shadow_nightmare": "<シャドウナイトエア> §1我は永遠に消えぬ。お前が恐れているからだ。",
+"henshin.kamenridercraft.midnight_shadow_nightmare": "<ミッドナイトシャドウナイトエア> §c我が力を物のするか？",
 "henshin.kamenridercraft.zeztz_darkness_nightmare":"<ゼッツダークネスナイトメア> §0消え失せろ。",
 "henshin.kamenridercraft.zeztz_darkness_nightmare_driver":"§5ダークネス！",
 
@@ -9438,6 +9440,8 @@
 "entity.kamenridercraft.caries": "仮面ライダーカリエス",
 
 "entity.kamenridercraft.baby_nightmare": "ベビーナイトメア",
+"entity.kamenridercraft.shadow_nightmare": "シャドウナイトメア",
+"entity.kamenridercraft.midnight_shadow_nightmare": "ミッドナイトシャドウナイトメア",
 "entity.kamenridercraft.nightmare": "ナイトメア",
 "entity.kamenridercraft.nox_mob": "ノクスナイト",
 "entity.kamenridercraft.nox": "仮面ライダーノクス",

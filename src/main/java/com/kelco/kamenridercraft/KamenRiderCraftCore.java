@@ -1974,6 +1974,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(MobsCore.BABY_NIGHTMARE_SPAWN_EGG);
                 event.accept(MobsCore.NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.SHADOW_NIGHTMARE_SPAWN_EGG);
                 event.accept(MobsCore.NOX_SPAWN_EGG);
                 event.accept(MobsCore.DAWN_SPAWN_EGG);
                 event.accept(MobsCore.LORD_THREE_SPAWN_EGG);

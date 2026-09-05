@@ -279,6 +279,7 @@ public class EntityAttributes {
 
         event.put(MobsCore.BABY_NIGHTMARE.get(), BabyNightmareEntity.setAttributes().build());
         event.put(MobsCore.NIGHTMARE.get(), NightmareEntity.setAttributes().build());
+        event.put(MobsCore.SHADOW_NIGHTMARE.get(), NightmareEntity.setAttributes().build());
         event.put(MobsCore.NOX.get(), NoxEntity.setAttributes().build());
         event.put(MobsCore.DAWN.get(), DawnEntity.setAttributes().build());
         event.put(MobsCore.LORD_THREE.get(), LordThreeEntity.setAttributes().build());

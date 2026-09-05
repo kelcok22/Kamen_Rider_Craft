@@ -7,10 +7,12 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -35,6 +37,8 @@ import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class BabyNightmareEntity extends BaseHenchmenEntity {
 
+    private BaseHenchmenEntity boss;
+
     public BabyNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "nightmare";
@@ -45,16 +49,29 @@ public class BabyNightmareEntity extends BaseHenchmenEntity {
         RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
     }
 
-    public void remove(RemovalReason p_149847_) {
+    public void remove(Entity.RemovalReason p_149847_) {
+
         if (this.isDeadOrDying()) {
-            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 100, 0, 0, 0, 1);
-
-
             double chance = this.random.nextDouble();
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
             if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                BaseHenchmenEntity boss = MobsCore.NOX.get().create(this.level());
+                int bossChoice = this.random.nextInt(2);
+                switch (bossChoice) {
+                    case 0:
+                        boss = MobsCore.NOX.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.necrom"));
+                        }
+                        break;
+                    case 1:
+                        boss = MobsCore.SHADOW_NIGHTMARE.get().create(this.level());
+                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.igor"));
+                        }
+                        break;
+                    default:
+                }
                 if (boss != null) {
                     boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
                     this.level().addFreshEntity(boss);
@@ -63,6 +80,7 @@ public class BabyNightmareEntity extends BaseHenchmenEntity {
         }
         super.remove(p_149847_);
     }
+
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()
                 .add(net.minecraft.world.entity.ai.attributes.Attributes.FOLLOW_RANGE, 35.0D)
