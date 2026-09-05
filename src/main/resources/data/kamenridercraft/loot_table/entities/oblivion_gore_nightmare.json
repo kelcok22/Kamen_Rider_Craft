@@ -40,6 +40,26 @@
             }
           ]
         },
+        {
+          "rolls": 1,
+          "entries": [
+            {
+              "type": "minecraft:item",
+              "weight": 1,
+              "name": "kamenridercraft:impact_capsem_gold"
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 1,
+              "name": "kamenridercraft:transform_capsem_gold"
+            },
+            {
+              "type": "minecraft:item",
+              "weight": 1,
+              "name": "kamenridercraft:wing_capsem_gold"
+            }
+          ]
+        },
     {
       "rolls": 1,
       "entries": [
