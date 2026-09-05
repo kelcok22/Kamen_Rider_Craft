@@ -494,9 +494,9 @@ public class OOORiderItems {
 	public static final DeferredItem<Item> SAME_MEDAL = ITEMS.register("same_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_same","ooo","ooodriver_belt",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,

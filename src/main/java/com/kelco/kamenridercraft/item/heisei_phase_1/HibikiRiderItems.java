@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.*;
-import com.kelco.kamenridercraft.item.heisei_phase_1.hibiki.DankiEquipmentBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.hibiki.HibikiEquipmentBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.hibiki.OniEquipmentBeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
