@@ -175,7 +175,13 @@ public class RiderDriverItem extends RiderArmorItem {
         if (isTransformed(rider) && !rider.level().isClientSide()) {
             for (int n = 0; n < numBaseFormItems; n++) {
                 RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
+                RiderFormChangeItem formOld = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1);
                 List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
+                /**if(formOld.GetIsAttackForm()){
+                    for (MobEffectInstance effect : formOld.getPotionEffectList()){
+                        potionEffectList.add(effect);
+                    }
+                }**/
                 for (MobEffectInstance effect : potionEffectList) {
                     if ((effect.getEffect() != MobEffects.DAMAGE_BOOST &&
                             effect.getEffect() != MobEffects.DIG_SPEED &&
@@ -607,6 +613,7 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         return baseFormItem;
     }
+
 
     public static RiderFormChangeItem getFormItem(ItemStack itemStack, int slot) {
         return getFormItem(itemStack, slot, 0d);
