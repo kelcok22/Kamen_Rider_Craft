@@ -10,10 +10,12 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.reiwa.GeatsRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -23,6 +25,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.server.ServerLifecycleHooks;
 
 import java.util.List;
 import java.util.Objects;
@@ -105,7 +108,17 @@ public class RegisterItemProperties {
                     }
             );
         }
-
+        ItemProperties.register(ZeztzRiderItems.ZEZTZ_PHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
+                    if (p_174637_ == null) {
+                        return 0.0F;
+                    } else {
+                        if (p_174637_.isOnFire()) {
+                                    return 1;
+                        }
+                        return 0;
+                    }
+                }
+        );
         ItemProperties.register(KuugaRiderItems.KUUGA_PHONE.get(), ResourceLocation.parse("pull"), (p_174635_, p_174636_, p_174637_, p_174638_) -> {
                     if (p_174637_ == null) {
                         return 0.0F;
