@@ -113,6 +113,9 @@
 					}
 				}
 			}
+		},
+		"code_zero.zeroider_core_bike.pose": {
+			"loop": true
 		}
 	}
 }

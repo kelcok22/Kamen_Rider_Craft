@@ -153,11 +153,21 @@ public class RiderDriverItem extends RiderArmorItem {
     public void beltTick(ItemStack stack, Level level, LivingEntity rider, int slotId) {
         if (stack.has(DataComponents.CUSTOM_DATA)) {
                 CompoundTag tag = Objects.requireNonNull(stack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
-                if (tag.getBoolean("Update_form") && slotId == 36) onFormChange(stack, rider, tag);
-                if (!isTransformed(rider) || slotId != 36) tag.putBoolean("Update_form", true);
-                if (isTransformed(rider))
+                if (tag.getBoolean("Update_form") && slotId == 36) {
+                    onFormChange(stack, rider, tag);
+                    this.abilitySlotOne = null;
+                    this.abilitySlotTwo = null;
+                    cancelAbility(rider, "", 0);
+                }
+                if (!isTransformed(rider) || slotId != 36) {
+                    tag.putBoolean("Update_form", true);
+                }
+                if (isTransformed(rider)) {
                     tag.putDouble("render_type", getRenderType(stack, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
-                if (!isTransformed(rider)) tag.putDouble("render_type", 0);
+                }
+                if (!isTransformed(rider)) {
+                    tag.putDouble("render_type", 0);
+                }
 
                 if (!rider.level().isClientSide()) {
                     for (int n = 0; n < numBaseFormItems; n++) {
@@ -300,9 +310,6 @@ public class RiderDriverItem extends RiderArmorItem {
             this.abilitySlotOne = null;
             this.abilitySlotTwo = null;
             cancelAbility(rider, "", 0);
-            if (!rider.getData(USED_ABILITY).isEmpty()) {
-                cancelAbility(rider, "", 0);
-            }
             for (int n = 0; n < numBaseFormItems; n++) {
                 RiderFormChangeItem form = getFormItem(itemStack, n + 1);
                 form.OnTransformation(itemStack, rider);

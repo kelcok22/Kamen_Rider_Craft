@@ -487,10 +487,7 @@ public class ModCommonEvents {
             }
 
             if (event.getSource().getEntity() instanceof LivingEntity _livEnt) {
-
-
                 if (event.getSource().is(DamageTypes.PLAYER_ATTACK) || event.getSource().is(DamageTypes.MOB_ATTACK) || event.getSource().is(DamageTypes.MOB_ATTACK_NO_AGGRO)) {
-
                     if (_livEnt.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, "belts/ex-aid_armor")))) {
                         ((ServerLevel) event.getEntity().level()).sendParticles(ModParticles.HIT_PARTICLES.get(),
                                 event.getEntity().getX() + 0.5, event.getEntity().getY() + 1.5,
@@ -577,8 +574,10 @@ public class ModCommonEvents {
                         }
                     }
 
-                    if (_livEnt.hasEffect(EffectCore.WITHER_SLASH) && (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem)) {
-                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SHOT).getAmplifier(), false, true));
+                    if (_livEnt.hasEffect(EffectCore.WITHER_SLASH)) {
+                        if (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem) {
+                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SLASH).getAmplifier(), false, true));
+                        }
                     }
 
 
