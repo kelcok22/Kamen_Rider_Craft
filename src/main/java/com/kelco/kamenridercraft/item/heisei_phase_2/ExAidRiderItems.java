@@ -1325,7 +1325,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("unfinished_maximum_mighty_x_gashat",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
