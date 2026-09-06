@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.Render
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
+import com.kelco.kamenridercraft.item.KRCTiers;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.reiwa.zeztz.*;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
@@ -1403,16 +1404,13 @@ public class ZeztzRiderItems {
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_TAIKEN = ITEMS.register("breakam_dawn_taiken",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
-                    .isHenshinItem(DAWN_BELT.get()).changeRepairItem(CODE_CAPSEM.get()));
+            () -> new BreakamDawnTaikenItem(KRCTiers.SPLITTING_SWORD, 11, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_L = ITEMS.register("breakam_dawn_souken_l",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
-                    .changeRepairItem(CODE_CAPSEM.get()));
+            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_R = ITEMS.register("breakam_dawn_souken_r",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
-                    .changeRepairItem(CODE_CAPSEM.get()));
+            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_BLADE = ITEMS.register("breakam_breaker_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)

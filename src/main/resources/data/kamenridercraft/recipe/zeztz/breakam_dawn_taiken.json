@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "dawn",
+	"pattern": [
+		"CPC",
+		"CBC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "kamenridercraft:code_capsem"
+		},
+		"B": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"P": {
+			"item": "kamenridercraft:punish_capsem"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:breakam_dawn_taiken"
+	}
+}
+

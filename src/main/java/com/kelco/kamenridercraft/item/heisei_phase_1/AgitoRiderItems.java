@@ -492,7 +492,7 @@ public class AgitoRiderItems {
 
 
 	public static final DeferredItem<Item> G4_GIGANT = ITEMS.register("g4_gigant",
-			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.ROCKET).setMaxAmmo(4).setFireRate(15).setReloadTime(200).singleFire(false).setExplosivePower(2).setModelAndTexture("g4_rocket", "g4_rocket").setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.ROCKET).setMaxAmmo(4).setFireRate(15).setReloadTime(200).singleFire(false).setExplosivePower(3).setModelAndTexture("g4_rocket", "g4_rocket").setRepairItem(SEED_OF_AGITO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> V1_SHOT = ITEMS.register("v1_shot",
