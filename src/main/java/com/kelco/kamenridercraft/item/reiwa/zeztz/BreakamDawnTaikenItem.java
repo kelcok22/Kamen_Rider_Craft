@@ -66,9 +66,9 @@ public class BreakamDawnTaikenItem extends SwordItem {
                 rightSword.setDamageValue(779);
             } else {
                 if ((1560 - sword.getDamageValue()) % 2 == 1) {
-                    sword.setDamageValue(sword.getDamageValue() + 1);
+                    sword.setDamageValue(sword.getDamageValue() - 1);
                     leftSword.setDamageValue(sword.getDamageValue() / 2);
-                    rightSword.setDamageValue((sword.getDamageValue() / 2) + 1);
+                    rightSword.setDamageValue((sword.getDamageValue() / 2) - 1);
                 } else {
                     leftSword.setDamageValue(sword.getDamageValue() / 2);
                     rightSword.setDamageValue(sword.getDamageValue() / 2);
@@ -76,7 +76,7 @@ public class BreakamDawnTaikenItem extends SwordItem {
             }
 
             if (!(serverPlayer.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeztzRiderItems.DAWN_BELT.get())) {
-                    serverPlayer.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.DAWN_BELT.get()));
+                serverPlayer.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.DAWN_BELT.get()));
             }
 
             serverPlayer.getItemInHand(interactionHand).shrink(1);
