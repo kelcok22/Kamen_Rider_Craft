@@ -14,6 +14,7 @@ import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.mojang.blaze3d.shaders.Effect;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -1022,17 +1023,22 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> CATASTROPHE_CAPSEM = ITEMS.register("catastrophe_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","catastrophe_gore_nightmare","catastrophe_gore_nightmare_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.EXPLOSION_PUNCH, 40, 2,true,false)));
 
     public static final DeferredItem<Item> PHANTOM_CAPSEM = ITEMS.register("phantom_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","phantom_gore_nightmare","phantom_gore_nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
                     .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_CAPSEM = ITEMS.register("chaos_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","oblivion_gore_nightmare","oblivion_gore_nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
                     .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
@@ -1197,8 +1203,7 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> NIGHTMARE_CAPSEM = ITEMS.register("nightmare_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nightmare","nightmare_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false)).isGlowing());
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).isGlowing());
 
     public static final DeferredItem<Item> NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW = ITEMS.register("nightmare_capsem_midnight",
             () -> new RiderFormChangeItem(new Item.Properties(),"_midnight","shadow_nightmare","shadow_nightmare_belt",
