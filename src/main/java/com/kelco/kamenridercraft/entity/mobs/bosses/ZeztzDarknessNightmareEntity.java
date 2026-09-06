@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -12,6 +13,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
@@ -39,6 +41,13 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
 
     }
 
+    public void remove(RemovalReason p_149847_) {
+        if (this.isDeadOrDying()) {
+            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
+            super.remove(p_149847_);
+        }
+    }
+
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
@@ -49,6 +58,8 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
             RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.DARKNESS_CAPSEM_DRIVER.get(), 1);
         }
     }
+
+
     protected void customServerAiStep() {
         super.customServerAiStep();
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());}
@@ -97,4 +108,5 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
                     .add(Attributes.ARMOR, 3.0D)
                     .add(Attributes.MAX_HEALTH, 60.0D);
     }
+
 }

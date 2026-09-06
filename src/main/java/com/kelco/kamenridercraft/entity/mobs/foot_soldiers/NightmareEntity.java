@@ -39,7 +39,7 @@ public class NightmareEntity extends BaseHenchmenEntity {
 
     public void remove(RemovalReason p_149847_) {
         if (this.isDeadOrDying()) {
-            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 100, 0, 0, 0, 1);
+            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
 
             double chance = this.random.nextDouble();
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);

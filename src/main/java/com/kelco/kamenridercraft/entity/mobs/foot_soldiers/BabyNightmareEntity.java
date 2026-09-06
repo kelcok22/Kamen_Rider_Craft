@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.Difficulty;
@@ -52,6 +53,9 @@ public class BabyNightmareEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
         if (this.isDeadOrDying()) {
+            if (this.level() instanceof ServerLevel serverlevel) {
+                ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
+            }
             double chance = this.random.nextDouble();
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
@@ -61,13 +65,13 @@ public class BabyNightmareEntity extends BaseHenchmenEntity {
                     case 0:
                         boss = MobsCore.NOX.get().create(this.level());
                         if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.necrom"));
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox"));
                         }
                         break;
                     case 1:
                         boss = MobsCore.SHADOW_NIGHTMARE.get().create(this.level());
                         if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.igor"));
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shadow_nightmare"));
                         }
                         break;
                     default:

@@ -1522,7 +1522,7 @@ public class MobsCore {
             () -> new DeferredSpawnEggItem(NIGHTMARE, 0xc4c4c4, 0x2d2d2d, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<ShadowNightmareEntity>> SHADOW_NIGHTMARE = MOBLIST.register("shadow_nightmare",
-            () -> EntityType.Builder.of(ShadowNightmareEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":nightmare"));
+            () -> EntityType.Builder.of(ShadowNightmareEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":shadow_nightmare"));
 
     public static final DeferredItem<DeferredSpawnEggItem> SHADOW_NIGHTMARE_SPAWN_EGG = ITEMS.register("shadow_nightmare_spawn_egg",
             () -> new DeferredSpawnEggItem(SHADOW_NIGHTMARE, 0xc4c4c4, 0x2d2d2d, new Item.Properties()));

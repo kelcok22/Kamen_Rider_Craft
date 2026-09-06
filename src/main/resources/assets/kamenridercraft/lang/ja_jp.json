@@ -8729,6 +8729,8 @@
 "kamenridercraft.name.lord_two": "疑似ライダー: ロードツー",
 "item.kamenridercraft.baby_nightmare_belt": "ベビーナイトメアベルト",
 "kamenridercraft.name.baby_nightmare": "怪人: ベビーナイトメア",
+"item.kamenridercraft.shadow_nightmare_belt": "シャドウナイトメアベルト",
+"kamenridercraft.name.shadow_nightmare": "怪人: シャドウナイトメア",
 "item.kamenridercraft.gun_nightmare_belt": "ガンナイトメアベルト",
 "kamenridercraft.name.gun_nightmare": "怪人: ガンナイトメア",
 "item.kamenridercraft.wolf_nightmare_belt": "ウルフナイトメアベルト",
@@ -9757,6 +9759,7 @@
 
 "item.kamenridercraft.baby_nightmare_spawn_egg": "ベビーナイトメアスポーンエッグ",
 "item.kamenridercraft.nightmare_spawn_egg": "ナイトメアスポーンエッグ",
+"item.kamenridercraft.shadow_nightmare_spawn_egg": "シャドウナイトメアスポーンエッグ",
 "item.kamenridercraft.nox_spawn_egg": "ノクスナイトスポーンエッグ",
 "item.kamenridercraft.dawn_spawn_egg": "仮面ライダードォーンポーンエッグ",
 "item.kamenridercraft.lord_three_spawn_egg": "ロードスリーポーンエッグ",

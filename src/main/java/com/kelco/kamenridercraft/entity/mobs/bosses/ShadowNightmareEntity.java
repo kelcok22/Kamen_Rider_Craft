@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -11,6 +12,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
@@ -32,11 +34,23 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.PROGRESS);
 		public ShadowNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="nox_knight";
+        NAME="nightmare";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.LORD_INVOKER_THREE.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()));
+    }
+
+    public void remove(@NotNull RemovalReason removalReason) {
+        if (this.isDeadOrDying()) {
+            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
+            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
+                ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get(), 1), 0, 0, 0);
+                kiwamiLockseed.setPickUpDelay(0);
+                level().addFreshEntity(kiwamiLockseed);
+            }
+        }
+        super.remove(removalReason);
     }
 
     public void readAdditionalSaveData(CompoundTag p_31474_) {
@@ -92,16 +106,7 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
         builder.define(DATA_FLAGS_ID, (byte)0);
     }
 
-    public void remove(@NotNull RemovalReason removalReason) {
-        if (this.isDeadOrDying()) {
-            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
-                ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get(), 1), 0, 0, 0);
-                kiwamiLockseed.setPickUpDelay(0);
-                level().addFreshEntity(kiwamiLockseed);
-            }
-        }
-        super.remove(removalReason);
-    }
+
 
     public static AttributeSupplier.Builder setAttributes() {
 		return Monster.createMonsterAttributes()

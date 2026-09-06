@@ -541,6 +541,7 @@ public class KamenRiderCraftCore {
 
             event.registerEntityRenderer(MobsCore.BABY_NIGHTMARE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NIGHTMARE.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.SHADOW_NIGHTMARE.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NOX.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DAWN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.LORD_THREE.get(), BasicEntityRenderer::new);
