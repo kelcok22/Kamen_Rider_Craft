@@ -65,7 +65,7 @@ public class BabyNightmareEntity extends BaseHenchmenEntity {
                     case 0:
                         boss = MobsCore.NOX.get().create(this.level());
                         if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox"));
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.nox_knight"));
                         }
                         break;
                     case 1:

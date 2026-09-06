@@ -27,7 +27,8 @@
           "name": "kamenridercraft:agent_number_ring_eight"
         }
       ]
-    },{
+    },
+    {
       "rolls": 1,
       "entries": [
         {
@@ -39,7 +40,9 @@
               "chance": 0.25
             }
           ]
-        },
+        }
+      ]
+    },
         {
           "rolls": 1,
           "entries": [
@@ -75,8 +78,6 @@
         }
       ]
     }
-  ]
-}
 ]
 }
 

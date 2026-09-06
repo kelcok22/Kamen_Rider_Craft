@@ -38,11 +38,11 @@ public class ModdedItemCore {
                     .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 1), 1.0F).build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 1), 1.0F).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).build()))
                     .setItemAnimation(UseAnim.DRINK).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> VIENNA_COFFEE = ITEMS.register("vienna_coffee",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).alwaysEdible().build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).alwaysEdible().build()))
                     .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> PUDDING = ITEMS.register("pudding",
