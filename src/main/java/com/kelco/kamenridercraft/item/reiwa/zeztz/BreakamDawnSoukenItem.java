@@ -54,7 +54,7 @@ public class BreakamDawnSoukenItem extends SwordItem {
         ItemStack sword = player.getItemInHand(interactionHand);
         if (player instanceof ServerPlayer serverPlayer &&
                 (serverPlayer.getOffhandItem().is(BREAKAM_DAWN_SOUKEN_L.get()) && sword.is(BREAKAM_DAWN_SOUKEN_R.get())
-                        || serverPlayer.getOffhandItem().is(BREAKAM_DAWN_SOUKEN_L.get()) && sword.is(BREAKAM_DAWN_SOUKEN_R.get()))) {
+                        || serverPlayer.getOffhandItem().is(BREAKAM_DAWN_SOUKEN_R.get()) && sword.is(BREAKAM_DAWN_SOUKEN_L.get()))) {
 
             ItemStack combinedSword = new ItemStack(BREAKAM_DAWN_TAIKEN.get());
             combinedSword.setDamageValue(serverPlayer.getOffhandItem().getDamageValue() + sword.getDamageValue());

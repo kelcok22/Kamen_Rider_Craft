@@ -21,7 +21,9 @@ import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 
 public class AnimationUtil {
     public static boolean canPose(LivingEntity poser) {
-        return !poser.getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") && !poser.isVisuallyCrawling() && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving() && poser.onGround()
+        return !poser.getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") && !poser.isVisuallyCrawling()
+                && !poser.isSleeping() && !poser.isSwimming() && !poser.isPassenger() && !poser.walkAnimation.isMoving()
+                && (poser.onGround() || poser instanceof Player player && player.isCreative())
                 && !poser.isCrouching() && !poser.onClimbable() && poser.getData(POSE_COOLDOWN) <= 0 &&
                 poser.getData(USED_ABILITY).isEmpty();
     }
