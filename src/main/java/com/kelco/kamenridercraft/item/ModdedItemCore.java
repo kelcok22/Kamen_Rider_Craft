@@ -58,7 +58,7 @@ public class ModdedItemCore {
             () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> TRANSFORM_ONE_SHOT = ITEMS.register("transform_one_shot",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 3), 1.0F).build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 3), 1.0F).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).build()))
                     .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
 
     public static final DeferredItem<Item> MILK_BOTTLE = ITEMS.register("milk_bottle",
