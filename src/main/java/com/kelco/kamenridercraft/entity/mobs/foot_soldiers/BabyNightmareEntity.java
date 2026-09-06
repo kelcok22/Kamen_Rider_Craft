@@ -53,7 +53,7 @@ public class BabyNightmareEntity extends BaseHenchmenEntity {
     public void remove(Entity.RemovalReason p_149847_) {
 
         if (this.isDeadOrDying()) {
-            if (this.level().isClientSide()) {
+            if (!this.level().isClientSide()) {
                 ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 10, getZ(), 10, 0, 0, 0, 1);
             }
             double chance = this.random.nextDouble();
