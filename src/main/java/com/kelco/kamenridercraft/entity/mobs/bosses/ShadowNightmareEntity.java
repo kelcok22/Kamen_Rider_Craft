@@ -31,7 +31,7 @@ import javax.annotation.Nullable;
 
 public class ShadowNightmareEntity extends BaseHenchmenEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(ShadowNightmareEntity.class, EntityDataSerializers.BYTE);
-    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.BLUE, BossEvent.BossBarOverlay.PROGRESS);
+    private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
 		public ShadowNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="nightmare";
@@ -82,9 +82,10 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
         if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth() < 30 && playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) >= 1) {
             if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
                 if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()) {
-                    if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
+                    if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.midnight_shadow_nightmare"));
-                                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get(), 1);
+                        RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get(), 1);
+                    }
                 }
             }
         }
