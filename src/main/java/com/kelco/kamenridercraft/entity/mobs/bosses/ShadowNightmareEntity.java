@@ -43,7 +43,7 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
 
     public void remove(@NotNull RemovalReason removalReason) {
         if (this.isDeadOrDying()) {
-            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
+            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 10, 0, 0, 0, 1);
             if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
                 ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get(), 1), 0, 0, 0);
                 kiwamiLockseed.setPickUpDelay(0);
