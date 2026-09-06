@@ -177,11 +177,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
                 RiderFormChangeItem formOld = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1);
                 List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
-                /**if(formOld.GetIsAttackForm()){
-                    for (MobEffectInstance effect : formOld.getPotionEffectList()){
-                        potionEffectList.add(effect);
-                    }
-                }**/
+                List<MobEffectInstance> potionEffectListAttackForm = formOld .getPotionEffectList();
                 for (MobEffectInstance effect : potionEffectList) {
                     if ((effect.getEffect() != MobEffects.DAMAGE_BOOST &&
                             effect.getEffect() != MobEffects.DIG_SPEED &&
@@ -208,6 +204,34 @@ public class RiderDriverItem extends RiderArmorItem {
                         }
                         rider.addEffect(new MobEffectInstance(effect.getEffect(), duration, effect.getAmplifier(), true, false));
                     }
+                }
+                if(formOld.GetIsAttackForm()){
+                for (MobEffectInstance effect : potionEffectListAttackForm) {
+                    if ((effect.getEffect() != MobEffects.DAMAGE_BOOST &&
+                            effect.getEffect() != MobEffects.DIG_SPEED &&
+                            effect.getEffect() != MobEffects.REGENERATION &&
+                            effect.getEffect() != MobEffects.DAMAGE_RESISTANCE &&
+                            effect.getEffect() != MobEffects.MOVEMENT_SPEED &&
+                            effect.getEffect() != EffectCore.NOTE &&
+                            effect.getEffect() != EffectCore.SLASH &&
+                            effect.getEffect() != EffectCore.PUNCH &&
+                            effect.getEffect() != EffectCore.GREEED &&
+                            effect.getEffect() != EffectCore.BUGSTER)
+                            || ((rider instanceof BaseSummonEntity || rider instanceof EnemySummonEntity)
+                            && (effect.getEffect() != MobEffects.DAMAGE_RESISTANCE || effect.getAmplifier() < 3)
+                            && effect.getEffect() != EffectCore.GREEED &&
+                            effect.getEffect() != EffectCore.BUGSTER)
+                            || rider instanceof Player) {
+                        int duration = 45;
+                        if (effect.getEffect() == EffectCore.FORM_TIMEOUT || effect.getEffect() == EffectCore.FORM_LOCK) {
+                            duration = effect.getDuration();
+                        } else if (effect.getEffect() == MobEffects.NIGHT_VISION) {
+                            duration = 305;
+                        } else if (effect.getEffect() == EffectCore.SMALL || effect.getEffect() == EffectCore.BIG) {
+                            duration = 1;
+                        }
+                        rider.addEffect(new MobEffectInstance(effect.getEffect(), duration, effect.getAmplifier(), true, false));
+                    }}
                 }
             }
         }
@@ -618,6 +642,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public static RiderFormChangeItem getFormItem(ItemStack itemStack, int slot) {
         return getFormItem(itemStack, slot, 0d);
     }
+
 
     public boolean hasCape(ItemStack itemStack) {
         for (int n = 0; n < numBaseFormItems; n++) {
