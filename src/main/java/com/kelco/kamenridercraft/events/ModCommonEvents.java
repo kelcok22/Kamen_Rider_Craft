@@ -487,15 +487,6 @@ public class ModCommonEvents {
                 }
             }
 
-            if (event.getEntity() instanceof Player player && player.getInventory().countItem(ZeztzRiderItems.VOID_CAPSEM.get()) != 0 && !event.getEntity().level().isClientSide() && event.getSource().is(DamageTypes.LIGHTNING_BOLT)) {
-                if (player.getOffhandItem().is(ZeztzRiderItems.VOID_CAPSEM.get())) {
-                    player.getOffhandItem().shrink(1);
-                } else {
-                    player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(ZeztzRiderItems.VOID_CAPSEM.get())), 1);
-                }
-                player.getInventory().add(new ItemStack(ZeztzRiderItems.PLASMA_CAPSEM.get()));
-            }
-
             if (event.getSource().getEntity() instanceof LivingEntity _livEnt) {
 
 
