@@ -217,7 +217,7 @@ public class RideKamensItems {
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static final DeferredItem<Item> ENERGY_DRINK = ITEMS.register("energy_drink",
-            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).build()))
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 2), 1.0F).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 300, 0), 1.0F).build()))
                     .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
