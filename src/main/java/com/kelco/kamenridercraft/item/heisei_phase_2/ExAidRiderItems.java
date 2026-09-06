@@ -1495,7 +1495,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addNeedItem(MAXIMUM_ZOMBIE_GASHAT.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+                    .isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addNeedItem(MAXIMUM_ZOMBIE_GASHAT.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
 
