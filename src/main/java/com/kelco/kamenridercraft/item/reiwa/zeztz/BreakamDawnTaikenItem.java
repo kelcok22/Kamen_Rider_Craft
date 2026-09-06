@@ -75,7 +75,11 @@ public class BreakamDawnTaikenItem extends SwordItem {
                 }
             }
 
-            if (!(serverPlayer.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeztzRiderItems.DAWN_BELT.get())) {
+            if ((!(serverPlayer.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeztzRiderItems.DAWN_BELT.get()))
+                    && serverPlayer.getItemBySlot(EquipmentSlot.LEGS).getItem() == ZeztzRiderItems.ZEZTZ_LEGGINGS.get()
+                    && serverPlayer.getItemBySlot(EquipmentSlot.CHEST).getItem() == ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()
+                    && serverPlayer.getItemBySlot(EquipmentSlot.HEAD).getItem() == ZeztzRiderItems.ZEZTZ_HELMET.get()
+            ) {
                 serverPlayer.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.DAWN_BELT.get()));
             }
 
