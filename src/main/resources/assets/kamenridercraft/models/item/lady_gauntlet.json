@@ -1,0 +1,30 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/lady_gauntlet"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [2.5, -1.75, 3],
+			"scale": [0.5, 0.5, 1.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, 0],
+			"translation": [2.5, -1.75, 3],
+			"scale": [0.5, 0.5, 1.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-90, 0, -90],
+			"translation": [0, 1, 0],
+			"scale": [1, 1, 1.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-90, 0, 90],
+			"translation": [0, 1, 0],
+			"scale": [1, 1, 1.5]
+		}
+	}
+}

@@ -38,7 +38,7 @@ public class ExAidEnergyItem extends BaseItem {
 
     @Override
     public void inventoryTick(@NotNull ItemStack itemStack, @NotNull Level level, @NotNull Entity entity, int num, boolean flag) {
-        if (entity instanceof Player player
+        if (entity instanceof Player player && !player.isCreative()
                 && !player.hasEffect(EffectCore.BUGSTER)
                 && player.getInventory().countItem(ExAidRiderItems.ENERGY_ITEM_HOLDER.get()) == 0)
             this.useEnergyItem(itemStack, level, player);

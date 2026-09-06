@@ -816,8 +816,9 @@
 "attack.kamenridercraft.choco_decoration":"§4デコレーション！",
 "attack.kamenridercraft.zaku_decoration":"§eデコレーション！",
 "attack.kamenridercraft.atari":"§b当たり！",
+"attack.kamenridercraft.chaos_release":"§8カオスリリース！",
 
-"dream.kamenridercraft.zero":"私は夢を信じる！",
+"dream.kamenridercraft.zero":"I believe in my dream！（私は夢を信じる！）",
 
 "bike.kamenridercraft.boostriker": "§cブーストライカー！",
 
@@ -8898,6 +8899,7 @@
 "item.kamenridercraft.breakam_breaker_knuckle": "ブレイカムブレイカー（ナックルモード）",
 "item.kamenridercraft.breakam_breaker_shoot": "ブレイカムブレイカー（シュートモード）",
 "item.kamenridercraft.mugen_sword": "仮面ライダー夢現の刀",
+"item.kamenridercraft.lady_gauntlet": "レディガントレット",
 "item.kamenridercraft.code_zeroider_spawn_egg": "コードゼロイダー",
 
 "item.kamenridercraft.my_th_logo": "マイスクレスト",
