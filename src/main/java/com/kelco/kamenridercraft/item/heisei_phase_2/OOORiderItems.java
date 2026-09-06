@@ -64,8 +64,8 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                         super.transformationEffect(itemstack, player,tick);
-                        if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
-                        if (tick==1d) {
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
@@ -103,7 +103,7 @@ public class OOORiderItems {
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -118,7 +118,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -157,7 +157,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -195,7 +195,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -235,7 +235,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -260,7 +260,6 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -274,7 +273,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -299,7 +298,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -313,7 +312,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -386,7 +385,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -443,7 +442,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -470,7 +469,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -664,7 +663,7 @@ public class OOORiderItems {
 					new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -715,7 +714,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -881,7 +880,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -918,7 +917,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
 					super.transformationEffect(itemstack, player,tick);
-					if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
 					if (tick==1d) {
 						((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 								player.getX(), player.getY()+1,
@@ -1083,7 +1082,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==12d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==12d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -1419,8 +1418,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 						}
 					});
 				}
-			}
-					.hasInventoryGui().addExtraBaseFormItems(HACHI_GODA_MEDAL,ARI_GODA_MEDAL).changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+			}.hasInventoryGui().addExtraBaseFormItems(HACHI_GODA_MEDAL,ARI_GODA_MEDAL).changeRepairItem(CELL_MEDAL.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHOCKER_OOODRIVER = ITEMS.register("shocker_ooodriver",
 			() -> new OOODriverItem(ArmorMaterials.DIAMOND,"shocker_ooo",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))

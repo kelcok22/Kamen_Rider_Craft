@@ -205,54 +205,55 @@ public class KamenRiderCraftCore {
         NeoForge.EVENT_BUS.register(new ModServerEvents.ServerEvents());
     }
 
-    @SubscribeEvent
-    public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
-        if (event.getRenderer().getModel() instanceof HeadedModel model) {
-            float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.HEAD_SIZE)).getValue();
-            model.getHead().xScale = sd;
-            model.getHead().yScale = sd;
-            model.getHead().zScale = sd;
-        }
 
-        if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
-            if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-                double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
-                if (tag != 0) {
-                    model.setAllVisible(false);
-                    if (tag != 1) {
-                        model.head.visible = true;
+    @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
+    public static class ClientModEvents {
+
+        @SubscribeEvent
+        public static void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
+            if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
+                if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+                    double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
+                    if (tag != 0) {
+                        model.setAllVisible(false);
+                        if (tag != 1) {
+                            model.head.visible = true;
+                        } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
+                            model.head.visible = false;
+                        }
+                        if (tag == 3) {
+                            model.leftLeg.visible = true;
+                            model.rightLeg.visible = true;
+                            model.leftArm.visible = true;
+                            model.rightArm.visible = true;
+                            model.body.visible = true;
+                        } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
+                            model.leftLeg.visible = false;
+                            model.rightLeg.visible = false;
+                            model.leftArm.visible = false;
+                            model.rightArm.visible = false;
+                            model.body.visible = false;
+                        }
                     } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                        model.head.visible = false;
-                    }
-                    if (tag == 3) {
-                        model.leftLeg.visible = true;
-                        model.rightLeg.visible = true;
-                        model.leftArm.visible = true;
-                        model.rightArm.visible = true;
-                        model.body.visible = true;
-                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                        model.leftLeg.visible = false;
-                        model.rightLeg.visible = false;
-                        model.leftArm.visible = false;
-                        model.rightArm.visible = false;
-                        model.body.visible = false;
+                        model.setAllVisible(true);
                     }
                 } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
                     model.setAllVisible(true);
                 }
-            } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                model.setAllVisible(true);
             }
+
+            if (event.getRenderer().getModel() instanceof HeadedModel model) {
+                float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.HEAD_SIZE)).getValue();
+                model.getHead().xScale = sd;
+                model.getHead().yScale  = sd;
+                model.getHead().zScale  = sd;
+            }
+
+            float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X)).getValue();
+            float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y)).getValue();
+            float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z)).getValue();
+            event.getPoseStack().scale(sizeX, sizeY, sizeZ);
         }
-
-        float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X)).getValue();
-        float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y)).getValue();
-        float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z)).getValue();
-        event.getPoseStack().scale(sizeX, sizeY, sizeZ);
-    }
-
-    @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
-    public static class ClientModEvents {
 
         @SubscribeEvent
         public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
