@@ -1444,6 +1444,9 @@ public class ZeztzRiderItems {
                     .setEffect(new MobEffectInstance(EffectCore.INSOMNIA, 40, 0, true, false))
                     .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ZEZTZ_PHONE = ITEMS.register("zeztz_phone",
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> AGENT_NUMBER_RING_ZERO = ITEMS.register("agent_number_ring_zero",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
