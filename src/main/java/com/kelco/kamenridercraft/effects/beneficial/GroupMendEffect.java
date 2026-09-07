@@ -32,7 +32,6 @@ public class GroupMendEffect extends MobEffect {
             List<LivingEntity> nearbyEntities = level.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(5), entity -> (entity instanceof Mob));
             for (LivingEntity buddy : nearbyEntities) {
                 if (!(buddy instanceof ArmorStand) && (buddy instanceof Player && buddy.getLastHurtMob() != player || buddy.isAlliedTo(player))) {
-                    System.out.println("verity");
                     buddy.getItemBySlot(EquipmentSlot.HEAD).setDamageValue(buddy.getItemBySlot(EquipmentSlot.HEAD).getDamageValue() - 1);
                     buddy.getItemBySlot(EquipmentSlot.CHEST).setDamageValue(buddy.getItemBySlot(EquipmentSlot.CHEST).getDamageValue() - 1);
                     buddy.getItemBySlot(EquipmentSlot.LEGS).setDamageValue(buddy.getItemBySlot(EquipmentSlot.LEGS).getDamageValue() - 1);
