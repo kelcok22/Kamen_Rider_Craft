@@ -962,7 +962,8 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> SHADOW_CAPSEM = ITEMS.register("shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nox","nox_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -979,7 +980,8 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_gun","nox","nox_driver_belt_gun",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)){
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -990,8 +992,9 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> WOLF_CAPSEM = ITEMS.register("wolf_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wolf","nox","nox_driver_belt_wolf",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -1004,9 +1007,10 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM = ITEMS.register("midnight_shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_midnight_shadow","nox","nox_driver_belt_midnight_shadow",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
