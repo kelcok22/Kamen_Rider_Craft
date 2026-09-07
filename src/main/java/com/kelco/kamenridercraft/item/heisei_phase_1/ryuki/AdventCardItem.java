@@ -174,13 +174,12 @@ public class AdventCardItem extends BaseItem {
                             break;
 
                     }
-
-                    if (!player.isCreative()) {
-                        itemstack.shrink(1);
-                        player.getCooldowns().addCooldown(this, 500);
-                    }
-                    player.awardStat(Stats.ITEM_USED.get(this));
                 }
+                if (!player.isCreative()) {
+                    itemstack.shrink(1);
+                    player.getCooldowns().addCooldown(this, 500);
+                }
+                player.awardStat(Stats.ITEM_USED.get(this));
             }
         }
         return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
