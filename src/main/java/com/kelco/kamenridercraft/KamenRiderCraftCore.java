@@ -231,10 +231,10 @@ public class KamenRiderCraftCore {
                         model.rightArm.visible = false;
                         model.body.visible = false;
                     }
-                } else if (!(event.getEntity() instanceof Player)) {
+                } else {
                     model.setAllVisible(true);
                 }
-            } else if (!(event.getEntity() instanceof Player)) {
+            } else {
                 model.setAllVisible(true);
             }
         }
