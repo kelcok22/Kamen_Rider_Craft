@@ -84,7 +84,7 @@ public class LordThreeEntity extends BaseHenchmenEntity {
         super.customServerAiStep();
         if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.LORD_INVOKER_THREE.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)!= ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.PURPLE) {
+            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.PURPLE) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.PURPLE);
                 this.bossEvent.setName(Component.translatable("entity.kamenridercraft.lord_three_booster").withStyle(ChatFormatting.DARK_PURPLE));
             }

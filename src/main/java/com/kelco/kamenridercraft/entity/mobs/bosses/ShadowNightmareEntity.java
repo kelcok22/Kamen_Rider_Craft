@@ -95,9 +95,9 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
         super.customServerAiStep();
         if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)!= ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.RED) {
-                this.bossEvent.setColor(BossEvent.BossBarColor.PURPLE);
-                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.midnight_shadow_nightmare").withStyle(ChatFormatting.RED));
+            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.BLUE) {
+                this.bossEvent.setColor(BossEvent.BossBarColor.BLUE);
+                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.midnight_shadow_nightmare").withStyle(ChatFormatting.DARK_BLUE));
             }
         }
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());}
@@ -106,6 +106,7 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
         super.defineSynchedData(builder);
         builder.define(DATA_FLAGS_ID, (byte)0);
     }
+
 
 
 
