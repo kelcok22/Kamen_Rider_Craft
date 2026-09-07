@@ -31,7 +31,9 @@ public class ExAidEnergyItem extends BaseItem {
             for (MobEffectInstance effect : potionEffectList) {
 				player.addEffect(new MobEffectInstance(effect.getEffect(), effect.getDuration(), effect.getAmplifier(), true, false));
             }
-            itemstack.shrink(1);
+            if (!player.isCreative()) {
+                itemstack.shrink(1);
+            }
 			player.awardStat(Stats.ITEM_USED.get(this));
         }
     }
