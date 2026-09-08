@@ -992,7 +992,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotTwoAbility("cannon",1).setFormToArmor().changeSlot(2)
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
+                    .isGlowing().changeModel("tank_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
 
 
     public static final DeferredItem<Item> TADDLE_LEGACY_GASHAT_TRUE = ITEMS.register("taddle_legacy_gashat_true",
