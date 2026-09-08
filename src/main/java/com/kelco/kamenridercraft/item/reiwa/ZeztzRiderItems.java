@@ -1415,10 +1415,10 @@ public class ZeztzRiderItems {
             () -> new BreakamDawnTaikenItem(KRCTiers.SPLITTING_SWORD, 11, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_L = ITEMS.register("breakam_dawn_souken_l",
-            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_R = ITEMS.register("breakam_dawn_souken_r",
-            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_BLADE = ITEMS.register("breakam_breaker_blade",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)

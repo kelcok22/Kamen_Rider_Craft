@@ -7,10 +7,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
@@ -22,7 +19,7 @@ public class BreakamDawnSoukenItem extends SwordItem {
     private Item craftingRemainingItem = null;
 
     public BreakamDawnSoukenItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-        super(KRCTiers.SPLIT_SWORD, prop.durability(780));
+        super(toolTier, prop.attributes(SwordItem.createAttributes(KRCTiers.SPLIT_SWORD, Atk, Spd)));
     }
 
     public boolean isValidRepairItem(@NotNull ItemStack itemStackOne, ItemStack repairItem) {

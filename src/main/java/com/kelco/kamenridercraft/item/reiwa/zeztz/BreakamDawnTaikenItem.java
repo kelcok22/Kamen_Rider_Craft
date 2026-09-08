@@ -24,7 +24,7 @@ public class BreakamDawnTaikenItem extends SwordItem {
     private Item craftingRemainingItem = null;
 
     public BreakamDawnTaikenItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-        super(KRCTiers.SPLITTING_SWORD, prop.durability(1560));
+        super(toolTier, prop.attributes(SwordItem.createAttributes(KRCTiers.SPLITTING_SWORD, Atk, Spd)));
     }
 
     public boolean isValidRepairItem(@NotNull ItemStack itemStackOne, ItemStack repairItem) {
