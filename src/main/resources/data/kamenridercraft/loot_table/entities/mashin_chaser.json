@@ -21,16 +21,19 @@
 		},
 		  {
 			  "type": "minecraft:item",
-			  "weight": 1,
+			  "weight": 4,
 			  "name": "kamenridercraft:protozero_core"
-		  },
-		  {
-			  "type": "minecraft:item",
-			  "weight": 3,
-			  "name": "kamenridercraft:proto_speedshift"
 		  }
 	  ]
-	},
+	},{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_speedshift"
+        }
+      ]
+    },
 	{
 	  "rolls": 1,
 	  "entries": [
