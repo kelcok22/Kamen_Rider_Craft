@@ -8185,6 +8185,9 @@
 "item.kamenridercraft.dark_ether_chemy_card": "Dark Ether Chemy Card",
 "item.kamenridercraft.eldragon_chemy_card": "Eldragon Chemy Card",
 
+"item.kamenridercraft.hopper_chemy_card": "Hopper Ride Chemy Card",
+"item.kamenridercraft.sushi_chemy_card": "Sushi Ride Chemy Card",
+
 "item.kamenridercraft.kuuga_ride_chemy_card": "Kuuga Ride Chemy Card",
 "item.kamenridercraft.agito_ride_chemy_card": "Agito Ride Chemy Card",
 "item.kamenridercraft.ryuki_ride_chemy_card": "Ryuki Ride Chemy Card",
@@ -8302,6 +8305,8 @@
 "kamenridercraft:the_sun_ride_chemy_card_g.form": "Form: Sununicorn",
 "kamenridercraft:neminemoon_ride_chemy_card_g.form": "Form: Mooncerberus",
 "kamenridercraft:gekiocopter_ride_chemy_card_g.form": "Form: Onicopter",
+
+"kamenridercraft:hopper_ride_chemy_card.form": "Form: Sushihopper",
 
 "kamenridercraft:kuuga_ride_chemy_card.form": "Form: Gorgeous Kuuga",
 "kamenridercraft:agito_ride_chemy_card.form": "Form: Gorgeous Agito",
