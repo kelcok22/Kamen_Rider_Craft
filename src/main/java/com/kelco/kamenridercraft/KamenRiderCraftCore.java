@@ -1599,6 +1599,16 @@ public class KamenRiderCraftCore {
                     event.accept(CreativeTabRegistry.ZEZTZ_TAB_ITEM.get(i));
                 }
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
+                event.accept(MobsCore.BABY_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.SHADOW_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.NOX_SPAWN_EGG);
+                event.accept(MobsCore.DAWN_SPAWN_EGG);
+                event.accept(MobsCore.LORD_THREE_SPAWN_EGG);
+                event.accept(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.CATASTROPHE_GORE_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.PHANTOM_GORE_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.OBLIVION_GORE_NIGHTMARE_SPAWN_EGG);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
                 event.accept(RiderBlocks.MIND_DOOR);
 
