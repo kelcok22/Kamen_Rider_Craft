@@ -1688,7 +1688,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_decade.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DOKIDOKI_MAKAI_CASTLE_KIVA_GASHAT = ITEMS.register("dokidoki_makai_castle_kiva_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kiva","ex_aid","gamer_driver_dokidoki_makai_castle_kiva",
