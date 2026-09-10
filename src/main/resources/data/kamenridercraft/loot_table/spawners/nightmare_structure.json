@@ -12,7 +12,7 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:insomnia_visor",
-          "weight": 1
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -28,7 +28,7 @@
             }
           ],
           "name": "kamenridercraft:code_capsem",
-          "weight": 3
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -49,12 +49,12 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:agent_number_ring_five",
-          "weight": 2
+          "weight": 5
         },
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:agent_number_ring_six",
-          "weight": 2
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -64,7 +64,7 @@
         {
           "type": "minecraft:item",
           "name": "kamenridercraft:zeztz_horse_armor",
-          "weight": 2
+          "weight": 3
         }
       ],
       "rolls": 1.0

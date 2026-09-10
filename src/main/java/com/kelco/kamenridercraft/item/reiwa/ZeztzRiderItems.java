@@ -1212,7 +1212,7 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_midnight","shadow_nightmare","shadow_nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).isGlowing());
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).changeModel("shadow_nightmare.geo.json"));
 
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",

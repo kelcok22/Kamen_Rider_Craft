@@ -6646,7 +6646,7 @@
 "item.kamenridercraft.shuriken_starter_hattari": "メンキョカイデンプレート（ハッタリ）",
 "item.kamenridercraft.shuriken_starter_yaminin": "メンキョカイデンプレート（闇忍）",
 "item.kamenridercraft.quiz_topper": "クイズトッパー",
-"item.kamenridercraft.spannerder_screwder": "スパなーダー&スクリューダー",
+"item.kamenridercraft.spannerder_screwder": "スパナーダー＆スクリューダー",
 "item.kamenridercraft.ginga_scope": "ギンガスコープ",
 
 "item.kamenridercraft.ohma_advent_calendar": "『逢魔降臨暦』",
@@ -11904,6 +11904,8 @@
 "advancements.kamenridercraft.zeztz.dualmare.title": "死ぬのは奴らだ",
 "advancements.kamenridercraft.zeztz.exdream.description": "ゼッツ エクスドリームに変身",
 "advancements.kamenridercraft.zeztz.exdream.title": "ノー・タイム・トゥ・ダイ",
+"advancements.kamenridercraft.zeztz.heart_of_impact.description": "ゼッツ ハートオブインパクトに変身",
+"advancements.kamenridercraft.zeztz.heart_of_impact.title": "ムーンレイカー",
 "advancements.kamenridercraft.zeztz.inazuma_plasma.description": "ゼッツ イナズマプラズマに変身",
 "advancements.kamenridercraft.zeztz.inazuma_plasma.title": "サンダーボール作戦",
 "advancements.kamenridercraft.zeztz.knight_seventeen.description": "ナイトセブンティーンに擬装",

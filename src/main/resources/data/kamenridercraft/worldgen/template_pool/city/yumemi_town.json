@@ -1,0 +1,15 @@
+{
+	"name": "kamenridercraft:city/yumemi_town",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 4,
+			"element": {
+				"location": "kamenridercraft:city/origin/kougami_foundations",
+				"processors": "minecraft:empty",
+				"projection": "rigid",
+				"element_type": "minecraft:single_pool_element"
+			}
+		}
+	]
+}
