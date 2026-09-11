@@ -209,8 +209,9 @@ public class KamenRiderCraftCore {
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
         if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
-            if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-                double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
+            Double tf = Objects.requireNonNull(event.getEntity().getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+            if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())&& event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+                double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET),tf);
                 if (tag != 0) {
                     model.setAllVisible(false);
                     if (tag != 1) {
@@ -235,7 +236,7 @@ public class KamenRiderCraftCore {
                     model.setAllVisible(true);
                 }
             } else {
-                model.setAllVisible(true);
+                if(!(event.getEntity()instanceof Player))model.setAllVisible(true);
             }
         }
 
