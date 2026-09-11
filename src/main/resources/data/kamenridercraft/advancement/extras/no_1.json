@@ -1,20 +1,20 @@
 {
 	"display": {
 		"icon": {
-			"id": "kamenridercraft:plasma_capsem"
+			"id": "kamenridercraft:shin_typhoon_ichigo"
 		},
 		"title": {
-			"translate": "advancements.kamenridercraft.zeztz.inazuma_plasma.title"
+			"translate": "advancements.kamenridercraft.extras.no_1.title"
 		},
 		"description": {
-			"translate": "advancements.kamenridercraft.zeztz.inazuma_plasma.description"
+			"translate": "advancements.kamenridercraft.extras.no_1.description"
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "kamenridercraft:zeztz/zeztz",
+	"parent": "kamenridercraft:extras",
 	"criteria": {
 		"requirement": {
 			"trigger": "minecraft:inventory_changed",
@@ -23,26 +23,23 @@
 					"equipment": {
 						"head": {
 							"items": [
-								"kamenridercraft:zeztz_head"
+								"kamenridercraft:shin_ichigohead"
 							]
 						},
 						"chest": {
 							"items": [
-								"kamenridercraft:zeztz_troso"
+								"kamenridercraft:shin_ichigotroso"
 							]
 						},
 						"legs": {
 							"items": [
-								"kamenridercraft:zeztz_legs"
+								"kamenridercraft:shin_ichigolegs"
 							]
 						},
 						"feet": {
 							"items": [
-								"kamenridercraft:zeztz_driver"
-							],
-							"predicates": {
-								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:plasma_capsem\"}"
-							}
+								"kamenridercraft:shin_typhoon_ichigo"
+							]
 						}
 					}
 				}

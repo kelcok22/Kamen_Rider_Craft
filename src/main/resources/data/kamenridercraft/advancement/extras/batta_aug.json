@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:simplified_typhoon"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.extras.batta_aug.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.batta_aug.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:extras/no_0",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "kamenridercraft:shin_ichigohead"
+              ]
+            },
+            "chest": {
+              "items": [
+                "kamenridercraft:shin_ichigotroso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "kamenridercraft:shin_ichigolegs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "kamenridercraft:simplified_typhoon"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

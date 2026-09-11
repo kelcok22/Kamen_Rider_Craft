@@ -1,0 +1,694 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:card_warrior_kamen_rider_manga"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.extras.card_warrior.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.extras.card_warrior.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:extras",
+    "criteria": {
+      "1": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:ichigohead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:ichigotroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:ichigolegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:typhoon_ichigo"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:cyclonehopper\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:v3head"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:v3troso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:v3legs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:double_typhoon"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:flaresalamander\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:kuugahead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:kuugatroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:kuugalegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:arcle"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:grandgouram\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "4": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:agitohead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:agitotroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:agitolegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:alter_ring"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:stagtornador\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "5": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:agitohead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:agitotroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:agitolegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:meta_factor"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:leatheraider\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "6": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:ryukihead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:ryukitroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:ryukilegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:v_buckle_ryuki"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dragreder\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "7": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:ryukihead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:ryukitroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:ryukilegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:v_buckle_ryuki"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:dragranzer\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "8": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:ryukihead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:ryukitroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:ryukilegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:v_buckle_knight"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:darkwing\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "9": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:faizhead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:faiztroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:faizlegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:faiz_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:greywolch\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "10": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:faizhead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:faiztroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:faizlegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:kaixa_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:chaosdile\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "11": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:bladehead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:bladetroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:bladelegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:blay_buckle"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:herculespader\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "12": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:bladehead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:bladetroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:bladelegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:chalice_rouzer"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:shadowmantis\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "13": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:hibikihead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:hibikitroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:hibikilegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:hibikidriver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:akanetaka\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "14": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:kabutohead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:kabutotroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:kabutolegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:kabuto_rider_belt"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:exbeeter\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "15": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:kabutohead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:kabutotroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:kabutolegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:gatack_rider_belt"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:scissorbeeter\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "16": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:kuugahead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:kuugatroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:kuugalegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:arcle"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "17": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:bladehead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:bladetroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:bladelegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:blay_buckle"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:jinrai_no_senshi_blade\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "18": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:kabutohead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:kabutotroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:kabutolegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:dark_kabuto_rider_belt"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:jinrai_no_senshi_dark_kabuto\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "19": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:ryukihead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:ryukitroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:ryukilegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:v_buckle_ryuga"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:bakuen_no_senshi_ryuga\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "20": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:faizhead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:faiztroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:faizlegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:faiz_driver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:bakuen_no_senshi\"}"
+                }
+              }
+            }
+          }
+        }
+      },
+      "21": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "head": {
+                "items": [
+                  "kamenridercraft:hibikihead"
+                ]
+              },
+              "chest": {
+                "items": [
+                  "kamenridercraft:hibikitroso"
+                ]
+              },
+              "legs": {
+                "items": [
+                  "kamenridercraft:hibikilegs"
+                ]
+              },
+              "feet": {
+                "items": [
+                  "kamenridercraft:hibikidriver"
+                ],
+                "predicates": {
+                  "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:bakuen_no_senshi_hibiki\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
