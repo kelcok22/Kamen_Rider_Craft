@@ -107,7 +107,8 @@ public class FourzeDriverItem extends RiderDriverItem {
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_MAGNET_STATES.get() && getFormItem(belt, 1) != FourzeRiderItems.MAGNET_ASTROSWITCH_N.get())
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_MAGNET_STATES.get() && getFormItem(belt, 4) != FourzeRiderItems.MAGNET_ASTROSWITCH_S.get())
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_ROCKET_STATES.get() && getFormItem(belt, 1) != FourzeRiderItems.ROCKET_ASTROSWITCH.get())
-                || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_ROCKET_STATES.get() && getFormItem(belt, 4) != FourzeRiderItems.SUPER_ROCKET_ASTROSWITCH.get())) {
+                || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_ROCKET_STATES.get() && getFormItem(belt, 4) != FourzeRiderItems.SUPER_ROCKET_ASTROSWITCH.get())
+                || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_COSMIC_STATES.get() && getFormItem(belt, 1) != FourzeRiderItems.COSMIC_ASTROSWITCH.get())) {
             setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
         }
 
