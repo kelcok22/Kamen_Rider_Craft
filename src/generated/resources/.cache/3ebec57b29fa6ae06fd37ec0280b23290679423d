@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-03T16:27:22.695116	Item Models: kamenridercraft
+// 1.21.1	2026-09-10T02:48:24.3427507	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -653,6 +653,7 @@ b6480a27dfa59875c7881e680d0d747060f12f22 assets/kamenridercraft/models/item/saru
 64c90ef96a3b7940b0dfce72382d9edeb0fed07e assets/kamenridercraft/models/item/sealable_thunder_deer.json
 6f7bc6201f1fcfa31003aebe1132b9dc1f2850b9 assets/kamenridercraft/models/item/shadowmoon_gochizo.json
 ad0f2b2d5d8c146225a4a19bbbefd3c95b4f5b98 assets/kamenridercraft/models/item/shadow_capsem.json
+38c124d37bf9e4967d8e1b5c300f02be5efe3a52 assets/kamenridercraft/models/item/shadow_nightmare_belt.json
 b7883d55c89e817ab54db8175f2c2048ab7b14e2 assets/kamenridercraft/models/item/shift_alloy.json
 77e30b37d15a6413b5deebf4dc9491f62f4e731b assets/kamenridercraft/models/item/shift_ride_crosser.json
 b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/shift_viral_core.json
