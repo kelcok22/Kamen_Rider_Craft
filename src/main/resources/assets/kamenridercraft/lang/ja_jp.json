@@ -8298,6 +8298,8 @@
 "kamenridercraft:neminemoon_ride_chemy_card_g.form": "フォーム: ムーンケルベロス",
 "kamenridercraft:gekiocopter_ride_chemy_card_g.form": "フォーム: オニコプター",
 
+"kamenridercraft:hopper_ride_chemy_card.form": "フォーム: スシホッパー",
+
 "kamenridercraft:kuuga_ride_chemy_card.form": "フォーム: ゴージャスクウガ",
 "kamenridercraft:agito_ride_chemy_card.form": "フォーム: ゴージャスアギト",
 "kamenridercraft:ryuki_ride_chemy_card.form": "フォーム: ゴージャス龍騎",
@@ -8369,6 +8371,9 @@
 
 "item.kamenridercraft.santaclaus_ride_chemy_card": "サンタクロース",
 "item.kamenridercraft.tonakailiner_ride_chemy_card": "トナカイライナー",
+
+"item.kamenridercraft.sushi_ride_chemy_card": "スシ",
+"item.kamenridercraft.hopper_ride_chemy_card": "ホッパー",
 
 "item.kamenridercraft.firemars_ride_chemy_card_televikun": "ファイヤマルス（てれびくんver.）",
 "item.kamenridercraft.inphoenix_ride_chemy_card_televikun": "インフェニックス（てれびくんver.）",
@@ -8911,6 +8916,12 @@
 "kamenridercraft.name.my_th": "ライダー: 仮面ライダーマイス",
 "item.kamenridercraft.my_th_driver_hammer_on": "マイスドライバーハンマーオン",
 "kamenridercraft.name.rid": "ライダー: 仮面ライダーリド",
+"item.kamenridercraft.my_th_driver_hammer_on_black": "マイスドライバーハンマーオン",
+"kamenridercraft.name.black_my_th": "ライダー: 黒い仮面ライダーマイス",
+"item.kamenridercraft.my_th_driver_hammer_on_oroc": "マイスドライバーハンマーオン",
+"kamenridercraft.name.oroc": "ライダー: 仮面ライダーオロク",
+"item.kamenridercraft.my_th_driver_hammer_on_hore": "マイスドライバーハンマーオン",
+"kamenridercraft.name.hore": "ライダー: 仮面ライダーホーレ",
 "item.kamenridercraft.my_th_driver_slash_on": "マイスドライバースラッシュオン",
 "kamenridercraft.name.tigre": "ライダー: 仮面ライダーティグル",
 "item.kamenridercraft.my_th_driver_slash_on_datt": "マイスドライバースラッシュオン",
@@ -8919,6 +8930,8 @@
 "kamenridercraft.name.jyao": "ライダー: 仮面ライダージャオ",
 "item.kamenridercraft.my_th_driver_bite_on_mutn": "マイスドライバーバイトオン",
 "kamenridercraft.name.mutn": "ライダー: 仮面ライダームトン",
+"item.kamenridercraft.my_th_driver_bite_on_farus": "マイスドライバーバイトオン",
+"kamenridercraft.name.farus": "ライダー: 仮面ライダーファルス",
 "item.kamenridercraft.my_th_driver_shot_on": "マイスドライバーショットオン",
 "kamenridercraft.name.kei": "ライダー: 仮面ライダーケイ",
 "item.kamenridercraft.my_th_driver_shot_on_vanken": "マイスドライバーショットオン",
@@ -8928,11 +8941,15 @@
 
 "item.kamenridercraft.ridegg_1": "ライドエグ1",
 "kamenridercraft:ridegg_1.form": "フォーム: 基本フォーム",
-"item.kamenridercraft.ridegg_1_maou": "ライドエグズ1（マオウver.）",
+"item.kamenridercraft.ride_x_eggs_1_origin": "ライドエグ1オリジン",
+"kamenridercraft:ride_x_eggs_1_origin.form": "フォーム: 基本フォーム",
+"item.kamenridercraft.ride_x_eggs_1_maou": "ライドエグ1炎",
 "item.kamenridercraft.harinezumi_seed_x_egg": "ハリネズミシードエグズ",
 "kamenridercraft:harinezumi_seed_x_egg.form": "フォーム: ヘッジホッグプラス",
 "item.kamenridercraft.zou_seed_x_egg": "ゾウシードエグズ",
 "kamenridercraft:zou_seed_x_egg.form": "フォーム: エレファントプラス",
+
+
 
 "item.kamenridercraft.zeztz_ride_x_eggs": "ゼッツライドエグズ",
 
@@ -10888,6 +10905,8 @@
 "advancements.kamenridercraft.drive.bronze_drive.title": "「全然ゴールドじゃない～！！」",
 "advancements.kamenridercraft.drive.chaser.description": "仮面ライダーチェイサーに変身",
 "advancements.kamenridercraft.drive.chaser.title": "「全ての自由の為に戦う戦士」",
+"advancements.kamenridercraft.drive.chaser_mach.description": "仮面ライダーチェイサーマッハに変身",
+"advancements.kamenridercraft.drive.chaser_mach.title": "バイク＋バイク＝車",
 "advancements.kamenridercraft.drive.dark_drive.description": "仮面ライダーダークドライブに変身",
 "advancements.kamenridercraft.drive.dark_drive.title": "SURPRISE FUTURE",
 "advancements.kamenridercraft.drive.dead_heat.description": "ドライブ タイプデッドヒートに変身",
@@ -10904,6 +10923,10 @@
 "advancements.kamenridercraft.drive.lupin.title": "「確かに頂いた！」",
 "advancements.kamenridercraft.drive.mach.description": "仮面ライダーマッハに変身",
 "advancements.kamenridercraft.drive.mach.title": "「追跡… 撲滅… いずれもマッハ！」",
+"advancements.kamenridercraft.drive.mach_chaser.description": "仮面ライダーマッハチェイサーに変身",
+"advancements.kamenridercraft.drive.mach_chaser.title": "待つんだGO！！",
+"advancements.kamenridercraft.drive.mach_dead_heat.description": "仮面ライダーデッドヒートマッハに変身",
+"advancements.kamenridercraft.drive.mach_dead_heat.title": "「さあ、後は知らないぞ～？」",
 "advancements.kamenridercraft.drive.mach_mass_production.description": "量産型仮面ライダーマッハに変身",
 "advancements.kamenridercraft.drive.mach_mass_production.title": "「集団で戦闘を行い、安全に勝利すること」",
 "advancements.kamenridercraft.drive.mashin_chaser.description": "魔進チェイサーを倒す",
@@ -10918,6 +10941,10 @@
 "advancements.kamenridercraft.drive.shingou-ax.title": "「待ってろよ！行っていいよ！」",
 "advancements.kamenridercraft.drive.special.description": "ドライブ タイプスペシャルに変身",
 "advancements.kamenridercraft.drive.special.title": "サプライズ・フューチャー",
+"advancements.kamenridercraft.drive.super_dead_heat.description": "仮面ライダー超デッドイートドライブに変身",
+"advancements.kamenridercraft.drive.super_dead_heat.title": "eternity",
+"advancements.kamenridercraft.drive.super_mashin_chaser.description": "超魔進チェイサーに変身",
+"advancements.kamenridercraft.drive.super_mashin_chaser.title": "good bye little moon",
 "advancements.kamenridercraft.drive.tridoron.description": "ドライブ タイプトライドロンに変身",
 "advancements.kamenridercraft.drive.tridoron.title": "Unlimited Drive",
 "advancements.kamenridercraft.drive.wild.description": "ドライブ タイプワイルドに変身",
