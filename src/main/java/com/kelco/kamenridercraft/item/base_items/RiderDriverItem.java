@@ -371,8 +371,10 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        double henshin_tick = getHenshinTick(itemStack,rider);
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
-        boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getSD() & SD;
+        boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && getFormItem(itemStack, 1, henshin_tick).getSD() & SD;
+
 
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem) itemStack.getItem()).beltText;
@@ -381,7 +383,7 @@ public class RiderDriverItem extends RiderArmorItem {
             }
             return "belts/" + belt;
         } else
-            return getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getRiderName(riderName) + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly) + (sd ? "_sd" : "");
+            return getFormItem(itemStack, 1, henshin_tick).getRiderName(riderName) + getFormItem(itemStack, 1, henshin_tick).getFormName(fly) + (sd ? "_sd" : "");
     }
 
     public String getUnlimitedTextures(ItemStack itemStack, LivingEntity rider, String riderName, int num) {
@@ -395,9 +397,9 @@ public class RiderDriverItem extends RiderArmorItem {
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
 
         //if(slot==EquipmentSlot.HEAD&isTransformed(rider))layerInfo.add(new RenderLayerInfo("ferbus", "ferbus"));
-
+        double henshin_tick = getHenshinTick(itemStack,rider);
         for (int n = 0; n < numBaseFormItems; n++) {
-            RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
+            RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, henshin_tick);
            form.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
             }
 
@@ -427,10 +429,11 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public ResourceLocation getModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-        if (getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFlyingModel(this.riderName));
+        double transformingTick = getHenshinTick(itemStack,rider);
+        if (getFormItem(itemStack, 1, transformingTick).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, transformingTick).getFlyingModel(this.riderName));
         }
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getModel(this.riderName));
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, transformingTick).getModel(this.riderName));
     }
 
 
@@ -550,9 +553,17 @@ public class RiderDriverItem extends RiderArmorItem {
     public void setExtraFormItem(ItemStack itemStack, Item ITEM, int SLOT, CompoundTag tag) {
     }
 
+    public double getHenshinTick(ItemStack itemStack, LivingEntity rider) {
+        double transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        if (itemStack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+            if (tag.getBoolean("Update_form"))transformingTick=getFormItem(itemStack,1).getHenshinTick();
+        }
+        return transformingTick;
+    }
 
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
-       double transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+       double transformingTick = getHenshinTick(itemStack,rider);
         if (currentSlot == EquipmentSlot.FEET)
             return  getFormItem(itemStack, 1).getIsBeltGlowing();
         else if (isTransformed(rider))
