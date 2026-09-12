@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "faiz",
+	"pattern": [
+		"YYY",
+		"YBY",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_mission_memory"
+		},
+		"B": {
+			"item": "kamenridercraft:base_bike"
+		},
+		"Y": {
+			"item": "kamenridercraft:faiz_mission_memory"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:auto_vajin_spawn_egg"
+	}
+}
