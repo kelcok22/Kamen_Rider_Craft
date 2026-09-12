@@ -25,6 +25,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -75,16 +76,17 @@ public class HelheimCrack extends BaseBlock {
 
     public static void teleportToDimension(ServerLevel otherDim, LivingEntity entity, BlockPos pos) {
 
-        if (otherDim.getBlockState(pos) != RiderBlocks.HELHEIM_CRACK.get().defaultBlockState()) {
-            otherDim.setBlockAndUpdate(pos, RiderBlocks.HELHEIM_CRACK.get().defaultBlockState());
+        int y = otherDim.getChunkAt(pos).getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, pos.getX(), pos.getZ()) + 1;
+        BlockPos pos2 = new BlockPos((int) entity.getX(), y, (int) entity.getZ());
+        if (otherDim.getBlockState(pos2).is(RiderBlocks.HELHEIM_CRACK.get())) {
+            otherDim.setBlockAndUpdate(pos2, RiderBlocks.HELHEIM_CRACK.get().defaultBlockState());
         }
-
-        entity.teleportTo(otherDim, entity.getX(), Mth.clamp(entity.getY(), otherDim.getMinBuildHeight(), otherDim.getMinBuildHeight() + otherDim.getLogicalHeight() - 1), entity.getZ(), new HashSet<>(), 0, 0);
+        entity.teleportTo(otherDim, entity.getX(), y, entity.getZ(), new HashSet<>(), 0, 0);
         while (!otherDim.noCollision(entity) || otherDim.containsAnyLiquid(entity.getBoundingBox()))
             entity.teleportRelative(0.0, 2.0, 0.0);
 
         entity.addEffect(new MobEffectInstance(EffectCore.PORTAL_COOLDOWN, 200, 0, true, true));
-        entity.randomTeleport(entity.getX(), entity.getY(), entity.getZ(), false);
+        entity.randomTeleport(entity.getX(), y, entity.getZ(), false);
     }
 
     @Override

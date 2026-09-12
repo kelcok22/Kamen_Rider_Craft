@@ -453,7 +453,7 @@ public class RiderBlocks {
             () -> new FlowerPotBlock(RiderBlocks.HELHEIM_PLANT_4.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> HELHEIM_CRACK = registerBlock("helheim_crack",
-            () -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> 10).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 30, 15)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
+            () -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> 10).strength(10f).dynamicShape(), Block.box(2, 0, 1, 14, 30, 15)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RIDER_BLOCK));
 
     public static final DeferredBlock<Block> PANDORA_FIRE = registerBlock("pandora_fire",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)

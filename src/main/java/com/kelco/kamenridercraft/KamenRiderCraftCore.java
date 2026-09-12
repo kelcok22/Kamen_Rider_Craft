@@ -68,6 +68,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
@@ -236,8 +237,11 @@ public class KamenRiderCraftCore {
                 } else {
                     model.setAllVisible(true);
                 }
-            } else {
-                if(!(event.getEntity()instanceof Player))model.setAllVisible(true);
+            } else if (!event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft")&&
+            !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("powerrangerscraft")&&
+                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("ultracraft")&&
+                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("tmntcraft")) {
+                model.setAllVisible(true);
             }
         }
 
@@ -672,6 +676,7 @@ public class KamenRiderCraftCore {
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES4.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.PUDDING_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.BUTTERFLY_PARTICLES.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MY_TH_GEM_PARTICLES.get(), My_ThGemParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), RealizingParticles.Provider::new);
 
         }
