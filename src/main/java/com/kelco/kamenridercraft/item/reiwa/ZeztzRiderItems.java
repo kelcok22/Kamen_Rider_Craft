@@ -85,7 +85,7 @@ public class ZeztzRiderItems {
 
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<20){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -110,7 +110,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 2,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<20){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -134,7 +134,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -158,7 +158,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<20){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -182,7 +182,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<20){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -215,7 +215,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -257,7 +257,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -280,7 +280,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -303,7 +303,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
@@ -326,7 +326,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10){
+                    if (transformationTick>10&transformationTick<21){
                         if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }

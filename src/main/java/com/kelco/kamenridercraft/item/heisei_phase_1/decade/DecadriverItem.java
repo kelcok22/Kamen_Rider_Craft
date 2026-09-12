@@ -23,12 +23,10 @@ public class DecadriverItem extends RiderDriverItem {
     public String getUnlimitedBeltTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
         if (num == 1 && !livingEntity.isHolding(DecadeRiderItems.RIDE_BOOKER.get())) return "decadriver_belt_rb";
         return "blank";
-
     }
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/decade_belt.geo.json");
-
     }
 
     @Override

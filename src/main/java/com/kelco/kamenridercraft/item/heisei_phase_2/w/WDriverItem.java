@@ -95,36 +95,37 @@ public class WDriverItem extends RiderDriverItem {
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
         boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
+        double henshinTick = getHenshinTick(itemstack,rider);
         if (equipmentSlot == EquipmentSlot.FEET) {
 
             return "belts/" + getFormItem(itemstack, 1).getBeltTex();
         }
-		if (getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()) == ModdedItemCore.BLANK_FORM.asItem()) {
+		if (getFormItem(itemstack, 1, henshinTick) == ModdedItemCore.BLANK_FORM.asItem()) {
 			return "blank";
 		} else if (equipmentSlot == EquipmentSlot.HEAD) {
-			if (Objects.equals(getFormItem(itemstack, 2, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_skull")) {
-				return riderName + getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly) + "_skull";
+			if (Objects.equals(getFormItem(itemstack, 2, henshinTick).getFormName(fly), "_skull")) {
+				return riderName + getFormItem(itemstack, 1, henshinTick).getFormName(fly) + "_skull";
 			} else {
-				return riderName + getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
+				return riderName + getFormItem(itemstack, 1, henshinTick).getFormName(fly);
 			}
 		} else {
-			if (Objects.equals(getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_fang")) {
-				return riderName + "_fang" + getFormItem(itemstack, 2, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
-			} else if (Objects.equals(getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme")) {
-				return riderName + getFormItem(itemstack, 2, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly) + "_xtreme";
-			} else if (Objects.equals(getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme_gold")) {
-				return riderName + getFormItem(itemstack, 2, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly) + "_xtreme_gold";
-			} else if (Objects.equals(getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly), "_cyclone_xtreme_accel")) {
+			if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_fang")) {
+				return riderName + "_fang" + getFormItem(itemstack, 2, henshinTick).getFormName(fly);
+			} else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme")) {
+				return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly) + "_xtreme";
+			} else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme_gold")) {
+				return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly) + "_xtreme_gold";
+			} else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme_accel")) {
 				return riderName + "_accel_xtreme";
 			} else {
-				return riderName + getFormItem(itemstack, 2, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getFormName(fly);
+				return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly);
 			}
 		}
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-
-        Item formItem = getFormItem(itemstack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
+        double henshinTick = getHenshinTick(itemstack,rider);
+        Item formItem = getFormItem(itemstack, 1, henshinTick);
 		if (slot != EquipmentSlot.HEAD) {
 			if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
 				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/w_joker_xtreme.geo.json");
@@ -136,7 +137,7 @@ public class WDriverItem extends RiderDriverItem {
     }
 
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
-        double transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        double transformingTick = getHenshinTick(itemStack,rider);
         if (currentSlot == EquipmentSlot.FEET)
             return  true;
         else if (isTransformed(rider))

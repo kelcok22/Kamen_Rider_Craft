@@ -23,7 +23,6 @@ public class DiendBeltItem extends RiderDriverItem {
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/diend_belt.geo.json");
-
     }
 
     @Override

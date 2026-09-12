@@ -161,7 +161,14 @@ public class Attributes extends Event implements IModBusEvent {
                     1
             ).setSyncable(true)
     );
-
+    public static final DeferredHolder<Attribute, Attribute> HAS_CHRISTMAS = ATTRIBUTES.register("has_christmas",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.has_christmas",
+                    0,
+                    0,
+                    1
+            ).setSyncable(true)
+    );
     public static final DeferredHolder<Attribute, Attribute> HEAD_SIZE = ATTRIBUTES.register("head_size",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.head_size",

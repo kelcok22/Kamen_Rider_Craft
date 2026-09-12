@@ -11,8 +11,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -29,17 +27,12 @@ public class LegenDriverItem extends RiderDriverItem {
     @Override
     public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
         if (getFormItem(itemstack, 1) == GotchardRiderItems.ARMED_HIBIKI_RIDE_CHEMY_CARD.get()) {
-            if ((livingEntity instanceof Player || livingEntity instanceof Mob) && livingEntity.getMainArm() == HumanoidArm.LEFT) {
-                if (num == 1 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_l";
-                else if (num == 2 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_r";
-            } else {
-                if (num == 1 && livingEntity.getOffhandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_l";
-                else if (num == 2 && livingEntity.getMainHandItem().getItem() != HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    return "ongekibo_rekka_r";
-            }
+            Item edge = HibikiRiderItems.ONGEKIBO_REKKA.get();
+            Item leftHandItem = livingEntity.getMainArm() == HumanoidArm.LEFT? livingEntity.getMainHandItem().getItem() : livingEntity.getOffhandItem().getItem();
+            Item rightHandItem = livingEntity.getMainArm() == HumanoidArm.LEFT? livingEntity.getOffhandItem().getItem() : livingEntity.getMainHandItem().getItem();
+
+            if (num == 1 && leftHandItem != edge) return "ongekibo_rekka_l";
+            else if (num == 2 && rightHandItem != edge) return "ongekibo_rekka_r";
         }
         return "blank";
     }

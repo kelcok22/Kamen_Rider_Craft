@@ -219,7 +219,8 @@ public class EffectCore {
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
 
     public static final Holder<MobEffect> CHRISTMAS = EFFECT.register("christmas",
-            () -> new ChristmasEffect(MobEffectCategory.BENEFICIAL, 0x4eff00));
+            () -> new ChristmasEffect(MobEffectCategory.BENEFICIAL, 0x4eff00)
+                    .addAttributeModifier(Attributes.HAS_CHRISTMAS, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.christmas"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
 
     public static final Holder<MobEffect> SLEEP = EFFECT.register("sleep",
