@@ -55,7 +55,7 @@ public class GenericRiderKicks {
             case 2:
                 if (user.onGround()) {
                     Vec3 initialVec = user.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 1.3D, initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 1.15D, initialVec.z);
                     user.setDeltaMovement(climbVec.scale(0.97D));
                     ((ServerLevel) user.level()).sendParticles(ParticleTypes.GUST, user.getX(), user.getY() + 1.0, user.getZ(), 1, 0, 0, 0, 0);
                     user.hurtMarked = true;
