@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nishiki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"position": [-1, -2.1, 0]
+				},
+				"head": {
+					"rotation": [-2.5, 0, 0],
+					"position": [-0.5, 0, -0.5]
+				},
+				"torso": {
+					"rotation": [5, 17.5, -2.5]
+				},
+				"right_arm": {
+					"rotation": [-67.8409, 13.9459, 1.6557],
+					"position": [0, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-67.8487, 0.904, -24.8345],
+					"position": [0, -1, -1]
+				},
+				"right_leg": {
+					"rotation": [7.5, 72.5, 0],
+					"position": [-2, 1, 0.5]
+				},
+				"left_leg": {
+					"rotation": [-21.5203, -15.5544, -15.0415]
+				}
+			}
+		}
+	}
+}

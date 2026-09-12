@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"eiki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 0, -20],
+					"position": [-2, -4, 0]
+				},
+				"head": {
+					"rotation": [2.5, -52.5, 0]
+				},
+				"torso": {
+					"rotation": [0, -2.5, -5]
+				},
+				"right_arm": {
+					"rotation": [-51.0957, -54.2631, -7.38],
+					"position": [1, -1, -1]
+				},
+				"left_arm": {
+					"rotation": [-18.7336, -51.1187, -103.3491]
+				},
+				"right_leg": {
+					"rotation": [-7.0958, -15.192, 61.9363],
+					"position": [-1, 1, 0]
+				},
+				"left_leg": {
+					"rotation": [-17.5, -65, 0],
+					"position": [1, 0, 0]
+				}
+			}
+		}
+	}
+}

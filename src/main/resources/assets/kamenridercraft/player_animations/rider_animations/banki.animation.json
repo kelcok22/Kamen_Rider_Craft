@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"banki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [35.9387, -12.2403, -8.7374],
+					"position": [0, -4, -1]
+				},
+				"head": {
+					"rotation": [-4.9539, 1.0809, 4.882]
+				},
+				"right_arm": {
+					"rotation": [-21.7203, -38.7895, -64.9228],
+					"position": [0, 0, -1]
+				},
+				"left_arm": {
+					"rotation": [-12.5, -20, -97.5],
+					"position": [0, -1, 1]
+				},
+				"right_leg": {
+					"rotation": [-41.091, 12.4816, 7.2167],
+					"position": [-0.5, 3, -2]
+				},
+				"left_leg": {
+					"rotation": [6.5297, -50.8281, 7.7419],
+					"position": [2, 2, -2]
+				}
+			}
+		}
+	}
+}
