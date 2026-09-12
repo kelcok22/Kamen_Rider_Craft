@@ -17,14 +17,14 @@
 			"scale": [2, 2, 1]
 		},
 		"firstperson_righthand": {
-			"rotation": [-35, -89, 0],
-			"translation": [0, 5, 0],
-			"scale": [1.51, 1.51, 1.51]
+			"rotation": [-35, -80, 0],
+			"translation": [1.5, 5, 0],
+			"scale": [1.51, 1.51, 1]
 		},
 		"firstperson_lefthand": {
-			"rotation": [-35, 89, 0],
-			"translation": [0, 5, 0],
-			"scale": [1.51, 1.51, 1.51]
+			"rotation": [-35, 90, 0],
+			"translation": [1.5, 5, 0],
+			"scale": [1.51, 1.51, 1]
 		},
 		"gui": {
 			"scale": [1.32, 1.32, 1.32]
