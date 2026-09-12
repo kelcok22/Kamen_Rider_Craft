@@ -267,7 +267,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 this.giveEffects(rider);
                 if (rider.hasEffect(EffectCore.FORM_TIMEOUT) && !isTransformed(rider))
                     this.timeoutForms(rider, stack);
-            } else if (entity instanceof LivingEntity player) {
+            } if (entity instanceof LivingEntity player) {
                 if (stack.has(DataComponents.CUSTOM_DATA)) {
                     if (!isTransformed(player) || slotId != 36) {
                         Consumer<CompoundTag> data = form -> {
