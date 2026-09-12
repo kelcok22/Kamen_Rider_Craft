@@ -1,5 +1,5 @@
 {
-	"display": {
+  "display": {
 		"icon": {
 			"id": "minecraft:jukebox"
 		},
@@ -14,7 +14,7 @@
 		"announce_to_chat": true,
 		"hidden": true
 	},
-	"parent": "kamenridercraft:ryuki/ryuki",
+	"parent": "kamenridercraft:ryuki/mirror_match",
 	"criteria": {
 		"play_jukebox_in_meadows": {
 			"trigger": "minecraft:item_used_on_block",

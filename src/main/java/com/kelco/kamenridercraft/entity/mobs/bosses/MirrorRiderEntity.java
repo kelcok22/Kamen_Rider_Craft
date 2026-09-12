@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -32,6 +33,7 @@ import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -222,7 +224,13 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                 LootParams lootparams = lootparams$builder.create(LootContextParamSets.EQUIPMENT);
                 loottable.getRandomItems(lootparams, 0L, this::spawnAtLocation);
             }
+            if (!level().isClientSide() && getLastAttacker() instanceof Player && getLastAttacker().getItemBySlot(EquipmentSlot.FEET).toString().contains(entityData.get(RIDER_NAME))) {
+                ItemEntity musicDisc = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(MusicDiscItems.ALIVE_A_LIFE_MUSIC_DISC.get(), 1), 0, 0, 0);
+                musicDisc.setPickUpDelay(0);
+                level().addFreshEntity(musicDisc);
+            }
         }
+
 
 
         super.remove(p_149847_);

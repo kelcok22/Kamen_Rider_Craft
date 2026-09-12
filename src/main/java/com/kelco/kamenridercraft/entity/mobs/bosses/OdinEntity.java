@@ -1,14 +1,21 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.damagesource.DamageSource;
@@ -23,10 +30,15 @@ import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 
 import javax.annotation.Nullable;
 
@@ -80,6 +92,19 @@ public class OdinEntity extends BaseHenchmenEntity {
             }
         }
     }
+
+    public void remove(RemovalReason p_149847_) {
+        if (this.isDeadOrDying()) {
+            if (!level().isClientSide() && getLastAttacker() instanceof Player && getLastAttacker().getItemBySlot(EquipmentSlot.FEET).is(RyukiRiderItems.ODINDRIVER.get())) {
+                ItemEntity musicDisc = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(MusicDiscItems.ALIVE_A_LIFE_MUSIC_DISC.get(), 1), 0, 0, 0);
+                musicDisc.setPickUpDelay(0);
+                level().addFreshEntity(musicDisc);
+
+            }
+        }
+        super.remove(p_149847_);
+        }
+
 
     protected void customServerAiStep() {
         super.customServerAiStep();

@@ -1,0 +1,32 @@
+{
+  "display": {
+		"icon": {
+			"id": "kamenridercraft:alive_a_life_music_disc"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.ryuki.mirror_match.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.ryuki.mirror_match.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "kamenridercraft:ryuki/ryuki",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "kamenridercraft:alive_a_life_music_disc"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
