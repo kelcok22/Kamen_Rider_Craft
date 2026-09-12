@@ -20,6 +20,7 @@ public class GammaCommandoEntity extends BaseHenchmenEntity {
     public GammaCommandoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "gamma_commandos";
+        getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
     }
 
 

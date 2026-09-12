@@ -20,6 +20,7 @@ public class ChapEntity extends BaseHenchmenEntity {
     public ChapEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "chaps";
+        getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
     }
 
     public void remove(RemovalReason reason) {

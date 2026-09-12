@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 
 import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +15,7 @@ public class ChapGreyEntity extends BaseHenchmenEntity {
     public ChapGreyEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="chaps_grey";
+        getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
         LocalDate localdate = LocalDate.now();
         int day = localdate.getDayOfMonth();
         if (localdate.getMonthValue() == 10 && day >= 24) {

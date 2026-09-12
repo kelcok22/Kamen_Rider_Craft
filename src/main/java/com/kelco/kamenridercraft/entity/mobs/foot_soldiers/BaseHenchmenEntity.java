@@ -35,12 +35,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.time.LocalDate;
 
 public abstract class BaseHenchmenEntity extends Monster implements RangedAttackMob {
-
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
@@ -256,8 +256,7 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
         return ProjectileUtil.getMobArrow(this, arrow, velocity, weapon);
     }
 
-    public boolean canFireProjectileWeapon(ProjectileWeaponItem p_32144_) {
-        return p_32144_ instanceof BowItem;
+    public boolean canFireProjectileWeapon(@NotNull ProjectileWeaponItem projectileWeaponItem) {
+        return projectileWeaponItem instanceof BowItem;
     }
-
 }

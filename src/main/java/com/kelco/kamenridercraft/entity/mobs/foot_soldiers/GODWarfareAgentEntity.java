@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
@@ -16,6 +17,7 @@ public class GODWarfareAgentEntity extends BaseHenchmenEntity {
     public GODWarfareAgentEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "god_warfare_agents";
+        getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
     }
 
     public void remove(RemovalReason reason) {
