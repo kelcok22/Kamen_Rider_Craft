@@ -209,8 +209,9 @@ public class KamenRiderCraftCore {
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
         if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
-            Double tf = Objects.requireNonNull(event.getEntity().getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())&& event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+                Double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
                 double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET),tf);
                 if (tag != 0) {
                     model.setAllVisible(false);
