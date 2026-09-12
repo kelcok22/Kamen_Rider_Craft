@@ -856,7 +856,6 @@
 			}
 		},
 		"zeztz.generic_zeztz.henshin": {
-			"loop": true,
 			"animation_length": 0.9583,
 			"bones": {
 				"body": {
