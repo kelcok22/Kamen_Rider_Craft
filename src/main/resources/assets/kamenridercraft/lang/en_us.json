@@ -586,6 +586,10 @@
 "effect.kamenridercraft.climbing.description":"Allows you to climb up block faces like a ladder",
 "effect.kamenridercraft.rider_spirit.desc":"Adds wind charges to punches and causes you to cry when wearing an Ichigo Mask",
 "effect.kamenridercraft.rider_spirit.description":"Adds wind charges to punches and causes you to cry when wearing an Ichigo Mask",
+"effect.kamenridercraft.insomnia.desc":"Prevents the player from sleeping",
+"effect.kamenridercraft.insomnia.description":"Prevents the player from sleeping",
+"effect.kamenridercraft.dreaming.desc":"Allows the player to be in the Dream Dimension",
+"effect.kamenridercraft.dreaming.description":"Allows the player to be in the Dream Dimension",
 
 "happy_mode.kamenridercraft.sleep":"The mob is now asleep",
 "happy_mode.kamenridercraft.cheese_man":"§aYou've made friends with the Cheese Man!",

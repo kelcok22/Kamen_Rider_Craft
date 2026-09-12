@@ -586,6 +586,10 @@
 "effect.kamenridercraft.climbing.description":"ブロックの横面を登ることが出来る、はしごのように",
 "effect.kamenridercraft.rider_spirit.desc":"パンチはウィンドチャージを発生する、1号お面を着用時は泣きに見える",
 "effect.kamenridercraft.rider_spirit.description":"パンチはウィンドチャージを発生する、1号お面を着用時は泣きに見える",
+"effect.kamenridercraft.insomnia.desc":"プレイヤーが眠るのを防ぐ",
+"effect.kamenridercraft.insomnia.description":"プレイヤーが眠るのを防ぐ",
+"effect.kamenridercraft.dreaming.desc":"プレイヤーが夢の世界に入ることができるようにする",
+"effect.kamenridercraft.dreaming.description":"プレイヤーが夢の世界に入ることができるようにする",
 
 "happy_mode.kamenridercraft.sleep":"Mobは寝てる",
 "happy_mode.kamenridercraft.cheese_man":"§a君はチーズマンと友達が出来た！",
