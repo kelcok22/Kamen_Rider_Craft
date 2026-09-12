@@ -554,7 +554,7 @@ public class KivaRiderItems {
 			}.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> REY_KIVAT_BELT = ITEMS.register("reydriver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rey", WAKE_UP_FUESTLE_REY,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rey", WAKE_UP_FUESTLE_REY,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.KIVA_TAB_ITEM).changeRepairItem(FUESTLE.get()));
 
 	public static final DeferredItem<Item> ARC_KIVAT_BELT = ITEMS.register("arcdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"arc", WAKE_UP_FUESTLE_ARC,KIVAHELMET, KIVACHESTPLATE, KIVALEGGINGS, new Item.Properties()){
