@@ -14,37 +14,36 @@
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "kamenridercraft:zeztz/zeztz",
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"player": {
-					"equipment": {
-						"head": {
-							"items": [
-								"kamenridercraft:zeztzhead"
-							]
-						},
-						"chest": {
-							"items": [
-								"kamenridercraft:zeztztroso"
-							]
-						},
-						"legs": {
-							"items": [
-								"kamenridercraft:zeztzlegs"
-							]
-						},
-						"feet": {
-							"items": [
-								"kamenridercraft:mugen_driver"
-							]
-						}
-					}
-				}
-			}
-		}
-	}
+      "parent": "kamenridercraft:zeztz/dawn",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "kamenridercraft:zeztz_head"
+              ]
+            },
+            "chest": {
+              "items": [
+                "kamenridercraft:zeztz_troso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "kamenridercraft:zeztz_legs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "kamenridercraft:mugen_driver"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
 }
-  
