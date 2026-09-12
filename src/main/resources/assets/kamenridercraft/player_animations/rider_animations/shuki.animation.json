@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"shuki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"position": [0, -0.1, 0]
+				},
+				"torso": {
+					"rotation": [-0.6696, -7.4854, 2.5881]
+				},
+				"right_arm": {
+					"rotation": [-95.6223, -37.7802, -0.5252]
+				},
+				"left_arm": {
+					"rotation": [-54.7878, -1.8226, 85.7647]
+				},
+				"right_leg": {
+					"rotation": [-7.5, -5, 0],
+					"position": [-0.25, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [5.5694, -32.4475, -1.281],
+					"position": [-0.25, 0, 0]
+				}
+			}
+		}
+	}
+}

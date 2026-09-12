@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"fubuki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 32.5, 0],
+					"position": [0, -4, 0]
+				},
+				"head": {
+					"rotation": [15.101, -26.7053, -6.7269]
+				},
+				"torso": {
+					"rotation": [-5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-87.9969, -14.8687, 82.2386],
+					"position": [-1, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-59.3148, 9.1825, -81.4818],
+					"position": [0, -1, 1]
+				},
+				"right_leg": {
+					"rotation": [24.8475, 38.7496, 16.7129],
+					"position": [-1, 2, -2]
+				},
+				"left_leg": {
+					"rotation": [-2.2008, -16.5655, -20.885],
+					"position": [1, 2, 0]
+				}
+			}
+		}
+	}
+}
