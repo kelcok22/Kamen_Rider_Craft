@@ -286,7 +286,9 @@ public class EffectCore {
             () -> new GhostEffect(MobEffectCategory.BENEFICIAL, 0xf59b14));
 
     public static final Holder<MobEffect> MUTEKI = EFFECT.register("muteki",
-            () -> new SaveEffect(MobEffectCategory.BENEFICIAL, 0xffce00));
+            () -> new SaveEffect(MobEffectCategory.BENEFICIAL, 0xffce00)
+                    .addAttributeModifier(Attributes.MUTEKI, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.muteki")
+                            , 1F, AttributeModifier.Operation.ADD_VALUE));
 
 
 

@@ -1,4 +1,4 @@
-![KELCO BUCKET RELEASE](https://cdn.discordapp.com/icons/355766960207691778/abf749648d4566b2a343948ae3a504a6.webp)
+![KELCO BUCKET RELEASE](https://cdn.discordapp.com/icons/355766960207691778/5b6581f3c030340cd597b37a16212c77.webp?size=160&quality=lossless)
 =======
 This is the official Github page of Kamen Rider Craft.
 

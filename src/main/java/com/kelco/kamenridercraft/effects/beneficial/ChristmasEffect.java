@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.effects.beneficial;
 
 
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
-import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,8 +12,6 @@ import java.util.Random;
 
 
 public class ChristmasEffect extends MobEffect {
-
-
     public ChristmasEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
@@ -22,7 +19,11 @@ public class ChristmasEffect extends MobEffect {
     @Override
     public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
         Random rand = new Random();
-        return Mth.abs(rand.nextInt(500 - (amplifier * 10))) == 0;
+        int chance = 500 - (amplifier * 10);
+        if (chance <= 25) {
+            chance = 25;
+        }
+        return rand.nextInt(chance) == 0;
     }
 
     @Override
