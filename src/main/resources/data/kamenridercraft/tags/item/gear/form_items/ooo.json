@@ -49,9 +49,6 @@
 		"kamenridercraft:ancient_taka_medal",
 		"kamenridercraft:ancient_tora_medal",
 		"kamenridercraft:ancient_batta_medal",
-		"kamenridercraft:mukade_goda_medal",
-		"kamenridercraft:hachi_goda_medal",
-		"kamenridercraft:ari_goda_medal",
 		"kamenridercraft:love_core_medal",
 		"kamenridercraft:love_core2_medal",
 		"kamenridercraft:love_core3_medal",
@@ -60,9 +57,10 @@
 		"kamenridercraft:ichigo_medal",
 		"kamenridercraft:imagin_medal",
 		"kamenridercraft:shocker_medal",
-		"kamenridercraft:gel_shocker_medal",
-		"kamenridercraft:destron_medal",
 		"#kamenridercraft:gear/core_medals/foundation_x",
-		"#kamenridercraft:gear/core_medals/zeus"
+		"#kamenridercraft:gear/core_medals/zeus",
+		"kamenridercraft:blokees_taka_medal",
+		"kamenridercraft:blokees_kujaku_medal",
+		"kamenridercraft:blokees_condor_medal"
 	]
 }
