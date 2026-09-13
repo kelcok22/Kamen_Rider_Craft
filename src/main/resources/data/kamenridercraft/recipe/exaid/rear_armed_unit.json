@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "lazer",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XSX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gashat"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:bakusou_bike_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:rear_armed_unit"
+	}
+}
+
