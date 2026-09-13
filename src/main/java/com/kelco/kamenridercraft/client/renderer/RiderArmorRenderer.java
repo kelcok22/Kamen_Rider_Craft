@@ -8,8 +8,7 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -19,8 +18,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib.cache.object.BakedGeoModel;
-import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
@@ -32,7 +29,7 @@ import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendTo
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
         super(new RiderArmorModel<>());
-        if (equipmentSlot != EquipmentSlot.FEET)  {
+        if (equipmentSlot != EquipmentSlot.FEET) {
             addRenderLayer(new AutoGlowingGeoLayer<>(this) {
                 @Nullable
                 protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
@@ -51,7 +48,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
             });
         }
 
-        if ( equipmentSlot == EquipmentSlot.HEAD||equipmentSlot == EquipmentSlot.FEET) {
+        if (equipmentSlot == EquipmentSlot.HEAD || equipmentSlot == EquipmentSlot.FEET) {
             addRenderLayer(new RiderRenderLayer<>(this));
         }
 
@@ -59,14 +56,16 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         addRenderLayer(new AutoGlowingGeoLayer<>(this) {
             @Nullable
             protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
-                if (getCurrentEntity() instanceof LivingEntity rider && rider.invulnerableTime > 0 && rider.hasEffect(EffectCore.MUTEKI)) {
+                if (getCurrentEntity() instanceof LivingEntity rider && rider.invulnerableTime > 0 && rider.getAttribute(Attributes.MUTEKI).getValue() > 0) {
                     return mutekiGlint();
                 }
                 return null;
             }
         });
 
-        if (equipmentSlot == EquipmentSlot.HEAD) {addRenderLayer(new WindRenderLayer<>(this));}
+        if (equipmentSlot == EquipmentSlot.HEAD) {
+            addRenderLayer(new WindRenderLayer<>(this));
+        }
 
     }
 
@@ -84,7 +83,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     }
 
     @Override
-    public RenderType getRenderType(RiderArmorItem animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick){
+    public RenderType getRenderType(RiderArmorItem animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource, float partialTick) {
         return RenderType.entityTranslucent(texture);
     }
 

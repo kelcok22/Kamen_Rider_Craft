@@ -59,6 +59,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -67,6 +68,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
@@ -205,55 +207,59 @@ public class KamenRiderCraftCore {
         NeoForge.EVENT_BUS.register(new ModServerEvents.ServerEvents());
     }
 
+    @SubscribeEvent
+    public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
+        if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
+
+            if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())&& event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
+                Double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
+                double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET),tf);
+                if (tag != 0) {
+                    model.setAllVisible(false);
+                    if (tag != 1) {
+                        model.head.visible = true;
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
+                        model.head.visible = false;
+                    }
+                    if (tag == 3) {
+                        model.leftLeg.visible = true;
+                        model.rightLeg.visible = true;
+                        model.leftArm.visible = true;
+                        model.rightArm.visible = true;
+                        model.body.visible = true;
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
+                        model.leftLeg.visible = false;
+                        model.rightLeg.visible = false;
+                        model.leftArm.visible = false;
+                        model.rightArm.visible = false;
+                        model.body.visible = false;
+                    }
+                } else {
+                    model.setAllVisible(true);
+                }
+            } else if (!event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft")&&
+            !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("powerrangerscraft")&&
+                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("ultracraft")&&
+                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("tmntcraft")) {
+                model.setAllVisible(true);
+            }
+        }
+
+        if (event.getRenderer().getModel() instanceof HeadedModel model) {
+            float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.HEAD_SIZE)).getValue();
+            model.getHead().xScale = sd;
+            model.getHead().yScale  = sd;
+            model.getHead().zScale  = sd;
+        }
+
+        float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X)).getValue();
+        float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y)).getValue();
+        float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z)).getValue();
+        event.getPoseStack().scale(sizeX, sizeY, sizeZ);
+    }
 
     @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
     public static class ClientModEvents {
-
-        @SubscribeEvent
-        public static void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
-            if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
-                if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem && event.getEntity().getItemBySlot(EquipmentSlot.FEET).has(DataComponents.CUSTOM_DATA)) {
-                    double tag = event.getEntity().getItemBySlot(EquipmentSlot.FEET).get(DataComponents.CUSTOM_DATA).copyTag().getDouble("render_type");
-                    if (tag != 0) {
-                        model.setAllVisible(false);
-                        if (tag != 1) {
-                            model.head.visible = true;
-                        } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                            model.head.visible = false;
-                        }
-                        if (tag == 3) {
-                            model.leftLeg.visible = true;
-                            model.rightLeg.visible = true;
-                            model.leftArm.visible = true;
-                            model.rightArm.visible = true;
-                            model.body.visible = true;
-                        } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                            model.leftLeg.visible = false;
-                            model.rightLeg.visible = false;
-                            model.leftArm.visible = false;
-                            model.rightArm.visible = false;
-                            model.body.visible = false;
-                        }
-                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                        model.setAllVisible(true);
-                    }
-                } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
-                    model.setAllVisible(true);
-                }
-            }
-
-            if (event.getRenderer().getModel() instanceof HeadedModel model) {
-                float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.HEAD_SIZE)).getValue();
-                model.getHead().xScale = sd;
-                model.getHead().yScale  = sd;
-                model.getHead().zScale  = sd;
-            }
-
-            float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X)).getValue();
-            float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y)).getValue();
-            float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z)).getValue();
-            event.getPoseStack().scale(sizeX, sizeY, sizeZ);
-        }
 
         @SubscribeEvent
         public static void RegisterDimensionSpecialEffects(RegisterDimensionSpecialEffectsEvent event) {
@@ -670,6 +676,7 @@ public class KamenRiderCraftCore {
             event.registerSpriteSet(ModParticles.CANDY_PARTICLES4.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.PUDDING_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.BUTTERFLY_PARTICLES.get(), GummiParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MY_TH_GEM_PARTICLES.get(), My_ThGemParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), RealizingParticles.Provider::new);
 
         }
@@ -1599,6 +1606,16 @@ public class KamenRiderCraftCore {
                     event.accept(CreativeTabRegistry.ZEZTZ_TAB_ITEM.get(i));
                 }
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
+                event.accept(MobsCore.BABY_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.SHADOW_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.NOX_SPAWN_EGG);
+                event.accept(MobsCore.DAWN_SPAWN_EGG);
+                event.accept(MobsCore.LORD_THREE_SPAWN_EGG);
+                event.accept(MobsCore.ZEZTZ_DARKNESS_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.CATASTROPHE_GORE_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.PHANTOM_GORE_NIGHTMARE_SPAWN_EGG);
+                event.accept(MobsCore.OBLIVION_GORE_NIGHTMARE_SPAWN_EGG);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
                 event.accept(RiderBlocks.MIND_DOOR);
 

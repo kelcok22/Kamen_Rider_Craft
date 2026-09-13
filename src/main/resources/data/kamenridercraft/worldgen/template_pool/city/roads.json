@@ -3,7 +3,7 @@
 	"fallback": "kamenridercraft:city/roads_end",
 	"elements": [
 		{
-			"weight": 8,
+			"weight": 10,
 			"element": {
 				"location": "kamenridercraft:city/roads/road_straight",
 				"processors": "minecraft:empty",
@@ -12,7 +12,7 @@
 			}
 		},
 		{
-			"weight": 7,
+			"weight": 10,
 			"element": {
 				"location": "kamenridercraft:city/roads/road_intersection",
 				"processors": "minecraft:empty",
@@ -21,7 +21,7 @@
 			}
 		},
 		{
-			"weight": 6,
+			"weight": 10,
 			"element": {
 				"location": "kamenridercraft:city/roads/road_t",
 				"processors": "minecraft:empty",
@@ -30,7 +30,7 @@
 			}
 		},
 		{
-			"weight": 6,
+			"weight": 10,
 			"element": {
 				"location": "kamenridercraft:city/roads/road_turn",
 				"processors": "minecraft:empty",
@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"weight": 6,
+			"weight": 10,
 			"element": {
 				"location": "kamenridercraft:city/roads/road_extension",
 				"processors": "minecraft:empty",
@@ -48,7 +48,7 @@
 			}
 		},
 		{
-			"weight": 6,
+			"weight": 10,
 			"element": {
 				"location": "kamenridercraft:city/roads/road_extension_b",
 				"processors": "minecraft:empty",

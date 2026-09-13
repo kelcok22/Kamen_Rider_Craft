@@ -15,7 +15,13 @@
 		"kamenridercraft:lord_invoker_thirteen",
 		"kamenridercraft:mugen_driver",
 		"kamenridercraft:zeroider_control",
-    	"kamenridercraft:phantom_gore_nightmare_belt",
-    	"kamenridercraft:oblivion_gore_nightmare_belt"
+		"kamenridercraft:baby_nightmare_belt",
+		"kamenridercraft:gun_nightmare_belt",
+		"kamenridercraft:wolf_nightmare_belt",
+		"kamenridercraft:cat_nightmare_belt",
+		"kamenridercraft:shadow_nightmare_belt",
+		"kamenridercraft:catastrophe_gore_nightmare_belt",
+		"kamenridercraft:phantom_gore_nightmare_belt",
+		"kamenridercraft:oblivion_gore_nightmare_belt"
     ]
 }

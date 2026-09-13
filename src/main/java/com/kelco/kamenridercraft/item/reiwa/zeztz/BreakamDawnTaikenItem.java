@@ -24,7 +24,7 @@ public class BreakamDawnTaikenItem extends SwordItem {
     private Item craftingRemainingItem = null;
 
     public BreakamDawnTaikenItem(Tier toolTier, int Atk, float Spd, Properties prop) {
-        super(KRCTiers.SPLITTING_SWORD, prop.durability(1560));
+        super(toolTier, prop.attributes(SwordItem.createAttributes(KRCTiers.SPLITTING_SWORD, Atk, Spd)));
     }
 
     public boolean isValidRepairItem(@NotNull ItemStack itemStackOne, ItemStack repairItem) {
@@ -75,7 +75,7 @@ public class BreakamDawnTaikenItem extends SwordItem {
                 }
             }
 
-            if ((!(serverPlayer.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeztzRiderItems.DAWN_BELT.get()))
+            if (serverPlayer.getItemBySlot(EquipmentSlot.FEET).isEmpty()
                     && serverPlayer.getItemBySlot(EquipmentSlot.LEGS).getItem() == ZeztzRiderItems.ZEZTZ_LEGGINGS.get()
                     && serverPlayer.getItemBySlot(EquipmentSlot.CHEST).getItem() == ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()
                     && serverPlayer.getItemBySlot(EquipmentSlot.HEAD).getItem() == ZeztzRiderItems.ZEZTZ_HELMET.get()

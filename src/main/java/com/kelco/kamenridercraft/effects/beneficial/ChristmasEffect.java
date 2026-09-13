@@ -12,8 +12,6 @@ import java.util.Random;
 
 
 public class ChristmasEffect extends MobEffect {
-
-
     public ChristmasEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
@@ -21,7 +19,11 @@ public class ChristmasEffect extends MobEffect {
     @Override
     public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
         Random rand = new Random();
-        return  rand.nextInt(500 - (amplifier * 10)) == 0;
+        int chance = 500 - (amplifier * 10);
+        if (chance <= 25) {
+            chance = 25;
+        }
+        return rand.nextInt(chance) == 0;
     }
 
     @Override

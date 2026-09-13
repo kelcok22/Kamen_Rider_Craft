@@ -1,0 +1,49 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:shin_typhoon_ichigo"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.extras.no_1.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.extras.no_1.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:extras",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:shin_ichigohead"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:shin_ichigotroso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:shin_ichigolegs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:shin_typhoon_ichigo"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

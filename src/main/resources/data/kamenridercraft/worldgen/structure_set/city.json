@@ -39,6 +39,10 @@
 		{
 			"structure": "kamenridercraft:chiba_city",
 			"weight": 2
+		},
+		{
+			"structure": "kamenridercraft:yumemi_town",
+			"weight": 2
 		}
 	],
 	"placement": {

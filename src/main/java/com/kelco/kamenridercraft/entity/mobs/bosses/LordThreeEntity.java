@@ -35,7 +35,7 @@ public class LordThreeEntity extends BaseHenchmenEntity {
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.YELLOW, BossEvent.BossBarOverlay.PROGRESS);
 		public LordThreeEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="nox_knight";
+        NAME="lord_three";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
@@ -84,7 +84,7 @@ public class LordThreeEntity extends BaseHenchmenEntity {
         super.customServerAiStep();
         if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.LORD_INVOKER_THREE.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)!= ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.PURPLE) {
+            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.LORD_BOOSTER_CAPSEM.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.PURPLE) {
                 this.bossEvent.setColor(BossEvent.BossBarColor.PURPLE);
                 this.bossEvent.setName(Component.translatable("entity.kamenridercraft.lord_three_booster").withStyle(ChatFormatting.DARK_PURPLE));
             }

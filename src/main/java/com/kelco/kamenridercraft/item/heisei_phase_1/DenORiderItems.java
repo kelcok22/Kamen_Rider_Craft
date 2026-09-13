@@ -14,6 +14,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -31,7 +32,7 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_DAN_O_PLAT = ITEMS.register("rider_ticket_dan_o_plat",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_plat","dan_o","dan_o_belt",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.UNLUCK, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SMALL, 40, 3,true,false),
 					new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 4,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -44,7 +45,7 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEW_DEN_O = ITEMS.register("rider_ticket_new_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_plat","new_den_o","new_den_o_belt_p",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
@@ -55,7 +56,7 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET = ITEMS.register("rider_ticket",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_plat","den_o","den_o_belt_p",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.UNLUCK, 40, 2,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
@@ -66,8 +67,8 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_DAN_O = ITEMS.register("rider_ticket_dan_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","dan_o","dan_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SMALL, 40, 3,true,false),
 					new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 4,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -80,8 +81,9 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_SWORD = ITEMS.register("rider_ticket_sword",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","den_o","den_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -92,8 +94,9 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_ROD = ITEMS.register("rider_ticket_rod",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rod","den_o","den_o_belt_r",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
+					new MobEffectInstance(EffectCore.LONG_ARM, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SWIFT_SWIM, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -104,8 +107,8 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_AX = ITEMS.register("rider_ticket_ax",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axe","den_o","den_o_belt_a",
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
@@ -117,7 +120,7 @@ public class DenORiderItems {
 	public static final DeferredItem<Item> RIDER_TICKET_GUN = ITEMS.register("rider_ticket_gun",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gun","den_o","den_o_belt_g",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -129,9 +132,9 @@ public class DenORiderItems {
 
     static final DeferredItem<Item> KTAROS_CLIMAX = ITEMS.register("ktaros_climax",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax","den_o","den_o_belt_c",
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -153,9 +156,9 @@ public class DenORiderItems {
 
     public static final DeferredItem<Item> KTAROS_PUNCH = ITEMS.register("ktaros_punch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_punch","den_o","den_o_belt_c",
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -173,17 +176,15 @@ public class DenORiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 1);
                 }
-            }.isGlowing().addNeedForm(KTAROS_CLIMAX.get(), 1).addAlternative(KTAROS_CLIMAX.get())
+            }.setSlotOneAbility("rider_punch",1).isGlowing().addNeedForm(KTAROS_CLIMAX.get(), 1).addAlternative(KTAROS_CLIMAX.get())
                     .setModelName("ktaros"));
 
 	public static final DeferredItem<Item> KTAROS = ITEMS.register("ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax_kick","den_o","den_o_belt_c",
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.RIDER_KICK, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -199,16 +200,15 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 25, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).setModelName("ktaros").addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.setSlotOneAbility("rider_kick",1).isGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).setModelName("ktaros").addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_KTAROS = ITEMS.register("super_ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_super_climax","den_o","den_o_belt_c",
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
@@ -233,9 +233,9 @@ public class DenORiderItems {
 	public static final DeferredItem<Item> RIDER_TICKET_WING = ITEMS.register("rider_ticket_wing",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_wing","den_o","den_o_belt_w",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false),
-					new MobEffectInstance(EffectCore.FLYING, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.GLIDE, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
@@ -250,8 +250,9 @@ public class DenORiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 4,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
@@ -266,7 +267,7 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> ZERONOS_PLAT_CARD = ITEMS.register("zeronos_plat_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_plat","zeronos","zeronos_belt_p",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
@@ -277,9 +278,8 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> ZERONOS_ALTAIR_CARD = ITEMS.register("zeronos_altair_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","zeronos","zeronos_belt",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -295,8 +295,7 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> NEW_DEN_O_VEGA_CARD = ITEMS.register("new_den_o_vega_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_vega","new_den_o","new_den_o_belt_v",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -305,12 +304,11 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().hasCape().IsBeltGlowing());
+			}.setSlotOneAbility("gatling",1).isGlowing().hasCape().IsBeltGlowing());
 
 	public static final DeferredItem<Item> ZERONOS_VEGA_CARD = ITEMS.register("zeronos_vega_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_vega","zeronos","zeronos_belt_v",
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -319,7 +317,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().hasCape().addAlternative(NEW_DEN_O_VEGA_CARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.setSlotOneAbility("gatling",1).isGlowing().hasCape().addAlternative(NEW_DEN_O_VEGA_CARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ZERO_CARD = ITEMS.register("zeronos_zero_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_zero","zeronos","zeronos_belt_z",
@@ -339,10 +337,9 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEGA = ITEMS.register("rider_ticket_nega",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","nega_den_o","den_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(EffectCore.WITHER_SLASH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false)){
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
@@ -353,10 +350,10 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI_HIJACK = ITEMS.register("rider_ticket_yuuki_hijack",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hijack","yuuki","yuuki_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -369,10 +366,10 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI = ITEMS.register("rider_ticket_yuuki",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_skull","yuuki","yuuki_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.REGENERATION, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -403,11 +400,10 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_GAOH = ITEMS.register("rider_ticket_gaoh",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gaoh","gaoh_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+					new MobEffectInstance(MobEffects.SATURATION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
@@ -418,11 +414,11 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_STRIKE = ITEMS.register("rider_ticket_strike",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","new_den_o","new_den_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
+					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+					new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
@@ -433,8 +429,8 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_PRETTY_DEN_O = ITEMS.register("rider_ticket_pretty_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","pretty_den_o","den_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SMALL, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
@@ -446,7 +442,7 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_PUDDING = ITEMS.register("rider_ticket_pudding",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_pudding","den_o","den_o_belt_pu",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.LONG_ARM, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.SMALL, 40, 4,true,false),
                     new MobEffectInstance(EffectCore.FLAT, 40, 0,true,false),
                     new MobEffectInstance(EffectCore.SD, 40, 0,true,false),
@@ -461,8 +457,8 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> RIDER_TICKET_SHIN_O = ITEMS.register("rider_ticket_shin_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","shin_o","shin_o_belt",
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
+					new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.FLAT, 40, 0,true,false),
 					new MobEffectInstance(EffectCore.SMALL, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 4,true,false)){

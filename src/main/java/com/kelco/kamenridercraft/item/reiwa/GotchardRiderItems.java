@@ -76,6 +76,8 @@ public class GotchardRiderItems {
 	public static List<Item> NEED_ITEM_BakuonTelevi= new ArrayList<>();
 	public static List<Item> NEED_ITEM_OniCopter= new ArrayList<>();
 
+	public static List<Item> NEED_ITEM_SushiHopper= new ArrayList<>();
+
 	public static List<Item> NEED_ITEM_SunUnicorn= new ArrayList<>();
 	public static List<Item> NEED_ITEM_MoonCerberus= new ArrayList<>();
 	public static List<Item> NEED_ITEM_Twilight= new ArrayList<>();
@@ -1741,6 +1743,34 @@ public class GotchardRiderItems {
 
 	public static final DeferredItem<Item> TONAKAILINER_RIDE_CHEMY_CARD = ITEMS.register("tonakailiner_ride_chemy_card",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> HOPPER_RIDE_CHEMY_CARD = ITEMS.register("hopper_ride_chemy_card",
+			() -> new RiderFormChangeItem(new Item.Properties(),"_sushi_hopper","gotchard","gotchardriver_belt",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+					new MobEffectInstance(MobEffects.SATURATION, 400, 0,true,false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+					super.transformationEffect(itemstack, player);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 0.1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+							player.getX(), player.getY()+1,
+							player.getZ(), 50, 0, 0, 0, 1);
+					((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+							player.getX(), player.getY()+1,
+							player.getZ(), 100, 0, 0, 0, 1);
+				}
+			}.addNeedItemList(NEED_ITEM_SushiHopper)
+					.isGlowing().addToList(ChemyRiserItem.cosmicCHEMY).addToList(NEED_ITEM_SushiHopper).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
+
+	public static final DeferredItem<Item> SUSHI_RIDE_CHEMY_CARD = ITEMS.register("sushi_ride_chemy_card",
+			() -> new CopyFormChangeItem(new Item.Properties(),HOPPER_RIDE_CHEMY_CARD.get()).addToList(NEED_ITEM_SushiHopper)
+					.addToList(ChemyRiserItem.artifactChemy).addToList(KamenRiderCraftCore.CreativeTabRegistry.GOTCHARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_RIDE_CHEMY_CARD_GOTCHARD = ITEMS.register("kuuga_ride_chemy_card_gotchard",
 			() -> new RideChemyCardItem(new Item.Properties(),"_exceed_mighty","gotchard","gotchardriver_belt",

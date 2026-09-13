@@ -1,0 +1,52 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:heart_of_impact_capsem"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.zeztz.heart_of_impact.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.zeztz.heart_of_impact.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:zeztz/exdream",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:zeztz_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:zeztz_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:zeztz_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:zeztz_exdream_driver"
+							],
+                          "predicates": {
+                            "minecraft:custom_data": "{slot_tex1:\"kamenridercraft:heart_of_impact_capsem\"}"
+                          }
+						}
+					}
+				}
+			}
+		}
+	}
+}

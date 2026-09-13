@@ -1,5 +1,5 @@
 {
-	"category": "equipment",
+	"type": "minecraft:crafting_shaped",
 	"group": "black_rx",
 	"pattern": [
 		"XAX",

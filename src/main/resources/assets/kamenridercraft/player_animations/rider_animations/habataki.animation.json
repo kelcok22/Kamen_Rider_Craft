@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"habataki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, -25, 0],
+					"position": [0, -3, 0]
+				},
+				"head": {
+					"rotation": [21.1887, 36.4726, 6.1272],
+					"position": [0, 0, -1]
+				},
+				"torso": {
+					"rotation": [10.609, 0.8949, -4.9568],
+					"position": [0.5, 0, 0.5]
+				},
+				"right_arm": {
+					"rotation": [-51.7589, -18.3115, -25.3477],
+					"position": [0, -1, -1]
+				},
+				"left_arm": {
+					"rotation": [-48.7547, -13.7117, -70.0119],
+					"position": [0, -1, 0]
+				},
+				"right_leg": {
+					"rotation": [27.5, -22.5, 0],
+					"position": [-0.25, 2, 1.25]
+				},
+				"left_leg": {
+					"rotation": [-8.2469, -36.0901, -3.3536],
+					"position": [2, 2, 0]
+				}
+			}
+		}
+	}
+}

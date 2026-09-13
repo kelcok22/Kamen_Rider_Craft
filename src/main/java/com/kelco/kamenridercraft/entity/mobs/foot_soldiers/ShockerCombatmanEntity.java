@@ -28,11 +28,11 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
         int day = localdate.getDayOfMonth();
         if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) NAME = "shocker_combatman_christmas";
         else NAME = "shocker_combatman";
-        this.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(IchigoRiderItems.SHOCKER_BELT.get()));
+        getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGOCHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(IchigoRiderItems.SHOCKER_BELT.get()));
     }
 
     public static AttributeSupplier.Builder setAttributes() {
@@ -45,33 +45,32 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
     }
 
 
-    public void remove(RemovalReason reason) {
-        if (reason == RemovalReason.KILLED) {
+    public void remove(RemovalReason removalReason) {
+        if (removalReason == RemovalReason.KILLED) {
             LocalDate localdate = LocalDate.now();
             int day = localdate.getDayOfMonth();
-            if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28 && this.lastHurtByPlayer != null) {
+            if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28 && lastHurtByPlayer != null) {
                 ItemEntity key = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ExtraRiderItems.GIFT.get(), 1), 0, 0, 0);
                 key.setPickUpDelay(0);
                 level().addFreshEntity(key);
             }
-            ((ServerLevel) this.level()).sendParticles(ParticleTypes.CLOUD,
-                    this.getX() + 0, this.getY(),
-                    this.getZ() + 0, 100, 0, 0, 0, 0.1);
+            ((ServerLevel) level()).sendParticles(ParticleTypes.CLOUD,
+                    getX() + 0, getY(),
+                    getZ() + 0, 100, 0, 0, 0, 0.1);
 
 
-            double chance = this.random.nextDouble();
-            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
-            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                BaseHenchmenEntity boss = MobsCore.SHOCKER_RIDER.get().create(this.level());
+            double chance = random.nextDouble();
+            int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+            if (chance * 100.0 <= gamerule && (lastHurtByPlayer != null && canSpawnBoss(lastHurtByPlayer) || !(getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                BaseHenchmenEntity boss = MobsCore.SHOCKER_RIDER.get().create(level());
                 if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
-
-                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
+                    boss.moveTo(getX(), getY(), getZ(), getYRot(), 0.0F);
+                    level().addFreshEntity(boss);
+                    if (getLastAttacker() instanceof Player playerIn && level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.shocker_rider"));
                 }
             }
         }
-        super.remove(reason);
+        super.remove(removalReason);
     }
 }

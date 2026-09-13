@@ -1,0 +1,52 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:tridoron_key"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.drive.super_dead_heat.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.drive.super_dead_heat.description"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:drive/tridoron",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"head": {
+							"items": [
+								"kamenridercraft:drive_head"
+							]
+						},
+						"chest": {
+							"items": [
+								"kamenridercraft:drive_troso"
+							]
+						},
+						"legs": {
+							"items": [
+								"kamenridercraft:drive_legs"
+							]
+						},
+						"feet": {
+							"items": [
+								"kamenridercraft:mach_driver_honoh_drive"
+							],
+							"predicates": {
+								"minecraft:custom_data": "{slot_tex1:\"kamenridercraft:tridoron_key\"}"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

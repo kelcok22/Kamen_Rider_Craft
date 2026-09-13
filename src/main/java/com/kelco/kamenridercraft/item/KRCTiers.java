@@ -15,8 +15,8 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum KRCTiers implements Tier {
-    SPLITTING_SWORD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1560, 8.0F, 3.0F, 10, () -> Ingredient.of(new ItemLike[]{ModdedItemCore.RIDER_CIRCUIT.get()})),
-    SPLIT_SWORD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 780, 8.0F, 3.0F, 10, () -> Ingredient.of(new ItemLike[]{ModdedItemCore.RIDER_CIRCUIT.get()}));
+    SPLITTING_SWORD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1560, -2.F, -1.0F, 10, () -> Ingredient.of(ModdedItemCore.RIDER_CIRCUIT.get())),
+    SPLIT_SWORD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 780, -2.F, -1.0F, 10, () -> Ingredient.of(ModdedItemCore.RIDER_CIRCUIT.get()));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;
@@ -25,7 +25,7 @@ public enum KRCTiers implements Tier {
     private final int enchantmentValue;
     private final Supplier<Ingredient> repairIngredient;
 
-    private KRCTiers(TagKey<Block> incorrectBlockForDrops, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+    KRCTiers(TagKey<Block> incorrectBlockForDrops, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
         this.incorrectBlocksForDrops = incorrectBlockForDrops;
         this.uses = uses;
         this.speed = speed;

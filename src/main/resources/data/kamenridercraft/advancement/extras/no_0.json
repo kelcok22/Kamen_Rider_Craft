@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:ultimate_half_typhoon"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.extras.no_0.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.extras.no_0.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+  "parent": "kamenridercraft:extras/no_1",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:shin_no_0"
+        }
+      }
+    }
+  }
+}

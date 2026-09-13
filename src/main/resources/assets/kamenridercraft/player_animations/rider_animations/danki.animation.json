@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"danki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 42.5, 0],
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"rotation": [2, -37, 0]
+				},
+				"torso": {
+					"rotation": [0, 0, -2.5]
+				},
+				"right_arm": {
+					"rotation": [-105, -19, 91],
+					"position": [-2, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-50, -19, -90],
+					"position": [1, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [-15, 35, 2],
+					"position": [-1, 0, -1]
+				},
+				"left_leg": {
+					"rotation": [0, -35, -20],
+					"position": [1, 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kirameki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"position": [0, -0.25, 0]
+				},
+				"head": {
+					"rotation": [2.5, 0, 0]
+				},
+				"torso": {
+					"rotation": [0, -2.5, 0]
+				},
+				"right_arm": {
+					"rotation": [-55.4003, 55.744, 27.3507],
+					"position": [0, -1, -1]
+				},
+				"left_arm": {
+					"rotation": [-65.1921, -54.6623, -21.451],
+					"position": [0, -1, -1]
+				},
+				"right_leg": {
+					"rotation": [6.6476, 39.2908, 14.4322]
+				},
+				"left_leg": {
+					"rotation": [-3.5715, -26.7952, -14.0328]
+				}
+			}
+		}
+	}
+}

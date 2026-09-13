@@ -146,7 +146,7 @@ public class GamerDriverItem extends RiderDriverItem {
                 belt = "bugster_buckle";
             if ((itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()
                     || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_POPPY.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_LAZER.get())
-                    && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR_II.get())) belt = "bugster_buckle";
+                    && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR_II.get())) belt = "bugster_buckle_ii";
 
             if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
                 belt = getFormItem(itemstack, 1).getBeltTex() + "_un";
@@ -159,17 +159,9 @@ public class GamerDriverItem extends RiderDriverItem {
             return "belts/" + belt;
         } else if (equipmentSlot == EquipmentSlot.HEAD) {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
-            if (belt == ExAidRiderItems.GAMER_DRIVER_BRAVE.get() & getFormItem(itemstack, 2) == ExAidRiderItems.DOREMIFA_BEAT_GASHAT.get()
-                    & rider.hasEffect(EffectCore.CHRISTMAS)) {
-                return "beat_gamer_christmas";
-            } else return getFormItem(itemstack, 2).getFormName(false);
+            return getFormItem(itemstack, 2).getFormName(false);
         }else {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
-            if (belt == ExAidRiderItems.GAMER_DRIVER_EX_AID.get() & getFormItem(itemstack, 1) == ExAidRiderItems.MIGHTY_ACTION_X_GASHAT_LV_1.get()
-                    & rider.hasEffect(EffectCore.CHRISTMAS)) {
-                return riderName + "_lv1_christmas";
-            }
-
             if (belt == ExAidRiderItems.GAMER_DRIVER_SNIPE.get()) {
                 if (getFormItem(itemstack, 2) == ExAidRiderItems.JET_COMBAT_GASHAT.get() ||
                         getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_TANK_GASHAT.get() ||

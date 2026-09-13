@@ -35,12 +35,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.time.LocalDate;
 
 public abstract class BaseHenchmenEntity extends Monster implements RangedAttackMob {
-
     public int BOW_COOLDOWN = 40;
     public int HARD_BOW_COOLDOWN = 20;
     public double BOW_DISTANCE = 40.0D;
@@ -172,17 +172,15 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
                 int tempRandZ = Mth.floor(this.getZ()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
                 reinforcement.setPos(tempRandX, this.getY(), tempRandZ);
 
-                for (int i = 0; i < 100; ++i){
+                for (int i = 0; i < 100; ++i) {
                     int randX = Mth.floor(this.getX()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
                     int randY = Mth.floor(this.getY()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
                     int randZ = Mth.floor(this.getZ()) + Mth.nextInt(this.random, 9, 35) * Mth.nextInt(this.random, -1, 1);
 
                     BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
-                    if (!SpawnPlacements.isSpawnPositionOk(this.getType(), serverLevel, potentialPosition)) {
+                    if (SpawnPlacements.isSpawnPositionOk(this.getType(), serverLevel, potentialPosition)) {
                         reinforcement.setPos(randX, this.getY(), randZ);
-                        continue;
                     }
-                    reinforcement.setPos(tempRandX, this.getY(), tempRandZ);
                 }
 
                 reinforcement.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(0);
@@ -258,8 +256,7 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
         return ProjectileUtil.getMobArrow(this, arrow, velocity, weapon);
     }
 
-    public boolean canFireProjectileWeapon(ProjectileWeaponItem p_32144_) {
-        return p_32144_ instanceof BowItem;
+    public boolean canFireProjectileWeapon(@NotNull ProjectileWeaponItem projectileWeaponItem) {
+        return projectileWeaponItem instanceof BowItem;
     }
-
 }

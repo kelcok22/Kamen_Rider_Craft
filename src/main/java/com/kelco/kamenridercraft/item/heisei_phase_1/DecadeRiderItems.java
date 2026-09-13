@@ -644,7 +644,7 @@ public class DecadeRiderItems {
 
 	public static final DeferredItem<Item> KUUGA_GROWING_AR = ITEMS.register("kuuga_growing_ar",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_growing_ar","kuuga","arcle_belt",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 2,true,false)){
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),

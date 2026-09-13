@@ -103,9 +103,9 @@ public class OOODriverItem extends RiderDriverItem {
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
         boolean fly = Objects.requireNonNull(rider.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1;
-        double henshinTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        double henshinTick = getHenshinTick(itemstack,rider);
         String combo = getCombo(getFormItem(itemstack, 1, henshinTick), getFormItem(itemstack, 2, henshinTick), getFormItem(itemstack, 3, henshinTick));
-        if (equipmentSlot != EquipmentSlot.FEET & getFormItem(itemstack, 1, Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue()) == ModdedItemCore.BLANK_FORM.asItem())
+        if (equipmentSlot != EquipmentSlot.FEET & getFormItem(itemstack, 1, henshinTick) == ModdedItemCore.BLANK_FORM.asItem())
             return "blank";
         switch (equipmentSlot) {
             case EquipmentSlot.FEET:
@@ -137,7 +137,7 @@ public class OOODriverItem extends RiderDriverItem {
     }
 
     public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
-        double henshinTick = Objects.requireNonNull(livingEntity.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        double henshinTick = getHenshinTick(itemstack,livingEntity);
         if (currentSlot == EquipmentSlot.FEET) {
             return getFormItem(itemstack, 1, henshinTick).getIsBeltGlowing();
         }
@@ -156,7 +156,7 @@ public class OOODriverItem extends RiderDriverItem {
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         int num = 1;
-        double henshinTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        double henshinTick = getHenshinTick(itemstack,rider);
 
         if (slot == EquipmentSlot.CHEST) {
             num = 2;
