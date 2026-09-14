@@ -1,4 +1,4 @@
-// 1.21.1	2026-09-12T23:08:39.0122334	Item Models: kamenridercraft
+// 1.21.1	2026-09-14T21:48:58.3459133	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -522,6 +522,7 @@ be7b63aa196fd83c84f9c65180fe50401dbe4669 assets/kamenridercraft/models/item/moos
 5b450bb389e4a1c4b374b4300f1f67d579698c7a assets/kamenridercraft/models/item/mugen_driver.json
 1a89f51eb57e32f3c2dca48b3e665fef22e6f482 assets/kamenridercraft/models/item/my_th_driver.json
 89e07f83a8a4ed3791c0b28d57e65e7a55bf50b7 assets/kamenridercraft/models/item/my_th_driver_hammer_on.json
+c11ca5c26ff495b0d6e74a9eb7f4a575c965f576 assets/kamenridercraft/models/item/my_th_driver_slash_on.json
 cca1453fb32a74f4644c9a51ddd42633a087d025 assets/kamenridercraft/models/item/my_th_head.json
 f82f8bba43ec4de0cc4fbc6c15ede5e4030fe335 assets/kamenridercraft/models/item/my_th_legs.json
 66e0b59086a8a8ad5b780749e2d7304581db6695 assets/kamenridercraft/models/item/my_th_troso.json
@@ -618,6 +619,7 @@ b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhin
 3a6f6ee2bf7be669061ba4f3bfbe478df91fa076 assets/kamenridercraft/models/item/ride_x_eggs_1.json
 7ffe15efdd6f6f46babcdef409a7f5859728276b assets/kamenridercraft/models/item/ride_x_eggs_1_maou.json
 3a6f6ee2bf7be669061ba4f3bfbe478df91fa076 assets/kamenridercraft/models/item/ride_x_eggs_1_rid.json
+a5e3f1732307027965dfe9e163b82e964d1dc81f assets/kamenridercraft/models/item/ride_x_eggs_4_datt.json
 e4e1930700e61ef1158f1323ba920596aa3b3421 assets/kamenridercraft/models/item/rocket_nadeshiko_switch.json
 b4e3235dcf4fb2c995ade90d5e9b86774b94e231 assets/kamenridercraft/models/item/roidmude_core_002.json
 d92d46060722aa296f05c34c90633b1df9dd4bfc assets/kamenridercraft/models/item/roidmude_core_003.json
