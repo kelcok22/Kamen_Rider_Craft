@@ -118,8 +118,29 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> MAGNET_BUFFALO = ITEMS.register("magnet_buffalo",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> MACH_JAGUAR = ITEMS.register("mach_jaguar",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+    public static final DeferredItem<Item> SEALABLE_MACH_JAGUAR = ITEMS.register("sealable_mach_jaguar",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_jaguar", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("mach_jaguar"));
+
+    public static final DeferredItem<Item> MACH_JAGUAR = ITEMS.register("mach_jaguar",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_jaguar", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_MACH_JAGUAR.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIME_SCARAB = ITEMS.register("time_scarab",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
@@ -169,10 +190,59 @@ public class BladeRiderItems {
 				}
 			}.isGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("blade_jack_wing.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+    public static final DeferredItem<Item> SEALABLE_ABSORB_CAPRICORN = ITEMS.register("sealable_absorb_capricorn",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_capricorn", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("absorb_capricorn"));
 
-	public static final DeferredItem<Item> EVOLUTION_CAUCASUS = ITEMS.register("evolution_caucasus",
+    public static final DeferredItem<Item> ABSORB_CAPRICORN = ITEMS.register("absorb_capricorn",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_capricorn", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SEALABLE_EVOLUTION_CAUCASUS= ITEMS.register("sealable_evolution_caucasus",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_caucasus", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("evolution_caucasus"));
+
+    public static final DeferredItem<Item> EVOLUTION_CAUCASUS_UNDEAD = ITEMS.register("evolution_caucasus_undead",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_caucasus", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_EVOLUTION_CAUCASUS.get()).useBasicModel().setModelName("evolution_caucasus"));
+
+    public static final DeferredItem<Item> EVOLUTION_CAUCASUS = ITEMS.register("evolution_caucasus",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_king", "blade", "blay_buckle_king_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
@@ -184,7 +254,7 @@ public class BladeRiderItems {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			}.isGlowing().addAlternative(EVOLUTION_CAUCASUS_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_silver_king", "blade", "blay_buckle_king_belt",
@@ -219,8 +289,29 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> UPPER_FROG = ITEMS.register("upper_frog",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> RAPID_PECKER = ITEMS.register("rapid_pecker",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+    public static final DeferredItem<Item> SEALABLE_RAPID_PECKER = ITEMS.register("sealable_rapid_pecker",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_pecker", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("rapid_pecker"));
+
+    public static final DeferredItem<Item> RAPID_PECKER = ITEMS.register("rapid_pecker",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_pecker", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_RAPID_PECKER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DROP_WHALE = ITEMS.register("drop_whale",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
@@ -228,17 +319,87 @@ public class BladeRiderItems {
 	public static final DeferredItem<Item> ROUZE_FIREFLY = ITEMS.register("rouze_firefly",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> ROCK_TORTOISE = ITEMS.register("rock_tortoise",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+    public static final DeferredItem<Item> SEALABLE_ROCK_TORTOISE = ITEMS.register("sealable_rock_tortoise",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_tortoise", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("rock_tortoise"));
 
-	public static final DeferredItem<Item> SCOPE_BAT = ITEMS.register("scope_bat",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+    public static final DeferredItem<Item> ROCK_TORTOISE = ITEMS.register("rock_tortoise",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_tortoise", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_ROCK_TORTOISE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> GEMINI_ZEBRA = ITEMS.register("gemini_zebra",
+    public static final DeferredItem<Item> SEALABLE_SCOPE_BAT = ITEMS.register("sealable_scope_bat",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_bat", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.RADAR, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("scope_bat"));
+
+    public static final DeferredItem<Item> SCOPE_BAT = ITEMS.register("scope_bat",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_bat", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.RADAR, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_SCOPE_BAT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+
+    public static final DeferredItem<Item> GEMINI_ZEBRA = ITEMS.register("gemini_zebra",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> THIEF_CHAMELEON = ITEMS.register("thief_chameleon",
 			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SEALABLE_FUSION_PEACOCK= ITEMS.register("sealable_fusion_peacock",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_peacock", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("fusion_peacock"));
+
+    public static final DeferredItem<Item> FUSION_PEACOCK_UNDEAD = ITEMS.register("fusion_peacock_undead",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_peacock", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_FUSION_PEACOCK.get()).useBasicModel().setModelName("fusion_peacock"));
 
 	public static final DeferredItem<Item> FUSION_PEACOCK = ITEMS.register("fusion_peacock",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "garren", "garren_buckle_jack_belt",
@@ -253,10 +414,59 @@ public class BladeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_jack_wing.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			}.isGlowing().addAlternative(FUSION_PEACOCK_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_jack_wing.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
-	public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+    public static final DeferredItem<Item> SEALABLE_ABSORB_SERPENT = ITEMS.register("sealable_absorb_serpent",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_serpent", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("absorb_serpent"));
+
+    public static final DeferredItem<Item> ABSORB_SERPENT = ITEMS.register("absorb_serpent",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_serpent", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_ABSORB_SERPENT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+
+    public static final DeferredItem<Item> SEALABLE_EVOLUTION_GIRAFFA= ITEMS.register("sealable_evolution_giraffa",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_giraffa", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("evolution_giraffa"));
+
+    public static final DeferredItem<Item> EVOLUTION_GIRAFFA_UNDEAD = ITEMS.register("evolution_giraffa_undead",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_giraffa", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_EVOLUTION_GIRAFFA.get()).useBasicModel().setModelName("evolution_giraffa"));
 
 	public static final DeferredItem<Item> EVOLUTION_GIRAFFA = ITEMS.register("evolution_giraffa",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_king", "garren", "garren_buckle_king_belt",
@@ -270,7 +480,7 @@ public class BladeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+			}.isGlowing().addAlternative(EVOLUTION_GIRAFFA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ultimate_form","taiyaki_master","blank",
