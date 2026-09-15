@@ -677,6 +677,7 @@ public class KamenRiderCraftCore {
             event.registerSpriteSet(ModParticles.PUDDING_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.BUTTERFLY_PARTICLES.get(), GummiParticles.Provider::new);
             event.registerSpriteSet(ModParticles.MY_TH_GEM_PARTICLES.get(), My_ThGemParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MY_TH_GEM_TURTLE_PARTICLES.get(), My_ThGemTurtleParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), RealizingParticles.Provider::new);
 
         }
