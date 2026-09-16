@@ -95,11 +95,11 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
             if (RIDER != null && RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
                 List<RenderLayerInfo> layerInfo = new ArrayList<>();
                 belt.SetUnlimitedModels(layerInfo, RIDER.getItemBySlot(EquipmentSlot.FEET), RIDER, renderer2.getCurrentSlot());
-
+                if (renderer2.getCurrentSlot()==EquipmentSlot.FEET||belt.isTransformed(RIDER)){
                 if (!layerInfo.isEmpty()) {
                     for (RenderLayerInfo renderLayerInfo : layerInfo) {
 
-                        renderType = renderLayerInfo.getRenderType(partialTick,RIDER);
+                        renderType = renderLayerInfo.getRenderType(partialTick, RIDER);
                         String model = renderLayerInfo.getModel();
 
                         BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model, renderer2.getCurrentSlot())) : bakedModel;
@@ -107,7 +107,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                         //poseStack.translate(renderLayerInfo.getX(), renderLayerInfo.getY(), renderLayerInfo.getZ());
 
                         if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
-                        if (model != null) applyCustomAnimations(renderLayerInfo,bakedGeoModel,RIDER.getItemBySlot(EquipmentSlot.FEET) ,RIDER, partialTick);
+                        if (model != null)
+                            applyCustomAnimations(renderLayerInfo, bakedGeoModel, RIDER.getItemBySlot(EquipmentSlot.FEET), RIDER, partialTick);
                         if (renderType != null) {
                             getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                     bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
@@ -121,6 +122,7 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                         }
                     }
                 }
+            }
             }
         }
 

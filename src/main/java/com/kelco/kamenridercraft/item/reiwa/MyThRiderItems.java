@@ -104,8 +104,7 @@ public class MyThRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                         Item back = MyThRiderItems.FRAME_MY_TH_BACK.get();
-                        Item handItem = ((rider.getMainArm() == HumanoidArm.LEFT) || (rider.getMainArm() == HumanoidArm.RIGHT) ? rider.getMainHandItem().getItem() : rider.getOffhandItem().getItem());
-                        if (handItem != back&&slot==EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("my_th_turtle_frame_back",null));
+                        if (rider.getMainHandItem().getItem()!= back&&rider.getOffhandItem().getItem()!= back&&slot==EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("my_th_turtle_frame_back",null));
                 }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
