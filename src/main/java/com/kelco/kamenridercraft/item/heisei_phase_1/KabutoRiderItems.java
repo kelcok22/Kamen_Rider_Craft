@@ -1,9 +1,11 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.*;
+import com.kelco.kamenridercraft.item.reiwa.MyThRiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -11,11 +13,14 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class KabutoRiderItems {
 
@@ -180,6 +185,17 @@ public class KabutoRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gatack", "gatack_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    Item caliburR = KabutoRiderItems.GATACK_DOUBLE_CALIBUR.get();
+                    Item caliburL = KabutoRiderItems.GATACK_DOUBLE_CALIBUR_MINUS.get();
+                    Item caliburT = KabutoRiderItems.GATACK_DOUBLE_CALIBUR_TWIN.get();
+                    if (rider.getMainHandItem().getItem() != caliburT && rider.getOffhandItem().getItem() != caliburT && slot == EquipmentSlot.HEAD) {
+                        if (rider.getMainHandItem().getItem() != caliburR && rider.getOffhandItem().getItem() != caliburR)
+                            layerInfo.add(new RenderLayerInfo("gatack_double_calibur_plus", null));
+                        if (rider.getMainHandItem().getItem() != caliburL && rider.getOffhandItem().getItem() != caliburL)
+                            layerInfo.add(new RenderLayerInfo("gatack_double_calibur_minus", null));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -199,6 +215,17 @@ public class KabutoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    Item caliburR = KabutoRiderItems.GATACK_DOUBLE_CALIBUR.get();
+                    Item caliburL = KabutoRiderItems.GATACK_DOUBLE_CALIBUR_MINUS.get();
+                    Item caliburT = KabutoRiderItems.GATACK_DOUBLE_CALIBUR_TWIN.get();
+                    if (rider.getMainHandItem().getItem() != caliburT && rider.getOffhandItem().getItem() != caliburT && slot == EquipmentSlot.HEAD) {
+                        if (rider.getMainHandItem().getItem() != caliburR && rider.getOffhandItem().getItem() != caliburR)
+                            layerInfo.add(new RenderLayerInfo("gatack_double_calibur_plus", null));
+                        if (rider.getMainHandItem().getItem() != caliburL && rider.getOffhandItem().getItem() != caliburL)
+                            layerInfo.add(new RenderLayerInfo("gatack_double_calibur_minus", null));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -440,6 +467,17 @@ public class KabutoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    Item caliburR = KabutoRiderItems.GATACK_DOUBLE_CALIBUR.get();
+                    Item caliburL = KabutoRiderItems.GATACK_DOUBLE_CALIBUR_MINUS.get();
+                    Item caliburT = KabutoRiderItems.GATACK_DOUBLE_CALIBUR_TWIN.get();
+                    if (rider.getMainHandItem().getItem() != caliburT && rider.getOffhandItem().getItem() != caliburT && slot == EquipmentSlot.HEAD) {
+                        if (rider.getMainHandItem().getItem() != caliburR && rider.getOffhandItem().getItem() != caliburR)
+                            layerInfo.add(new RenderLayerInfo("gatack_double_calibur_plus", null));
+                        if (rider.getMainHandItem().getItem() != caliburL && rider.getOffhandItem().getItem() != caliburL)
+                            layerInfo.add(new RenderLayerInfo("gatack_double_calibur_minus", null));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
