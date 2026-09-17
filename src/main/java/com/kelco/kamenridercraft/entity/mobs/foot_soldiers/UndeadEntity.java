@@ -20,12 +20,16 @@ import javax.annotation.Nullable;
 public class UndeadEntity extends BaseHenchmenEntity {
     public UndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME = "undead";
+        NAME = "undead_human";
         getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
         setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
         setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
         setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
         setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+        this.setDropChance(EquipmentSlot.HEAD, 0.0f);
+        this.setDropChance(EquipmentSlot.CHEST, 0.0f);
+        this.setDropChance(EquipmentSlot.LEGS, 0.0f);
+        this.setDropChance(EquipmentSlot.FEET, 0.0f);
     }
 
     @Nullable

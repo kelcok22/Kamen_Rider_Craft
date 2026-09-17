@@ -166,13 +166,11 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> MIRROR_RIDER_SPAWN_EGG = ITEMS.register("mirror_rider_spawn_egg",
             () -> new BaseSpawnEggItem(MIRROR_RIDER, 0xff0f16, 0x1e1e1e, new Item.Properties()));
 
-
     public static final DeferredHolder<EntityType<?>, EntityType<OdinEntity>> ODIN = MOBLIST.register("odin",
             () -> EntityType.Builder.of(OdinEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":odin"));
 
     public static final DeferredItem<BaseSpawnEggItem> ODIN_SPAWN_EGG = ITEMS.register("odin_spawn_egg",
             () -> new BaseSpawnEggItem(ODIN, 0xdbaf1f, 0x9f7f14, new Item.Properties()));
-
 
     public static final DeferredHolder<EntityType<?>, EntityType<RiotrooperEntity>> RIOTROOPER = MOBLIST.register("riotrooper",
             () -> EntityType.Builder.of(RiotrooperEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":riotrooper"));
@@ -264,7 +262,6 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> KABUKI_SPAWN_EGG = ITEMS.register("kabuki_spawn_egg",
             () -> new BaseSpawnEggItem(KABUKI, 0x046d10, 0xd31b1c, new Item.Properties()));
 
-
     public static final DeferredHolder<EntityType<?>, EntityType<ZectrooperEntity>> ZECTROOPER = MOBLIST.register("zectrooper",
             () -> EntityType.Builder.of(ZectrooperEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":zectrooper"));
 
@@ -288,7 +285,6 @@ public class MobsCore {
 
     public static final DeferredItem<BaseSpawnEggItem> CAUCASUS_SPAWN_EGG = ITEMS.register("caucasus_spawn_egg",
             () -> new BaseSpawnEggItem(CAUCASUS, 0x999999, 0xf4c600, new Item.Properties()));
-
 
     public static final DeferredHolder<EntityType<?>, EntityType<NewMoleImaginEntity>> NEW_MOLE_IMAGIN = MOBLIST.register("new_mole_imagin",
             () -> EntityType.Builder.of(NewMoleImaginEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":new_mole_imagin"));

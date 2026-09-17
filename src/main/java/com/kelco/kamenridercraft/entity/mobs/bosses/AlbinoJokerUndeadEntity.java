@@ -9,6 +9,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
@@ -20,38 +21,59 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.Random;
 
 public class AlbinoJokerUndeadEntity extends BaseHenchmenEntity {
-    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(GodaEntity.class, EntityDataSerializers.BYTE);
+    private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(AlbinoJokerUndeadEntity.class, EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.WHITE), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
 
 		public AlbinoJokerUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="ace_undead";
+        NAME="albino_joker_undead";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.ALBINO_JOKERROUZER.get()));
+        this.setDropChance(EquipmentSlot.HEAD, 0.0f);
+        this.setDropChance(EquipmentSlot.CHEST, 0.0f);
+        this.setDropChance(EquipmentSlot.LEGS, 0.0f);
+        this.setDropChance(EquipmentSlot.FEET, 0.0f);
     }
+
 
     protected void customServerAiStep() {
         super.customServerAiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        bossEvent.setProgress(getHealth() / getMaxHealth());
     }
 
-    public void readAdditionalSaveData(CompoundTag p_31474_) {
-        super.readAdditionalSaveData(p_31474_);
-        if (this.hasCustomName()) {
-            this.bossEvent.setName(this.getDisplayName());
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
+        super.defineSynchedData(builder);
+        builder.define(DATA_FLAGS_ID, (byte) 0);
+    }
+
+    public void readAdditionalSaveData(CompoundTag compoundTag) {
+        super.readAdditionalSaveData(compoundTag);
+        if (hasCustomName()) {
+            bossEvent.setName(getDisplayName());
         }
     }
 
-    public void setCustomName(@Nullable Component p_31476_) {
-        super.setCustomName(p_31476_);
-        this.bossEvent.setName(this.getDisplayName());
+    public void setCustomName(@Nullable Component component) {
+        super.setCustomName(component);
+        bossEvent.setName(getDisplayName());
+    }
+
+    public void startSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
+        super.startSeenByPlayer(serverPlayer);
+        bossEvent.addPlayer(serverPlayer);
+    }
+
+    public void stopSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
+        super.stopSeenByPlayer(serverPlayer);
+        bossEvent.removePlayer(serverPlayer);
     }
 
     @Override

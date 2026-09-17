@@ -30,11 +30,11 @@ public class JokerUndeadEntity extends BaseHenchmenEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(JokerUndeadEntity.class,
             EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString())
-            .withStyle(ChatFormatting.GREEN), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
+            .withStyle(ChatFormatting.DARK_GREEN), BossEvent.BossBarColor.GREEN, BossEvent.BossBarOverlay.PROGRESS);
 
     public JokerUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME = "joker_undead";
+        NAME = "chalice_human";
         setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
         setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
         setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
