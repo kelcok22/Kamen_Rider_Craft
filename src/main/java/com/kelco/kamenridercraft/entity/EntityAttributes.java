@@ -42,6 +42,7 @@ public class EntityAttributes {
 
     private static void heiseiPhaseOneAttributes (EntityAttributeCreationEvent event) {
         event.put(MobsCore.ZU_GUMUN_BA.get(), ZuGumunBaEntity.setAttributes().build());
+        event.put(MobsCore.GO_CLASS_GRONGI.get(), ZuGumunBaEntity.setAttributes().build());
         event.put(MobsCore.N_DAGUVA_ZEBA.get(), NDaguvaZebaEntity.setAttributes().build());
 
         event.put(MobsCore.PANTHERAS_LUTEUS.get(), PantherasLuteusEntity.setAttributes().build());

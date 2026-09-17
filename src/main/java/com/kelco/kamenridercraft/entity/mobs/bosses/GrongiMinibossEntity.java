@@ -17,7 +17,7 @@ public class GrongiMinibossEntity extends BaseHenchmenEntity {
         setItemSlot(EquipmentSlot.HEAD, new ItemStack(KuugaRiderItems.KUUGAHELMET.get()));
         setItemSlot(EquipmentSlot.CHEST, new ItemStack(KuugaRiderItems.KUUGACHESTPLATE.get()));
         setItemSlot(EquipmentSlot.LEGS, new ItemStack(KuugaRiderItems.KUUGALEGGINGS.get()));
-        setItemSlot(EquipmentSlot.LEGS, new ItemStack(KuugaRiderItems.GRONGI_BELT.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(KuugaRiderItems.GRONGI_BELT.get()));
     }
 
     public static AttributeSupplier.Builder setAttributes() {
