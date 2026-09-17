@@ -329,6 +329,14 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.FAIZ.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.AUTO_VAJIN_ROBO.get(), AutoVajinRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.UNDEAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ACE_UNDEAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.JACK_UNDEAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.QUEEN_UNDEAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.KING_UNDEAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.JOKER_UNDEAD.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.ALBINO_JOKER_UNDEAD.get(), BasicEntityRenderer::new);
+
             event.registerEntityRenderer(MobsCore.BAKENEKO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MIDAREDOUJI.get(), MidaredoujiRenderer::new);
             event.registerEntityRenderer(MobsCore.MAKAMOU_NINJA_GROUP.get(), MakamouNinjaGroupRenderer::new);
@@ -1791,6 +1799,14 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.ORGA_SPAWN_EGG);
                 event.accept(MobsCore.MUEZ_SPAWN_EGG);
                 event.accept(MobsCore.FAIZ_SPAWN_EGG);
+
+                event.accept(MobsCore.UNDEAD_SPAWN_EGG);
+                event.accept(MobsCore.ACE_UNDEAD_SPAWN_EGG);
+                event.accept(MobsCore.JACK_UNDEAD_SPAWN_EGG);
+                event.accept(MobsCore.QUEEN_UNDEAD_SPAWN_EGG);
+                event.accept(MobsCore.KING_UNDEAD_SPAWN_EGG);
+                event.accept(MobsCore.JOKER_UNDEAD_SPAWN_EGG);
+                event.accept(MobsCore.ALBINO_JOKER_UNDEAD_SPAWN_EGG);
 
                 event.accept(MobsCore.BAKENEKO_SPAWN_EGG);
                 event.accept(MobsCore.MIDAREDOUJI_SPAWN_EGG);

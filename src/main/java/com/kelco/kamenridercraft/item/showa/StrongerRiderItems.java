@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.showa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.BaseBannerPatternItem;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -53,7 +54,8 @@ public class StrongerRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)
                     ,new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
-                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)
+                    ,new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());

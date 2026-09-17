@@ -191,6 +191,47 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> FAIZ_SPAWN_EGG = ITEMS.register("faiz_spawn_egg",
             () -> new BaseSpawnEggItem(FAIZ, 0x0d0d0d, 0xe00000, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<UndeadEntity>> UNDEAD = MOBLIST.register("undead",
+            () -> EntityType.Builder.of(UndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> UNDEAD_SPAWN_EGG = ITEMS.register("undead_spawn_egg",
+            () -> new BaseSpawnEggItem(UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<AceUndeadEntity>> ACE_UNDEAD = MOBLIST.register("ace_undead",
+            () -> EntityType.Builder.of(AceUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":ace_undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> ACE_UNDEAD_SPAWN_EGG = ITEMS.register("ace_undead_spawn_egg",
+            () -> new BaseSpawnEggItem(ACE_UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<JackUndeadEntity>> JACK_UNDEAD = MOBLIST.register("jack_undead",
+            () -> EntityType.Builder.of(JackUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":jack_undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> JACK_UNDEAD_SPAWN_EGG = ITEMS.register("jack_undead_spawn_egg",
+            () -> new BaseSpawnEggItem(JACK_UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<QueenUndeadEntity>> QUEEN_UNDEAD = MOBLIST.register("queen_undead",
+            () -> EntityType.Builder.of(QueenUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":queen_undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> QUEEN_UNDEAD_SPAWN_EGG = ITEMS.register("queen_undead_spawn_egg",
+            () -> new BaseSpawnEggItem(JACK_UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<KingUndeadEntity>> KING_UNDEAD = MOBLIST.register("king_undead",
+            () -> EntityType.Builder.of(KingUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":king_undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> KING_UNDEAD_SPAWN_EGG = ITEMS.register("king_undead_spawn_egg",
+            () -> new BaseSpawnEggItem(KING_UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<JokerUndeadEntity>> JOKER_UNDEAD = MOBLIST.register("joker_undead",
+            () -> EntityType.Builder.of(JokerUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":joker_undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> JOKER_UNDEAD_SPAWN_EGG = ITEMS.register("joker_undead_spawn_egg",
+            () -> new BaseSpawnEggItem(JOKER_UNDEAD, 0x181818, 0xe007B18, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<AlbinoJokerUndeadEntity>> ALBINO_JOKER_UNDEAD = MOBLIST.register("albino_joker_undead",
+            () -> EntityType.Builder.of(AlbinoJokerUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":albino_joker_undead"));
+
+    public static final DeferredItem<BaseSpawnEggItem> ALBINO_JOKER_UNDEAD_SPAWN_EGG = ITEMS.register("albino_joker_undead_spawn_egg",
+            () -> new BaseSpawnEggItem(ALBINO_JOKER_UNDEAD, 0xEBEBEB, 0xC41723, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<BakenekoEntity>> BAKENEKO = MOBLIST.register("bakeneko",
             () -> EntityType.Builder.of(BakenekoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":bakeneko"));

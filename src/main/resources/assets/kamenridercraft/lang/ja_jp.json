@@ -6048,7 +6048,7 @@
 "kamenridercraft.name.mad_rogue": "ライダー: 仮面ライダーマッドローグ",
 
 "item.kamenridercraft.drill_crusher": "ドリルクラッシャー",
-"item.kamenridercraft.hawk_gatlinger": "ホークがトリンガー",
+"item.kamenridercraft.hawk_gatlinger": "ホークガトリンガー",
 "item.kamenridercraft.4koma_ninpoutou": "4コマ忍法刀",
 "item.kamenridercraft.kaizoku_hassyar": "カイゾクハッシャー",
 "item.kamenridercraft.beat_crosser": "ビートクローザー",
@@ -9028,6 +9028,7 @@
 "item.kamenridercraft.zeztz_ride_x_eggs": "ゼッツライドエグズ",
 
 "item.kamenridercraft.my_th_edge": "マイスエッジ",
+"item.kamenridercraft.frame_my_th_back": "フレームマイスバック",
 
 "item.kamenridercraft.g_logo": "Gクレスト",
 "item.kamenridercraft.ghead": "Gのヘルメット",
@@ -9427,7 +9428,7 @@
 
 "entity.kamenridercraft.nebula_bugstervirus_mob": "ネビュラバグスターウイルス",
 "entity.kamenridercraft.kaiser": "カイザー",
-"entity.kamenridercraft.kaiser_reverse": "カイザーレバース",
+"entity.kamenridercraft.kaiser_reverse": "カイザーリバース",
 "entity.kamenridercraft.bikaiser": "バイカイザー",
 
 "entity.kamenridercraft.touto_guardian": "ガーディアン（東都ver.）",
@@ -9745,7 +9746,7 @@
 
 "item.kamenridercraft.nebulabugstervirus_spawn_egg": "ネビュラバグスターウイルススポーンエッグ",
 "item.kamenridercraft.kaiser_spawn_egg": "カイザースポーンエッグ",
-"item.kamenridercraft.kaiser_reverse_spawn_egg": "カイザーレバーススポーンエッグ",
+"item.kamenridercraft.kaiser_reverse_spawn_egg": "カイザーリバーススポーンエッグ",
 "item.kamenridercraft.bikaiser_spawn_egg": "バイカイザースポーンエッグ",
 
 "item.kamenridercraft.touto_guardian_spawn_egg": "ガーディアン（東都ver.）スポーンエッグ",

@@ -58,6 +58,14 @@ public class EntityAttributes {
         event.put(MobsCore.FAIZ.get(), FaizEntity.setAttributes().build());
         event.put(MobsCore.AUTO_VAJIN_ROBO.get(), AutoVajinRoboEntity.setAttributes().build());
 
+        event.put(MobsCore.UNDEAD.get(), UndeadEntity.setAttributes().build());
+        event.put(MobsCore.ACE_UNDEAD.get(), AceUndeadEntity.setAttributes().build());
+        event.put(MobsCore.JACK_UNDEAD.get(), JackUndeadEntity.setAttributes().build());
+        event.put(MobsCore.QUEEN_UNDEAD.get(), QueenUndeadEntity.setAttributes().build());
+        event.put(MobsCore.KING_UNDEAD.get(), KingUndeadEntity.setAttributes().build());
+        event.put(MobsCore.JOKER_UNDEAD.get(), JokerUndeadEntity.setAttributes().build());
+        event.put(MobsCore.ALBINO_JOKER_UNDEAD.get(), AlbinoJokerUndeadEntity.setAttributes().build());
+
         event.put(MobsCore.BAKENEKO.get(), BakenekoEntity.setAttributes().build());
         event.put(MobsCore.MIDAREDOUJI.get(), MidaredoujiEntity.setAttributes().build());
         event.put(MobsCore.MAKAMOU_NINJA_GROUP.get(), MakamouNinjaGroupEntity.setAttributes().build());
