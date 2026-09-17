@@ -32,12 +32,12 @@ public class RosyuoEntity extends BaseHenchmenEntity {
     public RosyuoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "rosyuo";
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GaimRiderItems.JOESHUIMU.get()));
+        setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(GaimRiderItems.JOESHUIMU.get()));
     }
 
     protected void customServerAiStep() {
         super.customServerAiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        bossEvent.setProgress(getHealth() / getMaxHealth());
     }
 
     protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
@@ -47,29 +47,29 @@ public class RosyuoEntity extends BaseHenchmenEntity {
 
     public void readAdditionalSaveData(CompoundTag compoundTag) {
         super.readAdditionalSaveData(compoundTag);
-        if (this.hasCustomName()) {
-            this.bossEvent.setName(this.getDisplayName());
+        if (hasCustomName()) {
+            bossEvent.setName(getDisplayName());
         }
     }
 
     public void setCustomName(@Nullable Component component) {
         super.setCustomName(component);
-        this.bossEvent.setName(this.getDisplayName());
+        bossEvent.setName(getDisplayName());
     }
 
     public void startSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
         super.startSeenByPlayer(serverPlayer);
-        this.bossEvent.addPlayer(serverPlayer);
+        bossEvent.addPlayer(serverPlayer);
     }
 
     public void stopSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
         super.stopSeenByPlayer(serverPlayer);
-        this.bossEvent.removePlayer(serverPlayer);
+        bossEvent.removePlayer(serverPlayer);
     }
 
     public void remove(@NotNull RemovalReason removalReason) {
-        if (this.isDeadOrDying()) {
-            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(GaimRiderItems.KACHIDOKI_LOCKSEED.get()) != 0) {
+        if (isDeadOrDying()) {
+            if (!level().isClientSide() && getLastAttacker() instanceof Player && ((Player) getLastAttacker()).getInventory().countItem(GaimRiderItems.KACHIDOKI_LOCKSEED.get()) != 0) {
                 ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(GaimRiderItems.KIWAMI_LOCKSEED.get(), 1), 0, 0, 0);
                 kiwamiLockseed.setPickUpDelay(0);
                 level().addFreshEntity(kiwamiLockseed);
