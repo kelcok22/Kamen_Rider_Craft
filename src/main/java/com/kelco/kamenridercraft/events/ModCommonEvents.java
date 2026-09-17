@@ -1,10 +1,10 @@
 package com.kelco.kamenridercraft.events;
 
 import com.kelco.kamenridercraft.block.RiderBlocks;
-import com.kelco.kamenridercraft.client.models.DoggaModel;
-import com.kelco.kamenridercraft.client.models.ElementaryInvesModel;
-import com.kelco.kamenridercraft.client.models.HeartRoidmudeModel;
-import com.kelco.kamenridercraft.client.models.MidaredoujiModel;
+import com.kelco.kamenridercraft.client.model.entity.allies.DoggaModel;
+import com.kelco.kamenridercraft.client.model.entity.allies.MidaredoujiModel;
+import com.kelco.kamenridercraft.client.model.entity.mob.ElementaryInvesModel;
+import com.kelco.kamenridercraft.client.model.entity.mob.HeartRoidmudeModel;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.EntityAttributes;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
@@ -26,7 +26,10 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
-import com.kelco.kamenridercraft.item.reiwa.*;
+import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
+import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;

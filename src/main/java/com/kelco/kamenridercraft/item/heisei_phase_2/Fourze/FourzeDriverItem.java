@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.Fourze;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -24,7 +24,6 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
-import java.util.Objects;
 
 public class FourzeDriverItem extends RiderDriverItem {
     public FourzeDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {

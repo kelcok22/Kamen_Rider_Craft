@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.item.base_items;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
@@ -10,7 +10,6 @@ import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -49,8 +48,6 @@ import java.util.Objects;
 import java.util.function.Consumer;
 
 import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.USED_ABILITY;
-import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendToPath;
 
 
 public class RiderDriverItem extends RiderArmorItem {

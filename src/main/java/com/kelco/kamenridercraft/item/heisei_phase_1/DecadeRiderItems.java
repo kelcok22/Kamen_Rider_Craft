@@ -1655,7 +1655,7 @@ public class DecadeRiderItems {
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt(2).addSummonWeapon(0).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> EAGLE_UNDEAD_CARD = ITEMS.register("eagle_undead_card",
-			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) BladeRiderItems.UNDEAD_ROUZER.get()).setSummonForm((RiderFormChangeItem) BladeRiderItems.FUSION_EAGLE_UNDEAD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) BladeRiderItems.UNDEAD_BUCKLE.get()).setSummonForm((RiderFormChangeItem) BladeRiderItems.FUSION_EAGLE_UNDEAD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 	public static final DeferredItem<Item> MOOSE_FANGIRE_CARD = ITEMS.register("moose_fangire_card",
 			() -> new RiderSummonCardItem(new Item.Properties(), 1).setSummonBelt((RiderDriverItem) KivaRiderItems.MOOSE_FANGIRE_BELT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 

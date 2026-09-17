@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft.client.gui.overlays;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -13,23 +12,40 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.fml.common.Mod;
+import org.jetbrains.annotations.NotNull;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.abilities.ClientAbilityUtil.clientGetAbility;
 import static com.kelco.kamenridercraft.abilities.ClientAbilityUtil.returnAbilityIcon;
 
-@Mod(value = KamenRiderCraftCore.MOD_ID, dist = Dist.CLIENT)
 public class AbilityHudOverlay implements LayeredDraw.Layer {
     public static final AbilityHudOverlay instance = new AbilityHudOverlay();
-    private static final ResourceLocation UNFILLED_ACTION_BAR = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/hud/action_meter_background.png");
-    private static final ResourceLocation FILLED_ACTION_BAR = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/hud/action_meter_progress.png");
-    private static final ResourceLocation ABILITY_HOLDER = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/hud/ability_overlay.png");
+    private static final ResourceLocation UNFILLED_ACTION_BAR =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/hud/action_meter_background.png");
+    private static final ResourceLocation FILLED_ACTION_BAR =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/hud/action_meter_progress.png");
+    private static final ResourceLocation ABILITY_HOLDER =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/hud/ability_overlay.png");
     private static ResourceLocation ABILITY_ONE = null;
     private static ResourceLocation ABILITY_TWO = null;
 
-    public void render(GuiGraphics guiGraphics, DeltaTracker deltaTracker) {
+    public static boolean shouldShowAbilityMeter(Player player) {
+        Item driverSlot = player.getItemBySlot(EquipmentSlot.FEET).getItem();
+        if (player.isCreative()) {
+            return false;
+        }
+        if (driverSlot instanceof RiderDriverItem && ((RiderDriverItem) driverSlot).isTransformed(player)) {
+            return !((RiderDriverItem) driverSlot).riderName.toLowerCase().contains("ohma");
+        }
+        return true;
+    }
+
+    public static boolean shouldShowIcons(Player player) {
+        Item driverSlot = player.getItemBySlot(EquipmentSlot.FEET).getItem();
+        return driverSlot instanceof RiderDriverItem && ((RiderDriverItem) driverSlot).isTransformed(player) || player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.get();
+    }
+
+    public void render(@NotNull GuiGraphics guiGraphics, @NotNull DeltaTracker deltaTracker) {
         Player player = Minecraft.getInstance().player;
         if (Minecraft.getInstance().options.hideGui || player.isSpectator() || !shouldShowIcons(player)) {
             return;
@@ -88,21 +104,5 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
                 }
             }
         }
-    }
-
-    public static boolean shouldShowAbilityMeter(Player player) {
-        Item driverSlot = player.getItemBySlot(EquipmentSlot.FEET).getItem();
-        if (player.isCreative()) {
-            return false;
-        }
-        if (driverSlot instanceof RiderDriverItem && ((RiderDriverItem) driverSlot).isTransformed(player)) {
-            return !((RiderDriverItem) driverSlot).riderName.toLowerCase().contains("ohma");
-        }
-        return true;
-    }
-
-    public static boolean shouldShowIcons(Player player) {
-        Item driverSlot = player.getItemBySlot(EquipmentSlot.FEET).getItem();
-        return driverSlot instanceof RiderDriverItem && ((RiderDriverItem) driverSlot).isTransformed(player) || player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.get();
     }
 }

@@ -1,0 +1,32 @@
+package com.kelco.kamenridercraft.client.renderer.entity.bikes;
+
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.model.entity.bike.BikeModel;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+
+
+public class BikeRenderer<T extends baseBikeEntity> extends GeoEntityRenderer<T> {
+    public BikeRenderer(EntityRendererProvider.Context renderManager) {
+        super(renderManager, new BikeModel<>());
+        this.scaleWidth = 1.1f;
+        this.scaleHeight = 1.1f;
+    }
+
+    @Override
+    public void render(@NotNull T entity, float entityYaw, float partialTick, PoseStack poseStack,
+                       @NotNull MultiBufferSource bufferSource, int packedLight) {
+        poseStack.translate(0, 0, 0);
+        super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
+    }
+
+    @Override
+    public @NotNull ResourceLocation getTextureLocation(T animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entities/" + animatable.NAME + ".png");
+    }
+}

@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid;
 
-import com.kelco.kamenridercraft.client.renderer.RearArmedUnitRenderer;
+import com.kelco.kamenridercraft.client.renderer.item.RearArmedUnitRenderer;
 import com.kelco.kamenridercraft.item.base_items.NeoBaseBlasterItem;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import software.bernie.geckolib.animatable.GeoItem;

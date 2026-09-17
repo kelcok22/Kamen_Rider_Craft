@@ -1,11 +1,13 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.renderer.layers.render_layer_util.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
-import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.*;
-import com.kelco.kamenridercraft.item.reiwa.MyThRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.ClockUpPadItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.HyperZecterBeltItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterBeltItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterRBeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;

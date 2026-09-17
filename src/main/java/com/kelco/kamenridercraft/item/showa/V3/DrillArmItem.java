@@ -1,6 +1,6 @@
 package com.kelco.kamenridercraft.item.showa.V3;
 
-import com.kelco.kamenridercraft.client.renderer.DrillArmItemRenderer;
+import com.kelco.kamenridercraft.client.renderer.item.DrillArmItemRenderer;
 import com.kelco.kamenridercraft.item.base_items.BasePickaxeItem;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.server.level.ServerLevel;

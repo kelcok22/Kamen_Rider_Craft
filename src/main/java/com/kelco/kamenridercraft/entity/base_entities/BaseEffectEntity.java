@@ -25,7 +25,7 @@ import java.util.UUID;
 
 public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    private int timeToLive = 255;
+    public int timeToLive = 255;
     private String model = "";
     private String texture = "";
     private boolean glowing = false;
@@ -48,25 +48,25 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
 
     public BaseEffectEntity(Level level, int TTL, LivingEntity user) {
         super(MobsCore.BASE_EFFECT.get(), level);
-        this.noPhysics = true;
-        this.timeToLive = TTL;
-        this.owner = user;
-        this.ownerUUID = user.getUUID();
+        noPhysics = true;
+        timeToLive = TTL;
+        owner = user;
+        ownerUUID = user.getUUID();
     }
 
 
     public void refreshDimensions() {
-        double d0 = this.getX();
-        double d1 = this.getY();
-        double d2 = this.getZ();
+        double d0 = getX();
+        double d1 = getY();
+        double d2 = getZ();
         super.refreshDimensions();
-        this.setPos(d0, d1, d2);
+        setPos(d0, d1, d2);
     }
 
 
     public BaseEffectEntity setTexture(String texture) {
         this.texture = texture;
-        this.entityData.set(TEXTURE, texture);
+        entityData.set(TEXTURE, texture);
         return this;
     }
 

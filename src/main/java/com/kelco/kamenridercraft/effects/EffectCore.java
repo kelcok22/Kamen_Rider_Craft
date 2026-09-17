@@ -233,8 +233,11 @@ public class EffectCore {
             () -> new TimeEffect(MobEffectCategory.NEUTRAL, 0xffed9e)
                     .addAttributeModifier(Attributes.HAS_TIME, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
-    public static final Holder<MobEffect> GREEED = EFFECT.register("greeed",
+    public static final Holder<MobEffect> UNSEALED = EFFECT.register("unsealed",
             () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
+
+    public static final Holder<MobEffect> GREEED = EFFECT.register("greeed",
+            () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0x7CFC00));
 
     public static final Holder<MobEffect> BUGSTER = EFFECT.register("bug",
             () -> new BugEffect(MobEffectCategory.HARMFUL, 0xe8842e)

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.base_items;
 
 
-import com.kelco.kamenridercraft.client.renderer.BasicArmorRenderer;
+import com.kelco.kamenridercraft.client.renderer.armor.BasicArmorRenderer;
 import com.kelco.kamenridercraft.data.ModItemModelProvider;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import net.minecraft.client.model.HumanoidModel;

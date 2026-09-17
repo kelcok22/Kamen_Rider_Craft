@@ -1,0 +1,24 @@
+package com.kelco.kamenridercraft.client.model.entity.allies;
+
+
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.entity.mobs.allies.GorillaCanEntity;
+import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib.model.GeoModel;
+
+public class GorillaCanModel extends GeoModel<GorillaCanEntity> {
+    @Override
+    public ResourceLocation getModelResource(GorillaCanEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/entity/gorilla_can.geo.json");
+    }
+
+    @Override
+    public ResourceLocation getTextureResource(GorillaCanEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/gorilla_can.png");
+    }
+
+    @Override
+    public ResourceLocation getAnimationResource(GorillaCanEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/gorilla_can.animation.json");
+    }
+}

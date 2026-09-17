@@ -1,0 +1,24 @@
+package com.kelco.kamenridercraft.client.model.entity.allies;
+
+
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.entity.mobs.allies.TakaWatchroidEntity;
+import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib.model.GeoModel;
+
+public class TakaWatchroidModel extends GeoModel<TakaWatchroidEntity> {
+    @Override
+    public ResourceLocation getModelResource(TakaWatchroidEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/entity/taka_watchroid.geo.json");
+    }
+
+    @Override
+    public ResourceLocation getTextureResource(TakaWatchroidEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/entity/taka_watchroid.png");
+    }
+
+    @Override
+    public ResourceLocation getAnimationResource(TakaWatchroidEntity animatable) {
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "animations/taka_watchroid.animation.json");
+    }
+}

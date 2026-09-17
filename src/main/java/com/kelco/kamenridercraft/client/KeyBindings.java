@@ -6,6 +6,7 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.neoforged.neoforge.client.settings.KeyConflictContext;
 
+
 public class KeyBindings {
     public static final KeyBindings INSTANCE = new KeyBindings();
 
