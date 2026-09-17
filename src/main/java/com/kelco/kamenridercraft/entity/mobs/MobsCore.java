@@ -122,6 +122,13 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> ZU_GUMUN_BA_SPAWN_EGG = ITEMS.register("zu_gumun_ba_spawn_egg",
             () -> new BaseSpawnEggItem(ZU_GUMUN_BA, 0xf8ba57, 0xaf8e59, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GrongiMinibossEntity>> GO_CLASS_GRONGI = MOBLIST.register("go_class_grongi",
+            () -> EntityType.Builder.of(GrongiMinibossEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":go_class_grongi"));
+
+    public static final DeferredItem<BaseSpawnEggItem> GO_CLASS_GRONGI_SPAWN_EGG = ITEMS.register("go_class_grongi_spawn_egg",
+            () -> new BaseSpawnEggItem(GO_CLASS_GRONGI, 0xf8ba57, 0x9f7f14, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<NDaguvaZebaEntity>> N_DAGUVA_ZEBA = MOBLIST.register("n_daguva_zeba",
             () -> EntityType.Builder.of(NDaguvaZebaEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":n_daguva_zeba"));
 

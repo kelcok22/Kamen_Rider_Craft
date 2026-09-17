@@ -1091,6 +1091,7 @@ public class KamenRiderCraftCore {
                 event.accept(ModdedItemCore.JINRAI_NO_SENSHI);
                 event.accept(MusicDiscItems.KAMEN_RIDER_KUUGA_MUSIC_DISC);
                 event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
+                event.accept(MobsCore.GO_CLASS_GRONGI_SPAWN_EGG);
                 event.accept(MobsCore.N_DAGUVA_ZEBA_SPAWN_EGG);
                 event.accept(RiderBlocks.N_DAGUVA_ZEBA_BOSS_BLOCK);
                 event.accept(RiderBlocks.KUUGA_TOMB);
@@ -1785,6 +1786,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.SHADOWMOON_SPAWN_EGG);
 
                 event.accept(MobsCore.ZU_GUMUN_BA_SPAWN_EGG);
+                event.accept(MobsCore.GO_CLASS_GRONGI_SPAWN_EGG);
                 event.accept(MobsCore.N_DAGUVA_ZEBA_SPAWN_EGG);
 
                 event.accept(MobsCore.PANTHERAS_LUTEUS_SPAWN_EGG);
