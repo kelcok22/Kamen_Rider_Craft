@@ -33,6 +33,7 @@ import com.kelco.kamenridercraft.events.ModCommonEvents;
 import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.init.RiderPotPattern;
+import com.kelco.kamenridercraft.item.KRCItemLists;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.*;
@@ -1159,6 +1160,9 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
                 event.accept(MusicDiscItems.ELEMENTS_MUSIC_DISC);
                 event.accept(MusicDiscItems.REBIRTH_MUSIC_DISC);
+                for (int i = 0; i < KRCItemLists.BLADE_SPAWN_EGG.size(); i++) {
+                    event.accept(KRCItemLists.BLADE_SPAWN_EGG.get(i));
+                }
                 event.accept(RiderBlocks.BLADE_ORE);
                 event.accept(RiderBlocks.DEEPSLATE_BLADE_ORE);
 
