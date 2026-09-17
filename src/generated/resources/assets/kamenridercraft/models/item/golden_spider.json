@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/shuffle_centipede"
+    "layer0": "kamenridercraft:item/golden_spider"
   }
 }

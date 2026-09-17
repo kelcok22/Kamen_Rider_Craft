@@ -44,7 +44,7 @@ public class BladeRiderItems {
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLDEN_SPIDER = ITEMS.register("golden_spider",
-            () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> CHANGE_BEETLE = ITEMS.register("change_beetle",
