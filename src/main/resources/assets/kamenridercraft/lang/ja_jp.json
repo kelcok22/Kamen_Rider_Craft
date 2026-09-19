@@ -604,6 +604,7 @@
 "henshin.kamenridercraft.shocker_rider":"<ショッカーライダー> §e変身！",
 "henshin.kamenridercraft.shin_no_0":"<仮面ライダー第0号> §1変身！",
 "henshin.kamenridercraft.apollogeist":"<アポロガイスト> §cアポロガイストの名誉にかけて、お前を殺す！",
+"henshin.kamenridercraft.general_shadow":"<ジェネラルシャドウ> 俺の名前を知らぬとは、おまえも余程うかつな男",
 "henshin.kamenridercraft.shadow_moon":"<大神官> §e起これ！シャドームーン！",
 "henshin.kamenridercraft.shadow_moon.a1":"<Robo Rider> §aRobo Rider Force！",
 "henshin.kamenridercraft.n_daguva_zeba":"<ン・ダグバ・ゼバ> §6慣れたんだね、究極の力を持つ者に",
@@ -2210,6 +2211,11 @@
 "item.kamenridercraft.dark_electrer": "エレクトラー",
 "kamenridercraft.name.dark_stronger": "ライダー: 闇のストロンガー",
 "kamenridercraft:tackle_core_artist.form": "フォーム: 基本フォーム（S.I.C. アーティストシリーズ）",
+"item.kamenridercraft.general_shadow_belt": "ジェネラルシャドウベルト",
+"kamenridercraft.name.general_shadow": "怪人: ジェネラルシャドウ",
+"item.kamenridercraft.general_shadow_card": "ジェネラルシャドウのカード",
+"kamenridercraft:general_shadow_card.form": "フォーム: 基本フォーム",
+"item.kamenridercraft.shadow_sword": "シャドウ剣",
 
 "item.kamenridercraft.skyrider_logo": "スカイライダークレスト",
 "item.kamenridercraft.skyriderhead": "スカイライダーのヘルメット",
@@ -2913,6 +2919,7 @@
 "kamenridercraft.name.albino_joker": "怪人: アルビノジョーカー",
 
 "item.kamenridercraft.rouze_absorber": "ラウズアブゾーバー",
+"item.kamenridercraft.golden_spider": "黄金の蜘蛛",
 
 "item.kamenridercraft.card_deck_chalice": "カリスカードデッキ",
 "item.kamenridercraft.card_deck_leangle": "レンゲルカードデッキ",
@@ -9302,6 +9309,7 @@
 "entity.kamenridercraft.apollogeist":"アポロガイスト",
 "entity.kamenridercraft.red_follower":"赤ジューシャ",
 "entity.kamenridercraft.black_satan_soldier":"ブラックサタン戦闘員",
+"entity.kamenridercraft.general_shadow":"ジェネラルシャドウ",
 "entity.kamenridercraft.ari_commando":"アリコマンド",
 "entity.kamenridercraft.dogma_fighter":"ドグマファイター",
 "entity.kamenridercraft.combat_roid":"コンバットロイド",
@@ -9632,6 +9640,7 @@
 "item.kamenridercraft.apollogeist_spawn_egg":"アポロガイストスポーンエッグ",
 "item.kamenridercraft.red_follower_spawn_egg": "赤ジューシャスポーンエッグ",
 "item.kamenridercraft.black_satan_soldier_spawn_egg": "ブラックサタン戦闘員スポーンエッグ",
+"item.kamenridercraft.general_shadow_spawn_egg":"ジェネラルシャドウスポーンエッグ",
 "item.kamenridercraft.ari_commando_spawn_egg": "アリコマンドスポーンエッグ",
 "item.kamenridercraft.dogma_fighter_spawn_egg": "ドグマファイタースポーンエッグ",
 "item.kamenridercraft.combat_roid_spawn_egg": "コンバットロイドスポーンエッグ",

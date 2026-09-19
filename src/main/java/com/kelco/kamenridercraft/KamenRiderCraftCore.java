@@ -303,9 +303,10 @@ public class KamenRiderCraftCore {
 
             event.registerEntityRenderer(MobsCore.DESTRON_COMBATMAN.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GOD_WARFARE_AGENT.get(), BasicEntityRenderer::new);
-            event.registerEntityRenderer(MobsCore.APOLLOGIST.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.APOLLOGEIST.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.RED_FOLLWER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.BLACK_SATAN_SOLDIER.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.GENERAL_SHADOW.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.ARI_COMMANDO.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.DOGMA_FIGHTER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.COMBAT_ROID.get(), BasicEntityRenderer::new);
@@ -1011,7 +1012,7 @@ public class KamenRiderCraftCore {
                 }
                 event.accept(MusicDiscItems.SET_UP_KAMEN_RIDER_X_MUSIC_DISC);
                 event.accept(MobsCore.GOD_WARFARE_AGENT_SPAWN_EGG);
-                event.accept(MobsCore.APOLLOGIST_SPAWN_EGG);
+                event.accept(MobsCore.APOLLOGEIST_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.AMAZONTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.AMAZON_TAB_ITEM.size(); i++) {
@@ -1026,6 +1027,8 @@ public class KamenRiderCraftCore {
                 }
                 event.accept(MusicDiscItems.KAMEN_RIDER_STRONGER_NO_UTA_MUSIC_DISC);
                 event.accept(MobsCore.BLACK_SATAN_SOLDIER_SPAWN_EGG);
+                event.accept(MobsCore.GENERAL_SHADOW_SPAWN_EGG);
+
 
             } else if (event.getTab() == CreativeTabRegistry.SKYRIDERTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.SKYRIDER_TAB_ITEM.size(); i++) {
@@ -1780,7 +1783,7 @@ public class KamenRiderCraftCore {
 
                 event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
                 event.accept(MobsCore.GOD_WARFARE_AGENT_SPAWN_EGG);
-                event.accept(MobsCore.APOLLOGIST_SPAWN_EGG);
+                event.accept(MobsCore.APOLLOGEIST_SPAWN_EGG);
                 event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
                 event.accept(MobsCore.BLACK_SATAN_SOLDIER_SPAWN_EGG);
                 event.accept(MobsCore.ARI_COMMANDO_SPAWN_EGG);
