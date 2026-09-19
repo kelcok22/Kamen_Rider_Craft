@@ -55,11 +55,11 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> GOD_WARFARE_AGENT_SPAWN_EGG = ITEMS.register("god_warfare_agent_spawn_egg",
             () -> new BaseSpawnEggItem(GOD_WARFARE_AGENT, 0x000000, 0x7e0000, new Item.Properties()));
 
-    public static final DeferredHolder<EntityType<?>, EntityType<ApollogeistEntity>> APOLLOGIST = MOBLIST.register("apollogeist",
-            () -> EntityType.Builder.of(ApollogeistEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":shadowmoon"));
+    public static final DeferredHolder<EntityType<?>, EntityType<ApollogeistEntity>> APOLLOGEIST = MOBLIST.register("apollogeist",
+            () -> EntityType.Builder.of(ApollogeistEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":apollogeist"));
 
-    public static final DeferredItem<BaseSpawnEggItem> APOLLOGIST_SPAWN_EGG = ITEMS.register("apollogeist_spawn_egg",
-            () -> new BaseSpawnEggItem(APOLLOGIST, 0x282828, 0xf1030a, new Item.Properties()));
+    public static final DeferredItem<BaseSpawnEggItem> APOLLOGEIST_SPAWN_EGG = ITEMS.register("apollogeist_spawn_egg",
+            () -> new BaseSpawnEggItem(APOLLOGEIST, 0x282828, 0xf1030a, new Item.Properties()));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<RedFollowerEntity>> RED_FOLLWER = MOBLIST.register("red_follower",
@@ -75,6 +75,11 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> BLACK_SATAN_SOLDIER_SPAWN_EGG = ITEMS.register("black_satan_soldier_spawn_egg",
             () -> new BaseSpawnEggItem(BLACK_SATAN_SOLDIER, 0x000000, 0x7e0000, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GeneralShadowEntity>> GENERAL_SHADOW = MOBLIST.register("general_shadow",
+            () -> EntityType.Builder.of(GeneralShadowEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":general_shadow"));
+
+    public static final DeferredItem<BaseSpawnEggItem> GENERAL_SHADOW_SPAWN_EGG = ITEMS.register("general_shadow_spawn_egg",
+            () -> new BaseSpawnEggItem(GENERAL_SHADOW, 0xFEFFFD, 0xF1030A, new Item.Properties()));
 
     public static final DeferredHolder<EntityType<?>, EntityType<AriCommandoEntity>> ARI_COMMANDO = MOBLIST.register("ari_commando",
             () -> EntityType.Builder.of(AriCommandoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":ari_commando"));

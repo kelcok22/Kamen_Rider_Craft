@@ -25,9 +25,10 @@ public class EntityAttributes {
         event.put(MobsCore.SHOCKER_RIDER.get(), ShockerRidersEntity.setAttributes().build());
         event.put(MobsCore.DESTRON_COMBATMAN.get(), DestronCombatmanEntity.setAttributes().build());
         event.put(MobsCore.GOD_WARFARE_AGENT.get(), GODWarfareAgentEntity.setAttributes().build());
-        event.put(MobsCore.APOLLOGIST.get(), ApollogeistEntity.setAttributes().build());
+        event.put(MobsCore.APOLLOGEIST.get(), ApollogeistEntity.setAttributes().build());
         event.put(MobsCore.RED_FOLLWER.get(), RedFollowerEntity.setAttributes().build());
         event.put(MobsCore.BLACK_SATAN_SOLDIER.get(), BlackSatanSoldierEntity.setAttributes().build());
+        event.put(MobsCore.GENERAL_SHADOW.get(), ApollogeistEntity.setAttributes().build());
         event.put(MobsCore.ARI_COMMANDO.get(), AriCommandoEntity.setAttributes().build());
         event.put(MobsCore.DOGMA_FIGHTER.get(), DogmaFighterEntity.setAttributes().build());
         event.put(MobsCore.COMBAT_ROID.get(), CombatRoidEntity.setAttributes().build());
