@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.RiderSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
@@ -546,6 +547,10 @@ public class RiderFormChangeItem extends BaseItem {
         if (this == ModdedItemCore.BLANK_FORM.get()) {
             return true;
         }
+        if (this.GetIsAttackForm()&& Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getValue()!=0)return false;
+        if (this.GetIsAttackForm()&& !belt.isTransformed(player))return false;
+
+
         if (hasIncompatibleForms) {
             for (RiderFormChangeItem incompatibleForm : incompatibleForms) {
                 int num_forms = belt.numBaseFormItems;
