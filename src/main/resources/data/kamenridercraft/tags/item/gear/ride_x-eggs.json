@@ -1,6 +1,9 @@
 {
 	"values": [
-		"#kamenridercraft:gear/ride_x-eggs/ride",
-		"#kamenridercraft:gear/ride_x-eggs/seed"
+		"kamenridercraft:ride_x_eggs_1",
+		"kamenridercraft:ride_x_eggs_1_origin",
+		"kamenridercraft:ride_x_eggs_1_maou",
+		"kamenridercraft:ride_x_eggs_4",
+		"#kamenridercraft:gear/legend_rider/ride_x-eggs"
 	]
 }
