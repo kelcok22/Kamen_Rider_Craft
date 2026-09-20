@@ -815,7 +815,7 @@ public class FourzeRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt",
 					new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("module/fourze_faiz_module","default"));
+                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("module/fourze_faiz_module","module/fourze_faiz_module", "module/fourze_faiz_module_glowmask"));
                 }
             }.changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM));
 
