@@ -78,27 +78,6 @@ public class FourzeDriverItem extends RiderDriverItem {
     }
 
     @Override
-    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo,ItemStack itemStack, LivingEntity rider,EquipmentSlot slot) {
-
-        if (slot==EquipmentSlot.HEAD&isTransformed(rider)) {
-            boolean fly = rider instanceof Player player && (player.getAbilities().flying || player.isFallFlying());
-            if (getFormItem(itemStack, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get() & getFormItem(itemStack, 1) != null) {
-                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 1).getFormName(fly), null));
-            }
-            if (getFormItem(itemStack, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() & getFormItem(itemStack, 2) != null) {
-                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 2).getFormName(fly), null));
-            }
-            if (getFormItem(itemStack, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get() & getFormItem(itemStack, 3) != null) {
-                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 3).getFormName(fly), null));
-            }
-            if (getFormItem(itemStack, 4) != FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.get() & getFormItem(itemStack, 4) != null) {
-                layerInfo.add(new RenderLayerInfo(riderName + getFormItem(itemStack, 4).getFormName(fly), null));
-            }
-        }
-        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
-    }
-
-    @Override
     public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag tag) {
         if ((getFormItem(belt, 5) == FourzeRiderItems.FOURZE_ELEK_STATES.get() && getFormItem(belt, 1) != FourzeRiderItems.ELEK_ASTROSWITCH.get())
                 || (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_FIRE_STATES.get() && getFormItem(belt, 1) != FourzeRiderItems.FIRE_ASTROSWITCH.get())
@@ -167,7 +146,7 @@ public class FourzeDriverItem extends RiderDriverItem {
         if (equipmentSlot == EquipmentSlot.FEET) {
             return "belts/" + getFormItem(itemstack, 5).getBeltTex();
         }
-        if (equipmentSlot != EquipmentSlot.CHEST) return "blank";
+        if (equipmentSlot != EquipmentSlot.HEAD) return "blank";
 
         else return riderName + getFormItem(itemstack, 5).getFormName(fly);
     }
@@ -175,7 +154,7 @@ public class FourzeDriverItem extends RiderDriverItem {
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity livingEntity) {
 
-        if (slot == EquipmentSlot.CHEST) {
+        if (slot == EquipmentSlot.HEAD) {
             if (getFormItem(itemstack, 1).hasWingsIfFlying() && livingEntity.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 5).getFlyingModel(this.riderName));
             }
@@ -190,10 +169,10 @@ public class FourzeDriverItem extends RiderDriverItem {
         }
         if (isTransformed(livingEntity)) {
             switch (currentSlot) {
-                case HEAD, CHEST -> {
+                case HEAD-> {
                     return true;
                 }
-                case LEGS -> {
+                case LEGS ,CHEST -> {
                     return false;
                 }
                 default -> {
@@ -207,16 +186,11 @@ public class FourzeDriverItem extends RiderDriverItem {
     @Override
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
         switch (currentSlot) {
-            case CHEST -> {
-                return true;
-            }
             case HEAD -> {
                 return true;
-                /**if (Objects.equals(part, "rightLeg")) return true;
-                if (Objects.equals(part, "leftLeg")) return true;
-                if (Objects.equals(part, "rightArm")) return true;
-                if (Objects.equals(part, "leftArm")) return true;
-                 **/
+            }
+            case CHEST-> {
+                return false;
             }
         }
         return false;
