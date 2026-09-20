@@ -1,4 +1,5 @@
 {
+	"format_version": "26.3",
 	"parent": "item/generated",
 	"textures": {
 		"layer0": "kamenridercraft:item/evil_visor_zwei"
@@ -24,9 +25,14 @@
 			"translation": [1.13, 3.2, 3.13],
 			"scale": [1.36, 1.36, 0.68]
 		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
 		"fixed": {
-			"rotation": [0, 180, 0],
+			"rotation": [0, -180, 0],
 			"translation": [3.75, -3, 0],
-			"scale": [2, 2, 1]}
+			"scale": [2, 2, 1]
+		}
 	}
 }

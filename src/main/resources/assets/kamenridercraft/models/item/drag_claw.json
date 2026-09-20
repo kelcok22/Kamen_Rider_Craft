@@ -1,4 +1,5 @@
 {
+	"format_version": "26.3",
 	"textures": {
 		"1": "kamenridercraft:item/drag_claw"
 	},
@@ -337,7 +338,8 @@
 			"translation": [0, 6.5, 3]
 		},
 		"ground": {
-			"translation": [0, 2, 0]
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
 			"rotation": [90, 45, -90],
