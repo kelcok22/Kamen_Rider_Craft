@@ -3,7 +3,8 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
-import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventCardItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventDeckItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -473,13 +474,13 @@ public class RyukiRiderItems {
 
 
 	public static final DeferredItem<Item> RIDE_VISOR = ITEMS.register("ride_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDE_SABER = ITEMS.register("ride_saber",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> DRAG_VISOR = ITEMS.register("drag_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_SABER = ITEMS.register("drag_saber",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
@@ -533,7 +534,7 @@ public class RyukiRiderItems {
 			() -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> EVIL_VISOR = ITEMS.register("evil_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVIL_WHIP = ITEMS.register("evil_whip",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
@@ -542,7 +543,7 @@ public class RyukiRiderItems {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> METAL_VISOR = ITEMS.register("metal_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> METAL_HORN = ITEMS.register("metal_horn",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 8, -3.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
@@ -575,7 +576,7 @@ public class RyukiRiderItems {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> GAZELLE_VISOR = ITEMS.register("gazelle_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAZELLE_STAB = ITEMS.register("gazelle_stab",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
@@ -590,7 +591,7 @@ public class RyukiRiderItems {
 			() -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> BLACK_DRAG_VISOR = ITEMS.register("black_drag_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_SABER_RYUGA = ITEMS.register("drag_saber_ryuga",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
@@ -605,19 +606,19 @@ public class RyukiRiderItems {
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> BIO_VISOR = ITEMS.register("bio_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIO_WINDER = ITEMS.register("bio_winder",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> SLASH_VISOR = ITEMS.register("slash_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SLASH_DAGGER = ITEMS.register("slash_dagger",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> ABYSS_VISOR = ITEMS.register("abyss_visor",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABYSS_SABER = ITEMS.register("abyss_saber",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
