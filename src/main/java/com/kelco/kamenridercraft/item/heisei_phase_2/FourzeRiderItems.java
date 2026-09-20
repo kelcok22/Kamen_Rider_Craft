@@ -510,7 +510,7 @@ public class FourzeRiderItems {
 
 	public static final DeferredItem<Item> GIANTFOOT_ASTROSWITCH = ITEMS.register("giantfoot_switch",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt",
-					new MobEffectInstance(EffectCore.STEP, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.GRAVITY, 40, 1,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("fourze_giantfoot_module","default"));
                 }
@@ -890,7 +890,7 @@ public class FourzeRiderItems {
 					new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 4,true,false)){
 
                     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("fourze_shin_chan_module","default"));
+                   // if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("fourze_shin_chan_module","default"));
                 }
 
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
