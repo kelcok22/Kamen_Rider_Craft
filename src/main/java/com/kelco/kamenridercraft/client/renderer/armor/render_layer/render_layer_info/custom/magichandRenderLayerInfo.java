@@ -13,11 +13,8 @@ import java.util.Objects;
 
 
 public class magichandRenderLayerInfo extends RenderLayerInfo {
-    private final String texture;
-
     public magichandRenderLayerInfo(String texture, String model) {
         super(texture, model);
-        this.texture = texture;
     }
 
     public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick) {
@@ -42,9 +39,5 @@ public class magichandRenderLayerInfo extends RenderLayerInfo {
         if (bone4 != null) {
             bone4.setRotY(entity.tickCount+partialTick);
         }
-    }
-
-    private float xOffset(float tickCount) {
-        return tickCount * 0.02F;
     }
 }

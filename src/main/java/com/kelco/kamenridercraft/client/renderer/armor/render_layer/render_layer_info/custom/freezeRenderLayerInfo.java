@@ -10,16 +10,16 @@ import software.bernie.geckolib.cache.object.GeoBone;
 import java.util.Objects;
 
 
-public class gyroRenderLayerInfo extends RenderLayerInfo {
+public class freezeRenderLayerInfo extends RenderLayerInfo {
 
-    public gyroRenderLayerInfo(String texture, String model) {
+    public freezeRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
     public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick) {
-        GeoBone blade = model.getBone("blade").orElse(null);
-        if (blade != null) {
-            if(Objects.requireNonNull(entity.getAttribute(Attributes.WINGS_OUT)).getValue()!=0)blade.setRotY(entity.tickCount+partialTick);
-            else blade.setRotY(0);
+        GeoBone door = model.getBone("door").orElse(null);
+        if (door != null) {
+            if(Objects.requireNonNull(entity.getAttribute(Attributes.WINGS_OUT)).getValue()!=0) door.setRotY(-2);
+            else door.setRotY(0);
         }
     }
 }
