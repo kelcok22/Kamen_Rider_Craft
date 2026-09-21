@@ -22,8 +22,25 @@ public class magichandRenderLayerInfo extends RenderLayerInfo {
 
     public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick) {
         GeoBone bone = model.getBone("bone").orElse(null);
+         float swing_time = entity.swingTime;
+         if (swing_time!=0) {
+             swing_time = entity.swingTime + partialTick;
+         }
+        System.err.println(entity.swingTime);
         if (bone != null) {
-            bone.setRotY(model.getBone("armorRightArm").get().getRotY());
+            bone.setRotX(1-swing_time);
+        }
+        GeoBone bone2 = model.getBone("bone2").orElse(null);
+        if (bone2 != null) {
+            bone2.setRotX(-2-swing_time);
+        }
+        GeoBone bone3 = model.getBone("bone3").orElse(null);
+        if (bone3 != null) {
+            bone3.setRotX(-1-swing_time);
+        }
+        GeoBone bone4 = model.getBone("bone4").orElse(null);
+        if (bone4 != null) {
+            bone4.setRotY(entity.tickCount+partialTick);
         }
     }
 

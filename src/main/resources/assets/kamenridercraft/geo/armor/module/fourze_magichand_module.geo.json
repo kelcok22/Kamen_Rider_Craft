@@ -60,7 +60,7 @@
 				},
 				{
 					"name": "bone3",
-					"parent": "bone",
+					"parent": "bone2",
 					"pivot": [-9, 43, 0],
 					"cubes": [
 						{"origin": [-11, 43, -1], "size": [2, 14, 2], "uv": [18, 18]}
@@ -68,8 +68,8 @@
 				},
 				{
 					"name": "bone4",
-					"parent": "bone",
-					"pivot": [-9, 57, 0],
+					"parent": "bone3",
+					"pivot": [-10, 57, 0],
 					"cubes": [
 						{"origin": [-11.5, 57, -1], "size": [3, 3, 2], "uv": [0, 12]},
 						{"origin": [-9.5, 59, -0.5], "size": [1, 4, 1], "pivot": [-8.5, 59, -0.5], "rotation": [0, 0, 27.5], "uv": [1, 5]},
