@@ -5763,6 +5763,8 @@
 "kamenridercraft:drago_knight_hunter_z_gashat_gun.form": "Form: Hunter %s Gamer Lv. 5 (Dragon Gun)",
 "kamenridercraft:drago_knight_hunter_z_gashat_blade.form": "Form: Hunter %s Gamer Lv. 5 (Dragon Blade)",
 "kamenridercraft:drago_knight_hunter_z_gashat_fang.form": "Form: Hunter %s Gamer Lv. 5 (Dragon Fang)",
+"kamenridercraft:drago_knight_hunter_z_gashat_graphite.form": "Form: Graphite Bugster",
+"kamenridercraft:drago_knight_hunter_z_gashat_graphite_bugvisor.form": "Form: Graphite Bugster",
 
 "item.kamenridercraft.proto_mighty_action_x_gashat": "Proto Mighty Action X Gashat",
 "item.kamenridercraft.proto_taddle_quest_gashat": "Proto Taddle Quest Gashat",
@@ -5963,6 +5965,8 @@
 "kamenridercraft.name.another_para_dx": "Rider: Kamen Rider Another Para-DX",
 "item.kamenridercraft.gamer_driver_nico_snipe": "Gamer Driver",
 "kamenridercraft.name.snipe_nico": "Rider: Kamen Rider Nico Snipe",
+"item.kamenridercraft.gashacon_bugvisor_graphite": "Gashacon Bugvisor",
+"kamenridercraft.name.graphite_bugster": "Kaijin: Graphite Bugster",
 
 "item.kamenridercraft.gashacon_bugvisor_genmu": "Gashacon Bugvisor",
 "kamenridercraft.name.genm_bugvisor": "Rider: Kamen Rider Genm",

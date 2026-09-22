@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.*;
+import com.kelco.kamenridercraft.item.reiwa.MyThRiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.registries.Registries;
@@ -273,6 +274,40 @@ public class ExAidRiderItems {
                 }
             }.setFormToArmor().isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
+    public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE = ITEMS.register("drago_knight_hunter_z_gashat_graphite_bugvisor",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","graphite_bugster","graphite_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.DARK_AURA, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    Item back = ExAidRiderItems.GRAPHITE_FANG.get();
+                    if (rider.getMainHandItem().getItem()!= back&&rider.getOffhandItem().getItem()!= back&&slot==EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("graphite_fang","graphite_bugster"));
+                }
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.setModelName("drago_knight_hunter_z_gashat"));
+
+    public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR = ITEMS.register("drago_knight_hunter_z_gashat_graphite",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","graphite_bugster","gashacon_bugvisor_graphite",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.DARK_AURA, 40, 0,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    Item back = ExAidRiderItems.GRAPHITE_FANG.get();
+                    if (rider.getMainHandItem().getItem()!= back&&rider.getOffhandItem().getItem()!= back&&slot==EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("graphite_fang","graphite_bugster"));
+                }
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE.get()).setModelName("drago_knight_hunter_z_gashat"));
+
     public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW = ITEMS.register("drago_knight_hunter_z_gashat_claw",
             () -> new RiderFormChangeItem(new Item.Properties(),"hunter_gamer_claw","lazer","gamer_driver_mighty_action_x",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -283,7 +318,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).isGlowing().changeModel("hunter_gamer.geo.json").changeSlot(2));
+            }.alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).addAlternative(DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR.get()).isGlowing().changeModel("hunter_gamer.geo.json").changeSlot(2));
 
     public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_GUN = ITEMS.register("drago_knight_hunter_z_gashat_gun",
             () -> new RiderFormChangeItem(new Item.Properties(),"hunter_gamer_gun","snipe","gamer_driver_mighty_action_x",
@@ -1955,6 +1990,10 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> GASHACON_BUGVISOR_GENM = ITEMS.register("gashacon_bugvisor_genmu",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"genm_bugvisor",DANGEROUS_ZOBIE_GASHAT_BD ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
                     .overrideBeltText("gashacon_bugvisor").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+
+    public static final DeferredItem<Item> GASHACON_BUGVISOR_GRAPHITE = ITEMS.register("gashacon_bugvisor_graphite",
+            () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"graphite_bugster",DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONOS = ITEMS.register("gashacon_bugvisor_ii_chronos",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronos",KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
