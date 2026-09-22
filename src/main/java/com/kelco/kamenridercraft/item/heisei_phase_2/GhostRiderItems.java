@@ -262,7 +262,7 @@ public class GhostRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 1);
 				}}
-			}.isGold().changeModel("yujou_burst_necrom_damashii.geo.json").changeSlot(2));
+			}.addNum(0).isGold().changeModel("yujou_burst_necrom_damashii.geo.json").changeSlot(2));
 
 	public static final DeferredItem<Item> YUJOU_BURST_GHOST_EYECON = ITEMS.register("yujou_burst_ghost_eyecon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_yujou_burst","necrom","necrom_belt_yujou",
