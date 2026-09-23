@@ -23,7 +23,19 @@ public class freezeRenderLayerInfo extends RenderLayerInfo {
         }
     }
     boolean isByWater(LivingEntity entity){
-        if (entity.level().getBlockState(new BlockPos((int)entity.getX(),(int)entity.getY()-1,(int)entity.getZ())).is(Blocks.ICE))return true;
+        if (entity.level().getBlockState(new BlockPos((int)entity.getX(),(int)entity.getY()-1,(int)entity.getZ())).is(Blocks.ICE)
+        ||entity.level().getBlockState(new BlockPos((int)entity.getX()+1,(int)entity.getY()-1,(int)entity.getZ())).is(Blocks.ICE)
+        ||entity.level().getBlockState(new BlockPos((int)entity.getX()-1,(int)entity.getY()-1,(int)entity.getZ())).is(Blocks.ICE)
+        ||entity.level().getBlockState(new BlockPos((int)entity.getX(),(int)entity.getY()-1,(int)entity.getZ()+1)).is(Blocks.ICE)
+        ||entity.level().getBlockState(new BlockPos((int)entity.getX(),(int)entity.getY()-1,(int)entity.getZ()-1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()+1,(int)entity.getY()-1,(int)entity.getZ()+1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()-1,(int)entity.getY()-1,(int)entity.getZ()+1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()+1,(int)entity.getY()-1,(int)entity.getZ()+1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()+1,(int)entity.getY()-1,(int)entity.getZ()-1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()+1,(int)entity.getY()-1,(int)entity.getZ()-1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()-1,(int)entity.getY()-1,(int)entity.getZ()-1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()-1,(int)entity.getY()-1,(int)entity.getZ()+1)).is(Blocks.ICE)
+                ||entity.level().getBlockState(new BlockPos((int)entity.getX()-1,(int)entity.getY()-1,(int)entity.getZ()-1)).is(Blocks.ICE))return true;
         return false;
     }
 }
