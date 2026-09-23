@@ -1685,7 +1685,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> JUNGLE_OOO_GASHAT = ITEMS.register("jungle_ooo_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ooo","genm","gamer_driver_jungle_ooo",
