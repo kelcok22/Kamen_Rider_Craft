@@ -1,0 +1,456 @@
+{
+	"name": "假面骑士加布",
+	"icon": "kamenridercraft:poppingummy_gochizo",
+	"category": "kamenridercraft:gavv/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "poppingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:poppingummy_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "砰击软糖形态",
+			"text": "通过使用 $(l:gavv/items/gochizo#poppingummy_gochizo)砰击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "punchingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:punchingummy_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "拳击软糖助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#punchingummy_gochizo)拳击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 VII（空手时）$(li)拳力提升 IV$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kickingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:kickingummy_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "踢击软糖助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#kickingummy_gochizo)踢击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 VII（空手时）$(li)拳力提升 IV$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kickingummy_punchingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:kickingummy_punchingummy_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "踢击&拳击软糖助力",
+			"text": "背包中持有另一款饱藏时，通过使用潜行点击 $(l:gavv/items/gochizo#kickingummy_gochizo)踢击软糖饱藏$(/l) 或 $(l:gavv/items/gochizo#punchingummy_gochizo)拳击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 VII（空手时）$(li)拳力提升 IV$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zakuzakuchips",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:zakuzakuchips_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "脆脆薯片助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#zakuzakuchips_gochizo)脆脆薯片饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)跳跃提升 II$(li)力量 II（持剑时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hirihirichips",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:hirihirichips_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "辣辣薯片助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#hirihirichips_gochizo)辣辣薯片饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)火焰斩 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fuwamallow",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:fuwamallow_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "软棉花糖",
+			"text": "通过使用 $(l:gavv/items/gochizo#fuwamallow_gochizo)松软棉糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "marumallow",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:marumallow_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "圆棉花糖助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#marumallow_gochizo)圆润棉糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)变大$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chocodan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:chocodan_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧克咚",
+			"text": "通过使用 $(l:gavv/items/gochizo#chocodan_gochizo)巧克弹饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)射击推进器$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gurucan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:gurucan_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "圈圈糖",
+			"text": "通过使用 $(l:gavv/items/gochizo#gurucan_gochizo)转转糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)变大$(li)重力$(li)缓慢 II$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bakucan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakucan_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "爆炸糖助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#bakucan_gochizo)爆炸糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)变大$(li)大炮$(li)重力$(li)缓慢 II$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bushel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:bushel_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "树桩蛋糕",
+			"text": "通过使用 $(l:gavv/items/gochizo#bushel_gochizo)圣诞树桩蛋糕$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)圣诞快乐$(li)爆裂斩$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "caking",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:caking_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蛋糕王",
+			"text": "通过使用 $(l:gavv/items/gochizo#caking_gochizo)蛋糕王饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)饥饿$(li)力量 II$(li)抗性提升$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blizzardsorbet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:blizzardsorbei_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "凛冽雪酪冰卫",
+			"text": "通过使用 $(l:gavv/items/gochizo#blizzardsorbei_gochizo)凛冽雪酪冰卫饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)速度$(li)暴风雪$(li)抗性提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "over",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:gochipod\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超越模式",
+			"text": "通过使用 $(l:gavv/items/gochipod)百饱瓶$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 V（持武器时）$(li)爆裂拳$(li)重力$(li)缓慢 II$(li)抗性提升 IV$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "master",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:gochipod_master\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "主宰模式",
+			"text": "通过使用 $(l:gavv/items/gochipod)百饱瓶$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 V$(li)速度 III$(li)抗性提升 IV$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazingummy_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊异软糖",
+			"text": "通过使用 $(l:gavv/items/amazingummy_gochizo)惊异软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)雷达$(li)速度 II$(li)抗性提升 III$(li)火焰斩$(li)跳跃提升 III"
+		},
+		{
+        "type": "patchouli:entity",
+        "anchor": "hexenheim",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:hexenheim_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "糖果屋",
+        "text": "通过使用 $(l:gavv/items/gochizo#hexenheim_gochizo)糖果屋饱藏$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士加布",
+        "text": "登场于:$(li)假面骑士加布: 零食之家的侵略 (2025年, 电影)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果:$(li)斩击提升 IV$(li)力量 IV (持剑时)$(li)力量 III (空手时)$(li)速度$(li)抗性提升 III"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield_snack",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:kungfu_ramen_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "盾牌零食",
+			"text": "通过使用 $(l:gavv/items/gochizo#kungfu_ramen_gochizo)功夫拉面饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：零食美食家 呜！-舞和纸！！ (2025年，超战斗影像)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "choco_t",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:choco_treasure_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧克T助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#choco_treasure_gochizo)巧克宝饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：零食美食家 呜！-舞和纸！！ (2025年，超战斗影像)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shot_snack",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:umaibo_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "美味棒",
+			"text": "通过使用 $(l:gavv/items/gochizo#umaibo_gochizo)美味棒饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)DX骑士饱藏特别套装 - 美味棒联名款 (2025年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "partea_scone",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:partea_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "派对司康",
+			"text": "通过使用 $(l:gavv/items/gochizo#partea_gochizo)派对司康饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：趣味甜点茶会 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)力量 V（空手时）$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kin_choco",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:kinchoco_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "健达巧克力",
+			"text": "通过使用 $(l:gavv/items/gochizo#kinchoco_gochizo)健达巧克力饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)射击推进器 II$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "uirou",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:uirou_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "米粉糕",
+			"text": "通过使用 $(l:gavv/items/gochizo#uirou_gochizo)米粉糕饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "men_sen",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:mensen_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "人形烧",
+			"text": "通过使用 $(l:gavv/items/gochizo#mensen_gochizo)人形烧饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 II$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tako_sen",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:takosen_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "章鱼烧",
+			"text": "通过使用 $(l:gavv/items/gochizo#takosen_gochizo)章鱼烧饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)手臂加长 II$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ningyo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:ningyo_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "人鱼",
+			"text": "通过使用 $(l:gavv/items/gochizo#ningyo_gochizo)人鱼饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chocohone",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:charapaki_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧克骨",
+			"text": "通过使用 $(l:gavv/items/gochizo#charapaki_gochizo)发掘恐龙饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)SG角色糖饼饱藏 (2024年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chocohone_special",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:charapaki_gochizo_special\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧克骨(特殊)",
+			"text": "通过使用 $(l:gavv/items/gochizo#charapaki_gochizo_special)发掘恐龙饱藏(特殊)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)SG角色糖饼饱藏 (2024年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fishingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:tsurigummy_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "钓鱼软糖助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#tsurigummy_gochizo)钓鱼软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)DX骑士饱藏特别套装 (2024年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)鱼!$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tirol",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:tirolchocolate_gochizo_variety\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "什锦巧克力",
+			"text": "通过使用 $(l:gavv/items/gochizo#tirolchocolate_gochizo_variety)什锦巧克力饱藏(多种口味包)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)DX骑士饱藏特别套装 - 蒂罗尔巧克力联名款 (2025年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)射击推进器$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boonboomger",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_gavv\",components:{custom_data:{slot_tex1:\"kamenridercraft:boonboomger_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "奔奔者助力",
+			"text": "通过使用 $(l:gavv/items/gochizo#boonboomger_gochizo)奔奔者饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)Televi-Kun（2024年11月号，杂志）$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)跳跃提升 II"
+		}
+	]
+}

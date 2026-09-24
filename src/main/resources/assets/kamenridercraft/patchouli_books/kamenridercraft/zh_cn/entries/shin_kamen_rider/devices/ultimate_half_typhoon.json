@@ -1,0 +1,17 @@
+{
+    "name": "半究极台风腰带",
+    "icon": "kamenridercraft:ultimate_half_typhoon",
+    "category": "kamenridercraft:shin_kamen_rider/devices",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)真·假面骑士（2023年，电影）$(br2)与$(l:shin_kamen_rider/devices/armor)真·假面骑士装甲$(/l)一起穿戴，可变身为$(l:shin_kamen_rider/riders/no_0)假面骑士No.0$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:shin_kamen_rider/ultimate_half_typhoon"
+        }
+    ]
+}

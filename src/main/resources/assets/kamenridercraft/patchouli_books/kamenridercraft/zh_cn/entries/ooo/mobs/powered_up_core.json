@@ -1,0 +1,17 @@
+{
+	"name": "强化假面骑士Core",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:powered_up_core",
+			"text": "登场于：$(li)假面骑士 巅峰乱斗 (2018年，Switch游戏)$(br)生命值: 300"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#powered_up_core_boss_block)强化Core BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)3-6个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/core_medals#ebi_new_medal)新虾核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#kani_new_medal)新螃蟹核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#sasori_new_medal)新蝎子核心硬币$(/l)$(li)1个$(l:ooo/devices/gaia_core_typhoon#powered_up_core_driver)盖亚核心台风(力量提升)$(/l)"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zo/main",
+    "name": "假面骑士ZO",
+    "description": "",
+    "icon": "kamenridercraft:zohead",
+    "sortnum": 0
+}

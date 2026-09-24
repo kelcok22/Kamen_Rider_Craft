@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士Accel",
+	"icon": "kamenridercraft:accel_memory",
+	"category": "kamenridercraft:w/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "accel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:accel_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:w/items/gaia_memories#accel_memory)加速记忆体$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Accel",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/acceldriver)加速驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bikeform",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:accel_memory_bike\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Accel机车",
+			"text": "通过使用 $(l:w/items/gaia_memories#accel_memory)加速记忆体$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Accel",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/acceldriver)加速驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)挖掘疲劳 V$(li)跨步$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "trial",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:trial_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "试炼",
+			"text": "通过使用 $(l:w/items/gaia_memories#trial_memory)试炼记忆体$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Accel",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/acceldriver)加速驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)速度 V$(li)抗性提升$(li)夜视$(li)抗火$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "booster",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:acceldriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:accel_booster_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Accel升压",
+			"text": "通过使用 $(l:w/items/gaia_memories#accel_booster_memory)加速爆裂记忆体$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Accel",
+			"text": "登场于：$(li)假面骑士W Returns：假面骑士Accel (2011年，V-Cinema电影)$(br2)通过穿戴$(l:w/devices/acceldriver)加速驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)速度 V$(li)抗性提升$(li)夜视$(li)抗火$(li)力量 II"
+		}
+	]
+}

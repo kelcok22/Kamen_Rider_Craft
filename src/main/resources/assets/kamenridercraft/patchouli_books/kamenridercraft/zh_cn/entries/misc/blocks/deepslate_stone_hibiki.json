@@ -1,0 +1,19 @@
+{
+	"name": "深层音之鬼石",
+	"icon": "kamenridercraft:deepslate_stone_hibiki",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "挖掘此方块可获得鬼石$(br2)需要铁镐或更好的镐子"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deepslate_stone_hibiki",
+			"title": " ",
+            "text": "掉落:$(li)$(l:hibiki/items/oni_ore)红色鬼石$(/l) (60%)$(li)$(l:hibiki/items/oni_orehell)青色鬼石$(/l) (40%)"
+		}
+	]
+}

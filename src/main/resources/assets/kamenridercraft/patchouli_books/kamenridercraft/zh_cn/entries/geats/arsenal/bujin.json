@@ -1,0 +1,16 @@
+{
+	"name": "武刃",
+	"icon": "kamenridercraft:bujin",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)由太狸的 $(l:geats/riders/tycoon#bujin_sword)武神之刃$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/bujin"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "脑骑眼镜剑",
+	"icon": "kamenridercraft:brain_sword",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)Drive Saga：假面骑士Brain (2019年，网络剧)$(br2)由 $(l:drive/riders/brain)假面骑士大脑$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/brain_sword"
+		}
+	]
+}

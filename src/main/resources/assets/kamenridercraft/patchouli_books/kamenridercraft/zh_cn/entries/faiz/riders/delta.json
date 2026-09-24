@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士德尔塔",
+	"icon": "kamenridercraft:delta_mission_memory",
+	"category": "kamenridercraft:faiz/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:delta_driver\",Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士德尔塔",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)通过穿戴$(l:faiz/devices/delta_driver)德尔塔驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 II$(li)力量 III"
+		}
+	]
+}

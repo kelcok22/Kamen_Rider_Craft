@@ -1,0 +1,151 @@
+{
+	"name": "绝灭升华器",
+	"icon": "kamenridercraft:zetsumeriser_berotha",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_berotha",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#berotha)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_berotha",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_kuehne",
+			"title": "绝灭升华器(库恩魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#kuehne)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_kuehne",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_ekal",
+			"title": "绝灭升华器(艾卡尔魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#ekal)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_ekal",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_neohi",
+			"title": "绝灭升华器(奈欧希魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#neohi)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_neohi",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_onycho",
+			"title": "绝灭升华器(欧尼科魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#onycho)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_onycho",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_vicarya",
+			"title": "绝灭升华器(比卡利亚魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#vicarya)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_vicarya",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_gaeru",
+			"title": "绝灭升华器(加艾鲁魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#gaeru)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_gaeru",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_mammoth",
+			"title": "绝灭升华器(猛犸象魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#mammoth)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_mammoth",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_dodo",
+			"title": "绝灭升华器(渡渡鸟魔机偶)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#dodo)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_dodo_custom",
+			"title": "绝灭升华器(渡渡鸟魔机偶·改)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#dodo_custom)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_dodo_custom_two",
+			"title": "绝灭升华器(渡渡鸟魔机偶·改v2)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#dodo_custom_two)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_dodo_custom_two",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zetsumeriser_arsino",
+			"title": "绝灭升华器(重脚兽)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/magia#arsino)魔机偶"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zetsumeriser_arsino",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备"
+		}
+	]
+}

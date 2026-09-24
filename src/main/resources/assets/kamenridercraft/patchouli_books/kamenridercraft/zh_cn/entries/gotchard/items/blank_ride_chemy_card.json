@@ -1,0 +1,17 @@
+{
+	"name": "空白凯米卡",
+	"icon": "kamenridercraft:blank_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用作大多数歌查德系列物品的基础合成材料及修复材料"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/blank_ride_chemy_card",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/malgam)玛尔甘$(/l)$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l)"
+		}
+	]
+}

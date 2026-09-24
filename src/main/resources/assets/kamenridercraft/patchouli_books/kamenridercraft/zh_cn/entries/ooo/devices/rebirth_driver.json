@@ -1,0 +1,16 @@
+{
+	"name": "ReBirth驱动器(小说)",
+	"icon": "kamenridercraft:rebirth_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)魔法师的弟子 (2014年，S.I.C. 英雄传奇)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/rebirth)假面骑士Rebirth"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/rebirth_driver"
+		}
+	]
+}

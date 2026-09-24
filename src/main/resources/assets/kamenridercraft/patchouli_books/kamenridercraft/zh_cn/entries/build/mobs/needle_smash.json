@@ -1,0 +1,17 @@
+{
+	"name": "针刺猛击者",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:needle_smash",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：35"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:build/mobs/touto_guardian)东都$(/l)、$(l:build/mobs/hokuto_guardian)北都$(/l)或$(l:build/mobs/seito_guardian)西都防卫者$(/l)进化而来$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)3个$(l:build/items/smash_bottle)猛击者瓶罐$(/l) (80%)$(li)1个$(l:build/items/fullbottles#rabbit_full_bottle)兔子满装瓶罐$(/l) (10%)$(li)1个$(l:build/items/fullbottles#tank_full_bottle)坦克满装瓶罐$(/l) (10%)"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"name": "潘特拉斯·鲁特乌斯",
+	"icon": "kamenridercraft:agito_logo",
+	"category": "kamenridercraft:agito/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:pantheras_luteus",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：沙滩、恶地、风蚀恶地、繁茂恶地、$(l:agito/structures/overlord_oopart)尊者文明遗迹$(/l)$(br2)掉落$(li)1-3个$(l:agito/items/agito_of_seed)亚极陀之种$(/l)$(li)1个$(l:agito/items/agito_of_seed)亚极陀之种$(/l) (20%)$(li)1个$(l:agito/items/philosophers_stones#agito_ground)亚极陀 大地$(/l) (40%)$(li)1个$(l:agito/items/philosophers_stones#agito_storm)亚极陀 风暴$(/l) (20%)$(li)1个$(l:agito/items/philosophers_stones#agito_flame)亚极陀 火焰$(/l) (20%)$(br2)进化BOSS$(li)$(l:agito/mobs/el_of_the_water)水之上神$(/l) (10%)"
+		}
+	]
+}
+

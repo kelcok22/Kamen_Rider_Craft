@@ -1,0 +1,16 @@
+{
+	"name": "ZX腰带",
+	"icon": "kamenridercraft:zx_belt",
+	"category": "kamenridercraft:zx/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)10号诞生！假面骑士全员集合!! (1984年, 电视特别节目)$(br2)与$(l:zx/devices/armor)ZX装甲$(/l)一起穿戴，可变身为$(l:zx/riders/zx)假面骑士ZX"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zx/zx_belt"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "黑暗剑刃",
+	"icon": "kamenridercraft:dark_blade",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由夜骑的$(l:ryuki/riders/knight#survive)生存$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_blade",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#dark_blade_vent)黑暗剑刃刀剑降临$(/l)获得"
+		}
+	]
+}

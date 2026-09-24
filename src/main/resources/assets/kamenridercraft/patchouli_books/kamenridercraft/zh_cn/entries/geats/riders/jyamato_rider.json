@@ -1,0 +1,50 @@
+{
+	"name": "邪魔徒骑士",
+	"icon": "kamenridercraft:desire_driver_jyamato",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "jyamato",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:geats/items/raise_buckles#jyamato_buckle)邪魔徒代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "邪魔徒骑士",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_jyamato)欲望驱动器(邪魔徒)$(/l)进行变身$(br2)核心ID效果：$(li)抗性提升 II$(br2)邪魔徒代扣效果：$(li)抗性提升 II$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "推进邪魔徒形态",
+			"text": "主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l) 、副手装备 $(l:geats/items/raise_buckles#jyamato_buckle)邪魔徒代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "邪魔徒骑士",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_jyamato)欲望驱动器(邪魔徒)$(/l)进行变身$(br2)核心ID效果：$(li)抗性提升 II$(br2)推进器代扣效果：$(li)增强$(br2)邪魔徒代扣效果：$(li)抗性提升 II$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "monster",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_jyamato\",components:{custom_data:{slot_tex1:\"kamenridercraft:discore_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle_fever\",slot_tex3:\"kamenridercraft:jyamato_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "怪兽邪魔徒形态",
+			"text": "主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l) 、副手装备 $(l:geats/items/raise_buckles#jyamato_buckle)邪魔徒代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "邪魔徒骑士",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_jyamato)欲望驱动器(邪魔徒)$(/l)进行变身$(br2)核心ID效果：$(li)抗性提升 II$(br2)怪兽代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)抗性提升 II$(br2)邪魔徒代扣效果：$(li)抗性提升 II$(li)力量 IV"
+		}
+	]
+}

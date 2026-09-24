@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士新王",
+	"icon": "kamenridercraft:shin_o_belt",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shin_o_belt\",Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士新王",
+			"text": "登场于：$(li)假面骑士电王+新王 (2007年，电视特别篇)$(br2)通过穿戴$(l:den_o/devices/shin_o_belt)新王腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)缩小 V$(li)二次元$(li)快乐模式 V$(li)跳跃提升"
+		}
+	]
+}

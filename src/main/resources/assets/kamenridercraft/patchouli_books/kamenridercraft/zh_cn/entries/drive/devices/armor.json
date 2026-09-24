@@ -1,0 +1,24 @@
+{
+	"name": "Drive装甲",
+	"icon": "kamenridercraft:drive_head",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "搭配Drive系列骑士的驱动器使用，可变身为对应骑士$(br2)掉落自：$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)的装备$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)的装备$(li)$(l:drive/mobs/dark_drive)假面骑士黑暗Drive$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_legs"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "海贼发车",
+	"icon": "kamenridercraft:kaizoku_hassyar",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由Build的$(l:build/riders/build#kaizokuressya)海贼列车$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/kaizoku_hassyar"
+		}
+	]
+}

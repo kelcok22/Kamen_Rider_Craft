@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin_kamen_rider/main",
+    "name": "真 假面骑士系列骑士",
+    "description": "来自电影《真 假面骑士》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:shin_ichigohead",
+    "sortnum": 0
+}

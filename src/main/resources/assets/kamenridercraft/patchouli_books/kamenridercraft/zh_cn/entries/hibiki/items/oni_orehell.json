@@ -1,0 +1,19 @@
+{
+	"name": "青色鬼石",
+	"icon": "kamenridercraft:oni_orehell",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士响鬼 (2005年, 电视剧)$(br2)用作合成部分响鬼腰带的基础材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oni_orehell",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:hibiki/mobs/makamou_ninja_group)魔化魍$(/l)$(li)$(l:hibiki/mobs/kabuki)假面骑士歌舞鬼$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "空我初生灵石",
+	"icon": "kamenridercraft:kuuga_growing",
+	"category": "kamenridercraft:kuuga/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)作为大多数空我物品的基础物品和修复材料$(br2)用于切换空我的$(l:kuuga/riders/kuuga#growing)初生形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_growing",
+			"title": " ",
+			"text": "在可疑的碎石中发现，位于$(l:kuuga/structures/kuuga_ruin)空我遗迹$(/l)$(br2)掉落自:$(li)$(l:kuuga/mobs/zu_gumun_ba)滋·古穆姆·巴$(/l)$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)$(li)$(l:misc/blocks/stone_kuuga)阿达姆灵石矿$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)深层阿达姆灵石矿$(/l)"
+		}
+	]
+}

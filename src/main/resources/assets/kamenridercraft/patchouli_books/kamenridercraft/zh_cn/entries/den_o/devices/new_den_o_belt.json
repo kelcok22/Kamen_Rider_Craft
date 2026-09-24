@@ -1,0 +1,16 @@
+{
+	"name": "新·电王腰带",
+	"icon": "kamenridercraft:new_den_o_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/new_den_o)假面骑士新电王$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/new_den_o_belt"
+		}
+	]
+}

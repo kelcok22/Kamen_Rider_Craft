@@ -1,0 +1,16 @@
+{
+	"name": "亡流驱动器",
+	"icon": "kamenridercraft:destream_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/destream)假面骑士亡流$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/destream_driver"
+		}
+	]
+}

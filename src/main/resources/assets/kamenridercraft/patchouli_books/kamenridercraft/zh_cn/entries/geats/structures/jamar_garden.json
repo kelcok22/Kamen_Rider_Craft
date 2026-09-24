@@ -1,0 +1,30 @@
+{
+    "name": "邪魔徒花园",
+    "icon": "kamenridercraft:geats_logo",
+    "category": "kamenridercraft:geats/structures",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "邪魔徒花园",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)生成群系：丛林、竹林、稀疏丛林$(br2)宝箱战利品：$(li)3-7个$(l:geats/items/blank_rider_core_id)空白ID核心$(/l)（18.8%）$(li)4-6根骨头（9.4%）$(li)1把铁锄（7.5%）$(li)1把金锄（5.7%）$(li)1把钻石锄（3.8%）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/jamar_garden.png"
+            ],
+            "title": " ",
+            "text": "$(li)1个$(l:geats/items/rider_core_ids#togechi_rider_core_id)TogetchiID核心$(/l)（3.8%）$(li)1个$(l:geats/items/rider_core_ids#lancer_rider_core_id)澜豹ID核心$(/l)（3.8%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)1个$(l:geats/items/rider_core_ids#garun_rider_core_id)伦虎ID核心$(/l)（3.8%）$(li)1个$(l:geats/items/rider_core_ids#togechi_rider_core_id_cracked)TogetchiID核心(破裂)$(/l)（5.7%）$(li)1个$(l:geats/items/rider_core_ids#letter_rider_core_id_cracked)信羊ID核心(破裂)$(/l)（5.7%）$(li)1个$(l:geats/items/rider_core_ids#nudge_sparrow_rider_core_id_cracked)五十鈴大智ID核心(破裂)$(/l)（5.7%）$(li)1个$(l:geats/items/rider_core_ids#ginpen_rider_core_id_cracked)鹅企ID核心(破裂)$(/l)（5.7%）$(li)1个$(l:geats/items/rider_core_ids#shirowe_rider_core_id_cracked)白熊ID核心(破裂)$(/l)（5.7%）$(li)1个$(l:geats/items/rider_core_ids#buffa_rider_core_id_cracked)霸牛ID核心(破碎的)$(/l)（5.7%）$(li)1张 $(l:geats/items/raise_riser_cards#ziin_raise_riser_card)提升升华器卡片(吉恩)$(/l)（1.9%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)1张 $(l:geats/items/raise_riser_cards#kekera_raise_riser_card)提升升华器卡片(呱呱拉)$(/l)（1.9%）$(li)1张 $(l:geats/items/raise_riser_cards#beroba_raise_riser_card)提升升华器卡片(贝洛芭)$(/l)（1.9%）$(li)1个$(l:geats/items/raise_buckles#jyamato_buckle)邪魔徒代扣$(/l)（1.9%）"
+        }
+    ]
+}

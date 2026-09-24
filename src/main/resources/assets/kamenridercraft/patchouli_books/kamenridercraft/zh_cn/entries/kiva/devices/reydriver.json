@@ -1,0 +1,16 @@
+{
+	"name": "冷Kivat腰带",
+	"icon": "kamenridercraft:reydriver",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/rey)假面骑士冷$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/reydriver"
+		}
+	]
+}

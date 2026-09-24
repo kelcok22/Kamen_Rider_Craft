@@ -1,0 +1,16 @@
+{
+	"name": "音击管·烈风",
+	"icon": "kamenridercraft:ongekikan_reppuu",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/riders/ibuki)假面骑士威吹鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekikan_reppuu"
+		}
+	]
+}

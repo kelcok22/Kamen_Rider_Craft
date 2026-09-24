@@ -1,0 +1,17 @@
+{
+	"name": "哉亚斩击升华器",
+	"icon": "kamenridercraft:zaia_slashriser_sword",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由迅的 $(l:zero_one/riders/jin#burning_falcon)燃烧猎隼形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zaia_slashriser_sword",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备"
+		}
+	]
+}

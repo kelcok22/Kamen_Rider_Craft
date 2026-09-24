@@ -1,0 +1,19 @@
+{
+	"name": "假面骑士漫画",
+	"icon": "kamenridercraft:ichigo_manga",
+	"category": "kamenridercraft:ichigo/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(br2)用于切换一号的$(l:ichigo/riders/ichigo#manga_ichigo)漫画版$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_manga",
+			"title": " ",
+			"text": "当前无法获取该物品"
+		}
+	]
+}

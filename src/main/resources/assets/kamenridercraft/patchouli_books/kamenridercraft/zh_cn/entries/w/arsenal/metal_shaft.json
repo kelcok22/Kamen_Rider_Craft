@@ -1,0 +1,16 @@
+{
+	"name": "金属铁杆",
+	"icon": "kamenridercraft:metal_shaft",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士 W (2009, 电视剧)$(br2)由W的左边身体方使用 $(l:w/riders/double#heatmetal)金属$(/l) 记忆体使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/metalshaft"
+		}
+	]
+}

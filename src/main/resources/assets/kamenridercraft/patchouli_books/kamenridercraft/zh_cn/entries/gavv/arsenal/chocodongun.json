@@ -1,0 +1,16 @@
+{
+	"name": "巧克力咚枪",
+	"icon": "kamenridercraft:chocodongun",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由加布的巧克咚辅助使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/chocodongun"
+		}
+	]
+}

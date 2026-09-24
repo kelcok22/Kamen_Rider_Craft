@@ -1,0 +1,19 @@
+{
+	"name": "怪人石",
+	"icon": "kamenridercraft:kaijin_stone",
+	"category": "kamenridercraft:black_sun/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于合成$(l:black_sun/devices/armor)Black Sun装甲$(/l)、武器及变身器"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kaijin_stone",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#kaijin_stone_generator)怪人石发电机$(/l)上使用$(l:black_sun/items/creation_king_extract_vial)创世王提取物$(/l)获得"
+		}
+	]
+}

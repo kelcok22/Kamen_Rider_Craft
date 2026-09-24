@@ -1,0 +1,22 @@
+{
+	"name": "假面骑士J",
+	"icon": "kamenridercraft:j_spirit",
+	"category": "kamenridercraft:j/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "j",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:j_spirit\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_stone\"}},Count:1b},{id:\"kamenridercraft:jlegs\",Count:1b},{id:\"kamenridercraft:jtroso\",Count:1b},{id:\"kamenridercraft:jhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士J",
+			"text": "登场于:$(li)假面骑士J (1994年, 电影)$(br2)通过穿戴$(l:j/devices/j_spirit)J魂$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 II$(br2)专属技能：$(li)变大$(li)骑士踢"
+		}
+	]
+}

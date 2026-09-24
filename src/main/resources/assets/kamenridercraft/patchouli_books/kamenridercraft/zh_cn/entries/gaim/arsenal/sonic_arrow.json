@@ -1,0 +1,16 @@
+{
+	"name": "音速弩弓",
+	"icon": "kamenridercraft:sonic_arrow",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由创世纪装甲骑士们使用$(br2)掉落自：$(li)$(l:gaim/mobs/zangetsu_shin)假面骑士斩月·真$(/l)的装备$(li)$(l:gaim/mobs/marika)假面骑士女王$(/l)的装备$(li)$(l:gaim/mobs/duke)假面骑士公爵$(/l)的装备$(li)$(l:gaim/mobs/sigurd)假面骑士西格德$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/sonic_arrow"
+		}
+	]
+}

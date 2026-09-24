@@ -1,0 +1,17 @@
+{
+	"name": "虚幻粉碎者",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:phantom_crusher",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema电影)$(br)生命值：90"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:build/mobs/downfall_guardian)陷灭防卫者$(/l)进化而来$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/full_bottle)空白满瓶$(/l) (50%)$(li)1个$(l:build/items/fullbottles#metal_full_bottle)金属满装瓶罐$(/l) (40%)$(li)1个$(l:build/items/fullbottles#metal_tank_tank_full_bottle)金属坦克坦克满装瓶罐$(/l) (10%)"
+		}
+	]
+}

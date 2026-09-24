@@ -1,0 +1,17 @@
+{
+  "name": "驼鹿牙血鬼",
+  "icon": "kamenridercraft:moose_fangire_belt",
+  "category": "kamenridercraft:kiva/mobs",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:moose_fangire",
+      "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br)生命值：100"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "生成群系：$(l:kiva/structures/castle_doran)城堡德兰龙$(/l)、$(l:kiva/structures/shoodoran)射击德兰龙$(/l)$(br2)掉落：$(li)2-4个$(l:kiva/items/fuestle)笛哨$(/l)$(li)1个$(l:kiva/items/fuestle)笛哨$(/l)（20%）$(li)1个$(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨(Kiva)$(/l)（20%）$(li)1个$(l:kiva/items/fuestles#garulufuestle)加鲁鲁笛哨$(/l)（20%）$(li)1个$(l:kiva/items/fuestles#basshaafuestle)巴夏笛哨$(/l)（20%）$(li)1个$(l:kiva/items/fuestles#doggafuestle)德加笛哨$(/l)（20%）"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "记忆体矿石",
+    "icon": "kamenridercraft:gaiamemoryblock",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 19,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得 $(l:w/items/gaiamemory)记忆体碎片$(/l)$(br2)需要铁镐或更好的镐子"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gaiamemoryblock",
+            "title": " ",
+            "text": "掉落：$(li)1个 $(l:w/items/gaiamemory)记忆体碎片$(/l)"
+        }
+    ]
+}

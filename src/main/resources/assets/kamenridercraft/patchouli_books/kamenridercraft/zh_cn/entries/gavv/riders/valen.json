@@ -1,0 +1,162 @@
+{
+	"name": "假面骑士瓦伦",
+	"icon": "kamenridercraft:chocodon_gochizo",
+	"category": "kamenridercraft:gavv/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "chocodon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:chocodon_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧克弹",
+			"text": "通过使用 $(l:gavv/items/gochizo#chocodon_gochizo)巧克咚饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过手持/穿戴$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)和$(l:gavv/devices/valenbuckle)瓦伦代扣$(/l)进行变身$(br2)状态效果：$(li)射击推进器$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "doumaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:doumaru_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "甜甜圆",
+			"text": "通过使用 $(l:gavv/items/gochizo#doumaru_gochizo)甜甜圈饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过手持/穿戴$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)和$(l:gavv/devices/valenbuckle)瓦伦代扣$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bushel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:bushel_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "树桩蛋糕",
+			"text": "通过使用 $(l:gavv/items/gochizo#bushel_gochizo)圣诞树桩蛋糕$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过手持/穿戴$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)和$(l:gavv/devices/valenbuckle)瓦伦代扣$(/l)进行变身$(br2)状态效果：$(li)圣诞快乐$(li)爆裂斩$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chocold",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:chocold_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧克冷",
+			"text": "通过使用 $(l:gavv/items/gochizo#chocold_gochizo)巧克冷饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过手持/穿戴$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)和$(l:gavv/devices/valenbuckle)瓦伦代扣$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)凋零 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "frappe",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:frappeis_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "冰沙定制",
+			"text": "通过使用 $(l:gavv/items/gochizo#frappeis_gochizo)双旋冰沙饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过手持/穿戴$(l:gavv/devices/vrastumgear#vrastumgear_valen)布拉姆传动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)暴风雪$(li)抗性提升 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "frappe_punchingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:punchingummy_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "拳击辅助",
+			"text": "通过使用 $(l:gavv/items/gochizo#punchingummy_gochizo)拳击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布：零食屋入侵者 (2025年，电影)$(br2)通过手持/穿戴$(l:gavv/devices/vrastumgear#vrastumgear_valen)布拉姆传动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)力量 V（空手时）$(li)力量 III（持武器时）$(li)速度 III$(li)暴风雪$(li)抗性提升 III$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "frappe_kickingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:kickingummy_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "踢击辅助",
+			"text": "通过使用 $(l:gavv/items/gochizo#kickingummy_gochizo)踢击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布：零食屋入侵者 (2025年，电影)$(br2)通过手持/穿戴$(l:gavv/devices/vrastumgear#vrastumgear_valen)布拉姆传动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)力量 VII（空手时）$(li)力量 III（持武器时）$(li)速度 III$(li)暴风雪$(li)抗性提升 III$(li)力量 III$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "frappe_kickingummy_punchingummy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:kickingummy_punchingummy_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "踢拳辅助",
+			"text": "背包中持有另一款饱藏时，通过使用潜行点击 $(l:gavv/items/gochizo#kickingummy_gochizo)踢击软糖饱藏$(/l) 或 $(l:gavv/items/gochizo#punchingummy_gochizo)拳击软糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布：零食屋入侵者 (2025年，电影)$(br2)通过手持/穿戴$(l:gavv/devices/vrastumgear#vrastumgear_valen)布拉姆传动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)力量 V（空手时）$(li)力量 III（持武器时）$(li)速度 III$(li)暴风雪$(li)抗性提升 III$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "frappe_gurucan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:gurucan_gochizo_valen\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "双旋冰沙定制·圈圈糖腿型",
+			"text": "通过使用 $(l:gavv/items/gochizo#gurucan_gochizo)转转糖饱藏$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)假面骑士加布：零食屋入侵者 (2025年，电影)$(br2)通过手持/穿戴$(l:gavv/devices/vrastumgear#vrastumgear_valen)布拉姆传动器$(/l)进行变身$(br2)状态效果：$(li)重力$(li)速度 III$(li)暴风雪$(li)缓慢 II$(li)抗性提升 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "parfait",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vrastumgear_valen\",components:{custom_data:{slot_tex1:\"kamenridercraft:chocorappa_gochizo\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "芭菲模式",
+			"text": "通过使用 $(l:gavv/items/gochizo#chocorappa_gochizo)巧克拉帕饱藏$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士加布",
+			"text": "登场于：$(li)假面骑士加布：罪恶芭菲 (2025年，V-Cinema电影)$(br2)通过手持/穿戴$(l:gavv/devices/vrastumgear#vrastumgear_valen)布拉姆传动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tirol",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valenbuckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:tirolchocolate_gochizo_variety\"}},Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "什锦巧克力",
+			"text": "通过使用 $(l:gavv/items/gochizo#tirolchocolate_gochizo_variety)什锦巧克力饱藏(多种口味包)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦伦",
+			"text": "登场于：$(li)DX骑士饱藏特别套装 - 蒂罗尔巧克力联名款 (2025年，玩具系列)$(br2)通过手持/穿戴$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)和$(l:gavv/devices/valenbuckle)瓦伦代扣$(/l)进行变身$(br2)状态效果：$(li)射击推进器$(li)速度"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士哉亚",
+	"icon": "kamenridercraft:zaia_thousandriver_zaia",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zaia_thousandriver_zaia\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士哉亚",
+			"text": "登场于：$(li)01外传：假面骑士灭亡迅雷 (2021年，V-Cinema电影)$(br2)通过穿戴$(l:zero_one/devices/zaia_thousandriver#zaia_thousandriver_zaia)哉亚千位驱动器(哉亚)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 II$(li)力量 III"
+		}
+	]
+}

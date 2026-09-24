@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/showa",
+    "name": "假面骑士ZX",
+    "description": "与《假面骑士ZX》相关的所有内容.",
+    "icon": "kamenridercraft:zx_logo",
+    "sortnum": 8
+}

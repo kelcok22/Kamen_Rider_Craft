@@ -1,0 +1,39 @@
+{
+	"name": "Amazon注射器(新种)",
+	"icon": "kamenridercraft:amazon_injector_neo",
+	"category": "kamenridercraft:amazons/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_injector_neo",
+			"text": "登场于：$(li)假面骑士Amazons 第二季 (2017年，网络剧)$(br2)用于合成Amazon新种的$(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo)Neo Amazons驱动器(新种)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/amazon_injector_neo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_injector_new_omega",
+			"title": "Amazon注射器(新Omega)",
+			"text": "登场于：$(li)假面骑士Amazons 第二季 (2017年，网络剧)$(br2)用于合成Amazon NeoOmega的$(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_omega)Neo Amazons驱动器(新Omega)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazon_injector_new_omega"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_injector_neo_alpha",
+			"title": "Amazon注射器(Neo Alpha)",
+			"text": "登场于：$(li)假面骑士Amazons：最后的审判 (2018年，电影)$(br2)用于合成Amazon NeoAlpha的$(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo_alpha)Neo Amazons驱动器(Neo Alpha)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazon_injector_neo_alpha"
+		}
+	]
+}

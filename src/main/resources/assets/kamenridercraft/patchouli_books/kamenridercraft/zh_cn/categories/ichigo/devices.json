@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ichigo/main",
+    "name": "腰带",
+    "description": "一号系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:misc/items/rider_circuit)骑士电路$(/l)修复.",
+    "icon": "kamenridercraft:typhoon_ichigo",
+    "sortnum": 1
+}

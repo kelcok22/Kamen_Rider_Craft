@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:den_o/main",
+    "name": "生成建筑",
+    "description": "与电王相关的所有建筑.",
+    "icon": "kamenridercraft:denliner_side_with_line",
+    "sortnum": 6
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Faiz加速手表",
+    "icon": "kamenridercraft:faiz_axel",
+    "category": "kamenridercraft:faiz/arsenal",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)用于切换Faiz的 $(l:faiz/riders/faiz#axel)加速形态$(/l)$(br2)用于切换Next Faiz的 $(l:faiz/riders/next_faiz#axel)加速形态$(/l)$(br2)用于切换Next Kaixa的 $(l:faiz/riders/next_kaixa#axel)加速形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/faiz_axel"
+        }
+    ]
+}

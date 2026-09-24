@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士影月",
+	"icon": "kamenridercraft:king_stone_moon",
+	"category": "kamenridercraft:black_sun/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "shadowmoon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:century_king_moon_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_stone_moon\"}},Count:1b},{id:\"kamenridercraft:blacksunlegs\",Count:1b},{id:\"kamenridercraft:blacksuntroso\",Count:1b},{id:\"kamenridercraft:blacksunhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:black_sun/items/kingstones#king_stone_moon)月亮帝王石$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士影月",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)通过穿戴$(l:black_sun/devices/century_king_moon_driver)世纪王月驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "glowing_eyes",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:century_king_moon_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:glowing_king_stone_moon\"}},Count:1b},{id:\"kamenridercraft:blacksunlegs\",Count:1b},{id:\"kamenridercraft:blacksuntroso\",Count:1b},{id:\"kamenridercraft:blacksunhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "发光眼",
+			"text": "通过使用$(l:black_sun/items/kingstones#glowing_king_stone_moon)特殊月亮帝王石$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士影月",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)通过穿戴$(l:black_sun/devices/century_king_moon_driver)世纪王月驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		}
+	]
+}

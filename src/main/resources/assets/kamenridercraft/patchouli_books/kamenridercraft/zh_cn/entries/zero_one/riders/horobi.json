@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士灭",
+	"icon": "kamenridercraft:forceriser_horobi",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "sting_scorpion",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:forceriser_horobi\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "尖刺毒蝎",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士灭",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_horobi)灭亡迅雷强制升华器(灭)$(/l)进行变身$(br2)状态效果：$(li)毒药抗性$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ark_scorpion",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zetsumetsu_driver\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "亚克毒蝎",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士灭",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/zetsumetsu_driver)绝灭驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)急迫 IV$(li)跳跃提升 V$(li)力量 V"
+		}
+	]
+}

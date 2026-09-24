@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士黎明歌查德",
+	"icon": "kamenridercraft:gotchardriver_daybreak",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "steamhopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_daybreak\",components:{custom_data:{slot_tex1:\"kamenridercraft:daybreak_hopper1_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蒸汽蝗虫",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#daybreak_hopper1_ride_chemy_card)黎明蝗虫一号驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#daybreak_steamliner_ride_chemy_card)黎明蒸汽列车驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黎明歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_daybreak)歌查德驱动器(黎明)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)跳跃提升 II$(li)抗火$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fire",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_daybreak\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchar_igniter_db\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰黎明歌查德",
+			"text": "通过使用 $(l:gotchard/items/gotchar_igniter)歌查点火器$(/l) 解锁"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黎明歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_daybreak)歌查德驱动器(黎明)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)炎拳 III$(li)跳跃提升 II$(li)推进 V$(li)抗火$(li)力量 III"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "shining",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver_daybreak\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_hopper1_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "闪耀黎明",
+        "text": "通过使用 $(l:gotchard/items/ride_chemy_cards#shining_hopper1_ride_chemy_card)闪耀蝗虫1号驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#shining_steamliner_ride_chemy_card)闪耀蒸汽列车驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士黎明歌查德",
+        "text": "登场于：$(li)假面骑士歌查德：未来拂晓 (2024年，电影)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_daybreak)歌查德驱动器(黎明)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)跳跃提升 IV$(li)推进 VI$(li)抗火$(li)力量 IV$(li)炎拳 IV"
+      }
+    ]
+}

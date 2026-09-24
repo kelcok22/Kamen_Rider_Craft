@@ -1,0 +1,1016 @@
+{
+    "name": "假面骑士Decade",
+    "icon": "kamenridercraft:decade_card",
+    "category": "kamenridercraft:decade/riders",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "decade",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": "通过使用$(l:decade/items/kamenride_cards#decade_card)Decade 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫 III$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "complete",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "神主牌形态",
+            "text": "通过使用$(l:decade/items/k_touch)最终假面终端 K-Touch$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 III$(li)防火$(li)力量 V"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "strongest_complete",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_strongest\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "最强神主牌形态",
+            "text": "通过使用$(l:decade/items/k_touch)最终假面终端 K-Touch$(/l)进行形态切换，需在物品栏中持有所有最终假面驾驭卡"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade：全体骑士对大修卡 (2009年，电影)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)生命恢复 V$(li)饱和 V$(li)跳跃提升 IV$(li)防火$(li)力量 IX"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "neo_decade",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": "通过使用$(l:decade/items/kamenride_cards#decade_card)Decade 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫 III$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "complete_21",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_21\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "神主牌21形态",
+            "text": "通过使用$(l:decade/items/k_touch_21)最终假面终端 K-Touch 21$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)Rider Time：假面骑士时王 VS Decade -7位时王！- (2021年，网络剧)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)急迫 III$(li)跳跃提升 IV$(li)防火$(li)力量 VI"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "violent_emotion",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_violent_emotion_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "激情态",
+            "text": "通过使用$(l:decade/items/kamenride_cards#decade_violent_emotion_card)Decade激情态 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)饥饿$(li)抗性提升 III$(li)急迫 III$(li)跳跃提升 IV$(li)力量 IV"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "cyan",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_cyan_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "蔚蓝版本",
+            "text": "通过使用$(l:decade/items/kamenride_cards#diend_card)Diend 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade：全体骑士超衍生剧 (2009年，网络电影)$(li)假面骑士Decade：门矢士的世界 ~镜头中的庭园~ (2013年，小说)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫 III$(li)力量"
+        },
+                {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_growing",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_growing_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 初生",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_growing_card)空我初生 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)虚弱 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_mighty_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我",
+            "text": "通过使用$(l:decade/items/kamenride_cards#kuuga_mighty_card)空我 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_dragon",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_dragon_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 青龙",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_dragon_card)空我青龙 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 III$(li)急迫"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_pegasus",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_pegasus_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 天马",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_pegasus_card)空我天马 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)夜视$(li)雷达"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_titan",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_titan_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 泰坦",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_titan_card)空我泰坦 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_rising_mighty",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_mighty_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 升华全能",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_rising_mighty_card)空我升华全能 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)速度$(li)抗性提升$(li)力量 VII（空手时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_rising_dragon",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_dragon_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 升华青龙",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_rising_dragon_card)空我升华青龙 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 V$(li)急迫 III$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_rising_pegasus",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_pegasus_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 升华天马",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_rising_pegasus_card)空我升华天马 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)夜视$(li)雷达$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_rising_titan",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_titan_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 升华泰坦",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_rising_titan_card)空我升华泰坦 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 III$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kuuga_amazing_mighty",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 空我 惊异全能",
+            "text": "通过使用$(l:decade/items/formride_cards#kuuga_amazing_mighty_card)空我惊异全能 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)S.I.C. Vol. 56 假面骑士空我 -Decade Edition- (2010年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 VIII（空手时）$(li)力量 III（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "agito",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_ground_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 亚极陀",
+            "text": "通过使用$(l:decade/items/kamenride_cards#agito_ground_card)亚极陀 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "agito_storm",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_storm_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 亚极陀 风暴",
+            "text": "通过使用$(l:decade/items/formride_cards#agito_storm_card)亚极陀风暴 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "agito_flame",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_flame_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 亚极陀 火焰",
+            "text": "通过使用$(l:decade/items/formride_cards#agito_flame_card)亚极陀火焰 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)防火"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "agito_trinity",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_trinity_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 亚极陀 三位一体",
+            "text": "通过使用$(l:decade/items/formride_cards#agito_trinity_card)亚极陀三合一 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升$(li)力量$(li)防火"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "agito_burning",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:agito_burning_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 亚极陀 燃烧",
+            "text": "通过使用$(l:decade/items/formride_cards#agito_burning_card)亚极陀燃烧 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)跳跃提升 III$(li)防火$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ryuki_blank",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_blank_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 龙骑 空白",
+            "text": "通过使用$(l:decade/items/formride_cards#ryuki_blank_card)龙骑空白 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)虚弱"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ryuki",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 龙骑",
+            "text": "通过使用$(l:decade/items/kamenride_cards#ryuki_card)龙骑 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫$(li)防火"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "faiz",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Faiz",
+            "text": "通过使用$(l:decade/items/kamenride_cards#faiz_card)Faiz 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)夜视$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "faiz_axel",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_axel_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Faiz 加速",
+            "text": "通过使用$(l:decade/items/formride_cards#faiz_axel_card)Faiz加速 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)形态解除（15秒）$(li)速度 VI$(li)抗性提升 III$(li)夜视$(li)急迫 V$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "blade",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_ace_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 剑",
+            "text": "通过使用$(l:decade/items/kamenride_cards#blade_ace_card)剑 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫 II$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "blade_jack",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:blade_jack_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 剑 侍卫形态",
+            "text": "通过使用$(l:decade/items/formride_cards#blade_jack_card)剑侍卫 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行$(li)速度 II$(li)抗性提升$(li)急迫$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "hibiki",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 响鬼",
+            "text": "通过使用$(l:decade/items/kamenride_cards#hibiki_card)响鬼 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 II$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "hibiki_kurenai",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_kurenai_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 响鬼红",
+            "text": "通过使用$(l:decade/items/formride_cards#hibiki_kurenai_card)响鬼红 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)急迫 IV$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kabuto_masked",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_masked_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 甲斗 重甲形态",
+            "text": "通过使用$(l:decade/items/formride_cards#kabuto_masked_card)重甲甲斗 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)World of Stronger (2010年，S.I.C.英雄传奇)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kabuto",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_rider_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 甲斗",
+            "text": "通过使用$(l:decade/items/kamenride_cards#kabuto_rider_card)甲斗 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)急迫 IV"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o_plat",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_plat_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王 月台形态",
+            "text": "通过使用$(l:decade/items/formride_cards#den_o_plat_card)电王月台 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)虚弱"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_sword_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王",
+            "text": "通过使用$(l:decade/items/kamenride_cards#den_o_sword_card)电王 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o_rod",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_rod_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王 圣竿形态",
+            "text": "通过使用$(l:decade/items/formride_cards#den_o_rod_card)电王圣竿 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade：门矢士的世界 ~镜头中的庭园~ (2013年，小说)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫 III$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o_ax",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_ax_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王 圣斧形态",
+            "text": "通过使用$(l:decade/items/formride_cards#den_o_ax_card)电王圣斧 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o_gun",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_gun_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王 圣枪形态",
+            "text": "通过使用$(l:decade/items/formride_cards#den_o_gun_card)电王圣枪 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o_wing",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_wing_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王 圣翼形态",
+            "text": "通过使用$(l:decade/items/formride_cards#den_o_wing_card)电王圣翼 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 III$(li)虚弱$(li)急迫 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "den_o_climax",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_climax_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 电王 顶点形态",
+            "text": "通过使用$(l:decade/items/formride_cards#den_o_climax_card)电王顶点 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)急迫 III$(li)跳跃提升 II$(li)力量 IV"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kiva",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Kiva",
+            "text": "通过使用$(l:decade/items/kamenride_cards#kiva_card)Kiva 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kiva_garulu",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_garulu_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Kiva 加鲁鲁",
+            "text": "通过使用$(l:decade/items/formride_cards#kiva_garulu_card)Kiva加鲁鲁 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kiva_basshaa",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_basshaa_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Kiva 巴夏",
+            "text": "通过使用$(l:decade/items/formride_cards#kiva_basshaa_card)Kiva巴夏 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)急迫 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kiva_dogga",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_dogga_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Kiva 德加",
+            "text": "通过使用$(l:decade/items/formride_cards#kiva_dogga_card)Kiva德加 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 II$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "kiva_dogabaki",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_dogabaki_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Kiva 德加巴基",
+            "text": "通过使用$(l:decade/items/formride_cards#kiva_dogabaki_card)Kiva德加巴基 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set Extra (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)凋零$(li)抗性提升 II$(li)急迫$(li)跳跃提升$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ichigo",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 一号",
+            "text": "通过使用$(l:decade/items/kamenride_cards#ichigo_card)一号 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士×超级战队：超级英雄大战 (2012年，电影)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "nigo",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:nigo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 二号",
+            "text": "通过使用$(l:decade/items/kamenride_cards#nigo_card)二号 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "v3",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:v3_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade V3",
+            "text": "通过使用$(l:decade/items/kamenride_cards#v3_card)V3 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "riderman",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 骑士人",
+            "text": "通过使用$(l:decade/items/kamenride_cards#riderman_card)骑士人 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)生命恢复$(li)急迫 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "x",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade X",
+            "text": "通过使用$(l:decade/items/kamenride_cards#x_card)X 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)生命恢复$(li)跳跃提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "amazon",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazon_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Amazon",
+            "text": "通过使用$(l:decade/items/kamenride_cards#amazon_card)Amazon 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade：世界混沌 (2009年，舞台剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)生命恢复 II$(li)跳跃提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "stronger",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stronger_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 强人",
+            "text": "通过使用$(l:decade/items/kamenride_cards#stronger_card)强人 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 II$(li)防火 II$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "skyrider",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:skyrider_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 天空骑士",
+            "text": "通过使用$(l:decade/items/kamenride_cards#skyrider_card)天空骑士 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行 V$(li)速度 II$(li)跳跃提升 VI$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "super_1",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_1_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 超一号",
+            "text": "通过使用$(l:decade/items/kamenride_cards#super_1_card)超一号 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 II$(li)防火 II$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "zx",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zx_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade ZX",
+            "text": "通过使用$(l:decade/items/kamenride_cards#zx_card)ZX 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)生命恢复$(li)跳跃提升 II$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "black",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Black",
+            "text": "通过使用$(l:decade/items/kamenride_cards#black_card)Black 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士Decade：世界混沌 (2009年，舞台剧)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "black_rx",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_rx_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Black RX",
+            "text": "通过使用$(l:decade/items/kamenride_cards#black_rx_card)Black RX 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "black_rx_roborider",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_rx_roborider_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Black RX 机械骑士",
+            "text": "通过使用$(l:decade/items/kamenride_cards#black_rx_roborider_card)Black RX机械骑士 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "black_rx_biorider",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:black_rx_biorider_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Black RX 生化骑士",
+            "text": "通过使用$(l:decade/items/kamenride_cards#black_rx_biorider_card)Black RX生化骑士 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)速游 II$(li)水下呼吸$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "shin",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shin_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 真",
+            "text": "通过使用$(l:decade/items/kamenride_cards#shin_card)真 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "zo",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade ZO",
+            "text": "通过使用$(l:decade/items/kamenride_cards#zo_card)ZO 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "j",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:j_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade J",
+            "text": "通过使用$(l:decade/items/kamenride_cards#j_card)J 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)CSM Rider Card Set -Decade- (2022年，玩具线)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "w",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade W",
+            "text": "通过使用$(l:decade/items/kamenride_cards#w_card)W 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ooo",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade OOO",
+            "text": "通过使用$(l:decade/items/kamenride_cards#ooo_card)OOO 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "fourze",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Fourze",
+            "text": "通过使用$(l:decade/items/kamenride_cards#fourze_card)Fourze 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "wizard",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Wizard",
+            "text": "通过使用$(l:decade/items/kamenride_cards#wizard_card)Wizard 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "gaim",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gaim_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 铠武",
+            "text": "通过使用$(l:decade/items/kamenride_cards#gaim_card)铠武 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "drive",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Drive",
+            "text": "通过使用$(l:decade/items/kamenride_cards#drive_card)Drive 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ghost",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Ghost",
+            "text": "通过使用$(l:decade/items/kamenride_cards#ghost_card)Ghost 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ex_aid",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Ex-Aid",
+            "text": "通过使用$(l:decade/items/kamenride_cards#ex_aid_card)Ex-Aid 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "build",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade Build",
+            "text": "通过使用$(l:decade/items/kamenride_cards#build_card)Build 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "zi-o",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "Decade 时王",
+            "text": "通过使用$(l:decade/items/kamenride_cards#zi_o_card)时王 假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ooo_armor",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:decadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_ooo_armor_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "OOO装甲",
+            "text": "通过使用$(l:decade/items/final_formride_cards#decade_ooo_armor_card)OOO武装 形态假面驾驭卡$(/l)进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Decade",
+            "text": "登场于：$(li)World of OOO (2015年，S.I.C.英雄传奇)$(br2)通过穿戴$(l:decade/devices/decadriver)Decad驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)跳跃提升 III$(li)力量 III$(li)飞行 III"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "黑电波人",
+	"icon": "kamenridercraft:black_tackle_belt",
+	"category": "kamenridercraft:stronger/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:black_tackle_belt\",Count:1b},{id:\"kamenridercraft:strongerlegs\",Count:1b},{id:\"kamenridercraft:strongertroso\",Count:1b},{id:\"kamenridercraft:strongerhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "黑电波人",
+			"text": "登场于:$(li)假面骑士Jeanne & 假面骑士Aguilera with Girls Remix（2022年，网络剧）$(br2)通过穿戴$(l:stronger/devices/tackle_belt#black_tackle_belt)黑色电波腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 II$(li)抗火 II$(li)力量 II"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "空试管",
+	"icon": "kamenridercraft:empty_vial",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "可在 $(l:misc/blocks/machine_blocks#amazon_cell_extractor)亚马逊细胞提取器$(/l) 上使用，获取亚马逊细胞试剂瓶$(br2)可使用 $(l:black/items/red_kingstone)红色帝王石$(/l) 制作成创世王提取物"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/empty_vial"
+		}
+	]
+}

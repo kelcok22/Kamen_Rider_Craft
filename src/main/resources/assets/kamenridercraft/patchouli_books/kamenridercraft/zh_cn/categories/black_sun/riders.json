@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_sun/main",
+    "name": "Black Sun系列骑士",
+    "description": "来自《假面骑士Black Sun》或与其相关的所有骑士及伪骑士",
+    "icon": "kamenridercraft:blacksunhead",
+    "sortnum": 0
+}

@@ -1,0 +1,66 @@
+{
+	"name": "原型兆目润泽器",
+	"icon": "kamenridercraft:proto_mega_ulorder_red",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_mega_ulorder_red",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/dark_necrom_red)假面骑士黑暗幽冥(红)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_red",
+            "text": "掉落自：$(li)$(l:ghost/mobs/dark_necrom)假面骑士黑暗幽冥$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_mega_ulorder_blue",
+			"title": "原型兆目润泽器(黑暗幽冥·蓝)",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/dark_necrom_blue)假面骑士黑暗幽冥(蓝)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_blue",
+            "text": "掉落自：$(li)$(l:ghost/mobs/dark_necrom)假面骑士黑暗幽冥$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_mega_ulorder_yellow",
+			"title": "原型兆目润泽器(黑暗幽冥·黄)",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/dark_necrom_yellow)假面骑士黑暗幽冥(黄)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/proto_mega_ulorder_yellow",
+            "text": "掉落自：$(li)$(l:ghost/mobs/dark_necrom)假面骑士黑暗幽冥$(/l)的装备"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "proto_mega_ulorder_pink",
+        "title": "原型兆目润泽器(黑暗幽冥·粉)",
+        "text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/dark_necrom_pink)假面骑士黑暗幽冥(粉)"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ghost/proto_mega_ulorder_pink"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "proto_mega_ulorder_gamma_superior",
+        "title": "原型兆目润泽器",
+        "text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/gamma_superior)眼魔上级"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:ghost/proto_mega_ulorder_gamma_superior",
+        "text": "掉落自：$(li)$(l:ghost/mobs/igor)伊戈尔$(/l)的装备"
+      }
+	]
+}

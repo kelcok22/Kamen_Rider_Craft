@@ -1,0 +1,16 @@
+{
+	"name": "极狐破坏者QB9",
+	"icon": "kamenridercraft:geats_buster_qb9",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)由 $(l:geats/riders/geats#geatsix)假面骑士极狐IX$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/geats_buster_qb9"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "剑蝎剑",
+	"icon": "kamenridercraft:sasword_yaiver",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/riders/sasword)假面骑士剑蝎$(/l)使用$(br2)用于获得剑蝎的$(l:kabuto/devices/zect_buckle#sasword_rider_belt)ZECT代扣(剑蝎)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/sasword_yaiver"
+		}
+	]
+}

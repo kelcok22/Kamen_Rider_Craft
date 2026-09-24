@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士黑暗Ghost",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dark_ghost",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br)生命值: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:ghost/mobs/dark_necrom)假面骑士黑暗幽冥$(/l)进化而来$(br2)特殊机制：$(li)生命值低于60时，使用$(l:ghost/riders/dark_ghost#napoleon)拿破仑$(/l)、$(l:ghost/riders/dark_ghost#ikkyu)一休$(/l)或$(l:ghost/riders/dark_ghost#pythagoras)毕达哥拉斯$(/l)眼魂$(br2)掉落$(li)2-4个$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)$(li)1个$(l:ghost/items/ghost_eyecons#dark_ghost_eyecon)黑暗Ghost眼魂$(/l)$(li)1个$(l:ghost/items/ghost_eyecons#napoleon_ghost_eyecon)拿破仑眼魂$(/l) (40%)$(li)1个$(l:ghost/items/ghost_eyecons#ikkyu_ghost_eyecon)一休眼魂$(/l) (20%)$(li)1个$(l:ghost/items/ghost_eyecons#pythagoras_ghost_eyecon)毕达哥拉斯眼魂$(/l) (20%)$(li)1个$(l:ghost/items/ghost_eyecons#dark_necrom_pink_ghost_eyecon)黑暗幽冥眼魂(粉)$(/l) (20%)$(li)1个$(l:ghost/items/ghost_eyecons#darwin_ghost_eyecon)达尔文眼魂$(/l)（以$(l:ghost/riders/ghost)假面骑士Ghost$(/l)身份战斗时）"
+		}
+	]
+}

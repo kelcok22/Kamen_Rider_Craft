@@ -1,0 +1,20 @@
+{
+	"name": "假面骑士原型Ixa (初代)",
+	"icon": "kamenridercraft:knucklefuestle",
+	"category": "kamenridercraft:kiva/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_ixa_belt_first\",Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士原型Ixa (初代)",
+			"text": "登场于：$(li)吸血鬼之王 (2010年，S.I.C.英雄传奇)$(br2)通过穿戴$(l:kiva/devices/proto_ixa_belt_first)Ixa腰带$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)急迫$(li)力量"
+		}
+	]
+}

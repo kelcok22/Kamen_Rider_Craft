@@ -1,0 +1,24 @@
+{
+	"name": "G装甲",
+	"icon": "kamenridercraft:ghead",
+	"category": "kamenridercraft:g/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与$(l:g/devices/g_belt)G腰带$(/l)一起穿戴，可变身为$(l:g/riders/g)假面骑士G$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/ghead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/gtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/glegs"
+		}
+	]
+}

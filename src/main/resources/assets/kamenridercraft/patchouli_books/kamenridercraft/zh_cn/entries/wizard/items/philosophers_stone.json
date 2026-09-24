@@ -1,0 +1,19 @@
+{
+	"name": "贤者之石",
+	"icon": "kamenridercraft:philosophers_stone",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于合成$(l:wizard/items/wizard_rings#hope_ring)希望巫师指环$(/l)$(br2)注：该石头无法用于炼金术或亚极陀的力量"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:philosophers_stone",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)"
+		}
+	]
+}

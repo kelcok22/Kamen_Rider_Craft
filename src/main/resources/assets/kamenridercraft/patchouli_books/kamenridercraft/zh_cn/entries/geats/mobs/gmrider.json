@@ -1,0 +1,17 @@
+{
+	"name": "GM骑士",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:gmrider",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br)生命值：30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：下界荒地$(br2)掉落$(li)2-4个$(l:geats/items/blank_rider_core_id)空白ID核心$(/l)$(li)1个$(l:geats/items/rider_core_ids#chuta_rider_core_id)啾太ID核心$(/l) (10%)$(li)1个$(l:geats/items/rider_core_ids#gesshi_rider_core_id)GessyID核心$(/l) (10%)$(li)1个$(l:geats/items/raise_buckles#command_twin_buckle_jet)双子喷射代扣$(/l) (20%)$(li)1个$(l:geats/items/raise_buckles#command_twin_buckle_cannon)双子加农代扣$(/l) (20%)$(li)1个$(l:geats/devices/desire_driver#desire_driver_gm)欲望驱动器(GM)$(/l) (8%)$(li)1个$(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l) (12%)$(li)1个$(l:geats/items/hatena_mission_box)代扣任务盒$(/l) (20%)$(br2)欲望突破$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l) (3.3%)$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l) (3.3%)$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l) (3.3%)"
+		}
+	]
+}

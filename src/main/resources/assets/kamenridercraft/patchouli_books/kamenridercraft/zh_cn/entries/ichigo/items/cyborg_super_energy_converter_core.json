@@ -1,0 +1,18 @@
+{
+	"name": "电磁台风核心",
+	"icon": "kamenridercraft:cyborg_super_energy_converter_core",
+	"category": "kamenridercraft:ichigo/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Eins with Girls Remix (2025年, TTFC特别篇)$(br2)用于制作Eins的$(l:ichigo/devices/cyborg_super_energy_converter)电磁台风$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyborg_super_energy_converter_core",
+			"text": "当前无法获取该物品"
+		}
+	]
+}

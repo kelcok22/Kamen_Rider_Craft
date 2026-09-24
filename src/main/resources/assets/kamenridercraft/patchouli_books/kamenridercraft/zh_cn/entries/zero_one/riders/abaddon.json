@@ -1,0 +1,92 @@
+{
+	"name": "假面骑士亚巴顿",
+	"icon": "kamenridercraft:slash_abaddo_riser",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "slashabaddoriser",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:slash_abaddo_riser\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚巴顿",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)通过穿戴$(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser)斩击亚巴顿升华器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shotabaddoriser",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shot_abaddo_riser\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚巴顿",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)通过穿戴$(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser)射击亚巴顿升华器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "behru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:slash_abaddo_riser_r\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚巴顿赤",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)通过穿戴$(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_r)斩击亚巴顿升华器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mua",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shot_abaddo_riser_g\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚巴顿银",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)通过穿戴$(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_g)射击亚巴顿升华器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lugo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shot_abaddo_riser_b\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚巴顿蓝",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)通过穿戴$(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_b)射击亚巴顿升华器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "buga",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:slash_abaddo_riser_o\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚巴顿橘",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)通过穿戴$(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_o)斩击亚巴顿升华器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)跳跃提升 IV"
+		}
+	]
+}

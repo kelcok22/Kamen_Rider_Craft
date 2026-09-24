@@ -1,0 +1,66 @@
+{
+	"name": "OOO驱动器",
+	"icon": "kamenridercraft:ooodriver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ooodriver",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/ooo)假面骑士OOO$(/l)$(br2)最多可存储6组O硬币"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/ooo_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_ooodriver",
+			"title": "OOO驱动器(古代王)",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/ancient_ooo)古代王OOO$(/l)$(br2)最多可存储6组O硬币"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/ancient_ooodriver",
+          "text": "掉落自：$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "goda_ooodriver",
+			"title": "OOO驱动器(戈达)",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/goda)假面骑士戈达$(/l)$(br2)最多可存储6组O硬币"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/goda_ooodriver",
+          "text": "掉落自：$(li)$(l:ooo/mobs/goda)假面骑士戈达$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shocker_ooodriver",
+			"title": "OOO驱动器(修卡OOO)",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/shocker_ooo)修卡OOO$(/l)$(br2)最多可存储6组O硬币"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/shocker_ooodriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oooooodriver",
+			"title": "六连OOO驱动器",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/oooooo)假面骑士OOOOOO$(/l)$(br2)最多可存储6组O硬币"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oooooodriver",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

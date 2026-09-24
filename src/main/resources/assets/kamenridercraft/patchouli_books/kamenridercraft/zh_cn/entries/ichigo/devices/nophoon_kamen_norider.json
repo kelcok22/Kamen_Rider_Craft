@@ -1,0 +1,16 @@
+{
+	"name": "宪达腰带",
+	"icon": "kamenridercraft:nophoon_kamen_norider",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面野骑（1988年，电视剧）$(br2)与$(l:ichigo/devices/armor)一号装甲$(/l)一起穿戴，可变身为$(l:ichigo/riders/kamen_norider)假面宪达"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/nophoon_kamen_norider"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "忍者玩家代扣",
+	"icon": "kamenridercraft:ninjaplayerbelt",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid 真实结局 (2017年，电影)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/ninja_player)忍者玩家"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ninjaplayerbelt"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kabuto/main",
+    "name": "武器",
+    "description": "甲斗系列骑士所使用的武器和道具. 可以在铁砧上使用 $(l:kabuto/items/mini_zecter)原虫外壳$(/l)修复.",
+    "icon": "kamenridercraft:kabuto_kunai",
+    "sortnum": 3
+}

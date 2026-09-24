@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:den_o/main",
+    "name": "相关物品",
+    "description": "所有与电王系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:rider_ticket_sword",
+    "sortnum": 2
+}

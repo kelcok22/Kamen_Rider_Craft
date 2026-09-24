@@ -1,0 +1,330 @@
+{
+	"name": "欲望驱动器",
+	"icon": "kamenridercraft:desire_driver_geats",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_geats",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/geats)假面骑士极狐$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_geats"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_tycoon",
+			"title": "欲望驱动器(太狸)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/tycoon)假面骑士太狸$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_tycoon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_na_go",
+			"title": "欲望驱动器(娜猫)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/na_go)假面骑士娜猫$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_na_go"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_buffa",
+			"title": "欲望驱动器(霸牛)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/buffa)假面骑士霸牛$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_buffa"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_punkjack",
+			"title": "欲望驱动器(朋克杰克)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/punkjack)假面骑士朋克杰克$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_punkjack"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_nudge_sparrow",
+			"title": "欲望驱动器(灵雀)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/nudge_sparrow)假面骑士灵雀$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_nudge_sparrow"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_shirowe",
+			"title": "欲望驱动器(白熊)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/shirowe)假面骑士白熊$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_shirowe"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_ginpen",
+			"title": "欲望驱动器(鹅企)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/ginpen)假面骑士鹅企$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_ginpen"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_mary",
+			"title": "欲望驱动器(咩雳)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/mary)假面骑士咩雳$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_mary"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_da_paan",
+			"title": "欲望驱动器(猫熊)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/da_paan)假面骑士猫熊$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_da_paan"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_keirou",
+			"title": "欲望驱动器(鸮老)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/keirou)假面骑士鸮老$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_keirou"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_letter",
+			"title": "欲望驱动器(信羊)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/letter)假面骑士信羊$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_letter"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_lopo",
+			"title": "欲望驱动器(狼魄)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/lopo)假面骑士狼魄$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_lopo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_groovy",
+			"title": "欲望驱动器(格比)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/groovy)假面骑士格比$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_groovy"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_hakubi",
+			"title": "欲望驱动器(花面狸)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/hakubi)假面骑士花面狸$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_hakubi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_turbon",
+			"title": "欲望驱动器(塔彘)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/turbon)假面骑士塔彘$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_turbon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_brali",
+			"title": "欲望驱动器(怖蝠)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/brali)假面骑士怖蝠$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_brali"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_gya_go",
+			"title": "欲望驱动器(煞猫)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/gya_go)假面骑士煞猫$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_gya_go"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_seeker",
+			"title": "欲望驱动器(鹿探)",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/seeker)假面骑士鹿探$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_seeker"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_butchi",
+			"title": "欲望驱动器(麦奇犬)",
+			"text": "登场于：$(li)极狐番外：假面骑士朋克杰克 (2023年，TTFC特别篇)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/butchi)假面骑士麦奇犬$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_butchi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_revi",
+			"title": "欲望驱动器(利维)",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/revi)假面骑士利维$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_revi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_vice",
+			"title": "欲望驱动器(维斯)",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/vice)假面骑士维斯$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_vice"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_jyamato",
+			"title": "欲望驱动器(邪魔徒)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/jyamato_rider)邪魔徒骑士$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_jyamato",
+          "text": "掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_gm",
+			"title": "欲望驱动器(GM)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/gm_rider)GM骑士$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_gm",
+          "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_gm_chirami",
+			"title": "欲望驱动器(GM)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/gm_rider_chirami)GM骑士$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_gm_chirami",
+          "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_keibi_riders",
+			"title": "欲望驱动器(警备队骑士)",
+			"text": "登场于：$(li)极狐番外：假面骑士朋克杰克 (2023年，TTFC特别篇)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/keibi_rider)警备队骑士$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_keibi_riders"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_the_end_riders",
+			"title": "欲望驱动器(The End骑士)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/the_end_rider)The End骑士$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_the_end_riders",
+			"text": "掉落自：$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_x_geats",
+			"title": "欲望驱动器(X极狐)",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐 (2023年，电影)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/xgeats)假面骑士X极狐$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_x_geats"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "desire_driver_dooms_geats",
+			"title": "欲望驱动器(灾厄极狐)",
+			"text": "登场于：$(li)假面骑士极狐：邪魔徒觉醒 (2024年，V-Cinema电影)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/dooms_geats)假面骑士灾厄极狐$(/l)$(br2)最多可存储2组升级带扣"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/desire_driver_dooms_geats"
+		}
+	]
+}

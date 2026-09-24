@@ -1,0 +1,19 @@
+{
+	"name": "生化缠绕者降临",
+	"icon": "kamenridercraft:bio_winder_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 57,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑特别篇：13骑士 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/verde)假面骑士妖翠$(/l)使用。 使用$(l:ryuki/arsenal/bio_visor)生化召机$(/l)读取获取$(l:ryuki/arsenal/bio_winder)生化缠绕者$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bio_winder_vent",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:misc/blocks/deepslate_glass_ryuki)深层降临玻璃$(/l)"
+		}
+	]
+}

@@ -1,0 +1,71 @@
+{
+	"name": "进化瓶罐",
+	"icon": "kamenridercraft:rider_system_evol_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "great_dragon_evol_bottle",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换克罗兹的$(l:build/riders/cross-z#great)伟大克罗兹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:great_dragon_evol_bottle",
+			"text": "从$(l:build/structures/pandora_tower)潘多拉魔塔$(/l)的试炼战利品中获得$(br2)掉落自：$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cobra_evol_bottle",
+			"title": "眼镜蛇进化满装瓶罐",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作Evol的$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)$(br2)用于切换Evol的$(l:build/riders/evol#cobra)眼镜蛇$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cobra_evol_bottle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_system_evol_bottle",
+			"title": "骑士系统进化满装瓶罐",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作Evol的$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_system_evol_bottle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_evol_bottle",
+			"title": "龙进化满装瓶罐",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Evol的$(l:build/riders/evol#dragon)龙$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragon_evol_bottle",
+			"title": " ",
+			"text": "从$(l:build/structures/pandora_tower)潘多拉魔塔$(/l)的试炼战利品中获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rabbit_evol_bottle",
+			"title": "兔子进化满装瓶罐",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Evol的$(l:build/riders/evol#rabbit)兔子$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_evol_bottle",
+			"title": " ",
+			"text": "从$(l:build/structures/pandora_tower)潘多拉魔塔$(/l)的试炼战利品中获得"
+		}
+	]
+}

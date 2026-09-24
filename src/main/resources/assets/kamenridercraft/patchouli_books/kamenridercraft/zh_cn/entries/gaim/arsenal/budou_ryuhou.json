@@ -1,0 +1,16 @@
+{
+	"name": "葡萄龙炮",
+	"icon": "kamenridercraft:budou_ryuhou",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/riders/ryugen#budou)假面骑士龙玄$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/budou_ryuhou"
+		}
+	]
+}

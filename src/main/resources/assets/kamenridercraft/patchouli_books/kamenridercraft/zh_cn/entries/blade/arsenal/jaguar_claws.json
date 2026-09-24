@@ -1,0 +1,19 @@
+{
+	"name": "捷豹爪",
+	"icon": "kamenridercraft:jaguar_claws",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由美洲豹不死生物使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jaguar_claws",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

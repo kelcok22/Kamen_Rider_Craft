@@ -1,0 +1,16 @@
+{
+	"name": "西瓜双刃刀（巴隆版）",
+	"icon": "kamenridercraft:suika_sojinto_baron_ver",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由巴隆的$(l:gaim/riders/baron#suika)西瓜武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/suika_sojinto_baron_ver"
+		}
+	]
+}

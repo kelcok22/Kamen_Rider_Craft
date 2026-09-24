@@ -1,0 +1,16 @@
+{
+  "name": "十字手里剑",
+  "icon": "kamenridercraft:cross_shuriken",
+  "category": "kamenridercraft:zx/arsenal",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)第10位骑士诞生！假面骑士全员集合！！ (1984年，TV特别篇)$(br2)由$(l:zx/riders/zx)假面骑士ZX$(/l)使用"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zx/cross_shuriken"
+    }
+  ]
+}

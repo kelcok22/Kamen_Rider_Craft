@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士多拉德",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dorado",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明 (2024年，电影)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:gotchard/mobs/dreatrooper)恐惧骑兵$(/l)进化而来$(br2)掉落$(li)5-7个$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)$(li)1个$(l:gotchard/items/ride_chemy_cards#dark_ether_chemy_card)黑暗以太驾驭凯米卡$(/l)"
+		}
+	]
+}

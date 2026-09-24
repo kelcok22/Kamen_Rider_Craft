@@ -1,0 +1,18 @@
+{
+  "name": "飞电跃升手机&跃升蝗虫",
+  "icon": "kamenridercraft:hiden_risephone",
+  "category": "kamenridercraft:zero_one/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zero_one/hiden_risephone",
+      "text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)放置在方块上可召唤跃升蝗虫"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:risehopper",
+      "text": "为$(l:zero_one/riders/zero_one)假面骑士01$(/l)的专属载具"
+    }
+  ]
+}

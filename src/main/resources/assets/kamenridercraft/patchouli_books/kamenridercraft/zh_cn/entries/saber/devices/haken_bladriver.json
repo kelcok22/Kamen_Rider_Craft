@@ -1,0 +1,30 @@
+{
+	"name": "霸剑剑锋驱动器",
+	"icon": "kamenridercraft:haken_bladriver_falchion",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "haken_bladriver_falchion",
+			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，电影)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/falchion)假面骑士霸剑$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/haken_bladriver_falchion",
+          "text": "掉落自：$(li)$(l:saber/mobs/falchion)假面骑士霸剑$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "haken_bladriver_tassel",
+			"title": "霸剑剑锋驱动器(流苏)",
+			"text": "登场于：$(li)假面骑士圣刃：最终舞台 (2021年，舞台秀)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/tassel)假面骑士流苏"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/haken_bladriver_tassel"
+		}
+	]
+}

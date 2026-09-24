@@ -1,0 +1,16 @@
+{
+	"name": "魔蛇黄泉丸",
+	"icon": "kamenridercraft:maja_yomimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武：最终舞台 (2014年，舞台秀)$(br2)由$(l:gaim/riders/maja)假面骑士魔蛇$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/maja_yomimaru"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "公文箱弓",
+	"icon": "kamenridercraft:attache_arrow",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由 $(l:zero_one/riders/horobi)假面骑士灭$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/attache_arrow",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/horobi)假面骑士·灭$(/l)的装备$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备"
+		}
+	]
+}

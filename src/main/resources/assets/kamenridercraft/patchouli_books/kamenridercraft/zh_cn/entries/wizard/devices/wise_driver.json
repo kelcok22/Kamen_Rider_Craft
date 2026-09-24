@@ -1,0 +1,30 @@
+{
+	"name": "白魔法师驱动器",
+	"icon": "kamenridercraft:whitewizardriver",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "whitewizardriver",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/wiseman)假面骑士白魔法师$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/whitewizardriver",
+          "text": "掉落自：$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "whitewizardriver_f",
+			"title": "白魔法师驱动器(笛木历)",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武& Wizard 命运的战国电影大战 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/wiseman#koyomi)假面骑士白魔法师(笛木历)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/whitewizardriver_f"
+		}
+	]
+}

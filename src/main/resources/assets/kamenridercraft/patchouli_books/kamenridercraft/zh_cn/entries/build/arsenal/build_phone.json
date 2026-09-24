@@ -1,0 +1,18 @@
+{
+  "name": "Build手机&机械创造者",
+  "icon": "kamenridercraft:build_phone",
+  "category": "kamenridercraft:build/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:build/build_phone",
+      "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)在方块上使用可召唤机械创造者"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:machine_builder",
+      "text": "由$(l:build/riders/build)假面骑士Build$(/l)使用"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "破坏之盾",
+	"icon": "kamenridercraft:destruction_shield",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，剧场版)$(br2)使用者：圣刃的 $(l:saber/riders/saber#emotional_dragon)情感飞龙$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/destruction_shield"
+		}
+	]
+}

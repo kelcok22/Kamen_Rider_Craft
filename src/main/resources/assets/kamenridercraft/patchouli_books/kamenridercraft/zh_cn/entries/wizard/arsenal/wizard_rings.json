@@ -1,0 +1,552 @@
+{
+	"name": "巫师指环",
+	"icon": "kamenridercraft:light_ring",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "light_ring",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予夜视效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_ring",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "excite_ring",
+			"title": "激发巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予力量II"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:excite_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "defend_ring",
+			"title": "防护巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予抗性提升III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:defend_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blizzard_ring",
+			"title": "暴风雪巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予暴风雪效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blizzard_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)未知巫师指环(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gravity_ring",
+			"title": "重力巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予重力III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gravity_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_yellow_ring)未知巫师指环(黄)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "thunder_ring",
+			"title": "雷霆巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)向你面向的方向召唤一道闪电"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thunder_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_green_ring)未知巫师指环(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "explosion_ring",
+			"title": "爆炸巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)向你面向的方向引发爆炸"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:explosion_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)未知巫师指环(紫)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "teleport_ring",
+			"title": "瞬移巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)将你传送回重生点"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:teleport_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)未知巫师指环(紫)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "connect_ring",
+			"title": "连接巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)为你打开末影箱"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:connect_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sleep_ring",
+			"title": "睡眠巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)直接跳过夜晚"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sleep_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bind_ring",
+			"title": "捆绑巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)向你面向的方向放置蜘蛛网"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bind_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fall_ring",
+			"title": "掉落巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)在地面制造洞穴，使你坠落"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fall_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_cyan_ring)未知巫师指环(淡蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kick_strike_ring",
+			"title": "踢击突击巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予力量III和跳跃提升X"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kick_strike_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eclipse_ring",
+			"title": "日蚀巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)将时间切换为夜晚"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eclipse_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)未知巫师指环(紫)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "liquid_ring",
+			"title": "液化巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予海豚的恩惠X和水下呼吸"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:liquid_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drill_ring",
+			"title": "钻头巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予急迫IV"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drill_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "big_ring",
+        "title": "变大巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予变大III"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:big_ring",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "big_ring_color_ver",
+        "title": "变大巫师指环(上色版)",
+        "text": "登场于：$(li)变大巫师指环原版色彩版 (2012年，玩具系列)$(br2)赋予变大V"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:big_ring_color_ver",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "small_ring",
+			"title": "缩小巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予缩小XXI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:small_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flower_ring",
+			"title": "小花巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard in Magic Land (2013年，电影)$(br2)为你掉落一朵罂粟"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flower_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "extend_ring",
+			"title": "延伸巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予手臂加长V"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:extend_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smell_ring",
+			"title": "气味巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予难闻效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smell_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "merry_christmas_ring",
+			"title": "圣诞快乐巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予圣诞快乐效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:merry_christmas_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "time_ring",
+			"title": "时间巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)赋予时间效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:time_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_cyan_ring)未知巫师指环(淡蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "copy_ring",
+			"title": "复制巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)生成一个你的分身"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:copy_ring",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环(橙)$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "flame_ring_color_ver",
+        "title": "火焰巫师指环(上色版)",
+        "text": "登场于：$(li)火焰巫师指环原版色彩版 (2012年，玩具系列)$(br2)赋予抗火效果"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:flame_ring_color_ver",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_red_ring)未知巫师指环(红)$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "water_ring_color_ver",
+        "title": "流水巫师指环(上色版)",
+        "text": "登场于：$(li)流水巫师指环原版色彩版 (2012年，玩具系列)$(br2)赋予水下呼吸"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:water_ring_color_ver",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_blue_ring)未知巫师指环(蓝)$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_ring",
+        "title": "空我巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:kuuga/riders/kuuga)假面骑士空我$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kuuga_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "agito_ring",
+        "title": "亚极陀巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:agito/riders/agito)假面骑士亚极陀$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:agito_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ryuki_ring",
+        "title": "龙骑巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:ryuki/riders/ryuki)假面骑士龙骑$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ryuki_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "faiz_ring",
+        "title": "Faiz巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:faiz/riders/faiz)假面骑士555$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:faiz_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blade_ring",
+        "title": "剑巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:blade/riders/blade)假面骑士剑$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blade_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "hibiki_ring",
+        "title": "响鬼巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:hibiki/riders/hibiki)假面骑士响鬼$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hibiki_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kabuto_ring",
+        "title": "甲斗巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:kabuto/riders/kabuto)假面骑士甲斗$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kabuto_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "den_o_ring",
+        "title": "电王巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:den_o/riders/den_o)假面骑士电王$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:den_o_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_ring",
+        "title": "Kiva巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:kiva/riders/kiva)假面骑士Kiva$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "decade_ring",
+        "title": "Decade巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:decade/riders/decade)假面骑士Decade$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:decade_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "double_ring",
+        "title": "W巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:w/riders/double)假面骑士W$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:double_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "accel_ring",
+        "title": "Accel巫师指环",
+        "text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)召唤 $(l:w/riders/accel)假面骑士Accel$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:accel_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ooo_ring",
+        "title": "OOO巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:ooo/riders/ooo)假面骑士OOO$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ooo_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "birth_ring",
+        "title": "Birth巫师指环",
+        "text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)召唤 $(l:w/riders/birth)假面骑士Birth$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:birth_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fourze_ring",
+        "title": "Fourze巫师指环",
+        "text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)召唤 $(l:fourze/riders/fourze)假面骑士Fourze$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fourze_ring",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      }
+	]
+}

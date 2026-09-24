@@ -1,0 +1,17 @@
+{
+	"name": "记忆体碎片",
+	"icon": "kamenridercraft:gaiamemory",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用作合成大多数W系列物品的基础物品和修复材料$(br2)掉落自：$(li)$(l:misc/blocks/gaiamemoryblock)记忆体矿石$(/l)$(li)$(l:misc/blocks/deepslate_gaiamemoryblock)深层记忆体矿石$(/l)$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)$(li)$(l:w/mobs/foundation_x_masquerade)假面舞会掺杂体(财团X)$(/l)$(li)$(l:w/mobs/commander_dopant)指挥官掺杂体$(/l)$(li)$(l:w/mobs/claydoll_dopant)黏土玩偶掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/gaiamemory",
+			"text": "$(li)$(l:w/mobs/taboo_dopant)禁忌掺杂体$(/l)$(li)$(l:w/mobs/nazca_dopant)纳斯卡掺杂体$(/l)$(li)$(l:w/mobs/smilodon_dopant)剑齿虎掺杂体$(/l)$(li)$(l:w/mobs/weather_dopant)天气掺杂体$(/l)$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)"
+		}
+	]
+}

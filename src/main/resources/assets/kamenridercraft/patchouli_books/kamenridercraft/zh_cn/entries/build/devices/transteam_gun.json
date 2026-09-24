@@ -1,0 +1,33 @@
+{
+	"name": "变身烟雾枪",
+	"icon": "kamenridercraft:transteam_gun_night_rogue",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "transteam_gun_night_rogue",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/night_rogue)夜霸$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:transteam_gun_night_rogue",
+			"title": " ",
+			"text": "不装备任何腰带，发射$(l:build/arsenal/transteam_gun)变身烟雾枪$(/l)即可获得$(br2)掉落自：$(li)$(l:build/mobs/night_rogue)夜霸$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "transteam_gun_blood_stalk",
+			"title": "变身烟雾枪(血潜)",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/blood_stalk)血潜$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:transteam_gun_blood_stalk",
+			"title": " ",
+			"text": "不装备任何腰带，且副手装备$(l:build/items/fullbottles#lost_cobra_full_bottle)迷失眼镜蛇满装瓶罐$(/l)时，发射$(l:build/arsenal/transteam_gun)变身烟雾枪$(/l)即可获得$(br2)掉落自：$(li)$(l:build/mobs/blood_stalk)血潜$(/l)的装备"
+		}
+	]
+}

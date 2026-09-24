@@ -1,0 +1,16 @@
+{
+	"name": "利剑指引者",
+	"icon": "kamenridercraft:sword_bringer",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士斩月 (2015年，V-Cinema电影)$(br2)由$(l:gaim/riders/idunn)假面骑士伊登$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/sword_bringer"
+		}
+	]
+}

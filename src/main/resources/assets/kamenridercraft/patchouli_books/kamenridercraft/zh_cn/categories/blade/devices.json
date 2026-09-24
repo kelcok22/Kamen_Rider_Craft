@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:blade/main",
+    "name": "腰带",
+    "description": "剑系列角色所使用的变身道具. 可以在铁砧上使用 $(l:blade/items/bladecard)空白觉醒卡$(/l)修复",
+    "icon": "kamenridercraft:blay_buckle",
+    "sortnum": 1
+}

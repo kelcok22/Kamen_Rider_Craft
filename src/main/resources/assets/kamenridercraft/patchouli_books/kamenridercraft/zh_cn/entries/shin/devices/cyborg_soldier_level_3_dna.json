@@ -1,0 +1,16 @@
+{
+	"name": "改造士兵Level 3基因",
+	"icon": "kamenridercraft:cyborg_soldier_level_3_dna",
+	"category": "kamenridercraft:shin/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)真·假面骑士 序章 (1992年，电影)$(br2)与$(l:shin/devices/armor)真装甲$(/l)一起穿戴，可变身为$(l:shin/riders/cyborg_soldier_level_3)改造士兵Level 3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:shin/cyborg_soldier_level_3_dna"
+		}
+	]
+}

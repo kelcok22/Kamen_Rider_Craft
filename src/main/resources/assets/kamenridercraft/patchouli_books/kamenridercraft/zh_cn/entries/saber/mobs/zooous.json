@@ -1,0 +1,21 @@
+{
+	"name": "兹欧斯",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zooous",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2%概率从$(l:saber/mobs/shimi)士弥$(/l)进化而来$(br2)特殊机制：$(li)背包中持有$(l:saber/items/wonder_ride_books#tategami_hyoujuu_senki_wonder_ride_book)鬃毛冰兽战记奇幻驾驭书$(/l)时，击杀后进化为$(l:saber/mobs/zooous_predator)兹欧斯·捕食者$(/l)$(br2)掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/great_book_fragment)全知全能之书的碎片$(/l)(25%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)1本$(l:saber/items/wonder_ride_books#king_lion_daisenki_wonder_ride_book)狮王大战纪奇幻驾驭书$(/l)（需背包中持有$(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)天空的天马$(/l)、$(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记$(/l)及$(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)彼得幻想曲$(/l)奇幻驾驭书）"
+		}
+	]
+}

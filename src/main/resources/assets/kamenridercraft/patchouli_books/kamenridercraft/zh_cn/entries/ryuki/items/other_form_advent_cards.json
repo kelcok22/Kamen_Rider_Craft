@@ -1,0 +1,71 @@
+{
+    "name": "其他形态降临卡",
+    "icon": "kamenridercraft:drag_shield_vent_form",
+    "category": "kamenridercraft:ryuki/items",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "drag_shield_vent_form",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)用于切换龙骑的 $(l:ryuki/riders/ryuki#dragshield)基础形态(带龙护盾)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:drag_shield_vent_form",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki)假面骑士龙骑$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wing_wall_vent",
+            "title": "羽翼屏障防卫降临卡",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)用于切换夜骑的 $(l:ryuki/riders/knight#wingwall)基础形态(带羽翼屏障)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:wing_wall_vent",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight)假面骑士夜骑$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "giga_cannon_vent",
+            "title": "巨大加农发射器降临卡",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)用于切换铁兵的 $(l:ryuki/riders/zolda#gigacannon)基础形态(带巨大加农)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:giga_cannon_vent",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#zolda)假面骑士铁兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "giga_tector_vent",
+            "title": "巨大铁臂防卫降临卡",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)用于切换铁兵的 $(l:ryuki/riders/zolda#gigatector)基础形态(带巨大铁臂)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:giga_tector_vent",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#zolda)假面骑士铁兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drag_shield_vent_form_ryuga",
+            "title": "龙护盾防卫降临卡(龙牙)",
+            "text": "登场于：$(li)假面骑士龙骑：最终篇章 (2002年，电影)$(br2)用于切换龙牙的 $(l:ryuki/riders/ryuga#dragshield)基础形态(带龙护盾)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:drag_shield_vent_form_ryuga",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuga)假面骑士龙牙$(/l)"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "黑暗龙召机Ⅱ",
+	"icon": "kamenridercraft:black_drag_visor_zwei",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)World of If（2005年，S.I.C. Hero Saga）$(br2)由龙牙的$(l:ryuki/riders/ryuga#survive)生存$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_drag_visor_zwei",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#black_drag_visor_zwei_vent)黑暗龙召机Ⅱ射击降临$(/l)获得"
+		}
+	]
+}

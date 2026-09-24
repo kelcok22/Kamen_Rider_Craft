@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士斯特利乌斯",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:storious_rider",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#storious_boss_block)斯特利乌斯BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)16-20本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)5本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#grimoire_wonder_ride_book)魔导之书奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#wonder_almighty_wonder_ride_book)奇幻全能奇幻驾驭书$(/l)$(li)1个$(l:saber/devices/dooms_driver_buckle#dooms_driver_buckle_storious)破灭驱动器带扣$(/l)$(li)1个$(l:saber/arsenal/bilgamed)毕尔加梅特$(/l)"
+		}
+	]
+}

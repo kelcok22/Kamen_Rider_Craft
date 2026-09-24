@@ -1,0 +1,193 @@
+{
+	"name": "驾驭怪物卡牌",
+	"icon": "kamenridercraft:bakuen_no_senshi",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "cyclonehopper",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换一号的 $(l:ichigo/riders/ichigo#cyclonehopper_ichigo)旋风蝗虫$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/cyclonehopper"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flaresalamander",
+			"title": "耀斑蝾螈 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换V3的 $(l:v3/riders/v3#flaresalamander_v3)耀斑蝾螈$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/flaresalamander"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "grandgouram",
+			"title": "雄伟戈拉姆 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换空我的 $(l:kuuga/riders/kuuga#grandgouram)惊异全能形态/雄伟戈拉姆卡牌战士$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/grandgouram"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stagtornador",
+			"title": "雄鹿龙卷风 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换亚极陀的 $(l:agito/riders/agito#stagtornador)大地形态/雄鹿龙卷风卡牌战士$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/stagtornador"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "leatheraider",
+			"title": "利刃突袭者 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换基尔斯的 $(l:agito/riders/gills#leatheraider)利刃突袭者$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/leatheraider"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragreder",
+			"title": "龙深红者 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换龙骑的 $(l:ryuki/riders/ryuki#dragreder)龙深红者$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/dragreder"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragranzer",
+			"title": "龙骑兵 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换龙骑的 $(l:ryuki/riders/ryuki#dragranzer)龙骑兵$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/dragranzer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "darkwing",
+			"title": "黑翼蝙蝠 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换夜骑的 $(l:ryuki/riders/knight#darkwing)黑翼蝙蝠$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/darkwing"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greywolch",
+			"title": "光子灰狼 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换555的 $(l:faiz/riders/faiz#greywolch)光子灰狼$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/greywolch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chaosdile",
+			"title": "混沌 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换凯撒的 $(l:faiz/riders/kaixa#chaosdile)混沌$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/chaosdile"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "herculespader",
+			"title": "黑桃赫拉克勒斯 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换剑的 $(l:blade/riders/blade#herculespader)黑桃赫拉克勒斯$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/herculespader"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shadowmantis",
+			"title": "暗影螳螂 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换圣杯的 $(l:blade/riders/chalice#shadowmantis)暗影螳螂$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/shadowmantis"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "akanetaka",
+			"title": "茜鹰 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换响鬼的 $(l:hibiki/riders/hibiki#akanetaka)茜鹰$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/akanetaka"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exbeeter",
+			"title": "EX延伸者 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换甲斗的 $(l:kabuto/riders/kabuto#exbeeter)EX延伸者卡牌战士$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/exbeeter"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scissorbeeter",
+			"title": "剪刀甲虫 驾驭怪物卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换钢斗的 $(l:kabuto/riders/gatack#scissorbeeter)剪刀甲虫卡牌战士$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/scissorbeeter"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakuen_no_senshi",
+			"title": "爆炎战士 爆裂卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br)$(li)可以切换龙牙的 $(l:ryuki/riders/ryuga#bakuen_no_warrior)爆炎战士$(/l) 形态$(li)可以切换555的 $(l:faiz/riders/faiz#bakuen_no_warrior)爆裂形态（爆炎战士）$(/l)$(li)可以切换 $(l:hibiki/riders/hibiki#bakuen_no_warrior)响鬼·红（爆炎战士）$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/bakuen_no_senshi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jinrai_no_senshi",
+			"title": "迅雷战士 爆裂卡牌",
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br)$(li)可以切换空我的 $(l:kuuga/riders/kuuga#jinrai_no_warrior)升华全能形态（迅雷战士）$(/l) 形态$(li)可以切换剑的 $(l:blade/riders/blade#jinrai_no_warrior)迅雷战士$(/l) 形态$(li)可以切换黑甲斗的 $(l:kabuto/riders/dark_kabuto#jinrai_no_warrior)迅雷战士$(/l) 形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:misc/jinrai_no_senshi"
+		}
+	]
+}

@@ -1,0 +1,232 @@
+{
+	"name": "假面骑士Zeztz",
+	"icon": "kamenridercraft:impact_capsem",
+	"category": "kamenridercraft:zeztz/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "impact",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:impact_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "物理脉冲",
+			"text": "通过使用 $(l:zeztz/items/capsems#impact_capsem)冲击梦境胶囊$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Zeztz",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "transform",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:transform_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "物理变换",
+        "text": "通过使用 $(l:zeztz/items/capsems#transform_capsem)变换梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)手臂加长 III$(li)力量"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "wing",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wing_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "物理羽翼",
+        "text": "通过使用 $(l:zeztz/items/capsems#wing_capsem)羽翼梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)滑翔$(li)力量"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "stream",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stream_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "科技涌动",
+			"text": "通过使用 $(l:zeztz/items/capsems#stream_capsem)涌动梦境胶囊$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Zeztz",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 II$(li)力量"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "machinery",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:machinery_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "科技器械",
+        "text": "通过使用 $(l:zeztz/items/capsems#machinery_capsem)器械梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)钻头$(li)速度"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "projection",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:projection_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "科技投影",
+        "text": "通过使用 $(l:zeztz/items/capsems#projection_capsem)投影梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "recovery",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:recovery_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "灵犀重构",
+			"text": "通过使用 $(l:zeztz/items/capsems#recovery_capsem)重构梦境胶囊$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Zeztz",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)毒药抗性$(li)自动修复"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "barrier",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:barrier_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "精魂屏障",
+        "text": "通过使用 $(l:zeztz/items/capsems#barrier_capsem)屏障梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "wonder",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wonder_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "法则奇迹",
+			"text": "通过使用 $(l:zeztz/items/capsems#wonder_capsem)奇迹梦胶囊$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Zeztz",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 II$(br2)专属技能：$(li)缩小$(li)变大"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "gravity",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gravity_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "范式重力",
+        "text": "通过使用 $(l:zeztz/items/capsems#gravity_capsem)重力梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)失重 VI$(li)速度"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "plasma",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:plasma_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "闪电等离子",
+        "text": "通过使用 $(l:zeztz/items/capsems#plasma_capsem)等离子梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度 II$(li)雷电拳$(li)力量 II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "booster",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:booster_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "等离子增幅",
+        "text": "通过使用 $(l:zeztz/items/capsems#booster_capsem)增幅器梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度 III$(li)雷电拳$(li)推进$(li)力量 II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "catastrom",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dualmare_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "灾厄",
+        "text": "通过使用 $(l:zeztz/items/capsems#dualmare_capsem)双魇梦胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)速度$(li)抗性提升 III$(li)夜视$(li)跳跃提升$(li)力量 II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "orderm",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dualmare_capsem_orderm\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "秩序",
+        "text": "通过使用 $(l:zeztz/items/capsems#dualmare_capsem)双魇梦胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)夜视$(li)急迫 II$(li)跳跃提升 II$(li)力量 II"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "zeroider",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeztz_and_code_zeroider_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "冲击零蚀者",
+        "text": "通过使用 $(l:zeztz/items/capsems#zeztz_and_code_zeroider_capsem)Zeztz与暗码零蚀者梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于:$(li)假面骑士Zeztz: 轰出去!巨大机器人CodeZeroider!! (2026年, 超战斗DVD)$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果:$(li)拳力提升$(li)推进$(li)力量"
+      },
+      {
+        "type": "patchouli:entity",
+        "anchor": "charge",
+        "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:charge_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "想象",
+        "text": "通过使用 $(l:zeztz/items/capsems#charge_capsem)充能梦境胶囊$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Zeztz",
+        "text": "登场于：$(li)假面骑士Zeztz：入梦（2026年，舞台剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)速度 II$(li)力量$(li)快乐模式"
+      }
+    ]
+}

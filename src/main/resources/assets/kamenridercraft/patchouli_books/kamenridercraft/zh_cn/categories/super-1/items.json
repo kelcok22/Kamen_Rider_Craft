@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:super-1/main",
+    "name": "回旋核心",
+    "description": " ",
+    "icon": "kamenridercraft:cyclode_core",
+    "sortnum": 2
+}

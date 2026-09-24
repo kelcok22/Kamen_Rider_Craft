@@ -1,0 +1,16 @@
+{
+	"name": "太阳升华器",
+	"icon": "kamenridercraft:sun_riser",
+	"category": "kamenridercraft:black_rx/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)与$(l:black_rx/devices/armor)Black RX装甲$(/l)一起穿戴，可变身为$(l:black_rx/riders/black_rx)假面骑士Black RX$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/sun_riser"
+		}
+	]
+}

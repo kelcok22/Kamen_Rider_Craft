@@ -1,0 +1,17 @@
+{
+	"name": "龙塔罗斯",
+	"icon": "kamenridercraft:rider_ticket_gun",
+	"category": "kamenridercraft:den_o/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ryutaros",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br)生命值：40"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成于$(l:den_o/structures/denliner_ikazuchi)电班列 电雷$(/l) 内部$(br2)可使用$(l:misc/items/foods#vienna_coffee)维也纳咖啡$(/l) 驯服$(br2)驯服后，手持$(l:den_o/arsenal/rider_pass)骑士车票(通行)$(/l) 右键点击，可变身为$(l:den_o/riders/den_o#gun)假面骑士电王 圣枪形态$(/l)$(br2)掉落$(li)1-3个$(l:den_o/items/imagin_sand)异魔神沙$(/l)$(li)1个$(l:den_o/items/rider_tickets#rider_ticket_gun)骑士车票(龙塔罗斯)$(/l)（10%）"
+		}
+	]
+}

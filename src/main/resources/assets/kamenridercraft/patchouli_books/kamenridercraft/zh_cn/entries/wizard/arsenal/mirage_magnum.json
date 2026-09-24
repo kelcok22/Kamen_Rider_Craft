@@ -1,0 +1,16 @@
+{
+	"name": "幻影麦林枪",
+	"icon": "kamenridercraft:mirage_magnum",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)由$(l:wizard/riders/beast#hyper)假面骑士Beast（海帕形态）$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/mirage_magnum"
+		}
+	]
+}

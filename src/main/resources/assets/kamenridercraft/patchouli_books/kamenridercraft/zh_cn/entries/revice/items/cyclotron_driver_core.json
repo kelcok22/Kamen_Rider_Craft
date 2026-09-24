@@ -1,0 +1,19 @@
+{
+	"name": "回旋加速驱动器核心",
+	"icon": "kamenridercraft:cyclotron_driver_core",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士：超越世代 (2021年，电影)$(br2)用于合成世纪的$(l:revice/devices/cyclotron_driver)回旋加速驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyclotron_driver_core",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

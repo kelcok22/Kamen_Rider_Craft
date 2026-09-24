@@ -1,0 +1,17 @@
+{
+	"name": "烟雾剑",
+	"icon": "kamenridercraft:steam_blade",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/blood_stalk)血潜$(/l)、$(l:build/riders/night_rogue)夜霸$(/l)以及$(l:build/riders/evol)假面骑士Evol$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/steam_blade",
+          "text": "掉落自：$(li)$(l:build/mobs/night_rogue)夜霸$(/l)的装备$(li)$(l:build/mobs/remocon_bros)齿轮兄弟$(/l)的装备$(li)$(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)的装备"
+		}
+	]
+}

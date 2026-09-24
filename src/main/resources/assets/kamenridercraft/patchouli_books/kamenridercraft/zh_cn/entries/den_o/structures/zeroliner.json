@@ -1,0 +1,21 @@
+{
+	"name": "零班列",
+	"icon": "kamenridercraft:den_o_logo",
+	"category": "kamenridercraft:den_o/structures",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "零班列",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)生成于时间之沙各处$(br2)箱子战利品：$(li)1个 $(l:den_o/items/zeronos_cards#zeronos_altair_card)零诺斯牵牛星卡$(/l)$(li)4-6个 $(l:den_o/items/imagin_sand)异魔神沙$(/l)（12%）$(li)3-7个 $(l:den_o/items/zeronos_cards#zeronos_plat_card)零诺斯月台卡$(/l)（40%）$(li)1个 $(l:den_o/items/zeronos_cards#zeronos_altair_card)零诺斯牵牛星卡$(/l)（24%）$(li)1个 $(l:den_o/items/zeronos_cards#zeronos_vega_card)零诺斯织女星卡$(/l)（24%）"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/zeroliner.png"
+			],
+			"title": " "
+		}
+	]
+}

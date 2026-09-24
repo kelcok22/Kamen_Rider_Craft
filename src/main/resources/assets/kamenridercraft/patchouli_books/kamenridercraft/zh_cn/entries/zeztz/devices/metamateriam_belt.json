@@ -1,0 +1,19 @@
+{
+	"name": "分身投影腰带",
+	"icon": "kamenridercraft:metamateriam_belt",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/metamateriam)分身投影$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metamateriam_belt",
+			"title": " ",
+			"text": "该物品目前暂无法获取"
+		}
+	]
+}

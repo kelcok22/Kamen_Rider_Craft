@@ -1,0 +1,16 @@
+{
+	"name": "Beast驱动器",
+	"icon": "kamenridercraft:beastdriver",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/beast#beast)假面骑士Beast$(/l)$(br2)最多可存放7组巫师指环"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/beastdriver"
+		}
+	]
+}

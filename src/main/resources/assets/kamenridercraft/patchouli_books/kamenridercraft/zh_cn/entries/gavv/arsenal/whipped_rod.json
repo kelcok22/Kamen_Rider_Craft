@@ -1,0 +1,16 @@
+{
+	"name": "奶油长棍",
+	"icon": "kamenridercraft:whipped_rod",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由$(l:gavv/mobs/whipped_soldier)奶油兵$(/l)使用"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/whipped_rod"
+      }
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "风双剑翠风(二刀流)",
+	"icon": "kamenridercraft:fuusouken_hayate_nitouryu2",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/kenzan)假面骑士Kenzan$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/fuusouken_hayate_nitouryu"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/fuusouken_hayate_nitouryu2"
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"name": "台风能量转换器",
+	"icon": "kamenridercraft:shin_typhoon_core",
+	"category": "kamenridercraft:shin_kamen_rider/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "shin_typhoon_core",
+			"text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br2)用于合成No.1的$(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_ichigo)新台风腰带(No.1)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_typhoon_core",
+			"text": "掉落自：$(li)$(l:shin_kamen_rider/mobs/batta_augment)量产型蝗虫怪人$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shin_typhoon_core2",
+			"title": "台风能量转换器(No.2)",
+			"text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br2)用于合成No.2的$(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_nigo)新台风腰带(No.2)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_typhoon_core2",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:shin_kamen_rider/mobs/batta_augment)量产型蝗虫怪人$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shin_typhoon_core_2_1",
+			"title": "台风能量转换器(No.2+1)",
+			"text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br2)用于合成No.2+1的$(l:shin_kamen_rider/devices/shin_typhoon#shin_typhoon_2_1)新台风腰带(No.2+1)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_typhoon_core_2_1",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:shin_kamen_rider/mobs/shin_no_0)假面骑士No.0$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "ultimate_half_typhoon_core",
+        "title": "半究极台风能量转换器",
+        "text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br2)用于合成No.0的$(l:shin_kamen_rider/devices/ultimate_half_typhoon)半究极台风腰带$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ultimate_half_typhoon_core",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:shin_kamen_rider/mobs/shin_no_0)假面骑士No.0$(/l)"
+      }
+	]
+}

@@ -1,0 +1,292 @@
+{
+  "name": "最终假面驾驭卡",
+  "icon": "kamenridercraft:kuuga_ultimate_card",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_ultimate_card",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:kuuga/riders/kuuga#ultimate)假面骑士空我 究极形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/kuuga_ultimate_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "agito_shining_card",
+      "title": "亚极陀闪耀 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:agito/riders/agito#shining)假面骑士亚极陀闪耀$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/agito_shining_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ryuki_survive_card",
+      "title": "生存龙骑 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:ryuki/riders/ryuki#survive)假面骑士生存龙骑$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ryuki_survive_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "faiz_blaster_card",
+      "title": "Faiz爆裂 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:faiz/riders/faiz#blaster)假面骑士Faiz爆裂$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/faiz_blaster_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "blade_king_card",
+      "title": "帝王剑 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:blade/riders/blade#king)假面骑士帝王剑$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/blade_king_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "armed_hibiki_card",
+      "title": "装甲响鬼 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:hibiki/riders/hibiki#armed)装甲响鬼$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/armed_hibiki_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kabuto_hyper_card",
+      "title": "甲斗海帕 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:kabuto/riders/kabuto#hyper)假面骑士甲斗海帕$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kabuto_hyper_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_liner_card",
+      "title": "电王班列 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:den_o/riders/den_o#liner)假面骑士电王班列$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_liner_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kiva_emperor_card",
+      "title": "魔皇龙 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成Decade的$(l:decade/items/k_touch)K-Touch$(/l)$(br2)Decade完全形态状态下右键点击，可召唤$(l:kiva/riders/kiva#emperor)假面骑士魔皇龙$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kiva_emperor_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "w_xtreme_card",
+      "title": "W疾风王牌极致 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:w/riders/double#xtreme)假面骑士W 疾风王牌极致$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/w_xtreme_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ooo_putotyra_card",
+      "title": "OOO恐龙联组 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:ooo/riders/ooo#putotyra)假面骑士OOO 恐龙联组$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ooo_putotyra_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "fourze_cosmic_card",
+      "title": "Fourze宇宙状态 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:fourze/riders/fourze#cosmicstates)假面骑士Fourze 宇宙状态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/fourze_cosmic_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "wizard_infinity_card",
+      "title": "Wizard无限风格 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:wizard/riders/wizard#infinity)假面骑士Wizard 无限风格$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/wizard_infinity_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "gaim_kiwami_card",
+      "title": "铠武极武装 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:gaim/riders/gaim#kiwami)假面骑士铠武极武装$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/gaim_kiwami_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "drive_tridoron_card",
+      "title": "Drive赛特朗型号 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:drive/riders/drive#tridoron)假面骑士Drive 赛特朗型号$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/drive_tridoron_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ghost_mugen_card",
+      "title": "Ghost无限魂 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:ghost/riders/ghost#mugen)假面骑士Ghost 无限魂$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ghost_mugen_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ex_aid_muteki_card",
+      "title": "Ex-Aid无敌玩家 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:ex_aid/riders/ex_aid#muteki)假面骑士Ex-Aid 无敌玩家$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ex_aid_muteki_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "build_genius_card",
+      "title": "build天才 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:build/riders/build#genius)假面骑士Build天才形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/build_genius_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "grand_zi_o_card",
+      "title": "崇皇时王 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:zi_o/riders/zi_o#grandzi_o)假面骑士崇皇时王$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/grand_zi_o_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "zero_two_card",
+      "title": "02 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)Decade完全形态21状态下右键点击，可召唤$(l:zero_one/riders/zero_two)假面骑士02$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/zero_two_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "xross_saber_card",
+      "title": "十圣刃 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/xross_saber_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ultimate_revi_card",
+      "title": "究极利维 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ultimate_revi_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ultimate_vice_card",
+      "title": "究极维斯 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ultimate_vice_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "geats_ix_card",
+      "title": "极狐马克九 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/geats_ix_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_rising_ultimate_card",
+      "title": "空我究极升华 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士×假面骑士 W&Decade MOVIE大战2010 (2009年，电影)$(br2)Decade完全形态状态下右键点击，可召唤$(l:kuuga/riders/kuuga#rising_ultimate)假面骑士空我 究极升华$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_rising_ultimate_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_chou_climax_card",
+      "title": "电王超顶点 最终假面形态假面驾驭卡",
+      "text": "登场于：$(li)假面骑士×假面骑士 W&Decade MOVIE大战2010 (2009年，电影)$(br2)Decade完全形态状态下右键点击，可召唤$(l:den_o/riders/den_o#super_climax)假面骑士电王 超顶点形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_chou_climax_card"
+    }
+  ]
+}

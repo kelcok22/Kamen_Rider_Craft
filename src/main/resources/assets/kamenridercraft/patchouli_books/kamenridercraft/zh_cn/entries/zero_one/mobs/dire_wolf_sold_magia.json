@@ -1,0 +1,17 @@
+{
+	"name": "恐狼索尔德魔机偶",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dire_wolf_sold_magia",
+			"text": "登场于：$(li)01外传：假面骑士灭亡迅雷 (2021年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 150$(br2)有2%的概率从$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)进化而来$(br2)掉落$(li)3-5个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)1个$(l:zero_one/items/zetsumerisekeys#dire_wolf_zetsumerisekey)恐狼绝灭升华钥$(/l)"
+		}
+	]
+}

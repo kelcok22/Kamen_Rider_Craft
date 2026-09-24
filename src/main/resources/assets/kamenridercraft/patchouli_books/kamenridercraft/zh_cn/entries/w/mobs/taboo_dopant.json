@@ -1,0 +1,17 @@
+{
+  "name": "禁忌掺杂体",
+  "icon": "kamenridercraft:w_logo",
+  "category": "kamenridercraft:w/mobs",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:taboo_dopant",
+      "text": "登场于：$(li)假面骑士W (2009年，电视剧)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "生命值: 110$(br2)通过挖掘$(l:misc/blocks/boss_blocks#taboo_boss_block)禁忌掺杂体BOSS召唤方块$(/l)召唤而来$(br2)特殊能力:$(li)具有飞行能力并且会发射火球$(br2)掉落$(li)1个$(l:w/items/dopant_memories#taboo_memory)禁忌记忆体$(/l)$(li)2-4个$(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) (33.3%)$(li)2-4个$(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) (33.3%)$(li)1个$(l:w/items/gaiamemory)记忆体碎片$(/l) (33.3%)$(li)3-6个$(l:w/items/gaiamemory)记忆体碎片$(/l)"
+    }
+  ]
+}

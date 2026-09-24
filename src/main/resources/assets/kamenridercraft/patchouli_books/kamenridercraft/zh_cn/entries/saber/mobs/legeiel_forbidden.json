@@ -1,0 +1,17 @@
+{
+	"name": "拉结尔·禁忌",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:legeiel_forbidden",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "从$(l:saber/mobs/legeiel)拉结尔$(/l)进化而来$(br2)掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/alter_ride_books#legeiel_alter_ride_book)拉结尔魔改驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#elemental_dragon_wonder_ride_book)元素飞龙奇幻驾驭书$(/l)（需背包中有一本$(l:saber/items/wonder_ride_books#primitive_dragon_wonder_ride_book)远古飞龙奇幻驾驭书$(/l)）"
+		}
+	]
+}

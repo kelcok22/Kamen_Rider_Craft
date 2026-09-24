@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zeztz/main",
+    "name": "武器",
+    "description": "Zeztz系列骑士所使用的武器和道具. 可以在铁砧上使用 $(l:zeztz/items/code_capsem)代码胶囊$(/l)修复.",
+    "icon": "kamenridercraft:breakam_zeztzer_sword",
+    "sortnum": 3
+}

@@ -1,0 +1,16 @@
+{
+	"name": "无双军刀（锁镰模式）",
+	"icon": "kamenridercraft:musou_saber_kusarigama",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/riders/gaim)假面骑士铠武$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/musou_saber_kusarigama"
+		}
+	]
+}

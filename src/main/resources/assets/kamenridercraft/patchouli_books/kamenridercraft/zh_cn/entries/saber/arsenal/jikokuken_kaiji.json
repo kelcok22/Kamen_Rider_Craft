@@ -1,0 +1,19 @@
+{
+	"name": "时国剑界时",
+	"icon": "kamenridercraft:jikokuken_kaiji",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/durendal)假面骑士恒剑$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jikokuken_kaiji",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/durendal)假面骑士恒剑$(/l)"
+		}
+	]
+}

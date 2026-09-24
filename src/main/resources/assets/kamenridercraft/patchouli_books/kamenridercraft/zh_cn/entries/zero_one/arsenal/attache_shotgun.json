@@ -1,0 +1,17 @@
+{
+	"name": "公文箱枪",
+	"icon": "kamenridercraft:attache_shotgun",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由 $(l:zero_one/riders/vulcan)假面骑士巴尔坎$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/attache_shotgun",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备"
+		}
+	]
+}

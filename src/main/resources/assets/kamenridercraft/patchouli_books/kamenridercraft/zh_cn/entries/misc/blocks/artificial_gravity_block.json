@@ -1,0 +1,19 @@
+{
+	"name": "重力控制方块",
+	"icon": "kamenridercraft:artificial_gravity_block",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "通入传输红石信号，让周围实体施加Ⅳ级重力效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:artificial_gravity_block",
+			"title": " ",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+		}
+	]
+}

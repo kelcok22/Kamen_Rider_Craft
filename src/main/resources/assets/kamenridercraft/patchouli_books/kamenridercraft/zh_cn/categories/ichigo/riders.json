@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ichigo/main",
+    "name": "一号系列骑士",
+    "description": "来自《假面骑士一号》系列或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:ichigohead",
+    "sortnum": 0
+}

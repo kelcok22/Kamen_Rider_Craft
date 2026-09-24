@@ -1,0 +1,536 @@
+{
+	"name": "骑士核心ID",
+	"icon": "kamenridercraft:geats_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成极狐的 $(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)$(br2)用于将 $(l:geats/riders/geats)假面骑士极狐$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_oneness_rider_core_id",
+			"title": "极狐合一ID核心",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐 (2023年，电影)$(br2)用于切换极狐的 $(l:geats/riders/geats#oneness)合一$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/geats_oneness_rider_core_id"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tycoon_rider_core_id",
+			"title": "太狸ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成太狸的 $(l:geats/devices/desire_driver#desire_driver_tycoon)欲望驱动器(太狸)$(/l)$(br2)用于将 $(l:geats/riders/tycoon)假面骑士太狸$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tycoon_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "na_go_rider_core_id",
+			"title": "娜猫ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成娜猫的 $(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)$(br2)用于将 $(l:geats/riders/na_go)假面骑士娜猫$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:na_go_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffa_rider_core_id",
+			"title": "霸牛ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成霸牛的 $(l:geats/devices/desire_driver#desire_driver_buffa)欲望驱动器(霸牛)$(/l)$(br2)用于将 $(l:geats/riders/buffa)假面骑士霸牛$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffa_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffa_rider_core_id_cracked",
+			"title": "霸牛ID核心(破碎的)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于将 $(l:geats/riders/buffa)假面骑士霸牛$(/l)还原为登录形态，并切换 $(l:geats/riders/buffa#jyamato)邪魔徒$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffa_rider_core_id_cracked",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "punkjack_rider_core_id",
+			"title": "朋克杰克ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成朋克杰克的 $(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)$(br2)用于将 $(l:geats/riders/punkjack)假面骑士朋克杰克$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:punkjack_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nudge_sparrow_rider_core_id",
+			"title": "灵雀ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成灵雀的 $(l:geats/devices/desire_driver#desire_driver_nudge_sparrow)欲望驱动器(灵雀)$(/l)$(br2)用于将 $(l:geats/riders/nudge_sparrow)假面骑士灵雀$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nudge_sparrow_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shirowe_rider_core_id",
+			"title": "白熊ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成白熊的 $(l:geats/devices/desire_driver#desire_driver_shirowe)欲望驱动器(白熊)$(/l)$(br2)用于将 $(l:geats/riders/shirowe)假面骑士白熊$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirowe_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ginpen_rider_core_id",
+			"title": "鹅企ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成鹅企的 $(l:geats/devices/desire_driver#desire_driver_ginpen)欲望驱动器(鹅企)$(/l)$(br2)用于将 $(l:geats/riders/ginpen)假面骑士鹅企$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginpen_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mary_rider_core_id",
+			"title": "咩雳ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成咩雳的 $(l:geats/devices/desire_driver#desire_driver_mary)欲望驱动器(咩雳)$(/l)$(br2)用于将 $(l:geats/riders/mary)假面骑士咩雳$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mary_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "da_paan_rider_core_id",
+			"title": "猫熊ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成猫熊的 $(l:geats/devices/desire_driver#desire_driver_da_paan)欲望驱动器(猫熊)$(/l)$(br2)用于将 $(l:geats/riders/da_paan)假面骑士猫熊$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:da_paan_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "keirou_rider_core_id",
+			"title": "鸮老ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成鸮老的 $(l:geats/devices/desire_driver#desire_driver_keirou)欲望驱动器(鸮老)$(/l)$(br2)用于将 $(l:geats/riders/keirou)假面骑士鸮老$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:keirou_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "letter_rider_core_id",
+			"title": "信羊ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成信羊的 $(l:geats/devices/desire_driver#desire_driver_letter)欲望驱动器(信羊)$(/l)$(br2)用于将 $(l:geats/riders/letter)假面骑士信羊$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:letter_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lopo_rider_core_id",
+			"title": "狼魄ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成狼魄的 $(l:geats/devices/desire_driver#desire_driver_lopo)欲望驱动器(狼魄)$(/l)$(br2)用于将 $(l:geats/riders/lopo)假面骑士狼魄$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lopo_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "groovy_rider_core_id",
+			"title": "格比ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成格比的 $(l:geats/devices/desire_driver#desire_driver_groovy)欲望驱动器(格比)$(/l)$(br2)用于将 $(l:geats/riders/groovy)假面骑士格比$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:groovy_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hakubi_rider_core_id",
+			"title": "花面狸ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成花面狸的 $(l:geats/devices/desire_driver#desire_driver_hakubi)欲望驱动器(花面狸)$(/l)$(br2)用于将 $(l:geats/riders/hakubi)假面骑士花面狸$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hakubi_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "turbon_rider_core_id",
+			"title": "塔彘ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成塔彘的 $(l:geats/devices/desire_driver#desire_driver_turbon)欲望驱动器(塔彘)$(/l)$(br2)用于将 $(l:geats/riders/turbon)假面骑士塔彘$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:turbon_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "brali_rider_core_id",
+			"title": "怖蝠ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成怖蝠的 $(l:geats/devices/desire_driver#desire_driver_brali)欲望驱动器(怖蝠)$(/l)$(br2)用于将 $(l:geats/riders/brali)假面骑士怖蝠$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:brali_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gya_go_rider_core_id",
+			"title": "煞猫ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成煞猫的 $(l:geats/devices/desire_driver#desire_driver_gya_go)欲望驱动器(煞猫)$(/l)$(br2)用于将 $(l:geats/riders/gya_go)假面骑士煞猫$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gya_go_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seeker_rider_core_id",
+			"title": "鹿探ID核心",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)用于合成鹿探的 $(l:geats/devices/desire_driver#desire_driver_seeker)欲望驱动器(鹿探)$(/l)$(br2)用于将 $(l:geats/riders/seeker)假面骑士鹿探$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:seeker_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "butchi_rider_core_id",
+			"title": "麦奇犬ID核心",
+			"text": "登场于：$(li)极狐番外：假面骑士南瓜杰克 (2023年，TTFC特别篇)$(br2)用于合成麦奇犬的 $(l:geats/devices/desire_driver#desire_driver_butchi)欲望驱动器(麦奇犬)$(/l)$(br2)用于将 $(l:geats/riders/butchi)假面骑士麦奇犬$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:butchi_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "revi_rider_core_id",
+			"title": "利维ID核心",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)用于合成利维的 $(l:geats/devices/desire_driver#desire_driver_revi)欲望驱动器(利维)$(/l)$(br2)用于将 $(l:geats/riders/revi)假面骑士利维$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:revi_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vice_rider_core_id",
+			"title": "维斯ID核心",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)用于合成维斯的 $(l:geats/devices/desire_driver#desire_driver_vice)欲望驱动器(维斯)$(/l)$(br2)用于将 $(l:geats/riders/vice)假面骑士维斯$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vice_rider_core_id",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chuta_rider_core_id",
+			"title": "啾太ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成GM骑士的 $(l:geats/devices/desire_driver#desire_driver_gm)欲望驱动器(GM)$(/l)$(br2)用于将炬目的 $(l:geats/riders/gm_rider)GM骑士$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chuta_rider_core_id",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gesshi_rider_core_id",
+			"title": "GessyID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成GM骑士的 $(l:geats/devices/desire_driver#desire_driver_gm_chirami)欲望驱动器(GM)$(/l)$(br2)用于将炬目2的 $(l:geats/riders/gm_rider_chirami)GM骑士$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gesshi_rider_core_id",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_geats_rider_core_id",
+			"title": "X极狐ID核心",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐 (2023年，电影)$(br2)用于合成X极狐的 $(l:geats/devices/desire_driver#desire_driver_x_geats)欲望驱动器(X极狐)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_geats_rider_core_id",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dooms_geats_rider_core_id",
+			"title": "灾厄极狐ID核心",
+			"text": "登场于：$(li)假面骑士极狐：邪魔徒觉醒 (2024年，V-Cinema电影)$(br2)用于合成灾厄极狐的 $(l:geats/devices/desire_driver#desire_driver_dooms_geats)欲望驱动器(灾厄极狐)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_geats_rider_core_id",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "discore_id",
+			"title": "邪魔徒ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成邪魔徒骑士的 $(l:geats/devices/desire_driver#desire_driver_jyamato)欲望驱动器(邪魔徒)$(/l)$(br2)用于将 $(l:geats/riders/jyamato_rider)邪魔徒骑士$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:discore_id",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "togechi_rider_core_id",
+			"title": "TogetchiID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:togechi_rider_core_id",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lancer_rider_core_id",
+			"title": "澜豹ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lancer_rider_core_id",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garun_rider_core_id",
+			"title": "伦虎ID核心",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garun_rider_core_id",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "togechi_rider_core_id_cracked",
+			"title": "TogetchiID核心(破裂)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:togechi_rider_core_id_cracked",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "letter_rider_core_id_cracked",
+			"title": "信羊ID核心(破裂)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:letter_rider_core_id_cracked",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ginpen_rider_core_id_cracked",
+			"title": "鹅企ID核心(破裂)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginpen_rider_core_id_cracked",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shirowe_rider_core_id_cracked",
+			"title": "白熊ID核心(破裂)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirowe_rider_core_id_cracked",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nudge_sparrow_rider_core_id_cracked",
+			"title": "五十鈴大智ID核心(破裂)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nudge_sparrow_rider_core_id_cracked",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_osaka",
+			"title": "大阪极狐ID核心",
+			"text": "登场于：$(li)假面骑士极狐：最终舞台 (2023年，舞台秀)$(br2)用于变身为 $(l:geats/riders/geats#osaka)假面骑士大阪极狐$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_osaka",
+			"title": " ",
+			"text": "可在极狐 $(l:misc/stageshow)舞台秀$(/l)中获得$(br2)通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_fukuoka",
+			"title": "福冈极狐ID核心",
+			"text": "登场于：$(li)假面骑士极狐：最终舞台 (2023年，舞台秀)$(br2)用于变身为 $(l:geats/riders/geats#fukuoka)假面骑士福冈极狐$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_fukuoka",
+			"title": " ",
+			"text": "可在极狐 $(l:misc/stageshow)舞台秀$(/l)中获得$(br2)通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_nagoya",
+			"title": "名古屋极狐ID核心",
+			"text": "登场于：$(li)假面骑士极狐：最终舞台 (2023年，舞台秀)$(br2)用于变身为 $(l:geats/riders/geats#nagoya)假面骑士名古屋极狐$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_nagoya",
+			"title": " ",
+			"text": "可在极狐 $(l:misc/stageshow)舞台秀$(/l)中获得$(br2)通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "geats_rider_core_id_tokyo",
+			"title": "东京极狐ID核心",
+			"text": "登场于：$(li)假面骑士极狐：最终舞台 (2023年，舞台秀)$(br2)用于变身为 $(l:geats/riders/geats#tokyo)假面骑士东京极狐$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:geats_rider_core_id_tokyo",
+			"title": " ",
+			"text": "可在极狐 $(l:misc/stageshow)舞台秀$(/l)中获得$(br2)通过开启 $(l:geats/items/bikkuri_mission_box)ID核心任务盒$(/l)获得"
+		}
+	]
+}

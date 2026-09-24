@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gavv/main",
+    "name": "腰带",
+    "description": "加布系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:gavv/items/blank_gochizo)空白饱藏$(/l)修复.",
+    "icon": "kamenridercraft:henshin_belt_gavv",
+    "sortnum": 1
+}

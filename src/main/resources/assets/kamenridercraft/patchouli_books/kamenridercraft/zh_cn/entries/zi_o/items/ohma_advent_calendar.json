@@ -1,0 +1,16 @@
+{
+	"name": "逢魔降临录",
+	"icon": "kamenridercraft:ohma_advent_calendar",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)以$(l:zi_o/riders/zi_o)时王$(/l)身份右键点击可触发特殊效果"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/ohma_advent_calendar"
+		}
+	]
+}

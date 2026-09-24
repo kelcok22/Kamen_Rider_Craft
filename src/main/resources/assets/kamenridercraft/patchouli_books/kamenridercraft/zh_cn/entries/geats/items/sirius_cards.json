@@ -1,0 +1,32 @@
+{
+	"name": "天狼星卡片",
+	"icon": "kamenridercraft:sirius_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "sirius_card",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成Regad的 $(l:geats/devices/zillion_driver#zillion_driver)无极驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sirius_card",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sirius_card_gazer_zero",
+			"title": "天狼星卡片(Gazer0)",
+			"text": "登场于：$(li)极狐番外：假面骑士谛睨 (2024年，TTFC特别篇)$(br2)用于合成Gazer0的 $(l:geats/devices/zillion_driver#zillion_driver_gazer_zero)无极驱动器(Gazer0)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sirius_card_gazer_zero",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)"
+		}
+	]
+}

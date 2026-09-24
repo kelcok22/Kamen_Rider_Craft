@@ -1,0 +1,31 @@
+{
+	"name": "回旋环",
+	"icon": "kamenridercraft:cyclode",
+	"category": "kamenridercraft:super-1/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "cyclode",
+			"text": "登场于:$(li)假面骑士超一号 (1980年, 电视剧)$(br2)与$(l:super_1/devices/armor)超一号装甲$(/l)一起穿戴，可变身为$(l:super_1/riders/super_1)假面骑士超一号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:super_1/cyclode"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "robot_cyclode",
+			"title": "回旋环",
+			"text": "登场于:$(li)假面骑士X (1974年, 电视剧)$(br2)与$(l:super_1/devices/armor)超一号装甲$(/l)一起穿戴，可变身为$(l:super_1/riders/robot_super_1)机械超一号"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:robot_cyclode",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

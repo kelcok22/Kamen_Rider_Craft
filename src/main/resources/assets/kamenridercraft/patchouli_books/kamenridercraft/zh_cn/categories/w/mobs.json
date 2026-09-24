@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:w/main",
+    "name": "相关生物",
+    "description": "来自《假面骑士W》或与其相关的所有生物.",
+    "icon": "kamenridercraft:w_logo",
+    "sortnum": 4
+}

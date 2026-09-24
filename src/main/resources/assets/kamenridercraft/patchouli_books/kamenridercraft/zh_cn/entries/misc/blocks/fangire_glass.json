@@ -1,0 +1,17 @@
+{
+	"name": "方莱玻璃",
+	"icon": "kamenridercraft:fangire_glass",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于装饰的玻璃方块"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:kiva/fangire_glass",
+          "text": "生成于$(l:kiva/structures/castle_doran)城堡德兰龙$(/l)里"
+		}
+	]
+}

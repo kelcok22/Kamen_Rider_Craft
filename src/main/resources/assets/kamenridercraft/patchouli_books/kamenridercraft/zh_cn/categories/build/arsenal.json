@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:build/main",
+    "name": "武器",
+    "description": "Build系列角色所使用的武器和道具. 可以在铁砧上使用 $(l:build/items/full_bottle)空白满瓶$(/l)修复.",
+    "icon": "kamenridercraft:drill_crusher",
+    "sortnum": 3
+}

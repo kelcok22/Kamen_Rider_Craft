@@ -1,0 +1,24 @@
+{
+    "name": "假面牛郎装甲",
+    "icon": "kamenridercraft:ride_kamens_head",
+    "category": "kamenridercraft:ride_kamens/devices",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "需与假面牛郎系列骑士驱动器配合使用，以变身为该骑士"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:ride_kamens/ride_kamens_head"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:ride_kamens/ride_kamens_troso"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:ride_kamens/ride_kamens_legs"
+        }
+    ]
+}

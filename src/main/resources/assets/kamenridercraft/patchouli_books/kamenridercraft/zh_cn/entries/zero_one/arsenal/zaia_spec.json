@@ -1,0 +1,19 @@
+{
+	"name": "ZAIA连接器",
+	"icon": "kamenridercraft:zaia_spec",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)可装备于头部护甲栏$(br2)装备时给予雷达效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zaia_spec",
+			"title": " ",
+			"text": "可通过和老手$(l:misc/villagers#humagear_villager)修玛吉亚村民$(/l)交易获得"
+		}
+	]
+}

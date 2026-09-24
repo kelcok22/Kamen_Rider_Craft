@@ -1,0 +1,30 @@
+{
+	"name": "蛮野驱动器",
+	"icon": "kamenridercraft:banno_driver_gord_drive",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "banno_driver_gord_drive",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/gold_drive)黄金Drive"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/banno_driver_gord_drive",
+			"text": "掉落来源：$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "banno_driver_bronze_drive",
+			"title": "蛮野驱动器",
+			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/bronze_drive)蛮野drive"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/banno_driver_bronze_drive"
+		}
+	]
+}

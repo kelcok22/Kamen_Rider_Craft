@@ -1,0 +1,17 @@
+{
+    "name": "饱藏杯原型",
+    "icon": "kamenridercraft:prototype_cup_gochizo",
+    "category": "kamenridercraft:gavv/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)食用 $(l:misc/items/foods#icepop)冰棍$(/l) 后转变为 $(l:gavv/items/gochizo#blizzardsorbei_gochizo)凛冽雪酪冰卫饱藏$(/l)$(br2)饮用 $(l:misc/items/foods#coffee)咖啡$(/l) 或食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 后转变为 $(l:gavv/items/gochizo#frappeis_gochizo)双旋冰沙饱藏$(/l)$(br2)食用 $(l:misc/items/foods#pudding)布丁$(/l) 后转变为 $(l:gavv/items/gochizo#puddinte_gochizo)布丁芭菲饱藏$(/l)$(br2)食用蛋糕后转变为 $(l:gavv/items/gochizo#uehouse_gochizo)威化饼饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:gavv/prototype_cup_gochizo"
+        }
+    ]
+}

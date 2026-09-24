@@ -1,0 +1,16 @@
+{
+	"name": "Ixa拳铳",
+	"icon": "kamenridercraft:ixa_knuckle",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由 $(l:kiva/riders/ixa)假面骑士Ixa$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/ixa_knuckle"
+		}
+	]
+}

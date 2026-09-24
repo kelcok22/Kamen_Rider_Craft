@@ -1,0 +1,19 @@
+{
+	"name": "审判之杖",
+	"icon": "kamenridercraft:judgment_staff",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)由$(l:agito/mobs/anguis_masculus)安格维斯·玛斯库鲁斯$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:judgment_staff",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/anguis_masculus)安格维斯·玛斯库鲁斯$(/l)的装备"
+		}
+	]
+}

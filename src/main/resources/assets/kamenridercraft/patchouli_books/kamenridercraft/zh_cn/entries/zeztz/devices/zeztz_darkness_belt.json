@@ -1,0 +1,19 @@
+{
+	"name": "黑暗Zeztz驱动器",
+	"icon": "kamenridercraft:zeztz_darkness_belt",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/zeztz_darkness)黑暗Zeztz梦魇$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeztz_darkness_belt",
+			"title": " ",
+			"text": "该物品目前暂无法获取"
+		}
+	]
+}

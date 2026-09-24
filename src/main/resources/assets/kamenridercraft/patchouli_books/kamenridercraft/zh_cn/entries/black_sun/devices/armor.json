@@ -1,0 +1,24 @@
+{
+	"name": "Black Sun装甲",
+	"icon": "kamenridercraft:blacksunhead",
+	"category": "kamenridercraft:black_sun/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Black Sun系列骑士的变身器配合使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/black_sun_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/black_sun_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/black_sun_legs"
+		}
+	]
+}

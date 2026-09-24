@@ -1,0 +1,16 @@
+{
+	"name": "鹰雀回旋盘",
+	"icon": "kamenridercraft:tajaspinner",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)由OOO的$(l:ooo/riders/ooo#tajadol)鹰雀鹫联组$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/tajaspinner"
+		}
+	]
+}

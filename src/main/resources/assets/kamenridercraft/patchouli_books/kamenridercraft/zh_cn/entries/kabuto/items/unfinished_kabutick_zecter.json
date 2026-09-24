@@ -1,0 +1,19 @@
+{
+	"name": "未完成的卡布蒂克昆虫仪",
+	"icon": "kamenridercraft:unfinished_kabutick_zecter",
+	"category": "kamenridercraft:kabuto/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)用于制作$(l:kabuto/riders/hercus)假面骑士银斗$(/l)、$(l:kabuto/riders/ketaros)假面骑士铜斗$(/l)和$(l:kabuto/riders/caucasus)假面骑士金斗$(/l)的骑士物品的基础物品"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unfinished_kabutick_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "相关物品",
+    "description": "所有与亚极陀系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:agito_ground",
+    "sortnum": 2
+}

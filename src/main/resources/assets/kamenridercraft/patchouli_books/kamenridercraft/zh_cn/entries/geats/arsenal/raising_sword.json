@@ -1,0 +1,16 @@
+{
+	"name": "跃升战剑",
+	"icon": "kamenridercraft:raising_sword",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/geats#raising)矩升形态$(/l) 或 $(l:geats/riders/geats#command)指令形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/raising_sword"
+		}
+	]
+}

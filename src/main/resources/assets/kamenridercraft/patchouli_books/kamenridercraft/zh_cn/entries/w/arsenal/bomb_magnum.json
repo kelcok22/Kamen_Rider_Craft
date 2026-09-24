@@ -1,0 +1,16 @@
+{
+	"name": "炸弹麦林枪",
+	"icon": "kamenridercraft:bomb_magnum",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士 W (2009, 电视剧)$(br2)由Shroud使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/bombmagnum"
+		}
+	]
+}

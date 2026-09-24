@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士时王(镜世界版本)",
+	"icon": "kamenridercraft:ziku_driver_zi_o_mirror",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o_mirror\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士时王(镜世界版本)",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_zi_o_mirror)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)力量"
+		}
+	]
+}

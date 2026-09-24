@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "假面骑士Ex-Aid",
+    "description": "与《假面骑士Ex-Aid》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "sortnum": 32
+}

@@ -1,0 +1,25 @@
+{
+    "name": "极狐装甲",
+    "icon": "kamenridercraft:geatshead",
+    "category": "kamenridercraft:geats/devices",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "搭配极狐系列骑士的驱动器使用，可变身为对应骑士$(br2)掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)的装备$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)的装备$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)的装备$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l)的装备$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)的装备"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/geatshead",
+            "text": "$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l)的装备$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l)的装备"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/geatstroso"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/geatslegs"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "管理员车票",
+	"icon": "kamenridercraft:master_pass",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)由$(l:den_o/riders/gaoh)假面骑士牙王$(/l)使用$(br2)用于进入时间之沙"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:master_pass",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:den_o/mobs/gaoh)假面骑士牙王$(/l)"
+		}
+	]
+}

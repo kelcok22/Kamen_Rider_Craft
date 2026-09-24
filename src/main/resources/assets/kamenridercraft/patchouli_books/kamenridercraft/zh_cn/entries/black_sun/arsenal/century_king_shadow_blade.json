@@ -1,0 +1,16 @@
+{
+	"name": "世纪王影剑",
+	"icon": "kamenridercraft:century_king_shadow_blade",
+	"category": "kamenridercraft:black_sun/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)由$(l:black_sun/riders/shadowmoon)假面骑士影月$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/century_king_shadow_blade"
+		}
+	]
+}

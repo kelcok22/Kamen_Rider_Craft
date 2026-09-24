@@ -1,0 +1,106 @@
+{
+	"name": "假面骑士朋克杰克",
+	"icon": "kamenridercraft:desire_driver_punkjack",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "登录形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#punkjack_rider_core_id)朋克杰克ID核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "monster",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "怪兽形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#monster_raise_buckle)怪兽代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升$(br2)怪兽代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装护盾",
+			"text": "通过使用 $(l:geats/items/raise_buckles#shield_raise_buckle)盾代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升$(br2)盾代扣效果：$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ninjamonster",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:ninja_raise_buckle_fever\",slot_tex3:\"kamenridercraft:monster_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "忍者怪兽形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#monster_raise_buckle)怪兽代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升$(br2)忍者代扣效果：$(li)速度 III$(li)急迫 II$(li)跳跃提升 V$(br2)怪兽代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_monster",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:monster_raise_buckle_fever\",slot_tex3:\"kamenridercraft:monster_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狂热怪兽形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#monster_raise_buckle)怪兽代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升$(br2)怪兽形态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)速度 IV$(li)抗性提升 IV$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)极狐番外：假面骑士朋克杰克（2023年，TTFC特别篇）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chain_array",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_punkjack\",components:{custom_data:{slot_tex1:\"kamenridercraft:punkjack_rider_core_id\",slot_tex2:\"kamenridercraft:chain_array_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装流星锤",
+			"text": "通过使用 $(l:geats/items/raise_buckles#chain_array_raise_buckle)流星锤代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朋克杰克",
+			"text": "登场于：$(li)英雄特写 假面骑士极狐：重生（2024年，写真集）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_punkjack)欲望驱动器(朋克杰克)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度 II$(li)跳跃提升$(br2)流星锤代扣效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)挖掘疲劳"
+		}
+	]
+}

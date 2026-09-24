@@ -1,0 +1,16 @@
+{
+	"name": "克罗兹·创骑罐",
+	"icon": "kamenridercraft:cross_z_build_can",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build：Be The One (2018年，电影)$(br2)用于切换Build的$(l:build/riders/build#cross_zbuild)创越$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/cross_z_build_can"
+		}
+	]
+}

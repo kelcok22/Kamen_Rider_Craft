@@ -1,0 +1,16 @@
+{
+	"name": "加鲁鲁军刀(魔皇龙)",
+	"icon": "kamenridercraft:garulu_saber_tatsulot",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由Kiva的 $(l:kiva/riders/kiva#emperor)魔皇$(/l) 和 $(l:kiva/riders/kiva#dogabaki_emperor)魔皇德加巴基形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/garulu_saber_tatsulot"
+		}
+	]
+}

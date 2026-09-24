@@ -1,0 +1,17 @@
+{
+	"name": "次世代系统摩托",
+	"icon": "kamenridercraft:next_system_bike",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)将其用于$(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档底盘装配器$(/l)可获取信号摩托"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/next_system_bike",
+			"text": "掉落自：$(li)$(l:drive/mobs/reaper_legion)死神军团$(/l)$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)"
+		}
+	]
+}

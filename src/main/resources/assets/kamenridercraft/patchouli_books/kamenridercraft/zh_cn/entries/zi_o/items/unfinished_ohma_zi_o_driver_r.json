@@ -1,0 +1,16 @@
+{
+	"name": "未完成逢魔时王驱动器(右)",
+	"icon": "kamenridercraft:unfinished_ohma_zi_o_driver_r",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成$(l:zi_o/devices/ohma_zi_o_driver)逢魔时王驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/unfinished_ohma_zi_o_driver_r"
+		}
+	]
+}

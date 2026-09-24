@@ -1,0 +1,121 @@
+{
+    "name": "G芯片",
+    "icon": "kamenridercraft:g3",
+    "category": "kamenridercraft:agito/items",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "g3",
+            "text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于制作G3的 $(l:agito/devices/g_buckle#g3_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g3",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g3x",
+            "title": "G3-X芯片",
+            "text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于制作G3-X的 $(l:agito/devices/g_buckle#g3_x_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g3x",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g3mild",
+            "title": "G3轻量型芯片",
+            "text": "登场于：$(li)假面骑士亚极陀特别篇：新的变身 (2001年，电视特别篇)$(br2)用于制作G3轻量型的 $(l:agito/devices/g_buckle#g3_mild_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g3mild",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g4",
+            "title": "G4芯片",
+            "text": "登场于：$(li)假面骑士亚极陀：G4计划 (2001年，电影)$(br2)用于制作G4的 $(l:agito/devices/g_buckle#g4_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g4",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g4x",
+            "title": "G4-X芯片",
+            "text": "登场于：$(li)Project G1 (2007年，S.I.C.英雄传奇)$(br2)用于制作G4-X的 $(l:agito/devices/g_buckle#g4_x_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g4x"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g6",
+            "title": "G6芯片",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)用于制作G6的 $(l:agito/devices/g_buckle#g6_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g6",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g7",
+            "title": "G7芯片",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)用于制作G7的 $(l:agito/devices/g_buckle#g7_belt)G代扣(马克7)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g7",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g1",
+            "title": "G1芯片",
+            "text": "登场于：$(li)Project G1 (2007年，S.I.C.英雄传奇)$(br2)用于制作G1的 $(l:agito/devices/g_buckle#g1_belt)G代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:g1",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "v1",
+            "title": "V1芯片",
+            "text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于制作V-1的 $(l:agito/devices/v1_belt)V1腰带$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:v1",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l) 上使用 $(l:agito/items/g3core)空白G芯片$(/l) 获得"
+        }
+    ]
+}

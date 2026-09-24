@@ -1,0 +1,19 @@
+{
+	"name": "银河地球仪",
+	"icon": "kamenridercraft:ginga_scope",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成银河的$(l:zi_o/devices/ginga_driver)银河驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginga_scope",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/ginga)假面骑士银河$(/l)"
+		}
+	]
+}

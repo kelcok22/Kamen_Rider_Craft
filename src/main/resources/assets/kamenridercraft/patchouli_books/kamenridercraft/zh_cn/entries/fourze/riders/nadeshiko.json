@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士抚子",
+	"icon": "kamenridercraft:nadeshiko_driver",
+	"category": "kamenridercraft:fourze/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "nadeshiko",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nadeshiko_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:nadeshiko_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:fourze/items/astroswitches#nadeshiko_switch)抚子开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士抚子",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)通过穿戴$(l:fourze/devices/nadeshiko_driver)抚子驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 III$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rocket",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nadeshiko_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rocket_nadeshiko_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火箭组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#rocket_switch)火箭开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士抚子",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)通过穿戴$(l:fourze/devices/nadeshiko_driver)抚子驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 III$(li)跳跃提升 III$(li)推进$(li)力量 II"
+		}
+	]
+}

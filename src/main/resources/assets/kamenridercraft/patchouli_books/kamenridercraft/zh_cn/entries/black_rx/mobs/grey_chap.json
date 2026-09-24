@@ -1,0 +1,17 @@
+{
+	"name": "恰普(RX)",
+	"icon": "kamenridercraft:black_rx_logo",
+	"category": "kamenridercraft:black_rx/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:chap_grey",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：平原、向日葵平原、森林、针叶林、沼泽、红树林沼泽、冻洋、冰冻深海、冻河、沙滩、沙漠、风袭丘陵、桦木森林、黑森林、积雪针叶林、热带草原、热带高原、风袭热带草原、恶地、风蚀恶地、繁茂的恶地高原$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l)（38%）$(li)1个$(l:black_rx/items/split_king_stone)裂开的帝王石$(/l)（38%）$(li)1个$(l:black_rx/items/rx_core)Black RX核心$(/l)（8%）$(li)1个$(l:black_rx/items/robo_core)机械骑士(帝王石)$(/l)（8%）$(li)1个$(l:black_rx/items/bio_core)生化骑士(帝王石)$(/l)（8%）"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"name": "天意卡片",
+	"icon": "kamenridercraft:providence_card_glare",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "providence_card_glare",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成炬目的$(l:geats/devices/vision_driver#vision_driver_glare)幻视驱动器(炬目)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:providence_card_glare",
+			"text": "掉落自：$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "providence_card_gazer",
+			"title": "天意卡片(Gazer)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成Gazer的$(l:geats/devices/vision_driver#vision_driver_gazer)幻视驱动器(Gazer)$(/l)$(br2)用于合成稣艾尔Gazer的$(l:geats/devices/vision_driver#vision_driver_gazer_suel)幻视驱动器(稣艾尔Gazer)$(/l)$(br2)用于合成邪魔徒Gazer的$(l:geats/devices/vision_driver#vision_driver_jyamato_glare)幻视驱动器(邪魔徒Gazer)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:providence_card_gazer",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "providence_card_glare2",
+			"title": "天意卡片(炬目2)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成炬目2的$(l:geats/devices/vision_driver#vision_driver_glare2)幻视驱动器(炬目2)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:providence_card_glare2",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l)"
+		}
+	]
+}

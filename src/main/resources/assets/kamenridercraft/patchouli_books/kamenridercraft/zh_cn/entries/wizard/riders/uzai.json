@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Uzai",
+	"icon": "kamenridercraft:uzai_belt",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:uzai_belt\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Uzai",
+			"text": "登场于：$(li)假面骑士Wizard舞台秀$(br2)通过穿戴$(l:wizard/devices/uzai_belt)Uzai腰带$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗火"
+		}
+	]
+}

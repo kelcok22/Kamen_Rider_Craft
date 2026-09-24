@@ -1,0 +1,19 @@
+{
+	"name": "须佐之男腰带",
+	"icon": "kamenridercraft:susanoo_belt",
+	"category": "kamenridercraft:zx/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士SPIRITS (2001年, 漫画)$(br2)与$(l:zx/devices/armor)ZX装甲$(/l)一起穿戴，可变身为$(l:zx/riders/susanoo)须佐之男"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:susanoo_belt",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

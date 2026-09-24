@@ -1,0 +1,17 @@
+{
+	"name": "白亚",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rosyuo",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br)生命值: 250"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#rosyuo_boss_block)白亚BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)1个$(l:gaim/items/lockseeds#golden_ringo_lockseed)金苹果锁种$(/l)$(li)1个$(l:gaim/items/lockseeds#kiwami_lockseed)极武锁种$(/l)（需要携带$(l:gaim/items/lockseeds#kachidoki_lockseed)胜哄锁种）$(li)1个$(l:gaim/items/lord_baron_fragments#lord_baron_fragment)霸主异域者碎片1$(/l)$(li)1个$(l:gaim/items/lockseeds#king_durian_lockseed)王者榴莲锁种$(/l) (50%)$(li)1个$(l:gaim/arsenal/joeshuimu)乔修伊姆$(/l) (33.3%)"
+		}
+	]
+}

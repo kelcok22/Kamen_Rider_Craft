@@ -1,0 +1,17 @@
+{
+    "name": "僵尸破坏者",
+    "icon": "kamenridercraft:zombie_breaker",
+    "category": "kamenridercraft:geats/arsenal",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/buffa#zombie)僵尸$(/l) 形态使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/zombie_breaker",
+            "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)的装备"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "新·decad驱动器",
+  "icon": "kamenridercraft:neo_decadriver",
+  "category": "kamenridercraft:decade/devices",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士时王 (2019年，电视剧)$(br2)与$(l:decade/devices/armor)Decade装甲$(/l)一起穿戴，可变身为$(l:decade/riders/decade#neo_decade)假面骑士Decade (新)$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zi_o/neo_decadriver"
+    }
+  ]
+}

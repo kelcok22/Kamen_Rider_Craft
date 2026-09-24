@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin_kamen_rider/main",
+    "name": "腰带",
+    "description": "真 假面骑士系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:shin_kamen_rider/items/prana_infused_rider_circuit)普拉纳注入骑士电路$(/l)修复.",
+    "icon": "kamenridercraft:shin_typhoon_ichigo",
+    "sortnum": 1
+}

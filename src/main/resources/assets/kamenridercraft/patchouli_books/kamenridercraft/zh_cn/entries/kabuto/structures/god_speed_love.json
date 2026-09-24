@@ -1,0 +1,22 @@
+{
+	"name": "神速爱",
+	"icon": "kamenridercraft:kabuto_logo",
+	"category": "kamenridercraft:kabuto/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "神速爱",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)生成群系：下界$(br2)包含$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)、$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)和$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)的试炼刷怪笼$(br2)试炼战利品：$(li)1个$(l:kabuto/items/zecters#lady_zecter)瓢虫昆虫仪$(/l) (28.6%)$(li)1个$(l:misc/blocks/decor_blocks#blue_rose)蓝玫瑰$(/l) (28.6%)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/god_speed_love.png"
+			],
+			"title": " ",
+			"text": "$(li)1个$(l:kabuto/devices/zect_buckle#chophopper_rider_belt)ZECT带扣$(/l) (28.6%)$(li)1个$(l:misc/items/music_discs#next_level_music_disc)NEXT LEVEL 音乐唱片$(/l) (14.3%)"
+		}
+	]
+}

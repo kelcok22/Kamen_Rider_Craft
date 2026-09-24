@@ -1,0 +1,17 @@
+{
+	"name": "陷灭防卫者",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:downfall_guardian",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema电影)$(br)生命值：30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成建筑：$(l:build/structures/build_warehouse)Build仓库$(/l)$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/nebula_gas_sample)星云气体样本$(/l) (71.4%)$(li)1个$(l:build/items/fullbottles#tank_full_bottle)坦克满装瓶罐$(/l) (14.2%)$(li)1个$(l:build/items/fullbottles#robot_full_bottle)机器人满装瓶罐$(/l) (14.2%)$(br2)进化$(li)$(l:build/mobs/phantom_crusher)虚幻粉碎者$(/l) (5%)$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l) (5%)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "长刃带扣",
+	"icon": "kamenridercraft:glaive_buckle",
+	"category": "kamenridercraft:blade/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)与$(l:blade/devices/armor)剑装甲$(/l)一起穿戴，可变身为$(l:blade/riders/glaive)假面骑士长刃"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/glaive_buckle"
+		}
+	]
+}

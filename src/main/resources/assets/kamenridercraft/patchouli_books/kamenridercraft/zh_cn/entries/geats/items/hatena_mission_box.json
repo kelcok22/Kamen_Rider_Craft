@@ -1,0 +1,23 @@
+{
+	"name": "代扣任务盒",
+	"icon": "kamenridercraft:hatena_mission_box",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)右键点击可掉落代扣$(br2)掉落物品：$(li)$(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l) (5.4%)$(li)$(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) (5.4%)$(li)$(l:geats/items/raise_buckles#zombie_raise_buckle)僵尸代扣$(/l) (4.3%)$(li)$(l:geats/items/raise_buckles#ninja_raise_buckle)忍者代扣$(/l) (4.3%)$(li)$(l:geats/items/raise_buckles#monster_raise_buckle)怪兽代扣$(/l) (3.2%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) (3.2%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hatena_mission_box",
+			"title": " ",
+			"text": "$(li)$(l:geats/items/raise_buckles#arrow_raise_buckle)弓箭代扣$(/l) (10.8%)$(li)$(l:geats/items/raise_buckles#water_raise_buckle)水枪代扣$(/l) (10.8%)$(li)$(l:geats/items/raise_buckles#hammer_raise_buckle)锤代扣$(/l) (10.8%)$(li)$(l:geats/items/raise_buckles#shield_raise_buckle)盾代扣$(/l) (10.8%)$(li)$(l:geats/items/raise_buckles#chain_array_raise_buckle)流星锤代扣$(/l) (8.6%)$(li)$(l:geats/items/raise_buckles#claw_raise_buckle)爪子代扣$(/l) (8.6%)$(li)$(l:geats/items/raise_buckles#drill_raise_buckle)钻头代扣$(/l) (5.4%)$(li)$(l:geats/items/raise_buckles#propeller_raise_buckle)螺旋桨代扣$(/l) (5.4%)$(li)$(l:geats/items/raise_buckles#golden_hammer_raise_buckle)锤代扣(巧克力威化限定)$(/l) (1.1%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:geats/items/raise_buckles#silver_arrow_raise_buckle)弓代扣(巧克力威化限定)$(/l) (1.1%)$(li)$(l:geats/items/raise_buckles#beat_raise_buckle_theme)节拍代扣(主题曲版本)$(/l) (1.1%)$(br2)掉落自：$(li)$(l:geats/mobs/pawnjyamato_mob)兵卒邪魔徒$(/l)$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)"
+		}
+	]
+}

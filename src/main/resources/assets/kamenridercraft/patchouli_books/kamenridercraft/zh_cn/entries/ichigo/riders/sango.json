@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士三号",
+	"icon": "kamenridercraft:typhoon_core_sango",
+	"category": "kamenridercraft:ichigo/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "movie_sango",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_sango\",components:{custom_data:{slot_tex1:\"kamenridercraft:typhoon_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:ichigo/items/typhoon_cores#typhoon_core_sango)台风核心(三号)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士三号",
+			"text": "登场于：$(li)超级英雄大战GP 假面骑士3号 (2015年，电影)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_sango)台风腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量 III$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "manga_sango",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_sango\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider3_vs_the_demon_of_general_black\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:ichigo/items/rider3_vs_the_demon_of_general_black)骑士3号VS黑恶魔将军漫画$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士三号",
+			"text": "登场于：$(li)假面骑士：骑士3号VS黑恶魔将军 (1972年，漫画)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_sango)台风腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 III$(li)力量 II"
+		}
+	]
+}

@@ -1,0 +1,183 @@
+{
+	"name": "V代扣",
+	"icon": "kamenridercraft:v_buckle_ryuki",
+	"category": "kamenridercraft:ryuki/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_ryuki",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_ryuki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_knight",
+			"title": "V代扣(夜骑)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/knight#knight)假面骑士夜骑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_knight"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_scissors",
+			"title": "V代扣(利刃)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/scissors)假面骑士利刃"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_scissors"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_zolda",
+			"title": "V代扣(铁兵)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/zolda)假面骑士铁兵"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_zolda"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_raia",
+			"title": "V代扣(海鳐)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/raia#raia)假面骑士海鳐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_raia"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_gai",
+			"title": "V代扣(铠)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/gai)假面骑士铠"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_gai"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_ouja",
+			"title": "V代扣(王蛇)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/ouja#ouja)假面骑士王蛇"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_ouja"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_odin",
+			"title": "V代扣(奥丁)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/odin)假面骑士奥丁"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_odin"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_tiger",
+			"title": "V代扣(大牙)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/tiger)假面骑士大牙"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_tiger"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_imperer",
+			"title": "V代扣(羚皇)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年,电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/imperer)假面骑士羚皇"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_imperer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_femme",
+			"title": "V代扣(花梦)",
+			"text": "登场于:$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/femme)假面骑士花梦"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_femme"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_ryuga",
+			"title": "V代扣(龙牙)",
+			"text": "登场于:$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/ryuga#ryuga)假面骑士龙牙"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_ryuga"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_verde",
+			"title": "V代扣(妖翠)",
+			"text": "登场于:$(li)假面骑士龙骑特别篇：13骑士（2002年，电视特别篇）$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/verde)假面骑士妖翠"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_verde"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_abyss",
+			"title": "V代扣(深渊)",
+			"text": "登场于:$(li)假面骑士Decade（2009年，电视剧）$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/abyss)假面骑士深渊"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_abyss"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_fatale",
+			"title": "V代扣(花魇)",
+			"text": "登场于:$(li)假面骑士Eins with Girls Remix（2025年，TTFC特别篇）$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/fatale)假面骑士花魇"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_fatale"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_blade",
+			"title": "V代扣(剑)",
+			"text": "登场于:$(li)ICON: 篠原保角色艺术集 (2006年，画册)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/blade)假面骑士Blade$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/v_buckle_blade"
+		}
+	]
+}

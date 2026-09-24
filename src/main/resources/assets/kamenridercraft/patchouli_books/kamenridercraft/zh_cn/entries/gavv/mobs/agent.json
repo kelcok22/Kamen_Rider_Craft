@@ -1,0 +1,21 @@
+{
+	"name": "特工",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:agent",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：樱花树林、沙漠、草甸、平原、热带草原、积雪平原、针叶林$(br2)生成时有白色、蓝色、橙色和粉色条纹变种$(br2)掉落$(li)1个$(l:gavv/items/heatpress)人类压牌$(/l) (10%)$(li)1个$(l:misc/items/candy_wrapper)糖果包装纸$(/l) (50%)$(li)1个$(l:gavv/items/gochizo#poppingummy_gochizo)跳跳软糖饱藏$(/l) (40%)$(br)$(li)2-4个$(l:misc/items/candy_wrapper)糖果包装纸$(/l) (50%)$(li)1-3个$(l:gavv/items/blank_gochizo)空白饱藏$(/l) (50%)$(br2)进化信息见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "进化$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l) (5%)$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l) (5%，来自蓝色和白色特工)$(li)$(l:gavv/mobs/shiita_stomach)西塔·斯托马克$(/l) (5%，来自白色特工)$(li)$(l:gavv/mobs/nyelv_stomach)尼耶鲁布·斯托马克$(/l) (5%，来自橙色特工)$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l) (5%，来自粉色特工)$(li)$(l:gavv/mobs/lango_stomach)兰戈·斯托马克$(/l) (5%，来自红色特工)"
+		}
+	]
+}

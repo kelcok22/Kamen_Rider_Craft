@@ -1,0 +1,20 @@
+{
+	"name": "假面骑士Amazon NeoAlpha",
+	"icon": "kamenridercraft:amazon_injector_neo_alpha",
+	"category": "kamenridercraft:amazons/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_amazons_driver_neo_alpha\",Count:1b},{id:\"kamenridercraft:amazonslegs\",Count:1b},{id:\"kamenridercraft:amazonstroso\",Count:1b},{id:\"kamenridercraft:amazonshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Amazon NeoAlpha",
+			"text": "登场于：$(li)假面骑士Amazons：最后的审判 (2018年，电影)$(br2)通过穿戴 $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo_alpha)Neo Amazons驱动器(Neo Alpha)$(/l) 进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)速度 II$(li)抗性提升 II$(li)生命恢复 III$(li)跳跃提升"
+		}
+	]
+}

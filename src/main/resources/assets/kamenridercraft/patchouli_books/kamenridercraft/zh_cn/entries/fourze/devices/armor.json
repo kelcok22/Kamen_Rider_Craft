@@ -1,0 +1,24 @@
+{
+	"name": "Fourze装甲",
+	"icon": "kamenridercraft:fourze_head",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Fourze系列骑士的驱动器配合使用，可变身成对应骑士$(br2)掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/fourze_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/fourze_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/fourze_legs"
+		}
+	]
+}

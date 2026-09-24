@@ -1,0 +1,17 @@
+{
+    "name": "星云崩原体",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 7,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:nebula_bugstervirus_mob",
+            "text": "登场于：$(li)假面骑士平成世代Final：Build & Ex-Aid with 传奇骑士 (2017年，电影)$(br)生命值: 30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生成机制：在带有游戏病基因和危险等级效果的玩家周围生成$(br2)掉落$(li)1-3个$(l:ex_aid/items/bugster_virus_dna)游戏病基因$(/l)$(li)1-3个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l) (50%)$(li)1个$(l:build/items/smash_bottle)猛击者瓶罐$(/l) (50%)$(br2)进化$(li)$(l:build/mobs/kaiser)凯撒$(/l) (10%，城市维度外)$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l) (10%，城市维度内)"
+        }
+    ]
+}

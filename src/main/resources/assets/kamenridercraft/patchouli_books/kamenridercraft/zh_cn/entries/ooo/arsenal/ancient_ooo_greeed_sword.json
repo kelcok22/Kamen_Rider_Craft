@@ -1,0 +1,19 @@
+{
+	"name": "古代王贪欲OOO之剑",
+	"icon": "kamenridercraft:ancient_ooo_greeed_sword",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)由古代王OOO的$(l:ooo/riders/ancient_ooo#greeed_absorption)贪欲者吸收态$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_ooo_greeed_sword",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		}
+	]
+}

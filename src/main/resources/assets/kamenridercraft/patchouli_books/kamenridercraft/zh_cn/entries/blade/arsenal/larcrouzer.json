@@ -1,0 +1,16 @@
+{
+	"name": "醒弩",
+	"icon": "kamenridercraft:larcrouzer",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)由$(l:blade/riders/larc)假面骑士弩弓$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/larcrouzer"
+		}
+	]
+}

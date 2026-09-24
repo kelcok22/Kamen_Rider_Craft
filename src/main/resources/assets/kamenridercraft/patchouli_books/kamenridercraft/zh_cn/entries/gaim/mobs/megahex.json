@@ -1,0 +1,21 @@
+{
+  "name": "梅嘉赫克斯",
+  "icon": "kamenridercraft:gaim_logo",
+  "category": "kamenridercraft:gaim/mobs",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:megahex",
+      "text": "登场于：$(li)假面骑士×假面骑士Drive&铠武 剧场版 全能量爆发（2014年，电影）"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "生命值: 100$(br2)通过挖掘$(l:misc/blocks/boss_blocks#megahex_boss_block)梅嘉赫克斯BOSS召唤方块$(/l)召唤而来$(br2)特殊机制:$(li)生命值低于80时切换为$(l:gaim/riders/megahex#kiwami)极武锁种形态$(/l)$(li)生命值低于30时切换为$(l:gaim/riders/megahex#zzz)ZZZ梅嘉赫克斯形态$(/l)$(br2)掉落内容见下一页"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "掉落$(li)1个$(l:gaim/items/megahex_kiwami)梅嘉赫克斯核心$(/l)$(li)1个$(l:drive/items/roidmude_cores#cyberoid_zzz_core)虚拟机械躯体核心 ZZZ$(/l)$(li)4-6个$(l:drive/items/viral_cores#viral_core_bat)蝙蝠病毒核心$(/l)$(li)4-6个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)$(li)1个$(l:drive/items/viral_cores#megahex_viral_core)梅嘉赫克斯病毒核心$(/l) (25%)$(li)1个$(l:gaim/items/energy_lockseeds#dragon_fruits_energy_lockseed)火龙果能量锁种$(/l) (25%)$(li)1个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l) (25%)$(li)1个$(l:drive/items/viral_cores#viral_core_bat)蝙蝠病毒核心$(/l) (25%)$(li)1个$(l:gaim/items/lockseeds#drive_lockseed)Drive锁种$(/l)、1个$(l:drive/items/shift_cars#fruitsshift)水果移速战车$(/l)（需以$(l:gaim/riders/gaim)假面骑士铠武$(/l)或$(l:drive/riders/drive)假面骑士Drive$(/l)身份战斗）"
+    }
+  ]
+}

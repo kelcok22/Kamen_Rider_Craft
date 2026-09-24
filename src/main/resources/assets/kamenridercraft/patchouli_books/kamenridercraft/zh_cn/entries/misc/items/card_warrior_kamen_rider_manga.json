@@ -1,0 +1,19 @@
+{
+	"name": "卡牌战士假面骑士漫画",
+	"icon": "kamenridercraft:card_warrior_kamen_rider_manga",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于制作驾驭怪物卡牌"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:card_warrior_kamen_rider_manga",
+			"title": " ",
+			"text": "可与学徒级 $(l:misc/villagers#librarian)图书管理员$(/l) 交易获得"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士新电王",
+	"icon": "kamenridercraft:rider_ticket_strike",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "plat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:new_den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "月台形态",
+			"text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士新电王",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)通过穿戴$(l:den_o/devices/new_den_o_belt)新·电王腰带$(/l)进行变身$(br2)状态效果：$(li)霉运 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "strike",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:new_den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_strike\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "强袭形态",
+			"text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_strike)骑士车票(泰迪)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士新电王",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)通过穿戴$(l:den_o/devices/new_den_o_belt)新·电王腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)拳力提升 II$(li)速度 II$(li)跳跃提升$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "vega",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:new_den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_vega_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "织女星形态",
+			"text": "通过使用 $(l:den_o/items/zeronos_cards#zeronos_vega_card)零诺斯织女星卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士新电王",
+			"text": "登场于：$(li)超级假面骑士电王&帝骑 新世代 电影：鬼岛战舰 (2009年，电影)$(br2)通过穿戴$(l:den_o/devices/new_den_o_belt)新·电王腰带$(/l)进行变身$(br2)状态效果：$(li)急迫 II$(li)抗性提升 II$(li)防火$(br2)专属技能：$(li)加特林"
+		}
+	]
+}

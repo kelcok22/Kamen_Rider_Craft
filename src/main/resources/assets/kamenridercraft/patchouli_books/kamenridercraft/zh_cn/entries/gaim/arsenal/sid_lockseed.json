@@ -1,0 +1,19 @@
+{
+	"name": "Sid锁种",
+	"icon": "kamenridercraft:sid_lockseed",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/mobs/sigurd)Sid$(/l)使用$(br2)装备$(l:gaim/devices/sengoku_driver)战极驱动器$(/l)后右键点击，可开启$(l:misc/blocks/helheim_crack)海姆冥界裂缝$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sid_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/sigurd)假面骑士西格德$(/l)"
+		}
+	]
+}

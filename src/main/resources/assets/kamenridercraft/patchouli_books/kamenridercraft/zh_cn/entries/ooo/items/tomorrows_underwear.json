@@ -1,0 +1,19 @@
+{
+	"name": "明日的内裤",
+	"icon": "kamenridercraft:tomorrows_underwear",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tomorrows_underwear",
+			"title": " ",
+			"text": "通过打开$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得"
+		}
+	]
+}

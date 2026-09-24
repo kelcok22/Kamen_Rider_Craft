@@ -1,0 +1,19 @@
+{
+	"name": "时间降临",
+	"icon": "kamenridercraft:time_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 58,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/odin)假面骑士奥丁$(/l)与$(l:ryuki/arsenal/gold_visor)黄金召机$(/l)一同使用，可获得10秒的时间 III效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:time_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		}
+	]
+}

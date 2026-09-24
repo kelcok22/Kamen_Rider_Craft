@@ -1,0 +1,40 @@
+{
+	"name": "Amazons驱动器",
+	"icon": "kamenridercraft:amazons_driver_omega",
+	"category": "kamenridercraft:amazons/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "amazons_driver_omega",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)搭配$(l:amazons/devices/armor)Amazons装甲$(/l)使用，可变身为$(l:amazons/riders/amazon_omega)假面骑士Amazon Omega$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazons_driver_omega"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazons_driver_alpha",
+			"title": "Amazons驱动器(Alpha)",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)搭配$(l:amazons/devices/armor)Amazons装甲$(/l)使用，可变身为$(l:amazons/riders/amazon_alpha)假面骑士Amazon Alpha$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazons_driver_alpha"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazons_driver_sigma",
+			"title": "Amazons驱动器(Sigma)",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)搭配$(l:amazons/devices/armor)Amazons装甲$(/l)使用，可变身为$(l:amazons/riders/amazon_sigma)假面骑士Amazon Sigma$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/amazons_driver_sigma"
+		}
+	]
+}

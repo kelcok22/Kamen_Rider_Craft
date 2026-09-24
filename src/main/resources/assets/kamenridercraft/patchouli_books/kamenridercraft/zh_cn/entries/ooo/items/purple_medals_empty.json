@@ -1,0 +1,19 @@
+{
+	"name": "巴斯硬币",
+	"icon": "kamenridercraft:purple_medals_empty",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:purple_medals_empty",
+			"title": " ",
+			"text": "通过从$(l:ooo/items/purple_medals_sealed)封印的恐龙硬币$(/l)中释放紫色硬币后获得"
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"name": "Birth核心硬币",
+	"icon": "kamenridercraft:birth_core_eyes",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_eyes",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#powered)动力提升$(/l)状态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_eyes",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_breast_cannon",
+			"title": "Birth鳌系组件(前胸加农)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#breast_cannon)胸口炮$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_breast_cannon",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_crane_arm",
+			"title": "Birth鳌系组件(起重臂膀)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#crane_arm)起重臂$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_crane_arm",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_shovel_arm",
+			"title": "Birth鳌系组件(铁铲臂膀)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#shovel_arm)铁铲臂$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_shovel_arm",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_catepillar_leg",
+			"title": "Birth鳌系组件(履带重腿)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#caterpillar_leg)履带腿$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_catepillar_leg",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_drill_arm",
+			"title": "Birth鳌系组件(刚钻臂膀)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#drill_arm)电钻臂$(/l)"
+},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_drill_arm",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_core_cutter_wing",
+			"title": "Birth鳌系组件(切割钢翼)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于解锁Birth的$(l:ooo/riders/birth#cutter_wing)切割翼$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:birth_core_cutter_wing",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用$(l:ooo/items/cellmedal)细胞硬币$(/l)获得"
+		}
+	]
+}

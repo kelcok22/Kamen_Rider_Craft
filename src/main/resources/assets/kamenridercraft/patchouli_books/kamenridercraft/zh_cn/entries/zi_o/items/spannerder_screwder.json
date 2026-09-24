@@ -1,0 +1,16 @@
+{
+	"name": "扳手者与螺丝刀",
+	"icon": "kamenridercraft:spannerder_screwder",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成Kikai的$(l:zi_o/devices/kikai_driver)Kikai驱动器$(/l)"
+		},
+		{
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/spannerder_screwder"
+		}
+	]
+}

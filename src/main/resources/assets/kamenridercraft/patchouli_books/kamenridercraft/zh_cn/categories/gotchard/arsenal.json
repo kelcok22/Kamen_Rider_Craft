@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gotchard/main",
+    "name": "武器",
+    "description": "歌查德系列骑士所使用的武器和道具. 可以在铁砧上使用 $(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)修复.",
+    "icon": "kamenridercraft:gotcharge_gun",
+    "sortnum": 3
+}

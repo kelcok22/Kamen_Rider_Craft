@@ -1,0 +1,16 @@
+{
+	"name": "天帝旋棍剑",
+	"icon": "kamenridercraft:psyga_tonfa_edge",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555: Paradise Lost (2003年，电影)$(br2)由$(l:faiz/riders/psyga)假面骑士天帝$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/psyga_tonfa_edge"
+		}
+	]
+}

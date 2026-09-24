@@ -1,0 +1,17 @@
+{
+    "name": "霸凯撒",
+    "icon": "kamenridercraft:build_logo",
+    "category": "kamenridercraft:build/mobs",
+    "sortnum": 21,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:bikaiser",
+            "text": "登场于：$(li)假面骑士平成世代FINAL：Build & Ex-Aid 与传奇骑士们 (2017年，电影)$(br)生命值：60"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通过挖掘$(l:misc/blocks/boss_blocks#bikaiser_boss_block)霸凯撒BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)2-3个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/gears#gear_engine_red)引擎齿轮(红)$(/l) (50%)$(li)1个$(l:build/items/fullbottles#ghost_full_bottle)Ghost满装瓶罐$(/l) (50%)$(li)1个$(l:build/items/gears#gear_remocon_blue)遥控齿轮(蓝)$(/l) (50%)$(li)1个$(l:build/items/fullbottles#ex_aid_full_bottle)Ex-Aid满装瓶罐$(/l) (50%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_kujaku_medal)孔雀·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_kamakiri_medal)螳螂·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_tora_medal)老虎·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_gorilla_medal)大猩猩·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_unagi_medal)电鳗·核心硬币(财団X)$(/l) (20%)"
+        }
+    ]
+}

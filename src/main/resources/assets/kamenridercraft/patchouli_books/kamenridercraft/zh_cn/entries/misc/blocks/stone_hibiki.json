@@ -1,0 +1,18 @@
+{
+  "name": "音之鬼石",
+  "icon": "kamenridercraft:stone_hibiki",
+  "category": "kamenridercraft:misc/blocks",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "挖掘此方块可获得$(l:hibiki/items/oni_ore)红色鬼石$(/l)$(br2)需要铁镐或更好的镐子"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:stone_hibiki",
+      "title": " "
+    }
+  ]
+}

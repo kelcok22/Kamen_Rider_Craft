@@ -1,0 +1,66 @@
+{
+	"name": "灭亡迅雷强制升华器",
+	"icon": "kamenridercraft:forceriser_horobi",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_horobi",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/horobi)假面骑士灭"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_horobi",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/horobi)假面骑士·灭$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_naki",
+			"title": "灭亡迅雷强制升华器(亡)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/naki)假面骑士·亡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_naki",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/naki)假面骑士·亡$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_jin",
+			"title": "灭亡迅雷强制升华器(迅)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/jin)假面骑士·迅"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_jin",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/jin)假面骑士·迅$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_ikazuchi",
+			"title": "灭亡迅雷强制升华器(雷)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/ikazuchi)假面骑士·雷"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_ikazuchi",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/ikazuchi)假面骑士·雷$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "forceriser_001",
+			"title": "灭亡迅雷强制升华器(001)",
+			"text": "登场于：$(li)假面骑士：令和第一世代（2019年，电影）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/zerozero-one)假面骑士001"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/forceriser_001"
+		}
+	]
+}

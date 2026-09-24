@@ -1,0 +1,19 @@
+{
+	"name": "重生阿波罗盖斯特核心",
+	"icon": "kamenridercraft:apollogeist_reborn_core",
+	"category": "kamenridercraft:x/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)用于切换阿波罗盖斯特的$(l:x/riders/apollogeist#apollogeist_reborn)重生阿波罗盖斯特形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:apollogeist_core",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:x/mobs/apollogeist)阿波罗盖斯特$(/l)"
+		}
+	]
+}

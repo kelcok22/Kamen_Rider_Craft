@@ -1,0 +1,16 @@
+{
+	"name": "人形烧鬼金棒",
+	"icon": "kamenridercraft:mensen_kanabo",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)由加布的$(l:gavv/riders/gavv#men_sen)人形烧形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/mensen_kanabo"
+		}
+	]
+}

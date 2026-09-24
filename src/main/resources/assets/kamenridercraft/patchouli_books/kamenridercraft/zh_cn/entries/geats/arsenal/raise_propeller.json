@@ -1,0 +1,17 @@
+{
+    "name": "武装螺旋桨",
+    "icon": "kamenridercraft:raise_propeller",
+    "category": "kamenridercraft:geats/arsenal",
+    "sortnum": 24,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/letter#propeller)武装螺旋桨$(/l) 形态使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/raise_propeller",
+            "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)的装备"
+        }
+    ]
+}

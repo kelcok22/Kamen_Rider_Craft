@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士霸剑",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:falchion",
+			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值：70$(br2)通过使用$(l:saber/items/book_of_ruin)破灭之书$(/l)召唤而来$(br2)特殊机制：$(li)背包中没有$(l:saber/items/wonder_ride_books#emotional_dragon_wonder_ride_book)情感飞龙奇幻驾驭书$(/l)时，获得抗性 IV$(li)背包中持有$(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)雷鸣剑黄雷奇幻世界故事奇幻驾驭书$(/l)时，切换为$(l:saber/riders/falchion#amazing_siren)惊异塞壬$(/l)形态$(li)永恒不死鸟形态下可飞行$(br2)下一页为掉落物"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#eternal_phoenix_wonder_ride_book)永恒不死鸟奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#emotional_dragon_wonder_ride_book)情感飞龙奇幻驾驭书$(/l)（需背包中持有$(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)勇气飞龙奇幻驾驭书$(/l)）$(li)1个$(l:saber/arsenal/haouken_xross_saber)刃王剑十圣刃$(/l)（需背包中持有除虚无、漆黑外的所有圣剑，翠风需为一刀流模式）$(li)1本$(l:saber/items/wonder_ride_books#arabiana_night_wonder_ride_book)阿拉伯那之夜奇幻驾驭书$(/l)（消耗背包中1本$(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯$(/l)及$(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)雷鸣剑黄雷奇幻世界故事$(/l)奇幻驾驭书）$(li)1本$(l:saber/items/wonder_ride_books#amazing_siren_wonder_ride_book)惊异塞壬奇幻驾驭书$(/l)（需背包中持有$(l:saber/items/wonder_ride_books#arabiana_night_wonder_ride_book)阿拉伯那之夜奇幻驾驭书$(/l)）"
+		}
+	]
+}

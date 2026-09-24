@@ -1,0 +1,19 @@
+{
+	"name": "G电王骑士车票(通行)",
+	"icon": "kamenridercraft:g_den_o_rider_pass",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)超级电王三部曲：EPISODE YELLOW 宝藏DE-End海盗 (2010年，电影)$(br2)由$(l:den_o/riders/g_den_o)假面骑士G电王$(/l)使用$(br2)用于进入城市"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:g_den_o_rider_pass",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kiva/main",
+    "name": "腰带",
+    "description": "Kiva系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:kiva/items/fuestle)笛哨$(/l)修复.",
+    "icon": "kamenridercraft:kivadriver",
+    "sortnum": 1
+}

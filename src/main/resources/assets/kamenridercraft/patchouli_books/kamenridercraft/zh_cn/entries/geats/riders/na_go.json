@@ -1,0 +1,134 @@
+{
+	"name": "假面骑士娜猫",
+	"icon": "kamenridercraft:desire_driver_na_go",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "登录形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#na_go_rider_core_id)娜猫ID核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)核心ID效果：$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beatboost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍推进形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II$(br2)推进器代扣效果：$(li)增强"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hammer",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装重锤",
+			"text": "通过使用 $(l:geats/items/raise_buckles#hammer_raise_buckle)锤代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)锤代扣效果：$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "claw",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装爪子",
+			"text": "通过使用 $(l:geats/items/raise_buckles#claw_raise_buckle)爪子代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)爪子代扣效果：$(li)斩击提升$(li)力量（持剑时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "propeller",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装螺旋桨",
+			"text": "通过使用 $(l:geats/items/raise_buckles#propeller_raise_buckle)螺旋桨代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)螺旋桨代扣效果：$(li)缓降 VII$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zombiebeat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle_fever\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "僵尸节拍形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)僵尸代扣效果：$(li)毒药抗性$(li)力量 II$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_beat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle_fever\",slot_tex3:\"kamenridercraft:beat_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狂热节拍形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)节拍形态效果：$(li)速度 IV$(li)急迫 IV$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fantasy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_na_go\",components:{custom_data:{slot_tex1:\"kamenridercraft:na_go_rider_core_id\",slot_tex2:\"kamenridercraft:fantasy_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "幻想形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#fantasy_raise_buckle)幻想代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士娜猫",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_na_go)欲望驱动器(娜猫)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)急迫$(br2)幻想代扣效果：$(li)斩击提升 II$(li)力量 II（持武器时）$(li)抗性提升 II$(li)反射 II"
+		}
+	]
+}

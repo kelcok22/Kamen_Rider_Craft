@@ -1,0 +1,16 @@
+{
+	"name": "血腥独角剑",
+	"icon": "kamenridercraft:bloody_uc",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)由$(l:gotchard/riders/dread)假面骑士恐惧$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/bloody_uc"
+		}
+	]
+}

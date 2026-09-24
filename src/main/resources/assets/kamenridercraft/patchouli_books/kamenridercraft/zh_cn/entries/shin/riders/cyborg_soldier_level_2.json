@@ -1,0 +1,21 @@
+{
+	"name": "改造士兵Level 2",
+	"icon": "kamenridercraft:cyborg_soldier_level_2_core",
+	"category": "kamenridercraft:shin/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:cyborg_soldier_level_2_dna\",Count:1b},{id:\"kamenridercraft:shinlegs\",Count:1b},{id:\"kamenridercraft:shintroso\",Count:1b},{id:\"kamenridercraft:shinhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "改造士兵Level 2",
+			"text": "登场于：$(li)真·假面骑士 序章 (1992年，电影)$(br2)通过穿戴$(l:shin/devices/cyborg_soldier_level_2_dna)改造士兵Level 2基因$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		}
+	]
+}

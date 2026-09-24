@@ -1,0 +1,40 @@
+{
+	"name": "真理之剑带扣",
+	"icon": "kamenridercraft:sword_of_logos_buckle_buster",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "sword_of_logos_buckle_buster",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/buster)假面骑士Buster$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/sword_of_logos_buckle_buster"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sword_of_logos_buckle_kenzan",
+			"title": "真理之剑带扣(Kenzan)",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/kenzan)假面骑士Kenzan$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/sword_of_logos_buckle_kenzan"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sword_of_logos_buckle_slash",
+			"title": "真理之剑带扣(Slash)",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/slash)假面骑士Slash$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/sword_of_logos_buckle_slash"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士Core",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:core",
+			"text": "登场于：$(li)假面骑士×假面骑士 OOO&W feat. Skull MOVIE大战CORE (2010年，电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 180$(br2)通过挖掘$(l:misc/blocks/boss_blocks#core_boss_block)Core BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)3-6个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)3-6个$(l:w/items/gaiamemory)盖亚记忆体碎片$(/l)$(li)1个$(l:ooo/items/core_medals#ebi_medal)虾核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#kani_medal)螃蟹核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#sasori_medal)蝎子核心硬币$(/l)$(li)1个$(l:w/items/dopant_memories#memory_memory)记忆记忆体$(/l)$(li)1个$(l:ooo/devices/gaia_core_typhoon#core_driver)盖亚核心台风$(/l)"
+		}
+	]
+}

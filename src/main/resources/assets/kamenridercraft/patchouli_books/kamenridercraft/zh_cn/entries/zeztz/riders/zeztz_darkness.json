@@ -1,0 +1,36 @@
+{
+	"name": "黑暗Zeztz梦魇",
+	"icon": "kamenridercraft:darkness_capsem",
+	"category": "kamenridercraft:zeztz/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "normal",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_darkness_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkness_capsem\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:zeztz/items/capsems#darkness_capsem)黑暗梦境胶囊$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "黑暗Zeztz梦魇",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_darkness_belt)黑暗Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "powered_up",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeztz_darkness_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkness_capsem_driver\"}},Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "强化",
+			"text": "通过使用 $(l:zeztz/items/capsems#darkness_capsem)黑暗梦境胶囊$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "黑暗Zeztz梦魇",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)通过穿戴$(l:zeztz/devices/zeztz_darkness_belt)黑暗Zeztz驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量"
+		}
+    ]
+}

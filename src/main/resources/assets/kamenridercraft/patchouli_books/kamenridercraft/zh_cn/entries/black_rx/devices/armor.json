@@ -1,0 +1,24 @@
+{
+	"name": "Black RX装甲",
+	"icon": "kamenridercraft:rxhead",
+	"category": "kamenridercraft:black_rx/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "搭配Black RX系列骑士的腰带使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/rxhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/rxtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/rxlegs"
+		}
+	]
+}

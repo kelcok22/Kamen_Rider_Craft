@@ -1,0 +1,16 @@
+{
+	"name": "时间极限剑",
+	"icon": "kamenridercraft:zikan_girade",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由$(l:zi_o/riders/zi_o)假面骑士时王$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zikan_girade"
+		}
+	]
+}

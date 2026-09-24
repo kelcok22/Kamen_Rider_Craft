@@ -1,0 +1,19 @@
+{
+	"name": "新生命体核心",
+	"icon": "kamenridercraft:neonoid_core",
+	"category": "kamenridercraft:zo/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士ZO (1993年，电影)$(br2)用于切换德拉斯的$(l:zo/riders/doras#doras_red)红色形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neonoid_core",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

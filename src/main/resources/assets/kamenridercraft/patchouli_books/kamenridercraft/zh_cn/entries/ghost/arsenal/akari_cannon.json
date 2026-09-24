@@ -1,0 +1,19 @@
+{
+    "name": "明里加农",
+    "icon": "kamenridercraft:akari_cannon",
+    "category": "kamenridercraft:ghost/arsenal",
+    "sortnum": 13,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)由月村明里使用$(br2)对附近的 $(l:ghost/mobs/gamma_commandos)动员眼魔$(/l) 施加发光效果，持续10秒"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:akari_cannon",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gashapon_capsules#gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        }
+    ]
+}

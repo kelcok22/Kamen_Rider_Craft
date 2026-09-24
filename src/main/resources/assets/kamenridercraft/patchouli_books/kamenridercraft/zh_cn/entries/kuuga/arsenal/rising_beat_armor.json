@@ -1,0 +1,16 @@
+{
+	"name": "升华节拍装甲",
+	"icon": "kamenridercraft:rising_beat_armor",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)DX 节拍锹形虫 (2000年, 玩具)$(br2)由空我的$(l:kuuga/riders/kuuga#rising_mighty)升华全能$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/rising_beat_armor"
+		}
+	]
+}

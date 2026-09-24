@@ -1,0 +1,21 @@
+{
+	"name": "异类时王",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:another_zi_o",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br)生命值: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:zi_o/mobs/kasshine)加辰$(/l)进化而来$(br2)特殊机制：$(li)若背包内持有$(l:zi_o/items/ridewatches#zi_o_ii_ridewatch)时王二阶骑士表盘$(/l)，生命值低于100时会变身成$(l:zi_o/riders/another_zi_o#zi_o_ii)异类时王二阶$(/l)$(br2)掉落见下一页"
+		},
+      {
+        "type": "patchouli:text",
+        "text": "掉落$(li)1个$(l:zi_o/items/anotherwatches#another_zi_o_watch)异类时王表盘$(/l)$(li)1个$(l:zi_o/items/anotherwatches#another_build_watch)异类Build表盘$(/l)、$(l:zi_o/items/anotherwatches#another_gaim_watch)异类铠武表盘$(/l)、$(l:zi_o/items/anotherwatches#another_ex_aid_watch)异类Ex-Aid表盘$(/l)或$(l:zi_o/items/anotherwatches#another_ghost_watch)异类Ghost表盘$(/l) (25%)$(li)3-5个$(l:zi_o/items/blank_watch)空白骑士表盘$(/l)$(li)1个$(l:zi_o/items/anotherwatches#another_zi_o_ii_watch)异类时王二阶表盘$(/l)（已变身成异类时王二阶）"
+      }
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "假面骑士大脑",
+  "icon": "kamenridercraft:brain_driver",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:brain_driver\",Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": " ",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士大脑",
+      "text": "登场于：$(li)Drive Saga：假面骑士大脑 (2019年，网络剧)$(br2)通过穿戴$(l:drive/devices/brain_driver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)§a骑士毒手!$(li)速度 II$(li)跳跃提升 II"
+    }
+  ]
+}

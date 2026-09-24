@@ -1,0 +1,19 @@
+{
+  "name": "歌查兄弟驱动器",
+  "icon": "kamenridercraft:gotchardriver_brother",
+  "category": "kamenridercraft:gotchard/devices",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/gotcharbrothers)歌查兄弟$(/l)$(br2)最多可存储10组驾驭凯米卡"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:gotchardriver_brother",
+      "title": " ",
+      "text": "物品目前无法获取"
+    }
+  ]
+}

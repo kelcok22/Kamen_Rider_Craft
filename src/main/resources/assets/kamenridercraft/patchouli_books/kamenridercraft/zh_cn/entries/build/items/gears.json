@@ -1,0 +1,58 @@
+{
+	"name": "齿轮",
+	"icon": "kamenridercraft:gear_engine_red",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_engine_red",
+			"text": "登场于：$(li)平成世代FINAL：Build & Ex-Aid 与传奇骑士 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_engine_red",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_remocon_blue",
+			"title": "遥控齿轮(蓝)",
+			"text": "登场于：$(li)平成世代FINAL：Build & Ex-Aid 与传奇骑士 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_remocon_blue",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_engine",
+			"title": "引擎齿轮",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_engine",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/engine_bros)引擎兄弟$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gear_remocon",
+			"title": "遥控齿轮",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gear_remocon",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/remocon_bros)齿轮兄弟$(/l)"
+		}
+	]
+}

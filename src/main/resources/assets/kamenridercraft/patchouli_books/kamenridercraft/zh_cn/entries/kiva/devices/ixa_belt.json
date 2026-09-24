@@ -1,0 +1,31 @@
+{
+	"name": "Ixa腰带",
+	"icon": "kamenridercraft:ixa_belt",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ixa_belt",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/ixa#save)假面骑士Ixa$(/l)$(br2)最多可存储6组笛哨"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kiva/ixa_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_ixa_belt",
+			"title": "Ixa腰带(原型Ixa)",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/proto_ixa)假面骑士原型Ixa$(/l)$(br2)最多可存储6组笛哨"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_ixa_belt",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

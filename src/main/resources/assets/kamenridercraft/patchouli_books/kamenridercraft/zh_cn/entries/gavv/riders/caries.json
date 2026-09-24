@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士卡里恶斯",
+	"icon": "kamenridercraft:terror_gochizo",
+	"category": "kamenridercraft:gavv/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:henshin_belt_caries_gavv\",Count:1b},{id:\"kamenridercraft:gavv_legs\",Count:1b},{id:\"kamenridercraft:gavv_troso\",Count:1b},{id:\"kamenridercraft:gavv_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士卡里恶斯",
+			"text": "登场于：$(li)假面骑士加布：零食屋入侵者 (2025年，电影)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_caries_gavv)变身腰带卡里恶斯腹口$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)力量 III"
+		}
+	]
+}

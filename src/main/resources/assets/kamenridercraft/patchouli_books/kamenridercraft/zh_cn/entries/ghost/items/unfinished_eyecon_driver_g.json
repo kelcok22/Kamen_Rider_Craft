@@ -1,0 +1,16 @@
+{
+	"name": "未完成的感恩魂",
+	"icon": "kamenridercraft:unfinished_eyecon_driver_g",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)用于合成Ghost的$(l:ghost/devices/eyecon_driver_g)眼魂驱动器G$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/unfinished_eyecon_driver_g"
+		}
+	]
+}

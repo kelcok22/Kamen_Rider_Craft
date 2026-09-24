@@ -1,0 +1,17 @@
+{
+    "name": "狼·亡命徒",
+    "icon": "kamenridercraft:revice_logo",
+    "category": "kamenridercraft:revice/mobs",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:wolf_deadman",
+            "text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br)生命值：120"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有2%概率从$(l:revice/mobs/giff_junior)基础恶魔$(/l)进化而来$(br2)掉落$(li)2-4个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)$(li)1个$(l:revice/items/vistamps#proto_wolf_vistamp)狼原始罪恶印章$(/l)$(li)1个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（26.7%）$(li)1个$(l:revice/items/vistamps#buffalo_vistamp)水牛罪恶印章$(/l)（20%）$(li)1个$(l:revice/items/vistamps#kuwagata_vistamp)锹甲罪恶印章$(/l)（13.3%）$(li)1个$(l:revice/items/vistamps#rex_vistamp_theme)暴龙罪恶印章(主题曲)$(/l)（6.7%）$(li)1个$(l:revice/items/vistamps#sabertiger_vistamp)剑齿虎原始罪恶印章$(/l)（6.7%）$(li)1个$(l:revice/items/vistamps#cheetah_vistamp)猎豹原始罪恶印章$(/l)（6.7%）$(li)1个$(l:revice/items/vistamps#giraffa_vistamp)长颈鹿锯锹形虫罪恶印章$(/l)（6.7%）"
+        }
+    ]
+}

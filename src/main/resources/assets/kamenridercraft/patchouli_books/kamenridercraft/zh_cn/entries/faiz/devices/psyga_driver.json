@@ -1,0 +1,16 @@
+{
+	"name": "天帝驱动器",
+	"icon": "kamenridercraft:psyga_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555：失落的乐园 (2003年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/psyga)假面骑士天帝"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/psyga_driver"
+		}
+	]
+}

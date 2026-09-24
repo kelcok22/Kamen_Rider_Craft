@@ -1,0 +1,30 @@
+{
+	"name": "骑士玩家代扣",
+	"icon": "kamenridercraft:rideplayerbelt",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rideplayerbelt",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/ride_player)骑士玩家"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/rideplayerbelt",
+          "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rideplayerbelt_nico",
+			"title": "骑士玩家代扣（妮可）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/ride_player_nico)骑士玩家妮可"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/rideplayerbelt_nico"
+		}
+	]
+}

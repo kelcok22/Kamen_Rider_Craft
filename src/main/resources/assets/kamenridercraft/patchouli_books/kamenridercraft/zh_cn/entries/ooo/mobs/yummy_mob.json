@@ -1,0 +1,21 @@
+{
+    "name": "噬欲怪",
+    "icon": "kamenridercraft:ooo_logo",
+    "category": "kamenridercraft:ooo/mobs",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:yummy_mob",
+            "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br)生命值：30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生成群系：沙漠、风袭丘陵$(br2)掉落$(li)2-4个 $(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个 $(l:ooo/items/cellmedal)细胞硬币$(/l)（40%）$(li)1个 $(l:ooo/items/core_medals#taka_medal)鹰核心硬币$(/l)（20%）$(li)1个 $(l:ooo/items/core_medals#tora_medal)老虎核心硬币$(/l)（20%）$(li)1个 $(l:ooo/items/core_medals#batta_medal)飞蝗核心硬币$(/l)（20%）$(br2)进化见下一页"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Boss：$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)（热带草原群系）$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)（森林群系）$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)（恶地群系）$(li)$(l:ooo/mobs/mezooi_mob)梅兹尔$(/l)（河流/海洋群系）$(li)$(l:ooo/mobs/ankh_lost_mob)安库(迷失)$(/l)（山地群系）$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)（下界）$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)（末地）$(br2)$(li)$(l:ooo/mobs/shocker_greeed_mob)修卡贪欲者$(/l)（$(l:den_o/dimensions/sands_of_time)时之沙$(/l)）$(br2)其他群系中的Boss：$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)（2%）$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)（2%）$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)（2%）$(li)$(l:ooo/mobs/mezooi_mob)梅兹尔$(/l)（2%）$(li)$(l:ooo/mobs/ankh_lost_mob)安库(迷失)$(/l)（2%）"
+        }
+    ]
+}

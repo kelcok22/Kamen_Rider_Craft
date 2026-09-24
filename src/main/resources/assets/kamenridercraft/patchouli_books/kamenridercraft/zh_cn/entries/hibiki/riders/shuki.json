@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士朱鬼",
+	"icon": "kamenridercraft:henshin_kigen_shuki",
+	"category": "kamenridercraft:hibiki/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shukidriver\",Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士朱鬼",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)通过穿戴$(l:hibiki/devices/ongekishin#shukidriver)音击弦$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)生命恢复$(li)抗火$(li)力量 II"
+		}
+	]
+}

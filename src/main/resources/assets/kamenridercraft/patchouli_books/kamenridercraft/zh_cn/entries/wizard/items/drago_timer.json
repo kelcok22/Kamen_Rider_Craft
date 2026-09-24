@@ -1,0 +1,16 @@
+{
+	"name": "魔龙计时器",
+	"icon": "kamenridercraft:drago_timer",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于切换Wizard的$(l:wizard/riders/wizard#all_dragon)完全魔龙风格$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/drago_timer"
+		}
+	]
+}

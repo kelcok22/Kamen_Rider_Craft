@@ -1,0 +1,19 @@
+{
+	"name": "生化缠绕者",
+	"icon": "kamenridercraft:bio_winder",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑特别篇：13骑士 (2002年, 电视特别节目)$(br2)由$(l:ryuki/riders/verde)假面骑士妖翠$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bio_winder",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/bio_winder_vent)生化缠绕者降临$(/l)获取。"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"name": "马赫驱动器",
+	"icon": "kamenridercraft:mach_driver_honoh",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "mach_driver_honoh",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/mach)假面骑士马赫"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/mach_driver_honoh"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mach_driver_honoh_chaser",
+			"title": "马赫驱动器(追猎)",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/chaser)假面骑士追猎"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/mach_driver_honoh_chaser"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mach_driver_honoh_drive",
+			"title": "马赫驱动器(Drive)",
+			"text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(li)假面骑士×假面骑士 Ghost & Drive：超级电影大战创世 (2015年，电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/drive#dead_heat_mach)假面骑士Drive"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/mach_driver_honoh_drive"
+		}
+	]
+}

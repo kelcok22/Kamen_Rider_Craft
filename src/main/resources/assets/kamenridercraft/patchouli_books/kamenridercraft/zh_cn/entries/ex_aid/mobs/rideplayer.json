@@ -1,0 +1,21 @@
+{
+    "name": "骑士玩家",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:rideplayer",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生成群系：绯红森林$(br2)掉落$(li)3-4个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)$(li)1个$(l:ex_aid/items/gashatrophies#mighty_action_x_gasha_trophy)全能动作X奖励卡带$(/l) (16.7%)$(li)1个$(l:ex_aid/items/gashatrophies#taddle_quest_gasha_trophy)探索冒险奖励卡带$(/l) (16.7%)$(li)1个$(l:ex_aid/items/gashatrophies#bang_bang_shooting_gasha_trophy)砰砰射击奖励卡带$(/l) (16.7%)$(li)1个$(l:ex_aid/items/gashatrophies#bakusou_bike_gasha_trophy)暴走机车奖励卡带$(/l) (16.7%)$(li)1个$(l:ex_aid/items/rider_gashats#unfinished_kamen_rider_chronicle_gashat)未完成的编年史卡带$(/l) (33.3%)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "升级$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l) (5%)$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l) (5%)"
+        }
+    ]
+}

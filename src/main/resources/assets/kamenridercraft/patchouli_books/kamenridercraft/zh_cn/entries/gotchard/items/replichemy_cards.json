@@ -1,0 +1,120 @@
+{
+	"name": "复制凯米卡",
+	"icon": "kamenridercraft:steamliner_repli_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "steamliner_repli_chemy_card",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成恐惧的$(l:gotchard/devices/dreadriver)恐惧驱动器$(/l)$(br2)可切换恐惧的$(l:gotchard/riders/dread#type_zero)零式$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:steamliner_repli_chemy_card",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicon_repli_chemy_card",
+			"title": "独角兽复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换恐惧的$(l:gotchard/riders/dread#type_one)一式$(/l)与$(l:gotchard/riders/dread#type_three)三式$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicon_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daiohni_repli_chemy_card",
+			"title": "大王恶鬼复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换恐惧的$(l:gotchard/riders/dread#type_two)二式$(/l)与$(l:gotchard/riders/dread#type_three)三式$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daiohni_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "madwheel_repli_chemy_card",
+			"title": "疯狂车轮复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:madwheel_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "antrooper_repli_chemy_card",
+			"title": "蚂蚁军团复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:antrooper_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dreatrooper)恐惧骑兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigantliner_repli_chemy_card",
+			"title": "巨型列车复制驾驭凯米卡",
+			"text": "登场于：$(li)《假面骑士歌查德：最终舞台剧》(2024年，舞台剧)$(br2)可切换恐惧的$(l:gotchard/riders/dread#type_final)终式$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gigantliner_repli_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "apparebushido_repli_chemy_card",
+			"title": "武士道复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:apparebushido_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bulletbaang_repli_chemy_card",
+			"title": "子弹砰砰复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bulletbaang_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamantis_repli_chemy_card",
+			"title": "镰刀螳螂复制驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamantis_repli_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l) $(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l)"
+		}
+	]
+}

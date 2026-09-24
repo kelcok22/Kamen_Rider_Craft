@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士伊登",
+	"icon": "kamenridercraft:sengoku_driver_idunn",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_idunn\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_idunn_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "苹果武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#forbidden_ringo_lockseed)禁忌苹果锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士伊登",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士斩月 (2015年，V-Cinema电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_idunn)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度 III$(li)生命恢复 II$(li)急迫 II$(li)饱和$(li)力量 IV"
+		}
+	]
+}

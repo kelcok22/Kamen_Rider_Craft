@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士女王",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:marika",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2.5%的几率从$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)进化而来$(br2)掉落$(li)4-6个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)$(li)1个$(l:gaim/items/energy_lockseeds#peach_energy_lockseed)蜜桃能量锁种$(/l)$(li)1个$(l:gaim/items/energy_lockseeds#marron_energy_lockseed)栗子能量锁种$(/l) (25%)"
+		}
+	]
+}

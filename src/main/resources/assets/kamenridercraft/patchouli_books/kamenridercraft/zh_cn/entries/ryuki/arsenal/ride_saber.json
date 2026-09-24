@@ -1,0 +1,19 @@
+{
+	"name": "骑士军刀",
+	"icon": "kamenridercraft:ride_saber",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由龙骑的$(l:ryuki/riders/ryuki#blank)空白形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ride_saber",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#ride_saber_vent)骑士军刀刀剑降临$(/l)获得"
+		}
+	]
+}

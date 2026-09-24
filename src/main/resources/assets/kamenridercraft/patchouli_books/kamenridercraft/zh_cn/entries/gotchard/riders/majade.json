@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士Majade",
+	"icon": "kamenridercraft:alchemisdriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "sununicorn",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:the_sun_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "烈阳独角兽",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#unicon_ride_chemy_card)独角兽驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#the_sun_ride_chemy_card)太阳驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Majade",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/alchemisdriver)炼金术士驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mooncerberus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:neminemoon_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "月之三头犬",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#yoacerberus_ride_chemy_card)黎明三头犬驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#neminemoon_ride_chemy_card)安眠月亮驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Majade",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/alchemisdriver)炼金术士驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "twilight",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alchemisdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:twilight_the_sun_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "暮光Majade",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#twilight_unicon_ride_chemy_card)暮光独角兽驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#twilight_the_sun_ride_chemy_card)暮光太阳驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Majade",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/alchemisdriver)炼金术士驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量 III$(li)速度 III$(li)生命恢复 III$(li)夜视$(li)抗性提升 III$(li)抗火$(li)毒药抗性$(li)炎拳"
+		}
+	]
+}

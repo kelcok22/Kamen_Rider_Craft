@@ -1,0 +1,17 @@
+{
+	"name": "GOD机关 探员",
+	"icon": "kamenridercraft:x_logo",
+	"category": "kamenridercraft:x/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:god_warfare_agent",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：平原、向日葵平原、沙漠、针叶林、雪原、沙滩、丛林、桦木森林、积雪的针叶林、原始松木针叶林、热带草原、热带高原、风袭热带草原$(br2)掉落：$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (50%)$(li)1个$(l:x/items/ridol_core)莱德尔核心$(/l) (50%)"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"name": "破灭驱动器带扣",
+	"icon": "kamenridercraft:dooms_driver_buckle_solomon",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "dooms_driver_buckle_solomon",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/solomon)假面骑士所罗门"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_driver_buckle_solomon",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/solomon)假面骑士所罗门$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dooms_driver_buckle_storious",
+			"title": "破灭驱动器带扣（斯特利乌斯版）",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/storious)假面骑士斯特利乌斯"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_driver_buckle_storious",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/storious_rider)假面骑士斯特利乌斯$(/l)"
+		}
+	]
+}

@@ -1,0 +1,302 @@
+{
+    "name": "Boss召唤方块",
+    "icon": "kamenridercraft:gaoh_boss_block",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "这些方块在被玩家挖掘时会召唤Boss。使用精准采集镐挖掘可以保留方块本身。"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:kuuga/n_daguva_zeba_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "odin_boss_block",
+            "recipe": "kamenridercraft:ryuki/odin_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "faiz_boss_block",
+            "item": "kamenridercraft:faiz_boss_block",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:faiz/mobs/faiz)假面骑士Faiz$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "gaoh_boss_block",
+            "item": "kamenridercraft:gaoh_boss_block",
+            "text": "可在 $(l:den_o/structures/gaohliner)牙王班列$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:den_o/mobs/gaoh)假面骑士牙王$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "arc_boss_block",
+            "item": "kamenridercraft:arc_boss_block",
+            "text": "可在 $(l:kiva/structures/kiva_crater)Kiva陨石坑$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:kiva/mobs/arc)假面骑士恶王$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "decade_violent_emotion_boss_block",
+            "item": "kamenridercraft:decade_violent_emotion_boss_block",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "taboo_boss_block",
+            "item": "kamenridercraft:taboo_boss_block",
+            "text": "掉落自：$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)$(br2)挖掘此方块可以召唤 $(l:w/mobs/taboo_dopant)禁忌掺杂体$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "terror_boss_block",
+            "item": "kamenridercraft:terror_boss_block",
+            "text": "该方块当前无法获取$(br2)挖掘此方块可以召唤 $(l:w/mobs/terror_dopant)恐惧掺杂体$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "poseidon_boss_block",
+            "recipe": "kamenridercraft:ooo/poseidon_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "core_boss_block",
+            "item": "kamenridercraft:core_boss_block",
+            "text": "可在 $(l:w/structures/earths_core)地核$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:ooo/mobs/core)假面骑士Core$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "powered_up_core_boss_block",
+            "recipe": "kamenridercraft:ooo/powered_up_core_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:ooo/mobs/powered_up_core)强化假面骑士Core$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "ancient_ooo_boss_block",
+            "recipe": "kamenridercraft:ooo/ancient_ooo_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "goda_boss_block",
+            "recipe": "kamenridercraft:ooo/goda_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:ooo/mobs/goda)假面骑士戈达$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "super_gingaoh_boss_block",
+            "recipe": "kamenridercraft:fourze/super_gingaoh_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "wiseman_boss_block",
+            "recipe": "kamenridercraft:wizard/wiseman_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "rosyuo_boss_block",
+            "item": "kamenridercraft:rosyuo_boss_block",
+            "text": "可在 $(l:gaim/structures/rosyuo_helheim_city)白亚的海姆冥界之城$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:gaim/mobs/rosyuo)白亚$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "redyue_boss_block",
+            "item": "kamenridercraft:redyue_boss_block",
+            "text": "可在 $(l:gaim/structures/redyue_helheim_city)翡翠的遗迹$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:gaim/mobs/redyue)翡翠$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "demushu_boss_block",
+            "item": "kamenridercraft:demushu_boss_block",
+            "text": "可在 $(l:gaim/structures/demushu_helheim_city)真红的洞穴$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:gaim/mobs/demushu)真红$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "lord_baron_boss_block",
+            "recipe": "kamenridercraft:gaim/lord_baron_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:gaim/mobs/lord_baron)勋爵巴隆$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "megahex_boss_block",
+            "item": "kamenridercraft:megahex_boss_block",
+            "text": "可在 $(l:gaim/structures/megahex_planet)梅嘉赫克斯星球$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:gaim/mobs/megahex)梅嘉赫克斯$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "gord_drive_boss_block",
+            "recipe": "kamenridercraft:drive/gord_drive_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:drive/mobs/gord_drive)黄金Drive$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "cronus_boss_block",
+            "recipe": "kamenridercraft:exaid/cronus_block",
+            "text": "挖掘此方块可以召唤 $(l:ex_aid/mobs/cronus)假面骑士Cronus$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "night_rogue_boss_block",
+            "item": "kamenridercraft:night_rogue_boss_block",
+            "text": "可在 $(l:build/structures/rogue_base)Faust基地$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:build/mobs/night_rogue)夜霸$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "hokuto_trio_boss_block",
+            "item": "kamenridercraft:hokuto_trio_boss_block",
+            "text": "可在 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:build/mobs/stag_lost_smash)锹形虫迷失猛击者$(/l)、$(l:build/mobs/owl_lost_smash)猫头鹰迷失猛击者$(/l) 和 $(l:build/mobs/castle_lost_smash)城堡迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "hell_bros_boss_block",
+            "item": "kamenridercraft:hell_bros_boss_block",
+            "text": "可在 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:build/mobs/engine_bros)引擎兄弟$(/l) 和 $(l:build/mobs/remocon_bros)齿轮兄弟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "mad_rogue_boss_block",
+            "item": "kamenridercraft:mad_rogue_boss_block",
+            "text": "可在 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "evol_boss_block",
+            "item": "kamenridercraft:evol_boss_block",
+            "text": "可在 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:build/mobs/evol)假面骑士Evol$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "bikaiser_boss_block",
+            "recipe": "kamenridercraft:build/bikaiser_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:build/mobs/bikaiser)霸凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "woz_boss_block",
+            "recipe": "kamenridercraft:zi_o/woz_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "yaminin_boss_block",
+            "item": "kamenridercraft:yaminin_boss_block",
+            "text": "由 $(l:misc/villagers#wandering_trader)流浪商人$(/l) 交易$(br2)挖掘此方块可以召唤 $(l:zi_o/mobs/yaminin)暗忍$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "ginga_boss_block",
+            "item": "kamenridercraft:ginga_boss_block",
+            "text": "可在 $(l:zi_o/structures/ginga_meteor)银河的陨石$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:zi_o/mobs/ginga)假面骑士银河$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "another_den_o_boss_block",
+            "item": "kamenridercraft:another_den_o_boss_block",
+            "text": "可在$(l:zi_o/structures/another_denliner)异类电班列$(/l)中找到$(br2)挖掘此方块可以召唤 $(l:zi_o/mobs/another_den_o)异类电王$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "quartzer_boss_block",
+            "recipe": "kamenridercraft:zi_o/quartzer_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)、$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l) 和 $(l:zi_o/m)假面骑士扎莫纳斯$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "horobi_boss_block",
+            "item": "kamenridercraft:horobi_boss_block",
+            "text": "可在 $(l:zero_one/structures/daybreak_town)破晓镇$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:zero_one/mobs/horobi)假面骑士灭$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "anchor": "ikazuchi_boss_block",
+            "item": "kamenridercraft:ikazuchi_boss_block",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)$(br2)挖掘此方块可以召唤 $(l:zero_one/mobs/ikazuchi)假面骑士雷$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "ark_one_boss_block",
+            "recipe": "kamenridercraft:zero_one/ark_one_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:zero_one/mobs/ark_zero)假面骑士亚克-零$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "zein_boss_block",
+            "recipe": "kamenridercraft:zero_one/zein_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:zero_one/mobs/zein)假面骑士善意$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "sabela_boss_block",
+            "recipe": "kamenridercraft:saber/sabela_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:saber/mobs/sabela)假面骑士佩剑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "durendal_boss_block",
+            "recipe": "kamenridercraft:saber/durendal_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:saber/mobs/durendal)假面骑士恒剑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "solomon_boss_block",
+            "recipe": "kamenridercraft:saber/solomon_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:saber/mobs/solomon)假面骑士所罗门$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "storious_boss_block",
+            "recipe": "kamenridercraft:saber/storious_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:saber/mobs/storious_rider)假面骑士斯特利乌斯$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "eld_boss_block",
+            "recipe": "kamenridercraft:gotchard/eld_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:gotchard/mobs/eld)假面骑士艾尔德$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "bocca_boss_block",
+            "recipe": "kamenridercraft:gavv/bocca_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "caries_boss_block",
+            "recipe": "kamenridercraft:gavv/caries_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:gavv/mobs/caries)假面骑士卡里恶斯$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "anchor": "lord_three_boss_block",
+            "recipe": "kamenridercraft:zeztz/lord_three_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:zeztz/mobs/lord_three)领主三号$(/l)"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士巴尔克斯",
+	"icon": "kamenridercraft:ziku_driver_barlckxs",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "barlckxs",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_barlckxs\",components:{custom_data:{slot_tex1:\"kamenridercraft:barlckxs_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#barlckxs_ridewatch)巴尔克斯骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔克斯",
+			"text": "登场于：$(li)假面骑士时王：Over Quartzer (2019年，电影)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)急迫 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "giant",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_barlckxs\",components:{custom_data:{slot_tex1:\"kamenridercraft:bio_rider_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巨大巴尔克斯",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#bio_rider_ridewatch)生化骑士骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔克斯",
+			"text": "登场于：$(li)假面骑士时王：Over Quartzer (2019年，电影)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)变大 III$(li)急迫 II$(li)力量"
+		}
+	]
+}

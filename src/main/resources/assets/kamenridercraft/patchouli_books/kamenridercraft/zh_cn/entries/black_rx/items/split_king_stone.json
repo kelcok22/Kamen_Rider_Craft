@@ -1,0 +1,19 @@
+{
+	"name": "裂开的帝王石",
+	"icon": "kamenridercraft:split_king_stone",
+	"category": "kamenridercraft:black_rx/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)用于制作Black RX的$(l:black_rx/devices/sun_riser)太阳升华器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:split_king_stone",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:black_rx/mobs/grey_chap)恰普(RX)$(/l)"
+		}
+	]
+}

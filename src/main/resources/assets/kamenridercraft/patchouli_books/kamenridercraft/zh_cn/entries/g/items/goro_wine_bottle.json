@@ -1,0 +1,19 @@
+{
+	"name": "吾郎酒瓶",
+	"icon": "kamenridercraft:goro_wine_bottle",
+	"category": "kamenridercraft:g/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士G (2009年，电视特别篇)$(br2)用于制作G的$(l:g/devices/g_belt)G腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:goro_wine_bottle",
+			"title": " ",
+			"text": "通过学徒级$(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获得"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "艾姆斯射击升华器",
+	"icon": "kamenridercraft:shot_riser_gun",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由 $(l:zero_one/riders/vulcan)假面骑士巴尔坎$(/l) 及 $(l:zero_one/riders/valkyrie)假面骑士瓦尔基里$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/shot_riser_gun",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备"
+		}
+	]
+}

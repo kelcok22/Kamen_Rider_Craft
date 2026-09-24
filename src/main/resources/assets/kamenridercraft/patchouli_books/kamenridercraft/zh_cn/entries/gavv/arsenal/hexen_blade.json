@@ -1,0 +1,17 @@
+{
+	"name": "糖果剑",
+	"icon": "kamenridercraft:hexen_blade",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)$(br2)由加布的 $(l:gavv/riders/gavv#hexenheim)糖果屋形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/hexen_blade",
+			"text": "副手持有可将村民从$(l:gavv/items/heatpress)压缩饼人$(/l)中脱离"
+		}
+	]
+}

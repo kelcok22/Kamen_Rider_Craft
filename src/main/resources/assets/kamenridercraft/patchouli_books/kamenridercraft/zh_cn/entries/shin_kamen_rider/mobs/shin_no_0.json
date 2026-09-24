@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士No.0",
+	"icon": "kamenridercraft:prana_infused_rider_circuit",
+	"category": "kamenridercraft:shin_kamen_rider/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shin_no_0",
+			"text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br)生命值：70"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:shin_kamen_rider/mobs/batta_augment)量产型蝗虫怪人$(/l)进化而来$(br2)掉落$(li)4-6个$(l:shin_kamen_rider/items/prana_infused_rider_circuit)生命注能骑士电路板$(/l)$(li)1个$(l:shin_kamen_rider/items/typhoon_energy_converters#ultimate_half_typhoon_core)半究极台风能量转换器$(/l) (75%)$(li)1个$(l:shin_kamen_rider/items/typhoon_energy_converters#shin_typhoon_core_2_1)台风能量转换器(No.2+1)$(/l) (25%)"
+		}
+	]
+}

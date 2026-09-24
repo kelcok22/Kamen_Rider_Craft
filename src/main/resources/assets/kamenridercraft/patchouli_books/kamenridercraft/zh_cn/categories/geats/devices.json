@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:geats/main",
+    "name": "腰带",
+    "description": "极狐系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:geats/items/blank_rider_core_id)空白骑士核心ID$(/l)修复.",
+    "icon": "kamenridercraft:desire_driver_geats",
+    "sortnum": 1
+}

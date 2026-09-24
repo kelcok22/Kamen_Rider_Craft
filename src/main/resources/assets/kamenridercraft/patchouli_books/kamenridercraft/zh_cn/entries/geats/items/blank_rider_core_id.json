@@ -1,0 +1,19 @@
+{
+	"name": "空白ID核心",
+	"icon": "kamenridercraft:blank_rider_core_id",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用作大多数极狐系列物品的基础合成物品及修复材料$(br2)可将$(l:geats/riders/keibi_rider)警备队骑士$(/l)还原为登录形态$(br2)可将$(l:geats/riders/the_end_rider)The End骑士$(/l)还原为登录形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blank_rider_core_id",
+			"title": " ",
+			"text": "可在$(l:geats/structures/jamar_garden)邪魔徒花园$(/l)或极狐$(l:misc/stageshow)舞台秀$(/l)中找到$(br2)掉落自：$(li)$(l:geats/mobs/pawnjyamato_mob)兵卒邪魔徒$(/l)$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l)$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l)$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l)"
+		}
+	]
+}

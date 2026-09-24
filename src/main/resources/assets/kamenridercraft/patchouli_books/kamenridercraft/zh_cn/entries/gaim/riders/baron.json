@@ -1,0 +1,152 @@
+{
+	"name": "假面骑士巴隆",
+	"icon": "kamenridercraft:sengoku_driver_baron",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "banana",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "香蕉武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#banana_lockseed)香蕉锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mango",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:mango_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "芒果武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#mango_lockseed)芒果锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)抗性提升$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "suika",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "西瓜武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#suika_lockseed)西瓜锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)变大 II$(li)挖掘疲劳 II$(li)抗性提升 III$(li)饱和$(li)跳跃提升 IV$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ringo",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:forbidden_ringo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "苹果武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#forbidden_ringo_lockseed)禁忌苹果锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士巴隆 (2015年，V-Cinema电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度 III$(li)生命恢复 II$(li)急迫 II$(li)饱和$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "草莓武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#ichigo_lockseed)草莓锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "melon",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "蜜瓜武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#melon_lockseed)蜜瓜锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)抗性提升$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiwi",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiwi_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "奇异果武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#kiwi_lockseed)奇异果锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)急迫 II$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lemon_energy",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:genesis_driver_baron_shin\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "柠檬能量武装",
+			"text": "通过使用 $(l:gaim/items/energy_lockseeds#lemon_energy_lockseed)柠檬能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/genesis_driver#genesis_driver_baron_shin)创世纪驱动器$(/l)进行变身$(br2)任何创世纪驱动器使用者均可使用此形态$(br2)状态效果：$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lord_baron",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:lord_baron\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "勋爵巴隆",
+			"text": "背包中持有 $(l:misc/items/foods#helheim_fruit)海姆冥界果实$(/l) 与 $(l:gaim/arsenal/guronbaryamu)古罗巴里萨$(/l) 时食用果实来切换形态"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)毒药抗性$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 IV$(li)饱和$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "电王武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#den_o_lockseed)Den-O锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)急迫$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "OOO武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#ooo_lockseed)OOO锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武&Wizard：命运的战国电影大战 (2013年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)夜视 II$(li)急迫 II$(li)饱和$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "minecraft:armor_stand{Invisible:1b,ArmorItems:[{id:\"kamenridercraft:sengoku_driver_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"name": "Wizard武装",
+			"text": "通过使用 $(l:gaim/items/lockseeds#wizard_lockseed)Wizard锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴隆",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_baron)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)抗火"
+		}
+	]
+}

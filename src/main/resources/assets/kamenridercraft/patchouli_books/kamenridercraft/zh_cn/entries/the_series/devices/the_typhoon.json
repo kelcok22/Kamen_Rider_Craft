@@ -1,0 +1,29 @@
+{
+	"name": "台风腰带",
+	"icon": "kamenridercraft:the_typhoon_ichigo",
+	"category": "kamenridercraft:the_series/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_ichigo",
+			"text": "登场于：$(li)假面骑士 THE FIRST (2005年，电影)$(br2)与$(l:the_series/devices/armor)THE系列装甲$(/l)一起穿戴，可变身为$(l:the_series/riders/1)假面骑士1"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:the_series/the_typhoon_ichigo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_nigo",
+			"title": "台风腰带(2)",
+			"text": "登场于：$(li)假面骑士 THE FIRST (2005年，电影)$(br2)与$(l:the_series/devices/armor)THE系列装甲$(/l)一起穿戴，可变身为$(l:the_series/riders/2)假面骑士2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:the_series/the_typhoon_nigo"
+		}
+	]
+}

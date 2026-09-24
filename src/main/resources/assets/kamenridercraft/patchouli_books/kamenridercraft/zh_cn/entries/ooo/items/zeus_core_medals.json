@@ -1,0 +1,279 @@
+{
+	"name": "鹰核心硬币(英雄寻忆版)",
+	"icon": "kamenridercraft:zeus_taka_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_taka_medal",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)鹰$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_taka_medal",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_kujaku_medal",
+			"title": "孔雀核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol)孔雀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kujaku_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_condor_medal",
+			"title": "秃鹫核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol)秃鹫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_condor_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_lion_medal",
+			"title": "狮子核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#latorartar)狮子$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_lion_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tora_medal",
+			"title": "老虎核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)虎$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tora_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_cheetah_medal",
+			"title": "猎豹核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#latorartar)猎豹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_cheetah_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_kuwagata_medal",
+			"title": "锹形虫核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#gatakiriba)锹形虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kuwagata_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_kamakiri_medal",
+			"title": "螳螂核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#gatakiriba)螳螂$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_kamakiri_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_batta_medal",
+			"title": "飞蝗核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)蝗$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_batta_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_sai_medal",
+			"title": "犀牛核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)犀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_sai_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_gorilla_medal",
+			"title": "大猩猩核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)猩$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_gorilla_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_zou_medal",
+			"title": "大象核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)象$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_zou_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_shachi_medal",
+			"title": "虎鲸核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)鲸$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_shachi_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_unagi_medal",
+			"title": "电鳗核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)鳗$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_unagi_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tako_medal",
+			"title": "章鱼核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)章$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tako_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_ptera_medal",
+			"title": "翼龙核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#putotyra)翼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_ptera_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tricera_medal",
+			"title": "三角龙核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#putotyra)角$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tricera_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_tyranno_medal",
+			"title": "暴龙核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#putotyra)暴$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_tyranno_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_mukade_medal",
+			"title": "蝎子核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#mukachiri)蝎$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_mukade_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_hachi_medal",
+			"title": "蜜蜂核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#mukachiri)蜂$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_hachi_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zeus_ari_medal",
+			"title": "蚂蚁核心硬币(英雄寻忆版)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#mukachiri)蚁$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeus_ari_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		}
+	]
+}

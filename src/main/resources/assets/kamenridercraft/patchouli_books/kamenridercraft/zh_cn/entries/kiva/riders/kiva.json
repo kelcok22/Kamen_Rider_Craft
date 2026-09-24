@@ -1,0 +1,134 @@
+{
+	"name": "假面骑士Kiva",
+	"icon": "kamenridercraft:wakeupfuestle",
+	"category": "kamenridercraft:kiva/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wakeupfuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Kiva",
+			"text": "通过使用 $(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨(Kiva)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "garulu",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:garulufuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "加鲁鲁",
+			"text": "通过使用 $(l:kiva/items/fuestles#garulufuestle)加鲁鲁笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "basshaa",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:basshaafuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巴夏",
+			"text": "通过使用 $(l:kiva/items/fuestles#basshaafuestle)巴夏笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)急迫 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dogga",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:doggafuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "德加",
+			"text": "通过使用 $(l:kiva/items/fuestles#doggafuestle)德加笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dogabaki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dogabaki\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "德加巴基形态",
+			"text": "背包中持有另外三个笛哨时，Shift+点击 $(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨$(/l)、$(l:kiva/items/fuestles#garulufuestle)加鲁鲁笛哨$(/l)、$(l:kiva/items/fuestles#basshaafuestle)巴夏笛哨$(/l) 或 $(l:kiva/items/fuestles#doggafuestle)德加笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)饥饿$(li)抗性提升 II$(li)急迫$(li)跳跃提升$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "emperor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tatsulot\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "魔皇",
+			"text": "通过使用 $(l:kiva/items/fuestles#tatsulot)魔皇龙笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)生命恢复 II$(li)急迫 II$(li)跳跃提升 II$(li)力量 III"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "flight_style",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flight_style_fuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "飞形态",
+        "text": "以 $(l:kiva/riders/kiva#emperor)魔皇形态$(/l) 状态，通过使用 $(l:kiva/items/fuestles#keyfuestle)觉醒笛哨(冷/恶王)$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "假面骑士Kiva",
+        "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)飞行$(li)速度 III$(li)抗性提升 III$(li)生命恢复 II$(li)急迫 II$(li)跳跃提升 II$(li)力量 III"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "dogabaki_emperor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dogabaki_emperor\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "魔皇德加巴基形态",
+			"text": "背包中持有 $(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨$(/l)、$(l:kiva/items/fuestles#garulufuestle)加鲁鲁笛哨$(/l)、$(l:kiva/items/fuestles#basshaafuestle)巴夏笛哨$(/l) 和 $(l:kiva/items/fuestles#doggafuestle)德加笛哨$(/l) 时，Shift+点击 $(l:kiva/items/fuestles#tatsulot)魔皇龙笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)假面骑士Kiva：冒险战斗DVD ~你也能成为Kiva~ (2008年，超战斗视频)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)凋零 II$(li)抗性提升 IV$(li)生命恢复$(li)急迫 III$(li)跳跃提升 II$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "red_emperor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kivadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiva_says_fuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "红色魔皇",
+			"text": "通过使用 $(l:kiva/items/fuestles#kiva_says_fuestle)红色魔皇龙笛哨$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Kiva",
+			"text": "登场于：$(li)骑士英雄系列 (2008年，玩具系列)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)生命恢复 II$(li)急迫 II$(li)跳跃提升 II$(li)力量 III"
+		}
+	]
+}

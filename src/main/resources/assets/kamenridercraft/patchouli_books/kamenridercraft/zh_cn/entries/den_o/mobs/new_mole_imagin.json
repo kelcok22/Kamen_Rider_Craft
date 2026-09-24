@@ -1,0 +1,17 @@
+{
+	"name": "新生异魔神",
+	"icon": "kamenridercraft:den_o_logo",
+	"category": "kamenridercraft:den_o/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:new_mole_imagin",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%几率从 $(l:den_o/mobs/new_mole_imagin_sand)新生异魔神(沙)$(/l)进化而来$(br2)掉落$(li)2-4个$(l:den_o/items/imagin_sand)异魔神沙$(/l)$(li)1个$(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l)（10%）"
+		}
+	]
+}

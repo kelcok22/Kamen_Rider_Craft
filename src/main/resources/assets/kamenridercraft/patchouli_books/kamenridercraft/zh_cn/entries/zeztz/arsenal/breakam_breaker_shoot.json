@@ -1,0 +1,16 @@
+{
+	"name": "噬梦破坏器(射击模式)",
+	"icon": "kamenridercraft:breakam_breaker_shoot",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)为 $(l:zeztz/riders/lord_six)领主六号$(/l) 专用武器"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_breaker_shoot"
+		}
+	]
+}

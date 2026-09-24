@@ -1,0 +1,16 @@
+{
+	"name": "月亮升华器",
+	"icon": "kamenridercraft:moon_riser",
+	"category": "kamenridercraft:black_rx/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)After 0 (2002年，S.I.C. 英雄传说)$(br2)与$(l:black_rx/devices/armor)Black RX装甲$(/l)一起穿戴，可变身为$(l:black_rx/riders/another_rx)影月(另类RX)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/moon_riser"
+		}
+	]
+}

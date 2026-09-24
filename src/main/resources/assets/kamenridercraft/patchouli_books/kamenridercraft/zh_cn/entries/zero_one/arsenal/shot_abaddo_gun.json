@@ -1,0 +1,17 @@
+{
+	"name": "射击亚巴顿升华器",
+	"icon": "kamenridercraft:shot_abaddo_gun",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME（2020年，电影）$(br2)由 $(l:zero_one/riders/abaddon)假面骑士·亚巴顿$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/shot_abaddo_gun",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/abaddon)假面骑士·亚巴顿$(/l)的装备$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士·亚巴顿(指挥官)$(/l)的装备"
+		}
+	]
+}

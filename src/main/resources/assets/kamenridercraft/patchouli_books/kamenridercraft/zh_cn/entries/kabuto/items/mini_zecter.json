@@ -1,0 +1,19 @@
+{
+	"name": "原虫外壳",
+	"icon": "kamenridercraft:mini_zecter",
+	"category": "kamenridercraft:kabuto/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用作合成大多数甲斗物品的基础物品和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mini_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		}
+	]
+}

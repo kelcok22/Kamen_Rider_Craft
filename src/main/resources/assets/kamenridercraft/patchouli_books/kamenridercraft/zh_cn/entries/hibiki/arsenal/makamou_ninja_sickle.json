@@ -1,0 +1,19 @@
+{
+	"name": "魔化魁的冥釜",
+	"icon": "kamenridercraft:makamou_ninja_sickle",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)由$(l:hibiki/mobs/makamou_ninja_group)魔化魍$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:makamou_ninja_sickle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:hibiki/mobs/makamou_ninja_group)魔化魍$(/l)的装备"
+		}
+	]
+}

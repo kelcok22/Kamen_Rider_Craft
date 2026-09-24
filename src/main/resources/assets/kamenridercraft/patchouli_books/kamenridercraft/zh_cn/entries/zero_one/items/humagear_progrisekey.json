@@ -1,0 +1,19 @@
+{
+	"name": "修玛吉亚程式升华秘钥",
+	"icon": "kamenridercraft:humagear_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)可在$(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l)上使用，以获取不同修玛吉亚的程式升华秘钥"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:humagear_progrisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)渡渡鸟-雏鸟魔机偶$(/l)$(li)$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+		}
+	]
+}

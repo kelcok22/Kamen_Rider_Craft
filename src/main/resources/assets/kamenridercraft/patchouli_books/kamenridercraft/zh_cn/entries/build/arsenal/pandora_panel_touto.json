@@ -1,0 +1,19 @@
+{
+	"name": "潘多拉嵌板(东都/灰)",
+	"icon": "kamenridercraft:pandora_panel_touto",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)最多可存储10组满装瓶罐"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pandora_panel_touto",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/blood_stalk)血潜$(/l)"
+		}
+	]
+}

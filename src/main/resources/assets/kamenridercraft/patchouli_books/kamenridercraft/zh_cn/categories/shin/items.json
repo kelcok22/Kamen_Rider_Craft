@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:shin/main",
+    "name": "骑士纹章(真)",
+    "description": "",
+    "icon": "kamenridercraft:shin_stone",
+    "sortnum": 2
+}

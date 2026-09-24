@@ -1,0 +1,35 @@
+{
+	"name": "假面骑士Dan-O",
+	"icon": "kamenridercraft:dan_o_belt",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "plat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dan_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_dan_o_plat\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "月台形态",
+			"text": "通过使用$(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Dan-O",
+			"text": "登场于：$(li)回收动物园：守护它！周四是资源垃圾日 (2020年，短片)$(br2)通过穿戴$(l:den_o/devices/dan_o_belt)Dan-O腰带$(/l)进行变身$(br2)状态效果：$(li)缩小 IV$(li)快乐模式 V$(li)霉运"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dan_o_belt\",Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "圣剑形态",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Dan-O",
+			"text": "登场于：$(li)回收动物园：守护它！周四是资源垃圾日 (2020年，短片)$(br2)通过穿戴$(l:den_o/devices/dan_o_belt)Dan-O腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)缩小 IV$(li)跳跃提升$(li)快乐模式 V"
+		}
+	]
+}

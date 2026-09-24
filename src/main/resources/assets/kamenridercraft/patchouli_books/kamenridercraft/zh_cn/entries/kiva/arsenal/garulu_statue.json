@@ -1,0 +1,19 @@
+{
+	"name": "加鲁鲁雕像",
+	"icon": "kamenridercraft:garulu_statue",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于召唤 $(l:kiva/mobs/garulu)加鲁鲁$(/l)"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:garulu_statue",
+        "title": " ",
+        "text": "可在 $(l:kiva/structures/castle_doran)城堡德兰龙$(/l) 中找到"
+      }
+	]
+}

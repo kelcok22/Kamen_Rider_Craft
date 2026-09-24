@@ -1,0 +1,16 @@
+{
+	"name": "负塔罗圣剑",
+	"icon": "kamenridercraft:nega_momotarosword",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride (2008年，街机游戏)$(br2)由负塔罗斯使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/nega_momotarosword"
+		}
+	]
+}

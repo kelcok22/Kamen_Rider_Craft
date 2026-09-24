@@ -1,0 +1,16 @@
+{
+	"name": "钻头粉碎者",
+	"icon": "kamenridercraft:drill_crusher_crusher",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)搭配$(l:zi_o/riders/zi_o#build)Build装甲$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/drill_crusher_crusher"
+		}
+	]
+}

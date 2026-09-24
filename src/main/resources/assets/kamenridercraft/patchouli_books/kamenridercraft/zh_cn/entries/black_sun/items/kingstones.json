@@ -1,0 +1,58 @@
+{
+	"name": "帝王石",
+	"icon": "kamenridercraft:king_stone_sun",
+	"category": "kamenridercraft:black_sun/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "king_stone_sun",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)用于制作Black Sun的$(l:black_sun/devices/century_king_sun_driver)世纪王阳驱动器$(/l)$(br2)用于切换Black Sun的$(l:black_sun/riders/black_sun#black_sun)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_stone_sun",
+			"text": "通过在$(l:misc/blocks/machine_blocks#kaijin_stone_generator)怪人石发电机$(/l)上使用$(l:black_sun/items/creation_king_extract_vial)创世王提取物$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "glowing_king_stone_sun",
+			"title": "特殊太阳帝王石",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)用于切换Black Sun的$(l:black_sun/riders/black_sun#glowing_eyes)发光眼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:glowing_king_stone_sun",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#kaijin_stone_generator)怪人石发电机$(/l)上使用$(l:black_sun/items/creation_king_extract_vial)创世王提取物$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_stone_moon",
+			"title": "月亮帝王石",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)用于制作影月的$(l:black_sun/devices/century_king_moon_driver)世纪王月驱动器$(/l)$(br2)用于切换影月的$(l:black_sun/riders/shadowmoon#shadowmoon)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_stone_moon",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#kaijin_stone_generator)怪人石发电机$(/l)上使用$(l:black_sun/items/creation_king_extract_vial)创世王提取物$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "glowing_king_stone_moon",
+			"title": "特殊月亮帝王石",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)用于切换影月的$(l:black_sun/riders/shadowmoon#glowing_eyes)发光眼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:glowing_king_stone_moon",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#kaijin_stone_generator)怪人石发电机$(/l)上使用$(l:black_sun/items/creation_king_extract_vial)创世王提取物$(/l)获得"
+		}
+	]
+}

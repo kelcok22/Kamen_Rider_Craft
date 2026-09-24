@@ -1,0 +1,16 @@
+{
+	"name": "泷骑士腰带",
+	"icon": "kamenridercraft:taki_belt",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士SPIRITS (2001年，漫画)$(br2)与$(l:ichigo/devices/armor)一号装甲$(/l)一起穿戴，可变身为$(l:ichigo/riders/taki_rider)泷骑士$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/taki_belt"
+		}
+	]
+}

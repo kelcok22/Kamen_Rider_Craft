@@ -1,0 +1,16 @@
+{
+	"name": "巴夏麦林枪",
+	"icon": "kamenridercraft:basshaamagnum",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由Kiva的 $(l:kiva/riders/kiva#basshaa)巴夏$(/l) 和 $(l:kiva/riders/kiva#dogabaki)德加巴基形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/basshaa_magnum"
+		}
+	]
+}

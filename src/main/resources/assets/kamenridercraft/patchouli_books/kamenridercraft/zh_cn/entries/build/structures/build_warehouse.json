@@ -1,0 +1,21 @@
+{
+	"name": "Build仓库",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/structures",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Build仓库",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema电影)$(br2)生成于下界各处$(br2)包含3个$(l:build/mobs/downfall_guardian)陷灭防卫者$(/l)刷怪笼"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/build_warehouse.png"
+			],
+			"title": " "
+		}
+	]
+}

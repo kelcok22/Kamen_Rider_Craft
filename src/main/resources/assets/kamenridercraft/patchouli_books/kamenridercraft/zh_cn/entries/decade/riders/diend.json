@@ -1,0 +1,78 @@
+{
+  "name": "假面骑士Diend",
+  "icon": "kamenridercraft:diend_card",
+  "category": "kamenridercraft:decade/riders",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "diend",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": " ",
+      "text": "通过使用$(l:decade/items/kamenride_cards#diend_card)Diend 假面驾驭卡$(/l)进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Diend",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过手持/穿戴$(l:decade/arsenal/diendriver)终骑驱动器$(/l)和$(l:decade/devices/diend_belt)Diend腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)急迫 II$(li)力量"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "power_up",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_power_up_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "能力提升",
+      "text": "通过使用$(l:decade/items/kamenride_cards#diend_power_up_card)Diend(能力提升)假面驾驭卡$(/l)进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Diend",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)通过手持/穿戴$(l:decade/arsenal/diendriver)终骑驱动器$(/l)和$(l:decade/devices/diend_belt)Diend腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)急迫 II$(li)力量 III"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "complete",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:k_touch_diend\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "完全形态",
+      "text": "通过使用$(l:decade/items/k_touch_diend)K-Touch(Diend)$(/l)进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Diend",
+      "text": "登场于：$(li)超级电王三部曲：YELLOW篇 宝物DE-End海盗 (2010年，电影)$(br2)通过手持/穿戴$(l:decade/arsenal/diendriver)终骑驱动器$(/l)和$(l:decade/devices/diend_belt)Diend腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)夜视$(li)急迫 III$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "chinomanako",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_chinomanako_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "千眼海参Diend变身态",
+      "text": "通过使用$(l:decade/items/kamenride_cards#diend_chinomanako_card)Diend 假面驾驭卡(千眼海参Diend变身态)$(/l)进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "千眼海参",
+      "text": "登场于:$(li)假面骑士Decade (2009年, 电视剧)$(br2)通过手持/穿戴$(l:decade/arsenal/diendriver)终骑驱动器$(/l)和$(l:decade/devices/diend_belt)Diend腰带$(/l)进行变身$(br2)状态效果$(li)速度 II$(li)抗性提升 II$(li)急迫 II$(li)力量"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "green",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:diend_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:diend_green_card\"}},Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "绿色diend",
+      "text": "通过使用$(l:decade/items/kamenride_cards#decade_card)Decade 假面驾驭卡$(/l)进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Diend",
+      "text": "登场于：$(li)假面骑士Decade：全骑士超级派生 (2009年，网络电影)$(br2)通过手持/穿戴$(l:decade/arsenal/diendriver)终骑驱动器$(/l)和$(l:decade/devices/diend_belt)Diend腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)急迫 II$(li)力量"
+    }
+  ]
+}

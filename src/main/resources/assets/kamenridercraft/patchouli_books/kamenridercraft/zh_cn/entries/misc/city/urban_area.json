@@ -1,0 +1,115 @@
+{
+    "name": "城区建筑",
+    "icon": "kamenridercraft:woz_time_majin_ridewatch",
+    "category": "kamenridercraft:misc/city",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "城区主要由高层建筑和休闲场所组成。部分建筑会展示模组及我的世界原版中的食物。$(br2)本列表将详细介绍特定骑士系列中的部分建筑。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/cornerhotel.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/cornerpark1.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/cornershop.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/cornershop2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/cornerstore711.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/corner_construction.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/cornerhelheim.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/park1.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/rainbow_tower.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shop.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shop2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tower1.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tower2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/gachapon.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kikuchi_cleaners",
+            "title": "西洋洗涤铺 菊池",
+            "text": "登场作品：$(li)《假面骑士555》（2003年，电视剧）$(br2)战利品：$(li)2-6个皮革（60% x2）（3个大型箱子中）$(li)1个皮革帽子、皮革外套、皮革裤子或皮革靴子（10% x2）（3个大型箱子中）$(br)$(li)1-2杯 $(l:misc/items/foods#transform_one_shot)变身一饮$(/l)（60% x2）（3个大型箱子中）$(li)1个 $(l:faiz/items/mission_memories#faiz_mission_memory_toy)Faiz使命芯片(玩具)$(/l) 或 $(l:faiz/items/mission_memories#kaixa_mission_memory_toy)凯撒使命芯片(玩具)$(/l)（20% x2）（3个大型箱子中）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kikuchi_cleaners_3.png"
+            ],
+            "title": " ",
+            "text": "$(li)1张 $(l:misc/items/music_discs#justifaiz_music_disc)《Justiφ's》音乐唱片$(/l)（楼上卧室的箱子中）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "narumi_detective_office",
+            "title": "鸣海侦探事务所",
+            "text": "登场作品：$(li)《假面骑士W》（2009年，电视剧）$(br2)战利品：$(li)6个$(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l)、5个$(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l)及1张 $(l:misc/items/music_discs#w_b_x_w_boiled_xtreme_music_disc)《W-B-X ～W-Boiled Extreme～》音乐唱片$(/l)（地下掩体的木桶中）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/narumi_detective_office_5.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "omokagedo",
+            "title": "面影堂",
+            "text": "登场作品：$(li)《假面骑士Wizard》（2012年，电视剧）$(br2)战利品：$(li)4个铁锭、12个铁粒、4个 $(l:wizard/items/magic_stones#wizardgem)橙色魔法石$(/l)及1个 $(l:wizard/items/wizard_gem_crafting_chisel)宝石凿子$(/l)（箱子中）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/omokagedo.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/omokagedo_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/omokagedo_3.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "donut_shop_hungry",
+            "title": "Hungry甜甜圈店",
+            "text": "登场作品：$(li)《假面骑士Wizard》（2012年，电视剧）$(br2)战利品：$(li)12个 $(l:misc/items/foods#donut)甜甜圈$(/l)、2杯 $(l:misc/items/foods#vienna_coffee)维也纳咖啡$(/l)及1个 $(l:misc/items/foods#mayo)蛋黄酱$(/l)（箱子中）$(li)2个 $(l:misc/items/foods#donut)甜甜圈$(/l)及1杯 $(l:misc/items/foods#vienna_coffee)维也纳咖啡$(/l)（展示处）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/donut_shop_hungry.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nascita",
+            "title": "Nascita咖啡店",
+            "text": "登场作品：$(li)《假面骑士Build》（2017年，电视剧）$(br2)战利品：$(li)4杯 $(l:misc/items/foods#coffee)咖啡$(/l)（展示处）$(li)5个 $(l:build/items/full_bottle)空白满瓶$(/l)及5个 $(l:build/items/smash_bottle)猛击者瓶罐$(/l)（战兔实验室的木桶中）$(li)1张 $(l:misc/items/music_discs#be_the_one_music_disc)《Be The One》音乐唱片$(/l)（隐藏楼梯下的木桶中）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/nascita.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/nascita_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/nascita_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/nascita_4.png"
+            ],
+            "title": " "
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+	"name": "凯撒驱动器",
+	"icon": "kamenridercraft:kaixa_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "kaixa_driver",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/kaixa)假面骑士凯撒"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/kaixa_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "next_kaixa_driver",
+			"title": "凯撒驱动器 (Next Kaixa)",
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/next_kaixa)假面骑士Next Kaixa"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/next_kaixa_driver"
+		}
+	]
+}

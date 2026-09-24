@@ -1,0 +1,91 @@
+{
+	"name": "劫持升华器",
+	"icon": "kamenridercraft:raidriser_battle",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_battle",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#battle)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_battle",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_buffalo",
+			"title": "劫持升华器(粉碎水牛劫持者)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#buffalo)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_buffalo",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_whale",
+			"title": "劫持升华器(喷溅鲸鱼劫持者)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#whale)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_whale",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_lion",
+			"title": "劫持升华器(爆炸狮子劫持者)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#lion)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_lion",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_penguin",
+			"title": "劫持升华器(风暴企鹅劫持者)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#penguin)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_penguin",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_panda",
+			"title": "劫持升华器(侦查熊猫劫持者)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#panda)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_panda",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidriser_jackal",
+			"title": "劫持升华器(战斗胡狼劫持者)",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/raider#jackal)劫持者"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/raidriser_jackal",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备"
+		}
+	]
+}

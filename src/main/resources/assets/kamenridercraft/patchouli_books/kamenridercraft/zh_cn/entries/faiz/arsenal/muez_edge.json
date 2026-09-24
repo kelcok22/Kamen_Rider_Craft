@@ -1,0 +1,17 @@
+{
+	"name": "缪斯利刃",
+	"icon": "kamenridercraft:muez_edge",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)由$(l:faiz/riders/muez)假面骑士缪斯$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/muez_edge",
+			"text": "掉落自：$(li)$(l:faiz/mobs/muez)假面骑士缪斯$(/l)的装备"
+		}
+	]
+}

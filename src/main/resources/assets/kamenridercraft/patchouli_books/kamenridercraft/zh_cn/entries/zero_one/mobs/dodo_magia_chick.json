@@ -1,0 +1,17 @@
+{
+	"name": "渡渡鸟-雏鸟魔机偶",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dodo_magia_chick",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成地点：玄武岩三角洲$(br2)掉落$(li)1-3个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)1-3个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#punching_kong_progrisekey)拳击金刚程式升华钥$(/l) (5%)$(li)1个$(l:zero_one/items/progrisekeys#lightning_hornet_progrisekey)雷霆黄蜂程式升华钥$(/l) (5%)$(li)1个$(l:zero_one/items/zetsumerisekeys#rocking_hopper_zetsumerisekey)落岩蝗虫绝灭升华钥$(/l) (5%)$(li)1个$(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) (5%)$(br2)进化$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l) (10%)"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:v3/main",
+    "name": "迪斯特龙战斗员",
+    "description": "",
+    "icon": "kamenridercraft:v3_logo",
+    "sortnum": 4
+}

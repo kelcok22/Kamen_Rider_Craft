@@ -1,0 +1,16 @@
+{
+  "name": "颅骨号",
+  "icon": "kamenridercraft:skullboilder_spawn_egg",
+  "category": "kamenridercraft:w/arsenal",
+  "sortnum": 100,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士×假面骑士 OOO&W feat. Skull MOVIE大战CORE (2010年，电影)$(br2)由$(l:w/riders/skull)假面骑士颅骨$(/l)使用"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:w/skullboilder_spawn_egg"
+    }
+  ]
+}

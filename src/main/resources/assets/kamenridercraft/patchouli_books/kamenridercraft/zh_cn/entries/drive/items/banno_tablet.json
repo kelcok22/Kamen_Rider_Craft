@@ -1,0 +1,19 @@
+{
+	"name": "蛮野平板",
+	"icon": "kamenridercraft:banno_tablet",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于合成黄金Drive的$(l:drive/devices/banno_driver#banno_driver_gord_drive)蛮野驱动器$(/l)$(br2)用于合成青铜Drive的$(l:drive/devices/banno_driver#banno_driver_bronze_drive)蛮野驱动器（青铜版）$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:banno_tablet",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)"
+		}
+	]
+}

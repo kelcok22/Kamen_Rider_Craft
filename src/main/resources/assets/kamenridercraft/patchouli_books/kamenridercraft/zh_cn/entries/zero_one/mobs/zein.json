@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士善意",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zein",
+			"text": "登场于:$(li)假面骑士界外者（2022年，网络剧）$(br)生命值: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#zein_boss_block)善意BOSS召唤方块$(/l)召唤而来$(br2)特殊(机制/能力):$(li)生命值低于100时，随机召唤骑士最终形态武器（93.3%）$(li)生命值低于100时，发动Hyper Clock Up（7.69%）$(br2)掉落$(li)5-10个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)1-3个$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)$(li)1个$(l:zero_one/items/progrisekeys#zein_progrisekey)善意程式升华钥$(/l)"
+		}
+	]
+}

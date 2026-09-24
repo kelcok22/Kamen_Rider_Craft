@@ -1,0 +1,16 @@
+{
+	"name": "魔皇剑",
+	"icon": "kamenridercraft:zanbatsword",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由Kiva的 $(l:kiva/riders/kiva#emperor)魔皇$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/zanbatsword"
+		}
+	]
+}

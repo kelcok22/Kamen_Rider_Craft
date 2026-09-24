@@ -1,0 +1,214 @@
+{
+	"name": "契约降临卡",
+	"icon": "kamenridercraft:dragreder_advent",
+	"category": "kamenridercraft:ryuki/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "dragreder_advent",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作龙骑的$(l:ryuki/arsenal/advent_decks#advent_deck_ryuki)卡片套匣$(/l)$(br2)用于变身龙骑的$(l:ryuki/riders/ryuki#ryuki)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragreder_advent",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki)假面骑士龙骑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "darkwing_advent",
+			"title": "黑暗翼蝠降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作夜骑的$(l:ryuki/arsenal/advent_decks#advent_deck_knight)卡片套匣$(/l)$(br2)用于变身夜骑的$(l:ryuki/riders/knight#knight)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:darkwing_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight)假面骑士夜骑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "volcancer_advent",
+			"title": "火山巨蟹降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作利刃的$(l:ryuki/arsenal/advent_decks#advent_deck_scissors)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:volcancer_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#scissors)假面骑士利刃$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnugiga_advent",
+			"title": "庞然巨牛降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作铁兵的$(l:ryuki/arsenal/advent_decks#advent_deck_zolda)卡片套匣$(/l)$(br2)用于变身铁兵的$(l:ryuki/riders/zolda#zolda)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnugiga_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#zolda)假面骑士铁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evildiver_advent",
+			"title": "邪恶潜行鳐降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作海鳐的$(l:ryuki/arsenal/advent_decks#advent_deck_raia)卡片套匣$(/l)$(br2)用于变身海鳐的$(l:ryuki/riders/raia#raia)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evildiver_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#raia)假面骑士海鳐$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metalgelas_advent",
+			"title": "金属角犀降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作铠的$(l:ryuki/arsenal/advent_decks#advent_deck_gai)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metalgelas_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#gai)假面骑士铠$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "venosnaker_advent",
+			"title": "毒蛇王降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作王蛇的$(l:ryuki/arsenal/advent_decks#advent_deck_ouja)卡片套匣$(/l)$(br2)用于变身王蛇的$(l:ryuki/riders/ouja#ouja)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:venosnaker_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ouja)假面骑士王蛇$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "goldphoenix_advent",
+			"title": "黄金凤凰降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作奥丁的$(l:ryuki/arsenal/advent_decks#advent_deck_odin)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:goldphoenix_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "destwilder_advent",
+			"title": "死亡野虎降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作大牙的$(l:ryuki/arsenal/advent_decks#advent_deck_tiger)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:destwilder_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#tiger)假面骑士大牙$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigazelle_advent",
+			"title": "巨大瞪羚降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作羚皇的$(l:ryuki/arsenal/advent_decks#advent_deck_imperer)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigazelle_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#imperer)假面骑士羚皇$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blancwing_advent",
+			"title": "白翼天鹅降临卡",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)用于制作花梦的$(l:ryuki/arsenal/advent_decks#advent_deck_femme)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blancwing_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#femme)假面骑士花梦$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragblacker_advent",
+			"title": "暗黑龙降临卡",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)用于制作龙牙的$(l:ryuki/arsenal/advent_decks#advent_deck_ryuga)卡片套匣$(/l)$(br2)用于变身龙牙的$(l:ryuki/riders/ryuga#ryuga)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragblacker_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuga)假面骑士龙牙$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "biogreeza_advent",
+			"title": "生化绿避役降临卡",
+			"text": "登场于：$(li)假面骑士龙骑特别篇：13骑士（2002年，电视剧特别篇）$(br2)用于制作妖翠的$(l:ryuki/arsenal/advent_decks#advent_deck_verde)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:biogreeza_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#verde)假面骑士妖翠$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "abysslasher_advent",
+			"title": "深渊鲨皇降临卡",
+			"text": "登场于：$(li)假面骑士Decade（2009年，电视剧）$(br2)用于制作深渊的$(l:ryuki/arsenal/advent_decks#advent_deck_abyss)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:abysslasher_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#abyss)假面骑士深渊$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "psycorogue_advent",
+			"title": "疯蟋恶徒降临卡",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于制作抉择者的$(l:ryuki/arsenal/advent_decks#advent_deck_alternative)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:psycorogue_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#alternative)抉择者$(/l)$(li)$(l:ryuki/mobs/mirror_rider#alternative_zero)抉择者零号$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "guldthunder_advent",
+			"title": "金凤雷霆降临卡",
+			"text": "登场于：$(li)ICON：Tamotsu Shinohara Character Art Works（2006年，画集）$(br2)用于制作Blade的$(l:ryuki/arsenal/advent_decks#advent_deck_blade)卡片套匣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:guldthunder_advent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#blade)假面骑士Blade$(/l)"
+		}
+	]
+}

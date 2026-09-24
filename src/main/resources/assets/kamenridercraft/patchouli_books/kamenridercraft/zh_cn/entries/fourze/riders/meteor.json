@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士流星",
+	"icon": "kamenridercraft:meteor_driver",
+	"category": "kamenridercraft:fourze/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "meteor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meteor_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:meteor_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:fourze/items/astroswitches#meteor_switch)流星开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士流星",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/meteor_driver)流星驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)力量 VIII（空手状态）$(li)速度 II$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "meteor_storm",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:meteor_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:meteor_storm_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流星风暴形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#meteor_storm_switch)流星风暴开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士流星",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/meteor_driver)流星驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手状态）$(li)速度 III$(li)急迫 III"
+		}
+	]
+}

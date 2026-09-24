@@ -1,0 +1,17 @@
+{
+    "name": "骑士电路板",
+    "icon": "kamenridercraft:rider_circuit",
+    "category": "kamenridercraft:misc/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于制作模组中的各种物品$(br2)用作昭和及杂项系列物品的修复材料$(br2)可在 $(l:fourze/structures/m_bus)流星备份卫星$(/l) 中找到$(br)掉落自：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)$(li)$(l:ichigo/mobs/shocker_riders)修卡骑士$(/l)$(li)$(l:v3/mobs/destron_combatman)迪斯特龙战斗员$(/l)$(li)$(l:x/mobs/god_warfare_agent)GOD机关 探员$(/l)$(li)$(l:amazon/mobs/red_follower)红色咒者$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:misc/rider_circuit",
+            "text": "$(li)$(l:stronger/mobs/black_satan_soldier)黑撒旦战斗员$(/l)$(li)$(l:skyrider/mobs/ari_commando)新修卡战斗员$(/l)$(li)$(l:super_1/mobs/dogma_fighter)多格玛士兵$(/l)$(li)$(l:zx/mobs/combat_roid)战斗洛伊多$(/l)$(li)$(l:black/mobs/shadow_moon)影月$(/l)$(li)$(l:black_rx/mobs/chap)恰普$(/l)$(li)$(l:black_rx/mobs/grey_chap)恰普(RX)$(/l)$(li)$(l:faiz/mobs/faiz)假面骑士Faiz$(/l)$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
+        }
+    ]
+}

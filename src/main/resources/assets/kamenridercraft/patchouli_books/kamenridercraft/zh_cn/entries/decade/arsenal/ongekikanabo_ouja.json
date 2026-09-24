@@ -1,0 +1,16 @@
+{
+	"name": "音击金棒·烈冻(王蛇)",
+	"icon": "kamenridercraft:ongekikanabo_ouja",
+	"category": "kamenridercraft:decade/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:ryuki/riders/ouja#ouja)假面骑士王蛇$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ongekikanabo_ouja"
+		}
+	]
+}

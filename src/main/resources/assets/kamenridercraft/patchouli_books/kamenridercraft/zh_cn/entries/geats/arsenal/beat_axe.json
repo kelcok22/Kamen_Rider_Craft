@@ -1,0 +1,17 @@
+{
+    "name": "节拍战斧",
+    "icon": "kamenridercraft:beat_axe",
+    "category": "kamenridercraft:geats/arsenal",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/na-go#beat)节拍$(/l) 形态使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/beat_axe",
+            "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)的装备"
+        }
+    ]
+}

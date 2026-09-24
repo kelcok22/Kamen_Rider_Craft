@@ -1,0 +1,36 @@
+{
+	"name": "霸主异域者碎片",
+	"icon": "kamenridercraft:lord_baron_fragment",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_baron_fragment",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)用于合成$(l:misc/blocks/boss_blocks#lord_baron_boss_block)勋爵巴隆BOSS召唤方块$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lord_baron_fragment",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/rosyuo)白亚$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "lord_baron_fragment_2",
+			"item": "kamenridercraft:lord_baron_fragment_2",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/redyue)翡翠$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"anchor": "lord_baron_fragment_3",
+			"item": "kamenridercraft:lord_baron_fragment_3",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/demushu)真红$(/l)"
+		}
+	]
+}

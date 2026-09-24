@@ -1,0 +1,21 @@
+{
+	"name": "牙王班列",
+	"icon": "kamenridercraft:den_o_logo",
+	"category": "kamenridercraft:den_o/structures",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "牙王班列",
+			"text": "登场于：$(li)假面骑士电王：老子，诞生！ (2007年，电影)$(br2)生成于时间之沙各处$(br2)包含1个 $(l:misc/blocks/boss_blocks#gaoh_boss_block)牙王Boss方块$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/gaohliner.png"
+			],
+			"title": " "
+		}
+	]
+}

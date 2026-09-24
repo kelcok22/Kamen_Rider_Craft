@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士卡里恶斯",
+    "icon": "kamenridercraft:gavv_logo",
+    "category": "kamenridercraft:gavv/mobs",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:caries",
+            "text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)$(br)生命值：200"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通过挖掘$(l:misc/blocks/boss_blocks#caries_boss_block)卡里恶斯召唤方块$(/l)召唤而来$(br2)特殊机制：$(li)生命值降至100以下时切换为 $(l:gavv/riders/caries#c3)C3$(/l)形态$(br2)掉落$(li)4-7个$(l:gavv/items/blank_gochizo)空白饱藏$(/l)$(li)1个$(l:gavv/items/gochizo#terror_gochizo)恐惧饱藏$(/l)$(li)1个$(l:gavv/items/gochizo#hexenheim_gochizo)糖果屋饱藏$(/l)"
+        }
+    ]
+}

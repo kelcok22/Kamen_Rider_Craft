@@ -1,0 +1,16 @@
+{
+	"name": "程式升华蝗虫剑(薙刀模式)",
+	"icon": "kamenridercraft:progrise_hopper_blade_naginata",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由假面骑士01的 $(l:zero_one/riders/zero-one#metalcluster_hopper)金属原子簇蝗虫形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/progrise_hopper_blade_naginata"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:geats/main",
+    "name": "相关物品",
+    "description": "所有与极狐系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:geats_rider_core_id",
+    "sortnum": 2
+}

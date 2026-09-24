@@ -1,0 +1,19 @@
+{
+	"name": "阿特洛波斯的折纸",
+	"icon": "kamenridercraft:atropos_origami",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:atropos_origami",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/gaelijah)冥黑之王 加埃利亚$(/l)"
+		}
+	]
+}

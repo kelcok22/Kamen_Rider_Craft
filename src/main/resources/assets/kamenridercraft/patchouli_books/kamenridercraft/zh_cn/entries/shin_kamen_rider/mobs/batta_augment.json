@@ -1,0 +1,17 @@
+{
+	"name": "量产型蝗虫怪人",
+	"icon": "kamenridercraft:prana_infused_rider_circuit",
+	"category": "kamenridercraft:shin_kamen_rider/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:batta_augment",
+			"text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成于城市维度里的$(l:misc/city/centers#shocker_base)修卡基地$(br2)掉落$(li)4-6个$(l:shin_kamen_rider/items/prana_infused_rider_circuit)生命注能骑士电路板$(/l)$(li)1个$(l:shin_kamen_rider/items/typhoon_energy_converters#shin_typhoon_core)台风能量转换器(No.1)$(/l) (20%)$(li)1个$(l:shin_kamen_rider/items/typhoon_energy_converters#shin_typhoon_core2)台风能量转换器(No.2)$(/l) (20%)$(li)1个$(l:shin_kamen_rider/items/prana_infused_rider_circuit)生命注能骑士电路板$(/l) (60%)$(br2)进化$(li)$(l:shin_kamen_rider/mobs/shin_no_0)假面骑士No.0$(/l) (10%)"
+		}
+	]
+}

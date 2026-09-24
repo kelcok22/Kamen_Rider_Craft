@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gorider/main",
+    "name": "腰带",
+    "description": "假面战队成员所使用的变身道具. 可以在铁砧上使用 $(l:misc/items/rider_circuit)骑士电路$(/l)修复.",
+    "icon": "kamenridercraft:typhoon_akarider",
+    "sortnum": 1
+}

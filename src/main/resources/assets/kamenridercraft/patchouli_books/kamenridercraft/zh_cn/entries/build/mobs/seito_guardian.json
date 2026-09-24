@@ -1,0 +1,21 @@
+{
+	"name": "西都防卫者",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:seito_guardian",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：$(l:build/structures/pandora_tower)潘多拉魔塔$(/l)、恶地、竹林、沙漠、风蚀恶地、丛林、红树林沼泽、热带草原、热带高原、稀疏丛林、尖峭山峰、沼泽、暖水海洋、风袭热带草原、疏林恶地$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/nebula_gas_sample)星云气体样本$(/l) (71.4%)$(li)1个$(l:build/items/fullbottles#tora_full_bottle)老虎满装瓶罐$(/l) (14.2%)$(li)1个$(l:build/items/fullbottles#ufo_full_bottle)UFO满装瓶罐$(/l) (14.2%)$(br2)进化BOSS见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "进化BOSS$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l) (5%)$(li)$(l:build/mobs/needle_smash)针刺猛击者$(/l) (5%)"
+		}
+	]
+}

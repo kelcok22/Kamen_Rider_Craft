@@ -1,0 +1,21 @@
+{
+	"name": "士弥",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shimi",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：冰封山峰、雪林、冰刺之地、尖峭山峰、热带草原、热带高原、积雪沙滩、积雪平原、积雪的山坡、积雪针叶林、风袭热带草原$(br2)掉落$(li)1-3本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)勇气飞龙奇幻驾驭书$(/l)(27.3%)$(li)1本$(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记奇幻驾驭书$(/l)(27.3%)$(li)1本$(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯奇幻驾驭书$(/l)(27.3%)$(li)1本$(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)杰克与豌豆奇幻驾驭书$(/l)(9.1%)$(li)1本$(l:saber/arsenal/book_gate_wonder_ride_book)书之门奇幻驾驭书$(/l)(9.1%)$(br2)进化见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "进化$(li)$(l:saber/mobs/calibur)假面骑士王剑$(/l)(2%)$(li)$(l:saber/mobs/legeiel)拉结尔$(/l)(2%)$(li)$(l:saber/mobs/zooous)兹欧斯$(/l)(2%)$(li)$(l:saber/mobs/storious)斯特利乌斯$(/l)(2%)$(li)$(l:saber/mobs/desast)天灾$(/l)(2%)"
+		}
+	]
+}

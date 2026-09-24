@@ -1,0 +1,16 @@
+{
+	"name": "电切裂者-铁尺模式(G电王)",
+	"icon": "kamenridercraft:g_den_gasher_jitte",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)超级电王三部曲：EPISODE YELLOW 宝藏DE-End海盗 (2010年，电影)$(br2)由$(l:den_o/riders/g_den_o)假面骑士G电王$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/g_den_gasher_jitte"
+		}
+	]
+}

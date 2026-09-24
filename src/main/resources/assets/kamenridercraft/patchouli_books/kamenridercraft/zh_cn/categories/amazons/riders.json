@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazons/main",
+    "name": "Amazons系列骑士",
+    "description": "来自《假面骑士Amazons》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:amazonshead",
+    "sortnum": 0
+}

@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士黑暗幽冥",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dark_necrom",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：末地高地$(br2)有红、蓝、黄三种变体$(br2)掉落$(li)1-3个$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)$(li)1个$(l:ghost/items/ghost_eyecons#dark_necrom_red_ghost_eyecon)黑暗幽冥眼魂(红)$(/l) (33.3%)$(li)1个$(l:ghost/items/ghost_eyecons#dark_necrom_blue_ghost_eyecon)黑暗幽冥眼魂(蓝)$(/l) (33.3%)$(li)1个$(l:ghost/items/ghost_eyecons#dark_necrom_yellow_ghost_eyecon)黑暗幽冥眼魂(黄)$(/l) (33.3%)$(li)1个$(l:ghost/items/ghost_eyecons#galileo_ghost_eyecon)伽利略眼魂$(/l) (25%)$(li)1个$(l:ghost/items/ghost_eyecons#shakespeare_ghost_eyecon)莎士比亚眼魂$(/l) (25%)$(li)1个$(l:ghost/items/ghost_eyecons#kamehameha_ghost_eyecon)卡米哈米哈眼魂$(/l) (25%)$(li)1个$(l:ghost/items/ghost_eyecons#columbus_ghost_eyecon)哥伦布眼魂$(/l) (25%)$(br2)进化$(li)$(l:ghost/mobs/dark_ghost)假面骑士黑暗Ghost$(/l) (10%)"
+		}
+	]
+}

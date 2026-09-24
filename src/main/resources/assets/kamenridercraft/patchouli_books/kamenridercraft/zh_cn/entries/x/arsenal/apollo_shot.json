@@ -1,0 +1,16 @@
+{
+  "name": "阿波罗射击者",
+	"icon": "kamenridercraft:apollo_shot",
+	"category": "kamenridercraft:x/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)由$(l:x/riders/apollogeist#apollogeist)阿波罗盖斯特$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/apollo_shot"
+		}
+	]
+}

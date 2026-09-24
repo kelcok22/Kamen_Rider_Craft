@@ -1,0 +1,16 @@
+{
+    "name": "K-塔罗斯手机",
+    "icon": "kamenridercraft:ktaros",
+    "category": "kamenridercraft:den_o/items",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#climax)顶点形态$(/l)、$(l:den_o/riders/den_o#climax_punch)顶点形态(拳击模式)$(/l)、$(l:den_o/riders/den_o#climax_kick)顶点形态(踢击模式)$(/l)和$(l:den_o/riders/den_o#super_climax)超顶点形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:den_o/ktaros"
+        }
+    ]
+}

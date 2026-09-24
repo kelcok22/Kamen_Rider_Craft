@@ -1,0 +1,19 @@
+{
+	"name": "转换核心",
+	"icon": "kamenridercraft:cyclode_core",
+	"category": "kamenridercraft:super-1/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士超一号 (1980年, 电视剧)$(br2)用于制作假面骑士超一号的 $(l:super_1/devices/cyclode)回旋环$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyclode_core",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:super_1/mobs/dogma_fighter)多格玛士兵$(/l)"
+		}
+	]
+}

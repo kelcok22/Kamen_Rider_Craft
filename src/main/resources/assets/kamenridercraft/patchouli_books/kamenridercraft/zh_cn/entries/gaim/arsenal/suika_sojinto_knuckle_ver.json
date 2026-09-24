@@ -1,0 +1,16 @@
+{
+	"name": "西瓜光束拳套（纳高尔版）",
+	"icon": "kamenridercraft:suika_sojinto_knuckle_ver",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 33,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由纳高尔的$(l:gaim/riders/knuckle#suika)西瓜武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/suika_sojinto_knuckle_ver"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "瓦尔巴拉多扳手剑",
+	"icon": "kamenridercraft:valvarusher",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)由$(l:gotchard/riders/valvarad)瓦尔巴拉德$(/l)使用$(br2)可用于获取瓦尔巴拉德的$(l:gotchard/devices/valvaradraw_buckle)瓦尔巴拉德代扣$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/valvarusher"
+		}
+	]
+}

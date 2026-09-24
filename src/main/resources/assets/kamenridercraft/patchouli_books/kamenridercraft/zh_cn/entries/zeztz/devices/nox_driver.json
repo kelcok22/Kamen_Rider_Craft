@@ -1,0 +1,16 @@
+{
+	"name": "诺克斯驱动器",
+	"icon": "kamenridercraft:nox_driver",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/nox)假面骑士诺克斯"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/nox_driver"
+		}
+	]
+}

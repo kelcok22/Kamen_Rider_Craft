@@ -1,0 +1,750 @@
+{
+	"name": "假面骑士Ghost",
+	"icon": "kamenridercraft:ghost_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "ore",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "俺魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)俺魂$(/l) 或 $(l:ghost/items/ghost_eyecons#ghost_ghost_eyecon)Ghost眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "musashi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:musashi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武藏魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)武藏眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持有武器时）$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "edison",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:edison_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "爱迪生魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)爱迪生眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)急迫 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "robin",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:robin_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "罗宾魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)罗宾眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)灵体漂浮$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "newton",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:newton_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "牛顿魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)牛顿眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)失重 VIII$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "billy_the_kid",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:billy_the_kid_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "比利小子魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#billy_the_kid_ghost_eyecon)比利小子眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)急迫 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beethoven",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:beethoven_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "贝多芬魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#beethoven_ghost_eyecon)贝多芬眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "benkei",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "弁庆魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#benkei_ghost_eyecon)弁庆眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)灵体漂浮$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tutankhamun",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:tutankhamun_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "图坦卡蒙魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#tutankhamun_ghost_eyecon)图坦卡蒙眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nobunaga",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:nobunaga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "织田信长魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#nobunaga_ghost_eyecon)织田信长眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)灵体漂浮$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "houdini",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:houdini_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胡迪尼魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#houdini_ghost_eyecon)哈里·胡迪尼眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)灵体漂浮$(li)跳跃提升 VI$(li)力量 II$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "grimm",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:grimm_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "格林魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#grimm_ghost_eyecon)格林眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 II$(li)夜视$(li)生命恢复 III$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sanzo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:sanzo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "三藏魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#sanzo_ghost_eyecon)三藏眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 II$(li)灵体漂浮$(li)跳跃提升 VI$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "toucon_boost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:boost_ghost_eyecon\",slot_tex2:\"kamenridercraft:boost_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "斗魂鼓舞魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#boost_ghost_eyecon)斗魂鼓舞眼魂$(/l) 或 $(l:ghost/items/ghost_eyecons#tousan_ghost_eyecon)父亲眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)灵体漂浮$(li)抗火$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "goemon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:boost_ghost_eyecon\",slot_tex2:\"kamenridercraft:goemon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "五右卫门魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#goemon_ghost_eyecon)五右卫门眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)急迫 II$(li)灵体漂浮$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryoma",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:boost_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryoma_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙马魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ryoma_ghost_eyecon)龙马眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)夜视$(li)灵体漂浮$(li)跳跃提升$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "himiko",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:boost_ghost_eyecon\",slot_tex2:\"kamenridercraft:himiko_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "卑弥呼魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#himiko_ghost_eyecon)卑弥呼眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)生命恢复 IV$(li)灵体漂浮$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "grateful",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:eyecon_driver_g\",Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "感恩魂",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/eyecon_driver_g)眼魂驱动器G$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)水下呼吸$(li)夜视 II$(li)生命恢复 II$(li)灵体漂浮$(li)抗火$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mugen",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mugen_ghost_eyecon\",slot_tex2:\"kamenridercraft:mugen_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "无限魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#mugen_ghost_eyecon)无限眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 IV$(li)灵体漂浮$(li)力量 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tenkatoitsu",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:tenkatoitsu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "天下统一魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#tenkatoitsu_ghost_eyecon)天下统一眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man对Ex-Aid & Ghost with传说骑士 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 IV$(li)夜视$(li)生命恢复 III$(li)急迫 III$(li)灵体漂浮$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ikkyu",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:ikkyu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一休魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ikkyu_ghost_eyecon)一休眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：一休眼魂争夺！机智战斗!! (2015年，超战斗视频)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)急迫 II$(li)灵体漂浮$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "darwin",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:boost_ghost_eyecon\",slot_tex2:\"kamenridercraft:darwin_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "达尔文魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#darwin_ghost_eyecon)达尔文眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)生命恢复 III$(li)灵体漂浮$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shinsengumi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:shinsengumi_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "新选组魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#shinsengumi_ghost_eyecon)新选组眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：最终舞台 (2017年，舞台表演)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 V$(li)急迫 III$(li)灵体漂浮$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pythagoras",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:pythagoras_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "毕达哥拉斯魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#pythagoras_ghost_eyecon)毕达哥拉斯眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)生命恢复 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "santa",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:santa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "圣诞老人魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#santa_ghost_eyecon)圣诞老人眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)生命恢复 II$(li)灵体漂浮$(li)饱和 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kamehameha",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:kamehameha_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "卡米哈米哈魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#kamehameha_ghost_eyecon)卡米哈米哈眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "galileo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:galileo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "伽利略魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#galileo_ghost_eyecon)伽利略眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视 II$(li)急迫 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shakespeare",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:shakespeare_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "莎士比亚魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#shakespeare_ghost_eyecon)莎士比亚眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)反胃 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "columbus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:columbus_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "哥伦布魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#columbus_ghost_eyecon)哥伦布眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nightingale",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:nightingale_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "南丁格尔魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#nightingale_ghost_eyecon)南丁格尔眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)生命恢复 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "special_ore",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:special_ore_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "特殊俺魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#special_ore_ghost_eyecon)特殊俺眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "da_vinci",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:da_vinci_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "达芬奇魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#da_vinci_ghost_eyecon)达芬奇眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Buttobasoul (2016年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)灵体漂浮$(li)跳跃提升 III$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "napoleon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:napoleon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "拿破仑魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#napoleon_ghost_eyecon)拿破仑眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Buttobasoul (2016年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)水下呼吸 II$(li)灵体漂浮$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourtyfive_showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一号魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#fourtyfive_showa_ghost_eyecon)假面骑士45眼魂(一号)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，DVD)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)灵体漂浮$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "showa",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:showa_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "昭和魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#showa_ghost_eyecon)昭和骑士45眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)灵体漂浮$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:kuuga_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空我魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#kuuga_ghost_eyecon)空我眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "agito",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:agito_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "亚极陀魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#agito_ghost_eyecon)亚极陀眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:ryuki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙骑魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ryuki_ghost_eyecon)龙骑眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)急迫$(li)灵体漂浮$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:faiz_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Faiz魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#faiz_ghost_eyecon)Faiz眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升$(li)夜视$(li)灵体漂浮$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:blade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Blade魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#blade_ghost_eyecon)Blade眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)急迫 II$(li)灵体漂浮$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:hibiki_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "响鬼魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#hibiki_ghost_eyecon)响鬼眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)急迫 II$(li)灵体漂浮$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:kabuto_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "甲斗魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#kabuto_ghost_eyecon)甲斗眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 IV$(li)急迫 IV$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:den_o_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "电王魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#den_o_ghost_eyecon)电王眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)急迫$(li)灵体漂浮$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:kiva_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Kiva魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#kiva_ghost_eyecon)Kiva眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)灵体漂浮$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:decade_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Decade魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#decade_ghost_eyecon)Decade眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)急迫 III$(li)灵体漂浮$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:double_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "W魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#double_ghost_eyecon)W眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持有武器时）$(li)速度 II$(li)灵体漂浮$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:ooo_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "OOO魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ooo_ghost_eyecon)OOO眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视 II$(li)急迫 II$(li)灵体漂浮$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourze_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Fourze魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#fourze_ghost_eyecon)Fourze眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:wizard_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Wizard魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#wizard_ghost_eyecon)Wizard眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:gaim_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "铠武魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#gaim_ghost_eyecon)铠武眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)急迫$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:drive_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Drive魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#drive_ghost_eyecon)Drive眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "heisei",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourtyfive_heisei_ghost_eyecon\",slot_tex2:\"kamenridercraft:fourtyfive_heisei_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "平成魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#fourtyfive_heisei_ghost_eyecon)假面骑士45眼魂(平成)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，DVD)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)夜视$(li)急迫 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ex_aid",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ore_ghost_eyecon\",slot_tex2:\"kamenridercraft:ex_aid_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ex-Aid魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ex_aid_ghost_eyecon)Ex-Aid眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ghost",
+			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man对Ex-Aid & Ghost with传说骑士 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)急迫$(li)灵体漂浮"
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"name": "恶路程式核心",
+	"icon": "kamenridercraft:roidmude_core_002",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_core_002",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_002",
+			"text": "掉落自：$(li)$(l:drive/mobs/heart_roidmude)恶路程式·心脏$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_core_003",
+			"title": "恶路程式核心 003",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于合成脑骑的$(l:drive/devices/brain_driver)Drive驱动器（大脑版）$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_003",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/brain_roidmude)恶路程式·大脑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_core_009",
+			"title": "恶路程式核心 009",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_009",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/medic_roidmude)恶路程式·医护$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "protozero_core",
+			"title": "恶路程式原始零号",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于合成魔进追猎者的$(l:drive/arsenal/break_gunner)破坏枪手$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:protozero_core",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cyberoid_zzz_core",
+			"title": "虚拟机械躯体核心 ZZZ",
+			"text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)用于合成鲁邦的$(l:drive/arsenal/lupin_gunner)鲁邦枪手$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cyberoid_zzz_core",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/megahex)梅加赫克斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_core_108",
+			"title": "恶路程式核心 108",
+			"text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_core_108",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/dark_drive)假面骑士黑暗Drive$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "危险的弹珠",
+	"icon": "kamenridercraft:sinister_pachinko_ball",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于制作黑暗修卡军团的腰带"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sinister_pachinko_ball",
+			"title": " ",
+			"text": "通过和学徒级$(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获取"
+		}
+	]
+}

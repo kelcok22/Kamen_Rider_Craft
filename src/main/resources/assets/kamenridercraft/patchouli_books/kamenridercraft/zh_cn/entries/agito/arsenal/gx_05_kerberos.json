@@ -1,0 +1,16 @@
+{
+	"name": "GX-05〈三头犬〉",
+	"icon": "kamenridercraft:gx_05_kerberos",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)由$(l:agito/riders/g3-x)假面骑士G3-X$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/gx_05_kerberos"
+		}
+	]
+}

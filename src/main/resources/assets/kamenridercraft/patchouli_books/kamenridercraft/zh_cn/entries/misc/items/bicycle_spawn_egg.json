@@ -1,0 +1,24 @@
+{
+	"name": "自行车",
+	"icon": "kamenridercraft:bicycle_spawn_egg",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/bicycle_spawn_egg",
+			"text": "完美适合恶魔或倒霉鬼$(br2)放置于方块上可召唤摩托车$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bicycle",
+			"text": "基础摩托车形态"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:vice_bike",
+			"anchor": "vice_bike",
+			"text": "使用$(l:revice/items/vistamps#rex_vistamp)暴龙罪恶印章$(/l)右键点击摩托车，可转换为维斯摩托车"
+		}
+	]
+}

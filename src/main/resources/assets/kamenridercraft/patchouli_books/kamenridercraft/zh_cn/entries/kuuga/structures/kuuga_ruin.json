@@ -1,0 +1,23 @@
+{
+	"name": "空我遗迹",
+	"icon": "kamenridercraft:kuuga_logo",
+	"category": "kamenridercraft:kuuga/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "空我遗迹",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)生成群系: 河流, 冻河$(br2)包括可疑的碎石$(br2)可疑的碎石掉落:$(li)1 $(l:kuuga/items/kuuga_growing)初生灵石$(/l) (23.1%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_mighty)全能灵石$(/l) (23.1%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_dragon)青龙灵石$(/l) (15.4%)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/kuuga_ruin.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/kuuga_ruin_2.png"
+			],
+			"title": " ",
+			"text": "$(li)1 $(l:kuuga/items/amadam_stones#kuuga_pegasus)天马灵石$(/l) (15.4%)$(li)1 $(l:kuuga/items/amadam_stones#kuuga_titan)泰坦灵石$(/l) (15.4%)$(li)1 $(l:misc/items/music_discs#kamen_rider_kuuga_music_disc)假面骑士Kuuga!音乐唱片$(/l) (7.7%)"
+		}
+	]
+}

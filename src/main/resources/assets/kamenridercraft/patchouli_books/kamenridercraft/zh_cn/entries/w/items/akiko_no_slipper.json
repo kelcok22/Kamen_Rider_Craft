@@ -1,0 +1,19 @@
+{
+	"name": "亚树子的拖鞋",
+	"icon": "kamenridercraft:akiko_no_slipper",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:akiko_no_slipper",
+			"title": " ",
+			"text": "通过开启$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获取"
+		}
+	]
+}

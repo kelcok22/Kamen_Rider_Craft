@@ -1,0 +1,16 @@
+{
+	"name": "军式步枪",
+	"icon": "kamenridercraft:troop_authify",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)由$(l:gotchard/riders/dreatrooper)恐惧骑兵$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/troop_authify"
+		}
+	]
+}

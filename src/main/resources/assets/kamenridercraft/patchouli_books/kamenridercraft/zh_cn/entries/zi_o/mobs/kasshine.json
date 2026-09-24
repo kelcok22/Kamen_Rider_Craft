@@ -1,0 +1,17 @@
+{
+	"name": "加辰",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kasshine",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：城市外围$(br2)掉落$(li)2-4个$(l:zi_o/items/blank_watch)空白骑士表盘$(/l)$(br2)进化$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l) (10%)"
+        }
+	]
+}

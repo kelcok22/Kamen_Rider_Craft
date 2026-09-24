@@ -1,0 +1,16 @@
+{
+	"name": "音击震张·烈盘",
+	"icon": "kamenridercraft:ongeki_shincho_retsuban",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)由$(l:hibiki/riders/kirameki)假面骑士煌鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongeki_shincho_retsuban"
+		}
+	]
+}

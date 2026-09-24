@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士Eternal",
+	"icon": "kamenridercraft:w_logo",
+	"category": "kamenridercraft:w/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:eternal_mob",
+			"text": "登场于:$(li)假面骑士W永恒：从A到Z/命运的盖亚记忆（2010年，电影）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 200$(br2)有3.3%的几率从$(l:w/mobs/foundation_x_masquerade)假面舞会掺杂体(财团X)$(/l)中进化而来$(br2)掉落$(li)2-4个$(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l)$(li)1个$(l:w/items/gaia_memories#eternal_memory) 永恒记忆体$(/l) (33%)$(li)1个$(l:w/items/gaia_memories#eternal_t2_memory)T2永恒记忆体$(/l) (33%)$(li)1个$(l:w/items/dopant_memories#utopia_memory)乌托邦记忆体$(/l) (33%)"
+		}
+	]
+}

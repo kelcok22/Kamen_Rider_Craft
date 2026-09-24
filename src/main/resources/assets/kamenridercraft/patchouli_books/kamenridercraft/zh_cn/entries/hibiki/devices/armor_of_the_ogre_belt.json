@@ -1,0 +1,18 @@
+{
+	"name": "鬼之铠腰带",
+	"icon": "kamenridercraft:armor_of_the_ogre_belt",
+	"category": "kamenridercraft:hibiki/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "todorokidriver",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/armor_of_the_ogre)鬼之铠$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:hibiki/armor_of_the_ogre_belt"
+		}
+	]
+}

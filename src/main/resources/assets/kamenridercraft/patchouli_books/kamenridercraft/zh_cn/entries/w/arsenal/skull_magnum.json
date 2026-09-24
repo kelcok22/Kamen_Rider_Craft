@@ -1,0 +1,16 @@
+{
+  "name": "颅骨麦林枪",
+  "icon": "kamenridercraft:skull_magnum",
+  "category": "kamenridercraft:w/arsenal",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士W&帝骑：MOVIE大战2010 (2009年，剧场版)$(br2)使用者：$(l:w/riders/skull)假面骑士Skull$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:w/skullmagnum"
+    }
+  ]
+}

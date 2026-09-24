@@ -1,0 +1,16 @@
+{
+	"name": "野牛击轮",
+	"icon": "kamenridercraft:buffalo_disks",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Jeanne & 假面骑士阿基蕾拉 with Girls Remix (2022年，网络剧)$(br2)由 $(l:revice/riders/aguilera)假面骑士阿基蕾拉$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/buffalo_disks"
+		}
+	]
+}

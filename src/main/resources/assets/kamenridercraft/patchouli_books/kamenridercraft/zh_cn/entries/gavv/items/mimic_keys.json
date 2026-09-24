@@ -1,0 +1,85 @@
+{
+	"name": "拟人化形器",
+	"icon": "kamenridercraft:nyelv_mimic_key",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 6,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "anchor": "jeeb_mimic_key",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:jeeb_mimic_key",
+        "title": "吉普拟人钥匙",
+        "text": "掉落自：$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shiita_mimic_key",
+        "title": "西塔拟人钥匙",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shiita_mimic_key",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:gavv/mobs/shiita_stomach)西塔·斯托马克$(/l)"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "nyelv_mimic_key",
+          "title": "尼耶鲁布拟人钥匙",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nyelv_mimic_key",
+          "title": " ",
+			"text": "掉落自：$(li)$(l:gavv/mobs/nyelv_stomach)尼耶鲁布·斯托马克$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "glotta_mimic_key",
+			"title": "格罗塔拟人钥匙",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:glotta_mimic_key",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "lango_mimic_key",
+        "title": "兰戈拟人钥匙",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lango_mimic_key",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:gavv/mobs/lango_stomach)兰戈·斯托马克$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bocca_mimic_key",
+        "title": "博卡拟人钥匙",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:bocca_mimic_key",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)"
+      }
+    ]
+}

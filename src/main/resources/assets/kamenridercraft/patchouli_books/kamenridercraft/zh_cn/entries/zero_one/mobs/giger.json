@@ -1,0 +1,17 @@
+{
+	"name": "基格",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:giger",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有3.3%的概率从$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)进化而来$(br2)掉落$(li)0-2个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/zetsumerisekeys#mammoth_zetsumerisekey)猛犸象绝灭升华钥$(/l) (50%)$(li)1个$(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)破坏猛犸程式升华钥$(/l) (50%)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "食尸鬼",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ghouls",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：桦木森林、森林、原始桦木森林、沼泽、红树林沼泽$(br2)掉落$(li)1-2个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)1个$(l:wizard/items/magic_stones#wizardgem_red)红魔法石$(/l) (10%)$(li)1个$(l:wizard/items/magic_stones#wizardgem_blue)蓝魔法石$(/l) (10%)$(li)1个$(l:wizard/items/magic_stones#wizardgem_green)绿魔法石$(/l) (10%)$(li)1个$(l:wizard/items/magic_stones#wizardgem_yellow)黄魔法石$(/l) (10%)$(br2)进化$(li)$(l:wizard/mobs/medusa_phantom)美杜莎幻魔$(/l) (3.3%)$(li)$(l:wizard/mobs/phoenix_phantom)不死鸟幻魔$(/l) (3.3%)$(li)$(l:wizard/mobs/gremlin_phantom)格雷姆林幻魔$(/l) (3.3%)"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士深渊",
+	"icon": "kamenridercraft:abysslasher_advent",
+	"category": "kamenridercraft:ryuki/riders",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_abyss\",Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士深渊",
+			"text": "登场于:$(li)假面骑士Decade (2009年, 电视剧)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_abyss)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度II$(li)水下呼吸$(li)力量II"
+		}
+	]
+}

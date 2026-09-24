@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士白魔法师",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:wiseman",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br)生命值: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#wiseman_boss_block)白魔法师BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)4-10个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)2-5个$(l:wizard/items/magic_stones#wizardgem_violet)紫魔法石$(/l)$(li)1-3个$(l:wizard/items/magic_stones#wizardgem_cyan)淡蓝色魔法石$(/l)$(li)1个$(l:wizard/items/philosophers_stone)贤者之石$(/l)$(li)1个$(l:wizard/items/wizard_rings#wiseman_ring)白魔法师指环$(/l)"
+		}
+	]
+}

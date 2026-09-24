@@ -1,0 +1,16 @@
+{
+	"name": "卡控雀形镰B",
+	"icon": "kamenridercraft:gashacon_sparrow_sickle_b",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由Lazer的 $(l:ex_aid/riders/lazer#chambara_bike)剑斗机车玩家 Lv. 3$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_sparrow_sickle_b"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "格拉纽特之牙",
+	"icon": "kamenridercraft:granute_tooth",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:granute_tooth",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gavv/mobs/nyelv_stomach)尼耶鲁布·斯托马克$(/l)$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)$(li)$(l:gavv/mobs/shitta_stomach)西塔·斯托马克$(/l)$(li)$(l:gavv/mobs/lango_stomach)兰戈·斯托马克$(/l)$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)"
+		}
+	]
+}

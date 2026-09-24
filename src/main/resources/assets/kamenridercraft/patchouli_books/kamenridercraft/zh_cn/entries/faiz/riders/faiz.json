@@ -1,0 +1,92 @@
+{
+    "name": "假面骑士Faiz",
+    "icon": "kamenridercraft:faiz_mission_memory",
+    "category": "kamenridercraft:faiz/riders",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "faiz",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": "通过使用 $(l:faiz/items/mission_memories#faiz_mission_memory)Faiz使命芯片$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Faiz",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)通过穿戴$(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)夜视$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "axel",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_axel_form\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "加速形态",
+            "text": "通过使用 $(l:faiz/arsenal/faiz_axel)Faiz加速手表$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Faiz",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)通过穿戴$(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)进行变身$(br2)状态效果：$(li)形态解除（10秒）$(li)速度 VI$(li)抗性提升 III$(li)夜视$(li)急迫 V$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "blaster",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_blaster_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "爆裂形态",
+            "text": "通过使用 $(l:faiz/items/mission_memories#faiz_blaster_mission_memory)Faiz爆裂使命芯片$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Faiz",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)通过穿戴$(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 IV$(li)力量 V"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "gold_blaster",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_gold_blaster_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "爆裂形态(黄金版本)",
+            "text": "通过使用 $(l:faiz/items/mission_memories#faiz_gold_blaster_mission_memory)Faiz黄金爆裂使命芯片$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Faiz",
+            "text": "登场于：$(li)骑士英雄系列 (2003年，玩具线)$(br2)通过穿戴$(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 IV$(li)力量 V"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "super_mode",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:greywolch\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "超级模式",
+            "text": "通过使用 $(l:misc/items/ride_monster_cards#greywolch)灰狼怪物驾驭卡$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Faiz",
+            "text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 IV$(li)力量 V"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "bakuen_no_warrior",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:faiz_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "爆炎战士",
+            "text": "通过使用 $(l:misc/items/ride_monster_cards#bakuen_no_senshi)生存卡 爆炎$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士Faiz",
+            "text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 IV$(li)力量 V"
+        }
+    ]
+}

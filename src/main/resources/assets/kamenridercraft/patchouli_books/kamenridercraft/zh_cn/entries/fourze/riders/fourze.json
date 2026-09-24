@@ -1,0 +1,1016 @@
+{
+	"name": "假面骑士Fourze",
+	"icon": "kamenridercraft:fourze_driver",
+	"category": "kamenridercraft:fourze/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "basestates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "基础形态",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "elekstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:elek_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_elekstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "电力形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#elek_switch)电力开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)雷霆斩$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "firestates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fire_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_firestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "烈火形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#fire_switch)火开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)火焰射击$(li)跳跃提升 II$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnetstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnet_switch_n\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:magnet_switch_s\",slot_tex5:\"kamenridercraft:fourze_magnetstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "磁力形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#magnet_switch_n)北磁极开关$(/l) 和 $(l:fourze/items/astroswitches#magnet_switch_s)南磁极开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)大炮 III$(li)推 III$(li)拉 III$(li)缓慢$(li)抗性提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cosmicstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cosmic_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_cosmicstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "宇宙形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#cosmic_switch)宇宙开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)§b宇宙能量$(li)抗性提升 III$(li)抗火 II$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rocketstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_rocket_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火箭形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#super_rocket_switch)超级火箭开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)推 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rocket_drill_states",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:clear_drill_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketdrillstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火箭旋钻形态",
+			"text": "背包中持有 $(l:fourze/items/astroswitches#rocket_switch)火箭开关$(/l) 时，通过使用 $(l:fourze/items/astroswitches#clear_drill_switch)清澈钻头开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze: Rocket Drill States of Friendship (2012年，超战斗DVD)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 III$(li)跳跃提升 II$(li)推 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "launcherstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:super_launcher_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_launcherstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "发射器形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#super_launcher_switch)超级发射器开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze: ~Ama High Graduation~ (2014年，小说)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)大炮 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "meteor_fusionstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:fusion_switch_og\",slot_tex5:\"kamenridercraft:fourze_meteor_fusionstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流星融合形态",
+			"text": "通过使用 $(l:fourze/items/astroswitches#fusion_switch)融合开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)Kamen Rider Fourze the Movie: Everyone! Let's Feel The Universe! (2012年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度$(li)§b宇宙能量$(li)抗性提升 III$(li)跳跃提升 II$(li)抗火$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "meteor_nadeshiko_fusionstates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:fusion_switch\",slot_tex5:\"kamenridercraft:fourze_meteor_nadeshiko_fusionstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流星抚子融合形态",
+			"text": "背包中持有 $(l:fourze/items/astroswitches#meteor_switch)流星开关$(/l) 和 $(l:fourze/items/astroswitches#nadeshiko_switch)抚子开关$(/l) 时，通过使用 $(l:fourze/items/astroswitches#fusion_switch)融合开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度$(li)§b宇宙能量$(li)抗性提升 III$(li)跳跃提升 II$(li)抗火$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shin-chan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:shin_chan_switch\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "基础形态(新酱版)",
+			"text": "通过使用 $(l:fourze/items/astroswitches#shin_chan_switch)新酱开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze × 蜡笔小新 (2012年，特别篇)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)二次元$(li)跳跃提升 II$(li)推 II$(li)§d快乐模式 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rocket",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rocket_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火箭组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#rocket_switch)火箭开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)推"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "launcher",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:launcher_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "发射器组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#launcher_switch)发射器开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)大炮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drill",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:drill_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "钻头组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#drill_switch)钻头开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)钻头"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "radar",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:radar_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雷达组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#radar_switch)雷达开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)雷达"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magichand",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magic_hand_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "魔术手组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#magic_hand_switch)魔术手开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "camera",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:camera_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "相机组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#camera_switch)相机开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "parachute",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:parachute_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "降落伞组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#parachute_switch)降落伞开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)缓降 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chainsaw",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:chainsaw_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "电锯组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#chainsaw_switch)电锯开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hopping",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:hopping_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "跳跃器组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#hopping_switch)跳跃器开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "scissors",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:scissors_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "剪刀组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#scissors_switch)剪刀开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升$(li)力量（持剑状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:beat_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#beat_switch)节拍开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)音符"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chain_array",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:chain_array_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流星锤组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#chain_array_switch)流星锤开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 VI$(li)力量 IX（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "smoke",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:smoke_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "烟雾组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#smoke_switch)烟雾开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)烟雾"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "spike",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:spike_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "钉牙组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#spike_switch)钉牙开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)反射"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "winch",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:winch_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "起重机组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#winch_switch)起重机开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flash",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flash_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "闪光组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#flash_switch)闪光开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:shield_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "盾组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#shield_switch)盾开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)抗性提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gatling",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:gatling_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "加特林组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#gatling_switch)加特林开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)加特林"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "stealth",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:stealth_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "隐身组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#stealth_switch)隐身开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)隐身"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hammer",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:hammer_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "锤子组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#hammer_switch)锤子开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升$(li)力量（持剑状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:water_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "水枪组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#water_switch)水开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "medical",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:medical_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "医护组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#medical_switch)医疗开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)毒药抗性"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pen",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:pen_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "毛笔组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#pen_switch)毛笔开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wheel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:wheel_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "车轮组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#wheel_switch)车轮开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "screw",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:screw_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "螺旋桨组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#screw_switch)螺旋桨开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速游"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hand",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:hand_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "自动手组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#hand_switch)手开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "scoop",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:scoop_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "铲斗组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#scoop_switch)铲斗开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)急迫 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "n_magnet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:magnet_switch_n\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "北磁极组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#magnet_switch_n)北磁极开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拉 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "s_magnet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:magnet_switch_s\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "南磁极组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#magnet_switch_s)南磁极开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)推 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "freeze",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:freeze_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "制冷机组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#freeze_switch)冻结开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)暴风雪"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "claw",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:claw_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "爪组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#claw_switch)爪开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 V$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "board",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:board_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "滑板组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#board_switch)滑板开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "giantfoot",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:giantfoot_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巨足组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#giantfoot_switch)巨足开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跨步"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "aero",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:aero_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "航天器组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#aero_switch)航空开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gyro",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:gyro_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "旋翼组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#gyro_switch)旋翼开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "net",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:net_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "捕虫网组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#net_switch)捕虫网开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)鱼!"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "stamper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:stamper_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "印章组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#stamper_switch)印章开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:rider1_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一号组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#rider1_switch)一号开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:rider2_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "二号组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#rider2_switch)二号开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "v3",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:v3_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "V3组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#v3_switch)V3开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "riderman",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:riderman_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "骑士人组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#riderman_switch)骑士人开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "x",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:x_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "X组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#x_switch)X开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升 IV$(li)力量 IV（持剑状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:amazon_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Amazon组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#amazon_switch)Amazon开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "stronger",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stronger_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "强人组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#stronger_switch)强人开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)雷电拳 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "skyrider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:skyrider_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "天空骑士组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#skyrider_switch)天空骑士开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)推"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_1",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:super_1_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超一号组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#super_1_switch)超一号开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zx",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:zx_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "ZX组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#zx_switch)ZX开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)大炮 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "black",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:black_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Black组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#black_switch)Black开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rx",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:rx_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Black RX组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#rx_switch)Black RX开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升 III$(li)力量 III（持武器状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:kuuga_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空我组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#kuuga_switch)空我开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "agito",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:agito_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "亚极陀组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#agito_switch)亚极陀开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:ryuki_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙骑组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#ryuki_switch)龙骑开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)炎拳 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:faiz_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Faiz组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#faiz_switch)Faiz开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:blade_switch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "剑组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#blade_switch)剑开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)雷霆斩"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:hibiki_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "响鬼组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#hibiki_switch)响鬼开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)音符"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:kabuto_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "甲斗组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#kabuto_switch)甲斗开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:den_o_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "电王组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#den_o_switch)电王开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:kiva_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Kiva组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#kiva_switch)Kiva开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 VIII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:decade_switch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Decade组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#decade_switch)Decade开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)反射"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "w",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:double_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "W组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#double_switch)W开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:circle_astroswitch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:ooo_switch\",slot_tex5:\"kamenridercraft:fourze_basestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "OOO组件",
+			"text": "通过使用 $(l:fourze/items/astroswitches#ooo_switch)OOO开关$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fourze",
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)大炮 II"
+		}
+	]
+}

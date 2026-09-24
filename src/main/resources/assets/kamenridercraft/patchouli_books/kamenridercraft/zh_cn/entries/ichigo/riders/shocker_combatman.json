@@ -1,0 +1,35 @@
+{
+    "name": "修卡战斗员",
+    "icon": "kamenridercraft:shocker_emblem",
+    "category": "kamenridercraft:ichigo/riders",
+    "sortnum": 12,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shocker_belt\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": ""
+        },
+        {
+            "type": "patchouli:text",
+            "title": "修卡战斗员",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/shocker_belt)修卡腰带$(/l)进行变身$(br2)状态效果：$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "chinese_grasshopper_man",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shocker_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:grasshopper_man_core\"}},Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "中华草蜢男",
+            "text": "通过使用 $(l:ichigo/items/typhoon_cores#typhoon_core)台风核心$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "中华草蜢男",
+            "text": "登场于：$(li)假面骑士：作战档案1 (1997年，电子游戏)$(br2)通过穿戴$(l:ichigo/devices/shocker_belt)修卡腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 III$(li)力量 II"
+        }
+    ]
+}

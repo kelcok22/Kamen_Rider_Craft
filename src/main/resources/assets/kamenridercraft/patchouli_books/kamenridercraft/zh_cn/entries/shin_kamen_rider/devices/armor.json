@@ -1,0 +1,24 @@
+{
+    "name": "真·假面骑士装甲",
+    "icon": "kamenridercraft:shin_ichigohead",
+    "category": "kamenridercraft:shin_kamen_rider/devices",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "与真·假面骑士系列骑士的腰带配合使用，可变身为对应骑士"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:shin_kamen_rider/shin_ichigohead"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:shin_kamen_rider/shin_ichigotroso"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:shin_kamen_rider/shin_ichigolegs"
+        }
+    ]
+}

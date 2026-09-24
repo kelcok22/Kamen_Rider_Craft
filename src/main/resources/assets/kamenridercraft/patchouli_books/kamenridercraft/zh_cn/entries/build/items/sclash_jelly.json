@@ -1,0 +1,19 @@
+{
+	"name": "空挤压凝胶",
+	"icon": "kamenridercraft:sclash_jelly",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用作挤压驱动器的基础物品"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sclash_jelly",
+			"title": " ",
+			"text": "在$(l:misc/blocks/machine_blocks#fullbottle_solidifier)满瓶凝固器$(/l)上使用$(l:build/items/full_bottle)空白满瓶$(/l)即可获得$(br2)掉落自：$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "化猫",
+	"icon": "kamenridercraft:hibiki_logo",
+	"category": "kamenridercraft:hibiki/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bakeneko",
+			"text": "登场于：$(li)假面骑士响鬼（2005，电视剧）$(br)生命值：30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：樱花树林、草甸、桦木森林、黑森林、繁花森林、森林、雪林、原始桦木森林$(br2)掉落$(li)1-3个$(l:hibiki/items/oni_ore)红色鬼石$(/l)$(li)1个滴水石锥、燧石、红石粉、骨头或砖块（50%，白天）$(li)1个紫水晶碎片、风弹、铜锭、箭或火药（50%，夜晚）$(br2)进化$(li)$(l:hibiki/mobs/midaredouji)怪童子$(/l)（10%）"
+		}
+	]
+}

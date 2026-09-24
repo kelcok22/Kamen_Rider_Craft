@@ -1,0 +1,17 @@
+{
+	"name": "吉普·斯托马克",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:jeeb_stomach",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的概率从蓝色或白色$(l:gavv/mobs/agent)特工$(/l)进化而来$(br2)特殊机制：$(li)生命值低于100时，且你背包持有$(l:gavv/items/mimic_keys#shiita_mimic_key)西塔拟态钥匙$(/l)时会变身为$(l:gavv/riders/bitter_gavv#bakibaki_stick)假面骑士苦涩加布酥酥薯条形态$(/l)$(br2)掉落$(li)1个$(l:gavv/items/mimic_keys#jeeb_mimic_key)吉普拟态钥匙$(/l)$(li)1-3个$(l:gavv/items/heatpress)人类压牌$(/l) (50%)$(li)1-2个$(l:gavv/items/granute_tooth)格拉纽特之牙$(/l) (50%)"
+		}
+	]
+}

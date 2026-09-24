@@ -1,0 +1,17 @@
+{
+	"name": "系统驱动战车",
+	"icon": "kamenridercraft:drive_system_car",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)将其用于$(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档底盘装配器$(/l)可获取变档战车"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_system_car",
+			"text": "掉落自：$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)"	
+		}
+	]
+}

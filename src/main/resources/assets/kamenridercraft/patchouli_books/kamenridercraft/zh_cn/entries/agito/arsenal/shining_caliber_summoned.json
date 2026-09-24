@@ -1,0 +1,16 @@
+{
+	"name": "闪耀王剑(单刃)",
+	"icon": "kamenridercraft:shining_caliber_summoned",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)由亚极陀的$(l:agito/riders/agito#burning)燃烧形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/shining_caliber_summoned"
+		}
+	]
+}

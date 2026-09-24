@@ -1,0 +1,428 @@
+{
+	"name": "假面骑士剑锋",
+	"icon": "kamenridercraft:seiken_swordriver_blades",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_senki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮战记形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "peter_fantasista",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:peter_fantasista_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮幻想曲形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)彼得幻想曲奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)彼得幻想曲效果：$(li)速度 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tenkuu_no_pegasus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:tenkuu_no_pegasus_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮天马形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)天空的天马奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)天空的天马效果：$(li)急迫 III$(li)跳跃提升 V$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fantastic_lion",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:tenkuu_no_pegasus_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:peter_fantasista_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "奇幻雄狮形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)天空的天马$(/l) 与 $(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)彼得幻想曲$(/l) 奇幻驾驭书 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)天空的天马效果：$(li)急迫 III$(li)跳跃提升 V$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)彼得幻想曲效果：$(li)速度 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "king_lion_daisenki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:king_lion_daisenki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狮王大战纪形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#king_lion_daisenki_wonder_ride_book)狮王大战纪奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 IV$(li)水下呼吸$(li)急迫 II$(li)跳跃提升 III$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tategami_hyoujuusenki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:tategami_hyoujuu_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鬃毛冰兽战记形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tategami_hyoujuu_senki_wonder_ride_book)鬃毛冰兽战记奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 V$(li)抗性提升 IV$(li)水下呼吸$(li)急迫 IV$(li)跳跃提升 V$(li)力量 IV$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "specter_gekikou_senki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:specter_gekikou_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Specter激昂战纪形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#specter_gekikou_senki_wonder_ride_book)Specter激昂战纪奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)假面骑士Specter x 剑锋 (2021年，TTFC特别篇)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度$(li)抗性提升 III$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "brave_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飞龙雄狮形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)勇气飞龙奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tri_cerberus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "刻耳柏洛斯雄狮形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tri_cerberus_wonder_ride_book)三头地狱犬奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)三头地狱犬效果：$(li)急迫 III$(li)力量$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "genbu_shinwa",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:genbu_shinwa_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "玄武雄狮形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#genbu_shinwa_wonder_ride_book)玄武神话奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)玄武神话效果：$(li)抗性提升 II$(li)力量$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jaaku_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:jaaku_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "邪恶飞龙雄狮形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#jaaku_dragon_wonder_ride_book)邪恶飞龙奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)邪恶飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "eternal_phoenix",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_phoenix_wonder_ride_book\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saber_blank_3\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "不死鸟雄狮形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#eternal_phoenix_wonder_ride_book)永恒不死鸟奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)永恒不死鸟效果：$(li)斩击提升$(li)力量（持剑时）$(li)生命恢复$(li)急迫$(li)飞行$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "saiyuu_journey",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:saiyuu_journey_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮西游形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)西游记奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)西游记效果：$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lamp_do_alangina",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "king_of_arthur",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:king_of_arthur_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮亚瑟王形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)亚瑟王奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)亚瑟王效果：$(li)速度 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackun_to_domamenoki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:jackun_to_domamenoki_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮杰克形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)杰克与豌豆奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)杰克与豌豆效果：$(li)急迫$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sarutobi_ninjaden",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:sarutobi_ninjaden_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮忍者形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#sarutobi_ninjaden_wonder_ride_book)猿飞忍者传奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)猿飞忍者传奇效果：$(li)速度 III$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kobuta_3_kyoudai",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮三只小猪形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#kobuta_3_kyoudai_wonder_ride_book)三只小猪奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)三只小猪效果：$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hanselnuts_to_gretel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮汉森纳茨形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#hanselnuts_to_gretel_wonder_ride_book)汉森纳茨和格雷特奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)汉森纳茨和格雷特效果：$(li)速度 II$(li)急迫 III$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bremen_no_rock_band",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮不莱梅形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)不莱梅摇滚乐队奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)不莱梅摇滚乐队效果：$(li)速度 V$(li)急迫 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kirin_no_ongaeshi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:kirin_no_ongaeshi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮长颈鹿形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#kirin_no_ongaeshi_wonder_ride_book)长颈鹿的报恩奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)长颈鹿的报恩效果：$(li)速度 III$(li)急迫 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sarukani_wars",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:sarukani_wars_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮猿蟹形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#sarukani_wars_wonder_ride_book)猿蟹战争奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)猿蟹战争效果：$(li)抗性提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bakusou_usagi_to_kame",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:bakusou_usagi_to_kame_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮龟兔赛跑形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#bakusou_usagi_to_kame_wonder_ride_book)龟兔赛跑奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)龟兔赛跑效果：$(li)速度 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "houshin_kamen_engi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:houshin_kamen_engi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮封神演艺形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#houshin_kamen_engi_wonder_ride_book)封神假面演艺奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)封神假面演艺效果：$(li)速度 II$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tsuki_no_hime_kaguyan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮辉夜形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tsuki_no_hime_kaguyan_wonder_ride_book)月之公主辉夜奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)月之公主辉夜效果：$(li)夜视 II$(li)急迫 III$(li)速度 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "osha_jizou_san",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:osha_jizou_san_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮地藏形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#osha_jizou_san_wonder_ride_book)时髦的地藏先生奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)时髦的地藏先生效果：$(li)饱和 II$(li)幸运 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "issun_bushi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:issun_bushi_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮一寸武士形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#issun_bushi_wonder_ride_book)一寸武士奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)一寸武士效果：$(li)急迫 V$(li)速度 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "daishougun_momoichirou",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:daishougun_momoichirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮桃一郎形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)大将军桃一郎奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)大将军桃一郎效果：$(li)饱和 III$(li)急迫 II$(li)速度 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "daikengou_urashimajirou",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:daikengou_urashimajirou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮浦岛二郎形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)大剑豪浦岛二郎奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)大剑豪浦岛二郎效果：$(li)饱和 III$(li)抗性提升 II$(li)速度 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "daiyokozuna_kinzaburou",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_blades\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮金三郎形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)大横钢金三郎奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑锋",
+			"text": "登场于：$(li)SG08 大横钢金三郎奇幻驾驭书 (2021年，玩具系列)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_blades)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)大横钢金三郎效果：$(li)急迫 II$(li)力量 II"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "双面能量镜",
+	"icon": "kamenridercraft:perfecter",
+	"category": "kamenridercraft:x/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士X（1974年，电视剧）$(br)$(li)用于切换骑士人的$(l:v3/riders/riderman#perfecter)双面能量镜装载$(/l)形态。$(li)用于切换电波人Tackle的$(l:stronger/riders/tackle#perfecter)双面能量镜装载$(/l)形态。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:perfecter",
+			"title": " ",
+			"text": "和新手$(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获得。"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:x/main",
+    "name": "莱德尔",
+    "description": "X系列骑士所使用的武器. 可以在铁砧上使用 $(l:misc/items/rider_circuit)骑士电路$(/l)修复.",
+    "icon": "kamenridercraft:ridol_stick",
+    "sortnum": 3
+}

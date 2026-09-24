@@ -1,0 +1,19 @@
+{
+	"name": "Amazon细胞试管",
+	"icon": "kamenridercraft:amazon_cell_vial",
+	"category": "kamenridercraft:amazons/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)用于合成$(l:amazons/devices/armor)Amazons装甲$(/l)$(li)在$(l:misc/blocks/machine_blocks#amazon_cell_mutator)亚马逊细胞突变器$(/l)上使用，可获取$(l:amazons/items/amazon_cell_vials#omega_amazon_cell_vial)Omega$(/l)、$(l:amazons/items/amazon_cell_vials#alpha_amazon_cell_vial)Alpha$(/l)、$(l:amazons/items/amazon_cell_vials#sigma_amazon_cell_vial)Sigma$(/l)或$(l:amazons/items/amazon_cell_vials#neo_amazon_cell_vial)Neo$(/l)细胞试管变体"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazon_cell_vial",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#amazon_cell_extractor)亚马逊细胞提取器$(/l)上使用$(l:misc/items/empty_vial)空试管$(/l)获取"
+		}
+	]
+}

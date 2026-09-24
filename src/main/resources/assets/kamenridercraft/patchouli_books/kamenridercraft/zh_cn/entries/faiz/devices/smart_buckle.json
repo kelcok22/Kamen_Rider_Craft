@@ -1,0 +1,33 @@
+{
+	"name": "智脑带扣",
+	"icon": "kamenridercraft:smartbuckle",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "smartbuckle",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/riotrooper)莱欧骑兵"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smartbuckle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smartbuckle_v2",
+			"title": "智脑带扣v2(莱欧骑兵 V2)",
+			"text": "登场于：$(li)失落的世界 (2005年，S.I.C.英雄传奇)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/riotrooper_v2)莱欧骑兵 V2"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smartbuckle_v2",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

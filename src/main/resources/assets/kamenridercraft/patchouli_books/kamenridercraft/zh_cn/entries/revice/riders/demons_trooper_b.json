@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士骑兵ß",
+	"icon": "kamenridercraft:demons_driver_demons_trooper_b",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:demons_driver_demons_trooper_b\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士骑兵ß",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)$(br2)通过穿戴$(l:revice/devices/demons_driver#demons_driver_demons_trooper_b)蒂蒙斯驱动器(骑兵β)$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)力量"
+		}
+	]
+}

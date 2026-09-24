@@ -1,0 +1,19 @@
+{
+	"name": "电波核心",
+	"icon": "kamenridercraft:tackle_core",
+	"category": "kamenridercraft:stronger/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br2)用于制作电波人的$(l:stronger/devices/tackle_belt)电波腰带$(/l)$(br2)用于变身电波人的$(l:stronger/riders/tackle#tackle)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tackle_core",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:stronger/mobs/black_satan_soldier)黑撒旦战斗员$(/l)"
+		}
+	]
+}

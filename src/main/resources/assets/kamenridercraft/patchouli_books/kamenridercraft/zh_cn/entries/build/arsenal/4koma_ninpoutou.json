@@ -1,0 +1,16 @@
+{
+	"name": "四格忍法刀",
+	"icon": "kamenridercraft:4koma_ninpoutou",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由假面骑士Build的$(l:build/riders/build#ninnincomic)忍者漫画$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/4koma_ninpoutou"
+		}
+	]
+}

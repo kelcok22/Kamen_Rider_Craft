@@ -1,0 +1,850 @@
+{
+    "name": "程式升华钥",
+    "icon": "kamenridercraft:rising_hopper_progrisekey",
+    "category": "kamenridercraft:zero_one/items",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "rising_hopper_progrisekey",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作01的 $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器(01)$(/l)$(br2)用于制作001的 $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_001)灭亡迅雷强制升华器(001)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#rising_hopper)高跃蝗虫$(/l) 形态$(br2)用于切换巴尔坎的 $(l:zero_one/riders/vulcan#rising_hopper)高跃蝗虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rising_hopper_progrisekey",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得$(br2)掉落自：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shining_hopper_progrisekey",
+            "title": "闪耀蝗虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#shining_hopper)闪耀蝗虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shining_hopper_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shining_assault_hopper_progrisekey",
+            "title": "闪耀突击蝗虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#shining_assault_hopper)闪耀突击蝗虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/shining_assault_hopper_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metalcluster_hopper_progrisekey",
+            "title": "金属原子簇蝗虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#metalcluster_hopper)金属原子簇蝗虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/metalcluster_hopper_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zero_two_progrisekey",
+            "title": "02程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作02的 $(l:zero_one/devices/hiden_zero_two_driver)飞电02驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/zero_two_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "red_rising_hopper_progrisekey",
+            "title": "高跃蝗虫程式升华钥(中国红)",
+            "text": "登场于：$(li)DX 飞电01驱动器 限定红色版 (2020年，玩具线)$(br2)用于制作诸神黄昏的 $(l:zero_one/devices/ragnarok_driver)诸神黄昏驱动器$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#red_rising_hopper)高跃蝗虫(中国红)$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:red_rising_hopper_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "realize_rising_hopper_progrisekey",
+            "title": "高跃蝗虫程式升华钥(觉悟)",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#realizing_hopper)觉悟蝗虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/realize_rising_hopper_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hellrise_progrisekey",
+            "title": "地狱升华蝗虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#hellrising_hopper)地狱升华蝗虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hellrise_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/eden)假面骑士伊甸$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zero_three_progrisekey",
+            "title": "03程式升华钥",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)用于制作03的 $(l:zero_one/devices/hiden_zero_three_driver)飞电03驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/zero_three_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "biting_shark_progrisekey",
+            "title": "撕咬巨鲨程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#biting_shark)撕咬巨鲨$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:biting_shark_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flaming_tiger_progrisekey",
+            "title": "燃焰老虎程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#flaming_tiger)燃焰老虎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:flaming_tiger_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "freezing_bear_progrisekey",
+            "title": "冰冻极熊程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#freezing_bear)冰冻极熊$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:freezing_bear_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "breaking_mammoth_progrisekey",
+            "title": "破坏猛犸程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#breaking_mammoth)破坏猛犸$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:breaking_mammoth_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得$(br2)掉落自：$(li)$(l:zero_one/mobs/giger)基格$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sparking_giraffe_progrisekey",
+            "title": "闪光长颈鹿程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#sparking_giraffe)闪光长颈鹿$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sparking_giraffe_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazing_hercules_progrisekey",
+            "title": "惊异长戟大兜虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#amazing_hercules)惊异长戟大兜虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:amazing_hercules_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crushing_buffalo_progrisekey",
+            "title": "粉碎水牛程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作粉碎水牛劫持者的 $(l:zero_one/devices/raidriser#raidriser_buffalo)劫持升华器(粉碎水牛劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#crushing_buffalo)粉碎水牛$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:crushing_buffalo_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "exciting_stag_progrisekey",
+            "title": "激励锹甲程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#exciting_stag)激励锹甲$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:exciting_stag_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gatling_hedgehog_progrisekey",
+            "title": "机枪刺猬程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#gatling_hedgehog)机枪刺猬$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gatling_hedgehog_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "trapping_spider_progrisekey",
+            "title": "捕获蜘蛛程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#trapping_spider)捕获蜘蛛$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:trapping_spider_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "storming_penguin_progrisekey",
+            "title": "暴风企鹅程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作风暴企鹅劫持者的 $(l:zero_one/devices/raidriser#raidriser_penguin)劫持升华器(风暴企鹅劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#storming_penguin)暴风企鹅$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:storming_penguin_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hopping_kangaroo_progrisekey",
+            "title": "跳跃袋鼠程式升华钥",
+            "text": "登场于：$(li)假面骑士01：袋鼠里会跳出什么？自己想想吧！现在，要么是或人要么就什么都没有！！ (2019年，超战斗DVD)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#hopping_kangaroo)跳跃袋鼠$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hopping_kangaroo_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "splashing_whale_progrisekey",
+            "title": "喷溅鲸鱼程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作喷溅鲸鱼劫持者的 $(l:zero_one/devices/raidriser#raidriser_whale)劫持升华器(喷溅鲸鱼劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#splashing_whale)喷溅鲸鱼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:splashing_whale_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dynamaiting_lion_progrisekey",
+            "title": "爆炸狮子程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作爆炸狮子劫持者的 $(l:zero_one/devices/raidriser#raidriser_lion)劫持升华器(爆炸狮子劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#dynamaiting_lion)爆炸狮子$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dynamaiting_lion_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "scouting_panda_progrisekey",
+            "title": "侦查熊猫程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作侦查熊猫劫持者的 $(l:zero_one/devices/raidriser#raidriser_panda)劫持升华器(侦查熊猫劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#scouting_panda)侦查熊猫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:scouting_panda_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "invading_horseshoe_crab_progrisekey",
+            "title": "入侵鲎程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作入侵鲎劫持者的 $(l:zero_one/devices/raidriser#raidriser_battle)劫持升华器(入侵鲎劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#invading_horseshoe_crab)入侵鲎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:invading_horseshoe_crab_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shooting_wolf_progrisekey",
+            "title": "射击野狼程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作巴尔坎的 $(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)$(br2)用于切换巴尔坎的 $(l:zero_one/riders/vulcan#shooting_wolf)射击野狼$(/l) 形态$(br2)用于切换01的 $(l:zero_one/riders/zero_one#shooting_wolf)射击野狼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shooting_wolf_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "assault_wolf_progrisekey",
+            "title": "突击野狼程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换巴尔坎的 $(l:zero_one/riders/vulcan#assault_wolf)突击野狼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:assault_wolf_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rampage_gatling_progrisekey",
+            "title": "狂暴加特林程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换巴尔坎的 $(l:zero_one/riders/vulcan#rampagevulcan)狂暴巴尔坎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/rampage_gatling_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "punching_kong_progrisekey",
+            "title": "拳击金刚程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换巴尔坎的 $(l:zero_one/riders/vulcan#punching_kong)拳击金刚$(/l) 形态$(br2)用于切换01的 $(l:zero_one/riders/zero_one#punching_kong)拳击金刚$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:punching_kong_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得$(br2)掉落自：$(li)$(l:zero_one/mobs/dodo_magia_chick)渡渡鸟-雏鸟魔机偶$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rushing_cheetah_progrisekey",
+            "title": "冲刺猎豹程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作瓦尔基里的 $(l:zero_one/devices/aims_shotriser#shotriser_valkyrie)艾姆斯射击升华器(瓦尔基里)$(/l)$(br2)用于切换瓦尔基里的 $(l:zero_one/riders/valkyrie#rushing_cheetah)冲刺猎豹$(/l) 形态$(br2)用于切换01的 $(l:zero_one/riders/zero_one#rushing_cheetah)冲刺猎豹$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rushing_cheetah_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lightning_hornet_progrisekey",
+            "title": "雷霆黄蜂程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换瓦尔基里的 $(l:zero_one/riders/valkyrie#lightning_hornet)雷霆黄蜂$(/l) 形态$(br2)用于切换01的 $(l:zero_one/riders/zero_one#lightning_hornet)雷霆黄蜂$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lightning_hornet_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得$(br2)掉落自：$(li)$(l:zero_one/mobs/dodo_magia_chick)渡渡鸟-雏鸟魔机偶$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fighting_jackal_progrisekey",
+            "title": "战斗胡狼程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作战斗胡狼劫持者的 $(l:zero_one/devices/raidriser#raidriser_jackal)劫持升华器(战斗胡狼劫持者)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#fighting_jackal)战斗胡狼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fighting_jackal_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/raider)劫持者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sting_scorpion_progrisekey",
+            "title": "尖刺毒蝎程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作灭的 $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_horobi)灭亡迅雷强制升华器(灭)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#sting_scorpion)尖刺毒蝎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sting_scorpion_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得$(br2)掉落自：$(li)$(l:zero_one/mobs/horobi)假面骑士灭$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ark_scorpion_progrisekey",
+            "title": "亚克毒蝎程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作灭的 $(l:zero_one/devices/zetsumetsu_driver)绝灭驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ark_scorpion_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士亚克-零$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flying_falcon_progrisekey",
+            "title": "飞翔猎隼程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作迅的 $(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_jin)灭亡迅雷强制升华器(迅)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#flying_falcon)飞翔猎隼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:flying_falcon_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得$(br2)掉落自：$(li)$(l:zero_one/mobs/jin)假面骑士迅$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "burning_falcon_progrisekey",
+            "title": "燃烧猎隼程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作迅的 $(l:zero_one/devices/zaia_slashriser)哉亚斩击升华器(迅)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#burning_falcon)燃烧猎隼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:burning_falcon_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/jin)假面骑士迅$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazing_caucasus_progrisekey",
+            "title": "惊异南洋大兜虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于制作千骑的 $(l:zero_one/devices/zaia_thousandriver#zaia_thousandriver)哉亚千位驱动器(千骑)$(/l)$(br2)用于切换01的 $(l:zero_one/riders/zero_one#amazing_caucasus)惊异南洋大兜虫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:amazing_caucasus_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l) 上使用 $(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thousand_ark_progrisekey",
+            "title": "亚克千骑程式升华钥",
+            "text": "登场于：$(li)假面骑士幻梦 -Smart Brain与1000%的危机- (2022年，TTFC特别篇)$(br2)用于制作亚克千骑的 $(l:zero_one/devices/ark_driver_zero#ark_driver_zero_thousand_ark)方舟驱动器-零(亚克-千骑)$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/thousand_ark_progrisekey"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ark_one_progrisekey",
+            "title": "Ark-One程式升华钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于变身为 $(l:zero_one/riders/ark_zero)假面骑士亚克-零$(/l) 和 $(l:zero_one/riders/ark_zero#ark_one)假面骑士亚克-一$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ark_one_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士亚克-零$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ark_zero_one_progrisekey",
+            "title": "亚克01程式升华钥",
+            "text": "登场于：$(li)假面骑士01：最终舞台 (2020年，舞台剧)$(br2)用于制作亚克01的 $(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver_azu)飞电01驱动器(亚克01)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ark_zero_one_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士亚克-零$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crowding_hopper_progrisekey",
+            "title": "集群蝗虫程式升华钥",
+            "text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)用于制作亚巴顿的 $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser)斩击亚巴顿升华器(亚巴顿)$(/l)$(br)用于制作亚巴顿的 $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser)射击亚巴顿升华器(亚巴顿)$(/l)$(br)用于制作亚巴顿赤的 $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_r)斩击亚巴顿升华器(赤)$(/l)$(br)用于制作亚巴顿银的 $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_g)射击亚巴顿升华器(银)$(/l)$(br)用于制作亚巴顿蓝的 $(l:zero_one/devices/shotabaddoriser#shot_abaddo_riser_b)射击亚巴顿升华器(蓝)$(/l)$(br)用于制作亚巴顿橘的 $(l:zero_one/devices/slashabaddoriser#slash_abaddo_riser_o)斩击亚巴顿升华器(橘)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:crowding_hopper_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士亚巴顿(指挥官)$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zein_progrisekey",
+            "title": "善意程式升华钥",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)用于制作善意的 $(l:zero_one/devices/zein_driver)善意驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zein_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/zein)假面骑士善意$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thousand_key",
+            "title": "千位密钥",
+            "text": "登场于：$(li)假面骑士01 (2022年，漫画)$(br2)用于切换诸神黄昏的 $(l:zero_one/riders/ragnarok#apocalypse_reboot)黑色骑士$(/l) 和 $(l:zero_one/riders/ragnarok#supreme)至尊$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:thousand_key",
+            "title": " ",
+            "text": "由熟练级 $(l:misc/villagers#humagear_villager)修玛吉亚村民$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "is_progrisekey",
+            "title": "伊兹程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:is_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uchuyaro_subaru_progrisekey",
+            "title": "宇宙野郎昴程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:uchuyaro_subaru_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "saikyo_takumi_oyakata_progrisekey",
+            "title": "最强匠亲方程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:saikyo_takumi_oyakata_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dr_omigoto_progrisekey",
+            "title": "DR绝伦程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dr_omigoto_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sumida_smile_progrisekey",
+            "title": "住田微笑程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sumida_smile_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mamoru_progrisekey",
+            "title": "阿守程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mamoru_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bengoshi_bingo_progrisekey",
+            "title": "辩护士宾果程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bengoshi_bingo_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ikkan_nigiro_progrisekey",
+            "title": "一贯握郎程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ikkan_nigiro_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "matsuda_enji_progrisekey",
+            "title": "松田演程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:matsuda_enji_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "morifude_g_pen_progrisekey",
+            "title": "森笔治边程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:morifude_g_pen_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fukkinhoukai_taro_progrisekey",
+            "title": "腹筋崩坏太郎程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fukkinhoukai_taro_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shesta_progrisekey",
+            "title": "谢斯塔程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shesta_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "love_chan_progrisekey",
+            "title": "结缘配对程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:love_chan_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hakase_bot_progrisekey",
+            "title": "博士波特程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hakase_bot_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "okureru_progrisekey",
+            "title": "阿送程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:okureru_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "delmo_progrisekey",
+            "title": "德尔摩程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:delmo_progrisekey",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l) 上使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "matsurida_z_progrisekey",
+            "title": "祭田赛特程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:matsurida_z_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "horobi_progrisekey",
+            "title": "灭程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:horobi_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/horobi)假面骑士灭$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "naki_progrisekey",
+            "title": "亡程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:naki_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/naki)假面骑士亡$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jin_progrisekey",
+            "title": "迅程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:jin_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/jin)假面骑士迅$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ikazuchi_progrisekey",
+            "title": "雷程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ikazuchi_progrisekey",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zero_one/mobs/ikazuchi)假面骑士雷$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "president_dan_kuroto_progrisekey",
+            "title": "檀黎斗程式升华秘钥",
+            "text": "登场于：$(li)假面骑士幻梦 -Smart Brain与1000%的危机- (2022年，TTFC特别篇)"
+        },
+        {
+	        "type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:president_dan_kuroto_progrisekey",
+			"title": " ",
+            "text": "以 $(l:zero_one/riders/thouser)假面骑士千骑$(/l) 的身份感染游戏病，手持 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 转换获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "merry_hopper_progrisekey",
+            "title": "圣诞高跃飞蝗程式升华秘钥",
+            "text": "登场于：$(li)假面骑士01 Charadeco蛋糕 (2019年，糕点系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:merry_hopper_progrisekey",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gift)礼物$(/l)获得"
+        }
+    ]
+}

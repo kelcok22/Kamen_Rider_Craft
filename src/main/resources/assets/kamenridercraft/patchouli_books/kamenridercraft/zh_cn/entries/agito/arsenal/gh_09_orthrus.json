@@ -1,0 +1,16 @@
+{
+    "name": "GH-09〈双头犬〉",
+    "icon": "kamenridercraft:gh_09_orthrus",
+    "category": "kamenridercraft:agito/arsenal",
+    "sortnum": 12,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)由 $(l:agito/riders/g6)假面骑士G6$(/l) 使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:agito/gh_09_orthrus"
+        }
+    ]
+}

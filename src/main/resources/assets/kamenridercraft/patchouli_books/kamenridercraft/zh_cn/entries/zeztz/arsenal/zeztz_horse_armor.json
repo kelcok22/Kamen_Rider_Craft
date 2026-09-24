@@ -1,0 +1,19 @@
+{
+	"name": "Zeztz马凯",
+	"icon": "kamenridercraft:zeztz_horse_armor",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士官方频道2026新年倒计时（2025年，网络视频）$(br2)可装备于坐骑"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeztz_horse_armor",
+			"title": " ",
+			"text": "通过打开 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l) 获取"
+		}
+	]
+}

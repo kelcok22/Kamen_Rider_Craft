@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士恶王",
+	"icon": "kamenridercraft:keyfuestle",
+	"category": "kamenridercraft:kiva/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "arc",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:keyfuestle\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:kiva/items/fuestles#keyfuestle)觉醒笛哨(冷/恶王)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恶王",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)通过穿戴$(l:kiva/devices/arcdriver)恶王Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)巨大化 II$(li)速度 II$(li)抗性提升 IV$(li)急迫$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "legend",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:keyfuestle_arc_legend\"}},Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "完全形态",
+			"text": "在 $(l:kiva/riders/arc)恶王的基础形态$(/l) 下，前往 $(l:fourze/dimensions/moon)月球$(/l) 解锁"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恶王",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)通过穿戴$(l:kiva/devices/arcdriver)恶王Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)飞行$(li)巨大化 II$(li)速度 II$(li)抗性提升 IV$(li)急迫$(li)力量 III"
+		}
+	]
+}

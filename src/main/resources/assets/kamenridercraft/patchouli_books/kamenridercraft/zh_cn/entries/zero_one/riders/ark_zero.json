@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士亚克-零",
+	"icon": "kamenridercraft:ark_driver_zero",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "ark_zero",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ark_driver_zero\",components:{custom_data:{slot_tex1:\"kamenridercraft:ark_zero_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚克-零",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/ark_driver_zero#ark_driver_zero)方舟驱动器-零(亚克-零)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 II$(li)夜视$(li)急迫$(li)跳跃提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ark_one",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ark_driver_zero\",components:{custom_data:{slot_tex1:\"kamenridercraft:ark_one_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚克-一",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/ark_driver_zero#ark_driver_zero)方舟驱动器-零(亚克-零)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)跳跃提升 V$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "outsiders",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ark_driver_zero\",components:{custom_data:{slot_tex1:\"kamenridercraft:ark_zero_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ark-Zero(界外者/歌查德版本)",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#ark_zero_ride_chemy_card)Ark-Zero驾驭凯米卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚克-零",
+			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/ark_driver_zero#ark_driver_zero)方舟驱动器-零(亚克-零)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 II$(li)夜视$(li)急迫$(li)跳跃提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ark_driver_zero\",components:{custom_data:{slot_tex1:\"kamenridercraft:ark_one_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ark-One(歌查德版本)",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#ark_one_ride_chemy_card)Ark-One驾驭凯米卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚克-一",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/ark_driver_zero#ark_driver_zero)方舟驱动器-零(亚克-零)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)跳跃提升 V$(li)力量 V"
+		}
+	]
+}

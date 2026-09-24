@@ -1,0 +1,21 @@
+{
+    "name": "假面骑士cronus",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:cronus",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 300"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通过挖掘$(l:misc/blocks/boss_blocks#cronus_boss_block)cronus BOSS召唤方块$(/l)召唤而来$(br2)特殊(技能/机制)：$(li)可使用暂停技能时停玩家$(li)生命值低于100时变身为$(l:ex_aid/riders/cronus#gamedeus)游戏天神cronus$(/l)$(li)变身游戏天神cronus后，可重置玩家形态（拥有保存效果时除外）$(br2)掉落内容见下一页"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "掉落$(li)2-4个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)$(li)1-2个$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)$(li)1个$(l:ex_aid/items/rider_gashats#kamen_rider_chronicle_gashat)假面骑士编年史卡带$(/l)$(li)1个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l) (80%)$(li)1个$(l:ex_aid/items/rider_gashats#kamen_rider_chronicle_gashat_gamedeus)假面骑士编年史卡带（游戏天神）$(/l) (20%)"
+        }
+    ]
+}

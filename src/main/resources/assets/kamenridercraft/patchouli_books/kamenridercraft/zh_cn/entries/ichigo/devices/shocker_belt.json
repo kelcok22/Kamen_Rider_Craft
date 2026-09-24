@@ -1,0 +1,16 @@
+{
+	"name": "修卡腰带",
+	"icon": "kamenridercraft:shocker_belt",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)与$(l:ichigo/devices/armor)一号装甲$(/l)一起穿戴，可变身为$(l:ichigo/riders/shocker_combatman)修卡战斗员$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/shocker_belt"
+		}
+	]
+}

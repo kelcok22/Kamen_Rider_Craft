@@ -1,0 +1,129 @@
+{
+	"name": "玩家驱动器",
+	"icon": "kamenridercraft:gamer_driver_ex_aid",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_ex_aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/ex_aid)假面骑士Ex-Aid"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_ex_aid"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_brave",
+			"title": "玩家驱动器（Brave）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/brave)假面骑士Brave"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_brave"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_snipe",
+			"title": "玩家驱动器（Snipe）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/snipe)假面骑士Snipe"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_snipe"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_lazer",
+			"title": "玩家驱动器（Lazer）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/lazer)假面骑士Lazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_lazer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_genmu",
+			"title": "玩家驱动器（幻梦）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/genm)假面骑士幻梦"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_genmu",
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_paradx",
+			"title": "玩家驱动器（Para-DX）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/para_dx#perfect_knock_out)假面骑士Para-DX"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_paradox"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_true_brave",
+			"title": "玩家驱动器（True Brave）",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/true_brave)假面骑士True Brave"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_truebrave"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_fuuma",
+			"title": "玩家驱动器（Fuma）",
+			"text": "登场于：$(li)假面骑士Ex-Aid 真实结局 (2017年，电影)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/fuma)假面骑士Fuma"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_fuuma"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_anotherparadox",
+			"title": "玩家驱动器（另类Para-DX）",
+			"text": "登场于：$(li)假面骑士Para-DX with Poppy (2018年，V-Cinema影片)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/another_para_dx)假面骑士另类Para-DX"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_anotherparadox"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_nico_snipe",
+			"title": "玩家驱动器（妮可Snipe）",
+			"text": "登场于：$(li)假面骑士Ex-Aid 最终舞台 (2017年，舞台表演)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/nico_snipe)假面骑士妮可Snipe"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_nico_snipe"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_gamedeus_muteki",
+			"title": "玩家驱动器（游戏天神无敌）",
+			"text": "登场于：$(li)假面骑士Ex-Aid 最终舞台 (2017年，舞台表演)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/gamedeus_muteki)游戏天神无敌"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gamer_driver_gamedeus_muteki"
+		}
+	]
+}

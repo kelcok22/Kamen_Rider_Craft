@@ -1,0 +1,19 @@
+{
+  "name": "神威楽斗 假面驾驭卡",
+  "icon": "kamenridercraft:gackt_card",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)Journey Through the Decade (2009年，音乐视频)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:gackt_card",
+      "title": " ",
+      "text": "掉落自：$(li)$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)"
+    }
+  ]
+}

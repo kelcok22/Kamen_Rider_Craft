@@ -1,0 +1,16 @@
+{
+	"name": "扳机麦林枪",
+	"icon": "kamenridercraft:trigger_magnum",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）$(br2)由W的左边身体方使用 $(l:w/riders/double#lunatrigger)扳机$(/l)记忆体使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/triggermagnum"
+		}
+	]
+}

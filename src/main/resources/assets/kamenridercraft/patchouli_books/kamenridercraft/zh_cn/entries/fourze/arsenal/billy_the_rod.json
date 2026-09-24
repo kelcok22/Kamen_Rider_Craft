@@ -1,0 +1,16 @@
+{
+	"name": "电力组件 哔哩长棍",
+	"icon": "kamenridercraft:billy_the_rod",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)由Fourze的$(l:fourze/riders/fourze#elekstates)电力状态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/billy_the_rod"
+		}
+	]
+}

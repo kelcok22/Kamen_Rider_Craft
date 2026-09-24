@@ -1,0 +1,227 @@
+{
+	"name": "昆虫仪",
+	"icon": "kamenridercraft:kabuto_zecter",
+	"category": "kamenridercraft:kabuto/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_zecter",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作甲斗的$(l:kabuto/devices/rider_belt#kabuto_rider_belt)骑士代扣(甲斗)$(/l)$(br2)用于在甲斗的$(l:kabuto/riders/kabuto#masked)重甲形态$(/l)和$(l:kabuto/riders/kabuto#rider)骑士形态$(/l)之间切换"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabuto_zecter",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "thebee_zecter",
+			"title": "黄蜂昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作皇蜂的$(l:kabuto/devices/zect_buckle#thebee_rider_belt)ZECT代扣(皇蜂)$(/l)$(br2)用于在皇蜂的$(l:kabuto/riders/thebee#masked)重甲形态$(/l)和$(l:kabuto/riders/thebee#rider)骑士形态$(/l)之间切换"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thebee_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drake_zecter",
+			"title": "雷蜓昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于在雷蜓的$(l:kabuto/riders/drake#masked)重甲形态$(/l)和$(l:kabuto/riders/drake#rider)骑士形态$(/l)之间切换"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drake_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasword_zecter",
+			"title": "剑蝎昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于在剑蝎的$(l:kabuto/riders/sasword#masked)重甲形态$(/l)和$(l:kabuto/riders/sasword#rider)骑士形态$(/l)之间切换"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasword_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gatack_zecter",
+			"title": "钢斗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作钢斗的$(l:kabuto/devices/rider_belt#gatack_rider_belt)骑士代扣(钢斗)$(/l)$(br2)用于在钢斗的$(l:kabuto/riders/gatack#masked)重甲形态$(/l)和$(l:kabuto/riders/gatack#rider)骑士形态$(/l)之间切换"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gatack_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kickhopper_zecter",
+			"title": "踢蝗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作踢蝗的$(l:kabuto/devices/zect_buckle#kickhopper_rider_belt)ZECT代扣(踢蝗)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kickhopper_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "punchhopper_zecter",
+			"title": "拳蝗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作拳蝗的$(l:kabuto/devices/zect_buckle#punchhopper_rider_belt)ZECT代扣(拳蝗)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:punchhopper_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_kabuto_zecter",
+			"title": "黑暗甲斗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作黑暗甲斗的$(l:kabuto/devices/rider_belt#dark_kabuto_rider_belt)骑士代扣(黑暗甲斗)$(/l)$(br2)用于在黑暗甲斗的$(l:kabuto/riders/dark_kabuto#masked)重甲形态$(/l)和$(l:kabuto/riders/dark_kabuto#rider)骑士形态$(/l)之间切换"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_kabuto_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "caucasus_zecter",
+			"title": "金斗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)用于制作金斗的$(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT代扣(金斗)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:caucasus_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hercus_zecter",
+			"title": "银斗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)用于制作银斗的$(l:kabuto/devices/zect_buckle#hercus_rider_belt)ZECT代扣(银斗)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hercus_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ketaros_zecter",
+			"title": "铜斗昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)用于制作铜斗的$(l:kabuto/devices/zect_buckle#ketaros_rider_belt)ZECT代扣(铜斗)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ketaros_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lady_zecter",
+			"title": "瓢虫昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗：特别秀 (2006年，舞台秀)$(br2)用于制作Lady的$(l:kabuto/devices/zect_buckle#lady_rider_belt)ZECT代扣(瓢虫)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lady_zecter",
+			"title": " ",
+			"text": "通过从$(l:kabuto/structures/god_speed_love)神速爱$(/l)结构中获取试炼战利品获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hyper_zecter",
+			"title": "海帕昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于进入甲斗的$(l:kabuto/riders/kabuto#hyper)海帕形态$(/l)和钢斗的$(l:kabuto/riders/gatack#hyper)海帕形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hyper_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giraffa_zecter",
+			"title": "长颈鹿锯楸昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 20周年 承天之人 (2026年，电影)$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giraffa_zecter",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfectthebee_zecter",
+			"title": "完美黄蜂昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用作制作$(l:kabuto/arsenal/perfect_zecter)百虫破邪剑$(/l)的材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:perfectthebee_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfectdrake_zecter",
+			"title": "完美雷蜓昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用作制作$(l:kabuto/arsenal/perfect_zecter)百虫破邪剑$(/l)的材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:perfectdrake_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfectsasword_zecter",
+			"title": "完美剑蝎昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用作制作$(l:kabuto/arsenal/perfect_zecter)百虫破邪剑$(/l)的材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:perfectsasword_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)"
+		}
+	]
+}

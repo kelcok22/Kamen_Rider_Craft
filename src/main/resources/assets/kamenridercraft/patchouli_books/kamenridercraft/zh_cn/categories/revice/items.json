@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:revice/main",
+    "name": "相关物品",
+    "description": "所有与利维斯系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:rex_vistamp",
+    "sortnum": 2
+}

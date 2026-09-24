@@ -1,0 +1,16 @@
+{
+	"name": "全能之力奇幻驾驭书碎片",
+	"icon": "kamenridercraft:omni_force_wonder_ride_book_part",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/omni_force_wonder_ride_book_part"
+		}
+	]
+}

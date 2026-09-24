@@ -1,0 +1,19 @@
+{
+	"name": "绿色帝王石(空山基版绘)",
+	"icon": "kamenridercraft:green_king_stone_hajime_sorayama",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)Medicom Toy 25周年纪念展 (2021年, 展览)$(br2)用于切换影月$(l:black/riders/shadow_moon#hajime_sorayama)空山基版绘$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:green_king_stone_hajime_sorayama",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		}
+	]
+}

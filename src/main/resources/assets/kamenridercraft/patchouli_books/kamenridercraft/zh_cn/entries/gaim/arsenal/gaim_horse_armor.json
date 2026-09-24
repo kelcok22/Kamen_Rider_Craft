@@ -1,0 +1,19 @@
+{
+	"name": "铠武马甲",
+	"icon": "kamenridercraft:gaim_horse_armor",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)可装备在马匹上"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaim_horse_armor",
+			"title": " ",
+			"text": "可在$(l:gaim/structures/rosyuo_helheim_city)霸主$(/l)$(l:gaim/structures/redyue_helheim_city)异域者$(/l)$(l:gaim/structures/demushu_helheim_city)相关建筑$(/l)周围的可疑砂砾中找到"
+		}
+	]
+}

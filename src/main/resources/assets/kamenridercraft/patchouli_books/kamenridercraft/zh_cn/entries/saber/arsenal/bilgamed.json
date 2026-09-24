@@ -1,0 +1,19 @@
+{
+	"name": "毕尔加梅特",
+	"icon": "kamenridercraft:bilgamed",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/storious)假面骑士斯特利乌斯$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bilgamed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/storious_rider)假面骑士斯特利乌斯$(/l)"
+		}
+	]
+}

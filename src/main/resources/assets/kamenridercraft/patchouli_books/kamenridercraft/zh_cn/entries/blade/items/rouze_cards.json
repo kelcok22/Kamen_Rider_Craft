@@ -1,0 +1,240 @@
+{
+	"name": "觉醒卡片",
+	"icon": "kamenridercraft:change_beetle",
+	"category": "kamenridercraft:blade/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "change_beetle",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作假面骑士剑的$(l:blade/devices/blay_buckle)blay带扣$(/l)$(br2)用于切换假面骑士剑的$(l:blade/riders/blade#blade)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_beetle",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_eagle",
+			"title": "觉醒卡片·融合鹰鹫",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于切换假面骑士剑的$(l:blade/riders/blade#jack)侍卫形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_eagle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_capricorn",
+			"title": "觉醒卡片·吸收山羊",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作$(l:blade/items/rouze_absorber)觉醒融合器$(/l)$(br2)用于切换假面骑士剑的$(l:blade/riders/blade#jack)侍卫形态$(/l)和$(l:blade/riders/blade#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_capricorn",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_caucasus",
+			"title": "觉醒卡片·进化高加索",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于切换假面骑士剑的$(l:blade/riders/blade#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_caucasus",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "silver_evolution_caucasus",
+			"title": "觉醒卡片·银色进化高加索",
+			"text": "登场于：$(li)骑士英雄系列 (2004年，玩具系列)$(br2)用于切换假面骑士剑的$(l:blade/riders/blade#silver_king)国王形态 (银色版本)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_evolution_caucasus",
+			"title": " ",
+			"text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_stag",
+			"title": "觉醒卡片·变化锹形虫",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作假面骑士格连的$(l:blade/devices/garren_buckle)星币带扣$(/l)$(br2)用于切换假面骑士格连的$(l:blade/riders/garren#garren)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_stag",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_peacock",
+			"title": "觉醒卡片·融合孔雀",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于切换假面骑士格连的$(l:blade/riders/garren#jack)侍卫形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_peacock",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_serpent",
+			"title": "觉醒卡片·吸收海蛇",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作$(l:blade/items/rouze_absorber)觉醒融合器$(/l)$(br2)用于切换假面骑士格连的$(l:blade/riders/garren#jack)侍卫形态$(/l)和$(l:blade/riders/garren#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_serpent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_giraffa",
+			"title": "觉醒卡片·进化长颈鹿锯锹形虫",
+			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)用于切换假面骑士格连的$(l:blade/riders/garren#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_giraffa",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_mantis",
+			"title": "觉醒卡片·变化螳螂",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作假面骑士卡利斯的$(l:blade/devices/chalice_rouzer)卡利斯觉醒器$(/l)$(br2)用于切换假面骑士卡利斯的$(l:blade/riders/chalice#chalice)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_mantis",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_paradoxa",
+			"title": "觉醒卡片·进化幽灵螳螂",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作假面骑士卡利斯的$(l:blade/arsenal/wild_slasher)醒镰$(/l)$(br2)用于切换假面骑士卡利斯的$(l:blade/riders/chalice#wild)狂野形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_paradoxa",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_spider",
+			"title": "觉醒卡片·变化蜘蛛",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作假面骑士连格尔的$(l:blade/devices/leangle_buckle)权杖带扣$(/l)$(br2)用于切换假面骑士连格尔的$(l:blade/riders/leangle#leangle)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_spider",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_elephant",
+			"title": "觉醒卡片·融合大象",
+			"text": "登场于：$(li)特别篇：三叶草 (2008年，S.I.C.英雄传奇)$(br2)用于切换假面骑士连格尔的$(l:blade/riders/leangle#jack)侍卫形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_elephant",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_tiger",
+			"title": "觉醒卡片·吸收猛虎",
+			"text": "登场于：$(li)特别篇：三叶草 (2008年，S.I.C.英雄传奇)$(br2)用于制作$(l:blade/items/rouze_absorber)觉醒融合器$(/l)$(br2)用于切换假面骑士连格尔的$(l:blade/riders/leangle#jack)侍卫形态$(/l)和$(l:blade/riders/leangle#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_tiger",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evolution_tarantula",
+			"title": "觉醒卡片·进化狼蛛",
+			"text": "登场于：$(li)假面骑士剑20周年STAGE&TALK (2024年，舞台剧)$(br2)用于切换假面骑士连格尔的$(l:blade/riders/leangle#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evolution_tarantula",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_kerberos_glaive",
+			"title": "觉醒卡片·黄金地狱三头犬(长刃)",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)用于制作假面骑士长刃的$(l:blade/devices/glaive_buckle)长刃带扣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_kerberos_glaive",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_kerberos_larc",
+			"title": "觉醒卡片·赤红地狱三头犬(弩弓)",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)用于制作假面骑士弩弓的$(l:blade/devices/larc_buckle)弩弓带扣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_kerberos_larc",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_kerberos_lance",
+			"title": "觉醒卡片·碧绿地狱三头犬(长枪)",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)用于制作假面骑士长枪的$(l:blade/devices/lance_buckle)长枪带扣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_kerberos_lance",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+		}
+	]
+}

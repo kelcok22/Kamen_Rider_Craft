@@ -1,0 +1,24 @@
+{
+	"name": "假面战队装甲",
+	"icon": "kamenridercraft:akariderhead",
+	"category": "kamenridercraft:gorider/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与假面战队系列骑士的腰带配合使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gorider/akariderhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gorider/akaridertroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gorider/akariderlegs"
+		}
+	]
+}

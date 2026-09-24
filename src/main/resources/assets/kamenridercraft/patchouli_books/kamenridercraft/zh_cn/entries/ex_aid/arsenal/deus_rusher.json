@@ -1,0 +1,19 @@
+{
+	"name": "鞭笞者",
+	"icon": "kamenridercraft:deus_rusher",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/mobs/cronus)游戏天神克洛诺斯$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deus_rusher",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

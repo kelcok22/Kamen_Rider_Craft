@@ -1,0 +1,17 @@
+{
+	"name": "滋·古穆姆·巴",
+	"icon": "kamenridercraft:kuuga_logo",
+	"category": "kamenridercraft:kuuga/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zu_gumun_ba",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 平原, 向日葵平原, 桦木森林, 风袭森林$(br2)掉落$(li)2-4个$(l:kuuga/items/kuuga_growing)空我初生灵石$(/l)$(li)1个$(l:kuuga/items/kuuga_growing)空我初生灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_mighty)空我全能灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_dragon)空我青龙灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_pegasus)空我天马灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_titan)空我泰坦灵石$(/l) (20%)"
+		}
+	]
+}

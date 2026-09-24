@@ -1,0 +1,33 @@
+{
+	"name": "盖亚核心台风",
+	"icon": "kamenridercraft:core_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "core_driver",
+			"text": "登场于：$(li)假面骑士×假面骑士 OOO&W feat. Skull MOVIE大战CORE (2010年，电影)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/core)假面骑士Core"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:core_driver",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "powered_up_core_driver",
+			"title": "盖亚核心台风(力量提升)",
+			"text": "登场于：$(li)假面骑士 巅峰乱斗 (2018年，Switch游戏)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/powered_up_core)能力提升假面骑士Core"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:powered_up_core_driver",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/powered_up_core)假面骑士Core(力量提升)$(/l)"
+		}
+	]
+}

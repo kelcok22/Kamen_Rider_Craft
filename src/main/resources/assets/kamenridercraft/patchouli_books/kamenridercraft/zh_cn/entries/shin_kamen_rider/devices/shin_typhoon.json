@@ -1,0 +1,40 @@
+{
+    "name": "新台风腰带",
+    "icon": "kamenridercraft:shin_typhoon_ichigo",
+    "category": "kamenridercraft:shin_kamen_rider/devices",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "shin_typhoon_ichigo",
+            "text": "登场于：$(li)真·假面骑士（2023年，电影）$(br2)与$(l:shin_kamen_rider/devices/armor)真·假面骑士装甲$(/l)一起穿戴，可变身为$(l:shin_kamen_rider/riders/no_1)假面骑士No.1$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:shin_kamen_rider/shin_typhoon_ichigo"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shin_typhoon_nigo",
+            "title": "新台风腰带(No.2)",
+            "text": "登场于：$(li)真·假面骑士（2023年，电影）$(br2)与$(l:shin_kamen_rider/devices/armor)真·假面骑士装甲$(/l)一起穿戴，可变身为$(l:shin_kamen_rider/riders/no_2)假面骑士No.2$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:shin_kamen_rider/shin_typhoon_nigo"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shin_typhoon_2_1",
+            "title": "新台风腰带(No.2+1)",
+            "text": "登场于：$(li)真·假面骑士（2023年，电影）$(br2)与$(l:shin_kamen_rider/devices/armor)真·假面骑士装甲$(/l)一起穿戴，可变身为$(l:shin_kamen_rider/riders/no_2_plus_1)假面骑士No.2+1$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:shin_kamen_rider/shin_typhoon_2_1"
+        }
+    ]
+}

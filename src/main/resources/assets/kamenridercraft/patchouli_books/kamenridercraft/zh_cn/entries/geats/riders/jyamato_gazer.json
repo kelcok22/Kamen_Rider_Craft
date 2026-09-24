@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士邪魔徒Gazer",
+	"icon": "kamenridercraft:vision_driver_jyamato_glare",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vision_driver_jyamato_glare\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士邪魔徒Gazer",
+			"text": "登场于：$(li)假面骑士极狐：最终舞台 (2023年，舞台秀)$(br2)通过穿戴$(l:geats/devices/vision_driver#vision_driver_jyamato_glare)幻视驱动器(邪魔徒Gazer)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)力量 III"
+		}
+	]
+}

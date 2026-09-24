@@ -1,0 +1,17 @@
+{
+	"name": "骑士兵",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:knight_soldier_mob",
+			"text": "登场于：$(li)假面骑士OOO WONDERFUL 将军与21枚核心硬币 (2011年，电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 45$(br2)在$(l:ooo/structures/gara_edo_village)江户川$(/l)内生成$(br2)掉落$(li)3-5个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/core_medals#panda_medal)熊猫核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#yadokari_medal)寄居蟹核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#kangaroo_medal)袋鼠核心硬币$(/l) (33.3%)"
+		}
+	]
+}

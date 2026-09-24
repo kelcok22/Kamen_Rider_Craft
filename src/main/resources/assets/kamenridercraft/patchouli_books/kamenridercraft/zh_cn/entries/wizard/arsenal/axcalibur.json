@@ -1,0 +1,16 @@
+{
+	"name": "辉煌剑斧",
+	"icon": "kamenridercraft:axcalibur",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)由Wizard的$(l:wizard/riders/wizard#infinity)无限风格$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/axcalibur"
+		}
+	]
+}

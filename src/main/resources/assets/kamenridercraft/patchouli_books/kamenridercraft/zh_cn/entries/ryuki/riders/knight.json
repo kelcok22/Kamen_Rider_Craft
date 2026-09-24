@@ -1,0 +1,78 @@
+{
+	"name": "假面骑士夜骑",
+	"icon": "kamenridercraft:darkwing_advent",
+	"category": "kamenridercraft:ryuki/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "blank",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:advent_card\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空白形态",
+			"text": "通过使用$(l:ryuki/items/advent_card)空白降临卡片$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士夜骑",
+			"text": "登场于:$(li)假面骑士 艺术收藏集 英雄篇 (2003年，艺术书)$(br2)通过穿戴 $(l:ryuki/devices/v_buckle#v_buckle_knight)V代扣$(/l)进行变身$(br2)状态效果:$(li)虚弱"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "knight",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkwing_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:ryuki/items/contract_advent_cards#darkwing_advent)黑暗翼蝠降临卡$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士夜骑",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)通过穿戴 $(l:ryuki/devices/v_buckle#v_buckle_knight)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度$(li)夜视$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wingwall",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:wing_wall_vent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "夜骑 防御降临",
+			"text": "通过使用$(l:ryuki/items/other_form_advent_cards#wing_wall_vent)防御读取$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士夜骑",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)通过穿戴 $(l:ryuki/devices/v_buckle#v_buckle_knight)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度$(li)抗性提升$(li)夜视$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "survive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "夜骑 生存",
+			"text": "通过使用$(l:ryuki/items/survive_cards#survive_shippu)生存卡 疾风$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士夜骑",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)通过穿戴 $(l:ryuki/devices/v_buckle#v_buckle_knight)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度 II$(li)抗性提升 III$(li)夜视$(li)急迫$(li)力量 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "darkwing",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkwing\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级模式",
+			"text": "通过使用$(l:misc/items/card_warrior_cards#darkwing)暗之翼蝙蝠怪物驾驭卡$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士夜骑",
+			"text": "登场于:$(li)卡牌战士假面骑士 (2009年, 漫画/玩具系列)$(br2)通过穿戴 $(l:ryuki/devices/v_buckle#v_buckle_knight)V代扣$(/l)进行变身$(br2)状态效果:$(li)飞行 II$(li)速度$(li)夜视$(li)力量"
+		}
+	]
+}

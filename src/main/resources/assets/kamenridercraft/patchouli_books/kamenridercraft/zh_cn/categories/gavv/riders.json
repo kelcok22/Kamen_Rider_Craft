@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gavv/main",
+    "name": "加布系列骑士",
+    "description": "来自《假面骑士加布》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:gavv_head",
+    "sortnum": 0
+}

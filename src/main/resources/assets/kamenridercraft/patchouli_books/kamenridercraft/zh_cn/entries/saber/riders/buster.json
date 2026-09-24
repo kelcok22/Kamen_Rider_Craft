@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士Buster",
+	"icon": "kamenridercraft:sword_of_logos_buckle_buster",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "genbu_shinwa",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_buster\",components:{custom_data:{slot_tex1:\"kamenridercraft:genbu_shinwa_wonder_ride_book_buster\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "玄武神话形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#genbu_shinwa_wonder_ride_book)玄武神话奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Buster",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_buster)真理之剑带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)抗性提升 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackun_to_domamenoki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_buster\",components:{custom_data:{slot_tex1:\"kamenridercraft:jackun_to_domamenoki_wonder_ride_book_buster\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "玄武杰克形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)杰克与豌豆奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Buster",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_buster)真理之剑带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bremen_no_rock_band",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_buster\",components:{custom_data:{slot_tex1:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book_buster\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "玄武不莱梅形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)不莱梅摇滚乐队奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Buster",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_buster)真理之剑带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 V$(li)抗性提升 II$(li)急迫 V$(li)力量"
+		}
+	]
+}

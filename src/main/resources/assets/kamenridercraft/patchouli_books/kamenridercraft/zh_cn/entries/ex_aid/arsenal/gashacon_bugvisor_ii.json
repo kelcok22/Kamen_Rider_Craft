@@ -1,0 +1,17 @@
+{
+	"name": "卡控崩证者II",
+	"icon": "kamenridercraft:gashacon_bugvisor_ii",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/riders/poppy)假面骑士Poppy$(/l) 和 $(l:ex_aid/riders/cronus)假面骑士cronus$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii",
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Zeztz装甲",
+	"icon": "kamenridercraft:zeztz_head",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "搭配Zeztz系列骑士的驱动器，即可变身为该骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/zeztz_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/zeztz_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/zeztz_legs"
+		}
+	]
+}

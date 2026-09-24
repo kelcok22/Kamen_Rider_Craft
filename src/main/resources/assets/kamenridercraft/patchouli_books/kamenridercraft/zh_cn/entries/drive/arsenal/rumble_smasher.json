@@ -1,0 +1,16 @@
+{
+	"name": "轰隆粉碎者",
+	"icon": "kamenridercraft:rumble_smasher",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)由Drive的 $(l:drive/riders/drive#rumble_dump)狂野型号 倾卸$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/rumble_smasher"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "凯米卡组收集板",
+	"icon": "kamenridercraft:gotchancollection_panel",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)最多可储存10组驾驭凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchancollection_panel"
+		}
+	]
+}

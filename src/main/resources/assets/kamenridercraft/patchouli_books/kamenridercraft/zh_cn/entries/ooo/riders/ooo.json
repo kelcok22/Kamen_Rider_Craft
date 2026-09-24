@@ -1,0 +1,330 @@
+{
+	"name": "假面骑士OOO",
+	"icon": "kamenridercraft:ooodriver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰虎蝗联组",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#tora_medal)虎$(/l)、$(l:ooo/items/core_medals#batta_medal)蝗核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)虎硬币效果：$(li)急迫 II$(br2)蝗硬币效果：$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gatakiriba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuwagata_medal\",slot_tex2:\"kamenridercraft:kamakiri_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "锹螳蝗联组",
+			"text": "通过使用$(l:ooo/items/core_medals#kuwagata_medal)锹形虫$(/l)、$(l:ooo/items/core_medals#kamakiri_medal)螳螂$(/l)、$(l:ooo/items/core_medals#batta_medal)蝗核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)锹形虫硬币效果：$(li)速度 II$(li)跳跃提升$(br2)螳螂硬币效果：$(li)急迫 II$(br2)蝗硬币效果：$(li)跳跃提升 III$(br2)装备$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)时：$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "latorartar",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:cheetah_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狮虎豹联组",
+			"text": "通过使用$(l:ooo/items/core_medals#lion_medal)狮子$(/l)、$(l:ooo/items/core_medals#tora_medal)虎$(/l)、$(l:ooo/items/core_medals#cheetah_medal)猎豹核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)狮子硬币效果：$(li)速度 II$(li)跳跃提升$(br2)虎硬币效果：$(li)急迫 II$(br2)猎豹硬币效果：$(li)速度 II$(br2)装备$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)时：$(li)速度 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sagohzo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_medal\",slot_tex2:\"kamenridercraft:gorilla_medal\",slot_tex3:\"kamenridercraft:zou_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "犀猩象联组",
+			"text": "通过使用$(l:ooo/items/core_medals#sai_medal)犀牛$(/l)、$(l:ooo/items/core_medals#gorilla_medal)大猩猩$(/l)、$(l:ooo/items/core_medals#zou_medal)大象核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)犀牛硬币效果：$(li)缓慢 II$(br2)大猩猩硬币效果：$(li)力量$(li)缓慢 II$(br2)大象硬币效果：$(li)抗性提升$(li)缓慢 II$(br2)装备$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)时：$(li)拳力 VI$(li)空手时力量 IX"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shauta",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shachi_medal\",slot_tex2:\"kamenridercraft:unagi_medal\",slot_tex3:\"kamenridercraft:tako_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鲸鳗章联组",
+			"text": "通过使用$(l:ooo/items/core_medals#shachi_medal)虎鲸$(/l)、$(l:ooo/items/core_medals#unagi_medal)电鳗$(/l)、$(l:ooo/items/core_medals#tako_medal)章鱼核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)虎鲸硬币效果：$(li)夜视$(br2)电鳗硬币效果：$(li)水下呼吸$(br2)章鱼硬币效果：$(li)速度 II$(br2)装备$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)时：$(li)海豚的恩惠"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tajadol",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰雀鹫联组",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#kujaku_medal)孔雀$(/l)、$(l:ooo/items/core_medals#condor_medal)秃鹫核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)孔雀硬币效果：$(li)抗火$(br2)秃鹫硬币效果：$(li)力量 II$(br2)装备$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)时：$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "putotyra",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ptera_medal\",slot_tex2:\"kamenridercraft:tricera_medal\",slot_tex3:\"kamenridercraft:tyranno_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "翼角暴联组",
+			"text": "通过使用$(l:ooo/items/core_medals#ptera_medal)翼龙$(/l)、$(l:ooo/items/core_medals#tricera_medal)三角龙$(/l)、$(l:ooo/items/core_medals#tyranno_medal)暴龙核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)翼龙硬币效果：$(li)跳跃提升 III$(br2)三角龙硬币效果：$(li)抗性提升 IV$(br2)暴龙硬币效果：$(li)力量 III$(br2)装备$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)时：$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burakawani",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_medal\",slot_tex2:\"kamenridercraft:kame_medal\",slot_tex3:\"kamenridercraft:wani_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蛇龟鳄联组",
+			"text": "通过使用$(l:ooo/items/core_medals#cobra_medal)眼镜蛇$(/l)、$(l:ooo/items/core_medals#kame_medal)乌龟$(/l)、$(l:ooo/items/core_medals#wani_medal)鳄鱼核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO WONDERFUL 将军与21枚核心硬币 (2011年，电影)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)眼镜蛇硬币效果：$(li)生命恢复$(br2)乌龟硬币效果：$(li)抗性提升 III$(br2)鳄鱼硬币效果：$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tajadol_final",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_ankh_medal\",slot_tex2:\"kamenridercraft:kujaku_medal\",slot_tex3:\"kamenridercraft:condor_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰雀鹫联组(最终回)",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_ankh_medal)碎裂的鹰$(/l)、$(l:ooo/items/core_medals#kujaku_medal)孔雀$(/l)、$(l:ooo/items/core_medals#condor_medal)秃鹫核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)碎裂的鹰硬币效果：$(li)生命恢复$(li)跳跃提升$(li)飞行$(br2)孔雀硬币效果：$(li)抗火$(br2)秃鹫硬币效果：$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tamashiy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:imagin_medal\",slot_tex3:\"kamenridercraft:shocker_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "魂联组",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#imagin_medal)异魔神$(/l)、$(l:ooo/items/core_medals#shocker_medal)修卡核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)OOO·电王·全骑士 Let's Go 假面骑士 (2011年，电影)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)异魔神硬币效果：$(li)力量 II$(li)抗火$(br2)修卡硬币效果：$(li)速度 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mukachiri",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mukade_medal\",slot_tex2:\"kamenridercraft:hachi_medal\",slot_tex3:\"kamenridercraft:ari_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蜈蜂蚁联组",
+			"text": "通过使用$(l:ooo/items/core_medals#mukade_medal)蜈蚣$(/l)、$(l:ooo/items/core_medals#hachi_medal)蜜蜂$(/l)、$(l:ooo/items/core_medals#ari_medal)蚂蚁核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)蜈蚣硬币效果：$(li)抗性提升 II$(br2)蜜蜂硬币效果：$(li)跳跃提升 III$(br2)蚂蚁硬币效果：$(li)急迫 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bikaso",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ebi_new_medal\",slot_tex2:\"kamenridercraft:kani_new_medal\",slot_tex3:\"kamenridercraft:sasori_new_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "虾蟹蝎联组",
+			"text": "通过使用$(l:ooo/items/core_medals#ebi_new_medal)新虾$(/l)、$(l:ooo/items/core_medals#kani_new_medal)新螃蟹$(/l)、$(l:ooo/items/core_medals#sasori_new_medal)新蝎子核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士城市大战 (2017年，手机游戏)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)新虾硬币效果：$(li)速度 II$(br2)新螃蟹硬币效果：$(li)力量 II$(br2)新蝎子硬币效果：$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "saramiuo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_medal\",slot_tex2:\"kamenridercraft:kujira_medal\",slot_tex3:\"kamenridercraft:ookamiuo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鲨鲸狼联组",
+			"text": "通过使用$(l:ooo/items/core_medals#same_medal)鲨鱼$(/l)、$(l:ooo/items/core_medals#kujira_medal)鲸鱼$(/l)、$(l:ooo/items/core_medals#ookamiuo_medal)狼鱼核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鲨鱼硬币效果：$(li)水下呼吸$(br2)鲸鱼硬币效果：$(li)力量 II$(br2)狼鱼硬币效果：$(li)速度 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shigazeshi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_medal\",slot_tex2:\"kamenridercraft:gazelle_medal\",slot_tex3:\"kamenridercraft:ushi_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹿羚牛联组",
+			"text": "通过使用$(l:ooo/items/core_medals#shika_medal)鹿$(/l)、$(l:ooo/items/core_medals#gazelle_medal)羚羊$(/l)、$(l:ooo/items/core_medals#ushi_medal)牛核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士战斗 Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹿硬币效果：$(li)夜视$(br2)羚羊硬币效果：$(li)急迫 II$(br2)牛硬币效果：$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "seishirogin",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:seiuchi_medal\",slot_tex2:\"kamenridercraft:shirokuma_medal\",slot_tex3:\"kamenridercraft:penguin_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "象熊企联组",
+			"text": "通过使用$(l:ooo/items/core_medals#seiuchi_medal)海象$(/l)、$(l:ooo/items/core_medals#shirokuma_medal)白熊$(/l)、$(l:ooo/items/core_medals#penguin_medal)企鹅核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)海象硬币效果：$(li)饱和 II$(br2)白熊硬币效果：$(li)力量 II$(br2)企鹅硬币效果：$(li)速度 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takapanba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:panda_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰熊猫联组",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#panda_medal)熊猫$(/l)、$(l:ooo/items/core_medals#batta_medal)蝗核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士战斗 Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)熊猫硬币效果：$(li)急迫 II$(br2)蝗硬币效果：$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takagaruba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:kangaroo_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰袋鼠蝗联组",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#kangaroo_medal)袋鼠$(/l)、$(l:ooo/items/core_medals#batta_medal)蝗核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO 超战斗DVD 问答、舞蹈与鹰袋鼠蝗联组 (2011年，超战斗视频)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)袋鼠硬币效果：$(li)力量 II$(br2)蝗硬币效果：$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takatoragaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:tora_medal\",slot_tex3:\"kamenridercraft:kangaroo_medal_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰虎袋鼠联组",
+			"text": "潜行状态下，通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#tora_medal)虎$(/l)、$(l:ooo/items/core_medals#kangaroo_medal)袋鼠核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO 超战斗DVD 问答、舞蹈与鹰袋鼠蝗联组 (2011年，超战斗视频)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)虎硬币效果：$(li)急迫 II$(br2)袋鼠硬币效果：$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "takayadoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_medal\",slot_tex2:\"kamenridercraft:yadokari_medal\",slot_tex3:\"kamenridercraft:batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰寄居蟹蝗联组",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_medal)鹰$(/l)、$(l:ooo/items/core_medals#yadokari_medal)寄居蟹$(/l)、$(l:ooo/items/core_medals#batta_medal)蝗核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)鹰硬币效果：$(li)夜视 II$(br2)寄居蟹硬币效果：$(li)力量 III$(br2)蝗硬币效果：$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_taka_medal\",slot_tex2:\"kamenridercraft:super_tora_medal\",slot_tex3:\"kamenridercraft:super_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级鹰虎蝗联组",
+			"text": "通过使用$(l:ooo/items/core_medals#super_taka_medal)超级鹰$(/l)、$(l:ooo/items/core_medals#super_tora_medal)超级虎$(/l)、$(l:ooo/items/core_medals#super_batta_medal)超级蝗核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)超级鹰硬币效果：$(li)夜视$(li)抗火$(li)生命恢复 IV$(li)力量 V$(li)增强$(br2)超级虎硬币效果：$(li)力量 VI$(li)急迫 IV$(li)抗性提升 IV$(br2)超级蝗硬币效果：$(li)速度 III$(li)跳跃提升 V$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tajadol_eternity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_eternity_medal\",slot_tex2:\"kamenridercraft:kujaku_eternity_medal\",slot_tex3:\"kamenridercraft:condor_eternity_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鹰雀鹫联组 永恒",
+			"text": "通过使用$(l:ooo/items/core_medals#taka_eternity_medal)永恒鹰$(/l)、$(l:ooo/items/core_medals#kujaku_eternity_medal)永恒孔雀$(/l)、$(l:ooo/items/core_medals#condor_eternity_medal)永恒秃鹫核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)永恒鹰硬币效果：$(li)饱和 II$(br2)永恒孔雀硬币效果：$(li)力量 II$(br2)永恒秃鹫硬币效果：$(li)速度 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "renai",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:love_core_medal\",slot_tex2:\"kamenridercraft:love_core2_medal\",slot_tex3:\"kamenridercraft:love_core3_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "恋爱联组",
+			"text": "通过使用$(l:ooo/items/core_medals#love_core_medal)恋爱(头)$(/l)、$(l:ooo/items/core_medals#love_core2_medal)恋爱(胸)$(/l)、$(l:ooo/items/core_medals#love_core3_medal)恋爱(腿)核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)恋爱(头)硬币效果：$(li)生命恢复 II$(br2)恋爱(胸)硬币效果：$(li)急迫 II$(br2)恋爱(腿)硬币效果：$(li)饱和 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "legend_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:habataki_medal\",slot_tex2:\"kamenridercraft:taiga_medal\",slot_tex3:\"kamenridercraft:ichigo_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "传说鹰虎蝗联组",
+			"text": "通过使用$(l:ooo/items/core_medals#habataki_medal)羽击鬼$(/l)、$(l:ooo/items/core_medals#taiga_medal)大牙$(/l)、$(l:ooo/items/core_medals#ichigo_medal)一号核心硬币$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士OOO",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)羽击鬼硬币效果：$(li)抗性提升 II$(br2)大牙硬币效果：$(li)力量 III$(br2)一号硬币效果：$(li)跳跃提升 III"
+		}
+	]
+}

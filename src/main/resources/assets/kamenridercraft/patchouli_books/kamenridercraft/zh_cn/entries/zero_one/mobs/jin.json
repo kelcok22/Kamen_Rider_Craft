@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士·迅",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:jin",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 80"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有3.3%的概率从$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)进化而来$(br2)特殊技能：$(li)具备飞行能力$(br2)掉落$(li)3-6个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)2-4个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#flying_falcon_progrisekey)飞翔猎隼程式升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#jin_progrisekey)迅程式升华秘钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#burning_falcon_progrisekey)燃烧猎隼程式升华钥$(/l) (20%)"
+		}
+	]
+}

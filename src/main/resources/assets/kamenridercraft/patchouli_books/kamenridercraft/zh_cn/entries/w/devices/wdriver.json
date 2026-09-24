@@ -1,0 +1,16 @@
+{
+	"name": "双重驱动器",
+	"icon": "kamenridercraft:wdriver",
+	"category": "kamenridercraft:w/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）$(br2)与$(l:w/devices/armor)W装甲$(/l)一起穿戴，可变身为$(l:w/riders/double)假面骑士W"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/wdriver"
+		}
+	]
+}

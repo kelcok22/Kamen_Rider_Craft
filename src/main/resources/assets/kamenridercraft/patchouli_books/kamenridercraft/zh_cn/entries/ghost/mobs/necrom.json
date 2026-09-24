@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士幽冥",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:necrom",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br)生命值: 50"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:ghost/mobs/gamma_commandos)动员眼魔$(/l)进化而来$(br2)特殊机制：$(li)生命值低于30时，使用$(l:ghost/riders/necrom#grimm)格林$(/l)或$(l:ghost/riders/necrom#sanzo)三藏$(/l)眼魂$(li)若背包中有$(l:ghost/items/ghost_eyecons#deep_specter_ghost_eyecon)深渊亡灵幽灵眼魂$(/l)，则生命值低于30时使用$(l:ghost/riders/necrom#yujou_burst)友情爆发眼魂$(/l)$(br2)掉落$(li)2-4个$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)$(li)1个$(l:ghost/items/ghost_eyecons#necrom_ghost_eyecon)黑暗幽冥眼魂$(/l)$(li)1个$(l:ghost/items/ghost_eyecons#grimm_ghost_eyecon)格林眼魂$(/l) (40%)$(li)1个$(l:ghost/items/ghost_eyecons#sanzo_ghost_eyecon)三藏眼魂$(/l) (40%)$(li)1个$(l:ghost/items/ghost_eyecons#nightingale_ghost_eyecon)南丁格尔眼魂$(/l) (10%)$(li)1个$(l:ghost/items/ghost_eyecons#da_vinci_ghost_eyecon)达芬奇眼魂$(/l) (10%)$(li)1个$(l:ghost/items/ghost_eyecons#yujou_burst_ghost_eyecon)友情爆发眼魂$(/l)（若背包中持有$(l:ghost/items/ghost_eyecons#deep_specter_ghost_eyecon)深渊亡灵幽灵眼魂$(/l)）"
+		}
+	]
+}

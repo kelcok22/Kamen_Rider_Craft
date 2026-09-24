@@ -1,0 +1,19 @@
+{
+    "name": "假面骑士奥丁",
+    "icon": "kamenridercraft:odin_boss_block",
+    "category": "kamenridercraft:ryuki/mobs",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "odin",
+            "entity": "kamenridercraft:odin",
+            "text": "通过挖掘 $(l:misc/blocks/boss_blocks#odin_boss_block)奥丁Boss召唤方块$(/l) 召唤而来"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士奥丁",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：60$(br)特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张$(l:ryuki/items/contract_advent_cards#goldphoenix_advent)黄金凤凰降临卡$(/l)$(li)1-2张$(l:ryuki/arsenal/sword_vent_cards#gold_saber_vent)黄金军刀刀剑降临卡$(/l)、$(l:ryuki/arsenal/guard_vent_cards#gold_shield_vent)黄金护盾防御降临卡$(/l) 或 $(l:ryuki/arsenal/time_vent)时间降临卡$(/l)"
+        }
+    ]
+}

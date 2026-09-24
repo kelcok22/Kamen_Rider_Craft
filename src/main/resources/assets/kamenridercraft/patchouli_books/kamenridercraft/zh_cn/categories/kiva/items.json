@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kiva/main",
+    "name": "相关物品",
+    "description": "所有与Kiva系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:wakeupfuestle",
+    "sortnum": 2
+}

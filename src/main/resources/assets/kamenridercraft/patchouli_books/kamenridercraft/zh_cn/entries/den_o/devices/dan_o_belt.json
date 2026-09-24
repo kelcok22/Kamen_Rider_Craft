@@ -1,0 +1,19 @@
+{
+	"name": "Dan-O腰带",
+	"icon": "kamenridercraft:dan_o_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)回收动物园：守护它！周四是资源垃圾日 (2020年，短片)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/dan_o)假面骑士Dan-O$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dan_o_belt",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

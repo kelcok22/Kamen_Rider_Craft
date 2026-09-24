@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士斗鬼",
+	"icon": "kamenridercraft:henshin_onibue_toki",
+	"category": "kamenridercraft:hibiki/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:tokidriver\",Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斗鬼",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)通过穿戴$(l:hibiki/devices/ongekimei#tokidriver)音击鸣·时$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 II$(li)力量 II"
+		}
+	]
+}

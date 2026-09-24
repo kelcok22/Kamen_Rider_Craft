@@ -1,0 +1,19 @@
+{
+	"name": "空白使命芯片",
+	"icon": "kamenridercraft:blank_mission_memory",
+	"category": "kamenridercraft:faiz/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)用作制作大多数555系列物品的基础物品和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blank_mission_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l)$(li)$(l:faiz/mobs/muez)假面骑士缪斯$(/l)$(li)$(l:faiz/mobs/faiz)假面骑士Faiz$(/l)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"name": "无极驱动器",
+	"icon": "kamenridercraft:zillion_driver",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zillion_driver",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/regad)假面骑士Regad"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/zillion_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zillion_driver_gazer_zero",
+			"title": "无极驱动器(Gazer0)",
+			"text": "登场于：$(li)极狐番外：假面骑士谛睨 (2024年，TTFC特别篇)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/gazer_zero)假面骑士Gazer0"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/zillion_driver_gazer_zero"
+		}
+	]
+}

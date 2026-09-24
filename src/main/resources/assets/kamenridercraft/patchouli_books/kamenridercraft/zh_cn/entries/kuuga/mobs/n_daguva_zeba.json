@@ -1,0 +1,17 @@
+{
+	"name": "恩·达古巴·杰巴",
+	"icon": "kamenridercraft:kuuga_logo",
+	"category": "kamenridercraft:kuuga/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:n_daguva_zeba",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#n_daguva_zeba_boss_block)达古巴召唤方块$(/l)召唤而来$(br2)掉落$(li)2-4个$(l:kuuga/items/kuuga_growing)空我初生灵石$(/l)$(li)1个$(l:kuuga/items/amadam_stones#n_daguva_zeba_ultimate)恩·达古巴·杰巴究极灵石$(/l)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_mighty)空我升华全能灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_dragon)空我升华青龙灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_pegasus)空我升华天马灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_titan)空我升华泰坦灵石$(/l) (20%)$(li)1个$(l:kuuga/items/amadam_stones#kuuga_black_rising_mighty)空我黑色升华全能灵石$(/l) (20%)"
+		}
+	]
+}

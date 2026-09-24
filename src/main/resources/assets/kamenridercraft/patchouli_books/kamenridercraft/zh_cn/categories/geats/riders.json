@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:geats/main",
+    "name": "极狐系列骑士",
+    "description": "来自《假面骑士极狐》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:geatshead",
+    "sortnum": 0
+}

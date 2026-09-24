@@ -1,0 +1,16 @@
+{
+	"name": "G3-X盾牌",
+	"icon": "kamenridercraft:g3x_shield",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士艺术集 英雄篇 (2003年，艺术书)$(br2)由$(l:agito/riders/g3-x)假面骑士G3-X$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/g3x_shield"
+		}
+	]
+}

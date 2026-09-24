@@ -1,0 +1,20 @@
+{
+	"name": "假面骑士Amazon NeoOmega",
+	"icon": "kamenridercraft:amazon_injector_new_omega",
+	"category": "kamenridercraft:amazons/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:neo_amazons_driver_omega\",Count:1b},{id:\"kamenridercraft:amazonslegs\",Count:1b},{id:\"kamenridercraft:amazonstroso\",Count:1b},{id:\"kamenridercraft:amazonshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Amazon NeoOmega",
+			"text": "登场于：$(li)假面骑士Amazons 第二季 (2017年，网络剧)$(br2)通过穿戴 $(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_omega)Neo Amazons驱动器(新Omega)$(/l) 进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)速度 II$(li)抗性提升 II$(li)生命恢复 III$(li)跳跃提升"
+		}
+	]
+}

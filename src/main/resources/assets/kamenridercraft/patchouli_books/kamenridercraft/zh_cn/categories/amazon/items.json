@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazon/main",
+    "name": "武器",
+    "description": "所有与Amazon系列相关、非武器和腰带的道具",
+    "icon": "kamenridercraft:condorer_wheel",
+    "sortnum": 2
+}

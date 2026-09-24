@@ -1,0 +1,19 @@
+{
+	"name": "压缩饼人",
+	"icon": "kamenridercraft:heatpress",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于与 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l)交易$(br2)用作 $(l:gavv/arsenal/agent_blaster)斯托马克爆破枪$(/l)的修复材料$(br2)使用特定武器可释放内部村民，包括：$(li)$(l:gavv/arsenal/gavvgablade)加布啃咬剑$(/l)$(li)$(l:gavv/arsenal/gavvwhipir)加布奶油长枪$(/l)$(li)$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)$(li)$(l:gavv/arsenal/vrambreaker)布拉姆粉碎者$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:heatpress",
+			"title": " ",
+			"text": "$(li)$(l:gavv/arsenal/bitter_gavvgablade)苦涩加布啃咬剑$(/l)$(li)$(l:gavv/arsenal/bakemagnum)Bake麦林枪$(/l)$(br2)掉落自：$(li)$(l:gavv/mobs/agent)特工$(/l)$(li)$(l:gavv/mobs/nyelv_stomach)尼耶鲁布·斯托马克$(/l)$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)$(li)$(l:gavv/mobs/shitta_stomach)西塔·斯托马克$(/l)$(li)$(l:gavv/mobs/lango_stomach)兰戈·斯托马克$(/l)$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)"
+		}
+	]
+}

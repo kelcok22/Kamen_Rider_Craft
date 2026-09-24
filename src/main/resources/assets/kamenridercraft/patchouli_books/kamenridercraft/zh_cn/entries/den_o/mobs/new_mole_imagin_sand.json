@@ -1,0 +1,17 @@
+{
+	"name": "新生异魔神(沙)",
+	"icon": "kamenridercraft:imagin_sand",
+	"category": "kamenridercraft:den_o/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:new_mole_imagin_sand",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br)生命值：30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：沙漠、沙滩、针叶林、恶地、风蚀恶地、繁茂恶地、$(l:den_o/dimensions/sands_of_time)时间之沙$(/l)$(br2)掉落$(li)2-4个$(l:den_o/items/imagin_sand)异魔神沙$(/l)$(li)1个$(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l)（10%）"
+		}
+	]
+}

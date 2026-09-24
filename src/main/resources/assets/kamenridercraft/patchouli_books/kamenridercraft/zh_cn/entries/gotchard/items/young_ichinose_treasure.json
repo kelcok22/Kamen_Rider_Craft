@@ -1,0 +1,16 @@
+{
+	"name": "幼年一之濑的宝藏",
+	"icon": "kamenridercraft:young_ichinose_treasure",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/young_ichinose_treasure"
+		}
+	]
+}

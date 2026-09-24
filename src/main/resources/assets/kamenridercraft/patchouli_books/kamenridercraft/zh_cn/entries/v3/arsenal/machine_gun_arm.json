@@ -1,0 +1,16 @@
+{
+	"name": "机械枪臂",
+	"icon": "kamenridercraft:machine_gun_arm",
+	"category": "kamenridercraft:v3/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)平成骑士VS昭和骑士 假面骑士大战 feat.超级战队（2014年，电影）$(br2)由$(l:v3/riders/riderman)骑士人$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/machine_gun_arm"
+		}
+	]
+}

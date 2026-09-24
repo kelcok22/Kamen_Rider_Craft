@@ -1,0 +1,30 @@
+{
+	"name": "方舟驱动器-零",
+	"icon": "kamenridercraft:ark_driver_zero",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ark_driver_zero",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/ark_zero)假面骑士亚克-零"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ark_driver_zero",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ark_driver_zero_thousand_ark",
+			"title": "方舟驱动器-零(亚克-千骑)",
+			"text": "登场于：$(li)假面骑士Genms -智能大脑与1000%危机- (2022年，TTFC特别篇)$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/thousand_ark)假面骑士亚克-千骑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/ark_driver_zero_thousand_ark"
+		}
+	]
+}

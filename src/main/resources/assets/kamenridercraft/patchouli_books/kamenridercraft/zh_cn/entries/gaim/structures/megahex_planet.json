@@ -1,0 +1,24 @@
+{
+  "name": "梅嘉赫克斯行星",
+  "icon": "kamenridercraft:gaim_logo",
+  "category": "kamenridercraft:gaim/structures",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "梅嘉赫克斯行星",
+      "text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全能量爆发 (2014年，电影)$(br2)生成于海姆冥界各处$(br2)包含1个 $(l:gaim/mobs/elementary_inves_red)初级异域者$(/l)刷怪笼$(br)包含1个$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)刷怪笼$(br)包含1个$(l:drive/mobs/roidmude)恶路程式$(/l) 生成器$(br)包含1个$(l:misc/blocks/boss_blocks#megahex_boss_block)梅嘉赫克斯BOSS召唤方块$(/l)"
+    },
+    {
+      "type": "patchouli:image",
+      "border": true,
+      "images": [
+        "kamenridercraft:patchouli_books/kamenridercraft/images/megahex_planet.png",
+        "kamenridercraft:patchouli_books/kamenridercraft/images/megahex_planet_2.png",
+        "kamenridercraft:patchouli_books/kamenridercraft/images/megahex_planet_3.png"
+      ],
+      "title": " ",
+      "text": " "
+    }
+  ]
+}

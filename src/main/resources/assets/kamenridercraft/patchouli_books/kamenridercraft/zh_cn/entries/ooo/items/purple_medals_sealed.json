@@ -1,0 +1,19 @@
+{
+	"name": "封印的恐龙硬币",
+	"icon": "kamenridercraft:purple_medals_sealed",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)放入合成栏可释放紫色硬币"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:purple_medals_sealed",
+			"title": " ",
+			"text": "在地狱堡垒的箱子中生成（每个箱子40%概率）"
+		}
+	]
+}

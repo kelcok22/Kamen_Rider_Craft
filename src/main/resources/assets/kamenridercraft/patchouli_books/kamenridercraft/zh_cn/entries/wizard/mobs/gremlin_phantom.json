@@ -1,0 +1,17 @@
+{
+	"name": "格雷姆林幻魔",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:gremlin_phantom",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br)生命值: 90"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有3.3%概率从$(l:wizard/mobs/ghouls)食尸鬼$(/l)进化而来$(br2)掉落$(li)4-5个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)1-2个$(l:wizard/items/magic_stones#wizardgem_green)绿魔法石$(/l) (50%)$(li)1-2个$(l:wizard/items/magic_stones#wizardgem_yellow)黄魔法石$(/l) (50%)$(li)1个$(l:wizard/items/wizard_rings#driver_on_ring)驱动器具现指环$(/l) (20%)"
+		}
+	]
+}

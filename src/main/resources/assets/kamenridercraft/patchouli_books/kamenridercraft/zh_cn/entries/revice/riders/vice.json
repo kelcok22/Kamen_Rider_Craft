@@ -1,0 +1,302 @@
+{
+	"name": "假面骑士维斯",
+	"icon": "kamenridercraft:vice_belt",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rex",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rex_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "暴龙基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#rex_vistamp)暴龙罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "eagle",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:eagle_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+				"scale": -1,
+			"offset": 0.1,
+			"name": "猎雕基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#eagle_vistamp)猎雕罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)夜视$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mammoth",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:mammoth_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猛犸基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#mammoth_vistamp)猛犸罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "megalodon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:megalodon_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巨齿鲨基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#megalodon_vistamp)巨齿鲨罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)海豚的恩惠 II$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狮子基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#lion_vistamp)狮子罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:jackal_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胡狼基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#jackal_vistamp)胡狼罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kong",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:kong_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "金刚基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#kong_vistamp)金刚罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)力量（持武器时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kamakiri",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamakiri_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "螳螂基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#kamakiri_vistamp)螳螂罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "brachio",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:brachio_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "腕龙基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#brachio_vistamp)腕龙罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "barid_rex_incomplete",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:barid_rex_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "破壳暴龙基因组（未完成）",
+			"text": "通过使用 $(l:revice/items/vistamps#barid_rex_vistamp)破壳暴龙罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 VI$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "barid_rex",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:volcano_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "破壳暴龙基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#volcano_vistamp)火山暴龙罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 II$(li)夜视$(li)跳跃提升 VI$(li)抗火$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ultimate",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:giffard_rex_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "究极维斯",
+			"text": "通过使用 $(l:revice/items/vistamps#giffard_rex_vistamp)基夫暴龙罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IX$(li)力量 XII（空手时）$(li)力量 V（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)跳跃提升 VII$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gold_spino",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_spino_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黄金棘龙基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#gold_spino_vistamp)黄金棘龙罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯：成为二号骑士吧~♪ (2022年，超战斗视频)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)抗火 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "neo_batta",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:neo_batta_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "新生蝗虫基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#neo_batta_vistamp)新生蝗虫罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士：超越世代 (2021年，电影)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kangaroo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:kangaroo_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "袋鼠基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#kangaroo_vistamp)袋鼠罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 在婚礼中途大胆告白？! (2021年，超战斗视频)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)缩小 VII$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kirin",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:kirin_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "长颈鹿基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#kirin_vistamp)长颈鹿罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 在婚礼中途大胆告白？! (2021年，超战斗视频)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "niwatori",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:niwatori_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鸡基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#niwatori_vistamp)鸡罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 在婚礼中途大胆告白？! (2021年，超战斗视频)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "funkorogashi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:funkorogashi_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蜣螂基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#funkorogashi_vistamp)蜣螂罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 在婚礼中途大胆告白？! (2021年，超战斗视频)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "condor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:condor_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "秃鹫基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#condor_vistamp)秃鹫罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)DX秃鹫罪恶印章 (2021年，玩具系列)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)夜视$(li)跳跃提升 IV$(li)力量 III$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "white_leo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:white_leo_vistamp_vice\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "白狮基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#white_leo_vistamp)白狮罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)DX白狮与风神翼龙罪恶印章套装 (2021年，玩具系列)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)力量 XI（空手时）$(li)力量 III（持武器时）$(li)夜视$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal_theoretical",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vice_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_jackal_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胡狼基因组（理论）",
+			"text": "通过使用 $(l:revice/items/vistamps#proto_jackal_vistamp)原型胡狼罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士维斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/vice_belt)伙伴代扣(维斯)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 II"
+		}
+	]
+}

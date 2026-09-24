@@ -1,0 +1,17 @@
+{
+    "name": "邪剑王剑驱动器",
+    "icon": "kamenridercraft:jaken_caliburdriver",
+    "category": "kamenridercraft:saber/devices",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/calibur)假面骑士王剑$(/l)$(br2)可存放1把圣剑和最多3组奇幻驾驭书"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:saber/jaken_caliburdriver",
+            "text": "掉落自：$(li)$(l:saber/mobs/calibur)假面骑士王剑$(/l)的装备"
+        }
+    ]
+}

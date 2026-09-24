@@ -1,0 +1,17 @@
+{
+	"name": "博卡·贾尔达克",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:bocca_jaldak",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#bocca_boss_block)博卡·贾尔达克BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)1个$(l:gavv/items/mimic_keys#bocca_mimic_key)博卡拟态钥匙$(/l)$(li)1个$(l:gavv/items/gochizo#ope_dummy_gochizo)假冒饱藏:OPE$(/l) (50%)$(li)1个$(l:gavv/items/gochizo#ple_dummy_gochizo)假冒饱藏:PLE$(/l) (50%)$(li)1-3个$(l:gavv/items/heatpress)人类压牌$(/l) (50%)$(li)3-5个$(l:gavv/items/granute_tooth)格拉纽特之牙$(/l) (50%)$(li)1个$(l:gavv/items/gochizo#amazingummy_gochizo)惊焰软糖饱藏$(/l)（背包持有装满的$(l:gavv/items/gochipod)饱藏罐$(/l)时）"
+		}
+	]
+}

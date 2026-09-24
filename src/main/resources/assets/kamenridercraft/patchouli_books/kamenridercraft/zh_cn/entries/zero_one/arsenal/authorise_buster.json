@@ -1,0 +1,16 @@
+{
+	"name": "授权破坏者",
+	"icon": "kamenridercraft:authorise_buster",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由假面骑士01的 $(l:zero_one/riders/zero-one#shining_hopper)闪耀$(/l)$(l:zero_one/riders/zero-one#shining_assault_hopper)突击$(/l)$(l:zero_one/riders/zero-one#shining_hopper)蝗虫形态$(/l) 及巴尔坎的 $(l:zero_one/riders/vulcan#assault_wolf)突击野狼形态$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/authorise_buster"
+		}
+	]
+}

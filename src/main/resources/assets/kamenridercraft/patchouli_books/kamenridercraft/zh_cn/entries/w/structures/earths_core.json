@@ -1,0 +1,21 @@
+{
+	"name": "地球核心",
+	"icon": "kamenridercraft:w_logo",
+	"category": "kamenridercraft:w/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Earth's Core",
+			"text": "登场于:$(li)假面骑士 × 假面骑士OOO & W 特别篇：Skull篇——电影战争核心（2010年，电影）$(br2)生成群系: 繁茂洞穴, 溶洞, 深暗之域$(br2)包含一个 $(l:misc/boss_blocks/core_boss_block)Core BOSS召唤方块$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/earths_core.png"
+			],
+			"title": " "
+		}
+	]
+}

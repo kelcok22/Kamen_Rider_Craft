@@ -1,0 +1,16 @@
+{
+	"name": "镭射升华器",
+	"icon": "kamenridercraft:laser_raise_riser",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)由假面骑士 $(l:geats/riders/ziin)吉恩$(/l)、$(l:geats/riders/kekera)呱呱拉$(/l)、$(l:geats/riders/kyuun)秋恩$(/l) 与 $(l:geats/riders/beroba)贝洛芭$(/l) 使用$(br2)（默认）可用于获取吉恩的 $(l:geats/devices/raise_riser_belt#raise_riser_belt_ziin)镭射升华器(吉恩)$(/l)$(br2)副手装备 $(l:geats/items/raise_riser_cards)提升升华器卡片$(/l) 即可获取对应骑士的 $(l:geats/devices/raise_riser_belt)镭射升华器$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/laser_raise_riser"
+		}
+	]
+}

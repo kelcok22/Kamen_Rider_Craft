@@ -1,0 +1,19 @@
+{
+	"name": "另类帝王石",
+	"icon": "kamenridercraft:another_king_stone",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)After 0 (2002年，S.I.C. 英雄传说)$(br2)用于切换影月的$(l:black/riders/shadow_moon#another_shadow_moon)另类影月$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_king_stone",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "Bake带扣",
+	"icon": "kamenridercraft:bakebuckle",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/bake)假面骑士Bake"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakebuckle",
+			"title": " ",
+			"text": "通过发射$(l:gavv/arsenal/bakemagnum)Bake麦林枪$(/l)且不装备任何腰带即可获得"
+		}
+	]
+}

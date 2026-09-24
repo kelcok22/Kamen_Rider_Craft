@@ -1,0 +1,16 @@
+{
+	"name": "天马弩",
+	"icon": "kamenridercraft:pegasus_bowgun",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)由空我的$(l:kuuga/riders/kuuga#pegasus)天马$(/l)和$(l:kuuga/riders/kuuga#rising_pegasus)升华天马$(/l),$(l:kuuga/riders/kuuga#ultimate)究极$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/pegasus_bowgun"
+		}
+	]
+}

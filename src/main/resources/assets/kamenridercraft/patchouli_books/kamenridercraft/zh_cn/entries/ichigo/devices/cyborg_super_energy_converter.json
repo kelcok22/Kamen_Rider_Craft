@@ -1,0 +1,16 @@
+{
+	"name": "电磁台风",
+	"icon": "kamenridercraft:cyborg_super_energy_converter！",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Eins with Girls Remix (2025年, TTFC特别篇)$(br2)与$(l:ichigo/devices/armor)一号装甲$(/l)一起穿戴，可变身为$(l:ichigo/riders/eins)假面骑士Eins"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/cyborg_super_energy_converter"
+		}
+	]
+}

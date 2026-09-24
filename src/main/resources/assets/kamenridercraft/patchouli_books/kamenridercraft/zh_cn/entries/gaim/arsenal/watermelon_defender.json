@@ -1,0 +1,16 @@
+{
+	"name": "西瓜防盾者",
+	"icon": "kamenridercraft:watermelon_defender",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士斩月 (2015年，V-Cinema电影)$(br2)由斩月的$(l:gaim/riders/zangetsu#watermelon)西瓜武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/watermelon_defender"
+		}
+	]
+}

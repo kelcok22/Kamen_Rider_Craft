@@ -1,0 +1,442 @@
+{
+	"name": "假面骑士Ex-Aid",
+	"icon": "kamenridercraft:gamer_driver_ex_aid",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "action_1",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "动作玩家 Lv. 1",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#mighty_action_x_gashat)全能动作X卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "action_2",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "动作玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#mighty_action_x_gashat)全能动作X卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)生命提升$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "robot",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:gekitotsu_robots_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "机器动作玩家 Lv. 3",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#gekitotsu_robots_gashat)激突机器人卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)力量$(li)生命提升$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sports",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:shakariki_sports_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "运动动作玩家 Lv. 3",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#shakariki_sports_gashat)干劲运动卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)生命提升$(li)跳跃提升 II$(li)攀爬$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burger",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:ju_ju_burger_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "汉堡动作玩家 Lv. 4",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#ju_ju_burger_gashat)Ju Ju汉堡卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)饱和 II$(li)生命提升$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter_full",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猎人动作玩家 Lv. 5（全龙形态）",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)龙骑士猎手Z卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)雷达$(li)斩击提升 III$(li)速度 II$(li)急迫$(li)炎拳 III$(li)生命提升$(li)力量 II$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_fang\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猎人动作玩家 Lv. 5",
+			"text": "潜行状态下，通过使用 $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)龙骑士猎手Z卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/lazer)Lazer$(/l)使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)炎拳 II$(li)生命提升$(li)力量$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_action_x",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "双人动作玩家 Lv. X",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_gashat)全能兄弟XX卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)生命提升 III$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_action_xx_l",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat_l\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "双人动作玩家 Lv. XX",
+			"text": "潜行状态下，通过使用 $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_gashat)全能兄弟XX卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)生命提升 II$(li)力量 II$(br2)使用时召唤 $(l:ex_aid/mobs/paradx_summon)Para-DX 召唤体$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_action_xx_r",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_brothers_xx_gashat_r\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "双人动作玩家 Lv. XX",
+			"text": "潜行状态下，通过使用 $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_gashat)全能兄弟XX卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)生命提升 II$(li)力量 II$(br2)使用时召唤 $(l:ex_aid/mobs/paradx_summon)Para-DX 召唤体$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "maximum",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:maximum_mighty_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "极限玩家 Lv. 99",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#maximum_mighty_x_gashat)极限全能X卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)变大$(li)缓慢 II$(li)抗性提升 II$(li)急迫 II$(li)手臂加长 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "maximum_unequipped",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:maximum_mighty_x_gashat_lv_2\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "极限玩家 Lv. 99（脱机状态）",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#maximum_mighty_x_gashat)极限全能X卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)急迫 II$(li)生命提升 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "muteki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:hyper_muteki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "无敌玩家",
+			"text": "以 $(l:ex_aid/riders/ex_aid#maximum)极限玩家 Lv. 99$(/l) 形态，通过使用 $(l:ex_aid/items/rider_gashats#hyper_muteki_gashat)hyper muteki卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)饱和 II$(li)跳跃提升 IV$(li)抗火$(li)力量 III$(li)无敌$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pac",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:pac_adventure_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "吃豆动作玩家",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#pac_adventure_gashat)吃豆冒险传奇卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\": 假面骑士Genm (2016年，网络剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)拳力提升 II$(li)速度 II$(li)急迫$(li)生命提升$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bike_0",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bakusou_bike_combi_fukkatsu_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "机车动作玩家 Lv. 0",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_combi_fukkatsu_gashat)原型暴走机车卡带（联合版）$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\": 假面骑士Lazer (2016年，超战斗视频)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升$(li)急迫 II$(li)§6游戏病 II$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "creator",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_creator_vrx_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "创造者玩家",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#mighty_creator_vrx_gashat)全能创造者VRX卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid：True Ending (2017年，电影)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)手臂加长 V$(li)爆裂射击$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_fighter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:knock_out_fighter_2_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "双人斗士玩家 Lv. 39",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#knock_out_fighter_2_gashat)击倒战士2卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\": 假面骑士Para-DX (2017年，超战斗视频)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)及 $(l:ex_aid/riders/para_dx)Para-DX$(/l)使用$(br2)状态效果：$(li)拳力提升 IV$(li)速度$(li)抗性提升 II急迫$(li)力量 II$(br2)使用时召唤 $(l:ex_aid/mobs/paradx_summon)Para-DX 召唤体$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "novel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_novel_x_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "小说玩家 Lv. X",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#mighty_novel_x_gashat)全能小说X卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)小说：假面骑士Ex-Aid：~全能小说X~ (2018年，小说)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)手臂加长 V$(li)爆裂射击$(li)力量 II$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_robot",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:proto_gekitotsu_robots_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "原型机器动作玩家 Lv. 0",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#proto_gekitotsu_robots_gashat)原型激突机器人卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)§6游戏病 II$(li)生命提升$(li)$(li)力量 II$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_hunter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mighty_action_x_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "原型猎人动作玩家 Lv. 0",
+			"text": "潜行状态下，通过使用 $(l:ex_aid/items/rider_gashats#proto_drago_knight_hunter_z_gashat)原型龙骑士猎手Z卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)、$(l:ex_aid/riders/lazer)Lazer$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)雷达$(li)斩击提升 III$(li)速度 II$(li)急迫$(li)游戏病 III$(li)炎拳 III$(li)生命提升$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:lets_go_ichigou_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一号玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#lets_go_ichigou_gashat)一起上吧!一号!卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:adventure_guy_kuuga_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空我玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#adventure_guy_kuuga_gashat)大冒险家空我卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度 II$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:mirror_labryinth_ryuki_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙骑玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#mirror_labryinth_ryuki_gashat)镜之迷宫龙骑卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 II$(li)抗火 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:insect_wars_kabuto_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "甲斗玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#insect_wars_kabuto_gashat)昆虫大战甲斗卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫 II$(br2)专属技能：$(li)clock up"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiva",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:dokidoki_makai_castle_kiva_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Kiva玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#dokidoki_makai_castle_kiva_gashat)心跳魔界城Kiva卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:barcode_warrior_decade_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Decade玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#barcode_warrior_decade_gashat)条形码展示Decade卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)急迫 III$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:detective_double_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "W玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#detective_double_gashat)侦探W卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)速度$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gaim",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:toukenden_gaim_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "铠武玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#toukenden_gaim_gashat)刀剑传铠武卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:full_throttle_drive_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Drive玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#full_throttle_drive_gashat)速度全开drive卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost_1",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaigan_ghost_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ghost玩家 Lv. 1",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#kaigan_ghost_gashat)开眼Ghost卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016年，电影)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)灵体漂浮$(li)跳跃提升 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost_2",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_ex_aid\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaigan_ghost_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ghost玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#kaigan_ghost_gashat)开眼Ghost卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Ex-Aid",
+			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man vs. Ex-Aid & Ghost with Legend Riders (2016年，电影)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)进行变身$(br2)状态效果：$(li)速度$(li)夜视$(li)灵体漂浮$(li)跳跃提升 II"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "羽翼护盾",
+	"icon": "kamenridercraft:wing_shield",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 37,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑：Episode Final（2002年，电影）$(br2)由$(l:ryuki/riders/femme)假面骑士花梦$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_shield",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/guard_vent_cards#wing_shield_vent)羽翼护盾防御降临$(/l)获得"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kiva/main",
+    "name": "Kiva系列骑士",
+    "description": "来自《假面骑士Kiva》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:kivahead",
+    "sortnum": 0
+}

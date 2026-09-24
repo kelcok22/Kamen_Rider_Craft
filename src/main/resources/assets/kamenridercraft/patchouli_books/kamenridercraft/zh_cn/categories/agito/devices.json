@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "腰带",
+    "description": "亚极陀系列角色所使用的变身道具. 可以在铁砧上使用 $(l:agito/items/agito_of_seed)亚极陀之种$(/l) 修复.",
+    "icon": "kamenridercraft:alter_ring",
+    "sortnum": 1
+}

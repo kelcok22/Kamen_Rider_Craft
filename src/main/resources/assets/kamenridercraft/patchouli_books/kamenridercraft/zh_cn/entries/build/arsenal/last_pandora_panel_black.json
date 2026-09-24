@@ -1,0 +1,19 @@
+{
+	"name": "潘多拉嵌板(黑)",
+	"icon": "kamenridercraft:last_pandora_panel_black",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)最多可存储10组满装瓶罐"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:last_pandora_panel_black",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)"
+		}
+	]
+}

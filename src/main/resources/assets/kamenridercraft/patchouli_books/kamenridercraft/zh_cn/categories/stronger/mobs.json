@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:stronger/main",
+    "name": "黑撒旦战斗员",
+    "description": "",
+    "icon": "kamenridercraft:stronger_logo",
+    "sortnum": 3
+}

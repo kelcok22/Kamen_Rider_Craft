@@ -1,0 +1,16 @@
+{
+	"name": "暗忍驱动器",
+	"icon": "kamenridercraft:yaminin_belt",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士忍者 (2022年，电视剧)/(2019年，网络剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/yaminin)暗忍$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/yaminin_belt"
+		}
+	]
+}

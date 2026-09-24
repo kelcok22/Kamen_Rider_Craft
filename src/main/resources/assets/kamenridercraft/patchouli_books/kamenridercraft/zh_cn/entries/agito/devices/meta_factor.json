@@ -1,0 +1,16 @@
+{
+	"name": "超越因子",
+	"icon": "kamenridercraft:meta_factor",
+	"category": "kamenridercraft:agito/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/gills#gills)假面骑士基尔斯"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/meta_factor"
+		}
+	]
+}

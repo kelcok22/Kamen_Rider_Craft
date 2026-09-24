@@ -1,0 +1,17 @@
+{
+    "name": "未完成的卡带",
+    "icon": "kamenridercraft:blank_gashat",
+    "category": "kamenridercraft:ex_aid/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用作制作大多数Ex-Aid物品的基础物品和修复材料$(br2)可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用，获取骑士卡带$(br2)可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用，获取传奇骑士卡带"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:exaid/blank_gashat",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)"
+        }
+    ]
+}

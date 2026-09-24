@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:den_o/main",
+    "name": "腰带",
+    "description": "系列角色所使用的变身道具. 可以在铁砧上使用 $(l:den_o/items/imagin_sand)异魔神沙子$(/l)修复.",
+    "icon": "kamenridercraft:den_o_belt",
+    "sortnum": 1
+}

@@ -1,0 +1,16 @@
+{
+	"name": "极狐破坏者X",
+	"icon": "kamenridercraft:geats_buster_x",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐 (2023年，电影)$(br2)由 $(l:geats/riders/xgeats)假面骑士X极狐$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/geats_buster_x"
+		}
+	]
+}

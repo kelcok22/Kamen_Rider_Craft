@@ -1,0 +1,19 @@
+{
+	"name": "帕拉内古罗",
+	"icon": "kamenridercraft:paranegro",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)由 $(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:paranegro",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l)$(li)$(l:revice/mobs/anomalocaris_deadman)奇虾·亡命徒$(/l)"
+		}
+	]
+}

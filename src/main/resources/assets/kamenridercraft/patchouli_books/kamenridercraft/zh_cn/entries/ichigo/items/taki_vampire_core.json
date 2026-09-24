@@ -1,0 +1,18 @@
+{
+	"name": "吸血鬼泷核心",
+	"icon": "kamenridercraft:taki_vampire_core",
+	"category": "kamenridercraft:ichigo/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士SPIRITS (2001年，漫画)$(br2)用于合成泷骑士的$(l:ichigo/devices/taki_belt)泷骑士腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taki_vampire_core",
+			"text": "当前无法获取该物品"
+		}
+	]
+}

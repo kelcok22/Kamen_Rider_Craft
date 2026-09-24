@@ -1,0 +1,19 @@
+{
+	"name": "玫瑰攻击者锁种",
+	"icon": "kamenridercraft:rose_attacker",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 100,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rose_attacker",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)在方块上使用可召唤玫瑰攻击者$(br2)掉落自：$(li)$(l:misc/blocks/helheim_vine)海姆冥界藤蔓$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rose_attacker",
+			"text": "由$(l:gaim/riders/gaim)装甲骑士$(/l)使用"
+		}
+	]
+}

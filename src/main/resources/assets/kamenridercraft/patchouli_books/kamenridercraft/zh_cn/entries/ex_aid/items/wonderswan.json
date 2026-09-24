@@ -1,0 +1,19 @@
+{
+	"name": "Wonderswan",
+	"icon": "kamenridercraft:wonderswan",
+	"category": "kamenridercraft:ex_aid/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "当你感染游戏病效果时，可以防止崩原体生成。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonderswan",
+			"title": " ",
+			"text": "可在$(l:misc/city/centers#seito_u_hospital)圣都大学附属医院$(/l)内找到"
+		}
+	]
+}

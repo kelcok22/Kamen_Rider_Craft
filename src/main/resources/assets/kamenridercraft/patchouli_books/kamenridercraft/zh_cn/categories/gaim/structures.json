@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "生成建筑",
+    "description": "与《假面骑士铠武》相关的所有建筑.",
+    "icon": "kamenridercraft:helheim_plant_2",
+    "sortnum": 6
+}

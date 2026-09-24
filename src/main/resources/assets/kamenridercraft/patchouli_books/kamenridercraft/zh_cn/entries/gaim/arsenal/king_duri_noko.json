@@ -1,0 +1,16 @@
+{
+	"name": "千兆榴锯剑",
+	"icon": "kamenridercraft:king_duri_noko",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 34,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士栗团VS假面骑士布拉弗 (2020年，网络剧)$(br2)由布拉沃的$(l:gaim/riders/bravo#kingdurian)王者榴莲武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/king_duri_noko"
+		}
+	]
+}

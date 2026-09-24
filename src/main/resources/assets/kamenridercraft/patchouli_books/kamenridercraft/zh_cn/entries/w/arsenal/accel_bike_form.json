@@ -1,0 +1,18 @@
+{
+  "name": "Accel（摩托车形态）",
+  "icon": "kamenridercraft:accel_bike_form_spawn_egg",
+  "category": "kamenridercraft:w/arsenal",
+  "sortnum": 101,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:w/accel_bike_form_spawn_egg",
+      "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)放置在方块上可召唤Accel摩托车形态"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:accel_bike_form",
+      "text": "为$(l:w/riders/accel)假面骑士Accel$(/l)的专属载具$(br2)或者是$(l:w/riders/double)假面骑士W$(/l)的载具(笑)"
+    }
+  ]
+}

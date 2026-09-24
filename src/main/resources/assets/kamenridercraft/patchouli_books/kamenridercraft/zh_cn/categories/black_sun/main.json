@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/other",
+    "name": "假面骑士Black Sun",
+    "description": "与《假面骑士Black Sun》这部作品相关的所有内容",
+    "icon": "kamenridercraft:blacksunhead",
+    "sortnum": 1
+}

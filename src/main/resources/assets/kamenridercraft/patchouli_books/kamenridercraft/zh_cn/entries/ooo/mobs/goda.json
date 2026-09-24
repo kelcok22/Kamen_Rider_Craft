@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士戈达",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:goda",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 350$(br2)通过挖掘$(l:misc/blocks/boss_blocks#goda_boss_block)戈达BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)9-11个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/core_medals#mukade_goda_medal)戈达蜈蚣核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#hachi_goda_medal)戈达蜜蜂核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#ari_goda_medal)戈达蚂蚁核心硬币$(/l)"
+		}
+	]
+}

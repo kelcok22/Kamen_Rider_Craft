@@ -1,0 +1,21 @@
+{
+	"name": "黎明小镇",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "黎明小镇",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)生成群系：森林、平原、热带草原、沼泽$(br2)包含2个$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)刷怪笼$(br2)包含1个$(l:misc/blocks/boss_blocks#horobi_boss_block)灭BOSS召唤方块$(/l)$(br2)包含1个$(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/daybreak_town.png"
+			],
+			"title": " "
+		}
+	]
+}

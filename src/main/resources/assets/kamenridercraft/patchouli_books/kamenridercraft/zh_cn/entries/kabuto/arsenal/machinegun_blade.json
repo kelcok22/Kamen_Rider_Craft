@@ -1,0 +1,19 @@
+{
+	"name": "爆裂机枪剑",
+	"icon": "kamenridercraft:machinegun_blade",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)、$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)和$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:machinegun_blade",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)的装备$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)的装备$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "加布奶油长枪",
+	"icon": "kamenridercraft:gavvwhipir",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由加布的$(l:gavv/riders/gavv#caking)蛋糕王形态$(/l)和$(l:gavv/riders/gavv#blizzardsorbet)暴雪雪葩形态$(/l)使用$(br2)以$(l:gavv/riders/gavv#caking)蛋糕王形态$(/l)或$(l:gavv/riders/gavv#blizzardsorbet)暴雪雪葩形态$(/l)右键点击时，最多可召唤2个$(l:gavv/mobs/whipped_soldier)奶油兵$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavvwhipir",
+			"text": "副手持有可将村民从$(l:gavv/items/heatpress)压缩饼人$(/l)中脱离"
+		}
+	]
+}

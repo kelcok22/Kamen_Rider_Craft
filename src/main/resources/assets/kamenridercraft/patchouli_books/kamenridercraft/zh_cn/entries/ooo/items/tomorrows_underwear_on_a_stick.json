@@ -1,0 +1,16 @@
+{
+	"name": "棍子上的明日的内裤",
+	"icon": "kamenridercraft:tomorrows_underwear_on_a_stick",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)可以防止你获得贪欲者效果"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/tomorrows_underwear_on_a_stick"
+		}
+	]
+}

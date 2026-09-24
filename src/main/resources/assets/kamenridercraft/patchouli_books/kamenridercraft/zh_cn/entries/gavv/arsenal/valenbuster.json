@@ -1,0 +1,16 @@
+{
+	"name": "瓦伦破坏枪",
+	"icon": "kamenridercraft:valenbuster",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由$(l:gavv/riders/valen#chocodon)假面骑士瓦伦$(/l)使用$(br2)可用于获取瓦伦的$(l:gavv/devices/valenbuckle)瓦伦带扣$(/l)$(br2)副手持有可将村民从$(l:gavv/items/heatpress)压缩饼人$(/l)中脱离"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/valenbuster"
+		}
+	]
+}

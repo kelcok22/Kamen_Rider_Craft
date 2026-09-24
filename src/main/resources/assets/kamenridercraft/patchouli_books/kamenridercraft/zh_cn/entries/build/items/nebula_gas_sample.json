@@ -1,0 +1,19 @@
+{
+	"name": "星云气体样本",
+	"icon": "kamenridercraft:nebula_gas_sample",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于合成$(l:build/items/smash_bottle)猛击者瓶罐$(/l)和$(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l)$(br2)使用后可获得$(l:misc/effects#hazard_level)危险等级$(/l)效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nebula_gas_sample",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)$(li)$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)$(li)$(l:build/mobs/seito_guardian)西都防卫者$(/l)$(li)$(l:build/mobs/blood_stalk)血潜$(/l)$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l)$(li)$(l:build/mobs/downfall_guardian)陷灭防卫者$(/l)"
+		}
+	]
+}

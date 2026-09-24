@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ghost/main",
+    "name": "腰带",
+    "description": "Ghost系列角色所使用的变身道具. 可以在铁砧上使用 $(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)修复.",
+    "icon": "kamenridercraft:ghost_driver",
+    "sortnum": 1
+}

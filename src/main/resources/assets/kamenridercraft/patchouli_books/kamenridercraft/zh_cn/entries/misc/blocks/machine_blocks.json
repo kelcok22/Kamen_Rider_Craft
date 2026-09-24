@@ -1,0 +1,383 @@
+{
+    "name": "功能性方块",
+    "icon": "kamenridercraft:amazon_cell_extractor",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "此类方块可以用各种材料右键点击来获得不同的骑士物品。这些方块在获取用于制作变身道具和/或切换形态的某些物品中起着关键作用。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gashapon_machine",
+            "title": "扭蛋机",
+            "text": "在此方块上使用绿宝石可获得 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)$(br2)同样也作为$(l:misc/villagers#collector_villager)玩具收藏家$(/l)的职业方块"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/blocks/gashapon_machine",
+            "text": "可在各种$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑$(/l)中找到$(br2)由 $(l:misc/villagers#wandering_trader)流浪商人$(/l) 交易"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/machine_blocks.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_cell_extractor",
+            "title": "亚马逊细胞提取器",
+            "text": "在此方块上使用 $(l:misc/items/empty_vial)空试管$(/l) 可获得 $(l:amazons/items/amazon_cell_vial)Amazon细胞试管$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:amazons/amazon_cell_extractor"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_cell_mutator",
+            "title": "亚马逊细胞突变器",
+            "text": "在此方块上使用 $(l:amazons/items/amazon_cell_vial)Amazon细胞试管$(/l) 可获得各类Amazon细胞变体$(br2)掉落：$(li)$(l:amazons/items/amazon_cell_vials#omega_amazon_cell_vial)Amazon细胞试管(Omega)$(/l)（38.5%）$(li)$(l:amazons/items/amazon_cell_vials#alpha_amazon_cell_vial)Amazon细胞试管(Alpha)$(/l)（38.5%）$(li)$(l:amazons/items/amazon_cell_vials#sigma_amazon_cell_vial)Amazon细胞试管(Sigma)$(/l)（15.4%）$(li)$(l:amazons/items/amazon_cell_vials#neo_amazon_cell_vial)Amazon细胞试管(Neo)$(/l)（7.7%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:amazons/amazon_cell_mutator"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kaijin_stone_generator",
+            "title": "怪人石发电机",
+            "text": "在此方块上使用 $(l:black_sun/items/creation_king_extract_vial)创世王提取物$(/l) 可获得怪人石$(br2)掉落：$(li)$(l:black_sun/items/kaijin_stone)怪人石$(/l)（54.1%）$(li)$(l:black_sun/items/kingstones#king_stone_sun)太阳帝王石$(/l)（27%）$(li)$(l:black_sun/items/kingstones#glowing_king_stone_sun)特殊太阳帝王石$(/l)（2.7%）$(li)$(l:black_sun/items/kingstones#king_stone_moon)月亮帝王石$(/l)（13.5%）$(li)$(l:black_sun/items/kingstones#glowing_king_stone_moon)特殊月亮帝王石$(/l)（2.7%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:black_sun/kaijin_stone_generator"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g_chip_programer",
+            "title": "G-系统芯片编程器",
+            "text": "在此方块上使用 $(l:agito/items/g3core)空白G芯片$(/l) 可获得各类G芯片$(br2)掉落：$(li)$(l:agito/items/g_system_chips#g3)G3芯片$(/l)（50%）$(li)$(l:agito/items/g_system_chips#g3x)G3-X芯片$(/l)（15%）$(li)$(l:agito/items/g_system_chips#g3mild)G3轻量型芯片$(/l)（10%）$(li)$(l:agito/items/g_system_chips#g4)G4芯片$(/l)（5%）$(li)$(l:agito/items/g_system_chips#g1)G1芯片$(/l)（5%）$(li)$(l:agito/items/g_system_chips#v1)V1芯片$(/l)（10%）$(li)$(l:agito/items/g_system_chips#g6)G6芯片$(/l)（5%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g_chip_programer"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ixa_machine_block",
+            "title": "笛哨复制器",
+            "text": "用于将 $(l:kiva/items/fuestle)笛哨$(/l) 转换为 $(l:kiva/items/fuestlefake)假禁断之笛$(/l)，再转换为 $(l:kiva/items/fuestles#fakegarulufuestle)Ixa的假笛哨$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kiva/ixa_machine_block"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gaia_memory_refiner",
+            "title": "盖亚记忆体精炼机",
+            "text": "在此方块上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 或 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 可获得各类盖亚记忆体$(br2)使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 掉落：$(li)$(l:w/items/gaia_memories#cyclone_memory)疾风记忆体$(/l)（31.7%）$(li)$(l:w/items/gaia_memories#heat_memory)炽热记忆体$(/l)（15.9%）$(li)$(l:w/items/gaia_memories#luna_memory)月神记忆体$(/l)（15.9%）$(li)$(l:w/items/gaia_memories#skull_memory)颅骨记忆体$(/l)（7.9%）$(li)$(l:w/items/gaia_memories#eternal_memory)永恒记忆体$(/l)（7.9%）$(li)$(l:w/items/gaia_memories#prism_memory)棱镜记忆体$(/l)（7.9%）$(li)$(l:w/items/gaia_memories#engine_memory)引擎记忆体$(/l)（7.9%）$(li)$(l:w/items/gaia_memories#bomb_memory)爆炸记忆体$(/l)（1.6%）$(li)$(l:w/items/gaia_memories#fang_memory_un)未完成的獠牙记忆体$(/l)（7.9%）$(li)$(l:w/items/gaia_memories#xtreme_memory_s)极限记忆体(银)$(/l)（1.6%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/gaia_memory_refiner",
+            "text": "使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 掉落：$(li)$(l:w/items/gaia_memories#joker_memory)王牌记忆体$(/l)（41.7%）$(li)$(l:w/items/gaia_memories#metal_memory)金属记忆体$(/l)（20.8%）$(li)$(l:w/items/gaia_memories#trigger_memory)扳机记忆体$(/l)（20.8%）$(li)$(l:w/items/gaia_memories#accel_memory)加速记忆体$(/l)（10.4%）$(li)$(l:w/items/gaia_memories#trial_memory_un)未完成的试炼记忆体$(/l)（4.2%）$(li)$(l:w/items/gaia_memories#xtreme_memory_g)极限记忆体(金)$(/l)（2.1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 掉落：$(li)$(l:w/items/gaia_memories#accel_t2_memory)T2加速记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#bird_t2_memory)T2飞鸟记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#cyclone_t2_memory)T2疾风记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#dummy_t2_memory)T2虚拟记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#eternal_t2_memory)T2永恒记忆体$(/l)（14.7%）$(li)$(l:w/items/gaia_memories#fang_t2_memory)T2獠牙记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#gene_t2_memory)T2基因记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#heat_t2_memory)T2炽热记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#iceage_t2_memory)T2冰河期记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#joker_t2_memory)T2王牌记忆体$(/l)（14.7%）$(li)$(l:w/items/gaia_memories#key_t2_memory)T2钥匙记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#luna_t2_memory)T2月神记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#metal_t2_memory)T2金属记忆体$(/l)（2.9%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:w/items/gaia_memories#nasca_t2_memory)T2纳斯卡记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#ocean_t2_memory)T2海洋记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#puppeteer_t2_memory)T2木偶师记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#queen_t2_memory)T2女皇记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#rocket_t2_memory)T2火箭记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#skull_t2_memory)T2颅骨记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#trigger_t2_memory)T2扳机记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#unicorn_t2_memory)T2独角兽记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#violence_t2_memory)T2暴力记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#weather_t2_memory)T2天气记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#xtreme_t2_memory)T2极限记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#yesterday_t2_memory)T2昨日记忆体$(/l)（2.9%）$(li)$(l:w/items/gaia_memories#zone_t2_memory)T2空间记忆体$(/l)（2.9%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cell_medal_programer",
+            "title": "硬币编程器",
+            "text": "在此方块上使用 $(l:ooo/items/cellmedal)普通细胞硬币$(/l) 可获得Birth的细胞硬币$(br2)使用 $(l:ooo/items/cellmedal)细胞硬币$(/l) 掉落：$(li)$(l:ooo/items/birth_cell_medals#birth_core_eyes)Birth硬币(动力提升)$(/l)（14.3%）$(li)$(l:ooo/items/birth_cell_medals#birth_core_breast_cannon)Birth鳌系组件(前胸加农)$(/l)（14.3%）$(li)$(l:ooo/items/birth_cell_medals#birth_core_crane_arm)Birth鳌系组件(起重臂膀)$(/l)（14.3%）$(li)$(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth鳌系组件(刚钻臂膀)$(/l)（14.3%）$(li)$(l:ooo/items/birth_cell_medals#birth_core_shovel_arm)Birth鳌系组件(铁铲臂膀)$(/l)（14.3%）$(li)$(l:ooo/items/birth_cell_medals#birth_core_catepillar_leg)Birth鳌系组件(履带重腿)$(/l)（14.3%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:ooo/cell_medal_programer",
+            "text": "$(li)$(l:ooo/items/birth_cell_medals#birth_core_cutter_wing)Birth鳌系组件(切割钢翼)$(/l)（14.3%）$(br2)使用浮冰掉落：$(li)$(l:ooo/items/core_medals#seiuchi_medal)海象核心硬币$(/l)（33.3%）$(li)$(l:ooo/items/core_medals#shirokuma_medal)白熊核心硬币$(/l)（33.3%）$(li)$(l:ooo/items/core_medals#penguin_medal)企鹅核心硬币$(/l)（33.3%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "astroswitch_programmer",
+            "title": "天文开关编程器",
+            "text": "可在 $(l:fourze/structures/rabbit_hutch)兔笼$(/l) 或 $(l:fourze/structures/m_bus)M-BUS$(/l) 中找到$(br2)在此方块上使用 $(l:fourze/items/astroswitch)空白开关$(/l) 可获得天文开关$(br2)掉落：$(li)$(l:fourze/items/astroswitches#rocket_switch)火箭开关$(/l)（5.8%）$(li)$(l:fourze/items/astroswitches#launcher_switch)发射器开关$(/l)（5.8%）$(li)$(l:fourze/items/astroswitches#drill_switch)钻头开关$(/l)（5.8%）$(li)$(l:fourze/items/astroswitches#radar_switch)雷达开关$(/l)（5.8%）$(li)$(l:fourze/items/astroswitches#magic_hand_switch)魔术手开关$(/l)（4.4%）$(li)$(l:fourze/items/astroswitches#camera_switch)相机开关$(/l)（4.4%）$(li)$(l:fourze/items/astroswitches#parachute_switch开关$(/l4.4%）$(li)$(l:/items/astroswitches#chainsaw_switch)电锯开关$(/l)（4.4%）$(li)$(l:fourze/items/astroswitches#hopping_switch)跳跃器开关$(/l)（4.4%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:astroswitch_programmer",
+            "title": " ",
+            "text": "$(li)$(l:fourze/items/astroswitches#elek_switch)电力开关$(/l)（4.4%）$(li)$(l:fourze/items/astroswitches#scissors_switch)剪刀开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#beat_switch)节拍开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#chain_array_switch)流星锤开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#smoke_switch)烟雾开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#spike_switch)钉牙开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#winch_switch)起重机开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#flash_switch)闪光开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#shield_switch)盾开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#gatling_switch)加特林开关$(/l)（2.9%）$(li)$(l:fourze/items/astroswitches#fire_switch)火开关$(/l)（2.9%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:fourze/items/astroswitches#stealth_switch)隐身开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#hammer_switch)锤子开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#water_switch)水开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#medical_switch)医疗开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#pen_switch)毛笔开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#wheel_switch)车轮开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#screw_switch)螺旋桨开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#hand_switch)手开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#scoop_switch)铲斗开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#magnet_switch_n)北磁极开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#magnet_switch_s)南磁极开关$(/l)（1.5%）$(li)$(l:fourze/items/astroswitches#freeze_switch)冻结开关$(/l)（0.6%）$(li)(l:fourze/items/astroswitches#claw_switch)爪开关$(/l)（0.6%）$(li)$(l:fourze/items/astroswitches#board_switch)滑板开关$(/l)（0.6%）$(li)$(l:fourze/items/astroswitches#giantfoot_switch)巨足开关$(/l)（0.6%）$(li)$(l:fourze/items/astroswitches#aero_switch)航空开关$(/l)（0.6%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:fourze/items/astroswitches#gyro_switch)旋翼开关$(（0.li)$(l:fourzeitches#net_switch)捕开关$(/l)（0.6%）$(li)$(l:fourze/items/astroswitches#stamper_switch)印章开关$(/l)（0.6%）$(li)$(l:fourze/items/astroswitches#cosmic_switch)宇宙开关$(/l)（0.3%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shift_chassis_assembler",
+            "title": "变档战车底盘装配器",
+            "text": "在此方块上使用Drive系统的$(l:drive/items/drive_system_cars)战车$(/l) 和 $(l:items/next_sikes)摩托$(/) 可获得变档战车和信号摩托$()使用 $(l:drive/items系统驱动战车/l) $(li(l:/shift_carsspeedshift)$(/11)$items/shift_cars#wildshift)移速狂野)$技术itemsdead速$(/l)（2.3%）$(li)$(l:drive/items/shift_cars#tridoronshift_core)未完成的移速赛特郎$(/l)（3.9%）$(li)$(l:drive/items/shift_cars#maxflare)最大火力$(/l)（5.4%）$(li)$(l:drive/items/shift_cars#funkyspike)时髦尖钉$(/l)（5.4%）$(li)$(l:drive/items/shift_cars#midnightshadow)午夜暗影$(/l)（5.4%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:drive/shift_chassis_assembler",
+            "text": "$(li)$(l:drive/items/shift_cars#justice_hunter)正义猎人$(/l)（4.7%）$(li)$(l:drive/items/shift_cars#dream_vegas)梦幻维加斯$(/l)（4.7%）$(li)$(l:drive/items/shift_cars#dimension_cab)维度计程$(/l)（4.7%）$(li)$(l:drive/items/shift_cars#massive_monster)巨大怪物$(/l)（4.7%）$(li)$(l:drive/items/shift_cars#spin_mixer)旋动混凝$(/l)（4.7%）$(li)$(l:drive/items/shift_cars#rumble_dump)轰隆倾卸$(/l)（3.9%）$(li)$(l:drive/items/shift_cars#mad_doctor)疯狂医生$(/l)（3.9%）$(li)$(l:drive/items/shift_cars#hooking_wrecker)挂钩清障者$(/l)（3.9%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:drive/items/shift_cars#burning_solar)燃烧太阳$(/l)（3.1%）$(li)$(l:drive/items/shift_cars#colorful_commercial)色彩广告$(/l)（3.1%）$(li)$(l:drive/items/shift_cars#fire_braver)火焰勇者$(/l)（3.1%）$(li)$(l:drive/items/shift_cars#rolling_gravity)滚动重力$(/l)（3.1%）$(li)$(l:drive/items/shift_cars#deco_traveller)暴走旅者$(/l)（3.1%）$(li)$(l:drive/items/shift_cars#road_winter)道路寒冬$(/l)（2.3%）$(li)$(l:drive/items/shift_cars#amazing_circus)惊奇马戏$(/l)（2.3%）$(li)$(l:drive/items/shift_cars#mantarn_f01)满缸F01$(/l)（0.8%）$(li)$(l:drive/items/shift_cars#jacky_f02)起重F02$(/l)（0.8%）$(li)$(l:drive/items/shift_cars#sparner_f03)扳手F03$(/l)（0.8%）$(br2)使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 掉落：$(li)$(l:drive/items/signal_bikes#deadheat_bike)移速白热 摩托$(/l)（5.7%）$(li)$(l:drive/items/signal_bikes#signal_mach)信号马赫$(/l)（28.6%）$(li)$(l:drive/items/signal_bikes#signal_magarl)信号转弯$(/l)（14.3%）$(li)$(l:drive/items/signal_bikes#signal_kaksarn)信号扩散$(/l)（14.3%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:drive/items/signal_bikes#signal_tomarle)信号停止$(/l)（14.3%）$(li)$(l:drive/items/signal_bikes#signal_kikern)信号危险$(/l)（14.3%）$(li)$(l:drive/items/signal_bikes#signal_chaser)信号追猎$(/l)（8.6%）$(br2)使用 $(l:drive/items/next_system_car)次世代系统战车$(/l) 掉落：$(li)$(l:drive/items/shift_cars#nextshift)移速次世$(/l)（20%）$(li)$(l:drive/items/shift_cars#specialshift)移速特殊$(/l)（20%）$(li)$(l:drive/items/shift_cars#next_hunter)次世猎人$(/l)（20%）$(li)$(l:drive/items/shift_cars#next_traveller)次世暴走旅者$(/l)（20%）$(li)$(l:drive/items/shift_cars#next_builder)次世建筑师$(/l)（20%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "monolith",
+            "title": "玄武眼魂柱",
+            "text": "在此方块上使用 $(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l) 可获得各类眼魂$(br2)掉落：$(li)$(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)武藏眼魂$(/l)（13.5%）$(li)$(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)爱迪生眼魂$(/l)（13.5%）$(li)$(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)罗宾眼魂$(/l)（10.8%）$(li)$(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)牛顿眼魂$(/l)（10.8%）$(li)$(l:ghost/items/ghost_eyecons#billy_the_kid_ghost_eyecon)比利小子眼魂$(/l)（8.1%）$(li)$(l:ghost/items/ghost_eyecons#beethoven_ghost_eyecon)贝多芬眼魂$(/l)（8.1%）$(li)$(l:ghost/items/ghost_eyecons#benkei_ghost_eyecon)弁庆眼魂$(/l)（8.1%）$(li)$(l:ghost/items/ghost_eyecons#goemon_ghost_eyecon)五右卫门眼魂$(/l)（5.4%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:ghost/monolith",
+            "text": "$(li)$(l:ghost/items/ghost_eyecons#ryoma_ghost_eyecon)龙马眼魂$(/l)（5.4%）$(li)$(l:ghost/items/ghost_eyecons#himiko_ghost_eyecon)卑弥呼眼魂$(/l)（5.4%）$(li)$(l:ghost/items/ghost_eyecons#tutankhamun_ghost_eyecon)图坦卡蒙眼魂$(/l)（8.1%）$(li)$(l:ghost/items/ghost_eyecons#nobunaga_ghost_eyecon)信长眼魂$(/l)（8.1%）$(li)$(l:ghost/items/ghost_eyecons#houdini_ghost_eyecon)胡迪尼眼魂$(/l)（5.4%）$(li)$(l:ghost/items/ghost_eyecons#special_ore_ghost_eyecon)特殊俺眼魂$(/l)（2.7%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gamecreator",
+            "title": "游戏卡带创作器",
+            "text": "在此方块上使用 $(l:ex_aid/items/blank_gashat)未完成的卡带$(/l) 可获得骑士卡带$(br2)使用 $(l:ex_aid/items/blank_gashat)未完成的卡带$(/l) 掉落：$(li)$(l:ex_aid/items/rider_gashats#mighty_action_x_gashat)全能动作X卡带$(/l)（13.6%）$(li)$(l:ex_aid/items/rider_gashats#taddle_quest_gashat)探索冒险卡带$(/l)（10.2%）$(li)$(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)砰砰射击卡带$(/l)（10.2%）$(li)$(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)暴走机车卡带$(/l)（10.2%）$(li)$(l:ex_aid/items/rider_gashats#gekitotsu_robots_gashat)激突机器人卡带$(/l)（6.8%）$(li)$(l:ex_aid/items/rider_gashats#doremifa_beat_gashat)哆啦咪发节拍卡带$(/l)（6.8%）$(li)$(l:ex_aid/items/rider_gashats#jet_combat_gashat)喷射战机卡带$(/l)（6.8%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:exaid/gamecreator",
+            "text": "$(li)$(l:ex_aid/items/rider_gashats#giri_giri_chambara_gashat)极限剑斗卡带$(/l)（6.8%）$(li)$(l:ex_aid/items/rider_gashats#shakariki_sports_gashat)干劲运动卡带$(/l)（6.8%）$(li)$(l:ex_aid/items/rider_gashats#mighty_creator_vrx_gashat)全能创造者VRX卡带$(/l)（0.7%）$(li)$(l:ex_aid/items/rider_gashats#mighty_novel_x_gashat)全能小说X卡带$(/l)（0.7%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:ex_aid/items/rider_gashats#ju_ju_burger_gashat)Ju Ju汉堡卡带$(/l)（3.4%）$(li)$(l:ex_aid/items/rider_gashats#night_of_safari_gashat)游猎之夜卡带$(/l)（2%）$(li)$(l:ex_aid/items/rider_gashats#bang_bang_tank_gashat)砰砰坦克卡带$(/l)（1.4%）$(li)$(l:ex_aid/items/rider_gashats#taddle_legacy_gashat)圣遗探索卡带$(/l)（1.4%）$(li)$(l:ex_aid/items/rider_gashats#hurricane_ninja_gashat)疾风忍者卡带$(/l)（1.4%）$(li)$(l:ex_aid/items/rider_gashats#pac_adventure_gashat)吃豆冒险传奇卡带$(/l)（0.7%）$(li)$(l:ex_aid/items/rider_gashats#famitsa_gashat)家庭竞技场卡带$(/l)（0.7%）$(li)$(l:ex_aid/items/rider_gashats#xevious_gashat)铁板阵卡带$(/l)（0.7%）$(li)$(l:ex_aid/items/rider_gashats#galaxian_gashat)银河人传奇卡带$(/l)（0.7%）$(li)$(l:ex_aid/items/rider_gashats#ganbarizing_gashat)假面骑士大乱斗卡带$(/l)（1.4%）$(br2)物品栏中持有 $(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)檀黎斗程式升华秘钥$(/l) 时：$(li)$(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin_remake)原始原型全能动作X(重制)$(/l)（12.2%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:ex_aid/items/rider_gashats#toki_meki_bridal_gashat)心跳婚纱卡带$(/l)（12.2%）$(br2)使用 $(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟XX卡带$(/l) 掉落：$(li)$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_gashat)全能兄弟XX卡带$(/l)（23.5%）$(li)$(l:ex_aid/items/rider_gashats#doctor_mighty_xx_gashat)全能医生XX卡带$(/l)（5.9%）$(li)$(l:ex_aid/items/rider_gashats#knock_out_fighter_2_gashat)击倒战士2卡带$(/l)（5.9%）$(li)$(l:ex_aid/items/rider_gashats#taddle_fantasy_gashat)探索幻想卡带$(/l)（17.6%）$(li)$(l:ex_aid/items/rider_gashats#bang_bang_simulation_gashat)砰砰模拟卡带$(/l)（17.6%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:ex_aid/items/rider_gashats#perfect_puzzle_gashat)完美拼图卡带$(/l)l:items/riders#kn_fighter_gashat)击倒战士卡带$(/l)（11.8%）$(li)$(l:ex_aid/items/rider_gashats#gashat_gear_dual_another)另类双重齿轮卡带$(/l)（5.9%）$(br2)使用 $(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)未完成的极限全能卡带$(/l) 掉落：$(li)$(l:ex_aid/items/rider_gashats#maximum_mighty_x_gashat)极限全能X卡带$(/l)（80%）$(li)$(l:ex_aid/items/rider_gashats#god_maximum_mighty_x_gashat)神之极限全能X卡带$(/l)（20%）$(br)物品栏中持有 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin_remake)原始原型全能动作X(重制)$(/l) 时：$(li)$(l:ex_aid/items/rider_gashats#maximum_zombie_gashat)极限僵尸卡带$(/l)（100%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)未完成的Hyper Muteki卡带$(/l) 掉落：$(li)$(l:ex_aid/items/rider_gashats#hyper_muteki_gashat)Hyper Muteki卡带$(/l)（80%）$(li)$(l:ex_aid/items/rider_gashats#gamedeus_hyper_muteki_gashat)游戏天神Hyper Muteki卡带$(/l)（20%）$(br)物品栏中持有 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin_remake)原始原型全能动作X(重制)$(/l) 时：$(li)$(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper不灭卡带$(/l)（100%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ganbarizing_machine",
+            "title": "传奇骑士街机游戏卡带创作器",
+            "text": "在此方块上使用 $(l:ex_aid/items/blank_gashat)未完成的卡带$(/l) 可获得传奇骑士卡带$(br2)掉落：$(li)$(l:ex_aid/items/rider_gashats#kamen_rider_build_gashat)假面骑士Build卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#kaigan_ghost_gashat)开眼Ghost卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#full_throttle_drive_gashat)速度全开Drive卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#toukenden_gaim_gashat)刀剑传铠武卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#magic_the_wizard_gashat)魔法Wizard卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#space_galaxy_fourze_gashat)宇宙银河Fourze卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#jungle_ooo_gashat)丛林OOO卡带$(/l)（5.3%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:exaid/ganbarizing_machine",
+            "text": "$(li)$(l:ex_aid/items/rider_gashats#detective_double_gashat)侦探W卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#barcode_warrior_decade_gashat)条形码战士Decade卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#dokidoki_makai_castle_kiva_gashat)心跳魔界城Kiva卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#time_express_den_o_gashat)时空特急电王卡带$(/l)（5.3%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:ex_aid/items/rider_gashats#insect_wars_kabuto_gashat)昆虫大战甲斗卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#taiko_master_hibiki_gashat)太鼓达人响鬼卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#king_of_poker_blade_gashat)扑克王剑卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#moshi_moshi_faiz_gashat)喂喂喂Faiz卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#mirror_labryinth_ryuki_gashat)镜之迷宫龙骑卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#agito_of_the_sun_gashat)太阳之子亚极陀卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#adventure_guy_kuuga_gashat)大冒险家空我卡带$(/l)（5.3%）$(li)$(l:ex_aid/items/rider_gashats#lets_go_ichigou_gashat)一起上吧!一号!卡带$(/l)（5.3%）"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pandora_box",
+            "title": "潘多拉魔盒",
+            "text": "在此方块上使用 $(l:build/items/full_bottle)空白满瓶$(/l) 可获得 $(l:build/items/pandora_bottle)潘多拉满装瓶罐$(/l)$(br2)在此方块上使用 $(l:build/items/hazard_trigger)危险扳机$(/l) 可获得一个 $(l:build/arsenal/last_pandora_panel_white)潘多拉嵌板$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pandora_box",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/night_rogue)夜霸$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fullbottle_purifier",
+            "title": "满瓶净化器",
+            "text": "可在 $(l:build/structures/rogue_base)Faust基地$(/l) 中找到$(br2)在此方块上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 可获得满装瓶罐$(br2)掉落（全部为1.6%）：$(li)$(l:build/items/fullbottles#rabbit_full_bottle)兔子满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#tank_full_bottle)坦克满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#gorilla_full_bottle)大猩猩满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#diamond_full_bottle)钻石满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#taka_full_bottle)飞鹰满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#gatling_full_bottle)加特林满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#harinezumi_full_bottle)刺猬满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#shoubousha_full_bottle)消防车满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#ninja_full_bottle)忍者满装瓶罐$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/fullbottle_purifier",
+            "text": "$(li)$(l:build/items/fullbottles#comic_full_bottle)漫画满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#panda_full_bottle)熊猫满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#rocket_full_bottle)火箭满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#lion_full_bottle)狮子满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#soujiki_full_bottle)吸尘器满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#dragon_full_bottle)龙满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#lock_full_bottle)定锁满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#kaizoku_full_bottle)海贼满装瓶罐$(/l)"
+        },
+                {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:build/items/fullbottles#densha_full_bottle)电车满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#octopus_full_bottle)章鱼满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#light_full_bottle)电灯满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#phoenix_full_bottle)不死鸟满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#robot_full_bottle)机器人满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#wolf_full_bottle)狼满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#smapho_full_bottle)智能机满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#unicorn_full_bottle)独角兽满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#keshigomu_full_bottle)橡皮擦满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#rose_full_bottle)蔷薇满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#helicopter_full_bottle)直升机满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#turtle_full_bottle)海龟满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#watch_full_bottle)手表满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#kuma_full_bottle)熊满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#televi_full_bottle)TV满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#kabutomushi_full_bottle)独角仙满装瓶罐$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:build/items/fullbottles#camera_full_bottle)照相机满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#spider_full_bottle)蜘蛛满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#reizouko_full_bottle)冰箱满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#dog_full_bottle)狗满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#mic_full_bottle)话筒满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#santa_claus_full_bottle)圣诞老人满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#cake_full_bottle)蛋糕满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#tora_full_bottle)老虎满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#ufo_full_bottle)UFO满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#kujira_full_bottle)鲸满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#jet_full_bottle)喷气机满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#shika_full_bottle)鹿满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#pyramid_full_bottle)金字塔满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#kirin_full_bottle)长颈鹿满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#senpuuki_full_bottle)风扇满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#penguin_full_bottle)企鹅满装瓶罐$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:build/items/fullbottles#skebo_full_bottle)滑板满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#same_full_bottle)鲨鱼满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#bike_full_bottle)摩托满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#hachi_full_bottle)蜂满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#sensuikan_full_bottle)潜水艇满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#sai_full_bottle)犀牛满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#dryer_full_bottle)吹风机满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#bat_full_bottle)蝙蝠满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#engine_full_bottle)引擎满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#obake_full_bottle)妖怪满装瓶罐$(/l)$lullbottagnet_fullottle铁满装/l)$((l:/fullbottles#scorpion_full_bottle)蝎子满装瓶罐$(/l)$(li)$(l:build/items/fullbottles#gold_full_bottle)黄金满装瓶罐$(/l)"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fullbottle_solidifier",
+            "title": "满瓶凝固器",
+            "text": "在此方块上使用不同的满装瓶罐可获得挤压凝胶$(br2)掉落：$(li)$(l:build/items/sclash_jelly)空挤压凝胶$(/l)（使用 $(l:build/items/full_bottle)空白满瓶$(/l)）$(li)$(l:build/items/sclashjellies#dragon_sclash_jelly)龙挤压凝胶$(/l)（使用 $(l:build/items/fullbottles#dragon_full_bottle)龙满装瓶罐$(/l)）$(li)$(l:build/items/sclashjellies#robot_sclash_jelly)机器人挤压凝胶$(/l)（使用 $(l:build/items/fullbottles#robot_full_bottle)机器人满装瓶罐$(/l)）$(li)$(l:build/items/fullbottles#crocodile_crack_full_bottle)鳄鱼裂痕满装瓶罐$(/l)（使用 $(l:build/items/fullbottles#lost_bat_full_bottle)迷失蝙蝠满装瓶罐$(/l)）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/fullbottle_solidifier"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hiden_3d_printer",
+            "title": "飞电3D打印机",
+            "text": "在此方块上使用空白程式升华钥可获得01的程式升华钥$(br2)用作 $(l:misc/villagers#humagear_villager)修玛吉亚村民$(/l) 的工作方块$(br2)使用 $(l:zero_one/items/blank_progrisekey)空白程式升华钥$(/l) 掉落：$(li)$(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)高跃蝗虫程式升华钥$(/l)（26.3%）$(li)$(l:zero_one/items/progrisekeys#shining_hopper_progrisekey)闪耀蝗虫程式升华钥$(/l)（5.3%）$(li)$(l:zero_one/items/progrisekeys#red_rising_hopper_progrisekey)高跃蝗虫程式升华钥(中国红)$(/l)（2.6%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zero_one/hiden_3d_printer",
+            "text": "$(li)$(l:zero_one/items/progrisekeys#biting_shark_progrisekey)撕咬巨鲨程式升华钥$(/l)（13.2%）$(li)$(l:zero_one/items/progrisekeys#flaming_tiger_progrisekey)燃焰老虎程式升华钥$(/l)（13.2%）$(li)$(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)破坏猛犸程式升华钥$(/l)（13.2%）$(li)$(l:zero_one/items/progrisekeys#hopping_kangaroo_progrisekey)跳跃袋鼠程式升华钥$(/l)（13.2%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:zero_one/items/progrisekeys#flying_falcon_progrisekey)飞翔猎隼程式升华钥$(/l)（13.2%）$(br2)使用 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l) 掉落：$(li)$(l:zero_one/items/progrisekeys#is_progrisekey)伊兹程式升华秘钥$(/l)（1.3%）$(li)$(l:zero_one/items/progrisekeys#uchuyaro_subaru_progrisekey)宇宙野郎昴程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#saikyo_takumi_oyakata_progrisekey)最强匠亲方程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#dr_omigoto_progrisekey)DR绝伦程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#sumida_smile_progrisekey)住田微笑程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#mamoru_progrisekey)阿守程式升华秘钥$(/l)（6.6%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:zero_one/items/progrisekeys#bengoshi_bingo_progrisekey)辩护士宾果程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#ikkan_nigiro_progrisekey)一贯握郎程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#matsuda_enji_progrisekey)松田演程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#morifude_g_pen_progrisekey)森笔治边程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#fukkinhoukai_taro_progrisekey)腹筋崩坏太郎程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#shesta_progrisekey)谢斯塔程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#love_chan_progrisekey)结缘配对程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#hakase_bot_progrisekey)博士波特程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#okureru_progrisekey)阿送程式升华秘钥$(/l)（6.6%）$(li)$(l:zero_one/items/progrisekeys#delmo_progrisekey)德尔摩程式升华秘钥$(/l)（6.6%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zaia_3d_printer",
+            "title": "哉亚3D打印机",
+            "text": "可在 $(l:zero_one/structures/daybreak_town)破晓镇$(/l) 中找到$(br2)在此方块上使用空白程式升华钥可获得ZAIA日本的程式升华钥$(br2)掉落：$(li)$(l:zero_one/items/progrisekeys#freezing_bear_progrisekey)冰冻极熊程式升华钥$(/l)（8.9%）$(li)$(l:zero_one/items/progrisekeys#sparking_giraffe_progrisekey)闪光长颈鹿程式升华钥$(/l)（8.9%）$(li)$(l:zero_one/items/progrisekeys#amazing_hercules_progrisekey)惊异长戟大兜虫程式升华钥$(/l)（8.9%）$(li)$(l:zero_one/items/progrisekeys#exciting_stag_progrisekey)激励锹甲程式升华钥$(/l)（8.9%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zaia_3d_printer",
+            "title": " ",
+            "text": "$(li)$(l:zero_one/items/progrisekeys#gatling_hedgehog_progrisekey)机枪刺猬程式升华钥$(/l)（8.9%）$(li)$(l:zero_one/items/progrisekeys#trapping_spider_progrisekey)捕获蜘蛛程式升华钥$(/l)（8.9%）$(li)$(l:zero_one/items/progrisekeys#assault_wolf_progrisekey)突击野狼程式升华钥$(/l)（3.6%）$(li)$(l:zero_one/items/progrisekeys#punching_kong_progrisekey)拳击金刚程式升华钥$(/l)（8.9%）$(li)$(l:zero_one/items/progrisekeys#lightning_hornet_progrisekey)雷霆黄蜂程式升华钥$(/l)（8.9%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:zero_one/items/progrisekeys#sting_scorpion_progrisekey)尖刺毒蝎程式升华钥$(/l)（17.9%）$(li)$(l:zero_one/items/progrisekeys#amazing_caucasus_progrisekey)惊异南洋大兜虫程式升华钥$(/l)（3.6%）$(li)$(l:zero_one/items/zetsumerisekeys#awaking_arsino_zetsumerisekey)觉醒重脚兽绝灭升华钥$(/l)（3.6%）"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sword_of_logos_book_analyzer",
+            "title": "真理之剑书籍分析器",
+            "text": "可在 $(l:saber/structures/northern_base)北极基地$(/l) 中找到$(br2)在此方块上使用空白奇幻驾驭书可获得各类奇幻驾驭书$(br2)使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 掉落：$(li)$(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)勇气飞龙奇幻驾驭书$(/l)（11%）$(li)$(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)风暴猎鹰奇幻驾驭书$(/l)（5.5%）$(li)$(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)西游记奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)天空的天马奇幻驾驭书$(/l)（1.8%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:saber/sword_of_logos_book_analyzer",
+            "text": "$(li)$(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记奇幻驾驭书$(/l)（9.2%）$(li)$(l:saber/items/wonder_ride_books#peter_fantasista_wonder_ride_book)彼得幻想曲奇幻驾驭书$(/l)（5.5%）$(li)$(l:saber/items/wonder_ride_books#tri_cerberus_wonder_ride_book)三头地狱犬奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#needle_hedgehog_wonder_ride_book)尖针刺猬奇幻驾驭书$(/l)（5.5%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯奇幻驾驭书$(/l)（9.2%）$(li)$(l:saber/items/wonder_ride_books#genbu_shinwa_wonder_ride_book)玄武神话奇幻驾驭书$(/l)（3.7%）$(li)$(l:saber/items/wonder_ride_books#jackun_to_domamenoki_wonder_ride_book)杰克与豌豆奇幻驾驭书$(/l)（5.5%）$(li)$(l:saber/items/wonder_ride_books#sarutobi_ninjaden_wonder_ride_book)猿飞忍者传奇幻驾驭书$(/l)（3.7%）$(li)$(l:saber/items/wonder_ride_books#kobuta_3_kyoudai_wonder_ride_book)三只小猪奇幻驾驭书$(/l)（5.5%）$(li)$(l:saber/items/wonder_ride_books#hanselnuts_to_gretel_wonder_ride_book)汉森纳茨和格雷特奇幻驾驭书$(/l)（3.7%）$(li)$(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)不莱梅摇滚乐队奇幻驾驭书$(/l)（5.5%）$(li)$(l:saber/items/wonder_ride_books#kin_no_buki_gin_no_buki_wonder_ride_book)金的武器&银的武器奇幻驾驭书$(/l)（1.1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:saber/items/wonder_ride_books#kirin_no_ongaeshi_wonder_ride_book)长颈鹿的报恩奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#sarukani_wars_wonder_ride_book)猿蟹战争奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#bakusou_usagi_to_kame_wonder_ride_book)龟兔赛跑奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#houshin_kamen_engi_wonder_ride_book)封神假面演艺奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#tsuki_no_hime_kaguyan_wonder_ride_book)月之公主辉夜奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#osha_jizou_san_wonder_ride_book)时髦的地藏先生奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#issun_bushi_wonder_ride_book)一寸武士奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)大将军桃一郎奇幻驾驭书$(/l)（1.8%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)大剑豪浦岛二郎奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)大横钢金三郎奇幻驾驭书$(/l)（1.8%）$(li)$(l:saber/items/wonder_ride_books#king_of_arthur_wonder_ride_book)亚瑟王奇幻驾驭书$(/l)（1.1%）$(li)$(l:saber/items/wonder_ride_books#televi_kun_wonder_ride_book)TV君奇幻驾驭书$(/l)（0.4%）$(br2)使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事驾驭书$(/l) 掉落：$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_kaenken_rekka_wonder_ride_book)火炎剑烈火奇幻世界故事驾驭书$(/l)（9.1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_suiseiken_nagare_wonder_ride_book)水势剑流水奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book)雷鸣剑黄雷奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_ankokuken_kurayami_wonder_ride_book)暗黑剑月暗奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_dogouken_gekido_wonder_ride_book)土豪剑激土奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_fuusouken_hayate_wonder_ride_book)风双剑翠风奇幻世界故事驾驭书$(/l)（9.1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_onjuuken_suzune_wonder_ride_book)音枪剑锡音奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_kougouken_saikou_wonder_ride_book)光刚剑最光奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_mumeiken_kyomu_wonder_ride_book)无铭剑虚无奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_eneiken_noroshi_wonder_ride_book)烟睿剑狼烟奇幻世界故事驾驭书$(/l)（9.1%）$(li)$(l:saber/items/wonder_ride_books#wonder_world_story_of_jikokuken_kaiji_wonder_ride_book)时国剑界时奇幻世界故事驾驭书$(/l)（9.1%）"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vistamp_bar",
+            "title": "罪恶印章酒吧",
+            "text": "在此方块上使用空白罪恶印章可获得各类罪恶印章$(br2)使用 $(l:revice/items/proto_vistamp)空白罪恶印章$(/l) 掉落：$(li)$(l:revice/items/vistamps#rex_vistamp)暴龙罪恶印章$(/l)（8.2%）$(li)$(l:revice/items/vistamps#eagle_vistamp)猎雕罪恶印章$(/l)（6.2%）$(li)$(l:revice/items/vistamps#mammoth_vistamp)猛犸罪恶印章$(/l)（6.2%）$(li)$(l:revice/items/vistamps#megalodon_vistamp)巨齿鲨罪恶印章$(/l)（6.2%）$(li)$(l:revice/items/vistamps#ptera_vistamp)翼龙罪恶印章$(/l)（3.4%）$(li)$(l:revice/items/vistamps#lion_vistamp)狮子罪恶印章$(/l)（5.5%）$(li)$(l:revice/items/vistamps#jackal_vistamp)胡狼罪恶印章$(/l)（5.5%）$(li)$(l:revice/items/vistamps#kong_vistamp)金刚罪恶印章$(/l)（5.5%）$(li)$(l:revice/items/vistamps#kamakiri_vistamp)螳螂罪恶印章$(/l)（5.5%）$(li)$(l:revice/items/vistamps#brachio_vistamp)腕龙罪恶印章$(/l)（5.5%）$(li)$(l:revice/items/vistamps#neo_batta_vistamp)新蝗虫罪恶印章$(/l)（3.4%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:revice/vistamp_bar",
+            "text": "$(li)$(l:revice/items/vistamps#kangaroo_vistamp)袋鼠罪恶印章$(/l)（2.7%）$(li)$(l:revice/items/vistamps#crow_vistamp)乌鸦罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#spider_vistamp)蜘蛛罪恶印章$(/l)（4.1%）$(li)$(l:revice/items/vistamps#batta_vistamp)蝗虫罪恶印章$(/l)（2.7%）$(li)$(l:revice/items/vistamps#mogura_vistamp)鼹鼠罪恶印章$(/l)（2.7%）$(li)$(l:revice/items/vistamps#scorpion_vistamp)蝎子罪恶印章$(/l)（2.7%）$(li)$(l:revice/items/vistamps#anomalocaris_vistamp)奇虾罪恶印章$(/l)（2.1%）$(li)$(l:revice/items/vistamps#cobra_vistamp)眼镜蛇罪恶印章$(/l)（3.4%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:revice/items/vistamps#turtle_vistamp)乌龟罪恶印章$(/l)（2.1%）$(li)$(l:revice/items/vistamps#kujaku_vistamp)孔雀罪恶印章$(/l)（2.1%）$(li)$(l:revice/items/vistamps#hashibiroko_vistamp)鲸头鹳罪恶印章$(/l)（2.1%）$(li)$(l:revice/items/vistamps#tricera_vistamp)三角龙罪恶印章$(/l)（2.1%）$(li)$(l:revice/items/vistamps#crocodile_vistamp)鳄鱼罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#komodo_dragon_vistamp)科莫多巨蜥罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#condor_vistamp)秃鹫罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#white_leo_vistamp)白狮罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#quetzalcoatlus_vistamp)风神翼龙罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#kajiki_vistamp)旗鱼罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#hedgehog_vistamp)刺猬罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#king_crab_vistamp)帝王蟹罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#kurosai_vistamp)黒犀罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#octopus_vistamp)章鱼罪恶印章$(/l)（0.6%）$(li)$(l:revice/items/vistamps#oomukade_vistamp)蜈蚣罪恶印章$(/l)（0.6%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:revice/items/vistamps#mammoth_vistamp_china)猛犸象罪恶印章(中国特有)$(/l)（0.6%）$(br)物品栏中持有 $(l:revice/items/vistamps#barid_rex_vistamp)破壳暴龙罪恶印章$(/l) 时：$(li)$(l:revice/items/vistamps#volcano_vistamp)火山暴龙罪恶印章$(/l)（12.0%）$(br2)使用 $(l:revice/items/vistamps#proto_queen_bee_vistamp)女王蜂原始罪恶印章$(/l)：$(li)$(l:revice/items/vistamps#queen_bee_vistamp)女王蜂罪恶印章$(/l)$(br2)使用 $(l:revice/items/vistamps#proto_planarian_vistamp)真涡虫原始罪恶印章$(/l)：$(li)$(l:revice/items/vistamps#planarian_vistamp)真涡虫罪恶印章$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:revice/items/vistamps#proto_chameleon_vistamp)变色龙原始罪恶印章$(/l)：$(li)$(l:revice/items/vistamps#chameleon_vistamp)变色龙罪恶印章$(/l)$(br2)使用 $(l:revice/items/vistamps#daiouika_vistamp)大王鱿原始罪恶印章$(/l)：$(li)$(l:revice/items/vistamps#kraken_vistamp)克拉肯罪恶印章$(/l)"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "capsem_dropper",
+            "title": "梦胶囊提取机",
+            "text": "在此方块上使用 $(l:zeztz/items/code_capsem)暗码组织胶囊$(/l) 可获得 $(l:zeztz/items/capsems)梦境胶囊$(/l)$(br2)掉落：$(li)$(l:zeztz/items/capsems#impact_capsem)冲击梦境胶囊$(/l)（16.1%）$(li)$(l:zeztz/items/capsems#transform_capsem)变换梦境胶囊$(/l)（8.1%）$(li)$(l:zeztz/items/capsems#wing_capsem)羽翼梦境胶囊$(/l)（8.1%）$(li)$(l:zeztz/items/capsems#stream_capsem)涌动梦境胶囊$(/l)（11.3%）$(li)$(l:zeztz/items/capsems#machinery_capsem)器械梦境胶囊$(/l)（8.1%）$(li)$(l:zeztz/items/capsems#projection_capsem)投影梦境胶囊$(/l)（8.1%）$(li)$(l:zeztz/items/capsems#recovery_capsem)重构梦境胶囊$(/l)（11.3%）$(li)$(l:zeztz/items/capsems#barrier_capsem)屏障梦境胶囊$(/l)（8.1%）$(li)$(l:zeztz/items/capsems#wonder_capsem)奇迹梦胶囊$(/l)（11.3%）$(li)$(l:zeztz/items/capsems#gravity_capsem)重力梦境胶囊$(/l)（8.1%）$(li)$(l:zeztz/items/capsems#song_capsem)歌声梦境胶囊$(/l)（1.6%）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zeztz/capsem_dropper"
+        }
+    ]
+}

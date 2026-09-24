@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:v3/main",
+    "name": "耀焰圣剑",
+    "description": "V3系列骑士所使用的武器. 可以在铁砧上使用 $(l:misc/items/rider_circuit)骑士电路$(/l)修复.",
+    "icon": "kamenridercraft:flaresalamander_sword",
+    "sortnum": 3
+}

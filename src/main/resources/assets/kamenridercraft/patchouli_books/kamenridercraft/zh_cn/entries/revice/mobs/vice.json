@@ -1,0 +1,17 @@
+{
+    "name": "维斯",
+    "icon": "kamenridercraft:revice_logo",
+    "category": "kamenridercraft:revice/mobs",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:vice",
+            "text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br)生命值：20"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通过变身为$(l:revice/riders/revi)假面骑士利维$(/l)召唤$(br2)切换到 $(l:revice/riders/revi#ptera)翼龙 基因组$(/l)、$(l:revice/riders/revi#quetzalcoatlus)风神翼龙 基因组$(/l)、$(l:revice/riders/revi#jack_revice)劫持利维斯$(/l)、$(l:revice/riders/revi#thunder_gale)风雷$(/l) 或 $(l:revice/riders/revi#fifty_gale)五十岚$(/l) 时会消失$(br2)跟随玩家并协助战斗"
+        }
+    ]
+}

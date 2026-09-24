@@ -1,0 +1,42 @@
+{
+	"name": "双重台风腰带",
+	"icon": "kamenridercraft:double_typhoon",
+	"category": "kamenridercraft:v3/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "double_typhoon",
+			"text": "登场于:$(li)假面骑士V3（1973年，电视剧）$(br2)与$(l:v3/devices/armor)V3装甲$(/l)一起穿戴，可变身为$(l:v3/riders/v3#v3)假面骑士V3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:v3/double_typhoon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_double_typhoon",
+			"title": "双重台风腰带 (黑暗V3)",
+			"text": "登场于:$(li)弹珠机假面骑士：全速前进（2015年，弹珠机游戏）$(br2)与$(l:v3/devices/armor)V3装甲$(/l)一起穿戴，可变身为$(l:v3/riders/dark_v3)黑暗V3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:v3/dark_double_typhoon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_double_typhoon",
+			"title": "假双重台风腰带",
+			"text": "登场于:$(li)假面骑士Fourze特别活动：天之川高中春季学校节特别篇（2012年，舞台剧）$(br2)与 $(l:v3/devices/armor)V3装甲$(/l) 一起穿戴，可变身为 $(l:v3/riders/fake_v3) 假V3"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_double_typhoon",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

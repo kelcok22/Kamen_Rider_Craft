@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:amazons/main",
+    "name": "相关物品",
+    "description": "所有与Amazons系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:condorer_core_omega",
+    "sortnum": 2
+}

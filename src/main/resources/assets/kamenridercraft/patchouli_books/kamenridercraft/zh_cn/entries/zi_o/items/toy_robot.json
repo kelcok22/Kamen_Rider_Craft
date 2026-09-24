@@ -1,0 +1,19 @@
+{
+	"name": "玩具机器人",
+	"icon": "kamenridercraft:toy_robot",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 18,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:toy_robot",
+        "title": " ",
+        "text": "可通过$(l:misc/villagers#wandering_trader)流浪商人$(/l)交易获得"
+      }
+	]
+}

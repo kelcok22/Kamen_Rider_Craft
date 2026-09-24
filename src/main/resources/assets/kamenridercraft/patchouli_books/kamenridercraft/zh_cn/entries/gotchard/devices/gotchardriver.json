@@ -1,0 +1,16 @@
+{
+	"name": "歌查德驱动器",
+	"icon": "kamenridercraft:gotchardriver",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/gotchard)假面骑士歌查德$(/l)$(br2)最多可存储10组驾驭凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchardriver"
+		}
+	]
+}

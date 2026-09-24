@@ -1,0 +1,16 @@
+{
+	"name": "战神双刃-",
+	"icon": "kamenridercraft:gatack_double_calibur_minus",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/riders/gatack)假面骑士钢斗$(/l)使用，与$(l:kabuto/arsenal/gatack_double_calibur)战神双刃+$(/l)可一起使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/gatack_double_calibur_minus"
+		}
+	]
+}

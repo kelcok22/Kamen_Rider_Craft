@@ -1,0 +1,16 @@
+{
+    "name": "混沌石",
+    "icon": "kamenridercraft:contract_chaostone",
+    "category": "kamenridercraft:ride_kamens/items",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)作为大多数假面牛郎系列物品的基础材料"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:ride_kamens/contract_chaostone"
+        }
+    ]
+}

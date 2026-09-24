@@ -1,0 +1,17 @@
+{
+	"name": "多格玛士兵",
+	"icon": "kamenridercraft:super_1_logo",
+	"category": "kamenridercraft:super-1/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dogma_fighter",
+			"text": "登场于:$(li)假面骑士超一号 (1980年, 电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 森林, 沼泽, 红树林沼泽, 积雪的冻原, 沙滩, 沙漠, 针叶林, 风袭丘陵, 丛林, 桦木森林, 积雪针叶林$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (50%)$(li)1个$(l:super_1/items/cyclode_core)转换核心$(/l) (50%)"
+		}
+	]
+}

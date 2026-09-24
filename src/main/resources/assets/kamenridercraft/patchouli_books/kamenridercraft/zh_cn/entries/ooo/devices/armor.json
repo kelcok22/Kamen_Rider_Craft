@@ -1,0 +1,25 @@
+{
+	"name": "OOO装甲",
+	"icon": "kamenridercraft:ooohead",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与OOO系列骑士的变身器配合使用，即可变身成该骑士$(br2)掉落自：$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh(迷失)$(/l)$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)$(li)$(l:ooo/mobs/mezool_mob)梅兹尔$(/l)$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooohead",
+          "text": "$(li)$(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)$(li)$(l:ooo/mobs/powered_up_core)假面骑士Core(力量提升)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)$(li)$(l:ooo/mobs/goda)假面骑士戈达$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/oootroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooolegs"
+		}
+	]
+}

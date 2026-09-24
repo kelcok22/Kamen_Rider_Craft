@@ -1,0 +1,17 @@
+{
+	"name": "地帝驱动器",
+	"icon": "kamenridercraft:orga_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555：失落的乐园 (2003年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/orga)假面骑士地帝"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/orga_driver",
+			"text": "掉落自：$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l)的装备"
+		}
+	]
+}

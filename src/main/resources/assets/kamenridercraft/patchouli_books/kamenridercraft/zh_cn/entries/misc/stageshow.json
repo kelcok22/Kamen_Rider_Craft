@@ -1,0 +1,33 @@
+{
+    "name": "舞台剧",
+    "icon": "minecraft:red_wool",
+    "category": "kamenridercraft:misc/misc",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "title": "舞台剧",
+            "text": "生成地点：森林、平原、热带草原、向日葵平原$(br2)不同骑士系列对应多种箱子战利品表（战利品见下页）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/stageshow.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Wizard战利品：$(li)3-7个 $(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)（x1-2）$(li)1个 $(l:wizard/items/wizard_rings#dark_ring)黑暗Wizard指环$(/l)$(br2)铠武战利品：$(li)3-7个 $(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)（x1-2）$(li)1个 $(l:gaim/items/lockseeds#maja_lockseed)魔蛇锁种$(/l)（83.3%）$(li)1个 $(l:gaim/items/lockseeds#kabi_orange_lockseed)卡比橙锁种$(/l)（16.7%）$(br2)Ghost战利品：$(li)3-7个 $(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（x1-2）$(li)1个 $(l:ghost/items/ghost_eyecons#new_ore_ghost_eyecon)新Ghost眼魂$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "利维斯战利品：$(li)3-7个 $(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（x1-2）$(li)1个 $(l:revice/items/vistamps#blood_vade_vistamp)血腥贝德罪恶印章$(/l)$(br2)极狐战利品：$(li)3-7个 $(l:geats/items/blank_rider_core_id)空白ID核心$(/l)（x1-2）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)大阪极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)福冈极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)名古屋极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)东京极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/arsenal/laser_raise_bazooka)镭射升华巴祖卡$(/l)（11.1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "加布战利品：$(li)3-7个 $(l:gavv/items/blank_gochizo)空白饱藏$(/l)（x1-2）$(li)1个 $(l:gavv/items/gochizo#partea_gochizo)派对司康饱藏$(/l)（20%）$(li)1个 $(lvchizo#达巧克力20:#_ch$()（20%）$(li)1个 $(l:gavv/items/gochizo#mensen_gochizo)人形烧饱藏$(/l)（20%）$(li)1个 $(l:gavv/items/gochizo#takosen_gochizo)章鱼烧饱藏$(/l)（10%）$(li)1个 $(l:gavv/items/gochizo#ningyo_gochizo)人鱼饱藏$(/l)（10%）$(br2)Zeztz战利品：$(li)3-7个 $(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)（x1-2）$(li)1个 $(l:zeztz/items/capsems#charge_capsem)充能梦境胶囊$(/l)"
+        }
+    ]
+}

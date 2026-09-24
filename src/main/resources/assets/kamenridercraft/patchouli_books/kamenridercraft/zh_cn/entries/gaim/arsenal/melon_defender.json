@@ -1,0 +1,16 @@
+{
+	"name": "蜜瓜防盾者",
+	"icon": "kamenridercraft:melon_defender",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/riders/zangetsu)假面骑士斩月$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/melon_defender"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "旋风升华器",
+	"icon": "kamenridercraft:cycloneriser",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士：令和第一世代（2019年，电影）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/ichi_gata)假面骑士1型"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/cycloneriser"
+		}
+	]
+}

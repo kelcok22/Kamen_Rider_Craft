@@ -1,0 +1,16 @@
+{
+	"name": "毒蛇召机",
+	"icon": "kamenridercraft:veno_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 25,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/ouja#ouja)假面骑士王蛇$(/l)使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/veno_visor"
+		}
+	]
+}

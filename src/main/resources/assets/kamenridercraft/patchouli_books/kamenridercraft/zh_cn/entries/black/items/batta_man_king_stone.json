@@ -1,0 +1,19 @@
+{
+	"name": "蝗虫人帝王石",
+	"icon": "kamenridercraft:batta_man_king_stone",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)用于切换Black的$(l:black/riders/black#batta_man)蝗虫人$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:batta_man_king_stone",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:black_rx/mobs/chap)恰普$(/l)"
+		}
+	]
+}

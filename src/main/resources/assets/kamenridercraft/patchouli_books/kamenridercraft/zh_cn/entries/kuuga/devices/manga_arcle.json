@@ -1,0 +1,16 @@
+{
+	"name": "亚古鲁(漫画)",
+	"icon": "kamenridercraft:manga_arcle",
+	"category": "kamenridercraft:kuuga/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士空我 (2015年, 漫画)$(li)假面骑士：超越时间 (2019年, 电影)$(br2)与$(l:kuuga/devices/armor)空我装甲$(/l)一起穿戴，可变身为$(l:kuuga/riders/manga_kuuga)假面骑士空我(漫画)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/manga_arcle"
+		}
+	]
+}

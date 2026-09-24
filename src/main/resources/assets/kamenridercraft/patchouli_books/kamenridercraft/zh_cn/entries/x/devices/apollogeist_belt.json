@@ -1,0 +1,18 @@
+{
+	"name": "阿波罗盖斯特腰带",
+	"icon": "kamenridercraft:apollogeist_belt",
+	"category": "kamenridercraft:x/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "apollogeist_belt",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)与$(l:x/devices/armor)X装甲$(/l)一起穿戴，可变身为$(l:x/riders/apollogeist)阿波罗盖斯特$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:x/apollogeist_belt"
+		}
+	]
+}
