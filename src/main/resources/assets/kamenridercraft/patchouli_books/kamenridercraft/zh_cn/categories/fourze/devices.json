@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:fourze/main",
+    "name": "腰带",
+    "description": "系列角色所使用的变身道具. 可以在铁砧上使用 $(l:fourze/items/astroswitch)空白开关$(/l)修复.",
+    "icon": "kamenridercraft:fourze_driver",
+    "sortnum": 1
+}

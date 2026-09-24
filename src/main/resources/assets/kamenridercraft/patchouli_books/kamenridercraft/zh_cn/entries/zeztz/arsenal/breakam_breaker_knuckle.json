@@ -1,0 +1,16 @@
+{
+	"name": "噬梦破坏器(拳击模式)",
+	"icon": "kamenridercraft:breakam_breaker_knuckle",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)为 $(l:zeztz/riders/lord_five)领主五号$(/l) 专用武器"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_breaker_knuckle"
+		}
+	]
+}

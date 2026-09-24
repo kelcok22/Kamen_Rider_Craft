@@ -1,0 +1,16 @@
+{
+	"name": "音击吹道·烈空",
+	"icon": "kamenridercraft:ongekiflute_rekku",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)由$(l:hibiki/riders/habataki)假面骑士羽击鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekiflute_rekku"
+		}
+	]
+}

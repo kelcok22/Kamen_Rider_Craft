@@ -1,0 +1,21 @@
+{
+	"name": "异类W",
+	"icon": "kamenridercraft:another_w_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_w_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "异类W",
+			"text": "登场于：$(li)假面骑士平成世代FOREVER (2018年，电影)$(br2)通过穿戴$(l:zi_o/devices/another_w_driver)异类W驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)跳跃提升"
+		}
+	]
+}

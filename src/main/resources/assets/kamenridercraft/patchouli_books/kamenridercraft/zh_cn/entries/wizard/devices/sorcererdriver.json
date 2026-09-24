@@ -1,0 +1,17 @@
+{
+	"name": "金魔法师驱动器",
+	"icon": "kamenridercraft:sorcererdriver",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/sorcerer)假面骑士金魔法师$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/sorcererdriver",
+          "text": "掉落自：$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士血腥贝德",
+	"icon": "kamenridercraft:vade_belt",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vade_belt\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士血腥贝德",
+			"text": "登场于：$(li)假面骑士利维斯：最终舞台 (2022年，舞台剧中)$(br2)通过穿戴$(l:revice/devices/vade_belt)血腥贝德腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)跳跃提升 VI$(li)力量 IV"
+		}
+	]
+}

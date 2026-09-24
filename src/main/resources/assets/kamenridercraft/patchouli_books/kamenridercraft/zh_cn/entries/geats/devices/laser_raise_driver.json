@@ -1,0 +1,17 @@
+{
+	"name": "镭射跃动驱动器",
+	"icon": "kamenridercraft:laser_raise_driver",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/ziingazer)假面骑士Ziingazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/laser_raise_driver"
+		}
+	]
+}

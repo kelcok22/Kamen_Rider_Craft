@@ -1,0 +1,16 @@
+{
+	"name": "钻头臂",
+	"icon": "kamenridercraft:drill_arm",
+	"category": "kamenridercraft:v3/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士V3（1973年，电视剧）$(br2)由$(l:v3/riders/riderman)骑士人$(/l)使用$(br2)可当作钻石镐使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/drill_arm"
+		}
+	]
+}

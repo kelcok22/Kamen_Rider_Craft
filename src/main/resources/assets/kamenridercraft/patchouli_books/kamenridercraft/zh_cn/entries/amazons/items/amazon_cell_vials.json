@@ -1,0 +1,58 @@
+{
+	"name": "Amazon细胞试管变体",
+	"icon": "kamenridercraft:omega_amazon_cell_vial",
+	"category": "kamenridercraft:amazons/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "omega_amazon_cell_vial",
+			"text": "用于合成$(l:amazons/items/condorer_cores#condorer_core_omega)Amazon注射器(Omega)$(/l)及$(l:amazons/devices/amazons_driver#amazons_driver_omega)Amazons驱动器(Omega)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:omega_amazon_cell_vial",
+			"text": "通过在$(l:misc/blocks/machine_blocks#amazon_cell_mutator)亚马逊细胞突变器$(/l)上使用$(l:amazons/items/amazon_cell_vial)Amazon细胞试管$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alpha_amazon_cell_vial",
+			"title": "Amazon细胞试管(Alpha)",
+			"text": "用于合成$(l:amazons/items/condorer_cores#condorer_core_alpha)Amazon驱动核心(Alpha)$(/l)及$(l:amazons/devices/amazons_driver#amazons_driver_alpha)Amazons驱动器(Alpha)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alpha_amazon_cell_vial",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#amazon_cell_mutator)亚马逊细胞突变器$(/l)上使用$(l:amazons/items/amazon_cell_vial)Amazon细胞试管$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sigma_amazon_cell_vial",
+			"title": "Amazon细胞试管(Sigma)",
+			"text": "用于合成$(l:amazons/items/condorer_cores#condorer_core_sigma)Amazon注射器(Sigma)$(/l)及$(l:amazons/devices/amazons_driver#amazons_driver_sigma)Amazons驱动器(Sigma)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sigma_amazon_cell_vial",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#amazon_cell_mutator)亚马逊细胞突变器$(/l)上使用$(l:amazons/items/amazon_cell_vial)Amazon细胞试管$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazon_cell_vial",
+			"title": "Amazon细胞试管(Neo)",
+			"text": "用于合成$(l:amazons/items/amazon_injectors#amazon_injector_neo)Amazon注射器(新种)$(/l)、$(l:amazons/items/amazon_injectors#amazon_injector_new_omega)Amazon注射器(新Omega)$(/l)及$(l:amazons/items/amazon_injectors#amazon_injector_neo_alpha)Amazon注射器(Neo Alpha)$(/l)，并用于合成$(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo)Neo Amazons驱动器(新种)$(/l)、$(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_omega)Neo Amazons驱动器(新Omega)$(/l)及$(l:amazons/devices/neo_amazons_driver#neo_amazons_driver_neo_alpha)Neo Amazons驱动器(Neo Alpha)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neo_amazon_cell_vial",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#amazon_cell_mutator)亚马逊细胞突变器$(/l)上使用$(l:amazons/items/amazon_cell_vial)Amazon细胞试管$(/l)获取"
+		}
+	]
+}

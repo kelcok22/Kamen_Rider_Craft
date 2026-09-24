@@ -1,0 +1,16 @@
+{
+	"name": "盖亚台风腰带",
+	"icon": "kamenridercraft:gaia_belt",
+	"category": "kamenridercraft:ichigo/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Eve -假面骑士盖亚-（2004年，小说）$(br2)与$(l:ichigo/devices/armor)一号装甲$(/l)一起穿戴，可变身为$(l:ichigo/riders/gaia)假面骑士盖亚"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/gaia_belt"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "音击棒·绿胜",
+	"icon": "kamenridercraft:ongekibo_rokushou",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/riders/eiki)假面骑士锐鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekibo_rokushou"
+		}
+	]
+}

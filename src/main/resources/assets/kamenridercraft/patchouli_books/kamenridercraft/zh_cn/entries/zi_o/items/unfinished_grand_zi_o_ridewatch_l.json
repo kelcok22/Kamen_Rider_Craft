@@ -1,0 +1,16 @@
+{
+	"name": "未完成的崇皇时王骑士表盘(左)",
+	"icon": "kamenridercraft:unfinished_grand_zi_o_ridewatch_l",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成$(l:zi_o/items/ridewatches#grand_zi_o_ridewatch)崇皇时王骑士表盘$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/unfinished_grand_zi_o_ridewatch_l"
+		}
+	]
+}

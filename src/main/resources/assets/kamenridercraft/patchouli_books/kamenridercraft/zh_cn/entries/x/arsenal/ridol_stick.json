@@ -1,0 +1,16 @@
+{
+  "name": "莱德尔",
+	"icon": "kamenridercraft:ridol_stick",
+	"category": "kamenridercraft:x/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)由$(l:x/riders/x)假面骑士X$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/ridol_stick"
+		}
+	]
+}

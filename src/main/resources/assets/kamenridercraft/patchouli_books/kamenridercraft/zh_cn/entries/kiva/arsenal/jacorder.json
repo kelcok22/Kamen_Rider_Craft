@@ -1,0 +1,16 @@
+{
+	"name": "蛇竖笛剑",
+	"icon": "kamenridercraft:jacorder",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由 $(l:kiva/riders/saga)假面骑士蛇牙$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/jacorder"
+		}
+	]
+}

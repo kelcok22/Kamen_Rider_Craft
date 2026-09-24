@@ -1,0 +1,50 @@
+{
+	"name": "梅嘉赫克斯",
+	"icon": "kamenridercraft:megahex",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "megahex",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:gaim/items/megahex_kiwami)梅嘉赫克斯核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "梅嘉赫克斯",
+			"text": "登场于：$(li)假面骑士×假面骑士 驰骑&铠武：电影大战全速前进 (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/megahex)梅嘉赫克斯$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)水下呼吸$(li)急迫 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiwami",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_kiwami\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "梅嘉赫克斯 (极武装)",
+			"text": "持有 $(l:gaim/items/lockseeds#kiwami_lockseed)极武锁种$(/l) 时，通过穿戴$(l:gaim/items/megahex_kiwami)梅嘉赫克斯核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "梅嘉赫克斯",
+			"text": "登场于：$(li)假面骑士×假面骑士 驰骑&铠武：电影大战全速前进 (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/megahex)梅嘉赫克斯$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 IV$(li)抗火$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zzz",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:megahex\",components:{custom_data:{slot_tex1:\"kamenridercraft:megahex_viral_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "ZZZ梅嘉赫克斯",
+			"text": "通过使用$(l:drive/items/viral_cores#megahex_viral_core)梅嘉赫克斯病毒核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "梅嘉赫克斯",
+			"text": "登场于：$(li)假面骑士×假面骑士 驰骑&铠武：电影大战全速前进 (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/megahex)梅嘉赫克斯$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 IV$(li)抗火$(li)力量 III$(li)飞行"
+		}
+	]
+}

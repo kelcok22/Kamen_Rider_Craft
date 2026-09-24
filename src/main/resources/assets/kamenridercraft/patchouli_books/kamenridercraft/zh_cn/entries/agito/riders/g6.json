@@ -1,0 +1,21 @@
+{
+    "name": "假面骑士G6",
+    "icon": "kamenridercraft:g6",
+    "category": "kamenridercraft:agito/riders",
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:g6_belt\",Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": ""
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士G6",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)通过穿戴 $(l:agito/devices/g_buckle#g6_belt)G代扣$(/l) 进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)滑翔 II$(li)力量 II"
+        }
+    ]
+}

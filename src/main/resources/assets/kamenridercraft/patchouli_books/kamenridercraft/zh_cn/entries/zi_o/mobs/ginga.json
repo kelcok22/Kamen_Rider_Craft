@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士银河",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ginga",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#ginga_boss_block)银河BOSS召唤方块$(/l)召唤而来"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)生命值: 100$(br2)特殊机制：只能在白天被攻击$(br2)掉落$(li)2-4个$(l:zi_o/items/blank_watch)空白骑士表盘$(/l)$(li)1个$(l:zi_o/items/miridewatches#ginga_miridewatch)银河未来骑士表盘$(/l)$(li)1个$(l:zi_o/items/ginga_scope)银河地球仪$(/l)"
+		}
+	]
+}

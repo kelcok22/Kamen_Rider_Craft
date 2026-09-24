@@ -1,0 +1,17 @@
+{
+	"name": "时间绝望枪(镰模式)",
+	"icon": "kamenridercraft:zikan_despear_kama",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由$(l:zi_o/riders/woz)假面骑士沃兹$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zikan_despear_kama",
+          "text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)的装备"
+		}
+	]
+}

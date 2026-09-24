@@ -1,0 +1,17 @@
+{
+	"name": "夜霸",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:night_rogue",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#night_rogue_boss_block)夜霸BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/fullbottles#lost_bat_full_bottle)迷失蝙蝠满装瓶罐$(/l)$(li)1个$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)"
+		}
+	]
+}

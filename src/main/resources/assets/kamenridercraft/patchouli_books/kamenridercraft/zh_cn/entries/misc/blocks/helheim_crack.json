@@ -1,0 +1,18 @@
+{
+	"name": "海姆冥界裂缝",
+	"icon": "kamenridercraft:helheim_crack",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_crack",
+			"text": "穿过此方块可前往 $(l:gaim/dimensions/helheim)海姆冥界$(/l)$(br2)生成位置：竹林、桦木森林、黑森林、繁花森林、森林、雪林、丛林、红树林沼泽、原始桦木森林、平原、稀疏丛林、向日葵平原、沼泽、$(l:gaim/dimensions/helheim)海姆冥界$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "可使用 $(l:gaim/arsenal/sid_lockseed)Sid锁种$(/l)手动开启"
+		}
+	]
+}

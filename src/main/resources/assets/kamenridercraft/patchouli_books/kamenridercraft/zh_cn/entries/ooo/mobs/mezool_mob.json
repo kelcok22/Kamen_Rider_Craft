@@ -1,0 +1,17 @@
+{
+	"name": "梅兹尔",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:mezool_mob",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2%的几率从$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)进化而来$(br2)掉落$(li)3-5个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/cellmedal)细胞硬币$(/l) (90%)$(li)1个$(l:ooo/devices/greeed_belt#greeed_blet_mezool)贪欲者腰带(梅兹尔)$(/l) (10%)$(li)1个$(l:ooo/items/core_medals#shachi_medal)虎鲸核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#unagi_medal)电鳗核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#tako_medal)章鱼核心硬币$(/l) (33.3%)"
+		}
+	]
+}

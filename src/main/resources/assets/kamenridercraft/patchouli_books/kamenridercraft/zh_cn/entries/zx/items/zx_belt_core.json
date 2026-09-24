@@ -1,0 +1,19 @@
+{
+	"name": "ZX腰带核心",
+	"icon": "kamenridercraft:zx_belt_core",
+	"category": "kamenridercraft:zx/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)10号诞生！假面骑士全员集合!! (1984年, 电视特别节目)$(br2)用于制作假面骑士ZX的$(l:zx/devices/zx_belt)ZX腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zx_belt_core",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:zx/mobs/combat_roid)战斗洛伊多$(/l)"
+		}
+	]
+}

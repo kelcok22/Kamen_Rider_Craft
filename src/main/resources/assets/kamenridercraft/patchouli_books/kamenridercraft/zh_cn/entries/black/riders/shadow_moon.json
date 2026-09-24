@@ -1,0 +1,64 @@
+{
+	"name": "影月",
+	"icon": "kamenridercraft:green_king_stone",
+	"category": "kamenridercraft:black/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "shadow_moon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shadow_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:green_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:black/items/green_king_stone)绿色帝王石$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "影月",
+			"text": "登场于：$(li)假面骑士Black (1987年，电视剧)$(br2)通过穿戴$(l:black/devices/shadow_charger)帝王石(影月)$(/l)进行变身$(br2)状态效果：$(li)黑暗光环$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "red_shadow_moon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shadow_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:creation_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "创世王",
+			"text": "通过使用$(l:black/items/creation_king_stone)帝王石(红色影月)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "影月",
+			"text": "登场于：$(li)假面骑士3D战斗  Ganbaride (2014年，3D电影)$(br2)通过穿戴$(l:black/devices/shadow_charger)帝王石(影月)$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "another_shadow_moon",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shadow_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:another_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "另类影月",
+        "text": "通过使用$(l:black/items/another_king_stone)另类帝王石$(/l)进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "影月",
+        "text": "登场于：$(li)After 0 (2002年，S.I.C. 英雄传说)$(br2)通过穿戴$(l:black/devices/shadow_charger)帝王石(影月)$(/l)进行变身$(br2)状态效果：$(li)急迫 II$(li)跳跃提升 V$(li)力量 IV"
+      },
+		{
+			"type": "patchouli:entity",
+			"anchor": "hajime_sorayama",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shadow_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:green_king_stone_hajime_sorayama\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空山基版绘",
+			"text": "通过使用$(l:black/items/green_king_stone_hajime_sorayama)绿色帝王石(空山基版绘)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "影月",
+			"text": "登场于：$(li)Medicom Toy 25周年展览 (2021年，展览)$(br2)通过穿戴$(l:black/devices/shadow_charger)帝王石(影月)$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		}
+	]
+}

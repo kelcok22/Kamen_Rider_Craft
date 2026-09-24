@@ -1,0 +1,17 @@
+{
+	"name": "假面舞会掺杂体",
+	"icon": "kamenridercraft:w_logo",
+	"category": "kamenridercraft:w/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:masquerade",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：平原、向日葵平原、桦木森林、黑森林、$(l:misc/city/centers#fuuto_tower)风都塔$(/l)周边$(br2)掉落$(li)2-4个$(l:w/items/gaiamemory)记忆体碎片$(/l)$(li)1个$(l:w/items/gaia_memories#cyclone_memory)疾风记忆体$(/l) (45%)$(li)1个$(l:w/items/gaia_memories#joker_memory)王牌记忆体$(/l) (45%)$(li)1个$(l:w/items/dopant_memories#masquerade_memory)化装舞会记忆体$(/l) (10%)$(li)1个$(l:misc/blocks/boss_blocks#taboo_boss_block)禁忌掺杂体BOSS召唤方块$(/l) (20%)$(br2)进化$(li)$(l:w/mobs/nazca_dopant)纳斯卡掺杂体$(/l) (2.5%)$(li)$(l:w/mobs/claydoll_dopant)黏土人偶掺杂体$(/l) (2.5%)$(li)$(l:w/mobs/smilodon_dopant)剑齿虎掺杂体$(/l) (2.5%)$(li)$(l:w/mobs/weather_dopant)天气掺杂体$(/l) (2.5%)"
+		}
+	]
+}

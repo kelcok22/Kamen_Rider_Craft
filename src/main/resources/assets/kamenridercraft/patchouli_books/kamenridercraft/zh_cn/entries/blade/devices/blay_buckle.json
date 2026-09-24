@@ -1,0 +1,31 @@
+{
+	"name": "blay带扣",
+	"icon": "kamenridercraft:blay_buckle",
+	"category": "kamenridercraft:blade/devices",
+	"sortnum": 1,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "anchor": "blay_buckle",
+        "text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)与$(l:blade/devices/armor)剑装甲$(/l)一起穿戴，可变身为$(l:blade/riders/blade)假面骑士剑"
+      },
+      {
+        "type": "patchouli:crafting",
+        "title": " ",
+        "recipe": "kamenridercraft:blade/blay_buckle"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blay_buckle_fake",
+        "title": "blay带扣",
+        "text": "登场于：$(li)假面骑士剑：剑VS剑 (2004年，超战斗DVD)$(br2)与$(l:blade/devices/armor)剑装甲$(/l)一同使用，可变身为$(l:blade/riders/fake_blade)假面骑士剑(假)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blay_buckle_fake",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      }
+	]
+}

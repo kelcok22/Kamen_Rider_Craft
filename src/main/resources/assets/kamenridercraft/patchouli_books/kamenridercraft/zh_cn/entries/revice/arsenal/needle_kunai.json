@@ -1,0 +1,16 @@
+{
+	"name": "针刺苦无",
+	"icon": "kamenridercraft:needle_kunai",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)由 $(l:revice/riders/aguilera)假面骑士阿基蕾拉$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/needle_kunai"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "异类Diend",
+  "icon": "kamenridercraft:another_diendriver",
+  "category": "kamenridercraft:zi_o/riders",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_diendriver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": " ",
+      "text": ""
+    },
+    {
+      "type": "patchouli:text",
+      "title": "异类Diend",
+      "text": "登场于:$(li)假面骑士时王 NEXT TIME：盖茨王权（2020年，V-Cinema电影）$(br2)通过穿戴$(l:zi_o/devices/another_diend_belt)异类Diend腰带$(/l)进行变身$(br2)状态效果:$(li)速度 IV$(li)抗性提升 III$(li)急迫 III$(li)跳跃提升 IV$(li)力量 IV"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "牙血鬼灭杀者",
+	"icon": "kamenridercraft:fangire_slayer",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由蓝天会使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/fangire_slayer"
+		}
+	]
+}

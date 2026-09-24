@@ -1,0 +1,16 @@
+{
+	"name": "飞鹰加特林",
+	"icon": "kamenridercraft:hawk_gatlinger",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由Build的$(l:build/riders/build#hawkgatling)飞鹰加特林$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/hawk_gatlinger"
+		}
+	]
+}

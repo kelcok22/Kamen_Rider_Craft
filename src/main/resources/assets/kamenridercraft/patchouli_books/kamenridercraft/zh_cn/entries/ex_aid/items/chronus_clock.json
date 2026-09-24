@@ -1,0 +1,16 @@
+{
+    "name": "克罗诺兹之钟",
+    "icon": "kamenridercraft:chronus_clock",
+    "category": "kamenridercraft:ex_aid/items",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:misc/blocks/boss_blocks#cronus_boss_block)cronus BOSS召唤方块$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:exaid/chronus_clock"
+        }
+    ]
+}

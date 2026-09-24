@@ -1,0 +1,17 @@
+{
+  "name": "格罗塔镰刀",
+  "icon": "kamenridercraft:glotta_scythe",
+  "category": "kamenridercraft:gavv/arsenal",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)使用"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gavv/glotta_scythe",
+      "text": "掉落自：$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)的装备"
+    }
+  ]
+}

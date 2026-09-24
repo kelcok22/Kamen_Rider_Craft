@@ -1,0 +1,16 @@
+{
+	"name": "Faiz手机(射击模式)",
+	"icon": "kamenridercraft:faiz_phone_pointer",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)由Faiz的$(l:faiz/riders/faiz#faiz)基础形态$(/l)和$(l:faiz/riders/faiz#axel)加速形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_phone_pointer"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "暗黑剑月暗",
+	"icon": "kamenridercraft:ankokuken_kurayami",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由$(l:saber/riders/calibur)假面骑士王剑$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/ankokuken_kurayami",
+          "text": "掉落自：$(li)$(l:saber/mobs/calibur)假面骑士王剑$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,176 @@
+{
+	"name": "假面骑士盖茨",
+	"icon": "kamenridercraft:ziku_driver_geiz",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "geiz",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#geiz_ridewatch)盖茨骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "faiz",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:faiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Faiz装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#faiz_ridewatch)Faiz骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)力量 II$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Wizard装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#wizard_ridewatch)Wizard骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)抗火$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Drive装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#drive_ridewatch)Drive骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)力量 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ghost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:ghost_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ghost装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#ghost_ridewatch)Ghost骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)力量 II$(li)灵体漂浮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ex_aid",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:ex_aid_ridewatch_geiz\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Ex-Aid装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#ex_aid_ridewatch)Ex-Aid骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)力量 II$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "genm",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:genm_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "幻梦装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#genm_ridewatch)幻梦骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)急迫 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "build",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:build_ridewatch_geiz\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Build装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#build_ridewatch)Build骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)急迫$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "revive_goretsu",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_revive_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "盖茨复活者 刚烈",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#geiz_revive_ridewatch)盖茨复活者骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)跳跃提升 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "revive_shippu",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_revive_shippu_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "盖茨复活者 疾风",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#geiz_revive_ridewatch)盖茨复活者骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)跳跃提升 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "majesty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:geiz_majesty_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "王权盖茨",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#geiz_majesty_ridewatch)盖茨王权骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨王权 (2020年，V-Cinema电影)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)Shift键点击骑士表盘可召唤二骑武器（可通过副手选择形态）$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 III$(li)饱和$(li)抗火$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bibill",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ziku_driver_geiz\",components:{custom_data:{slot_tex1:\"kamenridercraft:bibiru_geiz_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胆小鬼装甲",
+			"text": "通过使用 $(l:zi_o/items/ridewatches#bibiru_geiz_ridewatch)惊悚Geiz骑士表盘$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士盖茨",
+			"text": "登场于：$(li)假面骑士BiBiBi的胆小鬼盖茨 (2019年，超级战斗影像)$(br2)通过穿戴$(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器$(/l)进行变身$(br2)状态效果：$(li)速度IV$(li)急迫 III$(li)力量 II"
+		}
+	]
+}

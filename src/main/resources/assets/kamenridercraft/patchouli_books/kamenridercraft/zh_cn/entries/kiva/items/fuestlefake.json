@@ -1,0 +1,19 @@
+{
+	"name": "假禁断之笛",
+	"icon": "kamenridercraft:fuestlefake",
+	"category": "kamenridercraft:kiva/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用作制作Ixa相关物品的基础材料"
+		},
+        {
+          "type": "kamenridercraft:fuestle_replicator",
+          "base": "kamenridercraft:fuestle",
+          "modifier": "minecraft:iron_nugget",
+          "result": "kamenridercraft:fuestlefake",
+          "text": "掉落自：$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		}
+	]
+}

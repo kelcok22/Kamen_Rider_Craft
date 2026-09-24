@@ -1,0 +1,162 @@
+{
+	"name": "骑士车票",
+	"icon": "kamenridercraft:rider_ticket",
+	"category": "kamenridercraft:den_o/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于制作电王的$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)$(br2)用于切换电王的$(l:den_o/riders/den_o#plat)月台形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket",
+			"text": "掉落自：$(li)$(l:den_o/mobs/new_mole_imagin)新生异魔神$(/l)$(li)$(l:den_o/mobs/new_mole_imagin_sand)新生异魔神(沙)$(/l)$(li)$(l:den_o/mobs/gaoh)假面骑士牙王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_sword",
+			"title": "骑士车票(桃塔罗斯)",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#sword)圣剑形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_sword",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/denliner_gouka)电班列 业火$(/l) 中找到$(br2)掉落自：$(li)$(l:den_o/mobs/momotaros)桃塔罗斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_rod",
+			"title": "骑士车票(浦塔罗斯)",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#rod)圣竿形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_rod",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/denliner_isurugi)电班列 石动$(/l) 中找到$(br2)掉落自：$(li)$(l:den_o/mobs/urataros)浦塔罗斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_ax",
+			"title": "骑士车票(金塔罗斯)",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#ax)圣斧形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_ax",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/denliner_rekkou)电班列 裂光$(/l) 中找到$(br2)掉落自：$(li)$(l:den_o/mobs/kintaros)金塔罗斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_gun",
+			"title": "骑士车票(龙塔罗斯)",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#gun)圣枪形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_gun",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/denliner_ikazuchi)电班列 电雷$(/l) 中找到$(br2)掉落自：$(li)$(l:den_o/mobs/ryutaros)龙塔罗斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_wing",
+			"title": "骑士车票(齐格)",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#wing)圣翼形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_wing",
+			"title": " ",
+			"text": "可在电班列 业火的 $(l:den_o/structures/denliner_gouka#sieg_carriage)齐格车厢$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_nega",
+			"title": "骑士车票(负塔罗斯)",
+			"text": "登场于：$(li)假面骑士电王&月骑：巅峰警察 (2008年，电影)$(br2)用于制作负电王的$(l:den_o/devices/den_o_belt#nega_den_o_belt)电王腰带(负电王)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_nega",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/negaliner)负电班列$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_yuuki",
+			"title": "骑士车票(幽灵异魔神)",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)用于制作幽汽的$(l:den_o/devices/yuuki_belt)幽汽腰带$(/l)$(br2)用于切换幽汽的$(l:den_o/riders/yuuki#skull)骷髅形态$(/l) 和 $(l:den_o/riders/yuuki#hijack)劫持形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_yuuki",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/ghostliner)幽灵列车$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_g",
+			"title": "骑士车票(夏娃)",
+			"text": "登场于：$(li)超级电王三部曲：EPISODE YELLOW 宝藏DE-End海盗 (2010年，电影)$(br2)用于制作G电王的$(l:den_o/devices/g_den_o_belt)G电王腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_g",
+			"title": " ",
+			"text": "可在电班列 业火内的$(l:den_o/structures/denliner_gouka#g_den_o_carriage)G电王车厢$(/l)中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_gaoh",
+			"title": "骑士车票(牙王)",
+			"text": "登场于：$(li)假面骑士电王：老子，诞生！ (2007年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_gaoh",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:den_o/mobs/gaoh)假面骑士牙王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_strike",
+			"title": "骑士车票(泰迪)",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)用于制作新电王的$(l:den_o/devices/new_den_o_belt)新·电王腰带$(/l)$(br2)用于切换新电王的$(l:den_o/riders/new_den_o#strike)强袭形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_strike",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/new_denliner)新电班列$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider_ticket_pudding",
+			"title": "骑士车票(布丁)",
+			"text": "登场于：$(li)异魔神动画3 (2010年，OVA系列)$(br2)用于切换电王的$(l:den_o/riders/den_o#pudding)布丁形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider_ticket_pudding",
+			"title": " ",
+			"text": "可在 $(l:den_o/structures/denliner_isurugi)电班列 石动$(/l) 中找到"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "禁忌掺杂体",
+	"icon": "kamenridercraft:taboo_memory",
+	"category": "kamenridercraft:w/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gaia_driver_taboo\",Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "禁忌掺杂体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/gaia_driver#gaia_driver_taboo)盖亚驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)力量 II$(li)飞行$(br2)专属技能：$(li)大炮"
+		}
+	]
+}

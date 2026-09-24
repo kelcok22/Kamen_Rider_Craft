@@ -1,0 +1,21 @@
+{
+	"name": "浮士德基地",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "浮士德基地",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)生成群系：森林、红树林沼泽、平原、热带草原、热带草原高原、向日葵平原、沼泽、风袭热带草原$(br2)包含1个 $(l:misc/blocks/boss_blocks#night_rogue_boss_block)夜霸BOSS召唤方块$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/rogue_base.png"
+			],
+			"title": " "
+		}
+	]
+}

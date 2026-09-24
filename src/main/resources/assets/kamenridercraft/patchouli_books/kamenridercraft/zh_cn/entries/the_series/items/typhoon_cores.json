@@ -1,0 +1,58 @@
+{
+	"name": "台风核心",
+	"icon": "kamenridercraft:the_typhoon_core",
+	"category": "kamenridercraft:the_series/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_core",
+			"text": "登场于：$(li)假面骑士 THE FIRST (2005年，电影)$(br2)用于合成假面骑士1的$(l:the_series/devices/the_typhoon#the_typhoon_ichigo)台风腰带$(/l)$(br2)用于切换假面骑士1号的$(l:the_series/riders/1)基础形态(The First)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_typhoon_core",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_next_typhoon_core",
+			"title": "台风核心(The Next)",
+			"text": "登场于：$(li)假面骑士 THE NEXT (2007年，电影)$(br2)用于切换假面骑士1的$(l:the_series/riders/1#the_next)基础形态(The Next)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_next_typhoon_core",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_typhoon_core_nigo",
+			"title": "台风核心(2)",
+			"text": "登场于：$(li)假面骑士 THE FIRST (2005年，电影)$(br2)用于合成假面骑士2的$(l:the_series/devices/the_typhoon#the_typhoon_nigo)台风腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_typhoon_core_nigo",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_double_typhoon_core",
+			"title": "双重台风核心",
+			"text": "登场于：$(li)假面骑士 THE NEXT (2007年，电影)$(br2)用于合成假面骑士V3的$(l:the_series/devices/the_double_typhoon)双重台风腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_double_typhoon_core",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

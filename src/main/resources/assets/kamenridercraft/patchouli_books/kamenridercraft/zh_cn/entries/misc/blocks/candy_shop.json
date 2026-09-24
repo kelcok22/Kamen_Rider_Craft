@@ -1,0 +1,16 @@
+{
+	"name": "糖果售卖柜台",
+	"icon": "kamenridercraft:candy_shop",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 47,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用作$(l:misc/villagers#candyshop_villager)糖果供应商$(/l)的职业方块"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/candy_shop"
+		}
+	]
+}

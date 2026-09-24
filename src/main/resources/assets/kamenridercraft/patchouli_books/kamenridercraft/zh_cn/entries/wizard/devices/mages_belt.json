@@ -1,0 +1,63 @@
+{
+	"name": "Mage腰带",
+	"icon": "kamenridercraft:magewizardriver",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "magewizardriver",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#amber)假面骑士Mage"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/magewizardriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magewizardriver_b",
+			"title": "Mage腰带(蓝Mage)",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#blue)假面骑士Mage"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/magewizardriver_b"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magewizardriver_g",
+			"title": "Mage腰带(绿Mage)",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#green)假面骑士Mage"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/magewizardriver_g"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magewizardriver_foot_soldiers",
+			"title": "Mage腰带(近卫队士兵)",
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage_imperial_guard)假面骑士Mage（近卫队士兵）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magewizardriver_foot_soldiers",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/mobs/mage_footsoldier)近卫队士兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magewizardriver_captain",
+			"title": "Mage腰带(近卫队队长)",
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage_imperial_captain)假面骑士Mage（近卫队队长）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magewizardriver_captain",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/mobs/mage_captain)近卫队队长$(/l)"
+		}
+	]
+}

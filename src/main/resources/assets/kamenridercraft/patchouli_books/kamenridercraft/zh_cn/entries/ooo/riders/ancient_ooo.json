@@ -1,0 +1,49 @@
+{
+	"name": "古代王OOO",
+	"icon": "kamenridercraft:ancient_ooodriver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ooodriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ancient_taka_medal\",slot_tex2:\"kamenridercraft:ancient_tora_medal\",slot_tex3:\"kamenridercraft:ancient_batta_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "古代鹰虎蝗联组",
+			"text": "通过使用 $(l:ooo/items/core_medals#ancient_taka_medal)古代鹰核心硬币$(/l)、$(l:ooo/items/core_medals#ancient_tora_medal)古代虎核心硬币$(/l) 及 $(l:ooo/items/core_medals#ancient_batta_medal)古代蝗核心硬币$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "古代王OOO",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)进行变身$(br2)古代鹰核心硬币效果：$(li)夜视$(li)力量 VII$(li)飞行 VII$(br2)古代虎核心硬币效果：$(li)急迫 II$(li)抗性提升 IV$(br2)古代蝗核心硬币效果：$(li)速度 IV$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ancient_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:ancient_tora_medal\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"offset": 0.1,
+			"name": "古代虎形态",
+			"text": "通过使用 $(l:ooo/items/core_medals#ancient_tora_medal)古代虎核心硬币$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "古代王OOO",
+			"text": "登场于：$(li)假面骑士OOO 10周年：复活的核心硬币 (2022年，V-Cinema电影)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO驱动器(古代王)$(/l)进行变身$(br2)状态效果：$(li)夜视$(li)力量 VII$(li)飞行 VII$(li)急迫 II$(li)抗性提升 IV$(li)速度 IV$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "greeed_absorption",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ancient_ooodriver\",components:{custom_data:{slot_tex2:\"kamenridercraft:greeed_absorption_core\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "贪欲者吸收态",
+			"text": "通过使用 $(l:ooo/items/greeed_absorption_core)古代王的扫描仪$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "古代王OOO",
+			"text": "登场于：$(li)假面骑士OOO 10周年：复活的核心硬币 (2022年，V-Cinema电影)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO驱动器(古代王)$(/l)进行变身$(br2)状态效果：$(li)夜视$(li)力量 VII$(li)飞行 VII$(li)速度 IV$(li)跳跃提升 III"
+		}
+	]
+}

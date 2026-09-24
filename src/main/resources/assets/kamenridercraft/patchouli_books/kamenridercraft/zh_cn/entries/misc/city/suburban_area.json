@@ -1,0 +1,56 @@
+{
+	"name": "郊区建筑",
+	"icon": "kamenridercraft:woz_time_majin_ridewatch",
+	"category": "kamenridercraft:misc/city",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "郊区由较小的低层建筑组成。$(br2)本列表将详细介绍特定骑士系列中的部分建筑。"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/houses.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/house_1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/house_3.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/park_1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/playground_1.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/shop_warehouse.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cous_coussier",
+			"title": "多国料理餐厅",
+			"text": "登场作品：$(li)《假面骑士OOO》（2010年，电视剧）$(br2)战利品：$(li)1个$(l:misc/items/music_discs#anything_goes_music_disc)《Anything Goes!》音乐唱片$(/l)（箱子中）"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+			  "kamenridercraft:patchouli_books/kamenridercraft/images/cous_coussier.png",
+			  "kamenridercraft:patchouli_books/kamenridercraft/images/cous_coussier_2.png",
+              "kamenridercraft:patchouli_books/kamenridercraft/images/cous_coussier_3.png"
+			],
+			"title": " "
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "fantastic_bookstore_kamiyama",
+        "title": "魔幻书屋神山",
+        "text": "登场作品：$(li)《假面骑士圣刃》（2020年，电视剧）$(br2)战利品：$(li)1个$(l:misc/items/music_discs#almighty_music_disc)《ALMIGHTY ~ Kamen no Yakusoku》音乐唱片$(/l)、1个$(l:saber/items/wonder_story)奇幻故事书$(/l)（展示处）$(li)1个$(l:saber/arsenal/book_gate_wonder_ride_book)书之门 奇幻驾驭书$(/l)（“隐藏”门后）"
+      },
+      {
+        "type": "patchouli:image",
+        "border": true,
+        "images": [
+          "kamenridercraft:patchouli_books/kamenridercraft/images/fantastic_bookstore_kamiyama.png",
+          "kamenridercraft:patchouli_books/kamenridercraft/images/fantastic_bookstore_kamiyama_2.png"
+        ],
+        "title": " "
+      }
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "帝王石",
+	"icon": "kamenridercraft:vital_charger",
+	"category": "kamenridercraft:black/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)与$(l:black/devices/armor)Black装甲$(/l)一起穿戴，可变身为$(l:black/riders/black)假面骑士Black"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black/vital_charger"
+		}
+	]
+}

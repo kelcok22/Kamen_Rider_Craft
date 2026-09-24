@@ -1,0 +1,21 @@
+{
+    "name": "假面骑士阿形",
+    "icon": "kamenridercraft:chaos_driver_agata",
+    "category": "kamenridercraft:ride_kamens/riders",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chaos_driver_agata\",Count:1b},{id:\"kamenridercraft:ride_kamens_legs\",Count:1b},{id:\"kamenridercraft:ride_kamens_troso\",Count:1b},{id:\"kamenridercraft:ride_kamens_head\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": ""
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士阿形",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)通过穿戴$(l:ride_kamens/devices/chaos_driver#chaos_driver_agata)混沌驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+        }
+    ]
+}

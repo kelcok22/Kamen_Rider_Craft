@@ -1,0 +1,78 @@
+{
+	"name": "假面骑士Live",
+	"icon": "kamenridercraft:two_sidriver_live",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "bat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:two_sidriver_live\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蝙蝠基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#bat_vistamp)蝙蝠罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Live",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/two_sidriver#two_sidriver_live)双开驱动器(Live)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:two_sidriver_live\",components:{custom_data:{slot_tex1:\"kamenridercraft:jackal_vistamp_live\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胡狼基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#jackal_vistamp)胡狼罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Live",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/two_sidriver#two_sidriver_live)双开驱动器(Live)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "holy_live",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:two_sidriver_live\",components:{custom_data:{slot_tex1:\"kamenridercraft:holy_wing_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "神圣莱伊布",
+			"text": "通过使用 $(l:revice/items/vistamps#holy_wing_vistamp)神圣之翼罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Live",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/two_sidriver#two_sidriver_live)双开驱动器(Live)$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)力量 IV$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "evilytylive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:two_sidriver_live\",components:{custom_data:{slot_tex1:\"kamenridercraft:perfect_wing_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "完美之翼",
+			"text": "通过使用 $(l:revice/items/vistamps#perfect_wing_vistamp)完美之翼罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Live",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/two_sidriver#two_sidriver_live)双开驱动器(Live)$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)力量 VI$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "marvelous",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:revice_driver_live\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊奇Live",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Live",
+			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver_live)利维斯驱动器(Live)$(/l)进行变身$(br2)状态效果：$(li)速度 VII$(li)抗性提升 IV$(li)夜视$(li)力量 VII"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "加鲁鲁",
+  "icon": "kamenridercraft:kiva_logo",
+  "category": "kamenridercraft:kiva/mobs",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:garulu",
+      "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br)生命值：40"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "通过 $(l:kiva/arsenal/garulu_statue)加鲁鲁雕像$(/l) 召唤$(br2)会跟随玩家并协助战斗"
+    }
+  ]
+}

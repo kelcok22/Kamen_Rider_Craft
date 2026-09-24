@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:geats/main",
+    "name": "武器",
+    "description": "极狐系列骑士所使用的武器和道具. 可以在铁砧上使用 $(l:geats/items/blank_rider_core_id)空白骑士核心ID$(/l)修复.",
+    "icon": "kamenridercraft:magnum_shooter_40x",
+    "sortnum": 3
+}

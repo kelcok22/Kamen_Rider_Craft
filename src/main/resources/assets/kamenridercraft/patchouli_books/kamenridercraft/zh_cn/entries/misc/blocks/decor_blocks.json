@@ -1,0 +1,986 @@
+{
+	"name": "装饰方块",
+	"icon": "kamenridercraft:planks_light_blue",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 999,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "假面骑士模组还包含多种装饰方块，其中许多用于模组内的各类结构建造。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "kuuga_tomb",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_tomb",
+			"text": "可在$(l:kuuga/structures/kuuga_tomb)空我遗迹$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "overlord_oopart",
+			"link_recipe": true,
+			"item": "kamenridercraft:overlord_oopart",
+			"text": "可在$(l:agito/structures/overlord_oopart)尊者文明遗迹$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "overlord_oopart2",
+			"link_recipe": true,
+			"item": "kamenridercraft:overlord_oopart2",
+			"text": "可在$(l:agito/structures/overlord_oopart)尊者文明遗迹$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "glass_ryuki",
+			"link_recipe": true,
+			"item": "kamenridercraft:glass_ryuki",
+			"text": "通过熔炼$(l:ryuki/items/advent_card)降临卡片$(/l)获得"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "deepslate_glass_ryuki",
+			"link_recipe": true,
+			"item": "kamenridercraft:deepslate_glass_ryuki",
+			"text": "通过熔炼$(l:misc/blocks/decor_blocks#glass_ryuki)降临玻璃$(/l)获得"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "taddle_brick",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_brick",
+			"text": "可在$(l:misc/city/urban_area#narumi_detective_office)鸣海侦探事务所$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "taddle_wall",
+			"link_recipe": true,
+			"item": "kamenridercraft:taddle_wall",
+			"text": "当前无法获取此方块"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_door",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到$(br2)可以通过红石信号开启"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "pure_gaia_memory_block",
+			"recipe": "kamenridercraft:w/pure_gaia_memory_block",
+			"text": "可在$(l:w/structures/earths_core)地球核心$(/l)内找到$(br2)破坏后掉落$(l:w/items/gaiamemory)记忆体碎片$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "ginga_meteor",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginga_meteor",
+			"text": "构成$(l:zi_o/structures/ginga_meteor)银河陨石$(/l)的全部方块"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "counter_95do",
+			"link_recipe": true,
+			"item": "kamenridercraft:counter_95do",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "genm_continue",
+			"link_recipe": true,
+			"item": "kamenridercraft:genm_continue",
+			"text": "开启$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)可获得"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "dark_treat",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_treat",
+			"text": "可与新手级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易获得"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "kuruma_brick",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuruma_brick",
+			"text": "构成$(l:misc/city/centers#kuruma_center)汽车中心$(/l)的墙壁方块"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "cafe_counter",
+			"link_recipe": true,
+			"item": "kamenridercraft:cafe_counter",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "planks_big_oak_golden_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:planks_big_oak_golden_trim",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "planks_brown",
+			"recipe": "kamenridercraft:misc/block/brown_planks"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "planks_dark_blue",
+			"recipe": "kamenridercraft:misc/block/blue_planks"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "planks_light_blue",
+			"recipe": "kamenridercraft:misc/block/light_blue_planks"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "planks_white",
+			"recipe": "kamenridercraft:misc/block/white_planks"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "quartz_block_gold_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:quartz_block_gold_trim",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "spruce_flooring",
+			"link_recipe": true,
+			"item": "kamenridercraft:spruce_flooring",
+			"text": "将云杉木放入切石机可获得"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "imagin_sand_block",
+			"link_recipe": true,
+			"item": "kamenridercraft:imagin_sand_block",
+			"text": "遍布于$(l:den_o/dimensions/sands_of_time)时间之沙$(/l)$(br2)破坏后掉落$(l:den_o/items/imagin_sand)异魔神沙子$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior",
+			"recipe": "kamenridercraft:den_o/denliner_interior"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior_darker",
+			"recipe": "kamenridercraft:den_o/denliner_interior_darker"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior_with_line",
+			"recipe": "kamenridercraft:den_o/denliner_interior_with_line"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_interior_windo",
+			"recipe": "kamenridercraft:den_o/denliner_interior_windo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_line",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_line"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_start_line",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_start_line"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_line_ikazuchi",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_line_ikazuchi"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_side_with_line_rekkou",
+			"recipe": "kamenridercraft:den_o/denliner_side_with_line_rekkou"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_roof",
+			"recipe": "kamenridercraft:den_o/denliner_roof"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_top",
+			"recipe": "kamenridercraft:den_o/denliner_logo_top"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_bottom",
+			"recipe": "kamenridercraft:den_o/denliner_logo_bottom"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_side",
+			"recipe": "kamenridercraft:den_o/denliner_logo_side"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_logo_sider",
+			"recipe": "kamenridercraft:den_o/denliner_logo_sider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass",
+			"recipe": "kamenridercraft:den_o/denliner_glass"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass2",
+			"recipe": "kamenridercraft:den_o/denliner_glass2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass3",
+			"recipe": "kamenridercraft:den_o/denliner_glass3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass_ikazuchi",
+			"recipe": "kamenridercraft:den_o/denliner_glass_ikazuchi"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_glass_rekkou",
+			"recipe": "kamenridercraft:den_o/denliner_glass_rekkou"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "nega_denliner_glass",
+			"recipe": "kamenridercraft:den_o/nega_denliner_glass"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_gold",
+			"recipe": "kamenridercraft:den_o/denliner_gold"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel",
+			"recipe": "kamenridercraft:den_o/denliner_matel"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_top",
+			"recipe": "kamenridercraft:den_o/denliner_matel_top"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_top2",
+			"recipe": "kamenridercraft:den_o/denliner_matel_top2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_side",
+			"recipe": "kamenridercraft:den_o/denliner_matel_side"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_dark",
+			"recipe": "kamenridercraft:den_o/denliner_matel_dark"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "denliner_matel_dark_line",
+			"recipe": "kamenridercraft:den_o/denliner_matel_dark_line"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_interior",
+			"recipe": "kamenridercraft:den_o/new_denliner_interior"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_side_with_line",
+			"recipe": "kamenridercraft:den_o/new_denliner_side_with_line"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_side_with_start_line",
+			"recipe": "kamenridercraft:den_o/new_denliner_side_with_start_line"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_logo_top",
+			"recipe": "kamenridercraft:den_o/new_denliner_logo_top"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_logo_bottom",
+			"recipe": "kamenridercraft:den_o/new_denliner_logo_bottom"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_matel_top",
+			"recipe": "kamenridercraft:den_o/new_denliner_matel_top"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_matel_top2",
+			"recipe": "kamenridercraft:den_o/new_denliner_matel_top2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "new_denliner_matel_side",
+			"recipe": "kamenridercraft:den_o/new_denliner_matel_side"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_red",
+			"recipe": "kamenridercraft:den_o/king_liner_red"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_top",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_top"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_bottom",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_bottom"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_side",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_side"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_logo_sider",
+			"recipe": "kamenridercraft:den_o/king_liner_logo_sider"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "king_liner_windo",
+			"recipe": "kamenridercraft:den_o/king_liner_windo"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "gaoh_liner_gold",
+			"recipe": "kamenridercraft:den_o/gaoh_liner_gold"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "gaoh_liner_green",
+			"recipe": "kamenridercraft:den_o/gaoh_liner_green"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "gaoh_liner_windo",
+			"recipe": "kamenridercraft:den_o/gaoh_liner_windo"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_top",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_top",
+			"text": "可在$(l:den_o/structures/gaohliner)牙王班列$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_bottom",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_bottom",
+			"text": "可在$(l:den_o/structures/gaohliner)牙王班列$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_side",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_side",
+			"text": "可在$(l:den_o/structures/gaohliner)牙王班列$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gaohliner_logo_sider",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaohliner_logo_sider",
+			"text": "可在$(l:den_o/structures/gaohliner)牙王班列$(/l)内找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "zero_liner_green",
+			"recipe": "kamenridercraft:den_o/zero_liner_green"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "window_planks",
+			"link_recipe": true,
+			"item": "kamenridercraft:window_planks",
+			"text": "当前无法获取此方块"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "doran_scale",
+			"link_recipe": true,
+			"item": "kamenridercraft:doran_scale",
+			"text": "可在$(l:kiva/structures/castle_doran)德兰城堡$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "castle_doran_logo",
+			"link_recipe": true,
+			"item": "kamenridercraft:castle_doran_logo",
+			"text": "可在$(l:kiva/structures/castle_doran)德兰城堡$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_light",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_light",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_cyan",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_cyan",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_cyan_light",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_cyan_light",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_cyan2",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_cyan2",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_computer_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_computer_stairs",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "megahex_light",
+			"link_recipe": true,
+			"item": "kamenridercraft:megahex_light",
+			"text": "可在$(l:gaim/structures/megahex_planet)梅嘉赫克斯星球$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "stone_flooring",
+			"link_recipe": true,
+			"item": "kamenridercraft:stone_flooring",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_bookshelf",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_bookshelf",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_brick",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_brick",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_gold_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_gold_stairs",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_gold_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_gold_trim",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_gold_block",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_gold_block",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_logo",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_logo",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_tabel_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_tabel_stairs",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_tabel_top",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_tabel_top",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood_stairs",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "sword_of_logos_stairs",
+			"recipe": "kamenridercraft:misc/block/sword_of_logos_stairs"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_sword_blade",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_sword_blade",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood_trim",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood_trim",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_wood2",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_wood2",
+			"text": "可在$(l:misc/city/urban_area#narumi_detective_office)鸣海侦探事务所$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "sword_of_logos_arch",
+			"link_recipe": true,
+			"item": "kamenridercraft:sword_of_logos_arch",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:smelting",
+			"anchor": "granute_glass",
+			"recipe": "kamenridercraft:misc/block/granute_glass_smelt"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "granute_glass_pane",
+			"recipe": "kamenridercraft:misc/block/granute_glass_pane"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/wallplate"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "hazard_wallplate",
+			"link_recipe": true,
+			"item": "kamenridercraft:hazard_wallplate",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "ghostliner_wheel",
+			"link_recipe": true,
+			"item": "kamenridercraft:ghostliner_wheel",
+			"text": "可在$(l:den_o/structures/ghostliner)幽灵列车$(/l)上找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "black_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/black_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "white_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/white_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "grey_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/grey_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "yellow_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/yellow_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "red_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/red_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "green_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/green_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_green_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_green_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wooden_panel",
+			"link_recipe": true,
+			"item": "kamenridercraft:wooden_panel",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wooden_panel2",
+			"link_recipe": true,
+			"item": "kamenridercraft:wooden_panel2",
+			"text": "可在$(l:saber/structures/northern_base)北方基地$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "cornerstore_sign",
+			"link_recipe": true,
+			"item": "kamenridercraft:cornerstore_sign",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "vertical_panel",
+			"link_recipe": true,
+			"item": "kamenridercraft:vertical_panel",
+			"text": "可在$(l:misc/city/urban_area#narumi_detective_office)鸣海侦探事务所$(/l)内找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "checkered_tile",
+			"recipe": "kamenridercraft:misc/block/black_checkered_tile"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "yellow_checkered_tile",
+			"recipe": "kamenridercraft:misc/block/yellow_checkered_tile"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "lime_checkered_tile",
+			"recipe": "kamenridercraft:misc/block/lime_checkered_tile"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "pavement_roadline",
+			"recipe": "kamenridercraft:misc/block/pavement_roadline",
+			"text": "遍布于城市维度"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "megahex_matel",
+			"link_recipe": true,
+			"item": "kamenridercraft:megahex_matel",
+			"text": "可在$(l:gaim/structures/megahex_planet)梅嘉赫克斯星球$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "megahex_matel_lines",
+			"link_recipe": true,
+			"item": "kamenridercraft:megahex_matel_lines",
+			"text": "可在$(l:gaim/structures/megahex_planet)梅嘉赫克斯星球$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "blue_rose",
+			"link_recipe": true,
+			"item": "kamenridercraft:blue_rose",
+			"text": "完成$(l:kabuto/structures/god_speed_love)神速爱$(/l)结构的试炼可获得$(br2)掉落自：$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant",
+			"text": "遍布于$(l:gaim/dimensions/helheim)海姆冥界$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant_2",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant_2",
+			"text": "遍布于$(l:gaim/dimensions/helheim)海姆冥界$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant_3",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant_3",
+			"text": "遍布于$(l:gaim/dimensions/helheim)海姆冥界$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "helheim_plant_4",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_plant_4",
+			"text": "遍布于$(l:gaim/dimensions/helheim)海姆冥界$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wonderwood_door",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonderwood_door",
+			"text": "可在$(l:misc/city/suburban_area#fantastic_bookstore_kamiyama)神山奇幻书店$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "white_fence",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_fence",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "steel_ladder",
+			"link_recipe": true,
+			"item": "kamenridercraft:steel_ladder",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)外部找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "rabbit_hutch_ladder",
+			"link_recipe": true,
+			"item": "kamenridercraft:rabbit_hutch_ladder",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内部找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "jail_door",
+			"recipe": "kamenridercraft:misc/block/jail_door"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "gold_door",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_door",
+			"text": "可在$(l:kiva/structures/shoodoran)德兰城堡$(/l)外部找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "drive_pit_logo",
+			"link_recipe": true,
+			"item": "kamenridercraft:drive_pit_logo",
+			"text": "可在$(l:misc/city/centers#kuruma_center)汽车中心$(/l)内的特状课基地找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "drive_pit_ladder",
+			"link_recipe": true,
+			"item": "kamenridercraft:drive_pit_ladder",
+			"text": "可在$(l:misc/city/centers#kuruma_center)汽车中心$(/l)内的特状课基地找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "whiteboard",
+			"link_recipe": true,
+			"item": "kamenridercraft:whiteboard",
+			"text": "可在$(l:misc/city/urban_area#narumi_detective_office)鸣海侦探事务所$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "wallplate_grate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:wallplate_grate_slab",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "white_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/white_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "white_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/white_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "white_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/white_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "grey_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/grey_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "grey_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/grey_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "black_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/black_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "black_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/black_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "red_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/red_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "red_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/red_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "yellow_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/yellow_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "yellow_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/yellow_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "yellow_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/yellow_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_green_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_green_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_green_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_green_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "green_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/green_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "green_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/green_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "cyan_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/cyan_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "light_blue_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/light_blue_wallplate_wall"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate_stairs",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate_slab",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "blue_wallplate_wall",
+			"recipe": "kamenridercraft:misc/block/wallplate/blue_wallplate_wall"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "yellow_wallplate_grate_stairs",
+			"link_recipe": true,
+			"item": "kamenridercraft:yellow_wallplate_grate_stairs",
+			"text": "可在$(l:misc/city/urban_area#narumi_detective_office)鸣海侦探事务所$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "light_green_wallplate_grate_slab",
+			"link_recipe": true,
+			"item": "kamenridercraft:light_green_wallplate_grate_slab",
+			"text": "可在$(l:misc/city/centers#fuuto_tower)风都塔$(/l)内找到"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"anchor": "glass_door",
+			"link_recipe": true,
+			"item": "kamenridercraft:glass_door",
+			"text": "可在各类$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑物$(/l)内找到"
+		}
+	]
+}

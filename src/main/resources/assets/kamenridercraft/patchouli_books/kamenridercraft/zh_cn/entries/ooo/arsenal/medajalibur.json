@@ -1,0 +1,16 @@
+{
+	"name": "圣徽斩剑",
+	"icon": "kamenridercraft:medajalibur",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)由$(l:ooo/riders/ooo#tatoba)假面骑士OOO$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/medajalibur"
+		}
+	]
+}

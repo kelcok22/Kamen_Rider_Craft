@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士地帝",
+	"icon": "kamenridercraft:faiz_logo",
+	"category": "kamenridercraft:faiz/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:orga",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(li)假面骑士555：失落的乐园 (2003年，电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 100$(br2)有5%的几率从$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)进化而来$(br2)特殊机制：$(li)开始时为马型奥菲以诺，在生命值低于50时变身为骑士形态$(br2)掉落$(li)19-21个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#orga_mission_memory)地帝使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#faiz_blaster_mission_memory)Faiz爆裂使命芯片$(/l)"
+		}
+	]
+}

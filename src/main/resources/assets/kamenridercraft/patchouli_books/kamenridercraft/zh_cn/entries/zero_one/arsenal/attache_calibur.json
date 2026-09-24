@@ -1,0 +1,17 @@
+{
+	"name": "公文箱剑",
+	"icon": "kamenridercraft:attache_calibur",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由 $(l:zero_one/riders/zero_one)假面骑士01$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/attache_calibur",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备"
+		}
+	]
+}

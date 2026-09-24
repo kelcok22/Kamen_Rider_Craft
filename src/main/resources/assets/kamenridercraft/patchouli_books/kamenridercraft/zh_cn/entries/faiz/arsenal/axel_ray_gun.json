@@ -1,0 +1,19 @@
+{
+	"name": "加速刃枪",
+	"icon": "kamenridercraft:axel_ray_gun",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)由$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:axel_ray_gun",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)的装备"
+		}
+	]
+}

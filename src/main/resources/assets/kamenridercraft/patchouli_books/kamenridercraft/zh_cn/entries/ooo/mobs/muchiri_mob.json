@@ -1,0 +1,17 @@
+{
+	"name": "穆奇利",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:muchiri_mob",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有3.3%的几率从$(l:w/mobs/foundation_x_masquerade)假面舞会掺杂体(财团X)$(/l)进化而来$(br2)掉落$(li)3-5个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/cellmedal)细胞硬币$(/l) (90%)$(li)1个$(l:ooo/devices/greeed_belt#greeed_blet_muchiri)贪欲者腰带(穆奇利)$(/l) (10%)$(li)1个$(l:ooo/items/core_medals#mukade_medal)蜈蚣核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#hachi_medal)蜜蜂核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#ari_medal)蚂蚁核心硬币$(/l) (33.3%)"
+		}
+	]
+}

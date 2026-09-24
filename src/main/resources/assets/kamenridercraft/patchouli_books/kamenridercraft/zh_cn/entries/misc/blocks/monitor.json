@@ -1,0 +1,16 @@
+{
+	"name": "电脑显示器",
+	"icon": "kamenridercraft:monitor",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "可用于制作多种不同类型的功能方块"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/monitor"
+		}
+	]
+}

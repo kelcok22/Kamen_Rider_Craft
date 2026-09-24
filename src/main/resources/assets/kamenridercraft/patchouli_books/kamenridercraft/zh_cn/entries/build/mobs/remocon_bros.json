@@ -1,0 +1,17 @@
+{
+	"name": "齿轮兄弟",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:remocon_bros",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#hell_bros_boss_block)地狱兄弟BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)2-3个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/gears#gear_remocon)遥控齿轮$(/l)"
+		}
+	]
+}

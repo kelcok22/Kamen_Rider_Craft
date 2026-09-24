@@ -1,0 +1,16 @@
+{
+	"name": "梦胶囊圆柱",
+	"icon": "kamenridercraft:capsem_cylinder",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)最多可储存5组梦境胶囊"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/capsem_cylinder"
+		}
+	]
+}

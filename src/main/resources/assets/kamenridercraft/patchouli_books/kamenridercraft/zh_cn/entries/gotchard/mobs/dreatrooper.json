@@ -1,0 +1,17 @@
+{
+	"name": "恐惧骑兵",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dreatrooper",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br)生命值：30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：玄武岩三角洲$(br2)掉落$(li)3-5个$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l) $(li)1个$(l:gotchard/items/replichemy_cards#antrooper_repli_chemy_card)蚂蚁军团复制驾驭凯米卡$(/l) $(br2)进化$(li)$(l:gotchard/mobs/dreatrooper_commander)恐惧骑兵指挥官$(/l) (5%)$(li)$(l:gotchard/mobs/dorado)假面骑士多拉德$(/l) (5%)"
+		}
+	]
+}

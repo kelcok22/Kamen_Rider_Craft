@@ -1,0 +1,16 @@
+{
+	"name": "冥界花苞枪",
+	"icon": "kamenridercraft:hells_cane",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士栗团VS假面骑士布拉弗 (2020年，网络剧)$(br2)由$(l:gaim/riders/sylphi)假面骑士希尔芙$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/hells_cane"
+		}
+	]
+}

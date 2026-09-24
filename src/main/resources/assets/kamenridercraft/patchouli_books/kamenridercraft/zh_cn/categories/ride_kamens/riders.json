@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ride_kamens/main",
+    "name": "骑士假面系列骑士",
+    "description": "来自手机游戏《骑士假面》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:ride_kamens_head",
+    "sortnum": 0
+}

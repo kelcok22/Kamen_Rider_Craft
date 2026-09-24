@@ -1,0 +1,19 @@
+{
+	"name": "镭射升华巴祖卡",
+	"icon": "kamenridercraft:laser_raise_bazooka",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐：黄金欲望之夜 (2023年，舞台表演)$(br2)由假面骑士 $(l:geats/riders/buffa)霸牛$(/l) 与 $(l:geats/riders/ziin)吉恩$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:laser_raise_bazooka",
+			"title": " ",
+			"text": "获取途径：$(li)在极狐 $(l:misc/stageshow)舞台秀$(/l) 场景中获取"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"name": "V代扣(抉择者)",
+	"icon": "kamenridercraft:alternative_v_buckle",
+	"category": "kamenridercraft:ryuki/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "alternative_v_buckle",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/alternative)抉择者。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/alternative_v_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alternative_zero_v_buckle",
+			"title": "V代扣(抉择者零号)",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)与$(l:ryuki/devices/armor)龙骑装甲$(/l)一起穿戴，可变身为$(l:ryuki/riders/alternative_zero)抉择者零号。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/alternative_zero_v_buckle"
+		}
+	]
+}

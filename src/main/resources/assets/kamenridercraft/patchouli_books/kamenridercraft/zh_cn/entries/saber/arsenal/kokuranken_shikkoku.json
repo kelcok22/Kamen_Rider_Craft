@@ -1,0 +1,16 @@
+{
+	"name": "黑岚剑漆黑",
+	"icon": "kamenridercraft:kokuranken_shikkoku",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士 Outsiders (2022年，网络剧)$(br2)由 $(l:saber/riders/desast)假面骑士天灾$(/l) 使用"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:saber/kokuranken_shikkoku"
+      }
+	]
+}

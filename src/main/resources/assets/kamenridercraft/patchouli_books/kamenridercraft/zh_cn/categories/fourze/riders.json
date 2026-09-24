@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:fourze/main",
+    "name": "Fourze系列骑士",
+    "description": "来自《假面骑士Fourze》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:fourze_head",
+    "sortnum": 0
+}

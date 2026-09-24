@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:fourze/main",
+    "name": "生成建筑",
+    "description": "与《假面骑士Fourze》相关的所有建筑.",
+    "icon": "kamenridercraft:rabbit_hutch_cyan",
+    "sortnum": 6
+}

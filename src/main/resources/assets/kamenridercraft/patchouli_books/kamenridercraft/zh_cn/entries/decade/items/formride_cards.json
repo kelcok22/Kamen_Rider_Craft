@@ -1,0 +1,336 @@
+{
+  "name": "形态驾驭卡",
+  "icon": "kamenridercraft:kuuga_growing_card",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_growing_card",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_growing)空我初生$(/l)形态$(br2)用于切换空我的$(l:kuuga/riders/kuuga#growing_onodera)初生形态（小野寺版）$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/kuuga_growing_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_dragon_card",
+      "title": "空我青龙 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_dragon)空我青龙$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_dragon_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_pegasus_card",
+      "title": "空我天马 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_pegasus)空我天马$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_pegasus_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_titan_card",
+      "title": "空我泰坦 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_titan)空我泰坦$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_titan_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_rising_mighty_card",
+      "title": "空我升华全能 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_rising_mighty)空我升华全能$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_rising_mighty_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_rising_dragon_card",
+      "title": "空我升华青龙 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_rising_dragon)空我升华青龙$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_rising_dragon_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_rising_pegasus_card",
+      "title": "空我升华天马 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_rising_pegasus)空我升华天马$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_rising_pegasus_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_rising_titan_card",
+      "title": "空我升华泰坦 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_rising_titan)空我升华泰坦$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_rising_titan_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kuuga_amazing_mighty_card",
+      "title": "空我惊异全能 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kuuga_amazing_mighty)空我惊异全能$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kuuga_amazing_mighty_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "agito_storm_card",
+      "title": "亚极陀风暴 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#agito_storm)亚极陀风暴$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/agito_storm_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "agito_flame_card",
+      "title": "亚极陀火焰 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#agito_flame)亚极陀火焰$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/agito_flame_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "agito_trinity_card",
+      "title": "亚极陀三合一 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#agito_trinity)亚极陀三合一$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/agito_trinity_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "agito_burning_card",
+      "title": "亚极陀燃烧 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#agito_burning)亚极陀燃烧$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/agito_burning_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ryuki_blank_card",
+      "title": "龙骑空白 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#ryuki_blank)龙骑空白$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ryuki_blank_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "faiz_axel_card",
+      "title": "Faiz加速 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#faiz_axel)Faiz加速$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/faiz_axel_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "blade_jack_card",
+      "title": "剑侍卫 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#blade_jack)剑侍卫形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/blade_jack_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "hibiki_kurenai_card",
+      "title": "响鬼红 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#hibiki_kurenai)响鬼红$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/hibiki_kurenai_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kabuto_masked_card",
+      "title": "重甲甲斗 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kabuto_masked)甲斗重甲形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kabuto_masked_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_plat_card",
+      "title": "电王月台 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#den_o_plat)电王月台形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_plat_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_rod_card",
+      "title": "电王圣竿 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#den_o_rod)电王圣竿形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_rod_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_ax_card",
+      "title": "电王圣斧 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#den_o_ax)电王圣斧形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_ax_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_gun_card",
+      "title": "电王圣枪 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#den_o_gun)电王圣枪形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_gun_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_wing_card",
+      "title": "电王圣翼 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#den_o_wing)电王圣翼形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_wing_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_climax_card",
+      "title": "电王顶点 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#den_o_climax)电王顶点形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_climax_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kiva_garulu_card",
+      "title": "Kiva加鲁鲁 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kiva_garulu)Kiva加鲁鲁$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kiva_garulu_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kiva_basshaa_card",
+      "title": "Kiva巴夏 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kiva_basshaa)Kiva巴夏$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kiva_basshaa_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kiva_dogga_card",
+      "title": "Kiva德加 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kiva_dogga)Kiva德加$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kiva_dogga_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kiva_dogabaki_card",
+      "title": "Kiva德加巴基 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#kiva_dogabaki)Kiva德加巴基$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kiva_dogabaki_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "black_rx_roborider_card",
+      "title": "Black RX机械骑士 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#black_rx_roborider)Black RX机械骑士$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/black_rx_roborider_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "black_rx_biorider_card",
+      "title": "Black RX生化骑士 形态假面驾驭卡",
+      "text": "登场于：$(li)CSM骑士卡片套装 特别版 (2022年，玩具系列)$(br2)用于切换（黑暗）Decade的$(l:decade/riders/decade#black_rx_biorider)Black RX生化骑士$(/l)形态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/black_rx_biorider_card"
+    }
+  ]
+}

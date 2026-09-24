@@ -1,0 +1,16 @@
+{
+	"name": "雷蜓枪",
+	"icon": "kamenridercraft:drake_grip",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/riders/drake)假面骑士雷蜓$(/l)使用$(br2)用于获得雷蜓的$(l:kabuto/devices/zect_buckle#drake_rider_belt)ZECT代扣(雷蜓)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/drake_grip"
+		}
+	]
+}

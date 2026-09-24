@@ -1,0 +1,16 @@
+{
+	"name": "大橙丸",
+	"icon": "kamenridercraft:daidaimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)搭配$(l:gaim/riders/gaim#orange)柳橙武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/daidaimaru"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "新生蚁兵腰带",
+	"icon": "kamenridercraft:neotrooper_belt",
+	"category": "kamenridercraft:kabuto/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/neotrooper)新生蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neotrooper_belt",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)的装备"
+		}
+	]
+}

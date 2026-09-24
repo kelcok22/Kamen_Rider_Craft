@@ -1,0 +1,668 @@
+{
+    "name": "盖亚记忆体",
+    "icon": "kamenridercraft:joker_memory",
+    "category": "kamenridercraft:w/items",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "cyclone_memory",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于制作W的 $(l:w/devices/wdriver)双重驱动器$(/l)$(br2)用于切换W的 $(l:w/riders/double#cyclonejoker)疾风$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:cyclone_memory",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得$(br2)掉落自：$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "heat_memory",
+            "title": "炽热记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#heatmetal)炽热$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:heat_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "luna_memory",
+            "title": "月神记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#lunatrigger)月神$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:luna_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fang_memory",
+            "title": "獠牙记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#fangjoker)獠牙$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/fang_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "joker_joker_memory",
+            "title": "双重王牌记忆体",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)用于切换W的 $(l:w/riders/double#jokerjoker)王牌王牌$(/l) 形态，但也可与任何其他右侧盖亚记忆体搭配使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/joker_joker_memory",
+            "text": "掉落自：$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "joker_memory",
+            "title": "王牌记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于制作W的 $(l:w/devices/wdriver)双重驱动器$(/l)$(br2)用于切换W的 $(l:w/riders/double#cyclonejoker)王牌$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:joker_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 获得$(br2)掉落自：$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metal_memory",
+            "title": "金属记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#heatmetal)金属$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:metal_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "trigger_memory",
+            "title": "扳机记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#lunatrigger)扳机$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:trigger_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cyclone_cyclone_memory",
+            "title": "双重疾风记忆体",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)用于切换W的 $(l:w/riders/double#cyclonecyclone)疾风疾风$(/l) 形态，但也可与任何其他右侧盖亚记忆体搭配使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/cyclone_cyclone_memory",
+            "text": "掉落自：$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xtreme_memory",
+            "title": "极限记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#xtreme)疾风王牌极致$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/xtreme_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xtreme_gold_memory",
+            "title": "黄金极限记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)$(br2)用于切换W的 $(l:w/riders/double#gold_xtreme)疾风王牌黄金极致$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:xtreme_gold_memory",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xtreme_accel_memory",
+            "title": "疾风加速极限记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(li)假面骑士：巅峰英雄OOO (2010年，电子游戏)$(br2)用于切换W的 $(l:w/riders/double#accel_xtreme)疾风加速极致$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:xtreme_accel_memory",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "accel_memory",
+            "title": "加速记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于制作Accel的 $(l:w/devices/acceldriver)加速驱动器$(/l)$(br2)用于切换Accel的 $(l:w/riders/accel#accel)基础$(/l) 形态和 $(l:w/riders/accel#bikeform)机车形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:accel_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 获得$(br2)掉落自：$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "trial_memory",
+            "title": "试炼记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换Accel的 $(l:w/riders/accel#trial)试炼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/trial_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "accel_booster_memory",
+            "title": "加速记忆体(增幅适配器)",
+            "text": "登场于：$(li)假面骑士W Returns：假面骑士Accel (2011年，V-Cinema电影)$(br2)用于切换Accel的 $(l:w/riders/accel#booster)Accel升压$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/accel_booster_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skull_memory",
+            "title": "颅骨记忆体",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(li)假面骑士×假面骑士 OOO & W Featuring Skull: Movie War Core (2010年，电影)$(br2)用于制作颅骨的 $(l:w/devices/lostdriver#lostdriver_skull)迷失驱动器(颅骨)$(/l)$(br2)用于切换颅骨的 $(l:w/riders/skull#skull)基础$(/l) 形态和 $(l:w/riders/skull#skull_crystal)颅骨 水晶$(/l)$(br2)用于切换W的 $(l:w/riders/double#cycloneskull)疾风颅骨$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:skull_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "eternal_memory",
+            "title": "永恒记忆体",
+            "text": "登场于：$(li)假面骑士W Returns：假面骑士Eternal (2011年，V-Cinema电影)$(br2)用于切换Eternal的 $(l:w/riders/eternal#red_flare)红色火焰$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:eternal_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prism_memory",
+            "title": "棱镜记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:prism_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "engine_memory",
+            "title": "引擎记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:engine_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bomb_memory",
+            "title": "爆炸记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bomb_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "trial_memory_un",
+            "title": "未完成的试炼记忆体",
+            "text": "登场于：$(li)假面骑士W DX音效胶囊盖亚记忆体 (2009年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:trial_memory_un",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fang_memory_un",
+            "title": "未完成的獠牙记忆体",
+            "text": "登场于：$(li)假面骑士W DX音效胶囊盖亚记忆体 (2009年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fang_memory_un",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xtreme_memory_g",
+            "title": "极限记忆体(金)",
+            "text": "登场于：$(li)假面骑士W DX音效胶囊盖亚记忆体 (2009年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:xtreme_memory_g",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_g)未完成的黄金记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xtreme_memory_s",
+            "title": "极限记忆体(银)",
+            "text": "登场于：$(li)假面骑士W DX音效胶囊盖亚记忆体 (2009年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:xtreme_memory_s",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_s)未完成的白银记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shippu_memory",
+            "title": "木头疾风记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#cyclonejoker)疾风$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/shippu_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kirifuda_memory",
+            "title": "木头王牌记忆体",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)用于切换W的 $(l:w/riders/double#cyclonejoker)王牌$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:w/kirifuda_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "accel_t2_memory",
+            "title": "T2加速记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:accel_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bird_t2_memory",
+            "title": "T2飞鸟记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bird_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cyclone_t2_memory",
+            "title": "T2疾风记忆体",
+            "text": "登场于：$(li)假面骑士W：~Z之后继者~ (2012年，小说)$(br2)用于制作疾风的 $(l:w/devices/lostdriver#lostdriver_cyclone)迷失驱动器(疾风)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:cyclone_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dummy_t2_memory",
+            "title": "T2虚拟记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dummy_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "eternal_t2_memory",
+            "title": "T2永恒记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)$(br2)用于制作Eternal的 $(l:w/devices/lostdriver#lostdriver_eternal)迷失驱动器(Eternal)$(/l)$(br2)用于切换Eternal的 $(l:w/riders/eternal#blue_flare)蓝色火焰$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:eternal_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fang_t2_memory",
+            "title": "T2獠牙记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fang_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gene_t2_memory",
+            "title": "T2基因记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gene_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "heat_t2_memory",
+            "title": "T2炽热记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:heat_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "iceage_t2_memory",
+            "title": "T2冰河期记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:iceage_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "joker_t2_memory",
+            "title": "T2王牌记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)$(br2)用于制作王牌的 $(l:w/devices/lostdriver#lostdriver_joker)迷失驱动器(王牌)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:joker_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "key_t2_memory",
+            "title": "T2钥匙记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:key_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "luna_t2_memory",
+            "title": "T2月神记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:luna_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metal_t2_memory",
+            "title": "T2金属记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:metal_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nasca_t2_memory",
+            "title": "T2纳斯卡记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:nasca_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ocean_t2_memory",
+            "title": "T2海洋记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ocean_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "puppeteer_t2_memory",
+            "title": "T2木偶师记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:puppeteer_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "queen_t2_memory",
+            "title": "T2女皇记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:queen_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rocket_t2_memory",
+            "title": "T2火箭记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rocket_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skull_t2_memory",
+            "title": "T2颅骨记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:skull_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "trigger_t2_memory",
+            "title": "T2扳机记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:trigger_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "unicorn_t2_memory",
+            "title": "T2独角兽记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:unicorn_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "violence_t2_memory",
+            "title": "T2暴力记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:violence_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "weather_t2_memory",
+            "title": "T2天气记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:weather_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xtreme_t2_memory",
+            "title": "T2极限记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:xtreme_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yesterday_t2_memory",
+            "title": "T2昨日记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:yesterday_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zone_t2_memory",
+            "title": "T2空间记忆体",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)$(br2)用于切换Eternal的 $(l:w/riders/eternal#strengthening_armament)强化武装$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zone_t2_memory",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼机器$(/l) 上使用 $(l:w/items/unrefined_memory_t2)未完成的T2记忆体$(/l) 获得"
+        }
+    ]
+}

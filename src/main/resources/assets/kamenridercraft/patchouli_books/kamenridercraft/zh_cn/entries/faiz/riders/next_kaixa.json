@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士Next Kaixa",
+	"icon": "kamenridercraft:next_kaixa_mission_memory",
+	"category": "kamenridercraft:faiz/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "next_kaixa",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:next_kaixa_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:next_kaixa_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:faiz/items/mission_memories#next_kaixa_mission_memory)Next Kaixa使命芯片$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Next Kaixa",
+			"text": "登场于:$(li)假面骑士555 20周年：天堂重获 (2024年, 电影)$(br2)通过穿戴$(l:faiz/devices/kaixa_driver#next_kaixa_driver)Kaixa驱动器$(/l)进行变身$(br2)状态效果:$(li)抗性提升 III$(li)夜视$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "axel",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:next_kaixa_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:next_kaixa_axel_mission_memory\"}},Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "加速",
+			"text": "通过使用 $(l:faiz/arsenal/faiz_axel)Faiz加速手表$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Next Kaixa",
+			"text": "登场于:$(li)假面骑士555 20周年：天堂重获 (2024年, 网络剧)$(br2)通过穿戴$(l:faiz/devices/kaixa_driver#next_kaixa_driver)Kaixa驱动器$(/l)进行变身$(br2)状态效果:$(li)形态解除（10秒）$(li)速度 VIII$(li)抗性提升 III$(li)夜视$(li)急迫 VII$(li)力量 IV"
+		}
+	]
+}

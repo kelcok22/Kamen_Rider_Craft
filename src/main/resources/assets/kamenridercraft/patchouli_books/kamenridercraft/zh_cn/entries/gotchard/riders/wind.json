@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Wind",
+	"icon": "kamenridercraft:alchemisdriver_wind",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alchemisdriver_wind\",Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "漆黑巴哈姆特",
+			"text": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wind",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/alchemisdriver#alchemisdriver_wind)炼金术士驱动器(Wind)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升$(li)力量 IV$(li)飞行"
+		}
+	]
+}

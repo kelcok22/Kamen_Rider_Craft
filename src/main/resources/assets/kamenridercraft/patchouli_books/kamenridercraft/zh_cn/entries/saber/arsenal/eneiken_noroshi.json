@@ -1,0 +1,19 @@
+{
+	"name": "烟睿剑狼烟",
+	"icon": "kamenridercraft:eneiken_noroshi",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/sabela)假面骑士佩剑$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eneiken_noroshi",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/sabela)假面骑士佩剑$(/l)"
+		}
+	]
+}

@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士王蛇",
+	"icon": "kamenridercraft:venosnaker_advent",
+	"category": "kamenridercraft:ryuki/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "blank",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:advent_card\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空白形态",
+			"text": "通过使用$(l:ryuki/items/advent_card)空白降临卡$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士王蛇",
+			"text": "登场于:$(li)假面骑士龙骑: Episode Final (2002年, 电影)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_ouja)V代扣$(/l)进行变身$(br2)状态效果:$(li)虚弱"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ouja",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:venosnaker_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:ryuki/items/contract_advent_cards#venosnaker_advent)毒蛇王降临卡$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士王蛇",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_ouja)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "survive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_mugen\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "王蛇 生存",
+			"text": "通过使用$(l:ryuki/items/survive_cards#survive_mugen)生存卡 无限$(/l)进行形态切换。"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士王蛇",
+			"text": "登场于:$(li)Kamen Rider Outsiders (2022, web series)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_ouja)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度 II$(li)抗性提升 III$(li)夜视$(li)急迫$(li)力量 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "survive_sic",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu_ouja\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "王蛇 生存(SIC)",
+			"text": "通过使用$(l:ryuki/items/survive_cards#survive_shippu)生存卡 疾风$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士王蛇",
+			"text": "登场于:$(li)Advent Calendar (2004, S.I.C. Hero Saga)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_ouja)V代扣$(/l)进行变身$(br2)状态效果:$(li)速度 II$(li)抗性提升 III$(li)夜视$(li)急迫$(li)力量 VI"
+		}
+	]
+}

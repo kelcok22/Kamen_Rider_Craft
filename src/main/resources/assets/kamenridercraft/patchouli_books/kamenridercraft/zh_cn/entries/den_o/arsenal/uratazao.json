@@ -1,0 +1,16 @@
+{
+	"name": "浦塔圣竿",
+	"icon": "kamenridercraft:uratazao",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)超级电王三部曲：EPISODE BLUE 派遣异魔神是NEW-Tral (2010年，电影)$(br2)由$(l:den_o/riders/new_den_o)假面骑士新电王$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/uratazao"
+		}
+	]
+}

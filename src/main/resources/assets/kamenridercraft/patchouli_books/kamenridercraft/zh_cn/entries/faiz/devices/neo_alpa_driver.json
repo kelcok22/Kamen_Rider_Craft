@@ -1,0 +1,16 @@
+{
+	"name": "Neo-Alpa驱动器",
+	"icon": "kamenridercraft:neo_alpa_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/neo-alpa)假面骑士Neo-Alpa"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/neo_alpa_driver"
+		}
+	]
+}

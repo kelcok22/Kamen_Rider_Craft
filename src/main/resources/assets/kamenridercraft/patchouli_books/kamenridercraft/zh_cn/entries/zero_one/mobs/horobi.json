@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士·灭",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:horobi",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 80"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#horobi_boss_block)灭BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)3-6个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)2-4个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#sting_scorpion_progrisekey)尖刺毒蝎程式升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#horobi_progrisekey)灭程式升华秘钥$(/l)"
+		}
+	]
+}

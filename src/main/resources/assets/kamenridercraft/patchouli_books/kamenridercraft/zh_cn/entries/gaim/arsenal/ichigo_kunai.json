@@ -1,0 +1,16 @@
+{
+	"name": "草莓苦无",
+	"icon": "kamenridercraft:ichigo_kunai",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)搭配$(l:gaim/riders/gaim#ichigo)草莓武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/ichigo_kunai"
+		}
+	]
+}

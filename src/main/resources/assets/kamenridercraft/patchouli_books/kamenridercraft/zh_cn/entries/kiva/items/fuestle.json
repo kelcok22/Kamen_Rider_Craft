@@ -1,0 +1,19 @@
+{
+	"name": "笛哨",
+	"icon": "kamenridercraft:fuestle",
+	"category": "kamenridercraft:kiva/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用作合成大多数Kiva相关物品的基础材料和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fuestle",
+			"title": " ",
+			"text": "可在 $(l:kiva/structures/shoodoran)射击德兰龙$(/l) 和 $(l:kiva/structures/castle_doran)城堡德兰龙$(/l) 中找到$(br2)掉落自：$(li)$(l:kiva/mobs/arc)假面骑士恶王$(/l)$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		}
+	]
+}

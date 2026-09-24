@@ -1,0 +1,19 @@
+{
+	"name": "金手镯",
+	"icon": "kamenridercraft:golden_bangle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)在$(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l)上使用，可获得$(l:build/items/fullbottles#low_rabbit_full_bottle)少量兔子满装瓶罐$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golden_bangle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/blood_stalk)血潜$(/l)"
+		}
+	]
+}

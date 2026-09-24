@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士Faiz",
+	"icon": "kamenridercraft:faiz_logo",
+	"category": "kamenridercraft:faiz/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:faiz",
+			"text": "登场于：$(li)D-Video特别企划：假面骑士4号 (2015年，网络剧)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值：40$(br2)通过挖掘$(l:misc/blocks/boss_blocks#faiz_boss_block)FaizBOSS召唤方块$(/l)召唤而来$(br2)掉落：$(li)4-6个$(l:misc/items/rider_circuit)骑士电路$(/l) 或 $(l:faiz/items/blank_mission_memory)空白使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#faiz_mission_memory)Faiz使命芯片$(/l) 或 $(l:ichigo/items/typhoon_cores#typhoon_core_yongo)台风核心（四号）$(/l)$(li)1个$(l:drive/items/signal_bikes#signal_legend_faiz)信号传奇Faiz$(/l)"
+		}
+	]
+}

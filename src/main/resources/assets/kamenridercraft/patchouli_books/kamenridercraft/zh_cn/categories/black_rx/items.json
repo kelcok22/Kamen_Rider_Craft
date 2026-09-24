@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_rx/main",
+    "name": "相关物品",
+    "description": "所有与系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:rx_core",
+    "sortnum": 2
+}

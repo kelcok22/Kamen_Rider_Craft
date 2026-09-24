@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:black_sun/main",
+    "name": "腰带",
+    "description": "Black Sun系列骑士所使用的腰带。可以在铁砧上使用 $(l:misc/items/rider_circuit)骑士电路$(/l) 修复",
+    "icon": "kamenridercraft:century_king_sun_driver",
+    "sortnum": 1
+}

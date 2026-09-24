@@ -1,0 +1,45 @@
+{
+	"name": "座椅方块",
+	"icon": "kamenridercraft:ichigo_chair",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+          "anchor": "ichigo_chair",
+			"text": "原型：$(li)高木假面骑士儿童座椅「变身」（绿色款）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_chair",
+			"text": "获取方式：开启 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得$(br2)可与学徒级 $(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获得"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "red_ichigo_chair",
+        "title": "红色一号骑士椅子",
+        "text": "原型：$(li)高木假面骑士儿童座椅「变身」（红色款）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:red_ichigo_chair",
+        "title": " ",
+        "text": "获取方式：开启 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取$(br2)小知识：这款座椅的现实原型，早于红骑士的登场时间推出"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_throne",
+        "title": "金王座",
+        "text": "登场作品：$(li)《假面骑士Kiva》（2008年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_throne",
+        "title": " ",
+        "text": "可在$(l:kiva/structures/castle_doran)城堡德兰龙$(/l)内找到"
+      }
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士格连",
+	"icon": "kamenridercraft:change_stag",
+	"category": "kamenridercraft:blade/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "garren",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:garren_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:change_stag\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:blade/items/rouze_cards#change_stag)觉醒卡片·变化锹形虫$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士格连",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)通过穿戴$(l:blade/devices/garren_buckle)星币带扣$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jack",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:garren_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:fusion_peacock\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "侍卫形态",
+			"text": "通过使用$(l:blade/items/rouze_cards#fusion_peacock)觉醒卡片·融合孔雀$(/l)进行形态切换，同时需要在物品栏中拥有$(l:blade/items/rouze_absorber)觉醒融合器$(/l)和$(l:blade/items/rouze_cards#absorb_serpent)觉醒卡片·吸收海蛇$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士格连",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)通过穿戴$(l:blade/devices/garren_buckle)星币带扣$(/l)进行变身$(br2)状态效果：$(li)飞行$(li)速度 III$(li)抗性提升$(li)急迫$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "king",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:garren_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:evolution_giraffa\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "国王形态",
+			"text": "通过使用$(l:blade/items/rouze_cards#evolution_giraffa)觉醒卡片·进化长颈鹿锯锹形虫$(/l)进行形态切换，同时需要在物品栏中拥有$(l:blade/items/rouze_absorber)觉醒融合器$(/l)和$(l:blade/items/rouze_cards#absorb_serpent)觉醒卡片·吸收海蛇$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士格连",
+			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)通过穿戴$(l:blade/devices/garren_buckle)星币带扣$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 IV$(li)跳跃提升 III$(li)力量 V"
+		}
+	]
+}

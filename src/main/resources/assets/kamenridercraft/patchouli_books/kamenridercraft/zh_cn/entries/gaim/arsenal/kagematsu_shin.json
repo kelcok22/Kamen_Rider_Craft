@@ -1,0 +1,16 @@
+{
+	"name": "影松·真",
+	"icon": "kamenridercraft:kagematsu_shin",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！(2014年，电影)$(br2)由$(l:gaim/riders/kurokage_shin)假面骑士黑影·真$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kagematsu_shin"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Para-DX召唤体",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:paradx_summon",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 20"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_gashat)全能兄弟XX卡带$(/l)或$(l:ex_aid/items/rider_gashats#knock_out_fighter_2_gashat)击倒战士2卡带$(/l)召唤$(br2)使用其他任何卡带时消失$(br2)跟随玩家并协助战斗"
+        }
+    ]
+}

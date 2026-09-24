@@ -1,0 +1,16 @@
+{
+	"name": "星云烟雾步枪",
+	"icon": "kamenridercraft:nebulasteam_gun_rifle",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/kaiser)凯撒$(/l)和$(l:build/riders/bros)引擎兄弟$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/nebulasteam_gun_rifle"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "驾驭平成剑",
+	"icon": "kamenridercraft:ride_heisaber",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由时王的$(l:zi_o/riders/zi_o#decade)Decade装甲$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/ride_heisaber"
+		}
+	]
+}

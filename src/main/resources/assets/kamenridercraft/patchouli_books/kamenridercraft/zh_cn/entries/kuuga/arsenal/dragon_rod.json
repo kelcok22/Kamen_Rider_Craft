@@ -1,0 +1,16 @@
+{
+	"name": "青龙棍",
+	"icon": "kamenridercraft:dragon_rod",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)由空我的$(l:kuuga/riders/kuuga#dragon)青龙$(/l)和$(l:kuuga/riders/kuuga#rising_dragon)升华青龙$(/l),$(l:kuuga/riders/kuuga#ultimate)究极$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/dragon_rod"
+		}
+	]
+}

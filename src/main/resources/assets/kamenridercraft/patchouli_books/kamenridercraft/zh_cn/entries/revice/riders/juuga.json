@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Juuga",
+	"icon": "kamenridercraft:juuga_driver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:juuga_driver\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Juuga",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/juuga_driver)Juuga驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 IV（持武器时）$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)急迫 III$(li)跳跃提升"
+		}
+	]
+}

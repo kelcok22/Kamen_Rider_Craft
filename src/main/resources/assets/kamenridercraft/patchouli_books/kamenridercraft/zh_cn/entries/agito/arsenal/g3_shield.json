@@ -1,0 +1,16 @@
+{
+	"name": "G3盾牌",
+	"icon": "kamenridercraft:g3_shield",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士空我 (2015年，漫画)$(br2)由$(l:agito/riders/g3)假面骑士G3$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/g3_shield"
+		}
+	]
+}

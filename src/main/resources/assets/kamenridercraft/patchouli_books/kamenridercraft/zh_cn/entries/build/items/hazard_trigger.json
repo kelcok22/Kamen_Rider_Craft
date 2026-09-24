@@ -1,0 +1,19 @@
+{
+	"name": "危险扳机",
+	"icon": "kamenridercraft:hazard_trigger",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于合成Blood的$(l:build/devices/build_driver#build_driver_blood)Build驱动器(Blood)$(/l)$(br2)用于合成金属Build的$(l:build/devices/build_driver#build_driver_metal)Build驱动器(金属Build)$(/l)和$(l:build/devices/build_driver#build_driver_phantom)Build驱动器(幻影Build)$(/l)$(br2)用于切换Build的$(l:build/riders/build#rabbittank_hazard)危险$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hazard_trigger",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/blood_stalk)血潜$(/l)"
+		}
+	]
+}

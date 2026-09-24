@@ -1,0 +1,2437 @@
+{
+	"name": "骑士驾驭凯米卡",
+	"icon": "kamenridercraft:hopper1_ride_chemy_card",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "hopper1_ride_chemy_card",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成歌查德的$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#steamhopper)蒸汽蝗虫$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#steamhopper)歌查兄弟 蒸汽蝗虫$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hopper1_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)$(br2)掉落自：$(li)$(l:gotchard/mobs/malgam)玛尔甘$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pikahotaru_ride_chemy_card",
+			"title": "闪光萤火虫驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#smahotaru)智能萤火虫$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#smahotaru)歌查兄弟 智能萤火虫$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pikahotaru_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gengenchoucho_ride_chemy_card",
+			"title": "玄幻蝴蝶驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#bulletchoucho)子弹蝴蝶$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#bulletchoucho)歌查兄弟 子弹蝴蝶$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gengenchoucho_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bakuonzemi_ride_chemy_card",
+			"title": "爆音蝉驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bakuonzemi_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "antrooper_ride_chemy_card",
+			"title": "蚂蚁军团驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#antwrestler)蚂蚁摔跤手$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#antwrestler)歌查兄弟 蚂蚁摔跤手$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:antrooper_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greatonbo_ride_chemy_card",
+			"title": "灵敏蜻蜓驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#greatsasorry)宏伟毒蝎$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#greatsasorry)歌查兄弟 宏伟毒蝎$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greatonbo_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stagvine_ride_chemy_card",
+			"title": "巨颚锹甲驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#stagmirror)锹甲魔镜$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#stagmirror)歌查兄弟 锹甲魔镜$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stagvine_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kaiserbee_ride_chemy_card",
+			"title": "凯撒黄蜂驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kaiserbee_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamantis_ride_chemy_card",
+			"title": "镰刀螳螂驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#odorimantis)舞蹈螳螂$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#odorimantis)歌查兄弟 舞蹈螳螂$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamantis_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beetlx_ride_chemy_card",
+			"title": "X独角仙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/beetlx_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "odorippa_ride_chemy_card",
+			"title": "舞蹈家驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#odorimantis)舞蹈螳螂$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#odorimantis)歌查兄弟 舞蹈螳螂$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:odorippa_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dokkirimajin_ride_chemy_card",
+			"title": "整蛊魔神驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#dokkirishovel)整蛊挖掘机$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#dokkirishovel)歌查兄弟 整蛊挖掘机$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dokkirimajin_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "doctorkozo_ride_chemy_card",
+			"title": "小鬼博士驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:doctorkozo_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pilets_ride_chemy_card",
+			"title": "海盗驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#madpirates)疯狂海贼$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#madpirates)歌查兄弟 疯狂海贼$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pilets_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wrestler_g_ride_chemy_card",
+			"title": "摔跤手G驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#antwrestler)蚂蚁摔跤手$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#antwrestler)歌查兄弟 蚂蚁摔跤手$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wrestler_g_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasukemaru_ride_chemy_card",
+			"title": "佐助丸驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#energymaru)能量丸$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#energymaru)歌查兄弟 能量丸$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasukemaru_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bulletbaang_ride_chemy_card",
+			"title": "子弹砰砰驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#bulletchoucho)子弹蝴蝶$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#bulletchoucho)歌查兄弟 子弹蝴蝶$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bulletbaang_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "apparebushido_ride_chemy_card",
+			"title": "武士道驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#appareskebow)壮烈滑板$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#appareskebow)歌查兄弟 壮烈滑板$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:apparebushido_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "karyudos_ride_chemy_card",
+			"title": "狩龙斗士驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:karyudos_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_wizard_ride_chemy_card",
+			"title": "X巫师驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/x_wizard_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spicle_ride_chemy_card",
+			"title": "尖刺单车驾驭凯米卡",
+			"text": "登场于:$(li)假面骑士歌查德 (2023年, 电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#spiclewhale)尖刺单车巨鲸$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#spiclewhale)歌查兄弟 尖刺单车巨鲸$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spicle_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skebows_ride_chemy_card",
+			"title": "滑板驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#appareskebow)壮烈滑板$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#appareskebow)歌查兄弟 壮烈滑板$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skebows_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hiikescue_ride_chemy_card",
+			"title": "机动消防车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#hiikesurose)灭火玫瑰$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#hiikesurose)歌查兄弟 灭火玫瑰$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hiikescue_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gekiocopter_ride_chemy_card",
+			"title": "激情直升机驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad#gekiocopter)激射直升$(/l)或$(l:gotchard/riders/valvarad_rider#angecopter)天使直升机武装$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gekiocopter_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deepmariner_ride_chemy_card",
+			"title": "深海潜水艇驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#venommariner)猛毒船员$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#venommariner)歌查兄弟 猛毒船员$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deepmariner_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "madwheel_ride_chemy_card",
+			"title": "疯狂车轮驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成瓦尔巴拉德的$(l:gotchard/arsenal/valvarusher)瓦尔巴拉多扳手剑$(/l)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#madpirates)疯狂海贼$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#madpirates)歌查兄弟 疯狂海贼$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:madwheel_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "machwheel_ride_chemy_card",
+			"title": "马赫车轮驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成瓦尔巴拉德的$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad#valvarad)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/machwheel_ride_chemy_card",
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "golddash_ride_chemy_card",
+			"title": "黄金冲锋驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#goldmechanichor)黄金机蟹师$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#goldmechanichor)歌查兄弟 黄金机蟹师$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golddash_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gutsshovel_ride_chemy_card",
+			"title": "勇气挖掘机驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#dokkirishovel)整蛊挖掘机$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#dokkirishovel)歌查兄弟 整蛊挖掘机$(/l)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad#gutsshovel)坚毅巨铲$(/l)或$(l:gotchard/riders/valvarad_rider#orochishovel)大蛇挖掘机武装$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gutsshovel_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "steamliner_ride_chemy_card",
+			"title": "蒸汽列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成歌查德的$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#steamhopper)蒸汽蝗虫$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#steamhopper)歌查兄弟 蒸汽蝗虫$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:steamliner_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_blue)炼金戒指(蓝)$(/l)$(br2)掉落自：$(li)$(l:gotchard/mobs/malgam)玛尔甘$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exceedfighter_ride_chemy_card",
+			"title": "超级战斗机驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/exceedfighter_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yamibat_ride_chemy_card",
+			"title": "黑暗蝙蝠驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#batkingrobo)蝙蝠王机器人$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#batkingrobo)歌查兄弟 蝙蝠王机器人$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yamibat_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "catchula_ride_chemy_card",
+			"title": "捕获狼蛛驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:catchula_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mechanichani_ride_chemy_card",
+			"title": "机械螃蟹驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#goldmechanichor)黄金机蟹师$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#goldmechanichor)歌查兄弟 黄金机蟹师$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mechanichani_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bussasorry_ride_chemy_card",
+			"title": "穿刺毒蝎驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#greatsasorry)宏伟毒蝎$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#greatsasorry)歌查兄弟 宏伟毒蝎$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bussasorry_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bountybunny_ride_chemy_card",
+			"title": "赏金兔子驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#bunnyparka)兔子卫衣$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#bunnyparka)歌查兄弟 兔子卫衣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bountybunny_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hawkstar_ride_chemy_card",
+			"title": "猎鹰之星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#needlehawk)针刺雄鹰$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#needlehawk)歌查兄弟 针刺雄鹰$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hawkstar_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tsupparihebi_ride_chemy_card",
+			"title": "猛推蛇驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tsupparihebi_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gorillasensei_ride_chemy_card",
+			"title": "猩猩老师驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#burninggorilla)燃烧猩猩$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#burninggorilla)歌查兄弟 燃烧猩猩$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gorillasensei_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ganvhale_ride_chemy_card",
+			"title": "岩石巨鲸驾驭凯米卡",
+			"text": "登场于:$(li)假面骑士歌查德 (2023年, 电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#spiclewhale)尖刺单车巨鲸$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#spiclewhale)歌查兄弟 尖刺单车巨鲸$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ganvhale_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lixion_ride_chemy_card",
+			"title": "陆地狮王驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/lixion_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidenji_ride_chemy_card",
+			"title": "雷电池驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#lightningjungle)雷电丛林$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#lightningjungle)歌查兄弟 雷电丛林$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raidenji_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kesuzo_ride_chemy_card",
+			"title": "橡皮擦驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kesuzo_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mitemirror_ride_chemy_card",
+			"title": "看看镜子驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#stagmirror)锹甲魔镜$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#stagmirror)歌查兄弟 锹甲魔镜$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mitemirror_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "energyl_ride_chemy_card",
+			"title": "能量饮料驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#energymaru)能量丸$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#energymaru)歌查兄弟 能量丸$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:energyl_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "panpakaparka_ride_chemy_card",
+			"title": "登登卫衣驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#bunnyparka)兔子卫衣$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#bunnyparka)歌查兄弟 兔子卫衣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:panpakaparka_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "televi_ride_chemy_card",
+			"title": "电视机驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:televi_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "timelord_ride_chemy_card",
+			"title": "时间领主驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:timelord_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smaphone_ride_chemy_card",
+			"title": "智能手机驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#smahotaru)智能萤火虫$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#smahotaru)歌查兄弟 智能萤火虫$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smaphone_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "renkingrobo_ride_chemy_card",
+			"title": "炼金王机器人驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#batkingrobo)蝙蝠王机器人$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#batkingrobo)歌查兄弟 蝙蝠王机器人$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:renkingrobo_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_fortress_ride_chemy_card",
+			"title": "十要塞驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/x_fortress_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "happyclover_ride_chemy_card",
+			"title": "开心四叶草驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:happyclover_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "burningnero_ride_chemy_card",
+			"title": "燃烧辣椒驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#burninggorilla)燃烧猩猩$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#burninggorilla)歌查兄弟 燃烧猩猩$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:burningnero_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bambamboo_ride_chemy_card",
+			"title": "砰砰竹子驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bambamboo_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "saboneedle_ride_chemy_card",
+			"title": "针刺仙人掌驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#needlehawk)针刺雄鹰$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#needlehawk)歌查兄弟 针刺雄鹰$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:saboneedle_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "venomdake_ride_chemy_card",
+			"title": "剧毒蘑菇驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#venommariner)猛毒船员$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#venommariner)歌查兄弟 猛毒船员$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:venomdake_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "utsubocchama_ride_chemy_card",
+			"title": "猪笼草少爷驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:utsubocchama_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flayrose_ride_chemy_card",
+			"title": "烈焰玫瑰驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#hiikesurose)灭火玫瑰$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#hiikesurose)歌查兄弟 灭火玫瑰$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flayrose_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buglesia_ride_chemy_card",
+			"title": "虫王花驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buglesia_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "junglejan_ride_chemy_card",
+			"title": "丛林小子驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#lightningjungle)雷电丛林$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#lightningjungle)歌查兄弟 雷电丛林$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:junglejan_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_green)炼金戒指(绿)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "xeggdrasil_ride_chemy_card",
+			"title": "世界虚空树驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/xeggdrasil_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "carery_ride_chemy_card",
+			"title": "关爱妖精驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:carery_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "berosol_ride_chemy_card",
+			"title": "舌舔幽魂驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:berosol_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sayzombie_ride_chemy_card",
+			"title": "生存僵尸驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sayzombie_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "angelead_ride_chemy_card",
+			"title": "指引天使驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#angecopter)天使直升机武装$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:angelead_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zukyumpire_ride_chemy_card",
+			"title": "心动吸血鬼驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zukyumpire_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daiohni_ride_chemy_card",
+			"title": "大王恶鬼驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成瓦尔巴拉德的$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#valvarad)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daiohni_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mackraken_ride_chemy_card",
+			"title": "漆黑克拉肯驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mackraken_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jyamatanoorochi_ride_chemy_card",
+			"title": "邪歧大蛇驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#orochishovel)大蛇挖掘机武装$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamatanoorochi_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ninetail_ride_chemy_card",
+			"title": "九尾驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninetail_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ufo_x_ride_chemy_card",
+			"title": "UFO-X驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#super_ufo_x)超级歌查德 交叉十幽浮$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cross_ufo_x)歌查兄弟 超级交叉十幽浮$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/ufo_x_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nammonite_ride_chemy_card",
+			"title": "空虚菊石驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nammonite_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "akumanocaris_ride_chemy_card",
+			"title": "恶魔奇虾驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:akumanocaris_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pakuraptor_ride_chemy_card",
+			"title": "吞食迅猛龙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pakuraptor_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ojilacanth_ride_chemy_card",
+			"title": "老爷腔棘鱼驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ojilacanth_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sabeliger_ride_chemy_card",
+			"title": "剑齿虎驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sabeliger_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "warptera_ride_chemy_card",
+			"title": "瞬移翼龙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:warptera_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigalodon_ride_chemy_card",
+			"title": "极巨齿鲨驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigalodon_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tricera_ride_chemy_card",
+			"title": "三重三角龙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tricera_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blizzammoth_ride_chemy_card",
+			"title": "暴雪猛犸驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blizzammoth_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_red)炼金戒指(红色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_rex_ride_chemy_card",
+			"title": "X暴龙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#super_x_rex)超级歌查德 交叉十暴龙$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cross_x_rex)歌查兄弟 超级交叉十暴龙$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/x_rex_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mercurin_ride_chemy_card",
+			"title": "水星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mercurin_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kinkiravina_ride_chemy_card",
+			"title": "金闪闪金星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kinkiravina_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gokigenmeteon_ride_chemy_card",
+			"title": "情绪流星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gokigenmeteon_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neminemoon_ride_chemy_card",
+			"title": "安眠月亮驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换Majade的$(l:gotchard/riders/majade#mooncerberus)月之三头犬$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neminemoon_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "firemars_ride_chemy_card",
+			"title": "烈火火星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#marsphoenix)火星不死鸟$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#marsphoenix)歌查兄弟 火星不死鸟$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:firemars_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "grandsaturn_ride_chemy_card",
+			"title": "巨大土星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:grandsaturn_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_sun_ride_chemy_card",
+			"title": "太阳驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成Majade的$(l:gotchard/devices/alchemisdriver)炼金术士驱动器$(/l)$(br2)可切换Majade的$(l:gotchard/riders/majade#sununicorn)烈阳独角兽$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_sun_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jupitta_ride_chemy_card",
+			"title": "木星驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jupitta_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuroana_ride_chemy_card",
+			"title": "黑洞驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成Wind的$(l:gotchard/devices/alchemisdriver#alchemisdriver_wind)炼金术士驱动器(Wind)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuroana_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaiard_ride_chemy_card",
+			"title": "热情地球驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gaiard_ride_chemy_card",
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigabaham_ride_chemy_card",
+			"title": "千兆巴哈姆驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成Wind的$(l:gotchard/devices/alchemisdriver_wind)炼金术士驱动器(Wind)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigabaham_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "macentaurus_ride_chemy_card",
+			"title": "魔剑半人马驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:macentaurus_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicon_ride_chemy_card",
+			"title": "独角兽驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成Majade的$(l:gotchard/devices/alchemisdriver)炼金术士驱动器$(/l)$(br2)可切换Majade的$(l:gotchard/riders/majade#sununicorn)烈阳独角兽$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicon_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vanfenrir_ride_chemy_card",
+			"title": "先锋芬里尔驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vanfenrir_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "inphoenix_ride_chemy_card",
+			"title": "凤凰无限驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#marsphoenix)火星不死鸟$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#marsphoenix)歌查兄弟 火星不死鸟$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:inphoenix_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yoacerberus_ride_chemy_card",
+			"title": "黎明三头犬驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换Majade的$(l:gotchard/riders/majade#mooncerberus)月之三头犬$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yoacerberus_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "haodin_ride_chemy_card",
+			"title": "霸王奥丁驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:haodin_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gingriffon_ride_chemy_card",
+			"title": "银狮鹫驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gingriffon_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "donposeidon_ride_chemy_card",
+			"title": "咚波塞冬驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:donposeidon_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragonalos_ride_chemy_card",
+			"title": "诸龙黄昏驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/dragonalos_ride_chemy_card",
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tamagon_ride_chemy_card",
+			"title": "彩虹龙蛋",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/tamagon_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nijigon_ride_chemy_card_extra",
+			"title": "彩虹龙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#rainbow_gotchard)彩虹歌查德$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nijigon_ride_chemy_card_extra",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/ride_chemy_cards#tamagon_ride_chemy_card)彩虹龙蛋$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nijigon_ride_chemy_card_special",
+			"title": "彩虹龙驾驭凯米卡(特殊)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#rainbow_gotchard)彩虹歌查德$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nijigon_ride_chemy_card_special",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/ride_chemy_cards#tamagon_ride_chemy_card)彩虹龙蛋$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tenliner_ride_chemy_card",
+			"title": "十列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#iron_gotchard)钢铁歌查德$(/l)与$(l:gotchard/riders/gotchard#platina_gotchard)白金歌查德$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#platina)白金歌查兄弟$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/tenliner_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crosshopper_ride_chemy_card",
+			"title": "十蝗虫驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#platina_gotchard)白金歌查德$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#platina)白金歌查兄弟$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crosshopper_ride_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dread)假面骑士恐惧$(/l)（背包中需要有$(l:gotchard/items/ride_chemy_cards#tenliner_ride_chemy_card)十列车驾驭凯米卡$(/l)）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hopper1_ride_chemy_card_ultima",
+			"title": "究极蝗虫1号驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#ultima_steamhopper)究极蒸汽蝗虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hopper1_ride_chemy_card_ultima",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/eld)假面骑士艾尔德$(/l)（背包中需要有$(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)蝗虫一号驾驭凯米卡$(/l)）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "steamliner_ride_chemy_card_ultima",
+			"title": "究极蒸汽列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#ultima_steamhopper)究极蒸汽蝗虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:steamliner_ride_chemy_card_ultima",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/eld)假面骑士艾尔德$(/l)（背包中需要有$(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)蒸汽列车驾驭凯米卡$(/l)）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "twilight_the_sun_ride_chemy_card",
+			"title": "暮光太阳驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换Majade的$(l:gotchard/riders/majade#twilight)暮光Majade$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/twilight_the_sun_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "twilight_unicon_ride_chemy_card",
+			"title": "暮光独角兽驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换Majade的$(l:gotchard/riders/majade#twilight)暮光Majade$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/twilight_unicon_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_machwheel_ride_chemy_card",
+			"title": "金属马赫车轮驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#kurogane)瓦尔巴拉德黑钢$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_machwheel_ride_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/gigist)冥黑之王·基基斯托$(/l)（背包中需要有$(l:gotchard/items/ride_chemy_cards#machwheel_ride_chemy_card)马赫车轮驾驭凯米卡$(/l)与$(l:gotchard/items/ride_chemy_cards#daiohni_ride_chemy_card)大王恶鬼驾驭凯米卡$(/l)）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_daiohni_ride_chemy_card",
+			"title": "金属大王恶鬼驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#kurogane)瓦尔巴拉德黑钢$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_daiohni_ride_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/gigist)冥黑之王·基基斯托$(/l)（背包中需要有$(l:gotchard/items/ride_chemy_cards#machwheel_ride_chemy_card)马赫车轮驾驭凯米卡$(/l)与$(l:gotchard/items/ride_chemy_cards#daiohni_ride_chemy_card)大王恶鬼驾驭凯米卡$(/l)）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_assemble_ride_chemy_card",
+			"title": "X集结驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士冬季电影：歌查德&极狐 最强凯米★盛大捕获行动(2023年，电影)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#star_gotchard)星辰歌查德$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/x_assemble_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hopper101_ride_chemy_card",
+			"title": "蝗虫101驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明(2024年，电影)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#miracle_gotchard)奇迹歌查德$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/hopper101_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigantliner_ride_chemy_card",
+			"title": "巨型列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明(2024年，电影)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#miracle_gotchard)奇迹歌查德$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gigantliner_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigantliner_ride_chemy_card_fs",
+			"title": "巨型列车驾驭凯米卡(最终舞台剧版)",
+			"text": "登场于：$(li)假面骑士歌查德：最终舞台剧(2024年，舞台剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#legendliner)传奇列车$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gigantliner_ride_chemy_card_fs"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "legendary_legend_ride_chemy_card_fs",
+			"title": "传奇雷杰多骑士凯米驾驭卡(最终舞台剧版)",
+			"text": "登场于：$(li)假面骑士歌查德：最终舞台剧(2024年，舞台剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#legendliner)传奇列车$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/legendary_legend_ride_chemy_card_fs"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "firemars_ride_chemy_card_televikun",
+			"title": "烈燃火星驾驭凯米卡(TV君版本)",
+			"text": "登场于：$(li)假面骑士歌查德：什么！？宝太郎和凛音互换身体了！！(2024年，超战斗DVD)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#marsphoenix)火星不死鸟$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#marsphoenix)歌查兄弟 火星不死鸟$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/firemars_ride_chemy_card_televikun",
+			"text": "获取方式：打开情人节$(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "inphoenix_ride_chemy_card_televikun",
+			"title": "无限不死鸟驾驭凯米卡(TV君版本)",
+			"text": "登场于：$(li)假面骑士歌查德：什么！？宝太郎和凛音互换身体了！！(2024年，超战斗DVD)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#marsphoenix)火星不死鸟$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#marsphoenix)歌查兄弟 火星不死鸟$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/inphoenix_ride_chemy_card_televikun",
+			"text": "获取方式：打开情人节$(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daiohni_gt_ride_chemy_card",
+			"title": "大王恶鬼GT驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：毕业季(2025年，V-Cinema电影)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#gt)瓦尔巴拉德GT$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/daiohni_gt_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigantliner_gt_ride_chemy_card",
+			"title": "巨型列车GT驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：毕业季(2025年，V-Cinema电影)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad_rider#gt)瓦尔巴拉德GT$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gigantliner_gt_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daybreak_hopper1_ride_chemy_card",
+			"title": "黎明蝗虫一号驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成黎明歌查德的$(l:gotchard/devices/gotchardriver_daybreak)歌查德驱动器(黎明)$(/l)$(br2)可切换黎明歌查德的$(l:gotchard/riders/gotchard_daybreak#steamhopper)蒸汽蝗虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daybreak_hopper1_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daybreak_steamliner_ride_chemy_card",
+			"title": "黎明蒸汽列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成黎明歌查德的$(l:gotchard/devices/gotchardriver_daybreak)歌查德驱动器(黎明)$(/l)$(br2)可切换黎明歌查德的$(l:gotchard/riders/gotchard_daybreak#steamhopper)蒸汽蝗虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daybreak_steamliner_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "timelord_daybreak_chemy_card",
+			"title": "黎明时间领主驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:timelord_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "golddash_daybreak_chemy_card",
+			"title": "黎明黄金冲锋驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golddash_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "apparebushido_daybreak_chemy_card",
+			"title": "黎明武士道驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:apparebushido_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bulletbaang_daybreak_chemy_card",
+			"title": "黎明子弹砰砰驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bulletbaang_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skebows_daybreak_chemy_card",
+			"title": "黎明滑板驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skebows_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mechanichani_daybreak_chemy_card",
+			"title": "黎明机械螃蟹驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mechanichani_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "junglejan_daybreak_chemy_card",
+			"title": "黎明丛林小子驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:junglejan_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raidenji_daybreak_chemy_card",
+			"title": "黎明雷电池驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raidenji_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "the_sun_daybreak_chemy_card",
+			"title": "黎明太阳驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:the_sun_daybreak_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于地狱维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shining_hopper1_ride_chemy_card",
+			"title": "闪耀蝗虫1号驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明(2024年，电影)$(br2)可切换黎明歌查德的$(l:gotchard/riders/gotchard_daybreak#shining)闪耀黎明$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/shining_hopper1_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shining_steamliner_ride_chemy_card",
+			"title": "闪耀蒸汽列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明(2024年，电影)$(br2)可切换黎明歌查德的$(l:gotchard/riders/gotchard_daybreak#shining)闪耀黎明$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/shining_steamliner_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "legend_ride_chemy_card",
+			"title": "雷杰多骑士凯米驾驭卡",
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)用于合成雷杰多的$(l:gotchard/devices/legendriver)雷杰多驱动器$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#legend)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:legend_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "legendary_legend_ride_chemy_card",
+			"title": "传奇雷杰多骑士凯米驾驭卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#legendary)传奇雷杰多$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/legendary_legend_ride_chemy_card"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_ether_chemy_card",
+			"title": "黑暗以太驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明(2024年，电影)$(br2)用于合成多拉德的$(l:gotchard/devices/eldoradriver)黄金国驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_ether_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/dorado)假面骑士多拉德$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eldragon_chemy_card",
+			"title": "黄金龙驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成艾尔德的$(l:gotchard/devices/eldoradriver#eldoradriver_eld)黄金国驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eldragon_chemy_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gotchard/mobs/eld)假面骑士艾尔德$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "santaclaus_ride_chemy_card",
+			"title": "圣诞蝗虫驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 查理德可蛋糕(2023年，糕点系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:santaclaus_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：打开$(l:misc/items/gift)礼物$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tonakailiner_ride_chemy_card",
+			"title": "驯鹿列车驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 查理德可蛋糕(2023年，糕点系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tonakailiner_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：打开$(l:misc/items/gift)礼物$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sushi_ride_chemy_card",
+			"title": "寿司驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 大学篇(2026年，小说)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#sushihopper)寿司蝗虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sushi_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_purple)炼金戒指(紫色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hopper_ride_chemy_card",
+			"title": "蝗虫驾驭凯米卡",
+			"text": "登场于：$(li)假面骑士歌查德 大学篇(2026年，小说)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#sushihopper)寿司蝗虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hopper_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)与$(l:gotchard/items/alchemist_rings#alchemist_ring_orange)炼金戒指(橙色)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_ride_chemy_card",
+			"title": "空我骑士凯米驾驭卡",
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#exceed_mighty)超越全能$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#exceed_mighty)歌查兄弟 超越全能$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#kuuga)华丽空我$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:kuuga/riders/kuuga)假面骑士空我$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_ride_chemy_card",
+			"title": " ",
+			"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+		},
+	    {
+	"type": "patchouli:text",
+	"anchor": "agito_ride_chemy_card",
+	"title": "亚极陀骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#agito)华丽亚极陀$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:agito/riders/agito)假面骑士亚极陀$(/l)"
+       },
+       {
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:agito_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ryuki_ride_chemy_card",
+	"title": "龙骑骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ryuki)华丽龙骑$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:ryuki/riders/ryuki)假面骑士龙骑$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:ryuki_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "faiz_ride_chemy_card",
+	"title": "Faiz骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#exceed_mighty)超越全能$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#exceed_mighty)歌查兄弟 超越全能$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#faiz)华丽Faiz$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:faiz/riders/faiz)假面骑士Faiz$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:faiz_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "blade_ride_chemy_card",
+	"title": "剑骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#blade)华丽剑$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:blade/riders/blade)假面骑士剑$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:blade_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "hibiki_ride_chemy_card",
+	"title": "响鬼骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#hibiki)华丽响鬼$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:hibiki/riders/hibiki)假面骑士响鬼$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:hibiki_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "kabuto_ride_chemy_card",
+	"title": "甲斗骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#kabuto)华丽甲斗$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:kabuto/riders/kabuto)假面骑士甲斗$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:kabuto_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "den_o_ride_chemy_card",
+	"title": "电王骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#den_o)华丽电王$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:den_o/riders/den_o)假面骑士电王$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:den_o_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "kiva_ride_chemy_card",
+	"title": "Kiva骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#kiva)华丽Kiva$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:kiva/riders/kiva)假面骑士Kiva$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:kiva_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "decade_ride_chemy_card",
+	"title": "Decade骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#decade)华丽Decade$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:decade/riders/decade)假面骑士Decade$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:decade_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "w_ride_chemy_card",
+	"title": "W骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#cyclone_tatoba)疾风鹰虎蝗$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)歌查兄弟 疾风鹰虎蝗$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#double)华丽W$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:w/riders/double)假面骑士W$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:w_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ooo_ride_chemy_card",
+	"title": "OOO骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#cyclone_tatoba)疾风鹰虎蝗$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cyclone_tatoba)歌查兄弟 疾风鹰虎蝗$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ooo)华丽OOO$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:ooo/riders/ooo)假面骑士OOO$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:ooo_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "fourze_ride_chemy_card",
+	"title": "Fourze骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#fullfull_rocket)满装火箭$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#fullfull_rocket)歌查兄弟 满装火箭$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#fourze)华丽Fourze$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:fourze/riders/fourze)假面骑士Fourze$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:fourze_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "wizard_ride_chemy_card",
+	"title": "Wizard骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#wizard)华丽Wizard$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:wizard/riders/wizard)假面骑士Wizard$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:wizard_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "gaim_ride_chemy_card",
+	"title": "铠武骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#gaim)华丽铠武$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:gaim/riders/gaim)假面骑士铠武$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:gaim_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "drive_ride_chemy_card",
+	"title": "Drive骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#drive)华丽Drive$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:drive/riders/drive)假面骑士Drive$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:drive_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ghost_ride_chemy_card",
+	"title": "Ghost骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ghost)华丽Ghost$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:ghost/riders/ghost)假面骑士Ghost$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:ghost_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ex_aid_ride_chemy_card",
+	"title": "Ex-Aid骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ex_aid)华丽Ex-Aid$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:ex_aid/riders/ex_aid)假面骑士Ex-Aid$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:ex_aid_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "build_ride_chemy_card",
+	"title": "Build骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#fullfull_rocket)满装火箭$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#fullfull_rocket)歌查兄弟 满装火箭$(/l)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#build)华丽Build$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:build/riders/build)假面骑士Build$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:build_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "zi_o_ride_chemy_card",
+	"title": "时王骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#zi_o)华丽时王$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:zi_o/riders/zi_o)假面骑士时王$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:zi_o_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "zero_one_ride_chemy_card",
+	"title": "01骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#zero_one)华丽01$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:zero_one/riders/zero_one)假面骑士01$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:zero_one_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "saber_ride_chemy_card",
+	"title": "Saber骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#saber)华丽Saber$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:saber/riders/saber)假面骑士Saber$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:saber_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "revi_ride_chemy_card",
+	"title": "利维骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#revi)华丽利维$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:revi/riders/revi)假面骑士利维$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:revi_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "vice_ride_chemy_card",
+	"title": "维斯骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#vice)华丽维斯$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:vice/riders/vice)假面骑士维斯$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:vice_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "geats_ride_chemy_card",
+	"title": "极狐骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#geats)华丽极狐$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:geats/riders/geats)假面骑士极狐$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:geats_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "gotchard_ride_chemy_card",
+	"title": "歌查德骑士凯米驾驭卡",
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#gotchard)华丽歌查德$(/l)形态"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:gotchard_ride_chemy_card",
+	"title": " ",
+	"text": "获取方式：处于城市维度时在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "kuuga_ultimate_ride_chemy_card",
+	"title": "空我究极驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#kuuga_ultimate)华丽空我 究极形态$(/l)$(br2)变身为华丽空我 究极形态后，按住Shift键点击可召唤空我的$(l:kuuga/riders/kuuga#mighty)全能$(/l)或$(l:kuuga/riders/kuuga#amazing_mighty)惊异全能$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/kuuga_ultimate_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "agito_shining_ride_chemy_card",
+	"title": "亚极陀闪耀驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#agito_shining)华丽亚极陀 闪耀形态$(/l)$(br2)变身为华丽亚极陀 闪耀形态后，按住Shift键点击可召唤亚极陀的$(l:agito/riders/agito#ground)大地$(/l)或$(l:agito/riders/agito#burning)燃烧$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/agito_shining_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ryuki_survive_ride_chemy_card",
+	"title": "龙骑生存驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ryuki_survive)华丽龙骑 生存形态$(/l)$(br2)变身为华丽龙骑 生存形态后，按住Shift键点击可召唤龙骑的$(l:ryuki/riders/ryuki#ryuki)基础形态$(/l)或$(l:ryuki/riders/ryuki#dragshield)龙骑 防御降临形态$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/ryuki_survive_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "faiz_blaster_ride_chemy_card",
+	"title": "Faiz爆裂驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#faiz_blaster)华丽Faiz 爆裂形态$(/l)$(br2)变身为华丽Faiz 爆裂形态后，按住Shift键点击可召唤Faiz的$(l:faiz/riders/faiz#faiz)基础$(/l)或$(l:faiz/riders/faiz#axel)加速$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/faiz_blaster_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "blade_king_ride_chemy_card",
+	"title": "剑帝王形态驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#blade_king)华丽剑 帝皇形态$(/l)$(br2)变身为华丽剑 帝皇形态后，按住Shift键点击可召唤剑的$(l:blade/riders/blade#blade)基础$(/l)或$(l:blade/riders/blade#jack)侍卫$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/blade_king_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "armed_hibiki_ride_chemy_card",
+	"title": "装甲响鬼驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#armed_hibiki)华丽响鬼 装甲形态$(/l)$(br2)变身为华丽响鬼 装甲形态后，按住Shift键点击可召唤响鬼的$(l:hibiki/riders/hibiki#hibiki)基础$(/l)或$(l:hibiki/riders/hibiki#kurenai)红$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/armed_hibiki_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "kabuto_hyper_ride_chemy_card",
+	"title": "海帕甲斗驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#kabuto_hyper)华丽甲斗 超越形态$(/l)$(br2)变身为华丽甲斗 超越形态后，按住Shift键点击可召唤甲斗的$(l:kabuto/riders/kabuto#masked)重甲$(/l)或$(l:kabuto/riders/kabuto#rider)骑士$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/kabuto_hyper_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "den_o_liner_ride_chemy_card",
+	"title": "电王班列形态驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#den_o_liner)华丽电王 班列形态$(/l)$(br2)变身为华丽电王 班列形态后，按住Shift键点击可召唤电王的$(l:den_o/riders/den_o#sword)圣剑$(/l)或$(l:den_o/riders/den_o#climax)顶点$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/den_o_liner_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "kiva_emperor_ride_chemy_card",
+	"title": "魔皇Kiva驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#kiva_emperor)华丽Kiva 魔皇形态$(/l)$(br2)变身为华丽Kiva 魔皇形态后，按住Shift键点击可召唤Kiva的$(l:kiva/riders/kiva#kiva)Kiva$(/l)或$(l:kiva/riders/kiva#dogabaki)德伽巴基$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/kiva_emperor_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "decade_complete_ride_chemy_card",
+	"title": "Decade完全形态驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#decade_complete)华丽Decade 完全形态$(/l)$(br2)变身为华丽Decade 完全形态后，按住Shift键点击可召唤Decade的$(l:decade/riders/decade#decade)基础形态$(/l)或$(l:decade/riders/decade#neo_decade)新Decade驱动器形态$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/decade_complete_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "w_cyclone_joker_xtreme_ride_chemy_card",
+	"title": "W疾风王牌极致驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#double_cyclonejokerxtreme)华丽W 疾风王牌极致$(/l)$(br2)变身为华丽W 疾风王牌极致后，按住Shift键点击可召唤W的$(l:w/riders/double#cyclonejoker)疾风王牌$(/l)或$(l:w/riders/double#fangjoker)獠牙王牌$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/w_cyclone_joker_xtreme_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ooo_putotyra_ride_chemy_card",
+	"title": "OOO恐龙联组驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ooo_putotyra)华丽OOO 恐龙联组$(/l)$(br2)变身为华丽OOO 恐龙联组后，按住Shift键点击可召唤OOO的$(l:ooo/riders/ooo#tatoba)鹰虎蝗$(/l)或$(l:ooo/riders/ooo#tajadol)鹰孔鹫$(/l)联组"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/ooo_putotyra_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "fourze_cosmic_ride_chemy_card",
+	"title": "Fourze宇宙状态驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#fourze_cosmic)华丽Fourze 宇宙状态$(/l)$(br2)变身为华丽Fourze 宇宙状态后，按住Shift键点击可召唤Fourze的$(l:fourze/riders/fourze#basestates)基础状态$(/l)或$(l:fourze/riders/fourze#magnetstates)磁力状态$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/fourze_cosmic_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "wizard_infinity_ride_chemy_card",
+	"title": "Wizard无限风格驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#wizard_infinity)华丽Wizard 无限风格$(/l)$(br2)变身为华丽Wizard 无限风格后，按住Shift键点击可召唤Wizard的$(l:wizard/riders/wizard#flame)火焰风格$(/l)或$(l:wizard/riders/wizard#all_dragon)完全魔龙风格$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/wizard_infinity_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "gaim_kiwami_ride_chemy_card",
+	"title": "铠武极武装驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#gaim_kiwami)华丽铠武 极武装$(/l)$(br2)变身为华丽铠武 极武装后，按住Shift键点击可召唤铠武的$(l:gaim/riders/gaim#orange)橙子$(/l)或$(l:gaim/riders/gaim#kachidoki)胜吼$(/l)武装"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/gaim_kiwami_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "drive_tridoron_ride_chemy_card",
+	"title": "Drive赛特朗型号驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#drive_tridoron)华丽Drive 赛特朗型号$(/l)$(br2)变身为华丽Drive 赛特朗型号后，按住Shift键点击可召唤Drive的$(l:drive/riders/drive#speed)速度型号$(/l)或$(l:drive/riders/drive#formula)方程式型号$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/drive_tridoron_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ghost_mugen_ride_chemy_card",
+	"title": "Ghost无限魂驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ghost_mugen)华丽Ghost 无限魂$(/l)$(br2)变身为华丽Ghost 无限魂后，按住Shift键点击可召唤Ghost的$(l:ghost/riders/ghost#ore)俺魂$(/l)或$(l:ghost/riders/ghost#grateful)感恩魂$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/ghost_mugen_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ex_aid_muteki_ride_chemy_card",
+	"title": "Ex-Aid无敌玩家驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ex_aid_muteki)华丽Ex-Aid 无敌玩家$(/l)$(br2)变身为华丽Ex-Aid 无敌玩家后，按住Shift键点击可召唤Ex-Aid的$(l:ex_aid/riders/ex_aid#action_2)动作玩家Lv. 2$(/l)或$(l:ex_aid/riders/ex_aid#maximum)极限玩家Lv. 99$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/ex_aid_muteki_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "build_genius_ride_chemy_card",
+	"title": "Build天才形态驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#build_genius)华丽Build 天才形态$(/l)$(br2)变身为华丽Build 天才形态后，按住Shift键点击可召唤Build的$(l:build/riders/build#rabbittank)兔子坦克形态$(/l)或$(l:build/riders/build#rabbitrabbit)兔兔形态$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/build_genius_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "grand_zi_o_ride_chemy_card",
+	"title": "崇皇时王驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#grandzi_o)华丽崇皇时王$(/l)$(br2)变身为崇皇时王后，按住Shift键点击可召唤时王的$(l:zi_o/riders/zi_o#zi_o)基础形态$(/l)或$(l:zi_o/riders/zi_o#ii)时王二阶$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/grand_zi_o_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "zero_two_ride_chemy_card",
+	"title": "02驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#zero_two)华丽02$(/l)形态$(br2)变身为华丽02后，按住Shift键点击可召唤01的$(l:zero_one/riders/zero_one#rising_hopper)高跃蝗虫$(/l)或$(l:zero_one/riders/zero_one#metalcluster_hopper)金属原子簇蝗虫$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/zero_two_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "xross_saber_ride_chemy_card",
+	"title": "十圣刃驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：04弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#xross_saber)华丽十圣刃$(/l)形态$(br2)变身为华丽十圣刃后，按住Shift键点击可召唤圣刃的$(l:saber/riders/saber#brave_dragon)勇气飞龙$(/l)或$(l:saber/riders/saber#elemental_primitive_dragon)元素远古飞龙$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/xross_saber_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ultimate_revi_ride_chemy_card",
+	"title": "究极利维驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ultimate_revi)华丽究极利维$(/l)$(br2)变身为华丽究极利维后，按住Shift键点击可召唤利维的$(l:revice/riders/revi#rex)暴龙 基因组$(/l)或$(l:revice/riders/revi#thunder_gale)利维斯形态$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/ultimate_revi_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ultimate_vice_ride_chemy_card",
+	"title": "究极维斯驾驭凯米卡",
+	"text": "登场于：$(li)骑士驾驭凯米卡牌系列：03弹 (2024年，玩具系列)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ultimate_vice)华丽究极维斯$(/l)$(br2)变身为华丽究极维斯后，按住Shift键点击可召唤维斯的$(l:revice/riders/vice#rex)暴龙基因组$(/l)或$(l:revice/riders/vice#barid_rex)破壳暴龙$(/l)"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/ultimate_vice_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "geats_ix_ride_chemy_card",
+	"title": "极狐马克九驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#geatsix)华丽极狐马克九$(/l)形态$(br2)变身为华丽极狐马克九后，按住Shift键点击可召唤极狐的$(l:geats/riders/geats#magnumboost)马格南推进器$(/l)或$(l:geats/riders/geats#laserboost)镭射推进器$(/l)形态"
+},
+{
+	"type": "patchouli:crafting",
+	"title": " ",
+	"recipe": "kamenridercraft:gotchard/geats_ix_ride_chemy_card"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ark_zero_ride_chemy_card",
+	"title": "Ark-Zero驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换亚克零的$(l:zero_one/riders/ark_zero#outsiders)界外者/歌查德$(/l)版本"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:ark_zero_ride_chemy_card",
+	"title": " ",
+	"text": "当前无法获取该物品"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "ark_one_ride_chemy_card",
+	"title": "Ark-One驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换亚克一的$(l:zero_one/riders/ark_zero#gotchard)歌查德$(/l)版本"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:ark_one_ride_chemy_card",
+	"title": " ",
+	"text": "当前无法获取该物品"
+},
+{
+	"type": "patchouli:text",
+	"anchor": "eternal_ride_chemy_card",
+	"title": "Eternal驾驭凯米卡",
+	"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换Eternal的$(l:w/riders/eternal#yellowed)Eternal蓝色火焰(歌查德版本)$(/l)"
+},
+{
+	"type": "patchouli:spotlight",
+	"link_recipe": true,
+	"item": "kamenridercraft:eternal_ride_chemy_card",
+	"title": " ",
+	"text": "当前无法获取该物品"
+}
+	]
+}

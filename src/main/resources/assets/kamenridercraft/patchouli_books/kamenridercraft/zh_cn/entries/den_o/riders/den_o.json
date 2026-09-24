@@ -1,0 +1,176 @@
+{
+    "name": "假面骑士电王",
+    "icon": "kamenridercraft:rider_ticket",
+    "category": "kamenridercraft:den_o/riders",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "plat",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "月台形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)霉运 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "sword",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_sword\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "圣剑形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_sword)骑士车票(桃塔罗斯)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)拳力提升 II$(li)速度"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "rod",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_rod\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "圣竿形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_rod)骑士车票(浦塔罗斯)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)手臂加长 II$(li)海豚的恩惠 II$(li)水下呼吸 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ax",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_ax\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "圣斧形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_ax)骑士车票(金塔罗斯)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)力量"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "gun",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_gun\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "圣枪形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_gun)骑士车票(龙塔罗斯)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)射击推进$(li)速度 II$(li)跳跃提升 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "wing",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_wing\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "圣翼形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_wing)骑士车票(齐格)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 II$(li)饱和$(li)滑翔 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "climax",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:ktaros_climax\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "顶点形态",
+            "text": "通过使用 $(l:den_o/items/ktaros)K-塔罗斯手机$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "climax_punch",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:ktaros_punch\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "顶点形态(拳击模式)",
+            "text": "通过使用 $(l:den_o/items/ktaros)K-塔罗斯手机$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 II$(li)力量 II$(br2)专属技能：$(li)骑士拳"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "climax_kick",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:ktaros\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "顶点形态(踢击模式)",
+            "text": "通过使用 $(l:den_o/items/ktaros)K-塔罗斯手机$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 II$(br2)专属技能：$(li)骑士踢"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "liner",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_liner_form\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "班列形态",
+            "text": "需在物品栏中持有 $(l:den_o/items/ktaros)K-塔罗斯手机$(/l)，同时使用 $(l:den_o/arsenal/denkamen_sword)电假面圣剑$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 V$(li)速度 II$(li)抗性提升 IV$(li)急迫 III$(li)跳跃提升 II$(li)抗火 III$(li)力量 IV"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "super_climax",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:super_ktaros\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "超顶点形态",
+            "text": "需在物品栏中持有 $(l:den_o/items/ktaros)K-塔罗斯手机$(/l)，同时 Shift+点击 $(l:den_o/items/rider_tickets#rider_ticket_wing)骑士车票(齐格)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)超假面骑士电王&Decade 新世代：鬼岛战舰 (2009年，电影)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 IV$(li)力量 III"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "pudding",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:den_o_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_pudding\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "布丁形态",
+            "text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_pudding)骑士车票(布丁)$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士电王",
+            "text": "登场于：$(li)异魔神动画3 (2010年，OVA系列)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#den_o_belt)电王腰带$(/l)进行变身$(br2)状态效果：$(li)急迫 III$(li)手臂加长$(li)缩小 V$(li)二次元$(li)SD"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "深渊召机",
+	"icon": "kamenridercraft:abyss_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 47,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Decade (2009年, 电视剧)$(br2)由$(l:ryuki/riders/abyss)假面骑士深渊$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/abyss_visor"
+		}
+	]
+}

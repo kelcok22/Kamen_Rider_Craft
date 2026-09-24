@@ -1,0 +1,90 @@
+{
+	"name": "炼金戒指",
+	"icon": "kamenridercraft:alchemist_ring_blue",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_blue",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)装配在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中，可获取昆虫属凯米卡$(br2)装配在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中，可获取载具属凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_blue"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_green",
+			"title": "炼金戒指(绿)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)装配在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中，可获取植物属凯米卡$(br2)装配在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中，可获取职业属凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_green"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_red",
+			"title": "炼金戒指(红色)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)装配在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中，可获取动物属凯米卡$(br2)装配在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中，可获取远古属凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_red"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_orange",
+			"title": "炼金戒指(橙色)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)装配在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中，可获取幻想属凯米卡$(br2)装配在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中，可获取宇宙属凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_orange"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_purple",
+			"title": "炼金戒指(紫色)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)装配在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)中，可获取造物属凯米卡$(br2)装配在$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中，可获取神秘属凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_purple"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_gold",
+			"title": "炼金戒指(金&红)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_gold"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_black",
+			"title": "炼金戒指(黑&金)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/alchemist_ring_black"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemist_ring_no_gem",
+			"title": "炼金戒指(空白)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:alchemist_ring_no_gem",
+			"title": " ",
+			"text": "可与新手级$(l:misc/villagers#cleric)牧师$(/l)交易获取"
+		}
+	]
+}

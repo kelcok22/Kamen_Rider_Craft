@@ -1,0 +1,24 @@
+{
+  "name": "Decade装甲",
+  "icon": "kamenridercraft:decadehead",
+  "category": "kamenridercraft:decade/devices",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "与Decade系列骑士的驱动器配合使用，可以变身成该骑士"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/decadehead"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/decadetroso"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/decadelegs"
+    }
+  ]
+}

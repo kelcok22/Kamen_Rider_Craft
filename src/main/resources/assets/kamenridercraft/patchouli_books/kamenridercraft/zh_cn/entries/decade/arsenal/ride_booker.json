@@ -1,0 +1,16 @@
+{
+	"name": "卡盒驾驭刃枪",
+	"icon": "kamenridercraft:ride_booker",
+	"category": "kamenridercraft:decade/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#decade)假面骑士Decade$(/l)使用$(br2)最多可存储10组骑士卡片（按住Shift点击打开）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ride_booker"
+		}
+	]
+}

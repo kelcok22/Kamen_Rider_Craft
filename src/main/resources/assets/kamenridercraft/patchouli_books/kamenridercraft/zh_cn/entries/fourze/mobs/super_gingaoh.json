@@ -1,0 +1,17 @@
+{
+	"name": "超级银河王",
+	"icon": "kamenridercraft:fourze_logo",
+	"category": "kamenridercraft:fourze/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:super_gingaoh",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#super_gingaoh_boss_block)超级银河王BOSS召唤方块$(/l)召唤而来"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)《假面骑士×假面骑士 Fourze & OOO 剧场版 超级大战 Mega Max》(2011年，电影)$(br2)生命值: 300$(br2)特殊机制：$(li)具有飞行能力$(br2)掉落$(li)9个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)9个$(l:fourze/items/astroswitch)空白开关$(/l)$(li)1个$(l:fourze/items/astroswitches#nadeshiko_switch)抚子开关$(/l)$(li)1个$(l:fourze/devices/nadeshiko_driver)抚子驱动器$(/l)$(li)1个$(l:fourze/devices/ginga_oh_driver)银河王驱动器$(/l)"
+		}
+	]
+}

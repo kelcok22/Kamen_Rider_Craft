@@ -1,0 +1,16 @@
+{
+	"name": "芒果制裁者",
+	"icon": "kamenridercraft:mango_punisher",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由巴隆的$(l:gaim/riders/baron#mango)芒果武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/mango_punisher"
+		}
+	]
+}

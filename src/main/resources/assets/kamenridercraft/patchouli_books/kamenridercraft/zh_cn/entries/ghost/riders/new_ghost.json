@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士新Ghost",
+	"icon": "kamenridercraft:new_ghost_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:new_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:new_ore_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "新 俺魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#new_ore_ghost_eyecon)新Ghost眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士新Ghost",
+			"text": "登场于：$(li)Kamen Rider Ghost: Final Stage（2017年，舞台剧）$(br2)通过穿戴$(l:ghost/devices/new_ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 IV$(li)力量 V"
+		}
+	]
+}

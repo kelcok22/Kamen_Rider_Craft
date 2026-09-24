@@ -1,0 +1,17 @@
+{
+	"name": "劫持者",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:raider",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2%的概率从$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)进化而来$(br2)掉落$(li)2-4个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)1个$(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l)$(li)1个对应类型的程式升华钥 (50%)"
+		}
+	]
+}

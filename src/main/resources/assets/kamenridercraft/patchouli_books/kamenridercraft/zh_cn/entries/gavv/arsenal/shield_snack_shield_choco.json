@@ -1,0 +1,16 @@
+{
+	"name": "零食盾牌（巧克T辅助）",
+	"icon": "kamenridercraft:shield_snack_shield_choco",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布：零食美食 Woo!-mai Wakamen!! (2025年，超战斗影像)$(br2)由加布的$(l:gavv/riders/gavv#choco_t)巧克T辅助形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/shield_snack_shield_choco"
+		}
+	]
+}

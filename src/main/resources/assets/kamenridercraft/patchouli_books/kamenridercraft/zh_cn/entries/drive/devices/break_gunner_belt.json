@@ -1,0 +1,19 @@
+{
+	"name": "破坏枪手(腰带)",
+	"icon": "kamenridercraft:break_gunner_belt",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/mashin_chaser)魔进追猎者"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:break_gunner_belt",
+			"title": " ",
+			"text": "通过不佩戴任何腰带或驱动器发射$(l:drive/arsenal/break_gunner)破坏枪手$(/l)获得$(br2)掉落来源：$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "破灭之书",
+	"icon": "kamenridercraft:book_of_ruin",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，电影)$(br2)用于召唤$(l:saber/mobs/falchion)假面骑士霸剑$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/book_of_ruin"
+		}
+	]
+}

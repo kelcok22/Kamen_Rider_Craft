@@ -1,0 +1,1276 @@
+{
+	"name": "罪恶印章",
+	"icon": "kamenridercraft:rex_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成利维的$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)$(br2)用于切换利维的$(l:revice/riders/revi#rex)暴龙 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#rex)暴龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取$(br2)掉落自：$(li)$(l:revice/mobs/giff_junior)基础恶魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barid_rex_vistamp_closed",
+			"title": "未完成的破壳暴龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+            "title": " ",
+			"recipe": "kamenridercraft:revice/barid_rex_vistamp_closed"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "barid_rex_vistamp",
+			"title": "破壳暴龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#barid_rex)破壳暴龙 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#barid_rex)破壳暴龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+            "title": " ",
+			"recipe": "kamenridercraft:revice/barid_rex_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "volcano_vistamp",
+			"title": "火山暴龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#volcano_rex)熔岩暴龙 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#volcano_rex)熔岩暴龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:volcano_vistamp",
+			"title": " ",
+			"text": "背包中持有$(l:revice/items/vistamps#barid_rex_vistamp)破壳暴龙罪恶印章$(/l)时，通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rolling_vistamp",
+			"title": "滚轮罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维斯的$(l:revice/riders/revi#jack_revice)劫持利维斯$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rolling_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "thunder_gale_vistamp",
+			"title": "风雷罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维斯的$(l:revice/riders/revi#thunder_gale)风雷$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thunder_gale_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/anomalocaris_deadman)奇虾·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giffard_rex_vistamp",
+			"title": "基夫暴龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#ultimate)究极利维$(/l)形态$(br2)用于切换维斯的$(l:revice/riders/vice#ultimate)究极维斯$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/giffard_rex_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fifty_gale_vistamp",
+			"title": "五十岚飓风罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：战斗家族 (2022年，电影)$(br2)用于切换五十岚的$(l:revice/riders/revi#fifty_gale)五十岚飓风$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/fifty_gale_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_spino_vistamp",
+			"title": "黄金棘龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：成为第2位骑士吧～♪ (2022年，超战斗视频)$(br2)用于切换利维的$(l:revice/riders/revi#gold_spino)黄金棘龙 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#gold_spino)黄金棘龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/gold_spino_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "true_rex_vistamp",
+			"title": "真言暴龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：最终舞台 (2022年，舞台剧中)$(br2)用于切换利维斯的$(l:revice/riders/revi#revice_shin)利维斯·真$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/true_rex_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eagle_vistamp",
+			"title": "猎雕罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#eagle)猎雕 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#eagle)猎雕 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eagle_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取$(br2)掉落自：$(li)$(l:revice/mobs/giff_junior)基础恶魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mammoth_vistamp",
+			"title": "猛犸罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#mammoth)猛犸 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#mammoth)猛犸 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mammoth_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "megalodon_vistamp",
+			"title": "巨齿鲨罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#megalodon)巨齿鲨 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#megalodon)巨齿鲨 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:megalodon_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取$(br2)掉落自：$(li)$(l:revice/mobs/giff_junior)基础恶魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ptera_vistamp",
+			"title": "翼龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#ptera)翼龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ptera_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lion_vistamp",
+			"title": "狮子罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#lion)狮子 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#lion)狮子 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lion_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jackal_vistamp",
+			"title": "胡狼罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#jackal)胡狼 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#jackal)胡狼 基因组$(/l)$(br2)用于切换Live的$(l:revice/riders/live#jackal)胡狼 基因组$(/l)$(br2)用于切换Evil的$(l:revice/riders/evil#jackal)胡狼 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jackal_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kong_vistamp",
+			"title": "金刚罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#kong)金刚 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#kong)金刚 基因组$(/l)$(br2)用于切换亡流的$(l:revice/riders/destream#kong)金刚 基因混合$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kong_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamakiri_vistamp",
+			"title": "螳螂罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#kamakiri)螳螂 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#kamakiri)螳螂 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamakiri_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "brachio_vistamp",
+			"title": "腕龙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#brachio)腕龙 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#brachio)腕龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:brachio_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_batta_vistamp",
+			"title": "新蝗虫罪恶印章",
+			"text": "登场于：$(li)假面骑士：超越世代 (2021年，电影)$(br2)用于切换利维的$(l:revice/riders/revi#neo_batta)新蝗虫 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#neo_batta)新蝗虫 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neo_batta_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kangaroo_vistamp",
+			"title": "袋鼠罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 婚礼中途直接告白？！ (2021年，超战斗视频)$(br2)用于切换利维的$(l:revice/riders/revi#kangaroo)袋鼠 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#kangaroo)袋鼠 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kangaroo_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirin_vistamp",
+			"title": "长颈鹿罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 婚礼中途直接告白？！ (2021年，超战斗视频)$(br2)用于切换利维的$(l:revice/riders/revi#kirin)长颈鹿 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#kirin)长颈鹿 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirin_vistamp",
+			"title": " ",
+			"text": "通过打开$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "niwatori_vistamp",
+			"title": "家鸡罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 婚礼中途直接告白？！ (2021年，超战斗视频)$(br2)用于切换利维的$(l:revice/riders/revi#niwatori)家鸡 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#niwatori)家鸡 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:niwatori_vistamp",
+			"title": " ",
+			"text": "通过打开$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "funkorogashi_vistamp",
+			"title": "蜣螂罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 婚礼中途直接告白？！ (2021年，超战斗视频)$(br2)用于切换利维的$(l:revice/riders/revi#funkorogashi)蜣螂 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#funkorogashi)蜣螂 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:funkorogashi_vistamp",
+			"title": " ",
+			"text": "通过打开$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bat_vistamp",
+			"title": "蝙蝠罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成Live的$(l:revice/devices/two_sidriver#two_sidriver_live)双开驱动器(Live)$(/l)$(br2)用于切换Live的$(l:revice/riders/live#bat)蝙蝠 基因组$(/l)$(br2)用于切换Evil的$(l:revice/riders/evil#bat)蝙蝠 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bat_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/evil)假面骑士Evil$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crow_vistamp",
+			"title": "乌鸦罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crow_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "holy_wing_vistamp",
+			"title": "神圣之翼罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换Live的$(l:revice/riders/live#holy_live)神圣莱伊布$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:holy_wing_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/evil)假面骑士Evil$(/l)（会消耗背包中的1个$(l:revice/items/vistamps#crow_vistamp)乌鸦罪恶印章$(/l)）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "perfect_wing_vistamp",
+			"title": "完美之翼罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换Live的$(l:revice/riders/live#evilytylive)EvilytyLive$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/perfect_wing_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mega_bat_vistamp",
+			"title": "百万蝙蝠罪恶印章",
+			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)用于合成Live的$(l:revice/devices/revice_driver#revice_driver_live)利维斯驱动器(Live)$(/l)$(br2)用于合成Evil的$(l:revice/devices/revice_driver#revice_driver_evil)利维斯驱动器(Evil)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/mega_bat_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spider_vistamp",
+			"title": "蜘蛛罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成蒂蒙斯的$(l:revice/devices/demons_driver#demons_driver)蒂蒙斯驱动器$(/l)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#spider)蜘蛛 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giant_spider_vistamp",
+			"title": "巨大蜘蛛罪恶印章",
+			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#giant_spider)帝国蒂蒙斯$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/giant_spider_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuwagata_vistamp",
+			"title": "锹甲罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成超越蒂蒙斯的$(l:revice/devices/demons_driver#over_demons_driver)蒂蒙斯驱动器(超越蒂蒙斯)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuwagata_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giraffa_vistamp",
+			"title": "长颈鹿锯锹形虫罪恶印章",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)用于合成超越蒂蒙斯 长颈鹿锯锹版的$(l:revice/devices/demons_driver#get_over_demons_driver)蒂蒙斯驱动器(Get Over Demons)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/giraffa_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "batta_vistamp",
+			"title": "蝗虫罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#batta)蝗虫$(/l)基因组"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:batta_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mogura_vistamp",
+			"title": "鼹鼠罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#mogura)鼹鼠$(/l)基因组"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mogura_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scorpion_vistamp",
+			"title": "蝎子罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#scorpion)蝎子$(/l)基因组"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scorpion_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "anomalocaris_vistamp",
+			"title": "奇虾罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#anomalocaris)奇虾$(/l)基因组"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:anomalocaris_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取$(br2)掉落自：$(li)$(l:revice/mobs/anomalocaris_deadman)奇虾·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cobra_vistamp",
+			"title": "眼镜蛇罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成贞德的$(l:revice/devices/libera_driver)解放驱动器$(/l)$(br2)用于切换贞德的$(l:revice/riders/jeanne#cobra)眼镜蛇 基因组$(/l)$(br2)用于切换拉布可芙的$(l:revice/riders/lovekov#lovekov)正常态$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cobra_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujaku_vistamp",
+			"title": "孔雀罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujaku_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "turtle_vistamp",
+			"title": "乌龟罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:turtle_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hashibiroko_vistamp",
+			"title": "鲸头鹳罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hashibiroko_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tricera_vistamp",
+			"title": "三角龙罪恶印章",
+			"text": "登场于：$(li)假面骑士贞德&假面骑士阿基蕾拉 女孩混音 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tricera_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_cobra_vistamp",
+			"title": "眼镜王蛇罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换贞德的$(l:revice/riders/jeanne#invincible)无敌贞德$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/king_cobra_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_vistamp",
+			"title": "独角仙罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成贝尔的$(l:revice/devices/vail_driver)贝尔驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabuto_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/vail)深红贝尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crimson_vail_vistamp",
+			"title": "深红滚轮罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成深红贝尔的$(l:revice/devices/vail_belt)深红贝尔腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crimson_vail_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/vail)深红贝尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hercules_vistamp",
+			"title": "长戟大兜虫罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成亡流的$(l:revice/devices/destream_driver)亡流驱动器$(/l)$(br2)用于切换亡流的$(l:revice/riders/destream#hercules)长戟大兜虫 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hercules_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/vail)深红贝尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "crocodile_vistamp",
+			"title": "鳄鱼罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#crocodile)鳄鱼$(/l)基因混合$(br2)用于切换亡流的$(l:revice/riders/destream#crocodile)鳄鱼$(/l)基因混合"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:crocodile_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "komodo_dragon_vistamp",
+			"title": "科莫多巨蜥罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#komodo_dragon)科莫多巨蜥$(/l)基因混合$(br2)用于切换亡流的$(l:revice/riders/destream#komodo_dragon)科莫多巨蜥$(/l)基因混合"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:komodo_dragon_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blood_vade_vistamp",
+			"title": "血腥贝德罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：最终舞台 (2022年，舞台剧中)$(br2)用于合成血腥贝德的$(l:revice/devices/vade_belt)血腥贝德腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blood_vade_vistamp",
+			"title": " ",
+			"text": "可在Revice$(l:misc/stageshow)舞台剧$(/l)中获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spider_trooper_vistamp",
+			"title": "骑兵蜘蛛罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成骑兵阿尔法的$(l:revice/devices/demons_driver#demons_driver_demons_trooper_a)蒂蒙斯驱动器(骑兵α)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_trooper_vistamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuwagata_trooper_vistamp",
+			"title": "骑兵锹形虫罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成骑兵ß的$(l:revice/devices/demons_driver#demons_driver_demons_trooper_b)蒂蒙斯驱动器(骑兵β)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuwagata_trooper_vistamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "queen_bee_vistamp",
+			"title": "女王蜂罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成阿基蕾拉的$(l:revice/devices/week_endriver#week_endriver)周末驱动器(阿基蕾拉)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:queen_bee_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/vistamps#proto_queen_bee_vistamp)女王蜂原始罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "buffalo_vistamp",
+			"title": "水牛罪恶印章",
+			"text": "登场于：$(li)假面骑士贞德&假面骑士阿基蕾拉 女孩混音 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:buffalo_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "twin_chimera_vistamp",
+			"title": "双面奇美拉罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 衍生剧：奇美拉的诞生 (2022年，TTFC特别剧)$(br2)用于合成奇美拉的$(l:revice/devices/chimera_driver#chimera_driver)奇美拉驱动器(奇美拉)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/twin_chimera_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tri_chimera_vistamp",
+			"title": "三重奇美拉罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：战斗家族 (2022年，电影)$(br2)用于合成戴蒙的$(l:revice/devices/chimera_driver#chimera_driver_daimon)奇美拉驱动器(戴蒙)$(/l)$(br2)用于切换拉布可芙的$(l:revice/riders/lovekov#snake_woman)蛇女$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/tri_chimera_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "juuga_vistamp",
+			"title": "Juuga罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于合成Juuga的$(l:revice/devices/juuga_driver)Juuga驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/juuga_vistamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kraken_vistamp",
+			"title": "克拉肯罪恶印章",
+			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)$(br2)用于合成欧鲁特加的$(l:revice/devices/demons_driver#demons_driver_orteca)蒂蒙斯驱动器(欧鲁特加)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kraken_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/vistamps#daiouika_vistamp)大王鱿原始罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condor_vistamp",
+			"title": "秃鹫罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#condor)秃鹫 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#condor)秃鹫 基因组$(/l)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#condor)秃鹫$(/l)基因组"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condor_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "white_leo_vistamp",
+			"title": "白狮罪恶印章",
+			"text": "登场于：$(li)DX白狮与风神翼龙罪恶印章套装 (2021年，玩具系列)$(br2)用于切换利维的$(l:revice/riders/revi#white_leo)白狮 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#white_leo)白狮 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:white_leo_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quetzalcoatlus_vistamp",
+			"title": "风神翼龙罪恶印章",
+			"text": "登场于：$(li)DX白狮与风神翼龙罪恶印章套装 (2021年，玩具系列)$(br2)用于切换利维的$(l:revice/riders/revi#quetzalcoatlus)风神翼龙 基因组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kajiki_vistamp",
+			"title": "旗鱼罪恶印章",
+			"text": "登场于：$(li)DX旗鱼罪恶印章 (2021年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kajiki_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hedgehog_vistamp",
+			"title": "刺猬罪恶印章",
+			"text": "登场于：$(li)DX刺猬罪恶印章 (2021年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hedgehog_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_crab_vistamp",
+			"title": "帝王蟹罪恶印章",
+			"text": "登场于：$(li)DX罪恶印章精选04 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_crab_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kurosai_vistamp",
+			"title": "黒犀罪恶印章",
+			"text": "登场于：$(li)DX罪恶印章精选04 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kurosai_vistamp",
+			"title": "明明叫黑犀牛更合适(笑)",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "octopus_vistamp",
+			"title": "章鱼罪恶印章",
+			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:octopus_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oomukade_vistamp",
+			"title": "蜈蚣罪恶印章",
+			"text": "登场于：$(li)DX罪恶印章精选04 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oomukade_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "daiouika_vistamp",
+			"title": "大王鱿原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:daiouika_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wolf_vistamp",
+			"title": "狼原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wolf_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "planarian_vistamp",
+			"title": "涡虫罪恶印章",
+			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:planarian_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/vistamps#proto_planarian_vistamp)真涡虫原始罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chameleon_vistamp",
+			"title": "变色龙罪恶印章",
+			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chameleon_vistamp",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/vistamps#proto_chameleon_vistamp)变色龙原始罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_planarian_vistamp",
+			"title": "涡虫原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_planarian_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/anomalocaris_deadman)奇虾·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_chameleon_vistamp",
+			"title": "变色龙原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_chameleon_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sabertiger_vistamp",
+			"title": "剑齿虎原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sabertiger_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_queen_bee_vistamp",
+			"title": "女王蜂原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_queen_bee_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/queen_bee_deadman)女王蜂·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cheetah_vistamp",
+			"title": "猎豹原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cheetah_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "elephant_vistamp",
+			"title": "大象原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:elephant_vistamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shark_vistamp",
+			"title": "鲨鱼原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shark_vistamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "koala_vistamp",
+			"title": "考拉原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯：考拉VS袋鼠!! 婚礼中途直接告白？！ (2021年，超战斗视频)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:koala_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/queen_bee_deadman)女王蜂·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "raflessia_vistamp",
+			"title": "大王花原始罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:raflessia_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/queen_bee_deadman)女王蜂·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_jackal_vistamp",
+			"title": "原型胡狼罪恶印章",
+			"text": "用于切换维斯的$(l:revice/riders/vice#jackal_theoretical)胡狼 基因组(理论形态)$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_jackal_vistamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oblivion_stamp",
+			"title": "埋没者印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oblivion_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deadman_stamp",
+			"title": "亡命徒印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deadman_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dopant_stamp",
+			"title": "掺杂体印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dopant_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "inves_stamp",
+			"title": "异域者印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:inves_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "roidmude_stamp",
+			"title": "恶路程式印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:roidmude_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smash_stamp",
+			"title": "猛击者印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smash_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "worm_stamp",
+			"title": "异虫印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:worm_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gurongi_stamp",
+			"title": "古朗基印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gurongi_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fangire_stamp",
+			"title": "牙血鬼印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fangire_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zodiarts_stamp",
+			"title": "星徒印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zodiarts_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "orphnoch_stamp",
+			"title": "奥菲以诺印章",
+			"text": "登场于：$(li)假面骑士利维斯：谜之事件簿 (2022年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:orphnoch_stamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp_metal",
+			"title": "暴龙罪恶印章(黑色金属镀层)",
+			"text": "登场于：$(li)DX暴龙罪恶印章（黑色金属镀层版） (2021年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_metal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/giff_junior)基础恶魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp_christmas",
+			"title": "暴龙罪恶印章(圣诞节)",
+			"text": "登场于：$(li)假面骑士利维斯Charadeco蛋糕 (2021年，糕点系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_christmas",
+			"title": " ",
+			"text": "通过打开$(l:misc/items/gift)礼物$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rex_vistamp_theme",
+			"title": "暴龙罪恶印章(主题曲)",
+			"text": "登场于：$(li)DX暴龙罪恶印章（主题曲限定版） (2021年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rex_vistamp_theme",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "toysaurus_vistamp",
+			"title": "玩具恐龙罪恶印章",
+			"text": "登场于：$(li)DX玩具恐龙罪恶印章 (2021年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:toysaurus_vistamp",
+			"title": " ",
+			"text": "$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "telemag_rex_vistamp",
+			"title": "暴龙罪恶印章（闪耀）",
+			"text": "登场于：$(li)暴龙罪恶印章（电视杂志限定版） (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:telemag_rex_vistamp",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mammoth_vistamp_china",
+			"title": "猛犸象罪恶印章(中国特有)",
+			"text": "登场于：$(li)DX猛犸罪恶印章（中国限定版） (2021年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mammoth_vistamp_china",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#vistamp_bar)罪恶印章支架$(/l)上使用$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giff_junior_vistamp",
+			"title": "初级恶魔罪恶印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_junior_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/giff_junior)初级恶魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giff_stamp",
+			"title": "基夫印章",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/giff_stamp"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "diablo_stamp",
+			"title": "迪亚波罗印章",
+			"text": "登场于：$(li)假面骑士：超越世代 (2021年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:diablo_stamp",
+			"title": "",
+			"text": "物品目前无法获得"
+		}
+	]
+}

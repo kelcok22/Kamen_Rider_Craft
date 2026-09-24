@@ -1,0 +1,551 @@
+{
+    "name": "音乐唱片",
+    "icon": "kamenridercraft:lets_go_rider_kick_music_disc",
+    "category": "kamenridercraft:misc/items",
+    "sortnum": 999,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "一系列音乐唱片，包含用音符盒演绎的假面骑士系列热门歌曲。"
+        },
+        {
+            "type": "patchouli:empty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lets_go_rider_kick_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Let's Go!! Rider Kick$(br2)原曲:$(li)藤冈弘/子門真人 - レッツゴー!!ライダーキック$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士》（1971年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lets_go_rider_kick_music_disc",
+            "text": "以$(l:ichigo/riders/ichigo)假面骑士一号$(/l)的身份，对$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)使用骑士踢即可获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tatakae_kamen_rider_v3_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 战斗吧！假面骑士V3$(br2)原曲:$(li)宫内洋 & The Swingers - 戦え! 仮面ライダーV3$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士V3》（1973年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tatakae_kamen_rider_v3_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "set_up_kamen_rider_x_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Set Up! 假面骑士X$(br2)原曲:$(li)水木一郎 - セタップ!仮面ライダーX$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士X》（1974年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:set_up_kamen_rider_x_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_rider_koko_ni_ari_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 亚马逊骑士在这里$(br2)原曲:$(li)子門真人 - アマゾンライダーここにあり$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Amazon》（1974年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:amazon_rider_koko_ni_ari_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_stronger_no_uta_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 假面骑士强人之歌$(br2)原曲:$(li)水木一郎 - 仮面ライダーストロンガーのうた$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士强人》（1975年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_stronger_no_uta_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "moero_kamen_rider_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 燃起！假面骑士$(br2)原曲:$(li)水木一郎 & コロムビアゆりかご会 - 燃えろ!仮面ライダー$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士》（新）（1979年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:moero_kamen_rider_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_super_1_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 假面骑士超一号$(br2)原曲:$(li)高杉俊介 & コロムビアゆりかご会 - 仮面ライダースーパー1$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士超一号》（1980年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_super_1_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dragon_road_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 龙之道$(br2)原曲:$(li)串田晃 - ドラゴンロード$(br)类型:$(li)主题曲$(br)登场于:$(li)《10号诞生！假面骑士全员集合！！》（1984年，电视特别篇）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dragon_road_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_black_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 假面骑士Black$(br2)原曲:$(li)仓田铁雄 - 仮面ライダーBLACK$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Black》（1987年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_black_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_black_rx_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 假面骑士Black RX$(br2)原曲:$(li)宫内孝则 - 仮面ライダーBLACK RX$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Black RX》（1988年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_black_rx_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ai_ga_tomaranai_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 无法停止的爱$(br2)原曲:$(li)infix - 愛が止まらない $(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士ZO》（1993年，电影）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ai_ga_tomaranai_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kokoro_tsunagu_ai_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 心相连的爱$(br2)原曲:$(li)BYUE - 心つなぐ愛$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士J》（1994年，电影）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kokoro_tsunagu_ai_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_kuuga_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 假面骑士空我！$(br2)原曲:$(li)田中昌之 - 仮面ライダークウガ!$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士空我》（2000年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_kuuga_music_disc",
+            "text": "在$(l:kuuga/structures/kuuga_ruin)空我之墓$(/l)周围的可疑沙砾中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_agito_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 假面骑士AGITO$(br2)原曲:$(li)石原慎一 - 仮面ライダーAGITO$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士亚极陀》（2001年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_agito_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alive_a_life_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Alive A life$(br2)原曲:$(li)松本梨香 - Alive A life$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士龙骑》（2002年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:alive_a_life_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "justifaiz_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Justiφ's$(br2)原曲:$(li)ISSA - Justiφ's$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士555》（2003年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:justifaiz_music_disc",
+            "text": "在$(l:misc/city/urban_area#kikuchi_cleaners)西洋洗涤铺 菊池$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "round_zero_blade_brave_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Round ZERO~BLADE BRAVE$(br2)原曲:$(li)相川七濑 - Round ZERO~BLADE BRAVE$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士剑》（2004年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:round_zero_blade_brave_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "elements_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - ELEMENTS$(br2)原曲:$(li)Rider Chips ft. Ricky - ELEMENTS$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士剑》（2004年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:elements_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rebirth_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - rebirth$(br2)原曲:$(li)天野浩成 - rebirth$(br)类型:$(li)插入曲、二骑主题曲$(br)登场于:$(li)《假面骑士剑》（2004年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rebirth_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kagayaki_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 辉$(br2)原曲:$(li)佐桥俊彦 - 輝(インストゥルメンタル)$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士响鬼》（2005年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:hibiki/kagayaki_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hajimari_no_kimi_e_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 始まりの君へ$(br2)原曲:$(li)布施明 - 始まりの君へ$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士响鬼》（2005年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hajimari_no_kimi_e_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "next_level_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - NEXT LEVEL$(br2)原曲:$(li)YU-KI - NEXT LEVEL$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士甲斗》（2006年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:next_level_music_disc",
+            "text": "从$(l:kabuto/structures/god_speed_love)神速爱$(/l)建筑的试炼奖励中获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "climax_jump_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Climax Jump$(br2)原曲:$(li)AAA - Climax Jump$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士电王》（2007年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:climax_jump_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "break_the_chain_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Break the Chain$(br2)原曲:$(li)Tourbillon - Break the Chain$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Kiva》（2008年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:break_the_chain_music_disc",
+            "text": "在$(l:kiva/structures/castle_doran)多兰城堡$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "journey_through_the_decade_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Journey Through the Decade$(br2)原曲:$(li)Gackt - Journey Through the Decade$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Decade》（2009年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:decade/journey_through_the_decade_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "w_b_x_w_boiled_xtreme_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - W-B-X～W-Boiled Extreme~$(br2)原曲:$(li)上木彩矢 w TAKUYA - W-B-X～W-Boiled Extreme~$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士W》（2009年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:w_b_x_w_boiled_xtreme_music_disc",
+            "text": "在$(l:misc/city/urban_area#narumi_detective_office)鸣海侦探事务所$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "anything_goes_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Anything Goes!$(br2)原曲:$(li)大黑摩季 - Anything Goes!$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士OOO》（2010年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:anything_goes_music_disc",
+            "text": "在$(l:misc/city/suburban_area#cous_coussier)多国料理餐厅$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "switch_on_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Switch On!$(br2)原曲:$(li)土屋安娜 - Switch On!$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Fourze》（2011年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:switch_on_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "life_is_showtime_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Life is SHOW TIME$(br2)原曲:$(li)金爆乐队 鬼龙院翔 - Life is SHOW TIME$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Wizard》（2012年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:wizard/life_is_showtime_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "just_live_more_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - JUST LIVE MORE$(br2)原曲:$(li)铠武乃风 - JUST LIVE MORE$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士铠武》（2013年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:just_live_more_music_disc",
+            "text": "在$(l:gaim/structures/rosyuo_helheim_city)霸主们的建筑$(/l)$(l:gaim/structures/redyue_helheim_city)$(br)周围$(/l)$(l:gaim/structures/demushu_helheim_city)的可疑沙砾中$(/l)找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "surprise_drive_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - SURPRISE-DRIVE$(br2)原曲:$(li)松冈充 EARNEST DRIVE - SURPRISE-DRIVE$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Drive》（2014年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:surprise_drive_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warera_omou_yue_ni_warera_ari_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 我思故我在$(br2)原曲:$(li)氣志團 - 我ら思う、故に我ら在り$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Ghost》（2015年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:ghost/warera_omou_yue_ni_warera_ari_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "excite_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - EXCITE$(br2)原曲:$(li)三浦大知 - EXCITE$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Ex-Aid》（2016年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:excite_music_disc",
+            "text": "在$(l:misc/city/centers#seito_u_hospital)圣都大学附属医院$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "be_the_one_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Be The One$(br2)原曲:$(li)PANDORA feat. Beverly - Be The One$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Build》（2017年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:be_the_one_music_disc",
+            "text": "在$(l:misc/city/urban_area#nascita)Nascita咖啡店$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "over_quartzer_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Over \"Quartzer\"$(br2)原曲:$(li)末吉秀太 feat. ISSA - Over \"Quartzer\"$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Zi-O》（2018年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:over_quartzer_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "izanagi_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - IZANAGI$(br2)原曲:$(li)樱men feat. 多和田秀弥 - IZANAGI$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士忍骑》（2022年，电视剧/2019年，网络剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:izanagi_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "p_a_r_t_y_universe_festival_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - P.A.R.T.Y. ～ユニバース・フェスティバル～$(br2)原曲:$(li)DA PUMP - P.A.R.T.Y. ～ユニバース・フェスティバル～$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Zi-O：超越时间》（2019年，电影）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:p_a_r_t_y_universe_festival_music_disc",
+            "text": "通过开启 $(l:misc/items/gift)圣诞礼盒$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "realxeyez_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - REAL×EYEZ$(br2)原曲:$(li)J×西川贵教 - REAL×EYEZ$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士01》（2019年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:realxeyez_music_disc",
+            "text": "可与大师级别$(l:misc/villagers#humagear_villager)修玛吉亚村民$(/l)进行交易获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "almighty_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - ALMIGHTY～仮面の約束$(br2)原曲:$(li)東京スカパラダイスオーケストラ 川上洋平 - ALMIGHTY～仮面の約束$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士圣刃》（2020年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:almighty_music_disc",
+            "text": "在$(l:misc/city/suburban_area#fantastic_bookstore_kamiyama)神山奇幻书店$(/l)内找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "livedevil_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - liveDevil$(br2)原曲:$(li)Da-iCE ft. 木村昴 - liveDevil$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Revice》（2021年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:revice/livedevil_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "george_karizakis_rider_system_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 乔治·狩崎的骑士系统$(br2)原曲:$(li)濱尾ノリタカ - ジョージ・狩崎のライダーシステム$(br)类型:$(li)片尾曲$(br)登场于:$(li)《假面骑士Juuga VS 假面骑士Orteca》（2023年，网络剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:george_karizakis_rider_system_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "trust_last_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Trust・Last$(br2)原曲:$(li)幸田來未 × 湘南乃風 - Trust・Last$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Geats》（2022年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/trust_last_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chemy_x_story_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - CHEMY×STORY$(br2)原曲:$(li)BACK-ON - CHEMY×STORY$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Gotchard》（2023年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chemy_x_story_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chemy_x_story_flow_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - CHEMY×STORY (BACK-ON × FLOW ver.)$(br2)原曲:$(li)BACK-ON×FLOW - CHEMY×STORY$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Gotchard》（2023年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chemy_x_story_flow_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "got_boost_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Got Boost?$(br2)原曲:$(li)FANTASTICS from EXILE TRIBE - Got Boost?$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Gavv》（2024年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:got_boost_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "visions_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - VISIONS$(br2)原曲:$(li)NAQT VANE - VISIONS$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Zeztz》（2025年，电视剧）"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:zeztz/visions_music_disc"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "play_back_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - PLAY BACK$(br2)原曲:$(li)YUTA - PLAY BACK$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士Zeztz》（2025年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:play_back_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dream_maze_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - Dream Maze$(br2)原曲:$(li)坂部剛 - Dream Maze$(br)类型:$(li)插曲$(br)登场于:$(li)《假面骑士Zeztz》（2025年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dream_maze_music_disc",
+            "text": "掉落自：$(li)$(l:zeztz/mobs/oblivion_gore_nightmare)忘却悍戾梦魇$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "one_shot_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - One Shot$(br2)原曲:$(li)THE RAMPAGE from EXILE TRIBE - One Shot$(br)类型:$(li)主题曲$(br)登场于:$(li)《假面骑士麦斯》（2026年，电视剧）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:one_shot_music_disc",
+            "text": "该唱片目前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "masked_rider_music_disc",
+            "text": "歌曲:$(li)HosephHoestar - 蒙面骑士$(br2)原曲:$(li)未知，自行搜索$(br)类型:$(li)主题曲$(br)登场于:$(li)[REDACTED]"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:masked_rider_music_disc",
+            "text": "掉落自:$(li)$(l:black/mobs/shadow_moon)机械骑士$(/l)（愚人节期间）"
+        }
+    ]
+}

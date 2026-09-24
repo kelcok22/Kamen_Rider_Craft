@@ -1,0 +1,16 @@
+{
+	"name": "基础载具",
+	"icon": "kamenridercraft:base_bike",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于制作骑士们的载具"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/base_bike"
+		}
+	]
+}

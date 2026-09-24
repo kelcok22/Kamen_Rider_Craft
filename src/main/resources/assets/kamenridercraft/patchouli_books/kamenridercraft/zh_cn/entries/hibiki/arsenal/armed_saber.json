@@ -1,0 +1,16 @@
+{
+	"name": "音击增幅剑·装甲声刃",
+	"icon": "kamenridercraft:armed_saber",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/riders/hibiki#armed)装甲响鬼$(/l)使用$(br2)用于变身为$(l:hibiki/riders/hibiki#armed)装甲响鬼$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/armed_saber"
+		}
+	]
+}

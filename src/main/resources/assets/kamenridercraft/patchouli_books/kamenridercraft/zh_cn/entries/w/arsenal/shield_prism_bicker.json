@@ -1,0 +1,16 @@
+{
+	"name": "耀光圣盾",
+	"icon": "kamenridercraft:shield_prism_bicker",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）$(br2)由W的$(l:w/riders/double#xtreme)极限$(/l)和$(l:w/riders/double#gold_xtreme)黄金极限$(/l)形态使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/shield_prism_bicker"
+		}
+	]
+}

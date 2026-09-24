@@ -1,0 +1,21 @@
+{
+    "name": "假面骑士幻梦",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:genm_mob",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值：45"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有5%概率从$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)升级上场$(br2)特殊机制：$(li)当你的物品栏中携带 $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)暴走机车卡带$(/l)，则生命值降至30以下时会变身为 $(l:ex_aid/riders/genm#zombie_x)僵尸玩家Lv.X$(/l)$(br2)掉落$(li)2-4个 $(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)$(li)1个 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)原型砰砰射击卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)原型全能动作X卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_taddle_quest_gashat)原型探索冒险卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_gekitotsu_robots_gashat)原型激突机器人卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_shakariki_sports_gashat)原型干劲运动卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)原型喷射战机卡带$(/l)（10%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)1个 $(l:ex_aid/items/rider_gashats#proto_doremifa_beat_gashat)原型哆啦咪发节拍卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_bakusou_bike_gashat)原型暴走机车卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#proto_giri_giri_chambara_gashat)原型极限剑斗卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/gashatrophies#shakariki_sports_gasha_trophy)干劲运动奖励卡带$(/l)（10%）$(li)1个 $(l:ex_aid/items/rider_gashats#dangerous_zombie_gashat)危险僵尸卡带$(/l)（物品栏中需持有 $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)暴走机车卡带$(/l)）$(li)1个 $(l:geats/items/desire_cards#kuroto_dan_card)檀黎斗许愿卡$(/l)（物品栏中需持有 $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper不灭卡带$(/l)）"
+        }
+    ]
+}

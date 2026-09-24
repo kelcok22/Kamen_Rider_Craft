@@ -1,0 +1,19 @@
+{
+	"name": "瓜子锁种",
+	"icon": "kamenridercraft:himawari_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)用作制作大多数铠武系列物品的基础物品和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:himawari_lockseed",
+			"title": " ",
+			"text": "可在$(l:misc/city/centers#yggdrasil_tower)世界树塔$(/l)、铠武系列$(l:misc/stageshow)舞台剧$(/l)中找到，也可在$(l:gaim/structures/rosyuo_helheim_city)霸主$(/l)$(l:gaim/structures/redyue_helheim_city)相关$(/l)$(l:gaim/structures/demushu_helheim_city)建筑$(/l)周围的可疑砂砾中获取$(br2)掉落自：$(li)$(l:misc/blocks/helheim_vine)海姆冥界藤蔓$(/l)$(li)$(l:gaim/mobs/elementary_inves_red)初级异域者$(/l)$(li)$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)$(li)$(l:gaim/mobs/zangetsu_shin)假面骑士斩月·真$(/l)$(li)$(l:gaim/mobs/marika)假面骑士女王$(/l)$(li)$(l:gaim/mobs/duke)假面骑士公爵$(/l)$(li)$(l:gaim/mobs/sigurd)假面骑士西格德$(/l)$(li)$(l:gaim/mobs/megahex)梅嘉赫克斯$(/l)"
+		}
+	]
+}

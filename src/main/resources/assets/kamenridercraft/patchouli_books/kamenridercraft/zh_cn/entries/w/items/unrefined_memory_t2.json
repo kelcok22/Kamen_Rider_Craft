@@ -1,0 +1,17 @@
+{
+	"name": "未完成的T2记忆体",
+	"icon": "kamenridercraft:unrefined_memory_t2",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）$(br2)用于$(l:misc/blocks/machine_blocks#gaia_memory_refiner)盖亚记忆体精炼器$(/l)以获取T2盖亚记忆体。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/unrefined_memory_t2",
+			"text": "掉落自:$(li)$(l:w/mobs/eternal_mob)假面骑士Eternal$(/l)"
+		}
+	]
+}

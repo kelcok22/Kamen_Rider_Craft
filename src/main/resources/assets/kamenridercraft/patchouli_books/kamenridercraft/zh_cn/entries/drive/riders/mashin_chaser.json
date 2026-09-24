@@ -1,0 +1,36 @@
+{
+  "name": "魔进追猎者",
+  "icon": "kamenridercraft:break_gunner_belt",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "mashin_chaser",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:protozero_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": " ",
+      "text": "通过使用 $(l:drive/items/roidmude_cores#protozero_core)恶路程式原始零号$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "魔进追猎者",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴(使用)$(l:drive/arsenal/break_gunner)破坏枪手$(/l) 和 $(l:drive/devices/break_gunner_belt)破坏枪手(腰带)$(/l)进行变身$(br2)状态效果：$(li)力量 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "super",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:break_gunner_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rhino_super_viral_core\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "超进化态追猎者",
+      "text": "通过使用 $(l:drive/items/viral_cores#rhino_super_viral_core)犀牛超级病毒核心$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "魔进追猎者",
+      "text": "登场于：$(li)Drive Saga：假面骑士追猎 (2016年，V-Cinema电影)$(br2)通过穿戴(使用)$(l:drive/arsenal/break_gunner)破坏枪手$(/l) 和 $(l:drive/devices/break_gunner_belt)破坏枪手(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)力量 V"
+    }
+  ]
+}

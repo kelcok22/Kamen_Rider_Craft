@@ -1,0 +1,78 @@
+{
+	"name": "假面骑士响鬼",
+	"icon": "kamenridercraft:henshin_onsa",
+	"category": "kamenridercraft:hibiki/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:hibiki/items/henshin_onsa#henshin_onsa)变身音叉·音角$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士响鬼",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)通过穿戴$(l:hibiki/devices/ongekiko#hibikidriver)音击鼓·火炎鼓$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kurenai",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_kurenai\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "红",
+			"text": "通过使用$(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)变身音叉·音角(响鬼红)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士响鬼",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)通过穿戴$(l:hibiki/devices/ongekiko#hibikidriver)音击鼓·火炎鼓$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)急迫 IV$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "armed",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:henshin_onsa_armed\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "装甲",
+			"text": "通过使用$(l:hibiki/arsenal/armed_saber)音击增幅剑·装甲声刃$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士响鬼",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)通过穿戴$(l:hibiki/devices/ongekiko#hibikidriver)音击鼓·火炎鼓$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)生命恢复$(li)急迫 IV$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "akanetaka",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:akanetaka\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级模式",
+			"text": "通过使用$(l:misc/items/card_warrior_cards#akanetaka)茜鹰怪物驾驭卡$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士响鬼",
+			"text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:hibiki/devices/ongekiko#hibikidriver)音击鼓·火炎鼓$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 II$(li)抗性提升$(li)急迫 IV$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bakuen_no_senshi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hibikidriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bakuen_no_senshi_hibiki\"}},Count:1b},{id:\"kamenridercraft:hibikilegs\",Count:1b},{id:\"kamenridercraft:hibikitroso\",Count:1b},{id:\"kamenridercraft:hibikihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "爆炎战士",
+			"text": "通过使用$(l:misc/items/card_warrior_cards#bakuen_no_senshi)生存卡 爆炎$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士响鬼",
+			"text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:hibiki/devices/ongekiko#hibikidriver)音击鼓·火炎鼓$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 IV$(li)力量 V"
+		}
+	]
+}

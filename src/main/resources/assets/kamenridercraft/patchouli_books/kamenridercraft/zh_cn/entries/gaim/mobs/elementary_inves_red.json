@@ -1,0 +1,17 @@
+{
+	"name": "初级异域者",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:elementary_inves_red",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：$(l:gaim/dimensions/helheim)海姆冥界$(/l)、$(l:misc/city/centers#yggdrasil_tower)世界树塔$(/l)周边$(br2)存在红色、蓝色和绿色变种$(br2)掉落$(li)1-3个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)$(li)1个$(l:gaim/items/lockseeds#orange_lockseed)柳橙锁种$(/l) (6.7%)$(li)1个$(l:gaim/items/lockseeds#ichigo_lockseed)草莓锁种$(/l) (6.7%)$(li)1个$(l:gaim/items/lockseeds#pine_lockseed)凤梨锁种$(/l) (6.7%)"
+		}
+	]
+}

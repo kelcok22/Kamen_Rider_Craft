@@ -1,0 +1,19 @@
+{
+	"name": "究极眼魂",
+	"icon": "kamenridercraft:extremer_driver",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/extremer)假面骑士Extremer"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:extremer_driver",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

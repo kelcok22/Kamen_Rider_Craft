@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士咩雳",
+	"icon": "kamenridercraft:desire_driver_mary",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_mary\",components:{custom_data:{slot_tex1:\"kamenridercraft:mary_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "登录形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#mary_rider_core_id)咩雳ID核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士咩雳",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_mary)欲望驱动器(咩雳)$(/l)进行变身$(br2)核心ID效果：$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_mary\",components:{custom_data:{slot_tex1:\"kamenridercraft:mary_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装盾牌",
+			"text": "通过使用 $(l:geats/items/raise_buckles#shield_raise_buckle)盾代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士咩雳",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_mary)欲望驱动器(咩雳)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)抗性提升$(br2)盾代扣效果：$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chain_array",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_mary\",components:{custom_data:{slot_tex1:\"kamenridercraft:mary_rider_core_id\",slot_tex2:\"kamenridercraft:chain_array_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装流星锤",
+			"text": "通过使用 $(l:geats/items/raise_buckles#chain_array_raise_buckle)流星锤代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士咩雳",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_mary)欲望驱动器(咩雳)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)抗性提升$(br2)流星锤代扣效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)挖掘疲劳"
+		}
+	]
+}

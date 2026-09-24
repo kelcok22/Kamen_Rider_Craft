@@ -1,0 +1,21 @@
+{
+	"name": "Kiva陨石坑",
+	"icon": "kamenridercraft:kiva_logo",
+	"category": "kamenridercraft:kiva/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "Kiva陨石坑",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)生成于月球$(br2)包含1个 $(l:misc/blocks/boss_blocks#arc_boss_block)恶王BOSS召唤方块$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/kiva_crater.png"
+			],
+			"title": " "
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "醒镰弓",
+	"icon": "kamenridercraft:wild_chalice_arrow",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由假面骑士卡利斯的$(l:blade/riders/chalice#wild)狂野形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/wild_chalice_arrow"
+		}
+	]
+}

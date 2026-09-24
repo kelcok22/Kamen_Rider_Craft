@@ -1,0 +1,36 @@
+{
+  "name": "假面骑士追猎",
+  "icon": "kamenridercraft:mach_driver_honoh_chaser",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "chaser",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_chaser\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_chaser\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": " ",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_chaser)信号追猎$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士追猎",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh_chaser)马赫驱动器(追猎)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "hayai",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_chaser\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift_chaser\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "追猎 高速",
+      "text": "通过使用 $(l:drive/items/shift_cars#proto_speedshift)原型移速速度$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士追猎",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh_chaser)马赫驱动器(追猎)$(/l)进行变身$(br2)状态效果：$(li)速度 IX$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 IV"
+    }
+  ]
+}

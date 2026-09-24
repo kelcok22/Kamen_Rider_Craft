@@ -1,0 +1,250 @@
+{
+	"name": "笛哨",
+	"icon": "kamenridercraft:wakeupfuestle",
+	"category": "kamenridercraft:kiva/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "wakeupfuestle",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于制作Kiva的 $(l:kiva/devices/kivadriver)Kivat腰带$(/l)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#kiva)Kiva形态$(/l) 和 $(l:kiva/riders/kiva#dogabaki)德加巴基形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wakeupfuestle",
+			"text": "可在 $(l:kiva/structures/shoodoran)射击德兰龙$(/l) 和 $(l:kiva/structures/castle_doran)城堡德兰龙$(/l) 中找到$(br2)掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garulufuestle",
+			"title": "加鲁鲁笛哨",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#garulu)加鲁鲁形态$(/l) 和 $(l:kiva/riders/kiva#dogabaki)德加巴基形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garulufuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "basshaafuestle",
+			"title": "巴夏笛哨",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#basshaa)巴夏形态$(/l) 和 $(l:kiva/riders/kiva#dogabaki)德加巴基形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:basshaafuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+        {
+            "type": "patchouli:text",
+            "anchor": "doggafuestle",
+            "title": "德加笛哨",
+            "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#dogga)德加形态$(/l) 和 $(l:kiva/riders/kiva#dogabaki)德加巴基形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doggafuestle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doranfuestle",
+            "title": "德兰龙笛哨",
+            "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doranfuestle",
+            "title": " ",
+            "text": "可在 $(l:kiva/structures/castle_doran)城堡德兰龙$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "buroonfuestle",
+            "title": "布隆推进者笛哨",
+            "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:buroonfuestle",
+            "title": " ",
+            "text": "可在 $(l:kiva/structures/castle_doran)城堡德兰龙$(/l) 中找到"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "tatsulot",
+			"title": "魔皇龙笛哨",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#emperor)魔皇$(/l) 和 $(l:kiva/riders/kiva#dogabaki_emperor)魔皇德加巴基形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tatsulot",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_says_fuestle",
+			"title": "红色魔皇龙笛哨",
+			"text": "登场于：$(li)电视君 (2008年8月号，杂志)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#red_emperor)红色魔皇$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kiva_says_fuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knucklefuestle",
+			"title": "人造笛哨",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于制作Ixa的 $(l:kiva/devices/ixa_belt#ixa_belt)Ixa腰带$(/l)$(br2)用于切换Ixa的 $(l:kiva/riders/ixa#save)保全模式$(/l) 和 $(l:kiva/riders/ixa#burst)爆发模式$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knucklefuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "caliburfuestle",
+			"title": "拳铳笛哨",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于制作Ixa的 $(l:kiva/arsenal/ixa_caliber)Ixa圣剑$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:caliburfuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+        {
+            "type": "patchouli:text",
+            "anchor": "fakegarulufuestle",
+            "title": "假加鲁鲁笛哨",
+            "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)"
+        },
+        {
+            "type": "kamenridercraft:fuestle_replicator",
+            "base": "kamenridercraft:fuestlefake",
+            "modifier": "kamenridercraft:garulufuestle",
+            "result": "kamenridercraft:fakegarulufuestle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fakebasshaafuestle",
+            "title": "假巴夏笛哨",
+            "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)"
+        },
+        {
+            "type": "kamenridercraft:fuestle_replicator",
+            "base": "kamenridercraft:fuestlefake",
+            "modifier": "kamenridercraft:basshaafuestle",
+            "result": "kamenridercraft:fakebasshaafuestle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fakedoggafuestle",
+            "title": "假德加笛哨",
+            "text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)"
+        },
+        {
+            "type": "kamenridercraft:fuestle_replicator",
+            "base": "kamenridercraft:fuestlefake",
+            "modifier": "kamenridercraft:doggafuestle",
+            "result": "kamenridercraft:fakedoggafuestle"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "risingfuestle",
+			"title": "升华笛哨",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于切换 $(l:kiva/riders/ixa#rising)假面骑士Ixa 升华IXA$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:risingfuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sagafuestle",
+			"title": "觉醒笛哨(蛇牙)",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于制作蛇牙的 $(l:kiva/devices/sagarc_belt)Sagarc腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sagafuestle",
+			"title": " ",
+			"text": "可在 $(l:kiva/structures/shoodoran)射击德兰龙$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "darkwakeupfuestle",
+			"title": "觉醒笛哨(黑暗Kiva)",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于制作黑暗Kiva的 $(l:kiva/devices/darkkivadriver)黑暗kivat腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:darkwakeupfuestle",
+			"title": " ",
+			"text": "可在 $(l:kiva/structures/shoodoran)射击德兰龙$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "newwakeupfuestle",
+			"title": "觉醒笛哨(新Kiva)",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于制作新Kiva的 $(l:kiva/devices/newkivadriver)新Kivat腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:newwakeupfuestle",
+			"title": " ",
+			"text": "可在 $(l:kiva/structures/shoodoran)射击德兰龙$(/l) 中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "keyfuestle",
+			"title": "觉醒笛哨(冷/恶王)",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)用于制作冷的 $(l:kiva/devices/reydriver)冷Kivat腰带$(/l)$(br2)用于制作恶王的 $(l:kiva/devices/arcdriver)恶王Kivat腰带$(/l)$(br2)用于切换Kiva的 $(l:kiva/riders/kiva#flight_style)飞形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:keyfuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kiva/mobs/arc)假面骑士恶王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kivalafuestle",
+			"title": "觉醒笛哨(牙兰)",
+			"text": "登场于：$(li)假面骑士×假面骑士W&Decade：MOVIE大战2010 (2009年，电影)$(br2)用于制作牙兰的 $(l:kiva/devices/kivaladriver)牙兰腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kivalafuestle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:kiva/mobs/arc)假面骑士恶王$(/l)（背包中持有 $(l:decade/items/decade_camera)双眼反射式相机$(/l) 时）"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Alpha驱动器",
+    "icon": "kamenridercraft:alpha_driver",
+    "category": "kamenridercraft:faiz/devices",
+    "sortnum": 12,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士战斗舞台：Faiz vs Delta (2003年，舞台剧)$(br2)与 $(l:faiz/devices/armor)Faiz装甲$(/l) 一起穿戴，可变身为 $(l:faiz/riders/alpha)假面骑士Alpha$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/alpha_driver"
+        }
+    ]
+}

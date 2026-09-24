@@ -1,0 +1,19 @@
+{
+	"name": "特状课之钥",
+	"icon": "kamenridercraft:tokujoka_key",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于合成量产型马赫的$(l:drive/devices/metro_pd_driver_honoh)量产型马赫驱动器炎$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tokujoka_key",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

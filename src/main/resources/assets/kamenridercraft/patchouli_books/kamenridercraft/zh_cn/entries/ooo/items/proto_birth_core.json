@@ -1,0 +1,16 @@
+{
+	"name": "试做型Birth核心",
+	"icon": "kamenridercraft:proto_birth_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成试做型Birth的$(l:ooo/devices/birth_driver#proto_birth_driver)试做型Birth驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/proto_birth_core"
+		}
+	]
+}

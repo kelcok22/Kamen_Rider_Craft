@@ -1,0 +1,181 @@
+{
+	"name": "亚极陀 大地",
+	"icon": "kamenridercraft:agito_ground",
+	"category": "kamenridercraft:agito/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_ground",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于合成亚极陀的$(l:agito/devices/altering#alter_ring)变幻圆环$(/l)$(br2)用于切换亚极陀的$(l:agito/riders/agito#ground)大地形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_ground",
+			"text": "掉落自：$(li)$(l:agito/mobs/pantheras_luteus)潘特拉斯·鲁特乌斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_storm",
+			"title": "亚极陀 风暴",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于切换亚极陀的$(l:agito/riders/agito#storm)风暴形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_storm",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/pantheras_luteus)潘特拉斯·鲁特乌斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_flame",
+			"title": "亚极陀 火焰",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于切换亚极陀的$(l:agito/riders/agito#flame)火焰形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_flame",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/pantheras_luteus)潘特拉斯·鲁特乌斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_trinity",
+			"title": "亚极陀 三位一体",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于合成亚极陀的$(l:agito/devices/altering#alter_ring_reiko)变幻圆环(高野玲子)$(/l)$(br2)用于切换亚极陀的$(l:agito/riders/agito#trinity)三位一体形态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/agito_trinity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_burning",
+			"title": "亚极陀 燃烧",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于切换亚极陀的$(l:agito/riders/agito#burning)燃烧形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_burning",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/el_of_the_water)水之上神$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "iconga_no_akai_agito",
+			"title": "壁画红色亚极陀之石",
+			"text": "登场于：$(li)S.H.Figuarts（真骨雕）赤红亚极陀 (2026年，玩具系列)$(br2)用于切换亚极陀的$(l:agito/riders/agito#iconga_no_akai_agito)壁画红形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:iconga_no_akai_agito",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_shining",
+			"title": "亚极陀 闪耀",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于切换亚极陀的$(l:agito/riders/agito#shining)闪耀形态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/agito_shining"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gills",
+			"title": "基尔斯核心",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于合成基尔斯的$(l:agito/devices/meta_factor)超越因子$(/l)$(br2)用于切换基尔斯的$(l:agito/riders/gills#gills)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gills",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/anguis_masculus)安格维斯·玛斯库鲁斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "exceed_gills",
+			"title": "基尔斯超越核心",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于切换基尔斯的$(l:agito/riders/gills#exceed_gills)超越形态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/exceed_gills"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_exceed_gills",
+			"title": "基尔斯黄金超越核心",
+			"text": "登场于：$(li)骑士英雄系列 (2001年，玩具系列)$(br2)用于切换基尔斯的$(l:agito/riders/gills#gold_exceed_gills)黄金超越形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_exceed_gills",
+			"title": " ",
+			"text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito",
+			"title": "另类亚极陀之石",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用于合成另类亚极陀的$(l:agito/devices/ank_point#ank_point)安可核心$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/another_agito)假面骑士另类亚极陀$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_miracle",
+			"title": "亚极陀 幻影",
+			"text": "登场于：$(li)天堂之门 (2003年，S.I.C.英雄传奇)$(br2)用于合成幻影亚极陀的$(l:agito/devices/altering#alter_ring_miracle)变幻圆环(幻影)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_miracle",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito_koji",
+			"title": "另类亚极陀之石(真岛浩二)",
+			"text": "登场于：$(li)成为假面骑士的男人 (2012年，S.I.C.英雄传奇)$(br2)用于合成另类亚极陀的$(l:agito/devices/ank_point#ank_point_burning)安可核心(真岛浩二)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito_koji",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito_burning_form",
+			"title": "另类燃烧亚极陀之石",
+			"text": "登场于：$(li)成为假面骑士的男人 (2012年，S.I.C.英雄传奇)$(br2)用于切换另类亚极陀的$(l:agito/riders/another_agito_kouji_majima#burning)燃烧形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito_burning_form",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

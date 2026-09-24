@@ -1,0 +1,27 @@
+{
+	"name": "北部基地",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "北部基地",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)生成于 $(l:saber/dimensions/northern_base)北部基地维度$(/l)$(br2)包含一台$(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)$(br2)箱子战利品：$(li)3-7本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)（25%）"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/northern_base_structure.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/northern_base_structure_2.png"
+			],
+			"title": " ",
+			"text": "$(li)0-4本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)（25%）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)4-6本书籍（12.5%）$(li)1根羽毛（7.5%）$(li)1本$(l:saber/items/wonder_ride_books#daishougun_momoichirou_wonder_ride_book)大将军桃一郎奇幻驾驭书$(/l)（7.5%）$(li)1本$(l:saber/items/wonder_ride_books#daikengou_urashimajirou_wonder_ride_book)大剑豪浦岛二郎奇幻驾驭书$(/l)（7.5%）$(li)1本$(l:saber/items/wonder_ride_books#daiyokozuna_kinzaburou_wonder_ride_book)大横钢金三郎奇幻驾驭书$(/l)（7.5%）$(li)1本$(l:saber/arsenal/book_gate_wonder_ride_book)书之门奇幻驾驭书$(/l)（7.5%）"
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+    "name": "混沌指环",
+    "icon": "kamenridercraft:chaos_ring_saigo",
+    "category": "kamenridercraft:ride_kamens/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_saigo",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成才悟的$(l:ride_kamens/devices/chaos_driver#chaos_driver_saigo)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_saigo",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_haruma",
+            "title": "混沌指环(阳真)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成阳真的$(l:ride_kamens/devices/chaos_driver#chaos_driver_haruma)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_haruma",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_shion",
+            "title": "混沌指环(紫苑)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成紫苑的$(l:ride_kamens/devices/chaos_driver#chaos_driver_shion)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_shion",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_jigen",
+            "title": "混沌指环(慈玄)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成慈玄的$(l:ride_kamens/devices/chaos_driver#chaos_driver_jigen)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_jigen",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_araki",
+            "title": "混沌指环(荒鬼)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成荒鬼的$(l:ride_kamens/devices/chaos_driver#chaos_driver_araki)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_araki",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_kamui",
+            "title": "混沌指环(神威)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成神威的$(l:ride_kamens/devices/chaos_driver#chaos_driver_kamui)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_kamui",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_agata",
+            "title": "混沌指环(阿形)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成阿形的$(l:ride_kamens/devices/chaos_driver#chaos_driver_agata)混沌驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_agata",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chaos_ring_loq",
+            "title": "混沌指环(LOQ)",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)用于合成LOQ的$(l:ride_kamens/devices/chaos_driver#chaos_driver_loq)混沌驱动器$(/l)$(br2)用于切换LOQ的$(l:ride_kamens/riders/loq#lance)LOQ (Lance·天堂)$(/l)与$(l:ride_kamens/riders/loq#q)LOQ (Q)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chaos_ring_loq",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ride_kamens/items/gasha_ticket)卡莎票$(/l)"
+        }
+    ]
+}

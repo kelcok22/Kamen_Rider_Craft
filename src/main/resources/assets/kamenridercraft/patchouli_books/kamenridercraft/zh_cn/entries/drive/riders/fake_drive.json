@@ -1,0 +1,36 @@
+{
+  "name": "假Drive",
+  "icon": "kamenridercraft:fake_drivedriver",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "speed",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#speedshift)移速速度$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假Drive",
+      "text": "登场于：$(li)高速形态！真正的力量！高速形态诞生！ (2015年，超战斗DVD)$(br2)通过穿戴$(l:drive/devices/drive_driver#fake_drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "max_flare",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 火焰",
+      "text": "通过使用 $(l:drive/items/shift_cars#maxflare)最大火力$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假Drive",
+      "text": "登场于：$(li)高速形态！真正的力量！高速形态诞生！ (2015年，超战斗DVD)$(br2)通过穿戴$(l:drive/devices/drive_driver#fake_drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)抗火"
+    }
+  ]
+}

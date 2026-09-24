@@ -1,0 +1,16 @@
+{
+	"name": "拖车炮",
+	"icon": "kamenridercraft:trailer_hou",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)由Drive的 $(l:drive/riders/drive#formula)方程式型号$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/trailer_hou"
+		}
+	]
+}

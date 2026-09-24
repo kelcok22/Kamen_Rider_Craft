@@ -1,0 +1,358 @@
+{
+	"name": "假面骑士铠武",
+	"icon": "kamenridercraft:sengoku_driver_gaim",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "orange",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:orange_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "柳橙武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#orange_lockseed)柳橙锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pine",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:pine_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "凤梨武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#pine_lockseed)凤梨锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)抗性提升$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "草莓武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#ichigo_lockseed)草莓锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "suika",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "西瓜武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#suika_lockseed)西瓜锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)变大 II$(li)挖掘疲劳 II$(li)抗性提升 III$(li)饱和$(li)跳跃提升 IV$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "banana",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "香蕉武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#banana_lockseed)香蕉锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "donguri",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:donguri_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "橡果武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#donguri_lockseed)橡果锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武：伟大足球战！黄金果实杯！ (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)抗性提升$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "durian",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:durian_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "榴莲武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#durian_lockseed)榴莲锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武：伟大足球战！黄金果实杯！ (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)急迫$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_lemon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_lemon_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阵羽柠檬武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#lemon_energy_lockseed)柠檬能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)此形态可由 $(l:gaim/riders/gaim)铠武$(/l)、$(l:gaim/riders/ryugen)龙玄$(/l)、$(l:gaim/riders/zangetsu)斩月$(/l)、$(l:gaim/riders/bravo)布拉沃$(/l) 及 $(l:gaim/riders/knuckle)纳高尔$(/l) 使用$(br2)状态效果：$(li)速度$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_cherry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_cherry_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阵羽樱桃武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#cherry_energy_lockseed)樱桃能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)此形态可由 $(l:gaim/riders/gaim)铠武$(/l)、$(l:gaim/riders/ryugen)龙玄$(/l)、$(l:gaim/riders/zangetsu)斩月$(/l)、$(l:gaim/riders/bravo)布拉沃$(/l) 及 $(l:gaim/riders/knuckle)纳高尔$(/l) 使用$(br2)状态效果：$(li)速度$(li)急迫 II$(li)饱和$(li)抗火$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_peach",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_peach_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阵羽桃子能量武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#peach_energy_lockseed)蜜桃能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)此形态可由 $(l:gaim/riders/gaim)铠武$(/l)、$(l:gaim/riders/ryugen)龙玄$(/l)、$(l:gaim/riders/zangetsu)斩月$(/l)、$(l:gaim/riders/bravo)布拉沃$(/l) 及 $(l:gaim/riders/knuckle)纳高尔$(/l) 使用$(br2)状态效果：$(li)速度$(li)夜视$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_melon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_melon_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阵羽蜜瓜能量武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#melon_energy_lockseed)蜜瓜能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)官方完美书：铠武 战国水果鸡尾酒 (2014年，画册)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)此形态可由 $(l:gaim/riders/gaim)铠武$(/l)、$(l:gaim/riders/ryugen)龙玄$(/l)、$(l:gaim/riders/zangetsu)斩月$(/l)、$(l:gaim/riders/bravo)布拉沃$(/l) 及 $(l:gaim/riders/knuckle)纳高尔$(/l) 使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)夜视$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "black_jimber",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:gaim_yami\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "暗黑阵羽武装",
+			"text": "持有 $(l:gaim/items/lockseeds#dark_orange_lockseed)暗黑橙子锁种$(/l) 时，通过穿戴$(l:gaim/items/energy_lockseeds#dark_lemon_energy_lockseed)暗黑柠檬能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武·暗",
+			"text": "登场于：$(li)假面骑士铠武：伟大足球战！黄金果实杯！ (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kachidoki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:kachidoki_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胜哄武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#kachidoki_lockseed)胜哄锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)饱和$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kiwami",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:kiwami_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "极武装",
+			"text": "处于 $(l:gaim/riders/gaim#kachidoki)胜哄武装$(/l) 时，通过穿戴$(l:gaim/items/lockseeds#kiwami_lockseed)极武锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 IV$(li)饱和$(li)抗火$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabi_orange",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabi_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "记忆丧失武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#kabi_orange_lockseed)卡比橙锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武：最终舞台 (2014年，舞台剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)虚弱$(li)挖掘疲劳$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fresh_orange",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:fresh_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "新鲜柳橙武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#fresh_orange_lockseed)新鲜柳橙锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rider_ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一号武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#rider_ichigo_lockseed)一号锁种$(/l) 或 $(l:gaim/items/lockseeds#heisei_rider_lockseed)平成骑士锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)平成骑士VS昭和骑士 假面骑士大战 feat.超级战队 (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度 II$(li)饱和$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ryuki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:ryuki_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙骑武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#ryuki_lockseed)龙骑锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫$(li)饱和$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "den_o",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:den_o_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "电王武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#den_o_lockseed)Den-O锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)急迫$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Decade武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#decade_lockseed)Decade锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)急迫 III$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "w",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "W武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#w_lockseed)W锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手）$(li)力量 II（持武器）$(li)速度 II$(li)饱和$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ooo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:ooo_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "OOO武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#ooo_lockseed)OOO锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)夜视 II$(li)急迫 II$(li)饱和$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Fourze武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#fourze_lockseed)Fourze锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Wizard武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#wizard_lockseed)Wizard锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武&Wizard：命运的战国电影大战 (2013年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:drive_lockseed\",slot_tex2:\"kamenridercraft:basic_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Drive武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#drive_lockseed)Drive锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士铠武",
+			"text": "登场于：$(li)假面骑士×假面骑士 Drive&铠武：电影大战全速前进 (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_gaim)战极驱动器(铠武)$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)跳跃提升 II"
+		}
+	]
+}

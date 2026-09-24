@@ -1,0 +1,16 @@
+{
+	"name": "变身腰带卡里恶斯腹口",
+	"icon": "kamenridercraft:henshin_belt_caries_gavv",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布：零食屋入侵者 (2025年，电影)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/caries)假面骑士卡里恶斯"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/henshin_belt_caries_gavv"
+		}
+	]
+}

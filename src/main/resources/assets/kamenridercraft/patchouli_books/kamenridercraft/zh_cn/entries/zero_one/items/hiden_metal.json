@@ -1,0 +1,19 @@
+{
+	"name": "飞电金属",
+	"icon": "kamenridercraft:hiden_metal",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用作合成大多数01系列物品的基础物品和修复材料$(br2)掉落自：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)渡渡鸟-雏鸟魔机偶$(/l)$(li)$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)$(li)$(l:zero_one/mobs/abaddon)假面骑士·亚巴顿$(/l)$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)$(li)$(l:zero_one/mobs/horobi)假面骑士·灭$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hiden_metal",
+			"title": " ",
+			"text": "$(li)$(l:zero_one/mobs/jin)假面骑士·迅$(/l)$(li)$(l:zero_one/mobs/ikazuchi)假面骑士·雷$(/l)$(li)$(l:zero_one/mobs/naki)假面骑士·亡$(/l)$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)$(li)$(l:zero_one/mobs/raider)劫持者$(/l)$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士·亚巴顿(指挥官)$(/l)$(li)$(l:zero_one/mobs/zaia)假面骑士·哉亚$(/l)$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)恐狼索尔德魔机偶$(/l)$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)剑齿虎索尔德魔机偶$(/l)"
+		}
+	]
+}

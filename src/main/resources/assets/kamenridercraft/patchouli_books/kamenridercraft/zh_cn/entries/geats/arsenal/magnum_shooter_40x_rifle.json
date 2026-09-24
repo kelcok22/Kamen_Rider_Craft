@@ -1,0 +1,16 @@
+{
+	"name": "马格南射击40X(步枪)",
+	"icon": "kamenridercraft:magnum_shooter_40x_rifle",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/geats#magnum)马格南$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/magnum_shooter_40x_rifle"
+		}
+	]
+}

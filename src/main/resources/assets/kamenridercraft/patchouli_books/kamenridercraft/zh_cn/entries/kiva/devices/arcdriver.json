@@ -1,0 +1,16 @@
+{
+	"name": "恶王Kivat腰带",
+	"icon": "kamenridercraft:arcdriver",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/arc)假面骑士恶王$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/arcdriver"
+		}
+	]
+}

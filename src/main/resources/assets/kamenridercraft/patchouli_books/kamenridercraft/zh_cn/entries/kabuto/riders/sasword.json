@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士剑蝎",
+	"icon": "kamenridercraft:sasword_zecter",
+	"category": "kamenridercraft:kabuto/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "masked",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sasword_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:sasword_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "重甲形态",
+			"text": "通过使用$(l:kabuto/items/zecters#sasword_zecter)剑蝎昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑蝎",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)通过穿戴$(l:kabuto/arsenal/sasword_yaiver)剑蝎剑刃$(/l)与$(l:kabuto/devices/zect_buckle#sasword_rider_belt)ZECT带扣(剑蝎)$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 II$(li)毒药抗性"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sasword_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:sasword_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "基础形态",
+			"text": "通过使用$(l:kabuto/items/zecters#sasword_zecter)剑蝎昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士剑蝎",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)通过穿戴$(l:kabuto/arsenal/sasword_yaiver)剑蝎剑刃$(/l)与$(l:kabuto/devices/zect_buckle#sasword_rider_belt)ZECT带扣(剑蝎)$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 II$(li)急迫$(br2)专属技能：$(li)Clock Up"
+		}
+	]
+}

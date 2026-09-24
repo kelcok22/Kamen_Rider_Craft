@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Birth X",
+	"icon": "kamenridercraft:birth_driver_x",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver_x\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth X",
+			"text": "登场于：$(li)假面骑士OOO 10周年：复活的核心硬币 (2022年，V-Cinema电影)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver_x)Birth驱动器X$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)水下呼吸$(li)力量 II"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Kaixa Phone XX",
+    "icon": "kamenridercraft:kaixa_phone_xx",
+    "category": "kamenridercraft:faiz/arsenal",
+    "sortnum": 17,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士555 20周年：天堂重获 (2024年，电影)$(br2)由 $(l:faiz/riders/next_kaixa)假面骑士Next Kaixa$(/l) 使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/kaixa_phone_xx"
+        }
+    ]
+}

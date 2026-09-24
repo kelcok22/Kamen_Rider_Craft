@@ -1,0 +1,7 @@
+{ 
+    "parent": "kamenridercraft:main/heisei",
+    "name": "假面骑士时王",
+    "description": "与《假面骑士时王》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:zi_o_logo",
+    "sortnum": 34
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zx/main",
+    "name": "武器",
+    "description": "可以在铁砧上使用$(l:misc/items/rider_circuit)骑士电路板$(/l)修复.",
+    "icon": "kamenridercraft:cross_shuriken",
+    "sortnum": 3
+}

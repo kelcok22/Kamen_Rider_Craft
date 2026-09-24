@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:v3/main",
+    "name": "腰带",
+    "description": "V3系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:misc/items/rider_circuit)骑士电路$(/l)修复.",
+    "icon": "kamenridercraft:double_typhoon",
+    "sortnum": 1
+}

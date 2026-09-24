@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zo/main",
+    "name": "骑士纹章(ZO)",
+    "description": "",
+    "icon": "kamenridercraft:zo_stone",
+    "sortnum": 2
+}

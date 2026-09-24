@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "假面骑士Wizard",
+    "description": "与《假面骑士Wizard》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:wizard_logo",
+    "sortnum": 28
+}

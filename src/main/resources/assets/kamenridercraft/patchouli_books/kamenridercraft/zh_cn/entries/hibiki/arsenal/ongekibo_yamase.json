@@ -1,0 +1,16 @@
+{
+	"name": "音击棒·山背风",
+	"icon": "kamenridercraft:ongekibo_yamase",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/riders/ibuki)假面骑士威吹鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekibo_yamase"
+		}
+	]
+}

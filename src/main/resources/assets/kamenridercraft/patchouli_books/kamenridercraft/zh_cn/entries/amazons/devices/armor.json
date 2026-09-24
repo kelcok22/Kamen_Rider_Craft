@@ -1,0 +1,24 @@
+{
+	"name": "Amazons装甲",
+	"icon": "kamenridercraft:amazonshead",
+	"category": "kamenridercraft:amazons/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "搭配Amazons系列骑士的驱动器使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/amazonshead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/amazonstroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/amazonslegs"
+		}
+	]
+}

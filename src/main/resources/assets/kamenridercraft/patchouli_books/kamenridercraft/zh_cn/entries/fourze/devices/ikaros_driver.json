@@ -1,0 +1,16 @@
+{
+	"name": "Ikaros驱动器",
+	"icon": "kamenridercraft:ikaros_driver",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze：天高毕业（2014年，小说）$(br2)与$(l:fourze/devices/armor)Fourze装甲$(/l)一起穿戴，可变身为$(l:fourze/riders/ikaros)假面骑士Ikaros"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/ikaros_driver"
+		}
+	]
+}

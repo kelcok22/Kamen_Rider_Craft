@@ -1,0 +1,17 @@
+{
+	"name": "车门枪",
+	"icon": "kamenridercraft:door_ju",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Drive (2014年, 电视剧)$(br2)由$(l:drive/riders/drive)假面骑士Drive$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/door_ju",
+          "text": "掉落自:$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)的装备"
+		}
+	]
+}

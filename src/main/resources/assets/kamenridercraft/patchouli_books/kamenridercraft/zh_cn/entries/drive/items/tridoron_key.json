@@ -1,0 +1,16 @@
+{
+	"name": "赛特朗之钥",
+	"icon": "kamenridercraft:tridoron_key",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(br2)可切换Drive的$(l:drive/riders/drive#chou_dead_heat)超级白热Drive$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/tridoron_key"
+		}
+	]
+}

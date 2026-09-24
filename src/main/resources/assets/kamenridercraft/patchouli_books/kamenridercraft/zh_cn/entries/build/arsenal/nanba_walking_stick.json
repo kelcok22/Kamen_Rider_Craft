@@ -1,0 +1,19 @@
+{
+	"name": "难波拐杖",
+	"icon": "kamenridercraft:nanba_walking_stick",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由难波重三郎使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nanba_walking_stick",
+			"title": " ",
+			"text": "从$(l:build/structures/pandora_tower)潘多拉魔塔$(/l)的试炼战利品中获得"
+		}
+	]
+}

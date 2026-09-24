@@ -1,0 +1,16 @@
+{
+	"name": "音击棒·烈翠",
+	"icon": "kamenridercraft:ongekibo_ressui",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)由$(l:hibiki/riders/kabuki)假面骑士歌舞鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekibo_ressui"
+		}
+	]
+}

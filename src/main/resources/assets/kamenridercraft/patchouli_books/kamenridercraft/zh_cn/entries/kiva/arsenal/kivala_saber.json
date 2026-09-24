@@ -1,0 +1,16 @@
+{
+	"name": "牙兰军刀",
+	"icon": "kamenridercraft:kivala_saber",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士W&Decade：MOVIE大战2010 (2009年，电影)$(br2)由 $(l:kiva/riders/kiva-la)假面骑士牙兰$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kivala_saber"
+		}
+	]
+}

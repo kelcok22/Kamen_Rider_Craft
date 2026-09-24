@@ -1,0 +1,316 @@
+{
+	"name": "假面骑士空我",
+	"icon": "kamenridercraft:kuuga_mighty",
+	"category": "kamenridercraft:kuuga/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "growing",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_growing\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "初生形态",
+			"text": "通过使用 $(l:kuuga/items/kuuga_growing)空我初生灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)力量$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "全能形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_mighty)空我全能灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)跳跃提升$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_dragon\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "青龙形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_dragon)空我青龙灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pegasus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_pegasus\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "天马形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_pegasus)空我天马灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)射击推进 II$(li)夜视$(li)雷达"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "titan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_titan\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "泰坦形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_titan)空我泰坦灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)抗性提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "升华全能形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_rising_mighty)空我升华全能灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度$(li)抗性提升$(li)跳跃提升$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_dragon\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "升华青龙形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_rising_dragon)空我升华青龙灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫$(li)跳跃提升 III$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_pegasus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_pegasus\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "升华天马形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_rising_pegasus)空我升华天马灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)雷达 II$(li)射击推进 III$(li)速度 II$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_titan",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_titan\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "升华泰坦形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_rising_titan)空我升华泰坦灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)斩击提升 IV$(li)抗性提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazing_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊异全能形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_amazing_mighty)空我惊异全能灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度$(li)抗性提升 II$(li)跳跃提升 II$(li)力量$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ultimate",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "究极形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_ultimate)空我究极灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)速度 IV$(li)抗性提升 III$(li)烈焰环身 IV$(li)跳跃提升 IV$(li)力量 III$(br2)专属技能：$(li)骑士拳"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ultimate_dark_eye",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ultimate_black_eyes\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "究极形态（黑目）",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_ultimate_black_eyes)空我究极灵石(黑目)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)速度 IV$(li)抗性提升 III$(li)烈焰环身 IV$(li)跳跃提升 IV$(li)力量 III$(br2)专属技能：$(li)骑士拳"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_ultimate",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "究极升华形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_rising_ultimate)空我究极升华灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士帝骑：全骑士对大修卡 (2009年，电影)$(li)假面骑士巫骑 (2012年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)速度 III$(li)抗性提升 III$(li)烈焰环身 IV$(li)跳跃提升 V$(li)力量 IV$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_ultimate_dark_eye",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_rising_ultimate_black_eyes\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "究极升华形态（黑目）",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_rising_ultimate_black_eyes)空我究极升华灵石(黑目)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士帝骑 (2009年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)速度 III$(li)抗性提升 III$(li)烈焰环身 IV$(li)跳跃提升 V$(li)力量 IV$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "super_rising_ultimate",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_super_rising_ultimate\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超究极升华形态",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_super_rising_ultimate)空我超升华究极灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C.英雄传奇)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)速度 III$(li)抗性提升 IV$(li)烈焰环身 IV$(li)跳跃提升 V$(li)力量 III$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "growing_onodera",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_growing_ar\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "初生形态（小野寺）",
+ 	        "text": "通过使用 $(l:decade/items/formride_cards#kuuga_growing_card)形态驾驭 空我初生形态$(/l) 卡片进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士帝骑 (2009年，电视剧)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)力量$(br2)专属技能：$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jinrai_no_senshi",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:jinrai_no_senshi\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "迅疾战士",
+			"text": "通过使用 $(l:misc/items/card_warrior_cards#jinrai_no_senshi)生存卡 迅疾$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)卡片战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)飞行$(li)拳力提升 IV$(li)速度 IV$(li)抗性提升$(li)急迫 IV$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazing_mighty_artist_color",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_amazing_mighty_artist\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊异全能（艺术家配色）",
+			"text": "通过使用$(l:misc/items/kuuga_amazing_mighty_artist)S.I.C.英雄传奇$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)S.I.C.匠魂 Vol.5 (2005年，玩具系列)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "grandgouram",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:grandgouram\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级模式",
+			"text": "通过使用 $(l:misc/items/card_warrior_cards#grandgouram)格莱姆怪物驾驭卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)卡片战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IX$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kuuga_ball",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ball\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空我巨球",
+			"text": "通过使用 $(l:decade/items/final_formride_cards#kuuga_ball)空我球最终 形态假面驾驭卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)假面骑士战斗： Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "black_rising_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_black_rising_mighty\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "升华全能形态（黑色版本）",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_black_rising_mighty)空我黑色升华全能灵石$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)电视君 (2001年1月号，杂志)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)速度$(li)抗性提升$(li)跳跃提升$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "touma",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:arcle\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_touma\"}},Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "全能形态（-空我熊-版）",
+			"text": "通过使用 $(l:kuuga/items/amadam_stones#kuuga_touma)空我全能灵石(-空我熊-)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士空我",
+			"text": "登场于：$(li)HEROES VINYL ART 假面骑士空我 -TOUMA- (2025年，玩具系列)$(br2)通过穿戴$(l:kuuga/devices/arcle)亚古鲁$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)跳跃提升$(br2)专属技能：$(li)骑士拳$(li)骑士踢"
+		}
+	]
+}

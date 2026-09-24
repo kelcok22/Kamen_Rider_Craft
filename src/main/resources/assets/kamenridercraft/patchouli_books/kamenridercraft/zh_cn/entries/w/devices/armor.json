@@ -1,0 +1,24 @@
+{
+	"name": "W装甲",
+	"icon": "kamenridercraft:whead",
+	"category": "kamenridercraft:w/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与W系列骑士驱动器配合使用，可以变身对应骑士$(br2)掉落自：$(li)$(l:w/mobs/eternal_mob)假面骑士Eternal$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/whead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/wtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/wlegs"
+		}
+	]
+}

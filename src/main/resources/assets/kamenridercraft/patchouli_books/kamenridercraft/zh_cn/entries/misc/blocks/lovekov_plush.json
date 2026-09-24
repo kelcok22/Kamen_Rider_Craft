@@ -1,0 +1,19 @@
+{
+	"name": "拉布可芙毛绒玩偶",
+	"icon": "kamenridercraft:lovekov_plush",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "可佩戴在头部装备槽"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lovekov_plush",
+        "title": " ",
+        "text": "通过打开情人节 $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+      }
+    ]
+}

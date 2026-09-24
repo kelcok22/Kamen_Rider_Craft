@@ -1,0 +1,21 @@
+{
+	"name": "异类Ghost",
+	"icon": "kamenridercraft:another_ghost_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:another_ghost_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "异类Ghost",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/another_ghost_driver)异类Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)灵体漂浮"
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"name": "星云烟雾枪",
+	"icon": "kamenridercraft:nebula_steam_gun_kaiser",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "nebula_steam_gun_kaiser",
+			"text": "登场于：$(li)平成世代FINAL：Build & Ex-Aid 与传奇骑士 (2017年，电影)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/kaiser)凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nebula_steam_gun_kaiser",
+			"title": " ",
+			"text": "不装备任何腰带时，发射$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)即可获得$(br2)掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)的装备$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)的装备$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nebula_steam_gun_hell_bros",
+			"title": "星云烟雾枪(地狱兄弟)",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/bros)地狱兄弟$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nebula_steam_gun_hell_bros",
+			"title": " ",
+			"text": "不装备任何腰带，且副手装备$(l:build/items/gears#gear_engine)引擎齿轮$(/l)或$(l:build/items/gears#gear_remocon)遥控齿轮$(/l)时，发射$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)即可获得$(br2)掉落自：$(li)$(l:build/mobs/engine_bros)引擎兄弟$(/l)的装备$(li)$(l:build/mobs/remocon_bros)齿轮兄弟$(/l)的装备"
+		}
+	]
+}

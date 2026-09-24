@@ -1,0 +1,16 @@
+{
+	"name": "奇异果击轮",
+	"icon": "kamenridercraft:kiwi_gekirin",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由龙玄的$(l:gaim/riders/ryugen#kiwi)奇异果武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kiwi_gekirin"
+		}
+	]
+}

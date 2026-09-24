@@ -1,0 +1,16 @@
+{
+	"name": "柠檬轻剑",
+	"icon": "kamenridercraft:lemon_rapier",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 39,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士Duke (2015年，V-Cinema电影)$(br2)由公爵的$(l:gaim/riders/duke#lemon)柠檬武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/lemon_rapier"
+		}
+	]
+}

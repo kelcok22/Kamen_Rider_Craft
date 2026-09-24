@@ -1,0 +1,24 @@
+{
+	"name": "铠武装甲",
+	"icon": "kamenridercraft:gaimhead",
+	"category": "kamenridercraft:gaim/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与铠武系列骑士的驱动器配合使用，可变身成为该骑士$(br2)掉落自：$(li)$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)的装备$(li)$(l:gaim/mobs/zangetsu_shin)假面骑士斩月·真$(/l)的装备$(li)$(l:gaim/mobs/marika)假面骑士女王$(/l)的装备$(li)$(l:gaim/mobs/duke)假面骑士公爵$(/l)的装备$(li)$(l:gaim/mobs/sigurd)假面骑士西格德$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/gaimhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/gaimtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/gaimlegs"
+		}
+	]
+}

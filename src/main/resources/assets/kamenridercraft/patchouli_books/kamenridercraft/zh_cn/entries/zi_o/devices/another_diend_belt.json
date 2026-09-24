@@ -1,0 +1,16 @@
+{
+	"name": "异类Diend腰带",
+	"icon": "kamenridercraft:another_diendriver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士时王 NEXT TIME: Geiz, Majesty (2020年，V-Cinema电影)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/another_deiend)异类Diend$(/l)"
+		},
+		{
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_diend_belt"
+		}
+	]
+}

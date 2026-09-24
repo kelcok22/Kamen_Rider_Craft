@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士扎莫纳斯",
+    "icon": "kamenridercraft:zi_o_logo",
+    "category": "kamenridercraft:zi_o/mobs",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:zamonas",
+            "text": "生命值：60$(br2)通过挖掘$(l:misc/blocks/boss_blocks#quartzer_boss_block)时管者Boss召唤方块$(/l)召唤而来"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)生命值：60$(br2)掉落$(li)4-6个$(l:zi_o/items/blank_watch)空白骑士表盘$(/l)$(li)1个$(l:zi_o/items/ridewatches#zamonas_ridewatch)扎莫纳斯骑士表盘$(/l)$(li)1个$(l:zi_o/items/ridewatches#amazon_alpha_ridewatch)Amazon Alpha骑士表盘$(/l)（33%）$(li)1个$(l:zi_o/items/ridewatches#amazon_omega_ridewatch)Amazon Omega骑士表盘$(/l)（33%）$(li)1个$(l:zi_o/items/ridewatches#amazon_neo_ridewatch)Amazon Neo骑士表盘$(/l)（33%）"
+        }
+    ]
+}

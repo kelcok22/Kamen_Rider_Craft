@@ -1,0 +1,17 @@
+{
+	"name": "战斗洛伊多",
+	"icon": "kamenridercraft:zx_logo",
+	"category": "kamenridercraft:zx/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:combat_roid",
+			"text": "登场于:$(li)10号诞生！假面骑士全员集合!! (1984年, 电视特别节目)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 平原, 向日葵平原, 森林, 针叶林, 沼泽, 红树林沼泽, 冻洋, 冰冻深海, 冻河, 沙滩, 沙漠, 风袭丘陵, 桦木森林, 黑森林, 积雪针叶林, 热带草原, 热带高原, 风袭热带草原, 恶地, 风蚀恶地, 繁茂恶地$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (50%)$(li)1个$(l:zx/items/zx_belt_core)ZX腰带核心$(/l) (50%)"
+		}
+	]
+}

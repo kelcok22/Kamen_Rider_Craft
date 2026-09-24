@@ -1,0 +1,53 @@
+{
+	"name": "空白饱藏",
+	"icon": "kamenridercraft:blank_gochizo",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用作合成大多数加布系列物品的基础物品及修复材料$(br2)食用特定食物后可转化为对应饱藏（转化列表见下一页）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/blank_gochizo",
+			"text": "可在加布 $(l:misc/stageshow)舞台表演$(/l)中获得$(br2)掉落自：$(li)$(l:gavv/mobs/agent)特工$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "text": "食用 $(l:misc/items/foods#gummi_candy)软糖$(/l)掉落：$(li)$(l:gavv/items/gochizo#poppingummy_gochizo)砰击软糖饱藏$(/l) (33.3%)$(li)$(l:gavv/items/gochizo#punchingummy_gochizo)拳击软糖饱藏$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#kickingummy_gochizo)踢击软糖饱藏$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#tsurigummy_gochizo)钓鱼软糖饱藏$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#hichew_gochizo)森永软糖饱藏$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#kamenridergummy_gochizo)假面骑士软糖饱藏$(/l) (22.2%)$(br2)食用 $(l:misc/items/foods#potato_snacks)薯片$(/l)掉落：$(li)$(l:gavv/items/gochizo#zakuzakuchips_gochizo)脆脆薯片饱藏$(/l) (35.7%)$(li)$(l:gavv/items/gochizo#hirihirichips_gochizo)辣辣薯片饱藏$(/l) (21.4%)$(li)$(l:gavv/items/gochizo#kungfu_ramen_gochizo)功夫拉面饱藏$(/l) (14.3%)$(li)$(l:gavv/items/gochizo#bonchiage_gochizo)仙贝时代饱藏$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#happyturn_gochizo)快乐王子米饼饱藏$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#ottotto_gochizo)多宝贝饱藏$(/l) (7.1%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:gavv/items/gochizo#peanutage_gochizo)薄脆饼干时代饱藏$(/l) (7.1%)$(br2)食用 $(l:misc/items/foods#marshmallow)棉花糖$(/l)掉落：$(li)$(l:gavv/items/gochizo#fuwamallow_gochizo)松软棉糖饱藏$(/l) (55.6%)$(li)$(l:gavv/items/gochizo#marumallow_gochizo)圆润棉糖饱藏$(/l) (22.2%)$(li)$(l:gavv/items/gochizo#oshiruko_gochizo)年糕小豆汤饱藏$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#angelpie_gochizo)安琪儿馅饼饱藏$(/l) (11.1%)$(br2)食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l)掉落：$(li)$(l:gavv/items/gochizo#chocodan_gochizo)巧克弹饱藏$(/l) (21.4%)$(li)$(l:gavv/items/gochizo#chocodon_gochizo)巧克咚饱藏$(/l) (21.4%)$(li)$(l:gavv/items/gochizo#choco_treasure_gochizo)巧克宝饱藏$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#chocoball_gochizo)巧克球饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#crunky_gochizo)米果巧克力饱藏$(/l) (2.4%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:gavv/items/gochizo#ghana_gochizo)加纳巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#meitoalphabet_gochizo)名糖夹心巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#tirolchocolate_gochizo)什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#tirolchocolate_gochizo_variety)什锦巧克力饱藏(多种口味包)$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#strawberryjellytirol_gochizo)草莓果冻什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#nougattirol_gochizo)牛轧糖什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#milktirol_gochizo)牛奶什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#bispinktirol_gochizo)Bis什锦巧克力饱藏$(/l) (2.4%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:gavv/items/gochizo#whiteandcookiestirol_gochizo)白色&曲奇什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#crunchtirol_gochizo)米果什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#almondtirol_gochizo)杏仁什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#bisbluetirol_gochizo)Bis什锦巧克力饱藏$(/l) (2.4%)$(li)$(l:gavv/items/gochizo#charapaki_gochizo)发掘恐龙饱藏$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#charapaki_gochizo_special)发掘恐龙饱藏(特殊)$(/l) (7.1%)$(br2)食用曲奇掉落：$(li)$(l:gavv/items/gochizo#cookiekie_gochizo)曲奇奇饱藏$(/l) (23.8%)$(li)$(l:gavv/items/gochizo#byunbei_gochizo)飚贝饱藏$(/l) (19%)$(li)$(l:gavv/items/gochizo#eleganmacaron_gochizo)优雅马卡龙饱藏$(/l) (19%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:gavv/items/gochizo#amondcokikkie_gochizo)杏仁酥饱藏$(/l) (9.5%)$(li)$(l:gavv/items/gochizo#chocopie_gochizo)巧克力派饱藏$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#koalamarch_gochizo)旅行考拉饱藏$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#moonlightcookie_gochizo)月光曲奇饱藏$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#pienomi_gochizo)派之美饱藏$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#pukupukutai_gochizo)鱼形威化饼饱藏$(/l) (4.8%)$(li)$(l:gavv/items/gochizo#toppo_gochizo)夹心饼干棒饱藏$(/l) (4.8%)$(br2)食用 $(l:misc/items/foods#donut)甜甜圈$(/l)掉落：$(li)$(l:gavv/items/gochizo#doumaru_gochizo)甜甜圈饱藏$(/l)$(br2)食用生鳕鱼掉落：$(li)$(l:gavv/items/gochizo#tarakomentaiko_gochizo)鳕子明太子饱藏$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l)掉落：$(li)$(l:gavv/items/gochizo#gurucan_gochizo)转转糖饱藏$(/l) (26.3%)$(li)$(l:gavv/items/gochizo#vrocan_gochizo)涡轮糖饱藏$(/l) (5.3%)$(li)$(l:gavv/items/gochizo#bakucan_gochizo)爆炸糖饱藏$(/l) (15.8%)$(li)$(l:gavv/items/gochizo#caramelmel_gochizo)焦焦糖饱藏$(/l) (10.5%)$(li)$(l:gavv/items/gochizo#bubbleramune_gochizo)泡泡汽水糖饱藏$(/l) (10.5%)$(li)$(l:gavv/items/gochizo#bubbleramune_gochizo_peach)泡泡汽水糖饱藏(蜜桃味)$(/l) (10.5%)$(li)$(l:gavv/items/gochizo#mofupachi_gochizo)软软泡芙饱藏$(/l) (10.5%)$(li)$(l:gavv/items/gochizo#morinagaramune_gochizo)弹珠汽水饱藏$(/l) (5.3%)$(li)$(l:gavv/items/gochizo#artcandy_gochizo)西班牙手工糖饱藏$(/l) (5.3%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "食用蛋糕掉落：$(li)$(l:gavv/items/gochizo#bushel_gochizo)圣诞树桩蛋糕$(/l) (55.6%)$(li)$(l:gavv/items/gochizo#caking_gochizo)蛋糕王饱藏$(/l) (11.1%)$(li)$(l:gavv/items/gochizo#sporki_gochizo)Sporki饱藏$(/l) (22.2%)$(li)$(l:gavv/items/gochizo#custardcake_gochizo)卡仕达蛋糕饱藏$(/l) (11.1%)$(br2)食用 $(l:misc/items/foods#pancake)松饼堆$(/l)掉落：$(li)$(l:gavv/items/gochizo#wafusaku_gochizo)酥脆华夫饱藏$(/l) (25%)$(li)$(l:gavv/items/gochizo#hotcaken_gochizo)热松饼君饱藏$(/l) (25%)$(li)$(l:gavv/items/gochizo#crepuna_gochizo)可丽饼娜饱藏$(/l) (25%)$(li)$(l:gavv/items/gochizo#doranosuke_gochizo)铜锣之助饱藏$(/l) (25%)$(br2)食用 $(l:misc/items/foods#dango)团子$(/l)掉落：$(li)$(l:gavv/items/gochizo#hagigoro_gochizo)萩饼五郎饱藏$(/l) (33.3%)$(li)$(l:gavv/items/gochizo#mitaramotti_gochizo)蜜弹麻糬饱藏$(/l) (33.3%)$(li)$(l:gavv/items/gochizo#mogimaru_gochizo)摘摘小圆饱藏$(/l) (33.3%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "食用 $(l:misc/items/foods#pudding)布丁$(/l)掉落：$(li)$(l:gavv/items/gochizo#shouma_doppudding_gochizo)生真的抖抖布丁饱藏$(/l) (75%)$(li)$(l:gavv/items/gochizo#prujelly_gochizo)果子兽饱藏$(/l) (25%)$(br2)食用 $(l:misc/items/foods#corn_snack)玉米零食$(/l)掉落：$(li)$(l:gavv/items/gochizo#umaibo_gochizo)美味棒饱藏$(/l) (21.4%)$(li)$(l:gavv/items/gochizo#popburn_gochizo)爆燃米花饱藏$(/l) (21.4%)$(li)$(l:gavv/items/gochizo#takoyaki_umaibo_gochizo)美味棒饱藏(章鱼烧口味)$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#teriyaki_umaibo_gochizo)美味棒饱藏(照烧口味)$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#salad_umaibo_gochizo)美味棒饱藏(沙拉口味)$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#tonkatsu_umaibo_gochizo)美味棒饱藏(日式炸猪排口味)$(/l) (7.1%)"
+      },
+      {
+        "type": "patchouli:text",
+        "text": "$(li)$(l:gavv/items/gochizo#potage_umaibo_gochizo)美味棒饱藏(浓汤口味)$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#natto_umaibo_gochizo)美味棒饱藏(纳豆口味)$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#salami_umaibo_gochizo)美味棒饱藏(萨拉米香肠口味)$(/l) (7.1%)$(li)$(l:gavv/items/gochizo#mentaiko_umaibo_gochizo)美味棒饱藏(明太子口味)$(/l) (7.1%)"
+      }
+    ]
+}

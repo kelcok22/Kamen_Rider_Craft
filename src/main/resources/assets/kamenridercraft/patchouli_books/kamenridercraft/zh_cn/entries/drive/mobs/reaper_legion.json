@@ -1,0 +1,17 @@
+{
+	"name": "死神军团",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:reaper_legion",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：灵魂沙峡谷$(br2)掉落$(li)1个$(l:drive/items/shift_alloy)换挡锭$(/l) (62.5%)$(li)1-2个$(l:drive/items/next_system_bike)次世代系统摩托$(/l) (37.5%)$(li)2-4个$(l:drive/items/viral_cores#viral_core_cobara)眼镜蛇病毒核心$(/l) (33.3%)$(li)2-4个$(l:drive/items/viral_cores#viral_core_spider)蜘蛛病毒核心$(/l) (33.3%)$(li)2-4个$(l:drive/items/viral_cores#viral_core_bat)蝙蝠病毒核心$(/l) (33.3%)$(br2)进化$(li)$(l:drive/mobs/medic_roidmude)恶路程式·医护$(/l) (5%)$(li)$(l:drive/mobs/dark_drive)假面骑士黑暗Drive$(/l) (5%)"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"name": "强人腰带",
+	"icon": "kamenridercraft:electrer",
+	"category": "kamenridercraft:stronger/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "electrer",
+			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br2)与$(l:stronger/devices/armor)强人装甲$(/l)一起穿戴，可变身为$(l:stronger/riders/stronger#stronger)假面骑士强人"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:stronger/electrer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_electrer",
+			"title": "强人腰带(黑暗强人)",
+			"text": "登场于:$(li)弹珠机假面骑士：全速前进（2015年，弹珠机游戏）$(br2)与$(l:stronger/devices/armor)强人装甲$(/l)一起穿戴，可变身为$(l:stronger/riders/dark_stronger)黑暗强人"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:stronger/dark_electrer"
+		}
+	]
+}

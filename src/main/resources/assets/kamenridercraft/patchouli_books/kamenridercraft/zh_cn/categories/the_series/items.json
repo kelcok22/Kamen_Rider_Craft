@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:the_series/main",
+    "name": "相关物品",
+    "description": "",
+    "icon": "kamenridercraft:the_typhoon_core",
+    "sortnum": 2
+}

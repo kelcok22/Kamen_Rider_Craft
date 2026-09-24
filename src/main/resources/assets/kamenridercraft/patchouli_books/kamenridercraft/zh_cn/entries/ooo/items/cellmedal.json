@@ -1,0 +1,23 @@
+{
+	"name": "细胞硬币",
+	"icon": "kamenridercraft:cellmedal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用作大多数OOO物品的基础合成材料和修复材料$(br2)在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用，可获得Birth鳌系组件的硬币$(br2)除非你拥有$(l:ooo/items/tomorrows_underwear_on_a_stick)棍子上的明日的内裤$(/l)，否则你物品栏中每有一组细胞硬币，就会获得一级贪欲者效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cellmedal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)$(li)$(l:ooo/mobs/knight_soldier_mob)骑士兵$(/l)$(li)$(l:ooo/mobs/ankh_mob)Ankh$(/l)$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh(迷失)$(/l)$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)$(li)$(l:ooo/mobs/mezool_mob)梅兹尔$(/l)$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:ooo/mobs/poseidon)波塞冬$(/l)$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)$(li)$(l:ooo/mobs/powered_up_core)假面骑士Core(力量提升)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)$(li)$(l:ooo/mobs/goda)假面骑士戈达$(/l)"
+		}
+	]
+}

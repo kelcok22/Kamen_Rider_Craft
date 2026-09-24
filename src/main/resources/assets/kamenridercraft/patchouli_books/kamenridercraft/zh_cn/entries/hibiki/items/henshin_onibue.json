@@ -1,0 +1,57 @@
+{
+	"name": "变身鬼笛",
+	"icon": "kamenridercraft:henshin_onibue_ibuki",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onibue_ibuki",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作威吹鬼的$(l:hibiki/devices/ongekimei#ibukidriver)音击鸣·鸣风$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_ibuki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onibue_toki",
+			"title": "变身鬼笛(斗鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作斗鬼的$(l:hibiki/devices/ongekimei#tokidriver)音击鸣·时$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_toki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onibue_shouki",
+			"title": "变身鬼笛(胜鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作胜鬼的$(l:hibiki/devices/ongekimei#shoukidriver)音击鸣·风速$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_shouki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onibue_amaki",
+			"title": "变身鬼笛(天鬼)",
+			"text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于制作天鬼的$(l:hibiki/devices/ongekimei#amakidriver)音击鸣(天鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_amaki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onibue_fubuki",
+			"title": "变身鬼笛(吹雪鬼)",
+			"text": "登场于：$(li)超想像超合金 (2005年，玩具系列)$(br2)用于制作吹雪鬼的$(l:hibiki/devices/ongekimei#fubukidriver)音击鸣(吹雪鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onibue_fubuki"
+		}
+	]
+}

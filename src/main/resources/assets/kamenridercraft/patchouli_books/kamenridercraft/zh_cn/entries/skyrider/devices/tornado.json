@@ -1,0 +1,30 @@
+{
+	"name": "龙卷风",
+	"icon": "kamenridercraft:tornado",
+	"category": "kamenridercraft:skyrider/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "tornado",
+			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br2)与$(l:skyrider/devices/armor)天空骑士装甲$(/l)一起穿戴，可变身为$(l:skyrider/riders/skyrider)天空骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/tornado"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_tornado",
+			"title": "假龙卷风",
+			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br2)与$(l:skyrider/devices/armor)天空骑士装甲$(/l)一起穿戴，可变身为$(l:skyrider/riders/fake_skyrider)假天空骑士"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_tornado",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

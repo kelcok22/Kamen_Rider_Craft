@@ -1,0 +1,16 @@
+{
+	"name": "满瓶破坏者",
+	"icon": "kamenridercraft:fullbottle_buster",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由Build的$(l:build/riders/build#rabbitrabbit)兔子兔子$(/l)形态和$(l:build/riders/build#tanktank)坦克坦克$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/fullbottle_buster"
+		}
+	]
+}

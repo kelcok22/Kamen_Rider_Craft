@@ -1,0 +1,16 @@
+{
+	"name": "音击棒·烈火(Diend)",
+	"icon": "kamenridercraft:ongekibo_rekka_diend",
+	"category": "kamenridercraft:decade/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/ongekibo_rekka_diend"
+		}
+	]
+}

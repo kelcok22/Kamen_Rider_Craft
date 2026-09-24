@@ -1,0 +1,19 @@
+{
+	"name": "Ixa腰带",
+	"icon": "kamenridercraft:proto_ixa_belt_first",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)吸血鬼之王 (2010年，S.I.C.英雄传奇)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/proto_ixa_the_first)假面骑士原型Ixa (初代)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_ixa_belt_first",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

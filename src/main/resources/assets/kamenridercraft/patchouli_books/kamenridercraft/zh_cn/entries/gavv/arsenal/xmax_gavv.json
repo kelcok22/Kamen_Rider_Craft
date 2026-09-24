@@ -1,0 +1,16 @@
+{
+	"name": "圣诞战斧",
+	"icon": "kamenridercraft:xmax_gavv",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由加布的$(l:gavv/riders/gavv#bushel)圣诞树桩蛋糕形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/xmax_gavv"
+		}
+	]
+}

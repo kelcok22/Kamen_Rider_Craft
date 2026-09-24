@@ -1,0 +1,17 @@
+{
+	"name": "换挡锭",
+	"icon": "kamenridercraft:shift_alloy",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)作为大多数Drive系列物品的基础合成材料与修复材料"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:drive/shift_alloy_ingot",
+			"text": "掉落自：$(li)$(l:drive/mobs/roidmude)恶路程式$(/l)$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)$(li)$(l:drive/mobs/heart_roidmude)恶路程式·心脏$(/l)$(li)$(l:drive/mobs/brain_roidmude)恶路程式·大脑$(/l)$(li)$(l:drive/mobs/reaper_legion)死神军团$(/l)$(li)$(l:drive/mobs/medic_roidmude)恶路程式·医护$(/l)$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l)$(li)$(l:drive/mobs/dark_drive)假面骑士黑暗Drive$(/l)"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "空白罪恶印章",
+	"icon": "kamenridercraft:proto_vistamp",
+	"category": "kamenridercraft:revice/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用作合成大多数利维斯系列物品的基础物品和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_vistamp",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/giff_junior)基础恶魔$(/l)$(li)$(l:revice/mobs/evil)假面骑士Evil$(/l)$(li)$(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l)$(li)$(l:revice/mobs/anomalocaris_deadman)奇虾·亡命徒$(/l)$(li)$(l:revice/mobs/queen_bee_deadman)女王蜂·亡命徒$(/l)$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)"
+		}
+	]
+}

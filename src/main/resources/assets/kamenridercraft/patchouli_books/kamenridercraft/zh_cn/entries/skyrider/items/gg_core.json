@@ -1,0 +1,19 @@
+{
+	"name": "钢勘次徽章",
+	"icon": "kamenridercraft:gg_core",
+	"category": "kamenridercraft:skyrider/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士(1979年，电视剧)$(br2)用于合成钢勘次的$(l:skyrider/devices/gangan_g_belt)钢勘次腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gg_core",
+			"title": " ",
+			"text": "通过开启$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得"
+		}
+	]
+}

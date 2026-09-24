@@ -1,0 +1,16 @@
+{
+	"name": "ZO核心",
+	"icon": "kamenridercraft:zo_core",
+	"category": "kamenridercraft:zo/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士ZO (1993年, 电影)$(br2)与$(l:zo/devices/armor)ZO装甲$(/l)一起穿戴，可变身为$(l:zo/riders/zo)假面骑士ZO"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/zo_core"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "世纪王剑",
+	"icon": "kamenridercraft:century_king_black_blade",
+	"category": "kamenridercraft:black_sun/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)由$(l:black_sun/riders/black_sun)假面骑士Black Sun$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/century_king_black_blade"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "黄金护盾",
+	"icon": "kamenridercraft:gold_shield",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 30,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/odin)假面骑士奥丁$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_shield",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/guard_vent_cards#gold_shield_vent)黄金护盾防御降临$(/l)获得"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "骑士收纳箱",
+	"icon": "kamenridercraft:rider_case",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于制作其他系列专属的道具收纳器$(br2)可存放一整套骑士装备和最多6组任意道具物品"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/rider_case"
+		}
+	]
+}

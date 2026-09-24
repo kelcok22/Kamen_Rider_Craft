@@ -1,0 +1,36 @@
+{
+	"name": "天空骑士",
+	"icon": "kamenridercraft:tornado_core",
+	"category": "kamenridercraft:skyrider/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "power_up",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:tornado\",components:{custom_data:{slot_tex1:\"kamenridercraft:tornado_core\"}},Count:1b},{id:\"kamenridercraft:skyriderlegs\",Count:1b},{id:\"kamenridercraft:skyridertroso\",Count:1b},{id:\"kamenridercraft:skyriderhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "基础形态",
+			"text": "通过使用$(l:skyrider/items/tornado_cores#tornado_core)重力核心$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "天空骑士",
+			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br2)通过穿戴$(l:skyrider/devices/tornado#tornado)龙卷风$(/l)进行变身$(br2)状态效果：$(li)滑翔$(li)速度 II$(li)跳跃提升 VI$(li)力量 II$(br2)专属技能：$(li)滑翔$(li)骑士踢"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "original",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:tornado\",components:{custom_data:{slot_tex1:\"kamenridercraft:original_tornado_core\"}},Count:1b},{id:\"kamenridercraft:skyriderlegs\",Count:1b},{id:\"kamenridercraft:skyridertroso\",Count:1b},{id:\"kamenridercraft:skyriderhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "原始版本",
+			"text": "通过使用$(l:skyrider/items/tornado_cores#original_tornado_core)原始重力核心$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "天空骑士",
+			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br2)通过穿戴$(l:skyrider/devices/tornado#tornado)龙卷风$(/l)进行变身$(br2)状态效果：$(li)滑翔$(li)速度 II$(li)跳跃提升 VI$(li)力量 II$(br2)专属技能：$(li)滑翔$(li)骑士踢"
+		}
+	]
+}

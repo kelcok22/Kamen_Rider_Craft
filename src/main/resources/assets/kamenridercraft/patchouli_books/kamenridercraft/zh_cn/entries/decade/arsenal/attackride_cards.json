@@ -1,0 +1,326 @@
+{
+  "name": "攻击驾驭卡",
+  "icon": "kamenridercraft:decade_blast_card",
+  "category": "kamenridercraft:decade/arsenal",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "decade_blast_card",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#decade)假面骑士Decade$(/l)使用，短时间获得射击推进器 III"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/decade_blast_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "decade_slash_card",
+      "title": "Decade剑斩 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#decade)假面骑士Decade$(/l)使用，短时间获得斩击提升 III"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/decade_slash_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "decade_illusion_card",
+      "title": "Decade分身 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#decade)假面骑士Decade$(/l)使用，召唤两个自身分身"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/decade_illusion_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "decade_invisible_card",
+      "title": "Decade隐形 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#decade)假面骑士Decade$(/l)使用，短时间进入隐身状态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/decade_invisible_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_blast_card",
+      "title": "Diend轰炸 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 使用，短时间获得射击推进器 III"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_blast_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_invisible_card",
+      "title": "Diend隐身 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 使用，短时间进入隐身状态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_invisible_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_crossattack_card",
+      "title": "Diend交叉攻击 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 使用，短时间为友方生物和玩家赋予力量 IV 或射击提升 IV"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_crossattack_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_barrier_card",
+      "title": "Diend屏障 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 使用，生成一道浅蓝色染色玻璃屏障"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_barrier_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_illusion_card",
+      "title": "Diend错觉 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 使用，召唤两个自身分身"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_illusion_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_neo_blast_card",
+      "title": "Diend轰炸 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 使用，短时间获得射击推进器 III"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_neo_blast_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_neo_invisible_card",
+      "title": "Diend隐身 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 使用，短时间进入隐身状态"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_neo_invisible_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_neo_crossattack_card",
+      "title": "Diend交叉攻击 攻击假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 使用，短时间为友方生物和玩家赋予力量 IV 或射击提升 IV"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_neo_crossattack_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_neo_barrier_card",
+      "title": "Diend屏障 攻击假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 使用，生成一道浅蓝色染色玻璃屏障"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_neo_barrier_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "diend_neo_illusion_card",
+      "title": "Diend错觉 攻击假面驾驭卡",
+      "text": "登场于：$(li)DX新·Diend驱动器 (2019年，玩具系列)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)搭配 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 使用，召唤两个自身分身"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/diend_neo_illusion_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "rekka_daizantou_card",
+      "title": "烈火大斩刀 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#complete)Decade 完全形态$(/l)使用，获得真剑红的烈火大斩刀"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/rekka_daizantou_card",
+      "text": "若未显示配方，请安装超级战队工艺模组"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "g4_gigant_card",
+      "title": "G4巨炮 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士×假面骑士W&Decade：MOVIE大战2010 (2009年，电影)$(br2)由$(l:decade/riders/decade#violent_emotion)Decade 激情态$(/l)使用，获得 $(l:agito/riders/g4)假面骑士G4$(/l) 的 $(l:agito/arsenal/g4_gigant)G4巨炮$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/g4_gigant_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "ryuki_strike_vent_card",
+      "title": "龙利爪读取 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#ryuki)Decade 龙骑$(/l)使用，获得 $(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑$(/l) 的 $(l:ryuki/arsenal/drag_claw)龙爪$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/ryuki_strike_vent_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "blade_metal_card",
+      "title": "剑钢铁化 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#blade)Decade 剑$(/l)使用，短时间获得抗性提升 II"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/blade_metal_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "blade_mach_card",
+      "title": "剑马赫 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#blade)Decade 剑$(/l)使用，短时间获得速度 IV"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/blade_mach_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "hibiki_ongekibou_rekka_card",
+      "title": "音击棒·烈火 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#hibiki)Decade 响鬼$(/l)使用，获得 $(l:hibiki/riders/hibiki#hibiki)假面骑士响鬼$(/l) 的 $(l:hibiki/arsenal/ongekibo_rekka)音击棒·烈火$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/hibiki_ongekibou_rekka_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "hibiki_onibi_card",
+      "title": "响鬼鬼火 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#hibiki)Decade 响鬼$(/l)使用，向敌人下方喷射火焰流"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/hibiki_onibi_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "kabuto_clock_up_card",
+      "title": "加速 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#kabuto)Decade 甲斗$(/l)使用，短时间获得速度 XXI"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/kabuto_clock_up_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_ore_sanjou_card",
+      "title": "本大爷!登场! 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#den_o)Decade 电王$(/l)使用，切换为圣剑形态并在聊天框发送“我……登场！”"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_ore_sanjou_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_bokuni_tsurarete_miru_card",
+      "title": "试着上我的铒吧? 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#den_o)Decade 电王$(/l)使用，切换为圣竿形态并在聊天框发送“试着上我的钩吧？”"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_bokuni_tsurarete_miru_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_nakerude_card",
+      "title": "为我的强大而哭泣吧 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#den_o)Decade 电王$(/l)使用，切换为圣斧形态并在聊天框发送“哭泣吧！”"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_nakerude_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_kotaewa_kiite_nai_card",
+      "title": "你的回答并不重要 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#den_o)Decade 电王$(/l)使用，切换为圣枪形态并在聊天框发送“你的回答并不重要！”"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_kotaewa_kiite_nai_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_tsuppari_card",
+      "title": "电王连推 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#den_o_ax)Decade 电王 圣斧形态$(/l)使用，短时间获得拳力提升 II"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_tsuppari_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "den_o_utchari_card",
+      "title": "电王投掷 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#den_o_ax)Decade 电王 圣斧形态$(/l)使用，短时间获得跳跃提升 IV 和力量 III"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/den_o_utchari_card"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "amazon_gaga_no_udewa_card",
+      "title": "Amazon嘎嘎臂环 攻击假面驾驭卡",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)由$(l:decade/riders/decade#complete)Decade 完全形态$(/l) 或 $(l:decade/riders/decade#amazon)Decade Amazon$(/l)使用，获得 $(l:amazon/riders/amazon)假面骑士Amazon$(/l) 的 $(l:amazon/items/gaga_armlet)嘎嘎臂环$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": " ",
+      "recipe": "kamenridercraft:decade/amazon_gaga_no_udewa_card"
+    }
+  ]
+}

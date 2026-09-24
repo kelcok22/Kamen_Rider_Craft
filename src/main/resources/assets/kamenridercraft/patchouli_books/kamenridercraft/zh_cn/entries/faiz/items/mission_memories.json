@@ -1,0 +1,234 @@
+{
+    "name": "使命芯片",
+    "icon": "kamenridercraft:faiz_mission_memory",
+    "category": "kamenridercraft:faiz/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_mission_memory",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)用于制作Faiz的 $(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)$(br2)用于切换Faiz的 $(l:faiz/riders/faiz#faiz)基础形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:faiz_mission_memory",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)$(li)$(l:faiz/mobs/faiz)假面骑士Faiz$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_axel_mission_memory",
+            "title": "Faiz加速使命芯片",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:faiz_axel_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_blaster_mission_memory",
+            "title": "Faiz爆裂使命芯片",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)用于切换Faiz的 $(l:faiz/riders/faiz#blaster)爆裂形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:faiz_blaster_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_gold_blaster_mission_memory",
+            "title": "Faiz黄金爆裂使命芯片",
+            "text": "登场于：$(li)骑士英雄系列 (2003年，玩具线)$(br2)用于切换Faiz的 $(l:faiz/riders/faiz#gold_blaster)爆裂形态(黄金版本)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:faiz_gold_blaster_mission_memory",
+            "title": " ",
+            "text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kaixa_mission_memory",
+            "title": "凯撒使命芯片",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)用于制作凯撒的 $(l:faiz/devices/kaixa_driver#kaixa_driver)凯撒驱动器$(/l)$(br2)用于切换凯撒的 $(l:faiz/riders/kaixa#kaixa)基础形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kaixa_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "delta_mission_memory",
+            "title": "德尔塔使命芯片",
+            "text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)用于制作德尔塔的 $(l:faiz/devices/delta_driver)德尔塔驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:delta_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "psyga_mission_memory",
+            "title": "天帝使命芯片",
+            "text": "登场于：$(li)假面骑士555：消失的天堂 (2003年，电影)$(br2)用于制作天帝的 $(l:faiz/devices/psyga_driver)天帝驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:psyga_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "orga_mission_memory",
+            "title": "地帝使命芯片",
+            "text": "登场于：$(li)假面骑士555：消失的天堂 (2003年，电影)$(br2)用于制作地帝的 $(l:faiz/arsenal/orga_stlanzer)地帝裂地剑$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:orga_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "next_faiz_mission_memory",
+            "title": "Next Faiz使命芯片",
+            "text": "登场于：$(li)假面骑士555 20周年：天堂重获 (2024年，电影)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/next_faiz_mission_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "next_kaixa_mission_memory",
+            "title": "Next Kaixa使命芯片",
+            "text": "登场于：$(li)假面骑士555 20周年：天堂重获 (2024年，电影)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/next_kaixa_mission_memory"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "muez_mission_memory",
+            "title": "缪斯使命芯片",
+            "text": "登场于：$(li)假面骑士555 20周年：天堂重获 (2024年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:muez_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/muez)假面骑士缪斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "neo_alpa_mission_memory",
+            "title": "Neo-Alpa使命芯片",
+            "text": "登场于：$(li)ICON：篠原保角色艺术画集 (2006年，艺术画册)$(br2)用于制作Neo-Alpa的 $(l:faiz/devices/neo_alpa_driver)Neo-Alpa驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:neo_alpa_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pyron_mission_memory",
+            "title": "白龙使命芯片",
+            "text": "登场于：$(li)ICON：篠原保角色艺术画集 (2006年，艺术画册)$(br2)用于制作白龙的 $(l:faiz/devices/pyron_driver#pyron_driver)白龙驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pyron_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "seeda_mission_memory",
+            "title": "Seeda使命芯片",
+            "text": "登场于：$(li)ICON：篠原保角色艺术画集 (2006年，艺术画册)$(br2)用于制作Seeda的 $(l:faiz/devices/seeda_driver#seeda_driver)Seeda代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:seeda_mission_memory",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_mission_memory_toy",
+            "title": "Faiz使命芯片(玩具)",
+            "text": "登场于：$(li)DX Faiz利刃 (2003年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:faiz_mission_memory_toy",
+            "title": " ",
+            "text": "可在 $(l:misc/city/urban_area#kikuchi_cleaners)西洋洗涤铺 菊池$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kaixa_mission_memory_toy",
+            "title": "凯撒使命芯片(玩具)",
+            "text": "登场于：$(li)DX 凯撒刃枪 (2003年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kaixa_mission_memory_toy",
+            "title": " ",
+            "text": "可在 $(l:misc/city/urban_area#kikuchi_cleaners)西洋洗涤铺 菊池$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "alpha_mission_memory",
+            "title": "Alpha使命芯片",
+            "text": "登场于：$(li)假面骑士战斗舞台：Faiz vs Delta (2003年，舞台剧)$(br2)用于制作Alpha的 $(l:faiz/devices/alpha_driver)Alpha驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:alpha_mission_memory",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "beta_mission_memory",
+            "title": "Beta使命芯片",
+            "text": "登场于：$(li)假面骑士战斗舞台：Faiz vs Delta (2003年，舞台剧)$(br2)用于制作Beta的 $(l:faiz/devices/beta_driver)Beta驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:beta_mission_memory",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        }
+    ]
+}

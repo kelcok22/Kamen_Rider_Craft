@@ -1,0 +1,16 @@
+{
+	"name": "暴雪铁拳",
+	"icon": "kamenridercraft:blizzard_knuckle",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/grease#blizzard)格里斯暴雪$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/blizzard_knuckle"
+		}
+	]
+}

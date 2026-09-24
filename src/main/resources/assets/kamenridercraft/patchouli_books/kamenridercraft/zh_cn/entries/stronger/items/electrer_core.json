@@ -1,0 +1,19 @@
+{
+	"name": "电气核心",
+	"icon": "kamenridercraft:electrer_core",
+	"category": "kamenridercraft:stronger/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br2)用于制作强人的$(l:stronger/devices/electrer#electrer)强人腰带$(/l)$(br2)用于变身强人的$(l:stronger/riders/stronger#stronger)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:electrer_core",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:stronger/mobs/black_satan_soldier)黑撒旦战斗员$(/l)"
+		}
+	]
+}

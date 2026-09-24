@@ -1,0 +1,16 @@
+{
+	"name": "香蕉矛枪",
+	"icon": "kamenridercraft:banana_spear",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/riders/baron#banana)假面骑士巴隆$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/banana_spear"
+		}
+	]
+}

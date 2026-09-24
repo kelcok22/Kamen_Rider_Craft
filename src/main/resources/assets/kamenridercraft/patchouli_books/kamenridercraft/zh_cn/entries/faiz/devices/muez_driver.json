@@ -1,0 +1,17 @@
+{
+	"name": "缪斯驱动器",
+	"icon": "kamenridercraft:muez_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/muez)假面骑士缪斯"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/muez_driver",
+			"text": "掉落自：$(li)$(l:faiz/mobs/muez)假面骑士缪斯$(/l)的装备"
+		}
+	]
+}

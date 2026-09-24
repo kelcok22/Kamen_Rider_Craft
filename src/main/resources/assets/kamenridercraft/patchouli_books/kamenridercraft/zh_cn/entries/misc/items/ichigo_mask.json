@@ -1,0 +1,19 @@
+{
+	"name": "一号面具",
+	"icon": "kamenridercraft:ichigo_mask",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)东岛丹三郎想成为假面骑士（2018/2025，漫画/动画）$(br2)可装备于头部护甲栏"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ichigo_mask",
+			"title": " ",
+			"text": "通过开启$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获取"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "噬梦曙光(单剑模式)",
+	"icon": "kamenridercraft:breakam_dawn_taiken",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)由$(l:zeztz/riders/dawn)假面骑士黎明$(/l)使用$(br2)可用于获取黎明的$(l:zeztz/devices/dawn_belt)惩戒者$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_dawn_taiken"
+		}
+	]
+}

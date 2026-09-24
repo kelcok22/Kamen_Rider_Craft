@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士迅",
+	"icon": "kamenridercraft:forceriser_jin",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "flying_falcon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:forceriser_jin\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飞翔猎隼",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士迅",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_jin)灭亡迅雷强制升华器(迅)$(/l)进行变身$(br2)状态效果：$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burning_falcon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zaia_slashriser\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "燃烧猎隼",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士迅 燃烧猎隼",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/zaia_slashriser)哉亚斩击升华器(迅)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 IV$(li)力量 III$(li)飞行"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "音击棒·那智黑",
+	"icon": "kamenridercraft:ongekibo_nachiguro",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/riders/danki)假面骑士弹鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekibo_nachiguro"
+		}
+	]
+}

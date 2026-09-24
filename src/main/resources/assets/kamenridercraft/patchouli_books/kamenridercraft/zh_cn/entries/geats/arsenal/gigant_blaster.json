@@ -1,0 +1,16 @@
+{
+	"name": "千兆爆裂",
+	"icon": "kamenridercraft:gigant_blaster",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/geats#powered_builder)动力建造者$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/gigant_blaster"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "深层觉醒哨矿",
+    "icon": "kamenridercraft:deepslate_stone_kiva",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 16,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得Kiva的 $(l:kiva/items/fuestles#wakeupfuestle)笛哨$(/l)$(br2)需要铁镐或更好的镐子$(br2)掉落：$(li)$(l:kiva/items/fuestle)笛哨$(/l)（20%）$(li)$(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨(Kiva)$(/l)（11.4%）$(li)$(l:kiva/items/fuestles#garulufuestle)加鲁鲁笛哨$(/l)（8.6%）$(li)$(l:kiva/items/fuestles#basshaafuestle)巴夏笛哨$(/l)（8.6%）$(li)$(l:kiva/items/fuestles#doggafuestle)德加笛哨$(/l)（8.6%）$(li)$(l:kiva/items/fuestles#tatsulot)魔皇龙笛哨$(/l)（2.9%）$(li)$(l:kiva/items/fuestles#kiva_says_fuestle)红色魔皇龙笛哨$(/l)（2.9%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:deepslate_stone_kiva",
+            "title": " ",
+            "text": "$(li)$(l:kiva/items/fuestlefake)假禁断之笛$(/l)（12%）$(li)$(l:kiva/items/fuestles#knucklefuestle)人造笛哨$(/l)（11.4%）$(li)$(l:kiva/items/fuestles#caliburfuestle)拳铳笛哨$(/l)（8.6%）$(li)$(l:kiva/items/fuestles#risingfuestle)升华笛哨$(/l)（2.9%）"
+        }
+    ]
+}

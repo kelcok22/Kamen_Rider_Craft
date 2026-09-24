@@ -1,0 +1,176 @@
+{
+	"name": "假面骑士Snipe",
+	"icon": "kamenridercraft:gamer_driver_snipe",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_1",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "射击玩家 Lv. 1",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)砰砰射击卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)状态效果：$(li)射击推进$(li)夜视$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_2",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "射击玩家 Lv. 2",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)砰砰射击卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)状态效果：$(li)射击推进 II$(li)速度$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "combat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "战斗射击玩家 Lv. 3",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#jet_combat_gashat)喷射战机卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)射击推进 II$(li)速度 II$(li)夜视$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter_full",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猎人射击玩家 Lv. 5（全龙形态）",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)龙骑士猎手Z卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)雷达$(li)斩击提升 III$(li)射击推进 II$(li)速度 II$(li)夜视$(li)炎拳 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hunter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猎人射击玩家 Lv. 5",
+			"text": "潜行状态下，通过使用 $(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)龙骑士猎手Z卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/lazer)Lazer$(/l)使用$(br2)状态效果：$(li)雷达$(li)射击推进 II$(li)速度 II$(li)夜视$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "simulation",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_simulation_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "模拟玩家 Lv. 50",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#bang_bang_simulation_gashat)砰砰模拟卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)状态效果：$(li)雷达$(li)射击推进 II$(li)速度 II$(li)抗性提升 III$(li)夜视$(li)爆裂射击 IV$(br2)专属技能：$(li)大炮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "xevious",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:xevious_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "铁板阵射击玩家",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#xevious_gashat)铁板阵卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)射击推进 II$(li)速度 II$(li)夜视$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tank",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:bang_bang_tank_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "坦克射击玩家 Lv. 4",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#bang_bang_tank_gashat)砰砰坦克卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)DX 全能小说X卡带 & 砰砰坦克卡带 (2022年，玩具系列)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)射击推进 II$(li)速度 II$(li)抗性提升 II$(li)夜视$(br2)专属技能：$(li)大炮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_combat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_jet_combat_gashat\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "原型战斗射击玩家 Lv. 0",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#proto_jet_combat_gashat)原型喷射战机卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/genm)幻梦$(/l)使用$(br2)状态效果：$(li)射击推进 II$(li)速度 II$(li)夜视$(li)§6游戏病 II$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_hunter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:proto_drago_knight_hunter_z_gashat_gun\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "原型猎人射击玩家 Lv. 0",
+			"text": "潜行状态下，通过使用 $(l:ex_aid/items/rider_gashats#proto_drago_knight_hunter_z_gashat)原型龙骑士猎手Z卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)此形态可由 $(l:ex_aid/riders/ex_aid)Ex-Aid$(/l)、$(l:ex_aid/riders/brave)Brave$(/l)、$(l:ex_aid/riders/snipe)Snipe$(/l)及 $(l:ex_aid/riders/lazer)Lazer$(/l)使用$(br2)状态效果：$(li)雷达$(li)射击推进 II$(li)速度 II$(li)夜视$(li)§6游戏病 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_shooting_1",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat_lv_1\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "射击玩家 Lv. 1（原型）",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)原型砰砰射击卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Snipe：Episode ZERO (2017年，迷你剧)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)状态效果：$(li)射击推进$(li)夜视$(li)§6游戏病$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "proto_shooting_2",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_snipe\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_bang_bang_shooting_gashat\",slot_tex2:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "射击玩家 Lv. 2（原型）",
+			"text": "通过使用 $(l:ex_aid/items/rider_gashats#proto_bang_bang_shooting_gashat)原型砰砰射击卡带$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Snipe",
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)进行变身$(br2)状态效果：$(li)射击推进 II$(li)速度 II$(li)夜视$(li)§6游戏病"
+		}
+	]
+}

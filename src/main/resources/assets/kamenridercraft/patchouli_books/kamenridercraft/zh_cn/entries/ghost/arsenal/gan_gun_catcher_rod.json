@@ -1,0 +1,16 @@
+{
+	"name": "眼枪捕手",
+	"icon": "kamenridercraft:gan_gun_catcher_rod",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)搭配$(l:ghost/riders/necrom#sanzo)三藏魂$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_catcher_rod"
+		}
+	]
+}

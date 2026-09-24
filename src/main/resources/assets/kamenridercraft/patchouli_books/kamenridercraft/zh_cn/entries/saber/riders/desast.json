@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士天灾",
+	"icon": "kamenridercraft:seiken_swordriver_desast",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_desast\",Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士天灾",
+			"text": "登场于：$(li)假面骑士 Outsiders (2022年，网络剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_desast)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 IV$(li)跳跃提升 VII$(li)力量 II"
+		}
+	]
+}

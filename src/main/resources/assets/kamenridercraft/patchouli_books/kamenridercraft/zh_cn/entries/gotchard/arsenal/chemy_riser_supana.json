@@ -1,0 +1,17 @@
+{
+	"name": "凯米升华器(黑钢斯巴纳版)",
+	"icon": "kamenridercraft:chemy_riser_supana",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)由瓦尔巴拉德使用$(br2)将$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)和一枚$(l:gotchard/items/alchemist_rings)炼金戒指$(/l)放入其中，即可获得凯米卡$(li)蓝色：载具属$(li)绿色：职业属$(li)红色：远古属$(li)紫色：神秘属$(li)橙色：宇宙属"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/chemy_riser_supana",
+			"text": "在下界使用可获得黎明凯米卡$(br2)在城市维度使用可获得传奇骑士凯米卡（$(l:gotchard/items/ride_chemy_cards#legend_ride_chemy_card)雷杰多$(/l)27%，其余均为2.7%）"
+		}
+	]
+}

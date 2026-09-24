@@ -1,0 +1,24 @@
+{
+	"name": "加布装甲",
+	"icon": "kamenridercraft:gavv_head",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与加布系列骑士的变身道具配合使用，即可变身为对应骑士$(br2)掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)的装备$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)的装备$(li)$(l:gavv/mobs/shiita_stomach)西塔·斯托马克$(/l)的装备$(li)$(l:gavv/mobs/nyelv_stomach)尼耶鲁布·斯托马克$(/l)的装备$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)的装备$(li)$(l:gavv/mobs/lango_stomach)兰戈·斯托马克$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavv_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavv_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavv_legs"
+		}
+	]
+}

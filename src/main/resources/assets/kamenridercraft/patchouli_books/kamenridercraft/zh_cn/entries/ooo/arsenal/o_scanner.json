@@ -1,0 +1,25 @@
+{
+	"name": "ooo扫描仪",
+	"icon": "kamenridercraft:o_scanner",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)可以为$(l:ooo/riders/ooo#tatoba)假面骑士OOO$(/l)的主要联组提供额外状态效果$(br2)使用OOO的任意联组时右键点击，可触发特殊能力"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/o_scanner",
+			"text": "右键效果见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "右键效果：$(li)锹螳蝗联组：生成使用者的克隆体。若背包中持有狮虎豹、犀猩象、鲸鳗章、鹰雀鹫、翼角暴、蛇龟鳄硬币，且已召唤至少7个分身，潜行点击可让7个分身分别使用上述硬币变身不同联组$(li)狮虎豹联组：使6格范围内所有怪物失明，3格范围内所有怪物着火$(li)犀猩象联组：生成冲击波，将5格范围内所有怪物向上击飞$(li)鲸鳗章联组：雷电攻击，使5格范围内所有怪物眩晕$(li)鹰雀鹫联组：发射爆炸火球$(li)翼角暴联组：冻结5格范围内所有怪物，效果等同于陷入细雪"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)蛇龟鳄联组：解除中毒与凋零效果$(li)超级鹰虎蝗联组：抵消缓慢、挖掘疲劳与停滞效果$(li)鹰雀鹫联组 永恒：发射威力更强的爆炸火球"
+		}
+	]
+}

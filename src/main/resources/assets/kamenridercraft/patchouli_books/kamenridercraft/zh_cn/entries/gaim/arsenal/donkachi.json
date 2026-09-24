@@ -1,0 +1,16 @@
+{
+	"name": "橡金锤",
+	"icon": "kamenridercraft:donkachi",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/riders/gridon)假面骑士古列顿$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/donkachi"
+		}
+	]
+}

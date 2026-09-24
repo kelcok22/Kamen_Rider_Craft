@@ -1,0 +1,24 @@
+{
+	"name": "天空骑士装甲",
+	"icon": "kamenridercraft:skyriderhead",
+	"category": "kamenridercraft:skyrider/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与$(l:skyrider/devices/tornado#tornado)龙卷风$(/l)一起穿戴，变身为$(l:skyrider/riders/skyrider)天空骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/skyriderhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/skyridertroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/skyriderlegs"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "格拉菲特之牙",
+	"icon": "kamenridercraft:graphite_fang",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:graphite_fang",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)的装备"
+		}
+	]
+}

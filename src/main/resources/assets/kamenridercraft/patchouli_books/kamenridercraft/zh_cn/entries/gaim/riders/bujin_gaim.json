@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士武神铠武",
+	"icon": "kamenridercraft:sengoku_driver_bujin_gaim",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "blood_orange",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "血橙武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#blood_orange_lockseed)血橙锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士武神铠武",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武&Wizard：命运的战国电影大战 (2013年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_bujin_gaim)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ochimusha",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bujin_gaim\",components:{custom_data:{slot_tex1:\"kamenridercraft:blood_orange_lockseed_ochimusha\",slot_tex2:\"kamenridercraft:basic_bujin_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "堕落武者武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#blood_orange_lockseed_ochimusha)血橙锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士武神铠武",
+			"text": "登场于：$(li)S.I.C. 英雄传奇 (2018年，玩具系列)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_bujin_gaim)战极驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)饱和$(li)力量 II"
+		}
+	]
+}

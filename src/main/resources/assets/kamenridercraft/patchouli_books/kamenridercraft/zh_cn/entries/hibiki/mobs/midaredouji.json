@@ -1,0 +1,17 @@
+{
+	"name": "怪童子",
+	"icon": "kamenridercraft:hibiki_logo",
+	"category": "kamenridercraft:hibiki/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:midaredouji",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:hibiki/mobs/bakeneko)化猫$(/l)进化而来$(br2)特殊机制：$(li)在生命值低于40时，物品栏中有$(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)变身音叉·音角(响鬼红)$(/l)，会拿出$(l:hibiki/arsenal/midaredouji_blade)怪童子之刀$(/l)$(li)具有飞行能力$(br2)掉落$(li)2-4个$(l:hibiki/items/oni_ore)红色鬼石$(/l)$(li)0-2个烈焰粉$(li)1个$(l:hibiki/arsenal/midaredouji_blade)怪童子之刀$(/l) (物品栏中有$(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)变身音叉·音角(响鬼红)$(/l))"
+		}
+	]
+}

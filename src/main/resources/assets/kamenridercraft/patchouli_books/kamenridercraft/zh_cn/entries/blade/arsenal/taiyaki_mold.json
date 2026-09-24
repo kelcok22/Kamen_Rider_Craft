@@ -1,0 +1,16 @@
+{
+	"name": "鲷鱼烧模具",
+	"icon": "kamenridercraft:taiyaki_mold",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作 $(l:misc/items/foods#taiyaki)鲷鱼烧$(/l)$(br2)用于合成鲷鱼烧达人·究极形态的 $(l:blade/devices/taiyaki_secret_weapon)迷之鲷鱼烧$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/taiyaki_mold"
+		}
+	]
+}

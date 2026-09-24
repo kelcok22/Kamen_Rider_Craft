@@ -1,0 +1,21 @@
+{
+    "name": "假面骑士黑色巴隆",
+    "icon": "kamenridercraft:sengoku_driver_black_baron",
+    "category": "kamenridercraft:gaim/riders",
+    "sortnum": 15,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_black_baron\",components:{custom_data:{slot_tex1:\"kamenridercraft:banana_lockseed\",slot_tex2:\"kamenridercraft:basic_black_baron_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "香蕉武装",
+            "text": "通过使用 $(l:gaim/items/lockseeds#banana_lockseed)香蕉锁种$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士黑色巴隆",
+            "text": "登场于：$(li)铠武外传：假面骑士纳克尔（2015年，V-Cinema电影）$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_black_baron)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫$(li)饱和"
+        }
+    ]
+}

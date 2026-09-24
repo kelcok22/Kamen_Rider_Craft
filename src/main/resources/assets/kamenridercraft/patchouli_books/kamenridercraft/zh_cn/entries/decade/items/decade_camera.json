@@ -1,0 +1,16 @@
+{
+  "name": "Blackbird Fly",
+  "icon": "kamenridercraft:decade_camera",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于合成空白骑士驾驭卡"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/decade_camera"
+    }
+  ]
+}

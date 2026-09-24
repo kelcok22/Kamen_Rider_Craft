@@ -1,0 +1,88 @@
+{
+	"name": "领主唤临器",
+	"icon": "kamenridercraft:lord_invoker_zero",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_zero",
+			"title": "领主唤临器（领主零号）",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_zero)领主零号"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lord_invoker_zero",
+			"title": " ",
+			"text": "该物品目前暂无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_two",
+			"title": "领主唤临器（领主二号）",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_two)领主二号"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lord_invoker_two",
+			"title": " ",
+			"text": "该物品目前暂无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_three",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_three)领主三号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_three"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_five",
+			"title": "领主唤临器（领主五号）",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_five)领主五号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_five"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_six",
+			"title": "领主唤临器（领主六号）",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_six)领主六号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_six"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_thirteen",
+			"title": "领主唤临器（领主十三号）",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_thirteen)领主十三号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_thirteen"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lord_invoker_seventeen",
+			"title": "领主唤临器（领主十七号）",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/lord_seventeen)领主十七号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/lord_invoker_seventeen"
+		}
+	]
+}

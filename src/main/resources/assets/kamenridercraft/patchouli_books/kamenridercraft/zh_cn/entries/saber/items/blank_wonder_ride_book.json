@@ -1,0 +1,21 @@
+{
+	"name": "空白奇幻驾驭书",
+	"icon": "kamenridercraft:blank_wonder_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)作为合成大多数圣刃系列物品的基础材料和修复材料$(br2)可在$(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)上使用，以获取奇幻驾驭书$(br2)可在$(l:saber/structures/northern_base)北部基地$(/l)内找到$(br2)掉落自：$(li)$(l:saber/mobs/shimi)士弥$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/blank_wonder_ride_book",
+			"text": "$(li)$(l:saber/mobs/calibur)假面骑士王剑$(/l)$(li)$(l:saber/mobs/falchion)假面骑士霸剑$(/l)$(li)$(l:saber/mobs/sabela)假面骑士佩剑$(/l)$(li)$(l:saber/mobs/durendal)假面骑士恒剑$(/l)$(li)$(l:saber/mobs/solomon)假面骑士所罗门$(/l)$(li)$(l:saber/mobs/storious_rider)假面骑士斯特利乌斯$(/l)$(li)$(l:saber/mobs/legeiel)拉结尔$(/l)$(li)$(l:saber/mobs/legeiel_forbidden)拉结尔·禁忌$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:saber/mobs/zooous)兹欧斯$(/l)$(li)$(l:saber/mobs/zooous_predator)兹欧斯·捕食者$(/l)$(li)$(l:saber/mobs/storious)斯特利乌斯$(/l)$(li)$(l:saber/mobs/desast)天灾$(/l)$(li)$(l:saber/mobs/charybdis)卡律布狄斯$(/l)$(li)$(l:saber/mobs/charybdis_hercules)卡律布狄斯·大力神$(/l)"
+		}
+	]
+}

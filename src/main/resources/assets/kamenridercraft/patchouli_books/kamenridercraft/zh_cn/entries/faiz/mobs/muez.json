@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士缪斯",
+	"icon": "kamenridercraft:faiz_logo",
+	"category": "kamenridercraft:faiz/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:muez",
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 100$(br2)有5%的几率从$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)进化而来$(br2)特殊技能：$(li)在生命值低于50时激活预测AI$(br2)掉落$(li)8-10个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#muez_mission_memory)缪斯使命芯片$(/l)"
+		}
+	]
+}

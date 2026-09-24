@@ -1,0 +1,19 @@
+{
+	"name": "崩源三叉戟",
+	"icon": "kamenridercraft:bugster_trident",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bugster_trident",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)的装备"
+		}
+	]
+}

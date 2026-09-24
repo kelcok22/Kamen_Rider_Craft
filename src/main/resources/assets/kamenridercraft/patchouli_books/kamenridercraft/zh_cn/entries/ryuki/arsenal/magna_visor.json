@@ -1,0 +1,16 @@
+{
+	"name": "庞然召机",
+	"icon": "kamenridercraft:magna_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/zolda)假面骑士铁兵$(/l)使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/magna_visor"
+		}
+	]
+}

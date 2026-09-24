@@ -1,0 +1,16 @@
+{
+	"name": "异类W驱动器",
+	"icon": "kamenridercraft:another_w_driver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士平成世代FOREVER (2018年，电影)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/another_w)异类W$(/l)"
+		},
+		{
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_w_driver"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"name": "甲斗装甲",
+	"icon": "kamenridercraft:kabutohead",
+	"category": "kamenridercraft:kabuto/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与甲斗骑士的变身器配合使用，可以变身成该骑士$(br2)掉落自：$(li)$(l:kabuto/mobs/zectrooper)ZECT蚁兵$(/l)的装备$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)的装备$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)的装备$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/kabutohead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/kabutotroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/kabutolegs"
+		}
+	]
+}

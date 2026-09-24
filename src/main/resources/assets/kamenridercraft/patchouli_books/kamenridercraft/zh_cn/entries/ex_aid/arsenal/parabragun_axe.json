@@ -1,0 +1,16 @@
+{
+	"name": "悖论刃枪",
+	"icon": "kamenridercraft:parabragun_axe",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由Para-DX的 $(l:ex_aid/riders/para_dx#perfect_knock_out)完美击倒玩家 Lv. 99$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/parabragun"
+		}
+	]
+}

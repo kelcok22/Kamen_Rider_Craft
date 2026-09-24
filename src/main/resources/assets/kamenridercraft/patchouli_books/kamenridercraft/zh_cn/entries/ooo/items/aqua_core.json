@@ -1,0 +1,19 @@
+{
+	"name": "水骑核心",
+	"icon": "kamenridercraft:aqua_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)用于合成水骑的$(l:ooo/devices/aqua_driver)水骑驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:aqua_core",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)"
+		}
+	]
+}

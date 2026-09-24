@@ -1,0 +1,16 @@
+{
+	"name": "人鱼剑",
+	"icon": "kamenridercraft:ningyo_sword",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)由加布的$(l:gavv/riders/gavv#ningyo)人鱼形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/ningyo_sword"
+		}
+	]
+}

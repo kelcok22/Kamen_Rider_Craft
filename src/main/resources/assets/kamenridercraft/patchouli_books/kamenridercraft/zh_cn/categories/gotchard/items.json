@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gotchard/main",
+    "name": "相关物品",
+    "description": "所有与歌查德系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:hopper1_ride_chemy_card",
+    "sortnum": 2
+}

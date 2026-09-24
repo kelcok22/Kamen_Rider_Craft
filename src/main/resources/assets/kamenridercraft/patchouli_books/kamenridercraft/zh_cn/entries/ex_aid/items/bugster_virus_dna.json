@@ -1,0 +1,19 @@
+{
+    "name": "游戏病基因",
+    "icon": "kamenridercraft:bugster_virus_dna",
+    "category": "kamenridercraft:ex_aid/items",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bugster_virus_dna",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)"
+        }
+    ]
+}

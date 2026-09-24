@@ -1,0 +1,21 @@
+{
+	"name": "诺克斯暗骑",
+	"icon": "kamenridercraft:erase_capsem",
+	"category": "kamenridercraft:zeztz/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:knight_invoker\",Count:1b},{id:\"kamenridercraft:zeztz_legs\",Count:1b},{id:\"kamenridercraft:zeztz_troso\",Count:1b},{id:\"kamenridercraft:zeztz_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "诺克斯暗骑",
+			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)通过穿戴$(l:zeztz/devices/knight_invoker)暗夜祷告驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)力量"
+		}
+	]
+}

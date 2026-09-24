@@ -1,0 +1,34 @@
+{
+	"name": "潘多拉魔塔",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "潘多拉魔塔",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)生成群系：桦木森林、黑森林、森林、繁花森林、雪林、红树林沼泽、原始桦木森林、平原、热带草原、热带草原高原、向日葵平原、沼泽、风袭热带草原"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower.png"
+			],
+			"title": " ",
+			"text": "更多信息见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "包含 $(l:build/mobs/touto_guardian)东都防卫者$(/l)、$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)、$(l:build/mobs/seito_guardian)西都防卫者$(/l) 及 $(l:build/mobs/hard_guardian)坚硬防卫者$(/l) 的试炼刷怪笼$(br2)包含1个 $(l:misc/blocks/boss_blocks#hokuto_trio_boss_block)北都三羽鸦BOSS召唤方块$(/l)$(br)包含1个 $(l:misc/blocks/boss_blocks#hell_bros_boss_block)地狱兄弟BOSS召唤方块$(/l)$(br)包含1个 $(l:misc/blocks/boss_blocks#mad_rogue_boss_block)狂霸BOSS召唤方块$(/l)$(br)包含1个 $(l:misc/blocks/boss_blocks#evol_boss_block)Evol BOSS召唤方块$(/l)$(br2)试炼战利品：$(li)67%概率掉落普通战利品$(li)33%概率掉落迷失满装瓶罐"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "普通战利品掉落：$(li)1个 $(l:build/items/fullbottles#buttobasoul_full_bottle)能量道具满装瓶罐$(/l)（7.7%）$(li)1个 $(l:build/items/fullbottles#ganbarizing_full_bottle)卡片街机满装瓶罐$(/l)（7.7%）$(li)2-4个 $(l:build/items/smash_bottle)猛击者瓶罐$(/l)（23.1%）$(li)1个 $(l:build/items/evolbottles#great_dragon_evol_bottle)伟大龙进化瓶罐$(/l)（15.4%）$(li)1个 $(l:build/items/evolbottles#dragon_evol_bottle)龙进化瓶罐$(/l)（15.4%）$(li)1个 $(l:build/items/evolbottles#rabbit_evol_bottle)兔子进化瓶罐$(/l)（15.4%）$(li)1个 $(l:build/arsenal/nanba_walking_stick)难波拐杖$(/l)（15.4%）$(br2)迷失满装瓶罐掉落见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "迷失满装瓶罐掉落：$(li)1个 $(l:build/items/fullbottles#black_lost_cd_full_bottle)迷失CD满装瓶罐$(/l)（25%）$(li)1个 $(l:build/items/fullbottles#black_lost_cobra_full_bottle)迷失眼镜蛇满装瓶罐$(/l)（25%）$(li)1个 $(l:build/items/fullbottles#black_lost_shimauma_full_bottle)迷失斑马满装瓶罐$(/l)（25%）$(li)1个 $(l:build/items/fullbottles#black_lost_hasami_full_bottle)迷失剪刀满装瓶罐$(/l)（25%）"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "百虫破邪剑",
+	"icon": "kamenridercraft:perfect_zecter",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/riders/kabuto#hyper)甲斗海帕形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/perfect_zecter"
+		}
+	]
+}

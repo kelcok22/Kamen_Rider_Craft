@@ -1,0 +1,16 @@
+{
+	"name": "音击金棒·烈冻",
+	"icon": "kamenridercraft:ongekikanabo_retto",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)由$(l:hibiki/riders/touki)假面骑士斗鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekikanabo_retto"
+		}
+	]
+}

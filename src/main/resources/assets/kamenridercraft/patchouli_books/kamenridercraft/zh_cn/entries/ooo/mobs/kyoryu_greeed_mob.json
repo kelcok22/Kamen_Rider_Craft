@@ -1,0 +1,17 @@
+{
+	"name": "恐龙贪欲者",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kyoryu_greeed_mob",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br)生命值: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "末地中的$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)有10%的几率进化而来$(br2)特殊机制:$(li)具备飞行能力$(br2)掉落$(li)3-6个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/cellmedal)细胞硬币$(/l) (90%)$(li)1个$(l:ooo/devices/greeed_belt#greeed_blet_kyoryu)贪欲者腰带$(/l) (10%)$(li)1个$(l:ooo/items/core_medals#ptera_medal)翼龙核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#tricera_medal)三角龙核心硬币$(/l) (33.3%)$(li)1个$(l:ooo/items/core_medals#tyranno_medal)暴龙核心硬币$(/l) (33.3%)"
+		}
+	]
+}

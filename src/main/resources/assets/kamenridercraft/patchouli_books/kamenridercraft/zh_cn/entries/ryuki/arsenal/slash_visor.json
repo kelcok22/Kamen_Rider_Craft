@@ -1,0 +1,16 @@
+{
+	"name": "猛砍召机",
+	"icon": "kamenridercraft:slash_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/alternative)抉择者$(/l)和$(l:ryuki/riders/alternative_zero)抉择者零号$(/l)使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/slash_visor"
+		}
+	]
+}

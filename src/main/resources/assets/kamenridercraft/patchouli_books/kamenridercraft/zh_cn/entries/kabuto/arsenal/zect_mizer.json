@@ -1,0 +1,16 @@
+{
+	"name": "轰炸锥钻头",
+	"icon": "kamenridercraft:zect_mizer",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/riders/kabuto)假面骑士甲斗$(/l)和$(l:kabuto/riders/drake)假面骑士雷蜓$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/zect_mizer"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "重醒剑",
+	"icon": "kamenridercraft:kingrouzer",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由假面骑士剑的$(l:blade/riders/blade#king)国王形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/kingrouzer"
+		}
+	]
+}

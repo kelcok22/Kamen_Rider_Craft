@@ -1,0 +1,16 @@
+{
+	"name": "骑士车票(通行)",
+	"icon": "kamenridercraft:rider_pass",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)可供大多数$(l:den_o/riders)电王系列骑士$(/l)使用$(br2)用于进入$(l:den_o/dimensions/sands_of_time)时间之沙$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/rider_pass"
+		}
+	]
+}

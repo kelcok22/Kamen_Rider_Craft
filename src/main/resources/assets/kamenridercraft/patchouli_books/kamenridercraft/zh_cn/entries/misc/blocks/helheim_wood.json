@@ -1,0 +1,76 @@
+{
+	"name": "海姆冥界木材",
+	"icon": "kamenridercraft:helheim_log",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_log",
+			"text": "海姆冥界木材和海姆冥界树木遍布于 $(l:gaim/dimensions/helheim)海姆冥界$(/l)的森林中。此类木材可像其他任何木材一样使用。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stripped_helheim_log"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_wood"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stripped_helheim_wood"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_planks"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_stairs"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_slab"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_pressure_plate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_button"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_fence"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_fence_gate"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_door"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/block/helheim_trapdoor"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_sign_item",
+			"text": "该方块目前无法获取"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_hanging_sign_item",
+			"text": "该方块目前无法获取"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "蛇剑刃",
+	"icon": "kamenridercraft:veno_visor_zwei",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士界外者（2022年，网络剧）$(br2)由王蛇的$(l:ryuki/riders/ouja#survive)生存形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:veno_visor_zwei",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#veno_visor_zwei_vent)蛇剑刃刀剑降临$(/l)获得"
+		}
+	]
+}

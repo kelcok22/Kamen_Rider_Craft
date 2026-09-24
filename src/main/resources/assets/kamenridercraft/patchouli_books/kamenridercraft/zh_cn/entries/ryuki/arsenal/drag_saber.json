@@ -1,0 +1,19 @@
+{
+	"name": "龙军刀",
+	"icon": "kamenridercraft:drag_saber",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_saber",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#drag_saber_vent)龙军刀刀剑降临$(/l)获得"
+		}
+	]
+}

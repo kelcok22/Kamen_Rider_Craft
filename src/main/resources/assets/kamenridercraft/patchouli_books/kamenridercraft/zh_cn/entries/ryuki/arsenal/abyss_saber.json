@@ -1,0 +1,19 @@
+{
+	"name": "深渊军刀",
+	"icon": "kamenridercraft:abyss_saber",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 48,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Decade（2009年，电视剧）$(br2)由$(l:ryuki/riders/abyss)假面骑士深渊$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:abyss_saber",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#abyss_saber_vent)深渊军刀刀剑降临$(/l)获得"
+		}
+	]
+}

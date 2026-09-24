@@ -1,0 +1,17 @@
+{
+	"name": "恶路程式",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:roidmude",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：冷水海洋、冷水深海、冰冻深海、冻洋、冰封山峰、冻河、樱花树林、冰刺之地、裸岩山峰、原始松木针叶林、原始云杉针叶林、积雪沙滩、雪原、积雪的山坡、积雪针叶林、石岸、针叶林、风袭森林、风袭沙砾丘陵、风袭丘陵$(br2)掉落$(li)3个$(l:drive/items/shift_alloy)换挡锭$(/l) (50%)$(li)1个$(l:drive/items/shift_cars#speedshift)移速速度$(/l) (50%)$(li)1个$(l:drive/items/viral_cores#viral_core_cobara)眼镜蛇病毒核心$(/l) (33.3%)$(li)1个$(l:drive/items/viral_cores#viral_core_spider)蜘蛛病毒核心$(/l) (33.3%)$(li)1个$(l:drive/items/viral_cores#viral_core_bat)蝙蝠病毒核心$(/l) (33.3%)$(br2)进化$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l) (3.3%)$(li)$(l:drive/mobs/heart_roidmude)恶路程式·心脏$(/l) (3.3%)$(li)$(l:drive/mobs/brain_roidmude)恶路程式·大脑$(/l) (3.3%)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "恐惧掺杂体",
+	"icon": "kamenridercraft:w_logo",
+	"category": "kamenridercraft:w/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:terror_dopant",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br)生命值: 250"
+		},
+      {
+        "type": "patchouli:text",
+        "text": "通过挖掘$(l:misc/blocks/boss_blocks#terror_boss_block)恐惧掺杂体召唤方块$(/l)召唤而来"
+      }
+	]
+}

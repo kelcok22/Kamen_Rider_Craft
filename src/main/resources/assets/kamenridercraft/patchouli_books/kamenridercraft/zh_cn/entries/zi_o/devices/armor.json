@@ -1,0 +1,24 @@
+{
+	"name": "时王装甲",
+	"icon": "kamenridercraft:zi_o_head",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与时王系列骑士的驱动器配合使用，可变身为对应骑士$(br2)掉落自:$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)的装备$(li)$(l:zi_o/mobs/ginga)假面骑士银河$(/l)的装备$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_legs"
+		}
+	]
+}

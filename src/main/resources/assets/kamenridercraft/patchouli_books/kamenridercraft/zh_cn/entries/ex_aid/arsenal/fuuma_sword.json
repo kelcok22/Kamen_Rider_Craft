@@ -1,0 +1,16 @@
+{
+	"name": "风魔忍刀",
+	"icon": "kamenridercraft:fuuma_sword",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid：True Ending（2017年，电影）$(br2)由 $(l:ex_aid/riders/fuuma)假面骑士Fuma$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/fuuma_sword"
+		}
+	]
+}

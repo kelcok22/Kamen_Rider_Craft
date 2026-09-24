@@ -1,0 +1,16 @@
+{
+	"name": "音击弦·刀弦响",
+	"icon": "kamenridercraft:ongekigen_togenkyo",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/riders/banki)假面骑士蛮鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekigen_togenkyo"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "月球",
+	"icon": "kamenridercraft:gate_switch",
+	"category": "kamenridercraft:fourze/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "月球",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)需要使用$(l:fourze/arsenal/gate_switch)大门开关$(/l)进入$(br2)包含结构：$(li)$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)$(li)$(l:fourze/structures/m_bus)流星备份卫星$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/the_moon.png"
+			],
+			"title": " "
+		}
+	]
+}

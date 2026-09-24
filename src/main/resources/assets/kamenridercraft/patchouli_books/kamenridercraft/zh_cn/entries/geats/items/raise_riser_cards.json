@@ -1,0 +1,84 @@
+{
+	"name": "提升升华器卡片",
+	"icon": "kamenridercraft:ziin_raise_riser_card",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ziin_raise_riser_card",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ziin_raise_riser_card",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beroba_raise_riser_card",
+			"title": "提升升华器卡片(贝洛芭)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换贝洛芭的 $(l:geats/riders/beroba#beroba)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beroba_raise_riser_card",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beroba_black_raise_riser_card",
+			"title": "黑提升升华器卡片(贝洛芭)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换贝洛芭的 $(l:geats/riders/beroba#premium)至尊贝洛芭$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beroba_black_raise_riser_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kekera_raise_riser_card",
+			"title": "提升升华器卡片(呱呱拉)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换呱呱拉的 $(l:geats/riders/kekera#kekera)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kekera_raise_riser_card",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kyuun_raise_riser_card",
+			"title": "提升升华器卡片(秋恩)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kyuun_raise_riser_card",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kekera_black_raise_riser_card",
+			"title": "黑提升升华器卡片(呱呱拉)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换呱呱拉的 $(l:geats/riders/kekera#premium)至尊呱呱拉$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kekera_black_raise_riser_card",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l)"
+		}
+	]
+}

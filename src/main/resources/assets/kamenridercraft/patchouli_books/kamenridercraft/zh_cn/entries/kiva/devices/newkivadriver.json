@@ -1,0 +1,16 @@
+{
+	"name": "新Kivat腰带",
+	"icon": "kamenridercraft:newkivadriver",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/new_kiva)假面骑士Kiva(未来)$(/l)$(br2)最多可存储6组笛哨"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/newkivadriver"
+		}
+	]
+}

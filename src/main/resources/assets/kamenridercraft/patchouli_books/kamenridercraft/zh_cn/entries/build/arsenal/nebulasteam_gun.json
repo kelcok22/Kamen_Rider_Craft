@@ -1,0 +1,19 @@
+{
+	"name": "星云烟雾枪",
+	"icon": "kamenridercraft:nebulasteam_gun",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/kaiser)凯撒$(/l)、$(l:build/riders/bros)引擎兄弟$(/l)以及$(l:build/riders/rogue)假面骑士鳄霸$(/l)使用$(br2)可用于获取凯撒系列的$(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)星云烟雾枪（凯撒）$(/l)$(br2)副手装备$(l:build/items/gears#gear_engine)引擎齿轮$(/l)或$(l:build/items/gears#gear_remocon)遥控齿轮$(/l)时，可获取战士兄弟的$(l:build/devices/nebulasteam_gun#nebula_steam_gun_hell_bros)星云烟雾枪（地狱兄弟）$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nebulasteam_gun",
+			"title": " ",
+          "text": "掉落自：$(li)$(l:build/mobs/engine_bros)引擎兄弟$(/l)的装备$(li)$(l:build/mobs/kaiser)凯撒$(/l)的装备$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)的装备$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "北都防卫者",
+    "icon": "kamenridercraft:build_logo",
+    "category": "kamenridercraft:build/mobs",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:hokuto_guardian",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生成群系：$(l:build/structures/pandora_tower)潘多拉魔塔$(/l)、冷水海洋、冷水深海、冰冻深海、冻洋、冰封山峰、冻河、雪林、冰刺之地、尖峭山峰、原始松木针叶林、积雪沙滩、积雪平原、积雪的山坡、积雪针叶林、石岸、针叶林、风袭森林、风袭沙砾丘陵、风袭丘陵$(br2)掉落见下一页"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/nebula_gas_sample)星云气体样本$(/l) (71.4%)$(li)1个$(l:build/items/fullbottles#phoenix_full_bottle)不死鸟满装瓶罐$(/l) (14.2%)$(li)1个$(l:build/items/fullbottles#robot_full_bottle)机器人满装瓶罐$(/l) (14.2%)$(br2)进化BOSS$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l) (5%)$(li)$(l:build/mobs/needle_smash)针刺猛击者$(/l) (5%)"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+	"name": "生存卡",
+	"icon": "kamenridercraft:survive_rekka",
+	"category": "kamenridercraft:ryuki/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "survive_rekka",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于切换龙骑的$(l:ryuki/riders/ryuki#survive)生存形态$(/l)$(br2)用于切换龙牙的$(l:ryuki/riders/ryuga#survive)生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:survive_rekka",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "survive_shippu",
+			"title": "生存卡 疾风",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于切换夜骑的$(l:ryuki/riders/knight#survive)生存形态$(/l)$(br2)用于切换海鳐的$(l:ryuki/riders/raia#survive)生存形态$(/l)$(br2)用于切换王蛇的$(l:ryuki/riders/ouja#survive_sic)生存(SIC)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:survive_shippu",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "survive_mugen",
+			"title": "生存卡 无限",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)用于切换王蛇的$(l:ryuki/riders/ouja#survive)生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:survive_mugen",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "survive_black",
+			"title": "生存卡 黑秽",
+			"text": "登场于：$(li)骑士英雄系列（2002年，玩具系列）$(br2)用于切换龙骑的$(l:ryuki/riders/ryuki#survive_black)生存$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:survive_black",
+			"title": " ",
+			"text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		}
+	]
+}

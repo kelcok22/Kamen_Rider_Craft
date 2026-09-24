@@ -1,0 +1,16 @@
+{
+    "name": "缪斯手机击拳模式",
+    "icon": "kamenridercraft:muez_phone_knuckle",
+    "category": "kamenridercraft:faiz/arsenal",
+    "sortnum": 20,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士555 20周年：天堂重获 (2024年，电影)$(br2)由 $(l:faiz/riders/muez)假面骑士缪斯$(/l) 使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/muez_phone_knuckle"
+        }
+    ]
+}

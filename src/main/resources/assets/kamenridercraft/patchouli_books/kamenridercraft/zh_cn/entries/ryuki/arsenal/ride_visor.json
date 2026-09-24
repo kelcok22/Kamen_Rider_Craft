@@ -1,0 +1,16 @@
+{
+	"name": "骑士召机",
+	"icon": "kamenridercraft:ride_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由龙骑的$(l:ryuki/riders/ryuki#blank)空白形态$(/l)使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/ride_visor"
+		}
+	]
+}

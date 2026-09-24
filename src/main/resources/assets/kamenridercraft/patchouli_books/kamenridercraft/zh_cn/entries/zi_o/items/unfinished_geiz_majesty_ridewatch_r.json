@@ -1,0 +1,16 @@
+{
+	"name": "未完成的盖茨王权骑士表盘(右)",
+	"icon": "kamenridercraft:unfinished_geiz_majesty_ridewatch_r",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨王权 (2020年，V-Cinema电影)$(br2)用于合成$(l:zi_o/items/ridewatches#geiz_majesty_ridewatch)盖茨王权骑士表盘$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/unfinished_geiz_majesty_ridewatch_r"
+		}
+	]
+}

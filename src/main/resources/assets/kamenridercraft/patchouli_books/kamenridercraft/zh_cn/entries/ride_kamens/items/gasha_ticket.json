@@ -1,0 +1,16 @@
+{
+    "name": "卡莎票",
+    "icon": "kamenridercraft:gasha_ticket",
+    "category": "kamenridercraft:ride_kamens/items",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面牛郎（2024年，手机游戏）$(br2)右键点击可获得$(l:ride_kamens/items/chaos_rings#chaos_ring_saigo)混沌指环$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:ride_kamens/gasha_ticket"
+        }
+    ]
+}

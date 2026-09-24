@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "相关物品",
+    "description": "所有与时王系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:zi_o_ridewatch",
+    "sortnum": 2
+}

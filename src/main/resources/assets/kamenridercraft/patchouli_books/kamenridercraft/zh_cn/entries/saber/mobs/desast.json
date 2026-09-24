@@ -1,0 +1,17 @@
+{
+	"name": "天灾",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:desast",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2%概率从$(l:saber/mobs/shimi)士弥$(/l)进化而来$(br2)掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/alter_ride_books#desast_alter_ride_book)天灾魔改驾驭书$(/l)"
+		}
+	]
+}

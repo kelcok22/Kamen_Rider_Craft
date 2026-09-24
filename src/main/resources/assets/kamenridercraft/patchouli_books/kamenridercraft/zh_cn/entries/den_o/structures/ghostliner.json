@@ -1,0 +1,21 @@
+{
+	"name": "幽灵列车",
+	"icon": "kamenridercraft:den_o_logo",
+	"category": "kamenridercraft:den_o/structures",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "幽灵列车",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)生成于时间之沙各处$(br2)箱子战利品：$(li)1个 $(l:den_o/items/rider_tickets#rider_ticket_yuuki)骑士车票(幽灵异魔神)$(/l)$(li)4-6个 $(l:den_o/items/imagin_sand)异魔神沙$(/l)（15.8%）$(li)3-7个 $(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l)（52.6%）$(li)1个 $(l:den_o/items/rider_tickets#rider_ticket_yuuki)骑士车票(幽灵异魔神)$(/l)（31.6%）"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/ghostliner.png"
+			],
+			"title": " "
+		}
+	]
+}

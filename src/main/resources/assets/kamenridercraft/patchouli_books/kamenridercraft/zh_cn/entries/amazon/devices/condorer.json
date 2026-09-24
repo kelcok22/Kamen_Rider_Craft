@@ -1,0 +1,29 @@
+{
+	"name": "孔德拉",
+	"icon": "kamenridercraft:condorer",
+	"category": "kamenridercraft:amazon/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer",
+			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)$(br2)与$(l:amazon/devices/armor)Amazon装甲$(/l)配合穿戴，可变身为$(l:amazon/riders/amazon)假面骑士Amazon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazon/condorer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_condorer",
+			"title": "孔德拉 (黑暗Amazon)",
+			"text": "登场于:$(li)弹珠机假面骑士：全速前进（2015年，弹珠机游戏）$(br2)与$(l:amazon/devices/armor)Amazon装甲$(/l)配合穿戴，可变身为$(l:amazon/riders/dark_amazon)黑暗Amazon"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazon/dark_condorer"
+		}
+	]
+}

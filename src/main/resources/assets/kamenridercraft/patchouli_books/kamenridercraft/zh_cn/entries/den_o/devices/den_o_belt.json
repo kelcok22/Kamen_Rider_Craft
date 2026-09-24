@@ -1,0 +1,40 @@
+{
+	"name": "电王腰带",
+	"icon": "kamenridercraft:den_o_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_belt",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/den_o)假面骑士电王$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:den_o/den_o_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nega_den_o_belt",
+			"title": "电王腰带(负电王)",
+			"text": "登场于：$(li)假面骑士电王&月骑：巅峰刑事 (2008年，电影)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/nega_den_o)假面骑士负电王$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:den_o/nega_den_o_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pretty_den_o_belt",
+			"title": "电王腰带(漂亮电王)",
+			"text": "登场于：$(li)假面骑士电王：漂亮电王登场！ (2020年，电影)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/pretty_den_o)假面骑士漂亮电王$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:den_o/pretty_den_o_belt"
+		}
+	]
+}

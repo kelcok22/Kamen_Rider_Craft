@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kuuga/main",
+    "name": "相关物品",
+    "description": "所有与空我系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:kuuga_mighty",
+    "sortnum": 2
+}

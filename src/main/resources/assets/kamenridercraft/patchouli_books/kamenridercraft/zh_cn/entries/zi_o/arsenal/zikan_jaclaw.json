@@ -1,0 +1,16 @@
+{
+	"name": "时间折叠爪",
+	"icon": "kamenridercraft:zikan_jaclaw",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由$(l:zi_o/riders/geiz#revive_goretsu)假面骑士盖茨复活者$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zikan_jaclaw"
+		}
+	]
+}

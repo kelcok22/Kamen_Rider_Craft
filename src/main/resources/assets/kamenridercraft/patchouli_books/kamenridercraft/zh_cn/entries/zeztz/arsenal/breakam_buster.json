@@ -1,0 +1,16 @@
+{
+	"name": "噬梦破坏器",
+	"icon": "kamenridercraft:breakam_buster",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)为 $(l:zeztz/riders/nox_knight)诺克斯暗骑$(/l) 专用武器"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_buster"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "新·Diend驱动器",
+	"icon": "kamenridercraft:neo_diendriver",
+	"category": "kamenridercraft:decade/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由$(l:decade/riders/diend#diend)假面骑士Diend$(/l)使用$(br2)用于获取Diend的 $(l:decade/devices/diend_belt)Diend腰带$(/l)$(br2)最多可存储3张 $(l:decade/items/kamenride_cards)假面驾驭卡$(/l) 用于召唤骑士，或使用 $(l:decade/arsenal/attackride_cards)攻击驾驭卡$(/l) 用于特殊能力"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/neo_diendriver"
+		}
+	]
+}

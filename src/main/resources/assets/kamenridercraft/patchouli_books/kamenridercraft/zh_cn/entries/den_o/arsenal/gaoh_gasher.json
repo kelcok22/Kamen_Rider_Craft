@@ -1,0 +1,19 @@
+{
+	"name": "牙王电切裂者",
+	"icon": "kamenridercraft:gaoh_gasher",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)由$(l:den_o/riders/gaoh)假面骑士牙王$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaoh_gasher",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:den_o/mobs/gaoh)假面骑士牙王$(/l)"
+		}
+	]
+}

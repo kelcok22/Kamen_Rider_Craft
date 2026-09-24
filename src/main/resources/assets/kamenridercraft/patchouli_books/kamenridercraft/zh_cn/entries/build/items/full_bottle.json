@@ -1,0 +1,19 @@
+{
+    "name": "空白满瓶",
+    "icon": "kamenridercraft:full_bottle",
+    "category": "kamenridercraft:build/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用作大多数Build物品的基础材料和修复材料$(br2)作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)$(li)$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)$(li)$(l:build/mobs/seito_guardian)西都防卫者$(/l)$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)$(li)$(l:build/mobs/blood_stalk)血潜$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/night_rogue)夜霸$(/l)$(li)$(l:build/mobs/needle_smash)针刺猛击者$(/l)$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l)$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l)$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l)$(li)$(l:build/mobs/downfall_guardian)陷灭防卫者$(/l)$(li)$(l:build/mobs/phantom_crusher)虚幻粉碎者$(/l)$(li)$(l:build/mobs/engine_bros)引擎兄弟$(/l)$(li)$(l:build/mobs/remocon_bros)齿轮兄弟$(/l)$(li)$(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)$(li)$(l:build/mobs/kaiser)凯撒$(/l)$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+        }
+    ]
+}

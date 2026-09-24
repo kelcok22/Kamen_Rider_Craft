@@ -1,0 +1,17 @@
+{
+	"name": "影松",
+	"icon": "kamenridercraft:kagematsu",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/riders/kurokage)假面骑士黑影$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/kagematsu",
+          "text": "掉落自：$(li)$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)的装备"
+		}
+	]
+}

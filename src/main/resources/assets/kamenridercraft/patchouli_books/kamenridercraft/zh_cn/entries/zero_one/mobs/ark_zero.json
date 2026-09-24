@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士·亚克(零)",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ark_zero",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#ark_one_boss_block)Ark-OneBOSS召唤方块$(/l)召唤而来$(br2)特殊能力：$(li)生命值低于150时召唤随机01系列武器$(br2)掉落$(li)12-20个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)6-10个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#ark_one_progrisekey)Ark-One程式升华钥$(/l)$(li)1个$(l:zero_one/devices/ark_driver_zero#ark_driver_zero)亚克驱动器-零（亚克零版）$(/l)$(li)1个$(l:zero_one/items/progrisekeys#ark_zero_one_progrisekey)亚克01程式升华钥$(/l) (25%)$(li)1个$(l:zero_one/items/progrisekeys#ark_scorpion_progrisekey)亚克毒蝎程式升华钥$(/l) (25%)$(li)1个$(l:saber/items/wonder_ride_books#gaikotsu_ninjaden_wonder_ride_book)骸骨忍者传奇幻驾驭书$(/l)（消耗背包中的1个$(l:saber/items/alter_ride_books#desast_alter_ride_book)天灾魔改驾驭书$(/l)）"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "修卡贪欲者",
+    "icon": "kamenridercraft:greeed_blet_shocker",
+    "category": "kamenridercraft:ooo/riders",
+    "sortnum": 21,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:greeed_blet_shocker\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": " ",
+            "text": ""
+        },
+        {
+            "type": "patchouli:text",
+            "title": "修卡贪欲者",
+            "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/greeed_belt#greeed_blet_shocker)修卡贪欲者腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II"
+        }
+    ]
+}

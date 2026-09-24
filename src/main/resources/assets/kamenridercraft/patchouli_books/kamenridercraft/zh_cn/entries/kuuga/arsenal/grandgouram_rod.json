@@ -1,0 +1,16 @@
+{
+	"name": "大格莱姆之杖",
+	"icon": "kamenridercraft:grandgouram_rod",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)由空我的$(l:kuuga/riders/kuuga#grandgouram)超级模式$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/grandgouram_rod"
+		}
+	]
+}

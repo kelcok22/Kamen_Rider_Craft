@@ -1,0 +1,17 @@
+{
+	"name": "新修卡战斗员",
+	"icon": "kamenridercraft:skyrider_logo",
+	"category": "kamenridercraft:skyrider/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ari_commando",
+			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 风袭丘陵, 积雪冻原, 沙漠, 森林, 积雪山坡, 黑森林, 原始松木针叶林, 风袭森林, 恶地, 风蚀恶地, 繁茂恶地$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (50%)$(li)1个$(l:skyrider/items/tornado_core)重力核心$(/l) (50%)"
+		}
+	]
+}

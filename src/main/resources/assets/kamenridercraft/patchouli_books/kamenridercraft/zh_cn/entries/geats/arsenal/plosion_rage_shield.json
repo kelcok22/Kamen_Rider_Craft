@@ -1,0 +1,16 @@
+{
+	"name": "狂怒之爪",
+	"icon": "kamenridercraft:plosion_rage_shield",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐：邪魔徒觉醒 (2024年，V-Cinema电影)$(br2)由霸牛的 $(l:geats/riders/buffa#plosion_rage)爆裂狂怒$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/plosion_rage_shield"
+		}
+	]
+}

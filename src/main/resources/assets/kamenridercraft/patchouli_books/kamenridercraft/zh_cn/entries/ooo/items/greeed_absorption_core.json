@@ -1,0 +1,19 @@
+{
+	"name": "古代王的扫描仪",
+	"icon": "kamenridercraft:greeed_absorption_core",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于切换古代王OOO的$(l:ooo/riders/ancient_ooo#greeed_absorption)贪欲者吸收态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_absorption_core",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		}
+	]
+}

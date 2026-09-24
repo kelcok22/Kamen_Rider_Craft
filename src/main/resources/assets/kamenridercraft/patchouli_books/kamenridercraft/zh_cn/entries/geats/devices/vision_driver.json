@@ -1,0 +1,65 @@
+{
+	"name": "幻视驱动器",
+	"icon": "kamenridercraft:vision_driver_glare",
+	"category": "kamenridercraft:geats/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "vision_driver_glare",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/glare)假面骑士炬目"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/vision_driver_glare",
+          "text": "掉落自：$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vision_driver_glare2",
+			"title": "幻视驱动器(炬目2)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/glare2)假面骑士炬目2"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/vision_driver_glare2",
+          "text": "掉落自：$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vision_driver_gazer",
+			"title": "幻视驱动器(Gazer)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/gazer)假面骑士Gazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/vision_driver_gazer",
+          "text": "掉落自：$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vision_driver_gazer_suel",
+			"title": "幻视驱动器(稣艾尔Gazer)",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/suel_gazer)假面骑士稣艾尔Gazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/vision_driver_gazer_suel"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vision_driver_jyamato_glare",
+			"title": "幻视驱动器(邪魔徒Gazer)",
+			"text": "登场于：$(li)假面骑士极狐：最终舞台 (2023年，舞台秀)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/jyamato_gazer)假面骑士邪魔徒Gazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/vision_driver_jyamato_glare"
+		}
+	]
+}

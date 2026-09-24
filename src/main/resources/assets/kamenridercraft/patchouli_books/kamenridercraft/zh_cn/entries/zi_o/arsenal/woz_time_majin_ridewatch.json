@@ -1,0 +1,20 @@
+{
+	"name": "白沃兹未来骑士表盘",
+	"icon": "kamenridercraft:woz_time_majin_ridewatch",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于进入城市维度",
+			"future_text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于进入$(l:misc/city/city)城市维度$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:woz_time_majin_ridewatch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)"
+		}
+	]
+}

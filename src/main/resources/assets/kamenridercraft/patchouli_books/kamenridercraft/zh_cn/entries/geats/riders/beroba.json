@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士贝洛芭",
+	"icon": "kamenridercraft:raise_riser_belt_beroba",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 32,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "beroba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_beroba\",components:{custom_data:{slot_tex1:\"kamenridercraft:beroba_raise_riser_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:geats/items/raise_riser_cards#beroba_raise_riser_card)提升升华器卡片(贝洛芭)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士贝洛芭",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/raise_riser_belt#raise_riser_belt_beroba)镭射升华器(贝洛芭)$(/l)进行变身$(br2)状态效果：$(li)变大 III$(li)缓慢$(li)夜视$(li)急迫$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "premium",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:raise_riser_belt_beroba\",components:{custom_data:{slot_tex1:\"kamenridercraft:beroba_black_raise_riser_card\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:geats/items/raise_riser_cards#beroba_black_raise_riser_card)黑提升升华器卡片(贝洛芭)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "至尊贝洛芭",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)通过穿戴$(l:geats/devices/raise_riser_belt#raise_riser_belt_beroba)镭射升华器(贝洛芭)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)急迫$(li)力量 IV"
+		}
+	]
+}

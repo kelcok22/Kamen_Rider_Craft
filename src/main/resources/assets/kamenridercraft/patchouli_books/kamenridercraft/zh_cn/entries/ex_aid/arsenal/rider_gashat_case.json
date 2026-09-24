@@ -1,0 +1,16 @@
+{
+	"name": "卡带收纳箱",
+	"icon": "kamenridercraft:rider_gashat_case",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 47,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)最多可存储11组骑士卡带"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ex_aid/rider_gashat_case"
+		}
+	]
+}

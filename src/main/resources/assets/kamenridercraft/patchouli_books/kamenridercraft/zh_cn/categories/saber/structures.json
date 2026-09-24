@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "圣刃相关建筑",
+    "description": "与《假面骑士圣刃》相关的所有建筑.",
+    "icon": "kamenridercraft:sword_of_logos_bookshelf",
+    "sortnum": 6
+}

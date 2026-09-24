@@ -1,0 +1,16 @@
+{
+	"name": "雪白召机",
+	"icon": "kamenridercraft:blanc_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑: Episode Final (2002年, 电影)$(br2)由$(l:ryuki/riders/femme)假面骑士花梦$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/blanc_visor"
+		}
+	]
+}

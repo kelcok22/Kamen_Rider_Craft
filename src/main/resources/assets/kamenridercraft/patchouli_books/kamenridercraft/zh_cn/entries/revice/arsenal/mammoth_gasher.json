@@ -1,0 +1,16 @@
+{
+	"name": "猛犸切裂器",
+	"icon": "kamenridercraft:mammoth_gasher",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)由利维的 $(l:revice/riders/revi#mammoth)猛犸基因组$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/mammoth_gasher"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "格拉菲特崩原体",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:graphite_bugster_mob",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有5%的几率从$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)升级上场$(br2)掉落$(li)3-5个$(l:ex_aid/items/bugster_virus_dna)游戏病基因$(/l)$(li)2-3个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l) (20%)$(li)1个$(l:ex_aid/items/gashatrophies#gekitotsu_robots_gasha_trophy)激突机器人奖励卡带$(/l) (20%)$(li)1个$(l:ex_aid/items/gashatrophies#jet_combat_gasha_trophy)喷射战机奖励卡带$(/l) (20%)$(li)1个$(l:ex_aid/items/gashatrophies#giri_giri_chambara_gasha_trophy)极限剑斗奖励卡带$(/l) (20%)$(li)1个$(l:ex_aid/items/gashatrophies#drago_knight_hunter_z_gasha_trophy)龙骑士猎手Z奖励卡带$(/l) (20%)$(li)1个$(l:ex_aid/items/rider_gashats#drago_knight_hunter_z_gashat)龙骑士猎手Z卡带$(/l) (66.7%)$(li)1个$(l:ex_aid/items/rider_gashats#proto_drago_knight_hunter_z_gashat)原型龙骑士猎手Z卡带$(/l) (33.3%)"
+        }
+    ]
+}

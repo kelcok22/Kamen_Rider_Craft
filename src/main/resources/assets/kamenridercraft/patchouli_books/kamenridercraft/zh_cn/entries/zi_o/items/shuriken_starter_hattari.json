@@ -1,0 +1,19 @@
+{
+	"name": "免许皆传金属板(虚忍)",
+	"icon": "kamenridercraft:shuriken_starter_hattari",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士忍者（2022年，电视剧）/（2019年，网络剧）$(br2)用于合成虚忍的$(l:zi_o/devices/hattari_driver)忍者驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shuriken_starter_hattari",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/yaminin)暗忍$(/l)"
+		}
+	]
+}

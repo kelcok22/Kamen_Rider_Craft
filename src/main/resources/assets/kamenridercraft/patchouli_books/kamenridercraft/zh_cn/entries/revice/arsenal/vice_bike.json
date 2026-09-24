@@ -1,0 +1,19 @@
+{
+  "name": "维斯自行车",
+  "icon": "kamenridercraft:vice_bike_spawn_egg",
+  "category": "kamenridercraft:revice/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于:$(li)假面骑士利维斯 (2021年, 电视剧)$(br2)由 $(l:revice/riders/revi)假面骑士利维$(/l)使用"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:vice_bike_spawn_egg",
+      "title": " ",
+      "text": "通过对 $(l:misc/items/bicycle_spawn_egg)摩托车$(/l) 使用 $(l:revice/items/vistamps#rex_vistamp)暴龙罪恶印章$(/l) 右键点击获得"
+    }
+  ]
+}

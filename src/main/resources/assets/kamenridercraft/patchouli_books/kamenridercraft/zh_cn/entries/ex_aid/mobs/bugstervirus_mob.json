@@ -1,0 +1,21 @@
+{
+    "name": "崩原体",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:bugstervirus_mob",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生成群系：平原、向日葵平原、森林、针叶林、沼泽、红树林沼泽、桦木森林、黑森林、积雪针叶林、恶地、风蚀恶地、疏林恶地$(br2)掉落$(li)1-3个$(l:ex_aid/items/bugster_virus_dna)游戏病基因$(/l)$(li)1个$(l:ex_aid/items/bugster_virus_dna)游戏病基因$(/l) (83%)$(li)1个$(l:ex_aid/items/rider_gashats#mighty_action_x_gashat)全能动作X卡带$(/l) (6.7%)$(li)1个$(l:ex_aid/items/rider_gashats#taddle_quest_gashat)探索冒险卡带$(/l) (3.3%)$(li)1个$(l:ex_aid/items/rider_gashats#bang_bang_shooting_gashat)砰砰射击卡带$(/l) (3.3%)$(li)1个$(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)暴走机车卡带$(/l) (3.3%)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "升级$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l) (5%)$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l) (5%)"
+        }
+    ]
+}

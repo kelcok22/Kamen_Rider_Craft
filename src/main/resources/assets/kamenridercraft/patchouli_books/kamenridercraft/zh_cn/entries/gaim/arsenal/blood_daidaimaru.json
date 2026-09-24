@@ -1,0 +1,16 @@
+{
+	"name": "大橙丸（血橙版）",
+	"icon": "kamenridercraft:blood_daidaimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 35,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武&巫骑 命运的战国电影大合战 (2013年，电影)$(br2)由$(l:gaim/riders/bujin_gaim)假面骑士武神铠武$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/blood_daidaimaru"
+		}
+	]
+}

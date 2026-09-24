@@ -1,0 +1,505 @@
+{
+    "name": "骑士状态效果",
+    "icon": "minecraft:potion",
+    "category": "kamenridercraft:misc/misc",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "除了原版Minecraft中的状态效果外，假面骑士工艺还包含自己的一套效果，进一步增强骑士的力量。本书的这一部分将简要介绍所有新增效果，并附上获取方式的示例。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/effects.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "boost",
+            "title": "推进",
+            "text": "持有此效果时，你可以通过潜行向前推进并离开地面。更高的等级会倍增推进速度。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#rocket_switch)火箭开关$(/l)$(li)使用 $(l:ex_aid/items/rider_gashats#jet_combat_gashat)喷射战机卡带$(/l)$(li)使用 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "swift_swim",
+            "title": "速游",
+            "text": "此效果提高你的游泳速度，类似海豚的恩惠但更快。更高的等级会倍增游泳速度。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#screw_switch)螺旋桨开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "毒药抗性",
+            "text": "此效果使你免疫中毒效果。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/items/wizard_rings#dolphi_ring)海豚巫师指环$(/l)$(li)变身为 $(l:revice/riders/jeanne)假面骑士贞德$(/l)$(li)使用 $(l:geats/items/raise_buckles#zombie_raise_buckle)僵尸代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "slash",
+            "title": "斩击提升",
+            "text": "持有此效果时，使用剑类武器会获得等同于该效果等级的力量加成。$(br2)获取此效果的示例：$(li)使用 $(l:decade/arsenal/decade_slash_card)Decade剑斩 攻击假面驾驭卡$(/l)$(li)使用 $(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)武藏眼魂$(/l)$(li)使用 $(l:gavv/items/gochizo#zakuzakuchips_gochizo)脆脆薯片饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shot_boost",
+            "title": "射击推进",
+            "text": "此效果增强你的弹射物攻击威力。$(br2)获取此效果的示例：$(li)使用 $(l:decade/arsenal/decade_blast_card)Decade轰炸 攻击假面驾驭卡$(/l)$(li)使用 $(l:gavv/items/gochizo#chocodan_gochizo)巧克弹饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "punch",
+            "title": "拳力提升",
+            "text": "持有此效果时，空手攻击时,获得等同于该效果等级的伤害$(br2)获取此效果的示例：$(li)使用空我的任意 $(l:kuuga/riders/kuuga#mighty)全能$(/l) 或 $(l:kuuga/riders/kuuga#ultimate)究极$(/l) 形态$(li)使用 $(l:w/items/gaia_memories#joker_memory)王牌记忆体$(/l)$(li)使用 $(l:zero_one/items/progrisekeys#punching_kong_progrisekey)拳击金刚程式升华钥$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flying",
+            "title": "飞行",
+            "text": "此效果使你可以像创造模式一样飞行。$(br2)获取此效果的示例：$(li)变身为 $(l:skyrider/riders/skyrider)天空骑士$(/l)$(li)使用 $(l:den_o/items/rider_tickets#rider_ticket_wing)骑士车票(齐格)$(/l)$(li)使用 $(l:revice/items/vistamps#ptera_vistamp)翼龙罪恶印章$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pull",
+            "title": "拉",
+            "text": "此效果将附近的物品拉向你。更高等级增加拉力。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#magnet_switch_n)北磁极开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "push",
+            "title": "推",
+            "text": "此效果将附近的生物推离你。更高等级增加推力和推动范围。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#magnet_switch_s)南磁极开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "note",
+            "title": "音符",
+            "text": "此效果使你每刻发出一个音符。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#beat_switch)节拍开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drill",
+            "title": "钻头",
+            "text": "持有此效果时，你可以通过潜行破坏正下方的任何石头或下界岩方块。$(br2)获取此效果的示例：$(li)使用 $(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth鳌系组件(刚钻臂膀)$(/l)$(li)使用 $(l:fourze/items/astroswitches#drill_switch)钻头开关$(/l)$(li)使用 $(l:geats/items/raise_buckles#drill_raise_buckle)钻头代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "step",
+            "title": "跨步",
+            "text": "此效果每等级增加半个方块的踏步高度。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#giantfoot_switch)巨足开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gravity",
+            "title": "重力",
+            "text": "此效果增加你所承受的重力，更高等级会带来更大的重力增幅。$(br2)获取此效果的示例：$(li)激活 $(l:misc/blocks/artificial_gravity_block)人造重力方块$(/l)$(li)使用 $(l:wizard/arsenal/wizard_rings#gravity_ring)重力巫师指环$(/l)$(li)使用 $(l:gavv/items/gochizo#gurucan_gochizo)转转糖饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "low_gravity",
+            "title": "失重",
+            "text": "此效果减少你所承受的重力，更高等级会带来更大的减重效果。$(br2)获取此效果的示例：$(li)前往 $(l:fourze/dimensions/the_moon)月球$(/l)$(li)使用 $(l:fourze/items/astroswitches#parachute_switch)降落伞开关$(/l)$(li)使用 $(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)牛顿眼魂$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "long_arm",
+            "title": "手臂加长",
+            "text": "此效果每等级增加1个方块的方块交互范围。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#magichand_switch)魔术手开关$(/l)$(li)使用 $(l:wizard/arsenal/wizard_rings#extend_ring)延伸巫师指环$(/l)$(li)使用 $(l:drive/items/shift_cars#hooking_wrecker)挂钩清障者$(/l) 变档战车"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "radar",
+            "title": "雷达",
+            "text": "此效果对附近的生物和玩家施加发光效果。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#radar_switch)雷达开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "smoke",
+            "title": "烟雾",
+            "text": "此效果使你发出烟雾粒子。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#smoke_switch)烟雾开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shrink",
+            "title": "缩小",
+            "text": "此效果使你缩小，更高等级使你缩得更小。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#small_ring)缩小巫师指环$(/l)$(li)使用 $(l:ex_aid/arsenal/energy_items#shrink_energy_item)缩小能力$(/l)$(li)作为 $(l:revice/riders/vice#kangaroo)假面骑士维斯$(/l) 使用 $(l:revice/items/vistamps#kangaroo_vistamp)袋鼠罪恶印章$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "giant",
+            "title": "变大",
+            "text": "此效果使你变大，更高等级使你变得更大。$(br2)获取此效果的示例：$(li)使用 $(l:j/items/j_stone)骑士纹章(J)$(/l)$(li)使用 $(l:wizard/arsenal/wizard_rings#big_ring)变大巫师指环$(/l)$(li)使用 $(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)破坏猛犸程式升华钥$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flatten",
+            "title": "二次元",
+            "text": "此效果使你看起来扁平，像二维角色一样。$(br2)获取此效果的示例：$(li)变身为 $(l:kuuga/riders/manga_kuuga)假面骑士空我(漫画)$(/l)$(li)使用 $(l:fourze/items/astroswitches#shin_chan_switch)新酱开关$(/l)$(li)使用 $(l:ex_aid/arsenal/energy_items#flatten_energy_item)平面化能力$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stretch",
+            "title": "拉伸",
+            "text": "此效果使你拉伸，看起来很高。$(br2)获取此效果的示例：$(li)使用 $(l:ex_aid/arsenal/energy_items#stretch_energy_item)伸缩能力$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wide",
+            "title": "变宽",
+            "text": "此效果使你拉伸，看起来很宽。$(br2)获取此效果的示例：$(li)使用 $(l:ex_aid/arsenal/energy_items#balloon_energy_item)气球化能力$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "explode",
+            "title": "自爆",
+            "text": "此效果在持续时间结束后使你爆炸。更高等级增加爆炸威力。$(br2)获取此效果的示例：$(li)使用 $(l:ex_aid/arsenal/energy_items#end_energy_item)终末能力$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "explosion",
+            "title": "爆炸",
+            "text": "此效果在你面朝的方向制造爆炸。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#explosion_ring)爆炸巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bind",
+            "title": "蛛网",
+            "text": "此效果在你面朝的方向放置蜘蛛网。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#bind_ring)捆绑巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fall",
+            "title": "坠落",
+            "text": "此效果快速破坏你脚下的方块，使你坠落。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#fall_ring)掉落巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "smell",
+            "title": "难闻",
+            "text": "此效果对附近的生物和玩家施加反胃和缓慢 II。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#smell_ring)气味巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "christmas",
+            "title": "圣诞快乐",
+            "text": "此效果使你每4分20秒获得一个 $(l:misc/items/gift)礼物$(/l)。$(br2)获取此效果的示例：$(li)在12月22日至12月28日期间游玩假面骑士工艺$(li)使用 $(l:wizard/arsenal/wizard_rings#merry_christmas_ring)圣诞快乐巫师指环$(/l)$(li)使用 $(l:ex_aid/arsenal/energy_items#christmas_energy_item)圣诞快乐能力$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fire_punch",
+            "title": "炎拳",
+            "text": "持有此效果时，用空手击中的任何实体会被点燃。每等级点燃1秒。$(br2)获取此效果的示例：$(li)变身为 $(l:build/riders/kaiser#bikaiser)霸凯撒$(/l)$(li)使用 $(l:revice/items/vistamps#komodo_dragon_vistamp)科莫多巨蜥罪恶印章$(/l)$(li)使用 $(l:geats/items/raise_buckles#powered_builder_raise_buckle)完善工程代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fire_slash",
+            "title": "火焰斩",
+            "text": "持有此效果时，用剑击中的任何实体会被点燃。每等级点燃1秒。$(br2)获取此效果的示例：$(li)使用 $(l:gavv/items/gochizo#hirihirichips_gochizo)辣辣薯片饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "explosion_punch",
+            "title": "爆裂拳",
+            "text": "持有此效果时，用空手击中的任何实体会爆炸。更高等级增加爆炸威力。$(br2)获取此效果的示例：$(li)等待未来更新"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "explosion_slash",
+            "title": "爆裂斩",
+            "text": "持有此效果时，用剑击中的任何实体会爆炸。更高等级增加爆炸威力。$(br2)获取此效果的示例：$(li)等待未来更新"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flame_shot",
+            "title": "火焰射击",
+            "text": "持有此效果时，用箭击中的任何实体会被点燃。每等级点燃1秒。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#fire_switch)火开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "explosion_shot",
+            "title": "爆裂射击",
+            "text": "持有此效果时，用箭击中的任何实体会爆炸。更高等级增加爆炸威力。$(br2)获取此效果的示例：$(li)使用 $(l:geats/items/raise_buckles#powered_builder_raise_buckle)完善工程代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flame_body",
+            "title": "烈焰环身",
+            "text": "持有此效果时，任何攻击你的实体会被点燃，每等级点燃1秒。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/items/drago_timer)魔龙计时器$(/l)$(li)使用 $(l:gavv/items/gochizo#hirihirichips_gochizo)辣辣薯片饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gatling",
+            "title": "加特林",
+            "text": "此效果允许你按下能力键发射一连串箭矢。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#gatling_switch)加特林开关$(/l)$(li)使用 $(l:drive/items/shift_cars#midnightshadow)午夜暗影$(/l) 变档战车"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cannon",
+            "title": "大炮",
+            "text": "此效果允许你按下能力键每6秒发射一个小火球。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#launcher_switch)发射器开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "warp",
+            "title": "扭曲",
+            "text": "此效果允许你按下能力键每6秒发射一颗末影珍珠。$(br2)获取此效果的示例：$(li)使用 $(l:drive/items/shift_cars#dimension_cab)维度计程$(/l) 变档战车"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stealth",
+            "title": "隐身",
+            "text": "此效果允许你按下能力键隐身。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#stealth_switch)隐身开关$(/l)$(li)使用 $(l:build/items/fullbottles#ninja_full_bottle)忍者满装瓶罐$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fish",
+            "title": "鱼!",
+            "text": "此效果允许你按下能力键掉落一条鲑鱼，冷却时间9秒。更高等级增加鲑鱼数量。如果你着火，鲑鱼会烤熟。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#net_switch)捕虫网开关$(/l)$(li)使用 $(l:geats/items/raise_buckles#shark_raise_buckle)鲨鱼代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mirror",
+            "title": "反射",
+            "text": "持有此效果时，攻击你的任何实体将承受其造成的伤害乘以该效果等级。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#spike_switch)钉牙开关$(/l)$(li)使用 $(l:ex_aid/arsenal/energy_items#reflect_energy_item)反射能力$(/l)$(li)使用 $(l:geats/items/raise_buckles#fantasy_raise_buckle)幻想代扣$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "return",
+            "title": "传送",
+            "text": "此效果将你传送回出生点。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#teleport_ring)瞬移巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sleep",
+            "title": "一觉到天亮",
+            "text": "此效果跳过夜晚，作为快速睡眠方法而不设置出生点。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#sleep_ring)睡眠巫师指环$(/l)$(li)使用 $(l:ex_aid/arsenal/energy_items#sleep_energy_item)睡眠能力$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "night",
+            "title": "夜晚",
+            "text": "此效果与睡眠效果相反，改为跳过白天。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#eclipse_ring)日蚀巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "time",
+            "title": "时间",
+            "text": "此效果每等级加速昼夜循环10刻。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#time_ring)时间巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blizzard",
+            "title": "暴风雪",
+            "text": "此效果冻结你脚下所有的水，将其变为冰。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#freeze_switch)冻结开关$(/l)$(li)使用 $(l:wizard/arsenal/wizard_rings#blizzard_ring)暴风雪巫师指环$(/l)$(li)使用 $(l:drive/items/shift_cars#road_winter)道路寒冬$(/l) 变档战车"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thunder",
+            "title": "闪电",
+            "text": "此效果在你面朝的方向召唤一道闪电。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#thunder_ring)雷霆巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thunder_punch",
+            "title": "雷电拳",
+            "text": "持有此效果时，用空手击中的任何实体会被闪电击中。$(br2)获取此效果的示例：$(li)使用 $(l:gotchard/items/ride_chemy_cards#x_assemble_ride_chemy_card)X集结 驾驭凯米卡$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thunder_slash",
+            "title": "雷霆斩",
+            "text": "持有此效果时，用剑击中的任何实体会被闪电击中。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#elek_switch)电力开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "thunder_shot",
+            "title": "雷电击",
+            "text": "持有此效果时，用箭击中的任何实体会被闪电击中。$(br2)获取此效果的示例：$(li)等待未来更新"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "form_timeout",
+            "title": "形态解除",
+            "text": "拥有此效果的形态在持续时间结束后会恢复为基础形态。$(br2)获取此效果的示例：$(li)使用假面骑士Faiz的 $(l:faiz/riders/faiz#axel)加速$(/l) 形态"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "form_lock",
+            "title": "形态禁止",
+            "text": "此效果将你锁定在当前形态。你仍然可以变身成其他骑士，但在效果持续期间无法更改他们的形态。$(br2)获取此效果的示例：$(li)等待未来更新"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "greeed",
+            "title": "贪欲",
+            "text": "此效果会在你周围生成 $(l:ooo/mobs/yummy_mob)噬欲怪$(/l)。更高等级提高生成速度。$(br2)获取此效果的示例：$(li)在物品栏中携带一组 $(l:ooo/items/cellmedal)细胞硬币$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cosmic_energy",
+            "title": "宇宙能量",
+            "text": "此效果将 $(l:fourze/riders/fourze)假面骑士Fourze$(/l) 的天文开关强度提升一级。$(br2)获取此效果的示例：$(li)使用 $(l:fourze/items/astroswitches#cosmic_switch)宇宙开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "happy_mode",
+            "title": "快乐模式",
+            "text": "此效果让游戏更加YouTube友好。生物被击中时会喷出彩屑，玩够之后就去睡觉了。$(br2)获取此效果的示例：$(li)变身为 $(l:den_o/riders/shin_o)假面骑士新王$(/l)$(li)变身为 $(l:den_o/riders/dan_o)假面骑士Dan-O$(/l)$(li)使用 $(l:fourze/items/astroswitches#shin_chan_switch)新酱开关$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "flower",
+            "title": "小花",
+            "text": "此效果使你掉落一朵虞美人。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#flower_ring)小花巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "connect",
+            "title": "拿取",
+            "text": "此效果为你打开末影箱。$(br2)获取此效果的示例：$(li)使用 $(l:wizard/arsenal/wizard_rings#connect_ring)连接巫师指环$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghost",
+            "title": "灵体漂浮",
+            "text": "持有此效果时，你可以通过潜行缓慢向上漂浮。你也永远不会感到饥饿，因为鬼魂不能吃晚餐。$(br2)获取此效果的示例：$(li)变身为 $(l:ghost/riders/ghost)假面骑士Ghost$(/l)$(li)使用 $(l:build/items/fullbottles#obake_full_bottle)妖怪满装瓶罐$(/l)$(li)使用 $(l:saber/items/wonder_ride_books#ghost_ijinroku_wonder_ride_book)Ghos伟人录奇幻驾驭书$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bugster_virus",
+            "title": "游戏病",
+            "text": "此效果会在你周围生成 $(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)，并阻止拾取 $(l:ex_aid/arsenal/energy_items)能力道具$(/l) 时使用。更高等级提高生成速度。如果你同时拥有危险等级效果，则会生成 $(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)。$(br2)获取此效果的示例：$(li)使用 $(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat)原型卡带$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "reset",
+            "title": "调整",
+            "text": "此效果将你重置为基础形态。$(br2)获取此效果的示例：$(li)与 $(l:ex_aid/mobs/cronus)游戏天神Cronus$(/l) 战斗"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "save",
+            "title": "保存/无敌",
+            "text": "此效果保护你免受负面状态效果影响，包括自爆和调整效果。$(br2)获取此效果的示例：$(li)使用 $(l:ex_aid/items/rider_gashats#hyper_muteki_gashat)Hyper Muteki卡带$(/l)$(br2)注：免疫效果如下：中毒，失明，黑暗，挖掘疲劳，瞬间伤害，缓慢，虚弱，凋零，自爆，调整，形态禁止，暂停。$(m)为什么不是让我无敌一点都不还原$()"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pause",
+            "title": "暂停!",
+            "text": "此效果暂停你的移动，使你定在原地。$(br2)获取此效果的示例：$(li)与 $(l:ex_aid/mobs/cronus)假面骑士Cronus$(/l) 战斗"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "portal_cooldown",
+            "title": "传送冷却",
+            "text": "此效果阻止你使用传送门。$(br2)获取此效果的示例：$(li)穿过 $(l:misc/blocks/helheim_crack)赫尔海姆裂缝$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rider_poison_hand",
+            "title": "骑士毒手!",
+            "text": "此效果使你用空手击中的任何生物中毒。$(br2)获取此效果的示例：$(li)变身为 $(l:drive/riders/brain)假面骑士大脑$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hazard_level",
+            "title": "危险等级",
+            "text": "此效果使游戏病效果生成 $(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l) 而非普通的 $(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)。$(br2)获取此效果的示例：$(li)食用 $(l:build/items/nebula_gas_sample)星云气体样本$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mirror_noises",
+            "title": "镜之音",
+            "text": "此效果在效果消失后生成一个 $(l:ryuki/mobs/mirror_rider)镜骑士$(/l)。$(br2)获取此效果的示例：$(li)手持 $(l:ryuki/arsenal/advent_decks#advent_deck_blank)卡片套匣(空白)$(/l) 打碎玻璃方块"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wonder",
+            "title": "奇迹",
+            "text": "此效果允许你按下能力键改变自身大小。站立时变大，潜行时缩小。$(br2)获取此效果的示例：$(li)变身为 $(l:zeztz/riders/zeztz#wonder)假面骑士Zeztz 范式奇迹$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "glide",
+            "title": "滑翔",
+            "text": "此效果拥有原版鞘翅的效果。$(br2)获取此效果的示例：$(li)变身为 $(l:agito/riders/g6)假面骑士G6$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ram",
+            "title": "肉弹冲击",
+            "text": "持有此效果时，在跑动或跳跃时，会把身边的敌人撞飞并造成伤害。$(br2)获取此效果的示例：$(li)俺不知道～(￣▽￣～)~"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "self_mending",
+            "title": "自动修复",
+            "text": "持有此效果时，身上所有装备的耐久值会持续缓慢恢复。$(br2)获取此效果的示例：$(li)变身为假面骑士Zeztz的$(l:zeztz/riders/zeztz#recovery)灵犀重构$(/l)形态$(br2)注：只包括头盔、胸甲、护腿、靴子、主手、副手"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "group_mending",
+            "title": "范围修复",
+            "text": "持有此效果时，以自身为中心，半径5格范围内所有友方单位的装备耐久值会持续缓慢恢复。$(br2)获取此效果的示例：$(li)俺不知道～(￣▽￣～)~$(br2)注：不包括自己$(br2)注：只包括头盔、胸甲、护腿、靴子、主手、副手"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sd",
+            "title": "SD",
+            "text": "持有此效果时，会使头部尺寸增大。$(br2)获取此效果的示例：$(li)愚人节会自动获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rider_kick",
+            "title": "骑士踢",
+            "text": "持有此效果时，可以使用骑士跳和骑士踢。$(br2)获取此效果的示例：$(li)变身为$(l:ichigo/riders/ichigo#new_ichigo)假面骑士一号$(/l)$(br2)注：1.1.3版本更新后需要消耗能量释放。"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "climbing",
+            "title": "攀爬",
+            "text": "持有此效果时，允许你像爬梯子一样攀爬方块表面。$(br2)获取此效果的示例：$(li)变身为$(l:ex_aid/riders/ex_aid#sports)假面骑士Ex-Aid运动动作玩家$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rider_spirit",
+            "title": "骑士魂",
+            "text": "持有此效果时，为攻击附加击退，并且当你佩戴一号面具时会让你哭泣。$(br2)获取此效果的示例：$(li)佩戴一号面具$(li)佩戴V3面具"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "insomnia",
+            "title": "失眠",
+            "text": "持有此效果时，只要试图在床上睡觉，就会立刻被强制叫起来。$(br2)获取此效果的示例：$(li)佩戴$(l:zeztz/arsenal/insomnia_visor)失眠护目镜$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dark_aura",
+            "title": "黑暗光环",
+            "text": "持有此效果时，以自身为中心，半径10格内(怪人/反派骑士)不会攻击你，(友善/中立)生物会主动攻击你。$(br2)获取此效果的示例：$(li)变身为$(l:black/riders/shadow_moon)影月$(/l)$(br2)注：血量大于50的(怪人/反派骑士)属于开智生物不受buff影响"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "electric_shock",
+            "title": "电震",
+            "text": "持有此效果时，自身会受到持续的闪电伤害。$(br2)获取此效果的示例：$(li)俺不知道～(￣▽￣～)~$(br2)注：此类伤害为魔法伤害无视护甲"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "knockback_boost",
+            "title": "击退增强",
+            "text": "持有此效果时，攻击生物时会飞的更远。$(br2)获取此效果的示例：$(li)变身为 $(l:w/riders/joker)假面骑士王牌$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wither_slash",
+            "title": "凋零斩",
+            "text": "持有此效果时，用剑击中的任何实体会被凋零。每等级凋零1秒。$(br2)获取此效果的示例：$(li)变身为 $(l:den_o/riders/nega_den_o)假面骑士负电王$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dreaming",
+            "title": "做梦",
+            "text": "持有此效果进入梦境维度时获得的7分钟倒计时，时间一到就会被强制传回主世界出生点。$(br2)获取此效果的示例：佩戴Zeztz系列驱动器躺在床上睡大觉获得"
+        }
+    ]
+}

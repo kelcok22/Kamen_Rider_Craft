@@ -1,0 +1,16 @@
+{
+	"name": "深渊锯刀",
+	"icon": "kamenridercraft:deep_slasher_sword",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)由$(l:ghost/riders/specter#deep_specter)深渊Specter$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/deep_slasher_sword"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "龙利爪",
+	"icon": "kamenridercraft:drag_claw",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_claw",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/strike_vent_cards#drag_claw_vent)龙利爪攻击降临$(/l)获得"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "钻头粉碎者",
+	"icon": "kamenridercraft:drill_crusher",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/build)假面骑士Build$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/drill_crusher"
+		}
+	]
+}

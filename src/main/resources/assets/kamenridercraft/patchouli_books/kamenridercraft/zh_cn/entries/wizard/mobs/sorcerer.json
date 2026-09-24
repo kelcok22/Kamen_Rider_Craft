@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士金魔法师",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:sorcerer",
+			"text": "登场于：$(li)假面骑士Wizard in Magic Land (2013年，电影)$(br)生命值: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%概率从$(l:wizard/mobs/mage_footsoldier)近卫队士兵$(/l)或$(l:wizard/mobs/mage_captain)近卫队队长$(/l)进化而来$(br2)掉落$(li)2-6个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)1-3个$(l:wizard/items/magic_stones#wizardgem_cyan)淡蓝色魔法石$(/l)$(li)1个$(l:wizard/items/magic_stones#wizardgem_black)黑魔法石$(/l)"
+		}
+	]
+}

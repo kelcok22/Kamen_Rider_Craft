@@ -1,0 +1,78 @@
+{
+	"name": "假面骑士恐惧",
+	"icon": "kamenridercraft:dreadriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "type_zero",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:steamliner_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "零式",
+			"text": "通过使用 $(l:gotchard/items/replichemy_cards#steamliner_repli_chemy_card)蒸汽列车复制驾驭凯米卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恐惧",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "type_one",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:unicon_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一式",
+			"text": "通过使用 $(l:gotchard/items/replichemy_cards#unicon_repli_chemy_card)独角兽复制驾驭凯米卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恐惧",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "type_two",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:daiohni_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "二式",
+			"text": "通过使用 $(l:gotchard/items/replichemy_cards#daiohni_repli_chemy_card)大王恶鬼复制驾驭凯米卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恐惧",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)夜视$(li)跳跃提升$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "type_three",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dread_type_three_cards\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "三式",
+			"text": "潜行时通过使用 $(l:gotchard/items/replichemy_cards#unicon_repli_chemy_card)独角兽复制驾驭凯米卡$(/l) 或 $(l:gotchard/items/replichemy_cards#daiohni_repli_chemy_card)大王恶鬼复制驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恐惧",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升$(li)跳跃提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "type_final",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gigantliner_repli_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "终式",
+			"text": "通过使用 $(l:gotchard/items/replichemy_cards#gigantliner_repli_chemy_card)巨型列车复制驾驭凯米卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士恐惧",
+			"text": "登场于：$(li)假面骑士歌查德：最终舞台剧 (2024年，舞台剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)力量 VI（持武器时）$(li)速度 VI$(li)抗性提升 VI$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+		}
+	]
+}

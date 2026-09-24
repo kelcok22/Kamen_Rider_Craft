@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士瓦尔基里",
+	"icon": "kamenridercraft:shotriser_valkyrie",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rushing_cheetah",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "冲刺猎豹",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#rushing_cheetah_progrisekey)冲刺猎豹程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔基里",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_valkyrie)艾姆斯射击升华器(瓦尔基里)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lightning_hornet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雷霆黄蜂",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#lightning_hornet_progrisekey)雷霆黄蜂程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔基里",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_valkyrie)艾姆斯射击升华器(瓦尔基里)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "justice_serval",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_valkyrie\",components:{custom_data:{slot_tex1:\"kamenridercraft:serval_tiger_zetsumerisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "正义剑齿虎",
+			"text": "通过使用 $(l:zero_one/items/zetsumerisekeys#serval_tiger_zetsumerisekey)剑齿虎绝灭升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔基里",
+			"text": "登场于：$(li)01外传：假面骑士瓦尔基里 & 瓦尔基里 (2021年，V-Cinema电影)$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_valkyrie)艾姆斯射击升华器(瓦尔基里)$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 VII$(li)力量 IV"
+		}
+	]
+}

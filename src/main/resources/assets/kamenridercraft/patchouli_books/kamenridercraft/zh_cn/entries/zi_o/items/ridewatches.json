@@ -1,0 +1,1039 @@
+{
+    "name": "骑士表盘",
+    "icon": "kamenridercraft:zi_o_ridewatch",
+    "category": "kamenridercraft:zi_o/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "zi_o_ridewatch",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于制作时王的 $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o)时空驱动器(时王)$(/l)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#zi_o)基础$(/l) 形态$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:zi_o/riders/zi_o)假面骑士时王$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zi_o_ridewatch",
+            "text": "右键点击 $(l:zi_o/items/blank_watch)空白骑士表盘$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decade_ridewatch",
+            "title": "Decade骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于制作Decade的 $(l:decade/devices/neo_decadriver)新·Decad驱动器$(/l)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#decade)Decade装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:decade/riders/decade)假面骑士Decade$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/decade_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zi_o_ii_ridewatch",
+            "title": "时王二阶骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#ii)时王二阶$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/zi_o_ii_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zi_o",
+            "title": "时王三阶骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#trinity)时王三阶$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/zi_o_trinity_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "grand_zi_o_ridewatch",
+            "title": "崇皇时王骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/grand_zi_o_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ohma_zi_o_ridewatch",
+            "title": "逢魔时王骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ohma_zi_o_ridewatch",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geiz_ridewatch",
+            "title": "盖茨骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于制作盖茨的 $(l:zi_o/devices/ziku_driver#ziku_driver_geiz)时空驱动器(盖茨)$(/l)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#geiz)基础$(/l) 形态$(br2)以 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 的身份 Shift+点击时，可召唤假面骑士盖茨的武器"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:geiz_ridewatch",
+            "title": " ",
+            "text": "右键点击 $(l:zi_o/items/blank_watch)空白骑士表盘$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geiz_revive_ridewatch",
+            "title": "盖茨复活者骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#revive_goretsu)复活者$(/l) $(l:zi_o/riders/geiz#revive_shippu)形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/geizrevive_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geiz_majesty_ridewatch",
+            "title": "盖茨王权骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema电影)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/geiz_majesty_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tsukuyomi_ridewatch",
+            "title": "月读骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于制作月读的 $(l:zi_o/devices/ziku_driver#ziku_driver_tsukuyomi)时空驱动器(月读)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tsukuyomi_ridewatch",
+            "title": " ",
+            "text": "右键点击 $(l:zi_o/items/blank_watch)空白骑士表盘$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zi_o_mirror_ridewatch",
+            "title": "镜世界时王骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于制作镜世界时王的 $(l:zi_o/devices/ziku_driver#ziku_driver_zi_o_mirror)时空驱动器(镜世界时王)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zi_o_mirror_ridewatch",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#mirror_zi_o)假面骑士时王(镜世界版本)$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "barlckxs_ridewatch",
+            "title": "巴尔克斯骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)用于制作巴尔克斯的 $(l:zi_o/devices/ziku_driver#ziku_driver_barlckxs)时空驱动器(巴尔克斯)$(/l)$(br2)用于切换巴尔克斯的 $(l:zi_o/riders/barlckxs#barlckxs)基础$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:barlckxs_ridewatch",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zonjis_ridewatch",
+            "title": "宗吉斯骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)用于制作宗吉斯的 $(l:zi_o/devices/ziku_driver#ziku_driver_zonjis)时空驱动器(宗吉斯)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zonjis_ridewatch",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zamonas_ridewatch",
+            "title": "扎莫纳斯骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)用于制作扎莫纳斯的 $(l:zi_o/devices/ziku_driver#ziku_driver_zamonas)时空驱动器(扎莫纳斯)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zamonas_ridewatch",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zamonas)假面骑士扎莫纳斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_ridewatch",
+            "title": "空我骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#kuuga)空我装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:kuuga/riders/kuuga)假面骑士空我$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/kuuga_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "agito_ridewatch",
+            "title": "亚极陀骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#agito)亚极陀装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:agito/riders/agito)假面骑士亚极陀$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/agito_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ryuki_ridewatch",
+            "title": "龙骑骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#ryuki)龙骑装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ryuki/riders/ryuki)假面骑士龙骑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ryuki_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_ridewatch",
+            "title": "Faiz骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#faiz)Faiz装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:faiz/riders/faiz)假面骑士Faiz$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/faiz_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blade_ridewatch",
+            "title": "剑骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#blade)剑装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:blade/riders/blade)假面骑士剑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/blade_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hibiki_ridewatch",
+            "title": "响鬼骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#hibiki)响鬼装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:hibiki/riders/hibiki)假面骑士响鬼$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/hibiki_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kabuto_ridewatch",
+            "title": "甲斗骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#kabuto)甲斗装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:kabuto/riders/kabuto)假面骑士甲斗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/kabuto_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "den_o_ridewatch",
+            "title": "电王骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#den_o)电王装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:den_o/riders/den_o)假面骑士电王$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/den_o_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kiva_ridewatch",
+            "title": "Kiva骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#kiva)Kiva装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:kiva/riders/kiva)假面骑士Kiva$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/kiva_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "w_ridewatch",
+            "title": "W骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#w)W装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:w/riders/double)假面骑士W$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/w_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ooo_ridewatch",
+            "title": "OOO骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#ooo)OOO装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ooo/riders/ooo)假面骑士OOO$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ooo_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fourze_ridewatch",
+            "title": "Fourze骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#fourze)Fourze装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:fourze/riders/fourze)假面骑士Fourze$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/fourze_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wizard_ridewatch",
+            "title": "Wizard骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#wizard)Wizard装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:wizard/riders/wizard)假面骑士Wizard$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/wizard_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gaim_ridewatch",
+            "title": "铠武骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#gaim)铠武装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:gaim/riders/gaim)假面骑士铠武$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/gaim_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drive_ridewatch",
+            "title": "Drive骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#drive)Drive装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:drive/riders/drive)假面骑士Drive$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/drive_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghost_ridewatch",
+            "title": "Ghost骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#ghost)Ghost装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ghost/riders/ghost)假面骑士Ghost$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ghost_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ex_aid_ridewatch",
+            "title": "Ex-Aid骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#ex_aid)Ex-Aid装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ex_aid/riders/ex_aid)假面骑士Ex-Aid$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ex_aid_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "build_ridewatch",
+            "title": "Build骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#build)Build装甲$(/l)$(br2)以 $(l:zi_o/riders/zi_o#grandzi_o)崇皇时王$(/l)、$(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:build/riders/build)假面骑士Build$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/build_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zero_one_ridewatch",
+            "title": "01骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:zero_one/riders/zero_one)假面骑士01$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/zero_one_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "saber_ridewatch",
+            "title": "Saber骑士表盘",
+            "text": "登场于：$(li)Rider Time：假面骑士时王 VS Decade -7位时王！-$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#decade_saber)Decade装甲 Saber形态$(/l)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:saber/riders/saber)假面骑士Saber$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/saber_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "revi_ridewatch",
+            "title": "利维骑士表盘",
+            "text": "登场于：$(li)DX Gotchard & Geats & Revice 骑士表盘 (2023年，玩具线)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:revice/riders/revi)假面骑士利维$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/revi_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vice_ridewatch",
+            "title": "维斯骑士表盘",
+            "text": "登场于：$(li)DX Gotchard & Geats & Revice 骑士表盘 (2023年，玩具线)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:revice/riders/vice)假面骑士维斯$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/vice_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geats_ridewatch",
+            "title": "极狐骑士表盘",
+            "text": "登场于：$(li)DX Gotchard & Geats & Revice 骑士表盘 (2023年，玩具线)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:geats/riders/geats)假面骑士极狐$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/geats_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gotchard_ridewatch",
+            "title": "歌查德骑士表盘",
+            "text": "登场于：$(li)DX Gotchard & Geats & Revice 骑士表盘 (2023年，玩具线)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:gotchard/riders/gotchard)假面骑士歌查德$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/gotchard_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gavv_ridewatch",
+            "title": "加布骑士表盘",
+            "text": "登场于：$(li)DX Zeztz & Gavv & Zero-One 骑士表盘 (2025年，玩具线)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:gavv/riders/gavv)假面骑士加布$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/gavv_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zeztz_ridewatch",
+            "title": "Zeztz骑士表盘",
+            "text": "登场于：$(li)DX Zeztz & Gavv & Zero-One 骑士表盘 (2025年，玩具线)$(br2)在开启令和骑士表盘游戏规则的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:zeztz/riders/zeztz)假面骑士Zeztz$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/zeztz_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_alpha_ridewatch",
+            "title": "Amazon Alpha骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:amazons/riders/amazon_alpha)假面骑士Amazon Alpha$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/amazon_alpha_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zamonas)假面骑士扎莫纳斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_omega_ridewatch",
+            "title": "Amazon Omega骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:amazons/riders/amazon_omega)假面骑士Amazon Omega$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/amazon_omega_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zamonas)假面骑士扎莫纳斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_neo_ridewatch",
+            "title": "Amazon Neo骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:amazons/riders/amazon_neo)假面骑士Amazon Neo$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/amazon_neo_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zamonas)假面骑士扎莫纳斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "genm_ridewatch",
+            "title": "幻梦骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#genm)幻梦装甲$(/l)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ex_aid/riders/genm)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/genm_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "woz_ridewatch",
+            "title": "沃兹骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)用于切换时王的 $(l:zi_o/riders/zi_o#woz)沃兹装甲$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/woz_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bibiru_geiz_ridewatch",
+            "title": "惊悚Geiz骑士表盘",
+            "text": "登场于：$(li)假面骑士BiBiBi的惊悚Geiz (2019年，超战斗DVD)$(br2)用于切换盖茨的 $(l:zi_o/riders/geiz#bibill)惊悚装甲$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bibiru_geiz_ridewatch",
+            "title": " ",
+            "text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_ultimate_ridewatch",
+            "title": "空我究极形态骑士表盘",
+            "text": "登场于：$(li)DX 骑士表盘套装 Vol. 1 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/kuuga_ultimate_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "agito_shining_ridewatch",
+            "title": "亚极陀闪耀形态骑士表盘",
+            "text": "登场于：$(li)DX 骑士表盘套装 Vol. 1 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/agito_shining_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ryuki_survive_ridewatch",
+            "title": "龙骑生存骑士表盘",
+            "text": "登场于：$(li)DX 骑士表盘套装 Vol. 1 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ryuki_survive_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_blaster_ridewatch",
+            "title": "Faiz爆裂形态骑士表盘",
+            "text": "登场于：$(li)DX 骑士表盘套装 Vol. 2 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/faiz_blaster_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blade_king_ridewatch",
+            "title": "剑帝王形态骑士表盘",
+            "text": "登场于：$(li)DX 骑士表盘套装 Vol. 2 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/blade_king_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hibiki_armed_ridewatch",
+            "title": "装甲响鬼骑士表盘",
+            "text": "登场于：$(li)DX 骑士表盘套装 Vol. 2 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/hibiki_armed_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kabuto_hyper_ridewatch",
+            "title": "甲斗海帕形态骑士表盘",
+            "text": "登场于：$(li)DX 甲斗海帕形态骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/kabuto_hyper_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "den_o_liner_ridewatch",
+            "title": "电王班列形态骑士表盘",
+            "text": "登场于：$(li)DX 电王班列形态骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/den_o_liner_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kiva_emperor_ridewatch",
+            "title": "Kiva魔皇形态骑士表盘",
+            "text": "登场于：$(li)DX Kiva魔皇形态骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/kiva_emperor_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decade_complete_ridewatch",
+            "title": "Decade神主牌骑士表盘",
+            "text": "登场于：$(li)DX Decade神主牌骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/decade_complete_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "w_xtreme_ridewatch",
+            "title": "W疾风王牌极致骑士表盘",
+            "text": "登场于：$(li)DX W疾风王牌极致骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/w_xtreme_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ooo_putotyra_ridewatch",
+            "title": "OOO恐龙联组骑士表盘",
+            "text": "登场于：$(li)DX OOO恐龙联组骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ooo_putotyra_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fourze_cosmic_ridewatch",
+            "title": "Fourze宇宙状态骑士表盘",
+            "text": "登场于：$(li)DX Fourze宇宙状态骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/fourze_cosmic_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wizard_infinity_ridewatch",
+            "title": "Wizard无限风格骑士表盘",
+            "text": "登场于：$(li)DX Wizard无限风格骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/wizard_infinity_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gaim_kiwami_ridewatch",
+            "title": "铠武极武装骑士表盘",
+            "text": "登场于：$(li)DX 铠武极武装骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/gaim_kiwami_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drive_tridoron_ridewatch",
+            "title": "Drive赛特朗型号骑士表盘",
+            "text": "登场于：$(li)DX Drive赛特朗型号骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/drive_tridoron_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghost_mugen_ridewatch",
+            "title": "Ghost无限魂骑士表盘",
+            "text": "登场于：$(li)DX Ghost无限魂骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ghost_mugen_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ex_aid_muteki_ridewatch",
+            "title": "Ex-Aid无敌玩家骑士表盘",
+            "text": "登场于：$(li)DX Ex-Aid无敌玩家骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ex_aid_muteki_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "build_genius_ridewatch",
+            "title": "Build天才形态骑士表盘",
+            "text": "登场于：$(li)DX Build天才形态骑士表盘 (2019年，玩具线)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/build_genius_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ryusoulger_ridewatch",
+            "title": "龙装者骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 UT (2019年，服饰)$(br2)在安装了超级战队工艺模组的情况下，以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤龙装红"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ryusoulger_ridewatch",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ichigo_ridewatch",
+            "title": "一号骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ichigo/riders/ichigo)假面骑士一号$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/ichigo_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nigo_ridewatch",
+            "title": "二号骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ichigo/riders/nigo)假面骑士二号$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/nigo_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "v3_ridewatch",
+            "title": "V3骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:v3/riders/v3)假面骑士V3$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/v3_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "riderman_ridewatch",
+            "title": "骑士人骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:v3/riders/riderman)骑士人$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/riderman_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "x_ridewatch",
+            "title": "X骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:x/riders/x)假面骑士X$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/x_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_ridewatch",
+            "title": "Amazon骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:amazon/riders/amazon)假面骑士Amazon$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/amazon_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stronger_ridewatch",
+            "title": "强人骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：最终舞台 (2020年，舞台剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:stronger/riders/stronger)假面骑士强人$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/stronger_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skyrider_ridewatch",
+            "title": "天空骑士表盘",
+            "text": "登场于：$(li)DX 昭和骑士表盘套装2 (2025年，玩具线)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:skyrider/riders/skyrider)天空骑士$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/skyrider_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "super_1_ridewatch",
+            "title": "超一号骑士表盘",
+            "text": "登场于：$(li)DX 昭和骑士表盘套装2 (2025年，玩具线)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:super_1/riders/super_1)假面骑士超一号$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/super_1_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zx_ridewatch",
+            "title": "ZX骑士表盘",
+            "text": "登场于：$(li)DX 昭和骑士表盘套装2 (2025年，玩具线)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:zx/riders/zx)假面骑士ZX$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/zx_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_ridewatch",
+            "title": "Black骑士表盘",
+            "text": "登场于：$(li)DX 昭和骑士表盘套装2 (2025年，玩具线)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:black/riders/black)假面骑士Black$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/black_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shadow_moon_ridewatch",
+            "title": "影月骑士表盘",
+            "text": "登场于：$(li)DX 昭和骑士表盘套装2 (2025年，玩具线)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:black/riders/shadow_moon)影月$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/shadow_moon_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_rx_ridewatch",
+            "title": "Black RX骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:black_rx/riders/black_rx)假面骑士Black RX$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/black_rx_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "robo_rider_ridewatch",
+            "title": "机械骑士骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:black_rx/riders/black_rx#roborider)机械骑士$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/robo_rider_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bio_rider_ridewatch",
+            "title": "生化骑士骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)用于切换巴尔克斯的 $(l:zi_o/riders/barlckxs#giant)巨大$(/l) 形态$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:black_rx/riders/black_rx#biorider)生化骑士$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/bio_rider_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shin_ridewatch",
+            "title": "真骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:shin/riders/shin)假面骑士真$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/shin_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zo_ridewatch",
+            "title": "ZO骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:zo/riders/zo)假面骑士ZO$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/zo_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "j_ridewatch",
+            "title": "J骑士表盘",
+            "text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:j/riders/j)假面骑士J$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/j_ridewatch",
+            "text": "掉落自：$(li)$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "knight_ridewatch",
+            "title": "夜骑骑士表盘",
+            "text": "登场于：$(li)Rider Time：假面骑士龙骑 (2019年，网络剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:ryuki/riders/knight)假面骑士夜骑$(/l)$(br2)以 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 的身份 Shift+点击时，可召唤假面骑士夜骑的武器"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/knight_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chalice_ridewatch",
+            "title": "卡利斯骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:blade/riders/chalice)假面骑士卡利斯$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/chalice_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "diend_ridewatch",
+            "title": "Diend骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema电影)$(br2)用于制作Diend的 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:decade/riders/diend)假面骑士Diend$(/l)$(br2)以 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 的身份 Shift+点击时，可召唤假面骑士Diend的武器"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/diend_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "beast_ridewatch",
+            "title": "Beast骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:wizard/riders/beast)假面骑士Beast$(/l)$(br2)以 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 的身份 Shift+点击时，可召唤假面骑士Beast的武器"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/beast_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mach_ridewatch",
+            "title": "马赫骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:drive/riders/mach)假面骑士马赫$(/l)$(br2)以 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 的身份 Shift+点击时，可召唤假面骑士马赫的武器"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/mach_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cross_z_ridewatch",
+            "title": "克罗兹骑士表盘",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)以 $(l:zi_o/riders/ohma_zi_o)逢魔时王$(/l) 或 $(l:zi_o/riders/zi_o#ohmaform)逢魔形态$(/l) 的身份 Shift+点击时，可召唤 $(l:build/riders/cross-z)假面骑士克罗兹$(/l)$(br2)以 $(l:zi_o/riders/geiz#majesty)盖茨王权$(/l) 的身份 Shift+点击时，可召唤假面骑士克罗兹的武器"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:zi_o/cross_z_ridewatch"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "christmas_ridewatch",
+            "title": "时王骑士表盘(圣诞版本)",
+            "text": "登场于：$(li)假面骑士时王 Charadeco蛋糕 (2018年，糕点系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:christmas_ridewatch",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gift)礼物$(/l)获得"
+        }
+    ]
+}

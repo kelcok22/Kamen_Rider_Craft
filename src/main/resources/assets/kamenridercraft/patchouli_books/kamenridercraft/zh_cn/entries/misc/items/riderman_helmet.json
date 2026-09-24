@@ -1,0 +1,19 @@
+{
+    "name": "骑士人头盔",
+    "icon": "kamenridercraft:riderman_helmet",
+    "category": "kamenridercraft:misc/items",
+    "sortnum": 13,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)东岛丹三郎想成为假面骑士 (2018/2025年，漫画/动画)$(br2)可装备在头部护甲槽位"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:riderman_helmet",
+            "title": " ",
+            "text": "通过和新手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+        }
+    ]
+}

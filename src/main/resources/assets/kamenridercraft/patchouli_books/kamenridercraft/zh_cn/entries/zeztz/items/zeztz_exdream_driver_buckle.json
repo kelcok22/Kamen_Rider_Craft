@@ -1,0 +1,17 @@
+{
+	"name": "Zeztz梦越驱动代扣",
+	"icon": "kamenridercraft:zeztz_exdream_driver_buckle",
+	"category": "kamenridercraft:zeztz/items",
+	"sortnum": 2,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于获取Zeztz的$(l:zeztz/devices/zeztz_exdream_driver)Zeztz梦越驱动器$(/l)"
+      },
+      {
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/zeztz_exdream_driver_buckle"
+		}
+    ]
+}

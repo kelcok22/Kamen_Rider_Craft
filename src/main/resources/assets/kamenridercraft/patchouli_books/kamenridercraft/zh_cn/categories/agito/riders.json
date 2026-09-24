@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "亚极陀系列骑士",
+    "description": "来自《假面骑士亚极陀》或与其相关的所有骑士及争议骑士",
+    "icon": "kamenridercraft:agitohead",
+    "sortnum": 0
+}

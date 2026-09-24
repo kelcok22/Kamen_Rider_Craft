@@ -1,0 +1,16 @@
+{
+	"name": "熔岩铁拳",
+	"icon": "kamenridercraft:magma_knuckle",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/cross-z#magma)假面骑士克罗兹熔岩$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/magma_knuckle"
+		}
+	]
+}

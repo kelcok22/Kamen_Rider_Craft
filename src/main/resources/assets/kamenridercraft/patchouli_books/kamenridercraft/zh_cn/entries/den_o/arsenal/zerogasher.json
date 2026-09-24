@@ -1,0 +1,16 @@
+{
+	"name": "零切裂者",
+	"icon": "kamenridercraft:zerogasher",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 29,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)由$(l:den_o/riders/zeronos)假面骑士零诺斯$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/zerogasher"
+		}
+	]
+}

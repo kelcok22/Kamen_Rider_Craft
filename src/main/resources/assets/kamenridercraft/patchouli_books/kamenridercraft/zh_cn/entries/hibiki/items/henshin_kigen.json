@@ -1,0 +1,57 @@
+{
+	"name": "变身鬼弦",
+	"icon": "kamenridercraft:henshin_kigen_todoroki",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_todoroki",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作轰鬼的$(l:hibiki/devices/ongekishin#todorokidriver)音击震·雷轰$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_kigen_todoroki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_zanki",
+			"title": "变身音弦·音枷",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作斩鬼的$(l:hibiki/devices/ongekishin#zankidriver)音击震·斩撤$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_kigen_zanki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_shuki",
+			"title": "变身鬼弦(朱鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作朱鬼的$(l:hibiki/devices/ongekishin#shukidriver)音击弦(朱鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_kigen_shuki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_banki",
+			"title": "变身鬼弦(蛮鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作蛮鬼的$(l:hibiki/devices/ongekishin#bankidriver)音击震·地狱$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_kigen_banki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_kigen_sabaki",
+			"title": "变身鬼弦(裁鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作裁鬼的$(l:hibiki/devices/ongekishin#sabakidriver)音击震·极乐$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_kigen_sabaki"
+		}
+	]
+}

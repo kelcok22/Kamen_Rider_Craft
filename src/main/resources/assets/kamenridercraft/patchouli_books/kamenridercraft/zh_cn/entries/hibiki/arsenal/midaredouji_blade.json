@@ -1,0 +1,19 @@
+{
+	"name": "错乱童子之刃",
+	"icon": "kamenridercraft:midaredouji_blade",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)由$(l:hibiki/mobs/midaredouji)怪童子$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:midaredouji_blade",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:hibiki/mobs/midaredouji)怪童子$(/l) (物品栏中有$(l:hibiki/items/henshin_onsa#henshin_onsa_kurenai)变身音叉·音角(响鬼红)$(/l))"
+		}
+	]
+}

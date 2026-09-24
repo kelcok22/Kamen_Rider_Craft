@@ -1,0 +1,17 @@
+{
+	"name": "水之上神",
+	"icon": "kamenridercraft:agito_logo",
+	"category": "kamenridercraft:agito/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:el_of_the_water",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:agito/mobs/pantheras_luteus)潘特拉斯·鲁特乌斯$(/l)进化而来$(br2)掉落$(li)2-4个$(l:agito/items/agito_of_seed)亚极陀之种$(/l)$(li)1个$(l:agito/items/agito_of_seed)亚极陀之种$(/l) (80%)$(li)1个$(l:agito/items/philosophers_stones#agito_burning)亚极陀 燃烧$(/l) (20%)"
+		}
+	]
+}

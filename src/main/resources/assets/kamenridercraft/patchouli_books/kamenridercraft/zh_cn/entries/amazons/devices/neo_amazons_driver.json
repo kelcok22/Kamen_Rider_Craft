@@ -1,0 +1,40 @@
+{
+	"name": "Neo Amazons驱动器(新种)",
+	"icon": "kamenridercraft:neo_amazons_driver_neo",
+	"category": "kamenridercraft:amazons/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazons_driver_neo",
+			"text": "登场于：$(li)假面骑士Amazons 第二季 (2017年，网络剧)$(br2)搭配$(l:amazons/devices/armor)Amazons装甲$(/l)使用，可变身为$(l:amazons/riders/amazon_neo)假面骑士Amazon Neo$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/neo_amazons_driver_neo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazons_driver_omega",
+			"title": "Neo Amazons驱动器(新Omega)",
+			"text": "登场于：$(li)假面骑士Amazons 第二季 (2017年，网络剧)$(br2)搭配$(l:amazons/devices/armor)Amazons装甲$(/l)使用，可变身为$(l:amazons/riders/amazon_new_omega)假面骑士Amazon 新Omega$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/neo_amazons_driver_new_omega"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_amazons_driver_neo_alpha",
+			"title": "Neo Amazons驱动器(Neo Alpha)",
+			"text": "登场于：$(li)假面骑士Amazons：最后的审判 (2018年，电影)$(br2)搭配$(l:amazons/devices/armor)Amazons装甲$(/l)使用，可变身为$(l:amazons/riders/amazon_neo_alpha)假面骑士Amazon Neo Alpha$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/neo_amazons_driver_neo_alpha"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "电切裂者(布丁模式)",
+	"icon": "kamenridercraft:den_gasher_pudding",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)异魔神动画3 (2010年，OVA系列)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_gasher_pudding"
+		}
+	]
+}

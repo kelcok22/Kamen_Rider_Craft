@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士Decade激情态",
+    "icon": "kamenridercraft:decade_violent_emotion_boss_block",
+    "category": "kamenridercraft:decade/mobs",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:decade_violent",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生命值：50$(br2)通过挖掘$(l:misc/blocks/boss_blocks#decade_violent_emotion_boss_block)Decade激情态召唤方块$(/l)召唤而来$(br2)掉落$(li)4-6个$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)$(li)3-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:decade/items/kamenride_cards#decade_violent_emotion_card)Decade激情态 假面驾驭卡$(/l)$(li)1个$(l:decade/items/final_formride_cards#decade_ooo_armor_card)OOO武装 形态假面驾驭卡$(/l)（33.3%）$(li)1个$(l:w/items/gaia_memories#cyclone_cyclone_memory)双重疾风记忆体$(/l)（33.3%）$(li)1个$(l:w/items/gaia_memories#joker_joker_memory)双重王牌记忆体$(/l)（33.3%）"
+        }
+    ]
+}

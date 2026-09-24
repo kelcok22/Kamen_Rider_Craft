@@ -1,0 +1,22 @@
+{
+	"name": "玉兔舱",
+	"icon": "kamenridercraft:fourze_logo",
+	"category": "kamenridercraft:fourze/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "玉兔舱",
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)生成于月球$(br2)包含一个 $(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/rabbit_hutch.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/rabbit_hutch_2.png"
+			],
+			"title": " "
+		}
+	]
+}

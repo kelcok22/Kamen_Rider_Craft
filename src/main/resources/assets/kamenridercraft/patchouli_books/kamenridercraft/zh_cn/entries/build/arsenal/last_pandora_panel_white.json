@@ -1,0 +1,19 @@
+{
+	"name": "潘多拉嵌板(白)",
+	"icon": "kamenridercraft:last_pandora_panel_white",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)最多可存储10组满装瓶罐"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:last_pandora_panel_white",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)上使用$(l:build/items/hazard_trigger)危险扳机$(/l)获得"
+		}
+	]
+}

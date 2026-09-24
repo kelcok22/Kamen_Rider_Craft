@@ -1,0 +1,26 @@
+{
+	"name": "白亚的海姆冥界之城",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "白亚的海姆冥界之城",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)生成于海姆冥界各处$(br2)包含可疑沙砾$(br2)包含1个$(l:misc/blocks/boss_blocks#rosyuo_boss_block)白亚BOSS召唤方块$(/l)$(br2)包含3个$(l:gaim/mobs/elementary_inves_red)初级异域者$(/l)刷怪笼"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/rosyuo_helheim_city.png"
+			],
+			"title": " ",
+          "text": "可疑沙砾掉落物见下一页"
+        },
+      {
+        "type": "patchouli:text",
+        "text": "可疑沙砾掉落物：$(li)1个$(l:gaim/arsenal/gaim_horse_armor)铠武马甲$(/l)（14.3%）$(li)1个$(l:gaim/items/lockseeds#kabi_orange_lockseed)卡比橙锁种$(/l)（14.3%）$(li)1个$(l:misc/items/foods#helheim_fruit)海姆冥界果实$(/l)（28.6%）$(li)1个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)（28.6%）$(li)1张$(l:misc/items/music_discs#just_live_more_music_disc)JUST LIVE MORE 音乐唱片$(/l)（14.3%）"
+      }
+	]
+}

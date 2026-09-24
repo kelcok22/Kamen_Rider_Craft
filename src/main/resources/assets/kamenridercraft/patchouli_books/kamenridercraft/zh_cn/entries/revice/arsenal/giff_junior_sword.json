@@ -1,0 +1,19 @@
+{
+	"name": "基夫之剑",
+	"icon": "kamenridercraft:giff_junior_sword",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)由 $(l:revice/mobs/giff_junior)基础恶魔$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giff_junior_sword",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:revice/mobs/giff_junior)基础恶魔$(/l)的装备"
+		}
+	]
+}

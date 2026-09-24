@@ -1,0 +1,17 @@
+{
+    "name": "武装弓",
+    "icon": "kamenridercraft:raise_arrow",
+    "category": "kamenridercraft:geats/arsenal",
+    "sortnum": 19,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/shirowe#arrow)武装弓$(/l) 形态使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:geats/raise_arrow",
+            "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)的装备"
+        }
+    ]
+}

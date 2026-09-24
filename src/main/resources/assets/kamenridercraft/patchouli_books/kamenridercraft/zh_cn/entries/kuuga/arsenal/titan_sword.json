@@ -1,0 +1,16 @@
+{
+	"name": "泰坦剑",
+	"icon": "kamenridercraft:titan_sword",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)由空我的$(l:kuuga/riders/kuuga#titan)泰坦$(/l)和$(l:kuuga/riders/kuuga#rising_titan)升华泰坦$(/l),$(l:kuuga/riders/kuuga#ultimate)究极$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/titan_sword"
+		}
+	]
+}

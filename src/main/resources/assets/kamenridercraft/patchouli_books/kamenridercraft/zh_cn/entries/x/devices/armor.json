@@ -1,0 +1,24 @@
+{
+	"name": "X装甲",
+	"icon": "kamenridercraft:xhead",
+	"category": "kamenridercraft:x/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与X骑士的腰带一同装备，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/xhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/xtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/xlegs"
+		}
+	]
+}

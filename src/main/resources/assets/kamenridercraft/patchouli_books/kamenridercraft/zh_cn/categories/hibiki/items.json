@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:hibiki/main",
+    "name": "相关物品",
+    "description": "所有与响鬼系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:henshin_onsa",
+    "sortnum": 2
+}

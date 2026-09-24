@@ -1,0 +1,19 @@
+{
+	"name": "孔雀剑",
+	"icon": "kamenridercraft:peacock_sworther",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由孔雀不死生物使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:peacock_sworther",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "修卡OOO",
+	"icon": "kamenridercraft:shocker_ooodriver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shocker_ooodriver\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡OOO",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C.英雄传奇)$(br2)通过穿戴$(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO驱动器(修卡OOO)$(/l)进行变身$(br2)状态效果：$(li)速度 II"
+		}
+	]
+}

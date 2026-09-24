@@ -1,0 +1,33 @@
+{
+	"name": "瓦尔巴拉德代扣",
+	"icon": "kamenridercraft:valvaradraw_buckle",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "valvaradraw_buckle",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/valvarad)瓦尔巴拉德$(/l)$(br2)最多可存储10组驾驭凯米卡"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:valvaradraw_buckle",
+			"title": " ",
+			"text": "在未装备任何腰带的情况下发射$(l:gotchard/arsenal/valvarusher)瓦尔巴拉多扳手剑$(/l)即可获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "valvaradraw_buckle_lachesis",
+			"title": "瓦尔巴拉德代扣(拉克西丝)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/valvarad_lachesis)瓦尔巴拉多(拉克西丝)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:valvaradraw_buckle_lachesis",
+			"title": " ",
+			"text": "在未装备任何腰带且副手持有$(l:gotchard/items/replichemy_cards#madwheel_repli_chemy_card)疯狂车轮复制驾驭凯米卡$(/l)的情况下，发射$(l:gotchard/arsenal/valvarusher)瓦尔巴拉多扳手剑$(/l)即可获得"
+		}
+	]
+}

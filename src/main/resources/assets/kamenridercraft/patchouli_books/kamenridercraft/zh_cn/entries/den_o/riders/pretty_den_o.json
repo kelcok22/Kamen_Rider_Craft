@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士漂亮电王",
+	"icon": "kamenridercraft:rider_ticket_sword",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:pretty_den_o_belt\",Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士漂亮电王",
+			"text": "登场于：$(li)假面骑士电王：漂亮电王登场！ (2020年，电影)$(br2)通过穿戴$(l:den_o/devices/den_o_belt#pretty_den_o_belt)电王腰带(漂亮电王)$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)跳跃提升$(li)缩小 II"
+		}
+	]
+}

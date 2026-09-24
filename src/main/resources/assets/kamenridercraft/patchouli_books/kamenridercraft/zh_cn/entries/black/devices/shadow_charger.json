@@ -1,0 +1,16 @@
+{
+	"name": "帝王石(影月)",
+	"icon": "kamenridercraft:shadow_charger",
+	"category": "kamenridercraft:black/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)与$(l:black/devices/armor)Black装甲$(/l)一起穿戴，可变身为$(l:black/riders/shadow_moon)影月"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black/shadow_charger"
+		}
+	]
+}

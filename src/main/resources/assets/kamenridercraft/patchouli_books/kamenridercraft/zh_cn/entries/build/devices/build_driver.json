@@ -1,0 +1,97 @@
+{
+	"name": "Build驱动器",
+	"icon": "kamenridercraft:build_driver",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/build)假面骑士Build$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver",
+          "text": "掉落自：$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_cross_z",
+			"title": "Build驱动器(克罗兹)",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/cross-z)假面骑士克罗兹$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_cross_z"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_grease",
+			"title": "Build驱动器(格里斯)",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/grease)假面骑士格里斯$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_grease"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_rogue",
+			"title": "Build驱动器(鳄霸)",
+			"text": "登场于：$(li)假面骑士至尊鳄霸 (2018年，特别战斗影像)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/rogue#prime_rogue)假面骑士至尊鳄霸$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_rogue"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_blood",
+			"title": "Build驱动器(Blood)",
+			"text": "登场于：$(li)假面骑士Build：Be The One (2018年，电影)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/blood)假面骑士Blood$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_blood"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_killbus",
+			"title": "Build驱动器(Killbus)",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士克罗兹 (2019年，V-Cinema电影)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/killbus)假面骑士Killbus$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_killbus",
+          "text": "掉落自：$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_metal",
+			"title": "Build驱动器(金属Build)",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema电影)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/metal_build)假面骑士金属Build$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_metal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_phantom",
+			"title": "Build驱动器(幻影Build)",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema电影)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/metal_build#phantom)假面骑士幻影Build$(/l)$(br2)最多可存储3组满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:build/build_driver_phantom"
+		}
+	]
+}

@@ -1,0 +1,370 @@
+{
+	"name": "异类表盘",
+	"icon": "kamenridercraft:another_build_watch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kuuga_watch",
+			"text": "登场于：$(li)假面骑士平成世代FOREVER (2018年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kuuga_watch",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_agito_watch",
+			"title": "异类亚极陀表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_agito_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ryuki_watch",
+			"title": "异类龙骑表盘",
+			"text": "登场于：$(li)骑士时刻：假面骑士龙骑 (2019年，网络剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ryuki_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ryuga_watch",
+			"title": "异类龙牙表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ryuga_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_faiz_watch",
+			"title": "异类Faiz表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_faiz_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_blade_watch",
+			"title": "异类剑表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_blade_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_hibiki_watch",
+			"title": "异类响鬼表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_hibiki_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kabuto_watch",
+			"title": "异类甲斗表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kabuto_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_den_o_watch",
+			"title": "异类电王表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_den_o_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kiva_watch",
+			"title": "异类Kiva表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kiva_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_decade_watch",
+			"title": "异类Decade表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_decade_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_diend_watch",
+			"title": "异类Diend表盘",
+			"text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨王权 (2020年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_diend_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_w_watch",
+			"title": "异类W表盘",
+			"text": "登场于：$(li)假面骑士平成世代FOREVER (2018年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_w_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ooo_watch",
+			"title": "异类OOO表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ooo_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_fourze_watch",
+			"title": "异类Fourze表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_fourze_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_wizard_watch",
+			"title": "异类Wizard表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_wizard_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_gaim_watch",
+			"title": "异类铠武表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_gaim_watch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_drive_watch",
+			"title": "异类Drive表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_drive_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ghost_watch",
+			"title": "异类Ghost表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ghost_watch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ex_aid_watch",
+			"title": "异类Ex-Aid表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ex_aid_watch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_build_watch",
+			"title": "异类Build表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_build_watch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_zi_o_watch",
+			"title": "异类时王表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换异类时王的$(l:zi_o/riders/another_zi_o#zi_o)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_zi_o_watch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_zi_o_ii_watch",
+			"title": "异类时王二阶表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换异类时王的$(l:zi_o/riders/another_zi_o#zi_o_ii)异类时王II形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_zi_o_ii_watch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)（需变身成异类时王II形态）"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_zero_one_watch",
+			"title": "异类01表盘",
+			"text": "登场于：$(li)假面骑士：令和第一世代 (2019年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_zero_one_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_ichigo_watch",
+			"title": "异类一号表盘",
+			"text": "登场于：$(li)假面骑士：令和第一世代 (2019年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_ichigo_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_shinobi_watch",
+			"title": "异类忍骑表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_shinobi_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_quiz_watch",
+			"title": "异类Quiz表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_quiz_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "another_kikai_watch",
+			"title": "异类Kikai表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:another_kikai_watch",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

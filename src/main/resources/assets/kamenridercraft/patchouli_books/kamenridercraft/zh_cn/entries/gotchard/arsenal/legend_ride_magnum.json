@@ -1,0 +1,16 @@
+{
+	"name": "传说驾驭马格南",
+	"icon": "kamenridercraft:legend_ride_magnum",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 VS 假面骑士雷杰多 (2023年，网络剧)$(br2)由$(l:gotchard/riders/legend)假面骑士雷杰多$(/l)使用$(br2)最多可储存4张$(l:gotchard/items/ride_chemy_cards#kuuga_ride_chemy_card)传奇骑士凯米卡$(/l)，用于召唤骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/legend_ride_magnum"
+		}
+	]
+}

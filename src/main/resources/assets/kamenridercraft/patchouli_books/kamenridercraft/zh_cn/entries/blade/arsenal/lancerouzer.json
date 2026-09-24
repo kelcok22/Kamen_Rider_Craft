@@ -1,0 +1,16 @@
+{
+	"name": "醒杖",
+	"icon": "kamenridercraft:lancerouzer",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)由$(l:blade/riders/lance)假面骑士长枪$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/lancerouzer"
+		}
+	]
+}

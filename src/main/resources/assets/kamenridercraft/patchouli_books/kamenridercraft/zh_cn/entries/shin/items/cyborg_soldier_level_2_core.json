@@ -1,0 +1,16 @@
+{
+	"name": "改造士兵Level 2核心",
+	"icon": "kamenridercraft:cyborg_soldier_level_2_core",
+	"category": "kamenridercraft:shin/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)真·假面骑士 序章 (1992年，电影)$(br2)用于合成改造士兵Level 2的$(l:shin/devices/cyborg_soldier_level_2_dna)基因$(/l)"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:shin/cyborg_soldier_level_2_core"
+      }
+	]
+}

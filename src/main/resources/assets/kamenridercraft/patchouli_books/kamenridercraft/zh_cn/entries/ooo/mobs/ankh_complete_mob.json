@@ -1,0 +1,17 @@
+{
+	"name": "Ankh(完全体)",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ankh_complete_mob",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br)生命值: 250"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过使用$(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)贪欲者腰带(迷失Ankh)$(/l)右键点击$(l:ooo/mobs/ankh_mob)Ankh$(/l)后生成$(br2)特殊机制:$(li)具备飞行能力$(br2)掉落$(li)5-7个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/devices/greeed_belt#greeed_blet_ankh)贪欲者腰带(Ankh)$(/l)$(li)1个$(l:ooo/items/core_medals#taka_ankh_medal)碎裂的鹰核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#taka_medal)鹰核心硬币$(/l) (20%)$(li)1个$(l:ooo/items/core_medals#kujaku_medal)孔雀核心硬币$(/l) (40%)$(li)1个$(l:ooo/items/core_medals#condor_medal)秃鹫核心硬币$(/l) (40%)"
+		}
+	]
+}

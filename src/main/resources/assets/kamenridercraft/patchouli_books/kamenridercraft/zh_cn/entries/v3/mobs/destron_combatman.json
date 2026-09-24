@@ -1,0 +1,17 @@
+{
+	"name": "迪斯特龙战斗员",
+	"icon": "kamenridercraft:v3_logo",
+	"category": "kamenridercraft:v3/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:destron_combatman",
+			"text": "登场于:$(li)假面骑士V3（1973年，电视剧）$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 沙漠, 风袭丘陵, 森林, 沼泽, 红树林沼泽, 冻洋, 冰冻深海, 冻河, 桦木森林, 积雪针叶林, 原始松木针叶林, 风袭森林, 恶地, 风蚀恶地, 繁茂恶地$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (33%)$(li)1个$(l:v3/items/double_typhoon_cores#double_typhoon_core)双重台风核心$(/l) (33%)$(li)1个$(l:v3/items/riderman_belt_core)骑士代扣核心$(/l) (26%)$(li)1个$(l:v3/items/double_typhoon_cores#blue_double_typhoon_core)蓝色双重台风核心$(/l) (6.7%)"
+		}
+	]
+}

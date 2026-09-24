@@ -1,0 +1,17 @@
+{
+	"name": "空白G芯片",
+	"icon": "kamenridercraft:g3core",
+	"category": "kamenridercraft:agito/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用作G系统物品的基础物品和修复材料$(br2)可在$(l:misc/blocks/machine_blocks#g_chip_programer)G-系统芯片编程器$(/l)上右击以获取G芯片"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/g3core",
+			"text": "掉落自：$(li)$(l:agito/mobs/anguis_masculus)安格维斯·玛斯库鲁斯$(/l)"
+		}
+	]
+}

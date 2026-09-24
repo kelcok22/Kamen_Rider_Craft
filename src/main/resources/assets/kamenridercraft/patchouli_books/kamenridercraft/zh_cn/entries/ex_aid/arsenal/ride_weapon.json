@@ -1,0 +1,17 @@
+{
+	"name": "驾驭武装",
+	"icon": "kamenridercraft:ride_weapon",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/riders/ride_player)骑士玩家$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ride_weapon",
+          "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)的装备"
+		}
+	]
+}

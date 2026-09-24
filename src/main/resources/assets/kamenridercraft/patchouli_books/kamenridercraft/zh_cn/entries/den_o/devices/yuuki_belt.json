@@ -1,0 +1,16 @@
+{
+	"name": "幽汽腰带",
+	"icon": "kamenridercraft:yuuki_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/yuuki)假面骑士幽汽$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/yuuki_belt"
+		}
+	]
+}

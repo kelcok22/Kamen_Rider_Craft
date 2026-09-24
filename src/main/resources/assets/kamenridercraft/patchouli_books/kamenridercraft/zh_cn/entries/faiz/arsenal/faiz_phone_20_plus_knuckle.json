@@ -1,0 +1,16 @@
+{
+    "name": "SB-555P20击拳模式",
+    "icon": "kamenridercraft:faiz_phone_20_plus_knuckle",
+    "category": "kamenridercraft:faiz/arsenal",
+    "sortnum": 16,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士555 20周年：天堂重获 (2024年，电影)$(br2)由 $(l:faiz/riders/next_faiz)假面骑士Next Faiz$(/l) 使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/faiz_phone_20_plus_knuckle"
+        }
+    ]
+}

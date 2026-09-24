@@ -1,0 +1,17 @@
+{
+	"name": "死亡之戟",
+	"icon": "kamenridercraft:dis_halberd",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)由$(l:wizard/riders/sorcerer)假面骑士金魔法师$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/dis_halberd",
+          "text": "掉落自：$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l)的装备"
+		}
+	]
+}

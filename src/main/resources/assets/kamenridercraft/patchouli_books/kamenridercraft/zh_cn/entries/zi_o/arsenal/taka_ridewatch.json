@@ -1,0 +1,16 @@
+{
+  "name": "小机械罐头鹰表盘",
+  "icon": "kamenridercraft:taka_ridewatch",
+  "category": "kamenridercraft:zi_o/arsenal",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于召唤飞鹰表盘机械"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zi_o/taka_ridewatch"
+    }
+  ]
+}

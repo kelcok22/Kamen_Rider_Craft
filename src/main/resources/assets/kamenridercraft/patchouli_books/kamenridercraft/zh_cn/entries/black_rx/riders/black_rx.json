@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士Black RX",
+	"icon": "kamenridercraft:rx_core",
+	"category": "kamenridercraft:black_rx/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "black_rx",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:rx_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:black_rx/items/rx_core)Black RX核心$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Black RX",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)通过穿戴$(l:black_rx/devices/sun_riser)太阳升华器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "roborider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:robo_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "机械骑士",
+			"text": "通过使用$(l:black_rx/items/robo_core)机械骑士(帝王石)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Black RX",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)通过穿戴$(l:black_rx/devices/sun_riser)太阳升华器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "biorider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sun_riser\",components:{custom_data:{slot_tex1:\"kamenridercraft:bio_core\"}},Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "生化骑士",
+			"text": "通过使用$(l:black_rx/items/bio_core)生化骑士(帝王石)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Black RX",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)通过穿戴$(l:black_rx/devices/sun_riser)太阳升华器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)海豚的恩惠 II$(li)水下呼吸$(li)力量 II"
+		}
+	]
+}

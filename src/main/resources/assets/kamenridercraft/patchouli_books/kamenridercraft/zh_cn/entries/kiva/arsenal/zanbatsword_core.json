@@ -1,0 +1,16 @@
+{
+	"name": "过去的魔皇剑",
+	"icon": "kamenridercraft:zanbatsword_core",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由 $(l:kiva/riders/dark_kiva)假面骑士黑暗Kiva$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/zanvatsword_core"
+		}
+	]
+}

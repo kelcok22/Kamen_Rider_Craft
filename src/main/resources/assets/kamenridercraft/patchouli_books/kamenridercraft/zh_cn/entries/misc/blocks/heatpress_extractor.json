@@ -1,0 +1,17 @@
+{
+	"name": "冲击式提取仪",
+	"icon": "kamenridercraft:heatpress_extractor",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 42,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "作为 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l)的职业方块"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gavv/heatpress_extractor"
+		}
+	]
+}

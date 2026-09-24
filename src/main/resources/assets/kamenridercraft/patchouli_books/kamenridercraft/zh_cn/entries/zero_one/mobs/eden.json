@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士伊甸",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:eden",
+			"text": "登场于：$(li)假面骑士01：真实×时间 (2020年，电影)$(br)生命值: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的概率从$(l:zero_one/mobs/abaddon)假面骑士·亚巴顿$(/l)进化而来$(br2)掉落$(li)2-4个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/zetsumerisekeys#eden_zetsumerisekey)伊甸绝灭升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#hellrise_progrisekey)地狱升华蝗虫程式升华钥$(/l) (20%)"
+		}
+	]
+}

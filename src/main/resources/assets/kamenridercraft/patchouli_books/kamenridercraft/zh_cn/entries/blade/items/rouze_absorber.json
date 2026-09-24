@@ -1,0 +1,16 @@
+{
+	"name": "觉醒融合器",
+	"icon": "kamenridercraft:rouze_absorber",
+	"category": "kamenridercraft:blade/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于切换假面骑士剑的$(l:blade/riders/blade#jack)侍卫形态$(/l)和$(l:blade/riders/blade#king)国王形态$(/l)$(br2)用于切换假面骑士格连的$(l:blade/riders/garren#jack)侍卫形态$(/l)和$(l:blade/riders/garren#king)国王形态$(/l)$(br2)用于切换假面骑士连格尔的$(l:blade/riders/leangle#jack)侍卫形态$(/l)和$(l:blade/riders/leangle#king)国王形态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/rouze_absorber"
+		}
+	]
+}

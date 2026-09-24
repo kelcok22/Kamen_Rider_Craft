@@ -1,0 +1,29 @@
+{
+	"name": "炼金术士驱动器",
+	"icon": "kamenridercraft:alchemisdriver",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemisdriver",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/majade)假面骑士Majade$(/l)$(br2)最多可存储10组驾驭凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/alchemisdriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alchemisdriver_wind",
+			"title": "炼金术士驱动器(Wind)",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/wind)假面骑士Wind$(/l)$(br2)最多可存储10组驾驭凯米卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gotchard/alchemisdriver_wind"
+		}
+	]
+}

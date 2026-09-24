@@ -1,0 +1,73 @@
+{
+	"name": "拟人化形器",
+	"icon": "kamenridercraft:nyelv_mimicdeviser",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "jeeb_mimicdeviser",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/jeeb_stomach)吉普·斯托马克"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/jeeb_mimicdeviser",
+          "text": "掉落自：$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)的装备"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shiita_mimicdeviser",
+        "title": "拟人化形器",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/shiita_stomach)西塔·斯托马克"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/shiita_mimicdeviser",
+          "text": "掉落自：$(li)$(l:gavv/mobs/shiita_stomach)西塔·斯托马克$(/l)的装备"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "nyelv_mimicdeviser",
+        "title": "拟人化形器",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/nyelv_stomach)尼耶鲁布·斯托马克"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/nyelv_mimicdeviser",
+          "text": "掉落自：$(li)$(l:gavv/mobs/nyelv_stomach)尼耶鲁布·斯托马克$(/l)的装备"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "glotta_mimicdeviser",
+			"title": "拟人化形器",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/glotta_stomach)格罗塔·斯托马克"
+		},
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/glotta_mimicdeviser",
+          "text": "掉落自：$(li)$(l:gavv/mobs/glotta_stomach)格罗塔·斯托马克$(/l)的装备"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "lango_mimicdeviser",
+        "title": "拟人化形器",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/lango_stomach)兰戈·斯托马克"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/lango_mimicdeviser",
+        "text": "掉落自：$(li)$(l:gavv/mobs/lango_stomach)兰戈·斯托马克$(/l)的装备"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "bocca_mimicdeviser",
+        "title": "拟人化形器",
+        "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/bocca_jaldak)博卡·贾尔达克"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:gavv/bocca_mimicdeviser",
+        "text": "掉落自：$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)的装备"
+      }
+    ]
+}

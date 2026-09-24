@@ -1,0 +1,16 @@
+{
+	"name": "G侍酒师刀",
+	"icon": "kamenridercraft:g_sommelier_knife",
+	"category": "kamenridercraft:g/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士G (2009年, 电视特别篇)$(br2)由$(l:g/riders/g)假面骑士G$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/g_sommelier_knife"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "弩弓带扣",
+	"icon": "kamenridercraft:larc_buckle",
+	"category": "kamenridercraft:blade/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)与$(l:blade/devices/armor)剑装甲$(/l)一起穿戴，可变身为$(l:blade/riders/larc)假面骑士弩弓"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/larc_buckle"
+		}
+	]
+}

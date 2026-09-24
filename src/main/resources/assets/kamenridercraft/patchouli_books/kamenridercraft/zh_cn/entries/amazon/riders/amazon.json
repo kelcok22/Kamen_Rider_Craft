@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士Amazon",
+	"icon": "kamenridercraft:condorer_wheel",
+	"category": "kamenridercraft:amazon/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:condorer\",components:{custom_data:{slot_tex1:\"kamenridercraft:condorer_wheel\"}},Count:1b},{id:\"kamenridercraft:amazonlegs\",Count:1b},{id:\"kamenridercraft:amazontroso\",Count:1b},{id:\"kamenridercraft:amazonhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:amazon/items/condorer_wheel)印加腕轮$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Amazon",
+			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)$(br2)通过穿戴 $(l:amazon/devices/condorer#condorer)孔德拉$(/l) 进行变身$(br2)状态效果：$(li)速度 III$(li)生命恢复 II$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pre_amazon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:condorer\",components:{custom_data:{slot_tex1:\"kamenridercraft:condorer_wheel_pre_amazon\"}},Count:1b},{id:\"kamenridercraft:amazonlegs\",Count:1b},{id:\"kamenridercraft:amazontroso\",Count:1b},{id:\"kamenridercraft:amazonhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "史前",
+			"text": "通过使用(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. 英雄传奇$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "史前",
+			"text": "登场于:$(li)预阶段（2004，S.I.C. 英雄传奇）$(br2)通过穿戴 $(l:amazon/devices/condorer#condorer)孔德拉$(/l) 进行变身$(br2)状态效果：$(li)速度 II$(li)虚弱"
+		}
+	]
+}

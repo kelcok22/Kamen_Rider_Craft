@@ -1,0 +1,16 @@
+{
+	"name": "僵尸破坏者(毒充能)",
+	"icon": "kamenridercraft:zombie_breaker_poison_charge",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/buffa#zombie)僵尸$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/zombie_breaker_poison_charge"
+		}
+	]
+}

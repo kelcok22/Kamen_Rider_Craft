@@ -1,0 +1,84 @@
+{
+	"name": "锹形虫记忆体",
+	"icon": "kamenridercraft:stag_memory",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "stag_memory",
+			"text": "登场于：$(li)假面骑士W（2009年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stag_memory",
+			"text": "该物品目前无法获取。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spider_memory",
+			"title": "蜘蛛记忆体",
+			"text": "登场于：$(li)假面骑士W（2009年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spider_memory",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bat_memory",
+			"title": "蝙蝠记忆体",
+			"text": "登场于:$(li)假面骑士W (2009, 电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bat_memory",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beetle_memory",
+			"title": "独角仙记忆体",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beetle_memory",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "frog_memory",
+			"title": "青蛙记忆体",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:frog_memory",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "denden_memory",
+			"title": "蜗牛记忆体",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:denden_memory",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		}
+	]
+}

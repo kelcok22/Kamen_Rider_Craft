@@ -1,0 +1,250 @@
+{
+    "name": "镜骑士",
+    "icon": "kamenridercraft:ryuki_logo",
+    "category": "kamenridercraft:ryuki/mobs",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "scissors",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_scissors\",Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士利刃",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：樱花树林、冰封山峰、尖峭山峰、草甸、积雪山坡、石峰$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#volcancer_advent)火山巨蟹降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/strike_vent_cards#scissors_pinch_vent)利刃巨螯降临卡$(/l) 或 $(l:ryuki/arsenal/guard_vent_cards#shell_defense_vent)甲壳防御降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "zolda",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_zolda\",Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士铁兵",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：桦木森林、黑森林、繁花森林、森林、雪林、原始桦木森林、苍白花园$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#magnugiga_advent)庞然巨牛降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/shoot_vent_cards#giga_launcher_vent)巨大发射器射击降临卡$(/l)、$(l:ryuki/arsenal/other_form_advent_cards#giga_cannon_vent)巨大加农发射器降临卡$(/l)、$(l:ryuki/arsenal/guard_vent_cards#giga_armor_vent)巨大护甲防御降临卡$(/l)、$(l:ryuki/arsenal/other_form_advent_cards#giga_tector_vent)巨大铁臂防卫降临卡$(/l) 或 $(l:ryuki/arsenal/strike_vent_cards#giga_horn_vent)巨大号角降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "raia",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",components:{custom_data:{slot_tex1:\"kamenridercraft:evildiver_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士海鳐",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(li)若你物品栏中持有 $(l:ryuki/items/survive_cards#survive_rekka)生存卡$(/l)，会切换为 $(l:ryuki/riders/raia#survive)生存$(/l) 形态$(br2)生成群系：冷水海洋、深冷水海洋、深冻洋、深温水海洋、深海、冻洋、温水海洋、海洋、暖水海洋$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#evildiver_advent)邪恶潜行鳐降临卡$(/l)$(li)2张 $(l:ryuki/arsenal/evil_whip_vent)邪恶尾鞭降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "raia_survive",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)ICON：篠原保角色艺术画集 (2006年，艺术画册)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士海鳐 生存",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#evildiver_advent)邪恶潜行鳐降临卡$(/l)$(li)2张 $(l:ryuki/arsenal/shoot_vent_cards#evil_visor_zwei_vent)邪恶召机Ⅱ射击降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ouja",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:venosnaker_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士王蛇",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(li)若你物品栏中持有 $(l:ryuki/items/survive_cards#survive_rekka)生存卡$(/l)，会切换为 $(l:ryuki/riders/ouja#survive)生存$(/l) 形态$(br2)生成群系：红树林沼泽、沼泽$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#venosnaker_advent)毒蛇王降临卡$(/l)$(li)2张 $(l:ryuki/arsenal/sword_vent_cards#veno_saber_vent)毒军刀攻击降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ouja_survive",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ouja\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_mugen\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士王蛇 生存",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#venosnaker_advent)毒蛇王降临卡$(/l)$(li)2张 $(l:ryuki/arsenal/sword_vent_cards#veno_visor_zwei_vent)蛇剑刃刀剑降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "gai",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_gai\",components:{custom_data:{slot_tex1:\"kamenridercraft:metalgelas_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士铠",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：恶地、沙漠、风蚀恶地、疏林恶地$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#metalgelas_advent)金属角犀降临卡$(/l)$(li)2张 $(l:ryuki/arsenal/strike_vent_cards#metal_horn_vent)金属刺角降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "tiger",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_tiger\",components:{custom_data:{slot_tex1:\"kamenridercraft:destwilder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士大牙",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：原始松木针叶林、原始云杉针叶林、积雪针叶林、针叶林$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#destwilder_advent)死亡野虎降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/strike_vent_cards#dest_claw_vent)死亡利爪降临卡$(/l) 或 $(l:ryuki/arsenal/freeze_vent)冰冻降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "imperer",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_imperer\",components:{custom_data:{slot_tex1:\"kamenridercraft:gigazelle_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士羚皇",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：热带草原、热带高原、风袭热带草原$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#gigazelle_advent)巨大瞪羚降临卡$(/l)$(li)2张 $(l:ryuki/arsenal/gazelle_stab_vent)瞪羚尖刺降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ryuki",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragreder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士龙骑",
+            "text": "生成群系：白天期间所有其他生物群系/维度$(br2)特殊能力：$(li)可以使用降临卡获取武器$(li)若你物品栏中持有 $(l:ryuki/items/survive_cards#survive_rekka)生存卡$(/l)，会切换为 $(l:ryuki/riders/ryuki#survive)生存$(/l) 形态$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#dragreder_advent)无双龙降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#drag_saber_vent)龙军刀降临卡$(/l)、$(l:ryuki/arsenal/strike_vent_cards#drag_claw_vent)龙召机攻击降临卡$(/l) 或 $(l:ryuki/arsenal/guard_vent_cards#drag_shield_vent)龙护盾$(/l) $(l:ryuki/items/other_form_advent_cards#drag_shield_vent_form)降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ryuki_survive",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuki\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士龙骑 生存",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1-2张 $(l:ryuki/arsenal/shoot_vent_cards#drag_visor_zwei_vent)龙召机Ⅱ射击降临卡$(/l)、$(l:ryuki/arsenal/sword_vent_cards#drag_blade_vent)龙利刃刀剑降临卡$(/l)、$(l:ryuki/arsenal/guard_vent_cards#fire_wall_vent)火焰环身防御降临卡$(/l)、$(l:ryuki/arsenal/shoot_vent_cards#meteor_bullet_vent)流星火弹射击降临卡$(/l) 或 $(l:ryuki/arsenal/trick_vent_cards#ryuki_trick_vent)诡计降临(龙骑)$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "knight",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:darkwing_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士夜骑",
+            "text": "生成群系：夜晚期间所有其他生物群系/维度$(br2)特殊能力：$(li)可以使用降临卡获取武器$(li)若你物品栏中持有 $(l:ryuki/items/survive_cards#survive_rekka)生存卡$(/l)，会切换为 $(l:ryuki/riders/knight#survive)生存$(/l) 形态$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#darkwing_advent)黑暗翼蝠降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#wing_lancer_vent)蝠翼长矛刀剑降临卡$(/l)、$(l:ryuki/arsenal/trick_vent_cards#knight_trick_vent)诡计降临(夜骑)$(/l)、$(l:ryuki/items/other_form_advent_cards#wing_wall_vent)羽翼屏障防卫降临卡$(/l) 或 $(l:ryuki/arsenal/nasty_vent)声波降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "knight_survive",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_knight\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士夜骑 生存",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1-2张 $(l:ryuki/arsenal/guard_vent_cards#dark_visor_zwei_vent)黑暗召机Ⅱ射击降临卡$(/l)、$(l:ryuki/arsenal/sword_vent_cards#dark_blade_vent)黑暗剑刃刀剑降临卡$(/l)、$(l:ryuki/arsenal/shoot_vent_cards#dark_arrow_vent)黑暗弩弓射击降临卡$(/l) 或 $(l:ryuki/arsenal/blust_vent)暴风降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ryuga",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragblacker_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑：最终篇章 (2002年，电影)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士龙牙",
+            "text": "生成群系：玄武岩三角洲、绯红森林、下界荒地、灵魂沙谷、诡异森林$(br2)特殊能力：$(li)可以使用降临卡获取武器$(li)若你物品栏中持有 $(l:ryuki/items/survive_cards#survive_rekka)生存卡$(/l)，会切换为 $(l:ryuki/riders/ryuga#survive)生存$(/l) 形态$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#dragblacker_advent)暗黑龙降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#drag_saber_vent_ryuga)龙军刀降临卡(龙牙)$(/l)、$(l:ryuki/arsenal/strike_vent_cards#drag_claw_vent_ryuga)龙召机攻击降临卡(龙牙)$(/l) 或 $(l:ryuki/arsenal/guard_vent_cards#drag_shield_vent_ryuga)龙护盾$(/l) $(l:ryuki/items/other_form_advent_cards#drag_shield_vent_form_ryuga)降临卡(龙牙)$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "ryuga_survive",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_ryuga\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_rekka_ryuga\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)World of If (2005年，S.I.C.英雄传奇)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士龙牙 生存",
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)2张 $(l:ryuki/arsenal/sword_vent_cards#black_drag_visor_zwei_vent)黑暗龙召机Ⅱ射击降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "femme",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_femme\",components:{custom_data:{slot_tex1:\"kamenridercraft:blancwing_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑：最终篇章 (2002年，电影)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士花梦",
+            "text": "生成群系：玄武岩三角洲、绯红森林、下界荒地、灵魂沙谷、诡异森林$(br2)特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#blancwing_advent)白翼天鹅降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#wing_slasher_vent)羽翼砍剑刀剑降临卡$(/l) 或 $(l:ryuki/arsenal/guard_vent_cards#wing_shield_vent)羽翼护盾防御降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "verde",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_verde\",components:{custom_data:{slot_tex1:\"kamenridercraft:biogreeza_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑特别篇：13骑士 (2002年，电视特别篇)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士妖翠",
+            "text": "生成群系：玄武岩三角洲、绯红森林、下界荒地、灵魂沙谷、诡异森林$(br2)特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#biogreeza_advent)生化绿避役降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/bio_winder_vent)生化缠绕者降临卡$(/l) 或 $(l:ryuki/arsenal/clear_vent)清除降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "abyss",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_abyss\",components:{custom_data:{slot_tex1:\"kamenridercraft:abysslasher_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士深渊",
+            "text": "生成群系：城市维度$(br2)特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#abysslasher_advent)深渊鲨皇降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#abyss_saber_vent)深渊军刀刀剑降临卡$(/l) 或 $(l:ryuki/arsenal/strike_vent_cards#abyss_claw_vent)深渊猛击爪降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "mirror_zi_o",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:ziku_driver_zi_o_mirror\",components:{custom_data:{slot_tex1:\"kamenridercraft:zi_o_mirror_ridewatch\"}},Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士时王(镜世界版本)",
+            "text": "生成群系：城市维度$(br2)掉落$(li)1个 $(l:zi_o/items/ridewatches#zi_o_mirror_ridewatch)镜世界时王骑士表盘$(/l)$(li)2-3个 $(l:zi_o/items/blank_watch)空白骑士表盘$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "alternative",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:alternative_v_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:psycorogue_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士抉择者",
+            "text": "生成群系：末地荒地、末地高地、末地内陆、小型末地岛、末地$(br2)特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#psycorogue_advent)疯蟋恶徒降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#slash_dagger_vent)猛砍匕首降临卡$(/l) 或 $(l:ryuki/arsenal/accele_vent)加速降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "alternative_zero",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:alternative_zero_v_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:psycorogue_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士抉择者零号",
+            "text": "生成群系：末地荒地、末地高地、末地内陆、小型末地岛、末地$(br2)特殊能力：$(li)可以使用降临卡获取武器$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#psycorogue_advent)疯蟋恶徒降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/sword_vent_cards#slash_dagger_vent)猛砍匕首降临卡$(/l) 或 $(l:ryuki/arsenal/accele_vent)加速降临卡$(/l)"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "blade",
+            "entity": "kamenridercraft:mirror_rider{ArmorItems:[{id:\"kamenridercraft:v_buckle_blade\",components:{custom_data:{slot_tex1:\"kamenridercraft:guldthunder_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+            "text": "登场于：$(li)ICON：篠原保角色艺术画集 (2006年，艺术画册)$(br)生命值：40"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士剑",
+            "text": "生成群系：$(l:den_o/dimensions/sands_of_time)时间沙漠$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#guldthunder_advent)金凤雷霆降临卡$(/l)"
+        }
+    ]
+}

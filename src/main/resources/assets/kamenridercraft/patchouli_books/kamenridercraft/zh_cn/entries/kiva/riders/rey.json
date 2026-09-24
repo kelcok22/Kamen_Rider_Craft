@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士冷",
+	"icon": "kamenridercraft:keyfuestle",
+	"category": "kamenridercraft:kiva/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:reydriver\",Count:1b},{id:\"kamenridercraft:kivalegs\",Count:1b},{id:\"kamenridercraft:kivatroso\",Count:1b},{id:\"kamenridercraft:kivahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士冷",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)通过穿戴$(l:kiva/devices/reydriver)冷Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 IV$(li)急迫$(li)力量 III"
+		}
+	]
+}

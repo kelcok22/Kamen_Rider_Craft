@@ -1,0 +1,16 @@
+{
+	"name": "火焰组件 烈焰枪",
+	"icon": "kamenridercraft:hee_hackgun",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)由Fourze的$(l:fourze/riders/fourze#firestates)火焰状态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/hee_hackgun"
+		}
+	]
+}

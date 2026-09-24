@@ -1,0 +1,16 @@
+{
+	"name": "帝王石(红色影月)",
+	"icon": "kamenridercraft:creation_king_stone",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士3D战斗 FROM GANBARIDE (2014年, 3D电影)$(br2)用于切换影月的$(l:black/riders/shadow_moon#red_shadow_moon)红影月$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black/creation_king_stone"
+		}
+	]
+}

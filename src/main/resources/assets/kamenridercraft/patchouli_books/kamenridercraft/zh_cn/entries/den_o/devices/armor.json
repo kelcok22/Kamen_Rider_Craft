@@ -1,0 +1,24 @@
+{
+	"name": "电王装甲",
+	"icon": "kamenridercraft:den_ohead",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "搭配电王系列骑士的变身器使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_ohead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_otroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_olegs"
+		}
+	]
+}

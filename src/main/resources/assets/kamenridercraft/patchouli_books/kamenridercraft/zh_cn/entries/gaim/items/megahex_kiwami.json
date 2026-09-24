@@ -1,0 +1,20 @@
+{
+	"name": "梅嘉赫克斯核心",
+	"icon": "kamenridercraft:megahex_kiwami",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "梅嘉赫克斯核心",
+			"text": "登场于：$(li)假面骑士×假面骑士Drive&铠武 剧场版 全能量爆发（2014年，电影）$(br2)可切换为梅嘉赫克斯的$(l:gaim/riders/megahex#megahex)基础形态$(/l)及$(l:gaim/riders/megahex#kiwami)极武锁种基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:megahex_kiwami",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/megahex)梅嘉赫克斯$(/l)"
+		}
+	]
+}

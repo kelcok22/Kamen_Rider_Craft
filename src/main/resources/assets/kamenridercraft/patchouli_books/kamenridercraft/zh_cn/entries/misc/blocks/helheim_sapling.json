@@ -1,0 +1,19 @@
+{
+	"name": "海姆冥界树苗",
+	"icon": "kamenridercraft:helheim_sapling",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于种植海姆冥界树木（可在海姆冥界外种植）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_sapling",
+			"title": " ",
+			"text": "从 $(l:misc/blocks/helheim_leaves)海姆冥界树叶$(/l)掉落"
+		}
+	]
+}

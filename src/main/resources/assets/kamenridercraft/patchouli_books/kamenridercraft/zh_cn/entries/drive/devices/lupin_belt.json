@@ -1,0 +1,19 @@
+{
+	"name": "鲁邦腰带",
+	"icon": "kamenridercraft:lupin_belt",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/lupin)假面骑士鲁邦"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lupin_belt",
+			"title": " ",
+			"text": "通过不佩戴任何腰带或驱动器发射$(l:drive/arsenal/lupin_gunner)鲁邦枪手$(/l)获得"
+		}
+	]
+}

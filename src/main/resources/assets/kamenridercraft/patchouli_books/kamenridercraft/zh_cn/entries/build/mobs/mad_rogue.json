@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士狂霸",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:mad_rogue",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#mad_rogue_boss_block)狂霸BOSS召唤方块$(/l)召唤而来$(br2)特殊机制：$(li)具有飞行能力$(br2)掉落$(li)3-5个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/fullbottles#bat_full_bottle)蝙蝠满装瓶罐$(/l)$(li)1个$(l:build/items/fullbottles#engine_full_bottle)引擎满装瓶罐$(/l) (50%)$(li)1个$(l:build/items/fullbottles#black_lost_bat_full_bottle)迷失蝙蝠满装瓶罐$(/l) (50%)"
+		}
+	]
+}

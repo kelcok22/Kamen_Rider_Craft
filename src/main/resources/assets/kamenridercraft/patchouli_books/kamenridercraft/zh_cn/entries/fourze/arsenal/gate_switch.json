@@ -1,0 +1,16 @@
+{
+	"name": "大门开关",
+	"icon": "kamenridercraft:gate_switch",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用途：用于进入$(l:fourze/dimensions/the_moon)月球$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/gate_switch"
+		}
+	]
+}

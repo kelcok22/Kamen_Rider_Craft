@@ -1,0 +1,17 @@
+{
+	"name": "地帝裂地剑",
+	"icon": "kamenridercraft:orga_stlanzer",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555: Paradise Lost (2003年，电影)$(br2)由$(l:faiz/riders/orga)假面骑士地帝$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/orga_stlanzer",
+			"text": "掉落自：$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l)的装备"
+		}
+	]
+}

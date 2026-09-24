@@ -1,0 +1,16 @@
+{
+	"name": "飞电03驱动器",
+	"icon": "kamenridercraft:hiden_zero_three_driver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Outsiders（2022年，网络剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/zero_three)假面骑士03"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/hiden_zero_three_driver"
+		}
+	]
+}

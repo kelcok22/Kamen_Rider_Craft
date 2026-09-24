@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士公爵",
+	"icon": "kamenridercraft:genesis_driver_duke",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "lemon_energy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "柠檬能量武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#lemon_energy_lockseed)柠檬能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士公爵",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/genesis_driver#genesis_driver_duke)创世纪驱动器$(/l)进行变身$(br2)任何创世纪驱动器使用者均可使用此形态$(br2)状态效果：$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon_energy",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_fruits_energy_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火龙果能量武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#dragon_fruits_energy_lockseed)火龙果能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士公爵",
+			"text": "登场于：$(li)假面骑士×假面骑士 Drive&铠武：电影大战全速前进 (2014年，电影)$(br2)通过穿戴$(l:gaim/devices/genesis_driver#genesis_driver_duke)创世纪驱动器$(/l)进行变身$(br2)任何创世纪驱动器使用者均可使用此形态$(br2)状态效果：$(li)抗性提升 III$(li)急迫 II$(li)饱和$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lemon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:lemon_lockseed\",slot_tex2:\"kamenridercraft:basic_duke_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "柠檬武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#lemon_lockseed)柠檬锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士公爵",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士公爵 (2015年，V-Cinema电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_duke)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)急迫$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wizard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:genesis_driver_duke\",components:{custom_data:{slot_tex1:\"kamenridercraft:wizard_lockseed\",slot_tex2:\"kamenridercraft:genesis_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Wizard武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#wizard_lockseed)Wizard锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士公爵",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/genesis_driver#genesis_driver_duke)创世纪驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)抗火"
+		}
+	]
+}

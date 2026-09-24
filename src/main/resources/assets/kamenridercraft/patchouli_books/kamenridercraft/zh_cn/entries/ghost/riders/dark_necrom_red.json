@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士黑暗幽冥(红)",
+	"icon": "kamenridercraft:proto_mega_ulorder_red",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "dark_necrom_red",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_red\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_necrom_red_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黑暗幽冥眼魂(红)形态",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#dark_necrom_red_ghost_eyecon)黑暗幽冥眼魂(红)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黑暗幽冥(红)",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)原型兆目润泽器(黑暗幽冥·红)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "benkei",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:proto_mega_ulorder_red\",components:{custom_data:{slot_tex1:\"kamenridercraft:necrom_ghost_eyecon\",slot_tex2:\"kamenridercraft:benkei_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "弁庆眼魂形态",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#benkei_ghost_eyecon)弁庆眼魂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黑暗幽冥(红)",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)原型兆目润泽器(黑暗幽冥·红)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)力量 II"
+		}
+	]
+}

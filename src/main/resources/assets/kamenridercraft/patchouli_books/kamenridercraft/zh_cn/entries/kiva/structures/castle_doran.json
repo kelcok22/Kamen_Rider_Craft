@@ -1,0 +1,25 @@
+{
+	"name": "城堡德兰龙",
+	"icon": "kamenridercraft:kiva_logo",
+	"category": "kamenridercraft:kiva/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "城堡德兰龙",
+			"text": "登场于:$(li)假面骑士Kiva（2008年，电视剧）$(br2)生成群系：桦木森林、黑森林、繁花森林、森林、雪林、原始桦木森林、蘑菇岛$(br2)箱子战利品见下页"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+              "kamenridercraft:patchouli_books/kamenridercraft/images/castle_doran_2.png"
+			],
+			"title": " "
+		},
+      {
+        "type": "patchouli:text",
+        "text": "箱子战利品:$(li)4-10个$(l:kiva/items/fuestle)笛哨$(/l) (50% x2-3)$(li)4-6个骨头 (25% x2-3)$(li)2-6个$(l:misc/blocks/fangire_glass)牙血鬼玻璃$(/l) (25% x2-3)$(li)1-2个$(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨(Kiva)$(/l)$(li)1-2个$(l:kiva/arsenal/garulu_statue)加鲁鲁雕像$(/l)、$(l:kiva/arsenal/basshaa_statue)巴夏雕像$(/l)或$(l:kiva/arsenal/dogga_statue)德加雕像$(/l)$(li)1个$(l:misc/items/music_discs#break_the_chain_music_disc)Break the Chain 音乐唱片$(/l)、$(l:kiva/items/fuestles#doranfuestle)德兰龙笛哨$(/l)或$(l:kiva/items/fuestles#buroonfuestle)布隆推进者笛哨$(/l) (50%)"
+      }
+    ]
+}

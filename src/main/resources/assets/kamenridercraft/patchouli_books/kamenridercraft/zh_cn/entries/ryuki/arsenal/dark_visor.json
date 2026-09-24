@@ -1,0 +1,16 @@
+{
+	"name": "黑暗召机",
+	"icon": "kamenridercraft:dark_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/knight#knight)假面骑士夜骑$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/dark_visor"
+		}
+	]
+}

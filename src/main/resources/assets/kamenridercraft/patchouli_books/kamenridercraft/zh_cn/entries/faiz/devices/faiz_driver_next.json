@@ -1,0 +1,16 @@
+{
+	"name": "Faiz驱动器NEXT",
+	"icon": "kamenridercraft:faiz_driver_next",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/next_faiz)假面骑士Next Faiz"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_driver_next"
+		}
+	]
+}

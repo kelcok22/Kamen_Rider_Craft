@@ -1,0 +1,71 @@
+{
+	"name": "射击降临",
+	"icon": "kamenridercraft:drag_visor_zwei_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 53,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_visor_zwei_vent",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#survive)龙骑生存形态$(/l)与$(l:ryuki/arsenal/drag_visor)龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/drag_visor_zwei)龙召机Ⅱ$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_visor_zwei_vent",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)假面骑士龙骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "meteor_bullet_vent",
+			"title": "流星火弹射击降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#survive)龙骑生存形态$(/l)与$(l:ryuki/arsenal/drag_visor)龙召机$(/l)一同使用，可获得10秒的大炮III效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:meteor_bullet_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)假面骑士龙骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_arrow_vent",
+			"title": "黑暗弩弓射击降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/knight#survive)夜骑生存形态$(/l)与$(l:ryuki/arsenal/dark_visor)黑暗召机$(/l)一同使用，可获得$(l:ryuki/arsenal/dark_arrow)黑暗弩弓$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_arrow_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight_survive)假面骑士夜骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giga_launcher_vent",
+			"title": "巨大发射器射击降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/zolda#zolda)假面骑士铁兵$(/l)与$(l:ryuki/arsenal/magna_visor)庞然召机$(/l)一同使用，可获得$(l:ryuki/arsenal/giga_launcher)巨大发射器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giga_launcher_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#zolda)假面骑士铁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "evil_visor_zwei_vent",
+			"title": "邪恶召机Ⅱ射击降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/raia#survive)海鳐生存形态$(/l)与$(l:ryuki/arsenal/evil_visor)邪恶召机$(/l)一同使用，可获得$(l:ryuki/arsenal/evil_visor_zwei)邪恶召机Ⅱ$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evil_visor_zwei_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#raia_survive)假面骑士海鳐 生存形态$(/l)"
+		}
+	]
+}

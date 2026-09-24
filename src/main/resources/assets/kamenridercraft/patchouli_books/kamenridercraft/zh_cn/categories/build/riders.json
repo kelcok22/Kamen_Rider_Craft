@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:build/main",
+    "name": "Build系列骑士",
+    "description": "来自《假面骑士Build》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:buildhead",
+    "sortnum": 0
+}

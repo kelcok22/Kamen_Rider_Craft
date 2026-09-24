@@ -1,0 +1,71 @@
+{
+    "name": "许愿卡",
+    "icon": "kamenridercraft:boost_mkii_wish_card",
+    "category": "kamenridercraft:geats/items",
+    "sortnum": 11,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "boost_mkii_wish_card",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:boost_mkii_wish_card",
+            "text": "掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jyamashin_wish_card",
+            "title": "邪魔神许愿卡",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于将 $(l:geats/riders/buffa)假面骑士霸牛$(/l) 恢复至登录形态并解锁 $(l:geats/riders/buffa#jyamashin)邪魔神$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:jyamashin_wish_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bujin_wish_card",
+            "title": "武神之刃许愿卡",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bujin_wish_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fantasy_wish_card",
+            "title": "幻想许愿卡",
+            "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fantasy_wish_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuroto_dan_card",
+            "title": "檀黎斗许愿卡",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuroto_dan_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)（物品栏中需持有 $(l:ex_aid/items/rider_gashats#hyper_fumetsu_gashat)Hyper不灭卡带$(/l)）"
+        }
+    ]
+}

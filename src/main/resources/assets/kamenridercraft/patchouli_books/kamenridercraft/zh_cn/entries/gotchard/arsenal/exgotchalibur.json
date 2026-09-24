@@ -1,0 +1,16 @@
+{
+	"name": "断钢Gotcha圣剑",
+	"icon": "kamenridercraft:exgotchalibur",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)由歌查德的$(l:gotchard/riders/gotchard#cross_ufo_x)超级歌查德$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/exgotchalibur"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "庞克杰克灯笼",
+	"icon": "kamenridercraft:punkjackolantern",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "可装备在头部护甲栏"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:punkjackolantern",
+        "title": " ",
+        "text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+      }
+    ]
+}

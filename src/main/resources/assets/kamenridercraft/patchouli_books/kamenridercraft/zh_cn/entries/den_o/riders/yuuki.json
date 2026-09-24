@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士幽汽",
+	"icon": "kamenridercraft:rider_ticket_yuuki",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "skull",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:yuuki_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_yuuki\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "骷髅形态",
+			"text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_yuuki)骑士车票(幽灵异魔神)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士幽汽",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)通过穿戴$(l:den_o/devices/yuuki_belt)幽汽腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 IV$(li)缓慢$(li)抗性提升$(li)生命恢复 II$(li)防火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hijack",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:yuuki_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_ticket_yuuki_hijack\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "劫持形态",
+			"text": "通过使用 $(l:den_o/items/rider_tickets#rider_ticket_yuuki)骑士车票(幽灵异魔神)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士幽汽",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)通过穿戴$(l:den_o/devices/yuuki_belt)幽汽腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 IV$(li)缓慢$(li)抗性提升$(li)生命恢复 II$(li)防火"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "生化剑",
+	"icon": "kamenridercraft:bio_blade",
+	"category": "kamenridercraft:black_rx/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)由$(l:black_rx/riders/black_rx#biorider)生化骑士$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/bio_blade"
+		}
+	]
+}

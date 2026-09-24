@@ -1,0 +1,16 @@
+{
+	"name": "救世者弩弓",
+	"icon": "kamenridercraft:saver_arrow",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 43,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士Duke (2015年，V-Cinema电影)$(br2)由$(l:gaim/riders/saver)假面骑士Saver$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/saver_arrow"
+		}
+	]
+}

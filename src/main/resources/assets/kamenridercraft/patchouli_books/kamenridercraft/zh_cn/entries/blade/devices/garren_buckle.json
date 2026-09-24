@@ -1,0 +1,16 @@
+{
+	"name": "星币带扣",
+	"icon": "kamenridercraft:garren_buckle",
+	"category": "kamenridercraft:blade/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)与$(l:blade/devices/armor)剑装甲$(/l)一起穿戴，可变身为$(l:blade/riders/garren)假面骑士格连"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/garren_buckle"
+		}
+	]
+}

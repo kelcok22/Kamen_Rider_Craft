@@ -1,0 +1,19 @@
+{
+	"name": "S.I.C. 英雄传奇",
+	"icon": "kamenridercraft:kuuga_amazing_mighty_artist",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "$(li)用于切换一号的$(l:ichigo/riders/ichigo#blue_metallic_color)蓝色金属色$(/l)形态$(li)用于切换Amazon的$(l:amazon/riders/amazon#pre_amazon)前-Amazon$(/l)形态$(li)用于切换V3的$(l:v3/riders/v3#blue_metallic_color)蓝色金属色$(/l)形态$(li)用于切换骑士人的$(l:v3/riders/riderman#artist_color)艺术家特别设计版$(/l)形态$(li)用于切换强人的$(l:stronger/riders/stronger#white_color)白色配色$(/l)形态$(li)用于切换电波人的$(l:stronger/riders/tackle#white_color)白色配色$(/l)形态$(li)用于切换空我的$(l:kuuga/riders/kuuga#amazing_mighty_artist_color)惊异全能形态（艺术家特别设计版）$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_amazing_mighty_artist",
+			"title": " ",
+			"text": "通过$(l:misc/villagers#wandering_trader)流浪商人$(/l)交易获取$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+		}
+	]
+}

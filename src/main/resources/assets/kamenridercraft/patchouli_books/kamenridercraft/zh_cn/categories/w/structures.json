@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:w/main",
+    "name": "地球核心",
+    "description": "",
+    "icon": "kamenridercraft:pure_gaia_memory_block",
+    "sortnum": 5
+}

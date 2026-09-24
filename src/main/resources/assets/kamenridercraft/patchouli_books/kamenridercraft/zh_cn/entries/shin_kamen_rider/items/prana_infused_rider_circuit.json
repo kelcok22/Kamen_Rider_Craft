@@ -1,0 +1,19 @@
+{
+	"name": "生命注能骑士电路板",
+	"icon": "kamenridercraft:prana_infused_rider_circuit",
+	"category": "kamenridercraft:shin_kamen_rider/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)真·假面骑士 (2023年，电影)$(br2)用作真·假面骑士系列物品的基础材料和修复材料"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:prana_infused_rider_circuit",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:shin_kamen_rider/mobs/batta_augment)量产型蝗虫怪人$(/l)$(li)$(l:shin_kamen_rider/mobs/shin_no_0)假面骑士No.0$(/l)"
+      }
+    ]
+}

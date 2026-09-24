@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ryuki/main",
+    "name": "武器",
+    "description": "龙骑系列骑士所使用的武器和道具. 可以在铁砧上使用 $(l:ryuki/items/advent_card)空白降临卡$(/l)修复.",
+    "icon": "kamenridercraft:drag_saber",
+    "sortnum": 3
+}

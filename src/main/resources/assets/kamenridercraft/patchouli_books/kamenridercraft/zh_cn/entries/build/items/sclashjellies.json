@@ -1,0 +1,32 @@
+{
+	"name": "挤压凝胶",
+	"icon": "kamenridercraft:dragon_sclash_jelly",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_sclash_jelly",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作克罗兹充能的$(l:build/devices/sclash_driver#sclash_driver)挤压驱动器$(/l)$(br2)用于切换克罗兹的$(l:build/riders/cross-z#charge)充溢$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragon_sclash_jelly",
+			"text": "在$(l:misc/blocks/machine_blocks#fullbottle_solidifier)满瓶凝固器$(/l)上使用$(l:build/items/fullbottles#dragon_full_bottle)龙满装瓶罐$(/l)即可获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "robot_sclash_jelly",
+			"title": "机器人挤压凝胶",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作格里斯的$(l:build/devices/sclash_driver#sclash_driver_grease)挤压驱动器(格里斯)$(/l)$(br2)用于切换格里斯的$(l:build/riders/grease)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:robot_sclash_jelly",
+			"title": " ",
+			"text": "在$(l:misc/blocks/machine_blocks#fullbottle_solidifier)满瓶凝固器$(/l)上使用$(l:build/items/fullbottles#robot_full_bottle)机器人满装瓶罐$(/l)即可获得"
+		}
+	]
+}

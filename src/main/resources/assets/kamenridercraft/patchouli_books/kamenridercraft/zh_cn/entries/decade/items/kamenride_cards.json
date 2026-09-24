@@ -1,0 +1,940 @@
+{
+    "name": "假面驾驭卡",
+    "icon": "kamenridercraft:decade_card",
+    "category": "kamenridercraft:decade/items",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "decade_card",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于制作Decade的 $(l:decade/devices/decadriver)Decad驱动器$(/l)$(br2)用于切换Decade的 $(l:decade/riders/decade#decade)基础形态$(/l)$(br2)用于切换Diend的 $(l:decade/riders/diend#green)绿色版$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:decade_card",
+            "text": "掉落自：$(li)$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decade_violent_emotion_card",
+            "title": "Decade激情态 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士×假面骑士 W&Decade：MOVIE大战2010 (2009年，电影)$(br2)用于切换Decade的 $(l:decade/riders/decade#violent_emotion)激情态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:decade_violent_emotion_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "diend_card",
+            "title": "Diend 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于制作Diend的 $(l:decade/arsenal/diendriver)终骑驱动器$(/l)$(br2)用于切换Diend的 $(l:decade/riders/diend#diend)基础形态$(/l)$(br2)用于切换Decade的 $(l:decade/riders/decade#cyan)蔚蓝版$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:diend_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "diend_chinomanako_card",
+            "title": "Diend 假面驾驭卡(千眼海参Diend变身态)",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换千眼海参的 $(l:decade/riders/diend#chinomanako)Diend变身态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:diend_chinomanako_card",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "diend_power_up_card",
+            "title": "Diend(强化)假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换Diend的 $(l:decade/riders/diend#power_up)强化$(/l)形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/diend_power_up_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dark_decade_card",
+            "title": "黑暗Decade 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士：巅峰英雄 (2009年，电子游戏)$(br2)用于制作黑暗Decade的 $(l:decade/devices/dark_decadriver)黑暗Decad驱动器$(/l)$(br2)用于切换黑暗Decade的 $(l:decade/riders/dark_decade#dark_decade)基础形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dark_decade_card",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_card",
+            "title": "空我 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#kuuga)空我$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kuuga/riders/kuuga)假面骑士空我$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/kuuga_mighty_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "agito_card",
+            "title": "亚极陀 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#agito)亚极陀$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:agito/riders/agito)假面骑士亚极陀$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/agito_ground_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ryuki_card",
+            "title": "龙骑 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#ryuki)龙骑$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/ryuki)假面骑士龙骑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ryuki_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_card",
+            "title": "Faiz 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#faiz)Faiz$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:faiz/riders/faiz)假面骑士Faiz$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/faiz_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blade_ace_card",
+            "title": "剑 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#blade)剑$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:blade/riders/blade)假面骑士剑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/blade_ace_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hibiki_card",
+            "title": "响鬼 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#hibiki)响鬼$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:hibiki/riders/hibiki)假面骑士响鬼$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/hibiki_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kabuto_rider_card",
+            "title": "甲斗 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#kabuto)甲斗$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/kabuto)假面骑士甲斗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/kabuto_rider_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "den_o_sword_card",
+            "title": "电王 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#den_o)电王$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:den_o/riders/den_o)假面骑士电王$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/den_o_sword_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kiva_card",
+            "title": "Kiva 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#kiva)Kiva$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kiva/riders/kiva)假面骑士Kiva$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/kiva_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "w_card",
+            "title": "W 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)用于切换Decade的 $(l:decade/riders/decade#w)W$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:w/riders/double)假面骑士W$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/w_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ooo_card",
+            "title": "OOO 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)用于切换Decade的 $(l:decade/riders/decade#ooo)OOO$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ooo/riders/ooo)假面骑士OOO$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ooo_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fourze_card",
+            "title": "Fourze 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)用于切换Decade的 $(l:decade/riders/decade#fourze)Fourze$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:fourze/riders/fourze)假面骑士Fourze$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/fourze_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wizard_card",
+            "title": "Wizard 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换Decade的 $(l:decade/riders/decade#wizard)Wizard$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:wizard/riders/wizard)假面骑士Wizard$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/wizard_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gaim_card",
+            "title": "铠武 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)用于切换Decade的 $(l:decade/riders/decade#gaim)铠武$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:gaim/riders/gaim)假面骑士铠武$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/gaim_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drive_card",
+            "title": "Drive 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)用于切换Decade的 $(l:decade/riders/decade#drive)Drive$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:drive/riders/drive)假面骑士Drive$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/drive_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghost_card",
+            "title": "Ghost 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换Decade的 $(l:decade/riders/decade#ghost)Ghost$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ghost/riders/ghost)假面骑士Ghost$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ghost_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ex_aid_card",
+            "title": "Ex-Aid 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbarizing (2013年，街机游戏)$(br2)用于切换Decade的 $(l:decade/riders/decade#ex_aid)Ex-Aid$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ex_aid/riders/ex_aid#action_2)假面骑士Ex-Aid$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ex_aid_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "build_card",
+            "title": "Build 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换Decade的 $(l:decade/riders/decade#build)Build$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:build/riders/build)假面骑士Build$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/build_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zi_o_card",
+            "title": "时王 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换Decade的 $(l:decade/riders/decade#zi-o)时王$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:zi_o/riders/zi_o)假面骑士时王$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/zi_o_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zero_one_card",
+            "title": "01 假面驾驭卡",
+            "text": "登场于：$(li)DX K-Touch 21 (2021年，玩具系列)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/zero_one_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g3_card",
+            "title": "G3 假面驾驭卡",
+            "text": "登场于：$(li)超·假面骑士电王&Decade NEO世代：鬼岛的战舰 (2009年，电影)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:agito/riders/g3)假面骑士G3$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/g3_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "knight_card",
+            "title": "夜骑 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/knight)假面骑士夜骑$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/knight_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "scissors_card",
+            "title": "利刃 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/scissors)假面骑士利刃$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/scissors_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "raia_card",
+            "title": "海鳐 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/raia)假面骑士海鳐$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/raia_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gai_card",
+            "title": "铠 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/gai)假面骑士铠$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/gai_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ouja_card",
+            "title": "王蛇 假面驾驭卡",
+            "text": "登场于：$(li)超·假面骑士电王&Decade NEO世代：鬼岛的战舰 (2009年，电影)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/ouja)假面骑士王蛇$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ouja_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "femme_card",
+            "title": "花梦 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/femme)假面骑士花梦$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/femme_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kaixa_card",
+            "title": "凯撒 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:faiz/riders/kaixa)假面骑士凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/kaixa_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "delta_card",
+            "title": "德尔塔 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:faiz/riders/delta)假面骑士德尔塔$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/delta_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "psyga_card",
+            "title": "天帝 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:faiz/riders/psyga)假面骑士天帝$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/psyga_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "riotrooper_card",
+            "title": "莱欧骑兵 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤3个 $(l:faiz/riders/riotrooper)莱欧骑兵$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/riotrooper_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "garren_card",
+            "title": "格连 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:blade/riders/garren)假面骑士格连$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/garren_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ibuki_card",
+            "title": "威吹鬼 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:hibiki/riders/ibuki)假面骑士威吹鬼$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ibuki_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "todoroki_card",
+            "title": "轰鬼 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:hibiki/riders/todoroki)假面骑士轰鬼$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/todoroki_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zanki_card",
+            "title": "斩鬼 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:hibiki/riders/zanki)假面骑士斩鬼$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/zanki_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gatack_card",
+            "title": "钢斗 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/gatack)假面骑士钢斗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/gatack_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drake_card",
+            "title": "雷蜓 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/drake)假面骑士雷蜓$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/drake_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sasword_card",
+            "title": "剑蝎 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/sasword)假面骑士剑蝎$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/sasword_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "punchhopper_card",
+            "title": "拳蝗 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/punchhopper)假面骑士拳蝗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/punchhopper_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hercus_card",
+            "title": "银斗 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/hercus)假面骑士银斗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/hercus_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ketaros_card",
+            "title": "铜斗 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/ketaros)假面骑士铜斗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ketaros_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zeronos_card",
+            "title": "零诺斯 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:den_o/riders/zeronos)假面骑士零诺斯$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/zeronos_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ixa_card",
+            "title": "IXA 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kiva/riders/ixa)假面骑士Ixa$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ixa_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "saga_card",
+            "title": "蛇牙 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kiva/riders/saga)假面骑士蛇牙$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/saga_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rey_card",
+            "title": "冷 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kiva/riders/rey)假面骑士冷$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/rey_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "accel_card",
+            "title": "Accel 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:w/riders/accel)假面骑士Accel$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/accel_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "birth_card",
+            "title": "Birth 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ooo/riders/birth)假面骑士Birth$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/birth_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "meteor_card",
+            "title": "流星 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:fourze/riders/meteor)假面骑士流星$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/meteor_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "beast_card",
+            "title": "Beast 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:wizard/riders/beast)假面骑士Beast$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/beast_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "baron_card",
+            "title": "巴隆 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:gaim/riders/baron)假面骑士巴隆$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/baron_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mach_card",
+            "title": "马赫 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:drive/riders/mach)假面骑士马赫$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/mach_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "specter_card",
+            "title": "Specter 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ghost/riders/specter)假面骑士Specter$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/specter_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "brave_card",
+            "title": "Brave 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ex_aid/riders/brave)假面骑士Brave$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/brave_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cross_z_card",
+            "title": "克罗兹 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:build/riders/cross-z)假面骑士克罗兹$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/cross_z_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geiz_card",
+            "title": "盖茨 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士时王 NEXT TIME：盖茨，王权 (2020年，V-Cinema)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:zi_o/riders/geiz)假面骑士盖茨$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/geiz_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ichigo_card",
+            "title": "一号 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士×超级战队：超级英雄大战 (2012年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#ichigo)一号$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ichigo/riders/ichigo)假面骑士一号$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ichigo_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nigo_card",
+            "title": "二号 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#nigo)二号$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ichigo/riders/nigo)假面骑士二号$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/nigo_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "v3_card",
+            "title": "V3 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#v3)V3$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:v3/riders/v3)假面骑士V3$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/v3_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "riderman_card",
+            "title": "骑士人 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#riderman)骑士人$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:v3/riders/riderman)骑士人$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/riderman_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "x_card",
+            "title": "X 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#x)X$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:x/riders/x)假面骑士X$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/x_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_card",
+            "title": "Amazon 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#amazon)Amazon$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:amazon/riders/amazon)假面骑士Amazon$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/amazon_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stronger_card",
+            "title": "强人 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#stronger)强人$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:stronger/riders/stronger)假面骑士强人$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/stronger_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skyrider_card",
+            "title": "天空骑士 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#skyrider)天空骑士$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:skyrider/riders/skyrider)天空骑士$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/skyrider_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "super_1_card",
+            "title": "超一号 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#super_1)超一号$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:super_1/riders/super_1)假面骑士超一号$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/super_1_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zx_card",
+            "title": "ZX 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#zx)ZX$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:zx/riders/zx)假面骑士ZX$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/zx_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_card",
+            "title": "Black 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#black)Black$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:black/riders/black)假面骑士Black$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/black_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_rx_card",
+            "title": "Black RX 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#black_rx)Black RX$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:black_rx/riders/black_rx)假面骑士Black RX$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/black_rx_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shin_card",
+            "title": "真 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#shin)真$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:shin/riders/shin)假面骑士真$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/shin_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zo_card",
+            "title": "ZO 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#zo)ZO$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:zo/riders/zo)假面骑士ZO$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/zo_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "j_card",
+            "title": "J 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade：全骑士对大修卡 (2009年，电影)$(br2)用于切换(黑暗)Decade的 $(l:decade/riders/decade#j)J$(/l)形态$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:j/riders/j)假面骑士J$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/j_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g4_card",
+            "title": "G4 假面驾驭卡",
+            "text": "登场于：$(li)超·电王三部曲：EPISODE YELLOW：宝藏DE-END海盗 (2010年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:agito/riders/g4)假面骑士G4$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/g4_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ryuga_card",
+            "title": "龙牙 假面驾驭卡",
+            "text": "登场于：$(li)超·电王三部曲：EPISODE YELLOW：宝藏DE-END海盗 (2010年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:ryuki/riders/ryuga)假面骑士龙牙$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/ryuga_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "orga_card",
+            "title": "地帝 假面驾驭卡",
+            "text": "登场于：$(li)超·电王三部曲：EPISODE YELLOW：宝藏DE-END海盗 (2010年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:faiz/riders/orga)假面骑士地帝$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/orga_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "glaive_card",
+            "title": "长刃 假面驾驭卡",
+            "text": "登场于：$(li)超·电王三部曲：EPISODE YELLOW：宝藏DE-END海盗 (2010年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:blade/riders/glaive)假面骑士长刃$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/glaive_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kabuki_card",
+            "title": "歌舞鬼 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:hibiki/riders/kabuki)假面骑士歌舞鬼$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/kabuki_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "caucasus_card",
+            "title": "金斗 假面驾驭卡",
+            "text": "登场于：$(li)超·假面骑士电王&Decade NEO世代：鬼岛的战舰 (2009年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kabuto/riders/caucasus)假面骑士金斗$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/caucasus_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "arc_card",
+            "title": "恶王 假面驾驭卡",
+            "text": "登场于：$(li)超·电王三部曲：EPISODE YELLOW：宝藏DE-END海盗 (2010年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)(新)$(/l) $(l:decade/arsenal/diendriver)终骑驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:kiva/riders/arc)假面骑士恶王$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/arc_card"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skull_card",
+            "title": "颅骨 假面驾驭卡",
+            "text": "登场于：$(li)假面骑士×假面骑士 W&Decade：MOVIE大战2010 (2009年，电影)$(br2)用于制作Diend的 $(l:decade/items/k_touch_diend)最终假面终端K-Touch(Diend)$(/l)$(br2)插入 $(l:decade/arsenal/neo_diendriver)新·Diend驱动器$(/l) 后以 $(l:decade/riders/diend)假面骑士Diend$(/l) 身份右键，可召唤 $(l:w/riders/skull)假面骑士颅骨$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:decade/skull_card"
+        }
+    ]
+}

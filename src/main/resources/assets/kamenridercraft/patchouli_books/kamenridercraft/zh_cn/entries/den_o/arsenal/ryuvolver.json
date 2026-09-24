@@ -1,0 +1,16 @@
+{
+	"name": "龙塔左轮",
+	"icon": "kamenridercraft:ryuvolver",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 24,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)由$(l:den_o/mobs/ryutaros)龙塔罗斯$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/ryuvolver"
+		}
+	]
+}

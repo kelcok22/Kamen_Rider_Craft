@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士鳄霸",
+	"icon": "kamenridercraft:sclash_driver_rogue",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+            "anchor": "rogue",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver_rogue\",Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士鳄霸",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/sclash_driver#sclash_driver_rogue)挤压驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+            "anchor": "prime",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_rogue\",Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "至尊鳄霸",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士鳄霸",
+			"text": "登场于：$(li)假面骑士至尊鳄霸 (2018年，超战斗DVD)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver_rogue)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)跳跃提升 II$(li)力量 V"
+		}
+	]
+}

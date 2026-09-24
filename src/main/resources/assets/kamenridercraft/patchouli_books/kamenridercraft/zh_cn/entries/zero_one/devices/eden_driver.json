@@ -1,0 +1,30 @@
+{
+	"name": "伊甸驱动器",
+	"icon": "kamenridercraft:eden_driver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "eden_driver",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME（2020年，电影）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/eden)假面骑士伊甸"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/eden_driver",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/eden)假面骑士伊甸$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eden_driver_lucifer",
+			"title": "伊甸驱动器(路西法)",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME（2020年，电影）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/lucifer)假面骑士路西法"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/eden_driver_lucifer"
+		}
+	]
+}

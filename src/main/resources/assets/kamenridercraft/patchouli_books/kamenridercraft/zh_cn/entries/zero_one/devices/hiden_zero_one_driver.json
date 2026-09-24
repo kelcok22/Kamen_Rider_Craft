@@ -1,0 +1,40 @@
+{
+	"name": "飞电01驱动器",
+	"icon": "kamenridercraft:hiden_zero_one_driver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "hiden_zero_one_driver",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/zero_one)假面骑士01"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/hiden_zero_one_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hiden_zero_one_driver_azu",
+			"title": "飞电01驱动器(亚克01)",
+			"text": "登场于：$(li)假面骑士01：Final Stage (2020年，舞台秀)$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/ark_zero_one)假面骑士亚克01"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/hiden_zero_one_driver_azu"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hiden_zero_one_driver_vulcan",
+			"title": "飞电01驱动器(巴尔坎)",
+			"text": "登场于：$(li)01 Others：假面骑士巴尔坎与瓦尔基里（2021年，V-Cinema电影）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/vulcan#lone_wolf)假面骑士巴尔坎独行狼"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/hiden_zero_one_driver_vulcan"
+		}
+	]
+}

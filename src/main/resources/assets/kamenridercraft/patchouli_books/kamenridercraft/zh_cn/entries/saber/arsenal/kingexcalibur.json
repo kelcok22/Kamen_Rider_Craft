@@ -1,0 +1,16 @@
+{
+	"name": "王之誓约胜利之剑",
+	"icon": "kamenridercraft:kingexcalibur",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)搭配 $(l:saber/riders/saber#arthur)亚瑟王$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/kingexcalibur"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士格里斯",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:grease",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)进化而来$(br2)掉落$(li)3-5个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/sclash_jelly)空挤压凝胶$(/l) (54.5%)$(li)1个$(l:build/arsenal/pandora_panel_hokuto)潘多拉嵌板(北都/蓝)$(/l) (18.2%)$(li)1个$(l:build/items/fullbottles#lost_castle_full_bottle)迷失城堡满装瓶罐$(/l) (9.1%)$(li)1个$(l:build/items/fullbottles#lost_kuwagata_full_bottle)迷失锹形虫满装瓶罐$(/l) (9.1%)$(li)1个$(l:build/items/fullbottles#lost_fukurou_full_bottle)迷失猫头鹰满装瓶罐$(/l) (9.1%)"
+		}
+	]
+}

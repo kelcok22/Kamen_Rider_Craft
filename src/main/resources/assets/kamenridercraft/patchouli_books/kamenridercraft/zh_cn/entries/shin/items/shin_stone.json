@@ -1,0 +1,19 @@
+{
+	"name": "骑士纹章(真)",
+	"icon": "kamenridercraft:shin_stone",
+	"category": "kamenridercraft:shin/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)真假面骑士: 序章 (1992年, 电影)$(br2)用于制作假面骑士真的 $(l:shin/devices/grasshopper_dna)蝗虫基因$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_stone",
+			"title": " ",
+			"text": "和新手$(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获得。"
+		}
+	]
+}

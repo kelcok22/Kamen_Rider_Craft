@@ -1,0 +1,26 @@
+{
+	"name": "射击德兰龙",
+	"icon": "kamenridercraft:kiva_logo",
+	"category": "kamenridercraft:kiva/structures",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "射击德兰龙",
+			"text": "登场于:$(li)假面骑士Kiva (2008年, 电视剧)$(br2)生成群系: 桦木森林、黑森林、繁花森林、森林、雪林、原始桦木森林、蘑菇岛$(br2)箱子战利品见下页"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/shoodoran.png",
+				"kamenridercraft:patchouli_books/kamenridercraft/images/shoodoran_2.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"text": "箱子战利品:$(li)3-6个$(l:kiva/items/fuestle)笛哨$(/l) (40% x2-3)$(li)4-6个骨头、线或蜘蛛眼 (60% x2-3)$(li)1个$(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨(Kiva)$(/l) (57.1% x2-3)$(li)1个$(l:kiva/items/fuestles#sagafuestle)觉醒笛哨(蛇牙)$(/l)、$(l:kiva/items/fuestles#darkwakeupfuestle)觉醒笛哨(黑暗Kiva)$(/l)或$(l:kiva/items/fuestles#newwakeupfuestle)觉醒笛哨(新Kiva)$(/l) (14.3% x2-3)"
+		}
+	]
+}

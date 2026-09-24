@@ -1,0 +1,28 @@
+{
+	"name": "暗夜祷告驱动器",
+	"icon": "kamenridercraft:knight_invoker",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/nox_knight)诺克斯暗骑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/knight_invoker"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "knight_invoker_seventeen",
+			"title": "暗夜祷告驱动器",
+			"text": "登场于:$(li)假面骑士Zeztz: SERIES OF SISTER'S SUBSTORY 特工美浪 (2025年, 网络剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/knight_seventeen)暗骑十七"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/knight_invoker_seventeen"
+		}
+	]
+}

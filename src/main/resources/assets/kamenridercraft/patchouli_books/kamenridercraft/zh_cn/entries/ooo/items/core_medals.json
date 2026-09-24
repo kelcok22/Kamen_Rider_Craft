@@ -1,0 +1,940 @@
+{
+	"name": "核心硬币",
+	"icon": "kamenridercraft:taka_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_medal",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成OOO的$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)鹰$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taka_medal",
+			"text": "掉落自：$(li)$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)$(li)$(l:ooo/mobs/ankh_mob)Ankh$(/l)$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh(迷失)$(/l)$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujaku_medal",
+			"title": "孔雀核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol)孔雀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujaku_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh(迷失)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condor_medal",
+			"title": "秃鹫核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol)秃鹫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condor_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh(迷失)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_ankh_medal",
+			"title": "碎裂的鹰核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol_final)碎裂的鹰$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taka_ankh_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lion_medal",
+			"title": "狮子核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#latorartar)狮子$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lion_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tora_medal",
+			"title": "老虎核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成OOO的$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)虎$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tora_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cheetah_medal",
+			"title": "猎豹核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#latorartar)猎豹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cheetah_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuwagata_medal",
+			"title": "锹形虫核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#gatakiriba)锹形虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuwagata_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kamakiri_medal",
+			"title": "螳螂核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#gatakiriba)螳螂$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kamakiri_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "batta_medal",
+			"title": "飞蝗核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成OOO的$(l:ooo/devices/ooo_driver#ooodriver)OOO驱动器$(/l)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)蝗$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:batta_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sai_medal",
+			"title": "犀牛核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)犀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sai_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gorilla_medal",
+			"title": "大猩猩核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)猩$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gorilla_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zou_medal",
+			"title": "大象核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)象$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zou_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shachi_medal",
+			"title": "虎鲸核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)鲸$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shachi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/mezool_mob)梅兹尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unagi_medal",
+			"title": "电鳗核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)鳗$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unagi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/mezool_mob)梅兹尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tako_medal",
+			"title": "章鱼核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)章$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tako_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/mezool_mob)梅兹尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ptera_medal",
+			"title": "翼龙核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#putotyra)翼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ptera_medal",
+			"title": " ",
+			"text": "可在$(l:ooo/items/purple_medals_sealed)封印的恐龙硬币$(/l)中获得$(br2)掉落自：$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tricera_medal",
+			"title": "三角龙核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#putotyra)角$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tricera_medal",
+			"title": " ",
+			"text": "可在$(l:ooo/items/purple_medals_sealed)封印的恐龙硬币$(/l)中获得$(br2)掉落自：$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tyranno_medal",
+			"title": "暴龙核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#putotyra)暴$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tyranno_medal",
+			"title": " ",
+			"text": "可在$(l:ooo/items/purple_medals_sealed)封印的恐龙硬币$(/l)中获得$(br2)掉落自：$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cobra_medal",
+			"title": "眼镜蛇核心硬币",
+			"text": "登场于：$(li)假面骑士OOO WONDERFUL 将军与21枚核心硬币 (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#burakawani)蛇$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cobra_medal",
+			"title": " ",
+			"text": "可在$(l:ooo/structures/gara_edo_village)江户川$(/l)中获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kame_medal",
+			"title": "乌龟核心硬币",
+			"text": "登场于：$(li)假面骑士OOO WONDERFUL 将军与21枚核心硬币 (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#burakawani)龟$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kame_medal",
+			"title": " ",
+			"text": "可在$(l:ooo/structures/gara_edo_village)江户川$(/l)中获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wani_medal",
+			"title": "鳄鱼核心硬币",
+			"text": "登场于：$(li)假面骑士OOO WONDERFUL 将军与21枚核心硬币 (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#burakawani)鳄$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wani_medal",
+			"title": " ",
+			"text": "可在$(l:ooo/structures/gara_edo_village)江户川$(/l)中获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasori_medal",
+			"title": "蝎子核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 OOO&W feat. Skull MOVIE大战CORE (2010年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasori_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kani_medal",
+			"title": "螃蟹核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 OOO&W feat. Skull MOVIE大战CORE (2010年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kani_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ebi_medal",
+			"title": "虾核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 OOO&W feat. Skull MOVIE大战CORE (2010年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ebi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mukade_medal",
+			"title": "蜈蚣核心硬币",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#mukachiri)蜈$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mukade_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hachi_medal",
+			"title": "蜂核心硬币",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#mukachiri)蜂$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hachi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ari_medal",
+			"title": "蚁核心硬币",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#mukachiri)蚁$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ari_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ebi_new_medal",
+			"title": "新虾核心硬币",
+			"text": "登场于：$(li)假面骑士城市大战 (2017年，手机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#bikaso)虾$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ebi_new_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/powered_up_core)能力提升假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kani_new_medal",
+			"title": "新螃蟹核心硬币",
+			"text": "登场于：$(li)假面骑士城市大战 (2017年，手机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#bikaso)蟹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kani_new_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/powered_up_core)能力提升假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasori_new_medal",
+			"title": "新蝎核心硬币",
+			"text": "登场于：$(li)假面骑士城市大战 (2017年，手机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#bikaso)蝎$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasori_new_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/powered_up_core)能力提升假面骑士Core$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "same_medal",
+			"title": "鲨鱼核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#saramiuo)鲨$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:same_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujira_medal",
+			"title": "鲸鱼核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#saramiuo)鲸$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kujira_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ookamiuo_medal",
+			"title": "狼鱼核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#saramiuo)狼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ookamiuo_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shika_medal",
+			"title": "鹿核心硬币",
+			"text": "登场于：$(li)假面骑士战斗 Ganbarizing (2013年，街机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shigazeshi)鹿$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shika_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/foundation_x_masquerade)假面舞会掺杂体(财团X)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gazelle_medal",
+			"title": "羚羊核心硬币",
+			"text": "登场于：$(li)假面骑士战斗 Ganbarizing (2013年，街机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shigazeshi)羚$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gazelle_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/foundation_x_masquerade)假面舞会掺杂体(财团X)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ushi_medal",
+			"title": "牛核心硬币",
+			"text": "登场于：$(li)假面骑士战斗 Ganbarizing (2013年，街机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shigazeshi)牛$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ushi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/foundation_x_masquerade)假面舞会掺杂体(财团X)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiuchi_medal",
+			"title": "海象核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#seishirogin)海$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:seiuchi_medal",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用浮冰获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shirokuma_medal",
+			"title": "白熊核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#seishirogin)熊$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shirokuma_medal",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用浮冰获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "penguin_medal",
+			"title": "企鹅核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#seishirogin)企$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:penguin_medal",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#cell_medal_programer)硬币编程器$(/l)上使用浮冰获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "panda_medal",
+			"title": "熊猫核心硬币",
+			"text": "登场于：$(li)假面骑士战斗 Ganbaride (2008年，街机游戏)$(br2)用于切换OOO的$(l:ooo/riders/ooo#takapanba)熊$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:panda_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/knight_soldier_mob)骑士兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kangaroo_medal",
+			"title": "袋鼠核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 超战斗DVD 问答、舞蹈与鹰袋鼠蝗联组 (2011年，超战斗视频)$(br2)用于切换OOO的$(l:ooo/riders/ooo#takagaruba)鼠$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kangaroo_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/knight_soldier_mob)骑士兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yadokari_medal",
+			"title": "寄居蟹核心硬币",
+			"text": "登场于：$(li)CSM OOO驱动器 完全套装 (2018年，玩具系列)$(br2)用于切换OOO的$(l:ooo/riders/ooo#takayadoba)蟹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yadokari_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/knight_soldier_mob)骑士兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_taka_medal",
+			"title": "超级鹰核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#super_tatoba)超级鹰$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/super_taka"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_tora_medal",
+			"title": "超级虎核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#super_tatoba)超级虎$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/super_tora"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_batta_medal",
+			"title": "超级蝗核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#super_tatoba)超级蝗$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/super_batta"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taka_eternity_medal",
+			"title": "永恒鹰核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol_eternity)永恒鹰$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/taka_eternity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kujaku_eternity_medal",
+			"title": "永恒孔雀核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol_eternity)永恒孔雀$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/kujaku_eternity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condor_eternity_medal",
+			"title": "永恒秃鹫核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol_eternity)永恒秃鹫$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/condor_eternity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_taka_medal",
+			"title": "古代鹰核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成古代王OOO的$(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO驱动器(古代王)$(/l)$(br2)用于切换古代王OOO的$(l:ooo/riders/ancient_ooo#tatoba)鹰虎蝗联组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_taka_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_tora_medal",
+			"title": "古代虎核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成古代王OOO的$(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO驱动器(古代王)$(/l)$(br2)用于切换古代王OOO的$(l:ooo/riders/ancient_ooo#tatoba)鹰虎蝗联组$(/l)与$(l:ooo/riders/ancient_ooo#ancient_tatoba)古代鹰虎蝗联组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_tora_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ancient_batta_medal",
+			"title": "古代蝗核心硬币",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于合成古代王OOO的$(l:ooo/devices/ooo_driver#ancient_ooodriver)OOO驱动器(古代王)$(/l)$(br2)用于切换古代王OOO的$(l:ooo/riders/ancient_ooo#tatoba)鹰虎蝗联组$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ancient_batta_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ancient_ooo)古代王OOO$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mukade_goda_medal",
+			"title": "戈达蜈蚣核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mukade_goda_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/goda)假面骑士戈达$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hachi_goda_medal",
+			"title": "戈达蜜蜂核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hachi_goda_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/goda)假面骑士戈达$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ari_goda_medal",
+			"title": "戈达蚂蚁核心硬币",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ari_goda_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/goda)假面骑士戈达$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "love_core_medal",
+			"title": "恋爱核心硬币(头)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#renai)恋爱(头)$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:love_core_medal",
+			"title": " ",
+			"text": "通过打开情人节$(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "love_core2_medal",
+			"title": "恋爱核心硬币(胸)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#renai)恋爱(胸)$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:love_core2_medal",
+			"title": " ",
+			"text": "通过打开情人节$(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "love_core3_medal",
+			"title": "恋爱核心硬币(腿)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用于切换OOO的$(l:ooo/riders/ooo#renai)恋爱(腿)$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:love_core3_medal",
+			"title": " ",
+			"text": "通过打开情人节$(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_medal",
+			"title": "X核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)变身假面骑士OOO时，背包中持有$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)，右键使用可召唤$(l:x/riders/x)假面骑士X$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/x_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_medal",
+			"title": "Amazon核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)变身假面骑士OOO时，背包中持有$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)，右键使用可召唤$(l:amazon/riders/amazon)假面骑士Amazon$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/amazon_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stronger_medal",
+			"title": "强人核心硬币",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)变身假面骑士OOO时，背包中持有$(l:ooo/arsenal/o_scanner)OOO扫描仪$(/l)，右键使用可召唤$(l:stronger/riders/stronger)假面骑士强人$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/stronger_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "habataki_medal",
+			"title": "羽击鬼核心硬币",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)$(br2)用于切换OOO的$(l:ooo/riders/ooo#legend_tatoba)羽击鬼$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/habataki_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taiga_medal",
+			"title": "大牙核心硬币",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)$(br2)用于切换OOO的$(l:ooo/riders/ooo#legend_tatoba)大牙$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/taiga_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ichigo_medal",
+			"title": "一号核心硬币",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)$(br2)用于切换OOO的$(l:ooo/riders/ooo#legend_tatoba)一号$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/ichigo_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "imagin_medal",
+			"title": "异魔神核心硬币",
+			"text": "登场于：$(li)OOO·电王·全骑士 Let's Go 假面骑士 (2011年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tamashiy)异魔神$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/imagin_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shocker_medal",
+			"title": "修卡核心硬币",
+			"text": "登场于：$(li)OOO·电王·全骑士  Let's Go 假面骑士 (2011年，电影)$(br2)用于合成修卡OOO的$(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO驱动器(修卡OOO)$(/l)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tamashiy)修卡$(/l)形态$(br2)潜行状态下可作为腿部硬币使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/shocker_medal"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gel_shocker_medal",
+			"title": "盖尔修卡核心硬币",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)$(br2)用于合成修卡OOO的$(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO驱动器(修卡OOO)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gel_shocker_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "destron_medal",
+			"title": "迪斯特龙核心硬币",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)$(br2)用于合成修卡OOO的$(l:ooo/devices/ooo_driver#shocker_ooodriver)OOO驱动器(修卡OOO)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:destron_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "god_medal",
+			"title": "G.O.D.核心硬币",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:god_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "garanda_medal",
+			"title": "加兰达核心硬币",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:garanda_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "delza_medal",
+			"title": "迪尔扎核心硬币",
+			"text": "登场于：$(li)OOZ (2010年，S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:delza_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neo_shocker_medal",
+			"title": "新修卡核心硬币",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neo_shocker_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jin_dogma_medal",
+			"title": "新多格玛核心硬币",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jin_dogma_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "badan_medal",
+			"title": "巴丹核心硬币",
+			"text": "登场于：$(li)OOO的世界 (2015年，S.I.C. Hero Saga)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:badan_medal",
+			"title": " ",
+			"text": "该物品目前无法获得"
+		}
+	]
+}

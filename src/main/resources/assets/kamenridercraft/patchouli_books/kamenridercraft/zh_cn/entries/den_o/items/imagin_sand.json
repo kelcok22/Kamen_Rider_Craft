@@ -1,0 +1,19 @@
+{
+	"name": "异魔神沙",
+	"icon": "kamenridercraft:imagin_sand",
+	"category": "kamenridercraft:den_o/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)作为合成大多数电王系列物品的基础材料和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:imagin_sand",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:den_o/mobs/new_mole_imagin)新生异魔神$(/l)$(li)$(l:den_o/mobs/new_mole_imagin_sand)新生异魔神(沙)$(/l)$(li)$(l:den_o/mobs/momotaros)桃塔罗斯$(/l)$(li)$(l:den_o/mobs/urataros)浦塔罗斯$(/l)$(li)$(l:den_o/mobs/kintaros)金塔罗斯$(/l)$(li)$(l:den_o/mobs/ryutaros)龙塔罗斯$(/l)$(li)$(l:misc/blocks/decor_blocks#imagin_sand_block)异魔神之沙方块$(/l)"
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "Build装甲",
+	"icon": "kamenridercraft:buildhead",
+	"category": "kamenridercraft:build/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Build系列骑士的驱动器配合使用，可变身为对应骑士$(br2)掉落自：$(li)$(l:build/mobs/blood_stalk)血潜$(/l)的装备$(li)$(l:build/mobs/night_rogue)夜霸$(/l)的装备$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l)的装备$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l)的装备$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)的装备$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/buildhead",
+          "text": "$(li)$(l:build/mobs/engine_bros)引擎兄弟$(/l)的装备$(li)$(l:build/mobs/remocon_bros)齿轮兄弟$(/l)的装备$(li)$(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)的装备$(li)$(l:build/mobs/kaiser)凯撒$(/l)的装备$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)的装备$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/buildtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/buildlegs"
+		}
+	]
+}

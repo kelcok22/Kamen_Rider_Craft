@@ -1,0 +1,23 @@
+{
+    "name": "全能方块",
+    "icon": "kamenridercraft:mighty_block",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 30,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得 $(l:ex_aid/arsenal/energy_items#speed_energy_item)能力道具$(/l)$(br2)在 $(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l) 或 $(l:ex_aid/mobs/cronus)假面骑士Cronus$(/l) 被召唤时生成$(br2)掉落：$(li)$(l:ex_aid/arsenal/energy_items#bug_energy_item)故障能力$(/l)（8%）$(li)$(l:ex_aid/arsenal/energy_items#speed_energy_item)加速能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#iron_energy_item)钢铁能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#instigate_energy_item)发光能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#jump_energy_item)跳跃能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#muscle_energy_item)力量能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#shrink_energy_item)缩小能力$(/l)（4%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_block",
+            "title": " ",
+            "text": "$(li)$(l:ex_aid/arsenal/energy_items#stretch_energy_item)伸缩能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#invisible_energy_item)隐身能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#confusion_energy_item)眩晕能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#emission_energy_item)夜视能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#reflect_energy_item)反射能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#save_energy_item)保存能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#reverse_energy_item)逆转能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#giant_energy_item)巨大化能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#liquid_energy_item)液状化能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#dark_energy_item)黑暗能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#balloon_energy_item)气球化能力$(/l)（4%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:ex_aid/arsenal/energy_items#end_energy_item)终末能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#halt_energy_item)停止能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#flatten_energy_item)平面化能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#lucky_energy_item)幸运能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#sleep_energy_item)睡眠能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#recover_energy_item)回复能力$(/l)（4%）"
+        }
+    ]
+}

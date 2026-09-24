@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士花音Specter",
+	"icon": "kamenridercraft:kanon_specter_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:kanon_specter_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kanon_specter_ghost_eyecon\",slot_tex2:\"kamenridercraft:kanon_specter_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "花音Specter魂",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#kanon_specter_ghost_eyecon)花音Specter眼魂$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士花音Specter",
+			"text": "登场于：$(li)假面骑士Specter x Blades (2021年，TTFC特别篇)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#kanon_specter_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度"
+		}
+	]
+}

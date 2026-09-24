@@ -1,0 +1,22 @@
+{
+	"name": "江户川",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "江户川",
+			"text": "登场于：$(li)假面骑士OOO 将军与21枚核心硬币 (2011年，电影)$(br2)生成群系：森林、平原$(br2)包含4个 $(l:ooo/mobs/knight_soldier_mob)骑士兵$(/l) 刷怪笼$(br2)箱子战利品：$(li)18个 $(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个 $(l:ooo/items/core_medals#cobra_medal)眼镜蛇核心硬币$(/l)$(li)1个 $(l:ooo/items/core_medals#kame_medal)乌龟核心硬币$(/l)$(li)1个 $(l:ooo/items/core_medals#wani_medal)鳄鱼核心硬币$(/l)$(li)1把铁剑"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/gara_edo_village.png"
+			],
+			"title": " ",
+			"text": "$(li)4个煤炭$(li)6个火把$(li)6个金锭"
+		}
+	]
+}

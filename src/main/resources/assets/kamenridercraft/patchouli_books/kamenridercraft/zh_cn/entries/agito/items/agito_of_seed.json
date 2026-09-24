@@ -1,0 +1,19 @@
+{
+	"name": "亚极陀之种",
+	"icon": "kamenridercraft:agito_of_seed",
+	"category": "kamenridercraft:agito/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)用作合成大多数亚极陀物品的基础物品和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_of_seed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/pantheras_luteus)潘特拉斯·鲁特乌斯$(/l)$(li)$(l:agito/mobs/el_of_the_water)水之上神$(/l)$(li)$(l:agito/mobs/anguis_masculus)安格维斯·玛斯库鲁斯$(/l)$(li)$(l:agito/mobs/another_agito)假面骑士另类亚极陀$(/l)"
+		}
+	]
+}

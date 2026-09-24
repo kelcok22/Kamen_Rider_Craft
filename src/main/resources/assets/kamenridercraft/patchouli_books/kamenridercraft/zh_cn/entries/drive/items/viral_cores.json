@@ -1,0 +1,149 @@
+{
+	"name": "病毒核心",
+	"icon": "kamenridercraft:viral_core_cobara",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_cobara",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_cobara",
+			"text": "掉落自：$(li)$(l:drive/mobs/roidmude)恶路程式$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_spider",
+			"title": "蜘蛛病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_spider",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/roidmude)恶路程式$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_bat",
+			"title": "蝙蝠病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_bat",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/roidmude)恶路程式$(/l)$(li)$(l:gaim/mobs/megahex)梅加赫克斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_chaser_cobara",
+			"title": "追猎者眼镜蛇病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_cobara",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_chaser_spider",
+			"title": "追猎者蜘蛛病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_spider",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_chaser_bat",
+			"title": "追猎者蝙蝠病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_chaser_bat",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/mashin_chaser)魔进追猎者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_neo_cobara",
+			"title": "新型眼镜蛇病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_neo_cobara",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/medic_roidmude)恶路程式·医护$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_neo_spider",
+			"title": "新型蜘蛛病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_neo_spider",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/heart_roidmude)恶路程式·心脏$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "viral_core_neo_bat",
+			"title": "新型蝙蝠病毒核心",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:viral_core_neo_bat",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/brain_roidmude)恶路程式·大脑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rhino_super_viral_core",
+			"title": "犀牛超级病毒核心",
+			"text": "登场于：$(li)Drive Saga：假面骑士追猎 (2016年，V-Cinema电影)$(br2)可切换魔进追猎者的$(l:drive/riders/mashin_chaser#super)超进化态追猎者形态$(/l)$(br2)可切换马赫的$(l:drive/riders/mach#super_deadheat)超级白热形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rhino_super_viral_core",
+			"title": " ",
+			"text": "当前无法获取该道具"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "megahex_viral_core",
+        "title": "梅加赫克斯病毒核心",
+        "text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)可切换梅加赫克斯的$(l:gaim/riders/megahex#zzz)ZZZ梅加赫克斯形态$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:megahex_viral_core",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:gaim/mobs/megahex)梅加赫克斯$(/l)"
+      }
+	]
+}

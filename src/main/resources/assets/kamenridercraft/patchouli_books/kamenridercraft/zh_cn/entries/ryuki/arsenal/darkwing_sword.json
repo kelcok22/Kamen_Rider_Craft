@@ -1,0 +1,16 @@
+{
+    "name": "暗翼剑",
+    "icon": "kamenridercraft:darkwing_sword",
+    "category": "kamenridercraft:ryuki/arsenal",
+    "sortnum": 63,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具线)$(br2)由夜骑的 $(l:ryuki/riders/knight#super_mode)超级模式$(/l) 形态使用$(br2)可在铁砧中使用 $(l:misc/items/rider_circuit)骑士电路板$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:misc/darkwing_sword"
+        }
+    ]
+}

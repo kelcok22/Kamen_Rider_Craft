@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zi_o/main",
+    "name": "腰带",
+    "description": "时王系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:zi_o/items/blank_watch)空白驾驭表盘$(/l)修复.",
+    "icon": "kamenridercraft:ziku_driver_zi_o",
+    "sortnum": 1
+}

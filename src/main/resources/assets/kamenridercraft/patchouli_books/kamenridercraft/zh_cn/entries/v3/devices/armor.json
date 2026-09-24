@@ -1,0 +1,24 @@
+{
+	"name": "V3装甲",
+	"icon": "kamenridercraft:v3head",
+	"category": "kamenridercraft:v3/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与V3骑士的腰带配合使用，以变身成该骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/v3head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/v3troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/v3legs"
+		}
+	]
+}

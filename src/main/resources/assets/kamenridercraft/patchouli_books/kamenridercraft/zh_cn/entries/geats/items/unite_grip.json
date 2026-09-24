@@ -1,0 +1,16 @@
+{
+	"name": "镭射跃动升华器",
+	"icon": "kamenridercraft:unite_grip",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换极狐的 $(l:geats/riders/geats#laserboost)镭射推进形态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/unite_grip"
+		}
+	]
+}

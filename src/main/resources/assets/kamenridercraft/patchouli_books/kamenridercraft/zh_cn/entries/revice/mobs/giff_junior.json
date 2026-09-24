@@ -1,0 +1,21 @@
+{
+    "name": "初级恶魔",
+    "icon": "kamenridercraft:revice_logo",
+    "category": "kamenridercraft:revice/mobs",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:giff_junior",
+            "text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br)生命值：30"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "生成群系：平原、向日葵平原、风袭丘陵、积雪针叶林$(br2)掉落$(li)2-4个 $(l:revice/items/proto_vistamp)空白罪恶印章$(/l)$(li)1个 $(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（50%）$(li)1个 $(l:revice/items/vistamps#rex_vistamp)暴龙罪恶印章$(/l)（25%）$(li)1个 $(l:revice/items/vistamps#megalodon_vistamp)巨齿鲨罪恶印章$(/l)（6.3%）$(li)1个 $(l:revice/items/vistamps#eagle_vistamp)猎雕罪恶印章$(/l)（6.3%）$(li)1个 $(l:revice/items/vistamps#giff_junior_vistamp)初级恶魔罪恶印章$(/l)（6.3%）$(li)1个 $(l:revice/items/vistamps#rex_vistamp_metal)暴龙罪恶印章(黑色金属镀层)$(/l)（6.3%）$(br2)进化见下一页"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Boss$(li)$(l:revice/mobs/evil)假面骑士Evil$(/l)（2%）$(li)$(l:revice/mobs/daiouika_deadman)大王鱿·亡命徒$(/l)（2%）$(li)$(l:revice/mobs/wolf_deadman)狼·亡命徒$(/l)（2%）$(li)$(l:revice/mobs/queen_bee_deadman)女王蜂·亡命徒$(/l)（2%）$(li)$(l:revice/mobs/vail)深红贝尔$(/l)（2%）"
+        }
+    ]
+}

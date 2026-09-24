@@ -1,0 +1,930 @@
+{
+	"name": "梦境胶囊",
+	"icon": "kamenridercraft:impact_capsem",
+	"category": "kamenridercraft:zeztz/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "impact_capsem",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于合成Zeztz的$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#impact)物理脉冲$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:impact_capsem",
+			"text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "transform_capsem",
+        "title": "变换梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#transform)物理变换$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:transform_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wing_capsem",
+        "title": "羽翼梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#wing)物理羽翼$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wing_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "stream_capsem",
+			"title": "涌动梦境胶囊",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#stream)科技涌动$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stream_capsem",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "machinery_capsem",
+        "title": "器械梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#machinery)科技器械$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:machinery_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "projection_capsem",
+        "title": "投影梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#projection)科技投影$(/l)形态$(br2)用于切换分身投影的$(l:zeztz/riders/zeztz#projection)科技投影$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:projection_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "recovery_capsem",
+			"title": "重构梦境胶囊",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#recovery)灵犀重构$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:recovery_capsem",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "barrier_capsem",
+        "title": "屏障梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#barrier)精魂屏障$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:barrier_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "wonder_capsem",
+			"title": "奇迹梦胶囊",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#wonder)法则奇迹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_capsem",
+			"title": " ",
+			"text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "gravity_capsem",
+        "title": "重力梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#gravity)范式重力$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gravity_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "plasma_capsem",
+        "title": "等离子梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#plasma)闪电等离子$(/l)形态$(br2)用于切换分身投影的$(l:zeztz/riders/zeztz#plasma)闪电等离子$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:plasma_capsem",
+        "title": " ",
+        "text": "当背包中有$(l:zeztz/items/capsems#void_capsem)虚空梦境胶囊$(/l)时，被闪电击中即可获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "booster_capsem",
+        "title": "增幅器梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#booster)等离子增幅$(/l)形态"
+      },
+      {
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/booster_capsem"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "dualmare_capsem",
+        "title": "双魇梦胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#catastrom)灾厄$(/l)与$(l:zeztz/riders/zeztz#orderm)秩序$(/l)形态"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:zeztz/dualmare_capsem"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "exdreamrise_capsem",
+        "title": "超梦升华梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于获取Zeztz的$(l:zeztz/devices/zeztz_exdream_driver)Zeztz超梦驱动器$(/l)$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz_exdream)梦越$(/l)形态"
+      },
+      {
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/exdreamrise_capsem"
+		},
+		{
+        "type": "patchouli:text",
+        "anchor": "agent_capsem",
+        "title": "特工梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz：告别的任务（2026年，电影）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz_exdream#agent)特工梦境$(/l)形态"
+      },
+      {
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zeztz/agent_capsem"
+		},
+		{
+        "type": "patchouli:text",
+        "anchor": "heart_of_impact_capsem",
+        "title": "心灵冲击梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz：告别的任务（2026年，电影）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz_exdream#heart_of_impact)心灵冲击$(/l)或$(l:zeztz/riders/zeztz_exdream#heart_of_impact_capsem_impact)物理冲击(心灵冲击)$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:heart_of_impact_capsem",
+        "title": " ",
+        "text": "该物品目前暂无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zeztz_and_code_zeroider_capsem",
+        "title": "Zeztz与暗码零蚀者梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz：击破！巨型机器人暗码零蚀者！！（2026年，超战斗视频）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#zeroider)冲击零蚀者$(/l)形态"
+      },
+      {
+        "type": "patchouli:crafting",
+        "recipe": "kamenridercraft:zeztz/zeztz_and_code_zeroider_capsem"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "charge_capsem",
+        "title": "充能梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz：入梦（2026年，舞台秀）$(br2)用于切换Zeztz的$(l:zeztz/riders/zeztz#charge)想象$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:charge_capsem",
+        "title": " ",
+        "text": "可在Zeztz$(l:misc/stageshow)舞台秀$(/l)中获得"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "erase_capsem",
+        "title": "擦除梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于合成诺克斯暗骑的$(l:zeztz/devices/knight_invoker)暗夜祷告驱动器$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:erase_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/nox_mob)诺克斯暗骑$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "extra_capsem",
+        "title": "超额梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于合成领主三号的$(l:zeztz/devices/lord_invoker#lord_invoker_three)领主唤临器$(/l)$(br2)用于切换领主三号的$(l:zeztz/riders/lord_three#extra)基础形态$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:extra_capsem",
+        "title": " ",
+       "text": "掉落自：$(li)$(l:zeztz/mobs/lord_three)领主三号$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shock_capsem",
+        "title": "震荡梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于合成领主五号的$(l:zeztz/devices/lord_invoker#lord_invoker_five)领主唤临器$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shock_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/lord_three)领主三号$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "panic_capsem",
+        "title": "惶恐梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于合成领主六号的$(l:zeztz/devices/lord_invoker#lord_invoker_six)领主唤临器$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:panic_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/lord_three)领主三号$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "clear_capsem",
+        "title": "清除梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:clear_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/lord_three)领主三号$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "lord_booster_capsem",
+        "title": "领主推进梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换领主三号的$(l:zeztz/riders/lord_three#booster)推进$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:lord_booster_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/lord_three)领主三号$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "punish_capsem",
+        "title": "惩戒梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:punish_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/dawn)假面骑士黎明$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "shadow_capsem",
+        "title": "暗影梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于合成诺克斯的$(l:zeztz/devices/nox_driver)诺克斯驱动器$(/l)$(br2)用于切换诺克斯的$(l:zeztz/riders/nox#shadow)基础形态$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:shadow_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/shadow_nightmare)暗影梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gun_capsem",
+        "title": "枪械梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换诺克斯的$(l:zeztz/riders/nox#gun)枪械之影$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gun_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/nightmare)梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wolf_capsem",
+        "title": "野狼梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换诺克斯的$(l:zeztz/riders/nox#wolf)野狼之影$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wolf_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/nightmare)梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "midnight_shadow_capsem",
+        "title": "午夜暗影梦境胶囊",
+        "text": "登场于:$(li)假面骑士Zeztz (2025年, 电视剧)$(br2)用于切换诺克斯的$(l:zeztz/riders/nox#midnight_shadow)午夜暗影$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:midnight_shadow_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/shadow_nightmare)暗影梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "darkness_capsem",
+        "title": "黑暗梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用于切换黑暗Zeztz梦魇的$(l:zeztz/riders/zeztz_darkness#normal)基础$(/l)与$(l:zeztz/riders/zeztz_darkness#powered_up)强化$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:darkness_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/zeztz_darkness_nightmare)黑暗Zeztz梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "void_capsem",
+        "title": "虚空梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:void_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/nox_mob)诺克斯暗骑$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "daydream_capsem",
+        "title": "白日梦梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz：告别的任务（2026年，电影）$(br2)用于合成梦现的$(l:zeztz/devices/mugen_driver)梦现驱动器$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:daydream_capsem",
+        "title": " ",
+        "text": "该物品目前暂无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "code_somnia_capsem",
+        "title": "暗码索姆尼亚胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:code_somnia_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/phantom_gore_nightmare)幻影悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "capsem_dropper_capsem",
+        "title": "梦境胶囊投放器胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:capsem_dropper_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/catastrophe_gore_nightmare)崩坏悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "phantom_capsem",
+        "title": "幻影梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:phantom_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/phantom_gore_nightmare)幻影悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "chaos_capsem",
+        "title": "混沌梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:chaos_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/phantom_gore_nightmare)幻影悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "song_capsem",
+        "title": "歌声梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz 主题曲CD & Zeztz胶囊（演唱版）（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:song_capsem",
+        "title": " ",
+        "text": "通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "sweets_capsem",
+        "title": "Zeztz梦境胶囊(甜点版)",
+        "text": "登场于：$(li)假面骑士Zeztz 周边礼盒（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:sweets_capsem",
+        "title": " ",
+        "text": "通过打开万圣节$(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "charadeco_capsem",
+        "title": "Zeztz梦境胶囊(角色装饰版)",
+        "text": "登场于：$(li)假面骑士Zeztz Charadeco蛋糕（2024年，糕点系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:charadeco_capsem",
+        "title": " ",
+        "text": "通过打开$(l:misc/items/gift)礼物$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gochizo_capsem",
+        "title": "饱藏梦境胶囊",
+        "text": "登场于：$(li)假面骑士Zeztz Zeztz 饱藏套装（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gochizo_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "impact_capsem_gold",
+        "title": "冲击梦境胶囊(金)",
+        "text": "登场于：$(li)DX 骑士胶囊套装 EX 肌体金色版本（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:impact_capsem_gold",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/oblivion_gore_nightmare)忘却悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "transform_capsem_gold",
+        "title": "变换梦境胶囊(金)",
+        "text": "登场于：$(li)DX 骑士胶囊套装 EX 肌体金色版本（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:transform_capsem_gold",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/oblivion_gore_nightmare)忘却悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wing_capsem_gold",
+        "title": "羽翼梦境胶囊(金)",
+        "text": "登场于：$(li)DX 骑士胶囊套装 EX 肌体金色版本（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wing_capsem_gold",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/oblivion_gore_nightmare)忘却悍戾梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "telemaga_capsem",
+        "title": "Zeztz梦境胶囊(Telemaga版)",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，电视杂志）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:telemaga_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/dawn)假面骑士黎明$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fashion_capsem",
+        "title": "Zeztz梦境胶囊(时尚版)",
+        "text": "登场于：$(li)假面骑士Zeztz（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fashion_capsem",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:zeztz/mobs/shadow_nightmare)暗影梦魇$(/l)"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kuuga_capsem",
+        "title": "空我梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kuuga_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "agito_capsem",
+        "title": "亚极陀梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 02（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:agito_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ryuki_capsem",
+        "title": "龙骑梦境胶囊",
+        "text": "登场于：$(li)GP 骑士胶囊 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ryuki_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "faiz_capsem",
+        "title": "Faiz梦境胶囊",
+        "text": "登场于：$(li)DX Zeztz手机（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:faiz_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "blade_capsem",
+        "title": "剑梦境胶囊",
+        "text": "登场于：$(li)GP 骑士胶囊 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:blade_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "hibiki_capsem",
+        "title": "响鬼梦境胶囊",
+        "text": "登场于：$(li)SG 骑士胶囊 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hibiki_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kabuto_capsem",
+        "title": "甲斗梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 04（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kabuto_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "den_o_capsem",
+        "title": "电王梦境胶囊",
+        "text": "登场于：$(li)DX Zeztz执照（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:den_o_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "kiva_capsem",
+        "title": "Kiva梦境胶囊",
+        "text": "登场于：$(li)GP 骑士胶囊 02（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:kiva_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "decade_capsem",
+        "title": "Decade梦境胶囊",
+        "text": "登场于：$(li)DX Zeztz相机（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:decade_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "w_capsem",
+        "title": "W梦境胶囊",
+        "text": "登场于：$(li)DX Zeztz传感器（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:w_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ooo_capsem",
+        "title": "OOO梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 02（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ooo_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "fourze_capsem",
+        "title": "Fourze梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:fourze_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "wizard_capsem",
+        "title": "Wizard梦境胶囊",
+        "text": "登场于：$(li)SG 骑士胶囊 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:wizard_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gaim_capsem",
+        "title": "铠武梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 04（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gaim_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "drive_capsem",
+        "title": "Drive梦境胶囊",
+        "text": "登场于：$(li)英雄图案T恤（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:drive_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ghost_capsem",
+        "title": "Ghost梦境胶囊",
+        "text": "登场于：$(li)Televi杂志（2025年11月号，杂志）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ghost_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "ex_aid_capsem",
+        "title": "Ex-Aid梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 03（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ex_aid_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "build_capsem",
+        "title": "Build梦境胶囊",
+        "text": "登场于：$(li)DX 胶囊圆柱（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:build_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zi_o_capsem",
+        "title": "时王梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 03（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zi_o_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "zero_one_capsem",
+        "title": "01梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 04（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:zero_one_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "saber_capsem",
+        "title": "Saber梦境胶囊",
+        "text": "登场于：$(li)Televi-Kun杂志（2025年11月号，杂志）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:saber_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "revice_capsem",
+        "title": "利维斯梦境胶囊",
+        "text": "登场于：$(li)Televi-Kun杂志（2025年9月号，杂志）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:revice_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "geats_capsem",
+        "title": "极狐梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 04（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:geats_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gotchard_capsem",
+        "title": "歌查德梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 02（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gotchard_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "gavv_capsem",
+        "title": "加布梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:gavv_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "legend_capsem",
+        "title": "雷杰多梦境胶囊",
+        "text": "登场于：$(li)DX 传奇骑士胶囊套装 01（2025年，玩具系列）"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:legend_capsem",
+        "title": " ",
+        "text": "在城市维度中，通过在$(l:misc/blocks/machine_blocks#capsem_dropper)梦境胶囊提取机$(/l)上使用$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)获取"
+      }
+    ]
+}

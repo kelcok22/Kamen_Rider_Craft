@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士·亚巴顿",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:abaddon",
+			"text": "登场于：$(li)假面骑士01：真实×时间 (2020年，电影)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：玄武岩三角洲$(br2)掉落$(li)1-3个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)1个$(l:zero_one/items/blank_progrisekey)修玛吉亚程式升华秘钥$(/l)$(br2)进化$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士·亚巴顿(指挥官)$(/l) (5%)$(li)$(l:zero_one/mobs/eden)假面骑士·伊甸$(/l) (5%)"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "兹欧斯·捕食者",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zooous_predator",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "从$(l:saber/mobs/zooous)兹欧斯$(/l)进化而来$(br2)掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/alter_ride_books#zooous_alter_ride_book)兹欧斯魔改驾驭书$(/l)"
+		}
+	]
+}

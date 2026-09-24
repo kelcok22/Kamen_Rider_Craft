@@ -1,0 +1,266 @@
+{
+	"name": "绝灭升华钥",
+	"icon": "kamenridercraft:dire_wolf_zetsumerisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "dire_wolf_zetsumerisekey",
+			"text": "登场于：$(li)01外传：假面骑士巴尔坎与瓦尔基里 (2021年，V-Cinema电影)$(br2)用于切换巴尔坎的$(l:zero_one/riders/vulcan#lone_wolf)独行狼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dire_wolf_zetsumerisekey",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)恐狼索尔德魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "serval_tiger_zetsumerisekey",
+			"title": "剑齿虎绝灭升华钥",
+			"text": "登场于：$(li)01外传：假面骑士巴尔坎与瓦尔基里 (2021年，V-Cinema电影)$(br2)用于切换瓦尔基里的$(l:zero_one/riders/valkyrie#justice_serval)正义剑齿虎$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:serval_tiger_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)剑齿虎索尔德魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "awaking_arsino_zetsumerisekey",
+			"title": "觉醒重脚兽绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成千骑的$(l:zero_one/devices/zaia_thousandriver#zaia_thousandriver)哉亚千位驱动器(千骑)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:awaking_arsino_zetsumerisekey",
+			"title": " ",
+			"text": "获取方式：在$(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l)上使用$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)生成"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "eden_zetsumerisekey",
+			"title": "伊甸绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)用于合成伊甸的$(l:zero_one/devices/eden_driver#eden_driver)伊甸驱动器(伊甸)$(/l)$(br2)用于合成路西法的$(l:zero_one/devices/eden_driver#eden_driver_lucifer)伊甸驱动器(路西法)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:eden_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/eden)假面骑士·伊甸$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "triceratops_zetsumerisekey",
+			"title": "三角龙绝灭升华钥",
+			"text": "登场于：$(li)01外传：假面骑士灭亡迅雷 (2021年，V-Cinema电影)$(br2)用于合成哉亚的$(l:zero_one/devices/zaia_thousandriver#zaia_thousandriver_zaia)哉亚千位驱动器(哉亚)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:triceratops_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/zaia)假面骑士·哉亚$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "carnotaurus_zetsumerisekey",
+			"title": "食肉牛龙绝灭升华钥",
+			"text": "登场于：$(li)01外传：假面骑士灭亡迅雷 (2021年，V-Cinema电影)$(br2)用于合成哉亚的$(l:zero_one/devices/zaia_thousandriver#zaia_thousandriver_zaia)哉亚千位驱动器(哉亚)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:carnotaurus_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/zaia)假面骑士·哉亚$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "massbrain_zetsumerisekey",
+			"title": "灭亡迅雷绝灭升华钥",
+			"text": "登场于：$(li)01外传：假面骑士灭亡迅雷 (2021年，V-Cinema电影)$(br2)用于合成灭亡迅雷的$(l:zero_one/devices/metsuboujinrai_driver)灭亡迅雷驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:massbrain_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/zaia)假面骑士·哉亚$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "berotha_zetsumerisekey",
+			"title": "刺鳞蛉绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成贝罗萨魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_berotha)绝灭升华器(贝罗萨魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:berotha_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuehne_zetsumerisekey",
+			"title": "孔耐蜥绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成库恩魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_kuehne)绝灭升华器(库恩魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuehne_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ekal_zetsumerisekey",
+			"title": "强齿袋鼠绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成艾卡尔魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_ekal)绝灭升华器(艾卡尔魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ekal_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "neohi_zetsumerisekey",
+			"title": "箭石绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成奈欧希魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_neohi)绝灭升华器(奈欧希魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:neohi_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "onycho_zetsumerisekey",
+			"title": "爪蝠绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成欧尼科魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_onycho)绝灭升华器(欧尼科魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:onycho_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vicarya_zetsumerisekey",
+			"title": "鹦鹉螺绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成比卡利亚魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_vicarya)绝灭升华器(比卡利亚魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vicarya_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaeru_zetsumerisekey",
+			"title": "溪蟾绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成加艾鲁魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_gaeru)绝灭升华器(加艾鲁魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaeru_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mammoth_zetsumerisekey",
+			"title": "猛犸象绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成猛犸象魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_mammoth)绝灭升华器(猛犸象魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mammoth_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dodo_zetsumerisekey",
+			"title": "渡渡鸟绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成渡渡鸟魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo)绝灭升华器(渡渡鸟魔机偶)$(/l)$(br2)用于合成渡渡鸟魔机偶·改的$(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo_custom)绝灭升华器(渡渡鸟魔机偶·改)$(/l)$(br2)用于合成渡渡鸟魔机偶·改v2的$(l:zero_one/devices/zetsumeriser#zetsumeriser_dodo_custom_two)绝灭升华器(渡渡鸟魔机偶·改v2)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dodo_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arsino_zetsumerisekey",
+			"title": "重脚兽绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成重脚兽的$(l:zero_one/devices/zetsumeriser#zetsumeriser_arsino)绝灭升华器(重脚兽)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:arsino_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_zetsumerisekey",
+			"title": "未知绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01：袋鼠会跳出什么？自己好好想想吧！现在，非或人不可！！ (2019年，超战斗DVD)$(br2)用于合成欧尼科魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_onycho)绝灭升华器(欧尼科魔机偶)$(/l)$(br2)用于合成比卡利亚魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_vicarya)绝灭升华器(比卡利亚魔机偶)$(/l)$(br2)用于合成加艾鲁魔机偶的$(l:zero_one/devices/zetsumeriser#zetsumeriser_gaeru)绝灭升华器(加艾鲁魔机偶)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unknown_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "japanese_wolf_zetsumerisekey",
+			"title": "日本狼绝灭升华钥",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于合成亡的$(l:zero_one/devices/metsuboujinrai_forceriser#forceriser_naki)灭亡迅雷强制升华器(亡)$(/l)$(br2)用于切换巴尔坎的$(l:zero_one/riders/vulcan#orthros)俄耳托斯$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:japanese_wolf_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/naki)假面骑士·亡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rocking_hopper_zetsumerisekey",
+			"title": "落岩蝗虫绝灭升华钥",
+			"text": "登场于：$(li)假面骑士：令和第一世代 (2019年，电影)$(br2)用于合成1型的$(l:zero_one/devices/cycloneriser)旋风升华器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocking_hopper_zetsumerisekey",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zero_one/mobs/dodo_magia_chick)渡渡鸟-雏鸟魔机偶$(/l)"
+		}
+	]
+}

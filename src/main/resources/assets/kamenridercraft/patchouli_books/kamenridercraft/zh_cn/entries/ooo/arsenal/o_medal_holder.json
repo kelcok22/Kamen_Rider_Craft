@@ -1,0 +1,16 @@
+{
+	"name": "O硬币收纳盒",
+	"icon": "kamenridercraft:o_medal_holder",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)最多可存储24组核心硬币"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/o_medal_holder"
+		}
+	]
+}

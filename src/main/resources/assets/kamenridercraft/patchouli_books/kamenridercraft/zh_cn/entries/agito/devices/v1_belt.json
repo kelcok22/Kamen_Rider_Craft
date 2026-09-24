@@ -1,0 +1,16 @@
+{
+	"name": "V1腰带",
+	"icon": "kamenridercraft:v1_belt",
+	"category": "kamenridercraft:agito/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/v-1)假面骑士V1$(/l)$(br2)可在铁砧中使用$(l:agito/items/g3core)空白G芯片$(/l)修复"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/v1_belt"
+		}
+	]
+}

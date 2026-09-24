@@ -1,0 +1,16 @@
+{
+	"name": "故障驱动器（幻梦）",
+	"icon": "kamenridercraft:gashacon_bugvisor_genmu",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/genm#zombie_x)假面骑士幻梦（僵尸X形态）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_genmu"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "恐惧骑兵",
+	"icon": "kamenridercraft:dreadriver_trooper",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver_trooper\",Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "军式形态",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "恐惧骑兵",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver#dreadriver_trooper)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 III"
+		}
+	]
+}

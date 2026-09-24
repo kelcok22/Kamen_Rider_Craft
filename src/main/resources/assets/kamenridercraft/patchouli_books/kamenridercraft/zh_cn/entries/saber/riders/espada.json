@@ -1,0 +1,176 @@
+{
+	"name": "假面骑士刀剑",
+	"icon": "kamenridercraft:seiken_swordriver_espada",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "lamp_do_alangina",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阿兰基那神灯形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "needle_hedgehog",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "刺猬神灯形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#needle_hedgehog_wonder_ride_book)尖针刺猬奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)尖针刺猬效果：$(li)速度 II$(li)抗性提升$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tri_cerberus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "刻耳柏洛斯神灯形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tri_cerberus_wonder_ride_book)三头地狱犬奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)三头地狱犬效果：$(li)急迫 III$(li)力量$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "golden_alangina",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:tri_cerberus_wonder_ride_book\",slot_tex2:\"kamenridercraft:needle_hedgehog_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黄金阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tri_cerberus_wonder_ride_book)三头地狱犬$(/l) 与 $(l:saber/items/wonder_ride_books#needle_hedgehog_wonder_ride_book)尖针刺猬$(/l) 奇幻驾驭书 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)三头地狱犬效果：$(li)急迫 III$(li)力量$(br2)尖针刺猬效果：$(li)速度 II$(li)抗性提升$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arabiana_night",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:arabiana_night_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阿拉伯之夜形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#arabiana_night_wonder_ride_book)阿拉伯那之夜奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)假面骑士圣刃：深罪的三重奏 (2022年，V-Cinema电影)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 VII$(li)抗性提升 IV$(li)急迫 VI$(li)跳跃提升 VII$(li)抗火$(li)力量 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "brave_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飞龙阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#brave_dragon_wonder_ride_book)勇气飞龙奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tenkuu_no_pegasus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:tenkuu_no_pegasus_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "天马阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#tenkuu_no_pegasus_wonder_ride_book)天空的天马奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)天空的天马效果：$(li)急迫 III$(li)跳跃提升 V$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "genbu_shinwa",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:genbu_shinwa_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "玄武阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#genbu_shinwa_wonder_ride_book)玄武神话奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)玄武神话效果：$(li)抗性提升 II$(li)力量$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jaaku_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:jaaku_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "邪恶飞龙阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#jaaku_dragon_wonder_ride_book)邪恶飞龙奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)邪恶飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "eternal_phoenix",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:eternal_phoenix_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "不死鸟阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#eternal_phoenix_wonder_ride_book)永恒不死鸟奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)永恒不死鸟效果：$(li)斩击提升$(li)力量（持剑时）$(li)生命恢复$(li)急迫$(li)飞行$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "storm_eagle",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:storm_eagle_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猎鹰阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)风暴猎鹰奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)风暴猎鹰效果：$(li)夜视$(li)飞行$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lion_senki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_espada\",components:{custom_data:{slot_tex1:\"kamenridercraft:saber_blank_1\",slot_tex2:\"kamenridercraft:lion_senki_wonder_ride_book\",slot_tex3:\"kamenridercraft:lamp_do_alngina_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雄狮阿兰基那形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士刀剑",
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器$(/l)进行变身$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+		}
+	]
+}

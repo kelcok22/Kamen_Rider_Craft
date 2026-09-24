@@ -1,0 +1,28 @@
+{
+  "name": "驾驭贩卖号+虎驾驭贩卖号",
+  "icon": "kamenridercraft:ridevendor_spawn_egg",
+  "category": "kamenridercraft:ooo/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:ooo/ridevendor_spawn_egg",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)由$(l:ooo/riders/ooo)假面骑士OOO$(/l)使用$(br2)放置于方块上可召唤驾驭贩卖号"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ridevendor",
+      "text": "潜行状态下右键，可在贩卖机模式与摩托车模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ridevendor_vending",
+      "text": "使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击，可获得$(l:ooo/arsenal/candroids)罐头小机械$(/l)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:toridevendor",
+      "text": "使用$(l:ooo/arsenal/candroids#tora_candroid)虎罐头小机械$(/l)右键点击，可转换为虎驾驭贩卖号"
+    }
+  ]
+}

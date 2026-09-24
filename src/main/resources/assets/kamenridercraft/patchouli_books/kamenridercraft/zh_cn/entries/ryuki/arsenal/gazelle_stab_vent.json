@@ -1,0 +1,19 @@
+{
+	"name": "瞪羚尖刺降临",
+	"icon": "kamenridercraft:gazelle_stab_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 60,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/imperer)假面骑士羚皇$(/l)与$(l:ryuki/arsenal/gazelle_visor)瞪羚召机$(/l)一同使用，可获得$(l:ryuki/arsenal/gazelle_stab)瞪羚尖刺$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gazelle_stab_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#imperer)假面骑士羚皇$(/l)"
+		}
+	]
+}

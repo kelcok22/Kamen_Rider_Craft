@@ -1,0 +1,40 @@
+{
+	"name": "Birth驱动器",
+	"icon": "kamenridercraft:birth_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_driver",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/birth)假面骑士Birth"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/birth_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_birth_driver",
+			"title": "试做型Birth驱动器",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/birth_proto_type)假面骑士Birth原型"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/birth_driver_prototype"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "birth_driver_x",
+			"title": "Birth驱动器X",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/birth_x)假面骑士Birth X"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ooo/birth_x_driver"
+		}
+	]
+}

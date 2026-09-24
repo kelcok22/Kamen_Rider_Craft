@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:saber/main",
+    "name": "北方基地",
+    "description": "",
+    "icon": "kamenridercraft:blank_wonder_ride_book",
+    "sortnum": 5
+}
