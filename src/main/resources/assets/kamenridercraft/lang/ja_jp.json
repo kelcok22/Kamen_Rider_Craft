@@ -5761,6 +5761,8 @@
 "kamenridercraft:drago_knight_hunter_z_gashat_gun.form": "フォーム: ハンター%sゲーマー レベル5（ドラゴンガン）",
 "kamenridercraft:drago_knight_hunter_z_gashat_blade.form": "フォーム: ハンター%sゲーマー レベル5（ドラゴンブレード）",
 "kamenridercraft:drago_knight_hunter_z_gashat_fang.form": "フォーム: ハンター%sゲーマー レベル5（ドラゴンファング）",
+"kamenridercraft:drago_knight_hunter_z_gashat_graphite.form": "フォーム: グラファイトバグスター",
+"kamenridercraft:drago_knight_hunter_z_gashat_graphite_bugvisor.form": "フォーム: グラファイトバグスター",
 
 "item.kamenridercraft.proto_mighty_action_x_gashat": "プロトマイティアクションXガシャット",
 "item.kamenridercraft.proto_taddle_quest_gashat": "プロトタドルクエストガシャット",
@@ -5959,6 +5961,8 @@
 "kamenridercraft.name.another_para_dx": "ライダー: 仮面ライダーアナザーパラドクス",
 "item.kamenridercraft.gamer_driver_nico_snipe": "ゲーマドライバー",
 "kamenridercraft.name.snipe_nico": "ライダー: 仮面ライダーニコスナイプ",
+"item.kamenridercraft.gashacon_bugvisor_graphite": "ガシャコンバグヴァイザー",
+"kamenridercraft.name.graphite_bugster": "怪人: グラファイトバグスター",
 
 "item.kamenridercraft.gashacon_bugvisor_genmu": "ガシャコンバグヴァイザー",
 "kamenridercraft.name.genm_bugvisor": "ライダー: 仮面ライダーゲンム",
