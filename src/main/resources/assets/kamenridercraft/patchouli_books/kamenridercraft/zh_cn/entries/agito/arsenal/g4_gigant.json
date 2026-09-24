@@ -1,0 +1,16 @@
+{
+	"name": "G4巨炮",
+	"icon": "kamenridercraft:g4_gigant",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀：G4计划 (2001年，电影)$(br2)由$(l:agito/riders/g4)假面骑士G4$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/g4_gigant"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "凿子",
+	"icon": "kamenridercraft:wizard_gem_crafting_chisel",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于辅助合成$(l:wizard/items/unknown_wizard_rings#unknown_amber_ring)未知巫师指环$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_gem_crafting_chisel"
+		}
+	]
+}

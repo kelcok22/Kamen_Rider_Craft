@@ -1,0 +1,16 @@
+{
+  "name": "K-Touch(Diend)",
+  "icon": "kamenridercraft:k_touch_diend",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)超电王三部曲：黄篇 宝藏DE-终海盗 (2010年，电影)$(br2)用于切换Diend的$(l:decade/riders/diend#complete)完全形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/k_touch_diend"
+    }
+  ]
+}

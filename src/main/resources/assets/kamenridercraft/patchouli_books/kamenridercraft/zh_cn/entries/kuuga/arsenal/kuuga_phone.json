@@ -1,0 +1,19 @@
+{
+	"name": "空我的手机",
+	"icon": "kamenridercraft:kuuga_phone",
+	"category": "kamenridercraft:kuuga/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)当15格范围内存在$(l:kuuga/mobs/zu_gumun_ba)滋·古穆姆·巴$(/l)时会发光"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_phone",
+			"title": " ",
+			"text": "通过打开 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l) 获得"
+		}
+	]
+}

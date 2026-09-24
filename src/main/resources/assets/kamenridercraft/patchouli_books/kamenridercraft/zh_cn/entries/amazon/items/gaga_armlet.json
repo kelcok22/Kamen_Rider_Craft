@@ -1,0 +1,19 @@
+{
+	"name": "嘎嘎臂环",
+	"icon": "kamenridercraft:gaga_armlet",
+	"category": "kamenridercraft:amazon/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaga_armlet",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		}
+	]
+}

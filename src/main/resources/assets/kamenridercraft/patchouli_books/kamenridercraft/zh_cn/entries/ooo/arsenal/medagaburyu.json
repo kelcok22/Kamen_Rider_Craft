@@ -1,0 +1,16 @@
+{
+	"name": "圣徽暴咬龙",
+	"icon": "kamenridercraft:medagaburyu",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)由OOO的$(l:ooo/riders/ooo#putotyra)翼角暴联组$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/medagaburyu"
+		}
+	]
+}

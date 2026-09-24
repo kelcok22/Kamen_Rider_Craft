@@ -1,0 +1,42 @@
+{
+	"name": "启动腰带",
+	"icon": "kamenridercraft:ridol",
+	"category": "kamenridercraft:x/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ridol",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)与$(l:x/devices/armor)X装甲$(/l)一起穿戴，可变身为$(l:x/riders/x)假面骑士X$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:x/ridol"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_ridol",
+			"title": "启动腰带（黑暗X）",
+			"text": "登场于：$(li)柏青哥假面骑士 全力疾驰（2015年，柏青哥游戏）$(br2)与$(l:x/devices/armor)X装甲$(/l)一起穿戴，可变身为$(l:x/riders/dark_x)黑暗X$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:x/dark_ridol"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_ridol",
+			"title": "假启动腰带",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)与$(l:x/devices/armor)X装甲$(/l)一起穿戴，可变身为$(l:x/riders/fake_x)假X$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_ridol",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

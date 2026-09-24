@@ -1,0 +1,16 @@
+{
+	"name": "月光雷鸣剑黄雷",
+	"icon": "kamenridercraft:gekkou_raimeiken_ikazuchi",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃：深罪的三重奏 (2022年，V-Cinema电影)$(br2)由刀剑的 $(l:saber/riders/espada#arabiana_night)阿拉伯那之夜$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/gekkou_raimeiken_ikazuchi"
+		}
+	]
+}

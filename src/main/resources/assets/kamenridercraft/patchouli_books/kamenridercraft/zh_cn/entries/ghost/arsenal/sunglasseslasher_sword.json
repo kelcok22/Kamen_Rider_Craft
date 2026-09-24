@@ -1,0 +1,16 @@
+{
+	"name": "太阳镜锯刀",
+	"icon": "kamenridercraft:sunglasseslasher_sword",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)由Ghost的$(l:ghost/riders/ghost#toucon_boost)斗魂鼓舞魂$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/sunglasseslasher_sword"
+		}
+	]
+}

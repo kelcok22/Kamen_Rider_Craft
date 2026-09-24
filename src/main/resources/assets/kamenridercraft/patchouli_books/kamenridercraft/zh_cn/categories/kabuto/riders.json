@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kabuto/main",
+    "name": "甲斗系列骑士",
+    "description": "来自《假面骑士甲斗》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:kabutohead",
+    "sortnum": 0
+}

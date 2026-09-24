@@ -1,0 +1,16 @@
+{
+	"name": "Juuga驱动器",
+	"icon": "kamenridercraft:juuga_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/juuga)假面骑士Juuga$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/juuga_driver"
+		}
+	]
+}

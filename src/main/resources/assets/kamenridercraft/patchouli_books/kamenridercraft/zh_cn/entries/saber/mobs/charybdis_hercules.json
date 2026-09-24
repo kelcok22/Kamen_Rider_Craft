@@ -1,0 +1,17 @@
+{
+	"name": "卡律布狄斯·大力神",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:charybdis_hercules",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%概率从$(l:saber/mobs/charybdis)卡律布狄斯$(/l)进化而来$(br2)掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/alter_ride_books#charybdis_alter_ride_book)卡律布狄斯魔改驾驭书$(/l)"
+		}
+	]
+}

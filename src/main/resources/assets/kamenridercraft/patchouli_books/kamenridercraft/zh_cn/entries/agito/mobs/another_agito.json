@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士另类亚极陀",
+	"icon": "kamenridercraft:agito_logo",
+	"category": "kamenridercraft:agito/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:another_agito",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br)生命值: 200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:agito/mobs/anguis_masculus)安格维斯·玛斯库鲁斯$(/l)进化而来$(br2)掉落$(li)4-6个$(l:agito/items/agito_of_seed)亚极陀之种$(/l)"
+		}
+	]
+}

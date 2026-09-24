@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:agito/main",
+    "name": "生成建筑",
+    "description": "与亚极陀相关的所有建筑",
+    "icon": "kamenridercraft:overlord_oopart2",
+    "sortnum": 5
+}

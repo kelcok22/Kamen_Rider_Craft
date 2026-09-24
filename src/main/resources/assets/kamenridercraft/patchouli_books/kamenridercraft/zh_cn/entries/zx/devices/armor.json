@@ -1,0 +1,24 @@
+{
+	"name": "ZX装甲",
+	"icon": "kamenridercraft:zxhead",
+	"category": "kamenridercraft:zx/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与ZX骑士的变身腰带配合使用，以变身成该骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zx/zx_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zx/zx_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zx/zx_legs"
+		}
+	]
+}

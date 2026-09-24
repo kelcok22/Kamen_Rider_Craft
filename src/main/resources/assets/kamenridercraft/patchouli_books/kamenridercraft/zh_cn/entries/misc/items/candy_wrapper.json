@@ -1,0 +1,17 @@
+{
+	"name": "糖果包装",
+	"icon": "kamenridercraft:candy_wrapper",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "用于制作$(l:gavv/items/blank_gochizo)空白饱藏$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:misc/candy_wrapper",
+			"text": "掉落自:$(li)$(l:gavv/mobs/agent)特工$(/l)"
+		}
+	]
+}

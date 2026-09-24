@@ -1,0 +1,92 @@
+{
+	"name": "假面骑士克罗兹",
+	"icon": "kamenridercraft:build_driver_cross_z",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 1,
+	"pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "dragon",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "克罗兹",
+            "text": "通过使用$(l:build/items/fullbottles#dragon_full_bottle)龙满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士克罗兹",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver_cross_z)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)急迫 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+            "anchor": "charge",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_sclash_jelly\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "克罗兹充溢形态",
+			"text": "通过使用$(l:build/items/sclashjellies#dragon_sclash_jelly)龙挤压凝胶$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士克罗兹",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/sclash_driver#sclash_driver)挤压驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)急迫 II$(li)跳跃提升 II$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+            "anchor": "taka",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sclash_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle_cross_z\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "克罗兹充溢 / 天翼",
+			"text": "通过使用$(l:build/items/fullbottles#taka_full_bottle)飞鹰满装瓶罐$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士克罗兹",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/sclash_driver#sclash_driver)挤压驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)急迫 II$(li)跳跃提升 II$(li)力量 IV$(li)飞行"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "magma",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_magma_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "熔岩",
+            "text": "通过使用$(l:build/items/fullbottles#dragon_magma_full_bottle)龙熔岩满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士克罗兹",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver_cross_z)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)急迫 III$(li)跳跃提升 IV$(li)抗火$(li)力量 V"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "great",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:great_dragon_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "伟大克罗兹",
+            "text": "通过使用$(l:build/items/evolbottles#great_dragon_evol_bottle)伟大龙进化瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士克罗兹",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver_cross_z)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)急迫 II$(li)跳跃提升 II$(li)力量 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "cross_zevol",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver_cross_z\",components:{custom_data:{slot_tex1:\"kamenridercraft:muscle_galaxy_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "克罗兹Evol",
+            "text": "通过使用$(l:build/items/fullbottles#muscle_galaxy_full_bottle)肌肉银河满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士克罗兹",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士克罗兹 (2019年，V-Cinema电影)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver_cross_z)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 III$(li)力量 V$(li)飞行"
+		}
+	]
+}

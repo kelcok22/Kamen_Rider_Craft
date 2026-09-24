@@ -1,0 +1,16 @@
+{
+	"name": "水势剑流水",
+	"icon": "kamenridercraft:suiseiken_nagare",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/blades)假面骑士剑锋$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/suiseiken_nagare"
+		}
+	]
+}

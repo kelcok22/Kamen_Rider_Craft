@@ -1,0 +1,19 @@
+{
+	"name": "空我漫画",
+	"icon": "kamenridercraft:kuuga_manga",
+	"category": "kamenridercraft:kuuga/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士时王: 超越时间 (2019年, 电影)$(br2)用于制作空我的$(l:kuuga/devices/manga_arcle)亚古鲁(漫画)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_manga",
+			"title": " ",
+			"text": "和新手$(l:misc/villagers#librarian)图书管理员$(/l)交易获得。"
+		}
+	]
+}

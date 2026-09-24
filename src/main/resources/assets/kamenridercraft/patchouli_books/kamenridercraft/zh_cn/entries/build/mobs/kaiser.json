@@ -1,0 +1,17 @@
+{
+	"name": "凯撒",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kaiser",
+			"text": "登场于：$(li)假面骑士平成世代FINAL：Build & Ex-Aid 与传奇骑士们 (2017年，电影)$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在城市维度之外，有10%的几率从$(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)进化而来$(br2)掉落$(li)2-3个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/gears#gear_remocon_blue)遥控齿轮(蓝)$(/l)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_taka_medal)鹰·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_kuwagata_medal)锹形虫·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_lion_medal)狮子·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_sai_medal)犀牛·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_shachi_medal)虎鲸·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:build/items/fullbottles#fourze_full_bottle)Fourze满装瓶罐$(/l) (50%)$(li)1个$(l:build/items/fullbottles#gaim_full_bottle)铠武满装瓶罐$(/l) (50%)"
+		}
+	]
+}

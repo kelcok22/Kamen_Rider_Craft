@@ -1,0 +1,17 @@
+{
+	"name": "古代王OOO",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ancient_ooo",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 300$(br2)通过挖掘$(l:misc/blocks/boss_blocks#ancient_ooo_boss_block)古代王OOO召唤方块$(/l)召唤而来$(br2)特殊(技能/机制):$(li)一次发射3枚火球$(li)生命值低于150时切换为$(l:ooo/riders/ancient_ooo#greeed_absorption)贪欲者吸收态$(/l)$(br2)掉落$(li)115个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/core_medals#ancient_taka_medal)古代鹰核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#ancient_tora_medal)古代虎核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#ancient_batta_medal)古代蝗核心硬币$(/l)$(li)1个$(l:ooo/items/greeed_absorption_core)古代王的扫描仪$(/l)$(li)1个$(l:ooo/arsenal/ancient_ooo_greeed_sword)古代王贪欲OOO之剑$(/l)"
+		}
+	]
+}

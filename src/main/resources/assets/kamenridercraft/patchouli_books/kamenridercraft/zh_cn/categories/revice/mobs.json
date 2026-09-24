@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:revice/main",
+    "name": "相关生物",
+    "description": "来自《假面骑士利维斯》或与其相关的所有生物.",
+    "icon": "kamenridercraft:revice_logo",
+    "sortnum": 4
+}

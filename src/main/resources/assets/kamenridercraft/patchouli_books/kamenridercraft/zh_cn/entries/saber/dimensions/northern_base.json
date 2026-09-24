@@ -1,0 +1,21 @@
+{
+	"name": "北部基地",
+	"icon": "kamenridercraft:book_gate_wonder_ride_book",
+	"category": "kamenridercraft:saber/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "北部基地",
+			"text": "登场于:$(li)假面骑士圣刃 (2020年, 电视剧)$(br2)通过$(l:saber/arsenal/book_gate_wonder_ride_book)书之门奇幻驾驭书$(/l)进入$(br2)结构内建筑:$(li)$(l:saber/structures/northern_base)北部基地$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/northern_base.png"
+			],
+			"title": " "
+		}
+	]
+}

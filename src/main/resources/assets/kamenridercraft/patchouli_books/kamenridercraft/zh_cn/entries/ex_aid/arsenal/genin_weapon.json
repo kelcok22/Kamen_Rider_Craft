@@ -1,0 +1,16 @@
+{
+	"name": "忍者武装",
+	"icon": "kamenridercraft:genin_weapon",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid：True Ending（2017年，电影）$(br2)由 $(l:ex_aid/riders/ninja_player)忍者玩家$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/genin_weapon"
+		}
+	]
+}

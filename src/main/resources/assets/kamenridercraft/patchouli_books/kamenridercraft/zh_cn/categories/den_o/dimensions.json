@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:den_o/main",
+    "name": "时间之沙",
+    "description": "",
+    "icon": "kamenridercraft:rider_pass",
+    "sortnum": 5
+}

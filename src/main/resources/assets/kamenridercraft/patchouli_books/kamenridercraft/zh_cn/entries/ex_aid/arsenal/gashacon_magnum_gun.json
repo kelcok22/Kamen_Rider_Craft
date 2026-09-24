@@ -1,0 +1,16 @@
+{
+	"name": "卡控麦林枪",
+	"icon": "kamenridercraft:gashacon_magnum_gun",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/riders/snipe)假面骑士Snipe$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_magnum_gun"
+		}
+	]
+}

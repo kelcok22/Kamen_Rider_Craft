@@ -1,0 +1,16 @@
+{
+	"name": "光子剑",
+	"icon": "kamenridercraft:revolcane",
+	"category": "kamenridercraft:black_rx/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)由$(l:black_rx/riders/black_rx)假面骑士Black RX$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/revolcane"
+		}
+	]
+}

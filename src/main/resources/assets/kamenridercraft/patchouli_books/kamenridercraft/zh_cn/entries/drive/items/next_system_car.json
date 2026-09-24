@@ -1,0 +1,19 @@
+{
+	"name": "次世代系统战车",
+	"icon": "kamenridercraft:next_system_car",
+	"category": "kamenridercraft:drive/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(br2)将其用于$(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档底盘装配器$(/l)可获取次世代系统变档战车"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:next_system_car",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:drive/mobs/dark_drive)假面骑士黑暗Drive$(/l)"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士Evil",
+	"icon": "kamenridercraft:two_sidriver_evil",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "bat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:two_sidriver_evil\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_vistamp_evil\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蝙蝠基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#bat_vistamp)蝙蝠罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evil",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/two_sidriver#two_sidriver_evil)双开驱动器(Evil)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jackal",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:two_sidriver_evil\",components:{custom_data:{slot_tex1:\"kamenridercraft:jackal_vistamp_evil\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胡狼基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#jackal_vistamp)胡狼罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evil",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/two_sidriver#two_sidriver_evil)双开驱动器(Evil)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "marvelous",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:revice_driver_evil\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊奇Evil",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evil",
+			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver_evil)利维斯驱动器(Evil)$(/l)进行变身$(br2)状态效果：$(li)速度 VII$(li)抗性提升 IV$(li)夜视$(li)力量 VII"
+		}
+	]
+}

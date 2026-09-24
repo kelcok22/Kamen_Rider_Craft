@@ -1,0 +1,21 @@
+{
+	"name": "银河陨石",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "银河的陨石",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)生成群系：樱花树林、冰封山峰、雪林、尖峭山峰、草甸、积雪的山坡、裸岩山峰$(br2)包含1个 $(l:misc/blocks/boss_blocks#ginga_boss_block)银河召唤方块$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/ginga_meteor.png"
+			],
+			"title": " "
+		}
+	]
+}

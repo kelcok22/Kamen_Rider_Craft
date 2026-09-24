@@ -1,0 +1,16 @@
+{
+	"name": "鲁邦枪手",
+	"icon": "kamenridercraft:lupin_gunner",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)由 $(l:drive/riders/lupin)假面骑士鲁邦$(/l) 使用$(br2)可用于获取鲁邦的 $(l:drive/devices/lupin_belt)鲁邦腰带$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/lupin_gunner"
+		}
+	]
+}

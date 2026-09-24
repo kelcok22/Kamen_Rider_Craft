@@ -1,0 +1,261 @@
+{
+	"name": "卡片套匣",
+	"icon": "kamenridercraft:advent_deck_blank",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 64,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_blank",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"anchor": "advent_deck_blank",
+			"recipe": "kamenridercraft:ryuki/advent_deck_blank",
+			"text": "可在地牢和废弃传送门中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_ryuki",
+			"title": "卡片套匣(龙骑)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ryuki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_knight",
+			"title": "卡片套匣(夜骑)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_knight"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_zolda",
+			"title": "卡片套匣(铁兵)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_zolda"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_ouja",
+			"title": "卡片套匣(王蛇)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ouja"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_scissors",
+			"title": "卡片套匣(利刃)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_scissors"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_raia",
+			"title": "卡片套匣(海鳐)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_raia"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_gai",
+			"title": "卡片套匣(铠)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_gai"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_tiger",
+			"title": "卡片套匣(大牙)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_tiger"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_imperer",
+			"title": "卡片套匣(羚皇)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_imperer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_verde",
+			"title": "卡片套匣(妖翠)",
+			"text": "登场于：$(li)假面骑士龙骑特别篇：13骑士（2002年，电视剧特别篇）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_verde"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_femme",
+			"title": "卡片套匣(花梦)",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_femme"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_ryuga",
+			"title": "卡片套匣(龙牙)",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ryuga"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_odin",
+			"title": "卡片套匣(奥丁)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_odin"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_abyss",
+			"title": "卡片套匣(深渊)",
+			"text": "登场于：$(li)假面骑士Decade（2009年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_abyss"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_fatale",
+			"title": "卡片套匣(花魇)",
+			"text": "登场于：$(li)假面骑士Eins with Girls Remix（2025年，TTFC特别篇）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_fatale"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_alternative",
+			"title": "卡片套匣(抉择者)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_alternative"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_blade",
+			"title": "卡片套匣(剑)",
+			"text": "登场于：$(li)ICON: 篠原保角色艺术集（2006年，画册）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_blade"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_ryuki_survive",
+			"title": "卡片套匣(生存龙骑)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ryuki_survive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_knight_survive",
+			"title": "卡片套匣(生存夜骑)",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_knight_survive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_ouja_survive",
+			"title": "卡片套匣(生存王蛇)",
+			"text": "登场于：$(li)假面骑士界外者（2022年，网络剧）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ouja_survive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_raia_survive",
+			"title": "卡片套匣(生存海鳐)",
+			"text": "登场于：$(li)ICON: 篠原保角色艺术集（2006年，画册）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_raia_survive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "advent_deck_ryuga_survive",
+			"title": "卡片套匣(生存龙牙)",
+			"text": "登场于：$(li)World of If（2005年，S.I.C. Hero Saga）$(br2)最多可存储6组降临卡"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ryuki/advent_deck_ryuga_survive"
+		}
+	]
+}

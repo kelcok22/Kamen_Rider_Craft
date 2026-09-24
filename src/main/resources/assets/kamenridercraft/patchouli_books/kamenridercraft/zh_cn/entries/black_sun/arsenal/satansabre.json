@@ -1,0 +1,16 @@
+{
+	"name": "撒旦军刀(Black Sun)",
+	"icon": "kamenridercraft:satansabre",
+	"category": "kamenridercraft:black_sun/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/satansabre"
+		}
+	]
+}

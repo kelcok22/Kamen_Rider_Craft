@@ -1,0 +1,17 @@
+{
+	"name": "奶油兵",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:whipped_soldier",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过$(l:gavv/arsenal/gavvwhipir)加布淡奶长枪$(/l)召唤$(br2)给予$(l:gavv/items/gochizo#zakuzakuchips_gochizo)脆脆薯片饱藏$(/l)后，可装备脆脆薯片双刀$(br2)给予$(l:gavv/items/gochizo#chocodan_gochizo)巧克弹饱藏$(/l)后，可装备巧克弹枪"
+		}
+	]
+}

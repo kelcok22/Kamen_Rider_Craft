@@ -1,0 +1,16 @@
+{
+	"name": "卡控崩证者",
+	"icon": "kamenridercraft:gashacon_bugvisor",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/riders/genm)假面骑士幻梦$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor"
+		}
+	]
+}

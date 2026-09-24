@@ -1,0 +1,78 @@
+{
+	"name": "假面骑士瓦尔巴拉德",
+	"icon": "kamenridercraft:valvaradriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "valvarad",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:machwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#machwheel_ride_chemy_card)马赫车轮驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#daiohni_ride_chemy_card)大王恶鬼驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔巴拉德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "orochishovel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gutsshovel_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "大蛇挖掘机武装",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#gutsshovel_ride_chemy_card)勇气挖掘机驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#jyamatanoorochi_ride_chemy_card)邪歧大蛇驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔巴拉德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量（持武器时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "angecopter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gekiocopter_ride_chemy_card_v\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "天使直升机武装",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#gekiocopter_ride_chemy_card)激情直升机驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#angelead_ride_chemy_card)指引天使驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔巴拉德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量$(li)飞行 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kurogane",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:metal_machwheel_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "瓦尔巴拉德黑钢",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#metal_machwheel_ride_chemy_card)金属马赫车轮驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#metal_daiohni_ride_chemy_card)金属大王恶鬼驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔巴拉德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)力量 III$(li)跳跃提升$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gt",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:valvaradriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:daiohni_gt_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "瓦尔巴拉德GT",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#daiohni_gt_ride_chemy_card)大王恶鬼GT驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#gigantliner_gt_ride_chemy_card)巨型列车GT驾驭凯米卡$(/l)进行形态切换（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士瓦尔巴拉德",
+			"text": "登场于：$(li)假面骑士歌查德：毕业季 (2025年，V-Cinema电影)$(br2)通过穿戴$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 IV（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VI$(li)抗火"
+		}
+	]
+}

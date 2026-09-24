@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士冥黑之三姊妹",
+	"icon": "kamenridercraft:dreadriver_meikoku_no_sanshimai",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dreadriver_meikoku_no_sanshimai\",Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士冥黑之三姊妹",
+			"text": "登场于：$(li)冥黑三姊妹 假面骑士歌查德 未完成计划(2024年，音频剧)$(br2)通过穿戴$(l:gotchard/devices/dreadriver#dreadriver_meikoku_no_sanshimai)恐惧驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升$(li)力量 II"
+		}
+	]
+}

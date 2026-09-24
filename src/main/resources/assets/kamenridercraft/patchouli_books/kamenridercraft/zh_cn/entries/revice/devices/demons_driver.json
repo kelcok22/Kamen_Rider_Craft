@@ -1,0 +1,73 @@
+{
+	"name": "戴蒙斯驱动器",
+	"icon": "kamenridercraft:demons_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons)假面骑士戴蒙斯$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "over_demons_driver",
+			"title": "戴蒙斯驱动器（超越戴蒙斯版）",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/over_demons)假面骑士超越戴蒙斯$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/over_demons_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "get_over_demons_driver",
+			"title": "戴蒙斯驱动器（超越戴蒙斯 长颈鹿锯锹版）",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/get_over_demons)假面骑士超越戴蒙斯 长颈鹿锯锹版$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/get_over_demons_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_demons_trooper_a",
+			"title": "戴蒙斯驱动器（戴蒙斯士兵α版）",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons_trooper_a)假面骑士戴蒙斯士兵α"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver_demons_trooper_a"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_demons_trooper_b",
+			"title": "戴蒙斯驱动器（戴蒙斯士兵β版）",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons_trooper_b)假面骑士戴蒙斯士兵β"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver_demons_trooper_b"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_orteca",
+			"title": "戴蒙斯驱动器（欧鲁特加版）",
+			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/orteca)假面骑士欧鲁特加"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/demons_driver_orteca"
+		}
+	]
+}

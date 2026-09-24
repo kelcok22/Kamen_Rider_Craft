@@ -1,0 +1,136 @@
+{
+	"name": "ZECT代扣",
+	"icon": "kamenridercraft:thebee_rider_belt",
+	"category": "kamenridercraft:kabuto/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/thebee)假面骑士皇蜂"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/thebee_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drake_rider_belt",
+			"title": "ZECT代扣(雷蜓)",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/drake)假面骑士雷蜓"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drake_rider_belt",
+			"title": " ",
+			"text": "没有佩戴任何腰带的情况下，右击$(l:kabuto/arsenal/drake_grip)雷蜓枪$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sasword_rider_belt",
+			"title": "ZECT代扣(剑蝎)",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/sasword)假面骑士剑蝎"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sasword_rider_belt",
+			"title": " ",
+			"text": "没有佩戴任何腰带的情况下，右击$(l:kabuto/arsenal/sasword_yaiver)剑蝎剑$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kickhopper_rider_belt",
+			"title": "ZECT代扣(踢蝗)",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/kickhopper)假面骑士踢蝗"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/kickhopper_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "puchhopper_rider_belt",
+			"title": "ZECT代扣(拳蝗)",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/punchhopper)假面骑士拳蝗"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/puchhopper_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "caucasus_rider_belt",
+			"title": "ZECT代扣(金斗)",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/caucasus)假面骑士金斗"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/caucasus_rider_belt",
+			"text": "掉落自：$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hercus_rider_belt",
+			"title": "ZECT代扣(银斗)",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/hercus)假面骑士银斗"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/hercus_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ketaros_rider_belt",
+			"title": "ZECT代扣(铜斗)",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/ketaros)假面骑士铜斗"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/ketaros_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lady_rider_belt",
+			"title": "ZECT代扣(瓢虫)",
+			"text": "登场于：$(li)假面骑士甲斗：特别秀 (2006年，舞台秀)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/lady)假面骑士Lady$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:kabuto/lady_rider_belt"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chophopper_rider_belt",
+			"title": "ZECT带扣",
+			"text": "登场于：$(li)假面骑士甲斗：特别秀 (2006年，舞台秀)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/chophopper)ChopHopper$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chophopper_rider_belt",
+			"title": " ",
+			"text": "通过从$(l:kabuto/structures/god_speed_love)神速爱$(/l)结构中获取试炼战利品获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giraffa_rider_belt",
+			"title": "ZECT带扣",
+			"text": "登场于：$(li)假面骑士甲斗 20周年 承天之人 (2026年，电影)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/giraffa)假面骑士长颈鹿锯楸$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giraffa_rider_belt",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

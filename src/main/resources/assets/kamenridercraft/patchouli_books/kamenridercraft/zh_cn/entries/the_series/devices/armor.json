@@ -1,0 +1,24 @@
+{
+	"name": "THE系列装甲",
+	"icon": "kamenridercraft:the_ichigo_head",
+	"category": "kamenridercraft:the_series/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与The First系列骑士的腰带配合使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:the_series/the_ichigo_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:the_series/the_ichigo_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:the_series/the_ichigo_legs"
+		}
+	]
+}

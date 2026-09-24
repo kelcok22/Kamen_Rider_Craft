@@ -1,0 +1,17 @@
+{
+    "name": "修卡贪欲者",
+    "icon": "kamenridercraft:ooo_logo",
+    "category": "kamenridercraft:ooo/mobs",
+    "sortnum": 11,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:shocker_greeed_mob",
+            "text": "登场于：$(li)OOO·电王·全体骑士：Let's Go 假面骑士 (2011年，电影)$(br)生命值：60"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "在 $(l:den_o/dimensions/sands_of_time)时之沙$(/l) 中有10%概率从 $(l:ooo/mobs/yummy_mob)噬欲怪$(/l) 中进化而来$(br2)特殊机制：$(li)具备飞行能力$(br2)掉落$(li)3-5个 $(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个 $(l:ooo/items/cellmedal)细胞硬币$(/l)（90%）$(li)1个 $(l:ooo/items/core_medals#shocker_medal)修卡核心硬币$(/l)$(li)1个 $(l:ooo/devices/greeed_belt#greeed_blet_shocker)修卡贪欲者腰带$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#gel_shocker_medal)盖尔修卡核心硬币$(/l)（20%）$(li)1个 $(l:ooo/items/core_medals#destron_medal)迪斯特龙核心硬币$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#god_medal)G.O.D.核心硬币$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#garanda_medal)加兰达核心硬币$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#delza_medal)迪尔扎核心硬币$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#neo_shocker_medal)新修卡核心硬币$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#jin_dogma_medal)新多格玛核心硬币$(/l)（10%）$(li)1个 $(l:ooo/items/core_medals#badan_medal)巴丹核心硬币$(/l)（10%）"
+        }
+    ]
+}

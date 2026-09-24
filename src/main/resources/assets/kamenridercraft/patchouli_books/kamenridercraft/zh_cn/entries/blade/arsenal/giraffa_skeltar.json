@@ -1,0 +1,19 @@
+{
+	"name": "长颈鹿锯楸形钳",
+	"icon": "kamenridercraft:giraffa_skeltar",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由长颈鹿锯锹形虫不死生物使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giraffa_skeltar",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

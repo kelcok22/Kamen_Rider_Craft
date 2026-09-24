@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士利维",
+	"icon": "kamenridercraft:desire_driver_revi",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "登录形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#revi_rider_core_id)利维ID核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士利维",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀（2022年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_revi)欲望驱动器(利维)$(/l)进行变身$(br2)核心ID效果：$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士利维",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀（2022年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_revi)欲望驱动器(利维)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat_propeller",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:propeller_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍武装螺旋桨",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#propeller_raise_buckle)螺旋桨代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士利维",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀（2022年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_revi)欲望驱动器(利维)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II$(br2)螺旋桨代扣效果：$(li)缓降 VII$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rex",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_revi\",components:{custom_data:{slot_tex1:\"kamenridercraft:revi_rider_core_id\",slot_tex2:\"kamenridercraft:revice_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Rex基因组形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#revice_driver_raise_buckle)利维斯代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士利维",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀（2022年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_revi)欲望驱动器(利维)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)利维斯代扣效果：$(li)速度$(li)跳跃提升"
+		}
+	]
+}

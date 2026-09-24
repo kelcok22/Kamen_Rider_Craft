@@ -1,0 +1,17 @@
+{
+	"name": "异类时王驱动器",
+	"icon": "kamenridercraft:another_ziku_driver_zi_o",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/another_zi_o)异类时王$(/l)"
+		},
+		{
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_ziku_driver_zi_o",
+          "text": "掉落自:$(li)$(l:zi_o/mobs/another_zi_o)异类时王$(/l)的装备"
+		}
+	]
+}

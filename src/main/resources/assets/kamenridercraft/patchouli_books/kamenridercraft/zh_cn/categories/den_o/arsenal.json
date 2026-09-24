@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:den_o/main",
+    "name": "武器",
+    "description": "系列角色所使用的武器和道具. 可以在铁砧上使用 $(l:den_o/items/imagin_sand)异魔神沙子$(/l)修复.",
+    "icon": "kamenridercraft:den_gasher_sword",
+    "sortnum": 3
+}

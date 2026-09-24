@@ -1,0 +1,17 @@
+{
+	"name": "千位劫持者",
+	"icon": "kamenridercraft:thousand_jacker",
+	"category": "kamenridercraft:zero_one/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由假面骑士 $(l:zero_one/riders/thouser)千骑$(/l)、$(l:zero_one/riders/eden)伊甸$(/l) 及 $(l:zero_one/riders/lucifer)路西法$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/thousand_jacker",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "恩·达古巴·杰巴",
+	"icon": "kamenridercraft:n_daguva_zeba_ultimate",
+	"category": "kamenridercraft:kuuga/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:n_daguva_zeba_belt\",Count:1b},{id:\"kamenridercraft:kuugalegs\",Count:1b},{id:\"kamenridercraft:kuugatroso\",Count:1b},{id:\"kamenridercraft:kuugahead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "恩·达古巴·杰巴",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)通过穿戴$(l:kuuga/devices/n_daguva_zeba_belt)恩·达古巴·杰巴腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)速度 III$(li)抗性提升 III$(li)烈焰环身 IV$(li)炎拳 IV$(li)跳跃提升 III$(li)抗火$(li)力量 III$(br2)专属技能：$(li)骑士拳"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "诺克斯暗骑",
+	"icon": "kamenridercraft:zeztz_logo",
+	"category": "kamenridercraft:zeztz/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:nox_mob",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有20%的几率从$(l:zeztz/mobs/baby_nightmare)宝宝梦魇$(/l)进化而来(br2)特殊机制：$(li)在生命值低于30时，物品栏中有$(l:zeztz/items/capsems#plasma_capsem)等离子梦境胶囊$(/l)，会变身为假面骑士诺克斯$(br2)掉落$(li)1-4个$(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)$(li)1个$(l:zeztz/items/capsems#void_capsem)虚空梦境胶囊$(/l)$(li)1个$(l:zeztz/items/capsems#erase_capsem)擦除梦境胶囊$(/l)$(li)1个$(l:zeztz/items/agent_number_ring#agent_number_ring_four)暗码特工戒(暗码编号:四)$(/l) (50%(在是假面骑士诺克斯时))$(li)1个$(l:zeztz/items/zeroider_core)暗码零蚀者核心$(/l) (50%(在是假面骑士诺克斯时))"
+      }
+	]
+}

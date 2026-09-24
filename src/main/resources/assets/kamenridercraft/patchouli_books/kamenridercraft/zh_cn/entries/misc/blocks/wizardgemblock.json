@@ -1,0 +1,19 @@
+{
+    "name": "魔法宝石矿石",
+    "icon": "kamenridercraft:wizardgemblock",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 20,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得 $(l:wizard/items/magic_stones#wizardgem)魔法石$(/l)$(br2)需要铁镐或更好的镐子"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:wizardgemblock",
+            "title": " ",
+            "text": "掉落：$(li)$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)（50%）$(li)$(l:wizard/items/magic_stones#wizardgem_red)红魔法石$(/l)（11.9%）$(li)$(l:wizard/items/magic_stones#wizardgem_blue)蓝魔法石$(/l)（11.9%）$(li)$(l:wizard/items/magic_stones#wizardgem_green)绿魔法石$(/l)（11.9%）$(li)$(l:wizard/items/magic_stones#wizardgem_yellow)黄魔法石$(/l)（11.9%）$(li)$(l:wizard/items/magic_stones#wizardgem_violet)紫魔法石$(/l)（2.4%）"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Fuma",
+	"icon": "kamenridercraft:gamer_driver_fuuma",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_fuuma\",Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "忍者玩家",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Fuma",
+			"text": "登场于：$(li)假面骑士Ex-Aid：True Ending (2017年，电影)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_fuuma)玩家驱动器（Fuma）$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)隐身$(li)跳跃提升 III"
+		}
+	]
+}

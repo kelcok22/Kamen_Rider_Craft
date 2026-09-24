@@ -1,0 +1,121 @@
+{
+	"name": "能量锁种",
+	"icon": "kamenridercraft:lemon_energy_lockseed",
+	"category": "kamenridercraft:gaim/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "lemon_energy_lockseed",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)用于制作公爵的$(l:gaim/devices/genesis_driver#genesis_driver_duke)创世纪驱动器（公爵）$(/l)$(br2)可切换$(l:gaim/riders/duke#lemon_energy)柠檬能量武装$(/l)或$(l:gaim/riders/gaim#jimber_lemon)阵羽柠檬武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lemon_energy_lockseed",
+			"text": "掉落自：$(li)$(l:gaim/mobs/duke)假面骑士公爵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cherry_energy_lockseed",
+			"title": "樱桃能量锁种",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)用于制作西格德的$(l:gaim/devices/genesis_driver#genesis_driver_sigurd)创世纪驱动器（西格德）$(/l)$(br2)可切换$(l:gaim/riders/sigurd#cherry_energy)樱桃能量武装$(/l)或$(l:gaim/riders/gaim#jimber_cherry)阵羽樱桃武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cherry_energy_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/sigurd)假面骑士西格德$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "peach_energy_lockseed",
+			"title": "蜜桃能量锁种",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)用于制作女王的$(l:gaim/devices/genesis_driver#genesis_driver_marika)创世纪驱动器（女王）$(/l)$(br2)可切换$(l:gaim/riders/marika#peach_energy)蜜桃能量武装$(/l)或$(l:gaim/riders/gaim#jimber_peach)阵羽蜜桃武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:peach_energy_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/marika)假面骑士女王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "melon_energy_lockseed",
+			"title": "蜜瓜能量锁种",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)用于制作斩月·真的$(l:gaim/devices/genesis_driver#genesis_driver_zangetsu_shin)创世纪驱动器（斩月·真）$(/l)$(br2)可切换$(l:gaim/riders/zangetsu_shin#melon_energy)蜜瓜能量武装$(/l)或$(l:gaim/riders/gaim#jimber_melon)阵羽蜜瓜武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:melon_energy_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/zangetsu_shin)假面骑士斩月·真$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "matsubokkuri_energy_lockseed",
+			"title": "松果能量锁种",
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)用于制作黑影·真的$(l:gaim/devices/genesis_driver#genesis_driver_kurokage_shin)创世纪驱动器（黑影·真）$(/l)$(br2)可切换$(l:gaim/riders/kurokage_shin)松果能量武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:matsubokkuri_energy_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dragon_fruits_energy_lockseed",
+			"title": "火龙果能量锁种",
+			"text": "登场于：$(li)假面骑士×假面骑士Drive&铠武 剧场版 全能量爆发（2014年，电影）$(br2)可切换$(l:gaim/riders/duke#dragon_energy)火龙果能量武装$(/l)或$(l:gaim/riders/ryugen#jimber_dragon_fruits)阵羽火龙果武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dragon_fruits_energy_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/duke)假面骑士公爵$(/l)$(li)$(l:gaim/mobs/megahex)梅嘉赫克斯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "proto_dragon_fruits_energy_lockseed",
+			"title": "原型火龙果能量锁种",
+			"text": "登场于：$(li)铠武外传：假面骑士巴隆（2015年，V-Cinema电影）$(br2)用于制作暴君的$(l:gaim/devices/genesis_driver#genesis_driver_tyrant)创世纪驱动器（暴君）$(/l)$(br2)可切换$(l:gaim/riders/tyrant)火龙果能量武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:proto_dragon_fruits_energy_lockseed",
+			"title": " ",
+			"text": "可在$(l:misc/city/centers#yggdrasil_tower)世界树塔$(/l)中找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "marron_energy_lockseed",
+			"title": "栗子能量锁种",
+			"text": "登场于：$(li)铠武外传：假面骑士纳高尔（2015年，V-Cinema电影）$(br2)可切换$(l:gaim/riders/knuckle#jimber_marron)阵羽栗子武装$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:marron_energy_lockseed",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/marika)假面骑士女王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_lemon_energy_lockseed",
+			"title": "暗黑柠檬能量锁种",
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)可切换$(l:gaim/riders/gaim#black_jimber)暗黑阵羽武装$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:gaim/dark_lemon_energy_lockseed"
+		}
+	]
+}

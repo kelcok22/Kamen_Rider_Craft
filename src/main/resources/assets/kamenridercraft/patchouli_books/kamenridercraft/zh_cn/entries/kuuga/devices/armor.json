@@ -1,0 +1,24 @@
+{
+	"name": "空我装甲",
+	"icon": "kamenridercraft:kuugahead",
+	"category": "kamenridercraft:kuuga/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与空我系列角色的腰带一起使用，可以变身为该角色$(br2)掉落自:$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuugahead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuugatroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuugalegs"
+		}
+	]
+}

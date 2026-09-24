@@ -1,0 +1,16 @@
+{
+	"name": "假面咖啡厅柜台",
+	"icon": "kamenridercraft:kamen_cafe_counter",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 44,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "作为 $(l:misc/villagers#kamen_cafe_butler)假面咖啡厅管家$(/l)的职业方块"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ride_kamens/kamen_cafe_counter"
+		}
+	]
+}

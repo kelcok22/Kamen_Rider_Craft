@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士波塞冬",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:poseidon",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#poseidon_boss_block)波塞冬BOSS召唤方块$(/l)召唤而来$(br2)生命值: 45$(br2)掉落$(li)8-10个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/core_medals#same_medal)鲨鱼核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#kujira_medal)鲸鱼核心硬币$(/l)$(li)1个$(l:ooo/items/core_medals#ookamiuo_medal)狼鱼核心硬币$(/l)$(li)1个$(l:ooo/devices/poseidon_driver)波塞冬驱动器$(/l)$(li)1个$(l:ooo/arsenal/deepest_harpoon)极深鱼叉$(/l)$(li)1个$(l:ooo/items/aqua_core)水骑核心$(/l)"
+		}
+	]
+}

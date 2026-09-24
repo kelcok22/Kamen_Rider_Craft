@@ -1,0 +1,16 @@
+{
+	"name": "多拉德长镰",
+	"icon": "kamenridercraft:dorado_scythe",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德：未来黎明 (2024年，电影)$(br2)由$(l:gotchard/riders/dorado)假面骑士多拉德$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/dorado_scythe"
+		}
+	]
+}

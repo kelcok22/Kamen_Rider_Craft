@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士长枪",
+	"icon": "kamenridercraft:change_kerberos_lance",
+	"category": "kamenridercraft:blade/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lance_buckle\",Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士长枪",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)通过穿戴$(l:blade/devices/lance_buckle)长枪带扣$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)跳跃提升 II$(li)力量"
+		}
+	]
+}

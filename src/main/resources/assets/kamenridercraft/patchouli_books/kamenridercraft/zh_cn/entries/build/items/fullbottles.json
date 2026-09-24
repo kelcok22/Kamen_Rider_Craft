@@ -1,0 +1,1483 @@
+{
+    "name": "满装瓶罐",
+    "icon": "kamenridercraft:rabbit_full_bottle",
+    "category": "kamenridercraft:build/items",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "rabbit_full_bottle",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作Build的 $(l:build/devices/build_driver#build_driver)Build驱动器$(/l)$(br2)用于切换Build的 $(l:build/riders/build#rabbittank)兔子$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rabbit_full_bottle",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)$(li)$(l:build/mobs/needle_smash)针刺猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tank_full_bottle",
+            "title": "坦克满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作Build的 $(l:build/devices/build_driver#build_driver)Build驱动器$(/l)$(br2)用于切换Build的 $(l:build/riders/build#rabbittank)坦克$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tank_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)$(li)$(l:build/mobs/needle_smash)针刺猛击者$(/l)$(li)$(l:build/mobs/downfall_guardian)陷灭防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gorilla_full_bottle",
+            "title": "大猩猩满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#gorillamond)猩猩$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gorilla_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "diamond_full_bottle",
+            "title": "钻石满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#gorillamond)钻石$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:diamond_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taka_full_bottle",
+            "title": "飞鹰满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#hawkgatling)飞鹰$(/l) 形态$(br2)用于切换克罗兹充溢的 $(l:build/riders/cross-z#taka)天翼$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taka_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gatling_full_bottle",
+            "title": "加特林满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#hawkgatling)加特林$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gatling_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ninja_full_bottle",
+            "title": "忍者满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#ninnincomic)忍者$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ninja_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "comic_full_bottle",
+            "title": "漫画满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#ninnincomic)漫画$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:comic_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "panda_full_bottle",
+            "title": "熊猫满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rocketpanda)熊猫$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:panda_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rocket_full_bottle",
+            "title": "火箭满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rocketpanda)火箭$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rocket_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "harinezumi_full_bottle",
+            "title": "刺猬满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#firehedgehog)刺猬$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:harinezumi_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shoubousha_full_bottle",
+            "title": "消防车满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#firehedgehog)消防车$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shoubousha_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lion_full_bottle",
+            "title": "狮子满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#lioncleaner)狮子$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lion_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "soujiki_full_bottle",
+            "title": "吸尘器满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#lioncleaner)吸尘器$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:soujiki_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dragon_full_bottle",
+            "title": "龙满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作克罗兹的 $(l:build/devices/build_driver#build_driver_cross_z)Build驱动器(克罗兹)$(/l)$(br2)用于切换Build的 $(l:build/riders/build#keydragon)龙$(/l) 形态$(br2)用于切换克罗兹的 $(l:build/riders/cross-z)基础$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dragon_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lock_full_bottle",
+            "title": "定锁满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#keydragon)锁$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lock_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kaizoku_full_bottle",
+            "title": "海贼满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#kaizokuressya)海贼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kaizoku_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "densha_full_bottle",
+            "title": "电车满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#kaizokuressya)电车$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:densha_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "octopus_full_bottle",
+            "title": "章鱼满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#octopuslight)章鱼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:octopus_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "light_full_bottle",
+            "title": "电灯满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#octopuslight)电灯$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:light_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "phoenix_full_bottle",
+            "title": "不死鸟满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#phoenixrobo)不死鸟$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:phoenix_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "robot_full_bottle",
+            "title": "机器人满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#phoenixrobo)机器人$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:robot_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wolf_full_bottle",
+            "title": "狼满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#wolfsmapho)狼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:wolf_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "smapho_full_bottle",
+            "title": "智能机满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#wolfsmapho)智能机$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:smapho_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "unicorn_full_bottle",
+            "title": "独角兽满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#uniraser)独角兽$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:unicorn_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "keshigomu_full_bottle",
+            "title": "橡皮擦满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#uniraser)橡皮$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:keshigomu_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rose_full_bottle",
+            "title": "蔷薇满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rosecopter)蔷薇$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rose_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "helicopter_full_bottle",
+            "title": "直升机满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rosecopter)直升机$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:helicopter_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "turtle_full_bottle",
+            "title": "海龟满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#turtlewatch)海龟$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:turtle_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "watch_full_bottle",
+            "title": "手表满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#turtlewatch)手表$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:watch_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuma_full_bottle",
+            "title": "熊满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build：诞生！熊电视！！VS假面骑士格里斯 (2017年，超战斗DVD)$(br2)用于切换Build的 $(l:build/riders/build#kumatv)熊$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuma_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "televi_full_bottle",
+            "title": "TV满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build：诞生！TV电视！！VS假面骑士格里斯 (2017年，超战斗DVD)$(br2)用于切换Build的 $(l:build/riders/build#kumatv)TV$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:televi_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kabutomushi_full_bottle",
+            "title": "独角仙满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#beetlecamera)独角仙$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kabutomushi_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "camera_full_bottle",
+            "title": "照相机满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#beetlecamera)照相机$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:camera_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "spider_full_bottle",
+            "title": "蜘蛛满装瓶罐",
+            "text": "登场于：$(li)DX潘多拉嵌板 蓝 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#spidercooler)蜘蛛$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:spider_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "reizouko_full_bottle",
+            "title": "冰箱满装瓶罐",
+            "text": "登场于：$(li)DX潘多拉嵌板 红 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#spidercooler)冰箱$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:reizouko_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dog_full_bottle",
+            "title": "狗满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#dogmic)狗$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dog_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mic_full_bottle",
+            "title": "话筒满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#dogmic)话筒$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mic_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "santa_claus_full_bottle",
+            "title": "圣诞老人满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#merrychristmas)圣诞老人$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:santa_claus_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)通过打开 $(l:misc/items/gift)礼物$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cake_full_bottle",
+            "title": "蛋糕满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#merrychristmas)蛋糕$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:cake_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)通过打开 $(l:misc/items/gift)礼物$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tora_full_bottle",
+            "title": "老虎满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#toraufo)老虎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tora_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/seito_guardian)西都防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ufo_full_bottle",
+            "title": "UFO满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#toraufo)UFO$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ufo_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/seito_guardian)西都防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kujira_full_bottle",
+            "title": "鲸满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#kujirajet)鲸$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kujira_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jet_full_bottle",
+            "title": "喷气机满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#kujirajet)喷气机$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:jet_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shika_full_bottle",
+            "title": "鹿满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#shikamid)鹿$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shika_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pyramid_full_bottle",
+            "title": "金字塔满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#shikamid)金字塔$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pyramid_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kirin_full_bottle",
+            "title": "长颈鹿满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#kirincyclone)长颈鹿$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kirin_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "senpuuki_full_bottle",
+            "title": "风扇满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#kirincyclone)风扇$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:senpuuki_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "penguin_full_bottle",
+            "title": "企鹅满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#penguinskater)企鹅$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:penguin_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skebo_full_bottle",
+            "title": "滑板满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#penguinskater)滑板$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:skebo_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "same_full_bottle",
+            "title": "鲨鱼满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build ～提升危险等级的7种最佳搭配～ (2018年，网络剧)$(br2)用于切换Build的 $(l:build/riders/build#samebike)鲨鱼$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:same_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bike_full_bottle",
+            "title": "摩托满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build ～提升危险等级的7种最佳搭配～ (2018年，网络剧)$(br2)用于切换Build的 $(l:build/riders/build#samebike)摩托$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bike_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hachi_full_bottle",
+            "title": "蜂满装瓶罐",
+            "text": "登场于：$(li)DX蜂潜艇满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#hachimarine)蜂$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hachi_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sensuikan_full_bottle",
+            "title": "潜水艇满装瓶罐",
+            "text": "登场于：$(li)DX蜂潜艇满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#hachimarine)潜水艇$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sensuikan_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sai_full_bottle",
+            "title": "犀牛满装瓶罐",
+            "text": "登场于：$(li)DX犀牛吹风机满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#saidryer)犀牛$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sai_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dryer_full_bottle",
+            "title": "吹风机满装瓶罐",
+            "text": "登场于：$(li)DX犀牛吹风机满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#saidryer)吹风机$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dryer_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bat_full_bottle",
+            "title": "蝙蝠满装瓶罐",
+            "text": "登场于：$(li)DX蝙蝠引擎满装瓶罐套装 (2018年，玩具系列)$(br2)用于制作狂霸的 $(l:build/devices/evol_driver#evol_driver_mad_rogue)进化驱动器(狂霸)$(/l)$(br2)用于切换Build的 $(l:build/riders/build#batengine)蝙蝠$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bat_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "engine_full_bottle",
+            "title": "引擎满装瓶罐",
+            "text": "登场于：$(li)DX蝙蝠引擎满装瓶罐套装 (2018年，玩具系列)$(br2)用于制作狂霸的 $(l:build/devices/evol_driver#evol_driver_mad_rogue)进化驱动器(狂霸)$(/l)$(br2)用于切换Build的 $(l:build/riders/build#batengine)引擎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:engine_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "obake_full_bottle",
+            "title": "妖怪满装瓶罐",
+            "text": "登场于：$(li)DX磁幽灵满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#magghost)妖怪$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:obake_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "magnet_full_bottle",
+            "title": "磁铁满装瓶罐",
+            "text": "登场于：$(li)DX金蝎满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#goldscorpion)磁铁$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:magnet_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "scorpion_full_bottle",
+            "title": "蝎子满装瓶罐",
+            "text": "登场于：$(li)DX金蝎满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#goldscorpion)蝎子$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:scorpion_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gold_full_bottle",
+            "title": "黄金满装瓶罐",
+            "text": "登场于：$(li)DX金蝎满装瓶罐套装 (2018年，玩具系列)$(br2)用于切换Build的 $(l:build/riders/build#goldscorpion)黄金$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gold_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/smash_bottle)猛击者瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rabbittank_sparkling_full_bottle",
+            "title": "兔子坦克气泡满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#sparkling)兔子坦克气泡$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/rabbittank_sparkling_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "low_rabbit_full_bottle",
+            "title": "少量兔子满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作 $(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)摇摇兔子坦克瓶罐$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:low_rabbit_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l) 上使用 $(l:build/items/golden_bangle)金手镯$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fullfull_rabbit_tank_bottle",
+            "title": "摇摇兔子坦克瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rabbitrabbit)兔子兔子$(/l) 和 $(l:build/riders/build#tanktank)坦克坦克$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/fullfull_rabbit_tank_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "unfinished_genius_full_bottle",
+            "title": "未完成的天才满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作 $(l:build/items/fullbottles#genius_full_bottle)天才满罐$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:unfinished_genius_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/build)假面骑士Build(葛城忍)$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "genius_full_bottle",
+            "title": "天才满罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#genius)天才$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/genius_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gold_rabbit_full_bottle",
+            "title": "金兔满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rabbitdragon)金兔$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gold_rabbit_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "silver_dragon_full_bottle",
+            "title": "银龙满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#rabbitdragon)银龙$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:silver_dragon_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/evol)假面骑士Evol$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "momotaros_full_bottle",
+            "title": "桃塔罗斯满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#den_o)桃塔罗斯$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:momotaros_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "rider_card_full_bottle",
+            "title": "骑士卡片满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#decade)骑士卡片$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:rider_card_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tantei_full_bottle",
+            "title": "侦探满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#double)侦探$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tantei_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "usb_memory_full_bottle",
+            "title": "U盘记忆体满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#double)U盘记忆体$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:usb_memory_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "medal_full_bottle",
+            "title": "硬币满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#ooo)硬币$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:medal_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yuujou_full_bottle",
+            "title": "友情满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#fourze)友情$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:yuujou_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mahoutsukai_full_bottle",
+            "title": "魔法师满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#wizard)魔法师$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mahoutsukai_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "orange_full_bottle",
+            "title": "柳橙满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#gaim)柳橙$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:orange_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "parka_full_bottle",
+            "title": "兜帽衣满装瓶罐",
+            "text": "登场于：$(li)假面骑士大乱斗 (2013年，街机游戏)$(br2)用于切换Build的 $(l:build/riders/build#ghost)兜帽衣$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:parka_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doctor_full_bottle",
+            "title": "医生满装瓶罐",
+            "text": "登场于：$(li)假面骑士平成世代FINAL：Build & Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换Build的 $(l:build/riders/build#ex_aid)医生$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doctor_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "game_full_bottle",
+            "title": "游戏满装瓶罐",
+            "text": "登场于：$(li)假面骑士平成世代FINAL：Build & Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换Build的 $(l:build/riders/build#ex_aid)游戏$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:game_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dragon_magma_full_bottle",
+            "title": "龙熔岩满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换克罗兹的 $(l:build/riders/cross-z#magma)熔岩$(/l) 形态"
+        },
+        {
+            "type": "patchouli:smelting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/dragon_magma_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "muscle_galaxy_full_bottle",
+            "title": "肌肉银河满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士克罗兹 (2019年，V-Cinema)$(br2)用于切换克罗兹的 $(l:build/riders/cross-z#cross_zevol)克罗兹Evol$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/muscle_galaxy_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "north_blizzard_full_bottle",
+            "title": "北暴雪满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作格里斯的 $(l:build/devices/build_driver#build_driver_grease)Build驱动器(格里斯)$(/l)$(br2)用于切换格里斯的 $(l:build/riders/grease#blizzard)暴雪$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/north_blizzard_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "grease_full_bottle",
+            "title": "完美国度满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema)$(br2)用于切换格里斯的 $(l:build/riders/grease#perfect)完美国度$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/grease_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crocodile_crack_full_bottle",
+            "title": "鳄鱼裂痕满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作鳄霸的 $(l:build/devices/sclash_driver#sclash_driver_rogue)挤压驱动器(鳄霸)$(/l)$(br2)用于切换鳄霸的 $(l:build/riders/rogue#rogue)基础$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:crocodile_crack_full_bottle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#fullbottle_solidifier)满瓶固化器$(/l) 上使用 $(l:build/items/fullbottles#lost_bat_full_bottle)迷失蝙蝠满装瓶罐$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prime_rogue_full_bottle",
+            "title": "咬咬鳄鱼裂痕满装瓶罐",
+            "text": "登场于：$(li)假面骑士至尊鳄霸 (2018年，超战斗DVD)$(br2)用于制作鳄霸的 $(l:build/devices/build_driver#build_driver_rogue)Build驱动器(鳄霸)$(/l)$(br2)用于切换鳄霸的 $(l:build/riders/rogue#prime)至尊鳄霸$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/prime_rogue_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "evol_x_full_bottle",
+            "title": "Evol-X满装瓶罐",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)用于切换Evol的 $(l:build/riders/evol#x)Evol-X$(/l) 形态"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:build/evol_x_full_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "killbus_spider_full_bottle",
+            "title": "Killbus蜘蛛满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士克罗兹 (2019年，V-Cinema)$(br2)用于制作Killbus的 $(l:build/devices/build_driver#build_driver_killbus)Build驱动器(Killbus)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:killbus_spider_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/killbus)假面骑士Killbus$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metal_tank_tank_full_bottle",
+            "title": "金属坦克坦克满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema)$(br2)用于制作金属Build的 $(l:build/devices/build_driver#build_driver_metal)Build驱动器(金属Build)$(/l) 和 $(l:build/devices/build_driver#build_driver_phantom)Build驱动器(幻影Build)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:metal_tank_tank_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/phantom_crusher)虚幻粉碎者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "metal_full_bottle",
+            "title": "金属满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema)$(br2)用于制作金属Build的 $(l:build/devices/build_driver#build_driver_phantom)Build驱动器(幻影Build)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:metal_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/phantom_crusher)虚幻粉碎者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lost_bat_full_bottle",
+            "title": "迷失蝙蝠满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于制作血潜和夜霸的 $(l:build/arsenal/transteam_gun)变身烟雾枪$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lost_bat_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/night_rogue)夜霸$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lost_cobra_full_bottle",
+            "title": "迷失眼镜蛇满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lost_cobra_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/blood_stalk)血潜$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_cobra_full_bottle",
+            "title": "迷失眼镜蛇满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_cobra_full_bottle",
+            "title": " ",
+            "text": "作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_bat_full_bottle",
+            "title": "迷失蝙蝠满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_bat_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)$(li)$(l:build/mobs/mad_rogue)假面骑士狂霸$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_cd_full_bottle",
+            "title": "迷失CD满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_cd_full_bottle",
+            "title": " ",
+            "text": "作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_castle_full_bottle",
+            "title": "迷失城堡满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_castle_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)$(li)$(l:build/mobs/castle_lost_smash)城堡迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_kuwagata_full_bottle",
+            "title": "迷失锹形虫满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_kuwagata_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)$(li)$(l:build/mobs/stag_lost_smash)锹形虫迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_fukurou_full_bottle",
+            "title": "迷失猫头鹰满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_fukurou_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)$(li)$(l:build/mobs/owl_lost_smash)猫头鹰迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_shimauma_full_bottle",
+            "title": "迷失斑马满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_shimauma_full_bottle",
+            "title": " ",
+            "text": "作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_spanner_full_bottle",
+            "title": "迷失扳手满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_spanner_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_hammer_full_bottle",
+            "title": "迷失铁锤满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_hammer_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_lost_hasami_full_bottle",
+            "title": "迷失剪刀满装瓶罐",
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_lost_hasami_full_bottle",
+            "title": " ",
+            "text": "作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得$(br2)掉落自：$(li)$(l:build/mobs/hard_guardian)坚硬防卫者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lost_castle_full_bottle",
+            "title": "迷失城堡满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lost_castle_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l)$(li)$(l:build/mobs/castle_lost_smash)城堡迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lost_kuwagata_full_bottle",
+            "title": "迷失锹形虫满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lost_kuwagata_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l)$(li)$(l:build/mobs/stag_lost_smash)锹形虫迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lost_fukurou_full_bottle",
+            "title": "迷失猫头鹰满装瓶罐",
+            "text": "登场于：$(li)Build NEW WORLD：假面骑士格里斯 (2019年，V-Cinema)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lost_fukurou_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/grease)假面骑士格里斯$(/l)$(li)$(l:build/mobs/owl_lost_smash)猫头鹰迷失猛击者$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "buttobasoul_full_bottle",
+            "title": "能量道具满装瓶罐",
+            "text": "登场于：$(li)Buttobasoul Premium套装 (2018年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:buttobasoul_full_bottle",
+            "title": " ",
+            "text": "作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ganbarizing_full_bottle",
+            "title": "卡片街机满装瓶罐",
+            "text": "登场于：$(li)超TV君 (2018年7月号，杂志)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ganbarizing_full_bottle",
+            "title": " ",
+            "text": "作为试炼战利品从 $(l:build/structures/pandora_tower)潘多拉魔塔$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_full_bottle",
+            "title": "假面骑士满装瓶罐",
+            "text": "登场于：$(li)TV君 (2018年8月号，杂志)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "super_sentai_full_bottle",
+            "title": "超级战队满装瓶罐",
+            "text": "登场于：$(li)TV君 (2018年9月号，杂志)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:super_sentai_full_bottle",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ex_aid_full_bottle",
+            "title": "Ex-Aid满装瓶罐",
+            "text": "登场于：$(li)假面骑士Ex-Aid：真·结局 (2017年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ex_aid_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghost_full_bottle",
+            "title": "Ghost满装瓶罐",
+            "text": "登场于：$(li)DX 5传说骑士满装瓶罐套装 (2017年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ghost_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drive_full_bottle",
+            "title": "Drive满装瓶罐",
+            "text": "登场于：$(li)DX 5传说骑士满装瓶罐套装 (2017年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:drive_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gaim_full_bottle",
+            "title": "铠武满装瓶罐",
+            "text": "登场于：$(li)DX 5传说骑士满装瓶罐套装 (2017年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gaim_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wizard_full_bottle",
+            "title": "Wizard满装瓶罐",
+            "text": "登场于：$(li)DX 5传说骑士满装瓶罐套装 (2017年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:wizard_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)反凯撒$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fourze_full_bottle",
+            "title": "Fourze满装瓶罐",
+            "text": "登场于：$(li)DX 5传说骑士满装瓶罐套装 (2017年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fourze_full_bottle",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+        }
+    ]
+}

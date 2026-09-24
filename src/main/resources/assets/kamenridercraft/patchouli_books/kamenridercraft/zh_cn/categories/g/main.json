@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/other",
+    "name": "假面骑士G",
+    "description": "与特别篇《假面骑士G》相关的所有内容.",
+    "icon": "kamenridercraft:g_logo",
+    "sortnum": 3
+}

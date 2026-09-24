@@ -1,0 +1,16 @@
+{
+	"name": "DJ枪（斩月）",
+	"icon": "kamenridercraft:zangetsu_dj_gun",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传- (2019年，舞台秀)$(br2)由斩月的$(l:gaim/riders/zangetsu#kachidoki)胜哄武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/zangetsu_dj_gun"
+		}
+	]
+}

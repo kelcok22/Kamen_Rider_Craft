@@ -1,0 +1,17 @@
+{
+	"name": "Ankh(迷失)",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ankh_lost_mob",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2%的几率从$(l:ooo/mobs/yummy_mob)噬欲怪$(/l)进化而来$(br2)特殊机制:$(li)具备飞行能力$(br2)掉落$(li)3-5个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/cellmedal)细胞硬币$(/l) (90%)$(li)1个$(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)贪欲者腰带(迷失Ankh)$(/l) (10%)$(li)1个$(l:ooo/items/core_medals#taka_medal)鹰核心硬币$(/l) (20%)$(li)1个$(l:ooo/items/core_medals#kujaku_medal)孔雀核心硬币$(/l) (40%)$(li)1个$(l:ooo/items/core_medals#condor_medal)秃鹫核心硬币$(/l) (40%)"
+		}
+	]
+}

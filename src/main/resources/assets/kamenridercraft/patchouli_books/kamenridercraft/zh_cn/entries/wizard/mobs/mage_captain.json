@@ -1,0 +1,17 @@
+{
+	"name": "近卫队队长",
+	"icon": "kamenridercraft:wizard_logo",
+	"category": "kamenridercraft:wizard/mobs",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:mage_captain",
+			"text": "登场于：$(li)假面骑士Wizard in Magic Land (2013年，电影)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：诡异森林$(br2)掉落$(li)1-3个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)1个$(l:wizard/items/magic_stones#wizardgem_cyan)淡蓝色魔法石$(/l)$(li)1个$(l:wizard/devices/mages_belt#magewizardriver_captain)Mage腰带(近卫队队长)$(/l) (40%)$(br2)进化$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l) (10%)"
+		}
+	]
+}

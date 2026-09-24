@@ -1,0 +1,17 @@
+{
+	"name": "假面舞会掺杂体(财团X)",
+	"icon": "kamenridercraft:w_logo",
+	"category": "kamenridercraft:w/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:foundation_x_masquerade",
+			"text": "登场于:$(li)假面骑士×假面骑士Fourze & OOO：电影大战 Mega Max（2011年，电影）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生命值: 30$(br2)生成群系: 下界荒地$(br2)掉落$(li)3-6个$(l:w/items/gaiamemory)记忆体碎片$(/l)$(li)1个$(l:w/items/gaia_memories#skull_memory)颅骨记忆体$(/l) (45%)$(li)1个$(l:w/items/gaia_memories#accel_memory) 加速记忆体$(/l) (45%)$(li)1个$(l:w/items/dopant_memories#masquerade_memory)化装舞会记忆体$(/l) (10%)$(li)1个$(l:ooo/items/core_medals#shika_medal) 鹿核心硬币$(/l) (17%)$(li)1个$(l:ooo/items/core_medals#gazelle_medal)羚羊核心硬币$(/l) (17%)$(li)1个$(l:ooo/items/core_medals#ushi_medal)牛核心硬币$(/l) (17%)$(li)1个$(l:w/items/gaiamemory)记忆体碎片$(/l) (50%)$(br2)进化$(li)$(l:w/mobs/eternal_mob)假面骑士Eternal$(/l) (3.3%)$(li)$(l:w/mobs/commander_dopant)指挥官掺杂体$(/l) (3.3%)$(li)$(l:ooo/mobs/muchiri)穆奇利$(/l) (3.3%)"
+		}
+	]
+}

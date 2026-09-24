@@ -1,0 +1,19 @@
+{
+	"name": "红色鬼石",
+	"icon": "kamenridercraft:oni_ore",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士响鬼 (2005年, 电视剧)$(br2)用作大多数响鬼物品的基础材料和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:oni_ore",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:hibiki/mobs/bakeneko)化猫$(/l)$(li)$(l:hibiki/mobs/midaredouji)怪童子$(/l)"
+		}
+	]
+}

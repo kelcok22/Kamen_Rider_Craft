@@ -1,0 +1,30 @@
+{
+	"name": "双面驱动器",
+	"icon": "kamenridercraft:two_sidriver_live",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "two_sidriver_live",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/live)假面骑士Live$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/two_sidriver_live"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "two_sidriver_evil",
+			"title": "双面驱动器（Evil版）",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/evil)假面骑士Evil$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/two_sidriver_evil",
+			"text": "掉落自：$(li)$(l:revice/mobs/evil)假面骑士Evil$(/l)"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:wizard/main",
+    "name": "相关生物",
+    "description": "来自《假面骑士Wizard》或与其相关的所有生物.",
+    "icon": "kamenridercraft:wizard_logo",
+    "sortnum": 4
+}

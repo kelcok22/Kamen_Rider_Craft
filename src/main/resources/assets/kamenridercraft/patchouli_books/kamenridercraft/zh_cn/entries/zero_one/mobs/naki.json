@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士·亡",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:naki",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 80"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有2%的概率从$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)进化而来$(br2)掉落$(li)3-6个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)2-4个$(l:zero_one/items/blank_progrisekey)空白数据升华钥$(/l)$(li)1个$(l:zero_one/items/zetsumerisekeys#japanese_wolf_zetsumerisekey)日本狼绝灭升华钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#naki_progrisekey)亡程式升华秘钥$(/l)"
+		}
+	]
+}

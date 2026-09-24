@@ -1,0 +1,53 @@
+{
+	"name": "故障驱动器II",
+	"icon": "kamenridercraft:gashacon_bugvisor_ii_chronos",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "gashacon_bugvisor_ii_chronos",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/cronus)假面骑士cronus"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_chronos",
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gashacon_bugvisor_ii_poppy",
+			"title": "故障驱动器II（Poppy）",
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/poppy)假面骑士Poppy"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_poppy",
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gashacon_bugvisor_ii_lazer",
+			"title": "故障驱动器II（Lazer）",
+			"text": "登场于：$(li)假面骑士Genm vs. Lazer (2018年，V-Cinema影片)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/lazer)假面骑士Lazer"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_lazer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gashacon_bugvisor_ii_chronicle_bugster",
+			"title": "故障驱动器II（cronus崩原体）",
+			"text": "登场于：$(li)假面骑士Ex-Aid 无敌玩家在最终舞台！ (2017年，舞台表演)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/chronicle_bugster)cronus崩原体"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:exaid/gashacon_bugvisor_ii_chronicle_bugster"
+		}
+	]
+}

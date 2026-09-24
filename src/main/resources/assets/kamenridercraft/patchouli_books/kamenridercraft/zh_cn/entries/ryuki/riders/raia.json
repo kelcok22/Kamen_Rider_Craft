@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士海鳐",
+	"icon": "kamenridercraft:evildiver_advent",
+	"category": "kamenridercraft:ryuki/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "raia",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",components:{custom_data:{slot_tex1:\"kamenridercraft:evildiver_advent\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:ryuki/items/contract_advent_cards#evildiver_advent)邪恶潜行鳐降临卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士海鳐",
+			"text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_raia)V代扣$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "survive",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:v_buckle_raia\",components:{custom_data:{slot_tex1:\"kamenridercraft:survive_shippu_raia\"}},Count:1b},{id:\"kamenridercraft:ryukilegs\",Count:1b},{id:\"kamenridercraft:ryukitroso\",Count:1b},{id:\"kamenridercraft:ryukihead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "海鳐 生存形态",
+			"text": "通过使用 $(l:ryuki/items/survive_cards#survive_shippu)生存卡 疾风$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士海鳐",
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)通过穿戴$(l:ryuki/devices/v_buckle#v_buckle_raia)V代扣$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)夜视$(li)急迫$(li)力量 VI"
+		}
+	]
+}

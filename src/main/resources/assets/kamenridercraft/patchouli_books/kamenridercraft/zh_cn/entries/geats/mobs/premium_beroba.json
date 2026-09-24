@@ -1,0 +1,17 @@
+{
+	"name": "至尊贝洛芭",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:premium_beroba",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:geats/mobs/end_rider)The End骑士$(/l)欲望进化而来$(br2)掉落$(li)2-4个$(l:geats/items/blank_rider_core_id)空白ID核心$(/l)$(li)1个$(l:geats/items/raise_riser_cards#beroba_black_raise_riser_card)黑提升升华器卡片(贝洛芭)$(/l)$(li)1个$(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l) (90% ×2)$(li)1个$(l:geats/items/desire_cards#jyamashin_wish_card)邪魔神许愿卡$(/l) (10% ×2)"
+		}
+	]
+}

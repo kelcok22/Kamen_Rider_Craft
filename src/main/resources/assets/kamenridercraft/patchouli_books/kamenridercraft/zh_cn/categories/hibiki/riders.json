@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:hibiki/main",
+    "name": "响鬼系列骑士",
+    "description": "来自《假面骑士响鬼》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:hibikihead",
+    "sortnum": 0
+}

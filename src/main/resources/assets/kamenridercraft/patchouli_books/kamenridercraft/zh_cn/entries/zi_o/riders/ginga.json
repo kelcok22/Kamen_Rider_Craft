@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士银河",
+	"icon": "kamenridercraft:ginga_driver",
+	"category": "kamenridercraft:zi_o/riders",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ginga_driver\",Count:1b},{id:\"kamenridercraft:zi_o_legs\",Count:1b},{id:\"kamenridercraft:zi_o_troso\",Count:1b},{id:\"kamenridercraft:zi_o_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士银河",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)通过穿戴$(l:zi_o/devices/ginga_driver)银河驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 III$(li)急迫$(li)力量 III"
+		}
+	]
+}

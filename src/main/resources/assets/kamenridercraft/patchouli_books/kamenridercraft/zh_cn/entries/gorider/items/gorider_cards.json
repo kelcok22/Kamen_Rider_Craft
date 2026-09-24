@@ -1,0 +1,71 @@
+{
+	"name": "假面战队卡片",
+	"icon": "kamenridercraft:akarider_card",
+	"category": "kamenridercraft:gorider/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "akarider_card",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:akarider_card",
+			"text": "当前无法获取该物品"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "aorider_card",
+			"title": "卡片(蓝骑士)",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:aorider_card",
+			"title": " ",
+			"text": "当前无法获取该物品"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kirider_card",
+			"title": "卡片(黄骑士)",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kirider_card",
+			"title": " ",
+			"text": "当前无法获取该物品"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "momorider_card",
+			"title": "卡片(桃骑士)",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:momorider_card",
+			"title": " ",
+			"text": "当前无法获取该物品"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "midorider_card",
+			"title": "卡片(绿骑士)",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:midorider_card",
+			"title": " ",
+			"text": "当前无法获取该物品"
+		}
+	]
+}

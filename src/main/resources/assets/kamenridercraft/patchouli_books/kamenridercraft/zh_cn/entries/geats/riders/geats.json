@@ -1,0 +1,806 @@
+{
+	"name": "假面骑士极狐",
+	"icon": "kamenridercraft:desire_driver_geats",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "entry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:blank_form\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "登录形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#geats_rider_core_id)极狐ID核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnum",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "马格南",
+			"text": "通过使用 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)马格南代扣效果：$(li)火焰射击$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "magnumboost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "马格南推进形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)马格南代扣效果：$(li)火焰射击$(li)力量$(br2)推进器代扣效果：$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zombie",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:zombie_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "僵尸形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#zombie_raise_buckle)僵尸代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)僵尸代扣效果：$(li)毒药抗性$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ninja",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ninja_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "忍者形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#ninja_raise_buckle)忍者代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)忍者代扣效果：$(li)速度 III$(li)急迫 II$(li)跳跃提升 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:beat_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "节拍形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#beat_raise_buckle)节拍代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)DX节拍代扣（2022年，玩具系列）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)节拍代扣效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arrow",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:arrow_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装弓箭",
+			"text": "通过使用 $(l:geats/items/raise_buckles#arrow_raise_buckle)弓箭代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)弓箭代扣效果：$(li)爆裂射击"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:water_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装水枪",
+			"text": "通过使用 $(l:geats/items/raise_buckles#water_raise_buckle)水枪代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)水枪代扣效果：$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hammer",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:hammer_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装重锤",
+			"text": "通过使用 $(l:geats/items/raise_buckles#hammer_raise_buckle)锤代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)锤代扣效果：$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shield",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:shield_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装护盾",
+			"text": "通过使用 $(l:geats/items/raise_buckles#shield_raise_buckle)盾代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)盾代扣效果：$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "claw",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:claw_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装爪子",
+			"text": "通过使用 $(l:geats/items/raise_buckles#claw_raise_buckle)爪子代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)DX流星锤&爪子代扣套装（2022年，玩具系列）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)爪子代扣效果：$(li)斩击提升$(li)力量（持剑时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drill",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:drill_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装钻头",
+			"text": "通过使用 $(l:geats/items/raise_buckles#drill_raise_buckle)钻头代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)钻头代扣效果：$(li)钻头"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "propeller",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:propeller_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "武装螺旋桨",
+			"text": "通过使用 $(l:geats/items/raise_buckles#propeller_raise_buckle)螺旋桨代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)螺旋桨代扣效果：$(li)缓降 VII$(li)跳跃提升 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_boost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle_fever\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狂热推进形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)推进形态效果：$(li)速度 III$(li)推进 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fever_magnum",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:magnum_raise_buckle_fever\",slot_tex3:\"kamenridercraft:magnum_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狂热马格南形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)马格南形态效果：$(li)速度 III$(li)火焰射击 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "raising",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:command_twin_buckle_jet\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "矩升形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#command_twin_buckle_jet)双子喷射代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)双子喷射代扣效果：$(li)斩击提升 III$(li)力量 III（持剑时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "command_cannon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:command_twin_buckle_cannon\",slot_tex3:\"kamenridercraft:command_twin_buckle_jet\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "指令形态·加农模式",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#command_twin_buckle_cannon)双子加农代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#command_twin_buckle_jet)双子喷射代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)指令形态效果：$(li)斩击提升 III$(li)力量 III$(li)速度 IV$(li)抗性提升 IV$(li)急迫 III$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "command_jet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:command_twin_buckle_jet\",slot_tex3:\"kamenridercraft:command_twin_buckle_cannon_l\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "指令形态·喷射模式",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#command_twin_buckle_jet)双子喷射代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#command_twin_buckle_cannon)双子加农代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)指令形态效果：$(li)斩击提升 III$(li)力量 II$(li)力量 III（持剑时）$(li)速度 IV$(li)抗性提升 III$(li)急迫 III$(li)跳跃提升 IV$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boost_mkii",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_mkii_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "推进器马克II",
+			"text": "通过使用 $(l:geats/items/raise_buckles#boost_mkii_raise_buckle)推进器马克II代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)推进器马克II代扣效果：$(li)速度 V$(li)饥饿 III$(li)抗性提升 IV$(li)急迫 III$(li)炎拳 IV$(li)跳跃提升 IV$(li)推进 III$(li)抗火$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "laserboost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:unite_grip\",slot_tex3:\"kamenridercraft:boost_mkii_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "镭射推进形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#boost_mkii_raise_buckle)推进器马克II代扣$(/l) 和 $(l:geats/items/unite_grip)镭射跃动升华器$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)镭射推进形态效果：$(li)速度 V$(li)抗性提升 IV$(li)急迫 III$(li)炎拳 IV$(li)火焰射击 IV$(li)跳跃提升 IV$(li)推进 III$(li)抗火$(li)力量 V$(li)飞行 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boost_mkiii",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "推进器马克III",
+			"text": "通过使用 $(l:geats/items/raise_buckles#boost_mkiii_raise_buckle)推进器马克III代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)推进器马克III代扣效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)炎拳 V$(li)跳跃提升 VI$(li)推进 V$(li)抗火$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "geatsix",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_mkiii_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "极狐IX",
+			"text": "通过双手装备 $(l:geats/items/raise_buckles#boost_mkiii_raise_buckle)推进器马克III代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)极狐IX效果：$(li)速度 VII$(li)抗性提升 V$(li)夜视$(li)急迫 VI$(li)炎拳 VII$(li)跳跃提升 VIII$(li)推进 VII$(li)抗火 III$(li)力量 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "oneness",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:oneness_raise_buckle\",slot_tex3:\"kamenridercraft:boost_mkiii_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "极狐合一",
+			"text": "背包中持有 $(l:geats/items/rider_core_ids#geats_oneness_rider_core_id)极狐合一ID核心$(/l) ，同时主手装备 $(l:geats/items/raise_buckles#oneness_raise_buckle)合一代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_mkiii_raise_buckle)推进器马克III代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐（2023年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)合一代扣效果：$(li)速度 VIII$(li)幸运 II$(li)毒药抗性$(li)抗性提升 IV$(li)夜视$(li)急迫 V$(li)缓降$(li)炎拳 V$(li)跳跃提升 VI$(li)推进 V$(li)抗火$(li)力量 VII"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shark",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:shark_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "鲨鱼形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#shark_raise_buckle)鲨鱼代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)电视杂志（2023年5月号）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(br2)鲨鱼代扣效果：$(li)鱼类亲和 V$(li)抗性提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "osaka",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_osaka\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "马格南推进形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)大阪极狐ID核心$(/l) ，同时主手装备 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士大阪极狐",
+			"text": "登场于：$(li)假面骑士极狐 最终舞台（2023年，舞台剧中）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(li)饱和$(br2)马格南代扣效果：$(li)火焰射击$(li)力量$(br2)推进器代扣效果：$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fukuoka",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_fukuoka\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "马格南推进形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)福冈极狐ID核心$(/l) ，同时主手装备 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士福冈极狐",
+			"text": "登场于：$(li)假面骑士极狐 最终舞台（2023年，舞台剧中）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(li)饱和$(br2)马格南代扣效果：$(li)火焰射击$(li)力量$(br2)推进器代扣效果：$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "nagoya",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_nagoya\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "马格南推进形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)名古屋极狐ID核心$(/l) ，同时主手装备 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士名古屋极狐",
+			"text": "登场于：$(li)假面骑士极狐 最终舞台（2023年，舞台剧中）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(li)饱和$(br2)马格南代扣效果：$(li)火焰射击$(li)力量$(br2)推进器代扣效果：$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "tokyo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id_tokyo\",slot_tex2:\"kamenridercraft:magnum_raise_buckle\",slot_tex3:\"kamenridercraft:boost_raise_buckle\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "马格南推进形态",
+			"text": "通过使用 $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)东京极狐ID核心$(/l) ，同时主手装备 $(l:geats/items/raise_buckles#magnum_raise_buckle)马格南代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士东京极狐",
+			"text": "登场于：$(li)假面骑士极狐 最终舞台（2023年，舞台剧中）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)核心ID效果：$(li)速度$(li)饱和$(br2)马格南代扣效果：$(li)火焰射击$(li)力量$(br2)推进器代扣效果：$(li)推进"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boostrevice",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:boost_raise_buckle\",slot_tex3:\"kamenridercraft:revice_driver_raise_buckle_geats\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "推进利维斯形态",
+			"text": "通过主手装备 $(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l)、副手装备 $(l:geats/items/raise_buckles#revice_driver_raise_buckle)利维斯代扣$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士利维斯（2021年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)推进器代扣效果：$(li)推进$(br2)利维斯代扣效果：$(li)速度$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "typhoon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:typhoon_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一号形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#typhoon_raise_buckle)台风代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)DX台风&双重台风&帝王石代扣套装（2022年，玩具系列）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)台风代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "double_typhoon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:double_typhoon_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "V3形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#double_typhoon_raise_buckle)双重台风代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)DX台风&双重台风&帝王石代扣套装（2022年，玩具系列）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)双重台风代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)力量 II（持武器时）$(li)抗性提升 II$(li)速度 II$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "king_stone",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:king_stone_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Black形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#king_stone_raise_buckle)帝王石代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)DX台风&双重台风&帝王石代扣套装（2022年，玩具系列）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)帝王石代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)力量 II（持武器时）$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "arcle",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:arcle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "空我形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#arcle_raise_buckle)亚古鲁代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)DX亚古鲁代扣（2022年，玩具系列）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)亚古鲁代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "altering",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:alter_ring_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "亚极陀形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#alter_ring_raise_buckle)变化圆环代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器（2022年，网站）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)变化圆环代扣效果：$(li)速度$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "v_buckle",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:v_buckle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙骑形态",
+			"text": "通过使用 $(l:geats/items/raise_buckles#v_buckle_raise_buckle)V带扣带扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士极狐",
+			"text": "登场于：$(li)假面骑士极狐：搞什么？！全是男人的欲望大奖赛！我是王蛇！（2023年，超战斗DVD）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)V带扣带扣效果：$(li)速度$(li)抗火$(li)急迫"
+		},
+		{
+        "type": "patchouli:entity",
+        "anchor": "faiz_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:faiz_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Faiz形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#faiz_driver_raise_buckle)Faiz驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)Faiz驱动器代扣效果：$(li)力量 II$(li)抗性提升$(li)夜视"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "blay_buckle",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:blay_buckle_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "剑形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#blay_buckle_raise_buckle)Blay代扣代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)Blay代扣代扣效果：$(li)力量 II$(li)急迫"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "ongekiko_kaentsuzumi",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ongekiko_kaentsuzumi_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "响鬼形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#ongekiko_kaentsuzumi_raise_buckle)音击鼓·火炎鼓代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)音击鼓·火炎鼓代扣效果：$(li)力量$(li)急迫 II$(li)速度"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "kabuto_zecter",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:kabuto_zector_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "甲斗形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#kabuto_zector_raise_buckle)甲斗Zecter代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)甲斗Zecter代扣效果：$(li)速度 IV$(li)急迫 IV"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "den_o_belt",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:den_o_belt_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Den-O形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#den_o_belt_raise_buckle)电王腰带代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)DX电王驱动器升级带扣 (2023年，玩具系列)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)电王腰带代扣效果：$(li)力量 II$(li)急迫"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "kivat_belt",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:kivat_belt_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Kiva形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#kivat_belt_raise_buckle)Kiva腰带代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)Kiva腰带代扣效果：$(li)速度$(li)力量$(li)抗性提升"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "decadriver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:deca_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Decade形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#deca_driver_raise_buckle)帝骑驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)帝骑驱动器代扣效果：$(li)力量 II$(li)抗性提升$(li)急迫"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "doubledriver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:double_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "W形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#double_driver_raise_buckle)W驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)W驱动器代扣效果：$(li)速度 II$(li)跳跃提升$(li)力量 II"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "ooo_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ooo_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "OOO形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#ooo_driver_raise_buckle)OOO驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)OOO驱动器代扣效果：$(li)夜视$(li)急迫 II$(li)跳跃提升 III"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "fourze_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:fourze_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Fourze形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#fourze_driver_raise_buckle)Fourze驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)Fourze驱动器代扣效果：$(li)力量$(li)跳跃提升 II$(li)推进"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "wizardriver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:wizardriver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Wizard形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#wizardriver_raise_buckle)贤者驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)贤者驱动器代扣效果：$(li)速度$(li)抗火"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "sengoku_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:sengoku_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "铠武形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#sengoku_driver_raise_buckle)战极驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)GP代扣3 (2022年，玩具系列)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)战极驱动器代扣效果：$(li)速度$(li)急迫"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "drive_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:drive_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Drive形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#drive_driver_raise_buckle)驰骑驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)驰骑驱动器代扣效果：$(li)速度 II$(li)急迫 II$(li)力量"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "ghost_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:ghost_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Ghost形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#ghost_driver_raise_buckle)Ghost驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)Ghost驱动器代扣效果：$(li)速度"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "gamer_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:gamer_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Ex-Aid形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#gamer_driver_raise_buckle)玩家驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)玩家驱动器代扣效果：$(li)速度$(li)急迫"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "build_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:build_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Build形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#build_driver_raise_buckle)Build驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)DX Build驱动器代扣 (2023年，玩具系列)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)Build驱动器代扣效果：$(li)跳跃提升 III$(li)速度$(li)抗性提升"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "ziku_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:zikuu_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "时王形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#zikuu_driver_raise_buckle)时空驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)GP代扣2 (2022年，玩具系列)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)时空驱动器代扣效果：$(li)速度 II$(li)急迫$(li)力量"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "zero_one_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:zero_one_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "01形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#zero_one_driver_raise_buckle)01驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)01驱动器代扣效果：$(li)跳跃提升 IV"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "seiken_swordriver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:seiken_swordriver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Saber形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#seiken_swordriver_raise_buckle)圣剑驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)圣剑驱动器代扣效果：$(li)抗火$(li)急迫"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "two_sidriver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:two_si_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Live形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#two_si_driver_raise_buckle)双面驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)双面驱动器代扣效果：$(li)力量$(li)速度$(li)抗性提升"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "libera_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:libera_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Jeanne形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#libera_driver_raise_buckle)解放驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)解放驱动器代扣效果：$(li)拳力提升 VI$(li)力量 IX（空手状态）$(li)急迫 II$(li)速度 II$(li)毒药抗性"
+    },
+    {
+        "type": "patchouli:entity",
+        "anchor": "demons_driver",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:desire_driver_geats\",components:{custom_data:{slot_tex1:\"kamenridercraft:geats_rider_core_id\",slot_tex2:\"kamenridercraft:demons_driver_raise_buckle\",slot_tex3:\"kamenridercraft:blank_form\"}},Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "Demons形态",
+        "text": "通过使用 $(l:geats/items/raise_buckles#demons_driver_raise_buckle)蒂蒙斯驱动器代扣$(/l) 进行形态切换（副手装备可切换佩戴侧）"
+    },
+    {
+        "type": "patchouli:text",
+        "title": "假面骑士极狐",
+        "text": "登场于：$(li)GP代扣1 (2022年，玩具系列)$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_geats)欲望驱动器(极狐)$(/l) 进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 与 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，所有欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)速度$(br2)蒂蒙斯驱动器代扣效果：$(li)中毒$(li)速度 II$(li)力量 III$(li)抗性提升 II"
+    }
+	]
+}

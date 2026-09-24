@@ -1,0 +1,16 @@
+{
+	"name": "撒旦军刀",
+	"icon": "kamenridercraft:satansaber",
+	"category": "kamenridercraft:black/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)由$(l:black/riders/shadow_moon)影月$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black/satansaber"
+		}
+	]
+}

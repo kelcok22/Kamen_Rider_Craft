@@ -1,0 +1,21 @@
+{
+	"name": "超级银河王",
+	"icon": "kamenridercraft:ginga_oh_driver",
+	"category": "kamenridercraft:fourze/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:ginga_oh_driver\",Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "超级银河王",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)通过穿戴$(l:fourze/devices/ginga_oh_driver)银河王驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)力量 VII（空手状态）$(li)力量 II（持武器状态）$(li)速度 III$(li)水下呼吸$(li)急迫"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士所罗门",
+    "icon": "kamenridercraft:saber_logo",
+    "category": "kamenridercraft:saber/mobs",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:solomon",
+            "text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：200"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通过挖掘$(l:misc/blocks/boss_blocks#solomon_boss_block)所罗门Boss召唤方块$(/l)召唤而来$(br2)掉落$(li)10-12本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)5本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#omni_force_wonder_ride_book)全能之力奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#tassel_dark_wonder_ride_book)黑暗流苏奇幻驾驭书$(/l)$(li)1个 $(l:saber/devices/dooms_driver_buckle#dooms_driver_buckle_solomon)破灭驱动器带扣(所罗门)$(/l)$(li)1把 $(l:saber/arsenal/caladbolg)虹霓剑$(/l)"
+        }
+    ]
+}

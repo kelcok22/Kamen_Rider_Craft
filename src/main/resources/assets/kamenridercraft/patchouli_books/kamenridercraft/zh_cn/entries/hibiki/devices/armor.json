@@ -1,0 +1,24 @@
+{
+	"name": "响鬼装甲",
+	"icon": "kamenridercraft:hibikihead",
+	"category": "kamenridercraft:hibiki/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与响鬼骑士的变身器配合使用，可以变身成该骑士$(br2)掉落自：$(li)$(l:hibiki/mobs/kabuki)假面骑士歌舞鬼$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/hibikihead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/hibikitroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/hibikilegs"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "凯撒拳击",
+	"icon": "kamenridercraft:kaixa_shot",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)由$(l:faiz/riders/kaixa)假面骑士凯撒$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/kaixa_shot"
+		}
+	]
+}

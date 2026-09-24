@@ -1,0 +1,16 @@
+{
+	"name": "恶王三叉戟",
+	"icon": "kamenridercraft:arc_trident",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva：魔界城之王 (2008年，电影)$(br2)由 $(l:kiva/riders/arc)假面骑士恶王$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/arc_trident"
+		}
+	]
+}

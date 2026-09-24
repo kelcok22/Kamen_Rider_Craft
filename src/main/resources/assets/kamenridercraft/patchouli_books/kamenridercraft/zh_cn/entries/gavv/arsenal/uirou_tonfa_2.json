@@ -1,0 +1,16 @@
+{
+	"name": "米粉糕警棍",
+	"icon": "kamenridercraft:uirou_tonfa_2",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 26,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)由加布的$(l:gavv/riders/gavv#uirou)米粉糕形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/uirou_tonfa_2"
+		}
+	]
+}

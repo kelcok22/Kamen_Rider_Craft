@@ -1,0 +1,16 @@
+{
+	"name": "脆脆薯片锯刀(巧克力)",
+	"icon": "kamenridercraft:zakuzakuchipslasher_choco",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由加布的$(l:gavv/riders/gavv#zakuzakuchips)脆脆薯片形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/zakuzakuchipslasher_choco"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "纳斯卡的剑",
+	"icon": "kamenridercraft:nasca_blade",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士W（2009年，电视剧）$(br2)由$(l:w/mobs/nazca_dopant)纳斯卡掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nasca_blade",
+			"title": " ",
+			"text": "掉落自：$(li) $(l:w/mobs/nazca_dopant)纳斯卡掺杂体$(/l)"
+		}
+	]
+}

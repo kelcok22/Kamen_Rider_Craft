@@ -1,0 +1,52 @@
+{
+	"name": "Amazon驱动核心",
+	"icon": "kamenridercraft:condorer_core_omega",
+	"category": "kamenridercraft:amazons/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_omega",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)用于制作Amazon Omega的$(l:amazons/devices/amazons_driver#amazons_driver_omega)Amazons驱动器(Omega)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazons/condorer_core_omega"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_alpha",
+			"title": "Amazon驱动核心(Alpha)",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)用于制作Amazon Alpha的$(l:amazons/devices/amazons_driver#amazons_driver_alpha)Amazons驱动器(Alpha)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/condorer_core_alpha"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_alpha_blind",
+			"title": "Amazon注射器(Blind Alpha)",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)用于切换Amazon Alpha的$(l:amazons/riders/amazon_alpha#blind_alpha)盲态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:condorer_core_alpha_blind",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "condorer_core_sigma",
+			"title": "Amazon驱动核心(Sigma)",
+			"text": "登场于：$(li)假面骑士Amazons 第一季 (2016年，网络剧)$(br2)用于制作Amazon Sigma的$(l:amazons/devices/amazons_driver#amazons_driver_sigma)Amazons驱动器(Sigma)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:amazons/condorer_core_sigma"
+		}
+	]
+}

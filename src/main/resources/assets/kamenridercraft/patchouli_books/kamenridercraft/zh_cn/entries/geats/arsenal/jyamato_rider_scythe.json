@@ -1,0 +1,19 @@
+{
+	"name": "邪魔徒骑士之镰",
+	"icon": "kamenridercraft:jyamato_rider_scythe",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 27,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)由 $(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamato_rider_scythe",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)的装备"
+		}
+	]
+}

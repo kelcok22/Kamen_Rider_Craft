@@ -1,0 +1,43 @@
+{
+	"name": "恐惧驱动器",
+	"icon": "kamenridercraft:dreadriver",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+            "anchor": "dreadriver",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/dread)假面骑士恐惧$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/dreadriver"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "dreadriver_trooper",
+        "title": "恐惧驱动器",
+        "text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/dreatrooper)恐惧骑兵$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dreadriver_trooper",
+        "title": " ",
+        "text": "该道具目前无法获取"
+      },
+      {
+        "type": "patchouli:text",
+        "anchor": "dreadriver_meikoku_no_sanshimai",
+        "title": "恐惧驱动器",
+        "text": "登场于：$(li)冥黑三姊妹 假面骑士歌查德 未完成计划(2024年，广播剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/meikoku_no_sanshimai)假面骑士冥黑之三姊妹$(/l)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dreadriver_meikoku_no_sanshimai",
+        "title": " ",
+        "text": "该道具目前无法获取"
+      }
+    ]
+}

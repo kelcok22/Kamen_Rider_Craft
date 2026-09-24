@@ -1,0 +1,71 @@
+{
+	"name": "魔改驾驭书",
+	"icon": "kamenridercraft:desast_alter_ride_book",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "desast_alter_ride_book",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:desast_alter_ride_book",
+			"text": "掉落自：$(li)$(l:saber/mobs/desast)天灾$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "charybdis_alter_ride_book",
+			"title": "卡律布狄斯魔改驾驭书",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:charybdis_alter_ride_book",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/charybdis_hercules)卡律布狄斯·大力神$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "legeiel_alter_ride_book",
+			"title": "拉结尔魔改驾驭书",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:legeiel_alter_ride_book",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/legeiel_forbidden)拉结尔·禁忌$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zooous_alter_ride_book",
+			"title": "兹欧斯魔改驾驭书",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zooous_alter_ride_book",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/zooous_predator)兹欧斯·捕食者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "storious_alter_ride_book",
+			"title": "斯特利乌斯魔改驾驭书",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:storious_alter_ride_book",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/storious)斯特利乌斯$(/l)"
+		}
+	]
+}

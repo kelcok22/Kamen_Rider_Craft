@@ -1,0 +1,16 @@
+{
+	"name": "能力收集册",
+	"icon": "kamenridercraft:energy_item_holder",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)最多可存储24组能量道具$(br2)背包中持有该物品时，拾取能量道具不会自动激活"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/energy_item_holder"
+		}
+	]
+}

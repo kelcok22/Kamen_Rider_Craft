@@ -1,0 +1,17 @@
+{
+	"name": "恐惧骑兵指挥官",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:dreatrooper_commander",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:gotchard/mobs/dreatrooper)恐惧骑兵$(/l)进化而来$(br2)掉落$(li)3-5个$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)$(li)1个$(l:gotchard/items/replichemy_cards#steamliner_repli_chemy_card)蒸汽列车复制驾驭凯米卡$(/l) (33%)$(li)1个$(l:gotchard/items/replichemy_cards#unicon_repli_chemy_card)独角兽复制驾驭凯米卡$(/l) (33%)$(li)1个$(l:gotchard/items/replichemy_cards#daiohni_repli_chemy_card)大王恶鬼复制驾驭凯米卡$(/l) (33%)$(li)1个$(l:gotchard/items/replichemy_cards#madwheel_repli_chemy_card)疯狂车轮复制驾驭凯米卡$(/l) (20%)$(li)1个$(l:gotchard/items/replichemy_cards#bulletbaang_repli_chemy_card)子弹砰砰复制驾驭凯米卡$(/l) (20%)$(li)1个$(l:gotchard/items/replichemy_cards#apparebushido_repli_chemy_card)武士道复制驾驭凯米卡$(/l) (20%)$(li)1个$(l:gotchard/items/replichemy_cards#kamantis_repli_chemy_card)镰刀螳螂复制驾驭凯米卡$(/l) (20%)"
+		}
+	]
+}

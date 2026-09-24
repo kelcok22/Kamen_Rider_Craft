@@ -1,0 +1,16 @@
+{
+	"name": "Fourze驱动器",
+	"icon": "kamenridercraft:fourze_driver",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)与$(l:fourze/devices/armor)Fourze装甲$(/l)一起穿戴，可变身为$(l:fourze/riders/fourze#basestates)假面骑士Fourze"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/fourze_driver"
+		}
+	]
+}

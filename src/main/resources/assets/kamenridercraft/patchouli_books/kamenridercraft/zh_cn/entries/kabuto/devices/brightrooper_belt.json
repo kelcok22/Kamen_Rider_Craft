@@ -1,0 +1,19 @@
+{
+	"name": "光明蚁兵腰带",
+	"icon": "kamenridercraft:brightrooper_belt",
+	"category": "kamenridercraft:kabuto/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/brightrooper)光明蚁兵"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:brightrooper_belt",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

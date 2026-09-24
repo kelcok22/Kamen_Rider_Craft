@@ -1,0 +1,16 @@
+{
+	"name": "黄泉丸",
+	"icon": "kamenridercraft:yomimaru",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)平成骑士VS昭和骑士 假面骑士大战 feat.超级战队 (2014年，电影)$(br2)由$(l:gaim/riders/fifteen)假面骑士十五$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/yomimaru"
+		}
+	]
+}

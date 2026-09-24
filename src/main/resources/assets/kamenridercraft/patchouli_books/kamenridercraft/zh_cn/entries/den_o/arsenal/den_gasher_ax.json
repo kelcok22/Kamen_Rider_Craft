@@ -1,0 +1,16 @@
+{
+	"name": "电切裂者(圣斧模式)",
+	"icon": "kamenridercraft:den_gasher_ax",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)由电王的$(l:den_o/riders/den_o#ax)圣斧形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_gasher_ax"
+		}
+	]
+}

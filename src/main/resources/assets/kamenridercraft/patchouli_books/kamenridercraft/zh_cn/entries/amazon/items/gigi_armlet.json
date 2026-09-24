@@ -1,0 +1,19 @@
+{
+	"name": "唧唧臂环",
+	"icon": "kamenridercraft:gigi_armlet",
+	"category": "kamenridercraft:amazon/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigi_armlet",
+			"title": " ",
+			"text": "该物品目前无法获取。"
+		}
+	]
+}

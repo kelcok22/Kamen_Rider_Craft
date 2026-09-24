@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "腰带",
+    "description": "铠武系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)修复.",
+    "icon": "kamenridercraft:sengoku_driver_gaim",
+    "sortnum": 1
+}

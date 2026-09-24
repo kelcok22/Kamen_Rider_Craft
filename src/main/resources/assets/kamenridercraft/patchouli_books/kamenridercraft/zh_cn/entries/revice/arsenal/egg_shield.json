@@ -1,0 +1,16 @@
+{
+	"name": "破壳之盾",
+	"icon": "kamenridercraft:egg_shield",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)由维斯的 $(l:revice/riders/vice#barid_rex)破壳暴龙基因组$(/l) 及 $(l:revice/riders/vice#volcano_rex)熔岩暴龙基因组$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/egg_shield"
+		}
+	]
+}

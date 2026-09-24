@@ -1,0 +1,17 @@
+{
+	"name": "伊戈尔",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:igor",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br)生命值: 50"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:ghost/mobs/gamma_commandos)动员眼魔$(/l)进化而来$(br2)掉落$(li)2-4个$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)$(li)1个$(l:ghost/items/gamma_eyecons#transform_gamma_eyecon)改造眼魔眼魂$(/l)$(li)1个$(l:ghost/items/gamma_eyecons#royalty_gamma_eyecon)王权眼魔眼魂$(/l) (20%)$(li)1个$(l:ghost/items/gamma_eyecons#knife_gamma_eyecon)小刀眼魔眼魂$(/l) (80%)"
+		}
+	]
+}

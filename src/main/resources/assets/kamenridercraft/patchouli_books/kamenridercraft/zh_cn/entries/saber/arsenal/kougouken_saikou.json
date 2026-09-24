@@ -1,0 +1,16 @@
+{
+	"name": "光刚剑最光",
+	"icon": "kamenridercraft:kougouken_saikou",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/saikou)假面骑士最光$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/kougouken_saikou"
+		}
+	]
+}

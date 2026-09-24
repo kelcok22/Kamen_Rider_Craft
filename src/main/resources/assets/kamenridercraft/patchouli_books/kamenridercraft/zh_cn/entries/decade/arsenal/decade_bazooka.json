@@ -1,0 +1,16 @@
+{
+	"name": "Decade巴祖卡",
+	"icon": "kamenridercraft:decade_bazooka",
+	"category": "kamenridercraft:decade/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Decade：守护它！〈电视君的世界〉 (2009年，超战斗视频)$(br2)由$(l:decade/riders/decade#decade)假面骑士Decade$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/decade_bazooka"
+		}
+	]
+}

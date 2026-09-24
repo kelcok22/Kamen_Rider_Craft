@@ -1,0 +1,16 @@
+{
+	"name": "甲斗苦无枪(苦无模式)",
+	"icon": "kamenridercraft:kabuto_kunai_kunai",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)由$(l:kabuto/riders/kabuto#rider)甲斗骑士形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/kabuto_kunai_kunai"
+		}
+	]
+}

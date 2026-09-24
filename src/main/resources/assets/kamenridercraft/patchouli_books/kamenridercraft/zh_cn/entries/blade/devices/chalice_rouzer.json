@@ -1,0 +1,16 @@
+{
+	"name": "卡利斯觉醒器",
+	"icon": "kamenridercraft:chalice_rouzer",
+	"category": "kamenridercraft:blade/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)与$(l:blade/devices/armor)剑装甲$(/l)一起穿戴，可变身为$(l:blade/riders/chalice)假面骑士卡利斯"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/chalice_rouzer"
+		}
+	]
+}

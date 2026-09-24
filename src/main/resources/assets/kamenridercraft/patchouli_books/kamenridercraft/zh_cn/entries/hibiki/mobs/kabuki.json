@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士歌舞鬼",
+	"icon": "kamenridercraft:hibiki_logo",
+	"category": "kamenridercraft:hibiki/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kabuki",
+			"text": "登场于：$(li)假面骑士响鬼与7位战鬼（2005年，电影）$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:hibiki/mobs/makamou_ninja_group)魔化魍$(/l)进化而来$(br2)掉落$(li)2-4个$(l:hibiki/items/oni_orehell)青色鬼石$(/l)$(li)1个$(l:hibiki/items/henshin_onsa#henshin_onsa_kabuki)变身音叉(歌舞鬼)$(/l)"
+		}
+	]
+}

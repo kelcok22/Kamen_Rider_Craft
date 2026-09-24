@@ -1,0 +1,229 @@
+{
+	"name": "骑士标志",
+	"icon": "kamenridercraft:kamen_rider_logo",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "假面骑士系列各部作品的标志，另加几款额外标志。可在织布机中使用，将对应系列的各类符号印在旗帜上。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/ichigo_logo",
+			"text": "旗帜图案:$(li)假面骑士标志$(li)假面骑士标志（带边框）$(li)修卡徽章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/v3_logo",
+			"text": "旗帜图案:$(li)V3标志$(li)V3标志（V字）$(li)V3标志（3字）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:v3/riderman_logo",
+			"text": "旗帜图案:$(li)骑士人标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:x/x_logo",
+			"text": "旗帜图案:$(li)X标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazon/amazon_logo",
+			"text": "旗帜图案:$(li)Amazon标志$(li)Amazon标志（高光版）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:stronger/stronger_logo",
+			"text": "旗帜图案:$(li)强人标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:skyrider/skyrider_logo",
+			"text": "旗帜图案:$(li)天空骑士标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:super_1/super1_logo",
+			"text": "旗帜图案:$(li)超一号标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zx/zx_logo",
+			"text": "旗帜图案:$(li)ZX标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black/black_logo",
+			"text": "旗帜图案:$(li)Black标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/black_rx_logo",
+			"text": "旗帜图案:$(li)Black RX标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:shin/shin_logo",
+			"text": "旗帜图案:$(li)真标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/zo_logo",
+			"text": "旗帜图案:$(li)ZO标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:j/j_logo",
+			"text": "旗帜图案:$(li)J标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuuga_logo",
+			"text": "旗帜图案:$(li)空我标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/agito_logo",
+			"text": "旗帜图案:$(li)亚极陀标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/ryuki_logo",
+			"text": "旗帜图案:$(li)龙骑标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_logo",
+			"text": "旗帜图案:$(li)555标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/blade_logo",
+			"text": "旗帜图案:$(li)剑标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/hibiki_logo",
+			"text": "旗帜图案:$(li)响鬼标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/kabuto_logo",
+			"text": "旗帜图案:$(li)甲斗标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/den_o_logo",
+			"text": "旗帜图案:$(li)电王标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kiva_logo",
+			"text": "旗帜图案:$(li)Kiva标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:decade/decade_logo",
+			"text": "旗帜图案:$(li)Decade标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:g/g_logo",
+			"text": "旗帜图案:$(li)G标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/w_logo",
+			"text": "旗帜图案:$(li)W标志$(li)W标志（躯体）$(li)W标志（灵魂）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/ooo_logo",
+			"text": "旗帜图案:$(li)OOO标志$(li)OOO标志（鹰）$(li)OOO标志（虎）$(li)OOO标志（蝗）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/fourze_logo",
+			"text": "旗帜图案:$(li)Fourze标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_logo",
+			"text": "旗帜图案:$(li)Wizard标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/gaim_logo",
+			"text": "旗帜图案:$(li)铠武标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/drive_logo",
+			"text": "旗帜图案:$(li)Drive标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/ghost_logo",
+			"text": "旗帜图案:$(li)Ghost标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aid_logo",
+			"text": "旗帜图案:$(li)Ex-Aid标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/build_logo",
+			"text": "旗帜图案:$(li)Build标志$(li)东都徽章$(li)北都徽章$(li)西都徽章"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zi_o_logo",
+			"text": "旗帜图案:$(li)Zi-O标志$(br2)$(l:zi_o/riders/zi_o#ohmaform)假面骑士Zi-O 逢魔形态$(/l)或$(l:zi_o/riders/ohma_zi_o)逢魔Zi-O$(/l)可使用，根据副手物品召唤不同骑士"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:kuuga/riders/manga_kuuga)漫画空我$(/l)：$(l:kuuga/items/kuuga_manga)空我漫画$(/l)$(li)$(l:g/riders/g)假面骑士G$(/l)：$(l:g/items/goro_wine_bottle)五郎酒瓶$(/l)$(li)$(l:gaim/riders/zangetsu#kachidoki)假面骑士斩月 胜哄铠甲$(/l)：$(l:gaim/items/lockseeds#zangetsu_kachidoki_lockseed)新胜哄锁种$(/l)$(li)$(l:drive/riders/brain)假面骑士Brain$(/l)：$(l:drive/items/roidmude_cores#roidmude_core_003)机械变异体核心003$(/l)$(li)$(l:gorider/riders/akarider)赤骑士$(/l)：$(l:gorider/items/gorider_cards#akarider_card)赤骑士卡片$(/l)$(li)$(l:gorider/riders/aorider)青骑士$(/l)：$(l:gorider/items/gorider_cards#aorider_card)青骑士卡片$(/l)$(li)$(l:gorider/riders/kirider)黄骑士$(/l)：$(l:gorider/items/gorider_cards#kirider_card)黄骑士卡片$(/l)$(li)$(l:gorider/riders/momorider)桃骑士$(/l)：$(l:gorider/items/gorider_cards#momorider_card)桃骑士卡片$(/l)$(li)$(l:gorider/riders/midorider)绿骑士$(/l)：$(l:gorider/items/gorider_cards#midorider_card)绿骑士卡片$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_one_logo",
+			"text": "旗帜图案:$(li)Zero-One标志$(li)灭亡迅雷.net标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saber_logo",
+			"text": "旗帜图案:$(li)Saber标志$(li)真理之剑标志$(li)真理之剑标志（外侧）$(li)真理之剑标志（内侧）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_logo",
+			"text": "旗帜图案:$(li)Revice标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/geats_logo",
+			"text": "旗帜图案:$(li)Geats标志$(li)系列骑士标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchard_logo",
+			"text": "旗帜图案:$(li)Gotchard标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavv_logo",
+			"text": "旗帜图案:$(li)Gavv标志"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/zeztz_logo",
+			"text": "旗帜图案:$(li)Zeztz标志"
+		}
+	]
+}

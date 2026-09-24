@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士亚克01",
+	"icon": "kamenridercraft:hiden_zero_one_driver_azu",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver_azu\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士亚克01",
+			"text": "登场于：$(li)假面骑士01：Final Stage (2020年，舞台剧)$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver_azu)飞电01驱动器(亚克01)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)急迫 IV$(li)跳跃提升 V$(li)力量 V"
+		}
+	]
+}

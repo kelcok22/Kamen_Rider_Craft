@@ -1,0 +1,19 @@
+{
+	"name": "超级任务盒极狐类型",
+	"icon": "kamenridercraft:gigant_mission_box",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)右键点击可掉落千兆带扣$(br2)掉落物品：$(li)$(l:geats/items/raise_buckles#powered_builder_raise_buckle)完善工程代扣$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_sword_buckle)千兆斩刃代扣$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_hammer_buckle)千兆重锤代扣$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#gigant_blaster_buckle)千兆爆裂代扣$(/l) (12.5%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_mission_box",
+			"title": " ",
+			"text": "$(li)$(l:geats/items/raise_buckles#magnum_shooter_40x_raise_buckle)马格南射击40X代扣$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#ninja_dueler_raise_buckle)忍者双刃代扣$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#zombie_breaker_raise_buckle)僵尸破坏者代扣$(/l) (12.5%)$(li)$(l:geats/items/raise_buckles#beat_axe_raise_buckle)节拍战斧代扣$(/l) (12.5%)$(br2)掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)$(li)$(l:geats/mobs/glare)假面骑士炬目$(/l)$(li)$(l:geats/mobs/gazer)假面骑士Gazer$(/l)$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l)$(li)$(l:geats/mobs/end_rider)The End骑士$(/l)$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l)$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l)"
+		}
+	]
+}

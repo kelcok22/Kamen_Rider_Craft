@@ -1,0 +1,17 @@
+{
+	"name": "黑影卫兵",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kurokage_trooper",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br)生命值: 20"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：$(l:gaim/structures/yggdrasil_base)世界树基地$(/l)、$(l:misc/city/centers#yggdrasil_tower)世界树塔$(/l)$(br2)掉落$(li)2-4个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)$(li)1个$(l:gaim/items/energy_lockseeds#matsubokkuri_energy_lockseed)松果能量锁种$(/l) (5%)$(li)1个$(l:gaim/items/lockseeds#fake_donguri_lockseed)橡果锁种$(/l) (5%)$(li)1个$(l:gaim/devices/sengoku_driver#sengoku_driver_kurokage_troopers)战极驱动器（黑影卫兵）$(/l) (15%)$(br2)进化$(li)$(l:gaim/mobs/zangetsu_shin)假面骑士斩月·真$(/l) (2.5%)$(li)$(l:gaim/mobs/marika)假面骑士女王$(/l) (2.5%)$(li)$(l:gaim/mobs/duke)假面骑士公爵$(/l) (2.5%)$(li)$(l:gaim/mobs/sigurd)假面骑士西格德$(/l) (2.5%)"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "影月(另类RX)",
+	"icon": "kamenridercraft:moon_rx_core",
+	"category": "kamenridercraft:black_rx/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:moon_riser\",Count:1b},{id:\"kamenridercraft:rxlegs\",Count:1b},{id:\"kamenridercraft:rxtroso\",Count:1b},{id:\"kamenridercraft:rxhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " "
+		},
+		{
+			"type": "patchouli:text",
+			"title": "另类RX",
+			"text": "登场于：$(li)After 0 (2002年，S.I.C. 英雄传说)$(br2)通过穿戴$(l:black_rx/devices/moon_riser)月亮升华器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		}
+	]
+}

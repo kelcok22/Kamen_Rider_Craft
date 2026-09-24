@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:misc/misc",
+    "name": "骑士相关方块",
+    "description": "假面骑士工艺模组中目前所有可用方块。",
+    "icon": "kamenridercraft:ichigo_chair",
+    "sortnum": 1
+}

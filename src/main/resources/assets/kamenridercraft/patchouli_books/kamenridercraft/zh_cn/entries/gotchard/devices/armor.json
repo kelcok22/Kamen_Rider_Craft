@@ -1,0 +1,24 @@
+{
+	"name": "歌查德装甲",
+	"icon": "kamenridercraft:gotchard_head",
+	"category": "kamenridercraft:gotchard/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与歌查德系列骑士驱动器配合使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchard_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchard_torso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchard_legs"
+		}
+	]
+}

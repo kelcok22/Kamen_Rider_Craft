@@ -1,0 +1,19 @@
+{
+	"name": "电假面圣剑",
+	"icon": "kamenridercraft:denkamen_sword",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)用于切换电王的$(l:den_o/riders/den_o#liner)班列形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:denkamen_sword",
+			"title": " ",
+			"text": "可在$(l:den_o/structures/kingliner)王班列$(/l)中找到"
+		}
+	]
+}

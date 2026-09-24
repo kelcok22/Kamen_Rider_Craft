@@ -1,0 +1,19 @@
+{
+	"name": "骑士纹章(J)",
+	"icon": "kamenridercraft:j_stone",
+	"category": "kamenridercraft:j/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士J (1994年, 电影)$(br2)用于制作假面骑士J的$(l:j/devices/j_spirit)J魂$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:j_stone",
+			"title": " ",
+			"text": "和新手$(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获得"
+		}
+	]
+}

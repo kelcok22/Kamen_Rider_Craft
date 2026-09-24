@@ -1,0 +1,266 @@
+{
+	"name": "掺杂体记忆体",
+	"icon": "kamenridercraft:terror_memory",
+	"category": "kamenridercraft:w/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "terror_memory",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/terror_dopant)恐惧掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:terror_memory",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "taboo_memory",
+			"title": "禁忌记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/taboo_dopant)禁忌掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:taboo_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/taboo_dopant)禁忌掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "claydoll_memory",
+			"title": "黏土人偶记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/claydoll_dopant)黏土玩偶掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:claydoll_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/claydoll_dopant)黏土玩偶掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nasca_memory",
+			"title": "纳斯卡记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/nazca_dopant)纳斯卡掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nasca_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/nazca_dopant)纳斯卡掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smilodon_memory",
+			"title": "剑齿虎记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/smilodon_dopant)剑齿虎掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smilodon_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/smilodon_dopant)剑齿虎掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "weather_memory",
+			"title": "天气记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/weather_dopant)天气掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:weather_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/weather_dopant)天气掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quetzalcoatlus_memory",
+			"title": "风神翼龙记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由风神翼龙掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_memory",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quetzalcoatlus_memory_prototype",
+			"title": "原型风神翼龙记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由风神翼龙掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quetzalcoatlus_memory_prototype",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "utopia_memory",
+			"title": "乌托邦记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由乌托邦掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:utopia_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/eternal_mob)假面骑士Eternal$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_memory",
+			"title": "独角兽记忆体",
+			"text": "登场于：$(li)假面骑士W归来：假面骑士Accel (2011年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_memory",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unicorn_memory_enhancing_adapter",
+			"title": "独角兽记忆体(增幅适配器)",
+			"text": "登场于：$(li)假面骑士W归来：假面骑士Accel (2011年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unicorn_memory_enhancing_adapter",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magma_memory",
+			"title": "岩浆记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由岩浆掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magma_memory",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "commander_memory",
+			"title": "指挥官记忆体",
+			"text": "登场于：$(li)假面骑士W归来：假面骑士Accel (2011年，V-Cinema电影)$(br2)由指挥官掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:commander_memory",
+			"title": " ",
+			"text": "制作$(l:w/items/gaia_memories#accel_booster_memory)加速爆裂记忆体$(/l)后获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "commander_memory_enhancing_adapter",
+			"title": "指挥官记忆体(增强适配器)",
+			"text": "登场于：$(li)假面骑士W归来：假面骑士Accel (2011年，V-Cinema电影)$(br2)由指挥官掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:commander_memory_enhancing_adapter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/commander_dopant)指挥官掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "memory_memory",
+			"title": "记忆记忆体",
+			"text": "登场于：$(li)假面骑士 × 假面骑士OOO & W 特别篇：Skull篇——Movie War Core (2010年，电影)$(br2)由$(l:ooo/mobs/core)假面骑士Core$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:memory_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/core)假面骑士Core$(/l)"
+		},
+        {
+			"type": "patchouli:text",
+			"anchor": "joker_dopant_memory_broken",
+			"title": "王牌掺杂体记忆体(损坏)",
+			"text": "登场于：$(li)风都侦探 (2017/2022年，漫画/动画)$(br2)由王牌掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:joker_dopant_memory_broken",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "joker_dopant_memory",
+			"title": "王牌掺杂体记忆体",
+			"text": "登场于：$(li)风都侦探 (2017/2022年，漫画/动画)$(br2)由王牌掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:joker_dopant_memory",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "egg_chicken_memory",
+			"title": "亲子盖浇饭记忆体",
+			"text": "登场于：$(li)假面骑士W: Donburi的α/再会爱的食谱 (2010年，超战斗DVD)$(br2)由亲子盖浇饭掺杂体使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:egg_chicken_memory",
+			"title": " ",
+			"text": "掉落自：$(li)鸡"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "masquerade_memory",
+			"title": "化装舞会记忆体",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)由$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:masquerade_memory",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shinigami_hakase_dopant_memory",
+			"title": "死神博士记忆体",
+			"text": "登场于：$(li)假面骑士×假面骑士 W&Decade MOVIE大战 (2010年，电影)$(br2)由光荣次郎使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shinigami_hakase_dopant_memory",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

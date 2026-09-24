@@ -1,0 +1,84 @@
+{
+	"name": "时空驱动器",
+	"icon": "kamenridercraft:ziku_driver_zi_o",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zi_o",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/zi_o)假面骑士时王$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zi_o"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_geiz",
+			"title": "时空驱动器（盖茨）",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/geiz)假面骑士盖茨$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_geiz"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_tsukuyomi",
+			"title": "时空驱动器（月读）",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/tsukuyomi)假面骑士月读$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_tsukuyomi"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zi_o_mirror",
+			"title": "时空驱动器（镜像时王）",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/mirror_zi_o)假面骑士时王(镜世界版本)$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zi_o_mirror"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_barlckxs",
+			"title": "时空驱动器（巴尔克斯）",
+			"text": "登场于：$(li)假面骑士时王：Over Quartzer (2019年，电影)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/barlckxs)假面骑士巴尔克斯$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_barlckxs"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zonjis",
+			"title": "时空驱动器（宗吉斯）",
+			"text": "登场于：$(li)假面骑士时王：Over Quartzer (2019年，电影)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/zonjis)假面骑士宗吉斯$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zonjis"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ziku_driver_zamonas",
+			"title": "时空驱动器（扎莫纳斯）",
+			"text": "登场于：$(li)假面骑士时王：Over Quartzer (2019年，电影)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/zamonas)假面骑士扎莫纳斯$(/l)$(br2)最多可存放4组骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zi_o/ziku_driver_zamonas"
+		}
+	]
+}

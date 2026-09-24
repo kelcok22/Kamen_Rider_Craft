@@ -1,0 +1,17 @@
+{
+	"name": "空白数据升华钥",
+	"icon": "kamenridercraft:blank_progrisekey",
+	"category": "kamenridercraft:zero_one/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)可在$(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l)或$(l:misc/blocks/machine_blocks#zaia_3d_printer)哉亚3D打印机$(/l)上使用，以获取程式升华钥$(br2)掉落自：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)$(li)$(l:zero_one/mobs/dodo_magia_chick)渡渡鸟-雏鸟魔机偶$(/l)$(li)$(l:zero_one/mobs/abaddon)假面骑士·亚巴顿$(/l)$(li)$(l:zero_one/mobs/giger)基格$(/l)$(li)$(l:zero_one/mobs/horobi)假面骑士·灭$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/blank_progrisekey",
+			"text": "$(li)$(l:zero_one/mobs/jin)假面骑士·迅$(/l)$(li)$(l:zero_one/mobs/ikazuchi)假面骑士·雷$(/l)$(li)$(l:zero_one/mobs/naki)假面骑士·亡$(/l)$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)"
+		}
+	]
+}

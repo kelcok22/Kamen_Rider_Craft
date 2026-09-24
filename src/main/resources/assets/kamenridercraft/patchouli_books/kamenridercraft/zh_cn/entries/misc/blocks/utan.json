@@ -1,0 +1,19 @@
+{
+	"name": "咪碳兔兔玩偶",
+	"icon": "kamenridercraft:utan",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Build (2017年, 电视剧)$(br2)可装备在头部护甲栏位"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:utan",
+        "title": " ",
+        "text": "可在$(l:misc/city/urban_area#nascita)Nascita咖啡店$(/l)内找到"
+      }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+	"name": "未来骑士表盘",
+	"icon": "kamenridercraft:woz_miridewatch",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "woz_miridewatch",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成沃兹的$(l:zi_o/devices/beyondriver)超越驱动器$(/l)$(br2)用于切换沃兹的$(l:zi_o/riders/woz#woz)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:woz_miridewatch",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shinobi_miridewatch",
+			"title": "忍者未来骑士表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换沃兹的$(l:zi_o/riders/woz#shinobi)未来助力·忍者$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shinobi_miridewatch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "quiz_miridewatch",
+			"title": "Quiz未来骑士表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换沃兹的$(l:zi_o/riders/woz#quiz)未来助力·Quiz$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:quiz_miridewatch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kikai_miridewatch",
+			"title": "Kikai未来骑士表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换沃兹的$(l:zi_o/riders/woz#kikai)未来助力·Kikai$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kikai_miridewatch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ginga_miridewatch",
+			"title": "银河未来骑士表盘",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换沃兹的$(l:zi_o/riders/woz#ginga)银河终结形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ginga_miridewatch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/ginga)假面骑士银河$(/l)"
+		}
+	]
+}

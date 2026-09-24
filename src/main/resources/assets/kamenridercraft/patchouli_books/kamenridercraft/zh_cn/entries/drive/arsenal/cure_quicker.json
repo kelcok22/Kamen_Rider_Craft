@@ -1,0 +1,16 @@
+{
+	"name": "治愈加速者",
+	"icon": "kamenridercraft:cure_quicker",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)由Drive的 $(l:drive/riders/drive#mad_doctor)狂野型号 医生$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/cure_quicker"
+		}
+	]
+}

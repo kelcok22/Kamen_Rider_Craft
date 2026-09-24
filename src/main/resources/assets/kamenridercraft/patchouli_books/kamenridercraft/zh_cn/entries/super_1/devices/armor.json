@@ -1,0 +1,24 @@
+{
+	"name": "超一号装甲",
+	"icon": "kamenridercraft:super_1head",
+	"category": "kamenridercraft:super-1/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与 $(l:super_1/devices/cyclode)回旋环$(/l) 一起穿戴，变身为 $(l:super_1/riders/super_1)假面骑士超一号"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:super_1/super_1head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:super_1/super_1troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:super_1/super_1legs"
+		}
+	]
+}

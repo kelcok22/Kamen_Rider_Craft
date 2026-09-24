@@ -1,0 +1,62 @@
+{
+	"name": "盖亚驱动器",
+	"icon": "kamenridercraft:gaia_driver_terror",
+	"category": "kamenridercraft:w/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "gaia_driver_terror",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)与 $(l:w/devices/armor)W装甲$(/l) 一起穿戴，可变身为 $(l:w/riders/terror_dopant)恐惧掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/gaia_driver_terror"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "gaia_driver_taboo",
+			"title": "盖亚驱动器(禁忌掺杂体)",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)与 $(l:w/devices/armor)W装甲$(/l) 一起穿戴，可变身为 $(l:w/riders/taboo_dopant)禁忌掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/gaia_driver_taboo"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaia_driver_claydoll",
+			"title": "盖亚驱动器(黏土人偶掺杂体)",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)与 $(l:w/devices/armor)W装甲$(/l) 一起穿戴，可变身为 $(l:w/riders/claydoll_dopant)黏土人偶掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/gaia_driver_claydoll"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaia_driver_smilodon",
+			"title": "盖亚驱动器(剑齿虎掺杂体)",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)与 $(l:w/devices/armor)W装甲$(/l) 一起穿戴，可变身为 $(l:w/riders/smilodon_dopant)剑齿虎掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/gaia_driver_smilodon"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gaia_driver_nasca",
+			"title": "盖亚驱动器(纳斯卡掺杂体)",
+			"text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)与 $(l:w/devices/armor)W装甲$(/l) 一起穿戴，可变身为 $(l:w/riders/nasca_dopant)纳斯卡掺杂体$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/gaia_driver_nasca"
+		}
+	]
+}

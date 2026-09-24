@@ -1,0 +1,65 @@
+{
+	"name": "Drive驱动器",
+	"icon": "kamenridercraft:drivedriver",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/drive)假面骑士Drive$(/l)$(br2)最多可存储3组变档战车、信号摩托或病毒核心"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver_protodrive",
+			"title": "Drive驱动器（原型Drive版）",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/protodrive)假面骑士原型Drive$(/l)$(br2)最多可存储3组变档战车、信号摩托或病毒核心"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver_protodrive"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver_heart",
+			"title": "Drive驱动器（Heart版）",
+			"text": "登场于：$(li)Drive Saga：假面骑士Heart (2016年，V-Cinema电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/heart)假面骑士Heart"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver_heart"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drivedriver_darkdrive",
+			"title": "Drive驱动器（黑暗Drive版）",
+			"text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/dark_drive)假面骑士黑暗Drive$(/l)$(br2)最多可存储3组变档战车、信号摩托或病毒核心"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:drive/drivedriver_darkdrive",
+			"text": "掉落来源：$(li)$(l:drive/mobs/dark_drive)假面骑士黑暗Drive$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_drivedriver",
+			"title": "Drive驱动器（假Drive版）",
+			"text": "登场于：$(li)高速形态！真正的力量！高速形态诞生！ (2015年，超战斗DVD)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/fake_drive)假Drive$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_drivedriver",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

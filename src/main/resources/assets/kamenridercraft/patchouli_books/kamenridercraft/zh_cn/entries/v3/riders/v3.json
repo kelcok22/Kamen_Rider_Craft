@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士V3",
+	"icon": "kamenridercraft:double_typhoon_core",
+	"category": "kamenridercraft:v3/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "v3",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:double_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:v3/items/double_typhoon_cores#double_typhoon_core) 双重台风核心 $(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士V3",
+			"text": "登场于:$(li)假面骑士V3（1973年，电视剧）$(br2)通过穿戴$(l:v3/devices/double_typhoon#double_typhoon)双重台风腰带$(/l) 进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blue_version",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:blue_double_typhoon_core\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蓝色版本",
+			"text": "通过使用$(l:v3/items/double_typhoon_cores#blue_double_typhoon_core)蓝色双重台风核心$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士V3",
+			"text": "登场于:$(li)假面骑士SPIRITS（2001年，漫画）$(br2)通过穿戴$(l:v3/devices/double_typhoon#double_typhoon)双重台风腰带$(/l) 进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blue_metallic_color",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:double_typhoon_core_artist\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蓝色金属色",
+			"text": "通过使用$(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. 英雄传奇$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士V3",
+			"text": "登场于:$(li)S.I.C. 匠魂 第3卷（2004年，玩具系列）$(br2)通过穿戴$(l:v3/devices/double_typhoon#double_typhoon)双重台风腰带$(/l) 进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flaresalamander_v3",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:double_typhoon\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaresalamander\"}},Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级模式",
+			"text": "通过使用$(l:misc/items/card_warrior_cards#flaresalamander)耀斑蝾螈怪物驾驭卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士V3",
+			"text": "登场于:$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)通过穿戴$(l:v3/devices/double_typhoon#double_typhoon)双重台风腰带$(/l) 进行变身$(br2)状态效果：$(li)飞行 II$(li)拳力提升 V$(li)速度 IV$(li)抗性提升 IV$(li)跳跃提升 V$(li)力量 IV"
+		}
+	]
+}

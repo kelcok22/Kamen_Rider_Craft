@@ -1,0 +1,21 @@
+{
+	"name": "世界树研究营地",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "世界树研究营地",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)生成于海姆冥界各处$(br2)包含1个$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)刷怪笼"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_base.png"
+			],
+			"title": " "
+		}
+	]
+}

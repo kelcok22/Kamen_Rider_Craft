@@ -1,0 +1,30 @@
+{
+	"name": "安可核心",
+	"icon": "kamenridercraft:ank_point",
+	"category": "kamenridercraft:agito/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ank_point",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/another_agito)假面骑士另类亚极陀"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/ank_point",
+			"text": "掉落自：$(li)$(l:agito/mobs/another_agito)假面骑士另类亚极陀$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ank_point_burning",
+			"title": "安可核心(真岛浩二)",
+			"text": "登场于：$(li)成为假面骑士的男人 (2012年，S.I.C.英雄传奇)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/another_agito_kouji_majima)假面骑士另类亚极陀(真岛浩二)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/ank_point_burning"
+		}
+	]
+}

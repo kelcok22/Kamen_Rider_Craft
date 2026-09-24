@@ -1,0 +1,16 @@
+{
+	"name": "醒杖",
+	"icon": "kamenridercraft:leanglerouzer",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由假面骑士连格尔的$(l:blade/riders/leangle#leangle)基础形态$(/l)、$(l:blade/riders/Leangle#jack)侍卫形态$(/l)和$(l:blade/riders/leangle#king)国王形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/leanglerouzer"
+		}
+	]
+}

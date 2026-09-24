@@ -1,0 +1,16 @@
+{
+	"name": "变身烟雾步枪",
+	"icon": "kamenridercraft:transteam_gun_rifle",
+	"category": "kamenridercraft:build/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)由$(l:build/riders/blood_stalk)血潜$(/l)、$(l:build/riders/night_rogue)夜霸$(/l)以及$(l:build/riders/evol)假面骑士Evol$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/transteam_gun_rifle"
+		}
+	]
+}

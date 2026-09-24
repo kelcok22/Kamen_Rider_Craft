@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:j/main",
+    "name": "骑士纹章(J)",
+    "description": "",
+    "icon": "kamenridercraft:j_stone",
+    "sortnum": 2
+}

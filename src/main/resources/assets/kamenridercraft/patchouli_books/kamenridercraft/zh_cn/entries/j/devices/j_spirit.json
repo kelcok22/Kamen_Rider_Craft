@@ -1,0 +1,16 @@
+{
+	"name": "J魂",
+	"icon": "kamenridercraft:j_spirit",
+	"category": "kamenridercraft:j/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士J (1994年, 电影)$(br2)与$(l:j/devices/armor)J装甲$(/l)一起穿戴，可变身为$(l:j/riders/j)假面骑士J。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:j/j_spirit"
+		}
+	]
+}

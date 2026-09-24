@@ -1,0 +1,27 @@
+{
+  "name": "黄金国驱动器",
+  "icon": "kamenridercraft:eldoradriver",
+  "category": "kamenridercraft:gotchard/devices",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "anchor": "eldoradriver",
+      "text": "登场于：$(li)假面骑士歌查德：未来黎明(2024年，剧场版)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/dorado)假面骑士多拉德$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gotchard/eldoradriver"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "eldoradriver_eld",
+      "title": "黄金国驱动器",
+      "text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)与$(l:gotchard/devices/armor)歌查德装甲$(/l)一起穿戴，可变身为$(l:gotchard/riders/eld)假面骑士艾尔德$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gotchard/eldoradriver_eld"
+    }
+  ]
+}

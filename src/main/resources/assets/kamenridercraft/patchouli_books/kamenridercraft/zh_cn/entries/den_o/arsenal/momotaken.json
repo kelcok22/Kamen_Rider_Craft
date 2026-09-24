@@ -1,0 +1,16 @@
+{
+	"name": "桃塔圣剑",
+	"icon": "kamenridercraft:momotaken",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)OOO、电王、全骑士：大家一起宇宙来了 (2011年，电影)$(br2)由$(l:den_o/riders/new_den_o)假面骑士新电王$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/momotaken"
+		}
+	]
+}

@@ -1,0 +1,84 @@
+{
+	"name": "眼魔眼魂",
+	"icon": "kamenridercraft:royalty_gamma_eyecon",
+	"category": "kamenridercraft:ghost/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "royalty_gamma_eyecon",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:royalty_gamma_eyecon",
+			"text": "掉落自：$(li)$(l:ghost/mobs/igor)伊戈尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "transform_gamma_eyecon",
+			"title": "改造眼魔眼魂",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)可切换眼魔上级的$(l:ghost/riders/gamma_superior#perfect)完美$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:transform_gamma_eyecon",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ghost/mobs/igor)伊戈尔$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "transform_gamma_eyecon_camille",
+        "title": "改造眼魔眼魂(迦贝尔)",
+        "text": "登场于：$(li)假面骑士光谱×剑锋 (2022年，TTFC特别篇)$(br2)可切换眼魔上级的$(l:ghost/riders/gamma_superior#perfect_camille)完美(迦贝尔)$(/l)形态"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:transform_gamma_eyecon_camille",
+        "title": " ",
+        "text": "该物品目前无法获取"
+      },
+		{
+			"type": "patchouli:text",
+			"anchor": "knife_gamma_eyecon",
+			"title": "小刀眼魔眼魂",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)可切换眼魔上级的$(l:ghost/riders/gamma_superior#knife)小刀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:knife_gamma_eyecon",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ghost/mobs/igor)伊戈尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "yurusen_gamma_eyecon",
+			"title": "游流仙眼魔眼魂",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:yurusen_gamma_eyecon",
+			"title": " ",
+			"text": "通过开启$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sister_gamma_eyecon",
+			"title": "姐妹眼魔眼魂",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sister_gamma_eyecon",
+			"title": " ",
+			"text": "通过开启$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得"
+		}
+	]
+}

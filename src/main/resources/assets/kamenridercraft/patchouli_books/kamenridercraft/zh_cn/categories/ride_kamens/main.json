@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/other",
+    "name": "骑士假面",
+    "description": "与手机游戏《骑士假面》相关的所有内容.",
+    "icon": "kamenridercraft:ride_kamens_head",
+    "sortnum": 2
+}

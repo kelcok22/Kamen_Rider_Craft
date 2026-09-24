@@ -1,0 +1,16 @@
+{
+	"name": "牙兰腰带",
+	"icon": "kamenridercraft:kivaladriver",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士W&Decade：MOVIE大战2010 (2009年，电影)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/kiva-la)假面骑士牙兰$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kivaladriver"
+		}
+	]
+}

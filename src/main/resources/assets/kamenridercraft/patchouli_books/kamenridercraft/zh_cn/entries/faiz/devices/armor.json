@@ -1,0 +1,24 @@
+{
+	"name": "Faiz装甲",
+	"icon": "kamenridercraft:faizhead",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Faiz骑士的驱动器配合使用，即可变身成该骑士$(br2)掉落自：$(li)$(l:faiz/mobs/riotrooper)莱欧骑兵$(/l)的装备$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l)的装备$(li)$(l:faiz/mobs/muez)假面骑士缪斯$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faizhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiztroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faizlegs"
+		}
+	]
+}

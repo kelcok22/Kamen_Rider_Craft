@@ -1,0 +1,117 @@
+{
+	"name": "未知巫师指环",
+	"icon": "kamenridercraft:unknown_amber_ring",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_amber_ring",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/items/wizard_rings#special_rush_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#special_rush_ring)特殊跃进指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#mage_o_ring)Mage巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#light_ring)光芒Wizard指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#excite_ring)激发巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#defend_ring)防护巫师指环$(/l) (4%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/unknown_amber_ring",
+			"text": "$(li)$(l:wizard/arsenal/wizard_rings#connect_ring)连接巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#sleep_ring)睡眠巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#kick_strike_ring)踢击突击巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#bind_ring)捆绑巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#liquid_ring)液化巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#drill_ring)钻头巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#big_ring)变大巫师指环$(/l) (4%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:wizard/arsenal/wizard_rings#big_ring_color_ver)变大巫师指环(上色版)$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#small_ring)缩小巫师指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#dress_up_ring)变装巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#flower_ring)小花巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#extend_ring)延伸巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#smell_ring)气味巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#merry_christmas_ring)圣诞快乐巫师指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#dragorise_ring)德拉戈里斯巫师指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#engage_ring)契约巫师指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#please_ring)请~巫师指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#common_wizard_ring)普通巫师指环$(/l) (4%)$(li)$(l:wizard/items/wizard_rings#chichin_pui_pui_ring)嘛哩嘛哩哄巫师指环$(/l) (4%)$(li)$(l:wizard/arsenal/wizard_rings#copy_ring)复制巫师指环$(/l) (4%)"
+		},
+		{
+			"type": "patchouli:empty"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_red_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/items/wizard_rings#flame_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#flame_ring)火焰巫师指环$(/l) (50%)$(li)$(l:wizard/items/wizard_rings#flame_ring_dragon)火焰魔龙巫师指环$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#special_ring)特殊巫师指环$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#garuda_ring)迦楼罗巫师指环$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#garuda_ring_color_ver)迦楼罗巫师指环(上色版)$(/l) (10%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_red_ring",
+          "text": "$(li)$(l:wizard/arsenal/wizard_rings#flame_ring_color_ver)火焰巫师指环(上色版)$(/l) (10%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_blue_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/items/wizard_rings#water_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#water_ring)流水巫师指环$(/l) (50%)$(li)$(l:wizard/items/wizard_rings#water_ring_dragon)流水魔龙巫师指环$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#mage_b_ring)Mage巫师指环$(/l) (10%)$(li)$(l:wizard/arsenal/wizard_rings#blizzard_ring)暴风雪巫师指环$(/l) (10%)$(li)$(l:wizard/items/wizard_rings#unicorn_ring)独角兽巫师指环$(/l) (10%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_blue_ring",
+          "text": "$(li)$(l:wizard/arsenal/wizard_rings#water_ring_color_ver)流水巫师指环(上色版)$(/l) (10%)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_green_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/items/wizard_rings#hurricane_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#hurricane_ring)飓风巫师指环$(/l) (62.5%)$(li)$(l:wizard/items/wizard_rings#hurricane_ring_dragon)飓风魔龙巫师指环$(/l) (12.5%)$(li)$(l:wizard/items/wizard_rings#mage_g_ring)Mage巫师指环$(/l) (12.5%)$(li)$(l:wizard/arsenal/wizard_rings#thunder_ring)雷霆巫师指环$(/l) (12.5%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_green_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_yellow_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/items/wizard_rings#land_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#land_ring)大地巫师指环$(/l) (55.6%)$(li)$(l:wizard/items/wizard_rings#land_ring_dragon)大地魔龙巫师指环$(/l) (11.1%)$(li)$(l:wizard/arsenal/wizard_rings#gravity_ring)重力巫师指环$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#kraken_ring)克拉肯巫师指环$(/l) (11.1%)$(li)$(l:wizard/items/wizard_rings#kraken_ring_color_ver)克拉肯巫师指环(上色版)$(/l) (11.1%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_yellow_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_violet_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/arsenal/wizard_rings#explosion_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#dark_ring)黑暗Wizard指环$(/l) (20%)$(li)$(l:wizard/arsenal/wizard_rings#explosion_ring)爆炸巫师指环$(/l) (20%)$(li)$(l:wizard/arsenal/wizard_rings#teleport_ring)瞬移巫师指环$(/l) (20%)$(li)$(l:wizard/arsenal/wizard_rings#eclipse_ring)日蚀巫师指环$(/l) (20%)$(li)$(l:wizard/items/wizard_rings#golem_ring)魔像巫师指环$(/l) (20%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_violet_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_black_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，:wizard/items_rings#sorcerer_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#sorcerer_ring)金色魔法师指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#black_ring)黑Wizard指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#create_ring)创造巫师指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#cerberus_ring)伽鲁贝洛斯巫师指环$(/l) (25%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_black_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_cyan_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/arsenal/wizard_rings#fall_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/arsenal/wizard_rings#fall_ring)掉落巫师指环$(/l) (33.3%)$(li)$(l:wizard/arsenal/wizard_rings#time_ring)时间巫师指环$(/l) (33.3%)$(li)$(l:wizard/items/wizard_rings#miracle_ring)奇迹巫师指环$(/l) (33.3%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/unknown_cyan_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "unknown_beast_ring",
+			"title": "未知巫师指环",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)获取后会掉落$(l:wizard/items/wizard_rings#beast_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#beast_ring)野兽巫师指环$(/l) (22.7%)$(li)$(l:wizard/items/wizard_rings#falco_ring)猎隼巫师指环$(/l) (13.6%)$(li)$(l:wizard/items/wizard_rings#chameleo_ring)变色龙巫师指环$(/l) (13.6%)$(li)$(l:wizard/items/wizard_rings#buffa_ring)霸牛巫师指环$(/l) (13.6%)$(li)$(l:wizard/items/wizard_rings#dolphi_ring)海豚巫师指环$(/l) (13.6%)$(li)$(l:wizard/items/wizard_rings#hyper_ring)海帕巫师指环$(/l) (4.5%)$(li)$(l:wizard/items/wizard_rings#beast_engage_ring)契约巫师指环(Beast)$(/l) (4.5%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unknown_beast_ring",
+			"title": " ",
+			"text": "$(li)$(l:wizard/items/wizard_rings#chimarise_ring)奇美拉巫师指环$(/l) (4.5%)$(li)$(l:wizard/items/wizard_rings#beast_driver_on_ring)驱动器具现指环(Beast)$(/l) (4.5%)$(li)$(l:wizard/items/wizard_rings#griffin_ring)格里芬巫师指环$(/l) (4.5%)$(br2)可在沙漠神殿中找到"
+		}
+	]
+}

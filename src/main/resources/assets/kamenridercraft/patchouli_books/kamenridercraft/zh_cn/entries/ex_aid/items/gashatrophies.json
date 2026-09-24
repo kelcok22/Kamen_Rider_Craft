@@ -1,0 +1,175 @@
+{
+    "name": "奖励卡带",
+    "icon": "kamenridercraft:mighty_action_x_gasha_trophy",
+    "category": "kamenridercraft:ex_aid/items",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "mighty_action_x_gasha_trophy",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_action_x_gasha_trophy",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taddle_quest_gasha_trophy",
+            "title": "探索冒险奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taddle_quest_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bang_bang_shooting_gasha_trophy",
+            "title": "砰砰射击奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bang_bang_shooting_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bakusou_bike_gasha_trophy",
+            "title": "暴走机车奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bakusou_bike_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gekitotsu_robots_gasha_trophy",
+            "title": "激突机器人奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gekitotsu_robots_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doremifa_beat_gasha_trophy",
+            "title": "哆啦咪发节拍奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doremifa_beat_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jet_combat_gasha_trophy",
+            "title": "喷射战机奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:jet_combat_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "giri_giri_chambara_gasha_trophy",
+            "title": "极限剑斗奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:giri_giri_chambara_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shakariki_sports_gasha_trophy",
+            "title": "干劲运动奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:ex_aid/items/chronus_clock)克罗诺兹之钟$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shakariki_sports_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drago_knight_hunter_z_gasha_trophy",
+            "title": "龙骑士猎手Z奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:misc/blocks/boss_blocks#cronus_boss_block)cronus BOSS召唤方块$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:drago_knight_hunter_z_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "perfect_puzzle_gasha_trophy",
+            "title": "完美拼图奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:misc/blocks/boss_blocks#cronus_boss_block)cronus BOSS召唤方块$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:perfect_puzzle_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "knockout_fighter_gasha_trophy",
+            "title": "击倒战士奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:misc/blocks/boss_blocks#cronus_boss_block)cronus BOSS召唤方块$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:knockout_fighter_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "toki_meki_crisis_gasha_trophy",
+            "title": "心跳危机奖励卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于合成$(l:misc/blocks/boss_blocks#cronus_boss_block)cronus BOSS召唤方块$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:toki_meki_crisis_gasha_trophy",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)"
+        }
+    ]
+}

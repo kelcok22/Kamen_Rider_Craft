@@ -1,0 +1,16 @@
+{
+	"name": "音铳剑锡音",
+	"icon": "kamenridercraft:onjuuken_suzune",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/slash)假面骑士Slash$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/onjuuken_suzune"
+		}
+	]
+}

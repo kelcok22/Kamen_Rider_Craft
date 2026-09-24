@@ -1,0 +1,16 @@
+{
+	"name": "凤梨钢锤",
+	"icon": "kamenridercraft:pine_iron",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)搭配$(l:gaim/riders/gaim#pine)凤梨武装$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/pine_iron"
+		}
+	]
+}

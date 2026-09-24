@@ -1,0 +1,24 @@
+{
+	"name": "圣刃装甲",
+	"icon": "kamenridercraft:saberhead",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与圣刃系列骑士的变身器配合使用，可变身为对应骑士$(br2)掉落自：$(li)$(l:saber/mobs/calibur)假面骑士王剑$(/l)的装备$(li)$(l:saber/mobs/falchion)假面骑士霸剑$(/l)的装备$(li)$(l:saber/mobs/sabela)假面骑士佩剑$(/l)的装备$(li)$(l:saber/mobs/durendal)假面骑士恒剑$(/l)的装备$(li)$(l:saber/mobs/solomon)假面骑士所罗门$(/l)的装备$(li)$(l:saber/mobs/storious)假面骑士斯特利乌斯$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saberhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/sabertroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/saberlegs"
+		}
+	]
+}

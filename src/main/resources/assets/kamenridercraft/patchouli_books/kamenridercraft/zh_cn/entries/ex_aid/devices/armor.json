@@ -1,0 +1,24 @@
+{
+	"name": "Ex-Aid装甲",
+	"icon": "kamenridercraft:ex_aidhead",
+	"category": "kamenridercraft:ex_aid/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Ex-Aid系列骑士的驱动器配合使用，可变身为该骑士$(br2)掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)的装备$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)的装备$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)的装备$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)的装备$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aidhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aidtroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/ex_aidlegs"
+		}
+	]
+}

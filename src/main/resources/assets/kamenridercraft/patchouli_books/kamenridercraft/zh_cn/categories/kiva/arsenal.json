@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kiva/main",
+    "name": "武器",
+    "description": "Kiva系列骑士所使用的武器和道具. 可以在铁砧上使用 $(l:kiva/items/fuestle)笛哨$(/l)修复.",
+    "icon": "kamenridercraft:garulu_saber",
+    "sortnum": 3
+}

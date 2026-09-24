@@ -1,0 +1,19 @@
+{
+	"name": "暴风降临",
+	"icon": "kamenridercraft:blust_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 56,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/knight#knight)假面骑士夜骑$(/l)与$(l:ryuki/arsenal/dark_visor)黑暗召机$(/l)一同使用，可获得10秒的推进 III效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blust_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight_survive)假面骑士夜骑 生存形态$(/l)"
+		}
+	]
+}

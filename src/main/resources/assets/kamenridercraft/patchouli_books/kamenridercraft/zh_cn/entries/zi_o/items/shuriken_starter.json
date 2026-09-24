@@ -1,0 +1,19 @@
+{
+	"name": "免许皆传金属板(忍者)",
+	"icon": "kamenridercraft:shuriken_starter",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成忍者的$(l:zi_o/devices/shinobi_driver)忍者驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shuriken_starter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:zi_o/mobs/yaminin)暗忍$(/l)"
+		}
+	]
+}

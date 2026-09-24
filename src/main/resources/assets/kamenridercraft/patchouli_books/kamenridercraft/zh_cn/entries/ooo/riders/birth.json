@@ -1,0 +1,134 @@
+{
+	"name": "假面骑士Birth",
+	"icon": "kamenridercraft:birth_driver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "birth",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "powered",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:birth_core_eyes\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "动力提升",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_eyes)Birth核心硬币（动力提升）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)动力提升硬币效果：$(li)夜视 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "crane_arm",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex3:\"kamenridercraft:birth_core_crane_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "起重臂膀",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_crane_arm)Birth核心硬币（起重臂膀）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)起重臂膀硬币效果：$(li)急迫 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "breast_cannon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex2:\"kamenridercraft:birth_core_breast_cannon\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "前胸加农",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_breast_cannon)Birth核心硬币（前胸加农）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)前胸加农硬币效果：$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "drill_arm",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex6:\"kamenridercraft:birth_core_drill_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "刚钻臂膀",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_drill_arm)Birth核心硬币（刚钻臂膀）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)刚钻臂膀硬币效果：$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "caterpillar_leg",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex5:\"kamenridercraft:birth_core_catepillar_leg\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "履带重腿",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_catepillar_leg)Birth核心硬币（履带重腿）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)履带重腿硬币效果：$(li)速度 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shovel_arm",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex4:\"kamenridercraft:birth_core_shovel_arm\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "铁铲臂膀",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_shovel_arm)Birth核心硬币（铁铲臂膀）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)铁铲臂膀硬币效果：$(li)抗性提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cutter_wing",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex7:\"kamenridercraft:birth_core_cutter_wing\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "切割钢翼",
+			"text": "通过穿戴使用$(l:ooo/items/birth_cell_medals#birth_core_cutter_wing)Birth核心硬币（切割钢翼）$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)力量$(br2)切割钢翼硬币效果：$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "birth_day",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:birth_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:birth_core_eyes\",slot_tex2:\"kamenridercraft:birth_core_breast_cannon\",slot_tex3:\"kamenridercraft:birth_core_crane_arm\",slot_tex4:\"kamenridercraft:birth_core_shovel_arm\",slot_tex5:\"kamenridercraft:birth_core_catepillar_leg\",slot_tex6:\"kamenridercraft:birth_core_drill_arm\",slot_tex7:\"kamenridercraft:birth_core_cutter_wing\"}},Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Birth·Day",
+			"text": "集齐七枚$(l:ooo/items/birth_cell_medals#birth_core_eyes)Birth核心硬币$(/l)后进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Birth",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)通过穿戴$(l:ooo/devices/birth_driver#birth_driver)Birth驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行$(li)速度 IV$(li)抗性提升 III$(li)夜视 II$(li)急迫 III$(li)抗火 II$(li)力量 III"
+		}
+	]
+}

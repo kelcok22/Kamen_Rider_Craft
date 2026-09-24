@@ -1,0 +1,190 @@
+{
+  "name": "假面骑士马赫",
+  "icon": "kamenridercraft:mach_driver_honoh",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "mach",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": " ",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_mach)信号马赫$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "magarl",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_magarl\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 转弯",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_magarl)信号转弯$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)信号效果：$(li)跳跃提升 III"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "kaksarn",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_kaksarn\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 扩散",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_kaksarn)信号扩散$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)信号效果：$(li)速度 III"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "tomarle",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_tomarle\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 停止",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_tomarle)信号停止$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)信号效果：$(li)缓慢 X"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "kikern",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:signal_kikern\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 危险",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_kikern)信号危险$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)信号效果：$(li)力量 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "moerl",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 火力",
+      "text": "通过使用 $(l:drive/items/shift_cars#maxflare)最大火力$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)轮胎效果：$(li)抗火"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "arabull",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 倾卸",
+      "text": "通过使用 $(l:drive/items/shift_cars#rumble_dump)轰隆倾卸$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)轮胎效果：$(li)缓慢$(li)力量 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mazerl",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_mach\",slot_tex2:\"kamenridercraft:spin_mixer\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 混凝",
+      "text": "通过使用 $(l:drive/items/shift_cars#spin_mixer)旋动混凝$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 II$(li)跳跃提升 II$(li)力量$(br2)轮胎效果：$(li)缓慢$(li)抗性提升"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "deadheat",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_mach\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫 白热",
+      "text": "通过使用 $(l:drive/items/shift_cars#deadheatshift)移速白热$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 III$(li)反胃 II$(li)跳跃提升 III$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "naorl",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_mach\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "白热马赫 医生",
+      "text": "通过使用 $(l:drive/items/shift_cars#deadheatshift)移速白热$(/l) 和 $(l:drive/items/shift_cars#mad_doctor)疯狂医生$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)形态效果：$(li)速度 III$(li)反胃 II$(li)跳跃提升 III$(li)力量 IV$(br2)轮胎效果：$(li)生命恢复 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "chaser_mach",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:signal_chaser_mach\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫追猎",
+      "text": "通过使用 $(l:drive/items/signal_bikes#signal_chaser)信号追猎$(/l) 信号摩托进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mach_chaser",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:shift_ride_crosser\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "马赫追猎者",
+      "text": "通过使用 $(l:drive/items/shift_cars#shift_ride_crosser)变档驾驭穿越号$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)Drive Saga：假面骑士马赫 (2016年，V-Cinema电影)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)生命恢复$(li)跳跃提升 III$(li)力量 V"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "super_deadheat",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh\",components:{custom_data:{slot_tex1:\"kamenridercraft:shift_viral_core\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "超级白热马赫",
+      "text": "通过使用 $(l:drive/items/viral_cores#rhino_super_viral_core)犀牛超级病毒核心$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士马赫",
+      "text": "登场于：$(li)小说：假面骑士Drive：~马赫传奇~ (2016年，小说)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)抗性提升 IV$(li)生命恢复 II$(li)跳跃提升 III$(li)力量 VI"
+    }
+  ]
+}

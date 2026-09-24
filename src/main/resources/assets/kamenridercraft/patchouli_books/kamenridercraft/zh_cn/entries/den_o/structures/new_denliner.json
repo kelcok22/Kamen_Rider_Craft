@@ -1,0 +1,21 @@
+{
+	"name": "新电班列",
+	"icon": "kamenridercraft:den_o_logo",
+	"category": "kamenridercraft:den_o/structures",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "新电班列",
+			"text": "登场于：$(li)再见假面骑士电王：最后的倒计时 (2008年，电影)$(br2)生成于时间之沙各处$(br2)箱子战利品：$(li)1个 $(l:den_o/items/rider_tickets#rider_ticket_strike)骑士车票(泰迪)$(/l)$(li)4-6个 $(l:den_o/items/imagin_sand)异魔神沙$(/l)（16%）$(li)3-7个 $(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l)（53%）$(li)1个 $(l:den_o/items/rider_tickets#rider_ticket_strike)骑士车票(泰迪)$(/l)（31%）"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/new_denliner.png"
+			],
+			"title": " "
+		}
+	]
+}

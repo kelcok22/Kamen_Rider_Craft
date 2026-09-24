@@ -1,0 +1,19 @@
+{
+	"name": "龙召机Ⅱ",
+	"icon": "kamenridercraft:drag_visor_zwei",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由龙骑的$(l:ryuki/riders/ryuki#survive)生存$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_visor_zwei",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/shoot_vent_cards#drag_visor_zwei_vent)龙召机Ⅱ射击降临$(/l)获得"
+		}
+	]
+}

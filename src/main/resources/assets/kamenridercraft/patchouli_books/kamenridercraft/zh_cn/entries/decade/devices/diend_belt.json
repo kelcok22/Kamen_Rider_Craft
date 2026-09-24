@@ -1,0 +1,19 @@
+{
+  "name": "Diend腰带",
+  "icon": "kamenridercraft:diend_belt",
+  "category": "kamenridercraft:decade/devices",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)与$(l:decade/devices/armor)Decade装甲$(/l)一起穿戴，可变身为$(l:decade/riders/diend)假面骑士Diend$(/l)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:diend_belt",
+      "title": " ",
+      "text": "通过没有佩戴任何腰带，右击$(l:decade/arsenal/diendriver)终骑驱动器$(/l)获得"
+    }
+  ]
+}

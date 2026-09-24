@@ -1,0 +1,17 @@
+{
+	"name": "新生蚁兵",
+	"icon": "kamenridercraft:kabuto_logo",
+	"category": "kamenridercraft:kabuto/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:neotrooper",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：灵魂沙峡谷、$(l:kabuto/structures/god_speed_love)神速爱$(/l)$(br2)掉落$(li)2-4个$(l:kabuto/items/unfinished_kabutick_zecter)未完成的卡布蒂克昆虫仪$(/l)$(li)1个$(l:kabuto/items/zecters#dark_kabuto_zecter)黑暗甲斗昆虫仪$(/l) (25%)$(li)1个$(l:kabuto/items/zecters#perfectthebee_zecter)完美黄蜂昆虫仪$(/l) (10%)$(li)1个$(l:kabuto/items/zecters#perfectdrake_zecter)完美雷蜓昆虫仪$(/l) (10%)$(li)1个$(l:kabuto/items/zecters#perfectsasword_zecter)完美剑蝎昆虫仪$(/l) (10%)$(br2)进化$(li)$(l:kabuto/mobs/caucasus)假面骑士金斗$(/l) (10%)"
+		}
+	]
+}

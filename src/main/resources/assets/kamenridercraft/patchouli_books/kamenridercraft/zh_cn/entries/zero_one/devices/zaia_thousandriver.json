@@ -1,0 +1,29 @@
+{
+	"name": "哉亚千位驱动器",
+	"icon": "kamenridercraft:zaia_thousandriver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "zaia_thousandriver",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/thouser)假面骑士千骑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zaia_thousandriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zaia_thousandriver_zaia",
+			"title": "哉亚千位驱动器(哉亚)",
+			"text": "登场于：$(li)01外传：假面骑士灭亡迅雷（2021年，V-Cinema电影）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/zaia)假面骑士哉亚"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/zaia_thousandriver_zaia"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "黄金Drive",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:gord_drive",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br)生命值: 150"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#gord_drive_boss_block)黄金Drive召唤方块$(/l)召唤而来$(br2)特殊技能：$(li)生命值低于150时，随机召唤Drive系列武器$(br2)掉落$(li)4-6个$(l:drive/items/shift_alloy)换挡锭$(/l)$(li)1个$(l:drive/items/shift_cars#speedshift_gold)黄金移速速度$(/l) (33.3%)$(li)1个$(l:drive/items/shift_cars#wildshift_gold)黄金移速狂野$(/l) (33.3%)$(li)3-5个$(l:drive/items/drive_system_car)系统驱动战车$(/l) (16.7%)$(li)3-5个$(l:drive/items/next_system_bike)次世代系统摩托$(/l) (16.7%)$(li)1个$(l:drive/items/banno_tablet)蛮野平板$(/l)"
+		}
+	]
+}

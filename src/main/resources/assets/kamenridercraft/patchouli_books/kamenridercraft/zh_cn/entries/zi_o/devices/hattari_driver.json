@@ -1,0 +1,16 @@
+{
+	"name": "忍者驱动器",
+	"icon": "kamenridercraft:hattari_driver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士忍者 (2022年，电视剧)/(2019年，网络剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/hattari)假面骑士虚忍"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/hattari_driver"
+		}
+	]
+}

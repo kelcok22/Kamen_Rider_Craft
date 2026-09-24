@@ -1,0 +1,25 @@
+{
+	"name": "01装甲",
+	"icon": "kamenridercraft:zero_onehead",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与01系列骑士的变身器一起穿戴，可变身为此骑士$(br2)掉落自：$(li)$(l:zero_one/mobs/battle_raider)入侵鲎劫持者$(/l)的装备$(li)$(l:zero_one/mobs/abaddon)假面骑士·亚巴顿$(/l)的装备$(li)$(l:zero_one/mobs/magia)魔机偶$(/l)的装备$(li)$(l:zero_one/mobs/giger)基格$(/l)的装备$(li)$(l:zero_one/mobs/horobi)假面骑士·灭$(/l)的装备$(li)$(l:zero_one/mobs/jin)假面骑士·迅$(/l)的装备$(li)$(l:zero_one/mobs/ikazuchi)假面骑士·雷$(/l)的装备$(li)$(l:zero_one/mobs/naki)假面骑士·亡$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_onehead",
+          "text": "$(li)$(l:zero_one/mobs/dodo_magia)渡渡鸟魔机偶$(/l)的装备$(li)$(l:zero_one/mobs/raider)劫持者$(/l)的装备$(li)$(l:zero_one/mobs/ark_zero)假面骑士·亚克(零)$(/l)的装备$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士·亚巴顿(指挥官)$(/l)的装备$(li)$(l:zero_one/mobs/eden)假面骑士·伊甸$(/l)的装备$(li)$(l:zero_one/mobs/zaia)假面骑士·哉亚$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_onetroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zero_onelegs"
+		}
+	]
+}

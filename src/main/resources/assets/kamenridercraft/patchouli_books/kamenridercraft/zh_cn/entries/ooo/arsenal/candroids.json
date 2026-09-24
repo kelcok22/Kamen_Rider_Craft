@@ -1,0 +1,137 @@
+{
+  "name": "罐头小机械",
+  "icon": "kamenridercraft:taka_candroid",
+  "category": "kamenridercraft:ooo/arsenal",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:taka_candroid",
+      "anchor": "taka_candroid",
+      "title": "罐头小机械",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:taka_can",
+      "name": "鹰罐头小机械",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:tako_candroid",
+      "anchor": "tako_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:tako_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:batta_candroid",
+      "anchor": "batta_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:batta_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:tora_candroid",
+      "anchor": "tora_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换$(br2)可用于将$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)转换为$(l:ooo/arsenal/toridevendor)虎驾驭贩卖号$(/l)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:tora_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:denkiunagi_candroid",
+      "anchor": "denkiunagi_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:denkiunagi_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:gorilla_candroid",
+      "anchor": "gorilla_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:gorilla_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:kujaku_candroid",
+      "anchor": "kujaku_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:kujaku_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:ptera_candroid",
+      "anchor": "ptera_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:ptera_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:torikera_candroid",
+      "anchor": "torikera_candroid",
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:torikera_can",
+      "name": " ",
+      "text": "生命值: 40$(br)通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:furifuri_candroid",
+      "anchor": "furifuri_candroid",
+      "text": "登场于：$(li)假面骑士战斗 Ganbaride (2008年，街机游戏)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "通过使用$(l:ooo/items/cellmedal)细胞硬币$(/l)右键点击$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)获得"
+    }
+  ]
+}

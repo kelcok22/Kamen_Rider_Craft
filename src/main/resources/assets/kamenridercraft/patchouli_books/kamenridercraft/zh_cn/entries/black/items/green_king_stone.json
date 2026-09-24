@@ -1,0 +1,19 @@
+{
+	"name": "绿色帝王石",
+	"icon": "kamenridercraft:green_king_stone",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)用于制作影月的$(l:black/devices/shadow_charger)帝王石(影月)$(/l)$(br2)用于切换影月的$(l:black/riders/shadow_moon#shadow_moon)基础$(/l)形态。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:green_king_stone",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:black/mobs/shadow_moon)影月$(/l)"
+		}
+	]
+}

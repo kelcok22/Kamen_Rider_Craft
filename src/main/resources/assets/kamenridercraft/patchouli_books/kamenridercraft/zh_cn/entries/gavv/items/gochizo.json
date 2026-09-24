@@ -1,0 +1,2241 @@
+{
+    "name": "饱藏",
+    "icon": "kamenridercraft:poppingummy_gochizo",
+    "category": "kamenridercraft:gavv/items",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "poppingummy_gochizo",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于制作加布的 $(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)$(br2)用于切换加布的 $(l:gavv/riders/gavv#poppingummy)跳跳软糖形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppingummy_gochizo",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得$(br2)掉落自：$(li)$(l:gavv/mobs/agent)特工$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "poppingummy_gochizo_peach",
+            "title": "砰击软糖饱藏 桃子味",
+            "text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppingummy_gochizo_peach",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "poppingummy_gochizo_honey",
+            "title": "砰击软糖饱藏 蜂蜜味",
+            "text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppingummy_gochizo_honey",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "poppingummy_gochizo_muscat",
+            "title": "砰击软糖饱藏 麝香味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.01 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppingummy_gochizo_muscat",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "punchingummy_gochizo",
+            "title": "拳击软糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#punchingummy)拳击软糖助力$(/l) 和 $(l:gavv/riders/gavv#kickingummy_punchingummy)踢击&拳击软糖助力$(/l)$(br2)用于为瓦伦冰沙定制装备 $(l:gavv/riders/valen#frappe_punchingummy)拳击辅助$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:punchingummy_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kickingummy_gochizo",
+            "title": "踢击软糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#kickingummy)踢击软糖助力$(/l) 和 $(l:gavv/riders/gavv#kickingummy_punchingummy)踢击&拳击软糖助力$(/l)$(br2)用于为瓦伦冰沙定制装备 $(l:gavv/riders/valen#frappe_kickingummy)踢击辅助$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kickingummy_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tsurigummy_gochizo",
+            "title": "钓鱼软糖饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 (2024年，玩具线)$(br2)用于切换加布的 $(l:gavv/riders/gavv#fishingummy)钓鱼软糖助力$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tsurigummy_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zakuzakuchips_gochizo",
+            "title": "脆脆薯片饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#zakuzakuchips)脆脆薯片形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zakuzakuchips_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zakuzakuchips_gochizo_garlic",
+            "title": "脆脆薯片饱藏 蒜香味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.02 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zakuzakuchips_gochizo_garlic",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zakuzakuchips_gochizo_barbecue",
+            "title": "脆脆薯片饱藏 烧烤味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.03 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zakuzakuchips_gochizo_barbecue",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hirihirichips_gochizo",
+            "title": "辣辣薯片饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#hirihirichips)辣辣薯片助力$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hirihirichips_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fuwamallow_gochizo",
+            "title": "松软棉糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#fuwamallow)软棉花糖形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fuwamallow_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#marshmallow)棉花糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fuwamallow_gochizo_lemon",
+            "title": "松软棉糖饱藏 柠檬味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.01 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fuwamallow_gochizo_lemon",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#marshmallow)棉花糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "marumallow_gochizo",
+            "title": "圆润棉糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#marumallow)圆棉花糖助力$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:marumallow_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#marshmallow)棉花糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocodan_gochizo",
+            "title": "巧克弹饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于制作瓦伦的 $(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)$(br2)用于切换加布的 $(l:gavv/riders/gavv#chocodan)巧克弹形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocodan_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocodan_gochizo_strawberry",
+            "title": "巧克弹饱藏 草莓味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.02 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocodan_gochizo_strawberry",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocodan_gochizo_matcha",
+            "title": "巧克弹饱藏 抹茶味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.01 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocodan_gochizo_matcha",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocodon_gochizo",
+            "title": "巧克咚饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于制作瓦伦的 $(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#chocodon)巧克弹形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocodon_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocold_gochizo",
+            "title": "巧克冷饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于制作瓦伦的 $(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#chocold)巧克冷形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocold_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gurucan_gochizo",
+            "title": "转转糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#gurucan)圈圈糖形态$(/l)$(br2)用于为瓦伦冰沙定制装备 $(l:gavv/riders/valen#frappe_gurucan)圈圈糖辅助$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gurucan_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gurucan_gochizo_matcha_milk",
+            "title": "转转糖饱藏 抹茶牛奶味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.01 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gurucan_gochizo_matcha_milk",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gurucan_gochizo_orange",
+            "title": "转转糖饱藏 橙子味",
+            "text": "登场于：$(li)DX 骑士饱藏套装 新品种发现！ver.02 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gurucan_gochizo_orange",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vrocan_gochizo",
+            "title": "涡轮糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:vrocan_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bakucan_gochizo",
+            "title": "爆炸糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#bakucan)爆炸糖助力$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bakucan_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "partea_gochizo",
+            "title": "派对司康饱藏",
+            "text": "登场于：$(li)假面骑士加布：有趣的甜食茶会 (2025年，舞台剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#partea_scone)派对司康形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:partea_gochizo",
+            "title": " ",
+            "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kinchoco_gochizo",
+            "title": "健达巧克力饱藏",
+            "text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#kin_choco)健达巧克力形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kinchoco_gochizo",
+            "title": " ",
+            "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uirou_gochizo",
+            "title": "米粉糕饱藏",
+            "text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#uirou)米粉糕形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:uirou_gochizo",
+            "title": " ",
+            "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mensen_gochizo",
+            "title": "人形烧饱藏",
+            "text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#men_sen)人形烧形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mensen_gochizo",
+            "title": " ",
+            "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "takosen_gochizo",
+            "title": "章鱼烧饱藏",
+            "text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#tako_sen)章鱼烧形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:takosen_gochizo",
+            "title": " ",
+            "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ningyo_gochizo",
+            "title": "人鱼饱藏",
+            "text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#ningyo)人鱼形态$(/l)"
+        },
+        {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:ningyo_gochizo",
+        "title": " ",
+        "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到$(/l)"
+		},
+		{
+            "type": "patchouli:text",
+            "anchor": "bushel_gochizo",
+            "title": "圣诞树桩蛋糕饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#bushel)树桩蛋糕形态$(/l)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#bushel)树桩蛋糕形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bushel_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用蛋糕获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kungfu_ramen_gochizo",
+            "title": "功夫拉面饱藏",
+            "text": "登场于：$(li)假面骑士加布：零食美食家 Woo!-mai Wakamen!! (2025年，超战斗DVD)$(br2)用于切换加布的 $(l:gavv/riders/gavv#shield_snack)零食盾牌形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kungfu_ramen_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "choco_treasure_gochizo",
+            "title": "巧克宝饱藏",
+            "text": "登场于：$(li)假面骑士加布：零食美食家 Woo!-mai Wakamen!! (2025年，超战斗DVD)$(br2)用于切换加布的 $(l:gavv/riders/gavv#choco_t)巧克T助力$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:choco_treasure_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "umaibo_gochizo",
+            "title": "美味棒饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)$(br2)用于切换加布的 $(l:gavv/riders/gavv#shot_snack)射击零食形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "caking_gochizo",
+            "title": "蛋糕王饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#caking)蛋糕王形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:caking_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用蛋糕获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blizzardsorbei_gochizo",
+            "title": "凛冽雪酪冰卫饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#blizzardsorbet)凛冽雪酪冰卫形态$(/l)$(br2)潜行时右键点击可改变2个 $(l:gavv/mobs/whipped_soldier)奶油士兵$(/l) 的大小"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:blizzardsorbei_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 时食用 $(l:misc/items/foods#icepop)冰棍$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazingummy_gochizo",
+            "title": "惊异软糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#amazingummy)惊异软糖形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:amazingummy_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)（物品栏中需持有已满的 $(l:gavv/items/gochipod)百饱瓶$(/l)）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hexenheim_gochizo",
+            "title": "糖果屋饱藏",
+            "text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)$(br2)用于切换加布的 $(l:gavv/riders/gavv#hexenheim)糖果屋形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hexenheim_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/caries)假面骑士卡里恶斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "uehouse_gochizo",
+            "title": "威化饼饱藏",
+            "text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:uehouse_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 时食用蛋糕获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doumaru_gochizo",
+            "title": "甜甜圈饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#doumaru)甜甜圆形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doumaru_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#donut)甜甜圈$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "frappeis_gochizo",
+            "title": "双旋冰沙饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#frappe)冰沙定制$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:frappeis_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 时饮用 $(l:misc/items/foods#coffee)咖啡$(/l) 或食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocorappa_gochizo",
+            "title": "巧克拉帕饱藏",
+            "text": "登场于：$(li)假面骑士加布：罪恶芭菲 (2025年，V-Cinema电影)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#parfait)芭菲模式$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocorappa_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doppudding_gochizo",
+            "title": "抖抖布丁饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换布拉姆的 $(l:gavv/riders/vram#doppudding)布丁定制$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doppudding_gochizo",
+            "title": " ",
+            "text": "由新手级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "purujelly_gochizo",
+            "title": "摇摇果冻饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换布拉姆的 $(l:gavv/riders/vram#purujelly)果冻定制$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:purujelly_gochizo",
+            "title": " ",
+            "text": "由新手级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "purujelly_noir_gochizo",
+            "title": "摇摇果冻黑饱藏",
+            "text": "登场于：$(li)假面骑士布拉姆：Route Stomach (2025年，TTFC特别篇)$(br2)用于切换布拉姆的 $(l:gavv/riders/vram#purujelly_noir)果冻定制黑$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:purujelly_noir_gochizo",
+            "title": " ",
+            "text": "由熟练级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "puddinte_gochizo",
+            "title": "布丁芭菲饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换布拉姆的 $(l:gavv/riders/vram#a_la_mode)大满贯模式$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:puddinte_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 时食用 $(l:misc/items/foods#pudding)布丁$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shouma_doppudding_gochizo",
+            "title": "生真的抖抖布丁饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shouma_doppudding_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#pudding)布丁$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "prujelly_gochizo",
+            "title": "果子兽饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:prujelly_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#pudding)布丁$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sparkingummy_gochizo",
+            "title": "气泡软糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换苦涩加布的 $(l:gavv/riders/bitter_gavv#sparkingummy)气泡软糖形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sparkingummy_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "breacookie_gochizo",
+            "title": "碎碎曲奇饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于制作Bake的 $(l:gavv/arsenal/bakemagnum)Bake麦林枪$(/l)$(br2)用于切换苦涩加布的 $(l:gavv/riders/bitter_gavv#breacookie)碎碎曲奇形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:breacookie_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bakibakistick_gochizo",
+            "title": "酥酥薯条饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换苦涩加布的 $(l:gavv/riders/bitter_gavv#bakibaki_stick)酥酥薯条形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bakibakistick_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "marble_breacookie_gochizo",
+            "title": "岩纹碎碎曲奇饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换苦涩加布的 $(l:gavv/riders/bitter_gavv#marble_breacookie)岩纹碎碎曲奇形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:marble_breacookie_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vrocanspicy_gochizo",
+            "title": "辛辣涡轮糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:vrocanspicy_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "terror_gochizo",
+            "title": "恐惧饱藏",
+            "text": "登场于：$(li)假面骑士加布：零食屋的入侵者 (2025年，电影)$(br2)用于制作卡里恶斯的 $(l:gavv/devices/henshin_belt_caries_gavv)变身腰带卡里恶斯腹口$(/l)$(br2)用于切换卡里恶斯的 $(l:gavv/riders/caries#c1)C1$(/l) 和 $(l:gavv/riders/caries#c3)C3$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:terror_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/caries)假面骑士卡里恶斯$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "cookiekie_gochizo",
+            "title": "曲奇奇饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:cookiekie_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "byunbei_gochizo",
+            "title": "飚贝饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:byunbei_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "eleganmacaron_gochizo",
+            "title": "优雅马卡龙饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:eleganmacaron_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "caramelmel_gochizo",
+            "title": "焦焦糖饱藏",
+            "text": "登场于：$(li)DX 焦焦糖饱藏 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:caramelmel_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "popburn_gochizo",
+            "title": "爆燃米花饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:popburn_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "popburn_gochizo_caramel",
+            "title": "爆燃米花饱藏 焦糖味",
+            "text": "登场于：$(li)DX 爆燃米花饱藏 焦糖味 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:popburn_gochizo_caramel",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "oshiruko_gochizo",
+            "title": "年糕小豆汤饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:oshiruko_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#marshmallow)棉花糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bubbleramune_gochizo",
+            "title": "泡泡汽水糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bubbleramune_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bubbleramune_gochizo_peach",
+            "title": "泡泡汽水糖饱藏(蜜桃味)",
+            "text": "登场于：$(li)DX 骑士饱藏套装03 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bubbleramune_gochizo_peach",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wafusaku_gochizo",
+            "title": "酥脆华夫饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装04 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:wafusaku_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#pancake)煎饼堆$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mofupachi_gochizo",
+            "title": "软软泡芙饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装04 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mofupachi_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hagigoro_gochizo",
+            "title": "萩饼五郎饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装04 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hagigoro_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#dango)团子$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hotcaken_gochizo",
+            "title": "热松饼君饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装05 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hotcaken_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#pancake)煎饼堆$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "happimuffi_gochizo",
+            "title": "快乐穆菲饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#caking)蛋糕王形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:happimuffi_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用蛋糕获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "konpeiton_gochizo",
+            "title": "康佩顿饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#caking)蛋糕王形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:konpeiton_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crepuna_gochizo",
+            "title": "可丽饼娜饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装05 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:crepuna_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#pancake)煎饼堆$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amondcokikkie_gochizo",
+            "title": "杏仁酥饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装05 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:amondcokikkie_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doranosuke_gochizo",
+            "title": "铜锣之助饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装06 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doranosuke_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#pancake)煎饼堆$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mitaramotti_gochizo",
+            "title": "蜜弹麻糬饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装06 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mitaramotti_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#dango)团子$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mogimaru_gochizo",
+            "title": "摘摘小圆饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏套装06 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mogimaru_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#dango)团子$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sporki_gochizo",
+            "title": "Sporki饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sporki_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用蛋糕获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gumgumgum_gochizo",
+            "title": "橡皮糖饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gumgumgum_gochizo",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gashapon_capsules#gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "morinagaramune_gochizo",
+            "title": "弹珠汽水饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:morinagaramune_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "angelpie_gochizo",
+            "title": "安琪儿馅饼饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:angelpie_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#marshmallow)棉花糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "artcandy_gochizo",
+            "title": "西班牙手工糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:artcandy_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#lollipop)棒棒糖$(/l) 或 $(l:misc/items/foods#candy)滋养糖果S$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bonchiage_gochizo",
+            "title": "仙贝时代饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bonchiage_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocoball_gochizo",
+            "title": "巧克球饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocoball_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocopie_gochizo",
+            "title": "巧克力派饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocopie_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crunky_gochizo",
+            "title": "米果巧克力饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:crunky_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "custardcake_gochizo",
+            "title": "卡仕达蛋糕饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:custardcake_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用蛋糕获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghana_gochizo",
+            "title": "加纳巧克力饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ghana_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "happyturn_gochizo",
+            "title": "快乐王子米饼饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:happyturn_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hichew_gochizo",
+            "title": "森永软糖饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hichew_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "koalamarch_gochizo",
+            "title": "旅行考拉饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:koalamarch_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "meitoalphabet_gochizo",
+            "title": "名糖夹心巧克力饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:meitoalphabet_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "moonlightcookie_gochizo",
+            "title": "月光曲奇饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:moonlightcookie_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ottotto_gochizo",
+            "title": "多宝贝饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ottotto_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pienomi_gochizo",
+            "title": "派之美饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pienomi_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "peanutage_gochizo",
+            "title": "薄脆饼干时代饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:peanutage_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#potato_snacks)薯片$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pukupukutai_gochizo",
+            "title": "鱼形威化饼饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pukupukutai_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tarakomentaiko_gochizo",
+            "title": "鳕子明太子饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tarakomentaiko_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用生鳕鱼获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "toppo_gochizo",
+            "title": "夹心饼干棒饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:toppo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用曲奇获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tirolchocolate_gochizo",
+            "title": "什锦巧克力饱藏",
+            "text": "登场于：$(li)假面骑士加布 Gavvgavv 活动 (2024年，推广活动)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tirolchocolate_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tirolchocolate_gochizo_variety",
+            "title": "什锦巧克力饱藏(多种口味包)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)$(br2)用于切换加布的 $(l:gavv/riders/gavv#tirol)什锦巧克力形态$(/l)$(br2)用于切换瓦伦的 $(l:gavv/riders/valen#tirol)什锦巧克力形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tirolchocolate_gochizo_variety",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "strawberryjellytirol_gochizo",
+            "title": "草莓果冻什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:strawberryjellytirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nougattirol_gochizo",
+            "title": "牛轧糖什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:nougattirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "milktirol_gochizo",
+            "title": "牛奶什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:milktirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bispinktirol_gochizo",
+            "title": "Bis什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bispinktirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "whiteandcookiestirol_gochizo",
+            "title": "白色&曲奇什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:whiteandcookiestirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "crunchtirol_gochizo",
+            "title": "米果什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:crunchtirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "almondtirol_gochizo",
+            "title": "杏仁什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:almondtirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bisbluetirol_gochizo",
+            "title": "Bis什锦巧克力饱藏",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -什锦巧克力联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bisbluetirol_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "teriyaki_umaibo_gochizo",
+            "title": "美味棒饱藏(照烧口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:teriyaki_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "salad_umaibo_gochizo",
+            "title": "美味棒饱藏(沙拉口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:salad_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tonkatsu_umaibo_gochizo",
+            "title": "美味棒饱藏(日式炸猪排口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:tonkatsu_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "potage_umaibo_gochizo",
+            "title": "美味棒饱藏(浓汤口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:potage_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "natto_umaibo_gochizo",
+            "title": "美味棒饱藏(纳豆口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:natto_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "salami_umaibo_gochizo",
+            "title": "美味棒饱藏(萨拉米香肠口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:salami_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "takoyaki_umaibo_gochizo",
+            "title": "美味棒饱藏(章鱼烧口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:takoyaki_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mentaiko_umaibo_gochizo",
+            "title": "美味棒饱藏(明太子口味)",
+            "text": "登场于：$(li)DX 骑士饱藏特别套装 -美味棒联动版- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mentaiko_umaibo_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#corn_snack)玉蜀黍酥$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "charapaki_gochizo",
+            "title": "发掘恐龙饱藏",
+            "text": "登场于：$(li)SG 发掘恐龙饱藏 (2024年，玩具线)$(br2)用于切换加布的 $(l:gavv/riders/gavv#chocohone)巧克骨形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:charapaki_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "charapaki_gochizo_special",
+            "title": "发掘恐龙饱藏(特殊)",
+            "text": "登场于：$(li)SG 发掘恐龙饱藏 (2024年，玩具线)$(br2)用于切换加布的 $(l:gavv/riders/gavv#chocohone_special)巧克骨形态(特殊)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:charapaki_gochizo_special",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#chocolate_bar)巧克力棒$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ope_dummy_gochizo",
+            "title": "OPE假冒饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ope_dummy_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ple_dummy_gochizo",
+            "title": "PLE假冒饱藏",
+            "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ple_dummy_gochizo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:gavv/mobs/bocca_jaldak)博卡·贾尔达克$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "poppingummy_gochizo_halloween",
+            "title": "调皮砰击软糖饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppingummy_gochizo_halloween",
+            "title": " ",
+            "text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocozon_gochizo",
+            "title": "巧克茧饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:chocozon_gochizo",
+            "title": " ",
+            "text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doracan_gochizo",
+            "title": "多拉坎饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doracan_gochizo",
+            "title": " ",
+            "text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pumpkin_gochizo",
+            "title": "南瓜饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pumpkin_gochizo",
+            "title": " ",
+            "text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "poppingummy_gochizo_charadeco",
+            "title": "砰击软糖饱藏(角色装饰版)",
+            "text": "登场于：$(li)假面骑士加布 Charadeco蛋糕 (2024年，糕点系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppingummy_gochizo_charadeco_ver",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gift)礼物$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "merrychristmas_gochizo",
+            "title": "圣诞快乐饱藏",
+            "text": "登场于：$(li)DX 圣诞快乐和年糕小豆汤饱藏 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:merrychristmas_gochizo",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gift)礼物$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamenridergummy_gochizo",
+            "title": "假面骑士软糖饱藏",
+            "text": "登场于：$(li)假面骑士软糖 (2024年，糖果系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamenridergummy_gochizo",
+            "title": " ",
+            "text": "在物品栏中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用 $(l:misc/items/foods#gummi_candy)软糖$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zeztz_gochizo",
+            "title": "Zeztz饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zeztz_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gavv_gochizo",
+            "title": "加布饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gavv_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "valen_gochizo",
+            "title": "瓦伦饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:valen_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vram_gochizo",
+            "title": "布拉姆饱藏",
+            "text": "登场于：$(li)Gochizo Party (2025年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:vram_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gotchard_gochizo",
+            "title": "歌查德饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gotchard_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "geats_gochizo",
+            "title": "极狐饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:geats_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "revi_gochizo",
+            "title": "利维饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:revi_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vice_gochizo",
+            "title": "维斯饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:vice_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "saber_gochizo",
+            "title": "圣刃饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:saber_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zero_one_gochizo",
+            "title": "01饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zero_one_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zi_o_gochizo",
+            "title": "时王饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zi_o_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "build_gochizo",
+            "title": "Build饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:build_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ex_aid_gochizo",
+            "title": "Ex-Aid饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装03 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ex_aid_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ghost_gochizo",
+            "title": "Ghost饱藏",
+            "text": "登场于：$(li)GP 骑士饱藏03 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ghost_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drive_gochizo",
+            "title": "Drive饱藏",
+            "text": "登场于：$(li)Drive饱藏 (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:drive_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gaim_gochizo",
+            "title": "铠武饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装03 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gaim_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "wizard_gochizo",
+            "title": "Wizard饱藏",
+            "text": "登场于：$(li)SG 骑士饱藏02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:wizard_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fourze_gochizo",
+            "title": "Fourze饱藏",
+            "text": "登场于：$(li)GP 骑士饱藏02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:fourze_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ooo_gochizo",
+            "title": "OOO饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装03 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ooo_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "w_gochizo",
+            "title": "W饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装01 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:w_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "decade_gochizo",
+            "title": "Decade饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:decade_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kiva_gochizo",
+            "title": "Kiva饱藏",
+            "text": "登场于：$(li)GP 骑士饱藏02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kiva_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "den_o_gochizo",
+            "title": "电王饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏套装01 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:den_o_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kabuto_gochizo",
+            "title": "甲斗饱藏",
+            "text": "登场于：$(li)SG 骑士饱藏01 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kabuto_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hibiki_gochizo",
+            "title": "响鬼饱藏",
+            "text": "登场于：$(li)GP 骑士饱藏03 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hibiki_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "blade_gochizo",
+            "title": "剑饱藏",
+            "text": "登场于：$(li)GP 骑士饱藏01 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:blade_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "faiz_gochizo",
+            "title": "Faiz饱藏",
+            "text": "登场于：$(li)DX 加布手机 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:faiz_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ryuki_gochizo",
+            "title": "龙骑饱藏",
+            "text": "登场于：$(li)SG 骑士饱藏02 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ryuki_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "agito_gochizo",
+            "title": "亚极陀饱藏",
+            "text": "登场于：$(li)SG 骑士饱藏01 (2024年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:agito_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_gochizo",
+            "title": "空我饱藏",
+            "text": "登场于：$(li)假面骑士加布：变身讲座 (2024年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_gochizo",
+            "title": " ",
+            "text": "在城市维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "j_gochizo",
+            "title": "J饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士02- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:j_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zo_gochizo",
+            "title": "ZO饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士02- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zo_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shin_gochizo",
+            "title": "真饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士02- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shin_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_rx_gochizo",
+            "title": "Black RX饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士02- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_rx_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shadowmoon_gochizo",
+            "title": "影月饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士02- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shadowmoon_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "black_gochizo",
+            "title": "Black饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士02- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:black_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "zx_gochizo",
+            "title": "ZX饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:zx_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "super_1_gochizo",
+            "title": "超一号饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:super_1_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "skyrider_gochizo",
+            "title": "天空骑士饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:skyrider_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "stronger_gochizo",
+            "title": "强人饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:stronger_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "amazon_gochizo",
+            "title": "Amazon饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:amazon_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "x_gochizo",
+            "title": "X饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:x_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "riderman_gochizo",
+            "title": "骑士人饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:riderman_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "v3_gochizo",
+            "title": "V3饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:v3_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "nigo_gochizo",
+            "title": "二号饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:nigo_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ichigo_gochizo",
+            "title": "一号饱藏",
+            "text": "登场于：$(li)DX 传奇骑士饱藏特别套装 -昭和骑士01- (2025年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ichigo_gochizo",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "boonboomger_gochizo",
+            "title": "奔奔者饱藏",
+            "text": "登场于：$(li)电视君 (2024年11月，杂志)$(br2)用于切换加布的 $(l:gavv/riders/gavv#boonboomger)奔奔者助力$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:gavv/boonboomger_gochizo",
+            "text": "在超级战队维度中持有 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 时食用零食获得$(br2)如果没有显示合成配方，需要安装超级战队工艺模组"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "邪恶召机Ⅱ",
+	"icon": "kamenridercraft:evil_visor_zwei",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由海鳐的$(l:ryuki/riders/raia#survive)生存$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:evil_visor_zwei",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/shoot_vent_cards#evil_visor_zwei_vent)邪恶召机Ⅱ射击降临$(/l)获得"
+		}
+	]
+}

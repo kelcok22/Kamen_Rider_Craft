@@ -1,0 +1,16 @@
+{
+	"name": "Faiz爆裂器",
+	"icon": "kamenridercraft:faiz_blaster",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)由Faiz的$(l:faiz/riders/faiz#blaster)爆裂形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_blaster"
+		}
+	]
+}

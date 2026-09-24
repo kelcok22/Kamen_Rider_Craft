@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士Poppy",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:poppy_red_mob",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 45"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有5%的几率从$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)升级上场$(br2)掉落$(li)2-4个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)$(li)1-2个$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)$(li)1个$(l:ex_aid/items/gashatrophies#doremifa_beat_gasha_trophy)哆啦咪发节拍奖励卡带$(/l) (30.8%)$(li)1个$(l:ex_aid/items/gashatrophies#toki_meki_crisis_gasha_trophy)心跳危机奖励卡带$(/l) (30.8%)$(li)1个$(l:ex_aid/items/rider_gashats#toki_meki_crisis_gashat)心跳危机卡带$(/l) (30.8%)$(li)1个$(l:ex_aid/items/rider_gashats#poppy_doremifa_beat_gashat)哆啦咪发节拍卡带（Poppy版）$(/l) (7.7%)"
+        }
+    ]
+}

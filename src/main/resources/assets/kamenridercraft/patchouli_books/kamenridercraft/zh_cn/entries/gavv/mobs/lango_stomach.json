@@ -1,0 +1,17 @@
+{
+	"name": "兰戈·斯托马克",
+	"icon": "kamenridercraft:gavv_logo",
+	"category": "kamenridercraft:gavv/mobs",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:lango_stomach",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的概率从红色$(l:gavv/mobs/agent)特工$(/l)进化而来$(br2)特殊机制：$(li)能够飞行$(br2)掉落$(li)1个$(l:gavv/items/mimic_keys#lango_mimic_key)兰戈拟态钥匙$(/l)$(li)1-3个$(l:gavv/items/heatpress)人类压牌$(/l) (50%)$(li)1-2个$(l:gavv/items/granute_tooth)格拉纽特之牙$(/l) (50%)"
+		}
+	]
+}

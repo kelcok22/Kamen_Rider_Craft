@@ -1,0 +1,16 @@
+{
+	"name": "Ixa升华器",
+	"icon": "kamenridercraft:ixariser",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)由 $(l:kiva/riders/ixa#rising)升华IXA$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/ixa_riser"
+		}
+	]
+}

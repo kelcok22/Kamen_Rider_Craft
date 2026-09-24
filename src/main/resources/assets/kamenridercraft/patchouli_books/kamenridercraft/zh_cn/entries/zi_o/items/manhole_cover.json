@@ -1,0 +1,19 @@
+{
+	"name": "井盖",
+	"icon": "kamenridercraft:manhole_cover",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 19,
+	"pages": [
+      {
+        "type": "patchouli:text",
+        "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:manhole_cover",
+        "title": " ",
+        "text": "开启情人节$(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l)获得"
+      }
+	]
+}

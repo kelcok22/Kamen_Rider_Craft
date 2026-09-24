@@ -1,0 +1,19 @@
+{
+	"name": "台风腰带（赤骑士）",
+	"icon": "kamenridercraft:typhoon_akarider",
+	"category": "kamenridercraft:gorider/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×超级战队 超超级英雄大战 (2017年，电影)$(li)假面战队Gorider (2017年，网络剧)$(br2)与$(l:gorider/devices/armor)假面战队装甲$(/l)一起穿戴，可变身为$(l:gorider/riders/akarider)赤骑士$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:typhoon_akarider",
+			"title": " ",
+			"text": "当前无法获取该物品"
+		}
+	]
+}

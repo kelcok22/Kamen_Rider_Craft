@@ -1,0 +1,17 @@
+{
+	"name": "莱欧骑兵",
+	"icon": "kamenridercraft:faiz_logo",
+	"category": "kamenridercraft:faiz/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:riotrooper",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：灵魂沙峡谷$(br2)当背包中持有 $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C.英雄传奇$(/l)，则会升级为莱欧骑兵 V2$(br2)常规掉落：$(li)2-4个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#faiz_mission_memory)Faiz$(/l)、$(l:faiz/items/mission_memories#kaixa_mission_memory)凯撒$(/l) 或 $(l:faiz/items/mission_memories#delta_mission_memory)德尔塔使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#faiz_axel_mission_memory)Faiz加速$(/l) 或 $(l:faiz/items/mission_memories#psyga_mission_memory)天帝使命芯片$(/l) (20%)$(li)1个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l) (80%)$(br2)升级为V2后的额外掉落：$(li)1个$(l:faiz/items/mission_memories#neo_alpa_mission_memory)Neo-Alpa$(/l)、$(l:faiz/items/mission_memories#pyron_mission_memory)白龙$(/l) 或 $(l:faiz/items/mission_memories#seeda_mission_memory)Seeda使命芯片$(/l) (50%)$(li)1个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l) (50%)$(br2)进化$(li)$(l:faiz/mobs/orga)假面骑士地帝$(/l) (5%)$(li)$(l:faiz/mobs/muez)假面骑士缪斯$(/l) (5%)"
+		}
+	]
+}

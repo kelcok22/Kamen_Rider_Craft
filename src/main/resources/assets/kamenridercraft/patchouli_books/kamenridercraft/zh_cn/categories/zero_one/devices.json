@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zero_one/main",
+    "name": "腰带",
+    "description": "01系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:zero_one/items/hiden_metal)飞电金属$(/l)修复.",
+    "icon": "kamenridercraft:hiden_zero_one_driver",
+    "sortnum": 1
+}

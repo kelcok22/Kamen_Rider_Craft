@@ -1,0 +1,17 @@
+{
+	"name": "魔化魍",
+	"icon": "kamenridercraft:hibiki_logo",
+	"category": "kamenridercraft:hibiki/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:makamou_ninja_group",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：绯红森林$(br2)掉落$(li)1-3个$(l:hibiki/items/oni_orehell)青色鬼石$(/l)$(li)1个冰、羽毛、荧石粉或生牛肉 (33%)$(br2)进化$(li)$(l:hibiki/mobs/kabuki)假面骑士歌舞鬼$(/l) (10%)"
+		}
+	]
+}

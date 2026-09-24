@@ -1,0 +1,43 @@
+{
+  "name": "推进先锋",
+  "icon": "kamenridercraft:boostriker_spawn_egg",
+  "category": "kamenridercraft:geats/arsenal",
+  "sortnum": 99,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "link_recipe": true,
+      "item": "kamenridercraft:boostriker_spawn_egg",
+      "text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)供$(l:geats/riders/geats#magnumboost)推进器代扣使用者$(/l)使用$(br2)可使用骑士的$(l:geats/items/rider_core_ids)骑士核心ID$(/l)将其设定为特定骑士专属"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker",
+      "text": "通过在方块上使用$(l:geats/items/raise_buckles#boost_raise_buckle)推进器代扣$(/l)即可召唤"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_geats_mode",
+      "text": "按住潜行键点击极狐的推进先锋，即可切换至该形态"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_tycoon_mode",
+      "text": "按住潜行键点击太狸的推进先锋，即可切换至该形态"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_na_go_mode",
+      "text": "按住潜行键点击娜猫的推进先锋，即可切换至该形态"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "kamenridercraft:boostriker_buffa_mode",
+      "text": "按住潜行键点击霸牛的推进先锋，即可切换至该形态"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "若在利维或维斯的推进先锋上，使用$(l:revice/items/vistamps#rex_vistamp)霸王龙罪恶印章$(/l)，或许会触发特殊效果……"
+    }
+  ]
+}

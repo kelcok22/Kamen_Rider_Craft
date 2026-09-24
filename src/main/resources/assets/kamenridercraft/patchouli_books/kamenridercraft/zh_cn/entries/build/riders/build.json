@@ -1,0 +1,722 @@
+{
+	"name": "假面骑士Build",
+	"icon": "kamenridercraft:build_driver",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 0,
+	"pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbittank",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "兔子坦克形态",
+            "text": "通过使用$(l:build/items/fullbottles#rabbit_full_bottle)兔子满装瓶罐$(/l)和$(l:build/items/fullbottles#tank_full_bottle)坦克满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)兔子满装瓶罐效果：$(li)速度 II$(li)跳跃提升$(br2)坦克满装瓶罐效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "sparkling",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:rabbittank_sparkling_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "兔子坦克气泡形态",
+            "text": "通过使用$(l:build/items/fullbottles#rabbittank_sparkling_full_bottle)兔子坦克气泡满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbittank_hazard",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "兔子坦克危险形态",
+            "text": "以 $(l:build/riders/build#rabbittank)兔子坦克形态$(/l) 为基础，通过使用$(l:build/items/hazard_trigger)危险扳机$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 V$(li)速度 III$(li)饥饿 II$(li)抗性提升 II$(li)跳跃提升 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "smaphowolf_hazard",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "智能机狼危险形态",
+            "text": "以 $(l:build/riders/build#smaphowolf)智能机狼形态$(/l) 为基础，通过使用$(l:build/items/hazard_trigger)危险扳机$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build ～危险等级提升！7大最佳搭配～ (2018年，网络剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)饥饿 II$(li)抗性提升 II$(li)夜视$(li)跳跃提升 III$(li)力量 V"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "hawkgatling_hazard",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "飞鹰加特林危险形态",
+            "text": "以 $(l:build/riders/build#hawkgatling)飞鹰加特林形态$(/l) 为基础，通过使用$(l:build/items/hazard_trigger)危险扳机$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)饥饿 II$(li)抗性提升 II$(li)夜视$(li)跳跃提升 III$(li)力量 V$(li)飞行"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kaizokuressya_hazard",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "海贼列车危险形态",
+            "text": "以 $(l:build/riders/build#kaizokuressya)海贼列车形态$(/l) 为基础，通过使用$(l:build/items/hazard_trigger)危险扳机$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)饥饿 II$(li)抗性提升 II$(li)急迫 IV$(li)跳跃提升 III$(li)力量 V"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "keydragon_hazard",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:hazard_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "钥匙龙危险形态",
+            "text": "以 $(l:build/riders/build#keydragon)钥匙龙形态$(/l) 为基础，通过使用$(l:build/items/hazard_trigger)危险扳机$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)饥饿 II$(li)饥饿$(li)抗性提升 II$(li)急迫 IV$(li)跳跃提升 III$(li)力量 V"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbitrabbit",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_rabbit_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "兔兔形态",
+            "text": "背包中持有 $(l:build/items/hazard_trigger)危险扳机$(/l) 时，通过使用$(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)摇摇兔子坦克瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 III（持武器时）$(li)速度 IV$(li)抗性提升 II$(li)生命恢复 II$(li)跳跃提升 IV$(li)力量 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "tanktank",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:fullfull_tank_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "坦坦形态",
+            "text": "背包中持有 $(l:build/items/hazard_trigger)危险扳机$(/l) 时，通过使用$(l:build/items/fullbottles#fullfull_rabbit_tank_bottle)摇摇兔子坦克瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 V$(li)速度 II$(li)抗性提升 IV$(li)生命恢复$(li)跳跃提升"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "genius",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:genius_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "天才形态",
+            "text": "通过使用$(l:build/items/fullbottles#genius_full_bottle)天才满罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 II$(li)急迫 IV$(li)饱和$(li)跳跃提升 V$(li)抗火$(li)飞行"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rabbitdragon",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gold_rabbit_full_bottle\",slot_tex2:\"kamenridercraft:silver_dragon_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "金兔银龙形态",
+            "text": "通过使用$(l:build/items/fullbottles#gold_rabbit_full_bottle)金兔满装瓶罐$(/l)和$(l:build/items/fullbottles#silver_dragon_full_bottle)银龙满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)金兔满装瓶罐效果：$(li)跳跃提升 IV$(br2)银龙满装瓶罐效果：$(li)力量 IV$(li)急迫 IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "cross_zbuild",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_full_bottle\",slot_tex2:\"kamenridercraft:tank_full_bottle\",slot_tex3:\"kamenridercraft:cross_z_build_can\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "创越形态",
+            "text": "通过使用$(l:build/items/cross_z_build_can)克罗兹·创骑罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build：Be The One (2018年，电影)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 V$(li)速度 V$(li)抗性提升 V$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 IV$(li)饱和 II$(li)跳跃提升 VI$(li)抗火$(li)飞行"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "gorillamond",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gorilla_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "猩猩钻石形态",
+            "text": "通过使用$(l:build/items/fullbottles#gorilla_full_bottle)大猩猩满装瓶罐$(/l)和$(l:build/items/fullbottles#diamond_full_bottle)钻石满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)大猩猩满装瓶罐效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)力量 II（持武器时）$(br2)钻石满装瓶罐效果：$(li)抗性提升 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "hawkgatling",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:gatling_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "飞鹰加特林形态",
+            "text": "通过使用$(l:build/items/fullbottles#taka_full_bottle)飞鹰满装瓶罐$(/l)和$(l:build/items/fullbottles#gatling_full_bottle)加特林满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)飞鹰满装瓶罐效果：$(li)跳跃提升 III$(li)速度 III$(li)夜视$(li)飞行$(br2)加特林满装瓶罐效果：$(li)力量 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "ninnincomic",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ninja_full_bottle\",slot_tex2:\"kamenridercraft:comic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "忍忍漫画形态",
+            "text": "通过使用$(l:build/items/fullbottles#ninja_full_bottle)忍者满装瓶罐$(/l)和$(l:build/items/fullbottles#comic_full_bottle)漫画满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)忍者满装瓶罐效果：$(li)隐形 II$(li)速度 IV$(br2)漫画满装瓶罐效果：$(li)跳跃提升 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rocketpanda",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:panda_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "火箭熊猫形态",
+            "text": "通过使用$(l:build/items/fullbottles#panda_full_bottle)熊猫满装瓶罐$(/l)和$(l:build/items/fullbottles#rocket_full_bottle)火箭满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)熊猫满装瓶罐效果：$(li)力量$(li)急迫 II$(br2)火箭满装瓶罐效果：$(li)推进"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "firehedgehog",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:harinezumi_full_bottle\",slot_tex2:\"kamenridercraft:shoubousha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "烈焰刺猬形态",
+            "text": "通过使用$(l:build/items/fullbottles#harinezumi_full_bottle)刺猬满装瓶罐$(/l)和$(l:build/items/fullbottles#shoubousha_full_bottle)消防车满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)刺猬满装瓶罐效果：$(li)力量 II$(li)急迫 II$(br2)消防车满装瓶罐效果：$(li)抗火"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "lioncleaner",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lion_full_bottle\",slot_tex2:\"kamenridercraft:soujiki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "狮子吸尘器形态",
+            "text": "通过使用$(l:build/items/fullbottles#lion_full_bottle)狮子满装瓶罐$(/l)和$(l:build/items/fullbottles#soujiki_full_bottle)吸尘器满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)狮子满装瓶罐效果：$(li)力量 IV$(li)急迫 II$(li)夜视$(br2)吸尘器满装瓶罐效果：$(li)抗火"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "keydragon",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_full_bottle_build\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "钥匙龙形态",
+            "text": "通过使用$(l:build/items/fullbottles#dragon_full_bottle)龙满装瓶罐$(/l)和$(l:build/items/fullbottles#lock_full_bottle)定锁满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)龙满装瓶罐效果：$(li)力量 IV$(li)急迫 IV$(li)凋零$(li)速度 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kaizokuressya",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kaizoku_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "海贼列车形态",
+            "text": "通过使用$(l:build/items/fullbottles#kaizoku_full_bottle)海贼满装瓶罐$(/l)和$(l:build/items/fullbottles#densha_full_bottle)电车满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)海贼满装瓶罐效果：$(li)力量 II$(li)急迫 IV$(li)速度 VI$(br2)电车满装瓶罐效果：$(li)速度 IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "octopuslight",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:octopus_full_bottle\",slot_tex2:\"kamenridercraft:light_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "章鱼电灯形态",
+            "text": "通过使用$(l:build/items/fullbottles#octopus_full_bottle)章鱼满装瓶罐$(/l)和$(l:build/items/fullbottles#light_full_bottle)电灯满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)章鱼满装瓶罐效果：$(li)水下呼吸$(li)速度 II$(br2)电灯满装瓶罐效果：$(li)夜视"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "phoenixrobo",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:phoenix_full_bottle\",slot_tex2:\"kamenridercraft:robot_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "不死鸟机器人形态",
+            "text": "通过使用$(l:build/items/fullbottles#phoenix_full_bottle)不死鸟满装瓶罐$(/l)和$(l:build/items/fullbottles#robot_full_bottle)机器人满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)不死鸟满装瓶罐效果：$(li)抗火$(li)力量 II$(li)抗性提升 II$(br2)机器人满装瓶罐效果：$(li)拳力提升 III$(li)力量 VI（空手时）"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "smaphowolf",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wolf_full_bottle\",slot_tex2:\"kamenridercraft:smapho_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "智能机狼形态",
+            "text": "通过使用$(l:build/items/fullbottles#wolf_full_bottle)狼满装瓶罐$(/l)和$(l:build/items/fullbottles#smapho_full_bottle)智能机满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)狼满装瓶罐效果：$(li)速度 III$(li)夜视$(br2)智能机满装瓶罐效果：$(li)抗性提升 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "uniraser",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:unicorn_full_bottle\",slot_tex2:\"kamenridercraft:keshigomu_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "独角兽橡皮形态",
+            "text": "通过使用$(l:build/items/fullbottles#unicorn_full_bottle)独角兽满装瓶罐$(/l)和$(l:build/items/fullbottles#keshigomu_full_bottle)橡皮满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)独角兽满装瓶罐效果：$(li)力量 III$(li)速度 IV$(li)急迫 IV$(li)跳跃提升 III$(br2)橡皮满装瓶罐效果：$(li)急迫 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "rosecopter",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rose_full_bottle\",slot_tex2:\"kamenridercraft:helicopter_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "蔷薇直升机形态",
+            "text": "通过使用$(l:build/items/fullbottles#rose_full_bottle)蔷薇满装瓶罐$(/l)和$(l:build/items/fullbottles#helicopter_full_bottle)直升机满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)蔷薇满装瓶罐效果：$(li)力量 III$(li)速度 III$(br2)直升机满装瓶罐效果：$(li)速度 II$(li)飞行"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "turtlewatch",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:turtle_full_bottle\",slot_tex2:\"kamenridercraft:watch_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "海龟手表形态",
+            "text": "通过使用$(l:build/items/fullbottles#turtle_full_bottle)海龟满装瓶罐$(/l)和$(l:build/items/fullbottles#watch_full_bottle)手表满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)海龟满装瓶罐效果：$(li)力量 IV$(li)水下呼吸$(li)缓慢 II$(br2)手表满装瓶罐效果：$(li)急迫 IV"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kumatv",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuma_full_bottle\",slot_tex2:\"kamenridercraft:televi_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "熊电视形态",
+            "text": "通过使用$(l:build/items/fullbottles#kuma_full_bottle)熊满装瓶罐$(/l)和$(l:build/items/fullbottles#televi_full_bottle)TV满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build：诞生！熊电视！！VS假面骑士格里斯 (2017年，Hyper Battle Video)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)熊满装瓶罐效果：$(li)急迫 III$(li)力量 III$(br2)TV满装瓶罐效果：$(li)夜视"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "beetlecamera",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabutomushi_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "独角仙照相机形态",
+            "text": "通过使用$(l:build/items/fullbottles#kabutomushi_full_bottle)独角仙满装瓶罐$(/l)和$(l:build/items/fullbottles#camera_full_bottle)照相机满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)独角仙满装瓶罐效果：$(li)力量 III$(li)抗性提升 II$(br2)照相机满装瓶罐效果：$(li)夜视"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "spidercooler",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spider_full_bottle\",slot_tex2:\"kamenridercraft:reizouko_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "蜘蛛冰箱形态",
+            "text": "通过使用$(l:build/items/fullbottles#spider_full_bottle)蜘蛛满装瓶罐$(/l)和$(l:build/items/fullbottles#reizouko_full_bottle)冰箱满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)DX潘多拉嵌板（蓝色） (2018年，玩具系列)$(li)DX潘多拉嵌板（红色） (2018年，玩具系列)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)蜘蛛满装瓶罐效果：$(li)跳跃提升 II$(li)急迫 II$(br2)冰箱满装瓶罐效果：$(li)抗性提升 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "dogmic",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dog_full_bottle\",slot_tex2:\"kamenridercraft:mic_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "狗话筒形态",
+            "text": "通过使用$(l:build/items/fullbottles#dog_full_bottle)狗满装瓶罐$(/l)和$(l:build/items/fullbottles#mic_full_bottle)话筒满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)狗满装瓶罐效果：$(li)速度 III$(li)急迫 IV$(li)力量 II$(br2)话筒满装瓶罐效果：$(li)拳力提升 II$(li)力量 V（空手时）"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "merrychristmas",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:santa_claus_full_bottle\",slot_tex2:\"kamenridercraft:cake_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "圣诞快乐形态",
+            "text": "通过使用$(l:build/items/fullbottles#santa_claus_full_bottle)圣诞老人满装瓶罐$(/l)和$(l:build/items/fullbottles#cake_full_bottle)蛋糕满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)圣诞老人满装瓶罐效果：$(li)跳跃提升 III$(li)速度 III$(br2)蛋糕满装瓶罐效果：$(li)饱和 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "toraufo",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tora_full_bottle\",slot_tex2:\"kamenridercraft:ufo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "老虎UFO形态",
+            "text": "通过使用$(l:build/items/fullbottles#tora_full_bottle)老虎满装瓶罐$(/l)和$(l:build/items/fullbottles#ufo_full_bottle)UFO满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)老虎满装瓶罐效果：$(li)速度 IV$(li)力量 III$(br2)UFO满装瓶罐效果：$(li)跳跃提升 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kujirajet",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kujira_full_bottle\",slot_tex2:\"kamenridercraft:jet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "鲸鱼喷气机形态",
+            "text": "通过使用$(l:build/items/fullbottles#kujira_full_bottle)鲸满装瓶罐$(/l)和$(l:build/items/fullbottles#jet_full_bottle)喷气机满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)鲸满装瓶罐效果：$(li)水下呼吸$(li)海豚的恩惠$(br2)喷气机满装瓶罐效果：$(li)飞行"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "shikamid",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shika_full_bottle\",slot_tex2:\"kamenridercraft:pyramid_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "鹿金字塔形态",
+            "text": "通过使用$(l:build/items/fullbottles#shika_full_bottle)鹿满装瓶罐$(/l)和$(l:build/items/fullbottles#pyramid_full_bottle)金字塔满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)鹿满装瓶罐效果：$(li)速度 III$(li)跳跃提升 II$(br2)金字塔满装瓶罐效果：$(li)抗性提升 II"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "kirincyclone",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kirin_full_bottle\",slot_tex2:\"kamenridercraft:senpuuki_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "长颈鹿旋风形态",
+            "text": "通过使用$(l:build/items/fullbottles#kirin_full_bottle)长颈鹿满装瓶罐$(/l)和$(l:build/items/fullbottles#senpuuki_full_bottle)风扇满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)长颈鹿满装瓶罐效果：$(li)力量 III$(br2)风扇满装瓶罐效果：$(li)速度 III$(li)跳跃提升 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "penguinskater",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:penguin_full_bottle\",slot_tex2:\"kamenridercraft:skebo_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "企鹅滑板形态",
+            "text": "通过使用$(l:build/items/fullbottles#penguin_full_bottle)企鹅满装瓶罐$(/l)和$(l:build/items/fullbottles#skebo_full_bottle)滑板满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)企鹅满装瓶罐效果：$(li)水下呼吸$(li)海豚的恩惠$(br2)滑板满装瓶罐效果：$(li)速度 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "samebike",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:same_full_bottle\",slot_tex2:\"kamenridercraft:bike_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "鲨鱼摩托形态",
+            "text": "通过使用$(l:build/items/fullbottles#same_full_bottle)鲨鱼满装瓶罐$(/l)和$(l:build/items/fullbottles#bike_full_bottle)摩托满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)假面骑士Build ～危险等级提升！7大最佳搭配～ (2018年，网络剧)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)鲨鱼满装瓶罐效果：$(li)水下呼吸$(li)海豚的恩惠$(br2)摩托满装瓶罐效果：$(li)速度 III"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "hachimarine",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hachi_full_bottle\",slot_tex2:\"kamenridercraft:sensuikan_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "蜜蜂潜水艇形态",
+            "text": "通过使用$(l:build/items/fullbottles#hachi_full_bottle)蜂满装瓶罐$(/l)和$(l:build/items/fullbottles#sensuikan_full_bottle)潜水艇满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)DX蜜蜂潜艇满装瓶罐套装 (2018年，玩具系列)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)蜂满装瓶罐效果：$(li)速度 III$(li)跳跃提升 II$(br2)潜水艇满装瓶罐效果：$(li)水下呼吸$(li)海豚的恩惠"
+		},
+        {
+            "type": "patchouli:entity",
+            "anchor": "saidryer",
+            "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sai_full_bottle\",slot_tex2:\"kamenridercraft:dryer_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+            "name": "犀牛吹风机形态",
+            "text": "通过使用$(l:build/items/fullbottles#sai_full_bottle)犀牛满装瓶罐$(/l)和$(l:build/items/fullbottles#dryer_full_bottle)吹风机满装瓶罐$(/l)进行形态切换"
+        },
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Build",
+			"text": "登场于：$(li)DX犀牛吹风机满装瓶罐套装 (2018年，玩具系列)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)犀牛满装瓶罐效果：$(li)力量 III$(li)抗性提升 II$(br2)吹风机满装瓶罐效果：$(li)抗火"
+		},
+                {
+    "type": "patchouli:entity",
+    "anchor": "batengine",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bat_full_bottle\",slot_tex2:\"kamenridercraft:engine_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "蝙蝠引擎形态",
+    "text": "通过使用$(l:build/items/fullbottles#bat_full_bottle)蝙蝠满装瓶罐$(/l)和$(l:build/items/fullbottles#engine_full_bottle)引擎满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)DX蝙蝠引擎满装瓶罐套装 (2018年，玩具系列)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)蝙蝠满装瓶罐效果：$(li)速度 II$(li)跳跃提升 III$(br2)引擎满装瓶罐效果：$(li)力量 II"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "magghost",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:magnet_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "磁性幽灵形态",
+    "text": "通过使用$(l:build/items/fullbottles#obake_full_bottle)妖怪满装瓶罐$(/l)和$(l:build/items/fullbottles#magnet_full_bottle)磁铁满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)妖怪满装瓶罐效果：$(li)幽灵$(li)隐形$(br2)磁铁满装瓶罐效果：$(li)力量 II"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "goldscorpion",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scorpion_full_bottle\",slot_tex2:\"kamenridercraft:gold_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "黄金蝎子形态",
+    "text": "通过使用$(l:build/items/fullbottles#scorpion_full_bottle)蝎子满装瓶罐$(/l)和$(l:build/items/fullbottles#gold_full_bottle)黄金满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)DX黄金蝎子满装瓶罐套装 (2018年，玩具系列)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)蝎子满装瓶罐效果：$(li)毒药抗性$(li)急迫 II$(br2)黄金满装瓶罐效果：$(li)抗性提升 II$(li)力量 II"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "den_o",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:momotaros_full_bottle\",slot_tex2:\"kamenridercraft:densha_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "电王形态",
+    "text": "通过使用$(l:build/items/fullbottles#momotaros_full_bottle)桃塔罗斯满装瓶罐$(/l)和$(l:build/items/fullbottles#densha_full_bottle)电车满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)桃塔罗斯满装瓶罐效果：$(li)力量 II$(li)急迫$(br2)电车满装瓶罐效果：$(li)速度 IV"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "decade",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rider_card_full_bottle\",slot_tex2:\"kamenridercraft:camera_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "Decade形态",
+    "text": "通过使用$(l:build/items/fullbottles#rider_card_full_bottle)骑士卡片满装瓶罐$(/l)和$(l:build/items/fullbottles#camera_full_bottle)照相机满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)骑士卡片满装瓶罐效果：$(li)力量$(li)急迫 III$(br2)照相机满装瓶罐效果：$(li)夜视"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "double",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tantei_full_bottle\",slot_tex2:\"kamenridercraft:usb_memory_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "W形态",
+    "text": "通过使用$(l:build/items/fullbottles#tantei_full_bottle)侦探满装瓶罐$(/l)和$(l:build/items/fullbottles#usb_memory_full_bottle)U盘记忆体满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)侦探满装瓶罐效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(br2)U盘记忆体满装瓶罐效果：$(li)速度 II$(li)跳跃提升"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "ooo",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:taka_full_bottle\",slot_tex2:\"kamenridercraft:medal_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "OOO形态",
+    "text": "通过使用$(l:build/items/fullbottles#taka_full_bottle)飞鹰满装瓶罐$(/l)和$(l:build/items/fullbottles#medal_full_bottle)硬币满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)飞鹰满装瓶罐效果：$(li)跳跃提升 III$(li)速度 III$(li)夜视$(li)飞行$(br2)硬币满装瓶罐效果：$(li)缓慢 II$(li)拳力提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "fourze",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:yuujou_full_bottle\",slot_tex2:\"kamenridercraft:rocket_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "Fourze形态",
+    "text": "通过使用$(l:build/items/fullbottles#yuujou_full_bottle)友情满装瓶罐$(/l)和$(l:build/items/fullbottles#rocket_full_bottle)火箭满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)友情满装瓶罐效果：$(li)速度$(li)跳跃提升 II$(br2)火箭满装瓶罐效果：$(li)推进"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "wizard",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:mahoutsukai_full_bottle\",slot_tex2:\"kamenridercraft:diamond_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "Wizard形态",
+    "text": "通过使用$(l:build/items/fullbottles#mahoutsukai_full_bottle)魔法师满装瓶罐$(/l)和$(l:build/items/fullbottles#diamond_full_bottle)钻石满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)魔法师满装瓶罐效果：$(li)速度$(li)抗火$(br2)钻石满装瓶罐效果：$(li)抗性提升 II"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "gaim",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:orange_full_bottle\",slot_tex2:\"kamenridercraft:lock_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "铠武形态",
+    "text": "通过使用$(l:build/items/fullbottles#orange_full_bottle)柳橙满装瓶罐$(/l)和$(l:build/items/fullbottles#lock_full_bottle)定锁满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)柳橙满装瓶罐效果：$(li)速度$(li)饱和"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "ghost",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:obake_full_bottle\",slot_tex2:\"kamenridercraft:parka_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "Ghost形态",
+    "text": "通过使用$(l:build/items/fullbottles#obake_full_bottle)妖怪满装瓶罐$(/l)和$(l:build/items/fullbottles#parka_full_bottle)兜帽衣满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)假面骑士Battle：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)妖怪满装瓶罐效果：$(li)幽灵$(li)隐形$(br2)兜帽衣满装瓶罐效果：$(li)速度"
+},
+{
+    "type": "patchouli:entity",
+    "anchor": "ex_aid",
+    "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:build_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:doctor_full_bottle\",slot_tex2:\"kamenridercraft:game_full_bottle\",slot_tex3:\"kamenridercraft:full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+    "scale": -1,
+    "offset": 0.1,
+    "name": "Ex_Aid形态",
+    "text": "通过使用$(l:build/items/fullbottles#doctor_full_bottle)医生满装瓶罐$(/l)和$(l:build/items/fullbottles#game_full_bottle)游戏满装瓶罐$(/l)进行形态切换"
+},
+{
+    "type": "patchouli:text",
+    "title": "假面骑士Build",
+    "text": "登场于：$(li)平成假面骑士20作纪念 假面骑士Build & Ex-Aid 传奇骑士 (2017年，电影)$(br2)通过穿戴$(l:build/devices/build_driver#build_driver)Build驱动器$(/l)进行变身$(br2)医生满装瓶罐效果：$(li)饱和$(br2)游戏满装瓶罐效果：$(li)速度$(li)急迫"
+}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Zeztz破坏者(斧模式)",
+	"icon": "kamenridercraft:breakam_zeztzer_axe",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)为Zeztz的 $(l:zeztz/riders/zeztz#machinery)科技器械$(/l) 形态专用武器"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_zeztzer_axe"
+		}
+	]
+}

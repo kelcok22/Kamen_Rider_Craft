@@ -1,0 +1,149 @@
+{
+    "name": "台风核心",
+    "icon": "kamenridercraft:typhoon_core",
+    "category": "kamenridercraft:ichigo/items",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "typhoon_core",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)用于制作一号的 $(l:ichigo/devices/typhoon#typhoon_ichigo)台风腰带$(/l)$(br2)用于切换一号的 $(l:ichigo/riders/ichigo#new_ichigo)新一号$(/l) 形态，以及修卡战斗员的 $(l:ichigo/riders/shocker_combatman#chinese_grasshopper_man)中华草蜢男$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:typhoon_core",
+            "text": "掉落自：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "original_typhoon_core",
+            "title": "台风核心(原始)",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br)$(li)用于切换一号的 $(l:ichigo/riders/ichigo#original_ichigo)原始一号$(/l) 形态$(li)用于切换二号的 $(l:ichigo/riders/nigo#original_nigo)原始二号$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:original_typhoon_core",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sakurajima_typhoon_core",
+            "title": "台风核心(樱岛)",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)用于切换一号的 $(l:ichigo/riders/ichigo#sakurajima_ichigo)樱岛一号$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:sakurajima_typhoon_core",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "new_typhoon_core",
+            "title": "台风核心强化",
+            "text": "登场于：$(li)假面骑士1号 (2016年，电影)$(br2)用于切换一号的 $(l:ichigo/riders/ichigo#power_up_ichigo)强化$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:new_typhoon_core",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ichigo/mobs/shocker_riders)修卡骑士$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "typhoon_core_nigo",
+            "title": "台风核心(二号)",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)用于制作二号的 $(l:ichigo/devices/typhoon#typhoon_nigo)台风腰带$(/l)$(br2)用于切换二号的 $(l:ichigo/riders/nigo#new_nigo)新二号$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:typhoon_core_nigo",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "typhoon_core_sango",
+            "title": "台风核心(三号)",
+            "text": "登场于：$(li)超级英雄大战GP：假面骑士3号 (2015年，电影)$(br2)用于制作三号的 $(l:ichigo/devices/typhoon#typhoon_sango)台风腰带$(/l)$(br2)用于切换三号的 $(l:ichigo/riders/sango#movie_sango)电影$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:typhoon_core_sango",
+            "title": " ",
+            "text": "可在 $(l:misc/city/city_centers#shocker_base)修卡基地$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "typhoon_core_yongo",
+            "title": "台风核心(四号)",
+            "text": "登场于：$(li)D-Video特别篇：假面骑士4号 (2015年，网络剧)$(br2)用于制作四号的 $(l:ichigo/devices/typhoon#typhoon_yongo)台风腰带$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:typhoon_core_yongo",
+            "title": " ",
+            "text": "可在 $(l:misc/city/city_centers#shocker_base)修卡基地$(/l) 中找到$(br2)掉落自：$(li)$(l:faiz/mobs/faiz)假面骑士Faiz$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shocker_rider_typhoon_core",
+            "title": "修卡骑士台风核心",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)用于切换修卡骑士No.1的 $(l:ichigo/riders/shocker_riders#shocker_rider_no_1)基础$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shocker_rider_typhoon_core",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "saikyo_kaijin_typhoon_core",
+            "title": "最强怪人台风核心",
+            "text": "登场于：$(li)假面骑士 (1998年，PS1游戏)$(br2)用于切换修卡骑士No.1的 $(l:ichigo/riders/shocker_riders#saikyo_kaijin)最强怪人$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:saikyo_kaijin_typhoon_core",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ultraman_typhoon_core",
+            "title": "奥特曼台风核心",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ultraman_typhoon_core",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "takoyaki_typhoon_core",
+            "title": "章鱼烧台风核心",
+             "text": "登场于：$(li)未知 (未知，未知)$(br2)用于切换一号的$(l:ichigo/riders/ichigo#takoyaki)章鱼烧$(/l)形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:takoyaki_typhoon_core",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        }
+    ]
+}

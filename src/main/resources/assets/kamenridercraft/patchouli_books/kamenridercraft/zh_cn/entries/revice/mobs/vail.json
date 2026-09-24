@@ -1,0 +1,17 @@
+{
+    "name": "深红贝尔",
+    "icon": "kamenridercraft:revice_logo",
+    "category": "kamenridercraft:revice/mobs",
+    "sortnum": 7,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:vail",
+            "text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br)生命值：100"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有2%概率从$(l:revice/mobs/giff_junior)基础恶魔$(/l)进化而来$(br2)掉落$(li)2-4个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)$(li)1个$(l:revice/items/vistamps#kabuto_vistamp)独角仙罪恶印章$(/l)$(li)1个$(l:revice/items/vistamps#crimson_vail_vistamp)深红滚轮罪恶印章$(/l)（37.5%）$(li)1个$(l:revice/items/vistamps#hercules_vistamp)长戟大兜虫罪恶印章$(/l)（62.5%）"
+        }
+    ]
+}

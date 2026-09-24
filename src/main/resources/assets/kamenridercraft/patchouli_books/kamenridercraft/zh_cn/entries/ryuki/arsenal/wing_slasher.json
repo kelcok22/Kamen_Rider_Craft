@@ -1,0 +1,19 @@
+{
+	"name": "羽翼砍剑",
+	"icon": "kamenridercraft:wing_slasher",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑：Episode Final（2002年，电影）$(br2)由$(l:ryuki/riders/femme)假面骑士花梦$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_slasher",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#wing_slasher_vent)羽翼砍剑刀剑降临$(/l)获得"
+		}
+	]
+}

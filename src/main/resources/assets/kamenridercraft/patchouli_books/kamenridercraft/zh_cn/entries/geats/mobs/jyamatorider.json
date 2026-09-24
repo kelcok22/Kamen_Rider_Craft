@@ -1,0 +1,17 @@
+{
+	"name": "邪魔徒骑士",
+	"icon": "kamenridercraft:geats_logo",
+	"category": "kamenridercraft:geats/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:jyamatorider",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:geats/mobs/pawnjyamato_mob)兵卒邪魔徒$(/l)欲望升级而来$(br2)掉落$(li)2-4个$(l:geats/items/blank_rider_core_id)空白ID核心$(/l) (50%)$(li)1个$(l:geats/items/hatena_mission_box)代扣任务盒$(/l) (50%)$(li)1个$(l:geats/items/raise_buckles#fever_slot_raise_buckle)狂热代扣$(/l) (44.4%)$(li)1个$(l:geats/items/raise_buckles#jyamato_buckle)邪魔徒代扣$(/l) (16.7%)$(li)1个$(l:geats/items/rider_core_ids#discore_id)邪魔徒ID核心$(/l) (16.7%)$(li)1个$(l:geats/items/desire_cards#boost_mkii_wish_card)推进器马克II许愿卡$(/l) (11.1%)$(li)1个$(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l) (11.1%)"
+        }
+	]
+}

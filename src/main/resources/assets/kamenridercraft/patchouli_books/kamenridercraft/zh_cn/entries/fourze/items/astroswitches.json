@@ -1,0 +1,960 @@
+{
+	"name": "天文开关",
+	"icon": "kamenridercraft:rocket_switch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "rocket_switch",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于制作Fourze的$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)$(br2)用于切换Fourze的$(l:fourze/riders/fourze#rocket)火箭组件$(/l)$(br2)用于切换抚子的$(l:fourze/riders/nadeshiko#rocket)火箭组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocket_switch",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "launcher_switch",
+			"title": "发射器开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#launcher)发射器组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:launcher_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drill_switch",
+			"title": "钻头开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#drill)钻头组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drill_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "radar_switch",
+			"title": "雷达开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#radar)雷达组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:radar_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magic_hand_switch",
+			"title": "魔术手开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#magichand)魔术手组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magic_hand_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "camera_switch",
+			"title": "相机开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#camera)相机组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:camera_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "parachute_switch",
+			"title": "降落伞开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#parachute)降落伞组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:parachute_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chainsaw_switch",
+			"title": "电锯开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#chainsaw)电锯组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chainsaw_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hopping_switch",
+			"title": "跳跃器开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#hopping)跳跃器组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hopping_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "elek_switch",
+			"title": "电力开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#elek)电力状态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:elek_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scissors_switch",
+			"title": "剪刀开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#scissors)剪刀组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scissors_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_switch",
+			"title": "节拍开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#beat)节拍组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chain_array_switch",
+			"title": "流星锤开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#chain_array)流星锤组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chain_array_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smoke_switch",
+			"title": "烟雾开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#smoke)烟雾组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smoke_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "spike_switch",
+			"title": "钉牙开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#spike)钉牙组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:spike_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "winch_switch",
+			"title": "起重机开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#winch)起重机组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:winch_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flash_switch",
+			"title": "闪光开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#flash)闪光组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flash_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shield_switch",
+			"title": "盾开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#shield)盾组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shield_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gatling_switch",
+			"title": "加特林开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#gatling)加特林组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gatling_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fire_switch",
+			"title": "火开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#fire)火焰状态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fire_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stealth_switch",
+			"title": "隐身开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#stealth)隐身组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stealth_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hammer_switch",
+			"title": "锤子开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#hammer)锤子组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hammer_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "water_switch",
+			"title": "水开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#water)水枪组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:water_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "medical_switch",
+			"title": "医疗开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#medical)医护组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:medical_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "pen_switch",
+			"title": "毛笔开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#pen)毛笔组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pen_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wheel_switch",
+			"title": "车轮开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#wheel)车轮组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wheel_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "screw_switch",
+			"title": "螺旋桨开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#screw)螺旋桨组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:screw_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hand_switch",
+			"title": "手开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#hand)自动手组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hand_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scoop_switch",
+			"title": "铲斗开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#scoop)铲斗组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scoop_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnet_switch_n",
+			"title": "北磁极开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#magnetstates)磁极状态$(/l)和$(l:fourze/riders/fourze#n_magnet)北磁极组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnet_switch_n",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnet_switch_s",
+			"title": "南磁极开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#magnetstates)磁极状态$(/l)和$(l:fourze/riders/fourze#s_magnet)南磁极组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnet_switch_s",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "freeze_switch",
+			"title": "冻结开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#freeze)制冷机组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:freeze_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "claw_switch",
+			"title": "爪开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#claw)爪组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:claw_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "board_switch",
+			"title": "滑板开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#board)滑板组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:board_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giantfoot_switch",
+			"title": "巨足开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#giantfoot)巨足组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giantfoot_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "aero_switch",
+			"title": "航空开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#aero)航天器组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:aero_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gyro_switch",
+			"title": "旋翼开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#gyro)旋翼组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gyro_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "net_switch",
+			"title": "捕虫网开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#net)捕虫网组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:net_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stamper_switch",
+			"title": "印章开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#stamper)印章组件$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stamper_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "cosmic_switch",
+			"title": "宇宙开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#cosmicstates)宇宙状态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:cosmic_switch",
+			"title": " ",
+			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_rocket_switch",
+			"title": "超级火箭开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#rocketstates)火箭状态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_rocket_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_launcher_switch",
+			"title": "超级发射器开关",
+			"text": "登场于：$(li)假面骑士Fourze：天高毕业（2014年，小说）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#launcherstates)发射器状态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_launcher_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_drill_switch",
+			"title": "超级钻头开关",
+			"text": "登场于：$(li)假面骑士×超级战队：超级英雄大战（2012年，电影）"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_drill_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clear_drill_switch",
+			"title": "清澈钻头开关",
+			"text": "登场于：$(li)假面骑士Fourze：友情之火箭钻头状态（2012年，超战斗DVD）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#rocket_drill_states)火箭钻头状态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:clear_drill_switch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:amazon/mobs/red_follower)红色追随者$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "meteor_switch",
+			"title": "流星开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于合成流星的$(l:fourze/devices/meteor_driver)流星驱动器$(/l)$(br2)用于切换流星的$(l:fourze/riders/meteor#meteor)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:meteor_switch",
+			"title": " ",
+			"text": "可在$(l:fourze/structures/m_bus)流星备份卫星$(/l)内找到"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "meteor_storm_switch",
+			"title": "流星风暴开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于变身为$(l:fourze/riders/meteor#meteor_storm)假面骑士流星风暴$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/meteor_storm_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "nadeshiko_switch",
+			"title": "抚子开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于合成抚子的$(l:fourze/devices/nadeshiko_driver)抚子驱动器$(/l)$(br2)用于切换抚子的$(l:fourze/riders/nadeshiko#nadeshiko)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:nadeshiko_switch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ikaros_switch",
+			"title": "Ikaros开关",
+			"text": "登场于：$(li)假面骑士Fourze：天高毕业（2014年，小说）$(br2)用于合成Ikaros的$(l:fourze/devices/ikaros_driver)Ikaros驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ikaros_switch",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "solu_switch",
+			"title": "解决开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）"
+		},
+		{
+			"type": "patchouli:smelting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/solu_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_switch",
+			"title": "融合开关",
+			"text": "登场于：$(li)假面骑士Fourze剧场版：大家一起宇宙来了！（2012年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#meteor_fusionstates)流星融合状态$(/l)$(l:fourze/riders/fourze#meteor_nadeshiko_fusionstates)（流星抚子融合状态）$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/fusion_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "core_switch",
+			"title": "核心开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:core_switch",
+			"title": " ",
+			"text": "物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rocket_switch_christmas_ver",
+			"title": "火箭开关（圣诞节版本）",
+			"text": "登场于：$(li)假面骑士Fourze天文开关系列（2011年，玩具系列）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rocket_switch_christmas_ver",
+			"title": " ",
+			"text": "打开$(l:misc/items/gift)圣诞礼盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider1_switch",
+			"title": "一号开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#ichigo)一号组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:ichigo/riders/ichigo)假面骑士一号$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/rider1_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rider2_switch",
+			"title": "二号开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#nigo)二号组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:nigo/riders/nigo)假面骑士二号$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/rider2_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v3_switch",
+			"title": "V3开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#v3)V3组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:v3/riders/v3)假面骑士V3$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/v3_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "riderman_switch",
+			"title": "骑士人开关",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#riderman)骑士人组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:riderman/riders/riderman)假面骑士骑士人$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/riderman_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_switch",
+			"title": "X开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#x)X组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/x_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "amazon_switch",
+			"title": "Amazon开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#amazon)Amazon组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/amazon_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stronger_switch",
+			"title": "强人开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#stronger)强人组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/stronger_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "skyrider_switch",
+			"title": "天空骑士开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#skyrider)天空骑士组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/skyrider_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "super_1_switch",
+			"title": "超一号开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#super_1)超一号组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/super_1_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zx_switch",
+			"title": "ZX开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#zx)ZX组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/zx_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_switch",
+			"title": "Black开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#black)Black组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/black_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rx_switch",
+			"title": "Black RX开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#rx)Black RX组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/rx_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kuuga_switch",
+			"title": "空我开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#kuuga)空我组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/kuuga_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_switch",
+			"title": "亚极陀开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#agito)亚极陀组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/agito_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ryuki_switch",
+			"title": "龙骑开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#ryuki)龙骑组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/ryuki_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_switch",
+			"title": "Faiz开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#faiz)Faiz组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/faiz_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blade_switch",
+			"title": "剑开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#blade)剑组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/blade_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hibiki_switch",
+			"title": "响鬼开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#hibiki)响鬼组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/hibiki_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_switch",
+			"title": "甲斗开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#kabuto)甲斗组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/kabuto_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_switch",
+			"title": "电王开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#den_o)电王组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/den_o_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kiva_switch",
+			"title": "Kiva开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#kiva)Kiva组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/kiva_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "decade_switch",
+			"title": "Decade开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#decade)Decade组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/decade_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_switch",
+			"title": "W开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#double)W组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/double_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_switch",
+			"title": "OOO开关",
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#ooo)OOO组件$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/ooo_switch"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shin_chan_switch",
+			"title": "新酱开关",
+			"text": "登场于：$(li)假面骑士Fourze×蜡笔小新（2012年，特别篇）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#shin-chan)基础状态（新酱版）$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_chan_switch",
+			"title": " ",
+			"text": "打开$(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zodiarts_switch",
+			"title": "星座使徒开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zodiarts_switch",
+			"title": " ",
+			"text": "物品目前无法获得"
+		}
+	]
+}

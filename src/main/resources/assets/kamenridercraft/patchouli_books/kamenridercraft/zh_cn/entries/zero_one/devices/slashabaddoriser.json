@@ -1,0 +1,43 @@
+{
+	"name": "斩击亚巴顿升华器",
+	"icon": "kamenridercraft:slash_abaddo_riser",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_abaddo_riser",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/abaddon)假面骑士亚巴顿"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_riser",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/abaddon)假面骑士·亚巴顿$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_abaddo_riser_r",
+			"title": "斩击亚巴顿升华器(赤)",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/abaddon#behru)假面骑士亚巴顿赤"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_riser_r",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士·亚巴顿(指挥官)$(/l)的装备"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_abaddo_riser_o",
+			"title": "斩击亚巴顿升华器(橘)",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME (2020年，电影)$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/abaddon#buga)假面骑士亚巴顿橘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:zero_one/slash_abaddo_riser_o",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/abaddon_commander)假面骑士·亚巴顿(指挥官)$(/l)的装备"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "入侵鲎劫持者",
+	"icon": "kamenridercraft:zero_one_logo",
+	"category": "kamenridercraft:zero_one/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:battle_raider",
+			"text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：玄武岩三角洲$(br2)掉落$(li)1-3个$(l:zero_one/items/hiden_metal)飞电金属$(/l)$(li)1个$(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l)$(li)1个$(l:zero_one/items/progrisekeys#invading_horseshoe_crab_progrisekey)入侵鲎程式升华钥$(/l) (20%)$(br2)进化$(li)$(l:zero_one/mobs/raider)劫持者$(/l) (2%)$(li)$(l:zero_one/mobs/naki)假面骑士·亡$(/l) (2%)$(li)$(l:zero_one/mobs/zaia)假面骑士·哉亚$(/l) (2%)$(li)$(l:zero_one/mobs/dire_wolf_sold_magia)恐狼索尔德魔机偶$(/l) (2%)$(li)$(l:zero_one/mobs/serval_tiger_sold_magia)剑齿虎索尔德魔机偶$(/l) (2%)"
+		}
+	]
+}

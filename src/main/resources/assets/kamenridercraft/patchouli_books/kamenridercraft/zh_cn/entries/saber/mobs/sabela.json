@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士佩剑",
+    "icon": "kamenridercraft:saber_logo",
+    "category": "kamenridercraft:saber/mobs",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:sabela",
+            "text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：180"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "通过挖掘$(l:misc/blocks/boss_blocks#sabela_boss_block)佩剑BOSS召唤方块$(/l)召唤而来$(br2)特殊能力：$(li)生命值低于100时，发动狼烟无梦并获得飞行能力$(br2)掉落$(li)4-6本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(li)1本$(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l)$(li)1本$(l:saber/items/wonder_ride_books#konchuu_daihyakka_wonder_ride_book)昆虫大百科奇幻驾驭书$(/l)$(li)1个$(l:saber/devices/royal_sword_of_logos_buckle#royal_sword_of_logos_buckle_sabela)荣誉真理之剑带扣$(/l)$(li)1个$(l:saber/arsenal/eneiken_noroshi)烟睿剑狼烟$(/l)"
+        }
+    ]
+}

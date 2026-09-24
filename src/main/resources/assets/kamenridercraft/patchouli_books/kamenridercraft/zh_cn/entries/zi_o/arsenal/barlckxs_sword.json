@@ -1,0 +1,16 @@
+{
+	"name": "旋影剑",
+	"icon": "kamenridercraft:barlckxs_sword",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)由$(l:zi_o/riders/barlckxs)假面骑士巴尔克斯$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/barlckxs_sword"
+		}
+	]
+}

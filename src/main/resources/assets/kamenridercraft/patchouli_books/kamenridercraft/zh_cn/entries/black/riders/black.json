@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士Black",
+	"icon": "kamenridercraft:red_king_stone",
+	"category": "kamenridercraft:black/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "black",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vital_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:black/items/red_king_stone)红色帝王石$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Black",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)通过穿戴$(l:black/devices/vital_charger)帝王石$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "batta_man",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vital_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:batta_man_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蝗虫人",
+			"text": "通过使用$(l:black/items/batta_man_king_stone)蝗虫人帝王石$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Black",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)通过穿戴$(l:black/devices/vital_charger)帝王石$(/l)进行变身$(br2)状态效果：$(li)急迫$(li)跳跃提升 II$(li)力量 II"
+		}
+	]
+}

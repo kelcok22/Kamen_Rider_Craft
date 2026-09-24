@@ -1,0 +1,16 @@
+{
+	"name": "拉布可芙（三角龙基因组）",
+	"icon": "kamenridercraft:lovekov_tricera",
+	"category": "kamenridercraft:revice/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Jeanne & 假面骑士阿基蕾拉 with Girls Remix (2022年，网络剧)$(br2)由 $(l:revice/riders/jeanne)假面骑士贞德$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/lovekov_tricera"
+		}
+	]
+}

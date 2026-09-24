@@ -1,0 +1,106 @@
+{
+	"name": "假面骑士巴尔坎",
+	"icon": "kamenridercraft:shotriser_vulcan",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_wolf",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "射击野狼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#shooting_wolf_progrisekey)射击野狼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)速度$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "punching_kong",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "拳击金刚",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#punching_kong_progrisekey)拳击金刚程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)力量 VIII（空手状态）$(li)力量 II（持武器状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey_vulcan\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "高跃蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)高跃蝗虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "assault_wolf",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:assault_wolf_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "突击野狼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#assault_wolf_progrisekey)突击野狼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 II$(li)夜视$(li)急迫$(li)跳跃提升 VII$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rampage_gatling",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:rampage_gatling_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狂暴加特林",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#rampage_gatling_progrisekey)狂暴加特林程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)急迫 III$(li)跳跃提升 V$(li)抗火$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "orthros",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shotriser_vulcan\",components:{custom_data:{slot_tex1:\"kamenridercraft:japanese_wolf_zetsumerisekey_vulcan\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "俄耳托斯",
+			"text": "通过使用 $(l:zero_one/items/zetsumerisekeys#japanese_wolf_zetsumerisekey)日本狼绝灭升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/aims_shotriser#shotriser_vulcan)艾姆斯射击升华器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 VII$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lone_wolf",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver_vulcan\",Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "独行狼",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士巴尔坎独行狼",
+			"text": "登场于：$(li)01 Others：假面骑士巴尔坎与瓦尔基里（2021年，V-Cinema电影）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver_vulcan)飞电01驱动器(巴尔坎)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)跳跃提升 VII$(li)力量 V"
+		}
+	]
+}

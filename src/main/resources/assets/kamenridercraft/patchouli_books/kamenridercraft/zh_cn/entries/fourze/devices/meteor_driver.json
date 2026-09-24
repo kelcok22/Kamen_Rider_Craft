@@ -1,0 +1,16 @@
+{
+	"name": "流星驱动器",
+	"icon": "kamenridercraft:meteor_driver",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)与$(l:fourze/devices/armor)Fourze装甲$(/l)一起穿戴，可变身为$(l:fourze/riders/meteor#meteor)假面骑士流星"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/meteor_driver"
+		}
+	]
+}

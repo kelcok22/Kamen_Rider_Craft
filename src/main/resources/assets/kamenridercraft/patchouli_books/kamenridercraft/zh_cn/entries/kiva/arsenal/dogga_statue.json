@@ -1,0 +1,19 @@
+{
+	"name": "德加雕像",
+	"icon": "kamenridercraft:dogga_statue",
+	"category": "kamenridercraft:kiva/arsenal",
+	"sortnum": 18,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)用于召唤 $(l:kiva/mobs/dogga)德加$(/l)"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:dogga_statue",
+        "title": " ",
+        "text": "可在 $(l:kiva/structures/castle_doran)城堡德兰龙$(/l) 中找到"
+      }
+	]
+}

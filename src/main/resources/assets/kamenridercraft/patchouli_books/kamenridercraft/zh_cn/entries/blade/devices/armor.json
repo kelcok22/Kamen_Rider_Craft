@@ -1,0 +1,24 @@
+{
+	"name": "剑装甲",
+	"icon": "kamenridercraft:bladehead",
+	"category": "kamenridercraft:blade/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与剑系骑士的变身腰带一同使用，可变身为该骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/bladehead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/bladetroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/bladelegs"
+		}
+	]
+}

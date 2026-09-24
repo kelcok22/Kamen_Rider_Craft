@@ -1,0 +1,16 @@
+{
+	"name": "金凤召机",
+	"icon": "kamenridercraft:guld_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)ICON: 篠原保角色艺术集（2006年，画册）$(br2)由$(l:ryuki/riders/blade)假面骑士Blade$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/guld_visor"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士Mage",
+	"icon": "kamenridercraft:magewizardriver",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "amber",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:magewizardriver\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Mage",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴$(l:wizard/devices/mages_belt#magewizardriver)Mage腰带(Mage)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "blue",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:magewizardriver_b\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Mage",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴$(l:wizard/devices/mages_belt#magewizardriver)Mage腰带(蓝Mage)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "green",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:magewizardriver_g\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Mage",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴$(l:wizard/devices/mages_belt#magewizardriver)Mage腰带(绿Mage)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升$(li)力量"
+		}
+	]
+}

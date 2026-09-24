@@ -1,0 +1,17 @@
+{
+	"name": "兆目润泽器",
+	"icon": "kamenridercraft:mega_ulorder",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/necrom)假面骑士幽冥"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/mega_ulorder",
+          "text": "掉落自：$(li)$(l:ghost/mobs/necrom)假面骑士幽冥$(/l)的装备"
+		}
+	]
+}

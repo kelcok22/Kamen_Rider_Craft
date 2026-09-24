@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zx/main",
+    "name": "相关生物",
+    "description": "",
+    "icon": "kamenridercraft:zx_logo",
+    "sortnum": 3
+}

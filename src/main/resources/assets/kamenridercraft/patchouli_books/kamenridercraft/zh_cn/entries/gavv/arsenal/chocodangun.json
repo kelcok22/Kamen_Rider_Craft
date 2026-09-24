@@ -1,0 +1,16 @@
+{
+	"name": "巧克力弹枪",
+	"icon": "kamenridercraft:chocodangun",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由加布的$(l:gavv/riders/gavv#chocodan)巧克弹形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/chocodangun"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "吉普之匕",
+  "icon": "kamenridercraft:jeeb_dagger",
+  "category": "kamenridercraft:gavv/arsenal",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)使用"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:gavv/jeeb_dagger",
+      "text": "掉落自：$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)的装备"
+    }
+  ]
+}

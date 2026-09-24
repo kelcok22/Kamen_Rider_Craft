@@ -1,0 +1,16 @@
+{
+	"name": "Drive驱动器",
+	"icon": "kamenridercraft:brain_driver",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)Drive Saga：假面骑士Brain (2019年，网络剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/brain)假面骑士大脑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/brain_driver"
+		}
+	]
+}

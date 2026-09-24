@@ -1,0 +1,19 @@
+{
+	"name": "古罗巴里萨",
+	"icon": "kamenridercraft:guronbaryamu",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 14,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)由$(l:gaim/mobs/lord_baron)勋爵巴隆$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:guronbaryamu",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:gaim/mobs/lord_baron)勋爵巴隆$(/l)"
+		}
+	]
+}

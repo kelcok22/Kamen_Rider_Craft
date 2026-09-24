@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "海姆冥界",
+    "description": "",
+    "icon": "kamenridercraft:sid_lockseed",
+    "sortnum": 5
+}

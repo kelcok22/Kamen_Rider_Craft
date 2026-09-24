@@ -1,0 +1,16 @@
+{
+	"name": "眼枪军刀(薙刀)",
+	"icon": "kamenridercraft:gan_gun_saber_naginata",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)搭配$(l:ghost/riders/ghost#ore)俺魂$(/l)或$(l:ghost/riders/ghost#musashi)武藏魂$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_saber_naginata"
+		}
+	]
+}

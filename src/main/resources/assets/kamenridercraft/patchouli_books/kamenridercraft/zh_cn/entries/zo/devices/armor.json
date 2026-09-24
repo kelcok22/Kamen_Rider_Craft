@@ -1,0 +1,24 @@
+{
+	"name": "ZO装甲",
+	"icon": "kamenridercraft:zohead",
+	"category": "kamenridercraft:zo/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与$(l:zo/devices/zo_core)ZO核心$(/l)一起穿戴，可变身为$(l:zo/riders/zo)假面骑士ZO"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/zohead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/zotroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zo/zolegs"
+		}
+	]
+}

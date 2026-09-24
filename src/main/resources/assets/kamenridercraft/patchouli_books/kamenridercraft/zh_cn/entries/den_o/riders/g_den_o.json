@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士G电王",
+	"icon": "kamenridercraft:rider_ticket_g",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:g_den_o_belt\",Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士G电王",
+			"text": "登场于：$(li)超级电王三部曲：EPISODE YELLOW 宝藏DE-End海盗 (2010年，电影)$(br2)通过穿戴$(l:den_o/devices/g_den_o_belt)G电王腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升$(li)夜视$(li)生命恢复$(li)力量"
+		}
+	]
+}

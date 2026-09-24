@@ -1,0 +1,19 @@
+{
+	"name": "樱花飓风锁种",
+	"icon": "kamenridercraft:sakura_hurricane",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 99,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sakura_hurricane",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)在方块上使用可召唤樱花飓风号$(br2)掉落自：$(li)$(l:misc/blocks/helheim_vine)海姆冥界藤蔓$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:sakura_hurricane",
+			"text": "由$(l:gaim/riders/gaim)装甲骑士$(/l)使用"
+		}
+	]
+}

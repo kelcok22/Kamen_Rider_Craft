@@ -1,0 +1,34 @@
+{
+	"name": "阿波罗盖斯特",
+	"icon": "kamenridercraft:apollogeist_core",
+	"category": "kamenridercraft:x/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阿波罗盖斯特"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "阿波罗盖斯特",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)通过穿戴$(l:x/devices/apollogeist_belt)阿波罗盖斯特腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)跳跃提升 III$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "apollogeist_reborn",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:apollogeist_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:apollogeist_reborn_core\"}},Count:1b},{id:\"kamenridercraft:xlegs\",Count:1b},{id:\"kamenridercraft:xtroso\",Count:1b},{id:\"kamenridercraft:xhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "重生阿波罗盖斯特",
+			"text": "通过通过穿戴$(l:x/items/apollogeist_reborn_core)重生阿波罗盖斯特核心$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "重生阿波罗盖斯特",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br2)通过穿戴$(l:x/devices/apollogeist_belt)阿波罗盖斯特腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)烈焰环身 III$(li)跳跃提升 IV$(li)抗火$(li)力量 II"
+		}
+	]
+}

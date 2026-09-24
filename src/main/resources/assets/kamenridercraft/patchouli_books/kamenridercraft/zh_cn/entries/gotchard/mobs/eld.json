@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士艾尔德",
+	"icon": "kamenridercraft:gotchard_logo",
+	"category": "kamenridercraft:gotchard/mobs",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:eld",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#eld_boss_block)Eld召唤方块$(/l)召唤而来$(br2)掉落$(li)10个$(l:gotchard/items/blank_ride_chemy_card)空白凯米卡$(/l)$(li)1个$(l:gotchard/items/ride_chemy_cards#eldragon_chemy_card)黄金龙驾驭凯米卡$(/l)$(li)1个$(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card_ultima)究极蝗虫1号驾驭凯米卡$(/l)（消耗背包中的$(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)蝗虫一号驾驭凯米卡$(/l)）$(li)1个$(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card_ultima)究极蒸汽列车驾驭凯米卡$(/l)（消耗背包中的$(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)蒸汽列车驾驭凯米卡$(/l)）"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "双重台风核心",
+	"icon": "kamenridercraft:double_typhoon_core",
+	"category": "kamenridercraft:v3/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士V3（1973年，电视剧）$(br2)用于制作V3的$(l:v3/devices/double_typhoon#double_typhoon)双重台风腰带$(/l)$(br2)用于变身V3 的 $(l:v3/riders/v3#v3)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:double_typhoon_core",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:v3/mobs/destron_combatman)迪斯特龙战斗员$(/l)"
+		}
+	]
+}

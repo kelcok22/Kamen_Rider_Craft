@@ -1,0 +1,19 @@
+{
+	"name": "游隼君",
+	"icon": "kamenridercraft:hayabusa_kun",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 49,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Fourze (2011年, 电视剧)$(br2)可装备在头部护甲栏位"
+		},
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:hayabusa_kun",
+        "title": " ",
+        "text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)内找到"
+      }
+    ]
+}

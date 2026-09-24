@@ -1,0 +1,16 @@
+{
+	"name": "宇宙组件 巴利噌圣剑",
+	"icon": "kamenridercraft:barizun_sword",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)由Fourze的$(l:fourze/riders/fourze#cosmicstates)宇宙状态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/barizun_sword"
+		}
+	]
+}

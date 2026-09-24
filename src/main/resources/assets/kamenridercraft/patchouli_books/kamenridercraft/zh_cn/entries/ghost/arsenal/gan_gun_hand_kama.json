@@ -1,0 +1,16 @@
+{
+	"name": "眼枪手(镰刀)",
+	"icon": "kamenridercraft:gan_gun_hand_kama",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)搭配$(l:ghost/riders/specter#tutankhamun)图坦卡蒙魂$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_hand_kama"
+		}
+	]
+}

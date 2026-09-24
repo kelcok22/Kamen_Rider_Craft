@@ -1,0 +1,46 @@
+{
+    "name": "最终假面形态驾驭卡",
+    "icon": "kamenridercraft:kuuga_ball",
+    "category": "kamenridercraft:decade/items",
+    "sortnum": 9,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "decade_ooo_armor_card",
+            "text": "登场于：$(li)OOO的世界 (2015年，S.I.C.英雄传奇)$(br2)用于切换Decade的 $(l:decade/riders/decade#ooo_armor)OOO装甲$(/l)形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:decade_ooo_armor_card",
+            "title": "OOO武装 形态假面驾驭卡",
+            "text": "掉落自：$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_ball",
+            "title": "空我球最终 形态假面驾驭卡",
+            "text": "登场于：$(li)假面骑士大战：Ganbaride (2008年，街机游戏)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#kuuga_ball)空我球$(/l)形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_ball",
+            "title": " ",
+            "text": "通过开启 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chalice_choco",
+            "title": "巧卡利斯 形态假面驾驭卡",
+            "text": "登场于：$(li)OOO·电王·全骑士：Let's Go 假面骑士：~来看看吧！只有你的48位骑士~ (2011年，网络电影)$(br2)用于切换卡利斯的 $(l:blade/riders/chalice#chalice_choco)巧卡利斯$(/l)形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:final_form_ride_chalice_choco",
+            "title": " ",
+            "text": "通过开启情人节 $(l:misc/items/gashapon_capsules#valentine_gashapon_capsule)扭蛋胶囊$(/l) 获得"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+	"name": "假面骑士Slash",
+	"icon": "kamenridercraft:sword_of_logos_buckle_slash",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "hanselnuts_to_gretel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:hanselnuts_to_gretel_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "汉森纳茨和格雷特形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#hanselnuts_to_gretel_wonder_ride_book)汉森纳茨和格雷特奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Slash",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_slash)真理之剑带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)力量（持剑时）$(li)速度 II$(li)急迫 III$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bremen_no_rock_band",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:bremen_no_rock_band_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "汉森不莱梅形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#bremen_no_rock_band_wonder_ride_book)不莱梅摇滚乐队奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Slash",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_slash)真理之剑带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)力量（持剑时）$(li)速度 V$(li)急迫 V$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kobuta_3_kyoudai",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sword_of_logos_buckle_slash\",components:{custom_data:{slot_tex1:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book_slash\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "汉森三只小猪形态",
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#kobuta_3_kyoudai_wonder_ride_book)三只小猪奇幻驾驭书$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Slash",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/sword_of_logos_buckle#sword_of_logos_buckle_slash)真理之剑带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)力量（持剑时）$(li)速度 II$(li)抗性提升 II$(li)急迫 III$(li)饱和"
+		}
+	]
+}

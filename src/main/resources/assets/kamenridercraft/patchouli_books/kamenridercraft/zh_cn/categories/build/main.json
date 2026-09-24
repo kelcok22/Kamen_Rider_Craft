@@ -1,0 +1,7 @@
+{ 
+    "parent": "kamenridercraft:main/heisei",
+    "name": "假面骑士Build",
+    "description": "与《假面骑士Build》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:build_logo",
+    "sortnum": 33
+}

@@ -1,0 +1,16 @@
+{
+	"name": "死亡召机",
+	"icon": "kamenridercraft:dest_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 31,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/tiger)假面骑士大牙$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/dest_visor"
+		}
+	]
+}

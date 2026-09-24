@@ -1,0 +1,110 @@
+{
+	"name": "魔法石",
+	"icon": "kamenridercraft:wizardgem",
+	"category": "kamenridercraft:wizard/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用作合成大多数Wizard系列物品的基础合成材料和修复材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem",
+			"text": "可在Wizard$(l:misc/stageshow)舞台秀$(/l)中获取$(br2)掉落自：$(li)$(l:misc/blocks/wizardgemblock)魔法宝石矿石$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)深层魔法宝石矿石$(/l)$(li)$(l:wizard/mobs/ghouls)幻魔$(/l)$(li)$(l:wizard/mobs/medusa_phantom)美杜莎幻魔$(/l)$(li)$(l:wizard/mobs/phoenix_phantom)不死鸟幻魔$(/l)$(li)$(l:wizard/mobs/gremlin_phantom)格雷姆林幻魔$(/l)$(li)$(l:wizard/mobs/mage_footsoldier)近卫队士兵$(/l)$(li)$(l:wizard/mobs/mage_captain)近卫队队长$(/l)$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l)$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)$(li)$(l:gotchard/mobs/malgam)玛尔甘$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_red",
+			"title": "红魔法石",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用作$(l:wizard/items/wizard_rings#flame_ring)火焰巫师指环$(/l)及其他巫师指环的基础合成材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_red",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/wizardgemblock)魔法宝石矿石$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)深层魔法宝石矿石$(/l)$(li)$(l:wizard/mobs/ghouls)幻魔$(/l)$(li)$(l:wizard/mobs/phoenix_phantom)不死鸟幻魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_blue",
+			"title": "蓝魔法石",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用作$(l:wizard/items/wizard_rings#water_ring)流水巫师指环$(/l)及其他巫师指环的基础合成材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_blue",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/wizardgemblock)魔法宝石矿石$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)深层魔法宝石矿石$(/l)$(li)$(l:wizard/mobs/ghouls)幻魔$(/l)$(li)$(l:wizard/mobs/phoenix_phantom)不死鸟幻魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_green",
+			"title": "绿魔法石",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用作$(l:wizard/items/wizard_rings#hurricane_ring)飓风巫师指环$(/l)及其他巫师指环的基础合成材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_green",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/wizardgemblock)魔法宝石矿石$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)深层魔法宝石矿石$(/l)$(li)$(l:wizard/mobs/ghouls)幻魔$(/l)$(li)$(l:wizard/mobs/gremlin_phantom)格雷姆林幻魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_yellow",
+			"title": "黄魔法石",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用作$(l:wizard/items/wizard_rings#land_ring)大地巫师指环$(/l)及其他巫师指环的基础合成材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_yellow",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/wizardgemblock)魔法宝石矿石$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)深层魔法宝石矿石$(/l)$(li)$(l:wizard/mobs/ghouls)幻魔$(/l)$(li)$(l:wizard/mobs/gremlin_phantom)格雷姆林幻魔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_violet",
+			"title": "紫魔法石",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用作$(l:wizard/riders/wiseman)白魔法师$(/l)的巫师指环基础合成材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_violet",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/wizardgemblock)魔法宝石矿石$(/l)$(li)$(l:misc/blocks/deepslate_wizardgemblock)深层魔法宝石矿石$(/l)$(li)$(l:wizard/mobs/medusa_phantom)美杜莎幻魔$(/l)$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_black",
+			"title": "黑魔法石",
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)用作$(l:wizard/items/wizard_rings#sorcerer_ring)金色魔法师$(/l)和$(l:wizard/items/wizard_rings#black_ring)黑Wizard$(/l)的指环基础合成材料"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_black",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardgem_cyan",
+			"title": "淡蓝色魔法石",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于合成$(l:wizard/items/wizard_rings#infinity_ring)无限$(/l)和$(l:wizard/items/wizard_rings#finish_strike_ring)终结突击$(/l)巫师指环"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wizardgem_cyan",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:wizard/mobs/mage_captain)近卫队队长$(/l)$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l)$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:decade/main",
+    "name": "腰带",
+    "description": "系列角色所使用的变身道具. 可以在铁砧上使用 $(l:decade/items/blank_card)空白假面驾驭卡$(/l)修复.",
+    "icon": "kamenridercraft:decadriver",
+    "sortnum": 1
+}

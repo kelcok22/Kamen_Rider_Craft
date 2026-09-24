@@ -1,0 +1,16 @@
+{
+	"name": "土豪剑激土",
+	"icon": "kamenridercraft:dogouken_gekido",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/riders/buster)假面骑士Buster$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/dogouken_gekido"
+		}
+	]
+}

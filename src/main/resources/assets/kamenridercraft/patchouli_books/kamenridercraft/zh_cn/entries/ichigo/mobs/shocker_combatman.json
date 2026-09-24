@@ -1,0 +1,17 @@
+{
+	"name": "修卡战斗员",
+	"icon": "kamenridercraft:shocker_emblem",
+	"category": "kamenridercraft:ichigo/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman",
+			"text": "登场于:$(li)假面骑士 (1971, 电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在光照等级低于8的整个主世界中生成$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路$(/l) (31%)$(li)1个$(l:ichigo/items/typhoon_cores#typhoon_core)台风核心$(/l) (31%)$(li)1个$(l:ichigo/items/typhoon_cores#typhoon_core_nigo)台风核心 (二号)$(/l) (25%)$(li)1个$(l:ichigo/items/typhoon_cores#original_typhoon_core)台风核心 (原版)$(/l) (6.3%)$(li)1个$(l:ichigo/items/typhoon_cores#sakurajima_typhoon_core)台风核心 (樱岛)$(/l) (6.3%)$(li)1个$(l:misc/items/music_discs#lets_go_rider_kick_music_disc)Let's Go!! 骑士踢音乐光盘$(/l) (如果被$(l:ichigo/riders/ichigo)假面骑士一号$(/l)踢中)$(li)1个$(l:misc/items/gift)圣诞礼盒$(/l) (12月22日-12月28日期间掉落)$(br2)进化$(li)$(l:ichigo/mobs/shocker_riders)修卡骑士$(/l) (20%)"
+		}
+	]
+}

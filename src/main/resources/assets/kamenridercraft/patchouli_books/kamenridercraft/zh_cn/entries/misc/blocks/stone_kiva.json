@@ -1,0 +1,19 @@
+{
+    "name": "觉醒哨矿",
+    "icon": "kamenridercraft:stone_kiva",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 15,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得Kiva的 $(l:kiva/items/fuestles#wakeupfuestle)笛哨$(/l)$(br2)需要铁镐或更好的镐子"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:stone_kiva",
+            "title": " ",
+            "text": "掉落：$(li)$(l:kiva/items/fuestle)笛哨$(/l)（66.7%）$(li)$(l:kiva/items/fuestles#wakeupfuestle)觉醒笛哨(Kiva)$(/l)（8.9%）$(li)$(l:kiva/items/fuestles#garulufuestle)加鲁鲁笛哨$(/l)（6.7%）$(li)$(l:kiva/items/fuestles#basshaafuestle)巴夏笛哨$(/l)（6.7%）$(li)$(l:kiva/items/fuestles#doggafuestle)德加笛哨$(/l)（6.7%）$(li)$(l:kiva/items/fuestles#tatsulot)魔皇龙笛哨$(/l)（2.2%）$(li)$(l:kiva/items/fuestles#kiva_says_fuestle)红色魔$(l:kiva/items/fuestles#kiva_says_fuestle)红色魔皇龙笛哨$(/l)（2.2%）"
+            }
+    ]
+}

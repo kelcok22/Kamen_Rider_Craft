@@ -1,0 +1,17 @@
+{
+	"name": "空白开关",
+	"icon": "kamenridercraft:astroswitch",
+	"category": "kamenridercraft:fourze/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用作制作大多数Fourze系列物品的基础材料和修复材料$(br2)可在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)上使用，以获取天文开关"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/astroswitch",
+			"text": "可在$(l:fourze/structures/rabbit_hutch)玉兔舱$(/l)和$(l:fourze/structures/m_bus)流星备份卫星$(/l)内找到$(br2)掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
+		}
+	]
+}

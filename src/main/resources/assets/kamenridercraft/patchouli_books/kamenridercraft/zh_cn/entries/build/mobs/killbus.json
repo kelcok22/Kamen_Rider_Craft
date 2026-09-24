@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士Killbus",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:killbus",
+			"text": "登场于：$(li)Build NEW WORLD：假面骑士克罗兹 (2019年，V-Cinema电影)$(br)生命值：90"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:build/mobs/downfall_guardian)陷灭防卫者$(/l)进化而来$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/fullbottles#killbus_spider_full_bottle)Killbus蜘蛛满装瓶罐$(/l)$(li)1个$(l:build/items/nebula_gas_sample)星云气体样本$(/l) (72.7%)$(li)1个$(l:build/items/evolbottles#great_dragon_evol_bottle)伟大龙进化满装瓶罐$(/l) (27.3%)"
+		}
+	]
+}

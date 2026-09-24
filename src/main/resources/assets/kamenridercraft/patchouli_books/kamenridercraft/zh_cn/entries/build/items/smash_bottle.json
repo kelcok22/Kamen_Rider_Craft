@@ -1,0 +1,17 @@
+{
+	"name": "猛击者瓶罐",
+	"icon": "kamenridercraft:smash_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)在$(l:misc/blocks/machine_blocks#fullbottle_purifier)满瓶净化器$(/l)上使用，可获得满装瓶罐"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:build/smash",
+			"text": "掉落自：$(li)$(l:build/mobs/needle_smash)针刺猛击者$(/l)$(li)$(l:build/mobs/stag_lost_smash)锹形迷失猛击者$(/l)$(li)$(l:build/mobs/owl_lost_smash)猫头鹰迷失猛击者$(/l)$(li)$(l:build/mobs/castle_lost_smash)城堡迷失猛击者$(/l)$(li)$(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)"
+		}
+	]
+}

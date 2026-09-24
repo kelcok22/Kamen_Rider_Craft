@@ -1,0 +1,16 @@
+{
+	"name": "歌查点火器",
+	"icon": "kamenridercraft:gotchar_igniter",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成瓦尔巴拉德的$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#fire_steamhopper)火焰歌查德$(/l)形态$(br2)可切换黎明歌查德的$(l:gotchard/riders/gotchard_daybreak#fire)火焰黎明歌查德$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/gotchar_igniter"
+		}
+	]
+}

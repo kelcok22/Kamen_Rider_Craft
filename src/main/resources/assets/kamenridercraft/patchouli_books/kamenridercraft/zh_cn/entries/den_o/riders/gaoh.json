@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士牙王",
+	"icon": "kamenridercraft:rider_ticket_gaoh",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gaoh_belt\",Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士牙王",
+			"text": "登场于：$(li)假面骑士电王：老子，诞生！ (2007年，电影)$(br2)通过穿戴$(l:den_o/devices/gaoh_belt)牙王腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度 III$(li)抗性提升$(li)生命恢复"
+		}
+	]
+}

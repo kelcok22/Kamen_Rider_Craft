@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:misc/misc",
+    "name": "杂项物品",
+    "description": "这类物品要么与多个不同系列的骑士相关联，要么不属于任何特定的骑士系列。",
+    "icon": "kamenridercraft:card_warrior_kamen_rider_manga",
+    "sortnum": 0
+}

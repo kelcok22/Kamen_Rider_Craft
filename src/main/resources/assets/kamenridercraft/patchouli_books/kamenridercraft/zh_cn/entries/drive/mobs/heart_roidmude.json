@@ -1,0 +1,17 @@
+{
+	"name": "恶路程式·心脏",
+	"icon": "kamenridercraft:drive_logo",
+	"category": "kamenridercraft:drive/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:heart_roidmude",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br)生命值: 60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有3.3%的几率从$(l:drive/mobs/roidmude)恶路程式$(/l)进化而来$(br2)掉落$(li)3-5个$(l:drive/items/shift_alloy)换挡锭$(/l)$(li)1个$(l:drive/items/viral_cores#viral_core_neo_spider)新型蜘蛛病毒核心$(/l) (75%)$(li)1个$(l:drive/items/roidmude_cores#roidmude_core_002)恶路程式002$(/l) (25%)"
+		}
+	]
+}

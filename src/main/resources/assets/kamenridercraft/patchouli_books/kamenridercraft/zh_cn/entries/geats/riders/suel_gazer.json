@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士稣艾尔Gazer",
+	"icon": "kamenridercraft:vision_driver_gazer_suel",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 36,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:vision_driver_gazer_suel\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士稣艾尔Gazer",
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/vision_driver#vision_driver_gazer_suel)幻视驱动器(稣艾尔Gazer)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 IV$(li)缓降 IV$(li)跳跃提升 VI"
+		}
+	]
+}

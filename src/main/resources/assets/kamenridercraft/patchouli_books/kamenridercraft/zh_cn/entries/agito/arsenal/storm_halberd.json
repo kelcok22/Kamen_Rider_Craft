@@ -1,0 +1,16 @@
+{
+	"name": "风暴战戟",
+	"icon": "kamenridercraft:storm_halberd",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)由亚极陀的$(l:agito/riders/agito#storm)风暴形态$(/l)及$(l:agito/riders/agito#trinity)三位一体形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/storm_halberd"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Birth破坏枪",
+	"icon": "kamenridercraft:birth_buster",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)由假面骑士$(l:ooo/riders/birth)Birth$(/l)与$(l:ooo/riders/birth_proto_type)Birth原型$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/birth_buster"
+		}
+	]
+}

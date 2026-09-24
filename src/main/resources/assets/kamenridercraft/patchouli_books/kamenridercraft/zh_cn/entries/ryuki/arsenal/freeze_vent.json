@@ -1,0 +1,19 @@
+{
+    "name": "冰冻降临卡",
+    "icon": "kamenridercraft:freeze_vent",
+    "category": "kamenridercraft:ryuki/arsenal",
+    "sortnum": 59,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)由 $(l:ryuki/riders/tiger)假面骑士大牙$(/l) 搭配 $(l:ryuki/arsenal/dest_visor)死亡召机$(/l) 使用，对附近生物施加缓降 VI、挖掘疲劳 VI 和缓慢 VI，持续10秒"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:freeze_vent",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#tiger)假面骑士大牙$(/l)"
+        }
+    ]
+}

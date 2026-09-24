@@ -1,0 +1,16 @@
+{
+	"name": "醒剑",
+	"icon": "kamenridercraft:glaiverouzer",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)由$(l:blade/riders/glaive)假面骑士长刃$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/glaiverouzer"
+		}
+	]
+}

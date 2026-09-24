@@ -1,0 +1,46 @@
+{
+    "name": "扭蛋胶囊",
+    "icon": "kamenridercraft:gashapon_capsule",
+    "category": "kamenridercraft:misc/items",
+    "sortnum": 14,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "gashapon_capsule",
+            "text": "打开时随机获得物品$(br2)掉落：$(li)$(l:misc/blocks/chair_blocks#ichigo_chair)一号椅子$(/l)（5%）$(li)$(l:misc/blocks/chair_blocks#red_ichigo_chair)赤骑士椅子$(/l)（5%）$(li)$(l:misc/items/ichigo_mask)一号面具$(/l)（5%）$(li)$(l:misc/items/v3_mask)V3面具$(/l)（5%）$(li)$(l:skyrider/items/gg_core)钢勘次徽章$(/l)（5%）$(li)$(l:kuuga/arsenal/kuuga_phone)空我的手机$(/l)（5%）$(li)$(l:den_o/devices/shin_o_belt)新王腰带$(/l)（5%）$(li)$(l:kiva/items/bloody_rose)血红玫瑰$(/l)（5%）$(li)$(l:decade/items/final_formride_cards#kuuga_ball)空我球最终 形态假面驾驭卡$(/l)（5%）$(li)$(l:w/items/akiko_no_slipper)亚树子的拖鞋$(/l)（5%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gashapon_capsule",
+            "title": "扭蛋胶囊",
+            "text": "$(li)$(l:ooo/items/tomorrows_underwear)明日的内裤$(/l)（5%）$(li)$(l:fourze/items/astroswitches#shin_chan_switch)新酱开关$(/l)（5%）$(li)$(l:ghost/items/gamma_eyecons#yurusen_gamma_eyecon)游流仙眼魔眼魂$(/l)（5%）$(li)$(l:ghost/items/gamma_eyecons#sister_gamma_eyecon)姐妹眼魔眼魂$(/l)（5%）$(li)$(l:misc/blocks/decor_blocks#genm_continue)Continue水管$(/l)（5%）$(li)$(l:revice/items/vistamps#kirin_vistamp)长颈鹿罪恶印章$(/l)（5%）$(li)$(l:revice/items/vistamps#niwatori_vistamp)家鸡罪恶印章$(/l)（5%）$(li)$(l:revice/items/vistamps#funkorogashi_vistamp)蜣螂罪恶印章$(/l)（5%）$(li)$(l:geats/items/raise_buckles#shark_raise_buckle)鲨鱼代扣$(/l)（5%）$(li)$(l:gavv/items/gochizo#gumgumgum_gochizo)橡皮糖饱藏$(/l)（5%）$(li)$(l:zeztz/arsenal/zeztz_horse_armor)Zeztz马铠$(/l)（5%）$(br2)在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和新手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "halloween_gashapon_capsule",
+            "title": "万圣节扭蛋胶囊",
+            "text": "打开时随机获得物品$(br2)掉落：$(li)$(l:zi_o/items/ridewatches#bibiru_geiz_ridewatch)惊悚Geiz骑士表盘$(/l)（11.1%）$(li)$(l:geats/items/raise_buckles#clear_arrow_raise_buckle)弓代扣(透明版)$(/l)（11.1%）$(li)$(l:misc/blocks/punkjackolantern)庞克杰克灯笼$(/l)（11.1%）$(li)$(l:gavv/items/gochizo#poppingummy_gochizo_halloween)调皮砰击软糖饱藏$(/l)（11.1%）$(li)$(l:gavv/items/gochizo#chocozon_gochizo)巧克茧饱藏$(/l)（11.1%）$(li)$(l:gavv/items/gochizo#doracan_gochizo)多拉坎饱藏$(/l)（11.1%）$(li)$(l:gavv/items/gochizo#pumpkin_gochizo)南瓜饱藏$(/l)（11.1%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:halloween_gashapon_capsule",
+            "title": " ",
+            "text": "$(li)$(l:zeztz/items/capsems#sweets_capsem)Zeztz梦境胶囊(甜点版)$(/l)（11.1%）$(li)$(l:misc/blocks/ferbus)费布斯$(/l)（11.1%）$(br2)在10月24日至31日期间，在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和老手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "valentine_gashapon_capsule",
+            "title": "情人节扭蛋胶囊",
+            "text": "打开时随机获得物品$(br2)掉落：$(li)$(l:zi_o/items/manhole_cover)井盖$(/l)（11.1%）$(li)$(l:decade/items/final_formride_cards#chalice_choco)巧卡利斯 形态假面驾驭卡$(/l)（11.1%）$(li)$(l:ooo/items/core_medals#love_core_medal)恋爱核心硬币(头)$(/l)（11.1%）$(li)$(l:ooo/items/core_medals#love_core2_medal)恋爱核心硬币(胸)$(/l)（11.1%）$(li)$(l:ooo/items/core_medals#love_core3_medal)恋爱核心硬币(腿)$(/l)（11.1%）$(li)$(l:misc/blocks/lovekov_plush)拉布可芙毛绒玩偶$(/l)（11.1%）$(li)$(l:ex_aid/items/rider_gashats#toki_meki_bridal_gashat)心跳婚纱卡带$(/l)（11.1%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:valentine_gashapon_capsule",
+            "title": " ",
+            "text": "$(li)$(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card_televikun)Firemars驾驭凯米卡(电视君版)（11.1%）$(li)$(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card_televikun)Inphoenix驾驭凯米卡(电视君版)（11.1%）$(br2)在2月13日至18日期间，在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和老手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kabuto/main",
+    "name": "腰带",
+    "description": "甲斗系列骑士所使用的变身道具. 可以在铁砧上使用 $(l:kabuto/items/mini_zecter)原虫外壳$(/l)修复.",
+    "icon": "kamenridercraft:kabuto_rider_belt",
+    "sortnum": 1
+}

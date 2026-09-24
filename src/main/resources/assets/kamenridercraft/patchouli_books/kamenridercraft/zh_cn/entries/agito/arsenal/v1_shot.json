@@ -1,0 +1,16 @@
+{
+	"name": "V1射手",
+	"icon": "kamenridercraft:v1_shot",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 15,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)由$(l:agito/riders/v-1)假面骑士V1$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/v1_shot"
+		}
+	]
+}

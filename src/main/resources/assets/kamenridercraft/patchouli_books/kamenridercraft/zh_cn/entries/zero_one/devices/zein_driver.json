@@ -1,0 +1,16 @@
+{
+	"name": "善意驱动器",
+	"icon": "kamenridercraft:zein_driver",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士界外者（2022年，网络剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/zein)假面骑士善意"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/zein_driver"
+		}
+	]
+}

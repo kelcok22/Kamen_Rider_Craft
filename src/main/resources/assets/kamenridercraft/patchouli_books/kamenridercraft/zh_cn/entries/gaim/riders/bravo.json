@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士布拉沃",
+	"icon": "kamenridercraft:sengoku_driver_bravo",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "durian",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:durian_lockseed\",slot_tex2:\"kamenridercraft:basic_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "榴莲武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#durian_lockseed)榴莲锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士布拉沃",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_bravo)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)急迫$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kingdurian",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_durian_lockseed\",slot_tex2:\"kamenridercraft:basic_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "王者榴莲武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#king_durian_lockseed)王者榴莲锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士布拉沃",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士古列顿VS假面骑士布拉沃 (2020年，网络剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_bravo)战极驱动器$(/l)进行变身$(br2)状态效果：$(li)急迫 II$(li)饱和$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_melon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_melon_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阵羽蜜瓜武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#melon_energy_lockseed)蜜瓜能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士布拉沃",
+			"text": "登场于：$(li)S.I.C. 英雄传奇 (2017年，玩具系列)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_bravo)战极驱动器$(/l)进行变身$(br2)此形态可由 $(l:gaim/riders/gaim)铠武$(/l)、$(l:gaim/riders/ryugen)龙玄$(/l)、$(l:gaim/riders/zangetsu)斩月$(/l)、$(l:gaim/riders/bravo)布拉沃$(/l) 及 $(l:gaim/riders/knuckle)纳高尔$(/l) 使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)夜视$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hibiki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_bravo\",components:{custom_data:{slot_tex1:\"kamenridercraft:hibiki_lockseed\",slot_tex2:\"kamenridercraft:basic_bravo_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "响鬼武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#hibiki_lockseed)响鬼锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士布拉沃",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_bravo)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫 II$(li)饱和$(li)力量"
+		}
+	]
+}

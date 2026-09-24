@@ -1,0 +1,17 @@
+{
+	"name": "反凯撒",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 20,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:kaiser_reverse",
+			"text": "登场于：$(li)假面骑士平成世代FINAL：Build & Ex-Aid with Legend Riders (2017年，电影)$(br)生命值：60"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "在城市维度内，有10%的几率从$(l:ex_aid/mobs/nebula_bugstervirus_mob)星云崩原体$(/l)进化而来$(br2)掉落$(li)2-3个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/gears#gear_engine_red)引擎齿轮(红)$(/l)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_condor_medal)秃鹫·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_batta_medal)飞蝗·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_cheetah_medal)猎豹·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_zou_medal)大象·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:ooo/items/foundation_x_core_medals#foundation_x_tako_medal)章鱼·核心硬币(财団X)$(/l) (20%)$(li)1个$(l:build/items/fullbottles#wizard_full_bottle)Wizard满装瓶罐$(/l) (50%)$(li)1个$(l:build/items/fullbottles#drive_full_bottle)Drive满装瓶罐$(/l) (50%)"
+		}
+	]
+}

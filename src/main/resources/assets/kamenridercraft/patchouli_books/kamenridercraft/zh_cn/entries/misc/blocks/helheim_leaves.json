@@ -1,0 +1,19 @@
+{
+	"name": "海姆冥界叶",
+	"icon": "kamenridercraft:helheim_leaves",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 45,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "破坏这些树叶可获得 $(l:misc/blocks/helheim_sapling)海姆冥界树苗$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_leaves",
+			"title": " ",
+			"text": "生成于海姆冥界树木上"
+		}
+	]
+}

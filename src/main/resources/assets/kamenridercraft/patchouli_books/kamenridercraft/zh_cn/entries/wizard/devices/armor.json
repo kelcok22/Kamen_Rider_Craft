@@ -1,0 +1,24 @@
+{
+	"name": "Wizard装甲",
+	"icon": "kamenridercraft:wizard_head",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Wizard系列骑士的驱动器配合使用，可变身为对应骑士$(br2)掉落自：$(li)$(l:wizard/mobs/mage_footsoldier)近卫队士兵$(/l)的装备$(li)$(l:wizard/mobs/mage_captain)近卫队队长$(/l)的装备$(li)$(l:wizard/mobs/sorcerer)假面骑士金魔法师$(/l)的装备$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizard_legs"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "海姆冥界藤",
+	"icon": "kamenridercraft:helheim_vine",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 46,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "开采这些藤蔓可获得 $(l:gaim/items/lockseeds#orange_lockseed)锁种$(/l)$(br2)掉落：$(li)$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l) (18.1%)$(li)$(l:gaim/items/lockseeds#matsubokkuri_lockseed)松果锁种$(/l) (12%)$(li)$(l:gaim/items/lockseeds#kurumi_lockseed)胡桃锁种$(/l) (12%)$(li)$(l:gaim/items/lockseeds#donguri_lockseed)橡果锁种$(/l) (12%)$(li)$(l:gaim/items/lockseeds#melon_lockseed)蜜瓜锁种$(/l) (6%)$(li)$(l:gaim/items/lockseeds#pine_lockseed)凤梨锁种$(/l) (6%)$(li)$(l:gaim/items/lockseeds#ichigo_lockseed)草莓锁种$(/l) (4.2%)$(li)$(l:gaim/items/lockseeds#orange_lockseed)橙子锁种$(/l) (6%)$(li)$(l:gaim/items/lockseeds#banana_lockseed)香蕉锁种$(/l) (6%)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:helheim_vine",
+			"title": " ",
+			"text": "$(li)$(l:gaim/items/lockseeds#budou_lockseed)葡萄锁种$(/l) (6%)$(li)$(l:gaim/items/lockseeds#suika_lockseed)西瓜锁种$(/l) (0.6%)$(li)$(l:gaim/items/lockseeds#mango_lockseed)芒果锁种$(/l) (1.8%)$(li)$(l:gaim/items/lockseeds#durian_lockseed)榴莲锁种$(/l) (3.6%)$(li)$(l:gaim/items/lockseeds#kiwi_lockseed)奇异果锁种$(/l) (1.8%)$(li)$(l:gaim/arsenal/sakura_hurricane)樱花飓风锁种$(/l) (1.8%)$(li)$(l:gaim/arsenal/rose_attacker)玫瑰攻击者锁种$(/l) (1.8%)$(br2)生成于海姆冥界树木上"
+		}
+	]
+}

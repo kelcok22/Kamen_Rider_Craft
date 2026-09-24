@@ -1,0 +1,17 @@
+{
+	"name": "动员眼魔",
+	"icon": "kamenridercraft:ghost_logo",
+	"category": "kamenridercraft:ghost/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:gamma_commandos",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br)生命值: 30"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：平原、向日葵平原、石岸、积雪沙滩$(br2)掉落$(li)2-4个$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)$(li)1个$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l) (40%)$(li)1个$(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)俺魂$(/l) (20%)$(li)1个$(l:ghost/items/ghost_eyecons#specter_ghost_eyecon)Specter眼魂$(/l) (20%)$(li)1个$(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)武藏眼魂$(/l) (5%)$(li)1个$(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)爱迪生眼魂$(/l) (5%)$(li)1个$(l:ghost/items/ghost_eyecons#robin_ghost_eyecon)罗宾眼魂$(/l) (5%)$(li)1个$(l:ghost/items/ghost_eyecons#newton_ghost_eyecon)牛顿眼魂$(/l) (5%)$(br2)进化$(li)$(l:ghost/mobs/igor)伊戈尔$(/l) (5%)$(li)$(l:ghost/mobs/necrom)假面骑士幽冥$(/l) (5%)"
+		}
+	]
+}

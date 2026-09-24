@@ -1,0 +1,17 @@
+{
+	"name": "暗码组织胶囊",
+	"icon": "kamenridercraft:code_capsem",
+	"category": "kamenridercraft:zeztz/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)用作合成大多数Zeztz系列物品的基础物品和修复材料"
+		},
+        {
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zeztz/code_capsem",
+		  "text": "可在Zeztz$(l:misc/stageshow)舞台秀$(/l)中获得$(br2)掉落自：$(li)$(l:zeztz/mobs/nox_mob)诺克斯暗骑$(/l)"
+        }
+	]
+}

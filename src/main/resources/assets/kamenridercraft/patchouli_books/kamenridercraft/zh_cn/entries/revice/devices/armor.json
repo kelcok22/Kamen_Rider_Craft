@@ -1,0 +1,24 @@
+{
+	"name": "利维斯装甲",
+	"icon": "kamenridercraft:revice_head",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与利维斯系列骑士的驱动器配合使用，可变身成该骑士$(br2)掉落自：$(li)$(l:revice/mobs/evil)假面骑士Evil$(/l)的装备$(li)$(l:revice/mobs/vail)深红贝尔$(/l)的装备"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_head"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_troso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/revice_legs"
+		}
+	]
+}

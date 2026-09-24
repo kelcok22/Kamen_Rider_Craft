@@ -1,0 +1,16 @@
+{
+	"name": "G电王腰带",
+	"icon": "kamenridercraft:g_den_o_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)超级电王三部曲：EPISODE YELLOW 宝藏DE-End海盗 (2010年，电影)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/g_den_o)假面骑士G电王$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/g_den_o_belt"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "双重台风腰带",
+	"icon": "kamenridercraft:the_double_typhoon",
+	"category": "kamenridercraft:the_series/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士 THE NEXT (2007年，电影)$(br2)与$(l:the_series/devices/armor)THE系列装甲$(/l)一起穿戴，可变身为$(l:the_series/riders/v3)假面骑士V3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:the_series/the_double_typhoon"
+		}
+	]
+}

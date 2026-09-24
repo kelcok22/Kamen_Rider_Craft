@@ -1,0 +1,17 @@
+{
+	"name": "翡翠",
+	"icon": "kamenridercraft:gaim_logo",
+	"category": "kamenridercraft:gaim/mobs",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:redyue",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br)生命值: 300"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#redyue_boss_block)翡翠BOSS召唤方块$(/l)召唤而来$(br2)掉落$(li)1个$(l:gaim/items/lockseeds#silver_ringo_lockseed)银苹果锁种$(/l)$(li)1个$(l:gaim/items/lockseeds#yomotsu_heguri_lockseed)黄泉户喫锁种$(/l)$(li)1个$(l:gaim/items/lord_baron_fragments#lord_baron_fragment_2)霸主异域者碎片2$(/l)$(li)1个$(l:gaim/items/lockseeds#helheim_lockseed)赫尔海姆锁种$(/l) (50%)$(li)1个$(l:gaim/arsenal/dau)驮羽$(/l) (33.3%)"
+		}
+	]
+}

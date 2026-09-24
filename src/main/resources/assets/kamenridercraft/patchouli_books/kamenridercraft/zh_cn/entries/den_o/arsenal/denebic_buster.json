@@ -1,0 +1,16 @@
+{
+    "name": "天津四破坏枪",
+    "icon": "kamenridercraft:denebic_buster",
+    "category": "kamenridercraft:den_o/arsenal",
+    "sortnum": 30,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)由零诺斯的$(l:den_o/riders/zeronos#zero)零形态$(/l)使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:den_o/denebic_buster"
+        }
+    ]
+}

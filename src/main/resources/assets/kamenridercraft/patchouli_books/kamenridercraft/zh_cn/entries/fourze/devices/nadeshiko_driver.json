@@ -1,0 +1,17 @@
+{
+	"name": "抚子驱动器",
+	"icon": "kamenridercraft:nadeshiko_driver",
+	"category": "kamenridercraft:fourze/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)与$(l:fourze/devices/armor)Fourze装甲$(/l)一起穿戴，可变身为$(l:fourze/riders/nadeshiko)假面骑士抚子"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/nadeshiko_driver",
+            "text": "掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
+		}
+	]
+}

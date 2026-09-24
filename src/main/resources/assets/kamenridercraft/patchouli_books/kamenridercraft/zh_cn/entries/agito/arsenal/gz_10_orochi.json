@@ -1,0 +1,16 @@
+{
+    "name": "GZ-10〈九岐大蛇〉",
+    "icon": "kamenridercraft:gz_10_orochi",
+    "category": "kamenridercraft:agito/arsenal",
+    "sortnum": 13,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)由 $(l:agito/riders/g7)假面骑士G7$(/l) 使用"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:agito/gz_10_orochi"
+        }
+    ]
+}

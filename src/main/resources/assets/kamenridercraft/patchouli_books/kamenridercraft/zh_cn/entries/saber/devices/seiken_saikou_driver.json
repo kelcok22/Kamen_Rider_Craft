@@ -1,0 +1,16 @@
+{
+	"name": "圣剑最光驱动器",
+	"icon": "kamenridercraft:seiken_saikou_driver",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/saikou)假面骑士最光"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:saber/seiken_saikou_driver"
+		}
+	]
+}

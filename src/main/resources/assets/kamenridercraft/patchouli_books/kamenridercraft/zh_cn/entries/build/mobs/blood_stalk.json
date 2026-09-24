@@ -1,0 +1,17 @@
+{
+	"name": "血潜",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:blood_stalk",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有5%的几率从$(l:build/mobs/touto_guardian)东都防卫者$(/l)进化而来$(br2)掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/fullbottles#lost_cobra_full_bottle)迷失眼镜蛇满装瓶罐$(/l)$(li)1个$(l:build/items/nebula_gas_sample)星云气体样本$(/l) (57.1%)$(li)1个$(l:build/arsenal/pandora_panel_touto)潘多拉嵌板(东都/灰)$(/l) (14.3%)$(li)1个$(l:build/items/golden_bangle)金手镯$(/l) (21.4%)$(li)1个$(l:build/items/hazard_trigger)危险扳机$(/l) (7.1%)"
+		}
+	]
+}

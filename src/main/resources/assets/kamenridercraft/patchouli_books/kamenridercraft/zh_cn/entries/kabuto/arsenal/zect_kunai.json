@@ -1,0 +1,16 @@
+{
+	"name": "ZECT苦无枪",
+	"icon": "kamenridercraft:zect_kunai",
+	"category": "kamenridercraft:kabuto/arsenal",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)由$(l:kabuto/riders/dark_kabuto)假面骑士黑暗甲斗$(/l)、$(l:kabuto/riders/hercus)假面骑士银斗$(/l)和$(l:kabuto/riders/ketaros)假面骑士铜斗$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kabuto/zect_kunai"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Faiz手机X",
+	"icon": "kamenridercraft:faiz_phone_x",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)由月读和盖茨使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/faiz_phone_x"
+		}
+	]
+}

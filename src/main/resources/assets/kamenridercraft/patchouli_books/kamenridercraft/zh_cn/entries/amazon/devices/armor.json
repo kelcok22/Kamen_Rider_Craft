@@ -1,0 +1,24 @@
+{
+	"name": "Amazon装甲",
+	"icon": "kamenridercraft:amazonhead",
+	"category": "kamenridercraft:amazon/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与Amazon骑士的腰带配合使用，以变身为该骑士。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazon/amazonhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazon/amazontroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:amazon/amazonlegs"
+		}
+	]
+}

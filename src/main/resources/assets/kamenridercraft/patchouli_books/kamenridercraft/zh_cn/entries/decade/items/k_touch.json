@@ -1,0 +1,16 @@
+{
+  "name": "K-Touch",
+  "icon": "kamenridercraft:k_touch",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用于切换Decade的$(l:decade/riders/decade#complete)完全形态$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/k_touch"
+    }
+  ]
+}

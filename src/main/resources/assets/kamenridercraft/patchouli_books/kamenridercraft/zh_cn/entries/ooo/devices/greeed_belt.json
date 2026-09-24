@@ -1,0 +1,110 @@
+{
+	"name": "贪欲者腰带",
+	"icon": "kamenridercraft:greeed_blet_ankh_lost",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_ankh_lost",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/lost_ankh)Ankh(迷失)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_ankh_lost",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ankh_lost_mob)Ankh(迷失)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_ankh",
+			"title": "贪欲者腰带(安库)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/complete_ankh)Ankh(完全体)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_ankh",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_uva",
+			"title": "贪欲者腰带(乌凡)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/uva)乌凡"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_uva",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/uva_mob)乌凡$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_kazari",
+			"title": "贪欲者腰带(卡扎力)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/kazari)卡扎力"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_kazari",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/kazari_mob)卡扎力$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_mezool",
+			"title": "贪欲者腰带(梅兹尔)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/mezool)梅兹尔"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_mezool",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/mezool_mob)梅兹尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_gamel",
+			"title": "贪欲者腰带(加美尔)",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/gamel)加美尔"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_gamel",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/gamel_mob)加美尔$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "greeed_blet_muchiri",
+			"title": "贪欲者腰带(穆奇利)",
+			"text": "登场于：$(li)假面骑士 英雄寻忆 (2020年，PS4游戏)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/muchiri)穆奇利"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:greeed_blet_muchiri",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/muchiri_mob)穆奇利$(/l)"
+		},
+      {
+        "type": "patchouli:text",
+        "anchor": "greeed_blet_kyoryu",
+        "title": "贪欲者腰带",
+        "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/kyoryu_greeed)恐龙贪欲者"
+      },
+      {
+        "type": "patchouli:spotlight",
+        "link_recipe": true,
+        "item": "kamenridercraft:greeed_blet_kyoryu",
+        "title": " ",
+        "text": "掉落自：$(li)$(l:ooo/mobs/kyoryu_greeed_mob)恐龙贪欲者$(/l)"
+      }
+	]
+}

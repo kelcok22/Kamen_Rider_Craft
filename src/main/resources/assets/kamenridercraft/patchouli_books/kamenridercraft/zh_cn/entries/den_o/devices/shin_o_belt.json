@@ -1,0 +1,19 @@
+{
+	"name": "新王腰带",
+	"icon": "kamenridercraft:shin_o_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王+新王 (2007年，电视剧特别篇)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/shin_o)假面骑士新王$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shin_o_belt",
+			"title": " ",
+			"text": "通过打开 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l) 获得"
+		}
+	]
+}

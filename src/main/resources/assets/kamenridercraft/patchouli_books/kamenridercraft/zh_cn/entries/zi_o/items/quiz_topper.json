@@ -1,0 +1,16 @@
+{
+	"name": "问答覆板",
+	"icon": "kamenridercraft:quiz_topper",
+	"category": "kamenridercraft:zi_o/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于合成Quiz的$(l:zi_o/devices/quiz_driver)Quiz驱动器$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/quiz_topper"
+		}
+	]
+}

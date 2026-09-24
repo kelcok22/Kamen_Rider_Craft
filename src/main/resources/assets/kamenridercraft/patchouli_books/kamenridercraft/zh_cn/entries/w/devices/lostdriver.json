@@ -1,0 +1,52 @@
+{
+	"name": "迷失驱动器",
+	"icon": "kamenridercraft:lostdriver_joker",
+	"category": "kamenridercraft:w/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "lostdriver_joker",
+			"text": "登场于:$(li)假面骑士W永恒：从A到Z/命运的盖亚记忆（2010年，电影）$(br2)与$(l:w/devices/armor)W装甲$(/l)一起穿戴，可变身为$(l:w/riders/joker)假面骑士王牌"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/lostdriver_joker"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "lostdriver_cyclone",
+			"title": "迷失驱动器(疾风)",
+			"text": "登场于:$(li)假面骑士W：~Z之后的继承者~（2012年，小说）$(br2)与$(l:w/devices/armor)W装甲$(/l)一起穿戴，可变身为$(l:w/riders/cyclone)假面骑士疾风"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/lostdriver_cyclone"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "lostdriver_skull",
+			"title": "迷失驱动器(颅骨)",
+			"text": "登场于:$(li)假面骑士 × 假面骑士W与Decade：电影大战2010（2009年，电影）$(br2)与$(l:w/devices/armor)W装甲$(/l)一起穿戴，可变身为$(l:w/riders/skull)假面骑士颅骨"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/lostdriver_skull"
+        },
+		{
+			"type": "patchouli:text",
+			"anchor": "lostdriver_eternal",
+			"title": "迷失驱动器(Eternal)",
+			"text": "登场于:$(li)假面骑士W永恒：从A到Z/命运的盖亚记忆（2010年，电影）$(br2)与$(l:w/devices/armor)W装甲$(/l)一起穿戴，可变身为$(l:w/riders/eternal)假面骑士Eternal"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:w/lostdriver_eternal",
+          "text": "掉落自：$(li)$(l:w/mobs/eternal_mob)假面骑士Eternal$(/l)的装备"
+        }
+	]
+}

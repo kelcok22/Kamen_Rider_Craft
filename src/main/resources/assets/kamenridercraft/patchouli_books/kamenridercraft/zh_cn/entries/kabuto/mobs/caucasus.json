@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士金斗",
+	"icon": "kamenridercraft:kabuto_logo",
+	"category": "kamenridercraft:kabuto/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:caucasus",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br)生命值: 100"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%的几率从$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)进化而来$(br2)特殊机制：$(li)在生命值低于50时激活超级Clock Up$(br2)掉落$(li)15-20个$(l:kabuto/items/mini_zecter)原虫外壳$(/l)$(li)4-6个$(l:kabuto/items/unfinished_kabutick_zecter)未完成的卡布蒂克昆虫仪$(/l)$(li)1个$(l:kabuto/items/zecters#caucasus_zecter)金斗昆虫仪$(/l)$(li)1个$(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT代扣(金斗)$(/l)$(li)1个$(l:kabuto/items/zecters#hyper_zecter)海帕昆虫仪$(/l)$(li)1个$(l:kabuto/items/zecters#hercus_zecter)银斗昆虫仪$(/l) (33%)$(li)1个$(l:kabuto/items/zecters#ketaros_zecter)铜斗昆虫仪$(/l) (33%)$(li)1个$(l:misc/blocks/decor_blocks#blue_rose)蓝玫瑰$(/l)"
+		}
+	]
+}

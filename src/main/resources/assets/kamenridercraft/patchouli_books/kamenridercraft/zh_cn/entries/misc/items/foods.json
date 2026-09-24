@@ -1,0 +1,293 @@
+{
+    "name": "食物",
+    "icon": "kamenridercraft:vienna_coffee",
+    "category": "kamenridercraft:misc/items",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "coffee",
+            "text": "饮用时恢复2点饥饿值并给予速度 II$(br2)饮用时将 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 转变为 $(l:gavv/items/gochizo#frappeis_gochizo)双旋冰沙饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:coffee",
+            "text": "可在 $(l:misc/city/urban_area#nascita)Nascita$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "vienna_coffee",
+            "title": "维也纳咖啡",
+            "text": "饮用时恢复2点饥饿值$(br2)可用于驯服$(l:den_o/mobs/momotaros)桃$(/l)$(l:den_o/mobs/urataros)塔$(/l)$(l:den_o/mobs/kintaros)罗$(/l)$(l:den_o/mobs/ryutaros)斯$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:vienna_coffee",
+            "title": " ",
+            "text": "可在 $(l:den_o/structures/denliner_gouka)时之列车的餐车$(/l) 及各种$(l:misc/city/suburban_area)城市$(/l)$(l:misc/city/urban_area)建筑$(/l)中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pudding",
+            "title": "布丁",
+            "text": "食用时恢复2点饥饿值$(br2)可用于驯服 $(l:den_o/mobs/momotaros)桃塔罗斯$(/l)$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为布丁饱藏$(br2)食用时将 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 转变为 $(l:gavv/items/gochizo#puddinte_gochizo)布丁芭菲饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pudding",
+            "title": " ",
+            "text": "可在 $(l:den_o/structures/denliner_gouka)时之列车的餐车$(/l)中找到$(br2)由熟练级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "icepop",
+            "title": "冰棍",
+            "text": "食用时恢复3点饥饿值$(br2)可用于驯服 $(l:ooo/mobs/ankh_mob)安库$(/l)$(br2)食用时将 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 转变为 $(l:gavv/items/gochizo#blizzardsorbei_gochizo)凛冽雪酪冰卫饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/icepop1"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/icepop2"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/icepop3"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "transform_one_shot",
+            "title": "变身一号",
+            "text": "登场于：$(li)假面骑士555：消失的天堂 (2003年，电影)$(br2)饮用时给予力量 IV"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:transform_one_shot",
+            "text": "可在 $(l:misc/city/urban_area#kikuchi_cleaners)西洋洗涤铺 菊池$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "milk_bottle",
+            "title": "瓶装奶",
+            "text": "饮用时给予急迫 V"
+        },
+        {
+            "title": " ",
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:misc/milk_bottle"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "puzzle_piece",
+            "title": "拼图块",
+            "text": "食用时阻止某人完成拼图。可在 $(l:blade/riders/garren)假面骑士格连$(/l) 的肚子里找到"
+        },
+        {
+            "title": " ",
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:misc/puzzle_piece"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taiyaki",
+            "title": "鲷鱼烧",
+            "text": "食用时恢复4点饥饿值$(br2)用于制作鲷鱼烧达人·究极形态的 $(l:blade/devices/taiyaki_secret_weapon)迷之鲷鱼烧$(/l)"
+        },
+        {
+            "title": " ",
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:misc/taiyaki"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "donut",
+            "title": "甜甜圈",
+            "text": "食用时恢复5点饥饿值$(br2)原味砂糖味（大概）$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为 $(l:gavv/items/gochizo#doumaru_gochizo)甜甜圈饱藏$(/l)"
+        },
+        {
+            "title": " ",
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:misc/donut"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mayo",
+            "title": "蛋黄酱",
+            "text": "食用时恢复1点饥饿值并给予缓降 III$(br2)几乎和所有东西都很配"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mayo",
+            "title": " ",
+            "text": "通过钓鱼获得$(br2)由熟练级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mayo_donut",
+            "title": "蛋黄酱甜甜圈",
+            "text": "食用时恢复3点饥饿值并给予缓降 III"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/mayo_donut"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gummi_candy",
+            "title": "软糖",
+            "text": "食用时恢复2点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为软糖饱藏"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/gummi_candy",
+            "text": "由新手级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "potato_snacks",
+            "title": "薯片",
+            "text": "食用时恢复1点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为薯片饱藏"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/potato_snacks",
+            "text": "由新手级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lollipop",
+            "title": "棒棒糖",
+            "text": "食用时恢复2点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为糖果饱藏"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/lollipop",
+            "text": "由学徒级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "chocolate_bar",
+            "title": "巧克力棒",
+            "text": "食用时恢复2点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为巧克力饱藏$(br2)食用时将 $(l:gavv/items/prototype_cup_gochizo)饱藏杯原型$(/l) 转变为 $(l:gavv/items/gochizo#frappeis_gochizo)双旋冰沙饱藏$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/chocolate_bar",
+            "text": "由学徒级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "marshmallow",
+            "title": "棉花糖",
+            "text": "食用时恢复2点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为棉花糖饱藏"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/marshmallow",
+            "text": "由新手级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pancake",
+            "title": "煎饼堆",
+            "text": "食用时恢复5点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为松饼饱藏"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:misc/pancake"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dango",
+            "title": "团子",
+            "text": "食用时恢复2点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为麻糬饱藏"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dango",
+            "title": " ",
+            "text": "由新手级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "corn_snack",
+            "title": "玉蜀黍酥",
+            "text": "食用时恢复2点饥饿值$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为玉米零食饱藏"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:corn_snack",
+            "title": " ",
+            "text": "由学徒级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "candy",
+            "title": "滋养糖果S",
+            "text": "登场于：$(li)Ride Kamens (2024年，手机游戏)$(br2)食用时恢复1点饥饿值$(br2)给予急迫效果，持续25秒$(br2)食用时将 $(l:gavv/items/blank_gochizo)空白饱藏$(/l) 转变为糖果饱藏"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:candy",
+            "title": " ",
+            "text": "由新手级 $(l:misc/villagers#kamen_cafe_butler)假面咖啡厅管家$(/l) 交易$(br2)由学徒级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "energy_drink",
+            "title": "能量饮料",
+            "text": "登场于：$(li)Ride Kamens (2024年，手机游戏)$(br2)饮用时恢复1点饥饿值$(br2)给予速度 III，持续25秒"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:energy_drink",
+            "title": " ",
+            "text": "由学徒级 $(l:misc/villagers#kamen_cafe_butler)假面咖啡厅管家$(/l) 交易"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "heat_heaven",
+            "title": "炽热天堂",
+            "text": "登场于：$(li)假面骑士Black Sun (2022年，网络剧)$(br2)食用时恢复3点饥饿值"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:black_sun/heat_heaven"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "helheim_fruit",
+            "title": "海姆冥界果实",
+            "text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)食用时给予中毒 III$(br2)用于切换巴隆的 $(l:gaim/riders/baron#lord_baron)勋爵巴隆$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:helheim_fruit",
+            "title": " ",
+            "text": "可在$(l:gaim/structures/rosyuo_helheim_city)霸主$(/l)$(l:gaim/structures/redyue_helheim_city)们的$(/l)$(l:gaim/structures/demushu_helheim_city)建筑$(/l)周围的可疑沙砾中找到$(br2)掉落自：$(li)赫尔海姆树叶"
+        }
+    ]
+}

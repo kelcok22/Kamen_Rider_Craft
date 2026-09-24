@@ -1,0 +1,17 @@
+{
+	"name": "Ankh",
+	"icon": "kamenridercraft:ooo_logo",
+	"category": "kamenridercraft:ooo/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:ankh_mob",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br)生命值: 40"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：平原、向日葵平原、沙漠、风袭丘陵、森林、针叶林、沼泽、红树林沼泽、河流、冻洋、冰冻深海、冻河、积雪冻原$(br2)可使用$(l:misc/items/foods#icepop)冰棒$(/l)驯服$(br2)使用$(l:ooo/devices/greeed_belt#greeed_blet_ankh_lost)贪欲者腰带(迷失Ankh)$(/l)右键点击可变身为$(l:ooo/mobs/ankh_complete_mob)Ankh(完全体)$(/l)$(br2)掉落$(li)2-4个$(l:ooo/items/cellmedal)细胞硬币$(/l)$(li)1个$(l:ooo/items/cellmedal)细胞硬币$(/l) (50%)$(li)1个$(l:ooo/items/core_medals#taka_medal)鹰核心硬币$(/l) (50%)"
+		}
+	]
+}

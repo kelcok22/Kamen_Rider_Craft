@@ -1,0 +1,120 @@
+{
+	"name": "变身音叉",
+	"icon": "kamenridercraft:henshin_onsa",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作响鬼的$(l:hibiki/devices/ongekiko#hibikidriver)音击鼓·火炎鼓$(/l)$(br2)用于切换响鬼的$(l:hibiki/riders/hibiki#hibiki)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_kurenai",
+			"title": "变身音叉·音角(响鬼红)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于切换$(l:hibiki/riders/hibiki#kurenai)响鬼红$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_kurenai"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_danki",
+			"title": "变身鬼叉(弹鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作弹鬼的$(l:hibiki/devices/ongekiko#dankidriver)音击鼓·御影盘$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_danki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_eiki",
+			"title": "变身鬼叉(锐鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作锐鬼的$(l:hibiki/devices/ongekiko#eikidriver)音击鼓·白绿$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_eiki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_gouki",
+			"title": "变身鬼叉(刚鬼)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作刚鬼的$(l:hibiki/devices/ongekiko#goukidriver)音击子·金刚$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_gouki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_kyoki",
+			"title": "变身音叉(京介变身体)",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作京介变身体的$(l:hibiki/devices/ongekiko#kyosukedriver)音击鼓(京介变身体)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_kyoki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_kabuki",
+			"title": "变身音叉(歌舞鬼)",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)用于制作歌舞鬼的$(l:hibiki/devices/ongekiko#kabukidriver)音击子(歌舞鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:henshin_onsa_kabuki",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:hibiki/mobs/kabuki)假面骑士歌舞鬼$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_touki",
+			"title": "变身音叉(弦鬼)",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)用于制作斗鬼的$(l:hibiki/devices/ongekiko#toukidriver)音击子(弦鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_touki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_habataki",
+			"title": "变身音叉(羽击鬼)",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)用于制作羽击鬼的$(l:hibiki/devices/ongekimei#habatakidriver)音击鸣(羽击鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_habataki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_kirameki",
+			"title": "变身音叉(煌鬼)",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)用于制作煌鬼的$(l:hibiki/devices/ongekimei#kiramekidriver)音击鸣(煌鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_kirameki"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "henshin_onsa_nishiki",
+			"title": "变身音叉(西鬼)",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)用于制作西鬼的$(l:hibiki/devices/ongekiko#nishikidriver)音击子(西鬼)$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/henshin_onsa_nishiki"
+		}
+	]
+}

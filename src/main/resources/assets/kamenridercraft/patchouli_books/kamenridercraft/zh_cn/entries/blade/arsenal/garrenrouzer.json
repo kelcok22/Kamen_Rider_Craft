@@ -1,0 +1,16 @@
+{
+	"name": "醒枪",
+	"icon": "kamenridercraft:garrenrouzer",
+	"category": "kamenridercraft:blade/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由假面骑士格连的$(l:blade/riders/garren#garren)基础形态$(/l)、$(l:blade/riders/garren#jack)侍卫形态$(/l)和$(l:blade/riders/garren#king)国王形态$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/garrenrouzer"
+		}
+	]
+}

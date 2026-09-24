@@ -1,0 +1,16 @@
+{
+	"name": "涡流射手",
+	"icon": "kamenridercraft:vortech_shooter",
+	"category": "kamenridercraft:black_rx/arsenal",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Black RX (1988年，电视剧)$(br2)由$(l:black_rx/riders/black_rx#roborider)机械骑士$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:rx/vortech_shooter"
+		}
+	]
+}

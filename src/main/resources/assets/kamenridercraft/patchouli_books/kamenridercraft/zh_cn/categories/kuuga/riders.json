@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:kuuga/main",
+    "name": "空我系列骑士",
+    "description": "来自《假面骑士空我》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:kuugahead",
+    "sortnum": 0
+}

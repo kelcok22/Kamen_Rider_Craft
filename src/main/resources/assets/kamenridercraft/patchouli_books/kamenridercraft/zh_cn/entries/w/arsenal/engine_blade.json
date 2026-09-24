@@ -1,0 +1,16 @@
+{
+	"name": "引擎剑刃",
+	"icon": "kamenridercraft:engine_blade",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士 W (2009, 电视剧)$(br2)由 $(l:w/riders/accel)假面骑士 Accel$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/engineblade"
+		}
+	]
+}

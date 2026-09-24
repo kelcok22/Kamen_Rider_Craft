@@ -1,0 +1,19 @@
+{
+	"name": "极深鱼叉",
+	"icon": "kamenridercraft:deepest_harpoon",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)由$(l:ooo/riders/poseidon)假面骑士波塞冬$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deepest_harpoon",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ooo/mobs/poseidon)假面骑士波塞冬$(/l)"
+		}
+	]
+}

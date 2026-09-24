@@ -1,0 +1,19 @@
+{
+	"name": "示弥·罗特刃枪",
+	"icon": "kamenridercraft:shimi_lot",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 21,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由 $(l:saber/mobs/shimi)士弥$(/l) 使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shimi_lot",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:saber/mobs/shimi)士弥$(/l)的装备"
+		}
+	]
+}

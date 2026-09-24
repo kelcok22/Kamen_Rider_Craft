@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/showa",
+    "name": "假面骑士V3",
+    "description": "与《假面骑士V3》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:v3_logo",
+    "sortnum": 1
+}

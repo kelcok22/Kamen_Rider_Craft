@@ -1,0 +1,16 @@
+{
+	"name": "金属召机",
+	"icon": "kamenridercraft:metal_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 23,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/gai)假面骑士铠$(/l)使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/metal_visor"
+		}
+	]
+}

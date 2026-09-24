@@ -1,0 +1,16 @@
+{
+	"name": "永恒匕首",
+	"icon": "kamenridercraft:eternal_edge",
+	"category": "kamenridercraft:w/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士 W 永恒：从A到Z/命运的盖亚记忆（2010，电影）$(br2)由 $(l:w/riders/eternal)假面骑士 Eternal$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:w/eternaledge"
+		}
+	]
+}

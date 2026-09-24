@@ -1,0 +1,456 @@
+{
+	"name": "假面骑士01",
+	"icon": "kamenridercraft:hiden_zero_one_driver",
+	"category": "kamenridercraft:zero_one/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "高跃蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)高跃蝗虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shining_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "闪耀蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#shining_hopper_progrisekey)闪耀蝗虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 VI$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shining_assault_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shining_assault_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "闪耀突击蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#shining_assault_hopper_progrisekey)闪耀突击蝗虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 II$(li)夜视$(li)急迫$(li)跳跃提升 VII$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "metalcluster_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:metalcluster_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "金属原子簇蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#metalcluster_hopper_progrisekey)金属原子簇蝗虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 VII$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "realizing_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:realize_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "觉悟蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#realize_rising_hopper_progrisekey)高跃蝗虫程式升华钥(觉悟)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)急迫 III$(li)跳跃提升 V$(li)抗火$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hellrising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hellrise_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "地狱升华蝗虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#hellrise_progrisekey)地狱升华蝗虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01：REAL×TIME（2020年，电影）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 III$(li)急迫 III$(li)跳跃提升 VI$(li)抗火$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "red_rising_hopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:red_rising_hopper_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "高跃蝗虫(中国红)",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#red_rising_hopper_progrisekey)高跃蝗虫程式升华钥(中国红)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX飞电01驱动器限定红色版（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "biting_shark",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:biting_shark_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "撕咬巨鲨",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#biting_shark_progrisekey)撕咬巨鲨程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)海豚的恩惠$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flying_falcon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flying_falcon_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飞翔猎隼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#flying_falcon_progrisekey)飞翔猎隼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flaming_tiger",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flaming_tiger_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "燃焰老虎",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#flaming_tiger_progrisekey)燃焰老虎程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "freezing_bear",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:freezing_bear_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "冰冻极熊",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#freezing_bear_progrisekey)冰冻极熊程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "breaking_mammoth",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:breaking_mammoth_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "破坏猛犸",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#breaking_mammoth_progrisekey)破坏猛犸程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)变大 III$(li)抗性提升 III$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hopping_kangaroo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopping_kangaroo_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "跳跃袋鼠",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#hopping_kangaroo_progrisekey)跳跃袋鼠程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01：袋鼠里会蹦出什么？自己好好想想吧！现在，非或人不可！！（2019年，超战斗影像）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手状态）$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dynamaiting_lion",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dynamaiting_lion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "爆炸狮子",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#dynamaiting_lion_progrisekey)爆炸狮子程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01电视君漫画（2019年，漫画）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shooting_wolf",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:shooting_wolf_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "射击野狼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#shooting_wolf_progrisekey)射击野狼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "punching_kong",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:punching_kong_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "拳击金刚",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#punching_kong_progrisekey)拳击金刚程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)力量 VIII（空手状态）$(li)力量 II（持武器状态）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rushing_cheetah",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rushing_cheetah_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "冲刺猎豹",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#rushing_cheetah_progrisekey)冲刺猎豹程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sparking_giraffe",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sparking_giraffe_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "闪光长颈鹿",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#sparking_giraffe_progrisekey)闪光长颈鹿程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX闪光长颈鹿程式升华密钥（2019年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)夜视$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazing_hercules",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_hercules_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊异长戟大兜虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#amazing_hercules_progrisekey)惊异长戟大兜虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sting_scorpion",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sting_scorpion_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "尖刺毒蝎",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#sting_scorpion_progrisekey)尖刺毒蝎程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)毒药抗性$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lightning_hornet",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:lightning_hornet_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雷霆黄蜂",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#lightning_hornet_progrisekey)雷霆黄蜂程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)急迫$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "gatling_hedgehog",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatling_hedgehog_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "机枪刺猬",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#gatling_hedgehog_progrisekey)机枪刺猬程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "exciting_stag",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:exciting_stag_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "激励锹甲",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#exciting_stag_progrisekey)激励锹甲程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "crushing_buffalo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:crushing_buffalo_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "粉碎水牛",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#crushing_buffalo_progrisekey)粉碎水牛程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX冲撞水牛与喷溅鲸鱼程式升华密钥（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)增强 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "trapping_spider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:trapping_spider_progrisekey\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "捕获蜘蛛",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#trapping_spider_progrisekey)捕获蜘蛛程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX程式升华密钥套装03（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)毒药抗性$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "storming_penguin",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:storming_penguin_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "暴风企鹅",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#storming_penguin_progrisekey)暴风企鹅程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX风暴企鹅与入侵马蹄蟹程式升华密钥（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)水下呼吸$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "splashing_whale",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:splashing_whale_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "喷溅鲸鱼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#splashing_whale_progrisekey)喷溅鲸鱼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX冲撞水牛与喷溅鲸鱼程式升华密钥（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)海豚的恩惠 II$(li)抗性提升 II$(li)水下呼吸$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "amazing_caucasus",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:amazing_caucasus_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "惊异南洋大兜虫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#amazing_caucasus_progrisekey)惊异南洋大兜虫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "scouting_panda",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:scouting_panda_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "侦查熊猫",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#scouting_panda_progrisekey)侦查熊猫程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX侦查熊猫程式升华密钥（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 III$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burning_falcon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:burning_falcon_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "燃烧猎隼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#burning_falcon_progrisekey)燃烧猎隼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)跳跃提升 IV$(li)抗火$(li)力量 III$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fighting_jackal",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fighting_jackal_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "战斗胡狼",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#fighting_jackal_progrisekey)战斗胡狼程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)假面骑士01研究数据（2019年，网站）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 IV$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "invading_horseshoe_crab",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:hiden_zero_one_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:invading_horseshoe_crab_progrisekey_zero_one\"}},Count:1b},{id:\"kamenridercraft:zero_onelegs\",Count:1b},{id:\"kamenridercraft:zero_onetroso\",Count:1b},{id:\"kamenridercraft:zero_onehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "入侵鲎",
+			"text": "通过使用 $(l:zero_one/items/progrisekeys#invading_horseshoe_crab_progrisekey)入侵鲎程式升华钥$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士01",
+			"text": "登场于：$(li)DX风暴企鹅与入侵马蹄蟹程式升华密钥（2020年，玩具系列）$(br2)通过穿戴$(l:zero_one/devices/hiden_zero_one_driver#hiden_zero_one_driver)飞电01驱动器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 IV$(li)力量 III"
+		}
+	]
+}

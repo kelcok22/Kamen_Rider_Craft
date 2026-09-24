@@ -1,0 +1,16 @@
+{
+	"name": "解放的恐龙硬币",
+	"icon": "kamenridercraft:purple_medals_opened",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)背包中持有即可释放紫色硬币"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/purple_medals_crafted"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "百饱瓶",
+	"icon": "kamenridercraft:gochipod",
+	"category": "kamenridercraft:gavv/items",
+	"sortnum": 5,
+	"pages": [
+		{
+        	"type": "patchouli:spotlight",
+        	"anchor": "gochipod",
+        	"link_recipe": true,
+        	"item": "kamenridercraft:gochipod",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)用于切换加布的 $(l:gavv/riders/gavv#over)超越形态$(/l) 及 $(l:gavv/riders/gavv#master)主宰形态$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gochipod",
+        	"text": "可通过类似背包的点击方式装填 $(l:gavv/items/gochizo)饱藏$(/l)"
+		}
+	]
+}

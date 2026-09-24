@@ -1,0 +1,879 @@
+{
+	"name": "升级带扣",
+	"icon": "kamenridercraft:magnum_raise_buckle",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "magnum_raise_buckle",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#magnum)马格南$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnum_raise_buckle",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_raise_buckle",
+			"title": "推进器代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#magnumboost)推进器$(/l)形态$(br2)对方块使用可召唤 $(l:geats/arsenal/boostriker)推进先锋$(/l)（若已装备欲望驱动器，则需潜行）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boost_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zombie_raise_buckle",
+			"title": "僵尸代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/buffa#zombie)僵尸$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zombie_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ninja_raise_buckle",
+			"title": "忍者代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/tycoon#ninja)忍者$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninja_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "monster_raise_buckle",
+			"title": "怪兽代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/punkjack#monster)怪兽$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:monster_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_raise_buckle",
+			"title": "节拍代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/na_go#beat)节拍$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "powered_builder_raise_buckle",
+			"title": "完善工程代扣",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/seeker#powered_builder)动力建造者$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:powered_builder_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fantasy_raise_buckle",
+			"title": "幻想代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/na_go#fantasy)幻想$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/fantasy_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shark_raise_buckle",
+			"title": "鲨鱼代扣",
+			"text": "登场于：$(li)电视杂志 (2023年5月，杂志)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#shark)鲨鱼$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shark_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fever_slot_raise_buckle",
+			"title": "狂热代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#fever_magnum)狂热$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fever_slot_raise_buckle",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "command_twin_buckle_jet",
+			"title": "双子喷射代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换极狐的 $(l:geats/riders/geats#raising)矩升形态$(/l)及 $(l:geats/riders/geats#command_jet)指令形态·喷射模式$(/l)形态$(br2)用于切换太狸的 $(l:geats/riders/tycoon#raising)矩升形态$(/l)及 $(l:geats/riders/tycoon#command_jet)指令形态·喷射模式$(/l)形态$(br2)用于切换霸牛的 $(l:geats/riders/buffa#raisingjyamato)矩升形态$(/l)及 $(l:geats/riders/buffa#command)指令$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:command_twin_buckle_jet",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "command_twin_buckle_cannon",
+			"title": "双子加农代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换极狐的 $(l:geats/riders/geats#raising)矩升形态$(/l)及 $(l:geats/riders/geats#command_cannon)指令形态·加农模式$(/l)形态$(br2)用于切换太狸的 $(l:geats/riders/tycoon#raising)矩升形态$(/l)及 $(l:geats/riders/tycoon#command_cannon)指令形态·加农模式$(/l)形态$(br2)用于切换霸牛的 $(l:geats/riders/buffa#raisingjyamato)矩升形态$(/l)及 $(l:geats/riders/buffa#command)指令$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:command_twin_buckle_cannon",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_mkii_raise_buckle",
+			"title": "推进器马克II代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换极狐的 $(l:geats/riders/geats#boost_mkii)推进器马克II$(/l)$(br2)用于切换太狸的 $(l:geats/riders/tycoon#boost_mkii)推进器马克II$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/boost_mkii_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boost_mkiii_raise_buckle",
+			"title": "推进器马克III代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换极狐的 $(l:geats/riders/geats#boost_mkiii)推进器马克III$(/l)及 $(l:geats/riders/geats#geatsix)极狐IX$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/boost_mkiii_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "oneness_raise_buckle",
+			"title": "合一代扣",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐 (2023年，电影)$(br2)用于切换极狐的 $(l:geats/riders/geats#oneness)合一$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/oneness_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "x_geats_raise_buckle",
+			"title": "X极狐代扣",
+			"text": "登场于：$(li)假面骑士极狐：4人的王牌与黑狐 (2023年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_geats_raise_buckle",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dooms_geats_raise_buckle",
+			"title": "灾厄极狐代扣",
+			"text": "登场于：$(li)假面骑士极狐：邪魔徒觉醒 (2024年，V-Cinema电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dooms_geats_raise_buckle",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bujin_sword_raise_buckle",
+			"title": "武神之刃代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换太狸的 $(l:geats/riders/tycoon#bujin_sword)武神之刃$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/bujin_sword_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "plosion_rage_raise_buckle",
+			"title": "爆裂狂怒代扣",
+			"text": "登场于：$(li)假面骑士极狐：邪魔徒觉醒 (2024年，V-Cinema电影)$(br2)用于切换霸牛的 $(l:geats/riders/buffa#plosion_rage)爆裂狂怒$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:plosion_rage_raise_buckle",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jyamato_buckle",
+			"title": "邪魔徒代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换邪魔徒骑士的 $(l:geats/riders/jyamato_rider)邪魔徒$(/l)形态$(br2)用于切换霸牛的 $(l:geats/riders/buffa#jyamato)邪魔徒$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jyamato_buckle",
+			"title": " ",
+			"text": "可在 $(l:geats/structures/jamar_garden)邪魔徒花园$(/l)内找到$(br2)掉落自：$(li)$(l:geats/mobs/jyamatorider)邪魔徒骑士$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arrow_raise_buckle",
+			"title": "弓箭代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#arrow)武装弓箭$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:arrow_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "water_raise_buckle",
+			"title": "水枪代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#water)武装水枪$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:water_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "hammer_raise_buckle",
+			"title": "锤代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#hammer)武装重锤$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hammer_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shield_raise_buckle",
+			"title": "盾代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#shield)武装盾牌$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shield_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chain_array_raise_buckle",
+			"title": "流星锤代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/tycoon#chain_array)武装流星锤$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chain_array_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "claw_raise_buckle",
+			"title": "爪子代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#claw)武装爪子$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:claw_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drill_raise_buckle",
+			"title": "钻头代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#drill)武装钻头$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drill_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "propeller_raise_buckle",
+			"title": "螺旋桨代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#propeller)武装螺旋桨$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:propeller_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_container_buckle",
+			"title": "千兆武装代扣",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/seeker#powered_builder)千兆武装$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/gigant_container_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_sword_buckle",
+			"title": "千兆斩刃代扣",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_sword_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_hammer_buckle",
+			"title": "千兆重锤代扣",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_hammer_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gigant_blaster_buckle",
+			"title": "千兆爆裂代扣",
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀 (2022年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gigant_blaster_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnum_shooter_40x_raise_buckle",
+			"title": "马格南射击40X代扣",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnum_shooter_40x_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ninja_dueler_raise_buckle",
+			"title": "忍者双刃代扣",
+			"text": "登场于：$(li)极狐型支援任务盒&DX武器升级带扣套装 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ninja_dueler_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zombie_breaker_raise_buckle",
+			"title": "僵尸破坏者代扣",
+			"text": "登场于：$(li)极狐型支援任务盒&DX武器升级带扣套装 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zombie_breaker_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_axe_raise_buckle",
+			"title": "节拍战斧代扣",
+			"text": "登场于：$(li)SG升级带扣套装05 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_axe_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "christmas_buckle",
+			"title": "圣诞节代扣",
+			"text": "登场于：$(li)假面骑士极狐Charadeco蛋糕 (2022年，糕点系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:christmas_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:misc/items/gift)圣诞礼物$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "silver_arrow_raise_buckle",
+			"title": "弓代扣(巧克力威化限定)",
+			"text": "登场于：$(li)DX弓箭升级带扣（镀银版）(2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:silver_arrow_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "golden_hammer_raise_buckle",
+			"title": "锤代扣(巧克力威化限定)",
+			"text": "登场于：$(li)DX重锤升级带扣（镀金版）(2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:golden_hammer_raise_buckle",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "clear_arrow_raise_buckle",
+			"title": "弓代扣(杂志限定)",
+			"text": "登场于：$(li)DX弓箭升级带扣（透明色彩版）(2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:clear_arrow_raise_buckle",
+			"title": " ",
+			"text": "通过开启万圣节 $(l:misc/items/gashapon_capsules#halloween_gashapon_capsule)扭蛋胶囊$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_raise_buckle_theme",
+			"title": "节拍代扣(主题曲版本)",
+			"text": "登场于：$(li)DX节拍升级带扣（主题曲版本）(2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_raise_buckle_theme",
+			"title": " ",
+			"text": "通过开启 $(l:geats/items/hatena_mission_box)代扣任务盒$(/l)获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shinobi_raise_buckle",
+			"title": "忍骑代扣",
+			"text": "登场于：$(li)极狐番外：假面骑士太狸遇见假面骑士忍骑 (2023年，TTFC特别篇)$(br2)用于切换太狸的 $(l:geats/riders/tycoon#shinobi)忍骑$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/shinobi_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "revice_driver_raise_buckle",
+			"title": "利维斯代扣",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#boostrevice)利维斯$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/revice_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "two_si_driver_raise_buckle",
+			"title": "双面驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#two_sidriver)Live$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/two_si_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "libera_driver_raise_buckle",
+			"title": "解放驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#libera_driver)Jeanne$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/libera_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "demons_driver_raise_buckle",
+			"title": "蒂蒙斯驱动器代扣",
+			"text": "登场于：$(li)GP升级带扣1 (2022年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#demons_driver)Demons$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/demons_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiken_swordriver_raise_buckle",
+			"title": "圣剑驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#seiken_swordriver)Saber$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/seiken_swordriver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_one_driver_raise_buckle",
+			"title": "01驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#zero_one_driver)01$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/zero_one_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zikuu_driver_raise_buckle",
+			"title": "时空驱动器代扣",
+			"text": "登场于：$(li)GP升级带扣2 (2022年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#ziku_driver)时王$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/zikuu_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "build_driver_raise_buckle",
+			"title": "Build驱动器代扣",
+			"text": "登场于：$(li)DX Build驱动器升级带扣 (2023年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#build_driver)Build$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/build_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gamer_driver_raise_buckle",
+			"title": "玩家驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#gamer_driver)Ex-Aid$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/gamer_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_driver_raise_buckle",
+			"title": "Ghost驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#ghost_driver)Ghost$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ghost_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drive_driver_raise_buckle",
+			"title": "驰骑驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#drive_driver)Drive$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/drive_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sengoku_driver_raise_buckle",
+			"title": "战极驱动器代扣",
+			"text": "登场于：$(li)GP升级带扣3 (2022年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#sengoku_driver)铠武$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/sengoku_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardriver_raise_buckle",
+			"title": "贤者驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#wizardriver)Wizard$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/wizardriver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fourze_driver_raise_buckle",
+			"title": "Fourze驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#fourze_driver)Fourze$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/fourze_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ooo_driver_raise_buckle",
+			"title": "OOO驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#ooo_driver)OOO$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ooo_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_driver_raise_buckle",
+			"title": "W驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#double_driver)W$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/double_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "deca_driver_raise_buckle",
+			"title": "帝骑驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#decadriver)Decade$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/deca_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kivat_belt_raise_buckle",
+			"title": "Kiva腰带代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#kivat_belt)Kiva$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/kivat_belt_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "den_o_belt_raise_buckle",
+			"title": "电王腰带代扣",
+			"text": "登场于：$(li)DX电王驱动器升级带扣 (2023年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#den_o_belt)Den-O$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/den_o_belt_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kabuto_zector_raise_buckle",
+			"title": "甲斗Zecter代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#kabuto_zecter)甲斗$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/kabuto_zector_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ongekiko_kaentsuzumi_raise_buckle",
+			"title": "音击鼓·火炎鼓代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#ongekiko_kaentsuzumi)响鬼$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ongekiko_kaentsuzumi_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blay_buckle_raise_buckle",
+			"title": "Blay代扣代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#blay_buckle)剑$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/blay_buckle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "faiz_driver_raise_buckle",
+			"title": "Faiz驱动器代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#faiz_driver)Faiz$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/faiz_driver_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "v_buckle_raise_buckle",
+			"title": "V带扣带扣",
+			"text": "登场于：$(li)假面骑士极狐：搞什么？！全是男人的欲望大奖赛！我是王蛇！(2023年，超级战斗视频)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#v_buckle)龙骑$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/v_buckle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alter_ring_raise_buckle",
+			"title": "变化圆环代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#altering)亚极陀$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/alter_ring_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "arcle_raise_buckle",
+			"title": "亚古鲁代扣",
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#arcle)空我$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/arcle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_stone_raise_buckle",
+			"title": "帝王石代扣",
+			"text": "登场于：$(li)DX台风&双重台风&帝王石升级带扣套装 (2022年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#king_stone)Black$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/king_stone_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "double_typhoon_raise_buckle",
+			"title": "双重台风代扣",
+			"text": "登场于：$(li)DX台风&双重台风&帝王石升级带扣套装 (2022年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#double_typhoon)V3$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/double_typhoon_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "typhoon_raise_buckle",
+			"title": "台风代扣",
+			"text": "登场于：$(li)DX台风&双重台风&帝王石升级带扣套装 (2022年，玩具系列)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#typhoon)一号$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/typhoon_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ouja_v_buckle_raise_buckle",
+			"title": "V带扣(王蛇)代扣",
+			"text": "登场于：$(li)假面骑士极狐：搞什么？！全是男人的欲望大奖赛！我是王蛇！(2023年，超级战斗视频)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/buffa#v_buckle_ouja)王蛇$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:geats/ouja_v_buckle_raise_buckle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "king_ohger_raise_buckle",
+			"title": "君王者代扣",
+			"text": "登场于：$(li)SG升级带扣套装05 (2022年，玩具系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:king_ohger_raise_buckle",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

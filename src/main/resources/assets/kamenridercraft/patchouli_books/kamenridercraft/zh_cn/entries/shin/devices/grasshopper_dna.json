@@ -1,0 +1,16 @@
+{
+	"name": "蝗虫基因",
+	"icon": "kamenridercraft:grasshopper_dna",
+	"category": "kamenridercraft:shin/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)真假面骑士: 序章 (1992年, 电影)$(br2)与$(l:shin/devices/armor)真装甲$(/l)一起穿戴，可变身为$(l:shin/riders/shin)假面骑士真"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:shin/grasshopper_dna"
+		}
+	]
+}

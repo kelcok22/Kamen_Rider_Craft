@@ -1,0 +1,36 @@
+{
+	"name": "拉布可芙",
+	"icon": "kamenridercraft:lovekov_belt",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+          "anchor": "lovekov",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lovekov_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_vistamp_lovekov\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用 $(l:revice/items/vistamps#cobra_vistamp)眼镜蛇罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "拉布可芙",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/lovekov_belt)拉布可芙腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)速度 II$(li)毒药抗性$(li)急迫 II"
+		},
+      {
+        "type": "patchouli:entity",
+        "anchor": "snake_woman",
+        "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lovekov_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:lovekov_snake_woman\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+        "scale": -1,
+        "offset": 0.1,
+        "name": "蛇女",
+        "text": "通过使用 $(l:revice/items/vistamps#tri_chimera_vistamp)三重奇美拉罪恶印章$(/l) 进行形态切换"
+      },
+      {
+        "type": "patchouli:text",
+        "title": "拉布可芙",
+        "text": "登场于：$(li)假面骑士利维斯：战斗家族 (2022年，电影)$(br2)通过穿戴$(l:revice/devices/lovekov_belt)拉布可芙腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)速度 II$(li)毒药抗性$(li)急迫 II"
+      }
+	]
+}

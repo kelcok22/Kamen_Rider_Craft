@@ -1,0 +1,19 @@
+{
+    "name": "邪恶尾鞭降临卡",
+    "icon": "kamenridercraft:evil_whip_vent",
+    "category": "kamenridercraft:ryuki/arsenal",
+    "sortnum": 57,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士龙骑 (2002年，电视剧)$(br2)由 $(l:ryuki/riders/raia#raia)假面骑士海鳐$(/l) 搭配 $(l:ryuki/arsenal/evil_visor)邪恶召机$(/l) 使用，获得 $(l:ryuki/arsenal/evil_whip)邪恶尾鞭$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:evil_whip_vent",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#raia)假面骑士海鳐$(/l)"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "流星风暴长杆",
+	"icon": "kamenridercraft:meteor_storm_shaft",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)由$(l:fourze/riders/meteor#meteor_storm)假面骑士流星风暴$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/meteor_storm_shaft"
+		}
+	]
+}

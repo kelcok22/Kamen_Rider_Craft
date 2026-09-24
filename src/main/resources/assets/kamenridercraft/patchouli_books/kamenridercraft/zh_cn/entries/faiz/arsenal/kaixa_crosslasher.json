@@ -1,0 +1,16 @@
+{
+	"name": "凯撒十字镭射",
+	"icon": "kamenridercraft:kaixa_crosslasher",
+	"category": "kamenridercraft:faiz/arsenal",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)由$(l:faiz/riders/next_kaixa)假面骑士Next Kaixa$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/kaixa_crosslasher"
+		}
+	]
+}

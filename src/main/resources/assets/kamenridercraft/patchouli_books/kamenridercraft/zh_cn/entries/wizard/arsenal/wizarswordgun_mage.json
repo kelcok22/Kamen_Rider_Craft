@@ -1,0 +1,24 @@
+{
+	"name": "魔法剑枪（Mage版本）",
+	"icon": "kamenridercraft:wizarswordgun_mage",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)由$(l:wizard/riders/mage)假面骑士Mage$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun_mage3"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun_mage"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun_mage2"
+		}
+	]
+}

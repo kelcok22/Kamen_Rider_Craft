@@ -1,0 +1,211 @@
+{
+    "name": "空我灵石",
+    "icon": "kamenridercraft:kuuga_mighty",
+    "category": "kamenridercraft:kuuga/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_mighty",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于制作空我的 $(l:kuuga/devices/arcle)亚古鲁$(/l)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#mighty)全能形态$(/l)$(br2)用于制作空我的 $(l:kuuga/arsenal/rising_beat_armor)升华节拍装甲$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_mighty",
+            "text": "可在 $(l:kuuga/structures/kuuga_ruin)空我遗迹$(/l) 周围的可疑沙砾中找到$(br2)掉落自：$(li)$(l:kuuga/mobs/zu_gumun_ba)滋·古穆姆·巴$(/l)$(li)$(l:misc/blocks/stone_kuuga)阿达姆灵石矿$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)深层阿达姆灵石矿$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_dragon",
+            "title": "空我青龙灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#dragon)青龙形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_dragon",
+            "title": " ",
+            "text": "可在 $(l:kuuga/structures/kuuga_ruin)空我遗迹$(/l) 周围的可疑沙砾中找到$(br2)掉落自：$(li)$(l:kuuga/mobs/zu_gumun_ba)滋·古穆姆·巴$(/l)$(li)$(l:misc/blocks/stone_kuuga)阿达姆灵石矿$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)深层阿达姆灵石矿$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_pegasus",
+            "title": "空我天马灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#pegasus)天马形态$(/l)"
+        },
+        {
+           "type": "patchouli:spotlight",
+           "link_recipe": true,
+           "item": "kamenridercraft:kuuga_pegasus",
+           "title": " ",
+           "text": "可在 $(l:kuuga/structures/kuuga_ruin)空我遗迹$(/l) 周围的可疑沙砾中找到$(br2)掉落自：$(li)$(l:kuuga/mobs/zu_gumun_ba)滋·古穆姆·巴$(/l)$(li)$(l:misc/blocks/stone_kuuga)阿达姆灵石矿$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)深层阿达姆灵石矿$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_titan",
+            "title": "空我泰坦灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#titan)泰坦形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_titan",
+            "title": " ",
+            "text": "可在 $(l:kuuga/structures/kuuga_ruin)空我遗迹$(/l) 周围的可疑沙砾中找到$(br2)掉落自：$(li)$(l:kuuga/mobs/zu_gumun_ba)滋·古穆姆·巴$(/l)$(li)$(l:misc/blocks/stone_kuuga)阿达姆灵石矿$(/l)$(li)$(l:misc/blocks/deepslate_stone_kuuga)深层阿达姆灵石矿$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_rising_mighty",
+            "title": "空我升华全能灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#rising_mighty)升华全能形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_rising_dragon",
+            "text": "掉落自：$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_rising_dragon",
+            "title": "空我升华青龙灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#rising_dragon)升华青龙形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_rising_dragon",
+            "text": "掉落自：$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_rising_pegasus",
+            "title": "空我升华天马灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#rising_pegasus)升华天马形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_rising_pegasus",
+            "text": "掉落自：$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_rising_titan",
+            "title": "空我升华泰坦灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#rising_titan)升华泰坦形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_rising_titan",
+            "text": "掉落自：$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_amazing_mighty",
+            "title": "空我惊异全能灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#amazing_mighty)惊异全能形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_amazing_mighty"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_ultimate",
+            "title": "空我究极灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#ultimate)究极形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_ultimate"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_ultimate_black_eyes",
+            "title": "空我究极灵石(黑目)",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#ultimate_dark_eye)究极形态(黑目)$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_ultimate_black_eyes"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_rising_ultimate",
+            "title": "空我究极升华灵石",
+            "text": "登场于：$(li)假面骑士Decade：全体骑士对大修卡 (2009年，电影)$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#rising_ultimate)究极升华形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_rising_ultimate"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_rising_ultimate_black_eyes",
+            "title": "空我究极升华灵石(黑目)",
+            "text": "登场于：$(li)假面骑士Decade：全体骑士对大修卡 (2009年，电影)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#rising_ultimate_dark_eye)究极升华形态(黑目)$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_rising_ultimate_black_eyes"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_super_rising_ultimate",
+            "title": "空我超升华究极灵石",
+            "text": "登场于：$(li)World of OOO (2015年，S.I.C.英雄传奇)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#super_rising_ultimate)超究极升华形态$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:kuuga/kuuga_super_rising_ultimate"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_black_rising_mighty",
+            "title": "空我黑色升华全能灵石",
+            "text": "登场于：$(li)电视君 (2001年1月，杂志)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#black_rising_mighty)升华全能形态(黑色版本)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_black_rising_mighty",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuuga_touma",
+            "title": "空我全能灵石(-空我熊-)",
+            "text": "登场于：$(li)HEROES VINYL ART 假面骑士空我 -TOUMA- (2025年，玩具线)$(br2)用于切换空我的 $(l:kuuga/riders/kuuga#touma)全能形态(-空我熊-版)$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kuuga_touma",
+            "title": " ",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "n_daguva_zeba_ultimate",
+            "title": "恩·达古巴·杰巴究极灵石",
+            "text": "登场于：$(li)假面骑士空我 (2000年，电视剧)$(br2)用于制作恩·达古巴·杰巴的 $(l:kuuga/devices/n_daguva_zeba_belt)恩·达古巴·杰巴腰带$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:n_daguva_zeba_ultimate",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:kuuga/mobs/n_daguva_zeba)恩·达古巴·杰巴$(/l)"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "卡控剑刃",
+	"icon": "kamenridercraft:gashacon_sword",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由 $(l:ex_aid/riders/brave)假面骑士Brave$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:exaid/gashacon_sword"
+		}
+	]
+}

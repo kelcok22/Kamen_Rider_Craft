@@ -1,0 +1,17 @@
+{
+    "name": "简化台风腰带",
+    "icon": "kamenridercraft:simplified_typhoon",
+    "category": "kamenridercraft:shin_kamen_rider/devices",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)真·假面骑士（2023年，电影）$(br2)与$(l:shin_kamen_rider/devices/armor)真·假面骑士装甲$(/l)一起穿戴，可变身为$(l:shin_kamen_rider/riders/phase_variation_batta_aug)产型蝗虫怪人$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:shin_kamen_rider/simplified_typhoon"
+        }
+    ]
+}

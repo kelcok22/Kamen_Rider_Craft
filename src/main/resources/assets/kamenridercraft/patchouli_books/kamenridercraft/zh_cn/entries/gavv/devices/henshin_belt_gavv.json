@@ -1,0 +1,16 @@
+{
+	"name": "加布变身腰带",
+	"icon": "kamenridercraft:henshin_belt_gavv",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/gavv)假面骑士加布"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/henshin_belt_gavv"
+		}
+	]
+}

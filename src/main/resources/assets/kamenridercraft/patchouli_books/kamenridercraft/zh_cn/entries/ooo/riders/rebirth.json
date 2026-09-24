@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Rebirth",
+	"icon": "kamenridercraft:rebirth_driver",
+	"category": "kamenridercraft:ooo/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:rebirth_driver\",Count:1b},{id:\"kamenridercraft:ooolegs\",Count:1b},{id:\"kamenridercraft:oootroso\",Count:1b},{id:\"kamenridercraft:ooohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Rebirth",
+			"text": "登场于：$(li)魔法师的学徒 (2014年，S.I.C.英雄传奇)$(br2)通过穿戴$(l:ooo/devices/rebirth_driver)ReBirth驱动器(小说)$(/l)进行变身"
+		}
+	]
+}

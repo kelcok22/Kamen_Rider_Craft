@@ -1,0 +1,40 @@
+{
+	"name": "Wizar驱动器",
+	"icon": "kamenridercraft:wizardriver",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "wizardriver",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/wizard#flame)假面骑士Wizard$(/l)$(br2)最多可存放7组巫师指环"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/wizardriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_wizardriver",
+			"title": "Wizar驱动器(黑暗Wizard)",
+			"text": "登场于：$(li)假面骑士Wizard：Final Stage (2013年，舞台秀)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/dark_wizard)假面骑士黑暗Wizard$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/dark_wizardriver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_wizardriver",
+			"title": "Wizar驱动器(黑Wizard)",
+			"text": "登场于：$(li)小说：假面骑士Wizard (2014年，小说)$(li)S.I.C.英雄传奇：魔法师的学徒 (2014年，S.I.C.英雄传说)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/black_wizard)假面骑士黑Wizard$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:wizard/black_wizardriver"
+		}
+	]
+}

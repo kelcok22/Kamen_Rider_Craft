@@ -1,0 +1,29 @@
+{
+	"name": "奇美拉驱动器",
+	"icon": "kamenridercraft:chimera_driver",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "chimera_driver",
+			"text": "登场于：$(li)假面骑士利维斯 衍生剧：奇美拉的诞生 (2022年，TTFC特别剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/chimera)假面骑士奇美拉$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/chimera_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chimera_driver_daimon",
+			"title": "奇美拉驱动器（戴蒙版）",
+			"text": "登场于：$(li)假面骑士利维斯：战斗家族 (2022年，电影)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/daimon)假面骑士戴蒙$(/l)$(br2)最多可存储2组罪恶印章"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:revice/chimera_driver_daimon"
+		}
+	]
+}

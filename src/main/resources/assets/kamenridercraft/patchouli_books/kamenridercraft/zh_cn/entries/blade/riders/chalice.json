@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士卡利斯",
+	"icon": "kamenridercraft:change_mantis",
+	"category": "kamenridercraft:blade/riders",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "chalice",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chalice_rouzer\",components:{custom_data:{slot_tex1:\"kamenridercraft:change_mantis\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:blade/items/rouze_cards#change_mantis)觉醒卡片·变化螳螂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士卡利斯",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)通过穿戴$(l:blade/devices/chalice_rouzer)卡利斯觉醒器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wild",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chalice_rouzer\",components:{custom_data:{slot_tex1:\"kamenridercraft:evolution_paradoxa\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "狂野形态",
+			"text": "通过使用$(l:blade/items/rouze_cards#evolution_paradoxa)觉醒卡片·进化幽灵螳螂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士卡利斯",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)通过穿戴$(l:blade/devices/chalice_rouzer)卡利斯觉醒器$(/l)进行变身$(br2)状态效果：$(li)抗性提升 IV$(li)急迫$(li)跳跃提升$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shadowmantis",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chalice_rouzer\",components:{custom_data:{slot_tex1:\"kamenridercraft:shadowmantis\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级模式",
+			"text": "通过使用$(l:misc/items/card_warrior_cards#shadowmantis)影螳螂怪物驾驭卡$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士卡利斯",
+			"text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:blade/devices/chalice_rouzer)卡利斯觉醒器$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 II$(li)抗性提升 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chalice_choco",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chalice_rouzer\",components:{custom_data:{slot_tex1:\"kamenridercraft:final_form_ride_chalice_choco\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "巧卡利斯",
+			"text": "通过使用$(l:decade/items/final_formride_cards#chalice_choco)巧卡利斯 形态假面驾驭卡$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士卡利斯",
+			"text": "登场于：$(li)OOO、电王、全骑士：大家一起宇宙来了 ～看！只有你的48位骑士～ (2011年，网络电影)$(br2)通过穿戴$(l:blade/devices/chalice_rouzer)卡利斯觉醒器$(/l)进行变身$(br2)状态效果：$(li)缩小 VI$(li)缓慢 III$(li)饱和"
+		}
+	]
+}

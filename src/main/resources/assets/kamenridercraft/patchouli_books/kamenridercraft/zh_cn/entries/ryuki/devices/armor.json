@@ -1,0 +1,24 @@
+{
+	"name": "龙骑装甲",
+	"icon": "kamenridercraft:ryukihead",
+	"category": "kamenridercraft:ryuki/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与龙骑骑士的V代扣配合使用，以变身成该骑士。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/ryukihead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/ryukitroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/ryukilegs"
+		}
+	]
+}

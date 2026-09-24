@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "假面骑士Ghost",
+    "description": "与《假面骑士Ghost》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:ghost_logo",
+    "sortnum": 31
+}

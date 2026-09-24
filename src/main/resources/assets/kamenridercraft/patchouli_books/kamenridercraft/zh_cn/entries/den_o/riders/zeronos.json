@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士零诺斯",
+	"icon": "kamenridercraft:zeronos_plat_card",
+	"category": "kamenridercraft:den_o/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "plat",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_plat_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "月台形态",
+			"text": "通过使用 $(l:den_o/items/zeronos_cards#zeronos_plat_card)零诺斯月台卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士零诺斯",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/zeronos_belt)零诺斯腰带$(/l)进行变身$(br2)状态效果：$(li)急迫"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "altair",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_altair_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "牵牛星形态",
+			"text": "通过使用 $(l:den_o/items/zeronos_cards#zeronos_altair_card)零诺斯牵牛星卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士零诺斯",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/zeronos_belt)零诺斯腰带$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)急迫$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "vega",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_vega_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "织女星形态",
+			"text": "通过使用 $(l:den_o/items/zeronos_cards#zeronos_vega_card)零诺斯织女星卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士零诺斯",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/zeronos_belt)零诺斯腰带$(/l)进行变身$(br2)状态效果：$(li)抗性提升 II$(li)急迫 II$(li)防火$(br2)专属技能：$(li)加特林"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zero",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zeronos_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:zeronos_zero_card\"}},Count:1b},{id:\"kamenridercraft:den_olegs\",Count:1b},{id:\"kamenridercraft:den_otroso\",Count:1b},{id:\"kamenridercraft:den_ohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "零形态",
+			"text": "通过使用 $(l:den_o/items/zeronos_cards#zeronos_zero_card)零诺斯零形态卡$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士零诺斯",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过穿戴$(l:den_o/devices/zeronos_belt)零诺斯腰带$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)生命恢复 II$(li)急迫 II$(li)防火$(li)力量 III"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "小西瓜表盘",
+  "icon": "kamenridercraft:kodama_ridewatch",
+  "category": "kamenridercraft:zi_o/arsenal",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于召唤小西瓜武装"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:zi_o/kodama_ridewatch"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+    "name": "G代扣",
+    "icon": "kamenridercraft:g3_belt",
+    "category": "kamenridercraft:agito/devices",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "g3_belt",
+            "text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g3)假面骑士G3$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g3_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g3_x_belt",
+            "title": "G代扣(G3-X)",
+            "text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g3-x)假面骑士G3-X$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g3_x_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g3_mild_belt",
+            "title": "G代扣(G3轻量型)",
+            "text": "登场于：$(li)假面骑士亚极陀特别篇：新的变身 (2001年，电视特别篇)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g3_mild)假面骑士G3轻量型$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g3_mild_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g4_belt",
+            "title": "G代扣(G4)",
+            "text": "登场于：$(li)假面骑士亚极陀：G4计划 (2001年，电影)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g4)假面骑士G4$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g4_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g4_x_belt",
+            "title": "G代扣(G4-X)",
+            "text": "登场于：$(li)Project G1 (2007年，S.I.C.英雄传奇)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g4-x)假面骑士G4-X$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g4_x_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g6_belt",
+            "title": "G代扣(G6)",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g6)假面骑士G6$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g6_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g7_belt",
+            "title": "G代扣(马克7)",
+            "text": "登场于：$(li)亚极陀：超能战争 (2026年，电影)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g7)假面骑士G7$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g7_belt"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "g1_belt",
+            "title": "G代扣(G1)",
+            "text": "登场于：$(li)Project G1 (2007年，S.I.C.英雄传奇)$(br2)与 $(l:agito/devices/armor)亚极陀装甲$(/l) 一起穿戴，可变身为 $(l:agito/riders/g1)假面骑士G1$(/l)$(br2)可在铁砧中使用 $(l:agito/items/g3core)空白G芯片$(/l) 进行修复"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:agito/g1_belt"
+        }
+    ]
+}

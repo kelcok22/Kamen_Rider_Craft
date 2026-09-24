@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/showa",
+    "name": "假面骑士J",
+    "description": "与电影《假面骑士J》相关的所有内容.",
+    "icon": "kamenridercraft:j_logo",
+    "sortnum": 14
+}

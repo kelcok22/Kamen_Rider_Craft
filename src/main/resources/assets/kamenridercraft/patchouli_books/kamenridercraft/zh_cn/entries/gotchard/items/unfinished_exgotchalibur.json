@@ -1,0 +1,19 @@
+{
+	"name": "未完成的断钢Gotcha圣剑",
+	"icon": "kamenridercraft:unfinished_exgotchalibur",
+	"category": "kamenridercraft:gotchard/items",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:unfinished_exgotchalibur",
+			"title": " ",
+			"text": "通过在$(l:gotchard/arsenal/chemy_riser)凯米升华器$(/l)或$(l:gotchard/arsenal/chemy_riser_supana)凯米升华器(黑钢斯巴纳版)$(/l)中使用$(l:gotchard/items/ride_chemy_cards#ufo_x_ride_chemy_card)UFO-X驾驭凯米卡$(/l)获取"
+		}
+	]
+}

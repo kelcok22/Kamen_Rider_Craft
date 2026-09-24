@@ -1,0 +1,16 @@
+{
+	"name": "DGP奖励硬币",
+	"icon": "kamenridercraft:dgp_winners_coin",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/dgp_winners_coin"
+		}
+	]
+}

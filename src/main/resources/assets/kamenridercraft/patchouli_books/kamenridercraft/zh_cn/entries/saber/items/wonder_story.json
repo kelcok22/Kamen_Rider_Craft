@@ -1,0 +1,20 @@
+{
+	"name": "奇幻故事书",
+	"icon": "kamenridercraft:wonder_story",
+	"category": "kamenridercraft:saber/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士圣刃 (2020年 , 电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_story",
+			"title": " ",
+			"text": "可在 $(l:misc/city/suburban_area#fantastic_bookstore_kamiyama)神山奇幻书店$(/l) 内找到
+"
+		}
+	]
+}

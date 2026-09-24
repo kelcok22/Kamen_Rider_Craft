@@ -1,0 +1,175 @@
+{
+	"name": "刀剑降临",
+	"icon": "kamenridercraft:ride_saber_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 50,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ride_saber_vent",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#blank)龙骑空白形态$(/l)与$(l:ryuki/arsenal/ride_visor)骑士召机$(/l)一同使用，可获得$(l:ryuki/arsenal/ride_saber)骑士军刀$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ride_saber_vent",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki)假面骑士龙骑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_saber_vent",
+			"title": "龙军刀降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑$(/l)与$(l:ryuki/arsenal/drag_visor)龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/drag_saber)龙军刀$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_saber_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki)假面骑士龙骑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_blade_vent",
+			"title": "龙利刃刀剑降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由龙骑的$(l:ryuki/riders/ryuki#survive)生存形态$(/l)与$(l:ryuki/arsenal/drag_visor)龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/drag_blade)龙利刃$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_blade_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)假面骑士龙骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_lancer_vent",
+			"title": "蝠翼长矛刀剑降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/knight#knight)假面骑士夜骑$(/l)与$(l:ryuki/arsenal/dark_visor)黑暗召机$(/l)一同使用，可获得$(l:ryuki/arsenal/wing_lancer)蝠翼长矛$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_lancer_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight)假面骑士夜骑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_blade_vent",
+			"title": "黑暗剑刃刀剑降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由夜骑的$(l:ryuki/riders/knight#survive)生存形态$(/l)与$(l:ryuki/arsenal/dark_visor)黑暗召机$(/l)一同使用，可获得$(l:ryuki/arsenal/dark_blade)黑暗剑刃$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_blade_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight_survive)假面骑士夜骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "veno_saber_vent",
+			"title": "毒军刀攻击降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ouja#ouja)假面骑士王蛇$(/l)与$(l:ryuki/arsenal/veno_visor)毒蛇召机$(/l)一同使用，可获得$(l:ryuki/arsenal/veno_saber)毒军刀$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:veno_saber_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ouja)假面骑士王蛇$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "veno_visor_zwei_vent",
+			"title": "蛇剑刃刀剑降临",
+			"text": "登场于：$(li)假面骑士界外者（2022年，网络剧）$(br2)由王蛇的$(l:ryuki/riders/ouja#survive)生存形态$(/l)与$(l:ryuki/arsenal/veno_visor)毒蛇召机$(/l)一同使用，可获得$(l:ryuki/arsenal/veno_visor_zwei)蛇剑刃$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:veno_visor_zwei_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ouja_survive)假面骑士王蛇 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_saber_vent",
+			"title": "黄金军刀刀剑降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/odin)假面骑士奥丁$(/l)与$(l:ryuki/arsenal/gold_visor)黄金召机$(/l)一同使用，可获得$(l:ryuki/arsenal/gold_saber)黄金军刀$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_saber_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_slasher_vent",
+			"title": "羽翼砍剑刀剑降临",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)由$(l:ryuki/riders/femme)假面骑士花梦$(/l)与$(l:ryuki/arsenal/blanc_visor)雪白召机$(/l)一同使用，可获得$(l:ryuki/arsenal/wing_slasher)羽翼砍剑$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_slasher_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#femme)假面骑士花梦$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_saber_vent_ryuga",
+			"title": "龙军刀降临(龙牙)",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)由$(l:ryuki/riders/ryuga#ryuga)假面骑士龙牙$(/l)与$(l:ryuki/arsenal/black_drag_visor)暗黑龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/drag_saber_ryuga)龙军刀（龙牙）$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_saber_vent_ryuga",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuga)假面骑士龙牙$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_drag_visor_zwei_vent",
+			"title": "黑暗龙召机Ⅱ射击降临",
+			"text": "登场于：$(li)World of If（2005年，S.I.C. Hero Saga）$(br2)由龙牙的$(l:ryuki/riders/ryuga#survive)生存形态$(/l)与$(l:ryuki/arsenal/black_drag_visor)暗黑龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/black_drag_visor_zwei)黑暗龙召机Ⅱ$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_drag_visor_zwei_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuga_survive)假面骑士龙牙 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_dagger_vent",
+			"title": "猛砍匕首降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/alternative)抉择者$(/l)和$(l:ryuki/riders/alternative_zero)抉择者零号$(/l)与$(l:ryuki/arsenal/slash_visor)猛砍召机$(/l)一同使用，可获得$(l:ryuki/arsenal/slash_dagger)猛砍匕首$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:slash_dagger_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#alternative)抉择者$(/l) 和 $(li)$(l:ryuki/mobs/mirror_rider#alternative_zero)抉择者零号$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "abyss_saber_vent",
+			"title": "深渊军刀刀剑降临",
+			"text": "登场于：$(li)假面骑士Decade（2009年，电视剧）$(br2)由$(l:ryuki/riders/abyss)假面骑士深渊$(/l)与$(l:ryuki/arsenal/abyss_visor)深渊召机$(/l)一同使用，可获得$(l:ryuki/arsenal/abyss_saber)深渊军刀$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:abyss_saber_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#abyss)假面骑士深渊$(/l)"
+		}
+	]
+}

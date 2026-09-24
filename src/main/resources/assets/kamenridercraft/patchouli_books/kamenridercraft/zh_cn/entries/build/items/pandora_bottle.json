@@ -1,0 +1,19 @@
+{
+	"name": "潘多拉满装瓶罐",
+	"icon": "kamenridercraft:pandora_bottle",
+	"category": "kamenridercraft:build/items",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于合成$(l:build/items/fullbottles#rabbittank_sparkling_full_bottle)兔子坦克气泡满装瓶罐$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:pandora_bottle",
+			"title": " ",
+			"text": "在$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)上使用$(l:build/items/full_bottle)空白满瓶$(/l)即可获得"
+		}
+	]
+}

@@ -1,0 +1,164 @@
+{
+	"name": "修卡骑士",
+	"icon": "kamenridercraft:shocker_rider_typhoon_core",
+	"category": "kamenridercraft:ichigo/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_1",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_1\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.1"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_1)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_2",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_2\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.2"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_2)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_3",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_3\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.3"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_3)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_4",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_4\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.4"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_4)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_5",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_5\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.5"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_5)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_6",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_6\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.6"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_6)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_7",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_7\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.7"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(li)失落的环节 (2002年，假面骑士S.I.C.英雄传奇)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_7)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_8",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_8\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.8"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(li)失落的环节 (2002年，假面骑士S.I.C.英雄传奇)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_8)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_9",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_9\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.9"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(li)失落的环节 (2002年，假面骑士S.I.C.英雄传奇)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_9)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_10",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_10\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.10"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(li)失落的环节 (2002年，假面骑士S.I.C.英雄传奇)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_10)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_11",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_11\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.11"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(li)失落的环节 (2002年，假面骑士S.I.C.英雄传奇)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_11)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_rider_no_12",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_shocker_rider_12\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "修卡骑士No.12"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "修卡骑士",
+			"text": "登场于：$(li)假面骑士 (1971年，漫画)$(li)失落的环节 (2002年，假面骑士S.I.C.英雄传奇)$(br2)通过穿戴$(l:ichigo/devices/typhoon#typhoon_shocker_rider_12)台风腰带$(/l)进行变身$(br2)状态效果：$(li)跳跃提升$(li)力量"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:misc/misc",
+    "name": "城市维度",
+    "description": "城市维度是一片树木繁茂且基本平坦的地形，在这里可以找到城市。这些城市是刷骑士类生物的绝佳地点，部分建筑中会刷有特殊物品",
+    "icon": "kamenridercraft:woz_time_majin_ridewatch",
+    "sortnum": 2
+}

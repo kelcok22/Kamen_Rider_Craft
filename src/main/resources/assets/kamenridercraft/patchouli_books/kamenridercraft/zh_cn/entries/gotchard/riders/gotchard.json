@@ -1,0 +1,540 @@
+{
+	"name": "假面骑士歌查德",
+	"icon": "kamenridercraft:gotchardriver",
+	"category": "kamenridercraft:gotchard/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "steamhopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopper1_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蒸汽蝗虫",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card)蝗虫一号驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card)蒸汽列车驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "appareskebow",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:apparebushido_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "壮烈滑板",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#skebows_ride_chemy_card)滑板驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#apparebushido_ride_chemy_card)武士道驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度 II$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "antwrestler",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:antrooper_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蚂蚁摔跤手",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#antrooper_ride_chemy_card)蚂蚁军团驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#wrestler_g_ride_chemy_card)摔跤手G驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "needlehawk",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hawkstar_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "针刺雄鹰",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#hawkstar_ride_chemy_card)猎鹰之星驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#saboneedle_ride_chemy_card)针刺仙人掌驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)夜视 II$(li)跳跃提升$(li)飞行 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "goldmechanichor",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:golddash_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黄金机蟹师",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#golddash_ride_chemy_card)黄金冲锋驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#mechanichani_ride_chemy_card)机械螃蟹驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 IV$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lightningjungle",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:raidenji_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "雷电丛林",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#raidenji_ride_chemy_card)雷电池驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#junglejan_ride_chemy_card)丛林小子驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)夜视 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "venommariner",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deepmariner_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猛毒船员",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#deepmariner_ride_chemy_card)深海潜水艇驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#venomdake_ride_chemy_card)剧毒蘑菇驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)毒药抗性 II$(li)水下呼吸 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "burninggorilla",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gorillasensei_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "燃烧猩猩",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#gorillasensei_ride_chemy_card)猩猩老师驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#burningnero_ride_chemy_card)燃烧辣椒驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量（持武器时）$(li)炎拳$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dokkirishovel",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dokkirimajin_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "整蛊挖掘机",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#dokkirimajin_ride_chemy_card)整蛊魔神驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#gutsshovel_ride_chemy_card)勇气挖掘机驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hiikesurose",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hiikescue_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "灭火玫瑰",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#hiikescue_ride_chemy_card)机动消防车驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#flayrose_ride_chemy_card)烈焰玫瑰驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)反射 II$(li)跳跃提升$(li)抗火 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "odorimantis",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kamantis_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "舞蹈螳螂",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#kamantis_ride_chemy_card)镰刀螳螂驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#odorippa_ride_chemy_card)舞蹈家驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)跳跃提升 II$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "energymaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:sasukemaru_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "能量丸",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#sasukemaru_ride_chemy_card)佐助丸驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#energyl_ride_chemy_card)能量饮料驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)隐身$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "madpirates",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:pilets_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "疯狂海贼",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#pilets_ride_chemy_card)海盗驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#madwheel_ride_chemy_card)疯狂车轮驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)大炮 II$(li)速度 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bulletchoucho",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gengenchoucho_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "子弹蝴蝶",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#gengenchoucho_ride_chemy_card)玄幻蝴蝶驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#bulletbaang_ride_chemy_card)子弹砰砰驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)加特林$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "smahotaru",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:pikahotaru_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "智能萤火虫",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#pikahotaru_ride_chemy_card)闪光萤火虫驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#smaphone_ride_chemy_card)智能手机驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cross_ufo_x",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:ufo_x_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级歌查德 交叉十幽浮",
+			"text": "需背包中持有 $(l:gotchard/arsenal/exgotchalibur)断钢Gotcha圣剑$(/l)，并使用 $(l:gotchard/items/ride_chemy_cards#ufo_x_ride_chemy_card)UFO-X驾驭凯米卡$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)夜视$(li)跳跃提升$(li)力量$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cross_x_rex",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_rex_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级歌查德 交叉十暴龙",
+			"text": "需背包中持有 $(l:gotchard/arsenal/exgotchalibur)断钢Gotcha圣剑$(/l)，并使用 $(l:gotchard/items/ride_chemy_cards#x_rex_ride_chemy_card)X暴龙驾驭凯米卡$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "star_gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:x_assemble_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "星辰歌查德",
+			"text": "需背包中持有 $(l:gotchard/arsenal/exgotchalibur)断钢Gotcha圣剑$(/l)，并使用 $(l:gotchard/items/ride_chemy_cards#x_assemble_ride_chemy_card)X集结驾驭凯米卡$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士冬季电影：歌查德&极狐 最强凯米★大捕捉行动 (2023年，电影)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fire_steamhopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchar_igniter\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰歌查德 蒸汽蝗虫",
+			"text": "需要以 $(l:gotchard/riders/gotchard#steamhopper)蒸汽蝗虫$(/l) 形态，使用 $(l:gotchard/items/gotchar_igniter)歌查点火器$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)炎拳 II$(li)跳跃提升 II$(li)推进 IV$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fire_appareskebow",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchar_igniter_as\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰歌查德 壮烈滑板",
+			"text": "需要以 $(l:gotchard/riders/gotchard#appareskebow)壮烈滑板$(/l) 形态，使用 $(l:gotchard/items/gotchar_igniter)歌查点火器$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)炎拳 II$(li)跳跃提升 II$(li)推进 V$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fire_antwrestler",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchar_igniter_aw\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰歌查德 蚂蚁摔跤手",
+			"text": "需要以 $(l:gotchard/riders/gotchard#antwrestler)蚂蚁摔跤手$(/l) 形态，使用 $(l:gotchard/items/gotchar_igniter)歌查点火器$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)炎拳 II$(li)跳跃提升 II$(li)推进 III$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "iron_gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tenliner_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "钢铁歌查德",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#tenliner_ride_chemy_card)十列车驾驭凯米卡$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)力量 III（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)推进 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "platina_gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:crosshopper_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "白金歌查德",
+			"text": "需要以 $(l:gotchard/riders/gotchard#iron_gotchard)钢铁歌查德$(/l) 形态，使用 $(l:gotchard/items/ride_chemy_cards#crosshopper_ride_chemy_card)十蝗虫驾驭凯米卡$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 IV（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VI$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rainbow_gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:nijigon_ride_chemy_card_extra\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "彩虹歌查德",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#nijigon_ride_chemy_card_extra)彩虹龙c(额外)$(/l) 或 $(l:gotchard/items/ride_chemy_cards#nijigon_ride_chemy_card_special)彩虹龙驾驭凯米卡(特殊)$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)可通过按住潜行键点击 $(l:gotchard/items/ride_chemy_cards)骑士驾驭凯米卡$(/l) 召唤 $(l:gotchard/riders/gotcharbrothers)歌查兄弟$(/l)$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 VII（持武器时）$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)推进 III$(li)抗火$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "miracle_gotchard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopper101_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "奇迹歌查德",
+			"text": "需要以 $(l:gotchard/riders/gotchard#rainbow_gotchard)彩虹歌查德$(/l) 形态，使用 $(l:gotchard/items/ride_chemy_cards#hopper101_ride_chemy_card)蝗虫101驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#gigantliner_ride_chemy_card)巨型列车驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德：未来拂晓 (2024年，电影)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 VII（持武器时）$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ultima_steamhopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopper1_ride_chemy_card_ultima\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "究极蒸汽蝗虫",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#hopper1_ride_chemy_card_ultima)究极蝗虫1号驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#steamliner_ride_chemy_card_ultima)究极蒸汽列车驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 X$(li)力量 XIII（空手时）$(li)力量 X（持武器时）$(li)速度 X$(li)抗性提升 X$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "legendliner",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gigantliner_ride_chemy_card_fs\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "传奇列车",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#gigantliner_ride_chemy_card_fs)巨型列车驾驭凯米卡(最终舞台剧版)$(/l) 或 $(l:gotchard/items/ride_chemy_cards#legendary_legend_ride_chemy_card_fs)传奇雷杰多骑士凯米驾驭卡(最终舞台剧版)$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德：最终舞台剧 (2024年，舞台剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 VII（持武器时）$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "marsphoenix",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:firemars_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火星不死鸟",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card)烈火火星驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card)凤凰无限驾驭凯米卡$(/l)（需背包中同时持有两张卡片，电视君版本也可使用）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德：什么！？宝太郎和凛音交换身体了！！ (2024年，超战斗DVD)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)炎拳$(li)跳跃提升 II$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "exceed_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kuuga_ride_chemy_card_gotchard\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超越强能",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#kuuga_ride_chemy_card)空我骑士凯米驾驭卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#faiz_ride_chemy_card)Faiz骑士凯米驾驭卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)力量 III（持武器时）$(li)抗性提升$(li)夜视"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fire_exceed_mighty",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:gotchar_igniter_em\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰歌查德 超越强能",
+			"text": "需要以 $(l:gotchard/riders/gotchard#exceed_mighty)超越强能$(/l) 形态，使用 $(l:gotchard/items/gotchar_igniter)歌查点火器$(/l) 切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)夜视$(li)炎拳$(li)跳跃提升 II$(li)推进 III$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cyclone_tatoba",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:w_ride_chemy_card_gotchard\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "疾风鹰虎蝗",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#w_ride_chemy_card)W骑士凯米驾驭卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#ooo_ride_chemy_card)OOO骑士凯米驾驭卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)夜视 II$(li)急迫 II$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fullfull_rocket",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_ride_chemy_card_gotchard\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "满装火箭",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#fourze_ride_chemy_card)Fourze骑士凯米驾驭卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#build_ride_chemy_card)Build骑士凯米驾驭卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)跳跃提升 III$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "spiclewhale",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:spicle_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "尖刺单车巨鲸",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#spicle_ride_chemy_card)尖刺单车驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#ganvhale_ride_chemy_card)岩石巨鲸驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)力量 IV$(li)抗性提升 IV$(li)水下呼吸 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "batkingrobo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:yamibat_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蝙蝠王机器人",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#yamibat_ride_chemy_card)黑暗蝙蝠驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#renkingrobo_ride_chemy_card)炼金王机器人驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)大炮$(li)缓慢$(li)抗性提升 IV$(li)力量 V$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "stagmirror",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:stagvine_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "锹甲魔镜",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#stagvine_ride_chemy_card)巨颚锹甲驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#mitemirror_ride_chemy_card)看看镜子驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)反射$(li)急迫 III$(li)跳跃提升 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "greatsasorry",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:greatonbo_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "宏伟毒蝎",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#greatonbo_ride_chemy_card)灵敏蜻蜓驾驭凯米卡$(/l) 或 $(l:gotchard/items/rlie_chemy_cards#bussasorry_ride_chemy_card)穿刺毒蝎驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)骑士毒手!$(li)毒药抗性$(li)夜视$(li)急迫 III$(li)跳跃提升 III$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bunnyparka",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:bountybunny_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "兔子卫衣",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#bountybunny_ride_chemy_card)赏金兔子驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#panpakaparka_ride_chemy_card)登登卫衣驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)歌查德档案 (2023年，手机应用)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)灵体漂浮$(li)跳跃提升 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "sushihopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gotchardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hopper_ride_chemy_card\"}},Count:1b},{id:\"kamenridercraft:gotchard_legs\",Count:1b},{id:\"kamenridercraft:gotchard_torso\",Count:1b},{id:\"kamenridercraft:gotchard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "寿司蝗虫",
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#sushi_ride_chemy_card)寿司驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#hopper_ride_chemy_card)蝗虫驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士歌查德",
+			"text": "登场于：$(li)假面骑士歌查德 大学篇 (2026年，小说)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)饱和$(li)跳跃提升 II$(li)力量 III"
+		}
+	]
+}

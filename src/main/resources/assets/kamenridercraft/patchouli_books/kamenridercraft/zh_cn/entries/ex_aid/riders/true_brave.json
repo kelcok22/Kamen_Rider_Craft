@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士True Brave",
+	"icon": "kamenridercraft:gamer_driver_truebrave",
+	"category": "kamenridercraft:ex_aid/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gamer_driver_truebrave\",Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "遗产玩家 Lv. 50",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士True Brave",
+			"text": "登场于：$(li)假面骑士×超级战队：超超级英雄大战 (2017年，电影)$(br2)通过穿戴$(l:ex_aid/devices/gamer_driver#gamer_driver_truebrave)玩家驱动器（True Brave）$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度 II$(li)抗性提升 II$(li)力量 II"
+		}
+	]
+}

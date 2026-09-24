@@ -1,0 +1,17 @@
+{
+	"name": "红色咒者",
+	"icon": "kamenridercraft:amazon_logo",
+	"category": "kamenridercraft:amazon/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:red_follower",
+			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 沙漠, 丛林, 热带草原, 热带高原, 风袭热带草原, 沙滩, 恶地, 风蚀恶地, 繁茂恶地$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (50%)$(li)1个$(l:amazon/items/condorer_wheel)印加腕轮$(/l) (50%)$(li)1个$(l:fourze/items/astroswitches#clear_drill_switch)通透钻头$(/l) (4%)"
+		}
+	]
+}

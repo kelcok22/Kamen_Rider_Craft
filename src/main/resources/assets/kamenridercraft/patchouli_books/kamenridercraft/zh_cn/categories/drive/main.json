@@ -1,0 +1,7 @@
+{
+    "parent": "kamenridercraft:main/heisei",
+    "name": "假面骑士Drive",
+    "description": "与《假面骑士Drive》这部作品相关的所有内容.",
+    "icon": "kamenridercraft:drive_logo",
+    "sortnum": 30
+}

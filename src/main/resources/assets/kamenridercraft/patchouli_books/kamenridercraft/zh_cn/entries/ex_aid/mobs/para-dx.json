@@ -1,0 +1,17 @@
+{
+    "name": "假面骑士Para-DX",
+    "icon": "kamenridercraft:ex_aid_logo",
+    "category": "kamenridercraft:ex_aid/mobs",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:para-dx",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br)生命值: 45"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有5%的几率从$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)升级上场$(br2)掉落$(li)2-4个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)$(li)1-2个$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)$(li)1个$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l) (33.3%)$(li)1个$(l:ex_aid/items/gashatrophies#perfect_puzzle_gasha_trophy)完美拼图奖励卡带$(/l) (33.3%)$(li)1个$(l:ex_aid/items/gashatrophies#knockout_fighter_gasha_trophy)击倒战士奖励卡带$(/l) (33.3%)"
+        }
+    ]
+}

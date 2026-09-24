@@ -1,0 +1,16 @@
+{
+	"name": "灾厄极狐破坏者",
+	"icon": "kamenridercraft:dooms_geats_buster",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐：邪魔徒觉醒 (2024年，V-Cinema电影)$(br2)由 $(l:geats/riders/dooms_geats)假面骑士灾厄极狐$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/dooms_geats_buster"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "水骑驱动器",
+	"icon": "kamenridercraft:aqua_driver",
+	"category": "kamenridercraft:ooo/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze&OOO MOVIE大战MEGA MAX (2011年，电影)$(br2)与$(l:ooo/devices/armor)OOO装甲$(/l)一起穿戴，可变身为$(l:ooo/riders/aqua)假面骑士水骑"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/aqua_driver"
+		}
+	]
+}

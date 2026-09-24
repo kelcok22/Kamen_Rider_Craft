@@ -1,0 +1,29 @@
+{
+	"name": "ID核心任务盒",
+	"icon": "kamenridercraft:bikkuri_mission_box",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)右键点击可掉落ID核心$(br2)掉落自：$(li)$(l:geats/mobs/glare2)假面骑士炬目2$(/l)$(br2)掉落物品：$(li)$(l:geats/items/rider_core_ids#geats_rider_core_id)极狐ID核心$(/l) (17.9%)$(li)$(l:geats/items/rider_core_ids#tycoon_rider_core_id)太狸ID核心$(/l) (8.9%)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/bikkuri_mission_box",
+			"text": "$(li)$(l:geats/items/rider_core_ids#na_go_rider_core_id)娜猫ID核心$(/l) (8.9%)$(li)$(l:geats/items/rider_core_ids#buffa_rider_core_id)霸牛ID核心$(/l) (8.9%)$(li)$(l:geats/items/rider_core_ids#punkjack_rider_core_id)朋克杰克ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#nudge_sparrow_rider_core_id)灵雀ID核心$(/l) (5.4%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:geats/items/rider_core_ids#shirowe_rider_core_id)白熊ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#ginpen_rider_core_id)鹅企ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#mary_rider_core_id)咩雳ID核心$(/l) (5.4%)$(li)$(l:geats/items/rider_core_ids#da_paan_rider_core_id)猫熊ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#keirou_rider_core_id)鸮老ID核心$(/l) (3.6%)$(li)$(l:geats/items/rider_core_ids#letter_rider_core_id)信羊ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#lopo_rider_core_id)狼魄ID核心$(/l) (5.4%)$(li)$(l:geats/items/rider_core_ids#groovy_rider_core_id)格比ID核心$(/l) (1.7%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:geats/items/rider_core_ids#hakubi_rider_core_id)花面狸ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#turbon_rider_core_id)塔彘ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#brali_rider_core_id)怖蝠ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#gya_go_rider_core_id)煞猫ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#seeker_rider_core_id)鹿探ID核心$(/l) (5.4%)$(li)$(l:geats/items/rider_core_ids#butchi_rider_core_id)麦奇犬ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#revi_rider_core_id)利维ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#vice_rider_core_id)维斯ID核心$(/l) (1.7%)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)大阪极狐ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)福冈极狐ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)名古屋极狐ID核心$(/l) (1.7%)$(li)$(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)东京极狐ID核心$(/l) (1.7%)"
+		}
+	]
+}

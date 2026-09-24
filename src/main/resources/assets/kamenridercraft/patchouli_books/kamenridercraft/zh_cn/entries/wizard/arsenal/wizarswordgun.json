@@ -1,0 +1,16 @@
+{
+	"name": "魔法剑枪",
+	"icon": "kamenridercraft:wizarswordgun",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)由$(l:wizard/riders/wizard#flame)假面骑士Wizard（火焰风格）$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/wizarswordgun"
+		}
+	]
+}

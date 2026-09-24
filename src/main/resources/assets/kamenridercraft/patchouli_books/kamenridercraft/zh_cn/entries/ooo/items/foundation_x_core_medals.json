@@ -1,0 +1,201 @@
+{
+	"name": "鹰·核心硬币(财団X)",
+	"icon": "kamenridercraft:foundation_x_taka_medal",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_taka_medal",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)鹰$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_taka_medal",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_kujaku_medal",
+			"title": "孔雀·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol)孔雀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kujaku_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_condor_medal",
+			"title": "秃鹫·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tajadol)秃鹫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_condor_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)凯撒反转体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_lion_medal",
+			"title": "狮子·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#latorartar)狮子$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_lion_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_tora_medal",
+			"title": "老虎·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)虎$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_tora_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_cheetah_medal",
+			"title": "猎豹·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#latorartar)猎豹$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_cheetah_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)凯撒反转体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_kuwagata_medal",
+			"title": "锹形·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#gatakiriba)锹形虫$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kuwagata_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_kamakiri_medal",
+			"title": "螳螂·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#gatakiriba)螳螂$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_kamakiri_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_batta_medal",
+			"title": "飞蝗·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#tatoba)蝗$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_batta_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)凯撒反转体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_sai_medal",
+			"title": "犀牛·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)犀$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_sai_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_gorilla_medal",
+			"title": "大猩猩·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)猩$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_gorilla_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_zou_medal",
+			"title": "大象·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#sagohzo)象$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_zou_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)凯撒反转体$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_shachi_medal",
+			"title": "虎鲸·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)鲸$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_shachi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser)凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_unagi_medal",
+			"title": "电鳗·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)鳗$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_unagi_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/bikaiser)霸凯撒$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "foundation_x_tako_medal",
+			"title": "章鱼·核心硬币(财団X)",
+			"text": "登场于：$(li)假面骑士平成世代 FINAL Build&Ex-Aid with 传说骑士 (2017年，电影)$(br2)用于切换OOO的$(l:ooo/riders/ooo#shauta)章$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:foundation_x_tako_medal",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:build/mobs/kaiser_reverse)凯撒反转体$(/l)"
+		}
+	]
+}

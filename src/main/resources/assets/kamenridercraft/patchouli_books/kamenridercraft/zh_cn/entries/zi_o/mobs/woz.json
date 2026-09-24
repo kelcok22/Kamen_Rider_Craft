@@ -1,0 +1,17 @@
+{
+	"name": "假面骑士沃兹(白沃兹)",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:woz",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#woz_boss_block)白沃兹BOSS召唤方块$(/l)召唤而来"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)生命值: 100$(br2)特殊机制：$(li)生命值低于50时使用$(l:zi_o/riders/woz#shinobi)未来助力·忍者$(/l)$(br2)掉落$(li)2-4个$(l:zi_o/items/blank_watch)空白骑士表盘$(/l)$(li)1个$(l:zi_o/items/miridewatches#woz_miridewatch)沃兹未来骑士表盘$(/l)$(li)1个$(l:zi_o/items/miridewatches#shinobi_miridewatch)忍者未来骑士表盘$(/l) (30.8%)$(li)1个$(l:zi_o/items/miridewatches#quiz_miridewatch)Quiz未来骑士表盘$(/l) (30.8%)$(li)1个$(l:zi_o/items/miridewatches#kikai_miridewatch)Kikai未来骑士表盘$(/l) (30.8%)$(li)1个$(l:zi_o/arsenal/woz_time_majin_ridewatch)白沃兹未来骑士表盘$(/l) (7.7%)"
+		}
+	]
+}

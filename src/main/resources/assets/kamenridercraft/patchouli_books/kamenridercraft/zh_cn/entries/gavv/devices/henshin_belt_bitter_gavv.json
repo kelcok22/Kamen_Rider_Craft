@@ -1,0 +1,17 @@
+{
+	"name": "苦涩加布变身腰带",
+	"icon": "kamenridercraft:henshin_belt_bitter_gavv",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/bitter_gavv)假面骑士苦涩加布"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/henshin_belt_bitter_gavv",
+          "text": "掉落自：$(li)$(l:gavv/mobs/bitter_gavv)假面骑士苦涩加布$(/l)的装备$(li)$(l:gavv/mobs/jeeb_stomach)吉普·斯托马克$(/l)的装备（以假面骑士苦涩加布酥酥薯条形态的身份）"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "GS-03〈毁灭者〉",
+	"icon": "kamenridercraft:gs_03_destroyer",
+	"category": "kamenridercraft:agito/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)由$(l:agito/riders/g3)假面骑士G3$(/l)及$(l:agito/riders/g3-x)假面骑士G3-X$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:agito/gs_03_destroyer"
+		}
+	]
+}

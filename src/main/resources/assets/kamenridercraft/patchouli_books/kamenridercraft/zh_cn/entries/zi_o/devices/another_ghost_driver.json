@@ -1,0 +1,16 @@
+{
+	"name": "异类Ghost驱动器",
+	"icon": "kamenridercraft:another_ghost_driver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/another_ghost)异类Ghost$(/l)"
+		},
+		{
+          "type": "patchouli:crafting",
+          "recipe": "kamenridercraft:zi_o/another_ghost_driver"
+		}
+	]
+}

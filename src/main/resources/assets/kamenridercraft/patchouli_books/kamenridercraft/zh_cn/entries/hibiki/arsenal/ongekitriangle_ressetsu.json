@@ -1,0 +1,16 @@
+{
+	"name": "音击三角·烈节",
+	"icon": "kamenridercraft:ongekisankaku_ressetsu",
+	"category": "kamenridercraft:hibiki/arsenal",
+	"sortnum": 16,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)由$(l:hibiki/riders/nishiki)假面骑士西鬼$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/ongekisankaku_ressetsu"
+		}
+	]
+}

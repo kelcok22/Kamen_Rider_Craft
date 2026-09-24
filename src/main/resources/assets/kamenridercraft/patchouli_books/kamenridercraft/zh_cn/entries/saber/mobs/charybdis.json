@@ -1,0 +1,17 @@
+{
+	"name": "卡律布狄斯",
+	"icon": "kamenridercraft:saber_logo",
+	"category": "kamenridercraft:saber/mobs",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:charybdis",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：绯红森林$(br2)掉落$(li)2-4本$(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l)$(br2)进化$(li)$(l:saber/mobs/charybdis_hercules)卡律布狄斯·大力神$(/l)(10%)"
+		}
+	]
+}

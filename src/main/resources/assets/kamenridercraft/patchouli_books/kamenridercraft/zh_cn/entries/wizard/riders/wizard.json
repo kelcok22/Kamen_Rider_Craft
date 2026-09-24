@@ -1,0 +1,316 @@
+{
+	"name": "假面骑士Wizard",
+	"icon": "kamenridercraft:wizardriver",
+	"category": "kamenridercraft:wizard/riders",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "flame",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#flame_ring)火焰巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流水风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#water_ring)流水巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)水下呼吸"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hurricane",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飓风风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#hurricane_ring)飓风巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 VI"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "land",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "大地风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#land_ring)大地巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flame_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:flame_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰魔龙风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#flame_ring_dragon)火焰魔龙巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)力量$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流水魔龙风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#water_ring_dragon)流水魔龙巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)水下呼吸 II$(li)力量$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hurricane_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飓风魔龙风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#hurricane_ring_dragon)飓风魔龙巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 VII$(li)力量$(li)抗性提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "land_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "大地魔龙风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#land_ring_dragon)大地魔龙巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)抗性提升 III$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量 II（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "flame_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰魔龙特殊风格",
+			"text": "以 $(l:wizard/riders/wizard#flame_dragon)火焰魔龙风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#special_ring)特殊巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)力量$(li)抗性提升$(li)烈焰环身 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "water_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:water_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流水魔龙特殊风格",
+			"text": "以 $(l:wizard/riders/wizard#water_dragon)流水魔龙风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#special_ring)特殊巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)水下呼吸 II$(li)力量$(li)抗性提升$(li)海豚的恩惠"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hurricane_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:hurricane_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "飓风魔龙特殊风格",
+			"text": "以 $(l:wizard/riders/wizard#hurricane_dragon)飓风魔龙风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#special_ring)特殊巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 VII$(li)力量$(li)抗性提升$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "land_dragon_special",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:land_ring_dragon_special_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "大地魔龙特殊风格",
+			"text": "以 $(l:wizard/riders/wizard#land_dragon)大地魔龙风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#special_ring)特殊巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 VII$(li)抗性提升$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "all_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:drago_timer\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "完全魔龙风格",
+			"text": "以 $(l:wizard/riders/wizard#flame_dragon)火焰魔龙风格$(/l) 形态，通过 $(l:wizard/items/drago_timer)魔龙计时器$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)抗性提升$(li)烈焰环身 VI$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "special_rush",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:special_rush_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "特殊跃进风格",
+			"text": "以 $(l:wizard/riders/wizard#flame_dragon)火焰魔龙风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#special_rush_ring)特殊跃进指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze：Movie War Ultimatum (2012年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)抗性提升$(li)烈焰环身 VI$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "infinity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:infinity_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "无限风格",
+			"text": "通过使用$(l:wizard/items/wizard_rings#infinity_ring)无限巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)拳力提升 VI$(li)夜视$(li)力量 IX（空手）$(li)力量 V（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "infinity_dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring_no_hope\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "无限魔龙风格",
+			"text": "以 $(l:wizard/riders/wizard#infinity)无限风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#finish_strike_ring)终结突击指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard in Magic Land (2013年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)烈焰环身$(li)飞行$(li)海豚的恩惠$(li)夜视$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量 VI（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "infinity_dragon_gold",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:finish_strike_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黄金无限魔龙风格",
+			"text": "背包中持有 $(l:wizard/items/wizard_rings#hope_ring)希望巫师指环$(/l)，以 $(l:wizard/riders/wizard#infinity)无限风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#finish_strike_ring)终结突击指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武 & Wizard：The Fateful Sengoku Movie Battle (2013年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)烈焰环身$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)夜视$(li)力量 IX（空手）$(li)力量 V（持武器）"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "falco",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:falco_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "猎隼斗篷",
+			"text": "以 $(l:wizard/riders/wizard#flame_dragon)火焰魔龙风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#falco_ring)猎隼巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard：Showtime with the Dance Ring!! (2013年，Hyper Battle Video)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)力量$(li)抗性提升$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beast",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:buffa_ring_wizard\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Beast风格",
+			"text": "以 $(l:wizard/riders/wizard#falco)猎隼斗篷$(/l) 形态，通过 $(l:wizard/items/wizard_rings#buffa_ring)霸牛巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard：Showtime with the Dance Ring!! (2013年，Hyper Battle Video)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)力量 II$(li)抗性提升$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dress_up",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dress_up_ring\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰风格（变装）",
+			"text": "通过使用$(l:wizard/items/wizard_rings#dress_up_ring)变装巫师指环$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗火"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "garuda",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:garuda_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "火焰风格迦楼罗",
+			"text": "以 $(l:wizard/riders/wizard#flame)火焰风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#garuda_ring_color_ver)迦楼罗巫师指环(上色版)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)S.I.C. Vol. 70 假面骑士Wizard Flame Style (2014年，玩具系列)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)夜视$(li)抗火$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kraken",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wizardriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:kraken_ring_color_ver\"}},Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "流水风格克拉肯",
+			"text": "以 $(l:wizard/riders/wizard#water)流水风格$(/l) 形态，通过 $(l:wizard/items/wizard_rings#kraken_ring_color_ver)克拉肯巫师指环(上色版)$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Wizard",
+			"text": "登场于：$(li)S.I.C 假面骑士Wizard Water Style (2015年，玩具系列)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)海豚的恩惠$(li)水下呼吸$(li)夜视"
+		}
+	]
+}

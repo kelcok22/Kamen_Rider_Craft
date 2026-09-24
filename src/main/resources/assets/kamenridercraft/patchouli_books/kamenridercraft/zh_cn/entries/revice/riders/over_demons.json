@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士超越蒂蒙斯",
+	"icon": "kamenridercraft:over_demons_driver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:over_demons_driver\",Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "锹甲虫基因组",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士超越蒂蒙斯",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/demons_driver#over_demons_driver)蒂蒙斯驱动器(超越蒂蒙斯)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)夜视$(li)力量 III$(li)飞行"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "加布啃咬剑",
+	"icon": "kamenridercraft:gavvgablade",
+	"category": "kamenridercraft:gavv/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)由加布的$(l:gavv/riders/gavv#poppingummy)砰击软糖形态$(/l)使用$(br2)副手持有可将村民从$(l:gavv/items/heatpress)压缩饼人$(/l)中脱离"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gavv/gavvgablade"
+		}
+	]
+}

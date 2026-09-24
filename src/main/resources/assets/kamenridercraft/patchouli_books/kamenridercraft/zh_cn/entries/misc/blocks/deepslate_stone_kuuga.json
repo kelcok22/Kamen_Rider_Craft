@@ -1,0 +1,19 @@
+{
+    "name": "深层阿达姆灵石矿",
+    "icon": "kamenridercraft:deepslate_stone_kuuga",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 7,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得空我的 $(l:kuuga/items/amadam_stones#kuuga_mighty)灵石$(/l)$(br2)需要铁镐或更好的镐子"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:deepslate_stone_kuuga",
+            "title": " ",
+            "text": "掉落：$(li)$(l:kuuga/items/kuuga_growing)空我初生灵石$(/l)（40%）$(li)$(l:kuuga/items/amadam_stones#kuuga_mighty)空我全能灵石$(/l)（30%）$(li)$(l:kuuga/items/amadam_stones#kuuga_dragon)空我青龙灵石$(/l)（10%）$(li)$(l:kuuga/items/amadam_stones#kuuga_pegasus)空我天马灵石$(/l)（10%）$(li)$(l:kuuga/items/amadam_stones#kuuga_titan)空我泰坦灵石$(/l)（10%）"
+        }
+    ]
+}

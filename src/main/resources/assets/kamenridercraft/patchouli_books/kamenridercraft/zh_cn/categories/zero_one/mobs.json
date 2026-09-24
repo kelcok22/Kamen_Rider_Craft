@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:zero_one/main",
+    "name": "相关生物",
+    "description": "来自《假面骑士01》或与其相关的所有生物.",
+    "icon": "kamenridercraft:zero_one_logo",
+    "sortnum": 4
+}

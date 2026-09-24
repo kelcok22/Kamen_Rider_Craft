@@ -1,0 +1,19 @@
+{
+	"name": "书之门奇幻驾驭书",
+	"icon": "kamenridercraft:book_gate_wonder_ride_book",
+	"category": "kamenridercraft:saber/arsenal",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)由真理之剑使用$(br2)用于进入 $(l:saber/dimensions/northern_base)北方基地$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:book_gate_wonder_ride_book",
+			"title": " ",
+			"text": "可在 $(l:saber/structures/northern_base)北方基地$(/l) 及 $(l:misc/city/suburban_area#fantastic_bookstore_kamiyama)神山奇幻书店$(/l) 内找到$(br2)掉落自：$(li)$(l:saber/mobs/shimi)士弥$(/l)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "完全21卡片",
+  "icon": "kamenridercraft:complete_card_decade_21",
+  "category": "kamenridercraft:decade/items",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)Rider Time：假面骑士时王VSDecade -7个时王！- (2021年，网络剧)$(br2)用于合成$(l:decade/items/k_touch_21)K-Touch 21$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/complete_card_decade_21"
+    }
+  ]
+}

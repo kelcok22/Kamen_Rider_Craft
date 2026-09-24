@@ -1,0 +1,16 @@
+{
+	"name": "龙召机",
+	"icon": "kamenridercraft:drag_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/drag_visor"
+		}
+	]
+}

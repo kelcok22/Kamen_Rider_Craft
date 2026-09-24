@@ -1,0 +1,17 @@
+{
+	"name": "基格腰带",
+	"icon": "kamenridercraft:giger_belt",
+	"category": "kamenridercraft:zero_one/devices",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/giger)基格"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zero_one/giger_belt",
+          "text": "掉落自：$(li)$(l:zero_one/mobs/giger)基格$(/l)的装备"
+		}
+	]
+}

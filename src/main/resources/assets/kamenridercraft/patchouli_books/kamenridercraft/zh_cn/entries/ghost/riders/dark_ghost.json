@@ -1,0 +1,64 @@
+{
+	"name": "假面骑士黑暗Ghost",
+	"icon": "kamenridercraft:dark_ghost_driver",
+	"category": "kamenridercraft:ghost/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "dark_ghost",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:dark_damashii\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黑暗眼魂形态",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#dark_ghost_eyecon)黑暗Ghost眼魂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黑暗Ghost",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#dark_ghost_driver)Ghost驱动器(暗黑Ghost)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)抗性提升 IV$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "napoleon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:napoleon_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "拿破仑眼魂形态",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#napoleon_ghost_eyecon)拿破仑眼魂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黑暗Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#dark_ghost_driver)Ghost驱动器(暗黑Ghost)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)水下呼吸 II$(li)抗性提升 IV$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ikkyu",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:ikkyu_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "一休眼魂形态",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#ikkyu_ghost_eyecon)一休眼魂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黑暗Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#dark_ghost_driver)Ghost驱动器(暗黑Ghost)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)急迫 II$(li)抗性提升 IV$(li)力量 V$(li)跳跃提升 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "pythagoras",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_ghost_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dark_ghost_eyecon\",slot_tex2:\"kamenridercraft:pythagoras_ghost_eyecon\"}},Count:1b},{id:\"kamenridercraft:ghost_legs\",Count:1b},{id:\"kamenridercraft:ghost_troso\",Count:1b},{id:\"kamenridercraft:ghost_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "毕达哥拉斯眼魂形态",
+			"text": "通过使用 $(l:ghost/items/ghost_eyecons#pythagoras_ghost_eyecon)毕达哥拉斯眼魂$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士黑暗Ghost",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#dark_ghost_driver)Ghost驱动器(暗黑Ghost)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)生命恢复 II$(li)抗性提升 IV$(li)力量 V"
+		}
+	]
+}

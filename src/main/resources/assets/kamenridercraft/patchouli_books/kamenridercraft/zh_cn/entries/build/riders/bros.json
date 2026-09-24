@@ -1,0 +1,50 @@
+{
+	"name": "地狱兄弟",
+	"icon": "kamenridercraft:nebula_steam_gun_hell_bros",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "remocon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_hell_bros\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_remocon\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:build/items/gears#gear_remocon)遥控齿轮$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "遥控兄弟",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过手持/穿戴$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)和$(l:build/devices/nebulasteam_gun#nebula_steam_gun_hell_bros)星云烟雾枪(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 II$(li)急迫 II$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "engine",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_hell_bros\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_engine\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:build/items/gears#gear_engine)引擎齿轮$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "引擎兄弟",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过手持/穿戴$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)和$(l:build/devices/nebulasteam_gun#nebula_steam_gun_hell_bros)星云烟雾枪(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hell",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_hell_bros\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_hell_bros\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "当背包中持有另一款齿轮道具时，潜行点击 $(l:build/items/gears#gear_engine)引擎齿轮$(/l) 或 $(l:build/items/gears#gear_remocon)遥控齿轮$(/l) 即可切换形态"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "地狱兄弟",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过手持/穿戴$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)和$(l:build/devices/nebulasteam_gun#nebula_steam_gun_hell_bros)星云烟雾枪(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 III$(li)急迫 III$(li)跳跃提升 IV$(li)力量 IV"
+		}
+	]
+}

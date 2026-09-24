@@ -1,0 +1,24 @@
+{
+	"name": "强人装甲",
+	"icon": "kamenridercraft:strongerhead",
+	"category": "kamenridercraft:stronger/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "与强人骑士的腰带配合使用，以变身成该骑士。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:stronger/strongerhead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:stronger/strongertroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:stronger/strongerlegs"
+		}
+	]
+}

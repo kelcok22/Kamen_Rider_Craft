@@ -1,0 +1,19 @@
+{
+	"name": "蝙蝠长矛",
+	"icon": "kamenridercraft:wing_lancer",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/knight#knight)假面骑士夜骑$(/l)使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_lancer",
+			"title": " ",
+			"text": "通过$(l:ryuki/arsenal/sword_vent_cards#wing_lancer_vent)蝙蝠长矛刀剑降临$(/l)获得"
+		}
+	]
+}

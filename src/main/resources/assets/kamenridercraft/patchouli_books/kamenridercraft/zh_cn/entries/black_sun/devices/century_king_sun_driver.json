@@ -1,0 +1,16 @@
+{
+	"name": "世纪王阳驱动器",
+	"icon": "kamenridercraft:century_king_sun_driver",
+	"category": "kamenridercraft:black_sun/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black Sun (2022年, 网络剧)$(br2)与$(l:black_sun/devices/armor)Black Sun装甲$(/l)一起穿戴，可变身为$(l:black_sun/riders/black_sun)假面骑士Black Sun$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/century_king_sun_driver"
+		}
+	]
+}

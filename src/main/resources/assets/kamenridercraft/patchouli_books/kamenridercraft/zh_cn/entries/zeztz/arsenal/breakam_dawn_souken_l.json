@@ -1,0 +1,20 @@
+{
+	"name": "噬梦曙光(双剑模式)",
+	"icon": "kamenridercraft:breakam_dawn_souken_l",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)由$(l:zeztz/riders/dawn)假面骑士黎明$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_dawn_souken"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/breakam_dawn_souken2"
+		}
+	]
+}

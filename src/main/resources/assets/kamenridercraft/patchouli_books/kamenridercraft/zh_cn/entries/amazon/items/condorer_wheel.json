@@ -1,0 +1,19 @@
+{
+    "name": "印加腕轮",
+    "icon": "kamenridercraft:condorer_wheel",
+    "category": "kamenridercraft:amazon/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Amazon (1974年，电视剧)$(br2)用于制作Amazon的 $(l:amazon/devices/condorer#condorer)孔德拉$(/l)$(br2)用于切换Amazon的 $(l:amazon/riders/amazon#amazon)基础形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:condorer_wheel",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:amazon/mobs/red_follower)红色咒者$(/l)"
+        }
+    ]
+}

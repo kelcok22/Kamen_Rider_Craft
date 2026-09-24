@@ -1,0 +1,498 @@
+{
+  "name": "假面骑士Drive",
+  "icon": "kamenridercraft:drivedriver",
+  "category": "kamenridercraft:drive/riders",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "anchor": "speed",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#speedshift)移速速度$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "max_flare",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 火焰",
+      "text": "通过使用 $(l:drive/items/shift_cars#maxflare)最大火力$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)抗火"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "funky_spike",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:funkyspike\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 尖钉",
+      "text": "通过使用 $(l:drive/items/shift_cars#funkyspike)时髦尖钉$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)速度 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "midnight_shadow",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:midnightshadow\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 暗影",
+      "text": "通过使用 $(l:drive/items/shift_cars#midnightshadow)午夜暗影$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)大炮"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "justice_hunter",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:justice_hunter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 猎人",
+      "text": "通过使用 $(l:drive/items/shift_cars#justice_hunter)正义猎人$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)抗性提升"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dream_vegas",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dream_vegas\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 维加斯",
+      "text": "通过使用 $(l:drive/items/shift_cars#dream_vegas)梦幻维加斯$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)幸运"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "spin_mixer",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:spin_mixer\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 混凝",
+      "text": "通过使用 $(l:drive/items/shift_cars#spin_mixer)旋动混凝$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)缓慢$(li)抗性提升"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "massive_monster",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:massive_monster\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 怪物",
+      "text": "通过使用 $(l:drive/items/shift_cars#massive_monster)巨大怪物$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)力量"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dimension_cab",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedshift\",slot_tex2:\"kamenridercraft:dimension_cab\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号 计程",
+      "text": "通过使用 $(l:drive/items/shift_cars#dimension_cab)维度计程$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(br2)轮胎效果：$(li)扭曲"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "wild",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "狂野型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#wildshift)移速狂野$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "rumble_dump",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:rumble_dump\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "狂野型号 倾卸",
+      "text": "通过使用 $(l:drive/items/shift_cars#rumble_dump)轰隆倾卸$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量$(br2)轮胎效果：$(li)缓慢$(li)力量 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "hooking_wrecker",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:hooking_wrecker\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "狂野型号 清障者",
+      "text": "通过使用 $(l:drive/items/shift_cars#hooking_wrecker)挂钩清障者$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量$(br2)轮胎效果：$(li)手臂加长 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mad_doctor",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:wildshift\",slot_tex2:\"kamenridercraft:mad_doctor\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "狂野型号 医生",
+      "text": "通过使用 $(l:drive/items/shift_cars#mad_doctor)疯狂医生$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升$(li)力量$(br2)轮胎效果：$(li)生命恢复 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "technic",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "技术型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#technicshift)移速技术$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)夜视"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "fire_braver",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:fire_braver\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "技术型号 勇者",
+      "text": "通过使用 $(l:drive/items/shift_cars#fire_braver)火焰勇者$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)夜视$(br2)轮胎效果：$(li)水下呼吸$(li)抗火"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "rolling_gravity",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:rolling_gravity\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "技术型号 重力",
+      "text": "通过使用 $(l:drive/items/shift_cars#rolling_gravity)滚动重力$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)夜视$(br2)轮胎效果：$(li)挖掘疲劳 II$(li)缓慢 II$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "road_winter",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:technicshift\",slot_tex2:\"kamenridercraft:road_winter\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "技术型号 寒冬",
+      "text": "通过使用 $(l:drive/items/shift_cars#road_winter)道路寒冬$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 II$(li)夜视$(br2)轮胎效果：$(li)暴风雪"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dead_heat",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "白热型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#deadheatshift)移速白热$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)反胃 II$(li)跳跃提升 III$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "formula",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "方程式型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#formulashift)移速方程式$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)跳跃提升 IV$(li)力量 III"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mantarn_f01",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:mantarn_f01\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "方程式型号 满缸",
+      "text": "通过使用 $(l:drive/items/shift_cars#mantarn_f01)满缸F01$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)跳跃提升 IV$(li)力量 III$(br2)轮胎效果：$(li)速度 XL"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "jacky_f02",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:jacky_f02\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "方程式型号 起重",
+      "text": "通过使用 $(l:drive/items/shift_cars#jacky_f02)起重F02$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)跳跃提升 IV$(li)力量 III$(br2)轮胎效果：$(li)抗性提升 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "sparner_f03",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:formulashift\",slot_tex2:\"kamenridercraft:sparner_f03\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "方程式型号 扳手",
+      "text": "通过使用 $(l:drive/items/shift_cars#sparner_f03)扳手F03$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)跳跃提升 IV$(li)力量 III$(br2)轮胎效果：$(li)力量 V"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "tridoron",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "赛特朗型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#tridoronshift)移速赛特朗$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 IV$(li)力量 V"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "attack_123",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:attack123_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "赛特朗型号 攻击1.2.3",
+      "text": "以 $(l:drive/riders/drive#tridoron)赛特朗型号$(/l) 持有另外两辆变档战车时，通过使用 $(l:drive/items/shift_cars#maxflare)最大火力$(/l)、$(l:drive/items/shift_cars#funkyspike)时髦尖钉$(/l) 或 $(l:drive/items/shift_cars#midnightshadow)午夜暗影$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 IV$(li)力量 V$(br2)轮胎效果：$(li)速度 II$(li)大炮"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "people_saver",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:people_saver_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "赛特朗型号 人民救助者",
+      "text": "以 $(l:drive/riders/drive#tridoron)赛特朗型号$(/l) 持有另外两辆变档战车时，通过使用 $(l:drive/items/shift_cars#justice_hunter)正义猎人$(/l)、$(l:drive/items/shift_cars#mad_doctor)疯狂医生$(/l) 或 $(l:drive/items/shift_cars#fire_braver)火焰勇者$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 IV$(li)力量 V$(br2)轮胎效果：$(li)生命恢复 V$(li)饱和 V$(li)抗火$(li)夜视$(li)水下呼吸"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "kouji_genbar",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:kouji_genbar_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "赛特朗型号 施工现场",
+      "text": "以 $(l:drive/riders/drive#tridoron)赛特朗型号$(/l) 持有另外两辆变档战车时，通过使用 $(l:drive/items/shift_cars#rumble_dump)轰隆倾卸$(/l)、$(l:drive/items/shift_cars#spin_mixer)旋动混凝$(/l) 或 $(l:drive/items/shift_cars#rolling_gravity)滚动重力$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 IV$(li)力量 V$(br2)轮胎效果：$(li)力量 VI$(li)缓慢 III$(li)挖掘疲劳 III$(li)抗性提升 V"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "all_kakimazerl",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoronshift\",slot_tex2:\"kamenridercraft:tridoron_all_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "赛特朗型号 全轮胎聚合",
+      "text": "背包中持有所有轮胎交换变档战车时，通过使用 $(l:drive/items/shift_cars#tridoronshift)移速赛特朗$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)大炮$(li)速度 III$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)生命恢复 V$(li)饱和 V$(li)跳跃提升 IV$(li)抗火$(li)力量 IX"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "chou_dead_heat",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:tridoron_key\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "超级白热型号",
+      "text": "通过使用 $(l:drive/items/tridoron_key)赛特朗之钥$(/l) 进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)马赫驱动器(Drive)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 III$(li)力量 VI"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "dead_heat_mach",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:mach_driver_honoh_drive\",components:{custom_data:{slot_tex1:\"kamenridercraft:deadheatshift_drive_mach\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "白热型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#deadheatshift)移速白热$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士×假面骑士 Ghost & Drive：超级电影大战创世 (2015年，电影)$(br2)通过穿戴$(l:drive/devices/mach_driver_honoh#mach_driver_honoh_drive)马赫驱动器(Drive)$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)反胃 II$(li)跳跃提升 III$(li)力量 IV"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "fruits",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fruitsshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "水果型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#fruitsshift)移速水果$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "high_speed",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "高速型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#high_speedshift)移速高速$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)高速形态！真正的力量！高速形态诞生！ (2015年，超战斗DVD)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "mega_max_flare",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:high_speedshift\",slot_tex2:\"kamenridercraft:mega_maxflare\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "高速型号 火焰",
+      "text": "通过使用 $(l:drive/items/shift_cars#mega_maxflare)百万最大火力$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)高速形态！真正的力量！高速形态诞生！ (2015年，超战斗DVD)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升$(br2)轮胎效果：$(li)抗火"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "special",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:specialshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "特殊型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#specialshift)移速特殊$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)跳跃提升 III$(li)力量 III"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "zero_drive",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:proto_speedshift\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#proto_speedshift)原型移速速度$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士零Drive",
+      "text": "登场于：$(li)假面骑士×假面骑士 Ghost & Drive：超级电影大战创世 (2015年，电影)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II"
+    },
+    {
+      "type": "patchouli:entity",
+      "anchor": "speed_wild_technic",
+      "entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:drivedriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:speedwildtechnicshift\",slot_tex2:\"kamenridercraft:basic_tire\"}},Count:1b},{id:\"kamenridercraft:drive_legs\",Count:1b},{id:\"kamenridercraft:drive_troso\",Count:1b},{id:\"kamenridercraft:drive_head\",Count:1b}]}",
+      "scale": -1,
+      "offset": 0.1,
+      "name": "速度狂野技术型号",
+      "text": "通过使用 $(l:drive/items/shift_cars#speedwildtechnicshift)速度技术$(/l) 变档战车进行形态切换"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "假面骑士Drive",
+      "text": "登场于：$(li)Drive Saga：假面骑士Heart (2016年，V-Cinema电影)$(br2)通过穿戴$(l:drive/devices/drive_driver#drivedriver)Drive驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升"
+    }
+  ]
+}

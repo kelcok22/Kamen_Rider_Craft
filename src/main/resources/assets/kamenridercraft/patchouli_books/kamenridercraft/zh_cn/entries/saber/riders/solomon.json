@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士所罗门",
+	"icon": "kamenridercraft:dooms_driver_buckle_solomon",
+	"category": "kamenridercraft:saber/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dooms_driver_buckle_solomon\",Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士所罗门",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/dooms_driver_buckle#dooms_driver_buckle_solomon)破灭驱动器带扣$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 VI$(li)抗性提升 IV$(li)急迫 III$(li)跳跃提升 VI$(li)力量 VI"
+		}
+	]
+}

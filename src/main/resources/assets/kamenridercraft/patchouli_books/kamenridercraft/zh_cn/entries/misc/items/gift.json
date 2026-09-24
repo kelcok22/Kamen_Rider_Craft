@@ -1,0 +1,27 @@
+{
+	"name": "礼物",
+	"icon": "kamenridercraft:gift",
+	"category": "kamenridercraft:misc/items",
+	"sortnum": 13,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "打开可获得随机圣诞主题物品$(br2)通过和新手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取$(br2)掉落来源：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)（12月22日-12月28日限时掉落）$(br2)在圣诞快乐效果下，每4.3分钟可获得一个$(br2)掉落物：$(li)煤炭（14.3%）$(li)蛋糕（4.8%）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gift",
+			"title": " ",
+			"text": "$(li)$(l:fourze/items/astroswitches#rocket_switch_christmas_ver)火箭开关(圣诞节版本)$(/l)（4.8%）$(li)$(l:wizard/arsenal/wizard_rings#merry_christmas_ring)圣诞快乐巫师指环$(/l)（4.8%）$(li)$(l:gaim/items/lockseeds#christmas_lockseed)圣诞锁种$(/l)（4.8%）$(li)$(l:drive/items/shift_cars#holy_christmas)移速神圣圣诞节$(/l)（4.8%）$(li)$(l:ghost/items/ghost_eyecons#santa_ghost_eyecon)圣诞老人眼魂$(/l)（4.8%）$(li)$(l:ex_aid/arsenal/energy_items#christmas_energy_item)圣诞快乐能力$(/l)（4.8%）$(li)$(l:build/items/fullbottles#santa_claus_full_bottle)圣诞老人满装瓶罐$(/l)（4.8%）$(li)$(l:build/items/fullbottles#cake_full_bottle)蛋糕满装瓶罐$(/l)（4.8%）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:zi_o/items/ridewatches#christmas_ridewatch)时王骑士表盘(圣诞版本)$(/l)（4.8%）$(li)$(l:misc/items/music_discs#p_a_r_t_y_universe_festival_music_disc)P. A. R. T. Y. ~Universe Festival~ 音乐唱片$(/l)（4.8%）$(li)$(l:zero_one/items/progrisekeys#merry_hopper_progrisekey)圣诞高跃飞蝗程式升华秘钥$(/l)（4.8%）$(li)$(l:saber/items/wonder_ride_books#happy_brave_dragon_wonder_ride_book)快乐勇气飞龙奇幻驾驭书$(/l)（4.8%）$(li)$(l:revice/items/vistamps#rex_vistamp_christmas)暴龙罪恶印章(圣诞节)$(/l)（4.8%）$(li)$(l:geats/items/raise_buckles#christmas_raise_buckle)圣诞节代扣$(/l)（4.8%）$(li)$(l:gotchard/items/ride_chemy_cards#santaclaus_ride_chemy_card)圣诞蝗虫驾驭凯米卡$(/l)（4.8%）$(li)$(l:gotchard/items/ride_chemy_cards#tonakailiner_ride_chemy_card)驯鹿列车驾驭凯米卡$(/l)（4.8%）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)$(l:gavv/items/gochizo#poppingummy_gochizo_charadeco_ver)砰击软糖饱藏(生日礼物变体)$(/l)（4.8%）$(li)$(l:gavv/items/gochizo#merrychristmas_gochizo)圣诞快乐饱藏$(/l)（4.8%）$(li)$(l:zeztz/items/capsems#charadeco_capsem)Zeztz梦境胶囊(角色装饰版)$(/l)（4.8%）"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"name": "牙王腰带",
+	"icon": "kamenridercraft:gaoh_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王：老子，诞生！ (2007年，电影)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/gaoh)假面骑士牙王$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gaoh_belt",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:den_o/mobs/gaoh)假面骑士牙王$(/l)"
+		}
+	]
+}

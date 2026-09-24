@@ -1,0 +1,40 @@
+{
+	"name": "变幻圆环",
+	"icon": "kamenridercraft:alter_ring",
+	"category": "kamenridercraft:agito/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "alter_ring",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito#ground)假面骑士亚极陀"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/alter_ring"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alter_ring_reiko",
+			"title": "变幻圆环(高野玲子)",
+			"text": "登场于：$(li)假面骑士空我 (2015年，漫画)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito_reiko)假面骑士亚极陀(高野玲子)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/alter_ring_reiko"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alter_ring_miracle",
+			"title": "变幻圆环(幻影)",
+			"text": "登场于：$(li)天堂之门 (2003年，S.I.C.英雄传奇)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/mirage_agito)假面骑士幻影亚极陀"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/alter_ring_miracle"
+		}
+	]
+}

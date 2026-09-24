@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士G4",
+	"icon": "kamenridercraft:g4",
+	"category": "kamenridercraft:agito/riders",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:g4_belt\",Count:1b},{id:\"kamenridercraft:agitolegs\",Count:1b},{id:\"kamenridercraft:agitotroso\",Count:1b},{id:\"kamenridercraft:agitohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士G4",
+			"text": "登场于：$(li)假面骑士亚极陀：G4计划 (2001年，电影)$(br2)通过穿戴 $(l:agito/devices/g_buckle#g4_belt)G代扣(G4)$(/l) 进行变身$(br2)状态效果：$(li)速度 III$(li)中毒$(li)抗性提升 II"
+		}
+	]
+}

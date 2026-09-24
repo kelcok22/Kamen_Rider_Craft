@@ -1,0 +1,19 @@
+{
+	"name": "紅蓮鞭笞者",
+	"icon": "kamenridercraft:deus_rusher_red",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 19,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ex-Aid：True Ending（2017年，电影）$(br2)由游戏天神玛奇那使用"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:deus_rusher_red",
+			"title": " ",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

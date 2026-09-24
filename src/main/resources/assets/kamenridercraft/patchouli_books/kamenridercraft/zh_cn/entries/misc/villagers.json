@@ -1,0 +1,105 @@
+{
+	"name": "骑士系列村民与交易",
+	"icon": "minecraft:emerald",
+	"category": "kamenridercraft:misc/misc",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "假面骑士工艺模组新增了一系列村民职业，同时为现有村民添加了新的交易选项。"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/villagers.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "shocker_villager",
+			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:shocker_villager\",level:1},Xp:1}",
+			"name": "修卡村民",
+			"text": "以$(l:misc/blocks/shocker_monitor)修卡精炼机$(/l)作为工作方块"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)1个 $(l:x/items/ridol_core)莱德尔核心$(/l) 交换 $(l:x/items/perfecter)双面能量镜$(/l)$(li)2颗绿宝石交换 $(l:ichigo/items/shocker_emblem)修卡徽章$(/l)$(li)2颗绿宝石交换 $(l:shin/items/shin_stone)骑士纹章(真)$(/l)$(li)2颗绿宝石交换 $(l:zo/items/zo_stone)骑士纹章(ZO)$(/l)$(li)2颗绿宝石交换 $(l:j/items/j_stone)骑士纹章(J)$(/l)$(br2)学徒交易：$(li)2颗绿宝石交换 $(l:g/items/goro_wine_bottle)五郎酒瓶$(/l)$(li)4颗绿宝石交换 $(l:misc/items/sinister_pachinko_ball)危险的弹珠$(/l)$(br2)老手交易：$(li)2颗绿宝石交换 $(l:misc/blocks/chair_blocks#ichigo_chair)一号椅子$(/l)$(li)2颗绿宝石交换 $(l:ichigo/items/nophoon_core)宪达核心$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "humagear_villager",
+			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:humagear_villager\",level:1},Xp:1}",
+			"name": "修玛吉亚",
+			"text": "以$(l:misc/blocks/machine_blocks#hiden_3d_printer)飞电3D打印机$(/l)作为工作方块"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)1颗绿宝石交换 $(l:zero_one/items/blank_progrisekey)空白数据升华秘钥$(/l)$(li)1颗绿宝石交换 3个 $(l:zero_one/items/hiden_metal)飞电金属$(/l)$(br2)学徒交易：$(li)2颗绿宝石交换 3个 $(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l)$(br2)老手交易：$(li)12颗绿宝石交换 $(l:zero_one/items/progrisekeys#thousand_key)Thousand密钥$(/l)$(li)30颗绿宝石交换 $(l:zero_one/arsenal/zaia_spec)ZAIA连接器$(/l)$(br2)大师交易：$(li)4颗绿宝石交换 $(l:misc/items/music_discs#realxeyez_music_disc)REAL×EYEZ音乐唱片$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kamen_cafe_butler",
+			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:kamen_cafe_butler\",level:1},Xp:1}",
+			"name": "假面咖啡厅管家",
+			"text": "以$(l:misc/blocks/kamen_cafe_counter)假面咖啡厅柜台$(/l)作为工作方块"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)1颗绿宝石交换 3个 $(l:misc/items/foods#candy)滋补糖·小$(/l)$(li)2颗绿宝石交换 $(l:ride_kamens/items/contract_chaostone)契约混沌石$(/l)$(br2)学徒交易：$(li)6颗绿宝石交换 $(l:ride_kamens/items/gasha_ticket)扭蛋票$(/l)$(li)2颗绿宝石交换 $(l:misc/items/foods#energy_drink)能量饮料$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "agent_villager",
+			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:agent_villager\",level:1},Xp:1}",
+			"name": "斯托马克公司特工",
+			"text": "以$(l:misc/blocks/heatpress_extractor)冲击式提取仪$(/l)作为工作方块"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)1个 $(l:gavv/items/heatpress)压缩饼人$(/l) 交换 $(l:gavv/items/gochizo#doppudding_gochizo)抖抖布丁饱藏$(/l)$(li)2个 $(l:gavv/items/heatpress)压缩饼人$(/l) 交换 $(l:gavv/items/gochizo#purujelly_gochizo)摇摇果冻饱藏$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "candyshop_villager",
+			"entity": "minecraft:villager{VillagerData:{profession:\"kamenridercraft:collector_villager\",level:1},Xp:1}",
+			"name": "玩具收藏家",
+			"text": "以$(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l)作为工作方块"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)1颗绿宝石交换 1个 $(l:misc/items/gashapon_capsule)扭蛋胶囊$(/l)$(li)1颗绿宝石交换 1个 $(l:misc/items/riderman_helmet)骑士人头盔$(/l)$(li)1颗绿宝石交换 1个 $(l:misc/items/gift)礼物$(/l)$(br2)学徒交易：$(li)1颗绿宝石交换 1个 $(l:misc/blocks/chair_blocks#red_ichigo_chair)红色一号骑士椅子$(/l)$(li)1颗绿宝石交换 1个 $(l:revice/items/vistamps#toysaurus_vistamp)玩具恐龙罪恶印章$(/l)$(li)3颗绿宝石交换 1个 $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C.英雄传奇$(/l)$(li)2颗绿宝石交换 1个 $(l:misc/items/bicycle_spawn_egg)自行车$(/l)$(li)1颗绿宝石交换 1个 $(l:ghost/items/ghost_eyecons#ore_specter_ghost_eyecon)俺·Specter魂$(/l)$(br2)老手交易：$(li)3颗绿宝石交换 1个 $(l:misc/items/gashapon_capsule#halloween_gashapon_capsule)万圣节扭蛋胶囊$(/l)$(li)3颗绿宝石交换 1个 $(l:misc/items/gashapon_capsule#valentine_gashapon_capsule)情人节扭蛋胶囊$(/l)$(br2)大师交易：$(li)1个进化高加索交换 1个 $(l:blade/items/rouze_cards#silver_evolution_caucasus)银色进化高加索$(/l)$(li)1个魔皇龙笛哨交换 1个 $(l:kiva/items/fuestles#kiva_says_fuestle)红色魔皇龙笛哨$(/l)$(li)1个Faiz爆裂使命芯片交换 1个 $(l:faiz/items/mission_memories#faiz_gold_blaster_mission_memory)Faiz黄金爆裂使命芯片$(/l)$(li)1个基尔斯超越核心交换 1个 $(l:agito/items/philosophers_stones#gold_exceed_gills)基尔斯黄金超越核心$(/l)$(li)1个生存卡 烈火交换 1个 $(l:ryuki/items/survive_cards#survive_black)生存卡 黑秽$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "librarian",
+			"entity": "minecraft:villager{VillagerData:{profession:\"minecraft:librarian\",level:1},Xp:1}",
+			"name": "图书管理员"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)2颗绿宝石交换 $(l:ichigo/items/rider3_vs_the_demon_of_general_black)骑士3号VS黑恶魔将军漫画$(/l)$(li)2颗绿宝石交换 $(l:kuuga/items/kuuga_manga)空我漫画$(/l)$(br2)学徒交易：$(li)2颗绿宝石交换 $(l:misc/items/card_warrior_kamen_rider_manga)卡牌战士假面骑士漫画$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "cleric",
+			"entity": "minecraft:villager{VillagerData:{profession:\"minecraft:cleric\",level:1},Xp:1}",
+			"name": "牧师"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "新手交易：$(li)5颗绿宝石交换 1个 $(l:gotchard/items/alchemist_rings#alchemist_ring_no_gem)炼金戒指(空白)$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "wandering_trader",
+			"entity": "minecraft:wandering_trader",
+			"name": "流浪商人"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "交易内容：$(li)3颗绿宝石交换 $(l:misc/blocks/decor_blocks#ginga_meteor)银河流星岩$(/l)$(li)2颗绿宝石交换 $(l:misc/blocks/helheim_sapling)海姆冥界树苗$(/l)$(li)2颗绿宝石交换 $(l:misc/items/kuuga_amazing_mighty_artist)S.I.C.英雄传奇$(/l)$(li)5颗绿宝石交换 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l)$(li)3颗绿宝石交换 $(l:zi_o/items/questionable_watch)可疑的手表$(/l)$(li)3颗绿宝石交换 $(l:zi_o/items/toy_robot)玩具机器人$(/l)$(li)5颗绿宝石交换 $(l:misc/blocks/boss_blocks#yaminin_boss_block)暗忍BOSS召唤方块$(/l)"
+		}
+	]
+}

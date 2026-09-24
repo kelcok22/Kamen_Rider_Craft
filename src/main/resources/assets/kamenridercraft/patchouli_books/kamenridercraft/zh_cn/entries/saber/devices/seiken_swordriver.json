@@ -1,0 +1,51 @@
+{
+	"name": "圣刃剑驱动器",
+	"icon": "kamenridercraft:seiken_swordriver_saber",
+	"category": "kamenridercraft:saber/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "seiken_swordriver_saber",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/saber)假面骑士Saber$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/seiken_swordriver_saber"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiken_swordriver_blades",
+			"title": "圣刃剑驱动器(剑锋)",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/blades)假面骑士剑锋$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/seiken_swordriver_blades"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiken_swordriver_espada",
+			"title": "圣刃剑驱动器(刀剑)",
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/espada)假面骑士刀剑$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/seiken_swordriver_espada"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seiken_swordriver_desast",
+			"title": "圣刃剑驱动器(天灾)",
+			"text": "登场于：$(li)假面骑士 Outsiders (2022年，网剧)$(br2)与$(l:saber/devices/armor)圣刃装甲$(/l)一起穿戴，可变身为$(l:saber/riders/desast)假面骑士天灾$(/l)$(br2)可容纳1把圣剑和最多3组奇幻驾驭书"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/seiken_swordriver_desast"
+		}
+	]
+}

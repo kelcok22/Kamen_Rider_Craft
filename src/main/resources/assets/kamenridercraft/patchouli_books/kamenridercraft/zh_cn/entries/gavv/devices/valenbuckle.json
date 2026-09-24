@@ -1,0 +1,19 @@
+{
+	"name": "瓦伦代扣",
+	"icon": "kamenridercraft:valenbuckle",
+	"category": "kamenridercraft:gavv/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)与$(l:gavv/devices/armor)加布装甲$(/l)一起穿戴，可变身为$(l:gavv/riders/valen)假面骑士瓦伦"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:valenbuckle",
+			"title": " ",
+			"text": "通过发射$(l:gavv/arsenal/valenbuster)瓦伦破坏枪$(/l)且不装备任何腰带即可获得"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "哈莫尔手杖",
+	"icon": "kamenridercraft:hammelcane",
+	"category": "kamenridercraft:wizard/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)由$(l:wizard/riders/wiseman)假面骑士白魔法师$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:wizard/hammelcane",
+          "text": "掉落自：$(li)$(l:wizard/mobs/wiseman)假面骑士白魔法师$(/l)的装备"
+		}
+	]
+}

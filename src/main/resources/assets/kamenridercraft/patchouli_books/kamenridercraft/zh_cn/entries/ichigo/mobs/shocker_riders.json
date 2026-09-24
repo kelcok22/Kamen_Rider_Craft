@@ -1,0 +1,17 @@
+{
+    "name": "修卡骑士",
+    "icon": "kamenridercraft:shocker_emblem",
+    "category": "kamenridercraft:ichigo/mobs",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "entity": "kamenridercraft:shocker_riders",
+            "text": "登场于：$(li)假面骑士 (1971年，电视剧)$(br)生命值：45"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "有20%概率从 $(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)进化而来$(br2)掉落$(li)4-6个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/shocker_emblem)修卡徽章$(/l)（80%）$(li)1个$(l:ichigo/items/typhoon_cores#new_typhoon_core)台风核心强化$(/l)（20%）"
+        }
+    ]
+}

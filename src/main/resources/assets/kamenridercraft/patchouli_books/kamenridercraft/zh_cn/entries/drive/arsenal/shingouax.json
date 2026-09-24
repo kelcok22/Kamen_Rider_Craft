@@ -1,0 +1,17 @@
+{
+	"name": "信号战斧",
+	"icon": "kamenridercraft:shingouax",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)由 $(l:drive/riders/chaser)假面骑士追猎$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/shingouax",
+			"text": "掉落自：$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l) 的装备"
+		}
+	]
+}

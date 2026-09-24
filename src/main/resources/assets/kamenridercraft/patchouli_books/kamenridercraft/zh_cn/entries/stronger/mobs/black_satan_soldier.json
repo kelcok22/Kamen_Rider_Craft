@@ -1,0 +1,17 @@
+{
+	"name": "黑撒旦战斗员",
+	"icon": "kamenridercraft:stronger_logo",
+	"category": "kamenridercraft:stronger/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:black_satan_soldier",
+			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系: 平原, 向日葵平原, 风袭丘陵, 沼泽, 红树林沼泽, 冻洋, 冰冻深海, 冻河, 积雪冻原, 丛林, 桦木森林, 黑森林, 风袭森林, 热带草原, 热带高原, 风袭热带草原, 恶地, 风蚀恶地, 繁茂恶地$(br2)掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:misc/items/rider_circuit)骑士电路板$(/l) (40%)$(li)1个$(l:stronger/items/electrer_core)电气核心$(/l) (40%)$(li)1个$(l:stronger/items/charge_up)超级电子发电机$(/l) (4%)$(li)1个$(l:stronger/items/tackle_core)电波核心$(/l) (16%)"
+		}
+	]
+}

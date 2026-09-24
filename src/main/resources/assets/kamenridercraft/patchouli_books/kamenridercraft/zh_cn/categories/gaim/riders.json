@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:gaim/main",
+    "name": "铠武系列骑士",
+    "description": "来自《假面骑士铠武》或与其相关的所有骑士及争议骑士.",
+    "icon": "kamenridercraft:gaimhead",
+    "sortnum": 0
+}

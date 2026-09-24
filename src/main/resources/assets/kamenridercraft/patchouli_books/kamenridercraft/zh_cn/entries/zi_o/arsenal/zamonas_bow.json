@@ -1,0 +1,16 @@
+{
+	"name": "扎莫纳斯之弓",
+	"icon": "kamenridercraft:zamonas_bow",
+	"category": "kamenridercraft:zi_o/arsenal",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王：超越时间 (2019年，电影)$(br2)由$(l:zi_o/riders/zamonas)假面骑士扎莫纳斯$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/zamonas_bow"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "ZECT蚁兵",
+	"icon": "kamenridercraft:kabuto_logo",
+	"category": "kamenridercraft:kabuto/mobs",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:zectrooper",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：灵魂沙峡谷、$(l:kabuto/structures/god_speed_love)神速爱$(/l)$(br2)掉落$(li)2-4个$(l:kabuto/items/mini_zecter)原虫外壳$(/l)$(li)1个$(l:kabuto/items/zecters#kabuto_zecter)甲斗昆虫仪$(/l) (25%)$(li)1个$(l:kabuto/items/zecters#thebee_zecter)黄蜂昆虫仪$(/l) (10%)$(li)1个$(l:kabuto/items/zecters#drake_zecter)雷蜓昆虫仪$(/l) (10%)$(li)1个$(l:kabuto/items/zecters#sasword_zecter)剑蝎昆虫仪$(/l) (10%)"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "短剑枪手",
+	"icon": "kamenridercraft:blade_gunner",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive：惊喜未来 (2015年，电影)$(br2)由 $(l:drive/riders/dark_drive)假面骑士黑暗Drive$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/blade_gunner"
+		}
+	]
+}

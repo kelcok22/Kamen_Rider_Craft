@@ -1,0 +1,110 @@
+{
+	"name": "防御降临",
+	"icon": "kamenridercraft:drag_shield_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 52,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_shield_vent",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#ryuki)假面骑士龙骑$(/l)与$(l:ryuki/arsenal/drag_visor)龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/drag_shield)龙护盾$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_shield_vent",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki)假面骑士龙骑$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fire_wall_vent",
+			"title": "火焰环身防御降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/ryuki#survive)龙骑生存形态$(/l)与$(l:ryuki/arsenal/drag_visor)龙召机$(/l)一同使用，可获得10秒的烈焰环身III效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fire_wall_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuki_survive)假面骑士龙骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_visor_zwei_vent",
+			"title": "黑暗召机Ⅱ攻击降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/knight#survive)夜骑生存形态$(/l)与$(l:ryuki/arsenal/dark_visor)黑暗召机$(/l)一同使用，可获得$(l:ryuki/arsenal/dark_visor_zwei)黑暗召机Ⅱ$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_visor_zwei_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#knight_survive)假面骑士夜骑 生存形态$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shell_defense_vent",
+			"title": "甲壳防御降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/scissors)假面骑士利刃$(/l)与$(l:ryuki/arsenal/scissors_visor)火焰山蟹召机$(/l)一同使用，可获得$(l:ryuki/arsenal/shell_defense)甲壳防御$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shell_defense_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#scissors)假面骑士利刃$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giga_armor_vent",
+			"title": "巨大护甲防御降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/zolda#zolda)假面骑士铁兵$(/l)与$(l:ryuki/arsenal/magna_visor)庞然召机$(/l)一同使用，可获得$(l:ryuki/arsenal/giga_armor)巨大护甲$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giga_armor_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#zolda)假面骑士铁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gold_shield_vent",
+			"title": "黄金护盾防御降临",
+			"text": "登场于：$(li)假面骑士龙骑（2002年，电视剧）$(br2)由$(l:ryuki/riders/odin)假面骑士奥丁$(/l)与$(l:ryuki/arsenal/gold_visor)黄金召机$(/l)一同使用，可获得$(l:ryuki/arsenal/gold_shield)黄金护盾$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gold_shield_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/odin)假面骑士奥丁$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "wing_shield_vent",
+			"title": "羽翼护盾防御降临",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)由$(l:ryuki/riders/femme)假面骑士花梦$(/l)与$(l:ryuki/arsenal/blanc_visor)雪白召机$(/l)一同使用，可获得$(l:ryuki/arsenal/wing_shield)羽翼护盾$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wing_shield_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#femme)假面骑士花梦$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drag_shield_vent_ryuga",
+			"title": "龙护盾防卫降临(龙牙)",
+			"text": "登场于：$(li)假面骑士龙骑: Episode Final（2002年，电影）$(br2)由$(l:ryuki/riders/ryuga#ryuga)假面骑士龙牙$(/l)与$(l:ryuki/arsenal/black_drag_visor)暗黑龙召机$(/l)一同使用，可获得$(l:ryuki/arsenal/drag_shield_ryuga)龙护盾（龙牙）$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drag_shield_vent_ryuga",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#ryuga)假面骑士龙牙$(/l)"
+		}
+	]
+}

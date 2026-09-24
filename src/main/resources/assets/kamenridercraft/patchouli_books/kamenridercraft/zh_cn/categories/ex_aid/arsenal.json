@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:ex_aid/main",
+    "name": "武器",
+    "description": "系列角色所使用的武器和道具. 可以在铁砧上使用 $(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)修复.",
+    "icon": "kamenridercraft:gashacon_breaker",
+    "sortnum": 3
+}

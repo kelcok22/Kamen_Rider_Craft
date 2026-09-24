@@ -1,0 +1,17 @@
+{
+	"name": "跃动升华器卡片",
+	"icon": "kamenridercraft:providence_card_ziingazer",
+	"category": "kamenridercraft:geats/items",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "sirius_card",
+			"text": "登场于：$(li)假面骑士界外者 (2022年，网络剧)$(br2)可用于制作吉恩谛睨的$(l:geats/devices/laser_raise_driver)镭射跃动升华器$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/providence_card_ziingazer"
+		}
+	]
+}

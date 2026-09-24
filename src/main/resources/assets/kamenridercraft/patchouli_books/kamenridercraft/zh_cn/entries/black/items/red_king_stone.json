@@ -1,0 +1,19 @@
+{
+	"name": "红色帝王石",
+	"icon": "kamenridercraft:red_king_stone",
+	"category": "kamenridercraft:black/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士Black (1987年, 电视剧)$(br2)用于制作Black的$(l:black/devices/vital_charger)帝王石$(/l)$(br2)用于切换Black的$(l:black/riders/black#black)基础$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:red_king_stone",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:black_rx/mobs/chap)恰普$(/l)"
+		}
+	]
+}

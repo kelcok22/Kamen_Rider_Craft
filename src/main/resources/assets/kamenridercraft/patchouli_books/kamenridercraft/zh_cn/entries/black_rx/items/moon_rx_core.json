@@ -1,0 +1,19 @@
+{
+	"name": "影月核心(RX)",
+	"icon": "kamenridercraft:moon_rx_core",
+	"category": "kamenridercraft:black_rx/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)After 0 (2002年，S.I.C. 英雄传说)$(br2)用于制作另类RX的$(l:black_rx/devices/moon_riser)月亮升华器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:moon_rx_core",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:black/mobs/shadow_moon)影月$(/l)"
+		}
+	]
+}

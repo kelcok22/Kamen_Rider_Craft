@@ -1,0 +1,78 @@
+{
+	"name": "假面骑士钢斗",
+	"icon": "kamenridercraft:gatack_zecter",
+	"category": "kamenridercraft:kabuto/riders",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "masked",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "重甲形态",
+			"text": "通过使用$(l:kabuto/items/zecters#gatack_zecter)钢斗昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士钢斗",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)通过穿戴$(l:kabuto/devices/rider_belt#gatack_rider_belt)骑士代扣(钢斗)$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 II$(br2)专属技能：$(li)大炮"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "骑士形态",
+			"text": "通过使用$(l:kabuto/items/zecters#gatack_zecter)钢斗昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士钢斗",
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)通过穿戴$(l:kabuto/devices/rider_belt#gatack_rider_belt)骑士代扣(钢斗)$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 II$(br2)专属技能：$(li)Clock Up"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hyper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_hyper_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "海帕形态",
+			"text": "通过使用$(l:kabuto/items/zecters#hyper_zecter)海帕昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士钢斗",
+			"text": "登场于：$(li)假面骑士甲斗 超战斗DVD：诞生！钢斗超越形态！！ (2006年，超战斗视频)$(br2)通过穿戴$(l:kabuto/devices/rider_belt#gatack_rider_belt)骑士代扣(钢斗)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 V$(li)力量 IV$(br2)专属技能：$(li)海帕Clock Up"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "hyper_clock_up",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:gatack_hyper_zecter_clock_up\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "海帕clock up",
+			"text": "在 $(l:kabuto/riders/gatack#hyper)海帕形态$(/l)下使用$(l:kabuto/arsenal/clock_up_pad)clock up$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士钢斗",
+			"text": "登场于：$(li)假面骑士甲斗 超战斗DVD：诞生！钢斗超越形态！！ (2006年，超战斗视频)$(br2)通过穿戴$(l:kabuto/devices/rider_belt#gatack_rider_belt)骑士代扣(钢斗)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 V$(li)力量 IV$(br2)专属技能：$(li)海帕Clock Up"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "scissorbeeter",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gatack_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:scissorbeeter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "超级模式",
+			"text": "通过使用$(l:misc/items/card_warrior_cards#scissorbeeter)利刃甲虫怪物驾驭卡$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士钢斗",
+			"text": "登场于：$(li)卡牌战士假面骑士 (2009年，漫画/玩具系列)$(br2)通过穿戴$(l:kabuto/devices/rider_belt#gatack_rider_belt)骑士代扣(钢斗)$(/l)进行变身$(br2)状态效果：$(li)飞行 II$(li)速度 IV$(li)急迫 IV$(li)力量 II"
+		}
+	]
+}

@@ -1,0 +1,289 @@
+{
+    "name": "信号摩托",
+    "icon": "kamenridercraft:signal_mach",
+    "category": "kamenridercraft:drive/items",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_mach",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于制作马赫的 $(l:drive/devices/mach_driver_honoh#mach_driver_honoh)马赫驱动器$(/l)$(br2)用于切换马赫的 $(l:drive/riders/mach#mach)基础形态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_mach",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_magarl",
+            "title": "信号转弯",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于切换马赫的 $(l:drive/riders/mach#magarl)信号转弯$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_magarl",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_kaksarn",
+            "title": "信号扩散",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于切换马赫的 $(l:drive/riders/mach#kaksarn)信号扩散$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_kaksarn",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_tomarle",
+            "title": "信号停止",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于切换马赫的 $(l:drive/riders/mach#tomarle)信号停止$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_tomarle",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_kikern",
+            "title": "信号危险",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于切换马赫的 $(l:drive/riders/mach#kikern)信号危险$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_kikern",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_chaser",
+            "title": "信号追猎",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于制作追猎的 $(l:drive/devices/mach_driver_honoh#mach_driver_honoh_chaser)马赫驱动器(追猎)$(/l)$(br2)用于切换追猎的 $(l:drive/riders/chaser#chaser)基础形态$(/l)$(br2)用于切换马赫的 $(l:drive/riders/mach#chaser_mach)马赫追猎$(/l) 形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_chaser",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "deadheat_bike",
+            "title": "移速白热 摩托",
+            "text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)用于制作 $(l:drive/items/shift_cars#deadheatshift)移速白热$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:deadheat_bike",
+            "title": " ",
+            "text": "在 $(l:misc/blocks/machine_blocks#shift_chassis_assembler)变档战车底盘装配器$(/l) 上使用 $(l:drive/items/next_system_bike)次世代系统摩托$(/l) 获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_1",
+            "title": "信号传奇一号",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_1",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_kuuga",
+            "title": "信号传奇空我",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_kuuga",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_agito",
+            "title": "信号传奇亚极陀",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_agito",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_ryuki",
+            "title": "信号传奇龙骑",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_ryuki",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_faiz",
+            "title": "信号传奇Faiz",
+            "text": "登场于：$(li)D-Video特别篇：假面骑士4号 (2015年，网络剧)$(br2)用于制作Faiz的 $(l:faiz/devices/faiz_driver)Faiz驱动器$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_faiz",
+            "text": "掉落自：$(li)$(l:faiz/mobs/faiz)假面骑士Faiz$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_blade",
+            "title": "信号传奇剑",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_blade",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_hibiki",
+            "title": "信号传奇响鬼",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_hibiki",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_kabuto",
+            "title": "信号传奇甲斗",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_kabuto",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_den_o",
+            "title": "信号传奇电王",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_den_o",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_kiva",
+            "title": "信号传奇Kiva",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_kiva",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_decade",
+            "title": "信号传奇Decade",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_decade",
+            "text": "该物品当前无法获取"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_w",
+            "title": "信号传奇W",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_w",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_ooo",
+            "title": "信号传奇OOO",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_ooo",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_fourze",
+            "title": "信号传奇Fourze",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_fourze",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_wizard",
+            "title": "信号传奇Wizard",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_wizard",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "signal_legend_gaim",
+            "title": "信号传奇铠武",
+            "text": "登场于：$(li)信号传奇摩托套装完整盒 (2015年，玩具线)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:signal_legend_gaim",
+            "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到"
+        }
+    ]
+}

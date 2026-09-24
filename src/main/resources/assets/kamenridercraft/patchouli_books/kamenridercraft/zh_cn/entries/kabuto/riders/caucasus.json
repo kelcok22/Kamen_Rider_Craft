@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士金斗",
+	"icon": "kamenridercraft:caucasus_zecter",
+	"category": "kamenridercraft:kabuto/riders",
+	"sortnum": 8,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "rider",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:caucasus_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:caucasus_zecter\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "骑士形态",
+			"text": "通过使用$(l:kabuto/items/zecters#caucasus_zecter)金斗昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士金斗",
+			"text": "登场于：$(li)假面骑士甲斗：神速爱 (2006年，电影)$(br2)通过穿戴$(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT代扣$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升$(li)夜视$(li)急迫 II$(li)跳跃提升 V$(li)力量 III$(br2)专属技能：$(li)Clock Up"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "masked",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:caucasus_rider_belt\",components:{custom_data:{slot_tex1:\"kamenridercraft:caucasus_zecter_mask\"}},Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "重甲形态",
+			"text": "通过使用$(l:kabuto/items/zecters#caucasus_zecter)金斗昆虫仪$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士金斗",
+			"text": "登场于：$(li)Cast Off Rider (2006年，玩具系列)$(br2)通过穿戴$(l:kabuto/devices/zect_buckle#caucasus_rider_belt)ZECT代扣$(/l)进行变身$(br2)状态效果：$(li)缓慢$(li)抗性提升 II$(li)夜视"
+		}
+	]
+}

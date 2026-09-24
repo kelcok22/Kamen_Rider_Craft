@@ -1,0 +1,162 @@
+{
+	"name": "假面骑士斩月",
+	"icon": "kamenridercraft:sengoku_driver_zangetsu",
+	"category": "kamenridercraft:gaim/riders",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "melon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:melon_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "蜜瓜武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#melon_lockseed)蜜瓜锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士铠武 (2013年，电视剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)抗性提升$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:ichigo_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "草莓武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#ichigo_lockseed)草莓锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)跳跃提升"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "budou",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:budou_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "葡萄武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#budou_lockseed)葡萄锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)夜视$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "mango",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:mango_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "芒果武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#mango_lockseed)芒果锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士铠武：新鲜柳橙武装诞生！~你也能掌握！新鲜之力~ (2014年，超战斗视频)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)抗性提升$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "watermelon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:watermelon_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "西瓜武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#watermelon_lockseed)西瓜锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士铠武 外传：假面骑士斩月 (2015年，V-Cinema电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 IV$(li)夜视$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "suika",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:suika_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "西瓜武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#suika_lockseed)西瓜锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)小说：假面骑士铠武 (2016年，小说)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)变大 II$(li)挖掘疲劳 II$(li)抗性提升 III$(li)饱和$(li)跳跃提升 IV$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "jimber_melon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:jimber_melon_energy\",slot_tex2:\"kamenridercraft:jimber_gaim_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "阵羽蜜瓜武装",
+			"text": "通过使用$(l:gaim/items/energy_lockseeds#melon_energy_lockseed)蜜瓜能量锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)小说：假面骑士铠武 (2016年，小说)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)可由 $(l:gaim/riders/gaim)铠武$(/l)、$(l:gaim/riders/ryugen)龙玄$(/l)、$(l:gaim/riders/zangetsu)斩月$(/l)、$(l:gaim/riders/bravo)布拉沃$(/l) 及 $(l:gaim/riders/knuckle)纳高尔$(/l) 使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)夜视$(li)急迫 II$(li)饱和$(li)力量 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kachidoki",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:zangetsu_kachidoki_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "胜哄武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#zangetsu_kachidoki_lockseed)斩月·胜哄锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传- (2019年，舞台剧)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)饱和$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "kabuto",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:kabuto_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "甲斗武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#kabuto_lockseed)甲斗锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度 IV$(li)急迫 IV$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "decade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:decade_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Decade武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#decade_lockseed)Decade锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)急迫 III$(li)饱和$(li)力量"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fourze",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_zangetsu\",components:{custom_data:{slot_tex1:\"kamenridercraft:fourze_lockseed\",slot_tex2:\"kamenridercraft:basic_zangetsu_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Fourze武装",
+			"text": "通过使用$(l:gaim/items/lockseeds#fourze_lockseed)Fourze锁种$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士斩月",
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武&Wizard：命运的战国电影大战 (2013年，电影)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_zangetsu)战极驱动器$(/l)进行变身$(br2)任何装甲骑士均可使用此形态$(br2)状态效果：$(li)速度$(li)饱和$(li)跳跃提升 II"
+		}
+	]
+}

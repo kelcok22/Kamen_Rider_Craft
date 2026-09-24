@@ -1,0 +1,22 @@
+{
+	"name": "时之沙",
+	"icon": "kamenridercraft:rider_pass",
+	"category": "kamenridercraft:den_o/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "时间之沙",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)通过 $(l:den_o/arsenal/rider_pass)骑士车票(通行)$(/l) 进入$(br2)结构内建筑：$(li)$(l:den_o/structures/denliner_gouka)电班列 业火$(/l)$(li)$(l:den_o/structures/denliner_isurugi)电班列 石动$(/l)$(li)$(l:den_o/structures/denliner_rekkou)电班列 裂光$(/l)$(li)$(l:den_o/structures/denliner_ikazuchi)电班列 电雷$(/l)$(li)$(l:den_o/structures/zeroliner)零班列$(/l)$(li)$(l:den_o/structures/kingliner)王班列$(/l)$(li)$(l:den_o/structures/new_denliner)新电班列$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/sands_of_time.png"
+			],
+			"title": " ",
+			"text": "$(li)$(l:den_o/structures/gaohliner)牙王班列$(/l)$(li)$(l:den_o/structures/nega_denliner)负电班列$(/l)$(li)$(l:den_o/structures/ghostliner)幽灵列车$(/l)"
+		}
+	]
+}

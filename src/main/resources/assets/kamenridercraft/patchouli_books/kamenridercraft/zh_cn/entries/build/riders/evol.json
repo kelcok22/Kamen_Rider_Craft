@@ -1,0 +1,92 @@
+{
+	"name": "假面骑士Evol",
+	"icon": "kamenridercraft:evol_driver",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "cobra",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "眼镜蛇形态",
+			"text": "通过使用$(l:build/items/evolbottles#cobra_evol_bottle)眼镜蛇进化瓶罐$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evol",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)跳跃提升 III$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dragon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:dragon_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "龙形态",
+			"text": "通过使用$(l:build/items/evolbottles#dragon_evol_bottle)龙进化瓶罐$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evol",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)跳跃提升 II$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "rabbit",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:rabbit_evol_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "兔子形态",
+			"text": "通过使用$(l:build/items/evolbottles#rabbit_evol_bottle)兔子进化瓶罐$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evol",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 II$(li)跳跃提升 IV$(li)力量 III"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "black_hole",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:evol_trigger\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "黑洞形态",
+			"text": "通过使用$(l:build/items/evol_trigger)黑洞扳机$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evol",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 III$(li)力量 V$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "phantom_state",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:evol_trigger_kaijin\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Evol怪人状态",
+			"text": "背包中持有 $(l:build/arsenal/last_pandora_panel_black)潘多拉嵌板(黑)$(/l) 和10个$(l:build/items/fullbottles#black_lost_cobra_full_bottle)迷失满装瓶罐$(/l) 时，潜行使用 $(l:build/items/evol_trigger)黑洞扳机$(/l)，即可形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "Evolto",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)通过穿戴$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 III$(li)力量 V$(li)飞行"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "x",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:evol_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:evol_x_full_bottle\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "Evol-X形态",
+			"text": "通过使用$(l:build/items/fullbottles#evol_x_full_bottle)Evol-X满装瓶罐$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Evol",
+			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)通过穿戴$(l:build/devices/evol_driver#evol_driver)进化驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)急迫 III$(li)跳跃提升 III$(li)力量 V$(li)飞行"
+		}
+	]
+}

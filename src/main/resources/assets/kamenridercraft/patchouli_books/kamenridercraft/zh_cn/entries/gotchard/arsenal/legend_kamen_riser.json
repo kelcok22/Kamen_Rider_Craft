@@ -1,0 +1,16 @@
+{
+	"name": "传说假面升华器",
+	"icon": "kamenridercraft:legend_kamen_riser",
+	"category": "kamenridercraft:gotchard/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)由雷杰多的$(l:gotchard/riders/legend#legendary)传奇雷杰多$(/l)形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gotchard/legend_kamen_riser"
+		}
+	]
+}

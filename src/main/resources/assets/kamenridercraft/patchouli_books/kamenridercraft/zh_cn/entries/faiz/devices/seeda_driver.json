@@ -1,0 +1,50 @@
+{
+	"name": "Seeda代扣",
+	"icon": "kamenridercraft:seeda_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "seeda_driver",
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/seeda#silver_mint)假面骑士Seeda"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/seeda_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seeda_driver_gb",
+			"title": "Seeda代扣(卫兵蓝)",
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/seeda#guardian_blue)假面骑士Seeda"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/seeda_driver_gb"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seeda_driver_ro",
+			"title": "Seeda代扣(急救橙)",
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/seeda#rescue_orange)假面骑士Seeda"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/seeda_driver_ro"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "seeda_driver_uw",
+			"title": "Seeda代扣(都市白)",
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/seeda#urban_white)假面骑士Seeda"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:faiz/seeda_driver_uw"
+		}
+	]
+}

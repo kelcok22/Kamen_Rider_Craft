@@ -1,0 +1,16 @@
+{
+	"name": "眼枪军刀(枪)",
+	"icon": "kamenridercraft:gan_gun_saber_gun",
+	"category": "kamenridercraft:ghost/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)搭配$(l:ghost/riders/ghost#edison)爱迪生魂$(/l)或$(l:ghost/riders/ghost#billy_the_kid)比利小子魂$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ghost/gan_gun_saber_gun"
+		}
+	]
+}

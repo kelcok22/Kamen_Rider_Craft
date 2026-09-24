@@ -1,0 +1,36 @@
+{
+	"name": "假面骑士贞德",
+	"icon": "kamenridercraft:libera_driver",
+	"category": "kamenridercraft:revice/riders",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "cobra",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:libera_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cobra_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "眼镜蛇基因组",
+			"text": "通过使用 $(l:revice/items/vistamps#cobra_vistamp)眼镜蛇罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士贞德",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/libera_driver)解放驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)速度 II$(li)毒药抗性$(li)急迫 II"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "invincible",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:libera_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:king_cobra_vistamp\"}},Count:1b},{id:\"kamenridercraft:revice_legs\",Count:1b},{id:\"kamenridercraft:revice_troso\",Count:1b},{id:\"kamenridercraft:revice_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "无敌贞德",
+			"text": "通过使用 $(l:revice/items/vistamps#king_cobra_vistamp)眼镜王蛇罪恶印章$(/l) 进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士贞德",
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/libera_driver)解放驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)力量 XII（空手时）$(li)力量 IV（持武器时）$(li)速度 IV$(li)毒药抗性$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VII"
+		}
+	]
+}

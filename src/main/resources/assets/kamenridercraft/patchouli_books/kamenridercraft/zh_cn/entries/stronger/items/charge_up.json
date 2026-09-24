@@ -1,0 +1,19 @@
+{
+	"name": "超级电子发电机",
+	"icon": "kamenridercraft:charge_up",
+	"category": "kamenridercraft:stronger/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br2)用于切换强人的 $(l:stronger/riders/stronger#charge_up)电能积蓄$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:charge_up",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:stronger/mobs/black_satan_soldier)黑撒旦战斗员$(/l)"
+		}
+	]
+}

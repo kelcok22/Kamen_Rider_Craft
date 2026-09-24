@@ -1,0 +1,148 @@
+{
+    "name": "假面骑士W",
+    "icon": "kamenridercraft:wdriver",
+    "category": "kamenridercraft:w/riders",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:entity",
+            "anchor": "cyclonejoker",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "疾风王牌",
+            "text": "通过使用 $(l:w/items/gaia_memories#cyclone_memory)疾风记忆体$(/l) 和 $(l:w/items/gaia_memories#joker_memory)王牌记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)疾风记忆体效果：$(li)速度$(br2)王牌记忆体效果：$(li)拳力提升$(br2)专属技能：$(li)骑士踢"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "heatmetal",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:heat_memory\",slot_tex2:\"kamenridercraft:metal_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "炽热金属",
+            "text": "通过使用 $(l:w/items/gaia_memories#heat_memory)炽热记忆体$(/l) 和 $(l:w/items/gaia_memories#metal_memory)金属记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)炽热记忆体效果：$(li)防火$(li)烈焰环身$(br2)金属记忆体效果：$(li)抗性提升"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "lunatrigger",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:luna_memory\",slot_tex2:\"kamenridercraft:trigger_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "月神扳机",
+            "text": "通过使用 $(l:w/items/gaia_memories#luna_memory)月神记忆体$(/l) 和 $(l:w/items/gaia_memories#trigger_memory)扳机记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)月神记忆体效果：$(li)手臂加长$(br2)扳机记忆体效果：$(li)射击提升$(li)夜视"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "fangjoker",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fang_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "獠牙王牌",
+            "text": "通过使用 $(l:w/items/gaia_memories#fang_memory)獠牙记忆体$(/l) 和 $(l:w/items/gaia_memories#joker_memory)王牌记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)獠牙记忆体效果：$(li)力量 III$(li)速度 III$(li)急迫 II$(li)反胃$(br2)王牌记忆体效果：$(li)拳力提升"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "xtreme",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "疾风王牌极致",
+            "text": "通过使用 $(l:w/items/gaia_memories#xtreme_memory)极限记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)斩击提升 III$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)反射$(li)急迫 II$(li)力量 IV"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "gold_xtreme",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_gold_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "疾风王牌黄金极致",
+            "text": "以 $(l:w/riders/double#xtreme)疾风王牌极致$(/l) 形态坠落10格距离后进行形态切换，或通过使用 $(l:w/items/gaia_memories#xtreme_gold_memory)黄金极限记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W FOREVER: A to Z/命运的盖亚记忆体 (2010年，电影)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)斩击提升 III$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)急迫 II$(li)力量 IV$(li)飞行"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "accel_xtreme",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:xtreme_accel_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "疾风加速极致",
+            "text": "通过使用 $(l:w/items/gaia_memories#xtreme_accel_memory)疾风加速极限记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士W (2009年，电视剧)$(li)假面骑士：巅峰英雄OOO (2010年，电子游戏)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)斩击提升 V$(li)速度 III$(li)抗性提升 V$(li)夜视$(li)急迫 II$(li)力量 IV"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "cyclonecyclone",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:cyclone_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "疾风疾风",
+            "text": "通过使用 $(l:w/items/gaia_memories#cyclone_memory)疾风记忆体$(/l) 和 $(l:w/items/gaia_memories#cyclone_cyclone_memory)双重疾风记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升 II$(li)速度"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "jokerjoker",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:joker_joker_memory\",slot_tex2:\"kamenridercraft:joker_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "王牌王牌",
+            "text": "通过使用 $(l:w/items/gaia_memories#joker_joker_memory)双重王牌记忆体$(/l) 和 $(l:w/items/gaia_memories#joker_memory)王牌记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)击退增强 II"
+        },
+        {
+            "type": "patchouli:entity",
+            "anchor": "cycloneskull",
+            "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:wdriver\",components:{custom_data:{slot_tex1:\"kamenridercraft:cyclone_memory\",slot_tex2:\"kamenridercraft:skull_cyclone_memory\"}},Count:1b},{id:\"kamenridercraft:wlegs\",Count:1b},{id:\"kamenridercraft:wtroso\",Count:1b},{id:\"kamenridercraft:whead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+            "name": "疾风颅骨",
+            "text": "通过使用 $(l:w/items/gaia_memories#cyclone_memory)疾风记忆体$(/l) 和 $(l:w/items/gaia_memories#skull_memory)颅骨记忆体$(/l) 进行形态切换"
+        },
+        {
+            "type": "patchouli:text",
+            "title": "假面骑士W",
+            "text": "登场于：$(li)风都侦探：假面骑士颅骨的肖像 (2024年，电影)$(br2)通过穿戴$(l:w/devices/wdriver)双重驱动器$(/l)进行变身$(br2)疾风记忆体效果：$(li)速度$(br2)颅骨记忆体效果：$(li)力量"
+        }
+    ]
+}

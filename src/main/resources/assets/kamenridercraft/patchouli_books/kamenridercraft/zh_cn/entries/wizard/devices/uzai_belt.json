@@ -1,0 +1,18 @@
+{
+	"name": "Uzai腰带",
+	"icon": "kamenridercraft:uzai_belt",
+	"category": "kamenridercraft:wizard/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Wizard 舞台剧$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/uzai)假面骑士Uzai$(/l)"
+		},
+        {
+          "type": "patchouli:spotlight",
+          "link_recipe": true,
+          "item": "kamenridercraft:uzai_belt",
+          "text": "当前无法获取该物品"
+		}
+	]
+}

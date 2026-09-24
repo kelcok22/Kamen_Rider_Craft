@@ -1,0 +1,16 @@
+{
+    "name": "Beta驱动器",
+    "icon": "kamenridercraft:beta_driver",
+    "category": "kamenridercraft:faiz/devices",
+    "sortnum": 13,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士战斗舞台：Faiz vs Delta (2003年，舞台剧)$(br2)与 $(l:faiz/devices/armor)Faiz装甲$(/l) 一起穿戴，可变身为 $(l:faiz/riders/beta)假面骑士Beta$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:faiz/beta_driver"
+        }
+    ]
+}

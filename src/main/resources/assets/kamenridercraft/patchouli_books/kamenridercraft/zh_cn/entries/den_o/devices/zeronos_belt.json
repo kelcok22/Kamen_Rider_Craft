@@ -1,0 +1,16 @@
+{
+	"name": "零诺斯腰带",
+	"icon": "kamenridercraft:zeronos_belt",
+	"category": "kamenridercraft:den_o/devices",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王 (2007年，电视剧)$(br2)与$(l:den_o/devices/armor)电王装甲$(/l)一起穿戴，可变身为$(l:den_o/riders/zeronos)假面骑士零诺斯$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/zeronos_belt"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "超越驱动器",
+	"icon": "kamenridercraft:beyondriver",
+	"category": "kamenridercraft:zi_o/devices",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)与$(l:zi_o/devices/armor)时王装甲$(/l)一起穿戴，可变身为$(l:zi_o/riders/woz)假面骑士沃兹$(/l)$(br2)最多可存放4组未来骑士表盘"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zi_o/beyondriver",
+          "text": "掉落自：$(li)$(l:zi_o/mobs/woz)假面骑士沃兹(白沃兹)$(/l)的装备"
+		}
+	]
+}

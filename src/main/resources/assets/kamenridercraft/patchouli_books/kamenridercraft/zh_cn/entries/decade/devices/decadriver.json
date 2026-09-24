@@ -1,0 +1,16 @@
+{
+  "name": "decad驱动器",
+  "icon": "kamenridercraft:decadriver",
+  "category": "kamenridercraft:decade/devices",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)与$(l:decade/devices/armor)Decade装甲$(/l)一起穿戴，可变身为$(l:decade/riders/decade)假面骑士Decade$(/l)"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "kamenridercraft:decade/decadriver"
+    }
+  ]
+}

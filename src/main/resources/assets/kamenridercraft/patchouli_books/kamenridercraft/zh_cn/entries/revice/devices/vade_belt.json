@@ -1,0 +1,16 @@
+{
+	"name": "血腥贝德带扣",
+	"icon": "kamenridercraft:vade_belt",
+	"category": "kamenridercraft:revice/devices",
+	"sortnum": 10,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士利维斯：最终舞台 (2022年，舞台剧中)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/blood_vade)假面骑士血腥贝德"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:revice/vade_belt"
+		}
+	]
+}

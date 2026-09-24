@@ -1,0 +1,21 @@
+{
+	"name": "海姆冥界",
+	"icon": "kamenridercraft:sid_lockseed",
+	"category": "kamenridercraft:gaim/dimensions",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "海姆冥界",
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)通过$(l:misc/blocks/helheim_crack)海姆冥界裂缝$(/l)进入$(br2)包含结构：$(li)$(l:gaim/structures/yggdrasil_base)世界树研究营地$(/l)$(li)$(l:gaim/structures/rosyuo_helheim_city)白亚的海姆冥界之城$(/l)$(li)$(l:gaim/structures/redyue_helheim_city)翡翠的遗迹$(/l)$(li)$(l:gaim/structures/demushu_helheim_city)真红的洞穴$(/l)$(li)$(l:gaim/structures/megahex_planet)梅嘉赫克斯行星$(/l)"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/helheim.png"
+			],
+			"title": " "
+		}
+	]
+}

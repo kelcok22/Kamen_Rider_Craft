@@ -1,0 +1,17 @@
+{
+	"name": "暗忍",
+	"icon": "kamenridercraft:zi_o_logo",
+	"category": "kamenridercraft:zi_o/mobs",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:yaminin",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#yaminin_boss_block)暗忍BOSS召唤方块$(/l)召唤而来"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士忍者（2022年，电视剧）/（2019年，网络剧）$(br2)生命值：60$(br2)掉落$(li)2-4个$(l:zi_o/items/blank_watch)空白骑士表盘$(/l)$(li)1个$(l:zi_o/items/shuriken_starter_yaminin)免许皆传金属板(暗忍)$(/l)$(li)1个$(l:zi_o/items/shuriken_starter)免许皆传金属板(忍者)$(/l)或$(l:zi_o/items/shuriken_starter_hattari)免许皆传金属板(虚忍)$(/l)"
+		}
+	]
+}

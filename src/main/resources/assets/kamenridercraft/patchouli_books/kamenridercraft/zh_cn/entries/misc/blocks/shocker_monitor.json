@@ -1,0 +1,16 @@
+{
+	"name": "修卡精炼机",
+	"icon": "kamenridercraft:shocker_monitor",
+	"category": "kamenridercraft:misc/blocks",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)Mega Bloks BASIC STANDARD 3500 假面骑士 修卡基地套装 (2004，玩具系列)$(br2)作为$(l:misc/villagers#shocker_villager)修卡村民$(/l)的职业方块"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ichigo/shocker_monitor"
+		}
+	]
+}

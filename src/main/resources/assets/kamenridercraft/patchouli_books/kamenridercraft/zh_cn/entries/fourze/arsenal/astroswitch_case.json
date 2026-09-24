@@ -1,0 +1,16 @@
+{
+	"name": "天文开关箱",
+	"icon": "kamenridercraft:astroswitch_case",
+	"category": "kamenridercraft:fourze/arsenal",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)最多可存放10组天文开关"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:fourze/astroswitch_case"
+		}
+	]
+}

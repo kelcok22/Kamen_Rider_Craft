@@ -1,0 +1,16 @@
+{
+	"name": "未完成的装甲声刃",
+	"icon": "kamenridercraft:unfinished_armed_saber",
+	"category": "kamenridercraft:hibiki/items",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)用于制作$(l:hibiki/arsenal/armed_saber)音击增幅剑·装甲声刃$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:hibiki/unfinished_armed_saber"
+		}
+	]
+}

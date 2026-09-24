@@ -1,0 +1,332 @@
+{
+	"name": "能量道具",
+	"icon": "kamenridercraft:speed_energy_item",
+	"category": "kamenridercraft:ex_aid/arsenal",
+	"sortnum": 22,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "speed_energy_item",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得速度 XXI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:speed_energy_item",
+			"title": "加速能力",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "iron_energy_item",
+			"title": "钢铁能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得抗性 VI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:iron_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "instigate_energy_item",
+			"title": "发光能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得发光效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:instigate_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jump_energy_item",
+			"title": "跳跃能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得跳跃提升 XI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:jump_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "muscle_energy_item",
+			"title": "力量能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得力量 VI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:muscle_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shrink_energy_item",
+			"title": "缩小能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得缩小 III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shrink_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "christmas_energy_item",
+			"title": "圣诞快乐能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得圣诞快乐效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:christmas_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)$(br2)可通过打开 $(l:misc/items/gift)礼物$(/l) 获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stretch_energy_item",
+			"title": "伸缩能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得伸缩 III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stretch_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "invisible_energy_item",
+			"title": "隐身能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得隐身效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:invisible_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "confusion_energy_item",
+			"title": "眩晕能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得反胃效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:confusion_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "recover_energy_item",
+			"title": "回复能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得瞬间治疗 XI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:recover_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "emission_energy_item",
+			"title": "夜视能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得夜视效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:emission_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "reflect_energy_item",
+			"title": "反射能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得反射效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:reflect_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "save_energy_item",
+			"title": "保存能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得保存效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:save_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "reverse_energy_item",
+			"title": "逆转能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得瞬间治疗 XI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:reverse_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "giant_energy_item",
+			"title": "巨大化能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得巨大 III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:giant_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "liquid_energy_item",
+			"title": "液状化能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得水下呼吸效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:liquid_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_energy_item",
+			"title": "黑暗能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得失明效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:dark_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "sleep_energy_item",
+			"title": "睡眠能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时可度过夜晚"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:sleep_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "lucky_energy_item",
+			"title": "幸运能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得幸运效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:lucky_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "flatten_energy_item",
+			"title": "平面化能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得平面 III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:flatten_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "balloon_energy_item",
+			"title": "气球化能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得宽大 III"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:balloon_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "halt_energy_item",
+			"title": "停止能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得缓慢 CI"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:halt_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "end_energy_item",
+			"title": "终末能力",
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得爆炸 II"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:end_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bug_energy_item",
+			"title": "故障能力",
+			"text": "登场于：$(li)假面骑士Buttobasoul（2016年，街机游戏）$(br2)右键点击或未持有 $(l:ex_aid/arsenal/energy_item_holder)能力收集册$(/l) 时获得崩原体病毒 II"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bug_energy_item",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/blocks/mighty_block)全能方块$(/l)$(li)$(l:misc/blocks/bang_bang_drum)砰砰鼓$(/l)$(li)$(l:misc/blocks/bakusou_trophy)暴走奖杯$(/l)"
+		}
+	]
+}

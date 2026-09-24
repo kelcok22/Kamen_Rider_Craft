@@ -1,0 +1,17 @@
+{
+    "name": "空白骑士驾驭卡",
+    "icon": "kamenridercraft:blank_card",
+    "category": "kamenridercraft:decade/items",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "登场于：$(li)假面骑士Decade (2009年，电视剧)$(br2)用作大多数Decade物品的基础材料和修复材料$(br2)右键单击时会掉落不同的骑士驾驭卡"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe": "kamenridercraft:decade/blank_card",
+            "text": "掉落自：$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(br2)掉落：$(li)$(l:decade/items/kamenride_cards#decade_card)Decade 假面驾驭卡$(/l) (58.8%)$(li)$(l:decade/items/kamenride_cards#diend_card)Diend 假面驾驭卡$(/l) (29.4%)$(li)$(l:decade/items/kamenride_cards#dark_decade_card)黑暗Decade 假面驾驭卡$(/l) (5.9%)$(li)$(l:decade/items/gackt_card)神威楽斗 假面驾驭卡$(/l) (5.9%)"
+        }
+    ]
+}

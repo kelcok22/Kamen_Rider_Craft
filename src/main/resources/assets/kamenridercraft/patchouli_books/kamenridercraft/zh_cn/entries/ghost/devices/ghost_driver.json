@@ -1,0 +1,84 @@
+{
+	"name": "Ghost驱动器",
+	"icon": "kamenridercraft:ghost_driver",
+	"category": "kamenridercraft:ghost/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_driver",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/ghost)假面骑士Ghost"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/ghost_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "specter_driver",
+			"title": "Ghost驱动器(Specter)",
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/specter)假面骑士Specter"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/specter_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "dark_ghost_driver",
+			"title": "Ghost驱动器(暗黑Ghost)",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/dark_ghost)假面骑士黑暗Ghost"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/dark_ghost_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_specter_driver",
+			"title": "Ghost驱动器(零号Specter)",
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/zero_specter)假面骑士零号Specter"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/zero_specter_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kanon_specter_driver",
+			"title": "Ghost驱动器(花音Specter)",
+			"text": "登场于：$(li)假面骑士Specter x Blades (2021年，TTFC特别篇)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/kanon_specter)假面骑士花音Specter"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/kanon_specter_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "new_ghost_driver",
+			"title": "Ghost驱动器(新Ghost)",
+			"text": "登场于：$(li)假面骑士Ghost：最终舞台 (2017年，舞台秀)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/new_ghost)假面骑士新Ghost"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/new_ghost_driver"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "zero_ghost_driver",
+			"title": "Ghost驱动器(零号Ghost)",
+			"text": "登场于：$(li)小说：假面骑士Ghost：~未来的记忆~ (2017年，小说)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/zero_ghost)假面骑士零号Ghost"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:ghost/zero_ghost_driver"
+		}
+	]
+}

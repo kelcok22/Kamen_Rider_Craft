@@ -1,0 +1,23 @@
+{
+    "name": "觉醒卡矿石",
+    "icon": "kamenridercraft:stone_blade",
+    "category": "kamenridercraft:misc/blocks",
+    "sortnum": 11,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘此方块可获得剑的 $(l:blade/items/bladecard)觉醒卡片$(/l)$(br2)需要铁镐或更好的镐子$(br2)掉落：$(li)$(l:blade/items/bladecard)空白觉醒卡$(/l)（58%）$(li)$(l:blade/items/rouze_cards#change_beetle)觉醒卡片·变化长戟大兜虫$(/l)（5%）$(li)$(l:blade/items/rouze_cards#fusion_eagle)觉醒卡片·融合鹰鹫$(/l)（2%）$(li)$(l:blade/items/rouze_cards#absorb_capricorn)觉醒卡片·吸收山羊$(/l)（2%）$(li)$(l:blade/items/rouze_cards#evolution_caucasus)觉醒卡片·进化高加索$(/l)（1%）"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:stone_blade",
+            "title": " ",
+            "text": "$(li)$(l:blade/items/rouze_cards#change_stag)觉醒卡片·变化锹形虫$(/l)（5%）$(li)$(l:blade/items/rouze_cards#fusion_peacock)觉醒卡片·融合孔雀$(/l)（2%）$(li)$(l:blade/items/rouze_cards#absorb_serpent)觉醒卡片·吸收海蛇$(/l)（2%）$(li)$(l:blade/items/rouze_cards#evolution_giraffa)觉醒卡片·进化长颈鹿锯锹形虫$(/l)（1%）$(li)$(l:blade/items/rouze_cards#change_mantis)觉醒卡片·变化螳螂$(/l)（3%）$(li)$(l:blade/items/rouze_cards#evolution_paradoxa)觉醒卡片·进化幽灵螳螂$(/l)（1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:blade/items/rouze_cards#change_spider)觉醒卡片·变化蜘蛛$(/l)（3%）$(li)$(l:blade/items/rouze_cards#fusion_elephant)觉醒卡片·融合大象$(/l)（2%）$(li)$(l:blade/items/rouze_cards#absorb_tiger)觉醒卡片·吸收猛虎$(/l)（1%）$(li)$(l:blade/items/rouze_cards#evolution_tarantula)觉醒卡片·进化狼蛛$(/l)（1%）$(li)$(l:blade/items/rouze_cards#change_kerberos_glaive)觉醒卡片·黄金地狱三头犬(长刃)$(/l)（1%）$(li)$(l:blade/items/rouze_cards#change_kerberos_lance)觉醒卡片·碧绿地狱三头犬(长枪)$(/l)（3%）$(li)$(l:blade/items/rouze_cards#change_kerberos_larc)觉醒卡片·赤红地狱三头犬(弩弓)$(/l)（3%）"
+        }
+    ]
+}

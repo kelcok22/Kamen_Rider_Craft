@@ -1,0 +1,17 @@
+{
+	"name": "阿波罗盖斯特",
+	"icon": "kamenridercraft:apollogeist_core",
+	"category": "kamenridercraft:x/mobs",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:apollogeist",
+			"text": "登场于：$(li)假面骑士X（1974年，电视剧）$(br)生命值：45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "有10%概率从$(l:x/mobs/god_warfare_agent)GOD机关 探员$(/l)进化而来$(br2)掉落：$(li)4-6个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:x/items/apollogeist_core)阿波罗盖斯特核心$(/l) (83.3%)$(li)1个$(l:x/items/apollogeist_reborn_core)重生阿波罗盖斯特核心$(/l) (16.6%)"
+		}
+	]
+}

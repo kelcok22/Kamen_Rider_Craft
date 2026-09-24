@@ -1,0 +1,16 @@
+{
+	"name": "量产型马赫驱动器",
+	"icon": "kamenridercraft:metro_pd_driver_honoh",
+	"category": "kamenridercraft:drive/devices",
+	"sortnum": 6,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/mach_production_model)量产型假面骑士马赫"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/metro_pd_driver_honoh"
+		}
+	]
+}

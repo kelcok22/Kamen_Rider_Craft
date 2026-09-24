@@ -1,0 +1,21 @@
+{
+	"name": "假面骑士Gazer0",
+	"icon": "kamenridercraft:zillion_driver_gazer_zero",
+	"category": "kamenridercraft:geats/riders",
+	"sortnum": 39,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zillion_driver_gazer_zero\",Count:1b},{id:\"kamenridercraft:geatslegs\",Count:1b},{id:\"kamenridercraft:geatstroso\",Count:1b},{id:\"kamenridercraft:geatshead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "假面骑士Gazer0",
+			"text": "登场于：$(li)极狐番外：假面骑士谛睨 (2024年，TTFC特别篇)$(br2)通过穿戴$(l:geats/devices/zillion_driver#zillion_driver_gazer_zero)无极驱动器(Gazer0)$(/l)进行变身$(br2)状态效果：$(li)雷达 IV$(li)速度 III$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)力量 VI"
+		}
+	]
+}

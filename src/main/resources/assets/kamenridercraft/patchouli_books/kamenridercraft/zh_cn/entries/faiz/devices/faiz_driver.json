@@ -1,0 +1,17 @@
+{
+	"name": "Faiz驱动器",
+	"icon": "kamenridercraft:faiz_driver",
+	"category": "kamenridercraft:faiz/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/faiz#faiz)假面骑士Faiz"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:faiz/faiz_driver",
+			"recipe2": "kamenridercraft:faiz/faiz_driver_drive"
+		}
+	]
+}

@@ -1,0 +1,225 @@
+{
+    "name": "城市中心",
+    "icon": "kamenridercraft:woz_time_majin_ridewatch",
+    "category": "kamenridercraft:misc/city",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "城市中心是大型建筑，决定城市中生成的骑士生物类型，同时也决定该城市属于城区还是郊区。"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/city_centers.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "tokyo_tower",
+            "title": "东京铁塔",
+            "text": "生成生物：无$(br2)城市风貌：城区（高层建筑）$(br2)战利品：无"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/tokyo_tower_5.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "toei_studios",
+            "title": "东映制片厂",
+            "text": "生成生物：无$(br2)城市风貌：郊区（低层建筑）$(br2)战利品：无"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_5.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/toei_studios_6.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shocker_base",
+            "title": "修卡基地",
+            "text": "登场作品：$(li)《假面骑士》（1971年，电视剧）$(br2)生成生物：$(li)$(l:ichigo/mobs/shocker_combatman)修卡战斗员$(/l)$(li)$(l:shin_kamen_rider/mobs/batta_augment)量产型蝗虫怪人$(/l)$(br2)城市风貌：郊区（低层建筑）$(br2)战利品见下一页"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_5.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/shocker_base_6.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "text": "木桶战利品（四号机库内）：$(li)$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)$(l:drive/items/drive_system_car)系统驱动战车$(/l)$(li)$(l:ichigo/items/typhoon_cores#typhoon_core_yongo)台风核心(四号)$(/l)$(li)$(l:ichigo/items/rider3_vs_the_demon_of_general_black)骑士三号与黑色恶魔将军漫画$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_1)信号传奇一号$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_w)信号传奇W$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_ooo)信号传奇OOO$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_fourze)信号传奇Fourze$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_wizard)信号传奇Wizard$(/l)$(li)$(l:drive/items/signal_bikes#signal_legend_gaim)信号传奇铠武$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "可能包含一个 $(l:misc/blocks/boss_blocks#faiz_boss_block)Faiz Boss召唤方块$(/l) 或一个 $(l:misc/blocks/boss_blocks#decade_violent_emotion_boss_block)Decade激情态召唤方块$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "fuuto_tower",
+            "title": "风都塔",
+            "text": "登场作品：$(li)《假面骑士W》（2009年，电视剧）$(br2)生成生物：$(li)$(l:w/mobs/masquerade)假面舞会掺杂体$(/l)$(br2)城市风貌：城区$(br2)战利品：无"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/fuuto_tower_4.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "sabbath",
+            "title": "安息日祭坛",
+            "text": "登场作品：$(li)《假面骑士Wizard》（2012年，电视剧）$(br2)生成生物：$(li)$(l:wizard/mobs/ghouls)食尸鬼$(/l)$(br2)城市风貌：城区"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/sabbath.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "yggdrasil_tower",
+            "title": "世界树之塔",
+            "text": "登场作品：$(li)《假面骑士》（2013年电视剧）$(生成生物：$(li)$(l:gaim/mobs/elementary_inves_red)初级异域者$(/l)$(li)$(l:gaim/mobs/kurokage_trooper)黑影卫兵$(/l)$(br2)城市风貌：城区$(br2)战利品见下一页"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_5.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/yggdrasil_tower_6.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "text": "箱子战利品：$(li)1个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)$(br)$(li)1个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)（37.5%）$(li)1个$(l:gaim/items/lockseeds#orange_lockseed)柳橙锁种$(/l)（20%）$(li)1个$(l:gaim/items/lockseeds#banana_lockseed)香蕉锁种$(/l)（20%）$(li)1个$(l:gaim/items/lockseeds#budou_lockseed)葡萄锁种$(/l)（20%）$(li)1个$(l:gaim/items/lockseeds#lemon_lockseed)柠檬锁种$(/l)（0.25%）$(br)$(li)1个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)（28.3%）$(li)1个$(l:gaim/items/lockseeds#proto_orange_lockseed)原型柳橙锁种$(/l)（15.1%）$(li)1个$(l:gaim/items/lockseeds#proto_banana_lockseed)原型香蕉锁种$(/l)（15.1%）$(li)1个$(l:gaim/items/lockseeds#proto_budou_lockseed)原型葡萄锁种$(/l)（15.1%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)1个$(l:gaim/items/lockseeds#proto_donguri_lockseed)原型橡果锁种$(/l)（13.2%）$(li)1个$(l:gaim/items/lockseeds#proto_durian_lockseed)原型榴莲锁种$(/l)（13.2%）$(br2)其他战利品：$(li)18杯$(l:misc/items/foods#vienna_coffee)维也纳咖啡$(/l)（三楼一排木桶中）$(li)3个$(l:misc/items/foods#helheim_fruit)海姆冥界果实$(/l)（六楼实验室区域的办公桌上）$(li)1个$(l:gaim/items/energy_lockseeds#proto_dragon_fruits_energy_lockseed)原型火龙果能量锁种$(/l)（凌马办公室的桌子上）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kuruma_center",
+            "title": "久琉间驾驶执照考场",
+            "text": "登场作品：$(li)《假面骑士Drive》（2014年，电视剧）$(br2)生成生物：$(li)$(l:drive/mobs/roidmude)恶路程式$(/l)$(br2)城市风貌：郊区$(br2)战利品：无？"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_5.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/kuruma_center_6.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "seito_u_hospital",
+            "title": "圣都大学附属医院",
+            "text": "登场作品：$(li)《假面骑士Ex-Aid》（2016年，电视剧）$(br2)生成生物：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)$(br2)城市风貌：郊区$(br2)战利品：1张$(l:misc/items/music_discs#excite_music_disc)《EXCITE》音乐唱片$(/l)、1个$(l:ex_aid/items/wonderswan)Wonderswan掌机$(/l)（CR会议室的木桶中）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_5.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/seito_u_hospital_6.png"
+            ],
+            "title": " "
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pandora_tower",
+            "title": "潘多拉魔塔",
+            "text": "登场作品：$(li)《假面骑士Build》（2017年，电视剧）$(br2)生成生物：$(li)$(l:build/mobs/touto_guardian)东都防卫者$(/l)$(li)$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)$(li)$(l:build/mobs/seito_guardian)西都防卫者$(/l)$(br2)城市风貌：城区$(br2)包含 $(l:build/mobs/touto_guardian)东都防卫者$(/l)、$(l:build/mobs/hokuto_guardian)北都防卫者$(/l)、$(l:build/mobs/seito_guardian)西都防卫者$(/l)及 $(l:build/mobs/hard_guardian)坚硬防卫者$(/l)试炼刷怪笼"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower_city.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower_city_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/pandora_tower_city_3.png"
+            ],
+            "title": " ",
+            "text": "战利品见下一页"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "试炼战利品：$(li)67%几率掉落普通战利品$(li)33%几率掉落迷失瓶罐$(br2)普通战利品掉落：$(li)1个$(l:build/items/fullbottles#buttobasoul_full_bottle)能量道具 满装瓶罐$(/l)（7.7%）$(li)1个$(l:build/items/fullbottles#ganbarizing_full_bottle)卡片街机 满装瓶罐$(/l)（7.7%）$(li)2-4个$(l:build/items/smash_bottle)猛击者瓶罐$(/l)（23.1%）$(li)1个$(l:build/items/evolbottles#great_dragon_evol_bottle)伟大龙 进化瓶罐$(/l)（15.4%）$(li)1个$(l:build/items/evolbottles#dragon_evol_bottle)龙 进化瓶罐$(/l)（15.4%）$(li)1个$(l:build/items/evolbottles#rabbit_evol_bottle)兔子 进化瓶罐$(/l)（15.4%）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(li)1个$(l:build/arsenal/nanba_walking_stick)难波拐杖$(/l)（15.4%）$(br2)迷失瓶罐掉落：$(li)1个$(l:build/items/fullbottles#black_lost_cd_full_bottle)迷失CD 满装瓶罐$(/l)（25%）$(li)1个$(l:build/items/fullbottles#black_lost_cobra_full_bottle)迷失眼镜蛇 满装瓶罐$(/l)（25%）$(li)1个$(l:build/items/fullbottles#black_lost_shimauma_full_bottle)迷失斑马 满装瓶罐$(/l)（25%）$(li)1个$(l:build/items/fullbottles#black_lost_hasami_full_bottle)迷失剪刀 满装瓶罐$(/l)（25%）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hiden_intelligence",
+            "title": "飞电智能",
+            "text": "登场作品：$(li)《假面骑士01》（2019年，电视剧）$(br2)生成生物：$(li)$(l:zero_one/mobs/trilobite_magia)三叶虫魔机偶$(/l)$(br2)城市风貌：城区$(br2)箱子战利品：$(li)1个$(l:zero_one/items/progrisekeys#rising_hopper_progrisekey)高跃蝗虫程式升华秘钥$(/l)$(br)$(li)3-7个$(l:zero_one/items/hiden_metal)飞电金属$(/l)（52.6% x2-3）$(li)4-6个$(l:zero_one/items/blank_progrisekey)空白数据升华密钥$(/l)（15.8% x2-3）$(li)1个$(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l)（31.6% x2-3）"
+        },
+        {
+            "type": "patchouli:image",
+            "border": true,
+            "images": [
+                "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_2.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_3.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_4.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_5.png",
+                "kamenridercraft:patchouli_books/kamenridercraft/images/hiden_intelligence_6.png"
+            ],
+            "title": " ",
+            "text": "其他战利品：1个$(l:zero_one/items/humagear_progrisekey)修玛吉亚程式升华秘钥$(/l)、1个$(l:zero_one/items/progrisekeys#shesta_progrisekey)谢斯塔程式升华秘钥$(/l)（入口展示处）"
+        }
+    ]
+}

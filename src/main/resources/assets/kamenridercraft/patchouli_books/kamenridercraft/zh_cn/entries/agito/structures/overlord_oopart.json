@@ -1,0 +1,21 @@
+{
+	"name": "尊者文明遗迹",
+	"icon": "kamenridercraft:overlord_oopart2",
+	"category": "kamenridercraft:agito/structures",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "尊者文明遗迹",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)生成群系：沙滩、积雪沙滩$(br2)包含一个$(l:agito/mobs/pantheras_luteus)潘特拉斯·鲁特乌斯$(/l)刷怪笼"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/overlord_oopart.png"
+			],
+			"title": " "
+		}
+	]
+}

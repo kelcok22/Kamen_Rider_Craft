@@ -1,0 +1,19 @@
+{
+	"name": "Zeztz超梦驱动器",
+	"icon": "kamenridercraft:zeztz_exdream_driver",
+	"category": "kamenridercraft:zeztz/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/zeztz_exdream)假面骑士Zeztz 梦越"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zeztz_exdream_driver",
+			"title": " ",
+			"text": "使用$(l:zeztz/items/zeztz_exdream_driver_buckle)Zeztz超梦驱动代扣$(/l)模板与$(l:zeztz/items/capsems#exdreamrise_capsem)超梦升华梦境胶囊$(/l)，在锻造台中由$(l:zeztz/devices/zeztz_driver)Zeztz驱动器$(/l)升级获得"
+		}
+	]
+}

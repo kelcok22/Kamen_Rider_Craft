@@ -1,0 +1,16 @@
+{
+	"name": "鹰雀永恒回旋盘",
+	"icon": "kamenridercraft:tajaspinner_eternity",
+	"category": "kamenridercraft:ooo/arsenal",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)由OOO的$(l:ooo/riders/ooo#tajadol_eternity)鹰雀鹫联组 永恒$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ooo/tajaspinner_eternity"
+		}
+	]
+}

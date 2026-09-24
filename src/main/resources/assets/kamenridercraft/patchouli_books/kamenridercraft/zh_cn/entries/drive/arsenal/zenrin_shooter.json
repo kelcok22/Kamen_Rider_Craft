@@ -1,0 +1,17 @@
+{
+	"name": "前轮射手",
+	"icon": "kamenridercraft:zenrin_shooter",
+	"category": "kamenridercraft:drive/arsenal",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)由 $(l:drive/riders/mach)假面骑士马赫$(/l) 使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:drive/zenrin_shooter",
+          "text": "掉落自：$(li)$(l:drive/mobs/gord_drive)黄金Drive$(/l) 的装备"
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	"name": "凯撒",
+	"icon": "kamenridercraft:nebula_steam_gun_kaiser",
+	"category": "kamenridercraft:build/riders",
+	"sortnum": 11,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"anchor": "kaiser",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_remocon_blue\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:build/items/gears#gear_remocon_blue)遥控齿轮(蓝)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "凯撒",
+			"text": "登场于：$(li)平成假面骑士20作纪念 假面骑士Build & Ex-Aid with Legend Riders (2017年，电影)$(br2)通过手持/穿戴$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)和$(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)星云烟雾枪(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度 VI$(li)抗性提升 III$(li)水下呼吸$(li)夜视$(li)力量 IV"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "reverse",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_engine_red\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "通过使用$(l:build/items/gears#gear_engine_red)引擎齿轮(红)$(/l)进行形态切换"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "反凯撒",
+			"text": "登场于：$(li)平成假面骑士20作纪念 假面骑士Build & Ex-Aid with Legend Riders (2017年，电影)$(br2)通过手持/穿戴$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)和$(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)星云烟雾枪(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)抗火$(li)力量 V"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "bikaiser",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:nebula_steam_gun_kaiser\",components:{custom_data:{slot_tex1:\"kamenridercraft:gear_bi_kaiser\"}},Count:1b},{id:\"kamenridercraft:buildlegs\",Count:1b},{id:\"kamenridercraft:buildtroso\",Count:1b},{id:\"kamenridercraft:buildhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": "当背包中持有另一个齿轮道具时，潜行点击 $(l:build/items/gears#gear_engine_red)引擎齿轮(红)$(/l)或$(l:build/items/gears#gear_remocon_blue)遥控齿轮(蓝)$(/l)即可切换形态"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "霸凯撒",
+			"text": "登场于：$(li)平成假面骑士20作纪念 假面骑士Build & Ex-Aid with Legend Riders (2017年，电影)$(br2)通过手持/穿戴$(l:build/arsenal/nebulasteam_gun)星云烟雾枪$(/l)和$(l:build/devices/nebulasteam_gun#nebula_steam_gun_kaiser)星云烟雾枪(腰带)$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)炎拳 V$(li)抗火$(li)力量 V"
+		}
+	]
+}

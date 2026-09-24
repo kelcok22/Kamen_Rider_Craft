@@ -1,0 +1,16 @@
+{
+	"name": "电光瞬闪爆能器(巨剑模式)",
+	"icon": "kamenridercraft:inazuma_blaster_greatsword",
+	"category": "kamenridercraft:zeztz/arsenal",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)为Zeztz的 $(l:zeztz/riders/zeztz#plasma)闪电等离子$(/l) 形态专用武器"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:zeztz/inazuma_blaster_greatsword"
+		}
+	]
+}

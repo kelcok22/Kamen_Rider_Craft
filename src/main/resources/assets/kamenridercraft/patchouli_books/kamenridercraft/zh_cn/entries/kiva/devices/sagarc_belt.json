@@ -1,0 +1,16 @@
+{
+	"name": "Sagarc腰带",
+	"icon": "kamenridercraft:sagarc_belt",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士Kiva (2008年，电视剧)$(br2)与$(l:kiva/devices/armor)Kiva装甲$(/l)一起穿戴，可变身为$(l:kiva/riders/saga)假面骑士蛇牙$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/sagarc_belt"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "亚古鲁",
+	"icon": "kamenridercraft:arcle",
+	"category": "kamenridercraft:kuuga/devices",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士空我 (2000年, 电视剧)$(br2)与$(l:kuuga/devices/armor)空我装甲$(/l)一起穿戴，可变身为$(l:kuuga/riders/kuuga#mighty)假面骑士空我"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kuuga/kuuga_arcle"
+		}
+	]
+}

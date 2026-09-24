@@ -1,0 +1,16 @@
+{
+	"name": "忍者双刃",
+	"icon": "kamenridercraft:ninja_dueler",
+	"category": "kamenridercraft:geats/arsenal",
+	"sortnum": 7,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/tycoon#ninja)忍者$(/l) 形态使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:geats/ninja_dueler3"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "创世王提取物",
+	"icon": "kamenridercraft:creation_king_extract_vial",
+	"category": "kamenridercraft:black_sun/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "在$(l:misc/blocks/machine_blocks#kaijin_stone_generator)怪人石发电机$(/l)上使用，可获得$(l:black_sun/items/kaijin_stone)怪人石$(/l)，以及$(l:black_sun/items/kingstones#king_stone_sun)太阳$(/l)与$(l:black_sun/items/kingstones#king_stone_moon)月亮$(/l)帝王石"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:black_sun/creation_king_extract_vial"
+		}
+	]
+}

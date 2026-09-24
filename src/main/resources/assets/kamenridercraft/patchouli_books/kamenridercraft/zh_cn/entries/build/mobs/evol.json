@@ -1,0 +1,25 @@
+{
+	"name": "假面骑士Evol",
+	"icon": "kamenridercraft:build_logo",
+	"category": "kamenridercraft:build/mobs",
+	"sortnum": 9,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:evol",
+			"text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br)生命值：200"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#evol_boss_block)Evol BOSS召唤方块$(/l)召唤而来$(br2)特殊机制：$(li)若背包中有$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)，生命值低于100时将切换$(l:build/riders/evol#black_hole)黑洞$(/l)形态$(li)若背包中有$(l:misc/blocks/last_pandora_panel_black)潘多拉嵌板(黑)$(/l)，生命值低于50时将变身为$(l:build/riders/evol#phantom_state)Evol怪人状态$(/l)$(li)处于黑洞形态或怪人形态时可以飞行$(br2)掉落物见下一页"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "掉落$(li)2-4个$(l:build/items/full_bottle)空白满瓶$(/l)$(li)1个$(l:build/items/evolbottles#cobra_evol_bottle)眼镜蛇进化满装瓶罐$(/l) (75%)$(li)1个$(l:build/items/evolbottles#rider_system_evol_bottle)骑士系统进化满装瓶罐$(/l) (25%)$(li)1个$(l:build/items/evol_trigger)黑洞扳机$(/l)（背包中有$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)时）$(li)1个$(l:build/arsenal/last_pandora_panel_black)潘多拉嵌板(黑)$(/l)（背包中有$(l:build/items/evol_trigger)黑洞扳机$(/l)时）$(li)1个$(l:build/items/fullbottles#silver_dragon_full_bottle)银龙满装瓶罐$(/l) (50%)（背包中有$(l:build/arsenal/last_pandora_panel_black)潘多拉嵌板(黑)$(/l)时）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "$(li)1个$(l:build/items/fullbottles#gold_rabbit_full_bottle)金兔满装瓶罐$(/l) (50%)（背包中有$(l:build/arsenal/last_pandora_panel_black)潘多拉嵌板(黑)$(/l)时）"
+		}
+	]
+}

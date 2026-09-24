@@ -1,0 +1,17 @@
+{
+	"name": "安格维斯·玛斯库鲁斯",
+	"icon": "kamenridercraft:agito_logo",
+	"category": "kamenridercraft:agito/mobs",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:anguis_masculus",
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "生成群系：灵魂沙峡谷$(br2)掉落$(li)2-4个$(l:agito/items/agito_of_seed)亚极陀之种$(/l)$(li)1个$(l:agito/items/agito_of_seed)亚极陀之种$(/l) (20%)$(li)1个$(l:agito/items/philosophers_stones#gills)基尔斯核心$(/l) (60%)$(li)1个$(l:agito/items/g3core)空白G芯片$(/l) (20%)$(br2)进化BOSS$(li)$(l:agito/mobs/another_agito)假面骑士另类亚极陀$(/l) (10%)"
+		}
+	]
+}

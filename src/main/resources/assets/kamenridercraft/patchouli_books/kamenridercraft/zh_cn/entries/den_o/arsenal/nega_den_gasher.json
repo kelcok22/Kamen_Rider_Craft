@@ -1,0 +1,16 @@
+{
+	"name": "负电切裂者",
+	"icon": "kamenridercraft:nega_den_gasher",
+	"category": "kamenridercraft:den_o/arsenal",
+	"sortnum": 17,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士电王&月骑：巅峰警察 (2008年，电影)$(br2)由$(l:den_o/riders/nega_den_o)假面骑士负电王$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:den_o/nega_den_gasher"
+		}
+	]
+}

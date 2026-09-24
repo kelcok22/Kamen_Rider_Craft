@@ -1,0 +1,7 @@
+{
+	"parent": "kamenridercraft:w/main",
+    "name": "相关物品",
+    "description": "所有与W系列相关、非武器和腰带的道具.",
+    "icon": "kamenridercraft:joker_memory",
+    "sortnum": 2
+}

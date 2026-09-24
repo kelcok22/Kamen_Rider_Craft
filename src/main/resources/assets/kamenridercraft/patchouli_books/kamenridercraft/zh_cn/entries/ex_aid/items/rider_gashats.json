@@ -1,0 +1,1064 @@
+{
+    "name": "骑士卡带",
+    "icon": "kamenridercraft:mighty_action_x_gashat",
+    "category": "kamenridercraft:ex_aid/items",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "anchor": "mighty_action_x_gashat",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Ex-Aid的$(l:ex_aid/devices/gamer_driver#gamer_driver_ex_aid)玩家驱动器（Ex-Aid）$(/l)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#action_2)动作玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_action_x_gashat",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得$(br2)掉落自：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taddle_quest_gashat",
+            "title": "探索冒险卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Brave的$(l:ex_aid/devices/gamer_driver#gamer_driver_brave)玩家驱动器（Brave）$(/l)$(br2)用于切换Brave的$(l:ex_aid/riders/brave#quest_2)任务玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taddle_quest_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得$(br2)掉落自：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bang_bang_shooting_gashat",
+            "title": "砰砰射击卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Snipe的$(l:ex_aid/devices/gamer_driver#gamer_driver_snipe)玩家驱动器（Snipe）$(/l)$(br2)用于切换Snipe的$(l:ex_aid/riders/snipe#shooting_2)射击玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bang_bang_shooting_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得$(br2)掉落自：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bakusou_bike_gashat",
+            "title": "暴走机车卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Lazer的$(l:ex_aid/devices/gamer_driver#gamer_driver_lazer)玩家驱动器（Lazer）$(/l)$(br2)用于切换Lazer的$(l:ex_aid/riders/lazer#bike_2)机车玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bakusou_bike_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得$(br2)掉落自：$(li)$(l:ex_aid/mobs/bugstervirus_mob)崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bakusou_bike_gashat_turbo",
+            "title": "暴走机车卡带（崩原体）",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Lazer增压的$(l:ex_aid/riders/lazer#bike_0)机车玩家 Lv. 0$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:exaid/bakusou_bike_gashat_turbo"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gekitotsu_robots_gashat",
+            "title": "激突机器人卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/ex_aid#robot)机器玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gekitotsu_robots_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doremifa_beat_gashat",
+            "title": "哆啦咪发节拍卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/brave#beat)节拍玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doremifa_beat_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jet_combat_gashat",
+            "title": "喷射战机卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/snipe#combat)战斗玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:jet_combat_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "giri_giri_chambara_gashat",
+            "title": "极限剑斗卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Lazer X的$(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_lazer)卡控崩证者II（Lazer）$(/l)$(br2)用于切换Lazer的$(l:ex_aid/riders/lazer#chambara)剑斗玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:giri_giri_chambara_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "shakariki_sports_gashat",
+            "title": "干劲运动卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/genm#sports)运动玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:shakariki_sports_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "drago_knight_hunter_z_gashat",
+            "title": "龙骑士猎手Z卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/ex_aid#hunter_full)猎人玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:drago_knight_hunter_z_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得$(br2)掉落自：$(li)$(l:ex_aid/mobs/graphite_bugster_mob)格拉菲特崩原体$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_mighty_action_x_gashat",
+            "title": "原型全能动作X卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Genm的$(l:ex_aid/devices/gamer_driver#gamer_driver_genmu)玩家驱动器（幻梦）$(/l)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#action_2)动作玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_mighty_action_x_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_taddle_quest_gashat",
+            "title": "原型探索冒险卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Brave的$(l:ex_aid/riders/brave#proto_quest_2)任务玩家 Lv. 1/2（原型）$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_taddle_quest_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_bang_bang_shooting_gashat",
+            "title": "原型砰砰射击卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Snipe的$(l:ex_aid/riders/snipe#proto_shooting_2)射击玩家 Lv. 1/2（原型）$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_bang_bang_shooting_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_bakusou_bike_gashat",
+            "title": "原型暴走机车卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Lazer的$(l:ex_aid/riders/lazer#proto_bike_1)机车玩家 Lv. 1（原型）$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_bakusou_bike_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_gekitotsu_robots_gashat",
+            "title": "原型激突机器人卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/ex_aid#proto_robot)原型机器玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_gekitotsu_robots_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_doremifa_beat_gashat",
+            "title": "原型哆啦咪发节拍卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/brave#proto_beat)原型节拍玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_doremifa_beat_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_jet_combat_gashat",
+            "title": "原型喷射战机卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/snipe#proto_combat)原型战斗玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_jet_combat_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_giri_giri_chambara_gashat",
+            "title": "原型极限剑斗卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Lazer的$(l:ex_aid/riders/lazer#proto_chambara)原型剑斗玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_giri_giri_chambara_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_shakariki_sports_gashat",
+            "title": "原型干劲运动卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Lazer的$(l:ex_aid/riders/lazer#proto_sports)原型运动玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_shakariki_sports_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_drago_knight_hunter_z_gashat",
+            "title": "原型龙骑士猎手Z卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/ex_aid#proto_hunter)原型猎人玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_drago_knight_hunter_z_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_mighty_action_x_gashat_origin",
+            "title": "原型全能动作X卡带（试做型）",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#action_0)动作玩家 Lv. 0（原型原始）$(/l)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:exaid/proto_mighty_action_x_gashat_origin"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_bakusou_bike_combi_fukkatsu_gashat",
+            "title": "原型暴走机车卡带（联合版）",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Lazer (2016年，超战斗视频)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#bike_0)机车动作玩家 Lv. 0$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_bakusou_bike_combi_fukkatsu_gashat",
+            "title": " ",
+            "text": "物品目前无法获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dangerous_zombie_gashat",
+            "title": "危险僵尸卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Genm的 $(l:ex_aid/riders/genm#zombie_x)僵尸玩家 Lv.X$(/l)$(br2)用于切换Lazer的 $(l:ex_aid/riders/lazer#chambara_zombie)剑斗机车玩家 Lv.3（僵尸版）$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dangerous_zombie_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/genm_mob)假面骑士幻梦$(/l)（背包中持有 $(l:ex_aid/items/rider_gashats#bakusou_bike_gashat)暴走机车卡带$(/l) 时）"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "unfinished_kamen_rider_chronicle_gashat",
+            "title": "未完成的编年史卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用作卡控崩证者（II）的基础物品"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/rideplayer)骑士玩家$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_chronicle_gashat_gamedeus",
+            "title": "假面骑士编年史卡带（游戏天神）",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Cronus的$(l:ex_aid/riders/cronus#gamedeus)游戏天神cronus$(/l)形态"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_chronicle_gashat_gamedeus",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_chronicle_gashat",
+            "title": "假面骑士编年史卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Cronus的$(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_chronos)卡控崩证者II（Cronus）$(/l)$(br)用于制作骑士玩家的$(l:ex_aid/devices/ride_player_buckle#rideplayerbelt)骑士玩家代扣$(/l)$(br)用于制作妮可·赛巴的$(l:ex_aid/devices/ride_player_buckle#rideplayerbelt_nico)骑士玩家代扣（妮可）$(/l)和$(l:ex_aid/devices/gamer_driver#gamer_driver_nico_snipe)玩家驱动器（妮可Snipe）$(/l)$(br2)用于切换Cronus的$(l:ex_aid/riders/cronus#chronicle)cronus玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_chronicle_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "toki_meki_crisis_gashat",
+            "title": "心跳危机卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Poppy的$(l:ex_aid/devices/gashacon_bugvisor_ii#gashacon_bugvisor_ii_poppy)卡控崩证者II（Poppy）$(/l)$(br2)用于切换Poppy的$(l:ex_aid/riders/poppy#toki_meki_crisis)危机玩家 Lv. X$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:toki_meki_crisis_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mighty_creator_vrx_gashat",
+            "title": "全能创造者VRX卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid：True Ending (2017年，电影)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#creator)创造者玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_creator_vrx_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mighty_novel_x_gashat",
+            "title": "全能小说X卡带",
+            "text": "登场于：$(li)小说：假面骑士Ex-Aid：~全能小说X~ (2018年，小说)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#novel)小说玩家 Lv. X$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_novel_x_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ju_ju_burger_gashat",
+            "title": "Ju Ju汉堡卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换$(l:ex_aid/riders/ex_aid#burger)汉堡玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ju_ju_burger_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "night_of_safari_gashat",
+            "title": "游猎之夜卡带",
+            "text": "登场于：$(li)假面骑士Brave：~Let's Survive! 野兽骑士小队复活！~ (2017年，TTFC特别篇)$(br2)用于切换$(l:ex_aid/riders/brave#safari)游猎玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:night_of_safari_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bang_bang_tank_gashat",
+            "title": "砰砰坦克卡带",
+            "text": "登场于：$(li)假面骑士Snipe：Episode ZERO (2017年，迷你剧)$(br2)用于切换$(l:ex_aid/riders/snipe#tank)坦克玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bang_bang_tank_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taddle_legacy_gashat",
+            "title": "圣遗探索卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作真Brave的$(l:ex_aid/devices/gamer_driver#gamer_driver_truebrave)玩家驱动器（True Brave）$(/l)$(br2)用于切换$(l:ex_aid/riders/brave#legacy)遗产玩家 Lv. 100$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taddle_legacy_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hurricane_ninja_gashat",
+            "title": "疾风忍者卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid：True Ending (2017年，电影)$(br2)用于制作Fuma的$(l:ex_aid/devices/gamer_driver#gamer_driver_fuuma)玩家驱动器（Fuma）$(/l)$(br2)用于制作忍者玩家的$(l:ex_aid/devices/ninjaplayerbelt)忍者玩家代扣$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hurricane_ninja_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "pac_adventure_gashat",
+            "title": "吃豆冒险传奇卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换$(l:ex_aid/riders/ex_aid#pac)吃豆人玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:pac_adventure_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "famitsa_gashat",
+            "title": "家庭竞技场卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换$(l:ex_aid/riders/brave#famista)家竞场玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:famitsa_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "xevious_gashat",
+            "title": "铁板阵卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换$(l:ex_aid/riders/snipe#xevious)铁板阵玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:xevious_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "galaxian_gashat",
+            "title": "银河人传奇卡带",
+            "text": "登场于：$(li)假面骑士×超级战队：超超级英雄大战 (2017年，电影)$(br2)用于切换$(l:ex_aid/riders/brave#galaxian)小蜜蜂玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:galaxian_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taiko_no_tatsujin_gashat",
+            "title": "太鼓达人卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taiko_no_tatsujin_gashat",
+            "title": " ",
+            "text": "物品目前无法获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "ganbarizing_gashat",
+            "title": "假面骑士大乱斗卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:ganbarizing_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "proto_mighty_action_x_gashat_origin_remake",
+            "title": "原始原型全能动作X（重制）",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake",
+            "title": " ",
+            "text": "背包中持有$(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)檀黎斗社长程式升华钥$(/l)时，可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "toki_meki_bridal_gashat",
+            "title": "心跳婚纱卡带",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:toki_meki_bridal_gashat",
+            "title": " ",
+            "text": "背包中持有$(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)檀黎斗社长程式升华钥$(/l)时，可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "poppy_doremifa_beat_gashat",
+            "title": "哆啦咪发节拍卡带（Poppy版）",
+            "text": "登场于：$(li)DX 哆啦咪发节拍卡带（Poppy Pipopapo版） (2017年，玩具系列)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:poppy_doremifa_beat_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mighty_brothers_xx_unfinished_gashat",
+            "title": "未完成的全能兄弟xx卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+            "title": " ",
+            "text": "掉落自：$(li)$(l:ex_aid/mobs/poppy_red_mob)假面骑士Poppy$(/l)$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)$(li)$(l:ex_aid/mobs/cronus)假面骑士cronus$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mighty_brothers_xx_gashat",
+            "title": "全能兄弟XX卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#double_action_x)双人动作玩家 Lv. X/XX$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mighty_brothers_xx_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "doctor_mighty_xx_gashat",
+            "title": "全能医生XX卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:doctor_mighty_xx_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "knock_out_fighter_2_gashat",
+            "title": "击倒战士2卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Para-DX (2017年，超战斗视频)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#double_fighter)双人斗士玩家 Lv. 39$(/l)$(br)用于切换Para-DX的$(l:ex_aid/riders/para_dx#double_fighter)双人斗士玩家 Lv. 39$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:knock_out_fighter_2_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taddle_fantasy_gashat",
+            "title": "探索幻想卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Brave的$(l:ex_aid/riders/brave#fantasy)幻想玩家 Lv. 50$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taddle_fantasy_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "bang_bang_simulation_gashat",
+            "title": "砰砰模拟卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Snipe的$(l:ex_aid/riders/snipe#simulation)模拟玩家 Lv. 50$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:bang_bang_simulation_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "perfect_puzzle_gashat",
+            "title": "完美拼图卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Para-DX的$(l:ex_aid/devices/paradoxbelt)Para-DX代扣$(/l)$(br2)用于切换Para-DX的$(l:ex_aid/riders/para_dx#puzzle)拼图玩家 Lv. 50$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:perfect_puzzle_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "knock_out_fighter_gashat",
+            "title": "击倒战士卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于制作Para-DX的$(l:ex_aid/devices/paradoxbelt)Para-DX代扣$(/l)$(br2)用于切换Para-DX的$(l:ex_aid/riders/para_dx#fighter)斗士玩家 Lv. 50$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:knock_out_fighter_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gashat_gear_dual_another",
+            "title": "另类双重齿轮卡带",
+            "text": "登场于：$(li)假面骑士Para-DX with Poppy (2018年，V-Cinema电影)$(br2)用于制作另类Para-DX的$(l:ex_aid/devices/gamer_driver#gamer_driver_anotherparadox)玩家驱动器（另类Para-DX）$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gashat_gear_dual_another",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#mighty_brothers_xx_unfinished_gashat)未完成的全能兄弟xx卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "genm_musou_gashat",
+            "title": "幻梦无双卡带",
+            "text": "登场于：$(li)假面骑士Genms -Smart Brain与1000%危机- (2022年，TTFC特别篇)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#musou)无双玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:genm_musou_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:zero_one/items/progrisekeys#president_dan_kuroto_progrisekey)檀黎斗社长程式升华钥$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "unfinished_maximum_mighty_x_gashat",
+            "title": "未完成的极限全能卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:exaid/unfinished_maximum_mighty_x_gashat"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "maximum_mighty_x_gashat",
+            "title": "极限全能X卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#maximum)极限玩家 Lv. 99$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:maximum_mighty_x_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)未完成的极限全能卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "god_maximum_mighty_x_gashat",
+            "title": "神之极限全能X卡带",
+            "text": "登场于：$(li)假面骑士Genm vs. Lazer (2018年，V-Cinema电影)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#god_maximum)神极限玩家 Lv. 1000000000$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:god_maximum_mighty_x_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)未完成的极限全能卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "maximum_zombie_gashat",
+            "title": "极限僵尸卡带",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#fumetsu)超级不灭玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:maximum_zombie_gashat",
+            "title": " ",
+            "text": "物品栏中持有$(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin_remake)原始原型全能动作X(重制)$(/l)时，在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#unfinished_maximum_mighty_x_gashat)未完成的极限全能卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "unfinished_hyper_muteki_gashat",
+            "title": "未完成的hyper muteki卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)"
+        },
+        {
+            "type": "patchouli:crafting",
+            "title": " ",
+            "recipe": "kamenridercraft:exaid/unfinished_hyper_muteki_gashat"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hyper_muteki_gashat",
+            "title": "hyper muteki卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#muteki)无敌玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hyper_muteki_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)未完成的hyper muteki卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "gamedeus_hyper_muteki_gashat",
+            "title": "游戏天神hyper muteki卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid：Final Stage (2017年，舞台剧中)$(br2)用于制作游戏天神无敌的$(l:ex_aid/devices/gamer_driver#gamer_driver_gamedeus_muteki)玩家驱动器（游戏天神无敌）$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:gamedeus_hyper_muteki_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)未完成的hyper muteki卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "hyper_fumetsu_gashat",
+            "title": "hyper不灭卡带",
+            "text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#fumetsu)hyper不灭玩家$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:hyper_fumetsu_gashat",
+            "title": " ",
+            "text": "物品栏中持有$(l:ex_aid/items/rider_gashats#proto_mighty_action_x_gashat_origin_remake)原始原型全能动作X(重制)$(/l)时，在$(l:misc/blocks/machine_blocks#gamecreator)游戏卡带创作器$(/l)上使用$(l:ex_aid/items/rider_gashats#unfinished_hyper_muteki_gashat)未完成的hyper muteki卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "the_unbeatable_game",
+            "title": "未完成的游戏卡带",
+            "text": "登场于：$(li)假面战队五骑士 (2017年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#totema)托泰玛外装态$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:the_unbeatable_game",
+            "title": " ",
+            "text": "物品目前无法获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kamen_rider_build_gashat",
+            "title": "假面骑士build卡带",
+            "text": "登场于：$(li)假面骑士平成世代Final：Build & Ex-Aid with 传奇骑士 (2017年，电影)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kamen_rider_build_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "kaigan_ghost_gashat",
+            "title": "开眼Ghost卡带",
+            "text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man vs. Ex-Aid & Ghost with 传奇骑士 (2016年，电影)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#ghost_2)Ghost玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:kaigan_ghost_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "full_throttle_drive_gashat",
+            "title": "速度全开drive卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#drive)Drive玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:full_throttle_drive_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "toukenden_gaim_gashat",
+            "title": "刀剑传铠武卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#gaim)铠武玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:toukenden_gaim_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "magic_the_wizard_gashat",
+            "title": "魔法Wizard卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#wizard_2)Wizard玩家 Lv. 1/2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:magic_the_wizard_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "space_galaxy_fourze_gashat",
+            "title": "宇宙银河Fourze卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#fourze)Fourze玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:space_galaxy_fourze_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "jungle_ooo_gashat",
+            "title": "丛林OOO卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#ooo)OOO玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:jungle_ooo_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "detective_double_gashat",
+            "title": "侦探W卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#double)W玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:detective_double_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "barcode_warrior_decade_gashat",
+            "title": "条形码展示Decade卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#decade)Decade玩家 Lv. 2$(/l)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#decade)Decade玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:barcode_warrior_decade_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "dokidoki_makai_castle_kiva_gashat",
+            "title": "心跳魔界城Kiva卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#kiva)Kiva玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:dokidoki_makai_castle_kiva_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "time_express_den_o_gashat",
+            "title": "时空特急电王卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#den_o)电王玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:time_express_den_o_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "insect_wars_kabuto_gashat",
+            "title": "昆虫大战甲斗卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#kabuto)甲斗玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:insect_wars_kabuto_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "taiko_master_hibiki_gashat",
+            "title": "太鼓达人响鬼卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#hibiki)响鬼玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:taiko_master_hibiki_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "king_of_poker_blade_gashat",
+            "title": "扑克王剑卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#blade)剑玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:king_of_poker_blade_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "moshi_moshi_faiz_gashat",
+            "title": "喂喂喂Faiz卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#faiz)Faiz玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:moshi_moshi_faiz_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "mirror_labryinth_ryuki_gashat",
+            "title": "镜之迷宫龙骑卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#ryuki)龙骑玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:mirror_labryinth_ryuki_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "agito_of_the_sun_gashat",
+            "title": "太阳之子亚极陀卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Genm的$(l:ex_aid/riders/genm#agito)亚极陀玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:agito_of_the_sun_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "adventure_guy_kuuga_gashat",
+            "title": "大冒险家空我卡带",
+            "text": "登场于：$(li)假面骑士Ex-Aid \"Tricks\"：假面骑士Genm (2016年，网络剧)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#kuuga)空我玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:adventure_guy_kuuga_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "lets_go_ichigou_gashat",
+            "title": "一起上吧!一号!卡带",
+            "text": "登场于：$(li)DX 上吧1号卡带 (2017年，玩具系列)$(br2)用于切换Ex-Aid的$(l:ex_aid/riders/ex_aid#ichigo)一号玩家 Lv. 2$(/l)"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:lets_go_ichigou_gashat",
+            "title": " ",
+            "text": "可在$(l:misc/blocks/machine_blocks#ganbarizing_machine)传奇骑士街机游戏卡带创作器$(/l)上使用$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)获得"
+        }
+    ]
+}

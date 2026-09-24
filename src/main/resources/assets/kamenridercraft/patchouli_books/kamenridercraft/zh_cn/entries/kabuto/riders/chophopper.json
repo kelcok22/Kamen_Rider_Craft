@@ -1,0 +1,21 @@
+{
+	"name": "ChopHopper",
+	"icon": "kamenridercraft:chophopper_zecter",
+	"category": "kamenridercraft:kabuto/riders",
+	"sortnum": 12,
+	"pages": [
+		{
+			"type": "patchouli:entity",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chophopper_rider_belt\",Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": " ",
+			"text": ""
+		},
+		{
+			"type": "patchouli:text",
+			"title": "ChopHopper",
+			"text": "登场于：$(li)假面骑士甲斗：特别秀 (2006年，舞台秀)$(br2)通过穿戴$(l:kabuto/devices/zect_buckle#chophopper_rider_belt)ZECT带扣$(/l)进行变身$(br2)状态效果：$(li)抗性提升$(li)夜视"
+		}
+	]
+}

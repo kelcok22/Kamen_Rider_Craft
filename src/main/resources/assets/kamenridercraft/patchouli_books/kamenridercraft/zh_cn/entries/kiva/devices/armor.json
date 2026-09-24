@@ -1,0 +1,24 @@
+{
+	"name": "Kiva装甲",
+	"icon": "kamenridercraft:kivahead",
+	"category": "kamenridercraft:kiva/devices",
+	"sortnum": 0,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "搭配Kiva系列骑士的变身腰带使用，可变身为对应骑士"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kivahead"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kivatroso"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:kiva/kivalegs"
+		}
+	]
+}

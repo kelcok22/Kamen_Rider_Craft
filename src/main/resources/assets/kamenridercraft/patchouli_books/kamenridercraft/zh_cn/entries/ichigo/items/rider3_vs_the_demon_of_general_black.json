@@ -1,0 +1,19 @@
+{
+	"name": "骑士3号VS黑恶魔将军漫画",
+	"icon": "kamenridercraft:rider3_vs_the_demon_of_general_black",
+	"category": "kamenridercraft:ichigo/items",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士：骑士3号VS黑恶魔将军 (1972年，漫画)$(br2)用于切换三号的$(l:ichigo/riders/sango#manga_sango)漫画版$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider3_vs_the_demon_of_general_black",
+			"title": " ",
+			"text": "通过新手级$(l:misc/villagers#librarian)图书管理员$(/l)交易获得"
+		}
+	]
+}

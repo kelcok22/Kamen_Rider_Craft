@@ -1,0 +1,19 @@
+{
+	"name": "莱德尔核心",
+	"icon": "kamenridercraft:ridol_core",
+	"category": "kamenridercraft:x/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士X（1974年，电视剧）$(br2)用于制作X的$(l:x/devices/ridol)启动腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ridol_core",
+			"title": " ",
+			"text": "掉落自:$(li)$(l:x/mobs/god_warfare_agent)GOD机关 探员$(/l)"
+		}
+	]
+}

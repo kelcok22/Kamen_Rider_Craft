@@ -1,0 +1,16 @@
+{
+	"name": "细胞锭",
+	"icon": "kamenridercraft:cell_alloy_ingot",
+	"category": "kamenridercraft:ooo/items",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)用作$(l:ooo/riders/birth)假面骑士Birth$(/l)相关物品的基础物品"
+		},
+		{
+			"type": "patchouli:smelting",
+			"recipe": "kamenridercraft:ooo/cell_alloy_ingot"
+		}
+	]
+}

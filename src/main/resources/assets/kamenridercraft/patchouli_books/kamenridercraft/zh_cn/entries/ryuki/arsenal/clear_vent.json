@@ -1,0 +1,19 @@
+{
+	"name": "清除降临",
+	"icon": "kamenridercraft:clear_vent",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 62,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士龙骑特别篇：13骑士（2002年，电视剧特别篇）$(br2)由$(l:ryuki/riders/verde)假面骑士妖翠$(/l)与$(l:ryuki/arsenal/bio_visor)生化召机$(/l)一同使用，可获得10秒的隐身 III效果"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:clear_vent",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:ryuki/mobs/mirror_rider#verde)假面骑士妖翠$(/l)"
+		}
+	]
+}

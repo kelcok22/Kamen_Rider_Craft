@@ -1,0 +1,16 @@
+{
+	"name": "黄金召机",
+	"icon": "kamenridercraft:gold_visor",
+	"category": "kamenridercraft:ryuki/arsenal",
+	"sortnum": 28,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于:$(li)假面骑士龙骑 (2002年, 电视剧)$(br2)由$(l:ryuki/riders/odin)假面骑士奥丁$(/l)使用。"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:ryuki/gold_visor"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"name": "苍银杖",
+	"icon": "kamenridercraft:souginjou",
+	"category": "kamenridercraft:gaim/arsenal",
+	"sortnum": 40,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！ (2014年，电影)$(br2)由$(l:gaim/riders/kamuro)假面骑士冠$(/l)使用"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:gaim/souginjou"
+		}
+	]
+}
