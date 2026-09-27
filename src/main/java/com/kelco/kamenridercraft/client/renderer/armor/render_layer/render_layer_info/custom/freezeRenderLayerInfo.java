@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom;
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,7 +16,7 @@ public class freezeRenderLayerInfo extends RenderLayerInfo {
     public freezeRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
-    public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource bufferSource) {
+    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
         GeoBone door = model.getBone("door").orElse(null);
         if (door != null) {
             if(isByWater(entity))door.setRotY(-2);
