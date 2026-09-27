@@ -59,7 +59,7 @@ public class WizardRingItem extends BaseItem {
                         copy.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
                         copy.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
                         copy.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
-                        copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
+                        copy.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET).copy());
                         RiderDriverItem.setFormItem(copy.getItemBySlot(EquipmentSlot.FEET), RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1), 1);
 
                         level.addFreshEntity(copy);
