@@ -8,19 +8,13 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Axis;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.ItemRenderer;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
@@ -56,8 +50,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
         }
     }
 
-    protected void applyCustomAnimations(RenderLayerInfo renderLayerInfo, BakedGeoModel bakedModel, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource bufferSource) {
-        renderLayerInfo.ApplyMovement(bakedModel, stack, entity, partialTick,bufferSource );
+    protected void applyCustomAnimations(RenderLayerInfo renderLayerInfo, BakedGeoModel bakedModel, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource bufferSource,PoseStack poseStack,int packedLight) {
+        renderLayerInfo.ApplyRenderLayer(bakedModel, stack, entity, partialTick,bufferSource,poseStack,packedLight);
     }
 
     public GeoModel<T> getGeoModel(String name, EquipmentSlot slot) {
@@ -109,7 +103,7 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
 
                             if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
                             if (model != null)
-                                applyCustomAnimations(renderLayerInfo, bakedGeoModel, RIDER.getItemBySlot(EquipmentSlot.FEET), RIDER, partialTick,bufferSource);
+                                applyCustomAnimations(renderLayerInfo, bakedGeoModel, RIDER.getItemBySlot(EquipmentSlot.FEET), RIDER, partialTick,bufferSource,poseStack,packedLight);
 
                             if (renderType != null) {
                                 getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,

@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_laye
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,7 +16,7 @@ public class wheelRenderLayerInfo extends RenderLayerInfo {
     public wheelRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
-    public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource) {
+    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
         GeoBone wheels = model.getBone("wheels").orElse(null);
         if (wheels!= null) {
             double GetWheelOld = entity.getAttribute(Attributes.WHEEL_ROT_OLD).getBaseValue();
