@@ -7,7 +7,9 @@ import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.spongepowered.asm.mixin.Mixin;
@@ -24,6 +26,13 @@ public class LocalPlayerMixin {
         var rider = ((LocalPlayer) (Object) this);
         if (rider.getAttribute(Attributes.IS_TRANSFORMING).getValue() > 0) return false;
         return original;
+    }
+
+    boolean hasBikeForm(RiderDriverItem belt, LivingEntity rider){
+        for (int n = 0; n < belt.numBaseFormItems; n++) {
+            if (RiderDriverItem.getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n).getIsBike()) return true;
+        }
+        return false;
     }
 
     @Inject(method = "tick", at = @At("TAIL"))
@@ -84,7 +93,7 @@ public class LocalPlayerMixin {
                     PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "ball_rot", Objects.requireNonNull(rider.getAttribute(Attributes.BALL_ROT)).getBaseValue()));
                     PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "cape_rot", Objects.requireNonNull(rider.getAttribute(Attributes.CAPE_ROT)).getBaseValue()));
                 }
-                if (RiderDriverItem.getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 1).getIsBike()) {
+                if (hasBikeForm(belt,rider)) {
                     float wheel = 0;
                     if (Z > 0) {
                         wheel = -0.1f;
@@ -113,7 +122,8 @@ public class LocalPlayerMixin {
                     Objects.requireNonNull(rider.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(rider.getAttribute(Attributes.WHEEL_ROT)).getBaseValue() + wheel);
                     PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wheel_rot", Objects.requireNonNull(rider.getAttribute(Attributes.WHEEL_ROT)).getBaseValue()));
                 }
-            }
+
+        }
         }
     }
 }
