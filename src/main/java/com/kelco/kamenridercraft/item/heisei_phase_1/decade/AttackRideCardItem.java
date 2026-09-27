@@ -98,10 +98,10 @@ public class AttackRideCardItem extends BaseItem {
                         RiderSummonEntity illusion = MobsCore.RIDER_SUMMON.get().create(level);
                         if (illusion != null) {
                             illusion.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
-                            illusion.setItemSlot(EquipmentSlot.HEAD, player.getItemBySlot(EquipmentSlot.HEAD));
-                            illusion.setItemSlot(EquipmentSlot.CHEST, player.getItemBySlot(EquipmentSlot.CHEST));
-                            illusion.setItemSlot(EquipmentSlot.LEGS, player.getItemBySlot(EquipmentSlot.LEGS));
-                            illusion.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET));
+                            illusion.setItemSlot(EquipmentSlot.HEAD, player.getItemBySlot(EquipmentSlot.HEAD).copy());
+                            illusion.setItemSlot(EquipmentSlot.CHEST, player.getItemBySlot(EquipmentSlot.CHEST).copy());
+                            illusion.setItemSlot(EquipmentSlot.LEGS, player.getItemBySlot(EquipmentSlot.LEGS).copy());
+                            illusion.setItemSlot(EquipmentSlot.FEET, player.getItemBySlot(EquipmentSlot.FEET).copy());
                             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == DecadeRiderItems.DIEND_BELT.get()) {
                                 illusion.NAME = "diend_illusion";
                                 illusion.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(DecadeRiderItems.DIENDRIVER.get()));

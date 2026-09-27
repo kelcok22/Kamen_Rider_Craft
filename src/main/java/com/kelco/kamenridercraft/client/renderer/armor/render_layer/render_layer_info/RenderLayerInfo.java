@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_laye
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
@@ -42,7 +43,7 @@ public class RenderLayerInfo {
         GlowTexture = null;
     }
 
-    public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick) {
+    public void ApplyMovement(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick , MultiBufferSource pBufferSource) {
         GeoBone wizard_circle5 = model.getBone("wizard_circle5").orElse(null);
         double GetTransforming = Objects.requireNonNull(entity.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
 
