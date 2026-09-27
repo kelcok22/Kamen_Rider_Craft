@@ -301,7 +301,7 @@ public class FourzeRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"","fourze","fourze_driver_belt",
 					new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 6,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("module/fourze_parachute_module","module/fourze_parachute_module"));
+                    if (slot==EquipmentSlot.HEAD)layerInfo.add(new parachuteRenderLayerInfo("module/fourze_parachute_module","module/fourze_parachute_module"));
                 }
             }.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
