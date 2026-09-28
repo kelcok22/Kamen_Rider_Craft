@@ -162,6 +162,18 @@ public class UndeadEntity extends BaseHenchmenEntity {
                 case "dragonfly_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
                     break;
+                case "beetle_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    break;
+                case "stag_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    break;
+                case "spider_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    break;
+                case "mantis_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    break;
             }
         }
         super.onDamageTaken(damageContainer);
