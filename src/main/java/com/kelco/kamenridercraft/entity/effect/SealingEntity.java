@@ -22,6 +22,7 @@ import java.util.UUID;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.UUID_STORE;
+import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.ACE_UNDEAD_DROPS;
 import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.NORMAL_UNDEAD_DROPS;
 
 public class SealingEntity extends Entity implements GeoEntity {
@@ -42,6 +43,10 @@ public class SealingEntity extends Entity implements GeoEntity {
                     Random generator = new Random();
                     obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(NORMAL_UNDEAD_DROPS.get(generator.nextInt(NORMAL_UNDEAD_DROPS.size()))), 0, 0, 0);
+                } else if (getData(MOB_STATE).equals("ace_undead")) {
+                    Random generator = new Random();
+                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ACE_UNDEAD_DROPS.get(generator.nextInt(ACE_UNDEAD_DROPS.size()))), 0, 0, 0);
                 }
 
                 if (obtainedCard != null) {
