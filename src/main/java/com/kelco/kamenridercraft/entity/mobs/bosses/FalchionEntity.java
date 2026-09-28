@@ -20,38 +20,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_TRANSFORMED;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 
 public class FalchionEntity extends BaseHenchmenEntity {
     public FalchionEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "falchion";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(SaberRiderItems.SABER_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.HAKEN_BLADRIVER_FALCHION.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.MUMEIKEN_KYOMU.get()));
-        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
-        this.moveControl = new FlyingBossControl(this, 20);
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(SaberRiderItems.SABER_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(SaberRiderItems.SABER_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(SaberRiderItems.SABER_LEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.HAKEN_BLADRIVER_FALCHION.get()));
+        setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SaberRiderItems.MUMEIKEN_KYOMU.get()));
+        RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
+        moveControl = new FlyingBossControl(this, 20);
     }
 
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (!this.level().isClientSide() && source.getEntity() instanceof Player player && player.getInventory().countItem(SaberRiderItems.EMOTIONAL_DRAGON_WONDER_RIDE_BOOK.get()) == 0) {
-            this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 3, true, false));
+        if (!level().isClientSide() && source.getEntity() instanceof Player player && player.getInventory().countItem(SaberRiderItems.EMOTIONAL_DRAGON_WONDER_RIDE_BOOK.get()) == 0) {
+            addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 5, 3, true, false));
         }
 
-        if (!this.level().isClientSide() && !this.getData(MOB_TRANSFORMED) && source.getEntity() instanceof Player player) {
+        if (!level().isClientSide() && !getData(MOB_STATE).equals("amazing_siren") && source.getEntity() instanceof Player player) {
             if (player.getInventory().countItem(SaberRiderItems.WONDER_WORLD_STORY_OF_RAIMEIKEN_IKAZUCHI_WONDER_RIDE_BOOK.get()) != 0) {
-                this.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
-                this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
-                this.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
-                this.setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.HAKEN_BLADRIVER_FALCHION.get()));
-                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), SaberRiderItems.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1);
-                this.moveControl = new MoveControl(this);
-                this.setNoGravity(false);
-                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.4);
+                getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(12.0D);
+                getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(128.0D);
+                setItemSlot(EquipmentSlot.FEET, new ItemStack(SaberRiderItems.HAKEN_BLADRIVER_FALCHION.get()));
+                RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), SaberRiderItems.AMAZING_SIREN_WONDER_RIDE_BOOK.get(), 1);
+                moveControl = new MoveControl(this);
+                setData(MOB_STATE, "amazing_siren");
+                setNoGravity(false);
+                if (level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                     player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.falchion_siren"));
                 }
             }
@@ -59,7 +60,7 @@ public class FalchionEntity extends BaseHenchmenEntity {
     }
 
     public void remove(RemovalReason removalReason) {
-        if (this.isDeadOrDying() && this.getLastAttacker() instanceof Player player) {
+        if (isDeadOrDying() && getLastAttacker() instanceof Player player) {
             if (player.getInventory().countItem(SaberRiderItems.BRAVE_DRAGON_WONDER_RIDE_BOOK.get()) != 0) {
                 ItemEntity emotionalDragon = new ItemEntity(player.level(), player.getX(), player.getY(), player.getZ(), new ItemStack(SaberRiderItems.EMOTIONAL_DRAGON_WONDER_RIDE_BOOK.get(), 1), 0, 0, 0);
                 emotionalDragon.setPickUpDelay(0);

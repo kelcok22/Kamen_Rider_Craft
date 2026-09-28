@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.base_entities;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.UndeadEntity;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -10,6 +11,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -42,6 +44,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import javax.annotation.Nullable;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.BLANK_ROUZECARD;
 
 public class BaseProjectileEntity extends Projectile implements GeoEntity, TraceableEntity {
@@ -91,7 +94,6 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
 
     public void tick() {
         super.tick();
-        System.out.println(getProjectile());
         Vec3 vec3 = getDeltaMovement();
         if (ttl > 0) {
             ++ttl;
@@ -278,8 +280,13 @@ public class BaseProjectileEntity extends Projectile implements GeoEntity, Trace
 
     protected void onHitEntity(EntityHitResult result) {
         Entity hitEntity = result.getEntity();
-        if (!level().isClientSide() && hitEntity instanceof LivingEntity livingEntity && hitEntity != getOwner() && !(hitEntity instanceof ArmorStand)) {
-            if (projectile.equals("blank_rouze")) {
+        if (!level().isClientSide() && hitEntity instanceof LivingEntity livingEntity
+                && hitEntity != getOwner() && !(hitEntity instanceof ArmorStand)) {
+            if (projectile.equals("blank_rouze") && getOwner() instanceof ServerPlayer sealer && hitEntity instanceof UndeadEntity undeadEntity
+                    && undeadEntity.getData(MOB_STATE).contains("sealable")) {
+                undeadEntity.sealUndead(sealer);
+                undeadEntity.discard();
+                discard();
                 return;
             }
             if (getOwner() instanceof LivingEntity owner) {

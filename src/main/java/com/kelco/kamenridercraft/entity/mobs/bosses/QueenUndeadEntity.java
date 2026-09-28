@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.UndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import net.minecraft.world.DifficultyInstance;
@@ -18,19 +19,18 @@ import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
 
-public class QueenUndeadEntity extends BaseHenchmenEntity {
-
-		public QueenUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+public class QueenUndeadEntity extends UndeadEntity {
+    public QueenUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="undead_human";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
-        this.setDropChance(EquipmentSlot.HEAD, 0.0f);
-        this.setDropChance(EquipmentSlot.CHEST, 0.0f);
-        this.setDropChance(EquipmentSlot.LEGS, 0.0f);
-        this.setDropChance(EquipmentSlot.FEET, 0.0f);
+        NAME = "undead_human";
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+        setDropChance(EquipmentSlot.HEAD, 0.0f);
+        setDropChance(EquipmentSlot.CHEST, 0.0f);
+        setDropChance(EquipmentSlot.LEGS, 0.0f);
+        setDropChance(EquipmentSlot.FEET, 0.0f);
     }
 
     @Nullable
@@ -54,13 +54,11 @@ public class QueenUndeadEntity extends BaseHenchmenEntity {
     }
 
 
-	public static AttributeSupplier.Builder setAttributes() {
-		return Monster.createMonsterAttributes()
-        		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
-        		.add(Attributes.ATTACK_DAMAGE, 5.0D)
-        		.add(Attributes.MAX_HEALTH, 100.0D);
-     }
-    
-
+    public static AttributeSupplier.Builder setAttributes() {
+        return Monster.createMonsterAttributes()
+                .add(Attributes.FOLLOW_RANGE, 128.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.30F)
+                .add(Attributes.ATTACK_DAMAGE, 5.0D)
+                .add(Attributes.MAX_HEALTH, 100.0D);
+    }
 }

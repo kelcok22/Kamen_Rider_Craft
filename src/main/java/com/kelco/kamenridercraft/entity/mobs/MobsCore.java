@@ -4,11 +4,13 @@ package com.kelco.kamenridercraft.entity.mobs;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
 import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
+import com.kelco.kamenridercraft.entity.effect.SealingEntity;
 import com.kelco.kamenridercraft.entity.misc_entity.ChairEntity;
 import com.kelco.kamenridercraft.entity.mobs.allies.*;
 import com.kelco.kamenridercraft.entity.mobs.bosses.*;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.*;
 import com.kelco.kamenridercraft.entity.mobs.summons.*;
+import com.kelco.kamenridercraft.entity.projectiles.RouzeCardEntity;
 import com.kelco.kamenridercraft.entity.projectiles.ShurikenProjectileEntity;
 import com.kelco.kamenridercraft.entity.projectiles.WeaponProjectileEntity;
 import com.kelco.kamenridercraft.entity.vehicles.*;
@@ -1857,20 +1859,28 @@ public class MobsCore {
 
     public static final DeferredHolder<EntityType<?>, EntityType<WeaponProjectileEntity>> WEAPON_PROJECTILE =
             MOBLIST.register("weapon_projectile", () -> EntityType.Builder.<WeaponProjectileEntity>of(WeaponProjectileEntity::new, MobCategory.MISC)
-                    .sized(1F, 1F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":weapon_projectile"));
+                    .sized(1F, 1F).build(KamenRiderCraftCore.MOD_ID + ":weapon_projectile"));
 
     public static final DeferredHolder<EntityType<?>, EntityType<ShurikenProjectileEntity>> SHURIKEN_PROJECTILE =
             MOBLIST.register("shuriken_projectile", () -> EntityType.Builder.<ShurikenProjectileEntity>of(ShurikenProjectileEntity::new, MobCategory.MISC)
-                    .sized(1F, 1F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":shuriken_projectile"));
+                    .sized(1F, 1F).build(KamenRiderCraftCore.MOD_ID + ":shuriken_projectile"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<RouzeCardEntity>> ROUZE_CARD =
+            MOBLIST.register("rouze_card", () -> EntityType.Builder.<RouzeCardEntity>of(RouzeCardEntity::new, MobCategory.MISC)
+                    .sized(0.2F, 0.2F).noSave().build(KamenRiderCraftCore.MOD_ID + ":rouze_card"));
 
     public static final DeferredHolder<EntityType<?>, EntityType<BaseProjectileEntity>> BASE_PROJECTILE =
             MOBLIST.register("base_projectile", () -> EntityType.Builder.<BaseProjectileEntity>of(BaseProjectileEntity::new, MobCategory.MISC)
-                    .sized(0.2F, 0.2F).noSave().clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":base_projectile"));
+                    .sized(0.2F, 0.2F).noSave().build(KamenRiderCraftCore.MOD_ID + ":base_projectile"));
 
 
     public static final DeferredHolder<EntityType<?>, EntityType<BaseEffectEntity>> BASE_EFFECT =
             MOBLIST.register("base_effect", () -> EntityType.Builder.<BaseEffectEntity>of(BaseEffectEntity::new, MobCategory.MISC)
-                    .sized(0.2F, 0.2F).noSave().clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":base_effect"));
+                    .sized(0.2F, 0.2F).noSave().build(KamenRiderCraftCore.MOD_ID + ":base_effect"));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<SealingEntity>> SEALING_EFFECT =
+            MOBLIST.register("sealing_effect", () -> EntityType.Builder.of(SealingEntity::new, MobCategory.MISC)
+                    .sized(0.2F, 0.2F).build(KamenRiderCraftCore.MOD_ID + ":sealing_effect"));
 
 
     public static void register(IEventBus eventBus) {

@@ -19,6 +19,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
@@ -28,52 +29,51 @@ public class CatastropheGoreNightmareEntity extends BaseHenchmenEntity {
     public CatastropheGoreNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="nightmare";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.CATASTROPHE_GORE_NIGHTMARE_BELT.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.CATASTROPHE_GORE_NIGHTMARE_BELT.get()));
     }
 
-    public void remove(RemovalReason p_149847_) {
-        if (this.isDeadOrDying()) {
-            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
-            super.remove(p_149847_);
+    public void remove(@NotNull RemovalReason removalReason) {
+        if (isDeadOrDying()) {
+            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1,
+                    getZ(), 1, 0, 0, 0, 1);
         }
+        super.remove(removalReason);
     }
 
     protected void customServerAiStep() {
         super.customServerAiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        bossEvent.setProgress(getHealth() / getMaxHealth());
     }
 
     public void readAdditionalSaveData(CompoundTag p_31474_) {
         super.readAdditionalSaveData(p_31474_);
-        if (this.hasCustomName()) {
-            this.bossEvent.setName(this.getDisplayName());
+        if (hasCustomName()) {
+            bossEvent.setName(getDisplayName());
         }
     }
 
     public void setCustomName(@Nullable Component p_31476_) {
         super.setCustomName(p_31476_);
-        this.bossEvent.setName(this.getDisplayName());
+        bossEvent.setName(getDisplayName());
     }
 
     public void startSeenByPlayer(ServerPlayer p_31483_) {
         super.startSeenByPlayer(p_31483_);
-        this.bossEvent.addPlayer(p_31483_);
+        bossEvent.addPlayer(p_31483_);
     }
 
     public void stopSeenByPlayer(ServerPlayer p_31488_) {
         super.stopSeenByPlayer(p_31488_);
-        this.bossEvent.removePlayer(p_31488_);
+        bossEvent.removePlayer(p_31488_);
     }
 
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
         builder.define(DATA_FLAGS_ID, (byte)0);
     }
-
-
 
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()

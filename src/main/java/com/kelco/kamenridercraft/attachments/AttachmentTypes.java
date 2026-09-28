@@ -33,8 +33,12 @@ public class AttachmentTypes {
             "used_ability", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
     );
 
-    public static final Supplier<AttachmentType<Boolean>> MOB_TRANSFORMED = REGISTRY.register(
-            "mob_transformed", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
+    public static final Supplier<AttachmentType<String>> MOB_STATE = REGISTRY.register(
+            "mob_state", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
+    );
+
+    public static final Supplier<AttachmentType<String>> UUID_STORE = REGISTRY.register(
+            "uuid_store", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
     );
 
     public static final Supplier<AttachmentType<Boolean>> WINGS_OUT = REGISTRY.register(

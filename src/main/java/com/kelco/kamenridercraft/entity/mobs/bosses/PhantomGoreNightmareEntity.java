@@ -1,9 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
-import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
-import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -14,67 +12,68 @@ import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
 public class PhantomGoreNightmareEntity extends BaseHenchmenEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(PhantomGoreNightmareEntity.class, EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(getDisplayName(), BossEvent.BossBarColor.WHITE, BossEvent.BossBarOverlay.PROGRESS);
+
     public PhantomGoreNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="nightmare";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.PHANTOM_GORE_NIGHTMARE_BELT.get()));
+        NAME = "nightmare";
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.PHANTOM_GORE_NIGHTMARE_BELT.get()));
     }
 
-    public void remove(RemovalReason p_149847_) {
-        if (this.isDeadOrDying()) {
-            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 1, 0, 0, 0, 1);
-            super.remove(p_149847_);
+    public void remove(@NotNull RemovalReason removalReason) {
+        if (isDeadOrDying()) {
+            ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1,
+                    getZ(), 1, 0, 0, 0, 1);
         }
+        super.remove(removalReason);
     }
 
     protected void customServerAiStep() {
         super.customServerAiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        bossEvent.setProgress(getHealth() / getMaxHealth());
     }
 
-    public void readAdditionalSaveData(CompoundTag p_31474_) {
-        super.readAdditionalSaveData(p_31474_);
-        if (this.hasCustomName()) {
-            this.bossEvent.setName(this.getDisplayName());
+    public void readAdditionalSaveData(CompoundTag compoundTag) {
+        super.readAdditionalSaveData(compoundTag);
+        if (hasCustomName()) {
+            bossEvent.setName(getDisplayName());
         }
     }
 
-    public void setCustomName(@Nullable Component p_31476_) {
-        super.setCustomName(p_31476_);
-        this.bossEvent.setName(this.getDisplayName());
+    public void setCustomName(@Nullable Component component) {
+        super.setCustomName(component);
+        bossEvent.setName(getDisplayName());
     }
 
-    public void startSeenByPlayer(ServerPlayer p_31483_) {
-        super.startSeenByPlayer(p_31483_);
-        this.bossEvent.addPlayer(p_31483_);
+    public void startSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
+        super.startSeenByPlayer(serverPlayer);
+        bossEvent.addPlayer(serverPlayer);
     }
 
-    public void stopSeenByPlayer(ServerPlayer p_31488_) {
-        super.stopSeenByPlayer(p_31488_);
-        this.bossEvent.removePlayer(p_31488_);
+    public void stopSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
+        super.stopSeenByPlayer(serverPlayer);
+        bossEvent.removePlayer(serverPlayer);
     }
 
-    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
         super.defineSynchedData(builder);
-        builder.define(DATA_FLAGS_ID, (byte)0);
+        builder.define(DATA_FLAGS_ID, (byte) 0);
     }
 
     public static AttributeSupplier.Builder setAttributes() {

@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.UndeadEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -26,7 +27,7 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class JokerUndeadEntity extends BaseHenchmenEntity {
+public class JokerUndeadEntity extends UndeadEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(JokerUndeadEntity.class,
             EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString())
@@ -76,7 +77,8 @@ public class JokerUndeadEntity extends BaseHenchmenEntity {
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (getItemInHand(InteractionHand.MAIN_HAND).isEmpty() && !level().isClientSide() && source.getEntity() instanceof Player && getHealth() < 75) {
+        if (getItemInHand(InteractionHand.MAIN_HAND).isEmpty() && !level().isClientSide() &&
+                source.getEntity() instanceof Player && getHealth() < 75) {
             if (new Random().nextInt(100) <= 98) {
                 setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.JOKER_MANTIS.get()));
                 setItemInHand(InteractionHand.OFF_HAND, new ItemStack(BladeRiderItems.JOKER_MANTIS.get()));

@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.UndeadEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
@@ -24,23 +25,22 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
-import java.util.Random;
 
-public class AlbinoJokerUndeadEntity extends BaseHenchmenEntity {
+public class AlbinoJokerUndeadEntity extends UndeadEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(AlbinoJokerUndeadEntity.class, EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.WHITE), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
 
-		public AlbinoJokerUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+    public AlbinoJokerUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="albino_joker_undead";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.ALBINO_JOKERROUZER.get()));
-        this.setDropChance(EquipmentSlot.HEAD, 0.0f);
-        this.setDropChance(EquipmentSlot.CHEST, 0.0f);
-        this.setDropChance(EquipmentSlot.LEGS, 0.0f);
-        this.setDropChance(EquipmentSlot.FEET, 0.0f);
+        NAME = "albino_joker_undead";
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.ALBINO_JOKERROUZER.get()));
+        setDropChance(EquipmentSlot.HEAD, 0.0f);
+        setDropChance(EquipmentSlot.CHEST, 0.0f);
+        setDropChance(EquipmentSlot.LEGS, 0.0f);
+        setDropChance(EquipmentSlot.FEET, 0.0f);
     }
 
 
@@ -79,17 +79,19 @@ public class AlbinoJokerUndeadEntity extends BaseHenchmenEntity {
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getItemInHand(InteractionHand.MAIN_HAND).isEmpty() && this.getHealth() < 75) {
-                setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.ALBINO_JOKER_DEATH_SCYTHE.get()));
-            }
-}
-	public static AttributeSupplier.Builder setAttributes() {
-		return Monster.createMonsterAttributes()
-        		.add(Attributes.FOLLOW_RANGE, 128.0D)
-        		.add(Attributes.MOVEMENT_SPEED, 0.30F)
-        		.add(Attributes.ATTACK_DAMAGE, 5.0D)
-        		.add(Attributes.MAX_HEALTH, 150.0D);
-     }
-    
+        if (!level().isClientSide() && source.getEntity() instanceof Player &&
+                getItemInHand(InteractionHand.MAIN_HAND).isEmpty() && getHealth() < 75) {
+            setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.ALBINO_JOKER_DEATH_SCYTHE.get()));
+        }
+    }
+
+    public static AttributeSupplier.Builder setAttributes() {
+        return Monster.createMonsterAttributes()
+                .add(Attributes.FOLLOW_RANGE, 128.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.30F)
+                .add(Attributes.ATTACK_DAMAGE, 5.0D)
+                .add(Attributes.MAX_HEALTH, 150.0D);
+    }
+
 
 }

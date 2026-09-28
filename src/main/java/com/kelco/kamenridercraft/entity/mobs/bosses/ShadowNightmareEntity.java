@@ -35,16 +35,16 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
 		public ShadowNightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="nightmare";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()));
     }
 
     public void remove(@NotNull RemovalReason removalReason) {
-        if (this.isDeadOrDying()) {
+        if (isDeadOrDying()) {
             ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 10, 0, 0, 0, 1);
-            if (!this.level().isClientSide() && this.getLastAttacker() instanceof Player && ((Player) this.getLastAttacker()).getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
+            if (!level().isClientSide() && getLastAttacker() instanceof Player && ((Player) getLastAttacker()).getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
                 ItemEntity kiwamiLockseed = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM.get(), 1), 0, 0, 0);
                 kiwamiLockseed.setPickUpDelay(0);
                 level().addFreshEntity(kiwamiLockseed);
@@ -55,52 +55,51 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
 
     public void readAdditionalSaveData(CompoundTag p_31474_) {
         super.readAdditionalSaveData(p_31474_);
-        if (this.hasCustomName()) {
-            this.bossEvent.setName(this.getDisplayName());
+        if (hasCustomName()) {
+            bossEvent.setName(getDisplayName());
         }
     }
 
     public void setCustomName(@Nullable Component p_31476_) {
         super.setCustomName(p_31476_);
-        this.bossEvent.setName(this.getDisplayName());
+        bossEvent.setName(getDisplayName());
     }
 
     public void startSeenByPlayer(ServerPlayer p_31483_) {
         super.startSeenByPlayer(p_31483_);
-        this.bossEvent.addPlayer(p_31483_);
+        bossEvent.addPlayer(p_31483_);
     }
 
     public void stopSeenByPlayer(ServerPlayer p_31488_) {
         super.stopSeenByPlayer(p_31488_);
-        this.bossEvent.removePlayer(p_31488_);
+        bossEvent.removePlayer(p_31488_);
     }
 
 
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (!this.level().isClientSide() && source.getEntity() instanceof Player playerIn && this.getHealth() < 30 && playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) >= 1) {
+        if (!level().isClientSide() && source.getEntity() instanceof Player playerIn && getHealth() < 30 && playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) >= 1) {
             if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
-                if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()) {
-                    if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()) {
+                    if (level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.midnight_shadow_nightmare"));
-                        RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get(), 1);
+                        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get(), 1);
                     }
                 }
             }
         }
     }
     protected void customServerAiStep() {
-
         super.customServerAiStep();
         if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()&this.bossEvent.getColor()!= BossEvent.BossBarColor.BLUE) {
-                this.bossEvent.setColor(BossEvent.BossBarColor.BLUE);
-                this.bossEvent.setName(Component.translatable("entity.kamenridercraft.midnight_shadow_nightmare").withStyle(ChatFormatting.DARK_BLUE));
+            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()&bossEvent.getColor()!= BossEvent.BossBarColor.BLUE) {
+                bossEvent.setColor(BossEvent.BossBarColor.BLUE);
+                bossEvent.setName(Component.translatable("entity.kamenridercraft.midnight_shadow_nightmare").withStyle(ChatFormatting.DARK_BLUE));
             }
         }
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());}
+        bossEvent.setProgress(getHealth() / getMaxHealth());}
 
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);

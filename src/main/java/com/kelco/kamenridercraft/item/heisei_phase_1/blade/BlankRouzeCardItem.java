@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.blade;
 
 
-import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
+import com.kelco.kamenridercraft.entity.projectiles.RouzeCardEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -26,13 +26,13 @@ public class BlankRouzeCardItem extends BaseItem {
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         if (player instanceof ServerPlayer serverPlayer && usedHand == InteractionHand.MAIN_HAND) {
-            BaseProjectileEntity baseProjectile = new BaseProjectileEntity(level, serverPlayer, "blank_rouze", 0, 0, effects);
-            baseProjectile.setTexture(sealingType);
-            baseProjectile.setModel("card");
-            baseProjectile.setProjectile("blank_rouze");
-            baseProjectile.setGlowing(false);
-            baseProjectile.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2f, 1F);
-            level.addFreshEntity(baseProjectile);
+            RouzeCardEntity rouzeCard = new RouzeCardEntity(level, serverPlayer, "blank_rouze",
+                    0, 0, effects);
+            rouzeCard.setTexture(sealingType);
+            rouzeCard.setModel("card");
+            rouzeCard.setProjectile("blank_rouze");
+            rouzeCard.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1f, 1F);
+            level.addFreshEntity(rouzeCard);
 
             serverPlayer.awardStat(Stats.ITEM_USED.get(this));
             serverPlayer.setItemInHand(usedHand, serverPlayer.getItemInHand(usedHand));

@@ -59,7 +59,6 @@ public class BreakamDawnTaikenItem extends SwordItem {
 
             ItemStack leftSword = new ItemStack(BREAKAM_DAWN_SOUKEN_L.get());
             ItemStack rightSword = new ItemStack(BREAKAM_DAWN_SOUKEN_R.get());
-            System.out.println(sword.getMaxDamage() - sword.getDamageValue());
 
             if ((sword.getMaxDamage() - sword.getDamageValue()) == 2) {
                 leftSword.setDamageValue(779);

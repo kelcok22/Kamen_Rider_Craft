@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.client.renderer.entity.projectile;
 
-import com.kelco.kamenridercraft.client.model.base_model.BaseProjectileModel;
-import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
+import com.kelco.kamenridercraft.client.model.entity.mob.RouzeCardModel;
+import com.kelco.kamenridercraft.entity.projectiles.RouzeCardEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -13,27 +13,25 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 
-public class BaseProjectileRenderer extends GeoEntityRenderer<BaseProjectileEntity> {
-    public BaseProjectileRenderer(EntityRendererProvider.Context renderManager) {
-        super(renderManager, new BaseProjectileModel());
+public class RouzeCardRenderer extends GeoEntityRenderer<RouzeCardEntity> {
+    public RouzeCardRenderer(EntityRendererProvider.Context renderManager) {
+        super(renderManager, new RouzeCardModel());
     }
 
-    public void render(BaseProjectileEntity entity, float entityYaw, float partialTick, PoseStack poseStack,
+    public void render(RouzeCardEntity entity, float entityYaw, float partialTick, PoseStack poseStack,
                        @NotNull MultiBufferSource bufferSource, int packedLight) {
         poseStack.pushPose();
         poseStack.mulPose(Axis.YP.rotationDegrees(entity.getYRot()));
         poseStack.mulPose(Axis.XP.rotationDegrees(-entity.getXRot()));
+        poseStack.scale(0.4F, 0.4F, 0.4F);
 
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
         poseStack.popPose();
     }
 
     @Override
-    public @Nullable RenderType getRenderType(BaseProjectileEntity animatable, ResourceLocation texture,
+    public @Nullable RenderType getRenderType(RouzeCardEntity animatable, ResourceLocation texture,
                                               @Nullable MultiBufferSource bufferSource, float partialTick) {
-        if (animatable.isGlowing()) {
-            return RenderType.breezeEyes(texture);
-        }
         return RenderType.entityTranslucent(texture);
     }
 }

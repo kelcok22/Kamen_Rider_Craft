@@ -20,9 +20,7 @@ import com.kelco.kamenridercraft.client.renderer.entity.allies.*;
 import com.kelco.kamenridercraft.client.renderer.entity.bikes.BikeRenderer;
 import com.kelco.kamenridercraft.client.renderer.entity.bikes.BoostrikerRenderer;
 import com.kelco.kamenridercraft.client.renderer.entity.mob.*;
-import com.kelco.kamenridercraft.client.renderer.entity.projectile.BaseProjectileRenderer;
-import com.kelco.kamenridercraft.client.renderer.entity.projectile.ThrownShurikenRenderer;
-import com.kelco.kamenridercraft.client.renderer.entity.projectile.ThrownWeaponRenderer;
+import com.kelco.kamenridercraft.client.renderer.entity.projectile.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
@@ -632,9 +630,12 @@ public class KamenRiderCraftCore {
 
             event.registerEntityRenderer(MobsCore.WEAPON_PROJECTILE.get(), ThrownWeaponRenderer::new);
             event.registerEntityRenderer(MobsCore.SHURIKEN_PROJECTILE.get(), ThrownShurikenRenderer::new);
+            event.registerEntityRenderer(MobsCore.ROUZE_CARD.get(), RouzeCardRenderer::new);
             event.registerEntityRenderer(MobsCore.BASE_PROJECTILE.get(), BaseProjectileRenderer::new);
 
             event.registerEntityRenderer(MobsCore.BASE_EFFECT.get(), BaseEffectRenderer::new);
+            event.registerEntityRenderer(MobsCore.SEALING_EFFECT.get(), SealingRenderer::new);
+
         }
 
         @SubscribeEvent

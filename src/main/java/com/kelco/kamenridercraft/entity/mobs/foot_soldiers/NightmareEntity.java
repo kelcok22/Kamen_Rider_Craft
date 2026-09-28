@@ -30,27 +30,27 @@ public class NightmareEntity extends BaseHenchmenEntity {
     public NightmareEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "nightmare";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.GUN_NIGHTMARE_BELT.get()));
-        RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.GUN_NIGHTMARE_BELT.get()));
+        RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
     }
 
     public void remove(RemovalReason p_149847_) {
-        if (this.isDeadOrDying()) {
+        if (isDeadOrDying()) {
             ((ServerLevel) level()).sendParticles(ModParticles.BUTTERFLY_PARTICLES.get(), getX(), getY() + 1, getZ(), 10, 0, 0, 0, 1);
 
-            double chance = this.random.nextDouble();
-            int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+            double chance = random.nextDouble();
+            int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
-            if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                BaseHenchmenEntity boss = MobsCore.DAWN.get().create(this.level());
-                if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+            if (chance * 100.0 <= gamerule && (lastHurtByPlayer != null && canSpawnBoss(lastHurtByPlayer) || !(getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                BaseHenchmenEntity boss = MobsCore.DAWN.get().create(level());
+                if (boss != null && getLastAttacker() instanceof Player playerIn && level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                     playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.dawn"));
                     if (boss != null) {
-                        boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                        this.level().addFreshEntity(boss);
+                        boss.moveTo(getX(), getY(), getZ(), getYRot(), 0.0F);
+                        level().addFreshEntity(boss);
                     }
                 }
             }
@@ -74,9 +74,9 @@ public class NightmareEntity extends BaseHenchmenEntity {
         p_34300_ = super.finalizeSpawn(p_34297_, p_34298_, p_34299_, p_34300_);
 
         if (p_34297_.getRandom().nextInt(3) == 1) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.WOLF_NIGHTMARE_BELT.get()));
+            setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.WOLF_NIGHTMARE_BELT.get()));
         } else if (p_34297_.getRandom().nextInt(3) == 2) {
-            this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.CAT_NIGHTMARE_BELT.get()));
+            setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.CAT_NIGHTMARE_BELT.get()));
         }
         return p_34300_;
     }
