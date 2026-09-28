@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.effect.SealingEntity;
+import com.kelco.kamenridercraft.entity.mobs.bosses.AceUndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -106,7 +107,11 @@ public class UndeadEntity extends BaseHenchmenEntity {
         SealingEntity undeadEffect = new SealingEntity(SEALING_EFFECT.get(), level());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
         level().addFreshEntity(undeadEffect);
-        undeadEffect.setData(MOB_STATE, "normal_undead");
+        if (this instanceof AceUndeadEntity) {
+            undeadEffect.setData(MOB_STATE, "ace_undead");
+        } else {
+            undeadEffect.setData(MOB_STATE, "normal_undead");
+        }
         undeadEffect.setData(UUID_STORE, sealer.getStringUUID());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
         setLastHurtByPlayer(null);
