@@ -28,6 +28,7 @@ import java.util.List;
 public class BladeRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
     public final static List<Item> NORMAL_UNDEAD_DROPS = new ArrayList<>();
+    public final static List<Item> ACE_UNDEAD_DROPS = new ArrayList<>();
 
     public static final DeferredItem<Item> BLADE_LOGO = ITEMS.register("blade_logo",
             () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/blade")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
@@ -46,6 +47,29 @@ public class BladeRiderItems {
     public static final DeferredItem<Item> GOLDEN_SPIDER = ITEMS.register("golden_spider",
             () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
+    public static final DeferredItem<Item> SEALABLE_CHANGE_BEETLE = ITEMS.register("sealable_change_beetle",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_beetle", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("change_beetle"));
+
+    public static final DeferredItem<Item> CHANGE_BEETLE_UNDEAD = ITEMS.register("change_beetle_undead",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_beetle", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_CHANGE_BEETLE.get()).useBasicModel().setModelName("change_beetle"));
 
     public static final DeferredItem<Item> CHANGE_BEETLE = ITEMS.register("change_beetle",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "blade", "blay_buckle_belt",
@@ -57,7 +81,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("blade.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addAlternative(CHANGE_BEETLE_UNDEAD.get()).changeModel("blade.geo.json").isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SLASH_LIZARD = ITEMS.register("slash_lizard",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
@@ -297,7 +321,7 @@ public class BladeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
-                    .addToList(NORMAL_UNDEAD_DROPS));
+                    .addToList(ACE_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BULLET_ARMADILLO = ITEMS.register("bullet_armadillo",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
@@ -520,6 +544,33 @@ public class BladeRiderItems {
                 }
             }.setSlotTwoAbility("special_turbo", 0).setShowUnder().useBasicModel().setModelName("taiyaki_secret_weapon"));
 
+    public static final DeferredItem<Item> SEALABLE_CHANGE_MANTIS = ITEMS.register("sealable_change_mantis",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_mantis", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().useBasicModel().setModelName("change_mantis"));
+
+    public static final DeferredItem<Item> CHANGE_MANTIS_UNDEAD = ITEMS.register("change_mantis_undead",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_mantis", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().addSwitchForm(SEALABLE_CHANGE_MANTIS.get()).useBasicModel().setModelName("change_mantis"));
+
+
     public static final DeferredItem<Item> CHANGE_MANTIS = ITEMS.register("change_mantis",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "chalice", "chalice_rouzer_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
@@ -531,8 +582,8 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(TAIYAKI_MASTER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
-                    .addToList(NORMAL_UNDEAD_DROPS));
+            }.isGlowing().addAlternative(TAIYAKI_MASTER.get()).addAlternative(CHANGE_MANTIS_UNDEAD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+                    .addToList(ACE_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> CHALICE_ROUZE_SPIRIT_STEVE = ITEMS.register("chalice_rouze_spirit_steve",
             () -> new RiderFormChangeItem(new Item.Properties(), "_human_steve", "chalice", "chalice_rouzer_belt",
@@ -706,7 +757,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_SPIDER_PROPER_SEAL = ITEMS.register("change_spider_proper_seal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_proper_seal", "leangle", "leangle_buckle_belt",

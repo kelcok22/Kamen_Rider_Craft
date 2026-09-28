@@ -45,20 +45,20 @@ public class AceUndeadEntity extends UndeadEntity {
             switch (getRandom().nextInt(4)) {
                 case 0:
                     setData(MOB_STATE, "beetle");
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.KICK_LOCUST.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_BEETLE_UNDEAD.get(), 1);
                     setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.CAUCASUS_ALL_OVER.get(), 1));
                     break;
                 case 1:
                     setData(MOB_STATE, "stag");
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.THUNDER_DEER.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_STAG.get(), 1);
                     break;
                 case 2:
                     setData(MOB_STATE, "spider");
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.MACH_JAGUAR.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_SPIDER.get(), 1);
                     break;
                 case 3:
                     setData(MOB_STATE, "mantis");
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.RAPID_PECKER.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_MANTIS_UNDEAD.get(), 1);
                     break;
             }
         }

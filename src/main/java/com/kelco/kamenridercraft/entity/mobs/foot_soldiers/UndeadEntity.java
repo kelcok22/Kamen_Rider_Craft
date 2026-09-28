@@ -168,7 +168,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
                     break;
                 case "beetle_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_BEETLE.get(), 1);
                     break;
                 case "stag_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
@@ -177,7 +177,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
                     break;
                 case "mantis_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_MANTIS.get(), 1);
                     break;
             }
         }

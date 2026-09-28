@@ -1621,7 +1621,6 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.CARIES_SPAWN_EGG);
                 event.accept(RiderBlocks.BOCCA_BOSS_BLOCK);
                 event.accept(RiderBlocks.CARIES_BOSS_BLOCK);
-                event.accept(RiderBlocks.LORD_THREE_BOSS_BLOCK);
                 event.accept(RiderBlocks.GOCHIZO_JAR);
                 event.accept(RiderBlocks.DARK_TREAT_GLASS);
                 event.accept(RiderBlocks.CANDY_SHOP);
@@ -1642,8 +1641,10 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.CATASTROPHE_GORE_NIGHTMARE_SPAWN_EGG);
                 event.accept(MobsCore.PHANTOM_GORE_NIGHTMARE_SPAWN_EGG);
                 event.accept(MobsCore.OBLIVION_GORE_NIGHTMARE_SPAWN_EGG);
+                event.accept(RiderBlocks.LORD_THREE_BOSS_BLOCK);
                 event.accept(RiderBlocks.CAPSEM_DROPPER);
                 event.accept(RiderBlocks.MIND_DOOR);
+
 
             } else if (event.getTab() == CreativeTabRegistry.My_thTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.MY_TH_TAB_ITEM.size(); i++) {

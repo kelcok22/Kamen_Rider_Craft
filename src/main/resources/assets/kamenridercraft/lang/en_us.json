@@ -3045,6 +3045,8 @@
 "kamenridercraft:final_form_ride_chalice_choco.form": "Form: Chalice Choco",
 "kamenridercraft:evolution_tarantula.form": "Form: King Form",
 "kamenridercraft:taiyaki_masterform": "Form: Ultimate Form",
+"kamenridercraft:change_beetle_undead.form": "Form: Beetle Undead",
+"kamenridercraft:sealable_change_beetle.form": "Form: Beetle Undead",
 "kamenridercraft:kick_locust.form": "Form: Locust Undead",
 "kamenridercraft:sealable_kick_locust.form": "Form: Locust Undead",
 "kamenridercraft:thunder_deer.form": "Form: Deer Undead",
@@ -3069,6 +3071,8 @@
 "kamenridercraft:sealable_absorb_serpent.form": "Form: Serpent Undead",
 "kamenridercraft:evolution_giraffa_undead.form": "Form: Giraffa Undead",
 "kamenridercraft:sealable_evolution_giraffa.form": "Form: Giraffa Undead",
+"kamenridercraft:change_mantis_undead.form": "Form: Mantis Undead",
+"kamenridercraft:sealable_change_mantis.form": "Form: Mantis Undead",
 "kamenridercraft:rouze_spirit.form": "Form: Human Undead",
 "kamenridercraft:sealable_rouze_spirit.form": "Form: Human Undead",
 "kamenridercraft:float_dragonfly.form": "Form: Dragonfly Undead",
@@ -9650,6 +9654,7 @@
 "entity.kamenridercraft.shin_no_0":"Kamen Rider No.0",
 
 "entity.kamenridercraft.base_projectile":"KRC Projectile",
+"entity.kamenridercraft.sealing_entity":"Sealing Entity",
 
 "item.kamenridercraft.shocker_combatman_spawn_egg": "Shocker Combatman Spawn Egg",
 "item.kamenridercraft.shocker_riders_spawn_egg": "Shocker Rider Spawn Egg",
