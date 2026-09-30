@@ -309,6 +309,29 @@ public class BladeRiderItems {
                 }
             }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).changeModel("blade_king.geo.json").addNeedItem(ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
+    public static final DeferredItem<Item> SEALABLE_CHANGE_STAG = ITEMS.register("sealable_change_stag",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_stag", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("change_stag"));
+
+    public static final DeferredItem<Item> CHANGE_STAG_UNDEAD = ITEMS.register("change_stag_undead",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_stag", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_CHANGE_STAG.get()).useBasicModel().setModelName("change_stag"));
 
     public static final DeferredItem<Item> CHANGE_STAG = ITEMS.register("change_stag",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "garren", "garren_buckle_belt",
@@ -320,7 +343,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.isGlowing().addAlternative(CHANGE_STAG_UNDEAD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
                     .addToList(ACE_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BULLET_ARMADILLO = ITEMS.register("bullet_armadillo",

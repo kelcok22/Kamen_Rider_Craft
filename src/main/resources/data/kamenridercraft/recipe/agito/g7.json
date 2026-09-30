@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "g7",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:g3"
+		},
+		{
+			"item": "kamenridercraft:g3x"
+		},
+      {
+        "item": "kamenridercraft:g3mild"
+      },
+      {
+        "item": "kamenridercraft:g4"
+      },
+      {
+        "item": "kamenridercraft:v1"
+      },
+      {
+        "item": "kamenridercraft:g6"
+      }
+	],
+	"result": {
+		"id": "kamenridercraft:g7"
+	}
+}
