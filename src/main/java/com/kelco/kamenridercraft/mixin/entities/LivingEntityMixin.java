@@ -78,25 +78,25 @@ public class LivingEntityMixin {
         if (!rider.level().isClientSide() && rider.getItemBySlot(EquipmentSlot.FEET).getItem() == FOURZE_DRIVER.get() &&
              rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
                 driverItem.isTransformed(rider)) {
-            if ((!rider.onGround() &&
+            if ((!rider.onGround() && !rider.isInWater() &&
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == GYRO_ASTROSWITCH.get()) ||
                     (!rider.onGround() &&
                             getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == PARACHUTE_ASTROSWITCH.get())) {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.parachute", "position", false, rider.getStringUUID()));
             }
-            if (rider.onGround() &&
+            if (rider.onGround() && !rider.isInWater() &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == HOPPING_ASTROSWITCH.get()) ||
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == DRILL_ASTROSWITCH.get() ||
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == STAMPER_ASTROSWITCH.get() ||
             getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == SCREW_ASTROSWITCH.get()) {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.triangle_module", "position", false, rider.getStringUUID()));
             }
-            if (rider.onGround() &&
+            if (rider.onGround() && !rider.isInWater() &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == PEN_ASTROSWITCH.get()) ||
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == BLADE_ASTROSWITCH.get())  {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.x_module", "position", false, rider.getStringUUID()));
             }
-            if (rider.onGround() &&
+            if (rider.onGround() && !rider.isInWater() &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == WHEEL_ASTROSWITCH.get()))  {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.wheel_module", "position", false, rider.getStringUUID()));
             }
