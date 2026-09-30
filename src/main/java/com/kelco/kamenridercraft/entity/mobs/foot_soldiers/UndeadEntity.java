@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.effect.SealingEntity;
 import com.kelco.kamenridercraft.entity.mobs.bosses.AceUndeadEntity;
+import com.kelco.kamenridercraft.entity.mobs.bosses.AlbinoJokerUndeadEntity;
+import com.kelco.kamenridercraft.entity.mobs.bosses.JokerUndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
@@ -33,8 +35,8 @@ public class UndeadEntity extends BaseHenchmenEntity {
     public UndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "undead_human";
-        getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
-        if (getData(MOB_STATE).isEmpty() && !level().isClientSide()) {
+        if (getData(MOB_STATE).isEmpty() && !level().isClientSide() && getClass() == UndeadEntity.class) {
+            getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
             setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
             getItemBySlot(EquipmentSlot.HEAD).enchant(enchantmentRegistryLookup.get(Enchantments.UNBREAKING).get(), 255);
             setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
@@ -109,7 +111,11 @@ public class UndeadEntity extends BaseHenchmenEntity {
         level().addFreshEntity(undeadEffect);
         if (this instanceof AceUndeadEntity) {
             undeadEffect.setData(MOB_STATE, "ace_undead");
-        } else {
+        } else if (this instanceof JokerUndeadEntity) {
+            undeadEffect.setData(MOB_STATE, "joker");
+        } else if (this instanceof AlbinoJokerUndeadEntity) {
+            undeadEffect.setData(MOB_STATE, "albino_joker");
+        }else {
             undeadEffect.setData(MOB_STATE, "normal_undead");
         }
         undeadEffect.setData(UUID_STORE, sealer.getStringUUID());

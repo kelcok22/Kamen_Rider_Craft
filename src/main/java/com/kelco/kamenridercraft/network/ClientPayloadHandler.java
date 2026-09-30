@@ -150,7 +150,9 @@ public class ClientPayloadHandler {
                 if (!data.forceNextPose() && Objects.requireNonNull(controller).isPlayingTriggeredAnimation()) {
                     controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
                 } else {
-                    controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+                    if (!data.controller().equals("position")) {
+                        controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+                    }
                     controller.triggerAnimation(animation);
                 }
             } catch (Exception e) {

@@ -22,8 +22,7 @@ import java.util.UUID;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.UUID_STORE;
-import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.ACE_UNDEAD_DROPS;
-import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.NORMAL_UNDEAD_DROPS;
+import static com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems.*;
 
 public class SealingEntity extends Entity implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -39,14 +38,19 @@ public class SealingEntity extends Entity implements GeoEntity {
     public void tick() {
         if (level() instanceof ServerLevel serverLevel) {
             if (TTL == 0) {
+                Random generator = new Random();
                 if (getData(MOB_STATE).equals("normal_undead")) {
-                    Random generator = new Random();
                     obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(NORMAL_UNDEAD_DROPS.get(generator.nextInt(NORMAL_UNDEAD_DROPS.size()))), 0, 0, 0);
                 } else if (getData(MOB_STATE).equals("ace_undead")) {
-                    Random generator = new Random();
                     obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(ACE_UNDEAD_DROPS.get(generator.nextInt(ACE_UNDEAD_DROPS.size()))), 0, 0, 0);
+                } else if (getData(MOB_STATE).equals("joker")) {
+                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(BLACK_JOKER_SEALED.get()), 0, 0, 0);
+                } else if (getData(MOB_STATE).equals("albino_joker")) {
+                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ALBINO_JOKER_SEALED.get()), 0, 0, 0);
                 }
 
                 if (obtainedCard != null) {

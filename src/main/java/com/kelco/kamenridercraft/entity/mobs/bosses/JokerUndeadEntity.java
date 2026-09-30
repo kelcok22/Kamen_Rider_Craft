@@ -27,6 +27,8 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nullable;
 import java.util.Random;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
+
 public class JokerUndeadEntity extends UndeadEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(JokerUndeadEntity.class,
             EntityDataSerializers.BYTE);
@@ -40,6 +42,7 @@ public class JokerUndeadEntity extends UndeadEntity {
         setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
         setItemSlot(EquipmentSlot.LEGS, new ItemStack(BladeRiderItems.BLADELEGGINGS.get()));
         setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.BLACK_JOKERROUZER.get()));
+        setData(MOB_STATE, "joker");
     }
 
     protected void customServerAiStep() {

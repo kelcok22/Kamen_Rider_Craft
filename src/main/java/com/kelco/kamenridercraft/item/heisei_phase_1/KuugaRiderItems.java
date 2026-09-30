@@ -4,9 +4,13 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -38,13 +42,21 @@ public class KuugaRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kuuga", "arcle_belt",
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "kuuga.henshin");
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.STONE_STEP, SoundSource.PLAYERS, 1.0F, 8F);
+
+                    } else if (tick == 2d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
+            }.setHenshinTick(35).setFormDelay(1).setSlotOneAbility("rider_punch", 1)
+                    .setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing()
+                    .IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_DRAGON = ITEMS.register("kuuga_dragon",
             () -> new RiderFormChangeItem(new Item.Properties(), "_dragon", "kuuga", "arcle_belt_d",

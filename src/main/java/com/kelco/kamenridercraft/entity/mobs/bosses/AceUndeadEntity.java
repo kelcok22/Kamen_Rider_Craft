@@ -24,7 +24,6 @@ public class AceUndeadEntity extends UndeadEntity {
 
     public AceUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME = "ace_undead";
         if (getData(MOB_STATE).isEmpty() && !level().isClientSide()) {
             setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
             getItemBySlot(EquipmentSlot.HEAD).enchant(enchantmentRegistryLookup.get(Enchantments.UNBREAKING).get(), 255);
@@ -41,7 +40,6 @@ public class AceUndeadEntity extends UndeadEntity {
             setDropChance(EquipmentSlot.FEET, 0.0f);
 
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
-
             switch (getRandom().nextInt(4)) {
                 case 0:
                     setData(MOB_STATE, "beetle");
@@ -63,6 +61,7 @@ public class AceUndeadEntity extends UndeadEntity {
             }
         }
     }
+
 
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()

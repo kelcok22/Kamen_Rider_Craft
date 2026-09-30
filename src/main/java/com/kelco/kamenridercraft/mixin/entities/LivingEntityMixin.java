@@ -4,7 +4,12 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
+import com.kelco.kamenridercraft.network.payload.StartPosePayload;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -29,8 +34,9 @@ import java.util.List;
 import java.util.Objects;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
-import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
-import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
+import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
+import static com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems.*;
+import static com.kelco.kamenridercraft.util.AnimationUtil.*;
 import static com.kelco.kamenridercraft.util.DimensionUtil.teleportToDreamDimension;
 
 @Mixin(value = LivingEntity.class, priority = 899)
@@ -69,12 +75,27 @@ public class LivingEntityMixin {
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
 
-//        if (rider instanceof Player) {
-//            if (this.wasSitting && rider.getControlledVehicle() == null) {
-//                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(rider.getStringUUID(), "position"));
-//            }
-//            this.wasSitting = rider.getControlledVehicle() != null;
-//        }
+        if (!rider.level().isClientSide() && rider.getItemBySlot(EquipmentSlot.FEET).getItem() == FOURZE_DRIVER.get() &&
+             rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
+                driverItem.isTransformed(rider)) {
+            if ((!rider.onGround() &&
+                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == GYRO_ASTROSWITCH.get()) ||
+                    (!rider.onGround() &&
+                            getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == PARACHUTE_ASTROSWITCH.get())) {
+                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.parachute", "position", false, rider.getStringUUID()));
+            }
+            if (rider.onGround() &&
+                    (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == HOPPING_ASTROSWITCH.get()) ||
+                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == DRILL_ASTROSWITCH.get() ||
+                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == STAMPER_ASTROSWITCH.get()) {
+                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.triangle_module", "position", false, rider.getStringUUID()));
+            }
+            if (rider.onGround() &&
+                    (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == PEN_ASTROSWITCH.get()) ||
+                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == BLADE_ASTROSWITCH.get()) {
+                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.x_module", "position", false, rider.getStringUUID()));
+            }
+        }
 
         if (!(rider instanceof ArmorStand) && !rider.level().isClientSide()) {
             if (rider.getData(USED_ABILITY).isEmpty() && rider.getData(ABILITY_COOLDOWN) > 0) {
