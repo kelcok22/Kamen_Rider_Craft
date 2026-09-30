@@ -265,16 +265,20 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
-                    , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false))
-                    .isGlowing().setModelName("rocket_switch").useBasicModel());
+                    , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        layerInfo.add(new rocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
+                    }
+                }
+            }.isGlowing().setModelName("rocket_switch").useBasicModel());
 
     public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
                     , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
-                        layerInfo.add(new RenderLayerInfo("module/fourze_rocket_module", "default"));
-                        layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
+                        layerInfo.add(new rocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
                     }
                 }
             }.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get())
