@@ -402,27 +402,8 @@
 		"fourze.parachute": {
 			"animation_length": 0.25,
 			"bones": {
-				"body": {
-					"rotation": [-10, 0, -10]
-				},
-				"head": {
-					"rotation": [10, -1, 7]
-				},
-				"torso": {
-					"rotation": [5, 0, 0]
-				},
-				"right_arm": {
-					"rotation": [18, 0, 25]
-				},
 				"left_arm": {
-					"rotation": [0, 53, -155],
-					"position": [3, -1, 0]
-				},
-				"right_leg": {
-					"rotation": [18, 0, 18]
-				},
-				"left_leg": {
-					"rotation": [17.5, -5, 0]
+					"rotation": [-178.6251, 5.7358, 4.4407]
 				}
 			}
 		},
@@ -439,6 +420,22 @@
 			"bones": {
 				"right_leg": {
 					"position": [0, 3, -3]
+				}
+			}
+		},
+		"fourze.wheel_module": {
+			"animation_length": 0.25,
+			"bones": {
+				"left_leg": {
+					"rotation": [5, 0, 0],
+					"position": [0, 1.5, -3]
+				},
+				"torso": {
+					"rotation": [7.5, 0, 5]
+				},
+				"right_leg": {
+					"rotation": [15.9146, 5.2337, 9.2208],
+					"position": [0.15, 2.203, 0.44]
 				}
 			}
 		}
