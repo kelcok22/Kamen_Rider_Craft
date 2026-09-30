@@ -14,8 +14,8 @@ public class RiderEyesLayer<T extends BaseSummonEntity, M extends HumanoidModel<
     private static final RenderType RIDER_EYES = RenderType.breezeEyes(ResourceLocation
             .fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/zeztz_technolom_stream_glowmask.png"));
 
-    public RiderEyesLayer(RenderLayerParent<T, M> p_117507_) {
-        super(p_117507_);
+    public RiderEyesLayer(RenderLayerParent<T, M> renderLayerParent) {
+        super(renderLayerParent);
     }
 
     public @NotNull RenderType renderType() {

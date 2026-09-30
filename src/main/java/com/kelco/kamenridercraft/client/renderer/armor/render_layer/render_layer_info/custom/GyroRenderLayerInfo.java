@@ -12,16 +12,20 @@ import software.bernie.geckolib.cache.object.GeoBone;
 import java.util.Objects;
 
 
-public class gyroRenderLayerInfo extends RenderLayerInfo {
-
-    public gyroRenderLayerInfo(String texture, String model) {
+public class GyroRenderLayerInfo extends RenderLayerInfo {
+    public GyroRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
-    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
+
+    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
+                                 MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
         GeoBone blade = model.getBone("blade").orElse(null);
         if (blade != null) {
-            if(Objects.requireNonNull(entity.getAttribute(Attributes.WINGS_OUT)).getValue()!=0)blade.setRotY(entity.tickCount+partialTick);
-            else blade.setRotY(0);
+            if (Objects.requireNonNull(entity.getAttribute(Attributes.WINGS_OUT)).getValue() != 0) {
+                blade.setRotY(entity.tickCount + partialTick);
+            } else {
+                blade.setRotY(0);
+            }
         }
     }
 }

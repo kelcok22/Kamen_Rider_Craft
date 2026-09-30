@@ -50,8 +50,10 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
         }
     }
 
-    protected void applyCustomAnimations(RenderLayerInfo renderLayerInfo, BakedGeoModel bakedModel, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource bufferSource,PoseStack poseStack,int packedLight) {
-        renderLayerInfo.ApplyRenderLayer(bakedModel, stack, entity, partialTick,bufferSource,poseStack,packedLight);
+    protected void applyCustomAnimations(RenderLayerInfo renderLayerInfo, BakedGeoModel bakedModel, ItemStack stack,
+                                         LivingEntity entity, float partialTick, MultiBufferSource bufferSource,
+                                         PoseStack poseStack, int packedLight) {
+        renderLayerInfo.ApplyRenderLayer(bakedModel, stack, entity, partialTick, bufferSource, poseStack, packedLight);
     }
 
     public GeoModel<T> getGeoModel(String name, EquipmentSlot slot) {
@@ -103,7 +105,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
 
                             if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
                             if (model != null)
-                                applyCustomAnimations(renderLayerInfo, bakedGeoModel, RIDER.getItemBySlot(EquipmentSlot.FEET), RIDER, partialTick,bufferSource,poseStack,packedLight);
+                                applyCustomAnimations(renderLayerInfo, bakedGeoModel, RIDER.getItemBySlot(EquipmentSlot.FEET),
+                                        RIDER, partialTick, bufferSource, poseStack, packedLight);
 
                             if (renderType != null) {
                                 getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
@@ -111,7 +114,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                                         getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
                             }
                             if (renderLayerInfo.isGlowing()) {
-                                renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + renderLayerInfo.getGlowTexture() + ".png"));
+                                renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,
+                                        "textures/armor/" + renderLayerInfo.getGlowTexture() + ".png"));
                                 getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                         bufferSource.getBuffer(renderType), partialTick, LightTexture.FULL_SKY, packedOverlay,
                                         getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
