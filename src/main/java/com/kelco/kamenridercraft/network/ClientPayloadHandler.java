@@ -136,7 +136,7 @@ public class ClientPayloadHandler {
                 AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
                 assert animationTarget != null;
                 PlayerAnimationController controller = switch (data.controller()) {
-                    case "attack" ->
+                    case "attack", "fourze_position" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
                     case "pose" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
@@ -150,7 +150,7 @@ public class ClientPayloadHandler {
                 if (!data.forceNextPose() && Objects.requireNonNull(controller).isPlayingTriggeredAnimation()) {
                     controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
                 } else {
-                    if (!data.controller().equals("position")) {
+                    if (!data.controller().contains("position")) {
                         controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
                     }
                     controller.triggerAnimation(animation);
