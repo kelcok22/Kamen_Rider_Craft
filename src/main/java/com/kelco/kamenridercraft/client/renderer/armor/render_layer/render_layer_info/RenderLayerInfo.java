@@ -44,7 +44,7 @@ public class RenderLayerInfo {
         GlowTexture = null;
     }
 
-    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick , MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
+    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
         GeoBone wizard_circle5 = model.getBone("wizard_circle5").orElse(null);
         double GetTransforming = Objects.requireNonNull(entity.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
 
