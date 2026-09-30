@@ -84,14 +84,14 @@ public class LivingEntityMixin {
                             getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == PARACHUTE_ASTROSWITCH.get())) {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.parachute", "position", false, rider.getStringUUID()));
             }
-            if (rider.onGround() && !rider.isInWater() &&
-                    (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == HOPPING_ASTROSWITCH.get()) ||
+            if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() &&
+                    ((getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == HOPPING_ASTROSWITCH.get() ||
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == DRILL_ASTROSWITCH.get() ||
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == STAMPER_ASTROSWITCH.get() ||
-            getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == SCREW_ASTROSWITCH.get()) {
+            getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == SCREW_ASTROSWITCH.get()))) {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.triangle_module", "position_fourze", false, rider.getStringUUID()));
             }
-            if (rider.onGround() && !rider.isInWater() &&
+            if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == WHEEL_ASTROSWITCH.get()))  {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.wheel_module", "position_fourze", false, rider.getStringUUID()));
             }

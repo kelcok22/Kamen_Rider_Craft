@@ -411,7 +411,7 @@
 			"animation_length": 0.25,
 			"bones": {
 				"left_leg": {
-					"position": [0, 3, -3]
+					"position": [0, 5, -3]
 				}
 			}
 		},
