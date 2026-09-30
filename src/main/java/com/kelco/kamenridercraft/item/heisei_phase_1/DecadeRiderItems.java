@@ -173,7 +173,7 @@ public class DecadeRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addAlternative(DECADE_CYAN_CARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().addCompatibilityList(new String[] {"decade"}).changeRiderName("diend").addAlternative(DECADE_CYAN_CARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DECADE_TAB_ITEM));
 
 	public static final DeferredItem<Item> DIEND_CHINOMANAKO_CARD = ITEMS.register("diend_chinomanako_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_chinomanako","diend","diend_belt",
