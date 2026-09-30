@@ -137,6 +137,12 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
+    public static Boolean isTransformingFromBlank(ItemStack itemStack,LivingEntity rider) {
+        RiderFormChangeItem form = getFormItem(itemStack,1);
+        Double form_time = form.getHenshinTick();
+        return getFormItem(itemStack, 1, form_time+1) == ModdedItemCore.BLANK_FORM.asItem();
+    }
+
     public static double getRenderType(ItemStack stack, double num) {
         double form_double = 1;
         RiderFormChangeItem form = getFormItem(stack, 1, num);
@@ -272,6 +278,7 @@ public class RiderDriverItem extends RiderArmorItem {
                             form.putDouble("rider_kick_cooldown", 200);
                             form.putDouble("rider_kick_tick", 0);
                             form.putDouble("render_type", 0);
+                            form.putDouble("changed_form_slot", 0);
                             form.putBoolean("Update_form", true);
                             if (getFormItem(stack, 1).GetIsAttackForm())form.putString("slot_tex" + 1, form.getString("slot_tex_old" + 1));
                             form.putString("slot_tex_old" + 1, ModdedItemCore.BLANK_FORM.asItem().toString());
@@ -480,6 +487,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putDouble("rider_kick_tick", 0);
                 form.putBoolean("Update_form", true);
                 form.putDouble("render_type", 0);
+                form.putDouble("changed_form_slot", 0);
                 form.putString("slot_tex_old" + 1, ModdedItemCore.BLANK_FORM.asItem().toString());
                 for (int n = 1; n <= belt.numBaseFormItems; n++) {
                     form.putString("slot_tex" + n, getFormItem(itemStack, n).toString());
@@ -496,6 +504,7 @@ public class RiderDriverItem extends RiderArmorItem {
             Consumer<CompoundTag> data = form -> {
                 if (!form.getString("slot_tex" + slot).equals(item.toString())) {
                     form.putString("slot_tex" + slot, item.toString());
+                    form.putDouble("changed_form_slot", slot);
                     form.putBoolean("Update_form", true);
                 }
             };
@@ -654,10 +663,19 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
 
+
     public static RiderFormChangeItem getFormItem(ItemStack itemStack, int slot) {
         return getFormItem(itemStack, slot, 0d);
     }
 
+    public static boolean WasSlotChanged(ItemStack itemStack, double num) {
+        if (itemStack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+            double Form=tag.getDouble("changed_form_slot");
+            return Form==num;
+        }
+        return false;
+    }
 
     public boolean hasCape(ItemStack itemStack) {
         for (int n = 0; n < numBaseFormItems; n++) {
