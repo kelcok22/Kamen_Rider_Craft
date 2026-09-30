@@ -87,13 +87,18 @@ public class LivingEntityMixin {
             if (rider.onGround() &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == HOPPING_ASTROSWITCH.get()) ||
                     getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == DRILL_ASTROSWITCH.get() ||
-                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == STAMPER_ASTROSWITCH.get()) {
+                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == STAMPER_ASTROSWITCH.get() ||
+            getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == SCREW_ASTROSWITCH.get()) {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.triangle_module", "position", false, rider.getStringUUID()));
             }
             if (rider.onGround() &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == PEN_ASTROSWITCH.get()) ||
-                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == BLADE_ASTROSWITCH.get()) {
+                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == BLADE_ASTROSWITCH.get())  {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.x_module", "position", false, rider.getStringUUID()));
+            }
+            if (rider.onGround() &&
+                    (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == WHEEL_ASTROSWITCH.get()))  {
+                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.wheel_module", "position", false, rider.getStringUUID()));
             }
         }
 
