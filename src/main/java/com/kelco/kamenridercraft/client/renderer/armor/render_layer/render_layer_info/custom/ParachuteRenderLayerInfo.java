@@ -15,6 +15,11 @@ public class ParachuteRenderLayerInfo extends RenderLayerInfo {
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
                                  MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
-        model.getBone("parachute").ifPresent(parachute -> parachute.setHidden(!(entity.fallDistance > 0)));
+        model.getBone("parachute").ifPresent(parachute -> parachute.setHidden(showParachute(entity)));
+    }
+
+    private boolean showParachute(LivingEntity entity){
+        if (entity.isInWater())return true;
+        return !(entity.fallDistance > 0);
     }
 }
