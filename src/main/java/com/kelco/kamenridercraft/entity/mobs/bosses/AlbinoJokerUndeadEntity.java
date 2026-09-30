@@ -26,6 +26,8 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
+
 public class AlbinoJokerUndeadEntity extends UndeadEntity {
     private static final EntityDataAccessor<Byte> DATA_FLAGS_ID = SynchedEntityData.defineId(AlbinoJokerUndeadEntity.class, EntityDataSerializers.BYTE);
     private final ServerBossEvent bossEvent = new ServerBossEvent(Component.translatable(getDisplayName().getString()).withStyle(ChatFormatting.WHITE), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.PROGRESS);
@@ -41,6 +43,7 @@ public class AlbinoJokerUndeadEntity extends UndeadEntity {
         setDropChance(EquipmentSlot.CHEST, 0.0f);
         setDropChance(EquipmentSlot.LEGS, 0.0f);
         setDropChance(EquipmentSlot.FEET, 0.0f);
+        setData(MOB_STATE, "albino_joker");
     }
 
 
