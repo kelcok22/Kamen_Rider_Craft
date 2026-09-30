@@ -1,27 +1,28 @@
 package com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom;
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.world.attribute.Attributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
 
 
-public class magnetCannonRenderLayerInfo extends RenderLayerInfo {
+public class WheelRenderLayerInfo extends RenderLayerInfo {
 
-    public magnetCannonRenderLayerInfo(String texture, String model) {
+    public WheelRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
-        GeoBone cannonRight = model.getBone("cannonRight").orElse(null);
-        if (cannonRight != null) {
-            cannonRight.setRotX((float) entity.getLookAngle().y);
-        }
-        GeoBone cannonLeft = model.getBone("cannonLeft").orElse(null);
-        if (cannonLeft != null) {
-            cannonLeft.setRotX((float) entity.getLookAngle().y);
+        GeoBone wheels = model.getBone("wheels").orElse(null);
+        if (wheels!= null) {
+            double GetWheelOld = entity.getAttribute(Attributes.WHEEL_ROT_OLD).getBaseValue();
+            double GetWheel = entity.getAttribute(Attributes.WHEEL_ROT).getBaseValue();
+            float wheel = (float) Mth.lerp(partialTick, GetWheelOld, GetWheel);
+          wheels.setRotX(wheel);
         }
     }
 }

@@ -9,16 +9,20 @@ import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
 
 
-public class screwRenderLayerInfo extends RenderLayerInfo {
-
-    public screwRenderLayerInfo(String texture, String model) {
+public class ScrewRenderLayerInfo extends RenderLayerInfo {
+    public ScrewRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
-    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
+
+    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
+                                 MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
         GeoBone blade = model.getBone("blade").orElse(null);
         if (blade != null) {
-            if(entity.isSwimming())blade.setRotY(-(entity.tickCount+partialTick));
-            else blade.setRotY(0);
+            if (entity.isSwimming()) {
+                blade.setRotY(-(entity.tickCount + partialTick));
+            } else {
+                blade.setRotY(0);
+            }
         }
     }
 }

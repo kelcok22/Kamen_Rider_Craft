@@ -6,15 +6,15 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
-import software.bernie.geckolib.cache.object.GeoBone;
 
 
-public class rocketRenderLayerInfo extends RenderLayerInfo {
-    public rocketRenderLayerInfo(String texture, String model) {
+public class ParachuteRenderLayerInfo extends RenderLayerInfo {
+    public ParachuteRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
 
-    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
-        GeoBone bone = model.getBone("bone").orElse(null);
+    public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
+                                 MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
+        model.getBone("parachute").ifPresent(parachute -> parachute.setHidden(!(entity.fallDistance > 0)));
     }
 }
