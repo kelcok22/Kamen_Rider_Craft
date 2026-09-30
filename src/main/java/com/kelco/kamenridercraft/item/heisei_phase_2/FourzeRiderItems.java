@@ -53,6 +53,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
+                    if(RiderDriverItem.isTransformingFromBlank(itemstack,player)){
                     if (tick == 30d) {
                         AnimationUtil.playPose(player, "fourze.henshin");
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.STONE_STEP, SoundSource.PLAYERS, 1.0F, 8F);
@@ -72,6 +73,7 @@ public class FourzeRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 7, 0, 0, 0, 0.05);
+                    }
                     }
                 }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
@@ -276,6 +278,22 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
                     , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
+
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if(RiderDriverItem.wasSlotChanged(itemstack,1)){
+                        if (tick == 30d) {
+                            AnimationUtil.playPose(player, "kabuto.pose");
+                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                            ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                    player.getX(), player.getY() + 0.5,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 7, 0, 0, 0, 0.05);
+                        }
+                    }
+                }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));

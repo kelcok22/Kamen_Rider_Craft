@@ -1,6 +1,8 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RocketRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
@@ -21,6 +23,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -31,6 +34,8 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class GaimRiderItems {
 
@@ -1085,6 +1090,11 @@ public class GaimRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "fourze_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),

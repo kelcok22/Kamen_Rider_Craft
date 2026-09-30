@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.GameCreator;
 import com.kelco.kamenridercraft.block.machine.GanbarizingMachine;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RocketRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
@@ -1674,6 +1675,11 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"_fourze","genm","gamer_driver_space_galaxy_fourze",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
