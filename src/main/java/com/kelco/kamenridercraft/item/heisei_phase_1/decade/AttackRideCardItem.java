@@ -97,7 +97,7 @@ public class AttackRideCardItem extends BaseItem {
             Vec3 look = player.getLookAngle();
             switch (special) {
                 case "illusion":
-                    for (int i = 0; i < 2; i++) {
+                    for (int i = 0; i < 2; ++i) {
                         RiderSummonEntity illusion = MobsCore.RIDER_SUMMON.get().create(level);
                         if (illusion != null) {
                             illusion.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
@@ -142,7 +142,7 @@ public class AttackRideCardItem extends BaseItem {
                 case "barrier":
                     BlockPos pos = new BlockPos((int) (Math.floor(player.getX() + look.x * 3)), (int) (Math.floor(player.getEyeY() + look.y * 3)), (int) (Math.floor(player.getZ() + look.z * 3)));
 
-                    for (int i = 0; i < 2; i++) {
+                    for (int i = 0; i < 2; ++i) {
                         if (level.getBlockState(pos).getDestroySpeed(level, pos) < 0.2)
                             level.destroyBlock(pos, true);
                         if (level.isEmptyBlock(pos) || level.getFluidState(pos) != Fluids.EMPTY.defaultFluidState())

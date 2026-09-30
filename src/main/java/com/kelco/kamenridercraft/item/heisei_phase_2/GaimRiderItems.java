@@ -48,20 +48,20 @@ public class GaimRiderItems {
                     .setShowUnder());
 
 
-    public static String[] Can_use_Basic_lockseed = new String[]{"gaim", "baron", "ryugen", "zangetsu", "gridon", "kurokage"
+    public static String[] canUseBasicLockseed = new String[]{"gaim", "baron", "ryugen", "zangetsu", "gridon", "kurokage"
             , "bravo", "knuckle", "bujin_gaim", "fifteen", "mars", "kamuro", "jam", "kurokage_troopers", "idunn", "sengoku_duke", "baron_black",
             "saver", "maja", "proto_gaim", "proto_ryugen", "proto_baron", "proto_gridon", "proto_bravo", "sylphi", "gaim_natsumikan"};
 
 
-    public static String[] Can_use_Energy_lockseed = new String[]{"zangetsu_shin", "baron_shin", "ryugen_shin", "duke", "sigurd", "marika", "kurokage_shin"
+    public static String[] canUseEnergyLockseed = new String[]{"zangetsu_shin", "baron_shin", "ryugen_shin", "duke", "sigurd", "marika", "kurokage_shin"
             , "tyrant"};
 
-    public static String[] Can_use_Legend_lockseed = new String[]{"gaim", "baron", "ryugen", "zangetsu", "gridon", "kurokage"
+    public static String[] canUseLegendLockseed = new String[]{"gaim", "baron", "ryugen", "zangetsu", "gridon", "kurokage"
             , "bravo", "knuckle", "bujin_gaim", "fifteen", "mars", "kamuro", "jam", "kurokage_troopers", "idunn", "sengoku_duke", "baron_black",
             "saver", "maja", "proto_gaim", "proto_ryugen", "proto_baron", "proto_gridon", "proto_bravo", "sylphi", "gaim_natsumikan"
             , "zangetsu_shin", "baron_shin", "ryugen_shin", "duke", "sigurd", "marika", "kurokage_shin", "tyrant"};
 
-    public static String[] Can_use_Jimber_Arms = new String[]{"gaim", "ryugen", "zangetsu", "bravo", "knuckle"};
+    public static String[] canUseJimberArms = new String[]{"gaim", "ryugen", "zangetsu", "bravo", "knuckle"};
 
 
     public static final DeferredItem<Item> MATSUBOKKURI_LOCKSEED = ITEMS.register("matsubokkuri_lockseed",
@@ -75,7 +75,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KURUMI_LOCKSEED = ITEMS.register("kurumi_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kurumi_arms", "gaim", "sengoku_driver_belt",
@@ -88,7 +88,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DONGURI_LOCKSEED = ITEMS.register("donguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "donguri_arms", "gaim", "sengoku_driver_belt",
@@ -101,7 +101,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MELON_LOCKSEED = ITEMS.register("melon_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "melon_arms", "gaim", "sengoku_driver_belt",
@@ -115,7 +115,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PINE_LOCKSEED = ITEMS.register("pine_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "pine_arms", "gaim", "sengoku_driver_belt",
@@ -129,7 +129,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_LOCKSEED = ITEMS.register("ichigo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "ichigo_arms", "gaim", "sengoku_driver_belt",
@@ -143,7 +143,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ORANGE_LOCKSEED = ITEMS.register("orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "orange_arms", "gaim", "sengoku_driver_belt",
@@ -157,7 +157,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BANANA_LOCKSEED = ITEMS.register("banana_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "banana_arms", "gaim", "sengoku_driver_belt",
@@ -171,7 +171,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BUDOU_LOCKSEED = ITEMS.register("budou_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "budou_arms", "gaim", "sengoku_driver_belt",
@@ -185,7 +185,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SUIKA_LOCKSEED = ITEMS.register("suika_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "suika_arms", "gaim", "sengoku_driver_belt",
@@ -205,7 +205,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MANGO_LOCKSEED = ITEMS.register("mango_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "mango_arms", "gaim", "sengoku_driver_belt",
@@ -222,7 +222,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DURIAN_LOCKSEED = ITEMS.register("durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "durian_arms", "gaim", "sengoku_driver_belt",
@@ -236,7 +236,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KIWI_LOCKSEED = ITEMS.register("kiwi_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kiwi_arms", "gaim", "sengoku_driver_belt",
@@ -253,7 +253,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> LEMON_LOCKSEED = ITEMS.register("lemon_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "lemon_arms", "gaim", "sengoku_driver_belt",
@@ -267,7 +267,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_GAIM_CORE = ITEMS.register("jimber_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "_jimber", "gaim", "sengoku_driver_belt",
@@ -282,7 +282,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+                    .addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> JIMBER_LEMON_ENERGY_LOCKSEED = ITEMS.register("jimber_lemon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_lemon_arms", "gaim", "sengoku_driver_belt",
@@ -296,7 +296,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+                    .addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("lemon_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> LEMON_ENERGY_LOCKSEED = ITEMS.register("lemon_energy_lockseed",
@@ -311,7 +311,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).addAlternative(JIMBER_LEMON_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_LEMON_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_CHERRY_ENERGY_LOCKSEED = ITEMS.register("jimber_cherry_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_cherry_arms", "gaim", "sengoku_driver_belt",
@@ -326,7 +326,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+                    .addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("cherry_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> CHERRY_ENERGY_LOCKSEED = ITEMS.register("cherry_energy_lockseed",
@@ -342,7 +342,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).addAlternative(JIMBER_CHERRY_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_CHERRY_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_PEACH_ENERGY_LOCKSEED = ITEMS.register("jimber_peach_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_peach_arms", "gaim", "sengoku_driver_belt",
@@ -357,7 +357,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+                    .addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("peach_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> PEACH_ENERGY_LOCKSEED = ITEMS.register("peach_energy_lockseed",
@@ -373,7 +373,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).resetFormToBase().addAlternative(JIMBER_PEACH_ENERGY_LOCKSEED.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_PEACH_ENERGY_LOCKSEED.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_MELON_ENERGY_LOCKSEED = ITEMS.register("jimber_melon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_melon_arms", "gaim", "sengoku_driver_belt",
@@ -390,7 +390,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+                    .addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("melon_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> MELON_ENERGY_LOCKSEED = ITEMS.register("melon_energy_lockseed",
@@ -408,7 +408,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).resetFormToBase().addAlternative(JIMBER_MELON_ENERGY_LOCKSEED.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_MELON_ENERGY_LOCKSEED.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MATSUBOKKURI_ENERGY_LOCKSEED = ITEMS.register("matsubokkuri_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_matsubokkuri_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -423,7 +423,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("jimber_dragon_fruits_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_dragon_arms", "gaim", "sengoku_driver_belt",
@@ -438,7 +438,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+                    .addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("dragon_fruits_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("dragon_fruits_energy_lockseed",
@@ -454,7 +454,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("proto_dragon_fruits_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_prototype_dragon_fruits_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -469,7 +469,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Energy_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MARRON_ENERGY_LOCKSEED = ITEMS.register("marron_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "jimbar_marron_arms", "gaim", "sengoku_driver_belt",
@@ -484,7 +484,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Jimber_Arms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KACHIDOKI_LOCKSEED = ITEMS.register("kachidoki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "kachidoki_arms", "gaim", "sengoku_driver_belt",
@@ -602,7 +602,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> OCHIMUSHA_LOCKSEED = ITEMS.register("blood_orange_lockseed_ochimusha",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "ochimusha_arms", "bujin_gaim", "sengoku_driver_belt",
@@ -639,7 +639,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLDEN_RINGO_LOCKSEED = ITEMS.register("golden_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "golden_arms", "gaim", "sengoku_driver_belt",
@@ -658,7 +658,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .isGold().addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .isGold().addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SILVER_RINGO_LOCKSEED = ITEMS.register("silver_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "silver_arms", "gaim", "sengoku_driver_belt",
@@ -677,7 +677,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RINGO_LOCKSEED = ITEMS.register("black_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "darkness_arms", "gaim", "sengoku_driver_belt",
@@ -696,7 +696,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FORBIBBEN_LOCKSEED_BASE = ITEMS.register("forbidden_ringo_lockseed_base",
             () -> new RiderFormChangeItem(new Item.Properties(), "ringo_arms", "gaim", "sengoku_driver_belt",
@@ -713,7 +713,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase()
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase()
                     .setModelName("forbidden_ringo_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> FORBIBBEN_LOCKSEED = ITEMS.register("forbidden_ringo_lockseed",
@@ -792,7 +792,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KABI_ORANGE_LOCKSEED = ITEMS.register("kabi_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kabi_orange_arms", "gaim", "sengoku_driver_belt",
@@ -806,7 +806,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FRESH_ORANGE_LOCKSEED = ITEMS.register("fresh_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "fresh_orange_arms", "gaim", "sengoku_driver_belt",
@@ -824,7 +824,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FRESH_PINE_LOCKSEED = ITEMS.register("fresh_pine_lockseed",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
@@ -885,7 +885,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> NATSUMIKAN_LOCKSEED = ITEMS.register("natsumikan_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "natsumikan_arms", "gaim", "sengoku_driver_belt",
@@ -899,7 +899,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_BANANA_LOCKSEED = ITEMS.register("black_banana_lockseed",
             () -> new CopyFormChangeItem(new Item.Properties(),BANANA_LOCKSEED.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
@@ -915,7 +915,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_ORANGE_LOCKSEED = ITEMS.register("proto_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_orange_arms", "gaim", "sengoku_driver_belt",
@@ -929,7 +929,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BANANA_LOCKSEED = ITEMS.register("proto_banana_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_banana_arms", "gaim", "sengoku_driver_belt",
@@ -943,7 +943,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BUDOU_LOCKSEED = ITEMS.register("proto_budou_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_budou_arms", "gaim", "sengoku_driver_belt",
@@ -957,7 +957,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DURIAN_LOCKSEED = ITEMS.register("proto_durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_durian_arms", "gaim", "sengoku_driver_belt",
@@ -971,7 +971,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Basic_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DARK_ORANGE_LOCKSEED = ITEMS.register("dark_orange_lockseed",
@@ -1048,7 +1048,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_LOCKSEED = ITEMS.register("gaim_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "gaim_arms", "gaim", "sengoku_driver_belt",
@@ -1062,7 +1062,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> WIZARD_LOCKSEED = ITEMS.register("wizard_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "wizard_arms", "gaim", "sengoku_driver_belt",
@@ -1079,7 +1079,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_LOCKSEED = ITEMS.register("fourze_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "fourze_arms", "gaim", "sengoku_driver_belt",
@@ -1096,7 +1096,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> OOO_LOCKSEED = ITEMS.register("ooo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "ooo_arms", "gaim", "sengoku_driver_belt",
@@ -1117,7 +1117,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> W_LOCKSEED = ITEMS.register("w_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "w_arms", "gaim", "sengoku_driver_belt",
@@ -1136,7 +1136,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_LOCKSEED = ITEMS.register("decade_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "decade_arms", "gaim", "sengoku_driver_belt",
@@ -1153,7 +1153,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_LOCKSEED = ITEMS.register("kiva_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kiva_arms", "gaim", "sengoku_driver_belt",
@@ -1171,7 +1171,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_LOCKSEED = ITEMS.register("den_o_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "den_o_arms", "gaim", "sengoku_driver_belt",
@@ -1185,7 +1185,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_LOCKSEED = ITEMS.register("kabuto_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kabuto_arms", "gaim", "sengoku_driver_belt",
@@ -1199,7 +1199,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_LOCKSEED = ITEMS.register("hibiki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "hibiki_arms", "gaim", "sengoku_driver_belt",
@@ -1214,7 +1214,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_LOCKSEED = ITEMS.register("blade_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "blade_arms", "gaim", "sengoku_driver_belt",
@@ -1228,7 +1228,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_LOCKSEED = ITEMS.register("faiz_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "faiz_arms", "gaim", "sengoku_driver_belt",
@@ -1243,7 +1243,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_LOCKSEED = ITEMS.register("ryuki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "ryuki_arms", "gaim", "sengoku_driver_belt",
@@ -1261,7 +1261,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_LOCKSEED = ITEMS.register("agito_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "agito_arms", "gaim", "sengoku_driver_belt",
@@ -1275,7 +1275,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_LOCKSEED = ITEMS.register("kuuga_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kuuga_arms", "gaim", "sengoku_driver_belt",
@@ -1288,7 +1288,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_ICHIGO_LOCKSEED = ITEMS.register("rider_ichigo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt",
@@ -1306,7 +1306,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOWA_RIDER_LOCKSEED = ITEMS.register("showa_rider_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt",
@@ -1324,7 +1324,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HEISEI_RIDER_LOCKSEED = ITEMS.register("heisei_rider_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "gaim_arms", "gaim", "sengoku_driver_belt",
@@ -1339,7 +1339,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(Can_use_Legend_lockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SAKURA_HURRICANE = ITEMS.register("sakura_hurricane",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.SAKURA_HURRICANE)
@@ -1705,7 +1705,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> MEGAHEX = ITEMS.register("megahex",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "megahex", MEGAHEX_CORE, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).has_basic_model().changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GAIM_TAB_ITEM).useBasicModel().changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
     public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",

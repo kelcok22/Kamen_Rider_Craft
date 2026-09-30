@@ -62,7 +62,7 @@ public class PandoraPanelBlockEntity extends BlockEntity {
 
     public void drops() {
         SimpleContainer inv = new SimpleContainer(inventory.getSlots());
-        for(int i = 0; i < inventory.getSlots(); i++) {
+        for(int i = 0; i < inventory.getSlots(); ++i) {
             inv.setItem(i, inventory.getStackInSlot(i));
         }
 

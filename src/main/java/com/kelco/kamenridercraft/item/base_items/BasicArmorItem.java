@@ -105,7 +105,7 @@ public class BasicArmorItem extends net.minecraft.world.item.ArmorItem implement
         return this.cache;
     }
 
-    public BasicArmorItem has_basic_model() {
+    public BasicArmorItem useBasicModel() {
         ModItemModelProvider.BASIC_ITEM_MODEL2.add(this);
         return this;
     }

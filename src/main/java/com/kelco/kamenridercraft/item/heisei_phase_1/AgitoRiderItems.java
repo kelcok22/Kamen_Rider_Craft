@@ -9,8 +9,6 @@ import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -456,7 +454,7 @@ public class AgitoRiderItems {
 
     public static final DeferredItem<Item> G_BUCKLE_G7 = ITEMS.register("g7_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "g7", G7_CHIP, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties().rarity(Rarity.EPIC))
-                    .hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+                    .hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
 
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",

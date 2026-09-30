@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.item.showa;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
-import com.kelco.kamenridercraft.item.heisei_phase_1.decade.RideBookerItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -107,7 +106,7 @@ public class StrongerRiderItems {
 
     public static final DeferredItem<Item> BLACK_TACKLE_BELT = ITEMS.register("black_tackle_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_tackle",TACKLE_CORE ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())
-                    .overrideBeltText("black_tackle_belt").hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
+                    .overrideBeltText("black_tackle_belt").hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.STRONGER_TAB_ITEM));
 
     public static final DeferredItem<Item> GENERAL_SHADOW_BELT = ITEMS.register("general_shadow_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"general_shadow",GENERAL_SHADOW_CARD ,STRONGERHELMET,STRONGERCHESTPLATE,STRONGERLEGGINGS , new Item.Properties())

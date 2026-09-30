@@ -41,7 +41,7 @@ public class BaseAxeItem extends AxeItem {
     }
 
     public BaseAxeItem addToList(List<Item> TabList, int num) {
-        for (int i = 0; i < num; i++) {
+        for (int i = 0; i < num; ++i) {
             TabList.add(this);
         }
         return this;

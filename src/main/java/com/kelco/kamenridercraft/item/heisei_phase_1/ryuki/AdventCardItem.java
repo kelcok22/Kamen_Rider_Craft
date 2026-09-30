@@ -70,7 +70,7 @@ public class AdventCardItem extends BaseItem {
 
                     switch (special) {
                         case "trick_vent":
-                            for (int i = 0; i < 4; i++) {
+                            for (int i = 0; i < 4; ++i) {
                                 RiderSummonEntity trick = MobsCore.RIDER_SUMMON.get().create(level);
                                 if (trick != null) {
                                     trick.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
@@ -105,7 +105,7 @@ public class AdventCardItem extends BaseItem {
                             }
                             break;
                         case "trick_vent_knight":
-                            for (int i = 0; i < 4; i++) {
+                            for (int i = 0; i < 4; ++i) {
                                 RiderSummonEntity trick = MobsCore.RIDER_SUMMON.get().create(level);
                                 if (trick != null) {
                                     trick.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());

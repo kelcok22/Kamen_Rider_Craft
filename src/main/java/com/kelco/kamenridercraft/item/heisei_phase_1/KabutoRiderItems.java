@@ -571,7 +571,7 @@ public class KabutoRiderItems {
     public static final DeferredItem<Item> NEOTROOPER_BELT = ITEMS.register("neotrooper_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "neotrooper", NEOTROOPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> CHOPHOPPER_RIDER_BELT = ITEMS.register("chophopper_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chophopper", CHOPHOPPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()).has_basic_model());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chophopper", CHOPHOPPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()).useBasicModel());
 
     public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
             () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.KABUTO_TAB_ITEM));

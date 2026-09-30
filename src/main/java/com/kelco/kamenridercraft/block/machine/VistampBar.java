@@ -64,7 +64,7 @@ public class VistampBar extends MachineBlock {
         List<Item> PROTO_VISTAMP_PLUS = new ArrayList<>(PROTO_VISTAMP);
 
          if (player.getInventory().countItem(ReviceRiderItems.BARID_REX_VISTAMP.get())!=0){
-             for (int i = 0; i < 20; i++) {
+             for (int i = 0; i < 20; ++i) {
                  PROTO_VISTAMP_PLUS.add(ReviceRiderItems.VOLCANO_VISTAMP.get());
              }
          }

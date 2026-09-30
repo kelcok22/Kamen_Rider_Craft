@@ -48,7 +48,7 @@ public class SwordOfLogosBookAnalyzer extends MachineBlock {
 
         List<Item> BLANK_BOOK_PLUS = new ArrayList<>(BLANK_BOOK);
          if (player.getInventory().countItem(SaberRiderItems.TASSEL_DARK_WONDER_RIDE_BOOK.get())!=0){
-             for (int i = 0; i < 2; i++) {
+             for (int i = 0; i < 2; ++i) {
                  BLANK_BOOK_PLUS.add(SaberRiderItems.ULTIMATE_BAHAMUT_WONDER_RIDE_BOOK.get());
              }
          }

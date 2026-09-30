@@ -129,7 +129,7 @@ public class XRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_BELT = ITEMS.register("apollogeist_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hasSDForm().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hasSDForm().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",

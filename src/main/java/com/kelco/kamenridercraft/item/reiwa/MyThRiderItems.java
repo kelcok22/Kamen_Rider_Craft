@@ -130,26 +130,26 @@ public class MyThRiderItems {
             () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_HELMET = ITEMS.register("my_th_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
     public static final DeferredItem<Item> MY_TH_CHESTPLATE = ITEMS.register("my_th_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
     public static final DeferredItem<Item> MY_TH_LEGGINGS = ITEMS.register("my_th_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER = ITEMS.register("my_th_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"my_th",RIDE_X_EGGS_1 ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"my_th",RIDE_X_EGGS_1 ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON_BLACK = ITEMS.register("my_th_driver_hammer_on_black",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_my_th",RIDE_X_EGGS_1_ORIGIN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON = ITEMS.register("my_th_driver_hammer_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDE_X_EGGS_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDE_X_EGGS_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_SLASH_ON = ITEMS.register("my_th_driver_slash_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"datt",RIDE_X_EGGS_4_DATT ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"datt",RIDE_X_EGGS_4_DATT ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MAOU_DRIVER = ITEMS.register("maou_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_EDGE = ITEMS.register("my_th_edge",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));

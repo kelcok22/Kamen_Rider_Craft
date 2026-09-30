@@ -2496,7 +2496,7 @@ public class ZiORiderItems {
 
     public static final DeferredItem<Item> YAMININ_BELT = ITEMS.register("yaminin_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "yaminin", SHURIKEN_STARTER_YAMININ, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> QUIZDRIVER = ITEMS.register("quiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "quiz", QUIZ_TOPPER, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2576,7 +2576,7 @@ public class ZiORiderItems {
 
     public static final DeferredItem<Item> ANOTHER_ZIKU_DRIVER_ZI_O = ITEMS.register("another_ziku_driver_zi_o",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_zi_o", ANOTHER_ZI_O_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).has_basic_model().changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_SHINOBI_DRIVER = ITEMS.register("another_shinobi_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_shinobi", ANOTHER_SHINOBI_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,

@@ -32,7 +32,7 @@ public class BreakamDawnTaikenItem extends SwordItem {
     }
 
     public BreakamDawnTaikenItem addToList(List<Item> TabList, int num) {
-        for (int i = 0; i < num; i++) {
+        for (int i = 0; i < num; ++i) {
             TabList.add(this);
         }
         return this;

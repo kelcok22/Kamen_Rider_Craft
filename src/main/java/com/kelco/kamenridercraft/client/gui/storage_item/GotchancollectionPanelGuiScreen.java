@@ -16,7 +16,7 @@ public class GotchancollectionPanelGuiScreen extends AbstractContainerScreen<Got
 
     public GotchancollectionPanelGuiScreen(GotchancollectionPanelGuiMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
-        imageHeight++;
+        ++imageHeight;
     }
 
     @Override

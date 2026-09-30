@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -346,11 +345,11 @@ public class KuugaRiderItems {
 
     public static final DeferredItem<Item> GRONGI_BELT = ITEMS.register("grongi_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "grongi", GO_BADAA_BA_AMADAM, KUUGAHELMET, KUUGACHESTPLATE, KUUGALEGGINGS, new Item.Properties().rarity(Rarity.RARE)
-            ).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).has_basic_model().changeRepairItem(KUUGA_GROWING.get()));
+            ).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).useBasicModel().changeRepairItem(KUUGA_GROWING.get()));
 
     public static final DeferredItem<Item> N_DAGUVA_ZEBA_BELT = ITEMS.register("n_daguva_zeba_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "n_daguva_zeba", N_DAGUVA_ZEBA, KUUGAHELMET, KUUGACHESTPLATE, KUUGALEGGINGS, new Item.Properties().rarity(Rarity.RARE)
-            ).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).has_basic_model().changeRepairItem(KUUGA_GROWING.get()));
+            ).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.KUUGA_TAB_ITEM).useBasicModel().changeRepairItem(KUUGA_GROWING.get()));
 
 
     public static final DeferredItem<Item> DRAGON_ROD = ITEMS.register("dragon_rod",

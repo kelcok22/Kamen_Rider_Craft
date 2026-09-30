@@ -632,7 +632,7 @@ public class RiderFormChangeItem extends BaseItem {
                     if (alsoChange5thSlot != null)
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange5thSlot, 5);
                     if (alsoUpdateOld != null)
-                        RiderDriverItem.SetOldFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
+                        RiderDriverItem.setOldFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
 
                 } else if (!alternative.isEmpty()) {
 
@@ -675,7 +675,7 @@ public class RiderFormChangeItem extends BaseItem {
                     if (alsoChange4thSlot != null)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
                     if (alsoUpdateOld != null)
-                        RiderDriverItem.SetOldFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
+                        RiderDriverItem.setOldFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
                     if (setToArmorForm)
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
 
@@ -720,7 +720,7 @@ public class RiderFormChangeItem extends BaseItem {
         if (tick == 30)
             transformationEffect(itemStack, entity);
         if (tick == 1)
-            RiderDriverItem.UpdateOldFormItem(itemStack);
+            RiderDriverItem.updateOldFormItem(itemStack);
     }
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {

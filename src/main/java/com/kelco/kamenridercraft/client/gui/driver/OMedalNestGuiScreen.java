@@ -16,7 +16,7 @@ public class OMedalNestGuiScreen extends AbstractContainerScreen<OMedalNestGuiMe
 
     public OMedalNestGuiScreen(OMedalNestGuiMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
-        imageHeight++;
+        ++imageHeight;
     }
 
     @Override

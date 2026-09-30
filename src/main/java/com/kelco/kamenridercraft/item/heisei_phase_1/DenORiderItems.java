@@ -14,7 +14,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -512,11 +511,11 @@ public class DenORiderItems {
 
 	public static final DeferredItem<Item> SHIN_O_BELT = ITEMS.register("shin_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties()).hideBeltFormInfo()
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).has_basic_model().changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).useBasicModel().changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DAN_O_BELT = ITEMS.register("dan_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dan_o",RIDER_TICKET_DAN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).has_basic_model().changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).useBasicModel().changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
 			() -> new RiderPassItem(new Item.Properties(),500).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));

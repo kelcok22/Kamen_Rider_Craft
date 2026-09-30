@@ -111,7 +111,7 @@ public class KintarosEntity extends BaseAllyEntity {
 						   itemstack.shrink(1);
 						}
 						if (this.level().getGameRules().getBoolean(GameRules.RULE_MOBGRIEFING)) {
-							for (int i = 0; i < 10; i++) {
+							for (int i = 0; i < 10; ++i) {
 								ItemEntity tissue = new ItemEntity(player.level(), this.getRandomX(7.0), this.getY()+8, this.getRandomZ(7.0), new ItemStack(Items.PAPER), 0, 0, 0);
 								tissue.setPickUpDelay(40);
 								this.level().addFreshEntity(tissue);

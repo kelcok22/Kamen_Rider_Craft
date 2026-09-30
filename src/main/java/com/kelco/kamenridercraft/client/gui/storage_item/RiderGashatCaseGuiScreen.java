@@ -16,7 +16,7 @@ public class RiderGashatCaseGuiScreen extends AbstractContainerScreen<RiderGasha
 
     public RiderGashatCaseGuiScreen(RiderGashatCaseGuiMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
-        imageHeight++;
+        ++imageHeight;
     }
 
     @Override

@@ -1502,7 +1502,7 @@ public class ReviceRiderItems {
 
 	public static final DeferredItem<Item> LOVEKOV_BELT = ITEMS.register("lovekov_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lovekov",COBRA_VISTAMP_LOVEKOV ,REVICE_HELMET, REVICE_CHESTPLATE,REVICE_LEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).has_basic_model().changeRepairItem(PROTO_VISTAMP.get()));
+					.addToList(KamenRiderCraftCore.CreativeTabRegistry.REVICE_TAB_ITEM).useBasicModel().changeRepairItem(PROTO_VISTAMP.get()));
 
 
 	public static final DeferredItem<Item> DEMONS_DRIVER = ITEMS.register("demons_driver",

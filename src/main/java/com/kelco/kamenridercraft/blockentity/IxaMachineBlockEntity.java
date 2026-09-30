@@ -28,6 +28,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
@@ -74,8 +75,8 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
             @Override
             public int get(int i) {
                 return switch (i) {
-                    case 0 -> IxaMachineBlockEntity.this.progress;
-                    case 1 -> IxaMachineBlockEntity.this.maxProgress;
+                    case 0 -> progress;
+                    case 1 -> maxProgress;
                     default -> 0;
                 };
             }
@@ -84,9 +85,9 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
             public void set(int i, int value) {
                 switch (i) {
                     case 0:
-                        IxaMachineBlockEntity.this.progress = value;
+                        progress = value;
                     case 1:
-                        IxaMachineBlockEntity.this.maxProgress = value;
+                        maxProgress = value;
                 }
             }
 
@@ -98,27 +99,27 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     @Override
-    public Component getDisplayName() {
+    public @NotNull Component getDisplayName() {
         return Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixa_machine_entity");
     }
 
     @Override
     @Nullable
-    public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return new IxaMachineBlockGuiMenu(i, inventory, this, this.data);
+    public AbstractContainerMenu createMenu(int i, @NotNull Inventory inventory, @NotNull Player player) {
+        return new IxaMachineBlockGuiMenu(i, inventory, this, data);
     }
 
     public void drops() {
         SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for (int i = 0; i < itemHandler.getSlots(); i++) {
+        for (int i = 0; i < itemHandler.getSlots(); ++i) {
             inventory.setItem(i, itemHandler.getStackInSlot(i));
         }
 
-        Containers.dropContents(this.level, this.worldPosition, inventory);
+        Containers.dropContents(level, worldPosition, inventory);
     }
 
     @Override
-    protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
+    protected void saveAdditional(CompoundTag pTag, HolderLookup.@NotNull Provider pRegistries) {
         pTag.put("inventory", itemHandler.serializeNBT(pRegistries));
         pTag.putInt("machine_block.progress", progress);
         pTag.putInt("machine_block.max_progress", maxProgress);
@@ -127,7 +128,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     @Override
-    protected void loadAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
+    protected void loadAdditional(@NotNull CompoundTag pTag, HolderLookup.@NotNull Provider pRegistries) {
         super.loadAdditional(pTag, pRegistries);
 
         itemHandler.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
@@ -136,23 +137,23 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     public void tick(Level level, BlockPos pos, BlockState state) {
-        if (itemHandler.getStackInSlot(INPUT_SLOT).isEmpty() || !itemHandler.getStackInSlot(INPUT_SLOT).toString().equals(this.lastItem) || !itemHandler.getStackInSlot(MODIFIER_SLOT).toString().equals(this.lastModifier)) {
-            this.progress = 0;
-            this.lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
-            this.lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
+        if (itemHandler.getStackInSlot(INPUT_SLOT).isEmpty() || !itemHandler.getStackInSlot(INPUT_SLOT).toString().equals(lastItem) || !itemHandler.getStackInSlot(MODIFIER_SLOT).toString().equals(lastModifier)) {
+            progress = 0;
+            lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
+            lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
         }
-        if (this.progress >= 72) {
-            this.progress = 0;
-            this.maxProgress = 72;
-            this.craftItem();
+        if (progress >= 72) {
+            progress = 0;
+            maxProgress = 72;
+            craftItem();
             setChanged(level, pos, state);
-        } else if (this.hasRecipe() && this.isOutputSlotsEmptyorReceivable()) {
-            this.progress++;
-            this.lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
-            this.lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
+        } else if (hasRecipe() && isOutputSlotsEmptyorReceivable()) {
+            ++progress;
+            lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
+            lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
             setChanged(level, pos, state);
         } else {
-            this.progress = 0;
+            progress = 0;
         }
     }
 
@@ -197,8 +198,8 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
     private boolean isOutputSlotsEmptyorReceivable() {
         return itemHandler.getStackInSlot(OUTPUT_SLOT_1).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_2).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_3).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_4).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_5).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_6).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_7).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_8).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_9).isEmpty() ||
-                itemHandler.getStackInSlot(OUTPUT_SLOT_1).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_1).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_2).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_2).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_3).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_3).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_4).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_4).getMaxStackSize() ||
-                itemHandler.getStackInSlot(OUTPUT_SLOT_5).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_5).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_6).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_6).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_7).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_7).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_8).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_8).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_9).getCount() < this.itemHandler.getStackInSlot(OUTPUT_SLOT_9).getMaxStackSize();
+                itemHandler.getStackInSlot(OUTPUT_SLOT_1).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_1).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_2).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_2).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_3).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_3).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_4).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_4).getMaxStackSize() ||
+                itemHandler.getStackInSlot(OUTPUT_SLOT_5).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_5).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_6).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_6).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_7).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_7).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_8).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_8).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_9).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_9).getMaxStackSize();
     }
 
     private boolean hasRecipe() {
@@ -217,13 +218,13 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe() {
-        assert this.level != null;
-        return this.level.getRecipeManager()
+        assert level != null;
+        return level.getRecipeManager()
                 .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), new IxaMachineRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT), itemHandler.getStackInSlot(MODIFIER_SLOT)), level);
     }
 
     @Override
-    public CompoundTag getUpdateTag(HolderLookup.Provider pRegistries) {
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider pRegistries) {
         return saveWithoutMetadata(pRegistries);
     }
 

@@ -64,7 +64,7 @@ public class RiderSummonCardItem extends BaseItem {
         if (this.summonNeoBelt != null)
             summonBelt = (RiderDriverItem) DecadeRiderItems.NEO_DIEND_SUMMON_BELTS.get(summonNeoBelt);
 
-        for (int i = 0; i < summonAmount; i++) {
+        for (int i = 0; i < summonAmount; ++i) {
             RiderSummonEntity summon = MobsCore.RIDER_SUMMON.get().create(level);
             if (summon != null) {
                 summon.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());

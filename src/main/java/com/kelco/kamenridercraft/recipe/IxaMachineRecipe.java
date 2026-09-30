@@ -139,7 +139,7 @@ public record IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output,
                 ItemStack result = ItemStack.STREAM_CODEC.decode(buf);
                 int size = buf.readVarInt();
                 java.util.Map<ResourceLocation, Integer> weights = new java.util.HashMap<>();
-                for (int i = 0; i < size; i++) {
+                for (int i = 0; i < size; ++i) {
                     ResourceLocation id = buf.readResourceLocation();
                     int w = buf.readVarInt();
                     weights.put(id, w);

@@ -37,7 +37,7 @@ public class DimensionCardItem extends BaseItem implements ZeinCard {
 
     @Override
     public void activateCard(Level level, LivingEntity livingEntity, ItemStack itemStack) {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; ++i) {
             LivingEntity summon;
             if (livingEntity instanceof Player) summon = MobsCore.ZEIN_SUMMON.get().create(level);
             else summon = MobsCore.ZEIN_ENEMY_SUMMON.get().create(level);

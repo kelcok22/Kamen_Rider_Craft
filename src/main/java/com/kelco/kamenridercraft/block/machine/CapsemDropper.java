@@ -69,7 +69,7 @@ public class CapsemDropper extends MachineBlock {
         List<Item> CAPSEM_PLUS = new ArrayList<>(CAPSEM);
 
         if (player.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get())!=0){
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 20; ++i) {
                 CAPSEM_PLUS.add(ZeztzRiderItems.HEART_OF_IMPACT_CAPSEM.get());
             }
         }

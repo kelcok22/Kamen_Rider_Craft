@@ -966,7 +966,7 @@ public class KamenRiderCraftCore {
         public static void AddItemsToTabs(BuildCreativeModeTabContentsEvent event) {
 
             if (event.getTab() == CreativeTabRegistry.IchigoTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.ICHIGO_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.ICHIGO_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.ICHIGO_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.RIDER_CIRCUIT);
@@ -984,19 +984,19 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.SHOCKER_MONITOR);
 
             } else if (event.getTab() == CreativeTabRegistry.TheIchigoTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.THE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.THE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.THE_TAB_ITEM.get(i));
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.ShinIchigoTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM.get(i));
                 }
                 event.accept(MobsCore.BATTA_AUGMENT_SPAWN_EGG);
                 event.accept(MobsCore.SHIN_NO_0_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.V3Tab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.V3_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.V3_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.V3_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.FLARESALAMANDER);
@@ -1007,7 +1007,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.DESTRON_COMBATMAN_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.XTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.X_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.X_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.X_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.SET_UP_KAMEN_RIDER_X_MUSIC_DISC);
@@ -1015,14 +1015,14 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.APOLLOGEIST_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.AMAZONTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.AMAZON_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.AMAZON_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.AMAZON_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.AMAZON_RIDER_KOKO_NI_ARI_MUSIC_DISC);
                 event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.STRONGERTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.STRONGER_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.STRONGER_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.STRONGER_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.KAMEN_RIDER_STRONGER_NO_UTA_MUSIC_DISC);
@@ -1031,28 +1031,28 @@ public class KamenRiderCraftCore {
 
 
             } else if (event.getTab() == CreativeTabRegistry.SKYRIDERTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.SKYRIDER_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.SKYRIDER_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.SKYRIDER_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.MOERO_KAMEN_RIDER_MUSIC_DISC);
                 event.accept(MobsCore.ARI_COMMANDO_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.SUPER1Tab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.SUPER1_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.SUPER1_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.SUPER1_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.KAMEN_RIDER_SUPER_1_MUSIC_DISC);
                 event.accept(MobsCore.DOGMA_FIGHTER_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.ZXTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.ZX_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.ZX_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.ZX_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.DRAGON_ROAD_MUSIC_DISC);
                 event.accept(MobsCore.COMBAT_ROID_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.BLACKTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.BLACK_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.BLACK_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.BLACK_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.KAMEN_RIDER_BLACK_MUSIC_DISC);
@@ -1060,7 +1060,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.SHADOWMOON_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.RXTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.RX_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.RX_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.RX_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.KAMEN_RIDER_BLACK_RX_MUSIC_DISC);
@@ -1071,24 +1071,24 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.FERBUS);
 
             } else if (event.getTab() == CreativeTabRegistry.SHINTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.SHIN_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.SHIN_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.SHIN_TAB_ITEM.get(i));
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.ZOTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.ZO_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.ZO_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.ZO_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.AI_GA_TOMARANAI_MUSIC_DISC);
 
             } else if (event.getTab() == CreativeTabRegistry.JTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.J_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.J_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.J_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.KOKORO_TSUNAGU_AI_MUSIC_DISC);
 
             } else if (event.getTab() == CreativeTabRegistry.KuugaTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.KUUGA_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.KUUGA_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.KUUGA_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.GRANDGOURAM);
@@ -1104,7 +1104,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.DEEPSLATE_KUUGA_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.AgitoTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.AGITO_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.AGITO_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.AGITO_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.STAGTORNADOR);
@@ -1118,7 +1118,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.G_SYSTEM_CHIP_PROGRAMMER);
 
             } else if (event.getTab() == CreativeTabRegistry.RyukiTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.RYUKI_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.RYUKI_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.RYUKI_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.DRAGREDER);
@@ -1134,7 +1134,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.DEEPSLATE_GLASS_RYUKI);
 
             } else if (event.getTab() == CreativeTabRegistry.FaizTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.FAIZ_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.FAIZ_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.FAIZ_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.GREYWOLCH);
@@ -1150,7 +1150,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.FAIZ_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.BladeTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.BLADE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.BLADE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.BLADE_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.HERCULESPADER);
@@ -1163,14 +1163,14 @@ public class KamenRiderCraftCore {
                 event.accept(MusicDiscItems.ROUND_ZERO_BLADE_BRAVE_MUSIC_DISC);
                 event.accept(MusicDiscItems.ELEMENTS_MUSIC_DISC);
                 event.accept(MusicDiscItems.REBIRTH_MUSIC_DISC);
-                for (int i = 0; i < KRCItemLists.BLADE_SPAWN_EGG.size(); i++) {
+                for (int i = 0; i < KRCItemLists.BLADE_SPAWN_EGG.size(); ++i) {
                     event.accept(KRCItemLists.BLADE_SPAWN_EGG.get(i));
                 }
                 event.accept(RiderBlocks.BLADE_ORE);
                 event.accept(RiderBlocks.DEEPSLATE_BLADE_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.HibikiTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.HIBIKI_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.HIBIKI_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.HIBIKI_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.AKANETAKA);
@@ -1185,7 +1185,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.DEEPSLATE_HIBIKI_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.KabutoTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.KABUTO_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.KABUTO_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.KABUTO_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.EXBEETER);
@@ -1198,7 +1198,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.CAUCASUS_SPAWN_EGG);
 
             } else if (event.getTab() == CreativeTabRegistry.DenOTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.DEN_O_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.DEN_O_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.DEN_O_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.COFFEE);
@@ -1217,7 +1217,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.ANOTHER_DEN_O_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.KivaTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.KIVA_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.KIVA_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.KIVA_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.BREAK_THE_CHAIN_MUSIC_DISC);
@@ -1231,7 +1231,7 @@ public class KamenRiderCraftCore {
 
 
             } else if (event.getTab() == CreativeTabRegistry.DecadeTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.DECADE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.DECADE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.DECADE_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.JOURNEY_THROUGH_THE_DECADE_MUSIC_DISC);
@@ -1239,7 +1239,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.DECADE_VIOLENT_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.WTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.W_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.W_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.W_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.WBX_MUSIC_DISC);
@@ -1264,7 +1264,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.GAIA_MEMORY_REFINER);
 
             } else if (event.getTab() == CreativeTabRegistry.OOOTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.OOO_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.OOO_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.OOO_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.ICE_POP);
@@ -1299,7 +1299,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.CELL_MEDAL_PROGRAMMER);
 
             } else if (event.getTab() == CreativeTabRegistry.FOURZETab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.FOURZE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.FOURZE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.FOURZE_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.SWITCH_ON_MUSIC_DISC);
@@ -1312,7 +1312,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.ASTROSWITCH_PROGRAMMER);
 
             } else if (event.getTab() == CreativeTabRegistry.WIZARDTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.WIZARD_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.WIZARD_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.WIZARD_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.DONUT);
@@ -1332,7 +1332,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.DEEPSLATE_WIZARD_GEM_ORE);
 
             } else if (event.getTab() == CreativeTabRegistry.GAIMTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.GAIM_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.GAIM_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.GAIM_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.JUST_LIVE_MORE_MUSIC_DISC);
@@ -1357,7 +1357,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.HELHEIM_CRACK);
 
             } else if (event.getTab() == CreativeTabRegistry.DRIVETab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.DRIVE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.DRIVE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.DRIVE_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.SURPRISE_DRIVE_MUSIC_DISC);
@@ -1374,7 +1374,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.SHIFT_CHASSIS_ASSEMBLER);
 
             } else if (event.getTab() == CreativeTabRegistry.GHOSTTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.GHOST_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.GHOST_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.GHOST_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.WARERA_OMOU_YUE_NI_WARERA_ARI_MUSIC_DISC);
@@ -1390,7 +1390,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.MONOLITH);
 
             } else if (event.getTab() == CreativeTabRegistry.EX_AIDTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.EX_AID_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.EX_AID_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.EX_AID_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.EXCITE_KEY_MUSIC_DISC);
@@ -1414,7 +1414,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.GANBERIZING_MACHINE);
 
             } else if (event.getTab() == CreativeTabRegistry.BUILDTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.BUILD_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.BUILD_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.BUILD_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.BE_THE_ONE_MUSIC_DISC);
@@ -1450,7 +1450,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.FULLBOTTLE_SOLIDIFIER);
 
             } else if (event.getTab() == CreativeTabRegistry.ZI_OTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.ZI_O_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.ZI_O_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.ZI_O_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.OVER_QUARTZER_MUSIC_DISC);
@@ -1473,7 +1473,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.QUARTZER_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.Zero_OneTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.ZERO_ONE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.ZERO_ONE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.ZERO_ONE_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.REAL_X_EYEZ_MUSIC_DISC);
@@ -1506,7 +1506,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.ZAIA_3D_PRINTER);
 
             } else if (event.getTab() == CreativeTabRegistry.SABERTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.SABER_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.SABER_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.SABER_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.ALMIGHTY_MUSIC_DISC);
@@ -1533,7 +1533,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.SWORD_OF_LOGOS_BOOK_ANALYZER);
 
             } else if (event.getTab() == CreativeTabRegistry.ReviceTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.REVICE_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.REVICE_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.REVICE_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.LIVEDEVIL_MUSIC_DISC);
@@ -1551,7 +1551,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.VISTAMP_BAR);
 
             } else if (event.getTab() == CreativeTabRegistry.GeatsTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.GEATS_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.GEATS_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.GEATS_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.TRUST_LAST_MUSIC_DISC);
@@ -1572,7 +1572,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.PUNKJACKOLANTERN);
 
             } else if (event.getTab() == CreativeTabRegistry.GotchardTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.GOTCHARD_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.GOTCHARD_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.GOTCHARD_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.CHEMY_X_STORY_MUSIC_DISC);
@@ -1590,7 +1590,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.ELD_BOSS_BLOCK);
 
             } else if (event.getTab() == CreativeTabRegistry.GavvTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.GAVV_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.GAVV_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.GAVV_TAB_ITEM.get(i));
                 }
                 event.accept(ModdedItemCore.CANDY_WRAPPER);
@@ -1626,7 +1626,7 @@ public class KamenRiderCraftCore {
                 event.accept(RiderBlocks.HEATPRESS_EXTRACTOR);
 
             } else if (event.getTab() == CreativeTabRegistry.ZeztzTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.ZEZTZ_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.ZEZTZ_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.ZEZTZ_TAB_ITEM.get(i));
                 }
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
@@ -1646,47 +1646,47 @@ public class KamenRiderCraftCore {
 
 
             } else if (event.getTab() == CreativeTabRegistry.My_thTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.MY_TH_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.MY_TH_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.MY_TH_TAB_ITEM.get(i));
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.AMAZONSTab.get()) {
                 event.accept(AmazonsRiderItems.EMPTY_VIAL);
-                for (int i = 0; i < CreativeTabRegistry.AMAZONS_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.AMAZONS_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.AMAZONS_TAB_ITEM.get(i));
                 }
                 event.accept(RiderBlocks.AMAZON_CELL_EXTRACTOR);
                 event.accept(RiderBlocks.AMAZON_CELL_MUTATOR);
 
             } else if (event.getTab() == CreativeTabRegistry.BLACKSUNTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.BLACK_SUN_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.BLACK_SUN_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.BLACK_SUN_TAB_ITEM.get(i));
                 }
                 event.accept(RiderBlocks.KAIJIN_STONE_GENERATOR);
 
             } else if (event.getTab() == CreativeTabRegistry.GTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.G_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.G_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.G_TAB_ITEM.get(i));
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.GoriderTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.GORIDER_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.GORIDER_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.GORIDER_TAB_ITEM.get(i));
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.RideKamensTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.RIDE_KAMENS_TAB_ITEM.get(i));
                 }
 
             } else if (event.getTab() == CreativeTabRegistry.RiderblockTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.RIDER_BLOCK.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.RIDER_BLOCK.size(); ++i) {
                     event.accept(CreativeTabRegistry.RIDER_BLOCK.get(i));
                 }
                 // event.accept(RiderBlocks.BLUE_ROSE.get());
 
             } else if (event.getTab() == CreativeTabRegistry.RiderdecorTab.get()) {
-                for (int i = 0; i < CreativeTabRegistry.RIDER_DECOR.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.RIDER_DECOR.size(); ++i) {
                     event.accept(CreativeTabRegistry.RIDER_DECOR.get(i));
                 }
                 event.accept(RiderBlocks.SHOCKER_LOGO);
@@ -2068,7 +2068,7 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.BOOSTRIKER_BUFFA_MODE_SPAWN_EGG);
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
 
-                for (int i = 0; i < CreativeTabRegistry.Misc_TAB_ITEM.size(); i++) {
+                for (int i = 0; i < CreativeTabRegistry.Misc_TAB_ITEM.size(); ++i) {
                     event.accept(CreativeTabRegistry.Misc_TAB_ITEM.get(i));
                 }
                 event.accept(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC);

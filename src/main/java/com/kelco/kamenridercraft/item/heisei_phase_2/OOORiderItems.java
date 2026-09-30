@@ -1464,7 +1464,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 					});
 				}
 			}
-					.hasInventoryGui().hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hasInventoryGui().hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
@@ -1506,11 +1506,11 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 
 	public static final DeferredItem<Item> GREEED_BLET_KYORYU = ITEMS.register("greeed_blet_kyoryu",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyoryu_complete",PTERA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().addExtraBaseFormItems(TRICERA_MEDAL,TYRANNO_MEDAL).overrideBeltText("kyoryu_belt").changeRepairItem(CELL_MEDAL.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+					.hideBeltFormInfo().addExtraBaseFormItems(TRICERA_MEDAL,TYRANNO_MEDAL).overrideBeltText("kyoryu_belt").changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_SHOCKER = ITEMS.register("greeed_blet_shocker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_complete",SHOCKER_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).overrideBeltText("shocker_greeed_belt").changeRepairItem(CELL_MEDAL.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
+                    .hideBeltFormInfo().addExtraBaseFormItems(GEL_SHOCKER_MEDAL,DESTRON_MEDAL).overrideBeltText("shocker_greeed_belt").changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(CELL_MEDAL.get()));

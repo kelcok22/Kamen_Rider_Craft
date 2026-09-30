@@ -339,16 +339,16 @@ public class IchigoRiderItems {
                     .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TAKI_BELT = ITEMS.register("taki_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taki_rider",TAKI_VAMPIRE_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taki_rider",TAKI_VAMPIRE_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_BELT = ITEMS.register("gaia_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> CYBORG_SUPER_ENERGY_CONVERTER = ITEMS.register("cyborg_super_energy_converter",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eins",CYBORG_SUPER_ENERGY_CONVERTER_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eins",CYBORG_SUPER_ENERGY_CONVERTER_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOCKER_BELT = ITEMS.register("shocker_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_MANGA = ITEMS.register("ichigo_manga",
             () -> new RiderFormChangeItem(new Item.Properties(),"_manga","ichigo","typhoon_belt",

@@ -32,6 +32,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
 import net.neoforged.neoforge.event.EventHooks;
 import net.neoforged.neoforge.event.entity.EntityTeleportEvent;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.Random;
@@ -45,11 +46,11 @@ public class WisemanEntity extends BaseHenchmenEntity {
     public WisemanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "wiseman";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.WHITE_WIZARD_DRIVER.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(WizardRiderItems.HAMMELCANE.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.WHITE_WIZARD_DRIVER.get()));
+        setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(WizardRiderItems.HAMMELCANE.get()));
     }
 
     @Override
@@ -61,36 +62,36 @@ public class WisemanEntity extends BaseHenchmenEntity {
     @Override
     public void tick() {
         super.tick();
-        if (this.level() instanceof ServerLevel && this.getLastAttacker() instanceof Player player && this.getTarget() == player && this.getHealth() < 150) {
+        if (level() instanceof ServerLevel && getLastAttacker() instanceof Player player && getTarget() == player && getHealth() < 150) {
             Random rand = new Random();
             int attackChance = rand.nextInt(50);
-            this.timeSinceLastAttack++;
+            ++timeSinceLastAttack;
 
-            if (attackChance == 1 && this.timeSinceLastAttack >= 200) {
-                this.teleport();
+            if (attackChance == 1 && timeSinceLastAttack >= 200) {
+                teleport();
                 player.displayClientMessage(Component.translatable("message.kamenridercraft.wiseman_teleport"), true);
-                this.timeSinceLastAttack = 0;
+                timeSinceLastAttack = 0;
             }
 
-            if (attackChance == 3 && this.timeSinceLastAttack >= 200 && this.distanceTo(player) < 10) {
+            if (attackChance == 3 && timeSinceLastAttack >= 200 && distanceTo(player) < 10) {
                 player.addEffect(new MobEffectInstance(EffectCore.EXPLODE, 20, 1, true, true));
                 player.displayClientMessage(Component.translatable("message.kamenridercraft.wiseman_explode"), true);
-                this.timeSinceLastAttack = 0;
-            } else if (attackChance == 3 && this.timeSinceLastAttack >= 200) {
-                SmallFireball smallfireball = new SmallFireball(this.level(), this, this.getDeltaMovement());
-                smallfireball.setPos(smallfireball.getX(), this.getY(0.5) + 0.5, smallfireball.getZ());
-                this.level().addFreshEntity(smallfireball);
-                this.timeSinceLastAttack = 0;
+                timeSinceLastAttack = 0;
+            } else if (attackChance == 3 && timeSinceLastAttack >= 200) {
+                SmallFireball smallfireball = new SmallFireball(level(), this, getDeltaMovement());
+                smallfireball.setPos(smallfireball.getX(), getY(0.5) + 0.5, smallfireball.getZ());
+                level().addFreshEntity(smallfireball);
+                timeSinceLastAttack = 0;
             }
         }
     }
 
     protected boolean teleport() {
-        if (!this.level().isClientSide() && this.isAlive()) {
-            double d0 = this.getX() + (this.random.nextDouble() - (double) 0.5F) * (double) 64.0F;
-            double d1 = this.getY() + (double) (this.random.nextInt(64) - 32);
-            double d2 = this.getZ() + (this.random.nextDouble() - (double) 0.5F) * (double) 64.0F;
-            return this.teleport(d0, d1, d2);
+        if (!level().isClientSide() && isAlive()) {
+            double d0 = getX() + (random.nextDouble() - (double) 0.5F) * (double) 64.0F;
+            double d1 = getY() + (double) (random.nextInt(64) - 32);
+            double d2 = getZ() + (random.nextDouble() - (double) 0.5F) * (double) 64.0F;
+            return teleport(d0, d1, d2);
         }
         return  false;
     }
@@ -98,11 +99,11 @@ public class WisemanEntity extends BaseHenchmenEntity {
     private boolean teleport(double x, double y, double z) {
         BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos(x, y, z);
 
-        while (blockpos$mutableblockpos.getY() > this.level().getMinBuildHeight() && !this.level().getBlockState(blockpos$mutableblockpos).blocksMotion()) {
+        while (blockpos$mutableblockpos.getY() > level().getMinBuildHeight() && !level().getBlockState(blockpos$mutableblockpos).blocksMotion()) {
             blockpos$mutableblockpos.move(Direction.DOWN);
         }
 
-        BlockState blockstate = this.level().getBlockState(blockpos$mutableblockpos);
+        BlockState blockstate = level().getBlockState(blockpos$mutableblockpos);
         boolean flag = blockstate.blocksMotion();
         boolean flag1 = blockstate.getFluidState().is(FluidTags.WATER);
         if (flag && !flag1) {
@@ -110,13 +111,13 @@ public class WisemanEntity extends BaseHenchmenEntity {
             if (event.isCanceled()) {
                 return false;
             } else {
-                Vec3 vec3 = this.position();
-                boolean flag2 = this.randomTeleport(event.getTargetX(), event.getTargetY(), event.getTargetZ(), true);
+                Vec3 vec3 = position();
+                boolean flag2 = randomTeleport(event.getTargetX(), event.getTargetY(), event.getTargetZ(), true);
                 if (flag2) {
-                    this.level().gameEvent(GameEvent.TELEPORT, vec3, GameEvent.Context.of(this));
-                    if (!this.isSilent()) {
-                        this.level().playSound((Player) null, this.xo, this.yo, this.zo, SoundEvents.ENDERMAN_TELEPORT, this.getSoundSource(), 1.0F, 1.0F);
-                        this.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
+                    level().gameEvent(GameEvent.TELEPORT, vec3, GameEvent.Context.of(this));
+                    if (!isSilent()) {
+                        level().playSound((Player) null, xo, yo, zo, SoundEvents.ENDERMAN_TELEPORT, getSoundSource(), 1.0F, 1.0F);
+                        playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
                     }
                 }
                 return flag2;
@@ -128,34 +129,34 @@ public class WisemanEntity extends BaseHenchmenEntity {
 
     protected void customServerAiStep() {
         super.customServerAiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        bossEvent.setProgress(getHealth() / getMaxHealth());
     }
 
-    protected void defineSynchedData(SynchedEntityData.Builder builder) {
+    protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
         super.defineSynchedData(builder);
         builder.define(DATA_FLAGS_ID, (byte) 0);
     }
 
     public void readAdditionalSaveData(CompoundTag compoundTag) {
         super.readAdditionalSaveData(compoundTag);
-        if (this.hasCustomName()) {
-            this.bossEvent.setName(this.getDisplayName());
+        if (hasCustomName()) {
+            bossEvent.setName(getDisplayName());
         }
     }
 
     public void setCustomName(@Nullable Component component) {
         super.setCustomName(component);
-        this.bossEvent.setName(this.getDisplayName());
+        bossEvent.setName(getDisplayName());
     }
 
-    public void startSeenByPlayer(ServerPlayer serverPlayer) {
+    public void startSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
         super.startSeenByPlayer(serverPlayer);
-        this.bossEvent.addPlayer(serverPlayer);
+        bossEvent.addPlayer(serverPlayer);
     }
 
-    public void stopSeenByPlayer(ServerPlayer serverPlayer) {
+    public void stopSeenByPlayer(@NotNull ServerPlayer serverPlayer) {
         super.stopSeenByPlayer(serverPlayer);
-        this.bossEvent.removePlayer(serverPlayer);
+        bossEvent.removePlayer(serverPlayer);
     }
 
 

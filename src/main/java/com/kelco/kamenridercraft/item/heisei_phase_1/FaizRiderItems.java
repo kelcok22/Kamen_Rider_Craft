@@ -393,11 +393,11 @@ public class FaizRiderItems {
 
     public static final DeferredItem<Item> ALPHA_DRIVER = ITEMS.register("alpha_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alpha",ALPHA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).has_basic_model().changeRepairItem(BLANK_MISSION_MEMORY.get()));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
     public static final DeferredItem<Item> BETA_DRIVER = ITEMS.register("beta_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beta",BETA_MISSION_MEMORY ,FAIZHELMET, FAIZCHESTPLATE, FAIZLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).has_basic_model().changeRepairItem(BLANK_MISSION_MEMORY.get()));
+                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.FAIZ_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_MISSION_MEMORY.get()));
 
 
 

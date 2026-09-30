@@ -608,7 +608,7 @@ public class ZeztzRiderItems {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
                     if (tick == 173d) {
-                        if (tick == 2) RiderDriverItem.UpdateOldFormItem(itemStack);
+                        if (tick == 2) RiderDriverItem.updateOldFormItem(itemStack);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 50, 0, 0, 0, 1);
@@ -1230,7 +1230,7 @@ public class ZeztzRiderItems {
                             player.hurtMarked = true;
                             PacketDistributor.sendToAllPlayers(new AnimPayload("accel.henshin_bike_pose", "attack", false, player.getStringUUID()));
                         }
-                        RiderDriverItem.SetOldFormItem(itemstack,ZEROIDER_CORE.get(),1);
+                        RiderDriverItem.setOldFormItem(itemstack,ZEROIDER_CORE.get(),1);
                     }
                     if (tick==20d){
                         if (player instanceof Player) {
@@ -1255,11 +1255,11 @@ public class ZeztzRiderItems {
             () -> new CapsemCylinderItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_HELMET = ITEMS.register("zeztz_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
     public static final DeferredItem<Item> ZEZTZ_CHESTPLATE = ITEMS.register("zeztz_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
     public static final DeferredItem<Item> ZEZTZ_LEGGINGS = ITEMS.register("zeztz_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
@@ -1278,35 +1278,35 @@ public class ZeztzRiderItems {
                         return false;
                     }
                 }
-            }.has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DAWN_BELT = ITEMS.register("dawn_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dawn", PUNISH_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER = ITEMS.register("knight_invoker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THREE = ITEMS.register("lord_invoker_three",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_three", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_FIVE = ITEMS.register("lord_invoker_five",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_five", SHOCK_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_SIX = ITEMS.register("lord_invoker_six",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_six", PANIC_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_ZERO = ITEMS.register("lord_invoker_zero",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_zero", BREAK_CODE_DOWN_CAPSEM_ZERO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties()){
@@ -1317,72 +1317,72 @@ public class ZeztzRiderItems {
                     if (slot == EquipmentSlot.FEET) layerInfo.add(new RenderLayerInfo("belts/lord_invoker_movie_belt", "zeztz_riderbelt","belts/lord_invoker_movie_belt_glowmask"));
                     }
                 }
-            } .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            } .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_TWO = ITEMS.register("lord_invoker_two",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_two", BREAK_CODE_DOWN_CAPSEM_TWO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> METAMATERIAM_BELT = ITEMS.register("metamateriam_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metamateriam", PROJECTION_CAPSEM_METAMATERIAM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_DARKNESS_BELT = ITEMS.register("zeztz_darkness_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_darkness", DARKNESS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MUGEN_DRIVER = ITEMS.register("mugen_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mugen", DAYDREAM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight_seventeen", CODE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_SEVENTEEN = ITEMS.register("lord_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_seventeen", CODE_CAPSEM_SEVENTEEN,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THIRTEEN = ITEMS.register("lord_invoker_thirteen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_thirteen", CLEAR_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BABY_NIGHTMARE_BELT = ITEMS.register("baby_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"baby_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("baby_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("baby_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_NIGHTMARE_BELT = ITEMS.register("gun_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gun_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("gun_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("gun_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WOLF_NIGHTMARE_BELT = ITEMS.register("wolf_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wolf_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("wolf_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("wolf_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CAT_NIGHTMARE_BELT = ITEMS.register("cat_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cat_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_NIGHTMARE_BELT = ITEMS.register("shadow_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("shadow_nightmare_belt").has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("shadow_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_GORE_NIGHTMARE_BELT = ITEMS.register("catastrophe_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"catastrophe_gore_nightmare", CATASTROPHE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PHANTOM_GORE_NIGHTMARE_BELT = ITEMS.register("phantom_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"phantom_gore_nightmare", PHANTOM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> OBLIVION_GORE_NIGHTMARE_BELT = ITEMS.register("oblivion_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oblivion_gore_nightmare", CHAOS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().has_basic_model().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEROIDER_CONTROL = ITEMS.register("zeroider_control",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"code_zero", ZEROIDER_CORE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
@@ -1451,7 +1451,7 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> INSOMNIA_VISOR = ITEMS.register("insomnia_visor",
             () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(), "zero_dream", "zero_dream").isGlowing()
                     .setEffect(new MobEffectInstance(EffectCore.INSOMNIA, 40, 0, true, false))
-                    .has_basic_model().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_PHONE = ITEMS.register("zeztz_phone",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
