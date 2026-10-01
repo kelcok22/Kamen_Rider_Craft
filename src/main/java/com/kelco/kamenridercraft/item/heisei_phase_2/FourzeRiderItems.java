@@ -442,7 +442,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_spike_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_spike_module", "module/fourze_spike_module"));
                 }
             }.changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
@@ -619,7 +619,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 4, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
-                        layerInfo.add(new RenderLayerInfo("module/fourze_claw_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_claw_module", "module/fourze_claw_module"));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
                     }
                 }
@@ -669,7 +669,7 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_net_module", "default"));
+                        layerInfo.add(new NetRenderLayerInfo("module/fourze_net_module", "module/fourze_net_module"));
                 }
             }.setSlotOneAbility("fish", 1).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 

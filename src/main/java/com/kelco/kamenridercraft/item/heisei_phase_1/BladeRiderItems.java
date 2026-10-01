@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.blade.BlankRouzeCardItem;
@@ -8,6 +9,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.blade.BlayBuckleItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.blade.GoldenSpiderItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -19,8 +21,10 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -950,6 +954,12 @@ public class BladeRiderItems {
 
     public static final DeferredItem<Item> BLAYBUCKLE = ITEMS.register("blay_buckle",
             () -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()) {
+
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    RenderType renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blade_orichalcum_element.png"));
+                    if (isTransformingFromBlank(itemStack,rider)&slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo(renderType, "transforming/blade_orichalcum_element"));
+                }
                 public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
                     boolean TIME = rider.getAttribute(Attributes.HAS_TIME).getValue() != 0;
                     if (equipmentSlot != EquipmentSlot.FEET && getFormItem(itemstack, 1) == CHANGE_BEETLE.asItem() & TIME) {
