@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.item.reiwa;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WolfFrameRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -111,6 +112,17 @@ public class MyThRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_4_DATT.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> RIDE_X_EGGS_8 = ITEMS.register("ride_x_eggs_8",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_wolf_frame","my_th","my_th_driver_belt_wolf",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        layerInfo.add(new WolfFrameRenderLayerInfo("my_th_wolf_frame_muzzle", "my_th_wolf_frame_muzzle"));
+                    }
+                }
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_11_VANKEN = ITEMS.register("ride_x_eggs_11_vanken",
             () -> new RiderFormChangeItem(new Item.Properties(),"","datt","my_th_driver_belt_vanken",
