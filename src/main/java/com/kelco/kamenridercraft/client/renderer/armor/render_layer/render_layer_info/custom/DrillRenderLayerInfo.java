@@ -9,12 +9,15 @@ import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
 
 
-public class drillRenderLayerInfo extends RenderLayerInfo {
-    public drillRenderLayerInfo(String texture, String model) {
+public class DrillRenderLayerInfo extends RenderLayerInfo {
+    public DrillRenderLayerInfo(String texture, String model) {
         super(texture, model);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
-        GeoBone bone = model.getBone("bone").orElse(null);
+        GeoBone bone = model.getBone("drillHead").orElse(null);
+        if (bone != null) {
+            bone.setRotY(bone.getRotY() + 1);
+        }
     }
 }

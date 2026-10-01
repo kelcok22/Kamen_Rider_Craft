@@ -62,7 +62,7 @@
 				{
 					"name": "drillHead",
 					"parent": "armorLeftLeg",
-					"pivot": [3.68579, -0.25, -0.13015],
+					"pivot": [2, 1.95, 0],
 					"cubes": [
 						{
 							"origin": [2.68579, -8.25, -3.13015],
