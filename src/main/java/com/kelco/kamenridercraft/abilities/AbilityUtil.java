@@ -44,7 +44,7 @@ public class AbilityUtil {
                     }
                     break;
                 case "rider_kick", "kiva_kick", "kabuto_kick", "wizard_kick_flame", "flipped_rider_kick",
-                     "special_turbo", "joker_memory_kick":
+                     "special_turbo", "joker_memory_kick", "fourze_kick":
                     if (!user.isFallFlying() && user.onGround() && !user.isInWater()) {
                         if (costMeter && abilityMeter.getValue() >= 150) {
                             abilityMeter.setBaseValue(abilityMeter.getValue() - 150);
@@ -103,6 +103,9 @@ public class AbilityUtil {
                     break;
                 case "joker_memory_kick":
                     WRiderKicks.jokerMemoryKick(user);
+                    break;
+                case "fourze_kick":
+                    FourzeRiderKicks.fourzeRiderKick(user);
                     break;
                 case "wizard_kick_flame":
                     WizardRiderKicks.flameWizardKick(user);

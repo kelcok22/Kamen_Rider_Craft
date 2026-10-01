@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.blade.BlankRouzeCardItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.blade.BlayBuckleItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.blade.GoldenSpiderItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.Attributes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
@@ -21,10 +22,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,13 +78,17 @@ public class BladeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "blade", "blay_buckle_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "blade.henshin");
+                    } else if (tick == 2d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }.addAlternative(CHANGE_BEETLE_UNDEAD.get()).changeModel("blade.geo.json").isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.setHenshinTick(35).setFormDelay(1).addAlternative(CHANGE_BEETLE_UNDEAD.get()).changeModel("blade.geo.json").isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SLASH_LIZARD = ITEMS.register("slash_lizard",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
@@ -956,10 +959,12 @@ public class BladeRiderItems {
             () -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()) {
 
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     RenderType renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blade_orichalcum_element.png"));
-                    if (isTransformingFromBlank(itemStack,rider)&slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo(renderType, "transforming/blade_orichalcum_element"));
+                    if (isTransformingFromBlank(itemStack, rider) & slot == EquipmentSlot.HEAD)
+                        layerInfo.add(new RenderLayerInfo(renderType, "transforming/blade_orichalcum_element"));
                 }
+
                 public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
                     boolean TIME = rider.getAttribute(Attributes.HAS_TIME).getValue() != 0;
                     if (equipmentSlot != EquipmentSlot.FEET && getFormItem(itemstack, 1) == CHANGE_BEETLE.asItem() & TIME) {

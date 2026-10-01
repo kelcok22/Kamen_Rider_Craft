@@ -299,7 +299,7 @@ public class FourzeRiderItems {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
                     }
                 }
-            }.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get())
+            }.setSlotTwoAbility("fourze_kick", 0).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get())
                     .addToList(KamenRiderCraftCore.CreativeTabRegistry.FOURZE_TAB_ITEM)
                     .addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
