@@ -961,7 +961,7 @@ public class BladeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     RenderType renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blade_orichalcum_element.png"));
-                    if (isTransformingFromBlank(itemStack, rider) & slot == EquipmentSlot.HEAD)
+                    if (isTransformingFromBlank(itemStack, rider) && slot == EquipmentSlot.HEAD && rider.getAttribute(Attributes.IS_TRANSFORMING).getValue() < 15)
                         layerInfo.add(new RenderLayerInfo(renderType, "transforming/blade_orichalcum_element"));
                 }
 
