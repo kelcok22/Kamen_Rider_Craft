@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.effects;
 import com.kelco.kamenridercraft.effects.beneficial.*;
 import com.kelco.kamenridercraft.effects.harmful.*;
 import com.kelco.kamenridercraft.effects.neutral.*;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -135,7 +135,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> CLIMBING = EFFECT.register("climbing",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xffffff)
-                    .addAttributeModifier(Attributes.CLIMBING, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.climbing"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.CLIMBING, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.climbing"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> RAM = EFFECT.register("ram",
             () -> new RamEffect(MobEffectCategory.BENEFICIAL, 0xff0015));
@@ -184,15 +184,15 @@ public class EffectCore {
 
     public static final Holder<MobEffect> FLAT = EFFECT.register("flat",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf7fada)
-                    .addAttributeModifier(Attributes.PLAYER_SIZE_Z, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.flat"), -0.96F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.PLAYER_SIZE_Z, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.flat"), -0.96F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> STRETCH = EFFECT.register("stretch",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0xf78d95)
-                    .addAttributeModifier(Attributes.PLAYER_SIZE_Y, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.stretch"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.PLAYER_SIZE_Y, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.stretch"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> WIDE = EFFECT.register("wide",
             () -> new BasicEffect(MobEffectCategory.NEUTRAL, 0x87ce87)
-                    .addAttributeModifier(Attributes.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.wide"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.PLAYER_SIZE_X, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.wide"), 0.5F, AttributeModifier.Operation.ADD_VALUE));
 
 
     public static final Holder<MobEffect> RETURN = EFFECT.register("return",
@@ -220,7 +220,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> CHRISTMAS = EFFECT.register("christmas",
             () -> new ChristmasEffect(MobEffectCategory.BENEFICIAL, 0x4eff00)
-                    .addAttributeModifier(Attributes.HAS_CHRISTMAS, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.christmas"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.HAS_CHRISTMAS, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.christmas"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
 
     public static final Holder<MobEffect> SLEEP = EFFECT.register("sleep",
@@ -231,7 +231,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> TIME = EFFECT.register("time",
             () -> new TimeEffect(MobEffectCategory.NEUTRAL, 0xffed9e)
-                    .addAttributeModifier(Attributes.HAS_TIME, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.HAS_TIME, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> UNSEALED = EFFECT.register("unsealed",
             () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
@@ -241,7 +241,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> BUGSTER = EFFECT.register("bug",
             () -> new BugEffect(MobEffectCategory.HARMFUL, 0xe8842e)
-                    .addAttributeModifier(Attributes.HAS_BUG, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.bug"), 1F, AttributeModifier.Operation.ADD_VALUE));
+                    .addAttributeModifier(KRCAttributes.HAS_BUG, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.bug"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> MIRROR_NOISES = EFFECT.register("mirror_noises",
             () -> new MirrorNoisesEffect(MobEffectCategory.HARMFUL, 0xc4c4c4));
@@ -268,7 +268,7 @@ public class EffectCore {
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
 
     public static final Holder<MobEffect> SD = EFFECT.register("sd", () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x77b72e)
-            .addAttributeModifier(Attributes.HEAD_SIZE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.sd"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+            .addAttributeModifier(KRCAttributes.HEAD_SIZE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.sd"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     public static final Holder<MobEffect> FLOWER = EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));
@@ -290,7 +290,7 @@ public class EffectCore {
 
     public static final Holder<MobEffect> MUTEKI = EFFECT.register("muteki",
             () -> new SaveEffect(MobEffectCategory.BENEFICIAL, 0xffce00)
-                    .addAttributeModifier(Attributes.MUTEKI, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.muteki")
+                    .addAttributeModifier(KRCAttributes.MUTEKI, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.muteki")
                             , 1F, AttributeModifier.Operation.ADD_VALUE));
 
 

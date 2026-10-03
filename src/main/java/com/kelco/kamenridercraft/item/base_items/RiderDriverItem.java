@@ -8,7 +8,7 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -133,7 +133,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public static boolean isTransforming(LivingEntity rider) {
         if (!(rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem))
             return false;
-        return Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() != 0;
+        return Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() != 0;
     }
 
 
@@ -166,7 +166,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 tag.putBoolean("Update_form", true);
             }
             if (isTransformed(rider)) {
-                tag.putDouble("render_type", getRenderType(stack, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()));
+                tag.putDouble("render_type", getRenderType(stack, rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()));
             }
             if (!isTransformed(rider)) {
                 tag.putDouble("render_type", 0);
@@ -175,7 +175,7 @@ public class RiderDriverItem extends RiderArmorItem {
             if (!rider.level().isClientSide()) {
                 for (int n = 0; n < numBaseFormItems; n++) {
                     RiderFormChangeItem form = getFormItem(stack, n + 1);
-                    form.transformationEffect(stack, rider, Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue());
+                    form.transformationEffect(stack, rider, Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue());
                 }
             }
         } else {
@@ -187,7 +187,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public void giveEffects(LivingEntity rider) {
         if (isTransformed(rider) && !rider.level().isClientSide()) {
             for (int n = 0; n < numBaseFormItems; n++) {
-                RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue());
+                RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue());
                 RiderFormChangeItem formOld = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1);
                 List<MobEffectInstance> potionEffectList = form.getPotionEffectList();
                 List<MobEffectInstance> potionEffectListAttackForm = formOld.getPotionEffectList();
@@ -304,10 +304,10 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putBoolean("Update_form", false);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
-            Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(getFormItem(itemStack, 1).getHenshinTick());
-            Objects.requireNonNull(rider.getAttribute(Attributes.CAPE_ROT)).setBaseValue(0);
-            Objects.requireNonNull(rider.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(0);
-            Objects.requireNonNull(rider.getAttribute(Attributes.BALL_ROT)).setBaseValue(0);
+            Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).setBaseValue(getFormItem(itemStack, 1).getHenshinTick());
+            Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(0);
+            Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(0);
+            Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(0);
         }
 
     }
@@ -379,8 +379,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
         double henshin_tick = getHenshinTick(itemStack, rider);
-        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
-        boolean sd = rider.getAttribute(Attributes.HEAD_SIZE).getValue() != 1 && getFormItem(itemStack, 1, henshin_tick).getSD() & SD;
+        boolean fly = rider.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1;
+        boolean sd = rider.getAttribute(KRCAttributes.HEAD_SIZE).getValue() != 1 && getFormItem(itemStack, 1, henshin_tick).getSD() & SD;
 
 
         if (equipmentSlot == EquipmentSlot.FEET) {
@@ -439,7 +439,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public ResourceLocation getModelResource(ItemStack itemStack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         double transformingTick = getHenshinTick(itemStack, rider);
-        if (getFormItem(itemStack, 1, transformingTick).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+        if (getFormItem(itemStack, 1, transformingTick).hasWingsIfFlying() && rider.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, transformingTick).getFlyingModel(this.riderName));
         }
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, transformingTick).getModel(this.riderName));
@@ -456,12 +456,12 @@ public class RiderDriverItem extends RiderArmorItem {
             return false;
         }
         boolean isGold = false;
-        if (getFormItem(stack, 1, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).checkGold()) {
+        if (getFormItem(stack, 1, rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()).checkGold()) {
             return true;
         }
         if (numBaseFormItems != 1) {
             for (int n = 2; n < numBaseFormItems; n++) {
-                if (getFormItem(stack, n, rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).checkGold()) {
+                if (getFormItem(stack, n, rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()).checkGold()) {
                     isGold = true;
                 }
             }
@@ -569,7 +569,7 @@ public class RiderDriverItem extends RiderArmorItem {
     }
 
     public double getHenshinTick(ItemStack itemStack, LivingEntity rider) {
-        double transformingTick = Objects.requireNonNull(rider.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue();
+        double transformingTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
         if (itemStack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             if (tag.getBoolean("Update_form")) {

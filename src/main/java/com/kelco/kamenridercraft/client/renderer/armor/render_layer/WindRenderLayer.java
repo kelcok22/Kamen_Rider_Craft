@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.client.renderer.armor.render_layer;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.model.base_model.EffectModel;
 import com.kelco.kamenridercraft.client.renderer.armor.RiderArmorRenderer;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
@@ -40,7 +40,7 @@ public class WindRenderLayer<T extends GeoAnimatable> extends GeoRenderLayer<T> 
                        MultiBufferSource bufferSource, @Nullable VertexConsumer buffer, float partialTick, int packedLight, int packedOverlay) {
         if (getRenderer() instanceof RiderArmorRenderer renderer2) {
             LivingEntity livingEntity = renderer2.GetEntity();
-            if (livingEntity != null && Objects.requireNonNull(livingEntity.getAttribute(Attributes.WIND)).getBaseValue() > 0) {
+            if (livingEntity != null && Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WIND)).getBaseValue() > 0) {
                 float f = (float) livingEntity.tickCount + partialTick;
                 renderType = RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,
                         "textures/render_layer/wind.png"), xOffset(f) % 1.0F, 0.0F);

@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
@@ -32,13 +32,13 @@ public class GenericRiderKicks {
         }
 
         if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 180) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() + 100);
+            user.getAttribute(KRCAttributes.ABILITY_METER).setBaseValue(user.getAttribute(KRCAttributes.ABILITY_METER).getValue() + 100);
             cancelAbility(user, "", 0);
             return;
         }
 
         if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
-            user.getAttribute(Attributes.ABILITY_METER).setBaseValue(user.getAttribute(Attributes.ABILITY_METER).getValue() + 100);
+            user.getAttribute(KRCAttributes.ABILITY_METER).setBaseValue(user.getAttribute(KRCAttributes.ABILITY_METER).getValue() + 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }

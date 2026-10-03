@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -20,7 +20,7 @@ import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.CHANGE_KICK_MODEL;
 
 public class WRiderKicks {
     public static void jokerMemoryKick(LivingEntity user) {
@@ -30,7 +30,7 @@ public class WRiderKicks {
             user.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, true, false));
 
             if (!user.onGround()) {
-                Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+                Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
                 cancelAbility(user, "", 0);
                 return;
             }
@@ -41,13 +41,13 @@ public class WRiderKicks {
         }
 
         if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 180) {
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             cancelAbility(user, "", 0);
             return;
         }
 
         if (user.getData(ABILITY_TICK) > 21 && user.onGround()) {
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }
@@ -70,7 +70,7 @@ public class WRiderKicks {
         switch (user.getData(ABILITY_TICK)) {
             case 20:
                 if (user.onGround()) {
-                    Objects.requireNonNull(user.getAttribute(Attributes.WIND)).setBaseValue(30);
+                    Objects.requireNonNull(user.getAttribute(KRCAttributes.WIND)).setBaseValue(30);
                     PacketDistributor.sendToAllPlayers(new AnimPayload("w.joker_extreme_kick_start", "attack", false, user.getStringUUID()));
                     Vec3 initialVec = user.getDeltaMovement();
                     Vec3 climbVec = new Vec3(initialVec.x, 1.45D, initialVec.z);

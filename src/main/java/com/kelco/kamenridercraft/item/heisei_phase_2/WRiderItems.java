@@ -11,7 +11,7 @@ import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -62,7 +62,7 @@ public class WRiderItems {
 						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BREEZE_IDLE_GROUND, SoundSource.PLAYERS, 1.0F, 1F);
 					}
 					if (tick==1d) {
-						player.getAttribute(Attributes.WIND).setBaseValue(30);
+						player.getAttribute(KRCAttributes.WIND).setBaseValue(30);
 						player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -834,8 +834,8 @@ public class WRiderItems {
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"accel",ACCEL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()) {
                 public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
                    // getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())
-                    if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()!=0){
-                        if(rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()<15)return "accel_yellow";
+                    if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()!=0){
+                        if(rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()<15)return "accel_yellow";
                     }
                     return super.getText(itemStack,equipmentSlot,rider,riderName);
                 }

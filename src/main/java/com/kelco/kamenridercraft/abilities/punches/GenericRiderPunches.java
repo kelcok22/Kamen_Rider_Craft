@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.punches;
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,7 +15,7 @@ import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.CHANGE_KICK_MODEL;
 
 public class GenericRiderPunches {
     public static void groundRiderPunch(LivingEntity user) {
@@ -63,7 +63,7 @@ public class GenericRiderPunches {
 
         if (user.getData(ABILITY_TICK) > 17 && user.onGround()) {
             cancelAbility(user, "default.land", 0);
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             if (user.fallDistance != 0) {
                 user.fallDistance = user.fallDistance * 0.9F;
             }

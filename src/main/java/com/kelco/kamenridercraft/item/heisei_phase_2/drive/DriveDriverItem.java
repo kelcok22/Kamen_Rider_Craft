@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.drive;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.inventory.ShiftCarHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.Holder;
@@ -86,7 +86,7 @@ public class DriveDriverItem extends RiderDriverItem {
 
     @Override
     public String getUnlimitedTextures(ItemStack itemstack, LivingEntity livingEntity, String riderName, int num) {
-        boolean fly = Objects.requireNonNull(livingEntity.getAttribute(Attributes.WINGS_OUT)).getBaseValue() == 1;
+        boolean fly = Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WINGS_OUT)).getBaseValue() == 1;
 
         if (Objects.equals(riderName, "mach") & getFormItem(itemstack, 2) == DriveRiderItems.BASIC_TIRE.get() && getFormItem(itemstack, 1) == DriveRiderItems.SHIFT_DEAD_HEAT_MACH.get()
                 || Objects.equals(riderName, "drive") & getFormItem(itemstack, 2) == DriveRiderItems.BASIC_TIRE.get() && getFormItem(itemstack, 1) == DriveRiderItems.SHIFT_DEAD_HEAT.get()) {

@@ -6,10 +6,9 @@ import com.kelco.kamenridercraft.entity.mobs.bosses.AlbinoJokerUndeadEntity;
 import com.kelco.kamenridercraft.entity.mobs.bosses.JokerUndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -36,7 +35,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "undead_human";
         if (getData(MOB_STATE).isEmpty() && !level().isClientSide() && getClass() == UndeadEntity.class) {
-            getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
+            getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
             setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
             getItemBySlot(EquipmentSlot.HEAD).enchant(enchantmentRegistryLookup.get(Enchantments.UNBREAKING).get(), 255);
             setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));

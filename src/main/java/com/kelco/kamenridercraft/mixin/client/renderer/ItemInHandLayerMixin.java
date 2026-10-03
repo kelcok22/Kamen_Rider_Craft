@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.mixin.client.renderer;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.model.ArmedModel;
@@ -25,7 +25,7 @@ public class ItemInHandLayerMixin {
     @Inject(method = "renderArmWithItem", at = @At("HEAD"), cancellable = true)
     public void renderArmWithItemMixin(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext, HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight, CallbackInfo ci) {
         if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem && riderDriverItem.isTransformed(livingEntity)) {
-            if (livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getValue() > 0) {
+            if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 0) {
                 boolean replaceRender = false;
                 ItemStack tango = new ItemStack(Items.APPLE);
                 if (riderDriverItem.riderName.equals("ooo")) {

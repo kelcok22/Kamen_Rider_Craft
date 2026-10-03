@@ -7,7 +7,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 
 import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
@@ -21,8 +21,8 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.WINGS_OUT;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.WINGS_OUT;
 
 public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
     public RiderArmorModel() {
@@ -81,13 +81,13 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
         Entity entity = state.getData(DataTickets.ENTITY);
 
         if (entity instanceof LivingEntity RIDER) {
-            double GetTransforming = RIDER.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue();
-            double GetBallOld = RIDER.getAttribute(Attributes.BALL_ROT_OLD).getBaseValue();
-            double GetBall = RIDER.getAttribute(Attributes.BALL_ROT).getBaseValue();
-            double GetWheelOld = RIDER.getAttribute(Attributes.WHEEL_ROT_OLD).getBaseValue();
-            double GetWheel = RIDER.getAttribute(Attributes.WHEEL_ROT).getBaseValue();
-            double GetCapeOld = RIDER.getAttribute(Attributes.CAPE_ROT_OLD).getBaseValue();
-            double GetCape = RIDER.getAttribute(Attributes.CAPE_ROT).getBaseValue();
+            double GetTransforming = RIDER.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue();
+            double GetBallOld = RIDER.getAttribute(KRCAttributes.BALL_ROT_OLD).getBaseValue();
+            double GetBall = RIDER.getAttribute(KRCAttributes.BALL_ROT).getBaseValue();
+            double GetWheelOld = RIDER.getAttribute(KRCAttributes.WHEEL_ROT_OLD).getBaseValue();
+            double GetWheel = RIDER.getAttribute(KRCAttributes.WHEEL_ROT).getBaseValue();
+            double GetCapeOld = RIDER.getAttribute(KRCAttributes.CAPE_ROT_OLD).getBaseValue();
+            double GetCape = RIDER.getAttribute(KRCAttributes.CAPE_ROT).getBaseValue();
 
             float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - state.getPartialTick());
             float wheel = (float) Mth.lerp(state.getPartialTick(), GetWheelOld, GetWheel);
@@ -109,9 +109,9 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
 
             GeoBone bipedHead = getAnimationProcessor().getBone("armorHead");
             if (bipedHead != null) {
-                bipedHead.setScaleX((float) RIDER.getAttribute(Attributes.HEAD_SIZE).getValue());
-                bipedHead.setScaleY((float) RIDER.getAttribute(Attributes.HEAD_SIZE).getValue());
-                bipedHead.setScaleZ((float) RIDER.getAttribute(Attributes.HEAD_SIZE).getValue());
+                bipedHead.setScaleX((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
+                bipedHead.setScaleY((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
+                bipedHead.setScaleZ((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
             }
 
             if (cape != null & Cape < 0) {

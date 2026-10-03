@@ -55,14 +55,13 @@ import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.sounds.ModMusic;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.RegisterItemProperties;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -107,12 +106,14 @@ public class KamenRiderCraftCore {
     public static List<Item> KUUGA_CHANGING_ITEM = new ArrayList<>();
     public static List<Item> SHIELD_ITEM = new ArrayList<>();
 
-    public KamenRiderCraftCore(IEventBus modEventBus, ModContainer modContainer, Dist dist) {
+    public KamenRiderCraftCore(ModContainer modContainer, IEventBus modEventBus, Dist dist) {
+        KRCAttributes.REGISTRY.register(modEventBus);
+        AttachmentTypes.REGISTRY.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(new ModClientEvents.ClientEvents());
         NeoForge.EVENT_BUS.register(new ModCommonEvents.CommonEvents());
-
         NeoForge.EVENT_BUS.register(this);
+
         ModSounds.register(modEventBus);
         ModMusic.register(modEventBus);
 
@@ -177,9 +178,6 @@ public class KamenRiderCraftCore {
         MobsCore.register(modEventBus);
         MobsCore.MOBLIST.register(modEventBus);
 
-        Attributes.ATTRIBUTES.register(modEventBus);
-        AttachmentTypes.register(modEventBus);
-        //AbilityAttachments.register(modEventBus);
         EffectCore.register(modEventBus);
 
         ModMenus.register(modEventBus);
@@ -204,7 +202,7 @@ public class KamenRiderCraftCore {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        CreativeTabRegistry.AddItemsToTabs(event);
+        CreativeTabRegistry.addItemsToTabs(event);
     }
 
     @SubscribeEvent
@@ -251,15 +249,15 @@ public class KamenRiderCraftCore {
         }
 
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
-            float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.HEAD_SIZE)).getValue();
+            float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(KRCAttributes.HEAD_SIZE)).getValue();
             model.getHead().xScale = sd;
             model.getHead().yScale  = sd;
             model.getHead().zScale  = sd;
         }
 
-        float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_X)).getValue();
-        float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Y)).getValue();
-        float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(Attributes.PLAYER_SIZE_Z)).getValue();
+        float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(KRCAttributes.PLAYER_SIZE_X)).getValue();
+        float sizeY = (float) Objects.requireNonNull(event.getEntity().getAttribute(KRCAttributes.PLAYER_SIZE_Y)).getValue();
+        float sizeZ = (float) Objects.requireNonNull(event.getEntity().getAttribute(KRCAttributes.PLAYER_SIZE_Z)).getValue();
         event.getPoseStack().scale(sizeX, sizeY, sizeZ);
     }
 
@@ -957,13 +955,13 @@ public class KamenRiderCraftCore {
         public static List<Block> RIDER_DECOR = new ArrayList<>();
 
 
-        public static List<Item> Misc_TAB_ITEM = new ArrayList<>();
+        public static List<Item> MISC_TAB_ITEMS = new ArrayList<>();
 
         public static void register(IEventBus eventBus) {
             CREATIVE_MODE_TABS.register(eventBus);
         }
 
-        public static void AddItemsToTabs(BuildCreativeModeTabContentsEvent event) {
+        public static void addItemsToTabs(BuildCreativeModeTabContentsEvent event) {
 
             if (event.getTab() == CreativeTabRegistry.IchigoTab.get()) {
                 for (int i = 0; i < CreativeTabRegistry.ICHIGO_TAB_ITEM.size(); ++i) {
@@ -2068,8 +2066,8 @@ public class KamenRiderCraftCore {
                 event.accept(MobsCore.BOOSTRIKER_BUFFA_MODE_SPAWN_EGG);
                 event.accept(MobsCore.CODE_ZEROIDER_SPAWN_EGG);
 
-                for (int i = 0; i < CreativeTabRegistry.Misc_TAB_ITEM.size(); ++i) {
-                    event.accept(CreativeTabRegistry.Misc_TAB_ITEM.get(i));
+                for (int i = 0; i < CreativeTabRegistry.MISC_TAB_ITEMS.size(); ++i) {
+                    event.accept(CreativeTabRegistry.MISC_TAB_ITEMS.get(i));
                 }
                 event.accept(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC);
                 event.accept(MusicDiscItems.TATAKAE_KAMEN_RIDER_V3_MUSIC_DISC);

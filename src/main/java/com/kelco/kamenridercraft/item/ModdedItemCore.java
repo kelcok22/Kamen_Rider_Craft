@@ -31,109 +31,109 @@ public class ModdedItemCore {
 
 
     public static final DeferredItem<Item> RIDER_CIRCUIT = ITEMS.register("rider_circuit",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> TAKOYAKI = ITEMS.register("takoyaki",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().build()))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> COFFEE = ITEMS.register("coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 1), 1.0F).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).build()))
-                    .setItemAnimation(UseAnim.DRINK).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> VIENNA_COFFEE = ITEMS.register("vienna_coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).alwaysEdible().build()))
-                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> PUDDING = ITEMS.register("pudding",
-            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> ICE_POP = ITEMS.register("icepop1",
-            () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> ICE_POP2 = ITEMS.register("icepop2",
-            () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> ICE_POP3 = ITEMS.register("icepop3",
-            () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.BEEF)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> TRANSFORM_ONE_SHOT = ITEMS.register("transform_one_shot",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 3), 1.0F).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).build()))
-                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> MILK_BOTTLE = ITEMS.register("milk_bottle",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 500, 4), 1.0F).build()))
-                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> PUZZLE_PIECE = ITEMS.register("puzzle_piece",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(0).fast().saturationModifier(0f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 40, 2), 1.0F).build()))
-                    .useHoverTex().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useHoverTex().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> TAIYAKI = ITEMS.register("taiyaki",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(1.2f).alwaysEdible().build()))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> DONUT = ITEMS.register("donut",
-            () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> MAYO = ITEMS.register("mayo",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
-                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .setItemAnimation(UseAnim.DRINK).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> MAYO_DONUT = ITEMS.register("mayo_donut",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(3).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 500, 2), 1.0F).build()))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> CANDY_WRAPPER = ITEMS.register("candy_wrapper",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> GUMMI_CANDY = ITEMS.register("gummi_candy",
-            () -> new BaseItem(new Item.Properties().food(Foods.SWEET_BERRIES)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.SWEET_BERRIES)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> POTATO_SNACKS = ITEMS.register("potato_snacks",
-            () -> new BaseItem(new Item.Properties().food(Foods.POTATO)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.POTATO)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> LOLLIPOP = ITEMS.register("lollipop",
-            () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar",
-            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> MARSHMALLOW = ITEMS.register("marshmallow",
-            () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.MELON_SLICE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> PANCAKE = ITEMS.register("pancake",
-            () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.BREAD)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> DANGO = ITEMS.register("dango",
-            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> CORN_SNACK = ITEMS.register("corn_snack",
-            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> BASE_SWORD = ITEMS.register("base_sword",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> BASE_BIKE = ITEMS.register("base_bike",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> GENERIC_RIDER_CASE = ITEMS.register("rider_case",
-            () -> new RiderCaseItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new RiderCaseItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "shocker_combatman", "shocker_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
-                    .hasSD().setShowFace().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .hasSD().setShowFace().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> CARD_WARRIOR_KAMEN_RIDER_MANGA = ITEMS.register("card_warrior_kamen_rider_manga",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM).keepItem());
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS).keepItem());
 
 
     public static final DeferredItem<Item> DRAGREDER = ITEMS.register("dragreder",
@@ -142,20 +142,20 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> STAGTORNADOR = ITEMS.register("stagtornador",
             () -> new RiderFormChangeItem(new Item.Properties(), "_stagtornador", "agito", "alter_ring_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> HERCULESPADER = ITEMS.register("herculespader",
             () -> new RiderFormChangeItem(new Item.Properties(), "_herculespader", "blade", "blay_buckle_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> DARKWING = ITEMS.register("darkwing",
@@ -164,7 +164,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> GREYWOLCH = ITEMS.register("greywolch",
@@ -172,7 +172,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false))
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> GRANDGOURAM = ITEMS.register("grandgouram",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_grand_gouram", "kuuga", "arcle_belt_r",
@@ -187,20 +187,20 @@ public class ModdedItemCore {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> EXBEETER = ITEMS.register("exbeeter",
             () -> new RiderFormChangeItem(new Item.Properties(), "_exbeeter", "kabuto", "kabuto_rider_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false))
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> CHAOSDILE = ITEMS.register("chaosdile",
             () -> new RiderFormChangeItem(new Item.Properties(), "_chaosdile", "kaixa", "kaixa_driver_belt_chaosdile",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)
-            ).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            ).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> LEATHERAIDER = ITEMS.register("leatheraider",
@@ -208,7 +208,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false))
-                    .isGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> FLARESALAMANDER = ITEMS.register("flaresalamander",
@@ -219,7 +219,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 4, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)
-            ).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            ).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> DRAGRANZER = ITEMS.register("dragranzer",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_dragranzer", "ryuki", "v_buckle_belt_ryuki_s",
@@ -229,7 +229,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> SCISSORBEETER = ITEMS.register("scissorbeeter",
@@ -238,7 +238,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> AKANETAKA = ITEMS.register("akanetaka",
@@ -248,7 +248,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .changeBeltModel("geo/belts/hibiki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .changeBeltModel("geo/belts/hibiki_belt.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> SHADOWMANTIS = ITEMS.register("shadowmantis",
@@ -257,7 +257,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> CYCLONEHOPPER = ITEMS.register("cyclonehopper",
@@ -272,7 +272,7 @@ public class ModdedItemCore {
                     if (enemy.isDeadOrDying() && enemy instanceof ShockerCombatmanEntity && !pLivingEntity.level().isClientSide())
                         enemy.spawnAtLocation(new ItemStack(MusicDiscItems.LETS_GO_RIDER_MUSIC_DISC.get()));
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     //Bakuen no senshi
 
@@ -308,7 +308,7 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)
-            ).isGlowing().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            ).isGlowing().addAlternative(BAKUEN_NO_SENSHI_RYUGA.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> JINRAI_NO_SENSHI_DARK_KABUTO = ITEMS.register("jinrai_no_senshi_dark_kabuto",
@@ -424,23 +424,23 @@ public class ModdedItemCore {
                         }
                     }
                 }
-            }.IsBeltGlowing().isGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            }.IsBeltGlowing().isGlowing().addAlternative(JINRAI_NO_SENSHI_BLADE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> GRANDGOURAM_ROD = ITEMS.register("grandgouram_rod",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS)
                     .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> HERCULESPADER_SWORD = ITEMS.register("herculespader_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS)
                     .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> DARKWING_SWORD = ITEMS.register("darkwing_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS)
                     .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> FLARESALAMANDER_SWORD = ITEMS.register("flaresalamander_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS)
                     .changeRepairItem(RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<SignItem> HELHEIM_SIGN_ITEM = ITEMS.register("helheim_sign_item",

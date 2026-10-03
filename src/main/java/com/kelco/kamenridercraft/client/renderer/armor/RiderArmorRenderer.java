@@ -7,7 +7,7 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.WindRenderLa
 import com.kelco.kamenridercraft.entity.vehicles.RidoronEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -55,7 +55,7 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         addRenderLayer(new AutoGlowingGeoLayer<>(this) {
             @Nullable
             protected RenderType getRenderType(RiderArmorItem animatable, @Nullable MultiBufferSource bufferSource) {
-                if (getCurrentEntity() instanceof LivingEntity rider && rider.invulnerableTime > 0 && rider.getAttribute(Attributes.MUTEKI).getValue() > 0) {
+                if (getCurrentEntity() instanceof LivingEntity rider && rider.invulnerableTime > 0 && rider.getAttribute(KRCAttributes.MUTEKI).getValue() > 0) {
                     return mutekiGlint();
                 }
                 return null;

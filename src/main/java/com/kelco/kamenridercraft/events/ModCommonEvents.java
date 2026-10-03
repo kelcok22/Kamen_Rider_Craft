@@ -35,7 +35,7 @@ import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.DimensionUtil;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -83,6 +83,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
+import net.neoforged.neoforge.event.entity.EntityAttributeModificationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
@@ -121,8 +122,8 @@ public class ModCommonEvents {
 
             if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
                 if (event.getBreaker() instanceof Player player) {
-                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() & Objects.requireNonNull(player.getAttribute(Attributes.TOJIMA)).getValue() < 100)
-                        Objects.requireNonNull(player.getAttribute(Attributes.TOJIMA)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.TOJIMA)).getValue() + 1);
+                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() & Objects.requireNonNull(player.getAttribute(KRCAttributes.TOJIMA)).getValue() < 100)
+                        Objects.requireNonNull(player.getAttribute(KRCAttributes.TOJIMA)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.TOJIMA)).getValue() + 1);
                 }
             }
 
@@ -141,7 +142,7 @@ public class ModCommonEvents {
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
             if (!event.getEntity().level().isClientSide()) {
-                if (event.getEntity().getAttribute(Attributes.TOJIMA).getValue() > 99 & event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem())
+                if (event.getEntity().getAttribute(KRCAttributes.TOJIMA).getValue() > 99 & event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem())
                     event.getEntity().addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 30, 3, false, false));
 
                 ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
@@ -184,23 +185,12 @@ public class ModCommonEvents {
         }
 
         @SubscribeEvent
-        public void addLivingDamageEvent(LivingEvent.LivingVisibilityEvent event) {
-
-            if (event.getLookingEntity() instanceof LivingEntity entity) {
-                //if (entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()!=0)entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).setBaseValue(entity.getAttribute(AttributeRegistry.IS_TRANSFORMING).getBaseValue()-0.2);
-            }
-        }
-
-
-        @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
-
             if (event.getEntity() instanceof LivingEntity player) {
-
-                if (player.getAttribute(Attributes.WIND).getBaseValue() > 0)
-                    player.getAttribute(Attributes.WIND).setBaseValue(player.getAttribute(Attributes.WIND).getBaseValue() - 1);
-                if (player.getAttribute(Attributes.WIND).getBaseValue() < 0)
-                    player.getAttribute(Attributes.WIND).setBaseValue(0);
+                if (player.getAttribute(KRCAttributes.WIND).getBaseValue() > 0)
+                    player.getAttribute(KRCAttributes.WIND).setBaseValue(player.getAttribute(KRCAttributes.WIND).getBaseValue() - 1);
+                if (player.getAttribute(KRCAttributes.WIND).getBaseValue() < 0)
+                    player.getAttribute(KRCAttributes.WIND).setBaseValue(0);
                 if (player.level().isClientSide()) {
                     float X = 0;
                     float Y = 0;
@@ -216,15 +206,15 @@ public class ModCommonEvents {
                             else if (look.z < 0 & player.getDeltaMovement().z < 0) Z = 1;
                             else Z = -1;
                         }
-                        player.getAttribute(Attributes.BALL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.BALL_ROT).getBaseValue());
-                        player.getAttribute(Attributes.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(Attributes.WHEEL_ROT).getBaseValue());
-                        player.getAttribute(Attributes.CAPE_ROT_OLD).setBaseValue(player.getAttribute(Attributes.CAPE_ROT).getBaseValue());
+                        player.getAttribute(KRCAttributes.BALL_ROT_OLD).setBaseValue(player.getAttribute(KRCAttributes.BALL_ROT).getBaseValue());
+                        player.getAttribute(KRCAttributes.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(KRCAttributes.WHEEL_ROT).getBaseValue());
+                        player.getAttribute(KRCAttributes.CAPE_ROT_OLD).setBaseValue(player.getAttribute(KRCAttributes.CAPE_ROT).getBaseValue());
 
                         if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 
                             if (belt.hasCape(player.getItemBySlot(EquipmentSlot.FEET))) {
 
-                                float cape = (float) player.getAttribute(Attributes.CAPE_ROT).getBaseValue();
+                                float cape = (float) player.getAttribute(KRCAttributes.CAPE_ROT).getBaseValue();
                                 float ball = 0;
                                 if (Z > 0 & cape > -0.7 & !player.isSwimming())
                                     cape = cape - 0.01f - (player.getSpeed() / 10);
@@ -245,14 +235,14 @@ public class ModCommonEvents {
                                 }
                                 //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2) cape = cape - 0.05f;
 
-                                player.getAttribute(Attributes.BALL_ROT).setBaseValue(ball);
-                                player.getAttribute(Attributes.CAPE_ROT).setBaseValue(cape);
+                                player.getAttribute(KRCAttributes.BALL_ROT).setBaseValue(ball);
+                                player.getAttribute(KRCAttributes.CAPE_ROT).setBaseValue(cape);
                             }
                             if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).getIsBike()) {
                                 float wheel = 0;
                                 if (Z > 0) wheel = -0.1f;
                                 if (Z < 0) wheel = 0.1f;
-                                Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).getBaseValue() + wheel);
+                                Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue() + wheel);
                                 float ball = 0;
                                 if (X > 0) {
                                     ball = 0.5f;
@@ -260,22 +250,22 @@ public class ModCommonEvents {
                                 if (X < 0) {
                                     ball = -0.5f;
                                 }
-                                Objects.requireNonNull(player.getAttribute(Attributes.BALL_ROT)).setBaseValue(ball);
-                                Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.WHEEL_ROT)).getBaseValue() + wheel);
+                                Objects.requireNonNull(player.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(ball);
+                                Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue() + wheel);
                             }
                         }
                     }
                 }
-                if (Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() != 0)
-                    Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() - 1);
-                if (Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).getBaseValue() <= 0)
-                    Objects.requireNonNull(player.getAttribute(Attributes.IS_TRANSFORMING)).setBaseValue(0);
+                if (Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() != 0)
+                    Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() - 1);
+                if (Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() <= 0)
+                    Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).setBaseValue(0);
             }
 
-            if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(Attributes.CLIMBING).getValue() != 0) {
+            if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(KRCAttributes.CLIMBING).getValue() != 0) {
                 if (entity.horizontalCollision) {
                     Vec3 initialVec = entity.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (Objects.requireNonNull(entity.getAttribute(Attributes.CLIMBING)).getValue()), initialVec.z);
+                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (Objects.requireNonNull(entity.getAttribute(KRCAttributes.CLIMBING)).getValue()), initialVec.z);
                     entity.setDeltaMovement(climbVec.scale(0.97D));
                 }
             }
@@ -475,8 +465,8 @@ public class ModCommonEvents {
         public void addLivingDamageEvent(LivingDamageEvent.Post event) {
             Entity sourceEntity = event.getSource().getEntity();
             if (sourceEntity instanceof LivingEntity livingEntity) {
-                AttributeInstance abilityMeter = livingEntity.getAttribute(Attributes.ABILITY_METER);
-                AttributeInstance maxAbilityMeter = livingEntity.getAttribute(Attributes.MAX_ABILITY_METER);
+                AttributeInstance abilityMeter = livingEntity.getAttribute(KRCAttributes.ABILITY_METER);
+                AttributeInstance maxAbilityMeter = livingEntity.getAttribute(KRCAttributes.MAX_ABILITY_METER);
                 if (livingEntity.getData(USED_ABILITY).isEmpty() && !(event.getSource().is(DamageTypes.ARROW) || event.getSource().is(DamageTypes.MOB_PROJECTILE) || event.getSource().is(DamageTypes.FIREBALL)) && abilityMeter.getValue() < maxAbilityMeter.getValue()) {
                     if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && driverItem.isTransformed(livingEntity)) {
                         abilityMeter.setBaseValue(abilityMeter.getValue() + 1 * driverItem.abilityMultiplier);

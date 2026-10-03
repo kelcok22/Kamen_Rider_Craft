@@ -11,7 +11,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
@@ -224,7 +224,7 @@ public class GamerDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
         if (slot == EquipmentSlot.HEAD) {
-            if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+            if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/" + getFormItem(itemstack, 2).getFlyingModel(this.riderName));
             } else if (Objects.equals(getFormItem(itemstack, 2).getModel(this.riderName), "default.geo.json")) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/bigger_rider_plusbelt.geo.json");

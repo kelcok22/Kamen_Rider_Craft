@@ -9,7 +9,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.blade.BlayBuckleItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.blade.GoldenSpiderItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -961,12 +961,12 @@ public class BladeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     RenderType renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/blade_orichalcum_element.png"));
-                    if (isTransformingFromBlank(itemStack, rider) && slot == EquipmentSlot.HEAD && rider.getAttribute(Attributes.IS_TRANSFORMING).getValue() < 15)
+                    if (isTransformingFromBlank(itemStack, rider) && slot == EquipmentSlot.HEAD && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 15)
                         layerInfo.add(new RenderLayerInfo(renderType, "transforming/blade_orichalcum_element"));
                 }
 
                 public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-                    boolean TIME = rider.getAttribute(Attributes.HAS_TIME).getValue() != 0;
+                    boolean TIME = rider.getAttribute(KRCAttributes.HAS_TIME).getValue() != 0;
                     if (equipmentSlot != EquipmentSlot.FEET && getFormItem(itemstack, 1) == CHANGE_BEETLE.asItem() & TIME) {
                         return "blade_yellowed";
                     } else return super.getText(itemstack, equipmentSlot, rider, riderName);

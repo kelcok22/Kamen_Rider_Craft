@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.abilities.AbilityUtil;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.base_entities.BaseProjectileEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -154,7 +154,7 @@ public class MiscAbilities {
                     }
                 } else if (user.hasEffect(EffectCore.BIG)) {
                     AbilityUtil.cancelAbility(user, "", 0);
-                    AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
+                    AttributeInstance abilityMeter = user.getAttribute(KRCAttributes.ABILITY_METER);
                     assert abilityMeter != null;
                     abilityMeter.setBaseValue(abilityMeter.getValue() + 30);
                 } else {
@@ -184,7 +184,7 @@ public class MiscAbilities {
                     }
                 } else if (user.hasEffect(EffectCore.SMALL)) {
                     AbilityUtil.cancelAbility(user, "", 0);
-                    AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
+                    AttributeInstance abilityMeter = user.getAttribute(KRCAttributes.ABILITY_METER);
                     assert abilityMeter != null;
                     abilityMeter.setBaseValue(abilityMeter.getValue() + 30);
                 } else {

@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -20,7 +21,7 @@ public class GammaCommandoEntity extends BaseHenchmenEntity {
     public GammaCommandoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "gamma_commandos";
-        getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
+        getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
     }
 
 

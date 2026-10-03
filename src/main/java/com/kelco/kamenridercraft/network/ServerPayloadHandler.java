@@ -6,7 +6,7 @@ import com.kelco.kamenridercraft.entity.mobs.summons.LegendarySummonEntity;
 import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.*;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -36,10 +36,10 @@ public class ServerPayloadHandler {
         } else {
             if (canPose(rider) && !(rider.walkAnimation.isMoving()) && !(Math.abs(rider.getX() - rider.xOld) > 0.05 || Math.abs(rider.getZ() - rider.zOld) > 0.05)) {
                 rider.setData(IS_POSING, true);
-                if (Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).getValue() < 1) {
-                    Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).setBaseValue(1);
+                if (Objects.requireNonNull(rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER)).getValue() < 1) {
+                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER)).setBaseValue(1);
                 } else {
-                    Objects.requireNonNull(rider.getAttribute(Attributes.POSE_MODEL_MODIFIER)).setBaseValue(0);
+                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER)).setBaseValue(0);
                 }
                 PacketDistributor.sendToAllPlayers(new StartPosePayload("", rider.getStringUUID()));
             }
@@ -98,16 +98,16 @@ public class ServerPayloadHandler {
 
         switch (data.key()) {
             case 1:
-                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE)).setBaseValue(1);
+                Objects.requireNonNull(player.getAttribute(KRCAttributes.HELD_ABILITY_KEY_ONE)).setBaseValue(1);
                 break;
             case 2:
-                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO)).setBaseValue(1);
+                Objects.requireNonNull(player.getAttribute(KRCAttributes.HELD_ABILITY_KEY_TWO)).setBaseValue(1);
                 break;
             case 3:
-                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE)).setBaseValue(0);
+                Objects.requireNonNull(player.getAttribute(KRCAttributes.HELD_ABILITY_KEY_ONE)).setBaseValue(0);
                 return;
             case 4:
-                Objects.requireNonNull(player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO)).setBaseValue(0);
+                Objects.requireNonNull(player.getAttribute(KRCAttributes.HELD_ABILITY_KEY_TWO)).setBaseValue(0);
                 return;
         }
 
@@ -116,7 +116,7 @@ public class ServerPayloadHandler {
                 || !driverItem.isTransformed(player) || !driverItem.riderName.toLowerCase().contains("ohma"));
 
         if (!player.level().isClientSide() && player.getData(USED_ABILITY).isEmpty() && player.getData(ABILITY_COOLDOWN) < 1
-                && (player.getAttribute(Attributes.ABILITY_METER).getValue() > 0) || !costMeter) {
+                && (player.getAttribute(KRCAttributes.ABILITY_METER).getValue() > 0) || !costMeter) {
             var abilityList = AbilityUtil.getAbility(player, data.key());
             if (!abilityList.isEmpty()) {
                 String ability = abilityList.getFirst().toLowerCase().substring(1);
@@ -128,7 +128,7 @@ public class ServerPayloadHandler {
     public static void handleClimbing(final ClimbCollisionPayload data, final IPayloadContext context) {
         if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
             Vec3 initialVec = entity.getDeltaMovement();
-            Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(Attributes.CLIMBING).getValue()), initialVec.z);
+            Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (entity.getAttribute(KRCAttributes.CLIMBING).getValue()), initialVec.z);
             entity.setDeltaMovement(climbVec.scale(0.97D));
             entity.hurtMarked = true;
         }

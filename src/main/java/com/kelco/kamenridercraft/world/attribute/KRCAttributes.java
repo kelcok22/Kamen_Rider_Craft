@@ -1,8 +1,7 @@
 package com.kelco.kamenridercraft.world.attribute;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
-import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.neoforged.bus.api.Event;
@@ -15,12 +14,11 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 @EventBusSubscriber(modid = KamenRiderCraftCore.MOD_ID)
-public class Attributes extends Event implements IModBusEvent {
 
-    public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(Registries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
+public class KRCAttributes extends Event implements IModBusEvent {
+    public static final DeferredRegister<Attribute> REGISTRY = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
-
-    public static final DeferredHolder<Attribute, Attribute> TOJIMA = ATTRIBUTES.register("tojima",
+    public static final DeferredHolder<Attribute, Attribute> TOJIMA = REGISTRY.register("tojima",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.tojima",
                     0,
@@ -29,28 +27,28 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> WIND = ATTRIBUTES.register("wind",
+    public static final DeferredHolder<Attribute, Attribute> WIND = REGISTRY.register("wind",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.wind",
                     false
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> MUTEKI = ATTRIBUTES.register("muteki",
+    public static final DeferredHolder<Attribute, Attribute> MUTEKI = REGISTRY.register("muteki",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.muteki",
                     false
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> WINGS_OUT = ATTRIBUTES.register("wing_out",
+    public static final DeferredHolder<Attribute, Attribute> WINGS_OUT = REGISTRY.register("wing_out",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.wings_out",
                     false
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> POSE_MODEL_MODIFIER = ATTRIBUTES.register("pose_model_modifier",
+    public static final DeferredHolder<Attribute, Attribute> POSE_MODEL_MODIFIER = REGISTRY.register("pose_model_modifier",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.pose_model_modifier",
                     false
@@ -58,7 +56,7 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> CHANGE_KICK_MODEL = ATTRIBUTES.register("change_kick_model",
+    public static final DeferredHolder<Attribute, Attribute> CHANGE_KICK_MODEL = REGISTRY.register("change_kick_model",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.change_kick_model",
                     false
@@ -66,7 +64,7 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT_OLD = ATTRIBUTES.register("cape_rotation_old",
+    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT_OLD = REGISTRY.register("cape_rotation_old",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation_old",
                     0,
@@ -76,7 +74,7 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT = ATTRIBUTES.register("cape_rotation",
+    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT = REGISTRY.register("cape_rotation",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation",
                     0,
@@ -85,7 +83,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT_OLD = ATTRIBUTES.register("wheel_rotation_old",
+    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT_OLD = REGISTRY.register("wheel_rotation_old",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wheel_rotation_old",
                     0,
@@ -95,7 +93,7 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT = ATTRIBUTES.register("wheel_rotation",
+    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT = REGISTRY.register("wheel_rotation",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wheel_rotation",
                     0,
@@ -104,7 +102,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> BALL_ROT_OLD = ATTRIBUTES.register("ball_rotation_old",
+    public static final DeferredHolder<Attribute, Attribute> BALL_ROT_OLD = REGISTRY.register("ball_rotation_old",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.cape_rotation_old",
                     0,
@@ -114,7 +112,7 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> BALL_ROT = ATTRIBUTES.register("ball_rotation",
+    public static final DeferredHolder<Attribute, Attribute> BALL_ROT = REGISTRY.register("ball_rotation",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.ball_rotation",
                     0,
@@ -124,7 +122,7 @@ public class Attributes extends Event implements IModBusEvent {
     );
 
 
-    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING = ATTRIBUTES.register("is_transforming",
+    public static final DeferredHolder<Attribute, Attribute> IS_TRANSFORMING = REGISTRY.register("is_transforming",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.is_transforming",
                     0,
@@ -133,7 +131,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> REINFORCEMENT_CHANCE = ATTRIBUTES.register("reinforcement_chance",
+    public static final DeferredHolder<Attribute, Attribute> REINFORCEMENT_CHANCE = REGISTRY.register("reinforcement_chance",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.reinforcement_chance",
                     0,
@@ -142,7 +140,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> CLIMBING = ATTRIBUTES.register("climbing",
+    public static final DeferredHolder<Attribute, Attribute> CLIMBING = REGISTRY.register("climbing",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.climbing",
                     0,
@@ -151,7 +149,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> HAS_TIME = ATTRIBUTES.register("has_time",
+    public static final DeferredHolder<Attribute, Attribute> HAS_TIME = REGISTRY.register("has_time",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.has_time",
                     0,
@@ -159,7 +157,7 @@ public class Attributes extends Event implements IModBusEvent {
                     1
             ).setSyncable(true)
     );
-    public static final DeferredHolder<Attribute, Attribute> HAS_BUG = ATTRIBUTES.register("has_bug",
+    public static final DeferredHolder<Attribute, Attribute> HAS_BUG = REGISTRY.register("has_bug",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.has_bug",
                     0,
@@ -167,7 +165,7 @@ public class Attributes extends Event implements IModBusEvent {
                     1
             ).setSyncable(true)
     );
-    public static final DeferredHolder<Attribute, Attribute> HAS_CHRISTMAS = ATTRIBUTES.register("has_christmas",
+    public static final DeferredHolder<Attribute, Attribute> HAS_CHRISTMAS = REGISTRY.register("has_christmas",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.has_christmas",
                     0,
@@ -175,7 +173,7 @@ public class Attributes extends Event implements IModBusEvent {
                     1
             ).setSyncable(true)
     );
-    public static final DeferredHolder<Attribute, Attribute> HEAD_SIZE = ATTRIBUTES.register("head_size",
+    public static final DeferredHolder<Attribute, Attribute> HEAD_SIZE = REGISTRY.register("head_size",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.head_size",
                     1,
@@ -184,7 +182,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_X = ATTRIBUTES.register("player_size_x",
+    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_X = REGISTRY.register("player_size_x",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.player_size",
                     1,
@@ -192,16 +190,7 @@ public class Attributes extends Event implements IModBusEvent {
                     255
             ).setSyncable(true)
     );
-    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_Y = ATTRIBUTES.register("player_size_y",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.player_size",
-                    1,
-                    0,
-                    255
-            ).setSyncable(true)
-    );
-
-    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_Z = ATTRIBUTES.register("player_size_z",
+    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_Y = REGISTRY.register("player_size_y",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.player_size",
                     1,
@@ -210,8 +199,17 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> PLAYER_SIZE_Z = REGISTRY.register("player_size_z",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.player_size",
+                    1,
+                    0,
+                    255
+            ).setSyncable(true)
+    );
 
-    public static final DeferredHolder<Attribute, Attribute> ABILITY_METER = ATTRIBUTES.register("ability_meter",
+
+    public static final DeferredHolder<Attribute, Attribute> ABILITY_METER = REGISTRY.register("ability_meter",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.ability_meter",
                     0,
@@ -220,7 +218,7 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> MAX_ABILITY_METER = ATTRIBUTES.register("max_ability_meter",
+    public static final DeferredHolder<Attribute, Attribute> MAX_ABILITY_METER = REGISTRY.register("max_ability_meter",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore._max_ability_meter",
                     300,
@@ -229,23 +227,23 @@ public class Attributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> HELD_ABILITY_KEY_ONE = ATTRIBUTES.register("held_ability_key_one",
+    public static final DeferredHolder<Attribute, Attribute> HELD_ABILITY_KEY_ONE = REGISTRY.register("held_ability_key_one",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.held_ability_key_one",
                     false
             ).setSyncable(true)
     );
 
-    public static final DeferredHolder<Attribute, Attribute> HELD_ABILITY_KEY_TWO = ATTRIBUTES.register("held_ability_key_two",
+    public static final DeferredHolder<Attribute, Attribute> HELD_ABILITY_KEY_TWO = REGISTRY.register("held_ability_key_two",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.held_ability_key_two",
                     false
             ).setSyncable(true)
     );
 
-
     @SubscribeEvent
     public static void modifyEntityAttributes(EntityAttributeModificationEvent eMod) {
-        eMod.getTypes().forEach(entity -> ATTRIBUTES.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
+        eMod.getTypes().forEach(entity ->
+                REGISTRY.getEntries().forEach(attribute -> eMod.add(entity, attribute)));
     }
 }

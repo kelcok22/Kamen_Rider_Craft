@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.ai.RangedSwordgunAttackGoal;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseBlasterItem;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
@@ -164,7 +164,7 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
 
     @Override
     public void onDamageTaken(DamageContainer damageContainer) {
-        float reinforcementChance = (float) this.getAttribute(Attributes.REINFORCEMENT_CHANCE).getValue();
+        float reinforcementChance = (float) this.getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).getValue();
         if (reinforcementChance > 0 && this.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() == Difficulty.HARD && serverLevel.getGameRules().getBoolean(GameRules.RULE_DOMOBSPAWNING)) {
             if ((this.getTarget() != null && !(this.getLastAttacker() instanceof Monster) && this.getLastAttacker() == this.getTarget()) && this.random.nextFloat() * 100 <= reinforcementChance) {
                 LivingEntity reinforcement = (LivingEntity) this.getType().create(this.level());
@@ -183,8 +183,8 @@ public abstract class BaseHenchmenEntity extends Monster implements RangedAttack
                     }
                 }
 
-                reinforcement.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(0);
-                this.getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
+                reinforcement.getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(0);
+                this.getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(reinforcementChance - 3);
                 if (reinforcement instanceof Monster monster) {
                     monster.setTarget(this.getLastAttacker());
                 }

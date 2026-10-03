@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.entity.vehicles;
 
 
 import com.kelco.kamenridercraft.network.payload.BikeMovePayload;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.BlockUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -82,7 +83,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
 
     public static AttributeSupplier.Builder setAttributes() {
         return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D)
-                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT, 0D);
+                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(KRCAttributes.WHEEL_ROT, 0D);
     }
 
     @Nullable
@@ -262,7 +263,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                     }
                 }
                 super.travel(new Vec3(0, pos.y, z));
-                PacketDistributor.sendToServer(new BikeMovePayload(this.getId(), this.yBodyRot, this.yHeadRot, (float) getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT).getBaseValue(), this.getSpeed()));
+                PacketDistributor.sendToServer(new BikeMovePayload(this.getId(), this.yBodyRot, this.yHeadRot, (float) getAttribute(KRCAttributes.WHEEL_ROT).getBaseValue(), this.getSpeed()));
             }
         }
     }
@@ -350,7 +351,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                 }
             }
 
-            getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT).setBaseValue(getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.WHEEL_ROT).getValue() + wheel);
+            getAttribute(KRCAttributes.WHEEL_ROT).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue() + wheel);
 
             assert entityData != null;
             EntityModelData newEntityData = new EntityModelData(false, false, entityData.netHeadYaw() + wheel, front_fork);

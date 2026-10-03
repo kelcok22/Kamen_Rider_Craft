@@ -8,7 +8,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
@@ -94,7 +94,7 @@ public class WDriverItem extends RiderDriverItem {
 
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
+        boolean fly = rider.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1;
         double henshinTick = getHenshinTick(itemstack,rider);
         if (equipmentSlot == EquipmentSlot.FEET) {
 

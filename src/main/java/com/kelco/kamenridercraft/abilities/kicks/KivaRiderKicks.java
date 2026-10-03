@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -20,7 +20,7 @@ import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.abilities.hit_handling.AbilityHitDetection.detectHit;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_COOLDOWN;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.ABILITY_TICK;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.CHANGE_KICK_MODEL;
 
 public class KivaRiderKicks {
     public static void kivaRiderKick(LivingEntity user) {
@@ -52,11 +52,11 @@ public class KivaRiderKicks {
             user.hurtMarked = true;
 
             cancelAbility(user, "kiva.land", 0);
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             return;
         } else if (user.getData(ABILITY_TICK) < 55 && !user.onGround()) {
             cancelAbility(user, "", 0);
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             return;
         }
 

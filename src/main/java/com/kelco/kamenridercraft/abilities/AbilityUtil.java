@@ -8,7 +8,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -24,12 +24,12 @@ import java.util.Objects;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
-import static com.kelco.kamenridercraft.world.attribute.Attributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.CHANGE_KICK_MODEL;
 
 public class AbilityUtil {
     public static void calculateAbility(LivingEntity user, String ability) {
         if (!user.level().isClientSide() && user.getData(ABILITY_TICK) == 0 && user.getData(ABILITY_COOLDOWN) == 0 && !user.isSleeping()) {
-            AttributeInstance abilityMeter = user.getAttribute(Attributes.ABILITY_METER);
+            AttributeInstance abilityMeter = user.getAttribute(KRCAttributes.ABILITY_METER);
             assert abilityMeter != null;
             boolean costMeter = (!(user instanceof Player player) || !player.isCreative()) && (!(user.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem) || !driverItem.isTransformed(user) || !driverItem.riderName.toLowerCase().contains("ohma"));
             switch (ability) {

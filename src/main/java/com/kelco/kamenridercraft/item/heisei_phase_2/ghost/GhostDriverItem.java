@@ -5,7 +5,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
@@ -65,7 +65,7 @@ public class GhostDriverItem extends RiderDriverItem {
 
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-        boolean fly = rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
+        boolean fly = rider.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1;
         if (equipmentSlot == EquipmentSlot.FEET) {
 
             return "belts/" + getFormItem(itemstack, 1).getBeltTex() + "_" + getFormItem(itemstack, 2).getFormName(false);
@@ -74,10 +74,10 @@ public class GhostDriverItem extends RiderDriverItem {
         else if (equipmentSlot == EquipmentSlot.HEAD) {
 
             if (isTransforming(rider)) return getFormItem(itemstack, 2).getFormName(fly) + "_parka_ghost";
-            if (getFormItem(itemstack, 2) == GhostRiderItems.ORE_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
-                    || getFormItem(itemstack, 2) == GhostRiderItems.SPECTER_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
-                    || getFormItem(itemstack, 2) == GhostRiderItems.NECROM_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
-                    || getFormItem(itemstack, 2) == GhostRiderItems.BOOST_DAMASHII.asItem() & rider.getAttribute(Attributes.POSE_MODEL_MODIFIER).getBaseValue() == 1)
+            if (getFormItem(itemstack, 2) == GhostRiderItems.ORE_DAMASHII.asItem() & rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
+                    || getFormItem(itemstack, 2) == GhostRiderItems.SPECTER_DAMASHII.asItem() & rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
+                    || getFormItem(itemstack, 2) == GhostRiderItems.NECROM_DAMASHII.asItem() & rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER).getBaseValue() == 1
+                    || getFormItem(itemstack, 2) == GhostRiderItems.BOOST_DAMASHII.asItem() & rider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER).getBaseValue() == 1)
                 return getFormItem(itemstack, 2).getFormName(fly) + "_hood";
             else return getFormItem(itemstack, 2).getFormName(fly);
         } else {
@@ -97,7 +97,7 @@ public class GhostDriverItem extends RiderDriverItem {
                 case HEAD -> {
                     return true;
                 }  case LEGS -> {
-                    return getFormItem(itemstack, 1,livingEntity.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
+                    return getFormItem(itemstack, 1,livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()).getIsGlowing();
                 }
             }
         }
@@ -125,7 +125,7 @@ public class GhostDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
 
         if (slot == EquipmentSlot.HEAD) {
-            if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+            if (getFormItem(itemstack, 2).hasWingsIfFlying() && rider.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 2).getFlyingModel(this.riderName));
             } else
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 2).getModel(this.riderName));

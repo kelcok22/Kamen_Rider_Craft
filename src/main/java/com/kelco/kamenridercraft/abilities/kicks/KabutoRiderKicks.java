@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -28,7 +28,7 @@ public class KabutoRiderKicks {
 
         if (!user.onGround() || user.isInWater() || user.getData(ABILITY_TICK) >= 90) {
             cancelAbility(user, "", 0);
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             return;
         }
 

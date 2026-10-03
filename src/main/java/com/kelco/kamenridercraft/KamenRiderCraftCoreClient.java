@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.client.KeyBindings;
 import com.kelco.kamenridercraft.network.payload.AbilityKeyPayload;
 import com.kelco.kamenridercraft.network.payload.BeltKeyPayload;
 import com.kelco.kamenridercraft.network.payload.PoseKeyPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationFactory;
 import com.zigythebird.playeranimcore.enums.PlayState;
@@ -51,8 +51,8 @@ public class KamenRiderCraftCoreClient {
     public static void clientTick(ClientTickEvent.Post event) {
         Player player = Minecraft.getInstance().player;
         if (player != null) {
-            AttributeInstance heldKeyOne = player.getAttribute(Attributes.HELD_ABILITY_KEY_ONE);
-            AttributeInstance heldKeyTwo = player.getAttribute(Attributes.HELD_ABILITY_KEY_TWO);
+            AttributeInstance heldKeyOne = player.getAttribute(KRCAttributes.HELD_ABILITY_KEY_ONE);
+            AttributeInstance heldKeyTwo = player.getAttribute(KRCAttributes.HELD_ABILITY_KEY_TWO);
 
             if (KeyBindings.INSTANCE.BeltKey.consumeClick())
                 PacketDistributor.sendToServer(new BeltKeyPayload(0));

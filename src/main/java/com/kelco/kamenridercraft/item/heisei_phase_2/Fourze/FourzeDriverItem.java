@@ -1,12 +1,11 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.Fourze;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -15,7 +14,6 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -142,7 +140,7 @@ public class FourzeDriverItem extends RiderDriverItem {
 
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity livingEntity, String riderName) {
-        boolean fly = livingEntity.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1;
+        boolean fly = livingEntity.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1;
         if (equipmentSlot == EquipmentSlot.FEET) {
             return "belts/" + getFormItem(itemstack, 5).getBeltTex();
         }
@@ -155,7 +153,7 @@ public class FourzeDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity livingEntity) {
 
         if (slot == EquipmentSlot.HEAD) {
-            if (getFormItem(itemstack, 1).hasWingsIfFlying() && livingEntity.getAttribute(Attributes.WINGS_OUT).getBaseValue() == 1) {
+            if (getFormItem(itemstack, 1).hasWingsIfFlying() && livingEntity.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1) {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 5).getFlyingModel(this.riderName));
             }
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 5).getModel(this.riderName));

@@ -4,7 +4,7 @@ import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -28,7 +28,7 @@ public class ShockerCombatmanEntity extends BaseHenchmenEntity {
         int day = localdate.getDayOfMonth();
         if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) NAME = "shocker_combatman_christmas";
         else NAME = "shocker_combatman";
-        getAttribute(Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
+        getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
         setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()));
         setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGOCHESTPLATE.get()));
         setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));

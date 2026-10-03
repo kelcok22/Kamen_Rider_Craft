@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.abilities.kicks;
 
 import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -41,7 +41,7 @@ public class WizardRiderKicks {
         }
 
         if ((user.isUnderWater() || user.isFallFlying()) || user.getData(ABILITY_TICK) >= 400 || (user.getData(ABILITY_TICK) <= 41 && user.fallDistance > 1.5)) {
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             cancelAbility(user, "", 0);
             return;
         }
@@ -63,11 +63,11 @@ public class WizardRiderKicks {
             user.hurtMarked = true;
 
             cancelAbility(user, "wizard.land", 0);
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             return;
         } else if (user.getData(ABILITY_TICK) < 20 && !user.onGround()) {
             cancelAbility(user, "", 0);
-            Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(Attributes.ABILITY_METER)).getValue() + 100);
+            Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).setBaseValue(Objects.requireNonNull(user.getAttribute(KRCAttributes.ABILITY_METER)).getValue() + 100);
             return;
         }
 

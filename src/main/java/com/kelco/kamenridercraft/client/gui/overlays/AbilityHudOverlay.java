@@ -2,7 +2,7 @@ package com.kelco.kamenridercraft.client.gui.overlays;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
@@ -54,8 +54,8 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
         int screenXCenter = (int) (guiGraphics.guiWidth() * 0.5);
         int screenYCenter = (int) (guiGraphics.guiHeight() * 0.5);
 
-        int maxActionMeter = (int) player.getAttribute(Attributes.MAX_ABILITY_METER).getValue();
-        int actionProgress = (int) player.getAttribute(Attributes.ABILITY_METER).getValue();
+        int maxActionMeter = (int) player.getAttribute(KRCAttributes.MAX_ABILITY_METER).getValue();
+        int actionProgress = (int) player.getAttribute(KRCAttributes.ABILITY_METER).getValue();
         int meterDisplay = (int) (49 * Math.min((actionProgress / (double) maxActionMeter), 1));
 
         RenderSystem.enableBlend();

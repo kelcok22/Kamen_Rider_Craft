@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -20,7 +21,7 @@ public class ChapEntity extends BaseHenchmenEntity {
     public ChapEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "chaps";
-        getAttribute(com.kelco.kamenridercraft.world.attribute.Attributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
+        getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
     }
 
     public void remove(RemovalReason reason) {

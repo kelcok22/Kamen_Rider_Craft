@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.attachments;
 
 import com.mojang.serialization.Codec;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
@@ -11,7 +10,7 @@ import java.util.function.Supplier;
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 
 public class AttachmentTypes {
-    private static final DeferredRegister<AttachmentType<?>> REGISTRY = DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, MOD_ID);
+    public static final DeferredRegister<AttachmentType<?>> REGISTRY = DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, MOD_ID);
 
     public static final Supplier<AttachmentType<Boolean>> IS_POSING = REGISTRY.register(
             "is_posing", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
@@ -52,6 +51,4 @@ public class AttachmentTypes {
     public static final Supplier<AttachmentType<Integer>> DELAY_ANIMATION_END_TICKS = REGISTRY.register(
             "delay_animation_end_ticks", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
     );
-
-    public static void register(IEventBus eventBus) {REGISTRY.register(eventBus);}
 }

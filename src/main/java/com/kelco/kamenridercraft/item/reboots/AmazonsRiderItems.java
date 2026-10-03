@@ -21,7 +21,7 @@ public class AmazonsRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> EMPTY_VIAL = ITEMS.register("empty_vial",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.Misc_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> AMAZON_CELL_VIAL = ITEMS.register("amazon_cell_vial",
             () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.AMAZONS_TAB_ITEM).addToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).changeKeptItem(EMPTY_VIAL.get()));

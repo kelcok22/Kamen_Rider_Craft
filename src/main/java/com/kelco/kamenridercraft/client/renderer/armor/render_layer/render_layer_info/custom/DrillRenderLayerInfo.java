@@ -15,9 +15,5 @@ public class DrillRenderLayerInfo extends RenderLayerInfo {
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
-        GeoBone bone = model.getBone("drillHead").orElse(null);
-        if (bone != null) {
-            bone.setRotY(bone.getRotY() + 1);
-        }
     }
 }

@@ -28,7 +28,8 @@ public class CaucasusEntity extends BaseHenchmenEntity {
     @Override
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
-        if (!level().isClientSide() && !getData(MOB_STATE).equals("hyper_clock_up") && source.getEntity() instanceof Player player && getHealth() < 50) {
+        if (!level().isClientSide() && !getData(MOB_STATE).equals("hyper_clock_up")
+                && source.getEntity() instanceof Player player && getHealth() < 50) {
             player.sendSystemMessage(Component.translatable("attack.kamenridercraft.hyper_clock_up"));
 
             getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(1);

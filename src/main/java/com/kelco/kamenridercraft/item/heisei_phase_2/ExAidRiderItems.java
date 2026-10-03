@@ -10,9 +10,8 @@ import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.*;
-import com.kelco.kamenridercraft.item.reiwa.MyThRiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.world.attribute.Attributes;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -51,7 +50,7 @@ public class ExAidRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                        if (slot==EquipmentSlot.HEAD&Objects.requireNonNull(rider.getAttribute(Attributes.HAS_CHRISTMAS)).getValue()!=0)layerInfo.add(new RenderLayerInfo("ex_aid_lv1_christmas","ex_aid_lv1_christmas"));
+                        if (slot==EquipmentSlot.HEAD&Objects.requireNonNull(rider.getAttribute(KRCAttributes.HAS_CHRISTMAS)).getValue()!=0)layerInfo.add(new RenderLayerInfo("ex_aid_lv1_christmas","ex_aid_lv1_christmas"));
                 }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -206,7 +205,7 @@ public class ExAidRiderItems {
                     new MobEffectInstance(EffectCore.NOTE, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if(itemStack.getItem()instanceof RiderDriverItem belt) {
-                        if (slot == EquipmentSlot.HEAD & Objects.requireNonNull(rider.getAttribute(Attributes.HAS_CHRISTMAS)).getValue()!=0& Objects.equals(belt.riderName, "brave"))
+                        if (slot == EquipmentSlot.HEAD & Objects.requireNonNull(rider.getAttribute(KRCAttributes.HAS_CHRISTMAS)).getValue()!=0& Objects.equals(belt.riderName, "brave"))
                             layerInfo.add(new RenderLayerInfo("beat_gamer_christmas", "beat_gamer_christmas"));
                     }
                 }
