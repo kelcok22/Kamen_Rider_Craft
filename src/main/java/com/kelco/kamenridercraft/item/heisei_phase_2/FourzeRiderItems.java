@@ -910,7 +910,7 @@ public class FourzeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
-                        layerInfo.add(new RenderLayerInfo("module/fourze_stronger_module", "module/fourze_stronger_module", "module/fourze_stronger_module_glowmask"));
+                        layerInfo.add(new StrongerModuleRenderLayerInfo("module/fourze_stronger_module", "module/fourze_stronger_module", "module/fourze_stronger_module_glowmask"));
                     }
                 }
             }.addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM));

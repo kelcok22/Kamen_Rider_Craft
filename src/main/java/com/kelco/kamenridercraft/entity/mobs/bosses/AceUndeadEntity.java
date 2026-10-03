@@ -48,7 +48,7 @@ public class AceUndeadEntity extends UndeadEntity {
                     break;
                 case 1:
                     setData(MOB_STATE, "stag");
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_STAG.get(), 1);
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_STAG_UNDEAD.get(), 1);
                     break;
                 case 2:
                     setData(MOB_STATE, "spider");
