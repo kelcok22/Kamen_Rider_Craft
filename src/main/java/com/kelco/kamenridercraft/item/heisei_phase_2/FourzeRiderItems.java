@@ -262,7 +262,7 @@ public class FourzeRiderItems {
 
 
     public static final DeferredItem<Item> NADESHIKO_ROCKET_ASTROSWITCH = ITEMS.register("rocket_nadeshiko_switch",
-            () -> new RiderFormChangeItem(new Item.Properties(), "_rocket", "nadeshiko", "nadeshiko_driver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "nadeshiko", "nadeshiko_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
@@ -273,7 +273,7 @@ public class FourzeRiderItems {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
                     }
                 }
-            }.isGlowing().setModelName("rocket_switch").useBasicModel());
+            }.changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().setModelName("rocket_switch").useBasicModel());
 
     public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
