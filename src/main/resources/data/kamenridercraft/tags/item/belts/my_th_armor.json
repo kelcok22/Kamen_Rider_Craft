@@ -1,9 +1,10 @@
 {
 	"values": [
 		"kamenridercraft:my_th_driver",
+		"kamenridercraft:my_th_driver_hammer_on_black",
 		"kamenridercraft:my_th_driver_hammer_on",
 		"kamenridercraft:my_th_driver_slash_on",
-		"kamenridercraft:my_th_driver_hammer_on_black",
+		"kamenridercraft:my_th_driver_shot_on",
 		"kamenridercraft:maou_driver"
 	]
 }
