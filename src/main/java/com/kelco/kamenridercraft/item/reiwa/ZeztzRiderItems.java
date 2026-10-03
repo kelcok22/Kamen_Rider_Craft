@@ -42,7 +42,7 @@ public class ZeztzRiderItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
-    public static final DeferredItem<Item> ZEZTZ_LOGO = ITEMS.register("zeztz_logo",() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zeztz")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+    public static final DeferredItem<Item> ZEZTZ_LOGO = ITEMS.register("zeztz_logo",() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zeztz")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_CAPSEM = ITEMS.register("code_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","knight_seventeen","knight_invoker_belt_seventeen",
@@ -59,7 +59,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_CAPSEM_SEVENTEEN = ITEMS.register("code_capsem_seventeen",
             () -> new RiderFormChangeItem(new Item.Properties(),"","lord_seventeen","lord_invoker_seventeen_belt",
@@ -100,7 +100,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,10).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,10).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TRANSFORM_CAPSEM = ITEMS.register("transform_capsem",
@@ -125,7 +125,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addToList(CapsemDropper.CAPSEM,5).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addToList(CapsemDropper.CAPSEM,5).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WING_CAPSEM = ITEMS.register("wing_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_physicam_wing","zeztz","zeztz_driver_belt_wing",
@@ -149,7 +149,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setSlotOneAbility("flight_boost", 1).setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setSlotOneAbility("flight_boost", 1).setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
@@ -173,7 +173,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MACHINERY_CAPSEM = ITEMS.register("machinery_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_machinery","zeztz","zeztz_driver_belt_technolom_machinery",
@@ -197,7 +197,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PROJECTION_CAPSEM_METAMATERIAM = ITEMS.register("projection_capsem_metamateriam",
             () -> new RiderFormChangeItem(new Item.Properties(),"","metamateriam","metamateriam_belt",
@@ -247,7 +247,7 @@ public class ZeztzRiderItems {
                         }
                     }
                 }
-            }}.setFormDelay(19).addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }}.setFormDelay(19).addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
@@ -272,7 +272,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BARRIER_CAPSEM = ITEMS.register("barrier_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
@@ -295,7 +295,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
@@ -318,7 +318,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).setSlotOneAbility("wonder_shrink", 1).setSlotTwoAbility("wonder_grow", 1).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).setSlotOneAbility("wonder_shrink", 1).setSlotTwoAbility("wonder_grow", 1).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GRAVITY_CAPSEM = ITEMS.register("gravity_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
@@ -341,7 +341,7 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PLASMA_CAPSEM_METAMATERIAM = ITEMS.register("plasma_capsem_metamateriam",
             () -> new RiderFormChangeItem(new Item.Properties(),"_inazuma_plasma","metamateriam","metamateriam_belt_inazuma_plasma",
@@ -391,7 +391,7 @@ public class ZeztzRiderItems {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(3).addAlternative(PLASMA_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).addAlternative(PLASMA_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BOOSTER_CAPSEM = ITEMS.register("booster_capsem",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_plasma_booster","zeztz","zeztz_driver_belt_plasma_booster",
@@ -428,7 +428,7 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 50, 0, 0, 0, 1);                    }}
-            }.setFormDelay(3).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DUALMARE_CAPSEM_ORDERM = ITEMS.register("dualmare_capsem_orderm",
             () -> new RiderFormChangeItem(new Item.Properties(),"_orderm","zeztz","zeztz_driver_belt_orderm",
@@ -490,7 +490,7 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 50, 0, 0, 0, 1);                    }}
-            }.setFormDelay(3).addSwitchForm(DUALMARE_CAPSEM_ORDERM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).addSwitchForm(DUALMARE_CAPSEM_ORDERM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> EXDREAMRISE_CAPSEM_DAWN = ITEMS.register("exdreamrise_capsem_dawn",
             () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_exdream",
@@ -542,7 +542,7 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 50, 0, 0, 0, 1);                    }}
-            }.setFormDelay(3).addAlternative(EXDREAMRISE_CAPSEM_DAWN.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).addAlternative(EXDREAMRISE_CAPSEM_DAWN.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_CAPSEM = ITEMS.register("agent_capsem",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_agendream","zeztz_exdream","zeztz_agendream_driver_belt",
@@ -572,7 +572,7 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 50, 0, 0, 0, 1);                    }}
-            }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> HEART_OF_IMPACT_CAPSEM_IMPACT = ITEMS.register("heart_of_impact_capsem_impact",
             () -> new RiderFormChangeItem(new Item.Properties(),"_impact","zeztz_exdream","zeztz_exdream_driver_belt_impact",
@@ -621,7 +621,7 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 2) RiderDriverItem.setFormItem(itemStack,HEART_OF_IMPACT_CAPSEM_IMPACT.get(), 1);
                 }
-                }.setFormDelay(189).setHenshinTick(200).addIncompatibleForm(HEART_OF_IMPACT_CAPSEM_IMPACT.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                }.setFormDelay(189).setHenshinTick(200).addIncompatibleForm(HEART_OF_IMPACT_CAPSEM_IMPACT.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_AND_CODE_ZEROIDER_CAPSEM = ITEMS.register("zeztz_and_code_zeroider_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_impact_zeroider","zeztz","zeztz_driver_belt_impact_zeroider",
@@ -642,7 +642,7 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME, player.getX(), player.getY() + 1, player.getZ(), 100, 0.5, 0.5, 0.5, 0.1);
 
                     }}
-            }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").needBaseForm().IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").needBaseForm().IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_CAPSEM = ITEMS.register("charge_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_charge","zeztz","zeztz_driver_belt_charge",
@@ -683,7 +683,7 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 20, 0, 0, 0, 1);                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ERASE_CAPSEM = ITEMS.register("erase_capsem",
@@ -704,7 +704,7 @@ public class ZeztzRiderItems {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(3d).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(3d).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> EXTRA_CAPSEM = ITEMS.register("extra_capsem",
@@ -728,7 +728,7 @@ public class ZeztzRiderItems {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         }}
-                }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> IMPACT_CAPSEM_SHOCK = ITEMS.register("impact_capsem_shock",
@@ -769,7 +769,7 @@ public class ZeztzRiderItems {
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).addAlternative(IMPACT_CAPSEM_SHOCK.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).addAlternative(IMPACT_CAPSEM_SHOCK.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PANIC_CAPSEM = ITEMS.register("panic_capsem",
@@ -788,7 +788,7 @@ public class ZeztzRiderItems {
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CLEAR_CAPSEM = ITEMS.register("clear_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","lord_three","lord_invoker_three_belt_clear",
@@ -814,7 +814,7 @@ public class ZeztzRiderItems {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_BOOSTER_CAPSEM = ITEMS.register("lord_booster_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_booster","lord_three","lord_invoker_three_belt_booster",
@@ -834,7 +834,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            } .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_ZERO = ITEMS.register("break_code_down_capsem_zero",
             () -> new RiderFormChangeItem(new Item.Properties(),"","lord_zero","blank",
@@ -937,7 +937,7 @@ public class ZeztzRiderItems {
                                 player.getX(), player.getY()+1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_FIVE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_FIVE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PUNISH_CAPSEM = ITEMS.register("punish_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_belt",
@@ -955,7 +955,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_CAPSEM = ITEMS.register("shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nox","nox_driver_belt",
@@ -972,7 +972,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_CAPSEM = ITEMS.register("gun_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_gun","nox","nox_driver_belt_gun",
@@ -986,7 +986,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("gatling", 1).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.setSlotOneAbility("gatling", 1).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WOLF_CAPSEM = ITEMS.register("wolf_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wolf","nox","nox_driver_belt_wolf",
@@ -1001,7 +1001,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM = ITEMS.register("midnight_shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_midnight_shadow","nox","nox_driver_belt_midnight_shadow",
@@ -1019,7 +1019,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_CAPSEM = ITEMS.register("catastrophe_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","catastrophe_gore_nightmare","catastrophe_gore_nightmare_belt",
@@ -1033,7 +1033,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_CAPSEM = ITEMS.register("chaos_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","oblivion_gore_nightmare","oblivion_gore_nightmare_belt",
@@ -1041,7 +1041,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
                     new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DARKNESS_CAPSEM_DRIVER = ITEMS.register("darkness_capsem_driver",
             () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz_darkness","zeztz_driver_belt_darkness",
@@ -1068,7 +1068,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").addSwitchForm(DARKNESS_CAPSEM_DRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").addSwitchForm(DARKNESS_CAPSEM_DRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DAYDREAM_CAPSEM = ITEMS.register("daydream_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","mugen","mugen_driver_belt",
@@ -1083,124 +1083,124 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.changeModel("mugen.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.changeModel("mugen.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> VOID_CAPSEM = ITEMS.register("void_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SONG_CAPSEM = ITEMS.register("song_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SWEETS_CAPSEM = ITEMS.register("sweets_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARADECO_CAPSEM = ITEMS.register("charadeco_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> TELEMAGA_CAPSEM = ITEMS.register("telemaga_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> FASHION_CAPSEM = ITEMS.register("fashion_capsem",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CAPSEM_DROPPER_CAPSEM = ITEMS.register("capsem_dropper_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GOCHIZO_CAPSEM = ITEMS.register("gochizo_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> IMPACT_CAPSEM_GOLD = ITEMS.register("impact_capsem_gold",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> TRANSFORM_CAPSEM_GOLD = ITEMS.register("transform_capsem_gold",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WING_CAPSEM_GOLD = ITEMS.register("wing_capsem_gold",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_CAPSEM = ITEMS.register("kuuga_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_CAPSEM = ITEMS.register("agito_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_CAPSEM = ITEMS.register("ryuki_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_CAPSEM = ITEMS.register("faiz_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_CAPSEM = ITEMS.register("blade_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_CAPSEM = ITEMS.register("hibiki_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_CAPSEM = ITEMS.register("kabuto_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_CAPSEM = ITEMS.register("den_o_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_CAPSEM = ITEMS.register("kiva_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_CAPSEM = ITEMS.register("decade_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> W_CAPSEM = ITEMS.register("w_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> OOO_CAPSEM = ITEMS.register("ooo_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_CAPSEM = ITEMS.register("fourze_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WIZARD_CAPSEM = ITEMS.register("wizard_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_CAPSEM = ITEMS.register("gaim_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_CAPSEM = ITEMS.register("drive_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GHOST_CAPSEM = ITEMS.register("ghost_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> EX_AID_CAPSEM = ITEMS.register("ex_aid_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BUILD_CAPSEM = ITEMS.register("build_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZI_O_CAPSEM = ITEMS.register("zi_o_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZERO_ONE_CAPSEM = ITEMS.register("zero_one_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SABER_CAPSEM = ITEMS.register("saber_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> REVICE_CAPSEM = ITEMS.register("revice_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GEATS_CAPSEM = ITEMS.register("geats_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GOTCHARD_CAPSEM = ITEMS.register("gotchard_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item>LEGEND_CAPSEM = ITEMS.register("legend_capsem",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_SOMNIA_CAPSEM = ITEMS.register("code_somnia_capsem",
-            () -> new SomniaCapsemItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new SomniaCapsemItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NIGHTMARE_CAPSEM = ITEMS.register("nightmare_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nightmare","nightmare_belt",
@@ -1246,20 +1246,20 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"","code_zero","blank",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
-                    .changeModel("zero.geo.json").addSwitchForm(ZEROIDER_CORE_BIKE.get()).isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .changeModel("zero.geo.json").addSwitchForm(ZEROIDER_CORE_BIKE.get()).isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_exdream_driver_buckle",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CAPSEM_CYLINDER = ITEMS.register("capsem_cylinder",
-            () -> new CapsemCylinderItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new CapsemCylinderItem().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_HELMET = ITEMS.register("zeztz_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
     public static final DeferredItem<Item> ZEZTZ_CHESTPLATE = ITEMS.register("zeztz_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
     public static final DeferredItem<Item> ZEZTZ_LEGGINGS = ITEMS.register("zeztz_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
@@ -1278,35 +1278,35 @@ public class ZeztzRiderItems {
                         return false;
                     }
                 }
-            }.useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            }.useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DAWN_BELT = ITEMS.register("dawn_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dawn", PUNISH_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER = ITEMS.register("knight_invoker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THREE = ITEMS.register("lord_invoker_three",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_three", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_FIVE = ITEMS.register("lord_invoker_five",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_five", SHOCK_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_SIX = ITEMS.register("lord_invoker_six",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_six", PANIC_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_ZERO = ITEMS.register("lord_invoker_zero",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_zero", BREAK_CODE_DOWN_CAPSEM_ZERO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties()){
@@ -1317,177 +1317,177 @@ public class ZeztzRiderItems {
                     if (slot == EquipmentSlot.FEET) layerInfo.add(new RenderLayerInfo("belts/lord_invoker_movie_belt", "zeztz_riderbelt","belts/lord_invoker_movie_belt_glowmask"));
                     }
                 }
-            } .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            } .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_TWO = ITEMS.register("lord_invoker_two",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_two", BREAK_CODE_DOWN_CAPSEM_TWO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> METAMATERIAM_BELT = ITEMS.register("metamateriam_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metamateriam", PROJECTION_CAPSEM_METAMATERIAM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_DARKNESS_BELT = ITEMS.register("zeztz_darkness_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_darkness", DARKNESS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MUGEN_DRIVER = ITEMS.register("mugen_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mugen", DAYDREAM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight_seventeen", CODE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_SEVENTEEN = ITEMS.register("lord_invoker_seventeen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_seventeen", CODE_CAPSEM_SEVENTEEN,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THIRTEEN = ITEMS.register("lord_invoker_thirteen",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_thirteen", CLEAR_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BABY_NIGHTMARE_BELT = ITEMS.register("baby_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"baby_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("baby_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("baby_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_NIGHTMARE_BELT = ITEMS.register("gun_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gun_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("gun_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("gun_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WOLF_NIGHTMARE_BELT = ITEMS.register("wolf_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wolf_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("wolf_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("wolf_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CAT_NIGHTMARE_BELT = ITEMS.register("cat_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cat_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_NIGHTMARE_BELT = ITEMS.register("shadow_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("shadow_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().overrideBeltText("shadow_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_GORE_NIGHTMARE_BELT = ITEMS.register("catastrophe_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"catastrophe_gore_nightmare", CATASTROPHE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PHANTOM_GORE_NIGHTMARE_BELT = ITEMS.register("phantom_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"phantom_gore_nightmare", PHANTOM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> OBLIVION_GORE_NIGHTMARE_BELT = ITEMS.register("oblivion_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oblivion_gore_nightmare", CHAOS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEROIDER_CONTROL = ITEMS.register("zeroider_control",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"code_zero", ZEROIDER_CORE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_GUN = ITEMS.register("breakam_zeztzer_gun",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_AXE = ITEMS.register("breakam_zeztzer_axe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -3.0F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -3.0F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SCYTHE = ITEMS.register("breakam_zeztzer_scythe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.0F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> INAZUMA_BLASTER = ITEMS.register("inazuma_blaster",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> INAZUMA_BLASTER_GREATSWORD = ITEMS.register("inazuma_blaster_greatsword",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> TRIPLE_ZEZTZER = ITEMS.register("triple_zeztzer",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BUSTER = ITEMS.register("breakam_buster",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_TAIKEN = ITEMS.register("breakam_dawn_taiken",
-            () -> new BreakamDawnTaikenItem(KRCTiers.SPLITTING_SWORD, 11, -2.2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BreakamDawnTaikenItem(KRCTiers.SPLITTING_SWORD, 11, -2.2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_L = ITEMS.register("breakam_dawn_souken_l",
-            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_SOUKEN_R = ITEMS.register("breakam_dawn_souken_r",
-            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BreakamDawnSoukenItem(KRCTiers.SPLIT_SWORD, 6, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_BLADE = ITEMS.register("breakam_breaker_blade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_KNUCKLE = ITEMS.register("breakam_breaker_knuckle",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -3.0F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -3.0F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_BREAKER_SHOOT = ITEMS.register("breakam_breaker_shoot",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> ZEZTZ_HORSE_ARMOR = ITEMS.register("zeztz_horse_armor",
             () -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
-                    false, new Item.Properties().stacksTo(1),"zeztz_horse_armor").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    false, new Item.Properties().stacksTo(1),"zeztz_horse_armor").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MUGEN_SWORD = ITEMS.register("mugen_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> LADY_GAUNTLET = ITEMS.register("lady_gauntlet",
-            () -> new LadyGauntletItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new LadyGauntletItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> INSOMNIA_VISOR = ITEMS.register("insomnia_visor",
             () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(), "zero_dream", "zero_dream").isGlowing()
                     .setEffect(new MobEffectInstance(EffectCore.INSOMNIA, 40, 0, true, false))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_PHONE = ITEMS.register("zeztz_phone",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_ZERO = ITEMS.register("agent_number_ring_zero",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_ONE = ITEMS.register("agent_number_ring_one",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_TWO = ITEMS.register("agent_number_ring_two",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_THREE = ITEMS.register("agent_number_ring_three",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_FOUR = ITEMS.register("agent_number_ring_four",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_FIVE = ITEMS.register("agent_number_ring_five",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_SIX = ITEMS.register("agent_number_ring_six",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_SEVEN = ITEMS.register("agent_number_ring_seven",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_NUMBER_RING_EIGHT = ITEMS.register("agent_number_ring_eight",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> THIRTEEN_EAR_CUFF = ITEMS.register("thirteen_ear_cuff",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SEVENTEEN_NECKLACE = ITEMS.register("seventeen_necklace",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZEZTZ_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

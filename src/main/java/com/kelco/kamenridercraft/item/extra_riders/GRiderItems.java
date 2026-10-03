@@ -21,7 +21,7 @@ public class GRiderItems {
 
 
     public static final DeferredItem<Item> G_LOGO = ITEMS.register("g_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/g")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/g")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM));
 
     public static final DeferredItem<Item> GORO_WINE_BOTTLE = ITEMS.register("goro_wine_bottle",
             () -> new RiderFormChangeItem(new Item.Properties(),"","kamen_rider_g","g_belt",
@@ -35,20 +35,20 @@ public class GRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM).keepItem());
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM).keepItem());
 
     public static final DeferredItem<Item> GHELMET = ITEMS.register("ghead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM));
     public static final DeferredItem<Item> GCHESTPLATE = ITEMS.register("gtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM));
     public static final DeferredItem<Item> GLEGGINGS = ITEMS.register("glegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM));
 
     public static final DeferredItem<Item> G_BELT = ITEMS.register("g_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_rider_g",GORO_WINE_BOTTLE ,GHELMET,GCHESTPLATE,GLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_rider_g",GORO_WINE_BOTTLE ,GHELMET,GCHESTPLATE,GLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM));
 
     public static final DeferredItem<Item> G_SOMMELIER_KNIFE = ITEMS.register("g_sommelier_knife",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.G_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.G_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

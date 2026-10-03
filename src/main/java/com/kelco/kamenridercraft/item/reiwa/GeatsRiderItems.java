@@ -36,15 +36,15 @@ public class GeatsRiderItems {
 			,"da_paan","keirou","letter","lopo","hakubi","turbon","brali","gya_go","seeker","butchi","geats_revi","geats_vice","groovy"};
 
 	public static final DeferredItem<Item> GEATS_LOGO = ITEMS.register("geats_logo",
-			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/geats")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/geats")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIKKURI_MISSION_BOX = ITEMS.register("bikkuri_mission_box",
-			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/bikkuri_mission_box")).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/bikkuri_mission_box")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 	public static final DeferredItem<Item> HATENA_MISSION_BOX = ITEMS.register("hatena_mission_box",
-			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/hatena_mission_box")).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/hatena_mission_box")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPPORT_MISSION_BOX_TYPE_GEATS = ITEMS.register("gigant_mission_box",
-			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gigant_mission_box")).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gigant_mission_box")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANK_CORE_ID = ITEMS.register("blank_rider_core_id",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","keibi_riders","desire_driver_belt_keibi",
@@ -55,7 +55,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addCompatibilityList(new String[] {"the_end_riders"}).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addCompatibilityList(new String[] {"the_end_riders"}).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID = ITEMS.register("geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","geats","desire_driver_belt_geats",
@@ -66,10 +66,10 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("geats").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("geats").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_ONENESS_CORE_ID = ITEMS.register("geats_oneness_rider_core_id",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> TYCOON_CORE_ID = ITEMS.register("tycoon_rider_core_id",
@@ -81,7 +81,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("tycoon").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("tycoon").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NA_GO_CORE_ID = ITEMS.register("na_go_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","na_go","desire_driver_belt_na_go",
@@ -92,7 +92,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("na_go").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("na_go").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID = ITEMS.register("buffa_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","buffa","desire_driver_belt_buffa",
@@ -103,7 +103,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("buffa").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUFFA_CORE_ID_CRACKED = ITEMS.register("buffa_rider_core_id_cracked",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_jyamato","buffa","desire_driver_belt_buffa",
@@ -116,7 +116,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("buffa").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).isGold().hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("buffa").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).isGold().hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PUNKJACK_CORE_ID = ITEMS.register("punkjack_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","punkjack","desire_driver_belt_punkjack",
@@ -128,7 +128,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("punkjack").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("punkjack").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NUGE_SPARROW_CORE_ID = ITEMS.register("nudge_sparrow_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","nudge_sparrow","desire_driver_belt_nadge_sparrow",
@@ -139,7 +139,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("nadge_sparrow").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("nadge_sparrow").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIROWE_CORE_ID = ITEMS.register("shirowe_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","shirowe","desire_driver_belt_shirowe",
@@ -150,7 +150,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("shirowe").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("shirowe").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINPEN_CORE_ID = ITEMS.register("ginpen_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","ginpen","desire_driver_belt_ginpen",
@@ -161,7 +161,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("ginpen").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("ginpen").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> MARY_CORE_ID = ITEMS.register("mary_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","mary","desire_driver_belt_mary",
@@ -172,7 +172,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("mary").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("mary").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DA_PAAN_CORE_ID = ITEMS.register("da_paan_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","da_paan","desire_driver_belt_da_paan",
@@ -183,7 +183,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("da_paan").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("da_paan").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEIROU_CORE_ID = ITEMS.register("keirou_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","keirou","desire_driver_belt_keilow",
@@ -194,7 +194,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("keilow").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("keilow").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LETTER_CORE_ID = ITEMS.register("letter_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","letter","desire_driver_belt_letter",
@@ -206,7 +206,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("letter").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("letter").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LOPO_CORE_ID = ITEMS.register("lopo_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","lopo","desire_driver_belt_lopo",
@@ -217,7 +217,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("lopo").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("lopo").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GROOVY_CORE_ID = ITEMS.register("groovy_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","groovy","desire_driver_belt_groovy",
@@ -228,7 +228,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("groovy").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("groovy").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAKUBI_CORE_ID = ITEMS.register("hakubi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","hakubi","desire_driver_belt_ginpen",
@@ -239,7 +239,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("hakubi").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("hakubi").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TURBON_CORE_ID = ITEMS.register("turbon_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","turbon","desire_driver_belt_turbon",
@@ -250,7 +250,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("turbon").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("turbon").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BRALI_CORE_ID = ITEMS.register("brali_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","brali","desire_driver_belt_brali",
@@ -261,7 +261,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("brali").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("brali").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GYA_GO_CORE_ID = ITEMS.register("gya_go_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","gya_go","desire_driver_belt_gya_go",
@@ -272,7 +272,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("gya_go").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).isGold().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("gya_go").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).isGold().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SEEKER_CORE_ID = ITEMS.register("seeker_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","seeker","desire_driver_belt_seeker",
@@ -283,7 +283,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("seeker").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("seeker").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUTCHI_CORE_ID = ITEMS.register("butchi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","butchi","desire_driver_belt_da_paan",
@@ -294,7 +294,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("butchi").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("butchi").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> REVI_CORE_ID = ITEMS.register("revi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","geats_revi","desire_driver_belt_revi",
@@ -305,7 +305,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("revi").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("revi").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> VICE_CORE_ID = ITEMS.register("vice_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","geats_vice","desire_driver_belt_vice",
@@ -316,7 +316,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("vice").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("vice").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHUTA_CORE_ID = ITEMS.register("chuta_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","gm","desire_driver_belt_keibi",
@@ -327,7 +327,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("blank").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GESSY_CORE_ID = ITEMS.register("gesshi_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","gm_chirami","desire_driver_belt_keibi",
@@ -338,7 +338,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("blank").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> X_GEATS_CORE_ID = ITEMS.register("x_geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),"","x_geats","desire_driver_belt_vice",
@@ -349,7 +349,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").hasStaticWings().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_CORE_ID = ITEMS.register("dooms_geats_rider_core_id",
 			() -> new RiderCoreIDItem(new Item.Properties().rarity(Rarity.RARE),"","dooms_geats","desire_driver_belt_dooms_geats",
@@ -360,7 +360,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("xgeats").isGold().hasStaticWings().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("xgeats").isGold().hasStaticWings().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DISCORE_ID = ITEMS.register("discore_id",
 			() -> new RiderCoreIDItem(new Item.Properties(),"","jyamato","desire_driver_belt_jyamato",
@@ -371,32 +371,32 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setRiderLogo("blank").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setRiderLogo("blank").alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TOGECHI_CORE_ID = ITEMS.register("togechi_rider_core_id",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LANCER_CORE_ID = ITEMS.register("lancer_rider_core_id",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARUN_CORE_ID = ITEMS.register("garun_rider_core_id",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> TOGECHI_CORE_ID_CRACKED = ITEMS.register("togechi_rider_core_id_cracked",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LETTER_CORE_ID_CRACKED = ITEMS.register("letter_rider_core_id_cracked",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GINPEN_CORE_ID_CRACKED = ITEMS.register("ginpen_rider_core_id_cracked",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIROWE_CORE_ID_CRACKED = ITEMS.register("shirowe_rider_core_id_cracked",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NUDGESPARROW_CORE_ID_CRACKED = ITEMS.register("nudge_sparrow_rider_core_id_cracked",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MAGNUM_RAISE_BUCKLE = ITEMS.register("magnum_raise_buckle",
@@ -409,7 +409,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_RAISE_BUCKLE = ITEMS.register("boost_raise_buckle",
 			() -> new BoostBuckleItem(new Item.Properties(),"_boost","geats","desire_driver_belt_geats",
@@ -420,7 +420,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZOMBIE_RAISE_BUCKLE = ITEMS.register("zombie_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zombie","geats","desire_driver_belt_geats",
@@ -432,7 +432,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_zombie.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_zombie.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NINJA_RAISE_BUCKLE = ITEMS.register("ninja_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ninja","geats","desire_driver_belt_geats",
@@ -445,7 +445,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> MONSTER_RAISE_BUCKLE = ITEMS.register("monster_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_monster","geats","desire_driver_belt_geats",
@@ -457,7 +457,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAT_RAISE_BUCKLE = ITEMS.register("beat_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_beat","geats","desire_driver_belt_geats",
@@ -470,7 +470,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> POWERED_BUILDER_RAISE_BUCKLE_GEATS = ITEMS.register("powered_builder_raise_buckle_geats",
@@ -499,7 +499,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addAlternative(POWERED_BUILDER_RAISE_BUCKLE_GEATS.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addAlternative(POWERED_BUILDER_RAISE_BUCKLE_GEATS.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FANTASY_RAISE_BUCKLE_GYA_GO = ITEMS.register("fantasy_raise_buckle_gya_go",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fantasy_gya_go","geats","desire_driver_belt_geats",
@@ -525,7 +525,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addAlternative(FANTASY_RAISE_BUCKLE_GYA_GO.get()).isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addAlternative(FANTASY_RAISE_BUCKLE_GYA_GO.get()).isGold().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHARK_RAISE_BUCKLE = ITEMS.register("shark_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shark","geats","desire_driver_belt_geats",
@@ -536,7 +536,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("fish", 1).changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.setSlotOneAbility("fish", 1).changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> MAGNUM_RAISE_BUCKLE_FEVER = ITEMS.register("magnum_raise_buckle_fever",
@@ -705,7 +705,7 @@ public class GeatsRiderItems {
 
 
 	public static final DeferredItem<Item> FEVER_SLOT_RAISE_BUCKLE = ITEMS.register("fever_slot_raise_buckle",
-			() -> new FeverSlotItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new FeverSlotItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static List<Item> NEED_ITEM_COMMAND_TWIN= new ArrayList<>();
@@ -720,7 +720,7 @@ public class GeatsRiderItems {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(new String[] {"buffa","tycoon"}
-			).addToList(NEED_ITEM_COMMAND_TWIN).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			).addToList(NEED_ITEM_COMMAND_TWIN).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> COMMAND_TWIN_BUCKLE_CANNON_l = ITEMS.register("command_twin_buckle_cannon_l",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_cannon","geats","desire_driver_belt_geats",
@@ -753,7 +753,7 @@ public class GeatsRiderItems {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}.changeSlot(2).addCompatibilityList(new String[] {"buffa","tycoon"})
-					.addNeedForm(COMMAND_TWIN_BUCKLE_JET.get(), 3).addAlternative(COMMAND_TWIN_BUCKLE_CANNON_l.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					.addNeedForm(COMMAND_TWIN_BUCKLE_JET.get(), 3).addAlternative(COMMAND_TWIN_BUCKLE_CANNON_l.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BOOST_MKII_RAISE_BUCKLE = ITEMS.register("boost_mkii_raise_buckle",
@@ -772,7 +772,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).addCompatibilityList(new String[] {"tycoon"}).alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).addCompatibilityList(new String[] {"tycoon"}).alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNITE_GRIP = ITEMS.register("unite_grip",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_laser_boost","geats","desire_driver_belt_geats",
@@ -787,7 +787,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).addNeedForm(BOOST_MKII_RAISE_BUCKLE.get(), 2).alsoChange3rdSlot(BOOST_MKII_RAISE_BUCKLE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).addNeedForm(BOOST_MKII_RAISE_BUCKLE.get(), 2).alsoChange3rdSlot(BOOST_MKII_RAISE_BUCKLE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_MKIII_RAISE_BUCKLE = ITEMS.register("boost_mkiii_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_boost_mkiii","geats","desire_driver_belt_geats",
@@ -806,7 +806,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ONENESS_RAISE_BUCKLE = ITEMS.register("oneness_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC),"_oneness","geats","desire_driver_belt_geats",
@@ -846,7 +846,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).addNeedItem(GEATS_ONENESS_CORE_ID.get()).addNeedForm(BOOST_MKIII_RAISE_BUCKLE.get(), 3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).addNeedItem(GEATS_ONENESS_CORE_ID.get()).addNeedForm(BOOST_MKIII_RAISE_BUCKLE.get(), 3).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> XGEATS_RAISE_BUCKLE = ITEMS.register("x_geats_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_x_geats","x_geats","desire_driver_belt_vice",
@@ -868,7 +868,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_RAISE_BUCKLE = ITEMS.register("dooms_geats_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_dooms_geats","dooms_geats","desire_driver_belt_dooms_geats",
@@ -887,7 +887,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).isGold().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_SWORD_RAISE_BUCKLE = ITEMS.register("bujin_sword_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_bujin_sword","tycoon","desire_driver_belt_geats",
@@ -905,7 +905,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.changeSlot(3).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(3).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PLOSION_RAGE_RAISE_BUCKLE = ITEMS.register("plosion_rage_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_plosion_rage_2","buffa","desire_driver_belt_geats",
@@ -923,7 +923,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 20, 0, 0, 0, 1);
 				}
-			}.changeSlot(3).alsoChange1stSlot(BUFFA_CORE_ID.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(3).alsoChange1stSlot(BUFFA_CORE_ID.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> JYAMATO_BUCKLE_BUFFA = ITEMS.register("jyamato_buckle_buffa",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_jyamato","buffa","desire_driver_belt_geats",
@@ -949,7 +949,7 @@ public class GeatsRiderItems {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}.changeSlot(2).setOffhandSlot(3).addAlternative(JYAMATO_BUCKLE_BUFFA.get()).addCompatibilityList(new String[] {"gm_chirami"}
-			).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	//Armed
 	public static final DeferredItem<Item> ARROW_RAISE_BUCKLE = ITEMS.register("arrow_raise_buckle",
@@ -962,7 +962,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_RAISE_BUCKLE = ITEMS.register("water_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_water","geats","desire_driver_belt_geats",
@@ -973,7 +973,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> HAMMER_RAISE_BUCKLE = ITEMS.register("hammer_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hammer","geats","desire_driver_belt_geats",
@@ -984,7 +984,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHIELD_RAISE_BUCKLE = ITEMS.register("shield_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shield","geats","desire_driver_belt_geats",
@@ -995,7 +995,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHAIN_ARRAY_RAISE_BUCKLE = ITEMS.register("chain_array_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_chain_array","geats","desire_driver_belt_geats",
@@ -1007,7 +1007,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CLAW_RAISE_BUCKLE = ITEMS.register("claw_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_claw","geats","desire_driver_belt_geats",
@@ -1018,7 +1018,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRILL_RAISE_BUCKLE = ITEMS.register("drill_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_drill","geats","desire_driver_belt_geats",
@@ -1029,7 +1029,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_drill.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_drill.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROPELLER_RAISE_BUCKLE = ITEMS.register("propeller_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_propeller","geats","desire_driver_belt_geats",
@@ -1041,7 +1041,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGANT_CONTAINER_BUCKLE = ITEMS.register("gigant_container_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gigant_container","geats","desire_driver_belt_geats",
@@ -1052,43 +1052,43 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGANT_SWORD_BUCKLE = ITEMS.register("gigant_sword_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGANT_HAMMER_BUCKLE = ITEMS.register("gigant_hammer_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGANT_BLASTER_BUCKLE = ITEMS.register("gigant_blaster_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X_RAISE_BUCKLE = ITEMS.register("magnum_shooter_40x_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> NINJA_DUELER_RAISE_BUCKLE = ITEMS.register("ninja_dueler_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER_RAISE_BUCKLE = ITEMS.register("zombie_breaker_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAT_AXE_RAISE_BUCKLE = ITEMS.register("beat_axe_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_BUCKLE = ITEMS.register("christmas_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLD_HAMMER_RAISE_BUCKLE = ITEMS.register("golden_hammer_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SILVER_ARROW_RAISE_BUCKLE = ITEMS.register("silver_arrow_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> CLEAR_ARROW_RAISE_BUCKLE = ITEMS.register("clear_arrow_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAT_RAISE_BUCKLE_THEME = ITEMS.register("beat_raise_buckle_theme",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SHINOBI_RAISE_BUCKLE = ITEMS.register("shinobi_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_shinobi","geats","desire_driver_belt_geats",
@@ -1101,7 +1101,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	// Legend Rider
 	public static final DeferredItem<Item> REVICE_DRIVER_RAISE_BUCKLE_GEATS = ITEMS.register("revice_driver_raise_buckle_geats",
@@ -1138,7 +1138,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_VICE.get()).changeSlot(2).alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.addAlternative(REVICE_DRIVER_RAISE_BUCKLE_VICE.get()).changeSlot(2).alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> TWO_SI_DRIVER_RAISE_BUCKLE = ITEMS.register("two_si_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_live","geats","desire_driver_belt_geats",
@@ -1151,7 +1151,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIBERA_DRIVER_RAISE_BUCKLE = ITEMS.register("libera_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_jeanne","geats","desire_driver_belt_geats",
@@ -1165,7 +1165,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEMONS_DRIVER_RAISE_BUCKLE = ITEMS.register("demons_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_demons","geats","desire_driver_belt_geats",
@@ -1179,7 +1179,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SEIKEN_SWORDRIVER_RAISE_BUCKLE = ITEMS.register("seiken_swordriver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_saber","geats","desire_driver_belt_geats",
@@ -1191,7 +1191,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.2);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERO_ONE_DRIVER_RAISE_BUCKLE = ITEMS.register("zero_one_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zero_one","geats","desire_driver_belt_geats",
@@ -1202,7 +1202,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 5, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZIKUU_DRIVER_RAISE_BUCKLE = ITEMS.register("zikuu_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_zi_o","geats","desire_driver_belt_geats",
@@ -1215,7 +1215,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUILD_DRIVER_RAISE_BUCKLE = ITEMS.register("build_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_build","geats","desire_driver_belt_geats",
@@ -1228,7 +1228,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAMER_DRIVER_RAISE_BUCKLE = ITEMS.register("gamer_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ex_aid","geats","desire_driver_belt_geats",
@@ -1240,7 +1240,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GHOST_DRIVER_RAISE_BUCKLE = ITEMS.register("ghost_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ghost","geats","desire_driver_belt_geats",
@@ -1251,7 +1251,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVE_DRIVER_RAISE_BUCKLE = ITEMS.register("drive_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_drive","geats","desire_driver_belt_geats",
@@ -1264,7 +1264,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SENGOKU_DRIVER_RAISE_BUCKLE = ITEMS.register("sengoku_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gaim","geats","desire_driver_belt_geats",
@@ -1276,7 +1276,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARDRIVER_RAISE_BUCKLE = ITEMS.register("wizardriver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_wizard","geats","desire_driver_belt_geats",
@@ -1288,7 +1288,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_DRIVER_RAISE_BUCKLE = ITEMS.register("fourze_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fourze","geats","desire_driver_belt_geats",
@@ -1301,7 +1301,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_DRIVER_RAISE_BUCKLE = ITEMS.register("ooo_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ooo","geats","desire_driver_belt_geats",
@@ -1314,7 +1314,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUBLE_DRIVER_RAISE_BUCKLE = ITEMS.register("double_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_w","geats","desire_driver_belt_geats",
@@ -1327,7 +1327,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECA_DRIVER_RAISE_BUCKLE = ITEMS.register("deca_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_decade","geats","desire_driver_belt_geats",
@@ -1340,7 +1340,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVAT_BELT_RAISE_BUCKLE = ITEMS.register("kivat_belt_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kiva","geats","desire_driver_belt_geats",
@@ -1353,7 +1353,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_BELT_RAISE_BUCKLE = ITEMS.register("den_o_belt_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_den_o","geats","desire_driver_belt_geats",
@@ -1365,7 +1365,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_ZECTOR_RAISE_BUCKLE = ITEMS.register("kabuto_zector_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kabuto","geats","desire_driver_belt_geats",
@@ -1377,7 +1377,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ONGEKIKO_KAENTSUZUMI_RAISE_BUCKLE = ITEMS.register("ongekiko_kaentsuzumi_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hibiki","geats","desire_driver_belt_geats",
@@ -1390,7 +1390,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLAY_BUCKLE_RAISE_BUCKLE = ITEMS.register("blay_buckle_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_blade","geats","desire_driver_belt_geats",
@@ -1402,7 +1402,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_DRIVER_RAISE_BUCKLE = ITEMS.register("faiz_driver_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_faiz","geats","desire_driver_belt_geats",
@@ -1415,7 +1415,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> V_BUCKLE_RAISE_BUCKLE = ITEMS.register("v_buckle_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ryuki","geats","desire_driver_belt_geats",
@@ -1428,7 +1428,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ALTER_RING_RAISE_BUCKLE = ITEMS.register("alter_ring_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_agito","geats","desire_driver_belt_geats",
@@ -1440,7 +1440,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ARCLE_RAISE_BUCKLE = ITEMS.register("arcle_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kuuga","geats","desire_driver_belt_geats",
@@ -1451,7 +1451,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_STONE_RAISE_BUCKLE = ITEMS.register("king_stone_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_black","geats","desire_driver_belt_geats",
@@ -1464,7 +1464,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUBLE_TYPHOON_RAISE_BUCKLE = ITEMS.register("double_typhoon_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_v3","geats","desire_driver_belt_geats",
@@ -1479,7 +1479,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item>TYPHOON_RAISE_BUCKLE = ITEMS.register("typhoon_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ichigo","geats","desire_driver_belt_geats",
@@ -1493,7 +1493,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> OUJA_V_BUCKLE_RAISE_BUCKLE = ITEMS.register("ouja_v_buckle_raise_buckle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_ouja","geats","desire_driver_belt_geats",
@@ -1505,10 +1505,10 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_ouja.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.changeSlot(2).setOffhandSlot(3).changeModel("geats_rider_ouja.geo.json").addCompatibilityList(BaseDesireDriverUsers).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KING_OHGER_RAISE_BUCKLE = ITEMS.register("king_ohger_raise_buckle",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZIIN_RAISE_RISER_CARD = ITEMS.register("ziin_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","ziin","raise_riser_belt",
@@ -1523,7 +1523,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_RAISE_RISER_CARD = ITEMS.register("beroba_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","beroba","raise_riser_belt",
@@ -1538,7 +1538,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEROBA_BLACK_RAISE_RISER_CARD = ITEMS.register("beroba_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_premium","beroba","raise_riser_belt_premium",
@@ -1552,7 +1552,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEKERA_RAISE_RISER_CARD = ITEMS.register("kekera_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","kekera","blank",
@@ -1567,7 +1567,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KEKERA_BLACK_RAISE_RISER_CARD = ITEMS.register("kekera_black_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_premium","kekera","raise_riser_belt_premium_kekera",
@@ -1581,7 +1581,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KYUUN_RAISE_RISER_CARD = ITEMS.register("kyuun_raise_riser_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","kyuun","blank",
@@ -1596,7 +1596,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GLARE = ITEMS.register("providence_card_glare",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","glare","vision_driver_belt",
@@ -1612,7 +1612,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GLARE2 = ITEMS.register("providence_card_glare2",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","glare2","vision_driver_belt",
@@ -1628,7 +1628,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_GAZER = ITEMS.register("providence_card_gazer",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gazer","vision_driver_belt_gazer",
@@ -1643,7 +1643,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.isGold().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.isGold().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> PROVIDENCE_CARD_ZIINGAZER = ITEMS.register("providence_card_ziingazer",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","ziingazer","laser_raise_driver_belt",
@@ -1660,7 +1660,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			} 			.isGlowing().IsBeltGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			} 			.isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SIRIUS_CARD_OMEGA = ITEMS.register("sirius_card_omega",
@@ -1692,7 +1692,7 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.isGold().addSwitchForm(SIRIUS_CARD_OMEGA.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.isGold().addSwitchForm(SIRIUS_CARD_OMEGA.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> SIRIUS_CARD_GAZER_ZERO = ITEMS.register("sirius_card_gazer_zero",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","gazer_zero","zillion_driver_gazer_zero_belt",
@@ -1708,321 +1708,321 @@ public class GeatsRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			}.IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 
 	public static final DeferredItem<Item> GEATS_HELMET = ITEMS.register("geatshead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 	public static final DeferredItem<Item> GEATS_CHESTPLATE = ITEMS.register("geatstroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 	public static final DeferredItem<Item> GEATS_LEGGINGS = ITEMS.register("geatslegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GEATS = ITEMS.register("desire_driver_geats",
 			() -> new DesireDriverItem(ArmorMaterials.DIAMOND,"geats",GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_TYCOON = ITEMS.register("desire_driver_tycoon",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"tycoon",TYCOON_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_NA_GO = ITEMS.register("desire_driver_na_go",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"na_go",NA_GO_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_BUFFA = ITEMS.register("desire_driver_buffa",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"buffa",BUFFA_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_PUNKJACK = ITEMS.register("desire_driver_punkjack",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"punkjack",PUNKJACK_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_NUGE_SPARROW = ITEMS.register("desire_driver_nudge_sparrow",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"nudge_sparrow",NUGE_SPARROW_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_SHIROWE = ITEMS.register("desire_driver_shirowe",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"shirowe",SHIROWE_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GINPEN = ITEMS.register("desire_driver_ginpen",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"ginpen",GINPEN_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_MARY = ITEMS.register("desire_driver_mary",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"mary",MARY_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_DA_PAAN = ITEMS.register("desire_driver_da_paan",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"da_paan",DA_PAAN_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_KEIROU = ITEMS.register("desire_driver_keirou",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"keirou",KEIROU_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_LETTER = ITEMS.register("desire_driver_letter",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"letter",LETTER_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_LOPO = ITEMS.register("desire_driver_lopo",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"lopo",LOPO_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GROOVY = ITEMS.register("desire_driver_groovy",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"groovy",GROOVY_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_HAKUBI = ITEMS.register("desire_driver_hakubi",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"hakubi",HAKUBI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_TURBON = ITEMS.register("desire_driver_turbon",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"turbon",TURBON_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_BRALI = ITEMS.register("desire_driver_brali",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"brali",BRALI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GYA_GO = ITEMS.register("desire_driver_gya_go",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"gya_go",GYA_GO_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_SEEKER = ITEMS.register("desire_driver_seeker",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"seeker",SEEKER_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_BUTCHI = ITEMS.register("desire_driver_butchi",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"butchi",BUTCHI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_REVI = ITEMS.register("desire_driver_revi",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"geats_revi",REVI_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_VICE = ITEMS.register("desire_driver_vice",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"geats_vice",VICE_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_JYAMATO = ITEMS.register("desire_driver_jyamato",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"jyamato",DISCORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM,JYAMATO_BUCKLE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM,JYAMATO_BUCKLE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GM= ITEMS.register("desire_driver_gm",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"gm",CHUTA_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_GM_CHIRAMI= ITEMS.register("desire_driver_gm_chirami",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"gm_chirami",GESSY_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_KEIDI_RIDER = ITEMS.register("desire_driver_keibi_riders",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"keibi_riders",BLANK_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_THE_END_RIDER = ITEMS.register("desire_driver_the_end_riders",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"the_end_riders",BLANK_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties())
-					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addExtraBaseFormItems(ModdedItemCore.BLANK_FORM, ModdedItemCore.BLANK_FORM).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_X_GEATS = ITEMS.register("desire_driver_x_geats",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"x_geats",X_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().addExtraBaseFormItems(XGEATS_RAISE_BUCKLE,XGEATS_RAISE_BUCKLE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.hideBeltFormInfo().addExtraBaseFormItems(XGEATS_RAISE_BUCKLE,XGEATS_RAISE_BUCKLE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DESIRE_DRIVER_DOOMS_GEATS = ITEMS.register("desire_driver_dooms_geats",
 			() -> new  DesireDriverItem(ArmorMaterials.DIAMOND,"dooms_geats",DOOMS_GEATS_CORE_ID ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-					.hideBeltFormInfo().addExtraBaseFormItems(DOOMS_GEATS_RAISE_BUCKLE,DOOMS_GEATS_RAISE_BUCKLE).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.hideBeltFormInfo().addExtraBaseFormItems(DOOMS_GEATS_RAISE_BUCKLE,DOOMS_GEATS_RAISE_BUCKLE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_ZIIN = ITEMS.register("raise_riser_belt_ziin",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziin",ZIIN_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_KEKERA = ITEMS.register("raise_riser_belt_kekera",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kekera",KEKERA_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_KYUUN = ITEMS.register("raise_riser_belt_kyuun",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kyuun",KYUUN_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_RISER_BELT_BEROBA = ITEMS.register("raise_riser_belt_beroba",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beroba",BEROBA_RAISE_RISER_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GLARE = ITEMS.register("vision_driver_glare",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"glare",PROVIDENCE_CARD_GLARE ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GLARE2 = ITEMS.register("vision_driver_glare2",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"glare2",PROVIDENCE_CARD_GLARE ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GAZER = ITEMS.register("vision_driver_gazer",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer",PROVIDENCE_CARD_GAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_GAZER_SUEL = ITEMS.register("vision_driver_gazer_suel",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_suel",PROVIDENCE_CARD_GAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> VISION_DRIVER_JYAMATO_GAZER = ITEMS.register("vision_driver_jyamato_glare",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jyamato_glare",PROVIDENCE_CARD_GAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZILLION_DRIVER = ITEMS.register("zillion_driver",
 			() -> new ZillionDriverItem(ArmorMaterials.DIAMOND,"regad",SIRIUS_CARD ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZILLION_DRIVER_GAZER_ZERO = ITEMS.register("zillion_driver_gazer_zero",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gazer_zero",SIRIUS_CARD_GAZER_ZERO ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RISE_DRIVER_GAZER_ZERO = ITEMS.register("laser_raise_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ziingazer",PROVIDENCE_CARD_ZIINGAZER ,GEATS_HELMET, GEATS_CHESTPLATE,GEATS_LEGGINGS,
-					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X = ITEMS.register("magnum_shooter_40x",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> MAGNUM_SHOOTER_40X_RIFLE = ITEMS.register("magnum_shooter_40x_rifle",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER = ITEMS.register("zombie_breaker",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> ZOMBIE_BREAKER_POISON_CHARGE = ITEMS.register("zombie_breaker_poison_charge",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BEAT_AXE = ITEMS.register("beat_axe",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER_TWIN_BLADE_MODE = ITEMS.register("ninja_dueler_twin_blade_mode",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER_TWIN_BLADE_MODE2 = ITEMS.register("ninja_dueler_twin_blade_mode2",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> NINJA_DUELER = ITEMS.register("ninja_dueler",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISING_SWORD = ITEMS.register("raising_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_BUSTER_QB9 = ITEMS.register("geats_buster_qb9",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_BUSTER_X = ITEMS.register("geats_buster_x",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> X_RAISING_SWORD = ITEMS.register("x_raising_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> DOOMS_GEATS_BUSTER = ITEMS.register("dooms_geats_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.RARE)).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> BUJIN = ITEMS.register("bujin",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> PLOSION_RAGE_SHIELD = ITEMS.register("plosion_rage_shield",
-			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseShieldItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_SWORD = ITEMS.register("gigant_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_HAMMER = ITEMS.register("gigant_hammer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GIGANT_BLASTER = ITEMS.register("gigant_blaster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_HAMMER = ITEMS.register("raise_hammer",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_ARROW = ITEMS.register("raise_arrow",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_WATER = ITEMS.register("raise_water",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_SHIELD = ITEMS.register("raise_shield",
-			() -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_CHAIN_ARRAY = ITEMS.register("raise_chain_array",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_CLAW = ITEMS.register("raise_claw",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> RAISE_PROPELLER = ITEMS.register("raise_propeller",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RAISE_RISER = ITEMS.register("laser_raise_riser",
-			() -> new LaserRaiseRiserItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+			() -> new LaserRaiseRiserItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> LASER_RAISE_BAZOOKA = ITEMS.register("laser_raise_bazooka",
 			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL)
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM).changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> JYAMATO_RIDER_SCYTHE = ITEMS.register("jyamato_rider_scythe",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 1, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM)
 					.changeRepairItem(BLANK_CORE_ID.get()));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_OSAKA = ITEMS.register("geats_rider_core_id_osaka",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_osaka","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_FUKUOKA = ITEMS.register("geats_rider_core_id_fukuoka",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_fukuoka","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_NAGOYA = ITEMS.register("geats_rider_core_id_nagoya",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_nagoya","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> GEATS_CORE_ID_TOKYO = ITEMS.register("geats_rider_core_id_tokyo",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_tokyo","geats","desire_driver_belt_geats",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.SATURATION, 40, 0,true,false))
-					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					.addNeedForm(MAGNUM_RAISE_BUCKLE.get(), 2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BOOST_MKII_WISH_CARD = ITEMS.register("boost_mkii_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.boost_mkii_wish_card.1"), Component.translatable("lore.kamenridercraft.boost_mkii_wish_card.2"))))).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.boost_mkii_wish_card.1"), Component.translatable("lore.kamenridercraft.boost_mkii_wish_card.2"))))).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> JYAMASHIN_WISH_CARD = ITEMS.register("jyamashin_wish_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.jyamashin_wish_card.1"), Component.translatable("lore.kamenridercraft.jyamashin_wish_card.2")))),"_jyamashin","buffa","desire_driver_belt_buffa",
@@ -2030,20 +2030,20 @@ public class GeatsRiderItems {
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false))
-					.alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+					.alsoChange3rdSlot(ModdedItemCore.BLANK_FORM.get()).hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> BUJIN_WISH_CARD = ITEMS.register("bujin_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.bujin_wish_card.1"), Component.translatable("lore.kamenridercraft.bujin_wish_card.2"))))).useBasicModel().setModelName("jyamashin_wish_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.bujin_wish_card.1"), Component.translatable("lore.kamenridercraft.bujin_wish_card.2"))))).useBasicModel().setModelName("jyamashin_wish_card").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> FANTASY_WISH_CARD = ITEMS.register("fantasy_wish_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.fantasy_wish_card.1"), Component.translatable("lore.kamenridercraft.fantasy_wish_card.2"))))).addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.fantasy_wish_card.1"), Component.translatable("lore.kamenridercraft.fantasy_wish_card.2"))))).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUROTO_DAN_CARD = ITEMS.register("kuroto_dan_card",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.kuroto_dan_card.1"), Component.translatable("lore.kamenridercraft.kuroto_dan_card.2"))))).useBasicModel().setModelName("jyamashin_wish_card").addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.LORE, new ItemLore(List.of(Component.translatable("lore.kamenridercraft.kuroto_dan_card.1"), Component.translatable("lore.kamenridercraft.kuroto_dan_card.2"))))).useBasicModel().setModelName("jyamashin_wish_card").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DGP_WINNERS_COIN = ITEMS.register("dgp_winners_coin",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.GEATS_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GEATS_TAB_ITEM));
 
 	public static void register(net.neoforged.bus.api.IEventBus eventBus) {
 		ITEMS.register(eventBus);

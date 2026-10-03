@@ -23,7 +23,7 @@ public class XRiderItems {
 
 
     public static final DeferredItem<Item> X_LOGO = ITEMS.register("x_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/x")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/x")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL_CORE = ITEMS.register("ridol_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","x","ridol_belt",
@@ -40,7 +40,7 @@ public class XRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            }.hasSD().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> PERFECTER_TACKLE = ITEMS.register("perfecter_tackle",
             () -> new RiderFormChangeItem(new Item.Properties(),"_perfector","tackle","tackle_belt",
@@ -74,7 +74,7 @@ public class XRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.addAlternative(PERFECTER_TACKLE.get()).isGlowing().setShowUnder().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            }.addAlternative(PERFECTER_TACKLE.get()).isGlowing().setShowUnder().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_CORE = ITEMS.register("apollogeist_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","apollogeist","apollogeist_belt",
@@ -88,7 +88,7 @@ public class XRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 80, 0, 0, 0, 1);
                 }
-            }.hasSD().hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            }.hasSD().hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_REBORN_CORE = ITEMS.register("apollogeist_reborn_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_reborn","apollogeist","apollogeist_belt",
@@ -107,42 +107,42 @@ public class XRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            }.hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> XHELMET = ITEMS.register("xhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
     public static final DeferredItem<Item> XCHESTPLATE = ITEMS.register("xtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
     public static final DeferredItem<Item> XLEGGINGS = ITEMS.register("xlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDOL = ITEMS.register("ridol",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+                    .hasSDForm().isA1().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_RIDOL = ITEMS.register("dark_ridol",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo()
-                    .overrideBeltText("dark_ridol_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+                    .overrideBeltText("dark_ridol_belt").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_RIDOL = ITEMS.register("fake_ridol",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_x",RIDOL_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLOGIST_BELT = ITEMS.register("apollogeist_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hasSDForm().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"apollogeist",APOLLOGIST_CORE ,XHELMET,XCHESTPLATE,XLEGGINGS , new Item.Properties()).hasSDForm().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RIDOL_STICK = ITEMS.register("ridol_stick",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> APOLLO_SHOT = ITEMS.register("apollo_shot",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIST_CUTTER = ITEMS.register("geist_cutter",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIST_DOUBLE_CUTTER = ITEMS.register("geist_double_cutter",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.X_TAB_ITEM));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.X_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {

@@ -22,7 +22,7 @@ public class BlackRiderItems {
 
 
     public static final DeferredItem<Item>  BLACK_LOGO = ITEMS.register("black_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/black")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/black")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  RED_KING_STONE = ITEMS.register("red_king_stone",
@@ -40,7 +40,7 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.hasSD().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BATTA_MAN_KING_STONE = ITEMS.register("batta_man_king_stone",
@@ -57,7 +57,7 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  GREEN_KING_STONE = ITEMS.register("green_king_stone",
@@ -75,7 +75,7 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.hasSD().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.hasSD().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  CREATION_KING_STONE = ITEMS.register("creation_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),"_red","shadow_moon","shadow_charger_belt",
@@ -90,7 +90,7 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  ANOTHER_KING_STONE = ITEMS.register("another_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(),"_another","shadow_moon","shadow_charger_another_belt",
@@ -106,7 +106,7 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.isGlowing().hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  GREEN_KING_STONE_HAJIME_SORAYAMA = ITEMS.register("green_king_stone_hajime_sorayama",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hajime_sorayama","shadow_moon","shadow_charger_belt",
@@ -122,26 +122,26 @@ public class BlackRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  BLACKHELMET = ITEMS.register("blackhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
     public static final DeferredItem<Item>  BLACKCHESTPLATE = ITEMS.register("blacktorso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
     public static final DeferredItem<Item>  BLACKLEGGINGS = ITEMS.register("blacklegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item>  VITAL_CHARGER = ITEMS.register("vital_charger",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black",RED_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties())
-                    .hasSDForm().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+                    .hasSDForm().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_CHARGER = ITEMS.register("shadow_charger",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_moon",GREEN_KING_STONE ,BLACKHELMET,BLACKCHESTPLATE,BLACKLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static final DeferredItem<Item> SATANSABER = ITEMS.register("satansaber",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLACK_TAB_ITEM));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

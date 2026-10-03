@@ -53,10 +53,10 @@ public class ZiORiderItems {
                     .addBelt("kamenridercraft:kirider_card", "kamenridercraft:typhoon_kirider")
                     .addBelt("kamenridercraft:momorider_card", "kamenridercraft:typhoon_momorider")
                     .addBelt("kamenridercraft:midorider_card", "kamenridercraft:typhoon_midorider")
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BLANK_RIDEWATCH = ITEMS.register("blank_watch",
-            () -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_watch")).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseDropItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/blank_watch")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZI_O_RIDEWATCH = ITEMS.register("zi_o_ridewatch",
             () -> new Zi_ORidewatchItem(new Item.Properties(), "", "zi_o", "ziku_driver_zi_o_belt",
@@ -99,7 +99,7 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:rabbittank_sparkling_full_bottle", "kamenridercraft:drill_crusher_crusher", "kamenridercraft:ride_heisaber")
                     .addAltWeapon("kamenridercraft:zi_o_ii_ridewatch", "kamenridercraft:saikyo_girade")
                     .addAltWeapon("kamenridercraft:zi_o_trinity_ridewatch", "kamenridercraft:zikan_zax", "kamenridercraft:zikan_despear")
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_RIDEWATCH = ITEMS.register("decade_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_decade", "zi_o", "ziku_driver_zi_o_belt_decade",
@@ -138,7 +138,7 @@ public class ZiORiderItems {
                     .addAltWeapon(DecadeRiderItems.G4_GIGANT_CARD.get(), AgitoRiderItems.G4_GIGANT.get())
                     .addAltWeapon(DecadeRiderItems.RYUKI_STRIKE_VENT_CARD.get(), RyukiRiderItems.DRAG_CLAW.get())
                     .addAltWeapon(DecadeRiderItems.HIBIKI_ONGEKIBOU_REKKA_CARD.get(), HibikiRiderItems.ONGEKIBO_REKKA.get(), HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    .isGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZI_O_II_RIDEWATCH = ITEMS.register("zi_o_ii_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_ii", "zi_o", "ziku_driver_zi_o_belt_zi_o_ii",
@@ -156,7 +156,7 @@ public class ZiORiderItems {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZI_O_TRINITY_RIDEWATCH = ITEMS.register("zi_o_trinity_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_trinity", "zi_o", "ziku_driver_zi_o_belt_trinity",
@@ -178,7 +178,7 @@ public class ZiORiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GRAND_ZI_O_RIDEWATCH = ITEMS.register("grand_zi_o_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_grand", "zi_o", "ziku_driver_zi_o_belt_grand",
@@ -200,7 +200,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGold().isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGold().isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> OHMA_ZI_O_RIDEWATCH = ITEMS.register("ohma_zi_o_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), "_ohma", "zi_o", "ziku_driver_zi_o_belt_ohma",
@@ -224,7 +224,7 @@ public class ZiORiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }
-                    .isGold().isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGold().isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIZ_RIDEWATCH = ITEMS.register("geiz_ridewatch",
             () -> new GeizRidewatchItem(new Item.Properties(), "", "geiz", "ziku_driver_geiz_belt",
@@ -237,7 +237,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIZ_REVIVE_SHIPPU_RIDEWATCH = ITEMS.register("geiz_revive_shippu_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_revive_shippu", "geiz", "ziku_driver_geiz_belt_revive",
@@ -271,7 +271,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addSwitchForm(GEIZ_REVIVE_SHIPPU_RIDEWATCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GEIZ_MAJESTY_RIDEWATCH = ITEMS.register("geiz_majesty_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_majesty", "geiz", "ziku_driver_geiz_belt_majesty",
@@ -293,7 +293,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGold().isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGold().isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> TSUKUYOMI_RIDEWATCH = ITEMS.register("tsukuyomi_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "tsukuyomi", "ziku_driver_tsukuyomi_belt",
@@ -306,7 +306,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> WOZ_MIRIDEWATCH = ITEMS.register("woz_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "woz", "beyondriver_belt",
@@ -319,7 +319,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZI_O_MIRROR_RIDEWATCH = ITEMS.register("zi_o_mirror_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "zi_o_mirror", "ziku_driver_zi_o_mirror_belt",
@@ -332,7 +332,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BARLCKXS_RIDEWATCH = ITEMS.register("barlckxs_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "barlckxs", "ziku_driver_barlckxs_belt",
@@ -345,7 +345,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZONJIS_RIDEWATCH = ITEMS.register("zonjis_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "zonjis", "ziku_driver_zonjis_belt",
@@ -358,7 +358,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZAMONAS_RIDEWATCH = ITEMS.register("zamonas_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "zamonas", "ziku_driver_zamonas_belt",
@@ -371,7 +371,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KUUGA_RIDEWATCH = ITEMS.register("kuuga_ridewatch",
@@ -395,7 +395,7 @@ public class ZiORiderItems {
                     .addAltWeapon(KuugaRiderItems.KUUGA_TITAN.get(), KuugaRiderItems.TITAN_SWORD.get())
                     .addAltWeapon(KuugaRiderItems.KUUGA_RISING_TITAN.get(), KuugaRiderItems.TITAN_SWORD.get())
                     .addAltWeapon(ModdedItemCore.GRANDGOURAM.get(), ModdedItemCore.GRANDGOURAM_ROD.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_RIDEWATCH = ITEMS.register("agito_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_agito", "zi_o", "ziku_driver_zi_o_belt_agito",
@@ -415,7 +415,7 @@ public class ZiORiderItems {
                     .addAltWeapon(AgitoRiderItems.AGITO_TRINITY.get(), AgitoRiderItems.FLAME_SABER.get(), AgitoRiderItems.STORM_HALBERD.get())
                     .addAltWeapon(AgitoRiderItems.AGITO_BURNING.get(), AgitoRiderItems.SHINING_CALIBER.get())
                     .addAltWeapon(AgitoRiderItems.AGITO_SHINING.get(), AgitoRiderItems.SHINING_CALIBER_TWIN.get(), AgitoRiderItems.SHINING_CALIBER_TWIN.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_RYUKI_RIDEWATCH = ITEMS.register("decade_ryuki_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_ryuki", "zi_o", "ziku_driver_zi_o_belt_decade_ryuki",
@@ -457,7 +457,7 @@ public class ZiORiderItems {
                     .addAltWeapon(RyukiRiderItems.DRAG_SHIELD_VENT.get(), RyukiRiderItems.DRAG_SHIELD.get(), RyukiRiderItems.DRAG_SHIELD.get())
                     .addAltWeapon(RyukiRiderItems.DRAG_VISOR_ZWEI_VENT.get(), RyukiRiderItems.DRAG_VISOR_ZWEI.get())
                     .addAltWeapon(RyukiRiderItems.DRAG_BLADE_VENT.get(), RyukiRiderItems.DRAG_BLADE.get())
-                    .isGlowing().IsBeltGlowing().addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_RYUKI_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_RYUKI_RIDEWATCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_FAIZ_RIDEWATCH = ITEMS.register("decade_faiz_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_faiz", "zi_o", "ziku_driver_zi_o_belt_decade_faiz",
@@ -499,7 +499,7 @@ public class ZiORiderItems {
                     .addAltWeapon(FaizRiderItems.FAIZ_BLASTER_MISSION_MEMORY.get(), FaizRiderItems.FAIZ_BLASTER.get())
                     .addAltWeapon(FaizRiderItems.FAIZ_GOLD_BLASTER_MISSION_MEMORY.get(), FaizRiderItems.FAIZ_BLASTER.get())
                     .addAltWeapon(ModdedItemCore.BAKUEN_NO_SENSHI.get(), FaizRiderItems.FAIZ_BLASTER.get())
-                    .isGlowing().IsBeltGlowing().addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_FAIZ_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_FAIZ_RIDEWATCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_RIDEWATCH = ITEMS.register("blade_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_blade", "zi_o", "ziku_driver_zi_o_belt_blade",
@@ -518,7 +518,7 @@ public class ZiORiderItems {
                     .addAltWeapon(BladeRiderItems.EVOLUTION_CAUCASUS.get(), BladeRiderItems.KINGROUZER.get())
                     .addAltWeapon(BladeRiderItems.SILVER_EVOLUTION_CAUCASUS.get(), BladeRiderItems.KINGROUZER.get())
                     .addAltWeapon(ModdedItemCore.HERCULESPADER.get(), ModdedItemCore.HERCULESPADER_SWORD.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_RIDEWATCH = ITEMS.register("hibiki_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_hibiki", "zi_o", "ziku_driver_zi_o_belt_hibiki",
@@ -537,7 +537,7 @@ public class ZiORiderItems {
                     .addSummonWeapon(HibikiRiderItems.ONGEKIBO_REKKA.get())
                     .addAltForm(HibikiRiderItems.ARMED_SABER.get(), (RiderFormChangeItem) HibikiRiderItems.HENSHIN_ONSA_ARMED.get())
                     .addAltWeapon(HibikiRiderItems.ARMED_SABER.get(), HibikiRiderItems.ARMED_SABER.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_RIDEWATCH = ITEMS.register("kabuto_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_kabuto", "zi_o", "ziku_driver_zi_o_belt_kabuto",
@@ -556,7 +556,7 @@ public class ZiORiderItems {
                     .addSummonWeapon(KabutoRiderItems.KABUTO_KUNAI.get())
                     .addAltForm(KabutoRiderItems.KABUTO_ZECTER.get(), (RiderFormChangeItem) KabutoRiderItems.KABUTO_ZECTER_MASK.get())
                     .addAltWeapon(KabutoRiderItems.HYPER_ZECTER.get(), KabutoRiderItems.PERFECT_ZECTER.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_RIDEWATCH = ITEMS.register("den_o_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_den_o", "zi_o", "ziku_driver_zi_o_belt_den_o",
@@ -580,7 +580,7 @@ public class ZiORiderItems {
                     .addAltWeapon(DenORiderItems.RIDER_TICKET_WING.get(), DenORiderItems.DEN_GASHER_HANDAX.get(), DenORiderItems.DEN_GASHER_BOOMERANG.get())
                     .addAltWeapon(DenORiderItems.DENKAMEN_SWORD.get(), DenORiderItems.DENKAMEN_SWORD.get())
                     .addAltWeapon(DenORiderItems.RIDER_TICKET_PUDDING.get(), DenORiderItems.DEN_GASHER_PUDDING.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_RIDEWATCH = ITEMS.register("kiva_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_kiva", "zi_o", "ziku_driver_zi_o_belt_kiva",
@@ -602,7 +602,7 @@ public class ZiORiderItems {
                     .addAltWeapon(KivaRiderItems.TATSULOT.get(), KivaRiderItems.ZANVAT_SWORD.get())
                     .addAltWeapon(KivaRiderItems.KIVATTE_FUESTLE.get(), KivaRiderItems.ZANVAT_SWORD.get())
                     .addAltForm(KivaRiderItems.WAKE_UP_FUESTLE_REY.get(), (RiderFormChangeItem) KivaRiderItems.FLIGHT_STYLE_FUESTLE.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> W_RIDEWATCH = ITEMS.register("w_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_w", "zi_o", "ziku_driver_zi_o_belt_w",
@@ -634,7 +634,7 @@ public class ZiORiderItems {
                     .addAltWeapon(WRiderItems.XTREME_MEMORY.get(), WRiderItems.PRISM_BICKER.get(), WRiderItems.SHIELD_PRISM_BICKER.get())
                     .addAltWeapon(WRiderItems.XTREME_GOLD_MEMORY.get(), WRiderItems.PRISM_BICKER.get(), WRiderItems.SHIELD_PRISM_BICKER.get())
                     .addAltWeapon(WRiderItems.XTREME_ACCEL_MEMORY.get(), WRiderItems.PRISM_BICKER.get(), WRiderItems.SHIELD_PRISM_BICKER.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_OOO_RIDEWATCH = ITEMS.register("decade_ooo_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_ooo", "zi_o", "ziku_driver_zi_o_belt_decade_ooo",
@@ -781,7 +781,7 @@ public class ZiORiderItems {
                     .addAltWeapon(OOORiderItems.TAKA_ETERNITY_MEDAL.get(), OOORiderItems.TAJASPINNER_ETERNITY.get())
                     .addAltWeapon(OOORiderItems.KUJAKU_ETERNITY_MEDAL.get(), OOORiderItems.TAJASPINNER_ETERNITY.get())
                     .addAltWeapon(OOORiderItems.CONDOR_ETERNITY_MEDAL.get(), OOORiderItems.TAJASPINNER_ETERNITY.get())
-                    .isGlowing().IsBeltGlowing().addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_OOO_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addAlternative(DECADE_OOO_RIDEWATCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_RIDEWATCH = ITEMS.register("fourze_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_fourze", "zi_o", "ziku_driver_zi_o_belt_fourze",
@@ -804,7 +804,7 @@ public class ZiORiderItems {
                     .addAltWeapon(FourzeRiderItems.SHIELD_ASTROSWITCH.get(), FourzeRiderItems.SHIELD_MODULE.get())
                     .addAltWeapon(FourzeRiderItems.FIRE_ASTROSWITCH.get(), FourzeRiderItems.HEE_HACKGUN.get())
                     .addAltWeapon(FourzeRiderItems.COSMIC_ASTROSWITCH.get(), FourzeRiderItems.BARIZUN_SWORD.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> WIZARD_RIDEWATCH = ITEMS.register("wizard_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_wizard", "geiz", "ziku_driver_geiz_belt_wizard",
@@ -832,7 +832,7 @@ public class ZiORiderItems {
                     .addAltForm(WizardRiderItems.BUFFA_RING.get(), (RiderFormChangeItem) WizardRiderItems.BUFFA_RING_WIZARD.get())
                     .addAltWeapon(WizardRiderItems.INFINITY_WIZARD_RING.get(), WizardRiderItems.AXCALIBUR.get())
                     .addAltWeapon(WizardRiderItems.FINISH_STRIKE_RING.get(), WizardRiderItems.AXCALIBUR.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_RIDEWATCH = ITEMS.register("gaim_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_gaim", "zi_o", "ziku_driver_zi_o_belt_gaim",
@@ -908,7 +908,7 @@ public class ZiORiderItems {
                     .addAltWeapon(GaimRiderItems.RIDER_ICHIGO_LOCKSEED.get(), GaimRiderItems.MUSOU_SABER.get())
                     .addAltWeapon(GaimRiderItems.SHOWA_RIDER_LOCKSEED.get(), GaimRiderItems.MUSOU_SABER.get())
                     .addAltWeapon(GaimRiderItems.HEISEI_RIDER_LOCKSEED.get(), GaimRiderItems.DAIDAIMARU.get(), GaimRiderItems.MUSOU_SABER.get())
-                    .isGlowing().IsBeltGlowing().changeModel("default_rider_plusbelt_and_wings.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("default_rider_plusbelt_and_wings.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_RIDEWATCH = ITEMS.register("drive_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_drive", "geiz", "ziku_driver_geiz_belt_drive",
@@ -957,7 +957,7 @@ public class ZiORiderItems {
                     .addAltWeapon(DriveRiderItems.SHIFT_SPARNER_F03.get(), DriveRiderItems.TRAILER_HOU.get())
                     .addAltForm(DriveRiderItems.SHIFT_MEGA_MAX_FLARE.get(), (RiderFormChangeItem) DriveRiderItems.SHIFT_HIGH_SPEED.get())
                     .addAltBelt(DriveRiderItems.TRIDORON_KEY.get(), (RiderDriverItem) DriveRiderItems.MACH_DRIVER_HONOH_DRIVE.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_GHOST_RIDEWATCH = ITEMS.register("decade_ghost_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_ghost", "zi_o", "ziku_driver_zi_o_belt_decade_ghost",
@@ -1038,7 +1038,7 @@ public class ZiORiderItems {
                     .addAltWeapon(GhostRiderItems.WIZARD_GHOST_EYECON.get(), WizardRiderItems.WIZARSWORDSGUN.get())
                     .addAltWeapon(GhostRiderItems.GAIM_GHOST_EYECON.get(), GaimRiderItems.DAIDAIMARU.get(), GaimRiderItems.MUSOU_SABER.get())
                     .addAltWeapon(GhostRiderItems.DRIVE_GHOST_EYECON.get(), DriveRiderItems.HANDLE_KEN.get(), DriveRiderItems.DOOR_JU.get())
-                    .isGlowing().IsBeltGlowing().addAlternative(GHOST_RIDEWATCH_ZI_O.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addAlternative(GHOST_RIDEWATCH_ZI_O.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_EX_AID_RIDEWATCH_R = ITEMS.register("decade_ex_aid_ridewatch_r",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_ex_aid_r", "zi_o", "ziku_driver_zi_o_belt_decade_ex_aid",
@@ -1122,7 +1122,7 @@ public class ZiORiderItems {
                     .addAltWeapon(ExAidRiderItems.INSECT_WARS_KABUTO_GASHAT.get(), KabutoRiderItems.KABUTO_KUNAI.get())
                     .addAltWeapon(ExAidRiderItems.MIRROR_LABRYINTH_RYUKI_GASHAT.get(), RyukiRiderItems.DRAG_SABER.get())
                     .addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addIncompatibleForm(DECADE_EX_AID_RIDEWATCH_L.asItem()).addIncompatibleForm(DECADE_EX_AID_RIDEWATCH_R.asItem())
-                    .isGlowing().IsBeltGlowing().addAlternative(DECADE_EX_AID_RIDEWATCH_L.get()).addAlternative(EX_AID_RIDEWATCH_GEIZ.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addAlternative(DECADE_EX_AID_RIDEWATCH_L.get()).addAlternative(EX_AID_RIDEWATCH_GEIZ.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_BUILD_RIDEWATCH = ITEMS.register("decade_build_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_decade_build", "zi_o", "ziku_driver_zi_o_belt_decade_build",
@@ -1272,7 +1272,7 @@ public class ZiORiderItems {
                     .addAltWeapon(BuildRiderItems.DOCTOR_FULL_BOTTLE.get(), ExAidRiderItems.GASHACON_BREAKER.get())
                     .addAltWeapon(BuildRiderItems.GAME_FULL_BOTTLE.get(), ExAidRiderItems.GASHACON_BREAKER.get())
                     .addIncompatibleForm(DECADE_RIDEWATCH.asItem()).addIncompatibleForm(DECADE_BUILD_RIDEWATCH.asItem())
-                    .isGlowing().IsBeltGlowing().addAlternative(BUILD_RIDEWATCH_GEIZ.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addAlternative(BUILD_RIDEWATCH_GEIZ.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZERO_ONE_RIDEWATCH = ITEMS.register("zero_one_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:hiden_zero_one_driver")
@@ -1281,7 +1281,7 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:shining_assault_hopper_progrisekey", "kamenridercraft:authorise_buster")
                     .addAltWeapon("kamenridercraft:metalcluster_hopper_progrisekey", "kamenridercraft:progrise_hopper_blade")
                     .addAltBelt("kamenridercraft:zero_two_progrisekey", "kamenridercraft:hiden_zero_two_driver")
-                    .addAltWeapon("kamenridercraft:zero_two_progrisekey", "kamenridercraft:progrise_hopper_blade_naginata").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:zero_two_progrisekey", "kamenridercraft:progrise_hopper_blade_naginata").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SABER_RIDEWATCH = ITEMS.register("saber_ridewatch",
             () -> new SaberRidewatchItem(new Item.Properties(), "_decade_saber", "zi_o", "ziku_driver_zi_o_belt_decade_saber",
@@ -1302,7 +1302,7 @@ public class ZiORiderItems {
                     .addAltForm("kamenridercraft:saiyuu_journey_wonder_ride_book", "kamenridercraft:storm_eagle_wonder_ride_book")
                     .addAltForm("kamenridercraft:elemental_dragon_wonder_ride_book", "kamenridercraft:elemental_dragon_wonder_ride_book")
                     .addAltForm("kamenridercraft:haouken_xross_saber", "kamenridercraft:brave_dragon_wonder_ride_book_xross")
-                    .addAltWeapon("kamenridercraft:haouken_xross_saber", "kamenridercraft:haouken_xross_saber").isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:haouken_xross_saber", "kamenridercraft:haouken_xross_saber").isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zi_o_decade_riderbelt.geo.json").addNeedItem(DECADE_RIDEWATCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> REVI_RIDEWATCH = ITEMS.register("revi_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:revice_driver").addSummonWeapon("kamenridercraft:ohin_buster_50")
@@ -1314,14 +1314,14 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:fifty_gale_vistamp", "kamenridercraft:revice_lasher")
                     .addAltWeapon("kamenridercraft:true_rex_vistamp", "kamenridercraft:revice_lasher")
                     .addAltWeapon("kamenridercraft:mammoth_vistamp", "kamenridercraft:mammoth_gasher", "kamenridercraft:mammoth_gasher")
-                    .addAltWeapon("kamenridercraft:kamakiri_vistamp", "kamenridercraft:kamakiric_arrow").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:kamakiri_vistamp", "kamenridercraft:kamakiric_arrow").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> VICE_RIDEWATCH = ITEMS.register("vice_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:vice_belt").addSummonWeapon("kamenridercraft:osutoderu_hammer_50")
                     .addAltWeapon("kamenridercraft:barid_rex_vistamp", "kamenridercraft:barid_shield")
                     .addAltWeapon("kamenridercraft:volcano_vistamp", "kamenridercraft:barid_shield")
                     .addAltWeapon("kamenridercraft:giffard_rex_vistamp", "kamenridercraft:revice_lasher")
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GEATS_RIDEWATCH = ITEMS.register("geats_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:desire_driver_geats", "kamenridercraft:magnum_raise_buckle").addSummonWeapon("kamenridercraft:magnum_shooter_40x")
@@ -1378,7 +1378,7 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:king_stone_raise_buckle", "minecraft:air")
                     .addAltWeapon("kamenridercraft:double_typhoon_raise_buckle", "minecraft:air")
                     .addAltWeapon("kamenridercraft:typhoon_raise_buckle", "minecraft:air")
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GOTCHARD_RIDEWATCH = ITEMS.register("gotchard_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:gotchardriver").addSummonWeapon("kamenridercraft:gotcharge_gun")
@@ -1422,7 +1422,7 @@ public class ZiORiderItems {
                     .addAltForm("kamenridercraft:ooo_ride_chemy_card", "kamenridercraft:w_ride_chemy_card_gotchard")
                     .addAltForm("kamenridercraft:fourze_ride_chemy_card", "kamenridercraft:fourze_ride_chemy_card_gotchard")
                     .addAltForm("kamenridercraft:build_ride_chemy_card", "kamenridercraft:fourze_ride_chemy_card_gotchard")
-                    .addAltWeapon("kamenridercraft:tenliner_ride_chemy_card", "minecraft:air").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:tenliner_ride_chemy_card", "minecraft:air").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GAVV_RIDEWATCH = ITEMS.register("gavv_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:henshin_belt_gavv").addSummonWeapon("kamenridercraft:gavvgablade")
@@ -1447,7 +1447,7 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:charapaki_gochizo_special", "kamenridercraft:chocodangun")
                     .addAltWeapon("kamenridercraft:tirolchocolate_gochizo_variety", "kamenridercraft:chocodangun")
                     .addAltWeapon("kamenridercraft:umaibo_gochizo", "minecraft:air")
-                    .addAltWeapon("kamenridercraft:partea_gochizo", "minecraft:air").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon("kamenridercraft:partea_gochizo", "minecraft:air").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_RIDEWATCH = ITEMS.register("zeztz_ridewatch",
             () -> new ReiwaRidewatchItem(new Item.Properties(), "kamenridercraft:zeztz_driver").addSummonWeapon("kamenridercraft:breakam_zeztzer_sword")
@@ -1463,17 +1463,17 @@ public class ZiORiderItems {
                     .addAltWeapon("kamenridercraft:dualmare_capsem", "kamenridercraft:triple_zeztzer")
                     .addAltBelt("kamenridercraft:exdreamrise_capsem", "kamenridercraft:zeztz_exdream_driver")
                     .addAltBelt("kamenridercraft:agent_capsem", "kamenridercraft:zeztz_exdream_driver")
-                    .addAltBelt("kamenridercraft:heart_of_impact_capsem", "kamenridercraft:zeztz_exdream_driver").addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltBelt("kamenridercraft:heart_of_impact_capsem", "kamenridercraft:zeztz_exdream_driver").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_ALPHA_RIDEWATCH = ITEMS.register("amazon_alpha_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonsRiderItems.AMAZONS_DRIVER_ALPHA.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
     public static final DeferredItem<Item> AMAZON_OMEGA_RIDEWATCH = ITEMS.register("amazon_omega_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonsRiderItems.AMAZONS_DRIVER_OMEGA.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
     public static final DeferredItem<Item> AMAZON_NEO_RIDEWATCH = ITEMS.register("amazon_neo_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonsRiderItems.NEO_AMAZONS_DRIVER_NEO.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GENM_RIDEWATCH = ITEMS.register("genm_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_genm", "geiz", "ziku_driver_geiz_belt_genm",
@@ -1504,7 +1504,7 @@ public class ZiORiderItems {
                     .addAltWeapon(ExAidRiderItems.TAIKO_MASTER_HIBIKI_GASHAT.get(), HibikiRiderItems.ONGEKIBO_REKKA.get(), HibikiRiderItems.ONGEKIBO_REKKA.get())
                     .addAltWeapon(ExAidRiderItems.KING_OF_POKER_BLADE_GASHAT.get(), BladeRiderItems.BLAYROUZER.get())
                     .addAltWeapon(ExAidRiderItems.MOSHI_MOSHI_FAIZ_GASHAT.get(), FaizRiderItems.FAIZ_EDGE.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> WOZ_RIDEWATCH = ITEMS.register("woz_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_woz", "zi_o", "ziku_driver_zi_o_belt_woz",
@@ -1519,7 +1519,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BIBIRU_GEIZ_RIDEWATCH = ITEMS.register("bibiru_geiz_ridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_bibiru", "geiz", "ziku_driver_geiz_belt_bibiru",
@@ -1532,164 +1532,164 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_ULTIMATE_RIDEWATCH = ITEMS.register("kuuga_ultimate_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)KuugaRiderItems.ARCLE.get()).setSummonForm((RiderFormChangeItem)KuugaRiderItems.KUUGA_ULTIMATE.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_SHINING_RIDEWATCH = ITEMS.register("agito_shining_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)AgitoRiderItems.ALTERING.get()).setSummonForm((RiderFormChangeItem)AgitoRiderItems.AGITO_SHINING.get())
                     .addSummonWeapon(AgitoRiderItems.SHINING_CALIBER_TWIN.get()).addSummonWeapon(AgitoRiderItems.SHINING_CALIBER_TWIN.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_SURVIVE_RIDEWATCH = ITEMS.register("ryuki_survive_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)RyukiRiderItems.RYUKIDRIVER.get()).setSummonForm((RiderFormChangeItem)RyukiRiderItems.SURVIVE_REKKA.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_BLASTER_RIDEWATCH = ITEMS.register("faiz_blaster_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)FaizRiderItems.FAIZ_DRIVER.get()).setSummonForm((RiderFormChangeItem)FaizRiderItems.FAIZ_BLASTER_MISSION_MEMORY.get())
                     .addSummonWeapon(FaizRiderItems.FAIZ_BLASTER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_KING_RIDEWATCH = ITEMS.register("blade_king_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)BladeRiderItems.BLAYBUCKLE.get()).setSummonForm((RiderFormChangeItem)BladeRiderItems.EVOLUTION_CAUCASUS.get())
                     .addSummonWeapon(BladeRiderItems.KINGROUZER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_ARMED_RIDEWATCH = ITEMS.register("hibiki_armed_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)HibikiRiderItems.HIBIKIDRIVER.get()).setSummonForm((RiderFormChangeItem)HibikiRiderItems.HENSHIN_ONSA_ARMED.get())
                     .addSummonWeapon(HibikiRiderItems.ARMED_SABER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_HYPER_RIDEWATCH = ITEMS.register("kabuto_hyper_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)KabutoRiderItems.KABUTO_RIDER_BELT.get()).setSummonForm((RiderFormChangeItem)KabutoRiderItems.HYPER_ZECTER.get())
                     .addSummonWeapon(KabutoRiderItems.PERFECT_ZECTER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_LINER_RIDEWATCH = ITEMS.register("den_o_liner_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)DenORiderItems.DEN_O_BELT.get()).setSummonForm((RiderFormChangeItem)DenORiderItems.DEN_O_LINER_FORM.get())
                     .addSummonWeapon(DenORiderItems.DENKAMEN_SWORD.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_EMPEROR_RIDEWATCH = ITEMS.register("kiva_emperor_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)KivaRiderItems.KIVAT_BELT.get()).setSummonForm((RiderFormChangeItem)KivaRiderItems.TATSULOT.get())
                     .addSummonWeapon(KivaRiderItems.ZANVAT_SWORD.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_COMPLETE_RIDEWATCH = ITEMS.register("decade_complete_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)DecadeRiderItems.DECADRIVER.get()).setSummonForm((RiderFormChangeItem)DecadeRiderItems.K_TOUCH.get())
                     .addSummonWeapon(DecadeRiderItems.RIDE_BOOKER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> W_XTREME_RIDEWATCH = ITEMS.register("w_xtreme_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)WRiderItems.WDRIVER.get()).setSummonForm((RiderFormChangeItem)WRiderItems.XTREME_MEMORY.get())
                     .addSummonWeapon(WRiderItems.PRISM_BICKER.get()).addSummonWeapon(WRiderItems.SHIELD_PRISM_BICKER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> OOO_PUTOTYRA_RIDEWATCH = ITEMS.register("ooo_putotyra_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)OOORiderItems.OOODRIVER.get()).setSummonForm((RiderFormChangeItem)OOORiderItems.PTERA_MEDAL.get())
             .addSummonWeapon(OOORiderItems.MEDAGABURYU.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_COSMIC_RIDEWATCH = ITEMS.register("fourze_cosmic_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)FourzeRiderItems.FOURZE_DRIVER.get()).setSummonForm((RiderFormChangeItem)FourzeRiderItems.COSMIC_ASTROSWITCH.get())
                     .addSummonWeapon(FourzeRiderItems.BARIZUN_SWORD.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> WIZARD_INFINITY_RIDEWATCH = ITEMS.register("wizard_infinity_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)WizardRiderItems.WIZARDRIVER.get()).setSummonForm((RiderFormChangeItem)WizardRiderItems.INFINITY_WIZARD_RING.get())
             .addSummonWeapon(WizardRiderItems.AXCALIBUR.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_KIWAMI_RIDEWATCH = ITEMS.register("gaim_kiwami_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)GaimRiderItems.SENGOKU_DRIVER_GAIM.get()).setSummonForm((RiderFormChangeItem)GaimRiderItems.KIWAMI_LOCKSEED.get())
             .addSummonWeapon(GaimRiderItems.DJ_GUN_TAIKEN_MODE.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_TRIDORON_RIDEWATCH = ITEMS.register("drive_tridoron_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)DriveRiderItems.DRIVE_DRIVER.get()).setSummonForm((RiderFormChangeItem)DriveRiderItems.SHIFT_TRIDORON_NOT_ALL.get())
             .addSummonWeapon(DriveRiderItems.TRAILER_HOU.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GHOST_MUGEN_RIDEWATCH = ITEMS.register("ghost_mugen_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)GhostRiderItems.GHOST_DRIVER.get()).setSummonForm((RiderFormChangeItem)GhostRiderItems.MUGEN_DAMASHII.get())
             .addSummonWeapon(GhostRiderItems.GAN_GUN_SABER_BLADE.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> EX_AID_MUTEKI_RIDEWATCH = ITEMS.register("ex_aid_muteki_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)ExAidRiderItems.GAMER_DRIVER_EX_AID.get()).setSummonForm((RiderFormChangeItem)ExAidRiderItems.HYPER_MUTEKI_GASHAT.get())
             .addSummonWeapon(ExAidRiderItems.GASHACON_KEY_SLASHER.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BUILD_GENIUS_RIDEWATCH = ITEMS.register("build_genius_ridewatch",
             () -> new FinalFormRidewatchItem(new Item.Properties().rarity(Rarity.RARE))
                     .setSummonBelt((RiderDriverItem)BuildRiderItems.BUILD_DRIVER.get()).setSummonForm((RiderFormChangeItem)BuildRiderItems.GENIUS_FULL_BOTTLE.get())
             .addSummonWeapon(BuildRiderItems.FULLBOTTLE_BUSTER.get())
-            .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUSOULGER_RIDEWATCH = ITEMS.register("ryusoulger_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_RIDEWATCH = ITEMS.register("ichigo_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) IchigoRiderItems.TYPHOON_ICHIGO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) IchigoRiderItems.TYPHOON_ICHIGO.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> NIGO_RIDEWATCH = ITEMS.register("nigo_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) IchigoRiderItems.TYPHOON_NIGO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) IchigoRiderItems.TYPHOON_NIGO.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> V3_RIDEWATCH = ITEMS.register("v3_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) V3RiderItems.DOUBLE_TYPHOON.get()).addAltWeapon(ModdedItemCore.FLARESALAMANDER.get(), ModdedItemCore.FLARESALAMANDER_SWORD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) V3RiderItems.DOUBLE_TYPHOON.get()).addAltWeapon(ModdedItemCore.FLARESALAMANDER.get(), ModdedItemCore.FLARESALAMANDER_SWORD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDERMAN_RIDEWATCH = ITEMS.register("riderman_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) V3RiderItems.RIDERMAN_BELT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) V3RiderItems.RIDERMAN_BELT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> X_RIDEWATCH = ITEMS.register("x_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) XRiderItems.RIDOL.get()).addSummonWeapon(XRiderItems.RIDOL_STICK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) XRiderItems.RIDOL.get()).addSummonWeapon(XRiderItems.RIDOL_STICK.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_RIDEWATCH = ITEMS.register("amazon_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonRiderItems.CONDORER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) AmazonRiderItems.CONDORER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> STRONGER_RIDEWATCH = ITEMS.register("stronger_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) StrongerRiderItems.ELECTRER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) StrongerRiderItems.ELECTRER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SKYRIDER_RIDEWATCH = ITEMS.register("skyrider_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) SkyriderItems.TORNADO.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) SkyriderItems.TORNADO.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_1_RIDEWATCH = ITEMS.register("super_1_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) Super1RiderItems.CYCLODE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) Super1RiderItems.CYCLODE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZX_RIDEWATCH = ITEMS.register("zx_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) ZXRiderItems.ZX_BELT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) ZXRiderItems.ZX_BELT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RIDEWATCH = ITEMS.register("black_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRiderItems.VITAL_CHARGER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRiderItems.VITAL_CHARGER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_MOON_RIDEWATCH = ITEMS.register("shadow_moon_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRiderItems.SHADOW_CHARGER.get()).addSummonWeapon(BlackRiderItems.SATANSABER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRiderItems.SHADOW_CHARGER.get()).addSummonWeapon(BlackRiderItems.SATANSABER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RX_RIDEWATCH = ITEMS.register("black_rx_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRXRiderItems.SUN_RISER.get()).addSummonWeapon(BlackRXRiderItems.REVOLCANE.get()).addAltForm(BlackRXRiderItems.ROBO_CORE.get(), (RiderFormChangeItem) BlackRXRiderItems.RX_CORE.get()).addAltForm(BlackRXRiderItems.BIO_CORE.get(), (RiderFormChangeItem) BlackRXRiderItems.RX_CORE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRXRiderItems.SUN_RISER.get()).addSummonWeapon(BlackRXRiderItems.REVOLCANE.get()).addAltForm(BlackRXRiderItems.ROBO_CORE.get(), (RiderFormChangeItem) BlackRXRiderItems.RX_CORE.get()).addAltForm(BlackRXRiderItems.BIO_CORE.get(), (RiderFormChangeItem) BlackRXRiderItems.RX_CORE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ROBO_RIDER_RIDEWATCH = ITEMS.register("robo_rider_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRXRiderItems.SUN_RISER.get()).setSummonForm((RiderFormChangeItem) BlackRXRiderItems.ROBO_CORE.get()).addSummonWeapon(BlackRXRiderItems.VORTECHSHOOTER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BlackRXRiderItems.SUN_RISER.get()).setSummonForm((RiderFormChangeItem) BlackRXRiderItems.ROBO_CORE.get()).addSummonWeapon(BlackRXRiderItems.VORTECHSHOOTER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BIO_RIDER_RIDEWATCH = ITEMS.register("bio_rider_ridewatch",
             () -> new RidewatchItem(new Item.Properties(), "_biorider", "barlckxs", "ziku_driver_barlckxs_belt_biorider",
@@ -1704,16 +1704,16 @@ public class ZiORiderItems {
                 }
             }
                     .setSummonBelt((RiderDriverItem) BlackRXRiderItems.SUN_RISER.get()).setSummonForm((RiderFormChangeItem) BlackRXRiderItems.BIO_CORE.get()).addSummonWeapon(BlackRXRiderItems.BIOBLADE.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_RIDEWATCH = ITEMS.register("shin_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) ShinRiderItems.GRASSHOPPER_DNA.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) ShinRiderItems.GRASSHOPPER_DNA.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ZO_RIDEWATCH = ITEMS.register("zo_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) ZORiderItems.ZO_CORE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) ZORiderItems.ZO_CORE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> J_RIDEWATCH = ITEMS.register("j_ridewatch",
-            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) JRiderItems.J_SPIRIT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) JRiderItems.J_SPIRIT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_RIDEWATCH = ITEMS.register("knight_ridewatch",
             () -> ((MajestyRidewatchItem) new MajestyRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) RyukiRiderItems.KNIGHTDRIVER.get())
@@ -1736,25 +1736,25 @@ public class ZiORiderItems {
                     .addAltMajestyWeapon(RyukiRiderItems.DARK_BLADE_VENT.get(), RyukiRiderItems.DARK_BLADE.get(), RyukiRiderItems.DARK_SHIELD.get())
                     .addAltMajestyWeapon(RyukiRiderItems.DARK_ARROW_VENT.get(), RyukiRiderItems.DARK_ARROW.get())
                     .addAltMajestyWeapon(ModdedItemCore.DARKWING.get(), ModdedItemCore.DARKWING_SWORD.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> CHALICE_RIDEWATCH = ITEMS.register("chalice_ridewatch",
             () -> new OhmaRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BladeRiderItems.CHALICEROUZER.get()).addSummonWeapon(BladeRiderItems.CHALICE_ARROW.get())
-                    .addAltWeapon(BladeRiderItems.EVOLUTION_PARADOXA.get(), BladeRiderItems.WILD_SLASHER.get(), BladeRiderItems.WILD_SLASHER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addAltWeapon(BladeRiderItems.EVOLUTION_PARADOXA.get(), BladeRiderItems.WILD_SLASHER.get(), BladeRiderItems.WILD_SLASHER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> DIEND_RIDEWATCH = ITEMS.register("diend_ridewatch",
             () -> ((MajestyRidewatchItem) new MajestyRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) DecadeRiderItems.DIEND_BELT.get())
                     .addSummonWeapon(DecadeRiderItems.DIENDRIVER.get())
                     .addAltForm(DecadeRiderItems.DECADE_CARD.get(), (RiderFormChangeItem) DecadeRiderItems.DIEND_GREEN_CARD.get()))
                     .addMajestyWeapon(DecadeRiderItems.DIENDRIVER.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> BEAST_RIDEWATCH = ITEMS.register("beast_ridewatch",
             () -> ((MajestyRidewatchItem) new MajestyRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) WizardRiderItems.BEAST_DRIVER.get()).addSummonWeapon(WizardRiderItems.DICE_SABER.get())
                     .addAltWeapon(WizardRiderItems.HYPER_RING.get(), WizardRiderItems.MIRAGE_MAGNUM.get()))
                     .addMajestyWeapon(WizardRiderItems.DICE_SABER.get())
                     .addAltMajestyWeapon(WizardRiderItems.HYPER_RING.get(), WizardRiderItems.MIRAGE_MAGNUM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> MACH_RIDEWATCH = ITEMS.register("mach_ridewatch",
             () -> ((MajestyRidewatchItem) new MajestyRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) DriveRiderItems.MACH_DRIVER_HONOH.get()).addSummonWeapon(DriveRiderItems.ZENRIN_SHOOTER.get())
@@ -1765,7 +1765,7 @@ public class ZiORiderItems {
                     .addMajestyWeapon(DriveRiderItems.ZENRIN_SHOOTER.get())
                     .addAltMajestyWeapon(DriveRiderItems.SHIFT_RUMBLE_DUMP.get(), DriveRiderItems.RUMBLE_SMASHER.get())
                     .addAltMajestyWeapon(DriveRiderItems.SIGNAL_CHASER.get(), DriveRiderItems.SHINGOU_AX.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> CROSS_Z_RIDEWATCH = ITEMS.register("cross_z_ridewatch",
             () -> ((MajestyRidewatchItem) new MajestyRidewatchItem(new Item.Properties()).setSummonBelt((RiderDriverItem) BuildRiderItems.BUILD_DRIVER_CROSS_Z.get()).addSummonWeapon(BuildRiderItems.BEAT_CROSSER.get())
@@ -1778,7 +1778,7 @@ public class ZiORiderItems {
                     .addAltMajestyWeapon(BuildRiderItems.DRAGON_SCLASH_JELLY.get(), BuildRiderItems.TWIN_BREAKER.get())
                     .addAltMajestyWeapon(BuildRiderItems.TAKA_FULL_BOTTLE.get(), BuildRiderItems.TWIN_BREAKER.get())
                     .addAltMajestyWeapon(BuildRiderItems.DRAGON_MAGMA_FULL_BOTTLE.get(), BuildRiderItems.MAGMA_KNUCKLE.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHINOBI_MIRIDEWATCH = ITEMS.register("shinobi_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_shinobi", "woz", "beyondriver_belt",
@@ -1792,7 +1792,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> QUIZ_MIRIDEWATCH = ITEMS.register("quiz_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_quiz", "woz", "beyondriver_belt",
@@ -1805,7 +1805,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> KIKAI_MIRIDEWATCH = ITEMS.register("kikai_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_kikai", "woz", "beyondriver_belt",
@@ -1818,7 +1818,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GINGA_FINALY_MIRIDEWATCH = ITEMS.register("ginga_finaly_miridewatch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ginga_finaly", "woz", "beyondriver_belt",
@@ -1870,22 +1870,22 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addNeedForm(GINGA_TAIYO_MIRIDEWATCH.get(), 1).addAlternative(GINGA_TAIYO_MIRIDEWATCH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addNeedForm(GINGA_TAIYO_MIRIDEWATCH.get(), 1).addAlternative(GINGA_TAIYO_MIRIDEWATCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> CHRISTMAS_RIDEWATCH = ITEMS.register("christmas_ridewatch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_L = ITEMS.register("unfinished_grand_zi_o_ridewatch_l",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_GRAND_ZI_O_RIDEWATCH_R = ITEMS.register("unfinished_grand_zi_o_ridewatch_r",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_GEIZ_MAJESTY_RIDEWATCH_L = ITEMS.register("unfinished_geiz_majesty_ridewatch_l",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_GEIZ_MAJESTY_RIDEWATCH_R = ITEMS.register("unfinished_geiz_majesty_ridewatch_r",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_L = ITEMS.register("unfinished_ohma_zi_o_driver_l",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "ohma_zi_o", "ohma_zi_o_driver_belt",
@@ -1909,13 +1909,13 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.isGold().isGlowing().IsBeltGlowing().hasStaticWings().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGold().isGlowing().IsBeltGlowing().hasStaticWings().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_OHMA_ZI_O_DRIVER_R = ITEMS.register("unfinished_ohma_zi_o_driver_r",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KUUGA_WATCH = ITEMS.register("another_kuuga_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_AGITO_WATCH = ITEMS.register("another_agito_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_agito_zio", "another_altering_belt",
@@ -1927,7 +1927,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("another_agito.geo.json").hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.changeModel("another_agito.geo.json").hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_RYUKI_WATCH = ITEMS.register("another_ryuki_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ryuki", "another_v_buckle_belt_ryuki",
@@ -1940,7 +1940,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_RYUGA_WATCH = ITEMS.register("another_ryuga_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ryuga", "another_v_buckle_belt_ryuga",
@@ -1953,7 +1953,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_FAIZ_WATCH = ITEMS.register("another_faiz_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_faiz", "another_faiz_driver_belt",
@@ -1966,13 +1966,13 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_BLADE_WATCH = ITEMS.register("another_blade_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_HIBIKI_WATCH = ITEMS.register("another_hibiki_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KABUTO_WATCH = ITEMS.register("another_kabuto_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_kabuto", "another_rider_belt",
@@ -1985,7 +1985,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DEN_O_WATCH = ITEMS.register("another_den_o_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_den_o", "another_den_o_belt",
@@ -1998,10 +1998,10 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KIVA_WATCH = ITEMS.register("another_kiva_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DECADE_WATCH = ITEMS.register("another_decade_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_decade", "another_decadriver_belt",
@@ -2016,7 +2016,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DIEND_WATCH = ITEMS.register("another_diend_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_diend", "another_diendriver_belt",
@@ -2031,7 +2031,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_W_WATCH = ITEMS.register("another_w_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_w", "another_w_driver_belt",
@@ -2045,7 +2045,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_OOO_WATCH = ITEMS.register("another_ooo_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ooo", "another_ooo_driver_belt",
@@ -2058,7 +2058,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_FOURZE_WATCH = ITEMS.register("another_fourze_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_fourze", "another_fourze_driver_belt",
@@ -2070,7 +2070,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_WIZARD_WATCH = ITEMS.register("another_wizard_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_wizard", "another_wizard_driver_belt",
@@ -2082,7 +2082,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_GAIM_WATCH = ITEMS.register("another_gaim_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_gaim", "another_gaim_driver_belt",
@@ -2094,10 +2094,10 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_DRIVE_WATCH = ITEMS.register("another_drive_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_GHOST_WATCH = ITEMS.register("another_ghost_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ghost", "another_ghost_driver_belt",
@@ -2109,7 +2109,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_EX_AID_WATCH = ITEMS.register("another_ex_aid_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_ex_aid", "another_ex_aid_driver_belt",
@@ -2121,7 +2121,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_BUILD_WATCH = ITEMS.register("another_build_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_build", "another_build_driver_belt",
@@ -2129,7 +2129,7 @@ public class ZiORiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 0, true, false))
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZI_O_WATCH = ITEMS.register("another_zi_o_watch",
             () -> new Zi_ORidewatchItem(new Item.Properties(), "", "another_zi_o", "another_ziku_driver_zi_o_belt",
@@ -2143,7 +2143,7 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZI_O_II_WATCH = ITEMS.register("another_zi_o_ii_watch",
             () -> new Zi_ORidewatchItem(new Item.Properties(), "_ii", "another_zi_o", "another_ziku_driver_zi_o_belt",
@@ -2160,13 +2160,13 @@ public class ZiORiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ZERO_ONE_WATCH = ITEMS.register("another_zero_one_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_ICHIGO_WATCH = ITEMS.register("another_ichigo_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_SHINOBI_WATCH = ITEMS.register("another_shinobi_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_shinobi", "another_shinobi_driver_belt",
@@ -2179,13 +2179,13 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_QUIZ_WATCH = ITEMS.register("another_quiz_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KIKAI_WATCH = ITEMS.register("another_kikai_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHURIKEN_STARTER = ITEMS.register("shuriken_starter",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "shinobi", "shinobi_driver_belt",
@@ -2198,7 +2198,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHURIKEN_STARTER_HATTARI = ITEMS.register("shuriken_starter_hattari",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "hattari", "hattari_driver_belt",
@@ -2211,7 +2211,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SHURIKEN_STARTER_YAMININ = ITEMS.register("shuriken_starter_yaminin",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "yaminin", "yaminin_belt_belt",
@@ -2224,7 +2224,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> QUIZ_TOPPER = ITEMS.register("quiz_topper",
@@ -2238,7 +2238,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> SPANNERDER_SCREWDER = ITEMS.register("spannerder_screwder",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kikai", "kikai_driver_belt",
@@ -2251,7 +2251,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGold().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGold().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> GINGA_SCOPE = ITEMS.register("ginga_scope",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ginga", "ginga_driver_belt",
@@ -2264,28 +2264,28 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDESTRIKER_RIDEWATCH = ITEMS.register("ridestriker_ridewatch",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.RIDESTRIKER)
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> WOZ_TIME_MAJIN_RIDEWATCH = ITEMS.register("woz_time_majin_ridewatch",
-            () -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel());
+            () -> new BaseCityItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> OHMA_ADVENT_CALENDAR = ITEMS.register("ohma_advent_calendar",
-            () -> new OhmaAdventCalendarItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new OhmaAdventCalendarItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZI_O_HELMET = ITEMS.register("zi_o_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZI_O_CHESTPLATE = ITEMS.register("zi_o_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZI_O_LEGGINGS = ITEMS.register("zi_o_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
 
     public static final DeferredItem<Item> ZIKU_DRIVER_ZI_O = ITEMS.register("ziku_driver_zi_o",
@@ -2308,7 +2308,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> OHMA_ZI_O_DRIVER = ITEMS.register("ohma_zi_o_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ohma_zi_o", UNFINISHED_OHMA_ZI_O_DRIVER_L, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2330,7 +2330,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKU_DRIVER_GEIZ = ITEMS.register("ziku_driver_geiz",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "geiz", GEIZ_RIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2352,7 +2352,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKU_DRIVER_TSUKUYOMI = ITEMS.register("ziku_driver_tsukuyomi",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "tsukuyomi", TSUKUYOMI_RIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2374,7 +2374,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> BEYONDRIVER = ITEMS.register("beyondriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "woz", WOZ_MIRIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2396,7 +2396,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKU_DRIVER_ZI_O_MIRROR = ITEMS.register("ziku_driver_zi_o_mirror",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zi_o_mirror", ZI_O_MIRROR_RIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2418,7 +2418,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKU_DRIVER_BARLCKXS = ITEMS.register("ziku_driver_barlckxs",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "barlckxs", BARLCKXS_RIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2440,7 +2440,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKU_DRIVER_ZONJIS = ITEMS.register("ziku_driver_zonjis",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zonjis", ZONJIS_RIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2462,7 +2462,7 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKU_DRIVER_ZAMONAS = ITEMS.register("ziku_driver_zamonas",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zamonas", ZAMONAS_RIDEWATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
@@ -2484,168 +2484,168 @@ public class ZiORiderItems {
                         }
                     }, buf -> buf.writeBlockPos(player.blockPosition()));
                 }
-            }.hasInventoryGui().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            }.hasInventoryGui().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> SHINOBIDRIVER = ITEMS.register("shinobi_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "shinobi", SHURIKEN_STARTER, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> HATTARIDRIVER = ITEMS.register("hattari_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "hattari", SHURIKEN_STARTER_HATTARI, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> YAMININ_BELT = ITEMS.register("yaminin_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "yaminin", SHURIKEN_STARTER_YAMININ, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> QUIZDRIVER = ITEMS.register("quiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "quiz", QUIZ_TOPPER, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> KIKAIDRIVER = ITEMS.register("kikai_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kikai", SPANNERDER_SCREWDER, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> GINGADRIVER = ITEMS.register("ginga_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ginga", GINGA_SCOPE, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_ALTERING = ITEMS.register("another_altering",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_agito_zio", ANOTHER_AGITO_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_V_BUCKLE_RYUKI = ITEMS.register("another_v_buckle_ryuki",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ryuki", ANOTHER_RYUKI_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_V_BUCKLE_RYUGA = ITEMS.register("another_v_buckle_ryuga",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ryuga", ANOTHER_RYUGA_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_FAIZ_DRIVER = ITEMS.register("another_faiz_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_faiz", ANOTHER_FAIZ_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_RIDER_BELT = ITEMS.register("another_rider_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_kabuto", ANOTHER_KABUTO_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_DEN_O_BELT = ITEMS.register("another_den_o_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_den_o", ANOTHER_DEN_O_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_DECADRIVER = ITEMS.register("another_decadriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_decade", ANOTHER_DECADE_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_DIENDRIVER = ITEMS.register("another_diendriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_diend", ANOTHER_DIEND_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_W_DRIVER = ITEMS.register("another_w_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_w", ANOTHER_W_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_OOO_DRIVER = ITEMS.register("another_ooo_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ooo", ANOTHER_OOO_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_FOURZE_DRIVER = ITEMS.register("another_fourze_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_fourze", ANOTHER_FOURZE_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_WIZARD_DRIVER = ITEMS.register("another_wizard_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_wizard", ANOTHER_WIZARD_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_GAIM_DRIVER = ITEMS.register("another_gaim_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_gaim", ANOTHER_GAIM_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_GHOST_DRIVER = ITEMS.register("another_ghost_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ghost", ANOTHER_GHOST_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_EX_AID_DRIVER = ITEMS.register("another_ex_aid_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_ex_aid", ANOTHER_EX_AID_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_BUILD_DRIVER = ITEMS.register("another_build_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_build", ANOTHER_BUILD_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_ZIKU_DRIVER_ZI_O = ITEMS.register("another_ziku_driver_zi_o",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_zi_o", ANOTHER_ZI_O_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_SHINOBI_DRIVER = ITEMS.register("another_shinobi_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_shinobi", ANOTHER_SHINOBI_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
 
     public static final DeferredItem<Item> ZIKAN_GIRADE = ITEMS.register("zikan_girade",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKAN_ZAX = ITEMS.register("zikan_zax",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> DRILL_CRUSHER_CRUSHER = ITEMS.register("drill_crusher_crusher",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> FAIZPHONE_X = ITEMS.register("faiz_phone_x",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> RIDE_HEISABER = ITEMS.register("ride_heisaber",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> SAIKYO_GIRADE = ITEMS.register("saikyo_girade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> SAIKYO_ZIKAN_GIRADE = ITEMS.register("saikyo_zikan_girade",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKAN_DESPEAR = ITEMS.register("zikan_despear",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKAN_DESPEAR_KAMA = ITEMS.register("zikan_despear_kama",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKAN_DESPEAR_TSUE = ITEMS.register("zikan_despear_tsue",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKAN_JACLAW = ITEMS.register("zikan_jaclaw",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).isChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).isChangeSword().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZAMONAS_BOW = ITEMS.register("zamonas_bow",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> BARLCKXS_SWORD = ITEMS.register("barlckxs_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_DRAG_SABER = ITEMS.register("another_drag_saber",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_DRAG_SABER_RYUGA = ITEMS.register("another_drag_saber_ryuga",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> KASSHINE_TRIDENT = ITEMS.register("kasshine_trident",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM)
                     .changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> TAKA_RIDEWATCH = ITEMS.register("taka_ridewatch",
-            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.taka"), MobsCore.TAKA_WATCHROID).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel());
+            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.taka"), MobsCore.TAKA_WATCHROID).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> KODAMA_RIDEWATCH = ITEMS.register("kodama_ridewatch",
-            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.kodama"), MobsCore.KODAMA_SUIKA_ARMS).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).useBasicModel());
+            () -> new RideGadgetItem(new Item.Properties(),Component.translatable("ridegadget.kamenridercraft.kodama"), MobsCore.KODAMA_SUIKA_ARMS).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> QUESTIOABLE_WATCH = ITEMS.register("questionable_watch",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> TOY_ROBOT = ITEMS.register("toy_robot",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<BaseThrowableItem> MANHOLE_COVER = ITEMS.register("manhole_cover",
-            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -4.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.ZI_O_TAB_ITEM).changeRepairItem(Items.IRON_INGOT));
+            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -4.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(Items.IRON_INGOT));
 
 
     public static void register(IEventBus eventBus) {

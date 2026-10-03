@@ -4,9 +4,11 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.sounds.ModMusic;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MusicDiscItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -161,7 +163,4 @@ public class MusicDiscItems {
     public static final DeferredItem<Item> MASKED_RIDER_MUSIC_DISC = ITEMS.register("masked_rider_music_disc",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE).jukeboxPlayable(ModMusic.MASKED_RIDER_KEY).stacksTo(1)));
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
 }

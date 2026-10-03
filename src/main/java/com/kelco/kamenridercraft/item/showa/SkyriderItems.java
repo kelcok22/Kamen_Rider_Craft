@@ -28,7 +28,7 @@ public class SkyriderItems {
 
 
     public static final DeferredItem<Item> SKYRIDER_LOGO = ITEMS.register("skyrider_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/skyrider")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/skyrider")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> TORNADO_CORE = ITEMS.register("tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","skyrider","tornado_belt",
@@ -48,7 +48,7 @@ public class SkyriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item> ORIGINAL_TORNADO_CORE = ITEMS.register("original_tornado_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"_original","skyrider","tornado_belt",
@@ -68,28 +68,28 @@ public class SkyriderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 34, 0, 0, 0, 1);
                 }
-            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).useBasicModel());
+            }.hasSD().changeModel("skyrider.geo.json").setSlotOneAbility("flight_boost", 1).setSlotTwoAbility("rider_kick", 1).hasCape().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> GG_CORE = ITEMS.register("gg_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","gangan_g","gangan_g_belt_belt")
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  SKYRIDERHELMET = ITEMS.register("skyriderhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
     public static final DeferredItem<Item>  SKYRIDERCHESTPLATE = ITEMS.register("skyridertroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
     public static final DeferredItem<Item>  SKYRIDERLEGGINGS = ITEMS.register("skyriderlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  TORNADO = ITEMS.register("tornado",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties())
-                    .hasSDForm().isA1().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+                    .hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  GANGAN_G_BELT = ITEMS.register("gangan_g_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gangan_g",GG_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gangan_g",GG_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM));
 
     public static final DeferredItem<Item>  FAKE_TORNADO = ITEMS.register("fake_tornado",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.SKYRIDER_TAB_ITEM).useBasicModel());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_skyrider",TORNADO_CORE ,SKYRIDERHELMET,SKYRIDERCHESTPLATE,SKYRIDERLEGGINGS , new Item.Properties()).isA1().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SKYRIDER_TAB_ITEM).useBasicModel());
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

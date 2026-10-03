@@ -111,7 +111,7 @@ public class CrossSeriesRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(EVOLUTION_GIRAFFA_SIC.get()).addAlternative(TACKLE_CORE_ARTIST.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

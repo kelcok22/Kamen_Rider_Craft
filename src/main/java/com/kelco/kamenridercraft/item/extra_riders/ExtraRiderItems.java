@@ -18,29 +18,29 @@ public class ExtraRiderItems {
 
 
 	public static final DeferredItem<Item> ICHIGO_MASK = ITEMS.register("ichigo_mask",
-			() -> new MaskItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+			() -> new MaskItem(new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 	public static final DeferredItem<Item> V3_MASK = ITEMS.register("v3_mask",
-			() -> new MaskItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+			() -> new MaskItem(new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> RIDERMAN_HELMET = ITEMS.register("riderman_helmet",
-            () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(),"riderman","riderman").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+            () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(),"riderman","riderman").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 	public static final DeferredItem<Item> TOJIMA_TAKOYAKI = ITEMS.register("tojima_takoyaki",
-			() -> new ToujimaTakoyakiItem(new Item.Properties().stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+			() -> new ToujimaTakoyakiItem(new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 
 	public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
-			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift")).addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gift")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 	public static final DeferredItem<Item> GASHAPON_CAPSULE = ITEMS.register("gashapon_capsule",
-			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gashapon_capsule")).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/gashapon_capsule")).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 	public static final DeferredItem<Item> HALLOWEEN_GASHAPON_CAPSULE = ITEMS.register("halloween_gashapon_capsule",
-			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/halloween_gashapon_capsule")).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+			() -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/halloween_gashapon_capsule")).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> VALENTINE_GASHAPON_CAPSULE = ITEMS.register("valentine_gashapon_capsule",
-            () -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/valentine_gashapon_capsule")).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MISC_TAB_ITEMS));
+            () -> new BaseDropItem(new Item.Properties().rarity(Rarity.UNCOMMON), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/valentine_gashapon_capsule")).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 

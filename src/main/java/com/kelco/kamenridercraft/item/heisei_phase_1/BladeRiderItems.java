@@ -34,21 +34,21 @@ public class BladeRiderItems {
     public final static List<Item> ACE_UNDEAD_DROPS = new ArrayList<>();
 
     public static final DeferredItem<Item> BLADE_LOGO = ITEMS.register("blade_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/blade")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/blade")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLANK_ROUZECARD = ITEMS.register("bladecard",
-            () -> new BlankRouzeCardItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BlankRouzeCardItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
     public static final DeferredItem<Item> PROPER_BLANK_ACE_WILD = ITEMS.register("proper_blank_ace_wild",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
     public static final DeferredItem<Item> VANITY_BLANK = ITEMS.register("vanity_blank",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROUZE_ABSORBER = ITEMS.register("rouze_absorber",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLDEN_SPIDER = ITEMS.register("golden_spider",
-            () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_CHANGE_BEETLE = ITEMS.register("sealable_change_beetle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_beetle", "undead", "sealable_undead_buckle_belt",
@@ -88,18 +88,18 @@ public class BladeRiderItems {
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }
                 }
-            }.setHenshinTick(35).setFormDelay(1).addAlternative(CHANGE_BEETLE_UNDEAD.get()).changeModel("blade.geo.json").isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.setHenshinTick(35).setFormDelay(1).addAlternative(CHANGE_BEETLE_UNDEAD.get()).changeModel("blade.geo.json").isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SLASH_LIZARD = ITEMS.register("slash_lizard",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BEAT_LION = ITEMS.register("beat_lion",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> TACKLE_BOAR = ITEMS.register("tackle_boar",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_KICK_LOCUST = ITEMS.register("sealable_kick_locust",
@@ -124,7 +124,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_KICK_LOCUST.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_KICK_LOCUST.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_THUNDER_DEER = ITEMS.register("sealable_thunder_deer",
@@ -149,15 +149,15 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_THUNDER_DEER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_THUNDER_DEER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> METAL_TRILOBITE = ITEMS.register("metal_trilobite",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> MAGNET_BUFFALO = ITEMS.register("magnet_buffalo",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_MACH_JAGUAR = ITEMS.register("sealable_mach_jaguar",
@@ -182,11 +182,11 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_MACH_JAGUAR.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_MACH_JAGUAR.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> TIME_SCARAB = ITEMS.register("time_scarab",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_FUSION_EAGLE = ITEMS.register("sealable_fusion_eagle",
@@ -233,7 +233,7 @@ public class BladeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.isGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
-                    .hasFlyingWings("blade_jack_wing.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+                    .hasFlyingWings("blade_jack_wing.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_CAPRICORN = ITEMS.register("sealable_absorb_capricorn",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_capricorn", "undead", "sealable_undead_buckle_royal_belt",
@@ -257,7 +257,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addSwitchForm(SEALABLE_ABSORB_CAPRICORN.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_EVOLUTION_CAUCASUS = ITEMS.register("sealable_evolution_caucasus",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_caucasus", "undead", "sealable_undead_buckle_royal_belt",
@@ -300,7 +300,7 @@ public class BladeRiderItems {
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
             }.isGlowing().addAlternative(EVOLUTION_CAUCASUS_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get())
-                    .addNeedItem(ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+                    .addNeedItem(ABSORB_CAPRICORN.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_silver_king", "blade", "blay_buckle_king_belt",
@@ -314,7 +314,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).changeModel("blade_king.geo.json").addNeedItem(ABSORB_CAPRICORN.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).changeModel("blade_king.geo.json").addNeedItem(ABSORB_CAPRICORN.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_CHANGE_STAG = ITEMS.register("sealable_change_stag",
             () -> new RiderFormChangeItem(new Item.Properties(), "_stag", "undead", "sealable_undead_buckle_belt",
@@ -350,15 +350,15 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(CHANGE_STAG_UNDEAD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.isGlowing().addAlternative(CHANGE_STAG_UNDEAD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(ACE_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BULLET_ARMADILLO = ITEMS.register("bullet_armadillo",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> UPPER_FROG = ITEMS.register("upper_frog",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_RAPID_PECKER = ITEMS.register("sealable_rapid_pecker",
@@ -383,15 +383,15 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_RAPID_PECKER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_RAPID_PECKER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> DROP_WHALE = ITEMS.register("drop_whale",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> ROUZE_FIREFLY = ITEMS.register("rouze_firefly",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_ROCK_TORTOISE = ITEMS.register("sealable_rock_tortoise",
@@ -416,7 +416,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_ROCK_TORTOISE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_ROCK_TORTOISE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_SCOPE_BAT = ITEMS.register("sealable_scope_bat",
@@ -441,15 +441,15 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_SCOPE_BAT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_SCOPE_BAT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> GEMINI_ZEBRA = ITEMS.register("gemini_zebra",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> THIEF_CHAMELEON = ITEMS.register("thief_chameleon",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_FUSION_PEACOCK = ITEMS.register("sealable_fusion_peacock",
@@ -493,7 +493,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(FUSION_PEACOCK_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_jack_wing.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addAlternative(FUSION_PEACOCK_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_jack_wing.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_SERPENT = ITEMS.register("sealable_absorb_serpent",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_serpent", "undead", "sealable_undead_buckle_royal_belt",
@@ -517,7 +517,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_ABSORB_SERPENT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addSwitchForm(SEALABLE_ABSORB_SERPENT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_EVOLUTION_GIRAFFA = ITEMS.register("sealable_evolution_giraffa",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_giraffa", "undead", "sealable_undead_buckle_royal_belt",
@@ -559,7 +559,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(EVOLUTION_GIRAFFA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addAlternative(EVOLUTION_GIRAFFA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ultimate_form", "taiyaki_master", "blank",
@@ -612,7 +612,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(TAIYAKI_MASTER.get()).addAlternative(CHANGE_MANTIS_UNDEAD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.isGlowing().addAlternative(TAIYAKI_MASTER.get()).addAlternative(CHANGE_MANTIS_UNDEAD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(ACE_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> CHALICE_ROUZE_SPIRIT_STEVE = ITEMS.register("chalice_rouze_spirit_steve",
@@ -659,10 +659,10 @@ public class BladeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(SEALABLE_ROUZE_SPIRIT.get()).addAlternative(CHALICE_ROUZE_SPIRIT.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).addToList(NORMAL_UNDEAD_DROPS));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> CHOP_HEAD = ITEMS.register("chop_head",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_FLOAT_DRAGONFLY = ITEMS.register("sealable_float_dragonfly",
@@ -687,19 +687,19 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_FLOAT_DRAGONFLY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_FLOAT_DRAGONFLY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> DRILL_SHELL = ITEMS.register("drill_shell",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> TORDANDO_HAWK = ITEMS.register("tornado_hawk",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BIO_PLANT = ITEMS.register("bio_plant",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_REFLECT_MOTH = ITEMS.register("sealable_reflect_moth",
@@ -724,12 +724,12 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_REFLECT_MOTH.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_REFLECT_MOTH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
 
     public static final DeferredItem<Item> RECOVER_CAMEL = ITEMS.register("recover_camel",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_SHUFFLE_CENTIPEDE = ITEMS.register("sealable_shuffle_centipede",
@@ -754,14 +754,14 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(SEALABLE_SHUFFLE_CENTIPEDE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            }.addSwitchForm(SEALABLE_SHUFFLE_CENTIPEDE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> FUSION_WOLF = ITEMS.register("fusion_wolf",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ABSORB_ORCHID = ITEMS.register("absorb_orchid",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> EVOLUTION_PARADOXA = ITEMS.register("evolution_paradoxa",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wild", "chalice", "chalice_rouzer_belt",
@@ -775,7 +775,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_SPIDER = ITEMS.register("change_spider",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "leangle", "leangle_buckle_belt",
@@ -787,7 +787,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addToList(ACE_UNDEAD_DROPS).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_SPIDER_PROPER_SEAL = ITEMS.register("change_spider_proper_seal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_proper_seal", "leangle", "leangle_buckle_belt",
@@ -799,42 +799,42 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().changeModel("leangle.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().changeModel("leangle.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> STAB_BEE = ITEMS.register("stab_bee",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SCREW_MOLE = ITEMS.register("screw_mole",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> RUSH_RHINOCEROS = ITEMS.register("rush_rhinoceros",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BITE_COBRA = ITEMS.register("bite_cobra",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> BLIZZARD_POLAR = ITEMS.register("blizzard_polar",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> GEL_JELLYFISH = ITEMS.register("gel_jellyfish",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> POISON_SCORPION = ITEMS.register("poison_scorpion",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SMOG_SQUID = ITEMS.register("smog_squid",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> REMOTE_TAPIR = ITEMS.register("remote_tapir",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> FUSION_ELEPHANT = ITEMS.register("fusion_elephant",
@@ -849,10 +849,10 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ABSORB_TIGER = ITEMS.register("absorb_tiger",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> EVOLUTION_TARANTULA = ITEMS.register("evolution_tarantula",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_king", "leangle", "leangle_buckle_king_belt",
@@ -866,7 +866,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_TIGER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_KERBEROS_GLAIVE = ITEMS.register("change_kerberos_glaive",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "glaive", "glaive_buckle_belt",
@@ -878,7 +878,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_KERBEROS_LANCE = ITEMS.register("change_kerberos_lance",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "lance", "lance_buckle_belt",
@@ -892,7 +892,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_KERBEROS_LARC = ITEMS.register("change_kerberos_larc",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "larc", "larc_buckle_belt",
@@ -905,16 +905,16 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> MIGHTY_GRAVITY = ITEMS.register("mighty_gravity",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> MIGHTY_IMPACT = ITEMS.register("mighty_impact",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> MIGHTY_RAY = ITEMS.register("mighty_ray",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLACK_JOKER_SEALED = ITEMS.register("black_joker_sealed",
@@ -927,7 +927,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ALBINO_JOKER_SEALED = ITEMS.register("albino_joker_sealed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), "", "albino_joker", "albino_jokerrouzer_belt",
@@ -939,20 +939,20 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> VANITY_SEALED = ITEMS.register("vanity_sealed",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> JASHIN_FOURTEEN_SEALED = ITEMS.register("jashin_fourteen_sealed",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADEHELMET = ITEMS.register("bladehead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> BLADECHESTPLATE = ITEMS.register("bladetroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> BLADELEGGINGS = ITEMS.register("bladelegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 
 
     public static final DeferredItem<Item> BLAYBUCKLE = ITEMS.register("blay_buckle",
@@ -971,84 +971,84 @@ public class BladeRiderItems {
                         return "blade_yellowed";
                     } else return super.getText(itemstack, equipmentSlot, rider, riderName);
                 }
-            }.addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 
     public static final DeferredItem<Item> GARRENBUCKLE = ITEMS.register("garren_buckle",
-            () -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "garren", CHANGE_STAG, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> CHALICEROUZER = ITEMS.register("chalice_rouzer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chalice", CHANGE_MANTIS, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chalice", CHANGE_MANTIS, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> LEANGLEBUCKLE = ITEMS.register("leangle_buckle",
-            () -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BlayBuckleItem(ArmorMaterials.DIAMOND, "leangle", CHANGE_SPIDER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> GLAIVEBUCKLE = ITEMS.register("glaive_buckle",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "glaive", CHANGE_KERBEROS_GLAIVE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> LANCEBUCKLE = ITEMS.register("lance_buckle",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lance", CHANGE_KERBEROS_LANCE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lance", CHANGE_KERBEROS_LANCE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> LARCBUCKLE = ITEMS.register("larc_buckle",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "larc", CHANGE_KERBEROS_LARC, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 
 
     public static final DeferredItem<Item> UNDEAD_BUCKLE = ITEMS.register("undead_buckle",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "undead", ROUZE_SPIRIT, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> BLACK_JOKERROUZER = ITEMS.register("black_jokerrouzer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "black_joker", BLACK_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "black_joker", BLACK_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> ALBINO_JOKERROUZER = ITEMS.register("albino_jokerrouzer",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "albino_joker", ALBINO_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "albino_joker", ALBINO_JOKER_SEALED, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> BLAYBUCKLE_FAKE = ITEMS.register("blay_buckle_fake",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "fake_blade", CHANGE_BEETLE, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 
     public static final DeferredItem<Item> TAIYAKI_SECRET_WEAPON = ITEMS.register("taiyaki_secret_weapon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "taiyaki_master", TAIYAKI_MASTER, BLADEHELMET, BLADECHESTPLATE, BLADELEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 
 
     public static final DeferredItem<Item> BLAYROUZER = ITEMS.register("blayrouzer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> KINGROUZER = ITEMS.register("kingrouzer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> GARRENROUZER = ITEMS.register("garrenrouzer",
-            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(BLANK_ROUZECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(BLANK_ROUZECARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
     public static final DeferredItem<Item> GARREN_KINGROUZER = ITEMS.register("garren_kingrouzer",
-            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(BLANK_ROUZECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).setRepairItem(BLANK_ROUZECARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
     public static final DeferredItem<Item> CHALICE_ARROW = ITEMS.register("chalice_arrow",
-            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(BLANK_ROUZECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(BLANK_ROUZECARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
     public static final DeferredItem<Item> WILD_SLASHER = ITEMS.register("wild_slasher",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> WILD_CHALICE_ARROW = ITEMS.register("wild_chalice_arrow",
-            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).setRepairItem(BLANK_ROUZECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.FIREBALL).setRepairItem(BLANK_ROUZECARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
     public static final DeferredItem<Item> LEANGLEROUZER = ITEMS.register("leanglerouzer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> LEANGLE_KINGROUZER = ITEMS.register("leangle_kingrouzer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> GLAIVEROUZER = ITEMS.register("glaiverouzer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> LANCEROUZER = ITEMS.register("lancerouzer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> LARCROUZER = ITEMS.register("larcrouzer",
-            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(BLANK_ROUZECARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM));
+            () -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SPECTRAL_BOW_PRESET).setRepairItem(BLANK_ROUZECARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRAGONFLY_SOMERSAULT = ITEMS.register("dragonfly_somersault",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> JAGUAR_CLAWS = ITEMS.register("jaguar_claws",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -1.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -1.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> CAPRICORN_CRESCENT_EDGE = ITEMS.register("capricorn_crescent_edge",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -1.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -1.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> CAUCASUS_ALL_OVER = ITEMS.register("caucasus_all_over",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> CAUCASUS_SOLID_SHIELD = ITEMS.register("caucasus_solid_shield",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> PEACOCK_SWORTHER = ITEMS.register("peacock_sworther",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     //	public static final DeferredItem<Item> SERPENT_EVASISC = ITEMS.register("serpent_evasisc",
 //			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(RiderTabs.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
     public static final DeferredItem<Item> GIRAFFA_HELLTAR = ITEMS.register("giraffa_helltar",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> GIRAFFA_SKELTAR = ITEMS.register("giraffa_skeltar",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> JOKER_MANTIS = ITEMS.register("joker_mantis",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> ALBINO_JOKER_DEATH_SCYTHE = ITEMS.register("albino_joker_death_scythe",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 //	public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
 //			() -> new BaseShieldItem(new Item.Properties()).addToList(RiderTabs.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
@@ -1067,7 +1067,7 @@ public class BladeRiderItems {
 
 
     public static final DeferredItem<Item> TAIYAKI_MOLD = ITEMS.register("taiyaki_mold",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.BLADE_TAB_ITEM).KeepItem().changeRepairItem(BLANK_ROUZECARD.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).KeepItem().changeRepairItem(BLANK_ROUZECARD.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

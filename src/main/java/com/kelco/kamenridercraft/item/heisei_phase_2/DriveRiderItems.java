@@ -30,19 +30,19 @@ public class DriveRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> DRIVE_LOGO = ITEMS.register("drive_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/drive")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/drive")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_ALLOY = ITEMS.register("shift_alloy",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_SYSTEM_CAR = ITEMS.register("drive_system_car",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> NEXT_SYSTEM_BIKE = ITEMS.register("next_system_bike",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> NEXT_SYSTEM_CAR = ITEMS.register("next_system_car",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BASIC_TIRE = ITEMS.register("basic_tire",
             () -> new RiderFormChangeItem(new Item.Properties(), "no_tire", "drive", "drivedriver_belt",
@@ -82,7 +82,7 @@ public class DriveRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeModel("drive.geo.json")
-                    .alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASER.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .alsoChange2ndSlot(BASIC_TIRE.get()).addAlternative(SHIFT_PROTO_SPEED_CHASER.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_SPEED = ITEMS.register("speedshift",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "drive", "drivedriver_belt",
@@ -95,7 +95,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).changeModel("drive.geo.json").isGlowing().addToList(ShiftChassisAssembler.DRIVE_CAR, 15).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).changeModel("drive.geo.json").isGlowing().addToList(ShiftChassisAssembler.DRIVE_CAR, 15).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_WILD = ITEMS.register("wildshift",
             () -> new RiderFormChangeItem(new Item.Properties(), "_wild", "drive", "drivedriver_belt",
@@ -108,7 +108,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_TECHNIC = ITEMS.register("technicshift",
             () -> new RiderFormChangeItem(new Item.Properties(), "_technic", "drive", "drivedriver_belt",
@@ -121,13 +121,13 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DEAD_HEAT_CAR = ITEMS.register("deadheat_car",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.DRIVE_CAR, 3).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.DRIVE_CAR, 3).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DEAD_HEAT_BIKE = ITEMS.register("deadheat_bike",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_BIKE, 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_BIKE, 2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DEAD_HEAT_DRIVE_MACH = ITEMS.register("deadheatshift_drive_mach",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "drive_dead_heat", "mach_driver_honoh_belt",
@@ -182,7 +182,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.addAlternative(SHIFT_DEAD_HEAT_MACH.get()).isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.addAlternative(SHIFT_DEAD_HEAT_MACH.get()).isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIFT_FORMULA = ITEMS.register("formulashift",
@@ -197,11 +197,11 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_TRIDORON_CORE = ITEMS.register("tridoronshift_core",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(ShiftChassisAssembler.DRIVE_CAR, 5).useBasicModel()
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static List<Item> NEED_ITEM_TRIDORON_ALL_TIRE = new ArrayList<>();
@@ -257,7 +257,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).addNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.addAlternative(SHIFT_TRIDORON_NOT_ALL.get()).addNeedItemList(NEED_ITEM_TRIDORON_ALL_TIRE).alsoChange2ndSlot(TRIDORON_ALL_TIRE.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_HEARTRON = ITEMS.register("heartronshift",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "heart", "drivedriver_belt",
@@ -274,7 +274,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.changeModel("drive_tridoron.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIFT_HIGH_SPEED = ITEMS.register("high_speedshift",
@@ -288,7 +288,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_NEXT = ITEMS.register("nextshift",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "dark_drive", "drivedriver_belt",
@@ -305,7 +305,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 3, 0, 0, 0, 1);
                 }
-            }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).useBasicModel());
+            }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> SHIFT_SPECIAL = ITEMS.register("specialshift",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_special", "drive", "drivedriver_belt",
@@ -323,7 +323,7 @@ public class DriveRiderItems {
                             player.getZ(), 3, 0, 0, 0, 1);
                 }
             }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(ShiftChassisAssembler.NEXT_CAR)
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).useBasicModel());
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).useBasicModel());
 
 
     public static final DeferredItem<Item> SHIFT_FRUITS = ITEMS.register("fruitsshift",
@@ -337,7 +337,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_SPEED_WILD_TECHNIC = ITEMS.register("speedwildtechnicshift",
             () -> new RiderFormChangeItem(new Item.Properties(), "_speed_wild_technic", "drive", "drivedriver_belt",
@@ -357,7 +357,7 @@ public class DriveRiderItems {
                             player.getZ(), 30, 0, 0, 0, 1);
                 }
             }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing()
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static List<Item> NEED_ITEM_ATTACK_123 = new ArrayList<>();
 
@@ -441,7 +441,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(ATTACK_123.get()).changeSlot(2).addToList(NEED_ITEM_ATTACK_123).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_FUNKY_SPIKE = ITEMS.register("funkyspike",
             () -> new RiderFormChangeItem(new Item.Properties(), "funky_spike_tire", "drive", "drivedriver_belt",
@@ -455,7 +455,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(ATTACK_123.get()).changeSlot(2).addToList(NEED_ITEM_ATTACK_123).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_MIDNIGHT_SHADOW = ITEMS.register("midnightshadow",
             () -> new RiderFormChangeItem(new Item.Properties(), "midnight_shadow_tire", "drive", "drivedriver_belt") {
@@ -468,7 +468,7 @@ public class DriveRiderItems {
                 }
             }.setSlotOneAbility("cannon", 1).addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(ATTACK_123.get()).changeSlot(2).addToList(NEED_ITEM_ATTACK_123).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 7).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_JUSTICE_HUNTER = ITEMS.register("justice_hunter",
             () -> new RiderFormChangeItem(new Item.Properties(), "justice_hunter_tire", "drive", "drivedriver_belt",
@@ -482,7 +482,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(PEOPLE_SAVER.get()).changeSlot(2).addToList(NEED_ITEM_PEOPLE_SAVER).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DREAM_VAGAS = ITEMS.register("dream_vegas",
             () -> new RiderFormChangeItem(new Item.Properties(), "dream_vegas_tire", "drive", "drivedriver_belt",
@@ -496,7 +496,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).isGold()
                     .addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DIMENSION_CAB = ITEMS.register("dimension_cab",
             () -> new RiderFormChangeItem(new Item.Properties(), "dimension_cab_tire", "drive", "drivedriver_belt") {
@@ -509,7 +509,7 @@ public class DriveRiderItems {
                 }
             }.setSlotOneAbility("warp",1).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_MASSIVE_MONSTER = ITEMS.register("massive_monster",
             () -> new RiderFormChangeItem(new Item.Properties(), "massive_monster_tire", "drive", "drivedriver_belt",
@@ -523,7 +523,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_SPIN_MIXER = ITEMS.register("spin_mixer",
             () -> new RiderFormChangeItem(new Item.Properties(), "spin_mixer_tire", "drive", "drivedriver_belt",
@@ -539,7 +539,7 @@ public class DriveRiderItems {
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem())
                     .addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).addAlternative(KOUJI_GENBAR.get()).changeSlot(2)
                     .addToList(NEED_ITEM_KOUJI_GENBAR).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 6).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_RUMBLE_DUMP = ITEMS.register("rumble_dump",
             () -> new RiderFormChangeItem(new Item.Properties(), "rumble_dump_tire", "drive", "drivedriver_belt",
@@ -554,7 +554,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem())
                     .addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).addAlternative(KOUJI_GENBAR.get()).changeSlot(2).addToList(NEED_ITEM_KOUJI_GENBAR)
-                    .addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_MAD_DOCTOR_MACH = ITEMS.register("mad_doctor_mach",
             () -> new RiderFormChangeItem(new Item.Properties(), "mad_doctor_tire", "mach", "drivedriver_belt",
@@ -580,7 +580,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem())
                     .addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem()).addAlternative(SHIFT_MAD_DOCTOR_MACH.get()).changeSlot(2).addToList(NEED_ITEM_PEOPLE_SAVER).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_HOOKING_WRECKER = ITEMS.register("hooking_wrecker",
             () -> new RiderFormChangeItem(new Item.Properties(), "hooking_wrecker_tire", "drive", "drivedriver_belt",
@@ -594,14 +594,14 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_BURNING_SOLAR = ITEMS.register("burning_solar",
-            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).useBasicModel());
 
     public static final DeferredItem<Item> SHIFT_COLOR_COMMERCIAL = ITEMS.register("colorful_commercial",
-            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).useBasicModel());
 
 
@@ -618,7 +618,7 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(PEOPLE_SAVER.get()).changeSlot(2).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addToList(NEED_ITEM_PEOPLE_SAVER)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_ROLLING_GRAVITY = ITEMS.register("rolling_gravity",
             () -> new RiderFormChangeItem(new Item.Properties(), "rolling_gravity_tire", "drive", "drivedriver_belt",
@@ -634,10 +634,10 @@ public class DriveRiderItems {
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
                     .addAlternative(KOUJI_GENBAR.get()).changeSlot(2).addToList(NEED_ITEM_KOUJI_GENBAR).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_DECO_TRAVELLER = ITEMS.register("deco_traveller",
-            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 4).useBasicModel());
 
 
@@ -652,10 +652,10 @@ public class DriveRiderItems {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE)
-                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 3).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addToList(ShiftChassisAssembler.DRIVE_CAR, 3).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_AMAZING_CIRCUS = ITEMS.register("amazing_circus",
-            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM)
+            () -> new BaseItem(new Item.Properties()).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM)
                     .addToList(ShiftChassisAssembler.DRIVE_CAR, 3).useBasicModel());
 
     public static final DeferredItem<Item> SHIFT_MANTARN_F01 = ITEMS.register("mantarn_f01",
@@ -669,7 +669,7 @@ public class DriveRiderItems {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.addNeedForm(SHIFT_FORMULA.get(), 1).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
-                    .changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_JACKY_F02 = ITEMS.register("jacky_f02",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "f02_tire", "drive", "drivedriver_belt",
@@ -682,7 +682,7 @@ public class DriveRiderItems {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.addNeedForm(SHIFT_FORMULA.get(), 1).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
-                    .changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_SPARNER_F03 = ITEMS.register("sparner_f03",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "f03_tire", "drive", "drivedriver_belt",
@@ -695,7 +695,7 @@ public class DriveRiderItems {
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
             }.addNeedForm(SHIFT_FORMULA.get(), 1).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
-                    .changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeSlot(2).addToList(NEED_ITEM_TRIDORON_ALL_TIRE).addToList(ShiftChassisAssembler.DRIVE_CAR, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIFT_MEGA_MAX_FLARE = ITEMS.register("mega_maxflare",
@@ -709,27 +709,27 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.addIncompatibleForm(SHIFT_FORMULA.asItem()).addIncompatibleForm(SHIFT_TRIDORON.asItem()).addIncompatibleForm(SHIFT_TRIDORON_NOT_ALL.asItem())
-                    .changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIFT_SPEED_GOLD = ITEMS.register("speedshift_gold",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_WILD_GOLD = ITEMS.register("wildshift_gold",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_NEXT_HUNTER = ITEMS.register("next_hunter",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_NEXT_TRAVELLER = ITEMS.register("next_traveller",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_NEXT_BUILDER = ITEMS.register("next_builder",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(ShiftChassisAssembler.NEXT_CAR).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIFT_HOLY_CHRISTMAS = ITEMS.register("holy_christmas",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SIGNAL_MACH = ITEMS.register("signal_mach",
@@ -743,7 +743,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 10).useBasicModel());
+            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 10).useBasicModel());
 
     public static final DeferredItem<Item> SIGNAL_MAGARL = ITEMS.register("signal_magarl",
             () -> new RiderFormChangeItem(new Item.Properties(), "kourin_magarl_tire", "mach", "mach_driver_honoh_belt",
@@ -754,7 +754,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.changeSlot(2).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).useBasicModel());
+            }.changeSlot(2).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> SIGNAL_KAKSARN = ITEMS.register("signal_kaksarn",
             () -> new RiderFormChangeItem(new Item.Properties(), "kourin_kaksarn_tire", "mach", "mach_driver_honoh_belt",
@@ -765,7 +765,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).useBasicModel());
+            }.changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).useBasicModel());
 
     public static final DeferredItem<Item> SIGNAL_TOMARLE = ITEMS.register("signal_tomarle",
             () -> new RiderFormChangeItem(new Item.Properties(), "kourin_tomarle_tire", "mach", "mach_driver_honoh_belt",
@@ -776,7 +776,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).useBasicModel());
+            }.changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).useBasicModel());
 
     public static final DeferredItem<Item> SIGNAL_KIKERN = ITEMS.register("signal_kikern",
             () -> new RiderFormChangeItem(new Item.Properties(), "kourin_kikern_tire", "mach", "mach_driver_honoh_belt",
@@ -787,7 +787,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 20, 0, 0, 0, 1);
                 }
-            }.changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).useBasicModel());
+            }.changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(ShiftChassisAssembler.NEXT_BIKE, 5).useBasicModel());
 
     public static final DeferredItem<Item> SIGNAL_CHASER_MACH = ITEMS.register("signal_chaser_mach",
             () -> new RiderFormChangeItem(new Item.Properties(), "_chaser", "mach", "mach_driver_honoh_belt_chaser",
@@ -822,56 +822,56 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.addAlternative(SIGNAL_CHASER_MACH.get()).isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM)
+            }.addAlternative(SIGNAL_CHASER_MACH.get()).isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM)
                     .addToList(ShiftChassisAssembler.NEXT_BIKE, 3).useBasicModel());
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_1 = ITEMS.register("signal_legend_1",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_KUUGA = ITEMS.register("signal_legend_kuuga",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_AGITO = ITEMS.register("signal_legend_agito",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_RYUKI = ITEMS.register("signal_legend_ryuki",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_FAIZ = ITEMS.register("signal_legend_faiz",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_BLADE = ITEMS.register("signal_legend_blade",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_HIBIKI = ITEMS.register("signal_legend_hibiki",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_KABUTO = ITEMS.register("signal_legend_kabuto",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_DEN_O = ITEMS.register("signal_legend_den_o",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_KIVA = ITEMS.register("signal_legend_kiva",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_DECADE = ITEMS.register("signal_legend_decade",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_W = ITEMS.register("signal_legend_w",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_OOO = ITEMS.register("signal_legend_ooo",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_FOURZE = ITEMS.register("signal_legend_fourze",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_WIZARD = ITEMS.register("signal_legend_wizard",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SIGNAL_LEGEND_GAIM = ITEMS.register("signal_legend_gaim",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIFT_RIDE_CROSSER = ITEMS.register("shift_ride_crosser",
@@ -890,7 +890,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.changeModel("mach.geo.json").isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).useBasicModel());
+            }.changeModel("mach.geo.json").isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).useBasicModel());
 
     public static final DeferredItem<Item> TRIDORON_KEY = ITEMS.register("tridoron_key",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_super", "drive_dead_heat", "mach_driver_honoh_belt",
@@ -906,35 +906,35 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.changeModel("default.geo.json").isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).useBasicModel());
+            }.changeModel("default.geo.json").isGlowing().alsoChange2ndSlot(BASIC_TIRE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).useBasicModel());
 
 
     public static final DeferredItem<Item> VIRAL_CORE_COBARA = ITEMS.register("viral_core_cobara",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_SPIDER = ITEMS.register("viral_core_spider",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_BAT = ITEMS.register("viral_core_bat",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_CHASER_COBARA = ITEMS.register("viral_core_chaser_cobara",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_CHASER_SPIDER = ITEMS.register("viral_core_chaser_spider",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_CHASER_BAT = ITEMS.register("viral_core_chaser_bat",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_NEO_COBARA = ITEMS.register("viral_core_neo_cobara",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_NEO_SPIDER = ITEMS.register("viral_core_neo_spider",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> VIRAL_CORE_NEO_BAT = ITEMS.register("viral_core_neo_bat",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIFT_VIRAL_CORE = ITEMS.register("shift_viral_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "_super_deadheat", "mach", "mach_driver_honoh_belt",
@@ -970,7 +970,7 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }
-                    .addAlternative(SHIFT_VIRAL_CORE.get()).isGlowing().isGold().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addAlternative(SHIFT_VIRAL_CORE.get()).isGlowing().isGold().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MEGAHEX_VIRAL_CORE = ITEMS.register("megahex_viral_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_zzz", "megahex", "blank",
@@ -996,7 +996,7 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
 
                 }
-            }.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TOKUJOKA_KEY = ITEMS.register("tokujoka_key",
@@ -1009,7 +1009,7 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BANNO_TABLET = ITEMS.register("banno_tablet",
@@ -1028,10 +1028,10 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing()
-                    .isGold().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .isGold().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROIDMUDE_CORE_002 = ITEMS.register("roidmude_core_002",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROIDMUDE_CORE_003 = ITEMS.register("roidmude_core_003",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "brain", "banno_driver_belt",
@@ -1048,10 +1048,10 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.changeModel("drive.geo.json").alsoChange2ndSlot(BASIC_TIRE.get()).isGlowing()
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROIDMUDE_CORE_009 = ITEMS.register("roidmude_core_009",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTOZERO_CORE = ITEMS.register("protozero_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "mashin_chaser", "blank",
@@ -1066,7 +1066,7 @@ public class DriveRiderItems {
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.isGlowing()
-                    .isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> CYBEROID_ZZZ_CORE = ITEMS.register("cyberoid_zzz_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "lupin", "lupin_belt",
@@ -1082,142 +1082,142 @@ public class DriveRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.isGold().isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            }.isGold().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ROIDMUDE_CORE_108 = ITEMS.register("roidmude_core_108",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_HELMET = ITEMS.register("drive_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
     public static final DeferredItem<Item> DRIVE_CHESTPLATE = ITEMS.register("drive_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
     public static final DeferredItem<Item> DRIVE_LEGGINGS = ITEMS.register("drive_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER = ITEMS.register("drivedriver",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "drive", SHIFT_SPEED, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
     public static final DeferredItem<Item> MACH_DRIVER_HONOH = ITEMS.register("mach_driver_honoh",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "mach", SIGNAL_MACH, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
     public static final DeferredItem<Item> MACH_DRIVER_HONOH_CHASER = ITEMS.register("mach_driver_honoh_chaser",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chaser", SIGNAL_CHASER, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MACH_DRIVER_HONOH_DRIVE = ITEMS.register("mach_driver_honoh_drive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "drive_dead_heat", SHIFT_DEAD_HEAT_DRIVE_MACH, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER_PROTO_DRIVE = ITEMS.register("drivedriver_protodrive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "protodrive", SHIFT_PROTO_SPEED, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAK_GUNNER_BELT = ITEMS.register("break_gunner_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mashin_chaser", PROTOZERO_CORE, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> LUPIN_BELT = ITEMS.register("lupin_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lupin", CYBEROID_ZZZ_CORE, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER_HEART = ITEMS.register("drivedriver_heart",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "heart", SHIFT_HEARTRON, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties().rarity(Rarity.RARE))
-                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRIVE_DRIVER_DARK_DRIVE = ITEMS.register("drivedriver_darkdrive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "dark_drive", SHIFT_NEXT, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .hasInventoryGui().addExtraBaseFormItems(BASIC_TIRE).changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BANNO_DRIVER_GORD_DRIVE = ITEMS.register("banno_driver_gord_drive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "gold_drive", BANNO_TABLET, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .isA1().addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .isA1().addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BANNO_DRIVER_BRONZE_DRIVE = ITEMS.register("banno_driver_bronze_drive",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "bronze_drive", BANNO_TABLET, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> METRO_PD_DRIVER_HONOH = ITEMS.register("metro_pd_driver_honoh",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "mach_metro_pd", TOKUJOKA_KEY, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BRAIN_DRIVER = ITEMS.register("brain_driver",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "brain", ROIDMUDE_CORE_003, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_DRIVE_DRIVER = ITEMS.register("fake_drivedriver",
             () -> new DriveDriverItem(ArmorMaterials.DIAMOND, "fake_drive", SHIFT_SPEED, DRIVE_HELMET, DRIVE_CHESTPLATE, DRIVE_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .addExtraBaseFormItems(BASIC_TIRE).hideBeltFormInfo().changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> HANDLE_KEN = ITEMS.register("handle_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
 
     public static final DeferredItem<Item> DOOR_JU = ITEMS.register("door_ju",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> TRAILER_HOU = ITEMS.register("trailer_hou",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> ZENRIN_SHOOTER = ITEMS.register("zenrin_shooter",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
 
     public static final DeferredItem<Item> BREAK_GUNNER = ITEMS.register("break_gunner",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).isHenshinItem(BREAK_GUNNER_BELT.get())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> SHINGOU_AX = ITEMS.register("shingouax",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(GordDriveEntity.THINGS_AND_STUFF).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> LUPIN_GUNNER = ITEMS.register("lupin_gunner",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).isHenshinItem(LUPIN_BELT.get())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_GUNNER = ITEMS.register("blade_gunner",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> BRAIN_MEGANE_BLADE = ITEMS.register("brain_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> JUSTICE_CAGE = ITEMS.register("justice_cage",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRUM_SHIELD_RED = ITEMS.register("drum_shield_red",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> DRUM_SHIELD_GREEN = ITEMS.register("drum_shield_green",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MONSTER_TOP = ITEMS.register("monster_top",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> MONSTER_BOTTOM = ITEMS.register("monster_bottom",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> RUMBLE_SMASHER = ITEMS.register("rumble_smasher",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> CURE_QUICKER = ITEMS.register("cure_quicker",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
     public static final DeferredItem<Item> TEN_TON_WEIGHT = ITEMS.register("ten_ton_weight",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties())
-                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DRIVE_TAB_ITEM));
+                    .changeRepairItem(SHIFT_ALLOY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DRIVE_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {

@@ -51,7 +51,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_1_RID.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_1_RID.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_1_ORIGIN = ITEMS.register("ride_x_eggs_1_origin",
             () -> new RiderFormChangeItem(new Item.Properties(),"","black_my_th","my_th_driver_belt_black_my_th",
@@ -66,7 +66,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
             () -> new RiderFormChangeItem(new Item.Properties(),"","maou","maou_driver_belt",
@@ -78,7 +78,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_4_DATT = ITEMS.register("ride_x_eggs_4_datt",
             () -> new RiderFormChangeItem(new Item.Properties(),"","datt","my_th_driver_belt_datt",
@@ -111,7 +111,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_4_DATT.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_4_DATT.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_8 = ITEMS.register("ride_x_eggs_8",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wolf_frame","my_th","my_th_driver_belt_wolf",
@@ -122,7 +122,7 @@ public class MyThRiderItems {
                         layerInfo.add(new WolfFrameRenderLayerInfo("my_th_wolf_frame_muzzle", "my_th_wolf_frame_muzzle"));
                     }
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_11_VANKEN = ITEMS.register("ride_x_eggs_11_vanken",
             () -> new RiderFormChangeItem(new Item.Properties(),"","datt","my_th_driver_belt_vanken",
@@ -151,41 +151,41 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_RIDE_X_EGGS = ITEMS.register("zeztz_ride_x_eggs",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_HELMET = ITEMS.register("my_th_head",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
     public static final DeferredItem<Item> MY_TH_CHESTPLATE = ITEMS.register("my_th_troso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
     public static final DeferredItem<Item> MY_TH_LEGGINGS = ITEMS.register("my_th_legs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER = ITEMS.register("my_th_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"my_th",RIDE_X_EGGS_1 ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"my_th",RIDE_X_EGGS_1 ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON_BLACK = ITEMS.register("my_th_driver_hammer_on_black",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_my_th",RIDE_X_EGGS_1_ORIGIN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_my_th",RIDE_X_EGGS_1_ORIGIN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON = ITEMS.register("my_th_driver_hammer_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDE_X_EGGS_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDE_X_EGGS_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_SLASH_ON = ITEMS.register("my_th_driver_slash_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"datt",RIDE_X_EGGS_4_DATT ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"datt",RIDE_X_EGGS_4_DATT ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_SHOT_ON = ITEMS.register("my_th_driver_shot_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vanken",RIDE_X_EGGS_11_VANKEN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vanken",RIDE_X_EGGS_11_VANKEN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MAOU_DRIVER = ITEMS.register("maou_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_EDGE = ITEMS.register("my_th_edge",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> FRAME_MY_TH_BACK = ITEMS.register("frame_my_th_back",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.MY_TH_TAB_ITEM));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

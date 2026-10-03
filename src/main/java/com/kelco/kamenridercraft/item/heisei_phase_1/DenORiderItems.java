@@ -24,10 +24,10 @@ public class DenORiderItems {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> DEN_O_LOGO = ITEMS.register("den_o_logo",
-			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/den_o")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/den_o")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> IMAGIN_SAND = ITEMS.register("imagin_sand",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_DAN_O_PLAT = ITEMS.register("rider_ticket_dan_o_plat",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_plat","dan_o","dan_o_belt",
@@ -62,7 +62,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addAlternative(RIDER_TICKET_NEW_DEN_O.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.IsBeltGlowing().addAlternative(RIDER_TICKET_NEW_DEN_O.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_DAN_O = ITEMS.register("rider_ticket_dan_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","dan_o","dan_o_belt",
@@ -89,7 +89,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addAlternative(RIDER_TICKET_DAN_O.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().addAlternative(RIDER_TICKET_DAN_O.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_ROD = ITEMS.register("rider_ticket_rod",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_rod","den_o","den_o_belt_r",
@@ -102,7 +102,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_AX = ITEMS.register("rider_ticket_ax",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axe","den_o","den_o_belt_a",
@@ -114,7 +114,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_GUN = ITEMS.register("rider_ticket_gun",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_gun","den_o","den_o_belt_g",
@@ -127,7 +127,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
     static final DeferredItem<Item> KTAROS_CLIMAX = ITEMS.register("ktaros_climax",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_climax","den_o","den_o_belt_c",
@@ -199,7 +199,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 25, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("rider_kick",1).isGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).setModelName("ktaros").addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.setSlotOneAbility("rider_kick",1).isGlowing().addNeedForm(KTAROS_PUNCH.get(), 1).addAlternative(KTAROS_PUNCH.get()).setModelName("ktaros").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_KTAROS = ITEMS.register("super_ktaros",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_super_climax","den_o","den_o_belt_c",
@@ -241,7 +241,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addShiftForm(SUPER_KTAROS.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().addShiftForm(SUPER_KTAROS.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_LINER_FORM = ITEMS.register("den_o_liner_form",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_liner","den_o","den_o_belt_c",
@@ -273,7 +273,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ALTAIR_CARD = ITEMS.register("zeronos_altair_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","zeronos","zeronos_belt",
@@ -290,7 +290,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> NEW_DEN_O_VEGA_CARD = ITEMS.register("new_den_o_vega_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_vega","new_den_o","new_den_o_belt_v",
@@ -316,7 +316,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotOneAbility("gatling",1).isGlowing().hasCape().addAlternative(NEW_DEN_O_VEGA_CARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.setSlotOneAbility("gatling",1).isGlowing().hasCape().addAlternative(NEW_DEN_O_VEGA_CARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZERONOS_ZERO_CARD = ITEMS.register("zeronos_zero_card",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_zero","zeronos","zeronos_belt_z",
@@ -332,7 +332,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeModel("zeronos.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.changeModel("zeronos.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_NEGA = ITEMS.register("rider_ticket_nega",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","nega_den_o","den_o_belt",
@@ -345,7 +345,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeModel("den_o.geo.json").IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.changeModel("den_o.geo.json").IsBeltGlowing().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_YUUKI_HIJACK = ITEMS.register("rider_ticket_yuuki_hijack",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hijack","yuuki","yuuki_belt",
@@ -376,7 +376,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.isGlowing().IsBeltGlowing().addSwitchForm(RIDER_TICKET_YUUKI_HIJACK.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_G = ITEMS.register("rider_ticket_g",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","g_den_o","g_den_o_belt",
@@ -395,7 +395,7 @@ public class DenORiderItems {
 							player.getZ(), 50, 0, 0, 0, 1);
 				}
 			}
-					.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+					.IsBeltGlowing().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_GAOH = ITEMS.register("rider_ticket_gaoh",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gaoh","gaoh_belt",
@@ -409,7 +409,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_STRIKE = ITEMS.register("rider_ticket_strike",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","new_den_o","new_den_o_belt",
@@ -424,7 +424,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.IsBeltGlowing().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_PRETTY_DEN_O = ITEMS.register("rider_ticket_pretty_den_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","pretty_den_o","den_o_belt",
@@ -452,7 +452,7 @@ public class DenORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.IsBeltGlowing().isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			}.IsBeltGlowing().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> RIDER_TICKET_SHIN_O = ITEMS.register("rider_ticket_shin_o",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","shin_o","shin_o_belt",
@@ -471,121 +471,121 @@ public class DenORiderItems {
 
 
 	public static final DeferredItem<Item> DEN_OHELMET = ITEMS.register("den_ohead",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_OCHESTPLATE = ITEMS.register("den_otroso",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_OLEGGINGS = ITEMS.register("den_olegs",
-			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DEN_O_BELT = ITEMS.register("den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"den_o",RIDER_TICKET_SWORD ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> ZERONOS_BELT = ITEMS.register("zeronos_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeronos",ZERONOS_ALTAIR_CARD ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> NEGA_DEN_O_BELT = ITEMS.register("nega_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nega_den_o",RIDER_TICKET_NEGA ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> NEW_DEN_O_BELT = ITEMS.register("new_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"new_den_o",RIDER_TICKET_STRIKE ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> GAOH_BELT = ITEMS.register("gaoh_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaoh",RIDER_TICKET_GAOH ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> YUUKI_BELT = ITEMS.register("yuuki_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yuuki",RIDER_TICKET_YUUKI ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> G_DEN_O_BELT = ITEMS.register("g_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"g_den_o",RIDER_TICKET_G ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> PRETTY_DEN_O_BELT = ITEMS.register("pretty_den_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"pretty_den_o",RIDER_TICKET_PRETTY_DEN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> SHIN_O_BELT = ITEMS.register("shin_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_o",RIDER_TICKET_SHIN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties()).hideBeltFormInfo()
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).useBasicModel().changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).useBasicModel().changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DAN_O_BELT = ITEMS.register("dan_o_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dan_o",RIDER_TICKET_DAN_O ,DEN_OHELMET, DEN_OCHESTPLATE,DEN_OLEGGINGS , new Item.Properties())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).useBasicModel().changeRepairItem(IMAGIN_SAND.get()));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).useBasicModel().changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> RIDER_PASS = ITEMS.register("rider_pass",
-			() -> new RiderPassItem(new Item.Properties(),500).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new RiderPassItem(new Item.Properties(),500).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> MASTER_PASS = ITEMS.register("master_pass",
-			() -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new RiderPassItem(new Item.Properties().rarity(Rarity.UNCOMMON),10).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item> G_DEN_O_RIDER_PASS = ITEMS.register("g_den_o_rider_pass",
-			() -> new GDenOPassItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM));
+			() -> new GDenOPassItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM));
 
 	public static final DeferredItem<Item>DEN_GASHER_SWORD = ITEMS.register("den_gasher_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_ROD = ITEMS.register("den_gasher_rod",
-			() -> new BaseRodItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseRodItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_AX = ITEMS.register("den_gasher_ax",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_GUN = ITEMS.register("den_gasher_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item>DENKAMEN_SWORD = ITEMS.register("denkamen_sword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).isFormItem(DEN_O_LINER_FORM.get()).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).isFormItem(DEN_O_LINER_FORM.get()).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_HANDAX = ITEMS.register("den_gasher_handax",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_BOOMERANG = ITEMS.register("den_gasher_boomerang",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> SAVAGE_GASHER = ITEMS.register("savage_gasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> MOMOTAKEN = ITEMS.register("momotaken",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> URATAZAO = ITEMS.register("uratazao",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> KINTAONO = ITEMS.register("kintaono",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item>G_DEN_GASHER_JITTE = ITEMS.register("g_den_gasher_jitte",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> MACHETEDDY = ITEMS.register("macheteddy",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> G_DEN_GASHER_GUN = ITEMS.register("g_den_gasher_gun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> NEGA_DEN_GASHER = ITEMS.register("nega_den_gasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> GAOH_GASHER = ITEMS.register("gaoh_gasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_VEGA = ITEMS.register("den_gasher_vega",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> DEN_GASHER_PUDDING = ITEMS.register("den_gasher_pudding",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> MOMOTAROSWORD = ITEMS.register("momotarosword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> URATAROD = ITEMS.register("uratarod",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> KINTAROS_AX = ITEMS.register("kintaros_ax",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> RYUVOLVER = ITEMS.register("ryuvolver",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_MOMOTAROSWORD = ITEMS.register("nega_momotarosword",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_URATAROD = ITEMS.register("nega_uratarod",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_KINTAROS_AX = ITEMS.register("nega_kintaros_ax",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 	public static final DeferredItem<Item> NEGA_RYUVOLVER = ITEMS.register("nega_ryuvolver",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> ZEROGASHER = ITEMS.register("zerogasher",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static final DeferredItem<Item> DENEBIC_BUSTER = ITEMS.register("denebic_buster",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DEN_O_TAB_ITEM).changeRepairItem(IMAGIN_SAND.get()));
 
 	public static void register(IEventBus eventBus) {
 		ITEMS.register(eventBus);

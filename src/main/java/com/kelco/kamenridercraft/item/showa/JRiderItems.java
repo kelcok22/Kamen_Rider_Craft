@@ -28,7 +28,7 @@ public class JRiderItems {
 
 
     public static final DeferredItem<Item>  J_LOGO = ITEMS.register("j_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/j")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/j")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.J_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  J_STONE_JUMBO_FORMATION = ITEMS.register("j_stone_jumbo_formation",
@@ -53,18 +53,18 @@ public class JRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().setSlotOneAbility("grow", 2).setSlotTwoAbility("rider_kick", 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM).keepItem());
+            }.isGlowing().setSlotOneAbility("grow", 2).setSlotTwoAbility("rider_kick", 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.J_TAB_ITEM).keepItem());
 
 
     public static final DeferredItem<Item>  JHELMET = ITEMS.register("jhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.J_TAB_ITEM));
     public static final DeferredItem<Item>  JCHESTPLATE = ITEMS.register("jtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.J_TAB_ITEM));
     public static final DeferredItem<Item>  JLEGGINGS = ITEMS.register("jlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.J_TAB_ITEM));
 
     public static final DeferredItem<Item>  J_SPIRIT = ITEMS.register("j_spirit",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"j",J_STONE ,JHELMET,JCHESTPLATE,JLEGGINGS , new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.J_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"j",J_STONE ,JHELMET,JCHESTPLATE,JLEGGINGS , new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.J_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

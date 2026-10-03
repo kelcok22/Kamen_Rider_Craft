@@ -24,7 +24,7 @@ public class ShinIchigoRiderItems {
 
 
     public static final DeferredItem<Item> PRANA_INFUSED_RIDER_CIRCUIT = ITEMS.register("prana_infused_rider_circuit",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE = ITEMS.register("shin_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_ichigo","shin_typhoon_belt",
@@ -37,7 +37,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2 = ITEMS.register("shin_typhoon_core2",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_nigo","shin_typhoon_belt2",
@@ -50,7 +50,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("shin_typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("shin_typhoon_core").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHIN_TYPHOON_CORE_2_1 = ITEMS.register("shin_typhoon_core_2_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_2_1","shin_typhoon_belt2",
@@ -63,7 +63,7 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("shin_typhoon_core").addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.changeModel("ichigo.geo.json").isGlowing().useBasicModel().setModelName("shin_typhoon_core").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ULTIMATE_HALF_TYPHOON_CORE = ITEMS.register("ultimate_half_typhoon_core",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shin_no_0","ultimate_half_typhoon_belt",
@@ -76,41 +76,41 @@ public class ShinIchigoRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().changeModel("shin_no_0.geo.json").hasCape().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM));
+            }.isGlowing().changeModel("shin_no_0.geo.json").hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SHIN_ICHIGO_HELMET = ITEMS.register("shin_ichigohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> SHIN_ICHIGO_CHESTPLATE = ITEMS.register("shin_ichigotroso",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> SHIN_ICHIGO_LEGGINGS = ITEMS.register("shin_ichigolegs",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1))
-                    .useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
 
     public static final DeferredItem<Item> TYPHOON_1 = ITEMS.register("shin_typhoon_ichigo",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_ichigo", SHIN_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> TYPHOON_2 = ITEMS.register("shin_typhoon_nigo",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_nigo", SHIN_TYPHOON_CORE_2,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> TYPHOON_2_1 = ITEMS.register("shin_typhoon_2_1",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_2_1", SHIN_TYPHOON_CORE_2_1,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> ULTIMATE_HALF_TYPHOON = ITEMS.register("ultimate_half_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shin_no_0", ULTIMATE_HALF_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static final DeferredItem<Item> SIMPLIFIED_TYPHOON = ITEMS.register("simplified_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"phase_variation_batta_augments", SHIN_TYPHOON_CORE,SHIN_ICHIGO_HELMET, SHIN_ICHIGO_CHESTPLATE,SHIN_ICHIGO_LEGGINGS , new Item.Properties())
-                    .overrideBeltText("simplified_typhoon_belt").hideBeltFormInfo().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
+                    .overrideBeltText("simplified_typhoon_belt").hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.SHIN_ICHIGO_TAB_ITEM).changeRepairItem(PRANA_INFUSED_RIDER_CIRCUIT.get()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

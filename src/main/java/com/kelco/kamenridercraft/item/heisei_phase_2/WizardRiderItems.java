@@ -37,34 +37,34 @@ public class WizardRiderItems {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> WIZARD_LOGO = ITEMS.register("wizard_logo",
-			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/wizard")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/wizard")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM= ITEMS.register("wizardgem",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_RED= ITEMS.register("wizardgem_red",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_BLUE= ITEMS.register("wizardgem_blue",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_GREEN= ITEMS.register("wizardgem_green",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_YELLOW= ITEMS.register("wizardgem_yellow",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_VIOLET= ITEMS.register("wizardgem_violet",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_BLACK= ITEMS.register("wizardgem_black",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CYAN= ITEMS.register("wizardgem_cyan",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PHILOSOPHERS_STONE= ITEMS.register("philosophers_stone",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> FLAME_WIZARD_RING = ITEMS.register("flame_ring",
@@ -78,7 +78,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.setSlotTwoAbility("wizard_kick_flame", 1).isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.setSlotTwoAbility("wizard_kick_flame", 1).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING = ITEMS.register("water_ring",
@@ -93,7 +93,7 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HURRICANE_WIZARD_RING = ITEMS.register("hurricane_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_hurricane","wizard","wizardriver_belt",
@@ -107,7 +107,7 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-					.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LAND_WIZARD_RING = ITEMS.register("land_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_land","wizard","wizardriver_belt",
@@ -120,7 +120,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FLAME_DRAGON_WIZARD_RING = ITEMS.register("flame_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_flame_dragon","wizard","wizardriver_belt",
@@ -135,7 +135,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_DRAGON_WIZARD_RING = ITEMS.register("water_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_water_dragon","wizard","wizardriver_belt",
@@ -150,7 +150,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HURRICANE_DRAGON_WIZARD_RING = ITEMS.register("hurricane_ring_dragon",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_hurricane_dragon","wizard","wizardriver_belt",
@@ -165,7 +165,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_RING_BEAST = ITEMS.register("land_ring_dragon_beast",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_wizard","beast","beast_driver_belt"
@@ -197,7 +197,7 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.isGlowing().addAlternative(LAND_DRAGON_WIZARD_RING_BEAST.get())
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> INFINITY_WIZARD_RING = ITEMS.register("infinity_ring",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_infinity","wizard","wizardriver_belt",
@@ -218,7 +218,7 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
 
 
 	public static final DeferredItem<Item> DRAGO_TIMER = ITEMS.register("drago_timer",
@@ -238,7 +238,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_DRAGON_WIZARD_SPECIAL_RING = ITEMS.register("water_ring_dragon_special_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_water_dragon_special","wizard","wizardriver_belt",
@@ -300,10 +300,10 @@ public class WizardRiderItems {
 				}
 			}.isGlowing().changeModel("wizard_flame_dragon_all_dragon.geo.json").addAlternative(LAND_DRAGON_WIZARD_SPECIAL_RING.get())
 					.addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1)
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOPE_RING = ITEMS.register("hope_ring",
-			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FINISH_STRIKE_RING_NO_HOPE  = ITEMS.register("finish_strike_ring_no_hope",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_infinity_dragon","wizard","wizardriver_belt",
@@ -352,7 +352,7 @@ public class WizardRiderItems {
 
 				}
 			}.isGlowing().addNeedForm(INFINITY_WIZARD_RING.get(),1)
-					.addNeedItem(HOPE_RING.get()).addAlternative(FINISH_STRIKE_RING_NO_HOPE.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addNeedItem(HOPE_RING.get()).addAlternative(FINISH_STRIKE_RING_NO_HOPE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SPECIAL_RUSH_RING = ITEMS.register("special_rush_ring",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_flame_dragon_special_rush","wizard","wizardriver_belt",
@@ -371,7 +371,7 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.isGlowing().addNeedForm(FLAME_DRAGON_WIZARD_RING.get(),1).changeModel("wizard_flame_dragon_all_dragon.geo.json")
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_RING = ITEMS.register("beast_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","beast","beast_driver_belt",
@@ -385,7 +385,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FALCO_RING_WIZARD = ITEMS.register("falco_ring_wizard",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_falco","wizard","wizardriver_belt",
@@ -415,7 +415,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(FALCO_RING_WIZARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM)
+			}.isGlowing().addAlternative(FALCO_RING_WIZARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM)
 	);
 
 	public static final DeferredItem<Item> CHAMELEO_RING = ITEMS.register("chameleo_ring",
@@ -431,7 +431,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			} .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			} .isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BUFFA_RING_WIZARD = ITEMS.register("buffa_ring_wizard",
@@ -462,7 +462,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addAlternative(BUFFA_RING_WIZARD.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM)
+			}.isGlowing().addAlternative(BUFFA_RING_WIZARD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM)
 	);
 
 	public static final DeferredItem<Item> DOLPHI_RING = ITEMS.register("dolphi_ring",
@@ -478,7 +478,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HYPER_RING = ITEMS.register("hyper_ring",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_hyper","beast","beast_driver_belt",
@@ -496,7 +496,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WISEMAN_RING = ITEMS.register("wiseman_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","wiseman","wise_driver_belt",
@@ -505,7 +505,7 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false)
 					,new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_O_RING = ITEMS.register("mage_o_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","mage","wise_driver_belt",
@@ -518,7 +518,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeModel("mage.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.changeModel("mage.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_B_RING = ITEMS.register("mage_b_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","mage_blue","wise_driver_belt",
@@ -532,7 +532,7 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}
-                    .changeModel("mage.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+                    .changeModel("mage.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_G_RING = ITEMS.register("mage_g_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","mage_green","wise_driver_belt",
@@ -545,7 +545,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeModel("mage.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.changeModel("mage.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_RING = ITEMS.register("sorcerer_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","sorcerer","wise_driver_belt",
@@ -559,7 +559,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 1);
 				}
-			}.isGold().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGold().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARD_RING = ITEMS.register("black_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","black_wizard","wizardriver_belt_black",
@@ -571,7 +571,7 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARD_RING = ITEMS.register("dark_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","dark_wizard","wizardriver_belt",
@@ -583,86 +583,86 @@ public class WizardRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIGHT_WIZARD_RING = ITEMS.register("light_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.NIGHT_VISION, 800,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXCITE_WIZARD_RING = ITEMS.register("excite_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500,1,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEFEND_WIZARD_RING = ITEMS.register("defend_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 800,2,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLIZZARD_WIZARD_RING = ITEMS.register("blizzard_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.BLIZZARD, 500,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRAVITY_WIZARD_RING = ITEMS.register("gravity_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.GRAVITY, 500,2,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> THUNDER_WIZARD_RING = ITEMS.register("thunder_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.THUNDER, 500,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXPLOSION_WIZARD_RING = ITEMS.register("explosion_ring",
 			() -> new WizardRingItem(new Item.Properties().rarity(Rarity.UNCOMMON), new MobEffectInstance(EffectCore.EXPLOSION, 500,1,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TELEPORT_WIZARD_RING = ITEMS.register("teleport_ring",
 			() -> new WizardRingItem(new Item.Properties().rarity(Rarity.UNCOMMON), new MobEffectInstance(EffectCore.RETURN, 500,20,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONNECT_WIZARD_RING = ITEMS.register("connect_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.CONNECT, 80,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SLEEP_WIZARD_RING = ITEMS.register("sleep_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.SLEEP, 80,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIND_WIZARD_RING = ITEMS.register("bind_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.BIND, 80,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FALL_WIZARD_RING = ITEMS.register("fall_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.FALL, 40,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KICK_STRIKE_WIZARD_RING = ITEMS.register("kick_strike_ring",
 			() -> new WizardRingItem(new Item.Properties(), "kick_strike")
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ECLIPSE_WIZARD_RING = ITEMS.register("eclipse_ring",
 			() -> new WizardRingItem(new Item.Properties().rarity(Rarity.UNCOMMON), new MobEffectInstance(EffectCore.NIGHT, 80,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> LIGUID_WIZARD_RING = ITEMS.register("liquid_ring",
 			() -> new WizardRingItem(new Item.Properties()
 					, new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 1000,9,true,true)
 					, new MobEffectInstance(MobEffects.WATER_BREATHING, 1000,1,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRILL_WIZARD_RING = ITEMS.register("drill_ring",
 			() -> new WizardRingItem(new Item.Properties()
 					, new MobEffectInstance(MobEffects.DIG_SPEED, 800,3,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIG_WIZARD_RING = ITEMS.register("big_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.BIG, 500,2,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIG_WIZARD_RING_COLOR_VER = ITEMS.register("big_ring_color_ver",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.BIG, 500,4,true,true))
-					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMALL_WIZARD_RING = ITEMS.register("small_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.SMALL, 500,20,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> DRESS_UP_RING = ITEMS.register("dress_up_ring",
@@ -676,83 +676,83 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.addNeedForm(FLAME_WIZARD_RING.get(),1)
-					.isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FLOWER_WIZARD_RING = ITEMS.register("flower_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.FLOWER, 500,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> EXTAND_WIZARD_RING = ITEMS.register("extend_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.LONG_ARM, 500,4,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SMELL_WIZARD_RING = ITEMS.register("smell_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.SMELL, 140,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHRISTMAS_WIZARD_RING = ITEMS.register("merry_christmas_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.CHRISTMAS, 500,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIME_WIZARD_RING = ITEMS.register("time_ring",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(EffectCore.TIME, 500,0,true,true))
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGORISE_WIZARD_RING = ITEMS.register("dragorise_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ENGAGE_WIZARD_RING = ITEMS.register("engage_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> PLEASE_WIZARD_RING = ITEMS.register("please_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVER_ON_WIZARD_RING = ITEMS.register("driver_on_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRIVER_ON_WHITE_WIZARD_WIZARD_RING = ITEMS.register("driver_on_ring_white_wizard",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> COMMON_WIZARD_RING = ITEMS.register("common_wizard_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHICHIN_PUI_PUI_WIZARD_RING = ITEMS.register("chichin_pui_pui_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CREATE_WIZARD_RING = ITEMS.register("create_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> COPY_WIZARD_RING = ITEMS.register("copy_ring",
 			() -> new WizardRingItem(new Item.Properties(), "copy")
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MIRACLE_WIZARD_RING = ITEMS.register("miracle_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DANCE_WIZARD_RING = ITEMS.register("dance_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HOLY_WIZARD_RING = ITEMS.register("holy_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> GARUDA_WIZARD_RING = ITEMS.register("garuda_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNICORN_WIZARD_RING = ITEMS.register("unicorn_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KRAKEN_WIZARD_RING = ITEMS.register("kraken_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLEM_WIZARD_RING = ITEMS.register("golem_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_GARUDA_WIZARD_RING = ITEMS.register("white_garuda_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CERBERUS_WIZARD_RING = ITEMS.register("cerberus_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARUDA_WIZARD_RING_COLOR_VER = ITEMS.register("garuda_ring_color_ver",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_garuda","wizard","wizardriver_belt",
@@ -768,7 +768,7 @@ public class WizardRiderItems {
 				}
 			}
 					.isGlowing().hasStaticWings().addNeedForm(FLAME_WIZARD_RING.get(),1)
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KRAKEN_WIZARD_RING_COLOR_VER = ITEMS.register("kraken_ring_color_ver",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_kraken","wizard","wizardriver_belt",
@@ -782,120 +782,120 @@ public class WizardRiderItems {
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
 			}.isGlowing().hasStaticWings().addNeedForm(WATER_WIZARD_RING.get(),1)
-					.addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BEAST_ENGAGE_WIZARD_RING = ITEMS.register("beast_engage_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> CHIMARISE_WIZARD_RING = ITEMS.register("chimarise_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BEAST_DRIVER_ON_WIZARD_RING = ITEMS.register("beast_driver_on_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> GRIFFIN_WIZARD_RING = ITEMS.register("griffin_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FLAME_WIZARD_RING_COLOR_VER = ITEMS.register("flame_ring_color_ver",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 500,0,true,true))
-					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WATER_WIZARD_RING_COLOR_VER = ITEMS.register("water_ring_color_ver",
 			() -> new WizardRingItem(new Item.Properties(), new MobEffectInstance(MobEffects.WATER_BREATHING, 500,0,true,true))
-					.useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KUUGA_WIZARD_RING = ITEMS.register("kuuga_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KuugaRiderItems.ARCLE.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KuugaRiderItems.ARCLE.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> AGITO_WIZARD_RING = ITEMS.register("agito_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) AgitoRiderItems.ALTERING.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) AgitoRiderItems.ALTERING.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUKI_WIZARD_RING = ITEMS.register("ryuki_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) RyukiRiderItems.RYUKIDRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) RyukiRiderItems.RYUKIDRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FAIZ_WIZARD_RING = ITEMS.register("faiz_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FaizRiderItems.FAIZ_DRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FaizRiderItems.FAIZ_DRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLADE_WIZARD_RING = ITEMS.register("blade_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) BladeRiderItems.BLAYBUCKLE.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) BladeRiderItems.BLAYBUCKLE.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> HIBIKI_WIZARD_RING = ITEMS.register("hibiki_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) HibikiRiderItems.HIBIKIDRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) HibikiRiderItems.HIBIKIDRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KABUTO_WIZARD_RING = ITEMS.register("kabuto_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KabutoRiderItems.KABUTO_RIDER_BELT.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KabutoRiderItems.KABUTO_RIDER_BELT.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEN_O_WIZARD_RING = ITEMS.register("den_o_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DenORiderItems.DEN_O_BELT.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DenORiderItems.DEN_O_BELT.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> KIVA_WIZARD_RING = ITEMS.register("kiva_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KivaRiderItems.KIVAT_BELT.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) KivaRiderItems.KIVAT_BELT.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DECADE_WIZARD_RING = ITEMS.register("decade_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DecadeRiderItems.DECADRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) DecadeRiderItems.DECADRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DOUBLE_WIZARD_RING = ITEMS.register("double_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.WDRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.WDRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> ACCEL_WIZARD_RING = ITEMS.register("accel_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.ACCELDRIVER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) WRiderItems.ACCELDRIVER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> OOO_WIZARD_RING = ITEMS.register("ooo_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.OOODRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.OOODRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIRTH_WIZARD_RING = ITEMS.register("birth_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.BIRTH_DRIVER.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) OOORiderItems.BIRTH_DRIVER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> FOURZE_WIZARD_RING = ITEMS.register("fourze_ring",
-			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FourzeRiderItems.FOURZE_DRIVER.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new LegendWizardRingItem(new Item.Properties(), (RiderDriverItem) FourzeRiderItems.FOURZE_DRIVER.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> FOURZE_ENGAGE_WIZARD_RING = ITEMS.register("fourze_engage_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SUPER_SENTAI_WIZARD_RING = ITEMS.register("super_sentai_ring",
-			() -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> UNKNOWN_AMBER_RING = ITEMS.register("unknown_amber_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_amber_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_amber_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_RED_RING = ITEMS.register("unknown_red_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_red_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_red_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_BLUE_RING = ITEMS.register("unknown_blue_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_blue_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_blue_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_GREEN_RING = ITEMS.register("unknown_green_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_green_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_green_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_YELLOW_RING = ITEMS.register("unknown_yellow_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_yellow_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_yellow_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_VIOLET_RING = ITEMS.register("unknown_violet_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_violet_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_violet_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_BLACK_RING = ITEMS.register("unknown_black_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_black_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_black_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_CYAN_RING = ITEMS.register("unknown_cyan_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_cyan_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_cyan_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UNKNOWN_BEAST_RING = ITEMS.register("unknown_beast_ring",
-			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_beast_ring")).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new UnknownWizardRingItem(new Item.Properties(), ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "items/unknown_beast_ring")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_HEAD = ITEMS.register("wizard_head",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties())
-					.changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_CHESTPLATE = ITEMS.register("wizard_troso",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties())
-					.changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_LEGGINGS = ITEMS.register("wizard_legs",
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties())
-					.changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARDRIVER = ITEMS.register("wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wizard",FLAME_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS,
@@ -920,7 +920,7 @@ public class WizardRiderItems {
 						buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 					});
 				}
-			}.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+			}.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> BEAST_DRIVER = ITEMS.register("beastdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"beast",BEAST_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties()){
@@ -945,81 +945,81 @@ public class WizardRiderItems {
 					});
 				}
 			}
-					.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+					.hasInventoryGui().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER = ITEMS.register("whitewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER = ITEMS.register("magewizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_B = ITEMS.register("magewizardriver_b",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_blue",MAGE_B_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_G = ITEMS.register("magewizardriver_g",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_green",MAGE_G_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_FOOT_SOLDIERS = ITEMS.register("magewizardriver_foot_soldiers",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_foot_soldiers",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGE_DRIVER_CAPTAIN = ITEMS.register("magewizardriver_captain",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mage_captain",MAGE_O_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> SORCERER_DRIVER = ITEMS.register("sorcererdriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sorcerer",SORCERER_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WHITE_WIZARD_DRIVER_F = ITEMS.register("whitewizardriver_f",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wiseman_female",WISEMAN_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARK_WIZARDRIVER = ITEMS.register("dark_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_wizard",DARK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_WIZARDRIVER = ITEMS.register("black_wizardriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_wizard",BLACK_WIZARD_RING , WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> UZAI_BELT = ITEMS.register("uzai_belt",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"uzai", FLAME_WIZARD_RING, WIZARD_HEAD, WIZARD_CHESTPLATE, WIZARD_LEGGINGS, new Item.Properties())
-					.overrideBeltText("uzai_belt_belt").hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+					.overrideBeltText("uzai_belt_belt").hideBeltFormInfo().changeRepairItem(WIZARD_GEM.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARD_GEM_CRAFTING_CHISEL= ITEMS.register("wizard_gem_crafting_chisel",
-			() -> new BaseItem(new Item.Properties()).keepItem().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM));
+			() -> new BaseItem(new Item.Properties()).keepItem().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN = ITEMS.register("wizarswordgun",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> AXCALIBUR = ITEMS.register("axcalibur",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).isChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).isChangeSword().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DICE_SABER = ITEMS.register("dice_saber",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> MIRAGE_MAGNUM = ITEMS.register("mirage_magnum",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.SMALL_FIREBALL).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> WIZARSWORDSGUN_MAGE = ITEMS.register("wizarswordgun_mage",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM)
+			() -> new BaseBlasterItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> HAMMELCANE = ITEMS.register("hammelcane",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 	public static final DeferredItem<Item> DIS_HALBERD = ITEMS.register("dis_halberd",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.WIZARD_TAB_ITEM)
+			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.WIZARD_TAB_ITEM)
 					.changeRepairItem(WIZARD_GEM.get()));
 
 

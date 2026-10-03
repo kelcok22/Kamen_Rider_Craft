@@ -35,13 +35,13 @@ public class ExAidRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> EX_AID_LOGO = ITEMS.register("ex_aid_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ex_aid")), new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/ex_aid")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> BUGSTER_VIRUS_DNA = ITEMS.register("bugster_virus_dna",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> BLANK_GASHAT = ITEMS.register("blank_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
 
@@ -73,7 +73,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSlotOneAbility("rider_kick",1).addSwitchForm(MIGHTY_ACTION_X_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 20));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 20));
 
     public static final DeferredItem<Item> TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("taddle_quest_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","brave","gamer_driver_taddle_quest_lv_1",
@@ -99,7 +99,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(TADDLE_QUEST_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 15));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("bang_bang_shooting_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","snipe","gamer_driver_bang_bang_shooting_lv_1",
@@ -127,7 +127,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(BANG_BANG_SHOOTING_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
+                    .isGlowing().IsBeltGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_LV_1 = ITEMS.register("bakusou_bike_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","lazer","gamer_driver_bakusou_bike_lv_1",
@@ -167,7 +167,7 @@ public class ExAidRiderItems {
                 }
             }.addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
                     .changeModel("lazer_lv2.geo.json").isBike().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
+                    .isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_TURBO = ITEMS.register("bakusou_bike_gashat_turbo",
             () -> new RiderFormChangeItem(new Item.Properties(),"_turbo","lazer","gamer_driver_bakusou_bike",
@@ -184,7 +184,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
-                    .isGlowing().IsBeltGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static String[] BaseGamerDriverUsers = new String[] {"ex_aid","genm","brave","snipe"};
 
@@ -197,7 +197,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setFormToArmor().changeSlot(2).isGlowing().changeModel("robot_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+            }.setFormToArmor().changeSlot(2).isGlowing().changeModel("robot_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> DOREMIFA_BEAT_GASHAT = ITEMS.register("doremifa_beat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"beat_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -216,7 +216,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor().changeSlot(2)
-                    .isGlowing().changeModel("beat_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+                    .isGlowing().changeModel("beat_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> JET_COMBAT_GASHAT = ITEMS.register("jet_combat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"combat_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -228,7 +228,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSlotTwoAbility("gattling",1).setFormToArmor().changeSlot(2)
-                    .isGlowing().changeModel("combat_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+                    .isGlowing().changeModel("combat_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> GIRI_GIRI_CHAMBARA_GASHAT = ITEMS.register("giri_giri_chambara_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"chambara_gamer","lazer","gamer_driver_bakusou_bike",
@@ -240,7 +240,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeSlot(2)
-                    .isGlowing().alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).changeModel("chambara_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+                    .isGlowing().alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).changeModel("chambara_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> GIRI_GIRI_CHAMBARA_GASHAT_X = ITEMS.register("giri_giri_chambara_gashat_x",
             () -> new RiderFormChangeItem(new Item.Properties(),"chambara_gamer","lazer","gamer_driver_bakusou_bike",
@@ -272,7 +272,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setFormToArmor().isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+            }.setFormToArmor().isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE = ITEMS.register("drago_knight_hunter_z_gashat_graphite_bugvisor",
             () -> new RiderFormChangeItem(new Item.Properties(),"","graphite_bugster","graphite_belt",
@@ -396,7 +396,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setFormToArmor().isGlowing().changeModel("hunter_gamer.geo.json").addAlternative(DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()).addShiftForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            }.setFormToArmor().isGlowing().changeModel("hunter_gamer.geo.json").addAlternative(DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()).addShiftForm(DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_LV_1 = ITEMS.register("proto_mighty_action_x_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv1","genm","gamer_driver_proto_mighty_action_x_lv_1",
@@ -423,7 +423,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_TADDLE_QUEST_GASHAT_LV_1 = ITEMS.register("proto_taddle_quest_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_proto_brave_lv1","brave","gamer_driver_proto_taddle_quest_lv_1",
@@ -457,7 +457,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeModel("brave.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_TADDLE_QUEST_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("brave.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_TADDLE_QUEST_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("proto_bang_bang_shooting_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_proto_snipe_lv1","snipe","gamer_driver_proto_bang_bang_shooting_lv_1",
@@ -494,7 +494,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().IsBeltGlowing().changeModel("snipe.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addSwitchForm(PROTO_BANG_BANG_SHOOTING_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_BAKUSOU_BIKE_GASHAT_LV_1 = ITEMS.register("proto_bakusou_bike_gashat",
@@ -513,7 +513,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().changeModel("lazer_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
-                    .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_GEKITOTSU_ROBOTS_GASHAT = ITEMS.register("proto_gekitotsu_robots_gashat",
@@ -530,7 +530,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .changeSlot(2).changeModel("robot_gamer.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .changeSlot(2).changeModel("robot_gamer.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DOREMIFA_BEAT_GASHAT = ITEMS.register("proto_doremifa_beat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_beat_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -546,7 +546,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .changeSlot(2).changeModel("beat_gamer.geo.json").isGlowing().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .changeSlot(2).changeModel("beat_gamer.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_JET_COMBAT_GASHAT_LAZER = ITEMS.register("proto_jet_combat_gashat_lazer",
@@ -577,7 +577,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.setSlotTwoAbility("gattling",1).isGlowing().changeModel("combat_gamer.geo.json").addAlternative(PROTO_JET_COMBAT_GASHAT_LAZER.get()).setFormToArmor().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            }.setSlotTwoAbility("gattling",1).isGlowing().changeModel("combat_gamer.geo.json").addAlternative(PROTO_JET_COMBAT_GASHAT_LAZER.get()).setFormToArmor().changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_GIRI_GIRI_CHAMBARA_GASHAT = ITEMS.register("proto_giri_giri_chambara_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"proto_chambara_gamer","lazer","gamer_driver_bakusou_bike",
@@ -593,7 +593,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeSlot(2)
-                    .alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).isGlowing().changeModel("chambara_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .alsoChange1stSlot(BAKUSOU_BIKE_GASHAT_UNDER.get()).isGlowing().changeModel("chambara_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER = ITEMS.register("proto_shakariki_sports_gashat_lazer",
@@ -631,7 +631,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addAlternative(PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER.get()).isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addAlternative(PROTO_SHAKARIKI_SPORTS_GASHAT_LAZER.get()).isGlowing().changeModel("sports_gamer.geo.json").changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_CLAW = ITEMS.register("proto_drago_knight_hunter_z_gashat_claw",
@@ -756,7 +756,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()).addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).isGlowing().changeSlot(2).changeModel("hunter_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addAlternative(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()).addShiftForm(PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_FANG.get()).isGlowing().changeSlot(2).changeModel("hunter_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN = ITEMS.register("proto_mighty_action_x_gashat_origin",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv0","genm","gamer_driver_proto_mighty_action_x_origin",
@@ -774,7 +774,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            }.isGlowing().addSwitchForm(PROTO_MIGHTY_ACTION_X_GASHAT_LV_1.get()).changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BAKUSOU_BIKE_COMBI_FUKKATSU_GASHAT = ITEMS.register("proto_bakusou_bike_combi_fukkatsu_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_lv0","ex_aid","gamer_driver_proto_bakusou_bike_combi_fukkatsu",
@@ -794,7 +794,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv0.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv0.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DANGEROUS_ZOBIE_LAZER = ITEMS.register("dangerous_zombie_gashat_lazer",
             () -> new RiderFormChangeItem(new Item.Properties(),"chambara_gamer","lazer","gamer_driver_bakusou_bike",
@@ -848,7 +848,7 @@ public class ExAidRiderItems {
             }
                     .addAlternative(DANGEROUS_ZOBIE_GASHAT_BD.get()).addNeedForm(PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN.get(),1)
                     .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("genm_lvx.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("genm_lvx.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT = ITEMS.register("unfinished_kamen_rider_chronicle_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ride_player","ride_player_belt",
@@ -861,7 +861,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER= ITEMS.register("kamen_rider_chronicle_gashat_bugster",
@@ -906,7 +906,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGold().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER.get()).isGlowing().IsBeltGlowing().changeModel("chronos.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGold().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER.get()).isGlowing().IsBeltGlowing().changeModel("chronos.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT= ITEMS.register("kamen_rider_chronicle_gashat",
@@ -927,7 +927,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().IsBeltGlowing().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .changeBeltModel("geo/belts/gamer_driver_belt.geo.json").changeModel("chronos.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .changeBeltModel("geo/belts/gamer_driver_belt.geo.json").changeModel("chronos.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHAT_RED_EYES= ITEMS.register("toki_meki_crisis_gashat_red_eyes",
             () -> new RiderFormChangeItem(new Item.Properties(),"_red","poppy","gashacon_bugvisor_ii_poppy",
@@ -955,7 +955,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().changeModel("poppy.geo.json").IsBeltGlowing().addSwitchForm(TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("poppy.geo.json").IsBeltGlowing().addSwitchForm(TOKI_MEKI_CRISIS_GASHAT_RED_EYES.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MIGHTY_CREATOR_VRX_GASHAT = ITEMS.register("mighty_creator_vrx_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_creator","ex_aid","gamer_driver_mighty_creator_vrx",
@@ -976,7 +976,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 1));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 1));
 
     public static final DeferredItem<Item> MIGHTY_NOVEL_GASHAT = ITEMS.register("mighty_novel_x_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_novel","ex_aid","gamer_driver_mighty_novel_x",
@@ -997,7 +997,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().IsBeltGlowing().changeModel("ex_aid.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 1));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 1));
 
     public static final DeferredItem<Item> JU_JU_BURGER_GASHAT = ITEMS.register("ju_ju_burger_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"burger_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1013,7 +1013,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setFormToArmor()
-                    .changeSlot(2).isGlowing().changeModel("burger_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 5));
+                    .changeSlot(2).isGlowing().changeModel("burger_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 5));
 
     public static final DeferredItem<Item> NIGHT_OF_SAFARI_GASHAT = ITEMS.register("night_of_safari_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"safari_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1029,7 +1029,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.isGlowing().setFormToArmor().changeModel("safari_gamer.geo.json").changeSlot(2)
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 3));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 3));
 
     public static final DeferredItem<Item> BANG_BANG_TANK_GASHAT = ITEMS.register("bang_bang_tank_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"tank_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1042,7 +1042,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotTwoAbility("cannon",1).setFormToArmor().changeSlot(2)
-                    .isGlowing().changeModel("tank_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
+                    .isGlowing().changeModel("tank_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
 
 
     public static final DeferredItem<Item> TADDLE_LEGACY_GASHAT_TRUE = ITEMS.register("taddle_legacy_gashat_true",
@@ -1079,7 +1079,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .setFormToArmor().changeModel("legacy_gamer.geo.json").hasCape().changeSlot(2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
+                    .setFormToArmor().changeModel("legacy_gamer.geo.json").hasCape().changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
 
     public static final DeferredItem<Item> HURRICANE_NINJA_GASHAT = ITEMS.register("hurricane_ninja_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"","fuma","gamer_driver_hurricane_ninja",
@@ -1096,7 +1096,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 2));
 
     public static final DeferredItem<Item> PAC_ADVENTURE_GASHAT = ITEMS.register("pac_adventure_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"pac_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1109,7 +1109,7 @@ public class ExAidRiderItems {
 
                 }
             }.setFormToArmor()
-                    .isGlowing().changeModel("pac_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("pac_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> FAMITSA_GASHAT = ITEMS.register("famitsa_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"famista_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1122,7 +1122,7 @@ public class ExAidRiderItems {
 
                 }
             }.setFormToArmor()
-                    .isGlowing().changeModel("famista_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("famista_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> XEVIOUS_GASHAT = ITEMS.register("xevious_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"xevious_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1135,7 +1135,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotTwoAbility("gattling",1).setFormToArmor()
-                    .isGlowing().changeModel("xevious_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("xevious_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GALAXIAN_GASHAT = ITEMS.register("galaxian_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"galaxian_gamer","ex_aid","gamer_driver_mighty_action_x",
@@ -1148,25 +1148,25 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotTwoAbility("cannon",1).setFormToArmor()
-                    .isGlowing().changeModel("galaxian_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().changeModel("galaxian_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIKO_NO_TATSUJIN_GASHAT = ITEMS.register("taiko_no_tatsujin_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GANBERIZING_GASHAT = ITEMS.register("ganbarizing_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(GameCreator.BLANK_GASHAT, 2).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GameCreator.BLANK_GASHAT, 2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE = ITEMS.register("proto_mighty_action_x_gashat_origin_remake",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TOKI_MEKTI_BRIDAL_GASHAT = ITEMS.register("toki_meki_bridal_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> POPPY_DOREMIFA_BEAT_GASHAT_GASHAT = ITEMS.register("poppy_doremifa_beat_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MIGHTY_BROTHERS_XX_UNFINISHED_GASHAT = ITEMS.register("mighty_brothers_xx_unfinished_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item>  MIGHTY_BROTHERS_XX_GASHAT_L = ITEMS.register("mighty_brothers_xx_gashat_l",
@@ -1218,10 +1218,10 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().changeModel("ex_aid_lvx.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").addShiftForm(MIGHTY_BROTHERS_XX_GASHAT_R.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 20));
+                    .isGlowing().changeModel("ex_aid_lvx.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").addShiftForm(MIGHTY_BROTHERS_XX_GASHAT_R.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 20));
 
     public static final DeferredItem<Item> DOCTOR_MIGHTY_XX_GASHAT = ITEMS.register("doctor_mighty_xx_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
 
     public static final DeferredItem<Item> KNOCK_OUT_FIGHTER_2_GASHAT = ITEMS.register("knock_out_fighter_2_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_lv39","ex_aid","gamer_driver_knock_out_fighter_2",
@@ -1238,7 +1238,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
 
     public static final DeferredItem<Item> TADDLE_FANTASY_GASHAT = ITEMS.register("taddle_fantasy_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"fantasy_gamer","brave","gamer_driver_taddle_fantasy",
@@ -1256,7 +1256,7 @@ public class ExAidRiderItems {
 
                 }
             }
-            .setFormToArmor().changeSlot(2).hasCape().changeModel("fantasy_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+            .setFormToArmor().changeSlot(2).hasCape().changeModel("fantasy_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
     public static final DeferredItem<Item> BANG_BANG_SIMULATION_GASHAT = ITEMS.register("bang_bang_simulation_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"simulation_gamer","snipe","gamer_driver_taddle_fantasy",
@@ -1274,7 +1274,7 @@ public class ExAidRiderItems {
 
                 }
             }
-            .setSlotTwoAbility("cannon", 1).setFormToArmor().changeSlot(2).changeModel("simulation_gamer.geo.json").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+            .setSlotTwoAbility("cannon", 1).setFormToArmor().changeSlot(2).changeModel("simulation_gamer.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
     public static final DeferredItem<Item> GASHAT_GEAR_DUAL = ITEMS.register("gashat_gear_dual",
             () -> new RiderFormChangeItem(new Item.Properties(),"","para_dx_lv99","gamer_driver_gashat_gear_dual",
@@ -1312,7 +1312,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
+                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
 
     public static final DeferredItem<Item> KNOCK_OUT_FIGHTER_GASHAT = ITEMS.register("knock_out_fighter_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_fighter","para_dx","paradoxbelt",
@@ -1328,7 +1328,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
+                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
 
     public static final DeferredItem<Item> GASHAT_GEAR_DUAL_ANOTHER = ITEMS.register("gashat_gear_dual_another",
             () -> new RiderFormChangeItem(new Item.Properties(),"","another_para_dx","gamer_driver_gashat_gear_dual_another",
@@ -1351,7 +1351,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeModel("para_dx_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
+                    .isGlowing().IsBeltGlowing().changeModel("para_dx_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 5));
 
     public static final DeferredItem<Item> GENM_MUSOU_GASHAT = ITEMS.register("genm_musou_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_musou","genm","gamer_driver_genm_musou",
@@ -1375,10 +1375,10 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> UNFINISHED_MAXIMUM_MIGHTY_X_GASHAT = ITEMS.register("unfinished_maximum_mighty_x_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MAXIMUM_MIGHTY_X_GASHAT_lv2 = ITEMS.register("maximum_mighty_x_gashat_lv_2",
             () -> new RiderFormChangeItem(new Item.Properties(),"","ex_aid","gamer_driver_maximum_mighty_x_lv2",
@@ -1420,7 +1420,7 @@ public class ExAidRiderItems {
 
                 }
             }.addSwitchForm(MAXIMUM_MIGHTY_X_GASHAT_lv2.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
 
 
     public static final DeferredItem<Item> GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0 = ITEMS.register("god_maximum_mighty_x_gashat_lv0",
@@ -1468,14 +1468,14 @@ public class ExAidRiderItems {
                 }
             }
                     .addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
 
     public static final DeferredItem<Item> MAXIMUM_ZOMBIE_GASHAT = ITEMS.register("maximum_zombie_gashat",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> UNFINISHED_HYPER_MUTEKI_GASHAT= ITEMS.register("unfinished_hyper_muteki_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> HYPER_MUTEKI_GASHAT = ITEMS.register("hyper_muteki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_muteki","ex_aid","gamer_driver_hyper_muteki",
@@ -1495,7 +1495,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.setSlotOneAbility("rider_kick",1).isGold().isGlowing().IsBeltGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).changeModel("ex_aid_muteki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(GameCreator.BLANK_HYPER_GASHAT, 20));
+            }.setSlotOneAbility("rider_kick",1).isGold().isGlowing().IsBeltGlowing().addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).changeModel("ex_aid_muteki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").hasCape().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(GameCreator.BLANK_HYPER_GASHAT, 20));
 
     public static final DeferredItem<Item> GEMEDEUS_HYPER_MUTEKI_GASHAT = ITEMS.register("gamedeus_hyper_muteki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","gamedeus_muteki","gamer_driver_gamedeus_hyper_muteki",
@@ -1520,7 +1520,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addNeedForm(MAXIMUM_MIGHTY_X_GASHAT.get(), 1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_HYPER_GASHAT, 5));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_HYPER_GASHAT, 5));
 
 
     public static final DeferredItem<Item> HYPER_FUMESTU_GASHAT = ITEMS.register("hyper_fumetsu_gashat",
@@ -1546,7 +1546,7 @@ public class ExAidRiderItems {
                 }
             }
                     .isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addNeedItem(MAXIMUM_ZOMBIE_GASHAT.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> THE_UNBEATABLE_GAME= ITEMS.register("the_unbeatable_game",
@@ -1568,11 +1568,11 @@ public class ExAidRiderItems {
                 }
             }
                     .isGold().isGlowing().IsBeltGlowing().changeModel("genm_bugvisor_totema.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KAMEN_RIDER_BUILD_GASHAT = ITEMS.register("kamen_rider_build_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> KAIGEN_GHOST_GASHAT_LV_1 = ITEMS.register("kaigan_ghost_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ghost_lv1","ex_aid","gamer_driver_kaigan_ghost_lv_1",
@@ -1607,7 +1607,7 @@ public class ExAidRiderItems {
 
                 }
             }.addSwitchForm(KAIGEN_GHOST_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> FULL_THROTTLE_DRIVE_GASHAT = ITEMS.register("full_throttle_drive_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_drive","ex_aid","gamer_driver_full_throttle_drive",
@@ -1621,7 +1621,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TOUKENDEN_GAIM_GASHAT = ITEMS.register("toukenden_gaim_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_gaim","ex_aid","gamer_driver_toukenden_gaim",
@@ -1638,7 +1638,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MAGIC_THE_WIZARD_GASHAT_LV_1 = ITEMS.register("magic_the_wizard_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wizard_lv1","genm","gamer_driver_magic_the_wizard_lv_1",
@@ -1668,7 +1668,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotOneAbility("wizard_kick_flame",1).addSwitchForm(MAGIC_THE_WIZARD_GASHAT_LV_1.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> SPACE_GALAXY_FOUZE_GASHAT = ITEMS.register("space_galaxy_fourze_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_fourze","genm","gamer_driver_space_galaxy_fourze",
@@ -1690,7 +1690,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> JUNGLE_OOO_GASHAT = ITEMS.register("jungle_ooo_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ooo","genm","gamer_driver_jungle_ooo",
@@ -1711,7 +1711,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DETECTICE_DOUBLE_GASHAT = ITEMS.register("detective_double_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_w","ex_aid","gamer_driver_detective_double",
@@ -1729,7 +1729,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> BERCODE_WARRIOR_DECADE_GASHAT = ITEMS.register("barcode_warrior_decade_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_decade","ex_aid","gamer_driver_barcode_warrior_decade",
@@ -1743,7 +1743,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_decade.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_decade.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DOKIDOKI_MAKAI_CASTLE_KIVA_GASHAT = ITEMS.register("dokidoki_makai_castle_kiva_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kiva","ex_aid","gamer_driver_dokidoki_makai_castle_kiva",
@@ -1757,7 +1757,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotOneAbility("kiva_kick",1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TIME_EXPRESS_DEN_O_GASHAT = ITEMS.register("time_express_den_o_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_den_o","genm","gamer_driver_mighty_novel_x",
@@ -1774,7 +1774,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> INSECT_WARS_KABUTO_GASHAT = ITEMS.register("insect_wars_kabuto_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kabuto","ex_aid","gamer_driver_full_throttle_drive",
@@ -1788,7 +1788,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotOneAbility("clock_up",1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIKO_MASTER_HIBIKI_GASHAT = ITEMS.register("taiko_master_hibiki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hibiki","genm","gamer_driver_proto_mighty_action_x",
@@ -1803,7 +1803,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> KING_OF_POKER_BLADE_GASHAT = ITEMS.register("king_of_poker_blade_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_blade","genm","gamer_driver_king_of_poker_blade",
@@ -1817,7 +1817,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MOSHI_MOSHI_FAIZ_GASHAT = ITEMS.register("moshi_moshi_faiz_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_faiz","genm","gamer_driver_moshi_moshi_faiz",
@@ -1832,7 +1832,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MIRROR_LABRYINTH_RYUKI_GASHAT = ITEMS.register("mirror_labryinth_ryuki_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ryuki","ex_aid","gamer_driver_mirror_labyrinth_ryuki",
@@ -1850,7 +1850,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_OF_THE_SUN_GASHAT = ITEMS.register("agito_of_the_sun_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_agito","genm","gamer_driver_agito_of_the_sun",
@@ -1864,7 +1864,7 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> ADVENTURE_GUY_KUUGA_GASHAT = ITEMS.register("adventure_guy_kuuga_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_kuuga","ex_aid","gamer_driver_adventure_guy_kuuga",
@@ -1878,7 +1878,7 @@ public class ExAidRiderItems {
 
                 }
             }.setSlotOneAbility("rider_kick",1).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> LETS_GO_ICHIGOU_GASHAT = ITEMS.register("lets_go_ichigou_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(),"_ichigou","ex_aid","gamer_driver_lets_go_ichigou",
@@ -1893,311 +1893,311 @@ public class ExAidRiderItems {
 
                 }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> MIGHTY_ACTION_X_GASHA_TROPHY = ITEMS.register("mighty_action_x_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TADDLE_QUEST_GASHA_TROPHY = ITEMS.register("taddle_quest_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHA_TROPHY = ITEMS.register("bang_bang_shooting_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHA_TROPHY = ITEMS.register("bakusou_bike_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GEKITOTSU_ROBOTS_GASHA_TROPHY = ITEMS.register("gekitotsu_robots_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DOREMIFA_BEAT_GASHA_TROPHY = ITEMS.register("doremifa_beat_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> JET_COMBAT_GASHA_TROPHY = ITEMS.register("jet_combat_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GIRI_GIRI_CHAMBARA_GASHA_TROPHY = ITEMS.register("giri_giri_chambara_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> SHAKARIKI_SPORTS_GASHA_TROPHY = ITEMS.register("shakariki_sports_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DRAGO_KNIGHT_HUNTER_Z_GASHA_TROPHY = ITEMS.register("drago_knight_hunter_z_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> PERFECT_PUZZLE_GASHA_TROPHY = ITEMS.register("perfect_puzzle_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> KNOCK_OUT_FIGHTER_GASHA_TROPHY = ITEMS.register("knockout_fighter_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TOKI_MEKI_CRISIS_GASHA_TROPHY = ITEMS.register("toki_meki_crisis_gasha_trophy",
-            () -> new BaseItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> CHRONUS_CLOCK = ITEMS.register("chronus_clock",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
 
     public static final DeferredItem<Item>EX_AIDHELMET = ITEMS.register("ex_aidhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
     public static final DeferredItem<Item> EX_AIDCHESTPLATE = ITEMS.register("ex_aidtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
     public static final DeferredItem<Item> EX_AIDLEGGINGS = ITEMS.register("ex_aidlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_EX_AID = ITEMS.register("gamer_driver_ex_aid",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ex_aid",MIGHTY_ACTION_X_GASHAT_LV_1,MIGHTY_ACTION_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_BRAVE = ITEMS.register("gamer_driver_brave",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"brave",TADDLE_QUEST_GASHAT_LV_1,TADDLE_QUEST_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_SNIPE = ITEMS.register("gamer_driver_snipe",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"snipe",BANG_BANG_SHOOTING_GASHAT_LV_1,BANG_BANG_SHOOTING_GASHAT,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_LAZER = ITEMS.register("gamer_driver_lazer",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"lazer",BAKUSOU_BIKE_GASHAT_LV_1, BAKUSOU_BIKE_GASHAT,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_GENM = ITEMS.register("gamer_driver_genmu",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"genm",PROTO_MIGHTY_ACTION_X_GASHAT_LV_1,PROTO_MIGHTY_ACTION_X_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_PARA_DX = ITEMS.register("gamer_driver_paradx",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"para_dx_lv99",GASHAT_GEAR_DUAL ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_TRUE_BRAVE = ITEMS.register("gamer_driver_truebrave",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"truebrave",TADDLE_LEGACY_GASHAT_TRUE ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_FUMA = ITEMS.register("gamer_driver_fuuma",
             () -> new GamerDriverFumaItem(ArmorMaterials.DIAMOND,"fuma",HURRICANE_NINJA_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_ANOTHER_PARA_DX = ITEMS.register("gamer_driver_anotherparadox",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"another_para_dx",GASHAT_GEAR_DUAL_ANOTHER ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_SNIPE_NICO = ITEMS.register("gamer_driver_nico_snipe",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"snipe_nico",BANG_BANG_SHOOTING_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_GEMEDEUS_MUTEKI = ITEMS.register("gamer_driver_gamedeus_muteki",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"gamedeus_muteki",GEMEDEUS_HYPER_MUTEKI_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_GENM = ITEMS.register("gashacon_bugvisor_genmu",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"genm_bugvisor",DANGEROUS_ZOBIE_GASHAT_BD ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .overrideBeltText("gashacon_bugvisor").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .overrideBeltText("gashacon_bugvisor").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_GRAPHITE = ITEMS.register("gashacon_bugvisor_graphite",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"graphite_bugster",DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONOS = ITEMS.register("gashacon_bugvisor_ii_chronos",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronos",KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .overrideBeltText("gashacon_bugvisor_ii").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .overrideBeltText("gashacon_bugvisor_ii").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_POPPY = ITEMS.register("gashacon_bugvisor_ii_poppy",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"poppy",TOKI_MEKI_CRISIS_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_LAZER = ITEMS.register("gashacon_bugvisor_ii_lazer",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"lazer_lvx_",GIRI_GIRI_CHAMBARA_GASHAT_X ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_lazer").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_lazer").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONICLE_BUGTER = ITEMS.register("gashacon_bugvisor_ii_chronicle_bugster",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"chronicle_bugster",KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> PARA_DX_BELT = ITEMS.register("paradoxbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"para_dx",PERFECT_PUZZLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_PLAYER_BELT = ITEMS.register("rideplayerbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ride_player",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_PLAYER_BELT_NICO = ITEMS.register("rideplayerbelt_nico",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ride_player_nico",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> NINjA_PLAYER_BELT = ITEMS.register("ninjaplayerbelt",
             () -> new GamerDriverItem(ArmorMaterials.DIAMOND,"ninja_player",UNFINISHED_KAMEN_RIDER_CHRONICLE_GASHAT ,EX_AIDHELMET, EX_AIDCHESTPLATE,EX_AIDLEGGINGS , new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("ninja_player_belt").addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
+                    .hideBeltFormInfo().overrideBeltText("ninja_player_belt").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> GASHACON_BREAKER = ITEMS.register("gashacon_breaker",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).isChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).isChangeSword().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_KEY_SLASHER = ITEMS.register("gashacon_key_slasher",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -3F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SWORD = ITEMS.register("gashacon_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).isChangeSword().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).isChangeSword().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_MAGNUM = ITEMS.register("gashacon_magnum_gun",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> FRONT_ARMED_UNIT = ITEMS.register("front_armed_unit",
-            () -> new FrontArmedUnitItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).changeRepairItem(BLANK_GASHAT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new FrontArmedUnitItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).changeRepairItem(BLANK_GASHAT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> REAR_ARMED_UNIT = ITEMS.register("rear_armed_unit",
-            () -> new RearArmedUnitItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).changeRepairItem(BLANK_GASHAT.get()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new RearArmedUnitItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BLASTER).changeRepairItem(BLANK_GASHAT.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_A = ITEMS.register("gashacon_sparrow_sickle_a",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_SICKLE_B = ITEMS.register("gashacon_sparrow_sickle_b",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_SPARROW_ARROW = ITEMS.register("gashacon_sparrow_arrow",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR = ITEMS.register("gashacon_bugvisor",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II = ITEMS.register("gashacon_bugvisor_ii",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_G = ITEMS.register("gashacon_bugvisor_g",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> PARABRAGUN = ITEMS.register("parabragun_axe",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 13, -3F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 13, -3F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_WEAPON = ITEMS.register("ride_weapon",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsSwordGun().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> TRUE_BRAVE_SWORD = ITEMS.register("true_brave_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> FUUMA_SWORD = ITEMS.register("fuuma_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GENIN_WEAPON = ITEMS.register("genin_weapon",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> BUGSTER_TRIDENT = ITEMS.register("bugster_trident",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GRAPHITE_FANG = ITEMS.register("graphite_fang",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
 
     public static final DeferredItem<Item> DEUS_RUSHER = ITEMS.register("deus_rusher",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> DEUS_RAMPART = ITEMS.register("deus_rampart",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> DEUS_RUSHER_RED = ITEMS.register("deus_rusher_red",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 15, -2.4F, new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseSwordItem(Tiers.DIAMOND, 15, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> MACHINA_RAMPART = ITEMS.register("machina_rampart",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM)
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
 
 
     public static final DeferredItem<Item> SPEED_ENERGY_ITEM = ITEMS.register("speed_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 20,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 20,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> IRON_ENERGY_ITEM = ITEMS.register("iron_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500, 5,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500, 5,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> INSTIGATE_ENERGY_ITEM = ITEMS.register("instigate_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.GLOWING, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.GLOWING, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> JUMP_ENERGY_ITEM = ITEMS.register("jump_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.JUMP, 500, 10,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.JUMP, 500, 10,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MUSCLE_ENERGY_ITEM = ITEMS.register("muscle_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 5,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 5,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> SHRINK_ENERGY_ITEM = ITEMS.register("shrink_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.SMALL, 500, 2,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.SMALL, 500, 2,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> CHRISTMAS_ENERGY_ITEM = ITEMS.register("christmas_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.CHRISTMAS, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.CHRISTMAS, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> STRETCH_ENERGY_ITEM = ITEMS.register("stretch_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.STRETCH, 500, 2,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.STRETCH, 500, 2,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> INVISIBLE_ENERGY_ITEM = ITEMS.register("invisible_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.INVISIBILITY, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.INVISIBILITY, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> CONFUSION_ENERGY_ITEM = ITEMS.register("confusion_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.CONFUSION, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.CONFUSION, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> RECOVER_ITEM = ITEMS.register("recover_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.HEAL, 1, 10,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.HEAL, 1, 10,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     //seperation_energy_item
 
     public static final DeferredItem<Item> EMISSION_ENERGY_ITEM = ITEMS.register("emission_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.NIGHT_VISION, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.NIGHT_VISION, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> REFLECT_ENERGY_ITEM = ITEMS.register("reflect_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.REFLECT, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.REFLECT, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> SAVE_ENERGY_ITEM = ITEMS.register("save_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties().rarity(Rarity.UNCOMMON),new MobEffectInstance(EffectCore.MUTEKI, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties().rarity(Rarity.UNCOMMON),new MobEffectInstance(EffectCore.MUTEKI, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     public static final DeferredItem<Item> REVERSE_ITEM = ITEMS.register("reverse_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.HEAL, 1, 10,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.HEAL, 1, 10,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GIANT_ENERGY_ITEM = ITEMS.register("giant_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.BIG, 500, 2,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.BIG, 500, 2,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     //disguise_energy_item
 
     public static final DeferredItem<Item> LIQUID_ENERGY_ITEM = ITEMS.register("liquid_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.WATER_BREATHING, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.WATER_BREATHING, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_ENERGY_ITEM = ITEMS.register("dark_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.BLINDNESS, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.BLINDNESS, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> SLEEP_ENERGY_ITEM = ITEMS.register("sleep_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.SLEEP, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.SLEEP, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> LUCKY_ENERGY_ITEM = ITEMS.register("lucky_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.LUCK, 500, 0,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.LUCK, 500, 0,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> FLATTEN_ENERGY_ITEM = ITEMS.register("flatten_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.FLAT, 500, 2,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.FLAT, 500, 2,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> BALLOON_ENERGY_ITEM = ITEMS.register("balloon_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.WIDE, 500, 2,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.WIDE, 500, 2,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     //gag_energy_item
@@ -2205,14 +2205,14 @@ public class ExAidRiderItems {
     //partner_energy_item
     //prediction_energy_item
     public static final DeferredItem<Item> HALT_ENERGY_ITEM = ITEMS.register("halt_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 500, 100,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 500, 100,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> END_ENERGY_ITEM = ITEMS.register("end_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.EXPLODE, 500, 1,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.EXPLODE, 500, 1,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     //random_energy_item
     public static final DeferredItem<Item> BUG_ENERGY_ITEM = ITEMS.register("bug_energy_item",
-            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.BUGSTER, 500, 1,true,false)).addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new ExAidEnergyItem(new Item.Properties(),new MobEffectInstance(EffectCore.BUGSTER, 500, 1,true,false)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
     // no plan to add these but adding just in case
@@ -2319,13 +2319,13 @@ public class ExAidRiderItems {
     // Ghost x Ex-Aid maybe use for the Ex-Aid Ghost Eyecon
 
     public static final DeferredItem<Item> RIDER_GASHAT_CASE = ITEMS.register("rider_gashat_case",
-            () -> new RiderGashatCaseItem().useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new RiderGashatCaseItem().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
-            () -> new EnergyItemHolderItem().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new EnergyItemHolderItem().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> WONDERSWAN = ITEMS.register("wonderswan",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(KamenRiderCraftCore.CreativeTabRegistry.EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM));
 
 
 
