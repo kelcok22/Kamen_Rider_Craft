@@ -728,12 +728,15 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
-        public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-            super.transformationEffect(itemstack, player, tick);
-            if (tick == 30d) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD)
+                        layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                }
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
                 AnimationUtil.playPose(player, "meteor.henshin");
                 player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.STONE_STEP, SoundSource.PLAYERS, 1.0F, 8F);
-
             } else if (tick == 2d) {
                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.SOUL_FIRE_FLAME,
                         player.getX(), player.getY() + 1,
@@ -749,6 +752,10 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 5, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD)
+                        layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
@@ -811,6 +818,7 @@ public class FourzeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
                         layerInfo.add(new RenderLayerInfo("module/fourze_fusion_module", "default"));
+                    layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
                 }
             }.changeSlot(4).resetFormToBase().alsoChange5thSlot(FOURZE_FUSION_STATES.get())
                     .setModelName("fusion_switch").useBasicModel());
