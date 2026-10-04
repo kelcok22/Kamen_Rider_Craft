@@ -816,9 +816,10 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD)
+                    if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_fusion_module", "default"));
-                    layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                        layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                    }
                 }
             }.changeSlot(4).resetFormToBase().alsoChange5thSlot(FOURZE_FUSION_STATES.get())
                     .setModelName("fusion_switch").useBasicModel());
