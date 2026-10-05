@@ -506,7 +506,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.STEALTH, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_stealth_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_stealth_module", "module/fourze_stealth_module"));
                 }
             }.changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
@@ -518,7 +518,7 @@ public class FourzeRiderItems {
                         if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new RenderLayerInfo("module/fourze_hammer_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_hammer_module", "module/fourze_hammer_module"));
                     }
                 }
             }.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
