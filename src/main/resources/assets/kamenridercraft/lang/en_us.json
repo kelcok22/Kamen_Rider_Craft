@@ -81,11 +81,19 @@
 "gui.kamneridercraft.ring_holder_gui": "Ring Holder",
 "gui.kamenridercraft.advent_deck_gui": "Advent Deck",
 
+"biome.kamenridercraft.sands_of_time": "Sands of Time",
+"biome.kamenridercraft.moon": "The Moon",
+"biome.kamenridercraft.helheim": "Helheim",
+"biome.kamenridercraft.northern_base": "Northern Base",
+"biome.kamenridercraft.city": "City",
+"biome.kamenridercraft.dream": "Dream World",
+
 "travelerstitles.kamenridercraft.sands_of_time": "Sands of Time",
 "travelerstitles.kamenridercraft.moon": "The Moon",
 "travelerstitles.kamenridercraft.helheim": "Helheim",
 "travelerstitles.kamenridercraft.northern_base": "Northern Base",
 "travelerstitles.kamenridercraft.city": "City",
+"travelerstitles.kamenridercraft.dream": "Dream World",
 
 "painting.kamenridercraft.kindness.title":"Kindness",
 "painting.kamenridercraft.kindness.author":"Suetsugu Egawa",
