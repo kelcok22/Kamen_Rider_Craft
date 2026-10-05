@@ -68,8 +68,8 @@ public class RiderDriverItem extends RiderArmorItem {
     public int unlimitedBeltTextures = 0;
     public float abilityMultiplier = 7.5F;
 
-    public ResourceLocation abilitySlotOne = null;
-    public ResourceLocation abilitySlotTwo = null;
+    public ResourceLocation cachedAbilityOne = null;
+    public ResourceLocation cachedAbilityTwo = null;
 
     public Boolean hasInventory = false;
 
@@ -158,8 +158,8 @@ public class RiderDriverItem extends RiderArmorItem {
             CompoundTag tag = Objects.requireNonNull(stack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             if (tag.getBoolean("Update_form") && slotId == 36) {
                 onFormChange(stack, rider, tag);
-                this.abilitySlotOne = null;
-                this.abilitySlotTwo = null;
+                this.cachedAbilityOne = null;
+                this.cachedAbilityTwo = null;
                 cancelAbility(rider, "", 0);
             }
             if (!isTransformed(rider) || slotId != 36) {
@@ -314,8 +314,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public void onTransformation(ItemStack itemStack, LivingEntity rider) {
         if (isTransformed(rider) && !rider.level().isClientSide()) {
-            this.abilitySlotOne = null;
-            this.abilitySlotTwo = null;
+            this.cachedAbilityOne = null;
+            this.cachedAbilityTwo = null;
             cancelAbility(rider, "", 0);
             for (int n = 0; n < numBaseFormItems; n++) {
                 RiderFormChangeItem form = getFormItem(itemStack, n + 1);
@@ -330,22 +330,17 @@ public class RiderDriverItem extends RiderArmorItem {
     @Override
     public boolean canWalkOnPowderedSnow(@NotNull ItemStack stack, @NotNull LivingEntity wearer) {
         if (!isTransformed(wearer)) {
-            System.out.println("not transformed");
             return false;
         }
         boolean canSnowWalk = false;
         if (getFormItem(stack, 1, wearer.getAttribute(IS_TRANSFORMING).getBaseValue()).checkSnowWalk()) {
-            System.out.println("slot one can snow walk");
             return true;
         }
         if (numBaseFormItems != 1) {
             for (int n = 2; n < numBaseFormItems; n++) {
                 if (getFormItem(stack, n, wearer.getAttribute(IS_TRANSFORMING).getBaseValue()).checkSnowWalk()) {
-                    System.out.println("slot" + n + "can snowwalk");
                     canSnowWalk = true;
                 }
-                System.out.println(getFormItem(stack, n, wearer.getAttribute(IS_TRANSFORMING).getBaseValue()));
-                System.out.println(getFormItem(stack, n, wearer.getAttribute(IS_TRANSFORMING).getBaseValue()).checkSnowWalk());
             }
         }
         return canSnowWalk;
