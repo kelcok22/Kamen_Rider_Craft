@@ -48,7 +48,7 @@ public class AbilityHitDetection {
     }
 
     public static void detectHit(LivingEntity user) {
-        List<LivingEntity> nearbyEnemies = user.level().getEntitiesOfClass(LivingEntity.class, user.getBoundingBox().inflate(0.5 + user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue()), enemy -> (enemy != user));
+        List<LivingEntity> nearbyEnemies = user.level().getEntitiesOfClass(LivingEntity.class, user.getBoundingBox().inflate(0.75 + user.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.SCALE).getValue()), enemy -> (enemy != user));
         boolean enemyDetected = false;
         for (LivingEntity enemy : nearbyEnemies) {
             enemyDetected = true;

@@ -71,6 +71,7 @@ public class RiderFormChangeItem extends BaseItem {
     private Boolean attackForm = false;
 
     private Boolean isGold = false;
+    private Boolean snowWalk = false;
 
     private Boolean setToArmorForm = false;
 
@@ -330,6 +331,11 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem canSnowWalk() {
+        snowWalk = true;
+        return this;
+    }
+
     public RiderFormChangeItem setSlotOneAbility(String abilityChange, int abilityPriority) {
         slotOneAbility = abilityChange.toLowerCase();
         slotOneAbilityPriority = abilityPriority;
@@ -517,7 +523,11 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public Boolean checkGold() {
-        return this.isGold;
+        return isGold;
+    }
+
+    public Boolean checkSnowWalk() {
+        return snowWalk;
     }
 
     public boolean inventoryOrHolderContains(Player player, Item item) {

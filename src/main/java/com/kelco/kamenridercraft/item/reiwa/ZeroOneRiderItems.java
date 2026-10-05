@@ -286,7 +286,7 @@ public class ZeroOneRiderItems {
 							player.getX(), player.getY() + 1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZERO_ONE_TAB_ITEM).addToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 5));
+			}.canSnowWalk().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZERO_ONE_TAB_ITEM).addToList(ProgrisekeyPrinter.ZAIA_PROGRISEKEY, 5));
 
 	public static final DeferredItem<Item> BREAKING_MAMMOTH_PROGRISEKEY = ITEMS.register("breaking_mammoth_progrisekey",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_mammoth","zero_one","hiden_zero_one_driver_belt",
