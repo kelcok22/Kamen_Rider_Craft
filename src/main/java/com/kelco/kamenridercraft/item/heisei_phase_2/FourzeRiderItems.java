@@ -311,8 +311,9 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> LAUNCHER_ASTROSWITCH = ITEMS.register("launcher_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_launcher_module", "default"));
+                    if (slot == EquipmentSlot.HEAD){
+                        layerInfo.add(new RenderLayerInfo("module/fourze_launcher_module", "module/fourze_launcher_module"));
+                    }
                 }
             }.setSlotTwoAbility("cannon", 1).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
@@ -334,7 +335,7 @@ public class FourzeRiderItems {
                         if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new RenderLayerInfo("module/fourze_radar_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_radar_module", "module/fourze_radar_module"));
                     }
                 }
             }.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
