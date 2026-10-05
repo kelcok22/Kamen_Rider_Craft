@@ -111,14 +111,14 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                             if (renderType != null) {
                                 getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                         bufferSource.getBuffer(renderType), partialTick, packedLight, packedOverlay,
-                                        getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
+                                        renderLayerInfo.getColor(partialTick,RIDER));
                             }
                             if (renderLayerInfo.isGlowing()) {
                                 renderType = RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID,
                                         "textures/armor/" + renderLayerInfo.getGlowTexture() + ".png"));
                                 getRenderer().reRender(bakedGeoModel, poseStack, bufferSource, animatable, renderType,
                                         bufferSource.getBuffer(renderType), partialTick, LightTexture.FULL_SKY, packedOverlay,
-                                        getRenderer().getRenderColor(animatable, partialTick, packedLight).argbInt());
+                                        renderLayerInfo.getColor(partialTick,RIDER));
                             }
                         }
                     }

@@ -757,7 +757,7 @@ public class FourzeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
-                       // if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 10) layerInfo.add(new MeteorStormRenderLayerInfo("transforming/meteor_storm"));
+                        if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 10) layerInfo.add(new MeteorStormRenderLayerInfo("transforming/meteor_storm"));
                     }
                 }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
