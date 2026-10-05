@@ -71,18 +71,18 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
             ABILITY_ONE = null;
             ABILITY_TWO = null;
             if (driverItem.isTransformed(player)) {
-                if (!(driverItem.abilitySlotOne == null)) {
-                    ABILITY_ONE = driverItem.abilitySlotOne;
+                if (!(driverItem.cachedAbilityOne == null)) {
+                    ABILITY_ONE = driverItem.cachedAbilityOne;
                 } else {
                     if (!clientGetAbility(1).isEmpty()) {
-                        driverItem.abilitySlotOne = returnAbilityIcon(clientGetAbility(1).getFirst().toLowerCase().substring(1));
+                        driverItem.cachedAbilityOne = returnAbilityIcon(clientGetAbility(1).getFirst().toLowerCase().substring(1));
                     }
                 }
-                if (!(driverItem.abilitySlotTwo == null)) {
-                    ABILITY_TWO = driverItem.abilitySlotTwo;
+                if (!(driverItem.cachedAbilityTwo == null)) {
+                    ABILITY_TWO = driverItem.cachedAbilityTwo;
                 } else {
                     if (!clientGetAbility(2).isEmpty()) {
-                        driverItem.abilitySlotTwo = returnAbilityIcon(clientGetAbility(2).getFirst().toLowerCase().substring(1));
+                        driverItem.cachedAbilityTwo = returnAbilityIcon(clientGetAbility(2).getFirst().toLowerCase().substring(1));
                     }
                 }
             }
