@@ -15,6 +15,8 @@ import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import com.kelco.kamenridercraft.item.showa.V3RiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -413,7 +415,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.NOTE, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_beat_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_beat_module", "module/fourze_beat_module"));
                 }
             }.changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
@@ -523,7 +525,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_water_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_water_module", "module/fourze_water_module"));
                 }
             }.changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
@@ -535,7 +537,7 @@ public class FourzeRiderItems {
                         if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new RenderLayerInfo("module/fourze_medical_module", "default"));
+                        layerInfo.add(new MedicalRenderLayerInfo("module/fourze_medical_module", "module/fourze_medical_module"));
                     }
                 }
             }.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
@@ -581,7 +583,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
-                        layerInfo.add(new RenderLayerInfo("module/fourze_scoop_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_scoop_module", "module/fourze_scoop_module"));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
                     }
                 }
@@ -753,11 +755,17 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 5, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD)
+                    if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                       // if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 10) layerInfo.add(new MeteorStormRenderLayerInfo("transforming/meteor_storm"));
+                    }
                 }
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "meteor.henshin");
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.STONE_STEP, SoundSource.PLAYERS, 1.0F, 8F);
+                    } else if (tick == 2d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 0.05);
@@ -766,7 +774,8 @@ public class FourzeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM));
+                }
+            }.setHenshinTick(35).setFormDelay(10).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",

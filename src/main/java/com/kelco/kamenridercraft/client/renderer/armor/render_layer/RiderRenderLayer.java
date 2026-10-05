@@ -100,8 +100,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                             String model = renderLayerInfo.getModel();
 
                             BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model, renderer2.getCurrentSlot())) : bakedModel;
-                            //poseStack.scale(renderLayerInfo.getScaleX(), renderLayerInfo.getScaleY(), renderLayerInfo.getScaleZ());
-                            //poseStack.translate(renderLayerInfo.getX(), renderLayerInfo.getY(), renderLayerInfo.getZ());
+                            poseStack.scale(renderLayerInfo.getScaleX(), renderLayerInfo.getScaleY(), renderLayerInfo.getScaleZ());
+                            poseStack.translate(renderLayerInfo.getX(), renderLayerInfo.getY(), renderLayerInfo.getZ());
 
                             if (model != null) applyBaseTransformations(bakedModel, bakedGeoModel);
                             if (model != null)
