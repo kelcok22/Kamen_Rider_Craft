@@ -38,13 +38,13 @@ public class MeteorStormRenderLayerInfo extends RenderLayerInfo {
     }
 
     public float getScaleX() {
-        return 2f;
+        return 1.5f;
     }
 
-    public float getScaleY() {return 2f;}
+    public float getScaleY() {return 1.5f;}
 
     public float getScaleZ() {
-        return 2f;
+        return 1.5f;
     }
 
     public float getX() {

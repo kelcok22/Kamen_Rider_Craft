@@ -12,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 import java.util.Objects;
 
@@ -101,11 +102,14 @@ public class RenderLayerInfo {
         return 1f;
     }
 
-    public float getScaleY() {
-        return 1f;
-    }
+    public float getScaleY() {return 1f;}
 
     public float getScaleZ() {
         return 1f;
     }
+
+    public int getColor(float partialTick, LivingEntity RIDER) {
+        return Color.WHITE.getColor();
+    }
+
 }
