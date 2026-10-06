@@ -7,11 +7,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class DrillRenderLayerInfo extends RenderLayerInfo {
+public class DrillRenderLayerInfo extends ModuleRenderLayerInfo {
     public DrillRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model,Color.YELLOW.getColor(),3);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {

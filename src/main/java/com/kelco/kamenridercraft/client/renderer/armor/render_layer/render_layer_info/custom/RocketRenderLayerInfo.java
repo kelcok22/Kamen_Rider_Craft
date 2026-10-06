@@ -12,24 +12,13 @@ import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.util.Color;
 
 
-public class RocketRenderLayerInfo extends RenderLayerInfo {
+public class RocketRenderLayerInfo extends ModuleRenderLayerInfo{
     public RocketRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model,Color.ORANGE.getColor(),1);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
                                  MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
         GeoBone bone = model.getBone("bone").orElse(null);
     }
-
-    public RenderType getRenderType(float partialTick, LivingEntity RIDER) {
-        if (RiderDriverItem.isTransforming(RIDER))return RenderType.debugLineStrip(20);
-        else return super.getRenderType(partialTick,RIDER);
-    }
-
-    public int getColor(float partialTick, LivingEntity RIDER) {
-        if (RiderDriverItem.isTransforming(RIDER))return Color.ORANGE.getColor();
-        else return Color.WHITE.getColor();
-    }
-
 }

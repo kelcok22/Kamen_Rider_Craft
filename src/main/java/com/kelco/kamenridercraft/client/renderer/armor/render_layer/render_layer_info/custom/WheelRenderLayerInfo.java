@@ -9,13 +9,15 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class WheelRenderLayerInfo extends RenderLayerInfo {
+public class WheelRenderLayerInfo extends ModuleRenderLayerInfo {
 
     public WheelRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model, Color.CYAN.getColor(),3);
     }
+
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
         GeoBone wheels = model.getBone("wheels").orElse(null);
         if (wheels!= null) {

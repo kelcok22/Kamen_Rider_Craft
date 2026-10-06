@@ -8,11 +8,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class HandRenderLayerInfo extends RenderLayerInfo {
+public class HandRenderLayerInfo extends ModuleRenderLayerInfo {
     public HandRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model,Color.MAGENTA.getColor(),2);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

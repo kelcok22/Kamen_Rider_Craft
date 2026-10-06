@@ -7,11 +7,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class StrongerModuleRenderLayerInfo extends RenderLayerInfo {
+public class StrongerModuleRenderLayerInfo extends ModuleRenderLayerInfo {
     public StrongerModuleRenderLayerInfo(String texture, String model, String glowmask) {
-        super(texture, model, glowmask);
+        super(texture, model, glowmask, Color.RED.getColor(),1);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

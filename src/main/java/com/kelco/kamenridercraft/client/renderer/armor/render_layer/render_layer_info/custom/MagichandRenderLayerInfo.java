@@ -7,11 +7,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class MagichandRenderLayerInfo extends RenderLayerInfo {
+public class MagichandRenderLayerInfo extends ModuleRenderLayerInfo {
     public MagichandRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model,Color.RED.getColor(),1);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

@@ -8,13 +8,14 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 import java.util.Objects;
 
 
-public class GyroRenderLayerInfo extends RenderLayerInfo {
+public class GyroRenderLayerInfo extends ModuleRenderLayerInfo {
     public GyroRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model, Color.GREEN.getColor(),4);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

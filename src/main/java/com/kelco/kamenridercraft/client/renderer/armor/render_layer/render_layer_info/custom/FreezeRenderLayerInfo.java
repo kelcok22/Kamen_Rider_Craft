@@ -10,11 +10,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class FreezeRenderLayerInfo extends RenderLayerInfo {
+public class FreezeRenderLayerInfo extends ModuleRenderLayerInfo{
     public FreezeRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model,Color.CYAN.getColor(),2);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

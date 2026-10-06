@@ -10,11 +10,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
 import software.bernie.geckolib.cache.object.GeoBone;
+import software.bernie.geckolib.util.Color;
 
 
-public class MedicalRenderLayerInfo extends RenderLayerInfo {
+public class MedicalRenderLayerInfo extends ModuleRenderLayerInfo {
     public MedicalRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model, Color.YELLOW.getColor(),4);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

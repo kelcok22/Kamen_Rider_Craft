@@ -6,11 +6,12 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.util.Color;
 
 
-public class ParachuteRenderLayerInfo extends RenderLayerInfo {
+public class ParachuteRenderLayerInfo extends ModuleRenderLayerInfo {
     public ParachuteRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model, Color.GREEN.getColor(),4);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,

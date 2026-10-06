@@ -12,9 +12,9 @@ import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.util.Color;
 
 
-public class ScissorsRenderLayerInfo extends RenderLayerInfo {
+public class ScissorsRenderLayerInfo extends  ModuleRenderLayerInfo{
     public ScissorsRenderLayerInfo(String texture, String model) {
-        super(texture, model);
+        super(texture, model,Color.YELLOW.getColor(),4);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
@@ -27,14 +27,5 @@ public class ScissorsRenderLayerInfo extends RenderLayerInfo {
         if (blade != null) {
             blade.setRotX((1 - (swing_time / 5)) / 2);
         }
-    }
-    public RenderType getRenderType(float partialTick, LivingEntity RIDER) {
-        if (RiderDriverItem.isTransforming(RIDER))return RenderType.debugLineStrip(20);
-        else return super.getRenderType(partialTick,RIDER);
-    }
-
-    public int getColor(float partialTick, LivingEntity RIDER) {
-        if (RiderDriverItem.isTransforming(RIDER))return Color.YELLOW.getColor();
-        else return Color.WHITE.getColor();
     }
 }
