@@ -763,6 +763,34 @@ public class BladeRiderItems {
     public static final DeferredItem<Item> ABSORB_ORCHID = ITEMS.register("absorb_orchid",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
+    public static final DeferredItem<Item> SEALABLE_EVOLUTION_PARADOXA = ITEMS.register("sealable_evolution_paradoxa",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_paradoxa", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("evolution_paradoxa"));
+
+    public static final DeferredItem<Item> EVOLUTION_PARADOXA_UNDEAD = ITEMS.register("evolution_paradoxa_undead",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_paradoxa", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_EVOLUTION_PARADOXA.get()).useBasicModel().setModelName("evolution_paradoxa"));
+
     public static final DeferredItem<Item> EVOLUTION_PARADOXA = ITEMS.register("evolution_paradoxa",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wild", "chalice", "chalice_rouzer_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
@@ -775,7 +803,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
+            }.isGlowing().addAlternative(EVOLUTION_PARADOXA_UNDEAD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_SPIDER = ITEMS.register("change_spider",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "leangle", "leangle_buckle_belt",
