@@ -484,7 +484,7 @@ public class FourzeRiderItems {
                         if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_shield_module", "default",Color.WHITE.getColor(),4));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_shield_module", "module/fourze_shield_module",Color.WHITE.getColor(),4));
                     }
                 }
             }.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));

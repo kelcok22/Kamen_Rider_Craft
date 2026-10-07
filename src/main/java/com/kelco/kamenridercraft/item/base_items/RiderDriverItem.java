@@ -706,7 +706,7 @@ public class RiderDriverItem extends RiderArmorItem {
             CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             String UsedFormItem = tag.getString("slot_tex" + slot);
             String UsedFormItemOld = tag.getString("slot_tex_old" + slot);
-            System.err.println(UsedFormItem+"_"+UsedFormItemOld);
+            //System.err.println(UsedFormItem+"_"+UsedFormItemOld);
             return !UsedFormItem.equals(UsedFormItemOld);
         }
         return false;
