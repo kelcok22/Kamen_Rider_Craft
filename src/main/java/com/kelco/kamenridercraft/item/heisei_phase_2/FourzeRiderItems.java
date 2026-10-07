@@ -831,7 +831,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
-                        layerInfo.add(new RenderLayerInfo("module/fourze_fusion_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
                     }
                 }
