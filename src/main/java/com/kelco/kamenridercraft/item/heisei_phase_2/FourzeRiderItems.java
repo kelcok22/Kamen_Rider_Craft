@@ -701,8 +701,9 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_super_rocket_module", "default"));
+                    if (slot == EquipmentSlot.HEAD){
+                        layerInfo.add(new RocketRenderLayerInfo("module/fourze_super_rocket_module", "module/fourze_super_rocket_module"));
+                    }
                 }
             }.changeSlot(4).alsoChange5thSlot(FOURZE_ROCKET_STATES.get()).alsoChange1stSlot(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
