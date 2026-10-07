@@ -701,11 +701,12 @@ public class RiderDriverItem extends RiderArmorItem {
         return getFormItem(itemStack, slot, 0d);
     }
 
-    public static boolean wasSlotChanged(ItemStack itemStack, double num) {
+    public static boolean wasSlotChanged(ItemStack itemStack, double slot) {
         if (itemStack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
-            double Form = tag.getDouble("changed_form_slot");
-            return Form == num;
+            ResourceLocation UsedFormItem = ResourceLocation.parse(tag.getString("slot_tex" + slot));
+            ResourceLocation UsedFormItemOld = ResourceLocation.parse(tag.getString("slot_tex_old" + slot));
+            return UsedFormItem != UsedFormItemOld;
         }
         return false;
     }

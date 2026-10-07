@@ -14,7 +14,7 @@ import software.bernie.geckolib.util.Color;
 
 public class RocketRenderLayerInfo extends ModuleRenderLayerInfo{
     public RocketRenderLayerInfo(String texture, String model) {
-        super(texture, model,Color.ORANGE.getColor(),1);
+        super(texture, model,0xff87816,1);
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
