@@ -18,9 +18,11 @@ public class SmokeEffect extends InstantenousMobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         if (livingEntity.level() instanceof ServerLevel serverLevel) {
+            if (livingEntity.isShiftKeyDown()){
             serverLevel.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, livingEntity.getX(), livingEntity.getY() + 1.5, livingEntity.getZ(), 1, 0, 0, 0, 0);
             serverLevel.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, livingEntity.getX(), livingEntity.getY() + 1, livingEntity.getZ(), 1, 0, 0, 0, 0);
             serverLevel.sendParticles(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE, livingEntity.getX(), livingEntity.getY() + 0.5, livingEntity.getZ(), 1, 0, 0, 0, 0);
+        }
         }
         return true;
     }

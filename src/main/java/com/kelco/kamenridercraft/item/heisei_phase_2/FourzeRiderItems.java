@@ -551,7 +551,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SMOKE, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_pen_module", "default",Color.DARK_GRAY.getColor(),2));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_pen_module", "module/fourze_pen_module",Color.DARK_GRAY.getColor(),2));
                 }
             }.changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
