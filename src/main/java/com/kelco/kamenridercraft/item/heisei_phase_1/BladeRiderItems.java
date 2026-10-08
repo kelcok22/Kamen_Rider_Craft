@@ -833,8 +833,27 @@ public class BladeRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
+    public static final DeferredItem<Item> SEALABLE_SCREW_MOLE = ITEMS.register("sealable_screw_mole",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_mole", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("screw_mole"));
+
     public static final DeferredItem<Item> SCREW_MOLE = ITEMS.register("screw_mole",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
+            () -> new RiderFormChangeItem(new Item.Properties(), "_mole", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_SCREW_MOLE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> RUSH_RHINOCEROS = ITEMS.register("rush_rhinoceros",
@@ -1077,8 +1096,8 @@ public class BladeRiderItems {
             () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> ALBINO_JOKER_DEATH_SCYTHE = ITEMS.register("albino_joker_death_scythe",
             () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
-//	public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
-//			() -> new BaseShieldItem(new Item.Properties()).addToList(RiderTabs.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+    public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
+            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 //	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
 //			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(RiderTabs.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 //	public static final DeferredItem<Item> SPIDER_THREAD = ITEMS.register("spider_thread",

@@ -6210,9 +6210,9 @@
 "item.kamenridercraft.metal_tank_tank_full_bottle": "メタルタンクタンクフルボトル",
 
 "item.kamenridercraft.gear_engine": "ギアエンジン（歯車が緑色のもの）",
-"item.kamenridercraft.gear_remocon": "ギアリモコン（歯車が白色のもの）",
+"item.kamenridercraft.gear_remocon": "ギアリモコン（歯車が青色のもの）",
 "item.kamenridercraft.gear_engine_red": "ギアエンジン（歯車が赤色のもの）",
-"item.kamenridercraft.gear_remocon_blue": "ギアリモコン（歯車が青色のもの）",
+"item.kamenridercraft.gear_remocon_blue": "ギアリモコン（歯車が白色のもの）",
 
 "item.kamenridercraft.lost_bat_full_bottle": "バットフルボトル",
 "item.kamenridercraft.lost_cobra_full_bottle": "コブラフルボトル",
@@ -9654,6 +9654,7 @@
 "entity.kamenridercraft.shin_no_0":"仮面ライダー第0号",
 
 "entity.kamenridercraft.base_projectile": "KRC飛び道具",
+"entity.kamenridercraft.sealing_effect":"封印エフェクト",
 
 "item.kamenridercraft.shocker_combatman_spawn_egg": "ショッカー戦闘員スポーンエッグ",
 "item.kamenridercraft.shocker_riders_spawn_egg": "ショッカーライダースポーンエッグ",

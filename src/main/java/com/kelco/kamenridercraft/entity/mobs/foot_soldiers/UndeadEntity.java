@@ -52,7 +52,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
 
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
-            switch (getRandom().nextInt(9)) {
+            switch (getRandom().nextInt(10)) {
                 case 0:
                     setData(MOB_STATE, "locust");
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.KICK_LOCUST.get(), 1);
@@ -90,6 +90,11 @@ public class UndeadEntity extends BaseHenchmenEntity {
                     setData(MOB_STATE, "dragonfly");
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.FLOAT_DRAGONFLY.get(), 1);
                     setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.DRAGONFLY_SOMERSAULT.get(), 1));
+                    break;
+                case 9:
+                    setData(MOB_STATE, "mole");
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SCREW_MOLE.get(), 1);
+                    setItemInHand(InteractionHand.OFF_HAND, new ItemStack(BladeRiderItems.MOLE_SHIELD.get(), 1));
                     break;
             }
         }
@@ -163,14 +168,17 @@ public class UndeadEntity extends BaseHenchmenEntity {
                 case "bat_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_SCOPE_BAT.get(), 1);
                     break;
+                case "dragonfly_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                    break;
                 case "moth_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_REFLECT_MOTH.get(), 1);
                     break;
                 case "centipede_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_SHUFFLE_CENTIPEDE.get(), 1);
                     break;
-                case "dragonfly_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
+                case "mole_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_SCREW_MOLE.get(), 1);
                     break;
                 case "beetle_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_BEETLE.get(), 1);
