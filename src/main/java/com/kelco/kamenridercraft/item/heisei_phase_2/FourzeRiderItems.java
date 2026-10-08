@@ -358,10 +358,10 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
-                        layerInfo.add(new RenderLayerInfo("module/fourze_camera_module", "module/fourze_camera_module"));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_camera_module", "module/fourze_camera_module",Color.DARK_GRAY.getColor(),4));
                         if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new ModuleRenderLayerInfo("module/fourze_module_square", "default",Color.DARK_GRAY.getColor(),4));
+                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
                     }
                 }
             }.changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
