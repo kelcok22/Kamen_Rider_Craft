@@ -59,9 +59,16 @@ public class SealingEntity extends Entity implements GeoEntity {
                     level().addFreshEntity(obtainedCard);
                 }
             } else if (TTL == 60) {
-                if (serverLevel.getPlayerByUUID(UUID.fromString(getData(UUID_STORE))) instanceof Player thrower && obtainedCard != null) {
-                    obtainedCard.absMoveTo(thrower.getX(), thrower.getY(), thrower.getZ());
+                try {
+                    if (!getData(UUID_STORE).isEmpty()
+                            && serverLevel.getPlayerByUUID(UUID.fromString(getData(UUID_STORE))) instanceof Player thrower
+                            && obtainedCard != null) {
+                        obtainedCard.absMoveTo(thrower.getX(), thrower.getY(), thrower.getZ());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
+
             } else if (TTL >= 61) {
                 discard();
             } else {
