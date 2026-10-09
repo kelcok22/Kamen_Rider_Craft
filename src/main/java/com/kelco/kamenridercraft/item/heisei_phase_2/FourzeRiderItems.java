@@ -784,6 +784,24 @@ public class FourzeRiderItems {
             }.setHenshinTick(35).setFormDelay(10).isGlowing().addToList(FOURZE_TAB_ITEM));
 
 
+    public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH_FUSION = ITEMS.register("nadeshiko_switch_fusion",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD)
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_nadeshiko_module", "module/fourze_nadeshiko_module",Color.PINK.getColor(),2));
+                }
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY() + 0.5,
+                            player.getZ(), 100, 0, 0, 0, 0.05);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 30, 0, 0, 0, 0.05);
+                }
+            }.changeSlot(2).changeBeltModel("geo/belts/eins_belt.geo.json").addNeedForm(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()).canSnowWalk());
+
     public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "nadeshiko", "nadeshiko_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
@@ -799,7 +817,7 @@ public class FourzeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 0.05);
                 }
-            }.changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().addToList(FOURZE_TAB_ITEM));
+            }.addAlternative(NADESHIKO_ASTROSWITCH_FUSION.get()).changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ikaros", "ikaros_driver_belt",
@@ -841,10 +859,11 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> FUSION_ASTROSWITCH = ITEMS.register("fusion_switch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
+                    new MobEffectInstance(EffectCore.BOOST, 40, 3, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD)
-                        layerInfo.add(new RenderLayerInfo("module/fourze_fusion_nadeshiko_module", "default"));
+                    if (slot == EquipmentSlot.HEAD){
+                        layerInfo.add(new RocketRenderLayerInfo("module/fourze_fusion_nadeshiko_module", "module/fourze_fusion_nadeshiko_module"));
+                    }
                 }
             }.changeSlot(4).resetFormToBase()
                     .alsoChange5thSlot(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get())
