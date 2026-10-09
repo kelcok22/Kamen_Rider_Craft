@@ -91,7 +91,7 @@ public class FourzeDriverItem extends RiderDriverItem {
         if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()
                 || getFormItem(belt, 5) == FourzeRiderItems.FOURZE_FUSION_STATES.get()) {
             if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
-                    || getFormItem(belt, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get()
+                    || getFormItem(belt, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get()&&getFormItem(belt, 2) != FourzeRiderItems.NADESHIKO_ASTROSWITCH_FUSION.get()
                     || getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get()) {
                 setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
                 setFormItemNoExtra(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);

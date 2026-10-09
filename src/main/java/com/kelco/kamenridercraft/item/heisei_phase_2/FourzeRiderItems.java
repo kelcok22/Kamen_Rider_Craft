@@ -800,7 +800,7 @@ public class FourzeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 0.05);
                 }
-            }.changeSlot(2).changeBeltModel("geo/belts/eins_belt.geo.json").addNeedForm(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()).canSnowWalk());
+            }.changeSlot(2).addNeedForm(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get(),5).canSnowWalk());
 
     public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "nadeshiko", "nadeshiko_driver_belt",
