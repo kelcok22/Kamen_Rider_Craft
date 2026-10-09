@@ -9,14 +9,18 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.HyperZecterBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterRBeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -480,16 +484,23 @@ public class KabutoRiderItems {
                             layerInfo.add(new RenderLayerInfo("gatack_double_calibur_minus", null));
                     }
                 }
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 80, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 30, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+                    if (RiderDriverItem.isTransformingFromBlank(itemStack,player))RiderDriverItem.setFormItem(itemStack,GATACK_HYPER_ZECTER.asItem(),1);
+                    if (tick == 402d) {
+                        //AnimationUtil.playPose(player, "drive.pose");
+                    }
+                    if (tick == 400d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 399d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 500, 0, 0, 0, 1);
+                    }
+                    if (tick == 2) {
+                        if (!(player instanceof ArmorStand))RiderDriverItem.setFormItem(itemStack,GATACK_HYPER_ZECTER.asItem(),1);
+                    }
                 }
-            }.setSlotOneAbility("clock_up", 1).isGlowing().changeModel("gatack_hyper.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem) GATACK_HYPER_ZECTER.get()).useBasicModel().setModelName("hyper_zecter"));
+            }.setFormDelay(400).setHenshinTick(410).setSlotOneAbility("clock_up", 1).isGlowing().changeModel("gatack_hyper.geo.json").useBasicModel().setModelName("hyper_zecter"));
 
 
     public static final DeferredItem<Item> HYPER_ZECTER_CLOCK_UP = ITEMS.register("hyper_zecter_clock_up",
@@ -500,13 +511,23 @@ public class KabutoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 500, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+                    if (RiderDriverItem.isTransformingFromBlank(itemStack,player))RiderDriverItem.setFormItem(itemStack,HYPER_ZECTER.asItem(),1);
+                    if (tick == 402d) {
+                        //AnimationUtil.playPose(player, "drive.pose");
+                    }
+                    if (tick == 400d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 399d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 500, 0, 0, 0, 1);
+                    }
+                    if (tick == 2) {
+                        if (!(player instanceof ArmorStand))RiderDriverItem.setFormItem(itemStack,HYPER_ZECTER.asItem(),1);
+                    }
                 }
-            }.setSlotOneAbility("clock_up", 1).hasFlyingWings("kabuto_hyper_clock_up.geo.json").isGlowing().hasTimeout(400, 1200, (RiderFormChangeItem) HYPER_ZECTER.get()).addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).useBasicModel().setModelName("hyper_zecter"));
+            }.setFormDelay(400).setHenshinTick(410).setSlotOneAbility("clock_up", 1).hasFlyingWings("kabuto_hyper_clock_up.geo.json").isGlowing().addAlternative(GATACK_HYPER_ZECTER_CLOCK_UP.asItem()).useBasicModel().setModelName("hyper_zecter"));
 
 
     public static final DeferredItem<Item> ZECTROOPER_ZECTER = ITEMS.register("zectrooper_zecter",

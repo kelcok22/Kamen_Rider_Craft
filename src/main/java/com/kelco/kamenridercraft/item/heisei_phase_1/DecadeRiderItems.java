@@ -7,14 +7,18 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.*;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -851,13 +855,24 @@ public class DecadeRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 1);
-				}
-			}.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/decadriver_belt_faiz_axel.geo.json").hasTimeout(400, 1200, (RiderFormChangeItem)FAIZ_CARD.get()).addCompatibilityList(BaseDecadeUsers).changeRiderName("faiz").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DECADE_TAB_ITEM));
+
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+                    if (RiderDriverItem.isTransformingFromBlank(itemStack,player))RiderDriverItem.setFormItem(itemStack,FAIZ_CARD.asItem(),1);
+                    if (tick == 202d) {
+                        //AnimationUtil.playPose(player, "drive.pose");
+                    }
+                    if (tick == 200d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 199d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                    if (tick == 2) {
+                        if (!(player instanceof ArmorStand))RiderDriverItem.resetFormItem(itemStack);
+                    }
+                }
+            }.setFormDelay(200).setHenshinTick(210).isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/decadriver_belt_faiz_axel.geo.json").addCompatibilityList(BaseDecadeUsers).changeRiderName("faiz").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.DECADE_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> BLADE_JACK_CARD = ITEMS.register("blade_jack_card",

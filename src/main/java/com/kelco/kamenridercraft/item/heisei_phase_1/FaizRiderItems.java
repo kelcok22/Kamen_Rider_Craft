@@ -5,13 +5,17 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.faiz.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -58,13 +62,24 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void transformationEffect(ItemStack itemStack, LivingEntity player) {
-					super.transformationEffect(itemStack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 100, 0, 0, 0, 1);
-				}
-			}.IsBeltGlowing().isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json").hasTimeout(200, 1200, (RiderFormChangeItem)FAIZ_MISSION_MEMORY.get()));
+
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+                    if (RiderDriverItem.isTransformingFromBlank(itemStack,player))RiderDriverItem.setFormItem(itemStack,FAIZ_MISSION_MEMORY.asItem(),1);
+                    if (tick == 202d) {
+                        AnimationUtil.playPose(player, "drive.pose");
+                    }
+                    if (tick == 200d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 199d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                    if (tick == 2) {
+                        if (!(player instanceof ArmorStand))RiderDriverItem.setFormItem(itemStack,FAIZ_MISSION_MEMORY.asItem(),1);
+                    }
+                }
+			}.setFormDelay(200).setHenshinTick(210).IsBeltGlowing().isGlowing().changeBeltModel("geo/belts/faiz_belt.geo.json"));
 
 	public static final DeferredItem<Item> FAIZ_AXEL_MISSION_MEMORY = ITEMS.register("faiz_axel_mission_memory",
 			() -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.FAIZ_TAB_ITEM));
@@ -249,13 +264,25 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void transformationEffect(ItemStack itemStack, LivingEntity player) {
-					super.transformationEffect(itemStack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 300, 0, 0, 0, 1);
-				}
-			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_FAIZ_MISSION_MEMORY.get()).changeModel("next_faiz.geo.json").useBasicModel().setModelName("faiz_axel_mission_memory"));
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+                    if (RiderDriverItem.isTransformingFromBlank(itemStack,player))RiderDriverItem.setFormItem(itemStack,NEXT_FAIZ_MISSION_MEMORY.asItem(),1);
+                    if (tick == 202d) {
+                        AnimationUtil.playPose(player, "drive.pose");
+                    }
+                    if (tick == 200d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 199d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                    if (tick < 199d&tick > 20d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 20, 0.5, 0.5, 0.5, 1);
+                    }if (tick == 2) {
+                        if (!(player instanceof ArmorStand))RiderDriverItem.setFormItem(itemStack,NEXT_FAIZ_MISSION_MEMORY.asItem(),1);
+                    }
+                }
+            }.setFormDelay(200).setHenshinTick(210).IsBeltGlowing().isGlowing().changeModel("next_faiz.geo.json").useBasicModel().setModelName("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> NEXT_KAIXA_AXEL_MISSION_MEMORY = ITEMS.register("next_kaixa_axel_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_axel","next_kaixa","next_kaixa_driver_belt_a",
@@ -264,13 +291,25 @@ public class FaizRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
-				public void transformationEffect(ItemStack itemStack, LivingEntity player) {
-					super.transformationEffect(itemStack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 300, 0, 0, 0, 1);
-				}
-			}.IsBeltGlowing().isGlowing().hasTimeout(200, 1200, (RiderFormChangeItem)NEXT_KAIXA_MISSION_MEMORY.get()).changeModel("next_kaixa.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").useBasicModel().setModelName("faiz_axel_mission_memory"));
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
+                    if (RiderDriverItem.isTransformingFromBlank(itemStack,player))RiderDriverItem.setFormItem(itemStack,NEXT_KAIXA_MISSION_MEMORY.asItem(),1);
+                    if (tick == 202d) {
+                        AnimationUtil.playPose(player, "drive.pose");
+                    }
+                    if (tick == 200d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 199d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                    if (tick < 999d&tick > 20d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 20, 0.5, 0.5, 0.5, 1);
+                    }if (tick == 2) {
+                        if (!(player instanceof ArmorStand))RiderDriverItem.setFormItem(itemStack,NEXT_KAIXA_MISSION_MEMORY.asItem(),1);
+                    }
+                }
+            }.setFormDelay(200).setHenshinTick(210).IsBeltGlowing().isGlowing().changeModel("next_kaixa.geo.json").changeBeltModel("geo/belts/faiz_belt.geo.json").useBasicModel().setModelName("faiz_axel_mission_memory"));
 
 	public static final DeferredItem<Item> MUEZ_MISSION_MEMORY = ITEMS.register("muez_mission_memory",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"","muez","muez_driver_belt",
