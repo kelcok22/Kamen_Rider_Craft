@@ -1150,6 +1150,10 @@ public class RiderBlocks {
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     , MobsCore.FAIZ).addLine(Component.translatable("henshin.kamenridercraft.faiz")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> CATEGORY_KING_UNDEAD_BOSS_BLOCK = registerBlock("category_king_undead_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    , MobsCore.KING_UNDEAD).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+
     public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     , MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));

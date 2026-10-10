@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "kamenridercraft:block/category_king_undead_boss_block"
+    }
+}

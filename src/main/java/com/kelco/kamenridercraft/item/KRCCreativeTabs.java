@@ -559,6 +559,7 @@ public class KRCCreativeTabs {
             }
             event.accept(RiderBlocks.BLADE_ORE);
             event.accept(RiderBlocks.DEEPSLATE_BLADE_ORE);
+            event.accept(RiderBlocks.CATEGORY_KING_UNDEAD_BOSS_BLOCK);
 
         } else if (event.getTab() == HibikiTab.get()) {
             for (int i = 0; i < HIBIKI_TAB_ITEM.size(); ++i) {
