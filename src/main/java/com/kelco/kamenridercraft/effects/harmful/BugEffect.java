@@ -6,17 +6,22 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.Random;
+
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_SPAWN_AGGRESSION;
+import static com.kelco.kamenridercraft.effects.EffectCore.FALL_CANCEL;
+import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
 public class BugEffect extends MobEffect {
@@ -34,42 +39,71 @@ public class BugEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity instanceof Player player && player.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL) {
+        if (livingEntity instanceof Player player && player.level() instanceof ServerLevel serverLevel
+                && (!player.isCreative() && !player.isSpectator()) && serverLevel.getDifficulty() != Difficulty.PEACEFUL) {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeroOneRiderItems.ZAIA_THOUSANDRIVER.get()) {
                 if (player.getInventory().countItem(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) > 0) {
                     if (player.getInventory().getItem(40).getItem() == ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) {
                         player.getInventory().removeItem(40, 1);
                     } else {
                         player.getInventory().removeItem(new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()));
-                        player.getInventory().removeItem(player.getInventory().findSlotMatchingItem(new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get())), 1);
+                        player.getInventory().removeItem(player.getInventory()
+                                .findSlotMatchingItem(new ItemStack(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get())), 1);
                     }
                     player.removeEffect(EffectCore.BUGSTER);
                     player.drop(new ItemStack(ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()), false);
                 }
             }
 
-            BaseHenchmenEntity boss = MobsCore.BUGSTERVIRUS.get().create(livingEntity.level());
+            BaseHenchmenEntity bugster = MobsCore.BUGSTERVIRUS.get().create(livingEntity.level());
             if (livingEntity.hasEffect(EffectCore.HAZARD_LEVEL)) {
-                boss = MobsCore.NEBULA_BUGSTERVIRUS.get().create(livingEntity.level());
+                bugster = MobsCore.NEBULA_BUGSTERVIRUS.get().create(livingEntity.level());
             }
 
             Random rand = new Random();
-            if ((amplifier < 50 ? rand.nextInt(500 - (amplifier * 10)) : 0) == 0 && boss != null) {
-                BlockPos pos = livingEntity.blockPosition();
-                RandomSource randomsource = serverLevel.getRandom();
+            if (((amplifier < 50 ? rand.nextInt(500 - (amplifier * 10)) : 0))
+                    - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.3) <= 0 && bugster != null) {
+                int tempRandX = (livingEntity.getBlockX()
+                        + (rand.nextInt(3, 10))
+                        * (rand.nextInt(3) > 1 ? 1 : -1));
 
-                double d0 = (double) pos.getX() + (randomsource.nextDouble() - randomsource.nextDouble()) * 8 + (double) 0.5F;
-                double d1 = pos.getY() + randomsource.nextInt(3) - 1;
-                double d2 = (double) pos.getZ() + (randomsource.nextDouble() - randomsource.nextDouble()) * 8 + (double) 0.5F;
+                int tempRandZ = (livingEntity.getBlockZ()
+                        + (rand.nextInt(3, 10))
+                        * (rand.nextInt(3) > 1 ? 1 : -1));
 
-                if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(d0, d1, d2))) {
-                    if (d1 > 0) boss.moveTo(d0, d1, d2);
-                    else boss.moveTo(d0, pos.getY(), d2);
-                    livingEntity.level().addFreshEntity(boss);
+                bugster.setPos(tempRandX, livingEntity.getY(), tempRandZ);
+
+                for (int i = 0; i < 400; ++i) {
+                    int randX = (livingEntity.getBlockX()
+                            + (rand.nextInt(3, 10))
+                            * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                    int randY = (livingEntity.getBlockY()
+                            + rand.nextInt(-10, 10));
+
+                    int randZ = (livingEntity.getBlockZ()
+                            + (rand.nextInt(3, 10))
+                            * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                    BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
+                    if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
+                        bugster.setPos(randX, randY, randZ);
+                    }
+                    if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
+                        bugster.setPos(randX, randY, randZ);
+                        break;
+                    }
                 }
+                livingEntity.level().addFreshEntity(bugster);
+                if (!bugster.onGround()) {
+                    bugster.addEffect(new MobEffectInstance(FALL_CANCEL, MobEffectInstance.INFINITE_DURATION,
+                            255, true, false));
+                }
+                livingEntity.setData(MOB_SPAWN_AGGRESSION, 0);
+            } else {
+                livingEntity.setData(MOB_SPAWN_AGGRESSION, livingEntity.getData(MOB_SPAWN_AGGRESSION) + 1);
             }
         }
         return true;
     }
-
 }

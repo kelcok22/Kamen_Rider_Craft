@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.UndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -7,10 +8,14 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -51,8 +56,7 @@ public class AceUndeadEntity extends UndeadEntity {
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_STAG_UNDEAD.get(), 1);
                     break;
                 case 2:
-                    setData(MOB_STATE, "spider");
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_SPIDER.get(), 1);
+                    setSpider();
                     break;
                 case 3:
                     setData(MOB_STATE, "mantis");
@@ -62,6 +66,21 @@ public class AceUndeadEntity extends UndeadEntity {
         }
     }
 
+    @Override
+    protected void addBehaviourGoals() {
+        super.addBehaviourGoals();
+        if (getData(MOB_STATE).contains("spider")) {
+            goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.6F));
+        }
+    }
+
+    public void setSpider() {
+        setData(MOB_STATE, "spider");
+        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_SPIDER.get(), 1);
+        getItemInHand(InteractionHand.MAIN_HAND).shrink(1);
+        goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.6F));
+        addEffect(new MobEffectInstance(EffectCore.CLIMBING, MobEffectInstance.INFINITE_DURATION, 4, true, false));
+    }
 
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()

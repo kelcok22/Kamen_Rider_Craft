@@ -146,6 +146,9 @@ public class EffectCore {
     public static final Holder<MobEffect> BLIZZARD = EFFECT.register("blizzard",
             () -> new BlizzardEffect(MobEffectCategory.BENEFICIAL, 0x5feaff));
 
+    public static final Holder<MobEffect> FALL_CANCEL = EFFECT.register("fall_cancel",
+            () -> new FallCancelEffect(MobEffectCategory.BENEFICIAL, 0x5feaff));
+
 
     public static final Holder<MobEffect> NOTE = EFFECT.register("note",
             () -> new NoteEffect(MobEffectCategory.BENEFICIAL, 0x2d2d2d));
@@ -234,7 +237,7 @@ public class EffectCore {
                     .addAttributeModifier(KRCAttributes.HAS_TIME, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.time"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
     public static final Holder<MobEffect> UNSEALED = EFFECT.register("unsealed",
-            () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
+            () -> new UnsealedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
 
     public static final Holder<MobEffect> GREEED = EFFECT.register("greeed",
             () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0x7CFC00));
@@ -263,7 +266,6 @@ public class EffectCore {
             () -> new SmellEffect(MobEffectCategory.NEUTRAL, 0x853d1b));
 
 
-
     public static final Holder<MobEffect> HAPPY_MODE = EFFECT.register("happy_mode",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
 
@@ -276,7 +278,6 @@ public class EffectCore {
 
     public static final Holder<MobEffect> HAZARD_LEVEL = EFFECT.register("hazard_level",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xff0000));
-
 
 
     public static final Holder<MobEffect> DARK_AURA = EFFECT.register("dark_aura",
@@ -294,7 +295,6 @@ public class EffectCore {
                             , 1F, AttributeModifier.Operation.ADD_VALUE));
 
 
-
     public static final Holder<MobEffect> RESET = EFFECT.register("reset",
             () -> new ResetEffect(MobEffectCategory.HARMFUL, 0x4eff00));
 
@@ -304,7 +304,7 @@ public class EffectCore {
                     .addAttributeModifier(net.minecraft.world.entity.ai.attributes.Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.pause"), 100F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
     );
 
-    public static final Holder<MobEffect> DREAMING= EFFECT.register("dreaming",
+    public static final Holder<MobEffect> DREAMING = EFFECT.register("dreaming",
             () -> new DreamingEffect(MobEffectCategory.BENEFICIAL, 0xe02f39));
 
     public static final Holder<MobEffect> FORM_TIMEOUT = EFFECT.register("form_timeout",

@@ -83,7 +83,6 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.neoforged.neoforge.event.entity.EntityAttributeModificationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
@@ -96,11 +95,13 @@ import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.TOJIMA_TRAINING;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.USED_ABILITY;
+import static com.kelco.kamenridercraft.effects.EffectCore.*;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.*;
 
 
 public class ModCommonEvents {
@@ -112,18 +113,19 @@ public class ModCommonEvents {
         public void onPlayerDisconnect(PlayerEvent.PlayerLoggedOutEvent event) {
             if (event.getEntity() instanceof ServerPlayer player) {
                 player.serverLevel().getAllEntities().forEach(entity -> {
-                    if (entity instanceof BaseSummonEntity summon) summon.despawn();
+                    if (entity instanceof BaseSummonEntity summon) {
+                        summon.despawn();
+                    }
                 });
             }
         }
 
         @SubscribeEvent
         public void DropsEvent(BlockDropsEvent event) {
-
             if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
                 if (event.getBreaker() instanceof Player player) {
-                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() & Objects.requireNonNull(player.getAttribute(KRCAttributes.TOJIMA)).getValue() < 100)
-                        Objects.requireNonNull(player.getAttribute(KRCAttributes.TOJIMA)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.TOJIMA)).getValue() + 1);
+                    if (player.getItemBySlot(EquipmentSlot.MAINHAND).isEmpty() && player.getData(TOJIMA_TRAINING) < 100)
+                        player.setData(TOJIMA_TRAINING, player.getData(TOJIMA_TRAINING) + 1);
                 }
             }
 
@@ -141,108 +143,121 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void onPlayerTick(PlayerTickEvent.Post event) {
-            if (!event.getEntity().level().isClientSide()) {
-                if (event.getEntity().getAttribute(KRCAttributes.TOJIMA).getValue() > 99 & event.getEntity().getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem())
-                    event.getEntity().addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 30, 3, false, false));
+            Player player = event.getEntity();
+            Level level = player.level();
 
-                ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
+            if (!level.isClientSide()) {
                 ResourceKey<Level> DREAM = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:dream"));
 
-                if (event.getEntity().level().dimension() == MOON && event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_MOON_GRAVITY)) {
-                    event.getEntity().addEffect(new MobEffectInstance(EffectCore.LOW_GRAVITY, 30, 7, false, false));
-                } else if (event.getEntity().level().dimension() == DREAM & event.getEntity().position().y < -2) {
-                    if (event.getEntity() instanceof ServerPlayer serverPlayer) {
-                        DimensionUtil.returnToSpawn(event.getEntity().getServer().overworld(), serverPlayer);
-                    }
-                }
-                if (event.getEntity().level().dimension() != DREAM) {
-                    event.getEntity().removeEffect(EffectCore.DREAMING);
-                }else{
-                       if (event.getEntity() instanceof ServerPlayer serverPlayer) {
-                           StructureManager structureManager = ((ServerLevel) event.getEntity().level()).structureManager();
-                           TagKey<Structure> nightmareKey = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "nightmare"));
-                           StructureStart nightmareLocation = structureManager.getStructureWithPieceAt(event.getEntity().blockPosition(), nightmareKey);
-
-                           if (!nightmareLocation.isValid() && !serverPlayer.isSpectator()) {
-                               DimensionUtil.returnToSpawn(event.getEntity().getServer().overworld(), serverPlayer);
-                               if (!serverPlayer.isCreative()) {
-                                   serverPlayer.addEffect(new MobEffectInstance(EffectCore.INSOMNIA, 1200, 0, false, true));
-                               }
-                           }
-                    }
-                }
+                StructureManager structureManager = ((ServerLevel) level).structureManager();
+                TagKey<Structure> nightmareKey = TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "nightmare"));
 
                 LocalDate localdate = LocalDate.now();
                 int day = localdate.getDayOfMonth();
-                if (localdate.getMonthValue() == 12 && day >= 22 && day <= 28) {
-                    event.getEntity().addEffect(new MobEffectInstance(EffectCore.CHRISTMAS, 30, 0, false, false));
+
+                if (player.getData(TOJIMA_TRAINING) > 99
+                        & player.getItemBySlot(EquipmentSlot.HEAD).getItem() == ExtraRiderItems.ICHIGO_MASK.asItem()) {
+                    player.addEffect(new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 20, 3, false, false));
                 }
 
-                if (event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_HAPPY_MODE)) {
-                    event.getEntity().addEffect(new MobEffectInstance(EffectCore.HAPPY_MODE, 30, 0, false, false));
+                if (level.dimension() == DREAM) {
+                    if (player instanceof ServerPlayer serverPlayer) {
+                        if (player.position().y < -2) {
+                            DimensionUtil.returnToSpawn(player.getServer().overworld(), serverPlayer);
+                            return;
+                        }
+                        StructureStart nightmareLocation = structureManager.getStructureWithPieceAt(player.blockPosition(), nightmareKey);
+                        if (!nightmareLocation.isValid() && !serverPlayer.isSpectator()) {
+                            DimensionUtil.returnToSpawn(player.getServer().overworld(), serverPlayer);
+                            if (!serverPlayer.isCreative()) {
+                                serverPlayer.addEffect(new MobEffectInstance(INSOMNIA, 1200, 0, false, true));
+                            }
+                        }
+                    }
+                }
+                if (level.dimension() != DREAM) {
+                    player.removeEffect(DREAMING);
+                }
+
+                if (localdate.getMonthValue() == 12 && day >= 22 && day <= 28) {
+                    player.addEffect(new MobEffectInstance(EffectCore.CHRISTMAS, 30, 0, false, false));
+                }
+
+                if (level.getGameRules().getBoolean(ModGameRules.RULE_HAPPY_MODE)) {
+                    player.addEffect(new MobEffectInstance(EffectCore.HAPPY_MODE, 30, 0, false, false));
                 }
             }
         }
 
         @SubscribeEvent
         public void onEntityTick(EntityTickEvent.Post event) {
-            if (event.getEntity() instanceof LivingEntity player) {
-                if (player.getAttribute(KRCAttributes.WIND).getBaseValue() > 0)
-                    player.getAttribute(KRCAttributes.WIND).setBaseValue(player.getAttribute(KRCAttributes.WIND).getBaseValue() - 1);
-                if (player.getAttribute(KRCAttributes.WIND).getBaseValue() < 0)
-                    player.getAttribute(KRCAttributes.WIND).setBaseValue(0);
-                if (player.level().isClientSide()) {
+            ResourceKey<Level> MOON = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:moon"));
+            if (event.getEntity() instanceof LivingEntity livingEntity) {
+                if (!event.getEntity().level().isClientSide()) {
+                    if (livingEntity.level().dimension() == MOON
+                            && event.getEntity().level().getGameRules().getBoolean(ModGameRules.RULE_MOON_GRAVITY)) {
+                        livingEntity.addEffect(new MobEffectInstance(LOW_GRAVITY, 20, 7, false, false));
+                    }
+                }
+
+                if (livingEntity.getAttribute(WIND).getBaseValue() > 0) {
+                    livingEntity.getAttribute(WIND).setBaseValue(livingEntity.getAttribute(WIND).getValue() - 1);
+                } else if (livingEntity.getAttribute(WIND).getValue() < 0) {
+                    livingEntity.getAttribute(WIND).setBaseValue(0);
+                }
+
+                if (livingEntity.level().isClientSide()) {
                     float X = 0;
-                    float Y = 0;
                     float Z = 0;
-                    boolean isPlayer = false;
-                    if (player instanceof Mob mob) {
-                        if (player.getDeltaMovement().x != 0 || player.getDeltaMovement().z != 0) {
+
+                    if (livingEntity instanceof Mob mob) {
+                        if (livingEntity.getDeltaMovement().x != 0 || livingEntity.getDeltaMovement().z != 0) {
                             X = mob.getViewXRot(1);
-                            Vec3 look = player.getLookAngle();
-                            if (look.x > 0 & player.getDeltaMovement().x > 0) Z = 1;
-                            else if (look.z > 0 & player.getDeltaMovement().z > 0) Z = 1;
-                            else if (look.x < 0 & player.getDeltaMovement().x < 0) Z = 1;
-                            else if (look.z < 0 & player.getDeltaMovement().z < 0) Z = 1;
+                            Vec3 look = livingEntity.getLookAngle();
+                            if (look.x > 0 & livingEntity.getDeltaMovement().x > 0) Z = 1;
+                            else if (look.z > 0 & livingEntity.getDeltaMovement().z > 0) Z = 1;
+                            else if (look.x < 0 & livingEntity.getDeltaMovement().x < 0) Z = 1;
+                            else if (look.z < 0 & livingEntity.getDeltaMovement().z < 0) Z = 1;
                             else Z = -1;
                         }
-                        player.getAttribute(KRCAttributes.BALL_ROT_OLD).setBaseValue(player.getAttribute(KRCAttributes.BALL_ROT).getBaseValue());
-                        player.getAttribute(KRCAttributes.WHEEL_ROT_OLD).setBaseValue(player.getAttribute(KRCAttributes.WHEEL_ROT).getBaseValue());
-                        player.getAttribute(KRCAttributes.CAPE_ROT_OLD).setBaseValue(player.getAttribute(KRCAttributes.CAPE_ROT).getBaseValue());
+                        livingEntity.getAttribute(BALL_ROT_OLD).setBaseValue(livingEntity.getAttribute(BALL_ROT).getBaseValue());
+                        livingEntity.getAttribute(WHEEL_ROT_OLD).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue());
+                        livingEntity.getAttribute(CAPE_ROT_OLD).setBaseValue(livingEntity.getAttribute(CAPE_ROT).getBaseValue());
 
-                        if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-
-                            if (belt.hasCape(player.getItemBySlot(EquipmentSlot.FEET))) {
-
-                                float cape = (float) player.getAttribute(KRCAttributes.CAPE_ROT).getBaseValue();
+                        if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                            if (belt.hasCape(livingEntity.getItemBySlot(EquipmentSlot.FEET))) {
+                                float cape = (float) livingEntity.getAttribute(CAPE_ROT).getBaseValue();
                                 float ball = 0;
-                                if (Z > 0 & cape > -0.7 & !player.isSwimming())
-                                    cape = cape - 0.01f - (player.getSpeed() / 10);
-                                else if (Z > 0 & cape > -0.7 & !player.isSwimming())
+
+                                if (Z > 0 & cape > -0.7 & !livingEntity.isSwimming())
+                                    cape = cape - 0.01f - (livingEntity.getSpeed() / 10);
+                                else if (Z > 0 & cape > -0.7 & !livingEntity.isSwimming()) {
                                     cape = 0;
-                                else if (X == 0 & Z < 0 & cape < 0) cape = cape + 0.2f;
-                                else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & Z == 0 & cape < -0.7 || X == 0 & cape < 0 & player.isSwimming())
+                                } else if (X == 0 & Z < 0 & cape < 0) {
+                                    cape = cape + 0.2f;
+                                } else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & Z == 0 & cape < -0.7
+                                        || X == 0 & cape < 0 & livingEntity.isSwimming()) {
                                     cape = cape + 0.02f;
+                                }
                                 if (X > 0) {
                                     ball = 0.2f;
-                                    if (isPlayer & Z == 0 & cape > -0.7)
-                                        cape = cape - 0.02f - (player.getSpeed() / 10);
+                                    if (Z == 0 & cape > -0.7)
+                                        cape = cape - 0.02f - (livingEntity.getSpeed() / 10);
                                 }
                                 if (X < 0) {
                                     ball = -0.2f;
-                                    if (isPlayer & Z == 0 & cape > -0.7)
-                                        cape = cape - 0.02f - (player.getSpeed() / 10);
+                                    if (Z == 0 & cape > -0.7)
+                                        cape = cape - 0.02f - (livingEntity.getSpeed() / 10);
                                 }
-                                //if (player.fallDistance > 0 & !player.isSwimming() & cape > -2) cape = cape - 0.05f;
 
-                                player.getAttribute(KRCAttributes.BALL_ROT).setBaseValue(ball);
-                                player.getAttribute(KRCAttributes.CAPE_ROT).setBaseValue(cape);
+                                livingEntity.getAttribute(KRCAttributes.BALL_ROT).setBaseValue(ball);
+                                livingEntity.getAttribute(KRCAttributes.CAPE_ROT).setBaseValue(cape);
                             }
-                            if (RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), 1).getIsBike()) {
+                            if (RiderDriverItem.getFormItem(livingEntity.getItemBySlot(EquipmentSlot.FEET), 1).getIsBike()) {
                                 float wheel = 0;
                                 if (Z > 0) wheel = -0.1f;
                                 if (Z < 0) wheel = 0.1f;
-                                Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue() + wheel);
+                                livingEntity.getAttribute(WHEEL_ROT).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue() + wheel);
                                 float ball = 0;
                                 if (X > 0) {
                                     ball = 0.5f;
@@ -250,23 +265,24 @@ public class ModCommonEvents {
                                 if (X < 0) {
                                     ball = -0.5f;
                                 }
-                                Objects.requireNonNull(player.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(ball);
-                                Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue() + wheel);
+                                livingEntity.getAttribute(BALL_ROT).setBaseValue(ball);
+                                livingEntity.getAttribute(WHEEL_ROT).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue() + wheel);
                             }
                         }
                     }
                 }
-                if (Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() != 0)
-                    Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).setBaseValue(Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() - 1);
-                if (Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue() <= 0)
-                    Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).setBaseValue(0);
-            }
+                if (livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() != 0)
+                    livingEntity.getAttribute(IS_TRANSFORMING).setBaseValue(livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() - 1);
+                if (livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() <= 0)
+                    livingEntity.getAttribute(IS_TRANSFORMING).setBaseValue(0);
 
-            if (!(event.getEntity() instanceof Player) && event.getEntity() instanceof LivingEntity entity && !entity.level().isClientSide && entity.getAttribute(KRCAttributes.CLIMBING).getValue() != 0) {
-                if (entity.horizontalCollision) {
-                    Vec3 initialVec = entity.getDeltaMovement();
-                    Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (Objects.requireNonNull(entity.getAttribute(KRCAttributes.CLIMBING)).getValue()), initialVec.z);
-                    entity.setDeltaMovement(climbVec.scale(0.97D));
+                if (!(event.getEntity() instanceof Player) && !livingEntity.level().isClientSide()
+                        && livingEntity.getAttribute(KRCAttributes.CLIMBING).getValue() != 0) {
+                    if (livingEntity.horizontalCollision) {
+                        Vec3 initialVec = livingEntity.getDeltaMovement();
+                        Vec3 climbVec = new Vec3(initialVec.x, 0.1D * (livingEntity.getAttribute(KRCAttributes.CLIMBING).getValue()), initialVec.z);
+                        livingEntity.setDeltaMovement(climbVec.scale(0.97D));
+                    }
                 }
             }
         }
@@ -329,7 +345,8 @@ public class ModCommonEvents {
             return Items.APPLE;
         }
 
-        public ResourceLocation dropItem(ServerLevel world, Player player, Player playerIn, InteractionHand p_41434_) {
+        public ResourceLocation dropItem(ServerLevel world, Player player, Player playerIn, InteractionHand
+                p_41434_) {
             ResourceKey<LootTable> loot = ResourceKey.create(Registries.LOOT_TABLE, LOOT_TABLE_PATH);
             LootTable loottable = world.getServer().reloadableRegistries().getLootTable(loot);
             LootParams.Builder lootparams$builder = new LootParams.Builder(world)
@@ -569,7 +586,7 @@ public class ModCommonEvents {
 
                     if (_livEnt.hasEffect(EffectCore.WITHER_SLASH)) {
                         if (_livEnt.getMainHandItem().getItem() instanceof SwordItem || _livEnt.getMainHandItem().getItem() instanceof BaseBlasterItem) {
-                        event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SLASH).getAmplifier(), false, true));
+                            event.getEntity().addEffect(new MobEffectInstance(MobEffects.WITHER, 500, _livEnt.getEffect(EffectCore.WITHER_SLASH).getAmplifier(), false, true));
                         }
                     }
 
@@ -630,7 +647,8 @@ public class ModCommonEvents {
                     }
 
                     if (_livEnt.hasEffect(EffectCore.FIRE_SHOT)) {
-                        event.getEntity().setRemainingFireTicks(25 * (Objects.requireNonNull(_livEnt.getEffect(EffectCore.FIRE_SHOT)).getAmplifier() + 1));
+                        event.getEntity().setRemainingFireTicks(25 * (_livEnt.getEffect(EffectCore.FIRE_SHOT)).getAmplifier() + 1)
+                        ;
                     }
 
                     if (_livEnt.hasEffect(EffectCore.EXPLOSION_SHOT)) {

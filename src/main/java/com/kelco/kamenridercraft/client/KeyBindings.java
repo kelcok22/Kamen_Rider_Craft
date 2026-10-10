@@ -33,6 +33,13 @@ public class KeyBindings {
             CATEGORY
     );
 
+    public final KeyMapping AbilityModifierKey = new KeyMapping(
+            "key." + KamenRiderCraftCore.MOD_ID + ".ability_modifier",
+            KeyConflictContext.IN_GAME,
+            InputConstants.getKey(InputConstants.KEY_B, -1),
+            CATEGORY
+    );
+
     public final KeyMapping PoseKey = new KeyMapping(
             "key." + KamenRiderCraftCore.MOD_ID + ".pose",
             KeyConflictContext.IN_GAME,

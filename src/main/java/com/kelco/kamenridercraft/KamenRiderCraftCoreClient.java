@@ -35,6 +35,9 @@ public class KamenRiderCraftCoreClient {
     public static final ResourceLocation RIDER_POSITIONING_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer");
     public static final ResourceLocation RIDER_WALK_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_walk_layer");
 
+    public int ability_one_key_held_ticks = 0;
+    public int ability_two_key_held_ticks = 0;
+
     public KamenRiderCraftCoreClient(ModContainer container) {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
@@ -56,7 +59,8 @@ public class KamenRiderCraftCoreClient {
 
             if (KeyBindings.INSTANCE.BeltKey.consumeClick())
                 PacketDistributor.sendToServer(new BeltKeyPayload(0));
-            if (KeyBindings.INSTANCE.AbilityKeyOne.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyTwo.isDown() && Objects.requireNonNull(heldKeyOne).getValue() <= 0) {
+            if (KeyBindings.INSTANCE.AbilityKeyOne.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyTwo.isDown()
+                    && heldKeyOne.getValue() <= 0) {
                 PacketDistributor.sendToServer(new AbilityKeyPayload(1));
             } else {
                 if (!KeyBindings.INSTANCE.AbilityKeyOne.isDown()) {
@@ -66,7 +70,8 @@ public class KamenRiderCraftCoreClient {
                     }
                 }
             }
-            if (KeyBindings.INSTANCE.AbilityKeyTwo.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyOne.isDown() && Objects.requireNonNull(heldKeyTwo).getValue() <= 0) {
+            if (KeyBindings.INSTANCE.AbilityKeyTwo.consumeClick() && !KeyBindings.INSTANCE.AbilityKeyOne.isDown()
+                    && heldKeyTwo.getValue() <= 0) {
                 PacketDistributor.sendToServer(new AbilityKeyPayload(2));
             } else {
                 if (!KeyBindings.INSTANCE.AbilityKeyTwo.isDown()) {

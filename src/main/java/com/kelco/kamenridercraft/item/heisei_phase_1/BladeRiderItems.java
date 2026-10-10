@@ -808,7 +808,8 @@ public class BladeRiderItems {
     public static final DeferredItem<Item> CHANGE_SPIDER = ITEMS.register("change_spider",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "leangle", "leangle_buckle_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(EffectCore.UNSEALED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),

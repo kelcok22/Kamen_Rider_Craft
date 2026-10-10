@@ -18,15 +18,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class KRCAttributes extends Event implements IModBusEvent {
     public static final DeferredRegister<Attribute> REGISTRY = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
-    public static final DeferredHolder<Attribute, Attribute> TOJIMA = REGISTRY.register("tojima",
-            () -> new RangedAttribute(
-                    "attribute.kamenridercraftcore.tojima",
-                    0,
-                    0,
-                    100
-            ).setSyncable(true)
-    );
-
     public static final DeferredHolder<Attribute, Attribute> WIND = REGISTRY.register("wind",
             () -> new BooleanAttribute(
                     "attribute.kamenridercraftcore.wind",

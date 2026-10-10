@@ -44,6 +44,14 @@ public class AttachmentTypes {
             "wings_out", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
     );
 
+    public static final Supplier<AttachmentType<Integer>> TOJIMA_TRAINING = REGISTRY.register(
+            "tojima_training", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
+    );
+
+    public static final Supplier<AttachmentType<Integer>> MOB_SPAWN_AGGRESSION = REGISTRY.register(
+            "mob_spawn_aggression", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
+    );
+
     public static final Supplier<AttachmentType<Boolean>> DELAY_ANIMATION_END = REGISTRY.register(
             "delay_animation_end", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
     );
