@@ -6238,7 +6238,7 @@
 "item.kamenridercraft.black_lost_hasami_full_bottle": "ハサミロストフルボトル",
 "item.kamenridercraft.black_lost_cd_full_bottle": "CDロストフルボトル",
 
-"item.kamenridercraft.nebula_gas_sample": "ネビュラグガス管",
+"item.kamenridercraft.nebula_gas_sample": "ネビュラガス管",
 
 "item.kamenridercraft.genius_full_bottle_blank": "未完成のジーニアスフルボトル",
 
@@ -11165,6 +11165,8 @@
 "advancements.kamenridercraft.extras.black_sun.title": "Did you see the sunrise？",
 "advancements.kamenridercraft.extras.card_warrior.description": "全ての駈斗戦士（カードウォリアー）フォームに変身",
 "advancements.kamenridercraft.extras.card_warrior.title": "紙業のライダーズ",
+"advancements.kamenridercraft.extras.eins.description": "仮面ライダーアインズに変身 ",
+"advancements.kamenridercraft.extras.eins.title": "Red Re-born",
 "advancements.kamenridercraft.extras.g.description": "仮面ライダーGに変身",
 "advancements.kamenridercraft.extras.g.title": "「僕のヴィンテージが芳醇の時を迎える…」",
 "advancements.kamenridercraft.extras.no_0.description": "仮面ライダー第0号を倒す",
@@ -11437,8 +11439,6 @@
 "advancements.kamenridercraft.ghost.zero_ghost.title": "スペリオルゴーストハンター",
 "advancements.kamenridercraft.ghost.zero_specter.description": "仮面ライダーゼロスペクターに変身",
 "advancements.kamenridercraft.ghost.zero_specter.title": "「この者を導きます」",
-"advancements.kamenridercraft.girls_remix.eins.description": "仮面ライダーアインズに変身 ",
-"advancements.kamenridercraft.girls_remix.eins.title": "Red Re-born",
 "advancements.kamenridercraft.gotchard.101_chemy.description": "100体のケミー+マッハウィール、テンライナー、クロスホッパー、ニジゴンのカードを入手",
 "advancements.kamenridercraft.gotchard.101_chemy.title": "ガッチャ完了！101体のケミー！",
 "advancements.kamenridercraft.gotchard.ancient_chemy.description": "エンシェントケミーカードの全枚を入手",
