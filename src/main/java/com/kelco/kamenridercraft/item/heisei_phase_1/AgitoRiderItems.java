@@ -261,6 +261,19 @@ public class AgitoRiderItems {
                 }
             }.isGlowing().hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
+    public static final DeferredItem<Item> GILL_AGITO = ITEMS.register("gill_agito",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "gill_agito", "gill_agito_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+
 
     public static final DeferredItem<Item> BLANK_G_SYSTEM_CHIP = ITEMS.register("g3core",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
@@ -456,7 +469,6 @@ public class AgitoRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "g7", G7_CHIP, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties().rarity(Rarity.EPIC))
                     .hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
 
-
     public static final DeferredItem<Item> G_BUCKLE_G1 = ITEMS.register("g1_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "g1", G1_CHIP, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
@@ -470,6 +482,10 @@ public class AgitoRiderItems {
 
     public static final DeferredItem<Item> ANK_POINT_BURNING = ITEMS.register("ank_point_burning",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_agito_koji", ANOTHER_AGITO_KOJI, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+
+    public static final DeferredItem<Item> GILL_AGITO_ALTERING = ITEMS.register("gill_agito_alter_ring",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gill_agito", GILL_AGITO, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).useBasicModel().changeRepairItem(SEED_OF_AGITO.get()));
+
 
     public static final DeferredItem<Item> FLAME_SABER = ITEMS.register("flame_saber",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
