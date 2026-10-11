@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-11T21:18:26.4382831	Item Models: kamenridercraft
+// 1.21.1	2026-10-11T21:42:15.5908767	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -329,6 +329,7 @@ bd1e7cc6826793666cac1fa2fc12597ff2f878eb assets/kamenridercraft/models/item/giga
 fefb6fb34a159414c057a631fa9596ce0af27e66 assets/kamenridercraft/models/item/gigantliner_ride_chemy_card.json
 8dbba21dfab4431d043edf466bdc968209bb1eaa assets/kamenridercraft/models/item/gigantliner_ride_chemy_card_fs.json
 e526da2c7c6e039a7332407fe72061d71ade0473 assets/kamenridercraft/models/item/gill_agito_alter_ring.json
+b7c302b0d402b004c332b5c68c13959660ca7a12 assets/kamenridercraft/models/item/gill_agito_shining_alter_ring.json
 795cba8a4eef48fb489c9c1d60b3b261a7d06e09 assets/kamenridercraft/models/item/gill_agito_trinity_alter_ring.json
 b9a5d6921eaa4b61c9ca888e3036ebfe7e063e81 assets/kamenridercraft/models/item/ginga_finaly_miridewatch.json
 b9a5d6921eaa4b61c9ca888e3036ebfe7e063e81 assets/kamenridercraft/models/item/ginga_taiyo_miridewatch.json

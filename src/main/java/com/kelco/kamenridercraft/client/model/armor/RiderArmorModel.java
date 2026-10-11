@@ -94,6 +94,49 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
             float ball = (float) Mth.lerp(state.getPartialTick(), GetBallOld, GetBall);
             float Cape = (float) Mth.lerp(state.getPartialTick(), GetCapeOld, GetCape);
 
+
+
+            GeoBone head = getAnimationProcessor().getBone("armorHead");
+            GeoBone tail= getAnimationProcessor().getBone("tail");
+            GeoBone tail2= getAnimationProcessor().getBone("tail2");
+            GeoBone tail3= getAnimationProcessor().getBone("tail3");
+            GeoBone tail4= getAnimationProcessor().getBone("tail4");
+            if (head != null & tail != null) {
+                float x = head.getRotX();
+                if (x>0)x= -head.getRotX();
+                else if (x<-0.5)x=-0.5f;
+                tail.updateRotation(x, -head.getRotY(), head.getRotZ());
+            }
+            if (head != null & tail2 != null) {
+                float x = head.getRotX();
+                if (x<-0.5)x=-0.5f;
+                tail2.updateRotation(x, head.getRotY(), head.getRotZ());
+            }
+            if (head != null & tail3 != null) {
+                float x = head.getRotX();
+                if (x<-0.5)x=-0.5f;
+                tail3.updateRotation(x, head.getRotY(), -head.getRotZ());
+            }
+            if (head != null & tail4 != null) {
+                float x = head.getRotX();
+                if (x>0)x= -head.getRotX();
+                if (x<-0.5)x=-0.5f;
+                tail4.updateRotation(x, -head.getRotY(), head.getRotZ());
+            }
+
+            String[] boneNames = new String[]{"armorHead", "armorBody", "armorRightArm", "armorLeftArm", "armorRightLeg", "armorLeftLeg"};
+            for (String boneName : boneNames) {
+                GeoBone head2 = getAnimationProcessor().getBone(boneName+"2");
+                GeoBone head3 = getAnimationProcessor().getBone(boneName+"3");
+                GeoBone headO = getAnimationProcessor().getBone(boneName);
+                if (headO != null & head2 != null) {
+                    head2.updateRotation(-headO.getRotX(), headO.getRotY(), headO.getRotZ());
+                }
+                if (headO != null & head3 != null) {
+                    head3.updateRotation(headO.getRotX(), -headO.getRotY(), headO.getRotZ());
+                }
+            }
+
             GeoBone front_fork = getAnimationProcessor().getBone("front_fork");
             GeoBone front_fork2 = getAnimationProcessor().getBone("front_fork2");
             GeoBone b_wheel = getAnimationProcessor().getBone("b_wheel");
