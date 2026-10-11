@@ -140,6 +140,13 @@ public class MyThRiderItems {
                 }
             }.isGlowing().IsBeltGlowing().hasCape().setModelName("ride_x_eggs_11").useBasicModel());
 
+    public static final DeferredItem<Item> RIDE_X_EGGS_11 = ITEMS.register("ride_x_eggs_11",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_eagle_frame","my_th","my_th_driver_belt_eagle",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_11_VANKEN.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().setSlotOneAbility("flight_boost", 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
     public static final DeferredItem<Item> HARINEZUMI_SEED_X_EGGS = ITEMS.register("harinezumi_seed_x_egg",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hedgehog","my_th","my_th_driver_belt_hedgehog",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
