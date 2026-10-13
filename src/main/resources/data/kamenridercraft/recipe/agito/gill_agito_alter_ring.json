@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "gill_agito",
+  "pattern": [
+    "XXX",
+    "XMX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "kamenridercraft:agito_of_seed"
+    },
+    "M": {
+      "item": "kamenridercraft:gill_agito"
+    }
+  },
+  "result": {
+    "id": "kamenridercraft:gill_agito_alter_ring"
+  }
+}

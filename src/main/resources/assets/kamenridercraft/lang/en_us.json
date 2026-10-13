@@ -2468,9 +2468,6 @@
 "item.kamenridercraft.g7_belt": "G-Buckle Mark 7",
 "item.kamenridercraft.g1_belt": "G-Buckle",
 "item.kamenridercraft.v1_belt": "V1 Belt",
-"item.kamenridercraft.gill_agito_altering": "Gill Agito Belt",
-"item.kamenridercraft.gill_agito_trinity_altering": "Trinity Gill Agito Belt",
-"item.kamenridercraft.gill_agito_shining_altering": "Shining Gill Agito Belt",
 
 "kamenridercraft.name.g3":"Rider: Kamen Rider G3",
 "kamenridercraft.name.g3_x":"Rider: Kamen Rider G3-X",
@@ -2481,15 +2478,20 @@
 "kamenridercraft.name.g7":"Rider: Kamen Rider G7",
 "kamenridercraft.name.g1":"Rider: Kamen Rider G1",
 "kamenridercraft.name.v1":"Debatable Rider: V1",
-"kamenridercraft.name.gill_agito":"Kaijin: Gill Agito",
-"kamenridercraft.name.gill_agito_trinity":"Kaijin: Trinity Gill Agito",
-"kamenridercraft.name.gill_agito_shining":"Kaijin: Shining Gill Agito",
 
 "item.kamenridercraft.alter_ring_miracle": "Altering",
 "kamenridercraft.name.mirage_agito":"Rider: Kamen Rider Mirage Agito",
 
 "item.kamenridercraft.ank_point_burning": "Ank Point",
 "kamenridercraft.name.another_agito_koji":"Rider: §eKamen Rider Another Agito (Kouji Majima)",
+
+
+"item.kamenridercraft.gill_agito_alter_ring": "Gill Agito Belt",
+"kamenridercraft.name.gill_agito":"Kaijin: Gill Agito",
+"item.kamenridercraft.gill_agito_trinity_alter_ring": "Trinity Gill Agito Belt",
+"kamenridercraft.name.gill_agito_trinity":"Kaijin: Trinity Gill Agito",
+"item.kamenridercraft.gill_agito_shining_alter_ring": "Shining Gill Agito Belt",
+"kamenridercraft.name.gill_agito_shining":"Kaijin: Shining Gill Agito",
 
 "item.kamenridercraft.flame_saber": "Flame Saber",
 "item.kamenridercraft.storm_halberd": "Storm Halberd",
@@ -2567,6 +2569,10 @@
 "kamenridercraft:g4x.form": "Form: Base Form",
 "kamenridercraft:g1.form": "Form: Base Form",
 "kamenridercraft:v1.form": "Form: Base Form",
+
+"item.kamenridercraft.gill_agito": "Gill Agito Philosopher's Stone",
+"item.kamenridercraft.gill_agito_trinity": "Gill Agito Trinity Philosopher's Stone",
+"item.kamenridercraft.gill_agito_shining": "Gill Agito Shining Philosopher's Stone",
 
 "item.kamenridercraft.ryuki_logo": "Ryuki Logo",
 "item.kamenridercraft.advent_card": "Contract Card",
@@ -10923,6 +10929,12 @@
 "advancements.kamenridercraft.agito.g4.title": "Rocket Man",
 "advancements.kamenridercraft.agito.g4x.description": "Transform into Kamen Rider G4-X",
 "advancements.kamenridercraft.agito.g4x.title": "I'm Blue (Da Ba Dee)",
+"advancements.kamenridercraft.agito.gill_agito.description": "Transform into Gill Agito",
+"advancements.kamenridercraft.agito.gill_agito.title": "Psychic Killers (Qu'est-ce que c'est?)",
+"advancements.kamenridercraft.agito.gill_agito_shining.description": "Defeat Shining Gill Agito",
+"advancements.kamenridercraft.agito.gill_agito_shining.title": "Absolute Kino",
+"advancements.kamenridercraft.agito.gill_agito_trinity.description": "Transform into Trinity Gill Agito",
+"advancements.kamenridercraft.agito.gill_agito_trinity.title": "An Unholy Trinity",
 "advancements.kamenridercraft.agito.gills.description": "Transform into Kamen Rider Gills",
 "advancements.kamenridercraft.agito.gills.title": "RAAAAAAHHHHHHHHH",
 "advancements.kamenridercraft.agito.gills_exceed.description": "Transform into Kamen Rider Gills Exceed",

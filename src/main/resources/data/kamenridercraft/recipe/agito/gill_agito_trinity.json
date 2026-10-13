@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "gill_agito",
+	"ingredients": [
+      {
+        "item": "kamenridercraft:gill_agito"
+      },
+		{
+			"item": "kamenridercraft:agito_trinity"
+		},
+		{
+			"item": "kamenridercraft:g6"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:gill_agito_trinity"
+	}
+}

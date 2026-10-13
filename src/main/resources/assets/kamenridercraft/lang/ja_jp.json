@@ -2467,9 +2467,7 @@
 "item.kamenridercraft.g7_belt": "Gバックル mark 7",
 "item.kamenridercraft.g1_belt": "Gバックル",
 "item.kamenridercraft.v1_belt": "V-1ベルト",
-"item.kamenridercraft.gill_agito_altering": "ギル・アギトベルト",
-"item.kamenridercraft.gill_agito_trinity_altering": "トリニティ・ギル・アギトベルト",
-"item.kamenridercraft.gill_agito_shining_altering": "シャイニング・ギル・アギトベルト",
+
 
 "kamenridercraft.name.g3":"ライダー: 仮面ライダーG3",
 "kamenridercraft.name.g3_x":"ライダー: 仮面ライダーG3-X",
@@ -2480,15 +2478,20 @@
 "kamenridercraft.name.g7":"ライダー: 仮面ライダーG7",
 "kamenridercraft.name.g1":"ライダー: 仮面ライダーG1",
 "kamenridercraft.name.v1":"疑似ライダー: V1",
-"kamenridercraft.name.gill_agito":"怪人: ギル・アギト",
-"kamenridercraft.name.gill_agito_trinity":"怪人: トリニティ・ギル・アギト",
-"kamenridercraft.name.gill_agito_shining":"怪人: シャイニング・ギル・アギト",
+
 
 "item.kamenridercraft.alter_ring_miracle": "オルタリング",
 "kamenridercraft.name.mirage_agito":"ライダー: 仮面ライダーミラージュアギト",
 
 "item.kamenridercraft.ank_point_burning": "アンクポイント",
 "kamenridercraft.name.another_agito_koji":"ライダー: §e仮面ライダーアナザーアギト（真島浩二）",
+
+"item.kamenridercraft.gill_agito_alter_ring": "ギル・アギトベルト",
+"kamenridercraft.name.gill_agito":"怪人: ギル・アギト",
+"item.kamenridercraft.gill_agito_trinity_alter_ring": "トリニティ・ギル・アギトベルト",
+"kamenridercraft.name.gill_agito_trinity":"怪人: トリニティ・ギル・アギト",
+"item.kamenridercraft.gill_agito_shining_alter_ring": "シャイニング・ギル・アギトベルト",
+"kamenridercraft.name.gill_agito_shining":"怪人: シャイニング・ギル・アギト",
 
 "item.kamenridercraft.flame_saber": "フレイムセイバー",
 "item.kamenridercraft.storm_halberd": "ストームハルバード",
@@ -10884,6 +10887,12 @@
 "advancements.kamenridercraft.agito.g6.title": "翼を広げて",
 "advancements.kamenridercraft.agito.g7.description": "仮面ライダーG7に変身",
 "advancements.kamenridercraft.agito.g7.title": "箸で豆腐を持つプロ",
+"advancements.kamenridercraft.agito.gill_agito.description": "ギル・アギトに変身",
+"advancements.kamenridercraft.agito.gill_agito.title": "ギルスかアギトか？",
+"advancements.kamenridercraft.agito.gill_agito_shining.description": "シャイニング・ギル・アギトを倒す",
+"advancements.kamenridercraft.agito.gill_agito_shining.title": "「俺はきっと蘇る、何でも、何度でも」",
+"advancements.kamenridercraft.agito.gill_agito_trinity.description": "トリニティ・ギル・アギトに変身",
+"advancements.kamenridercraft.agito.gill_agito_trinity.title": "俗念のトリニティ",
 "advancements.kamenridercraft.agito.gills.description": "仮面ライダーギルスに変身",
 "advancements.kamenridercraft.agito.gills.title": "ゥラアアアアアアッ",
 "advancements.kamenridercraft.agito.gills_exceed.description": "仮面ライダーギルスエクシードに変身",
