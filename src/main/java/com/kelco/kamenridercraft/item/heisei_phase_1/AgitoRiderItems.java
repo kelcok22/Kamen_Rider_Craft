@@ -149,7 +149,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().useBasicModel().setModelName("another_agito").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
@@ -430,7 +430,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.setSlotTwoAbility("rider_kick", 1).isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",

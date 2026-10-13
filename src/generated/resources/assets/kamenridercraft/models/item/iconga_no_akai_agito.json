@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kamenridercraft:item/another_agito"
+    "layer0": "kamenridercraft:item/iconga_no_akai_agito"
   }
 }
