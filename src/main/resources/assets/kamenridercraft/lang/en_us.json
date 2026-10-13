@@ -4623,6 +4623,13 @@
 "item.kamenridercraft.zodiarts_switch": "Zodiarts Switch",
 "block.kamenridercraft.hayabusa_kun": "Hayabusa-kun",
 
+"item.kamenridercraft.burgermeal": "Burgermeal",
+"item.kamenridercraft.potechokin": "Potechokin",
+"item.kamenridercraft.hulashake": "Hulashake",
+"item.kamenridercraft.horuwankov": "Horuwankov",
+"item.kamenridercraft.softonya": "Softonya",
+"item.kamenridercraft.nuggegyroika": "Nuggegyroika",
+
 "kamenridercraft:fourze_basestates.form": "Form: Basestates",
 "kamenridercraft:fourze_elekstates.form": "Form: Elekstates",
 "kamenridercraft:fourze_firestates.form": "Form: Firestates",
@@ -9658,6 +9665,12 @@
 "entity.kamenridercraft.kujaku_can": "Kujaku Candroid",
 "entity.kamenridercraft.ptera_can": "Ptera Candroid",
 "entity.kamenridercraft.torikera_can": "Torikera Candroid",
+"entity.kamenridercraft.burgermeal": "Burgermeal",
+"entity.kamenridercraft.potechokin": "Potechokin",
+"entity.kamenridercraft.hulashake": "Hulashake",
+"entity.kamenridercraft.horuwankov": "Horuwankov",
+"entity.kamenridercraft.softonya": "Softonya",
+"entity.kamenridercraft.nuggegyroika": "Nuggegyroika",
 
 "entity.kamenridercraft.rider_summon": "Rider Summon",
 "entity.kamenridercraft.complete_summon": "Complete Summon",
