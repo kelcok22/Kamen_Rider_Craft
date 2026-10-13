@@ -137,7 +137,7 @@ public class AgitoRiderItems {
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }
                 }
-            }.setHenshinTick(20).setFormDelay(1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.setHenshinTick(20).setFormDelay(1).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICONGA_NO_AKAI_AGITO = ITEMS.register("iconga_no_akai_agito",
             () -> new RiderFormChangeItem(new Item.Properties(), "_iconga_no_akai", "agito", "alter_ring_belt_f",
@@ -149,7 +149,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().useBasicModel().setModelName("another_agito").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
@@ -292,7 +292,30 @@ public class AgitoRiderItems {
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }
-            }.setFormDelay(1).isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+
+    public static final DeferredItem<Item>  GILL_AGITO_SHINING = ITEMS.register("gill_agito_shining",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "gill_agito_shining", "gill_agito_shining_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(EffectCore.BIG, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 20d) {
+                        AnimationUtil.playPose(player, "agito.burning_henshin");
+                    } else if (tick == 2d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.setHenshinTick(20).isGlowing().setFormDelay(1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLANK_G_SYSTEM_CHIP = ITEMS.register("g3core",
@@ -407,7 +430,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.setSlotTwoAbility("rider_kick", 1).isGlowing().IsBeltGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> G1_CHIP = ITEMS.register("g1",
@@ -508,6 +531,9 @@ public class AgitoRiderItems {
 
     public static final DeferredItem<Item> GILL_AGITO_TRINITY_ALTERING = ITEMS.register("gill_agito_trinity_alter_ring",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gill_agito_trinity", GILL_AGITO_TRINITY, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).useBasicModel().changeRepairItem(SEED_OF_AGITO.get()));
+
+    public static final DeferredItem<Item> GILL_AGITO_TRINITY_SHINING = ITEMS.register("gill_agito_shining_alter_ring",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gill_agito_shining", GILL_AGITO_SHINING, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM).useBasicModel().changeRepairItem(SEED_OF_AGITO.get()));
 
 
     public static final DeferredItem<Item> FLAME_SABER = ITEMS.register("flame_saber",
