@@ -2467,6 +2467,9 @@
 "item.kamenridercraft.g7_belt": "Gバックル mark 7",
 "item.kamenridercraft.g1_belt": "Gバックル",
 "item.kamenridercraft.v1_belt": "V-1ベルト",
+"item.kamenridercraft.gill_agito_altering": "ギル・アギトベルト",
+"item.kamenridercraft.gill_agito_trinity_altering": "トリニティ・ギル・アギトベルト",
+"item.kamenridercraft.gill_agito_shining_altering": "シャイニング・ギル・アギトベルト",
 
 "kamenridercraft.name.g3":"ライダー: 仮面ライダーG3",
 "kamenridercraft.name.g3_x":"ライダー: 仮面ライダーG3-X",
@@ -2477,6 +2480,9 @@
 "kamenridercraft.name.g7":"ライダー: 仮面ライダーG7",
 "kamenridercraft.name.g1":"ライダー: 仮面ライダーG1",
 "kamenridercraft.name.v1":"疑似ライダー: V1",
+"kamenridercraft.name.gill_agito":"怪人: ギル・アギト",
+"kamenridercraft.name.gill_agito_trinity":"怪人: トリニティ・ギル・アギト",
+"kamenridercraft.name.gill_agito_shining":"怪人: シャイニング・ギル・アギト",
 
 "item.kamenridercraft.alter_ring_miracle": "オルタリング",
 "kamenridercraft.name.mirage_agito":"ライダー: 仮面ライダーミラージュアギト",
@@ -9059,6 +9065,8 @@
 
 "item.kamenridercraft.my_th_edge": "マイスエッジ",
 "item.kamenridercraft.frame_my_th_back": "フレームマイスバック",
+"item.kamenridercraft.rid_magnum": "リドマグナム",
+"item.kamenridercraft.maou_blade": "マオウブレイド",
 "item.kamenridercraft.rabbit_sword": "ラビットソード",
 "item.kamenridercraft.tiger_dao": "タイガーダオ",
 "item.kamenridercraft.dog_gun": "ドッグガン",

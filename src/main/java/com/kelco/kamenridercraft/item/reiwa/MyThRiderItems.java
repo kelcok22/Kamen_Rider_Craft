@@ -231,6 +231,15 @@ public class MyThRiderItems {
     public static final DeferredItem<Item> FRAME_MY_TH_BACK = ITEMS.register("frame_my_th_back",
             () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
+    public static final DeferredItem<Item> RABBIT_SWORD = ITEMS.register("rabbit_sword",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> SNAKE_SCYTHE = ITEMS.register("snake_scythe",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> DOG_GUN = ITEMS.register("dog_gun",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

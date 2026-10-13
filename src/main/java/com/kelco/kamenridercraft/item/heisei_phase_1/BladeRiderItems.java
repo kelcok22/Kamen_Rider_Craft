@@ -869,16 +869,58 @@ public class BladeRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
+    public static final DeferredItem<Item> SEALABLE_GEL_JELLYFISH = ITEMS.register("sealable_gel_jellyfish",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_jellyfish", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("gel_jellyfish"));
+
     public static final DeferredItem<Item> GEL_JELLYFISH = ITEMS.register("gel_jellyfish",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
+            () -> new RiderFormChangeItem(new Item.Properties(), "_jellyfish", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_GEL_JELLYFISH.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> POISON_SCORPION = ITEMS.register("poison_scorpion",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
+    public static final DeferredItem<Item> SEALABLE_SMOG_SQUID = ITEMS.register("sealable_smog_squid",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_squid", "undead", "sealable_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape().setModelName("smog_squid"));
+
     public static final DeferredItem<Item> SMOG_SQUID = ITEMS.register("smog_squid",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
+            () -> new RiderFormChangeItem(new Item.Properties(), "_squid", "undead", "unsealed_undead_buckle_belt",
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_SMOG_SQUID.get()).hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> REMOTE_TAPIR = ITEMS.register("remote_tapir",

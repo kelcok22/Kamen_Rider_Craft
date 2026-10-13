@@ -43,7 +43,7 @@
            "predicate": {
                 "kamenridercraft:blocking": 1
             },
-            "model": "kamenridercraft:item/rising_beat_armor_blocking"
+            "model": "kamenridercraft:item/mole_shield_blocking"
         }
     ]
 }

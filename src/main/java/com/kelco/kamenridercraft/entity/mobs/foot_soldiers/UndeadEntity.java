@@ -52,7 +52,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
 
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
-            switch (getRandom().nextInt(10)) {
+            switch (getRandom().nextInt(12)) {
                 case 0:
                     setData(MOB_STATE, "locust");
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.KICK_LOCUST.get(), 1);
@@ -95,6 +95,14 @@ public class UndeadEntity extends BaseHenchmenEntity {
                     setData(MOB_STATE, "mole");
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SCREW_MOLE.get(), 1);
                     setItemInHand(InteractionHand.OFF_HAND, new ItemStack(BladeRiderItems.MOLE_SHIELD.get(), 1));
+                    break;
+                case 10:
+                    setData(MOB_STATE, "jellyfish");
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.GEL_JELLYFISH.get(), 1);
+                    break;
+                case 11:
+                    setData(MOB_STATE, "squid");
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SMOG_SQUID.get(), 1);
                     break;
             }
         }

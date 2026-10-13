@@ -2468,6 +2468,9 @@
 "item.kamenridercraft.g7_belt": "G-Buckle Mark 7",
 "item.kamenridercraft.g1_belt": "G-Buckle",
 "item.kamenridercraft.v1_belt": "V1 Belt",
+"item.kamenridercraft.gill_agito_altering": "Gill Agito Belt",
+"item.kamenridercraft.gill_agito_trinity_altering": "Trinity Gill Agito Belt",
+"item.kamenridercraft.gill_agito_shining_altering": "Shining Gill Agito Belt",
 
 "kamenridercraft.name.g3":"Rider: Kamen Rider G3",
 "kamenridercraft.name.g3_x":"Rider: Kamen Rider G3-X",
@@ -2478,6 +2481,9 @@
 "kamenridercraft.name.g7":"Rider: Kamen Rider G7",
 "kamenridercraft.name.g1":"Rider: Kamen Rider G1",
 "kamenridercraft.name.v1":"Debatable Rider: V1",
+"kamenridercraft.name.gill_agito":"Kaijin: Gill Agito",
+"kamenridercraft.name.gill_agito_trinity":"Kaijin: Trinity Gill Agito",
+"kamenridercraft.name.gill_agito_shining":"Kaijin: Shining Gill Agito",
 
 "item.kamenridercraft.alter_ring_miracle": "Altering",
 "kamenridercraft.name.mirage_agito":"Rider: Kamen Rider Mirage Agito",
@@ -9071,6 +9077,8 @@
 
 "item.kamenridercraft.my_th_edge": "My-Th Edge",
 "item.kamenridercraft.frame_my_th_back": "Frame My-Th Back",
+"item.kamenridercraft.rid_magnum": "Rid Magnum",
+"item.kamenridercraft.maou_blade": "Maou Blade",
 "item.kamenridercraft.rabbit_sword": "Rabbit Sword",
 "item.kamenridercraft.tiger_dao": "Tiger Dao",
 "item.kamenridercraft.dog_gun": "Dog Gun",
