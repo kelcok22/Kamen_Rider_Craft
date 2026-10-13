@@ -612,6 +612,18 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> SUPER_GINGAOH_SPAWN_EGG = ITEMS.register("super_gingaoh_spawn_egg",
             () -> new BaseSpawnEggItem(SUPER_GINGAOH, 0x191b32, 0x9e6f00, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BurgermealEntity>> BURGERMEAL = MOBLIST.register("burgermeal",
+            () -> EntityType.Builder.of(BurgermealEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":burgermeal"));
+    public static final DeferredHolder<EntityType<?>, EntityType<PotechokinEntity>> POTECHOKIN = MOBLIST.register("potechokin",
+            () -> EntityType.Builder.of(PotechokinEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":potechokin"));
+    public static final DeferredHolder<EntityType<?>, EntityType<HulashakeEntity>> HULASHAKE = MOBLIST.register("hulashake",
+            () -> EntityType.Builder.of(HulashakeEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":hulashake"));
+    public static final DeferredHolder<EntityType<?>, EntityType<HoruwankovEntity>> HORUWANKOV = MOBLIST.register("horuwankov",
+            () -> EntityType.Builder.of(HoruwankovEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":horuwankov"));
+    public static final DeferredHolder<EntityType<?>, EntityType<SoftonyaEntity>> SOFTONYA = MOBLIST.register("softonya",
+            () -> EntityType.Builder.of(SoftonyaEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":softonya"));
+    public static final DeferredHolder<EntityType<?>, EntityType<NuggegyroikaEntity>> NUGGEGYROIKA = MOBLIST.register("nuggegyroika",
+            () -> EntityType.Builder.of(NuggegyroikaEntity::new, MobCategory.CREATURE).sized(0.6F, 0.6F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":nuggegyroika"));
 
     public static final DeferredHolder<EntityType<?>, EntityType<GhoulsEntity>> GHOULS = MOBLIST.register("ghouls",
             () -> EntityType.Builder.of(GhoulsEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":ghouls"));

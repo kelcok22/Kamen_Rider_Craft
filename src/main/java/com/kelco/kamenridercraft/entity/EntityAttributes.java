@@ -346,6 +346,13 @@ public class EntityAttributes {
         event.put(MobsCore.PTERA_CAN.get(), PteraCanEntity.setAttributes().build());
         event.put(MobsCore.TORIKERA_CAN.get(), TorikeraCanEntity.setAttributes().build());
 
+        event.put(MobsCore.BURGERMEAL.get(), BurgermealEntity.setAttributes().build());
+        event.put(MobsCore.POTECHOKIN.get(), PotechokinEntity.setAttributes().build());
+        event.put(MobsCore.HULASHAKE.get(), HulashakeEntity.setAttributes().build());
+        event.put(MobsCore.HORUWANKOV.get(), HoruwankovEntity.setAttributes().build());
+        event.put(MobsCore.SOFTONYA.get(), SoftonyaEntity.setAttributes().build());
+        event.put(MobsCore.NUGGEGYROIKA.get(), NuggegyroikaEntity.setAttributes().build());
+
         event.put(MobsCore.RIDER_SUMMON.get(), RiderSummonEntity.setAttributes().build());
         event.put(MobsCore.COMPLETE_SUMMON.get(), CompleteSummonEntity.setAttributes().build());
         event.put(MobsCore.GRAND_SUMMON.get(), GrandSummonEntity.setAttributes().build());

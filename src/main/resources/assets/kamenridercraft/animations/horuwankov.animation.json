@@ -1,0 +1,124 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.horuwankov.sit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"hotdog": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0],
+						"0.2917": [0, -3, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				},
+				"bun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 180]
+					}
+				},
+				"back": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				},
+				"switch": {
+					"rotation": [0, 0, 0]
+				},
+				"shovel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [135, 0, 0]
+					}
+				},
+				"bun2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, -180]
+					}
+				}
+			}
+		},
+		"animation.horuwankov.death": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"hotdog": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -3, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				},
+				"bun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 180]
+					}
+				},
+				"back": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				},
+				"switch": {
+					"rotation": [0, 0, 0]
+				},
+				"shovel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [135, 0, 0]
+					}
+				},
+				"bun2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, -180]
+					}
+				}
+			}
+		},
+		"animation.horuwankov.idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"shovel": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.5": [0, 0, 0],
+						"1.0": [-10, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.horuwankov.walk": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"shovel": {
+					"rotation": {
+						"0.0": [-45, 0, 0],
+						"0.25": [-30, 0, 0],
+						"0.5": [-45, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

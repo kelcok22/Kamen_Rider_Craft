@@ -1,0 +1,154 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hulashake.sit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"cup": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"cover": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [20, 0, 0]
+						}
+					}
+				},
+				"flipper": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, -45]
+						}
+					}
+				},
+				"flipper2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 45]
+						}
+					}
+				}
+			}
+		},
+		"animation.hulashake.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"cover": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-10, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [-10, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"flipper": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, -20]
+						},
+						"0.5": {
+							"vector": [0, 0, 20]
+						},
+						"0.75": {
+							"vector": [0, 0, -20]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"flipper2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 20]
+						},
+						"0.5": {
+							"vector": [0, 0, -20]
+						},
+						"0.75": {
+							"vector": [0, 0, 20]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.hulashake.idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"cover": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [-7.5, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"flipper": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, -20]
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, -20]
+						}
+					}
+				},
+				"flipper2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 20]
+						},
+						"0.5": {
+							"vector": [0, 0, 2.5]
+						},
+						"1.0": {
+							"vector": [0, 0, 20]
+						}
+					}
+				}
+			}
+		}
+	}
+}

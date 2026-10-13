@@ -1,0 +1,291 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.burgermeal.sit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"bottom_bun": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"burger": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, -90]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3333": {
+							"vector": [0, -5.5, 0]
+						}
+					}
+				},
+				"patty": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"tomato": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-22.5, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, -90, 90]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"hand2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-180, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"left_wheel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 145]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"lettuce": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-22.5, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"hand": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-180, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"top_bun": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"right_wheel": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, -145]
+						}
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.burgermeal.death": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"bottom_bun": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"burger": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -4.5, 0]
+					}
+				},
+				"patty": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tomato": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-22.5, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -90, 90]
+					},
+					"position": [0, 0, 0]
+				},
+				"hand2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-180, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"left_wheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 145]
+					},
+					"position": [0, 0, 0]
+				},
+				"lettuce": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-22.5, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"hand": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-180, 0, 0]
+					},
+					"position": [0, 0, 0]
+				},
+				"top_bun": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"right_wheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, -145]
+					},
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.burgermeal.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"burger": {
+					"position": {
+						"0.0": [0, -1.5, 0],
+						"0.5": [0, 0, 0],
+						"1.0": [0, -1.5, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -720, 0]
+					}
+				},
+				"hand2": {
+					"rotation": {
+						"0.0": [67.4998, 0, -90],
+						"0.5": [0, 0, -90],
+						"1.0": [59.9998, 0, -90.0003]
+					}
+				},
+				"left_wheel": {
+					"rotation": {
+						"0.0": [0, 0, 20],
+						"0.5": [0, 0, 0],
+						"1.0": [0, 0, 20]
+					}
+				},
+				"hand": {
+					"rotation": {
+						"0.0": [59.9998, 0, 90.0003],
+						"0.5": [0, 0, 90],
+						"1.0": [59.9998, 0, 90.0003]
+					}
+				},
+				"right_wheel": {
+					"rotation": {
+						"0.0": [0, 0, -20],
+						"0.5": [0, 0, 0],
+						"1.0": [0, 0, -20]
+					}
+				}
+			}
+		},
+		"animation.burgermeal.idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"hand": {
+					"rotation": {
+						"0.0": [30, 0, 90],
+						"0.5": [0, 0, 90],
+						"1.0": [30, 0, 90]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, -360, 0]
+					}
+				},
+				"hand2": {
+					"rotation": {
+						"0.0": [30, 0, -90],
+						"0.5": [0, 0, -90],
+						"1.0": [30, 0, -90]
+					}
+				}
+			}
+		}
+	}
+}

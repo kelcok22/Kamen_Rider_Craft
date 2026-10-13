@@ -403,6 +403,12 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.TORIKERA_CAN.get(), TorikeraCanRenderer::new);
 
             event.registerEntityRenderer(MobsCore.SUPER_GINGAOH.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.BURGERMEAL.get(), BurgermealRenderer::new);
+            event.registerEntityRenderer(MobsCore.POTECHOKIN.get(), PotechokinRenderer::new);
+            event.registerEntityRenderer(MobsCore.HULASHAKE.get(), HulashakeRenderer::new);
+            event.registerEntityRenderer(MobsCore.HORUWANKOV.get(), HoruwankovRenderer::new);
+            event.registerEntityRenderer(MobsCore.SOFTONYA.get(), SoftonyaRenderer::new);
+            event.registerEntityRenderer(MobsCore.NUGGEGYROIKA.get(), NuggegyroikaRenderer::new);
 
             event.registerEntityRenderer(MobsCore.GHOULS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.MEDUSA_PHANTOM.get(), BasicEntityRenderer::new);

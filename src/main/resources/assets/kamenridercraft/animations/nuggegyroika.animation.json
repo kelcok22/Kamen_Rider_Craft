@@ -1,0 +1,260 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nuggegyroika.idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"nuggeropa": {
+					"rotation": {
+						"vector": [90, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [-2, 7, 1]
+						},
+						"0.5": {
+							"vector": [-2, 5, 1]
+						},
+						"1.0": {
+							"vector": [-2, 7, 1]
+						}
+					}
+				},
+				"nuggeio": {
+					"rotation": {
+						"vector": [90, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [-2, 5, -1]
+						},
+						"0.5": {
+							"vector": [-2, 7, -1]
+						},
+						"1.0": {
+							"vector": [-2, 5, -1]
+						}
+					}
+				},
+				"nuggemede": {
+					"rotation": {
+						"vector": [90, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [2, 7, -1]
+						},
+						"0.5": {
+							"vector": [2, 5, -1]
+						},
+						"1.0": {
+							"vector": [2, 7, -1]
+						}
+					}
+				},
+				"nuggesto": {
+					"rotation": {
+						"vector": [90, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [2, 5, 1]
+						},
+						"0.5": {
+							"vector": [2, 7, 1]
+						},
+						"1.0": {
+							"vector": [2, 5, 1]
+						}
+					}
+				},
+				"front": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [-10, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.nuggegyroika.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"nuggeropa": {
+					"rotation": {
+						"vector": [90, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [5, 7, -4]
+						},
+						"0.5": {
+							"vector": [-0.5, 7, -4]
+						},
+						"1.0": {
+							"vector": [4.5, 7, -4]
+						}
+					}
+				},
+				"nuggeio": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -22.5, 0]
+						},
+						"0.5": {
+							"vector": [90, 22.5, 0]
+						},
+						"1.0": {
+							"vector": [90, -22.5, 0]
+						}
+					},
+					"position": {
+						"vector": [2, 7, 0.5]
+					}
+				},
+				"nuggemede": {
+					"rotation": {
+						"vector": [90, 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [-4.5, 7, 3]
+						},
+						"0.5": {
+							"vector": [1, 7, 3]
+						},
+						"1.0": {
+							"vector": [-4, 7, 3]
+						}
+					}
+				},
+				"nuggesto": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, 22.5, 0]
+						},
+						"0.5": {
+							"vector": [90, -22.5, 0]
+						},
+						"1.0": {
+							"vector": [90, 22.5, 0]
+						}
+					},
+					"position": {
+						"vector": [-1.5, 7, 3.5]
+					}
+				},
+				"front": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [-10, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.nuggegyroika.sit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"box": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2917": [0, -2, 0]
+					}
+				},
+				"front": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-180, 0, 0]
+					}
+				},
+				"nuggeropa": {
+					"rotation": [0, 0, 0]
+				},
+				"nuggeio": {
+					"rotation": [0, 0, 0]
+				},
+				"nuggemede": {
+					"rotation": [0, 0, 0]
+				},
+				"nuggesto": {
+					"rotation": [0, 0, 0]
+				},
+				"switch": {
+					"rotation": [0, 0, 0]
+				},
+				"lid": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				},
+				"top": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.nuggegyroika.death": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2,
+			"bones": {
+				"box": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"front": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-180, 0, 0]
+					}
+				},
+				"nuggeropa": {
+					"rotation": [0, 0, 0]
+				},
+				"nuggeio": {
+					"rotation": [0, 0, 0]
+				},
+				"nuggemede": {
+					"rotation": [0, 0, 0]
+				},
+				"nuggesto": {
+					"rotation": [0, 0, 0]
+				},
+				"switch": {
+					"rotation": [0, 0, 0]
+				},
+				"lid": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				},
+				"top": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [180, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

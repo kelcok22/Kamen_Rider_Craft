@@ -5,12 +5,12 @@ import com.kelco.kamenridercraft.block.machine.AstroswitchProgrammer;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.vehicles.RidevendorVendingModeEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze.AstroswitchCaseItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze.FourzeDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze.GateSwitchItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze.ShowaSwitchItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze.*;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ooo.CandroidItem;
 import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import com.kelco.kamenridercraft.item.showa.V3RiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -19,6 +19,7 @@ import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -39,6 +40,7 @@ import software.bernie.geckolib.util.Color;
 import java.util.List;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM;
+import static com.kelco.kamenridercraft.item.KRCCreativeTabs.OOO_TAB_ITEM;
 
 public class FourzeRiderItems {
 
@@ -1211,6 +1213,19 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> METEOR_STORM_SHAFT = ITEMS.register("meteor_storm_shaft",
             () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
+
+    public static final DeferredItem<Item> BURGERMEAL = ITEMS.register("burgermeal",
+            () -> new Foodroiditem(new Item.Properties(), MobsCore.BURGERMEAL).addToList(FOURZE_TAB_ITEM));
+    public static final DeferredItem<Item> POTECHOKIN = ITEMS.register("potechokin",
+            () -> new Foodroiditem(new Item.Properties(), MobsCore.POTECHOKIN).addToList(FOURZE_TAB_ITEM));
+    public static final DeferredItem<Item> HULASHAKE = ITEMS.register("hulashake",
+            () -> new Foodroiditem(new Item.Properties(), MobsCore.HULASHAKE).addToList(FOURZE_TAB_ITEM));
+    public static final DeferredItem<Item> HORUWANKOV = ITEMS.register("horuwankov",
+            () -> new Foodroiditem(new Item.Properties(), MobsCore.HORUWANKOV).addToList(FOURZE_TAB_ITEM));
+    public static final DeferredItem<Item> SOFTONYA = ITEMS.register("softonya",
+            () -> new Foodroiditem(new Item.Properties(), MobsCore.SOFTONYA).addToList(FOURZE_TAB_ITEM));
+    public static final DeferredItem<Item> NUGGEGYROIKA = ITEMS.register("nuggegyroika",
+            () -> new Foodroiditem(new Item.Properties(), MobsCore.NUGGEGYROIKA).addToList(FOURZE_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
