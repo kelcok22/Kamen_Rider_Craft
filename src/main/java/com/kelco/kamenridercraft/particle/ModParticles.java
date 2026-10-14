@@ -170,6 +170,12 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> MY_TH_GEM_TURTLE_PARTICLES =
             PARTICLE_TYPES.register("my_th_gem_turtle_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> MY_TH_GEM_WOLF_PARTICLES =
+            PARTICLE_TYPES.register("my_th_gem_wolf_particles", () -> new SimpleParticleType(true));
+
+    public static final Supplier<SimpleParticleType> MY_TH_GEM_EAGLE_PARTICLES =
+            PARTICLE_TYPES.register("my_th_gem_eagle_particles", () -> new SimpleParticleType(true));
+
 
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
