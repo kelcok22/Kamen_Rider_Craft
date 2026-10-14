@@ -506,6 +506,8 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
             event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
             event.accept(MobsCore.ANOTHER_AGITO_SPAWN_EGG);
+            event.accept(MobsCore.GILL_AGITO_SPAWN_EGG);
+            event.accept(MobsCore.SHINING_GILL_AGITO_SPAWN_EGG);
             event.accept(RiderBlocks.G_SYSTEM_CHIP_PROGRAMMER);
 
         } else if (event.getTab() == RyukiTab.get()) {
@@ -1194,6 +1196,8 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.EL_OF_THE_WATER_SPAWN_EGG);
             event.accept(MobsCore.ANGUIS_MASCULUS_SPAWN_EGG);
             event.accept(MobsCore.ANOTHER_AGITO_SPAWN_EGG);
+            event.accept(MobsCore.GILL_AGITO_SPAWN_EGG);
+            event.accept(MobsCore.SHINING_GILL_AGITO_SPAWN_EGG);
 
             event.accept(MobsCore.MIRROR_RIDER_SPAWN_EGG);
             event.accept(MobsCore.ODIN_SPAWN_EGG);

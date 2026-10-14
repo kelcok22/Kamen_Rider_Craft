@@ -447,6 +447,57 @@
 "effect.kamenridercraft.rider_spirit":"Rider Spirit",
 "effect.kamenridercraft.insomnia":"Insomnia",
 "effect.kamenridercraft.dreaming":"Dreaming",
+  "effect.kamenridercraft.agito_factor":"Agito Factor",
+
+  "item.minecraft.potion.effect.agito_factor_potion": "Potion of Agito Factor",
+  "item.minecraft.splash_potion.effect.agito_factor_potion": "Splash Potion of Agito Factor",
+  "item.minecraft.lingering_potion.effect.agito_factor_potion": "Lingering Potion of Agito Factor",
+  "item.minecraft.tipped_arrow.effect.agito_factor_potion": "Arrow of Agito Factor",
+
+  "item.minecraft.potion.effect.bug_potion": "Potion of Bugster Virus",
+  "item.minecraft.splash_potion.effect.bug_potion": "Splash Potion of Bugster Virus",
+  "item.minecraft.lingering_potion.effect.bug_potion": "Lingering Potion of Bugster Virus",
+  "item.minecraft.tipped_arrow.effect.bug_potion": "Arrow of Bugster Virus",
+
+  "item.minecraft.potion.effect.greeed_potion": "Potion of Greeed",
+  "item.minecraft.splash_potion.effect.greeed_potion": "Splash Potion of Greeed",
+  "item.minecraft.lingering_potion.effect.greeed_potion": "Lingering Potion of Greeed",
+  "item.minecraft.tipped_arrow.effect.greeed_potion": "Arrow of Greeed",
+
+  "item.minecraft.potion.effect.ghost_potion": "Potion of Ghost",
+  "item.minecraft.splash_potion.effect.ghost_potion": "Splash Potion of Ghost",
+  "item.minecraft.lingering_potion.effect.ghost_potion": "Lingering Potion of Ghost",
+  "item.minecraft.tipped_arrow.effect.ghost_potion": "Arrow of Ghost",
+
+  "item.minecraft.potion.effect.note_potion": "Lingering Potion of Note",
+  "item.minecraft.splash_potion.effect.note_potion": "Splash Potion of Note",
+  "item.minecraft.lingering_potion.effect.note_potion": "Lingering Potion of Note",
+  "item.minecraft.tipped_arrow.effect.note_potion": "Arrow of Note",
+
+  "item.minecraft.potion.effect.hazard_level_potion": "Lingering Potion of Hazard Level",
+  "item.minecraft.splash_potion.effect.hazard_level_potion": "Splash Potion of Hazard Level",
+  "item.minecraft.lingering_potion.effect.hazard_level_potion": "Lingering Potion of Hazard Level",
+  "item.minecraft.tipped_arrow.effect.hazard_level_potion": "Arrow of Hazard Level",
+
+  "item.minecraft.potion.effect.happy_mode_potion": "Lingering Potion of §dHappy Mode",
+  "item.minecraft.splash_potion.effect.happy_mode_potion": "Splash Potion of §dHappy Mode",
+  "item.minecraft.lingering_potion.effect.happy_mode_potion": "Lingering Potion of §dHappy Mode",
+  "item.minecraft.tipped_arrow.effect.happy_mode_potion": "Arrow of §dHappy Mode",
+
+  "item.minecraft.potion.effect.muteki_potion": "Potion of §6Save",
+  "item.minecraft.splash_potion.effect.muteki_potion": "Splash Potion of §6Save",
+  "item.minecraft.lingering_potion.effect.muteki_potion": "Lingering Potion of §6Save",
+  "item.minecraft.tipped_arrow.effect.muteki_potion": "Arrow of §6Save",
+
+  "item.minecraft.potion.effect.insomnia_potion": "Potion of Insomnia",
+  "item.minecraft.splash_potion.effect.insomnia_potion": "Splash Potion of Insomnia",
+  "item.minecraft.lingering_potion.effect.insomnia_potion": "Lingering Potion of Insomnia",
+  "item.minecraft.tipped_arrow.effect.insomnia_potion": "Arrow of Insomnia",
+
+  "item.minecraft.potion.effect.sd_potion": "Potion of SD",
+  "item.minecraft.splash_potion.effect.sd_potion": "Splash Potion of SD",
+  "item.minecraft.lingering_potion.effect.sd_potion": "Lingering Potion of SD",
+  "item.minecraft.tipped_arrow.effect.sd_potion": "Arrow of SD",
 
 "effect.kamenridercraft.boost.desc": "Allows you to boost yourself forward and off the ground by sneaking.",
 "effect.kamenridercraft.boost.description": "Allows you to boost yourself forward and off the ground by sneaking.",

@@ -50,6 +50,8 @@ public class EntityAttributes {
         event.put(MobsCore.EL_OF_THE_WATER.get(), ElOfTheWaterEntity.setAttributes().build());
         event.put(MobsCore.ANGUIS_MASCULUS.get(), AnguisMasculusEntity.setAttributes().build());
         event.put(MobsCore.ANOTHER_AGITO.get(), AnotherAgitoEntity.setAttributes().build());
+        event.put(MobsCore.GILL_AGITO.get(), GillAgitoEntity.setAttributes().build());
+        event.put(MobsCore.SHINING_GILL_AGITO.get(), ShiningGillAgitoEntity.setAttributes().build());
 
         event.put(MobsCore.MIRROR_RIDER.get(), MirrorRiderEntity.setAttributes().build());
         event.put(MobsCore.ODIN.get(), OdinEntity.setAttributes().build());

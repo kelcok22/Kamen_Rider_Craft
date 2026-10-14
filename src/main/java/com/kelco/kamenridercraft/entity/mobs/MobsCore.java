@@ -167,6 +167,19 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> ANOTHER_AGITO_SPAWN_EGG = ITEMS.register("another_agito_spawn_egg",
             () -> new BaseSpawnEggItem(ANOTHER_AGITO, 0x273d31, 0x131313, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GillAgitoEntity>> GILL_AGITO = MOBLIST.register("gill_agito",
+            () -> EntityType.Builder.of(GillAgitoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":gill_agito"));
+
+    public static final DeferredItem<BaseSpawnEggItem> GILL_AGITO_SPAWN_EGG = ITEMS.register("gill_agito_spawn_egg",
+            () -> new BaseSpawnEggItem(GILL_AGITO,  0x1b1b1b,0xc09b23, new Item.Properties()));
+
+    public static final DeferredHolder<EntityType<?>, EntityType<ShiningGillAgitoEntity>> SHINING_GILL_AGITO = MOBLIST.register("shining_gill_agito",
+            () -> EntityType.Builder.of(ShiningGillAgitoEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":shining_gill_agito"));
+
+    public static final DeferredItem<BaseSpawnEggItem> SHINING_GILL_AGITO_SPAWN_EGG = ITEMS.register("shining_gill_agito_spawn_egg",
+            () -> new BaseSpawnEggItem(SHINING_GILL_AGITO, 0xc0c0c0, 0xff0f16, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<MirrorRiderEntity>> MIRROR_RIDER = MOBLIST.register("mirror_rider",
             () -> EntityType.Builder.of(MirrorRiderEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":mirror_rider"));
 

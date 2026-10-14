@@ -22,9 +22,8 @@ import com.kelco.kamenridercraft.item.extra_riders.GRiderItems;
 import com.kelco.kamenridercraft.item.extra_riders.RideKamensItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCardItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.*;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
@@ -62,6 +61,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.GameRules;
@@ -82,6 +83,7 @@ import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
 import net.neoforged.neoforge.event.ItemStackedOnOtherEvent;
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.living.*;
@@ -679,6 +681,22 @@ public class ModCommonEvents {
         }
 
         @SubscribeEvent
+        public void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event) {
+            PotionBrewing.Builder builder = event.getBuilder();
+
+            builder.addMix(Potions.AWKWARD, AgitoRiderItems.GILLS.asItem(), AGITO_FACTOR_POTION);
+            builder.addMix(Potions.AWKWARD, ExAidRiderItems.BUGSTER_VIRUS_DNA.asItem(), BUGSTER_POTION);
+            builder.addMix(Potions.AWKWARD, ExAidRiderItems.SAVE_ENERGY_ITEM.asItem(), MUTEKI_POTION);
+            builder.addMix(Potions.AWKWARD, BuildRiderItems.NEBULA_GAS_SAMPLE.asItem(), HAZARD_LEVEL_POTION);
+            builder.addMix(Potions.AWKWARD, OOORiderItems.CELL_MEDAL.asItem(), GREEED_POTION);
+            builder.addMix(Potions.AWKWARD, GhostRiderItems.ORE_GHOST_EYECON.asItem(), GHOST_POTION);
+            builder.addMix(Potions.AWKWARD, ModdedItemCore.COFFEE.asItem(), INSOMNIA_POTION);
+            builder.addMix(Potions.AWKWARD, MusicDiscItems.MASKED_RIDER_MUSIC_DISC.asItem(), NOTE_POTION);
+            builder.addMix(Potions.AWKWARD, RiderBlocks.LOVEKOV_PLUSH.asItem(), HAPPY_MODE_POTION);
+            builder.addMix(Potions.AWKWARD, ModdedItemCore.PUDDING.asItem(), SD_POTION);
+        }
+
+        @SubscribeEvent
         public void addCustomWandererTrades(WandererTradesEvent event) {
             List<ItemListing> trades = event.getGenericTrades();
             trades.add((trader, rand) -> new MerchantOffer(
@@ -893,7 +911,6 @@ public class ModCommonEvents {
             }
         }
     }
-
 
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
