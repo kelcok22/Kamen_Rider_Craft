@@ -272,7 +272,7 @@ public class AgitoRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GILL_AGITO_TRINITY = ITEMS.register("gill_agito_trinity",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "gill_agito_trinity", "gill_agito_trinity_belt",
@@ -292,7 +292,7 @@ public class AgitoRiderItems {
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }
-            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item>  GILL_AGITO_SHINING = ITEMS.register("gill_agito_shining",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "gill_agito_shining", "gill_agito_shining_belt",
@@ -311,7 +311,7 @@ public class AgitoRiderItems {
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
+            }.isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BLANK_G_SYSTEM_CHIP = ITEMS.register("g3core",

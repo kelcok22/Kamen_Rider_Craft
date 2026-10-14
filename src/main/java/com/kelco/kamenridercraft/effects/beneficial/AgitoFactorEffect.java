@@ -4,6 +4,7 @@ package com.kelco.kamenridercraft.effects.beneficial;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.bosses.AnotherAgitoEntity;
+import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.GillAgitoEntity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -12,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.npc.Villager;
 
@@ -54,12 +56,13 @@ public class AgitoFactorEffect extends MobEffect {
             }
             if (livingEntity.level() instanceof ServerLevel level) {
                 if (livingEntity instanceof Villager) {
-                    LivingEntity boss = MobsCore.GILL_AGITO.get().create(level);
+                    GillAgitoEntity boss = MobsCore.GILL_AGITO.get().create(level);
                     boss.moveTo(livingEntity.getX(), livingEntity.getY(), livingEntity.getZ(), livingEntity.getYRot(), 0.0F);
                     boss.setYHeadRot(livingEntity.yHeadRot);
                     boss.setXRot(livingEntity.getXRot());
                     boss.setYRot(livingEntity.getYRot());
                     boss.setYBodyRot(livingEntity.yBodyRot);
+                    boss.finalizeSpawn(level, level.getCurrentDifficultyAt(livingEntity.blockPosition()), MobSpawnType.MOB_SUMMONED, null);
                     level.addFreshEntity(boss);
                     livingEntity.discard();
                 } else  if (livingEntity instanceof AnotherAgitoEntity) {
