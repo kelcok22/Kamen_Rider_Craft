@@ -15,16 +15,14 @@ public class ShiningGillAgitoEntity extends BaseHenchmenEntity {
     public ShiningGillAgitoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="another_agito";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(AgitoRiderItems.AGITOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(AgitoRiderItems.AGITOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(AgitoRiderItems.AGITOLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.GILL_AGITO_SHINING_ALTERING.get()));
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(AgitoRiderItems.SHINING_CALIBER_TWIN.get()));
-        this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(AgitoRiderItems.SHINING_CALIBER_TWIN.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(AgitoRiderItems.AGITOHELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(AgitoRiderItems.AGITOCHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(AgitoRiderItems.AGITOLEGGINGS.get()));
+        setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.GILL_AGITO_SHINING_ALTERING.get()));
+        setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(AgitoRiderItems.SHINING_CALIBER_TWIN.get()));
+        setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(AgitoRiderItems.SHINING_CALIBER_TWIN.get()));
     }
-
-
-
+    
     public static AttributeSupplier.Builder setAttributes() {
         return Monster.createMonsterAttributes()
         		.add(Attributes.FOLLOW_RANGE, 135.0D)
