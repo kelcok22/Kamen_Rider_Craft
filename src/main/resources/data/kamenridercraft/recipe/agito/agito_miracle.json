@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "agito_miracle",
+	"ingredients": [
+      {
+			"item": "kamenridercraft:agito_shining"
+      },
+      {
+        "item": "kamenridercraft:g4x"
+      },
+      {
+        "item": "kamenridercraft:exceed_gills"
+      },
+      {
+        "item": "kamenridercraft:another_agito_burning_form"
+      },
+      {
+        "item": "kamenridercraft:kuuga_amazing_mighty_artist"
+      }
+	],
+	"result": {
+		"id": "kamenridercraft:agito_miracle"
+	}
+}

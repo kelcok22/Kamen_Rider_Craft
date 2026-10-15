@@ -7,7 +7,10 @@
 		},
 		{
 			"item": "kamenridercraft:agito_burning"
-		}
+		},
+      {
+        "item": "kamenridercraft:kuuga_amazing_mighty_artist"
+      }
 	],
 	"result": {
 		"id": "kamenridercraft:another_agito_burning_form"
