@@ -2264,7 +2264,7 @@ public class ZiORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
+            }.isGlowing().hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDESTRIKER_RIDEWATCH = ITEMS.register("ridestriker_ridewatch",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.RIDESTRIKER)

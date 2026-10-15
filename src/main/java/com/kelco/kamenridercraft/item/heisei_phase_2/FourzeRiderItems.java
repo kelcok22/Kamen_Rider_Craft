@@ -837,7 +837,7 @@ public class FourzeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            }.isGlowing().addToList(FOURZE_TAB_ITEM));
+            }.isGlowing().changeModel("meteor_storm.geo.json").addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "super_gingaoh", "blank",
