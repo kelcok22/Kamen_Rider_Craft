@@ -829,7 +829,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 0.05);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
@@ -837,7 +837,7 @@ public class FourzeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            }.isGlowing().changeModel("meteor_storm.geo.json").addToList(FOURZE_TAB_ITEM));
+            }.isGlowing().hasCape().addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "super_gingaoh", "blank",
