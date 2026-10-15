@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"gill_agito_trinity.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [15, 45, 0],
+					"position": [0, -2.25, 0]
+				},
+				"head": {
+					"rotation": [-19.64, -42.86, 15.47],
+					"position": [0.34, -0.15, -1.5]
+				},
+				"torso": {
+					"rotation": [7.77, 6.96, 3.68],
+					"position": [0, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-123.0571, 34.5159, 14.8685],
+					"position": [0, 0, 0]
+				},
+				"rightItem": {
+					"rotation": [-30.3453, 14.7669, 7.336],
+					"position": [0, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [-22.5464, -8.9424, -5.6986],
+					"position": [0.15101, -0.91309, -0.37877]
+				},
+				"leftItem": {
+					"rotation": [30, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"satansaber2": {
+					"rotation": [7.5, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [-13.5, 21.08, 30.56],
+					"position": [-0.36, 0.76, -1.81]
+				},
+				"left_leg": {
+					"rotation": [11.21, -30.44, -26.67],
+					"position": [0, 1, -3]
+				}
+			}
+		}
+	}
+}

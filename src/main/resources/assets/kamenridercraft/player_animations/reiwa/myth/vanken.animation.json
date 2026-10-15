@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"vanken.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [22.5, 42.5, 0],
+					"position": [0, -7, 0]
+				},
+				"head": {
+					"rotation": [-24.9217, -41.1367, 20.7229]
+				},
+				"torso": {
+					"rotation": [-5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-137.5, 0, 0],
+					"position": [0, -3.50133, -0.86065]
+				},
+				"rightItem": {
+					"rotation": [-60, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [-46.997, 51.71, 36.2039]
+				},
+				"right_leg": {
+					"rotation": [-10, 0, 22.5],
+					"position": [0, 7.92388, -4.61732]
+				},
+				"left_leg": {
+					"rotation": [54.62, -26.9, -18.95],
+					"position": [2.32123, 1.68596, -4.33157]
+				}
+			}
+		}
+	}
+}

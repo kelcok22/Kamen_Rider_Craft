@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"gill_agito_shining.pose": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [51.7436, -54.9642, -39.6504],
+					"position": [0, -4, 0]
+				},
+				"right_arm": {
+					"rotation": [-25.7169, 68.4729, 29.8707]
+				},
+				"rightItem": {
+					"rotation": [17.5, 0, 0]
+				},
+				"head": {
+					"rotation": [-31.9597, 60.097, -13.9604],
+					"position": [2.57643, 1.38673, -6.176]
+				},
+				"torso": {
+					"rotation": [22.0457, 30.9158, 21.5198],
+					"position": [0.44202, 0.09994, -0.89142]
+				},
+				"left_arm": {
+					"rotation": [-111.9777, -36.3709, 45.8054]
+				},
+				"leftItem": {
+					"rotation": [-45, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [-28.429, 53.5046, 45.2814],
+					"position": [2.26, -0.2, 4.18]
+				},
+				"left_leg": {
+					"position": [0.73, 1.77, 0.56]
+				}
+			}
+		}
+	}
+}
