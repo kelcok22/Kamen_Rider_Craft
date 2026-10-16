@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "kamenridercraft:item/henshin_onsa"
+        "layer0": "kamenridercraft:item/henshin_onsa_eiki"
     }
 }

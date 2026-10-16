@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "akatsuki",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:oni_orehell"
+		},
+		"C": {
+			"item": "kamenridercraft:henshin_onsa_eiki"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:akatsukidriver"
+	}
+}
