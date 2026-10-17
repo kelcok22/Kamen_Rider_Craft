@@ -160,6 +160,20 @@ public class MyThRiderItems {
                 }
             }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_6_JYAO.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
+    public static final DeferredItem<Item> RIDE_X_EGGS_8_MUTN = ITEMS.register("ride_x_eggs_8_mutn",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","mutn","my_th_driver_belt_mutn",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().IsBeltGlowing().setModelName("ride_x_eggs_8").useBasicModel());
 
     public static final DeferredItem<Item> RIDE_X_EGGS_8 = ITEMS.register("ride_x_eggs_8",
             () -> new RiderFormChangeItem(new Item.Properties(),"_wolf_frame","my_th","my_th_driver_belt_wolf",
@@ -182,7 +196,7 @@ public class MyThRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }
                 }
-            }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_8_MUTN.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_11_VANKEN = ITEMS.register("ride_x_eggs_11_vanken",
             () -> new RiderFormChangeItem(new Item.Properties(),"","vanken","my_th_driver_belt_vanken",
@@ -273,6 +287,9 @@ public class MyThRiderItems {
 
     public static final DeferredItem<Item> MY_TH_DRIVER_BITE_ON = ITEMS.register("my_th_driver_bite_on",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jyao",RIDE_X_EGGS_6_JYAO ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> MY_TH_DRIVER_BITE_ON_MUTN = ITEMS.register("my_th_driver_bite_on_mutn",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mutn",RIDE_X_EGGS_8_MUTN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MAOU_DRIVER = ITEMS.register("maou_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
