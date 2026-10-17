@@ -88,6 +88,10 @@ public class LivingEntityMixin {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.triangle_module", "position_fourze", false, rider.getStringUUID()));
             }
             if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() && !(rider.getData(ABILITY_TICK) > 0) &&
+                    ((getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == BOARD_ASTROSWITCH.get()))) {
+                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.board_module", "position_fourze", false, rider.getStringUUID()));
+            }
+            if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() && !(rider.getData(ABILITY_TICK) > 0) &&
                     (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == WHEEL_ASTROSWITCH.get()))  {
                 PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.wheel_module", "position_fourze", false, rider.getStringUUID()));
             }

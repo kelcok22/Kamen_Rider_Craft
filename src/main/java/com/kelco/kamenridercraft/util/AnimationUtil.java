@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.network.payload.StartPosePayload;
 import com.zigythebird.playeranim.animation.PlayerAnimResources;
@@ -31,6 +32,13 @@ public class AnimationUtil {
     public static void playPose(LivingEntity poser, String poseName) {
         if (poser instanceof Player && poser.level() instanceof ServerLevel) {
             PacketDistributor.sendToAllPlayers(new StartPosePayload(poseName.toLowerCase(), poser.getStringUUID()));
+            poser.setData(IS_POSING, true);
+        }
+    }
+
+    public static void forcePlayPose(LivingEntity poser, String poseName) {
+        if (poser instanceof Player && poser.level() instanceof ServerLevel) {
+            PacketDistributor.sendToAllPlayers(new AnimPayload(poseName.toLowerCase(),"pose", true, poser.getStringUUID()));
             poser.setData(IS_POSING, true);
         }
     }
