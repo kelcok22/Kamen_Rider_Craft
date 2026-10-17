@@ -775,14 +775,15 @@
 			}
 		},
 		"fourze.board_module": {
-			"loop": true,
 			"animation_length": 0.25,
 			"bones": {
 				"left_leg": {
-					"rotation": [-1.817, 19.9207, -5.3193]
+					"rotation": [0, 20, 0],
+					"position": [0, 0.25, 0]
 				},
 				"right_leg": {
-					"rotation": [8.904, 17.0722, 13.0863]
+					"rotation": [7.35, 17.78, 7.9],
+					"position": [0, 0.25, 0]
 				},
 				"body": {
 					"rotation": [0, 70, 0]
