@@ -282,14 +282,14 @@ public class MyThRiderItems {
     public static final DeferredItem<Item> MY_TH_DRIVER_SLASH_ON = ITEMS.register("my_th_driver_slash_on",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"datt",RIDE_X_EGGS_4_DATT ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
-    public static final DeferredItem<Item> MY_TH_DRIVER_SHOT_ON = ITEMS.register("my_th_driver_shot_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vanken",RIDE_X_EGGS_11_VANKEN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
-
     public static final DeferredItem<Item> MY_TH_DRIVER_BITE_ON = ITEMS.register("my_th_driver_bite_on",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"jyao",RIDE_X_EGGS_6_JYAO ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_BITE_ON_MUTN = ITEMS.register("my_th_driver_bite_on_mutn",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mutn",RIDE_X_EGGS_8_MUTN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> MY_TH_DRIVER_SHOT_ON = ITEMS.register("my_th_driver_shot_on",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"vanken",RIDE_X_EGGS_11_VANKEN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MAOU_DRIVER = ITEMS.register("maou_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"maou",RIDE_X_EGGS_1_MAOU ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
