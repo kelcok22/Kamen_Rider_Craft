@@ -6,7 +6,9 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.w.*;
+import com.kelco.kamenridercraft.item.heisei_phase_2.w.MetalShaftItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.w.T2MemoryCaseItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.w.WDriverItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -900,7 +902,7 @@ public class WRiderItems {
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.W_TAB_ITEM).changeRepairItem( GAIA_MEMORY.get()));
 
 	public static final DeferredItem<Item> SKULL_MAGNUM = ITEMS.register("skull_magnum",
-			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BURST_BLASTER).setRepairItem(GAIA_MEMORY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.W_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), -4F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.BURST_BLASTER).setRepairItem(GAIA_MEMORY.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS));
 
 	public static final DeferredItem<Item> ENGINE_BLADE = ITEMS.register("engine_blade",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem( GAIA_MEMORY.get()));

@@ -21,9 +21,8 @@ import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.item.extra_riders.GRiderItems;
 import com.kelco.kamenridercraft.item.extra_riders.RideKamensItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.*;
-import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCardItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCard;
 import com.kelco.kamenridercraft.item.heisei_phase_2.*;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
@@ -436,10 +435,11 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void anvilUpdateEvent(AnvilUpdateEvent event) {
-            if (event.getLeft().isDamaged() && event.getLeft().getItem() instanceof ZeinCardItem zein && zein.isValidRepairItem(event.getLeft(), event.getRight())) {
+            if (event.getLeft().isDamaged() && event.getLeft().getItem() instanceof ZeinCard && event.getRight().getItem() == DecadeRiderItems.BLANK_CARD.get()) {
                 ItemStack result = event.getLeft().copy();
                 result.setDamageValue(0);
                 event.setOutput(result);
+                event.setMaterialCost(1);
                 event.setCost(5);
             }
         }

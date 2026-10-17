@@ -603,7 +603,7 @@ public class RyukiRiderItems {
 			() -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RYUKI_TAB_ITEM).changeRepairItem( ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> BLACK_DRAG_VISOR_ZWEI = ITEMS.register("black_drag_visor_zwei",
-			() -> new BaseBlasterItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).setProjectile(BaseBlasterItem.BlasterProjectile.LARGE_FIREBALL).setExplosionPower(1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
+			() -> new BaseSwordItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> BIO_VISOR = ITEMS.register("bio_visor",
 			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RYUKI_TAB_ITEM));

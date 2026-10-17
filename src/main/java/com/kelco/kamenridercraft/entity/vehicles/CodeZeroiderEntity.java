@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.entity.vehicles;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.entity.mobs.allies.AutoVajinRoboEntity;
 import com.kelco.kamenridercraft.entity.mobs.allies.CodeZeroEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
@@ -32,22 +31,22 @@ public class CodeZeroiderEntity extends baseBikeEntity {
 	@Override
 	public void tick() {
 		super.tick();
-		if (summonLevel <= 0 && this.boss != null) {
-			BlockPos pos = this.blockPosition();
-			this.boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), this.getYRot(), this.getXRot());
-			this.boss.yRotO = getYRot();
-			this.boss.xRotO = getXRot();
-			this.boss.yBodyRot = this.getYRot();
-			this.boss.yHeadRot = this.yBodyRot;
-			if (this.boss.level() instanceof ServerLevel sl) {
-				sl.sendParticles(ParticleTypes.GUST,
-						this.boss.getX(), boss.getY() + 1.0,
-						this.boss.getZ(), 1, 0, 0, 0, 1);
-			}
-			this.level().addFreshEntity(this.boss);
-			this.remove(RemovalReason.DISCARDED);
-		} else if (this.boss != null) {
-			this.summonLevel--;
+		if (this.boss != null && this.isAlive()) {
+			if (summonLevel <= 0) {
+				BlockPos pos = this.blockPosition();
+				this.boss.moveTo(pos.getX(), pos.getY(), pos.getZ(), this.getYRot(), this.getXRot());
+				this.boss.yRotO = getYRot();
+				this.boss.xRotO = getXRot();
+				this.boss.yBodyRot = this.getYRot();
+				this.boss.yHeadRot = this.yBodyRot;
+				if (this.boss.level() instanceof ServerLevel sl) {
+					sl.sendParticles(ParticleTypes.GUST,
+							this.boss.getX(), boss.getY() + 1.0,
+							this.boss.getZ(), 1, 0, 0, 0, 1);
+				}
+				this.level().addFreshEntity(this.boss);
+				this.remove(RemovalReason.DISCARDED);
+			} else this.summonLevel--;
 		}
 	}
 

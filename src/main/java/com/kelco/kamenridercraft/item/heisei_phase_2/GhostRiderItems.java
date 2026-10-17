@@ -7,7 +7,9 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.*;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.AkariCannonItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.BlankGhostEyeconItem;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ghost.GhostDriverItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.particles.ParticleTypes;
@@ -1430,7 +1432,7 @@ public class GhostRiderItems {
 			() -> new NeoBaseBlasterItem(new Item.Properties().rarity(Rarity.UNCOMMON), 13F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SWORD_GUN).setRepairItem(BLANK_GHOST_EYECON.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAN_GUN_HAND_ROD = ITEMS.register("gan_gun_hand_rod",
-			() -> new NeoBaseBlasterItem(new Item.Properties(), 6F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SWORD_GUN).setRepairItem(BLANK_GHOST_EYECON.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));
+			() -> new NeoBaseBlasterItem(new Item.Properties(), 6F, -2.4F).setPreset(NeoBaseBlasterItem.BlasterPreset.SWORD_GUN).setRepairItem(BLANK_GHOST_EYECON.get()).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAN_GUN_HAND_KAMA = ITEMS.register("gan_gun_hand_kama",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM).changeRepairItem(BLANK_GHOST_EYECON.get()));
