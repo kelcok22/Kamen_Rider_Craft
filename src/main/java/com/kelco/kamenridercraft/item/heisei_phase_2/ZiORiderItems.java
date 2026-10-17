@@ -2182,7 +2182,20 @@ public class ZiORiderItems {
             }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_QUIZ_WATCH = ITEMS.register("another_quiz_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "another_quiz", "another_quiz_driver_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KIKAI_WATCH = ITEMS.register("another_kikai_watch",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
@@ -2582,6 +2595,9 @@ public class ZiORiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_shinobi", ANOTHER_SHINOBI_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
+    public static final DeferredItem<Item> ANOTHER_QUIZ_DRIVER = ITEMS.register("another_quiz_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_quiz", ANOTHER_QUIZ_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ZIKAN_GIRADE = ITEMS.register("zikan_girade",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).IsSwordGun().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(BLANK_RIDEWATCH.get()));

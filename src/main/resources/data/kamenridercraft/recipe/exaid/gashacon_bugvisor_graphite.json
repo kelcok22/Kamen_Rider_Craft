@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "graphite",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
+		},
+		"C": {
+			"item": "kamenridercraft:drago_knight_hunter_z_gashat"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:gashacon_bugvisor_graphite"
+	}
+}
