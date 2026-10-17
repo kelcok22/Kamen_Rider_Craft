@@ -95,6 +95,7 @@ public class RiderFormChangeItem extends BaseItem {
     private RiderFormChangeItem needFormSlot2;
     private RiderFormChangeItem needFormSlot3;
     private RiderFormChangeItem needFormSlot4;
+    private RiderFormChangeItem needFormSlot5;
 
     private int timeoutDuration = 0;
     private int lockDuration = 0;
@@ -482,6 +483,8 @@ public class RiderFormChangeItem extends BaseItem {
             needFormSlot3 = ((RiderFormChangeItem) item);
         else if (slot == 4)
             needFormSlot4 = ((RiderFormChangeItem) item);
+        else if (slot == 5)
+            needFormSlot5 = ((RiderFormChangeItem) item);
         return this;
     }
 
@@ -595,7 +598,9 @@ public class RiderFormChangeItem extends BaseItem {
         if (needFormSlot4 != null)
             if (RiderDriverItem.getFormItem(stack, 4) != needFormSlot4)
                 return false;
-
+        if (needFormSlot5 != null)
+            if (RiderDriverItem.getFormItem(stack, 5) != needFormSlot5)
+                return false;
         if (!needItemList.isEmpty()) {
             for (Item item : needItemList) {
                 if (!inventoryOrHolderContains(player, item))

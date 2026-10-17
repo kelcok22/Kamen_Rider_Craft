@@ -100,7 +100,9 @@ public class FourzeDriverItem extends RiderDriverItem {
                 setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
             }
         }
-
+        if (getFormItem(belt, 2) == FourzeRiderItems.NADESHIKO_ASTROSWITCH_FUSION.get()&getFormItem(belt, 5) != FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()){
+            setFormItemNoExtra(belt, FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.asItem(), 2);
+        }
 
         if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_LAUNCHER_STATES.get()) {
             if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
@@ -125,6 +127,7 @@ public class FourzeDriverItem extends RiderDriverItem {
         if ((getFormItem(belt, 1) == FourzeRiderItems.CLEAR_DRILL_ASTROSWITCH.get())
                 && (getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get())) {
             setFormItemNoExtra(belt, FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.asItem(), 1);
+            setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
         }
         if ((getFormItem(belt, 5) == FourzeRiderItems.SHIN_CHAN_ASTROSWITCH.get())) {
             if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
