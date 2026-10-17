@@ -1579,7 +1579,7 @@
 				}
 			}
 		},
-		"fourze_switch_1.hit": {
+		"fourze.switch_1.hit": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -1678,7 +1678,7 @@
 				}
 			}
 		},
-		"fourze_switch_1.hit_up": {
+		"fourze.switch_1.hit_up": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -1777,7 +1777,7 @@
 				}
 			}
 		},
-		"fourze_switch_2.hit": {
+		"fourze.switch_2.hit": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -1876,7 +1876,7 @@
 				}
 			}
 		},
-		"fourze_switch_2.hit_up": {
+		"fourze.switch_2.hit_up": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -1975,7 +1975,7 @@
 				}
 			}
 		},
-		"fourze_switch_3.hit": {
+		"fourze.switch_3.hit": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -2074,7 +2074,7 @@
 				}
 			}
 		},
-		"fourze_switch_3.hit_up": {
+		"fourze_switch.3.hit_up": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -2173,7 +2173,7 @@
 				}
 			}
 		},
-		"fourze_switch_4.hit": {
+		"fourze.switch_4.hit": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
@@ -2272,7 +2272,7 @@
 				}
 			}
 		},
-		"fourze_switch_4.hit_up": {
+		"fourze.switch_4.hit_up": {
 			"animation_length": 0.5417,
 			"bones": {
 				"body": {
