@@ -1,6 +1,27 @@
 {
 	"values": [
+        "kamenridercraft:change_beetle",
+        "kamenridercraft:kick_locust",
+        "kamenridercraft:thunder_deer",
+        "kamenridercraft:mach_jaguar",
+        "kamenridercraft:fusion_eagle",
+        "kamenridercraft:absorb_capricorn",
+        "kamenridercraft:evolution_caucasus",
+        "kamenridercraft:change_stag",
+        "kamenridercraft:rapid_pecker",
+        "kamenridercraft:rock_tortoise",
+        "kamenridercraft:scope_bat",
+        "kamenridercraft:fusion_peacock",
+        "kamenridercraft:absorb_serpent",
+        "kamenridercraft:evolution_giraffa",
+        "kamenridercraft:change_mantis",
 		"kamenridercraft:rouze_spirit",
-		"kamenridercraft:fusion_eagle"
-	]
+        "kamenridercraft:float_dragonfly",
+        "kamenridercraft:reflect_moth",
+        "kamenridercraft:shuffle_centipede",
+        "kamenridercraft:evolution_paradoxa",
+        "kamenridercraft:screw_mole",
+        "kamenridercraft:gel_jellyfish",
+        "kamenridercraft:smog_squid"
+    ]
 }

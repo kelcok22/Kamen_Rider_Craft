@@ -19,6 +19,8 @@ import net.minecraft.world.level.ServerLevelAccessor;
 
 import javax.annotation.Nullable;
 
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
+
 public class KingUndeadEntity extends UndeadEntity {
     public KingUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
@@ -39,7 +41,7 @@ public class KingUndeadEntity extends UndeadEntity {
         spawnGroupData = super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData);
         RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
-        switch (serverLevelAccessor.getRandom().nextInt(2)) {
+        switch (serverLevelAccessor.getRandom().nextInt(3)) {
             case 0:
                 setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                 RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.EVOLUTION_CAUCASUS_UNDEAD.get(), 1);
@@ -51,6 +53,11 @@ public class KingUndeadEntity extends UndeadEntity {
                 RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.EVOLUTION_GIRAFFA_UNDEAD.get(), 1);
                 setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.GIRAFFA_HELLTAR.get(), 1));
                 setItemInHand(InteractionHand.OFF_HAND, new ItemStack(BladeRiderItems.GIRAFFA_SKELTAR.get(), 1));
+                break;
+            case 2:
+                setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+                RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.EVOLUTION_PARADOXA_UNDEAD.get(), 1);
+                setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.GIRAFFA_SKELTAR.get(), 1));
                 break;
         }
         return spawnGroupData;

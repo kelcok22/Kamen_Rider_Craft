@@ -238,7 +238,7 @@ public class MobsCore {
             () -> EntityType.Builder.of(QueenUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":queen_undead"));
 
     public static final DeferredItem<BaseSpawnEggItem> QUEEN_UNDEAD_SPAWN_EGG = ITEMS.register("queen_undead_spawn_egg",
-            () -> new BaseSpawnEggItem(JACK_UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()).addToList(KRCItemLists.BLADE_SPAWN_EGG));
+            () -> new BaseSpawnEggItem(QUEEN_UNDEAD, 0x0d0d0d, 0xe00000, new Item.Properties()).addToList(KRCItemLists.BLADE_SPAWN_EGG));
 
     public static final DeferredHolder<EntityType<?>, EntityType<KingUndeadEntity>> KING_UNDEAD = MOBLIST.register("king_undead",
             () -> EntityType.Builder.of(KingUndeadEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":king_undead"));
