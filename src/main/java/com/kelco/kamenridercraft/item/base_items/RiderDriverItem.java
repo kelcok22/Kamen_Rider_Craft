@@ -143,7 +143,7 @@ public class RiderDriverItem extends RiderArmorItem {
         return getFormItem(itemStack, 1, form_time + 1) == ModdedItemCore.BLANK_FORM.asItem();
     }
 
-    public static double getRenderType(ItemStack stack, double num) {
+    public double getRenderType(ItemStack stack, double num) {
         double form_double = 1;
         RiderFormChangeItem form = getFormItem(stack, 1, num);
         if (form.getShowFace()) form_double = 2;
