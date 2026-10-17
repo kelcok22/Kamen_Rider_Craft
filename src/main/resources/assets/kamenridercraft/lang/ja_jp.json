@@ -4679,6 +4679,13 @@
 "item.kamenridercraft.zodiarts_switch": "ゾディアーツスイッチ",
 "block.kamenridercraft.hayabusa_kun": "はやぶさくん",
 
+"item.kamenridercraft.burgermeal": "バガミール",
+"item.kamenridercraft.potechokin": "ポテチョキン",
+"item.kamenridercraft.hulashake": "フラシェキー",
+"item.kamenridercraft.horuwankov": "ホルワンコフ",
+"item.kamenridercraft.softonya": "ソフトーニャ",
+"item.kamenridercraft.nuggegyroika": "ナゲジャロイカ",
+
 "kamenridercraft:fourze_basestates.form": "フォーム: ベースステイツ",
 "kamenridercraft:fourze_elekstates.form": "フォーム: エレキステイツ",
 "kamenridercraft:fourze_firestates.form": "フォーム: ファイヤーステイツ",
@@ -5786,7 +5793,7 @@
 "item.kamenridercraft.rear_armed_unit":"リアアームドユニット",
 "item.kamenridercraft.gashacon_sparrow_sickle_a": "ガシャコンスパロー 鎌モード A",
 "item.kamenridercraft.gashacon_sparrow_sickle_b": "ガシャコンスパロー 鎌モード B",
-"item.kamenridercraft.gashacon_sparrow_arrow": "ガシャコンアロー 弓モード",
+"item.kamenridercraft.gashacon_sparrow_arrow": "ガシャコンスパロー 弓モード",
 "item.kamenridercraft.gashacon_bugvisor": "ガシャコンバグヴァイザー",
 "item.kamenridercraft.gashacon_bugvisor_ii": "ガシャコンバグヴァイザーII",
 "item.kamenridercraft.gashacon_bugvisor_g": "ガシャコンバグヴァイザーG",
@@ -6561,7 +6568,8 @@
 "kamenridercraft.name.another_ryuki": "怪人: アナザー龍騎",
 "item.kamenridercraft.another_v_buckle_ryuga": "アナザーVバックル",
 "kamenridercraft.name.another_ryuga": "怪人: アナザーリュウガ",
-
+"item.kamenridercraft.another_quiz_driver": "アナザークイズドライバー",
+"kamenridercraft.name.another_quiz": "怪人: アナザークイズ",
 
 "item.kamenridercraft.zikan_girade": "ジカンギレード",
 "item.kamenridercraft.zikan_zax": "ジカンザックス",
@@ -9704,6 +9712,13 @@
 "entity.kamenridercraft.kujaku_can": "クジャクカンドロイド",
 "entity.kamenridercraft.ptera_can": "プテラカンドロイド",
 "entity.kamenridercraft.torikera_can": "トリケラカンドロイド",
+"entity.kamenridercraft.burgermeal": "バガミール",
+"entity.kamenridercraft.potechokin": "ポテチョキン",
+"entity.kamenridercraft.hulashake": "フラシェキー",
+"entity.kamenridercraft.horuwankov": "ホルワンコフ",
+"entity.kamenridercraft.softonya": "ソフトーニャ",
+"entity.kamenridercraft.nuggegyroika": "ナゲジャロイカ",
+
 
 "entity.kamenridercraft.rider_summon": "ライダー召喚",
 "entity.kamenridercraft.complete_summon": "コンプリート召喚",

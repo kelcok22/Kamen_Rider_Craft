@@ -694,7 +694,7 @@ public class BladeRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
-    public static final DeferredItem<Item> TORDANDO_HAWK = ITEMS.register("tornado_hawk",
+    public static final DeferredItem<Item> TORNADO_HAWK = ITEMS.register("tornado_hawk",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
