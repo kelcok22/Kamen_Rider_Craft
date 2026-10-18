@@ -16,7 +16,7 @@ public class MagnetCannonRenderLayerInfo extends RenderLayerInfo {
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
                                  MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
-        model.getBone("cannonRight").ifPresent(cannonRight -> cannonRight.setRotX((float) entity.getLookAngle().y));
-        model.getBone("cannonLeft").ifPresent(cannonLeft -> cannonLeft.setRotX((float) entity.getLookAngle().y));
+        model.getBone("cannonRight").ifPresent(cannonRight -> cannonRight.setRotX((float) entity.getLookAngle().y/2));
+        model.getBone("cannonLeft").ifPresent(cannonLeft -> cannonLeft.setRotX((float) entity.getLookAngle().y/2));
     }
 }
