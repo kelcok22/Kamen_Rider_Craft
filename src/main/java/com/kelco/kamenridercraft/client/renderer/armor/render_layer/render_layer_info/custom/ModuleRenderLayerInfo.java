@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_laye
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -32,12 +33,12 @@ public class ModuleRenderLayerInfo extends RenderLayerInfo {
     }
 
     public RenderType getRenderType(float partialTick, LivingEntity RIDER) {
-        if (RiderDriverItem.isTransformingFromBlank(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER)||RiderDriverItem.isTransforming(RIDER)&&RiderDriverItem.wasSlotChanged(RIDER.getItemBySlot(EquipmentSlot.FEET),Slot))return RenderType.debugLineStrip(20);
+        if (RiderDriverItem.isTransformingFromBlank(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER)||RiderDriverItem.isTransforming(RIDER)&&RiderDriverItem.wasSlotChanged(RIDER.getItemBySlot(EquipmentSlot.FEET),Slot)&&RIDER.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()<21)return RenderType.debugLineStrip(1);
         else return super.getRenderType(partialTick,RIDER);
     }
 
     public int getColor(float partialTick, LivingEntity RIDER) {
-        if (RiderDriverItem.isTransformingFromBlank(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER)||RiderDriverItem.isTransforming(RIDER)&&RiderDriverItem.wasSlotChanged(RIDER.getItemBySlot(EquipmentSlot.FEET),Slot))return LineColor;
+        if (RiderDriverItem.isTransformingFromBlank(RIDER.getItemBySlot(EquipmentSlot.FEET),RIDER)||RiderDriverItem.isTransforming(RIDER)&&RiderDriverItem.wasSlotChanged(RIDER.getItemBySlot(EquipmentSlot.FEET),Slot)&&RIDER.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()<21)return LineColor;
         else return Color.WHITE.getColor();
     }
 }

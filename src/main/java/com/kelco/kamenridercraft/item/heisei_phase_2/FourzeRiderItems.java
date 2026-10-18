@@ -390,7 +390,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -420,7 +420,7 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -444,7 +444,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.DRILL, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -468,7 +468,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.RADAR, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -495,7 +495,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -520,7 +520,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -547,7 +547,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 6, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -574,7 +574,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -597,7 +597,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 5, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -620,7 +620,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.THUNDER_SLASH, 40, 0, true, false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -638,7 +638,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -665,7 +665,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.NOTE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -688,7 +688,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 5, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -713,7 +713,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SMOKE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -736,7 +736,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -759,7 +759,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -786,7 +786,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -811,7 +811,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -837,7 +837,7 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -860,7 +860,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.FIRE_SHOT, 40, 0, true, false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -878,7 +878,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.STEALTH, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -900,7 +900,7 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) { public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                 super.transformationEffect(itemstack, player, tick);
-                if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                     if (tick == 30d) {
                         AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -927,7 +927,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -950,7 +950,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0, true, false)) {
         public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                 super.transformationEffect(itemstack, player, tick);
-                if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                     if (tick == 30d) {
                         AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -977,7 +977,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SMOKE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1000,7 +1000,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1023,7 +1023,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SWIFT_SWIM, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1046,7 +1046,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 5, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1069,7 +1069,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4, true, false)) {
         public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                 super.transformationEffect(itemstack, player, tick);
-                if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                     if (tick == 30d) {
                         AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1094,7 +1094,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PULL, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1117,7 +1117,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUSH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1140,7 +1140,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.BLIZZARD, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1163,7 +1163,7 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 4, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1188,7 +1188,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1211,7 +1211,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.GRAVITY, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1234,7 +1234,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 5, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1257,7 +1257,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1283,7 +1283,7 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1306,7 +1306,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
@@ -1329,7 +1329,7 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
