@@ -33,11 +33,7 @@
 				},
 				{
 					"name": "bipedBody",
-					"pivot": [0, 24, 0],
-					"cubes": [
-						{"origin": [4, 24.15, -2], "size": [4, 1, 4], "inflate": 0.1, "uv": [56, 33], "mirror": true},
-						{"origin": [-8, 24.15, -2], "size": [4, 1, 4], "inflate": 0.1, "uv": [56, 33]}
-					]
+					"pivot": [0, 24, 0]
 				},
 				{
 					"name": "armorBody",
@@ -64,7 +60,9 @@
 								"north": {"uv": [18, 36], "uv_size": [2, 12]},
 								"south": {"uv": [16, 36], "uv_size": [2, 12]}
 							}
-						}
+						},
+						{"origin": [4, 24.15, -2], "size": [4, 1, 4], "inflate": 0.1, "uv": [56, 33], "mirror": true},
+						{"origin": [-8, 24.15, -2], "size": [4, 1, 4], "inflate": 0.1, "uv": [56, 33]}
 					]
 				},
 				{

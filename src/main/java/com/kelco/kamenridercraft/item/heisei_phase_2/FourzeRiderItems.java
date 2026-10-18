@@ -1103,6 +1103,32 @@ public class FourzeRiderItems {
                 }
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
+    public static final DeferredItem<Item> INCOMPLETE_MAGNET_ASTROSWITCH_N = ITEMS.register("incomplete_magnet_switch_n",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
+                    , new MobEffectInstance(EffectCore.PULL, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                        if (tick == 30d) {
+                            AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
+                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                        }else if (tick == 2d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 10, 0, 0, 0, 0.05);
+                        }
+                    }
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10){
+                        layerInfo.add(new RenderLayerInfo("module/fourze_magnet_n", "default"));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_n_module", "module/fourze_magnet_n_module", Color.RED.getColor(), 1));
+                    }
+                }
+            }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+
+
+
     public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_switch_n",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
                     , new MobEffectInstance(EffectCore.PULL, 40, 2, true, false)) {
@@ -1125,7 +1151,32 @@ public class FourzeRiderItems {
                             layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_n_module", "module/fourze_magnet_n_module", Color.RED.getColor(), 1));
                     }
                 }
-            }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+            }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+
+
+    public static final DeferredItem<Item> INCOMPLETE_MAGNET_ASTROSWITCH_S = ITEMS.register("incomplete_magnet_switch_s",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
+                    , new MobEffectInstance(EffectCore.PUSH, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                        if (tick == 30d) {
+                            AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
+                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                        }else if (tick == 2d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 10, 0, 0, 0, 0.05);
+                        }
+                    }
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10){
+                        layerInfo.add(new RenderLayerInfo("module/fourze_magnet_s", "default"));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_s_module", "module/fourze_magnet_s_module", Color.BLUE.getColor(), 4));
+                    }
+                }
+            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> MAGNET_ASTROSWITCH_S = ITEMS.register("magnet_switch_s",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
@@ -1149,7 +1200,7 @@ public class FourzeRiderItems {
                             layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_s_module", "module/fourze_magnet_s_module", Color.BLUE.getColor(), 4));
                     }
                 }
-            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> FREEZE_ASTROSWITCH = ITEMS.register("freeze_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
@@ -1377,9 +1428,10 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> SUPER_LAUNCHER_ASTROSWITCH = ITEMS.register("super_launcher_switch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt") {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-
-                        layerInfo.add(new RenderLayerInfo("module/fourze_super_launcher_module", "module/fourze_super_launcher_module"));
+                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
+                          layerInfo.add(new ModuleRenderLayerInfo("fourze_launcher", "fourze_launcher_arms", Color.BLUE.getColor(), 3));
+                          layerInfo.add(new ModuleRenderLayerInfo("module/fourze_super_launcher_module", "module/fourze_super_launcher_module", Color.BLUE.getColor(), 3));
+                      }
                 }
             }.setFormDelay(20).setSlotTwoAbility("cannon", 1).changeSlot(3).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).alsoChange2ndSlot(LAUNCHER_ASTROSWITCH.get()).resetFormToBase().addToList(FOURZE_TAB_ITEM));
 
