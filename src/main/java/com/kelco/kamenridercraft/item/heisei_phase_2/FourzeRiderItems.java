@@ -1125,7 +1125,7 @@ public class FourzeRiderItems {
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_n_module", "module/fourze_magnet_n_module", Color.RED.getColor(), 1));
                     }
                 }
-            }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+            }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).useBasicModel().addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
 
 
@@ -1176,7 +1176,7 @@ public class FourzeRiderItems {
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_s_module", "module/fourze_magnet_s_module", Color.BLUE.getColor(), 4));
                     }
                 }
-            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).useBasicModel().addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> MAGNET_ASTROSWITCH_S = ITEMS.register("magnet_switch_s",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"

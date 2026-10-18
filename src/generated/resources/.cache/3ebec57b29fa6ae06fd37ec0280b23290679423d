@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-17T03:10:10.9750489	Item Models: kamenridercraft
+// 1.21.1	2026-10-18T19:54:03.3034208	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -414,6 +414,8 @@ b1c78e08516a5e35e9a9de67edca3b315ae7bd18 assets/kamenridercraft/models/item/icon
 0cc52e10e76ad344a52028e033ec9f37efb680b5 assets/kamenridercraft/models/item/impact_capsem.json
 4d1cbe9721b141db0217f8682ab6f4a78ed075e4 assets/kamenridercraft/models/item/impact_capsem_gold.json
 70fff411d889e89b8e513e61aee086da00b89f61 assets/kamenridercraft/models/item/impact_capsem_shock.json
+eaa302b0cea376f35d6186576bd5a16b24a434f7 assets/kamenridercraft/models/item/incomplete_magnet_switch_n.json
+84e4c80b82fd63b9d5609256a3599b1100848e7e assets/kamenridercraft/models/item/incomplete_magnet_switch_s.json
 8b5d75860f71750d3905a3d57c74a2b704970ef2 assets/kamenridercraft/models/item/inphoenix_ride_chemy_card.json
 938ca676afbf13a42dcf6a44e7202d7838cab86e assets/kamenridercraft/models/item/inphoenix_ride_chemy_card_televikun.json
 5cadeba4ba8d6d10eca1787ffe0aad9afb440148 assets/kamenridercraft/models/item/insomnia_visor.json
