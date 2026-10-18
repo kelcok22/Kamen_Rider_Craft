@@ -6582,6 +6582,8 @@
 "kamenridercraft.name.another_ryuga": "Kaijin: Another Ryuga",
 "item.kamenridercraft.another_quiz_driver": "Another Quiz Driver",
 "kamenridercraft.name.another_quiz": "Kaijin: Another Quiz",
+"item.kamenridercraft.another_arcle": "Another Arcle",
+"kamenridercraft.name.another_kuuga": "Kaijin: Another Kuuga",
 
 "item.kamenridercraft.zikan_girade": "Zikan Girade",
 "item.kamenridercraft.zikan_zax": "Zikan Zax",
@@ -6809,6 +6811,10 @@
 "item.kamenridercraft.another_shinobi_watch": "Another Shinobi Watch",
 "item.kamenridercraft.another_quiz_watch": "Another Quiz Watch",
 "item.kamenridercraft.another_kikai_watch": "Another Kikai Watch",
+"item.kamenridercraft.another_kuuga_ultimate_watch": "Another Ultimate Kuuga Watch",
+
+"kamenridercraft:another_kuuga_watch.form": "Form: Base Form",
+"kamenridercraft:another_kuuga_ultimate_watch.form": "Form: Ultimate",
 
 "item.kamenridercraft.shuriken_starter": "Shuriken Starter (Shinobi)",
 "item.kamenridercraft.shuriken_starter_hattari": "Shuriken Starter (Hattari)",

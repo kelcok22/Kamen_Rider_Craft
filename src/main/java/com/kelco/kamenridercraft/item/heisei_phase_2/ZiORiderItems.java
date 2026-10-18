@@ -1915,7 +1915,18 @@ public class ZiORiderItems {
             () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_KUUGA_WATCH = ITEMS.register("another_kuuga_watch",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "another_kuuga", "another_arcle_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.BIG, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.changeBeltModel("geo/belts/another_arclebelt.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM));
 
     public static final DeferredItem<Item> ANOTHER_AGITO_WATCH = ITEMS.register("another_agito_watch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_agito_zio", "another_altering_belt",
@@ -2522,6 +2533,10 @@ public class ZiORiderItems {
     public static final DeferredItem<Item> GINGADRIVER = ITEMS.register("ginga_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ginga", GINGA_SCOPE, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
                     new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
+
+    public static final DeferredItem<Item> ANOTHER_ARCLE = ITEMS.register("another_arcle",
+            () -> new AnotherArcleItem(ArmorMaterials.DIAMOND, "another_kuuga", ANOTHER_KUUGA_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
+                    new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZI_O_TAB_ITEM).changeRepairItem(BLANK_RIDEWATCH.get()));
 
     public static final DeferredItem<Item> ANOTHER_ALTERING = ITEMS.register("another_altering",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_agito_zio", ANOTHER_AGITO_WATCH, ZI_O_HELMET, ZI_O_CHESTPLATE, ZI_O_LEGGINGS,
