@@ -39,7 +39,7 @@ public class JackUndeadEntity extends UndeadEntity {
         spawnGroupData = super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData);
         RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
-        switch (serverLevelAccessor.getRandom().nextInt(2)) {
+        switch (serverLevelAccessor.getRandom().nextInt(3)) {
             case 0:
                 setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                 RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.FUSION_EAGLE_UNDEAD.get(), 1);
@@ -48,6 +48,10 @@ public class JackUndeadEntity extends UndeadEntity {
                 setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                 RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.FUSION_PEACOCK_UNDEAD.get(), 1);
                 setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(BladeRiderItems.PEACOCK_SWORTHER.get(), 1));
+                break;
+            case 2:
+                setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+                RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.FUSION_WOLF_UNDEAD.get(), 1);
                 break;
         }
         return spawnGroupData;

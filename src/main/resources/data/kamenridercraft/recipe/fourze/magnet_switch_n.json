@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "magnet_switches",
+	"pattern": [
+		"X",
+		"X",
+		"Z"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
+		},
+		"Z": {
+          "item": "kamenridercraft:incomplete_magnet_switch_n"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:magnet_switch_n"
+	}
+}

@@ -757,8 +757,44 @@ public class BladeRiderItems {
             }.addSwitchForm(SEALABLE_SHUFFLE_CENTIPEDE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
+    public static final DeferredItem<Item> SEALABLE_FUSION_WOLF = ITEMS.register("sealable_fusion_wolf",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wolf", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape().useBasicModel().setModelName("fusion_wolf"));
+
+    public static final DeferredItem<Item> FUSION_WOLF_UNDEAD = ITEMS.register("fusion_wolf_undead",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wolf", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape().addSwitchForm(SEALABLE_FUSION_WOLF.get()).useBasicModel().setModelName("fusion_wolf"));
+
     public static final DeferredItem<Item> FUSION_WOLF = ITEMS.register("fusion_wolf",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wolf_undead", "chalice", "chalice_rouzer_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape().addAlternative(FUSION_WOLF_UNDEAD.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ABSORB_ORCHID = ITEMS.register("absorb_orchid",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLADE_TAB_ITEM));

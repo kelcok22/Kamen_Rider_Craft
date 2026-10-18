@@ -29,6 +29,8 @@
 		"kamenridercraft:screw_switch",
 		"kamenridercraft:hand_switch",
 		"kamenridercraft:scoop_switch",
+        "kamenridercraft:incomplete_magnet_switch_n",
+        "kamenridercraft:incomplete_magnet_switch_s",
 		"kamenridercraft:magnet_switch_n",
 		"kamenridercraft:magnet_switch_s",
 		"kamenridercraft:freeze_switch",
