@@ -199,8 +199,8 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> FOURZE_LAUNCHER_STATES = ITEMS.register("fourze_launcherstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_launcher", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
-                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
 
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     if (tick == 30d&RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
@@ -1379,9 +1379,9 @@ public class FourzeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                       if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new RenderLayerInfo("module/fourze_super_launcher_module", "default"));
+                        layerInfo.add(new RenderLayerInfo("module/fourze_super_launcher_module", "module/fourze_super_launcher_module"));
                 }
-            }.setFormDelay(20).setSlotTwoAbility("cannon", 1).changeSlot(2).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).resetFormToBase().addToList(FOURZE_TAB_ITEM));
+            }.setFormDelay(20).setSlotTwoAbility("cannon", 1).changeSlot(3).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).alsoChange2ndSlot(LAUNCHER_ASTROSWITCH.get()).resetFormToBase().addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_DRILL_ASTROSWITCH = ITEMS.register("super_drill_switch",
             () -> new BaseItem(new Item.Properties()).addToList(FOURZE_TAB_ITEM));
