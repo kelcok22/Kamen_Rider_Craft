@@ -578,18 +578,8 @@
 					]
 				},
 				{
-					"name": "rightItem",
-					"parent": "bipedRightArm",
-					"pivot": [-5, 27.3, 0]
-				},
-				{
 					"name": "bipedLeftArm",
 					"pivot": [4, 23.3, 0]
-				},
-				{
-					"name": "leftItem",
-					"parent": "bipedLeftArm",
-					"pivot": [5, 27.3, 0]
 				},
 				{
 					"name": "armorLeftArm",
