@@ -21,53 +21,44 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
-public record IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output, java.util.Map<ResourceLocation, Integer> weights
-) implements Recipe<IxaMachineRecipeInput> {
+public record IxaMachineRecipe(Ingredient primaryInput, Optional<Ingredient> optionalInput, List<WeightedOutput> outputs) implements Recipe<IxaMachineRecipeInput> {
 
-    public IxaMachineRecipe(Ingredient first, Ingredient second, ItemStack output) {
-        this(NonNullList.create(), output, java.util.Map.of());
-        this.inputs.add(first);
-        this.inputs.add(second);
-    }
-    public IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output) {
-        this(inputs, output, java.util.Map.of());
-    }
 
-    public IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output, java.util.Map<ResourceLocation, Integer> weights) {
-        this.inputs = inputs;
-        this.output = output;
-        this.weights = java.util.Map.copyOf(weights);
+    public static final MapCodec<IxaMachineRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
+            Ingredient.CODEC.fieldOf("primary_input").forGetter(IxaMachineRecipe::primaryInput),
+
+            Ingredient.CODEC.optionalFieldOf("optional_input").forGetter(IxaMachineRecipe::optionalInput),
+
+            WeightedOutput.CODEC.listOf().fieldOf("outputs").forGetter(IxaMachineRecipe::outputs)
+    ).apply(inst, IxaMachineRecipe::new));
+
+    public static final StreamCodec<RegistryFriendlyByteBuf, IxaMachineRecipe> STREAM_CODEC = StreamCodec.composite(
+            Ingredient.CONTENTS_STREAM_CODEC, IxaMachineRecipe::primaryInput,
+            ByteBufCodecs.optional(Ingredient.CONTENTS_STREAM_CODEC), IxaMachineRecipe::optionalInput,
+            WeightedOutput.STREAM_CODEC.apply(ByteBufCodecs.list()), IxaMachineRecipe::outputs,
+            IxaMachineRecipe::new
+    );
+
+    @Override
+    public boolean matches(IxaMachineRecipeInput input, Level level) {
+        if (input.size() < 2) return false;
+        ItemStack slot0 = input.getItem(0);
+        ItemStack slot1 = input.getItem(1);
+
+        if (!this.primaryInput.test(slot0)) return false;
+
+        if (this.optionalInput.isPresent()) {
+            return this.optionalInput.get().test(slot1);
+        } else {
+            return slot1.isEmpty();
+        }
     }
 
     @Override
-    public @NotNull RecipeSerializer<?> getSerializer() {
-        return ModRecipes.IXA_MACHINE_BLOCK_SERIALIZER.get();
-    }
-
-    @Override
-    public @NotNull NonNullList<Ingredient> getIngredients() {
-        return NonNullList.copyOf(inputs);
-    }
-
-
-    @Override
-    public boolean matches(@NotNull IxaMachineRecipeInput recipeInput, Level level) {
-        if (level.isClientSide) return false;
-        if (recipeInput.size() < 2 || inputs.size() < 2) return false;
-
-        ItemStack in0 = recipeInput.getItem(0);
-        ItemStack in1 = recipeInput.getItem(1);
-        Ingredient a = inputs.get(0);
-        Ingredient b = inputs.get(1);
-
-        return (a.test(in0) && b.test(in1)) || (a.test(in1) && b.test(in0));
-    }
-
-
-    @Override
-    public ItemStack assemble(@NotNull IxaMachineRecipeInput ixaMachineRecipeInput, HolderLookup.@NotNull Provider provider) {
-        return output.copy();
+    public ItemStack assemble(IxaMachineRecipeInput input, HolderLookup.Provider provider) {
+        return ItemStack.EMPTY;
     }
 
     @Override
@@ -77,85 +68,29 @@ public record IxaMachineRecipe(NonNullList<Ingredient> inputs, ItemStack output,
 
     @Override
     public ItemStack getResultItem(HolderLookup.Provider provider) {
-        return output.copy();
+        return ItemStack.EMPTY;
     }
 
     @Override
-    public RecipeType<? extends Recipe<IxaMachineRecipeInput>> getType() {
+    public RecipeSerializer<?> getSerializer() {
+        return ModRecipes.IXA_MACHINE_BLOCK_SERIALIZER.get();
+    }
+
+    @Override
+    public RecipeType<?> getType() {
         return ModRecipes.IXA_MACHINE_BLOCK_TYPE.get();
     }
 
-    public int getWeightFor(net.minecraft.world.item.Item item) {
-        ResourceLocation key = BuiltInRegistries.ITEM.getKey(item);
-        if (key == null) return 1;
-        return Math.max(0, weights.getOrDefault(key, 1));
-    }
+    public record WeightedOutput(ItemStack stack, int weight) {
+        public static final Codec<WeightedOutput> CODEC = RecordCodecBuilder.create(inst -> inst.group(
+                ItemStack.STRICT_CODEC.fieldOf("result").forGetter(WeightedOutput::stack),
+                Codec.INT.fieldOf("weight").forGetter(WeightedOutput::weight)
+        ).apply(inst, WeightedOutput::new));
 
-    public java.util.Map<ResourceLocation, Integer> weights() {
-        return this.weights;
-    }
-
-    public static class Serializer implements RecipeSerializer<IxaMachineRecipe> {
-
-        // Store weights as a simple map of item ids -> int
-        private static final Codec<Map<ResourceLocation, Integer>> WEIGHTS_CODEC =
-                Codec.unboundedMap(ResourceLocation.CODEC, Codec.INT);
-
-
-    public static final MapCodec<IxaMachineRecipe> CODEC = RecordCodecBuilder.mapCodec(instance ->
-            instance.group(
-                    Ingredient.CODEC_NONEMPTY.listOf().fieldOf("ingredients")
-                            .flatXmap(list -> {
-                                        NonNullList<Ingredient> nnl = NonNullList.create();
-                                        nnl.addAll(list);
-                                        return DataResult.success(nnl);
-                                    },
-                                    (NonNullList<Ingredient> nnl) -> DataResult.success(List.copyOf(nnl)))
-                            .forGetter(IxaMachineRecipe::inputs),
-
-                    ItemStack.CODEC.fieldOf("result").forGetter(IxaMachineRecipe::output),
-
-                    WEIGHTS_CODEC.optionalFieldOf("weights", java.util.Map.of())
-                            .forGetter(IxaMachineRecipe::weights)
-            ).apply(instance, IxaMachineRecipe::new)
-    );
-
-    public static final StreamCodec<RegistryFriendlyByteBuf, IxaMachineRecipe> STREAM_CODEC = StreamCodec.of(
-            // encode
-            (buf, recipe) -> {
-                ByteBufCodecs.collection(NonNullList::createWithCapacity, Ingredient.CONTENTS_STREAM_CODEC)
-                        .encode(buf, recipe.inputs);
-                ItemStack.STREAM_CODEC.encode(buf, recipe.output());
-                var weights = recipe.weights();
-                buf.writeVarInt(weights.size());
-                for (var e : weights.entrySet()) {
-                    buf.writeResourceLocation(e.getKey());
-                    buf.writeVarInt(e.getValue());
-                }
-            },
-            buf -> {
-                NonNullList<Ingredient> decodedInputs =
-                        ByteBufCodecs.collection(NonNullList::createWithCapacity, Ingredient.CONTENTS_STREAM_CODEC).decode(buf);
-                ItemStack result = ItemStack.STREAM_CODEC.decode(buf);
-                int size = buf.readVarInt();
-                java.util.Map<ResourceLocation, Integer> weights = new java.util.HashMap<>();
-                for (int i = 0; i < size; ++i) {
-                    ResourceLocation id = buf.readResourceLocation();
-                    int w = buf.readVarInt();
-                    weights.put(id, w);
-                }
-                return new IxaMachineRecipe(decodedInputs, result, weights);
-            }
-    );
-
-        @Override
-        public @NotNull MapCodec<IxaMachineRecipe> codec() {
-            return CODEC;
-        }
-
-        @Override
-        public @NotNull StreamCodec<RegistryFriendlyByteBuf, IxaMachineRecipe> streamCodec() {
-            return STREAM_CODEC;
-        }
+        public static final StreamCodec<RegistryFriendlyByteBuf, WeightedOutput> STREAM_CODEC = StreamCodec.composite(
+                ItemStack.STREAM_CODEC, WeightedOutput::stack,
+                ByteBufCodecs.INT, WeightedOutput::weight,
+                WeightedOutput::new
+        );
     }
 }

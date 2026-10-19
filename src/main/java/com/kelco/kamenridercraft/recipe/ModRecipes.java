@@ -15,12 +15,24 @@ public class ModRecipes {
             DeferredRegister.create(Registries.RECIPE_TYPE, KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<IxaMachineRecipe>> IXA_MACHINE_BLOCK_SERIALIZER =
-            SERIALIZERS.register("ixa_machine_block", IxaMachineRecipe.Serializer::new);
+            SERIALIZERS.register("fuestle_replicator", () -> new RecipeSerializer<IxaMachineRecipe>() {
+                @Override
+                public com.mojang.serialization.MapCodec<IxaMachineRecipe> codec() {
+                    return IxaMachineRecipe.CODEC;
+                }
+
+                @Override
+                public net.minecraft.network.codec.StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf, IxaMachineRecipe> streamCodec() {
+                    return IxaMachineRecipe.STREAM_CODEC;
+                }
+            });
+
+
     public static final DeferredHolder<RecipeType<?>, RecipeType<IxaMachineRecipe>> IXA_MACHINE_BLOCK_TYPE =
-            TYPES.register("ixa_machine_block", () -> new RecipeType<>() {
+            TYPES.register("fuestle_replicator", () -> new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return "ixa_machine_block";
+                    return "fuestle_replicator";
                 }
             });
 

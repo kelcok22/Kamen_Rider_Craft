@@ -1,18 +1,22 @@
 {
-	"type": "kamenridercraft:ixa_machine_block",
-	"ingredients": [
+	"type": "kamenridercraft:fuestle_replicator",
+	"primary_input": {
+		"item": "kamenridercraft:fuestlefake"
+	},
+	"outputs": [
 		{
-			"item": "kamenridercraft:fuestlefake"
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:knucklefuestle"
+			},
+			"weight": 15
 		},
 		{
-			"item": "kamenridercraft:rider_circuit"
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:caliburfuestle"
+			},
+			"weight": 7
 		}
-	],
-	"result": {
-		"count": 1,
-		"id": "kamenridercraft:knucklefuestle"
-	},
-	"weights": {
-		"kamenridercraft:caliburfuestle": 0
-	}
+	]
 }

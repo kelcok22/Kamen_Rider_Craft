@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:fuestle_replicator",
+	"primary_input": {
+		"item": "kamenridercraft:fuestlefake"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:doggafuestle"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:fakedoggafuestle"
+			},
+			"weight": 15
+		}
+	]
+}

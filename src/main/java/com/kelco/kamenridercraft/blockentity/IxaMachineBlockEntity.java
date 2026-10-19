@@ -31,211 +31,237 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
 public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
-    public final ItemStackHandler itemHandler = new ItemStackHandler(11) {
+
+    private static final int INPUT_SLOT = 0;
+    private static final int OPTIONAL_INPUT_SLOT = 1;
+    private static final int FIRST_OUTPUT_SLOT = 2;
+    private static final int INVENTORY_SIZE = 11;
+    private static final int MAX_PROGRESS = 72;
+
+    private static final String DATA_TAG = "kamenridercraft_data";
+    private static final String INVENTORY_TAG = "Inventory";
+    private static final String PROGRESS_TAG = "Progress";
+
+    private final ItemStackHandler inventory = new ItemStackHandler(INVENTORY_SIZE) {
         @Override
         protected void onContentsChanged(int slot) {
-            if (!level.isClientSide()) {
-                setChanged();
-                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
-            }
+            setChanged();
+
+            if(level == null || level.isClientSide) return;
+            level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
         }
     };
 
-    public static void clientTick(Level level, BlockPos pos, BlockState state, IxaMachineBlockEntity be) {
-    }
-
-    private static final int INPUT_SLOT = 0;
-    private static final int MODIFIER_SLOT = 1;
-    private static final int OUTPUT_SLOT_1 = 2;
-    private static final int OUTPUT_SLOT_2 = 3;
-    private static final int OUTPUT_SLOT_3 = 4;
-    private static final int OUTPUT_SLOT_4 = 5;
-    private static final int OUTPUT_SLOT_5 = 6;
-    private static final int OUTPUT_SLOT_6 = 7;
-    private static final int OUTPUT_SLOT_7 = 8;
-    private static final int OUTPUT_SLOT_8 = 9;
-    private static final int OUTPUT_SLOT_9 = 10; //Output
-    private String lastItem = "";
-    private String lastModifier = "";
-
-    protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 72;
 
-    protected NonNullList<ItemStack> items = NonNullList.withSize(11, ItemStack.EMPTY);
-
-
-    public IxaMachineBlockEntity(BlockPos pos, BlockState blockState) {
-        super(ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(), pos, blockState);
-        data = new ContainerData() {
-            @Override
-            public int get(int i) {
-                return switch (i) {
-                    case 0 -> progress;
-                    case 1 -> maxProgress;
-                    default -> 0;
-                };
-            }
-
-            @Override
-            public void set(int i, int value) {
-                switch (i) {
-                    case 0:
-                        progress = value;
-                    case 1:
-                        maxProgress = value;
-                }
-            }
-
-            @Override
-            public int getCount() {
-                return 2;
-            }
-        };
-    }
-
-    @Override
-    public @NotNull Component getDisplayName() {
-        return Component.translatable(KamenRiderCraftCore.MOD_ID + ":ixa_machine_entity");
-    }
-
-    @Override
-    @Nullable
-    public AbstractContainerMenu createMenu(int i, @NotNull Inventory inventory, @NotNull Player player) {
-        return new IxaMachineBlockGuiMenu(i, inventory, this, data);
-    }
-
-    public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-        for (int i = 0; i < itemHandler.getSlots(); ++i) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
-        }
-
-        Containers.dropContents(level, worldPosition, inventory);
-    }
-
-    @Override
-    protected void saveAdditional(CompoundTag pTag, HolderLookup.@NotNull Provider pRegistries) {
-        pTag.put("inventory", itemHandler.serializeNBT(pRegistries));
-        pTag.putInt("machine_block.progress", progress);
-        pTag.putInt("machine_block.max_progress", maxProgress);
-
-        super.saveAdditional(pTag, pRegistries);
-    }
-
-    @Override
-    protected void loadAdditional(@NotNull CompoundTag pTag, HolderLookup.@NotNull Provider pRegistries) {
-        super.loadAdditional(pTag, pRegistries);
-
-        itemHandler.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
-        progress = pTag.getInt("machine_block.progress");
-        maxProgress = pTag.getInt("machine_block.max_progress");
-    }
-
-    public void tick(Level level, BlockPos pos, BlockState state) {
-        if (itemHandler.getStackInSlot(INPUT_SLOT).isEmpty() || !itemHandler.getStackInSlot(INPUT_SLOT).toString().equals(lastItem) || !itemHandler.getStackInSlot(MODIFIER_SLOT).toString().equals(lastModifier)) {
-            progress = 0;
-            lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
-            lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
-        }
-        if (progress >= 72) {
-            progress = 0;
-            maxProgress = 72;
-            craftItem();
-            setChanged(level, pos, state);
-        } else if (hasRecipe() && isOutputSlotsEmptyorReceivable()) {
-            ++progress;
-            lastItem = itemHandler.getStackInSlot(INPUT_SLOT).toString();
-            lastModifier = itemHandler.getStackInSlot(MODIFIER_SLOT).toString();
-            setChanged(level, pos, state);
-        } else {
-            progress = 0;
-        }
-    }
-
-    private void craftItem() {
-        ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
-        ItemStack modifier = itemHandler.getStackInSlot(MODIFIER_SLOT);
-        ItemStack output = new ItemStack(KivaRiderItems.FAKE_FUESTLE.get(), 1);
-        int[] slots = {OUTPUT_SLOT_1, OUTPUT_SLOT_2, OUTPUT_SLOT_3, OUTPUT_SLOT_4, OUTPUT_SLOT_5, OUTPUT_SLOT_6, OUTPUT_SLOT_7, OUTPUT_SLOT_8, OUTPUT_SLOT_9};
-
-        if (material.getItem() == KivaRiderItems.FAKE_FUESTLE.get()) {
-            output = switch (modifier.getItem().toString()) {
-                case "kamenridercraft:doggafuestle" -> new ItemStack(KivaRiderItems.FAKE_DOGGA_FUESTLE.get(), 1);
-                case "kamenridercraft:basshaafuestle" -> new ItemStack(KivaRiderItems.FAKE_BASSHAA_FUESTLE.get(), 1);
-                case "kamenridercraft:garulufuestle" -> new ItemStack(KivaRiderItems.FAKE_GARULU_FUESTLE.get(), 1);
-                default -> switch (new Random().nextInt(3)) {
-                    case 0 -> new ItemStack(KivaRiderItems.KNUCKLE_FUESTLE.get(), 1);
-                    case 1 -> new ItemStack(KivaRiderItems.CALIBUR_FUESTLE.get(), 1);
-                    case 2 -> new ItemStack(KivaRiderItems.RISER_FUESTLE.get(), 1);
-                    default -> output;
-                };
+    protected final ContainerData data = new ContainerData() {
+        @Override
+        public int get(int index) {
+            return switch(index) {
+                case 0 -> progress;
+                case 1 -> MAX_PROGRESS;
+                default -> 0;
             };
         }
 
-        for (int slot : slots) {
-            ItemStack current = itemHandler.getStackInSlot(slot);
-
-            if (current.isEmpty()) {
-                itemHandler.setStackInSlot(slot, output);
-                itemHandler.extractItem(INPUT_SLOT, 1, false);
-                itemHandler.extractItem(MODIFIER_SLOT, 1, false);
-                return;
-            }
-
-            if (current.getItem() == output.getItem() && current.getCount() + output.getCount() <= current.getMaxStackSize()) {
-                itemHandler.setStackInSlot(slot, new ItemStack(current.getItem(), current.getCount() + output.getCount()));
-                itemHandler.extractItem(INPUT_SLOT, 1, false);
-                itemHandler.extractItem(MODIFIER_SLOT, 1, false);
-                return;
-            }
+        @Override
+        public void set(int index, int value) {
+            if(index == 0) progress = value;
         }
+
+        @Override
+        public int getCount() {
+            return 2;
+        }
+    };
+
+    public IxaMachineBlockEntity(BlockPos pos, BlockState blockState) {
+        super(ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(), pos, blockState);
     }
 
-    private boolean isOutputSlotsEmptyorReceivable() {
-        return itemHandler.getStackInSlot(OUTPUT_SLOT_1).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_2).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_3).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_4).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_5).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_6).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_7).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_8).isEmpty() || itemHandler.getStackInSlot(OUTPUT_SLOT_9).isEmpty() ||
-                itemHandler.getStackInSlot(OUTPUT_SLOT_1).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_1).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_2).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_2).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_3).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_3).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_4).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_4).getMaxStackSize() ||
-                itemHandler.getStackInSlot(OUTPUT_SLOT_5).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_5).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_6).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_6).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_7).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_7).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_8).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_8).getMaxStackSize() || itemHandler.getStackInSlot(OUTPUT_SLOT_9).getCount() < itemHandler.getStackInSlot(OUTPUT_SLOT_9).getMaxStackSize();
+    public static void tick(Level level, BlockPos pos, BlockState state, IxaMachineBlockEntity forge) {
+        if(level.isClientSide()) return;
+
+        Optional<RecipeHolder<IxaMachineRecipe>> currentRecipe = forge.getCurrentRecipe(level);
+
+        if(currentRecipe.isEmpty()) {
+            forge.resetProgress();
+            return;
+        }
+
+        if(!forge.hasAnyOutputRoom()) {
+            forge.resetProgress();
+            return;
+        }
+
+        forge.progress++;
+        setChanged(level, pos, state);
+        level.sendBlockUpdated(pos, state, state, 3);
+
+        if(forge.progress < MAX_PROGRESS) return;
+
+        forge.replicateFuestle(currentRecipe.get().value());
+        forge.progress = 0;
     }
 
-    private boolean hasRecipe() {
-        ItemStack material = itemHandler.getStackInSlot(INPUT_SLOT);
-        ItemStack modifier = itemHandler.getStackInSlot(MODIFIER_SLOT);
-        if (material.getItem() == KivaRiderItems.FUESTLE.get() && modifier.isEmpty()) {
-            return true;
+    private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe(Level level) {
+        IxaMachineRecipeInput recipeInput = new IxaMachineRecipeInput(
+                this.inventory.getStackInSlot(INPUT_SLOT),
+                this.inventory.getStackInSlot(OPTIONAL_INPUT_SLOT)
+        );
+
+        return level.getRecipeManager()
+                .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), recipeInput, level);
+    }
+
+    private void resetProgress() {
+        if(this.progress == 0) return;
+        this.progress = 0;
+        setChanged();
+    }
+
+    private boolean hasAnyOutputRoom() {
+        for(int slot = FIRST_OUTPUT_SLOT; slot < this.inventory.getSlots(); slot++) {
+            ItemStack stack = this.inventory.getStackInSlot(slot);
+
+            if(stack.isEmpty()) return true;
+            if(stack.getCount() < stack.getMaxStackSize()) return true;
         }
-        if (material.getItem() == KivaRiderItems.FAKE_FUESTLE.get()) {
-            if (modifier.isEmpty() || modifier.getItem() == KivaRiderItems.GARULU_FUESTLE.get() || modifier.getItem() == KivaRiderItems.BASSHAA_FUESTLE.get() || modifier.getItem() == KivaRiderItems.DOGGA_FUESTLE.get()) {
-                return true;
-            }
-            ;
-        }
+
         return false;
     }
 
-    private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe() {
-        assert level != null;
-        return level.getRecipeManager()
-                .getRecipeFor(ModRecipes.IXA_MACHINE_BLOCK_TYPE.get(), new IxaMachineRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT), itemHandler.getStackInSlot(MODIFIER_SLOT)), level);
+    private boolean canOutputFit(ItemStack output) {
+        if(output.isEmpty()) return false;
+
+        for(int slot = FIRST_OUTPUT_SLOT; slot < this.inventory.getSlots(); slot++) {
+            ItemStack slotStack = this.inventory.getStackInSlot(slot);
+
+            if(slotStack.isEmpty()) return true;
+            if(!ItemStack.isSameItemSameComponents(slotStack, output)) continue;
+
+            int combinedCount = slotStack.getCount() + output.getCount();
+            if(combinedCount <= slotStack.getMaxStackSize()) return true;
+        }
+
+        return false;
+    }
+
+    private void replicateFuestle(IxaMachineRecipe recipe) {
+        ItemStack chosenOutput = selectRandomOutput(recipe.outputs());
+
+        if(chosenOutput.isEmpty()) return;
+        if(!canOutputFit(chosenOutput)) return;
+
+        this.inventory.getStackInSlot(INPUT_SLOT).shrink(1);
+        consumeOptionalInput(recipe);
+        insertOutput(chosenOutput);
+    }
+
+    private void consumeOptionalInput(IxaMachineRecipe recipe) {
+        if(recipe.optionalInput().isEmpty()) return;
+
+        ItemStack modifierStack = this.inventory.getStackInSlot(OPTIONAL_INPUT_SLOT);
+
+        // This acts as a reusable modifier.
+        if(modifierStack.is(KivaRiderItems.KIVA_LOGO.get())) return;
+
+        if(modifierStack.getItem().hasCraftingRemainingItem()) {
+            ItemStack remainder = new ItemStack(modifierStack.getItem().getCraftingRemainingItem());
+            this.inventory.setStackInSlot(OPTIONAL_INPUT_SLOT, remainder);
+            return;
+        }
+
+        modifierStack.shrink(1);
+    }
+
+    private void insertOutput(ItemStack output) {
+        ItemStack remainder = output.copy();
+
+        for(int slot = FIRST_OUTPUT_SLOT; slot < this.inventory.getSlots(); slot++) {
+            remainder = this.inventory.insertItem(slot, remainder, false);
+            if(remainder.isEmpty()) return;
+        }
+    }
+
+    private ItemStack selectRandomOutput(List<IxaMachineRecipe.WeightedOutput> pool) {
+        if(pool.isEmpty() || this.level == null) return ItemStack.EMPTY;
+
+        int totalWeight = 0;
+        for(IxaMachineRecipe.WeightedOutput output : pool) {
+            if(output.weight() > 0) totalWeight += output.weight();
+        }
+
+        if(totalWeight <= 0) return ItemStack.EMPTY;
+
+        int roll = this.level.random.nextInt(totalWeight);
+
+        for(IxaMachineRecipe.WeightedOutput output : pool) {
+            if(output.weight() <= 0) continue;
+
+            roll -= output.weight();
+            if(roll < 0) return output.stack().copy();
+        }
+
+        return ItemStack.EMPTY;
     }
 
     @Override
-    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider pRegistries) {
-        return saveWithoutMetadata(pRegistries);
+    protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+        super.saveAdditional(tag, registries);
+
+        CompoundTag modData = new CompoundTag();
+        modData.put(INVENTORY_TAG, this.inventory.serializeNBT(registries));
+        modData.putInt(PROGRESS_TAG, this.progress);
+
+        tag.put(DATA_TAG, modData);
+    }
+
+    @Override
+    protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+        super.loadAdditional(tag, registries);
+
+        if(!tag.contains(DATA_TAG)) return;
+
+        CompoundTag modData = tag.getCompound(DATA_TAG);
+
+        if(modData.contains(INVENTORY_TAG)) {
+            this.inventory.deserializeNBT(registries, modData.getCompound(INVENTORY_TAG));
+        }
+
+        this.progress = modData.getInt(PROGRESS_TAG);
+    }
+
+    public ItemStackHandler getInventory() {
+        return this.inventory;
+    }
+
+    @Override
+    public Component getDisplayName() {
+        return Component.translatable("block.kamenridercraft.ixa_machine_block");
     }
 
     @Nullable
     @Override
-    public Packet<ClientGamePacketListener> getUpdatePacket() {
+    public AbstractContainerMenu createMenu(int id, Inventory playerInventory, Player player) {
+        return new IxaMachineBlockGuiMenu(id, playerInventory, this, this.data);
+    }
+
+    @Nullable
+    @Override
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
         return ClientboundBlockEntityDataPacket.create(this);
     }
 
     @Override
-    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt, HolderLookup.Provider lookupProvider) {
-        super.onDataPacket(net, pkt, lookupProvider);
+    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+        CompoundTag tag = super.getUpdateTag(registries);
+        saveAdditional(tag, registries);
+        return tag;
     }
 }

@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "emperor",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:knucklefuestle"
+		},
+		{
+			"item": "kamenridercraft:fakegarulufuestle"
+		},
+		{
+			"item": "kamenridercraft:fakebasshaafuestle"
+		},
+		{
+			"item": "kamenridercraft:fakedoggafuestle"
+		},
+		{
+			"item": "kamenridercraft:caliburfuestle"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:risingfuestle"
+	}
+}

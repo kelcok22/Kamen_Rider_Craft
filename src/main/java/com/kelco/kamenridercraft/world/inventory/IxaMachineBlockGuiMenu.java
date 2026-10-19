@@ -1,49 +1,110 @@
 package com.kelco.kamenridercraft.world.inventory;
 
+import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.blockentity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.init.ModMenus;
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import org.jetbrains.annotations.NotNull;
 
 public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
-    public final IxaMachineBlockEntity blockEntity;
+    private final IxaMachineBlockEntity bEntity;
     private final Level level;
     private final ContainerData data;
 
-    public IxaMachineBlockGuiMenu(int containerID, Inventory inv, FriendlyByteBuf extraData) {
-        this(containerID, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(11));
+    public IxaMachineBlockGuiMenu(int containerId, Inventory playerInventory, FriendlyByteBuf extraData) {
+        this(containerId, playerInventory,
+                playerInventory.player.level().getBlockEntity(extraData.readBlockPos()),
+                new SimpleContainerData(2));
     }
 
-    public IxaMachineBlockGuiMenu(int containerID, Inventory inventory, BlockEntity entity, ContainerData containerData) {
-        super(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), containerID);
-        this.blockEntity = ((IxaMachineBlockEntity) entity);
-        this.level = inventory.player.level();
-        this.data = containerData;
-
-        addinventory(inventory);
-        addPlayerHotbar(inventory);
-
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 36, 24));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 36, 49));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 2, 95, 17));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 3, 113, 17));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 4, 131, 17));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 5, 95, 35));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 6, 113, 35));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 7, 131, 35));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 8, 95, 53));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 9, 113, 53));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 10, 131, 53));
+    public IxaMachineBlockGuiMenu(int containerId, Inventory playerInventory, BlockEntity blockEntity, ContainerData data) {
+        super(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), containerId);
+        checkContainerDataCount(data, 2);
+        this.bEntity = (IxaMachineBlockEntity) blockEntity;
+        this.level = playerInventory.player.level();
+        this.data = data;
 
         addDataSlots(data);
+
+        IItemHandler inventory = null;
+        if (blockEntity != null && blockEntity.getLevel() != null) {
+            inventory = blockEntity.getLevel().getCapability(Capabilities.ItemHandler.BLOCK, blockEntity.getBlockPos(), null);
+        }
+
+        if (inventory == null && blockEntity instanceof IxaMachineBlockEntity forgeEntity) {
+            inventory = forgeEntity.getInventory();
+        }
+
+        if (inventory == null) {
+            inventory = new net.neoforged.neoforge.items.ItemStackHandler(11);
+        }
+
+        this.addSlot(new SlotItemHandler(inventory, 0, 36, 25));
+        this.addSlot(new SlotItemHandler(inventory, 1, 36, 50));
+
+        int slotIndex = 2;
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                this.addSlot(new SlotItemHandler(inventory, slotIndex, 95 + (col * 18), 17 + (row * 18)));
+                slotIndex++;
+            }
+        }
+
+        addPlayerInventory(playerInventory);
+        addPlayerHotbar(playerInventory);
+    }
+
+    @Override
+    public ItemStack quickMoveStack(Player player, int index) {
+        Slot sourceSlot = slots.get(index);
+        if (sourceSlot == null || !sourceSlot.hasItem()) return ItemStack.EMPTY;
+
+        ItemStack sourceStack = sourceSlot.getItem();
+        ItemStack copyStack = sourceStack.copy();
+
+        if (index < 11) {
+            if (!this.moveItemStackTo(sourceStack, 14, 47, true)) {
+                return ItemStack.EMPTY;
+            }
+        } else {
+            if (!this.moveItemStackTo(sourceStack, 0, 2, false)) {
+                return ItemStack.EMPTY;
+            }
+        }
+
+        if (sourceStack.isEmpty()) {
+            sourceSlot.setByPlayer(ItemStack.EMPTY);
+        } else {
+            sourceSlot.setChanged();
+        }
+
+        if (sourceStack.getCount() == copyStack.getCount()) {
+            return ItemStack.EMPTY;
+        }
+
+        sourceSlot.onTake(player, sourceStack);
+        return copyStack;
+    }
+
+    @Override
+    public boolean stillValid(Player player) {
+        return stillValid(ContainerLevelAccess.create(level, bEntity.getBlockPos()), player, RiderBlocks.IXA_MACHINE_BLOCK.get());
     }
 
     public boolean isCrafting() {
@@ -58,75 +119,17 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
         return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }
 
-    // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
-    // must assign a slot number to each of the slots used by the GUI.
-    // For this container, we can see both the tile inventory's slots as well as the player inventory slots and the hotbar.
-    // Each time we add a Slot to the container, it automatically increases the slotIndex, which means
-    //  0 - 8 = hotbar slots (which will map to the InventoryPlayer slot numbers 0 - 8)
-    //  9 - 35 = player inventory slots (which map to the InventoryPlayer slot numbers 9 - 35)
-    //  36 - 44 = TileInventory slots, which map to our TileEntity slot numbers 0 - 8)
-    private static final int HOTBAR_SLOT_COUNT = 9;
-    private static final int PLAYER_INVENTORY_ROW_COUNT = 3;
-    private static final int PLAYER_INVENTORY_COLUMN_COUNT = 9;
-    private static final int PLAYER_INVENTORY_SLOT_COUNT = PLAYER_INVENTORY_COLUMN_COUNT * PLAYER_INVENTORY_ROW_COUNT;
-    private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
-    private static final int VANILLA_FIRST_SLOT_INDEX = 0;
-    private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
-
-    // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 11;  // must be the number of slots you have!
-
-    @Override
-    public @NotNull ItemStack quickMoveStack(@NotNull Player player, int pIndex) {
-        Slot sourceSlot = slots.get(pIndex);
-        if (!sourceSlot.hasItem()) {
-            return ItemStack.EMPTY;  //EMPTY_ITEM
-        }
-        ItemStack sourceStack = sourceSlot.getItem();
-        ItemStack copyOfSourceStack = sourceStack.copy();
-
-        // Check if the slot clicked is one of the vanilla container slots
-        if (pIndex < VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT) {
-            // This is a vanilla container slot so merge the stack into the tile inventory
-            if (!moveItemStackTo(sourceStack, TE_INVENTORY_FIRST_SLOT_INDEX, TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT, false)) {
-                return ItemStack.EMPTY;  // EMPTY_ITEM
-            }
-        } else if (pIndex < TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT) {
-            // This is a TE slot so merge the stack into the players inventory
-            if (!moveItemStackTo(sourceStack, VANILLA_FIRST_SLOT_INDEX, VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT, false)) {
-                return ItemStack.EMPTY;
-            }
-        } else {
-            return ItemStack.EMPTY;
-        }
-        // If stack size == 0 (the entire stack was moved) set slot contents to null
-        if (sourceStack.getCount() == 0) {
-            sourceSlot.set(ItemStack.EMPTY);
-        } else {
-            sourceSlot.setChanged();
-        }
-        sourceSlot.onTake(player, sourceStack);
-        return copyOfSourceStack;
-    }
-
-    @Override
-    public boolean stillValid(@NotNull Player player) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), player, RiderBlocks.IXA_MACHINE_BLOCK.get());
-    }
-
-
-    private void addinventory(Inventory inventory) {
-        for (int i = 0; i < 3; ++i) {
-            for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(inventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
+    private void addPlayerInventory(Inventory playerInventory) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 9; j++) {
+                this.addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
             }
         }
     }
 
-
-    private void addPlayerHotbar(Inventory inventory) {
-        for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(inventory, i, 8 + i * 18, 142));
+    private void addPlayerHotbar(Inventory playerInventory) {
+        for (int i = 0; i < 9; i++) {
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
 }

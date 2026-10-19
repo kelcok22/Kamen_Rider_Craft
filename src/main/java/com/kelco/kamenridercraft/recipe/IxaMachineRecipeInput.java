@@ -6,26 +6,37 @@ import net.minecraft.world.item.crafting.RecipeInput;
 import java.util.List;
 import java.util.Objects;
 
-public record IxaMachineRecipeInput(List<ItemStack> inputs) implements RecipeInput {
+public record IxaMachineRecipeInput(ItemStack primary, ItemStack modifier) implements RecipeInput {
 
-    public IxaMachineRecipeInput {
-        Objects.requireNonNull(inputs, "inputItem");
-        ItemStack first = Objects.requireNonNullElse(inputs.get(0), ItemStack.EMPTY);
-        ItemStack second = Objects.requireNonNullElse(inputs.get(1), ItemStack.EMPTY);
-        inputs = List.of(first, second);
-    }
+        @Override
+        public ItemStack getItem(int index) {
+            return index == 0 ? primary : (index == 1 ? modifier : ItemStack.EMPTY);
+        }
 
-    public IxaMachineRecipeInput(ItemStack first, ItemStack second) {
-        this(List.of(first, second));
-    }
+        @Override
+        public int size() {
+            return 2;
+        }
 
-    @Override
-    public ItemStack getItem(int i) {
-        return inputs.get(i);
-    }
+        @Override
+        public boolean isEmpty() {
+            return primary.isEmpty() && modifier.isEmpty();
+        }
 
-    @Override
-    public int size() {
-        return inputs.size();
+        // CRITICAL FIX: Explicitly enforce value-based equivalence checks.
+        // Minecraft's recipe manager cache checks this heavily during the server tick loop!
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (!(obj instanceof IxaMachineRecipeInput other)) return false;
+            return ItemStack.isSameItemSameComponents(this.primary, other.primary)
+                    && ItemStack.isSameItemSameComponents(this.modifier, other.modifier);
+        }
+
+        @Override
+        public int hashCode() {
+            int result = ItemStack.hashItemAndComponents(primary);
+            result = 31 * result + ItemStack.hashItemAndComponents(modifier);
+            return result;
+        }
     }
-}

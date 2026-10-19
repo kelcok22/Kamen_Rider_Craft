@@ -128,8 +128,7 @@ public class RiderBlocks {
                     .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
 
     public static final DeferredBlock<Block> IXA_MACHINE_BLOCK = registerBlock("ixa_machine_block",
-            () -> new IxaMachineBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+            () -> new IxaMachineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> 0).strength(2f).noOcclusion().dynamicShape()).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
 
     public static final DeferredBlock<Block> KIVA_ORE = registerBlock("stone_kiva",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
