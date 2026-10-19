@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T19:54:03.3034208	Item Models: kamenridercraft
+// 1.21.1	2026-10-19T00:34:16.8045926	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -94,6 +94,8 @@ b2ac10fb3e6fe05f3176807fb95ebbfa19fecfb5 assets/kamenridercraft/models/item/blue
 749afe2758fc6a4b5b895cdabbd8484140153625 assets/kamenridercraft/models/item/blust_vent.json
 22b89755d4560e0cf2b2eb8a5d7617cb38cb4cd5 assets/kamenridercraft/models/item/bonchiage_gochizo.json
 5546e0ac96c75d815c133e24a575b30720ea11f6 assets/kamenridercraft/models/item/booster_capsem.json
+ca67e0d5e7adf1804b6c83c757719ec08586d5dc assets/kamenridercraft/models/item/boot_driver.json
+fc4d3f00d5f87aab9f3e8f155b535ac1df251026 assets/kamenridercraft/models/item/boot_switch.json
 18a7f92fde30ac6f288bdf359c92f361d73cd89a assets/kamenridercraft/models/item/bountybunny_ride_chemy_card.json
 190ef9ecda38fb8dc9a7a77656118ceb3cbe972d assets/kamenridercraft/models/item/brave_dragon_wonder_ride_book_xross.json
 150123fc052142a04768c6c73b2faa84075f9cc4 assets/kamenridercraft/models/item/breacookie_gochizo.json
@@ -279,6 +281,7 @@ fc989a7da2361aa925334eccd9d1f5622d8c3ea4 assets/kamenridercraft/models/item/full
 84f8e0e7a608ecc45c8e586c4e1acd589bd6e544 assets/kamenridercraft/models/item/fusion_eagle_undead.json
 c858b91bab8d0b038deff4f3f136c9a7f8998c37 assets/kamenridercraft/models/item/fusion_peacock_undead.json
 e33c8e730e575e0bffc587414cd2b904de330af3 assets/kamenridercraft/models/item/fusion_switch_og.json
+eb07e4da38d6c0789753321282fb2aa4a0b8eede assets/kamenridercraft/models/item/fusion_wolf_undead.json
 0926fe847c52312fb2c87e5642e9f55b2c691bee assets/kamenridercraft/models/item/fuwamallow_gochizo_lemon.json
 cfcd3eba4c644b0f7e91ab6fb068eaf5cc200b27 assets/kamenridercraft/models/item/g6.json
 ef8b0a0ccbf245089a523d8d8045b0ab42df744b assets/kamenridercraft/models/item/g7.json
@@ -679,6 +682,7 @@ a75a81a28e9f91a58c2daee9a8293d9e51b4ce95 assets/kamenridercraft/models/item/seal
 1354838fcc64bdf9e033478519421c410a557422 assets/kamenridercraft/models/item/sealable_float_dragonfly.json
 84f8e0e7a608ecc45c8e586c4e1acd589bd6e544 assets/kamenridercraft/models/item/sealable_fusion_eagle.json
 c858b91bab8d0b038deff4f3f136c9a7f8998c37 assets/kamenridercraft/models/item/sealable_fusion_peacock.json
+eb07e4da38d6c0789753321282fb2aa4a0b8eede assets/kamenridercraft/models/item/sealable_fusion_wolf.json
 b7f7ba9d36c706fc48a29fb0f832b20e4970c6a7 assets/kamenridercraft/models/item/sealable_gel_jellyfish.json
 42f377166b545e2ded2e89d3ac16ea4bc11f8a54 assets/kamenridercraft/models/item/sealable_kick_locust.json
 3a4a0723b2c4f0854e2b6e498862072de6443ab9 assets/kamenridercraft/models/item/sealable_mach_jaguar.json

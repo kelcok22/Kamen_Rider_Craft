@@ -1547,6 +1547,31 @@ public class FourzeRiderItems {
                 }
             }.addAlternative(NADESHIKO_ASTROSWITCH_FUSION.get()).changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().addToList(FOURZE_TAB_ITEM));
 
+    public static final DeferredItem<Item> BOOT_ASTROSWITCH = ITEMS.register("boot_switch",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "boot", "boot_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())&&!RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, "fourze.switch_1.hit");
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    }else  AnimationUtil.forcePlayPose(player, "fourze.henshin");
+
+                    if (RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                player.getX(), player.getY() + 0.5,
+                                player.getZ(), 100, 0, 0, 0, 0.05);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.05);
+                    }
+                }
+            }.useBasicModel().addToList(FOURZE_TAB_ITEM));
+
+
     public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ikaros", "ikaros_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
@@ -2257,9 +2282,14 @@ public class FourzeRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "nadeshiko", NADESHIKO_ASTROSWITCH, FOURZE_HELMET, FOURZE_CHESTPLATE, FOURZE_LEGGINGS,
                     new Item.Properties()).addToList(FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
+    public static final DeferredItem<Item> BOOT_DRIVER = ITEMS.register("boot_driver",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "boot", BOOT_ASTROSWITCH, FOURZE_HELMET, FOURZE_CHESTPLATE, FOURZE_LEGGINGS,
+                    new Item.Properties()).addToList(FOURZE_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_ASTROSWITCH.get()));
+
     public static final DeferredItem<Item> IKAROS_DRIVER = ITEMS.register("ikaros_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ikaros", IKAROS_ASTROSWITCH, FOURZE_HELMET, FOURZE_CHESTPLATE, FOURZE_LEGGINGS,
                     new Item.Properties()).hideBeltFormInfo().addToList(FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
+
 
 
     public static final DeferredItem<Item> GINGA_OH_DRIVER = ITEMS.register("ginga_oh_driver",
