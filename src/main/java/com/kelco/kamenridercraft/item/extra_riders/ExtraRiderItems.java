@@ -26,6 +26,9 @@ public class ExtraRiderItems {
     public static final DeferredItem<Item> RIDERMAN_HELMET = ITEMS.register("riderman_helmet",
             () -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(),"riderman","riderman").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
+	public static final DeferredItem<Item> ANOTHER_AGITO_HELMET = ITEMS.register("another_agito_helmet",
+			() -> new BasicArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties(),"another_agito_zio","another_agito").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+
 	public static final DeferredItem<Item> TOJIMA_TAKOYAKI = ITEMS.register("tojima_takoyaki",
 			() -> new ToujimaTakoyakiItem(new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 

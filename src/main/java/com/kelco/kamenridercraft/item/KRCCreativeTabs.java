@@ -847,6 +847,7 @@ public class KRCCreativeTabs {
             for (int i = 0; i < ZI_O_TAB_ITEM.size(); ++i) {
                 event.accept(ZI_O_TAB_ITEM.get(i));
             }
+            event.accept(ExtraRiderItems.ANOTHER_AGITO_HELMET);
             event.accept(MusicDiscItems.OVER_QUARTZER_MUSIC_DISC);
             event.accept(MusicDiscItems.IZANAGI_MUSIC_DISC);
             event.accept(MusicDiscItems.P_A_R_T_Y_UNIVERSE_FESTIVAL_MUSIC_DISC);
