@@ -169,6 +169,25 @@ public class KuugaRiderItems {
                 }
             }.setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).IsBeltGlowing().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KUUGA_TAB_ITEM));
 
+    public static final DeferredItem<Item> KUUGA_ULTIMATE_ANOTHER = ITEMS.register("kuuga_ultimate_another",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_ultimate", "another_kuuga", "another_arcle_belt_ultimate",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.BIG, 40, 3, true, false),
+                    new MobEffectInstance(EffectCore.FIRE_ARMOR, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.changeBeltModel("geo/belts/another_arclebelt.geo.json").setModelName("kuuga_ultimate"));
+
+
     public static final DeferredItem<Item> KUUGA_ULTIMATE = ITEMS.register("kuuga_ultimate",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_ultimate", "kuuga", "arcle_belt_u",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
@@ -186,7 +205,7 @@ public class KuugaRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
-            }.setSlotOneAbility("rider_punch", 1).IsBeltGlowing().isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KUUGA_TAB_ITEM));
+            }.setSlotOneAbility("rider_punch", 1).IsBeltGlowing().isGlowing().addAlternative(KUUGA_ULTIMATE_ANOTHER.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KUUGA_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_ULTIMATE_BLACK_EYES = ITEMS.register("kuuga_ultimate_black_eyes",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_ultimate_black_eyes", "kuuga", "arcle_belt_ru",
