@@ -6,12 +6,13 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.InstantenousMobEffect;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 
 import java.util.Random;
 
-public class NoteEffect extends InstantenousMobEffect {
+public class NoteEffect extends MobEffect {
 
 
     public NoteEffect(MobEffectCategory mobEffectCategory, int color) {

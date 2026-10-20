@@ -216,6 +216,30 @@ public class AgitoRiderItems {
                 }
             }.isGlowing().hasCape().addToList(AGITO_TAB_ITEM));
 
+    public static final DeferredItem<Item> AGITO_MIRACLE_WORLD= ITEMS.register("agito_miracle_world",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "agito_miracle_world", "alter_ring_belt_b",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.DARK_AURA, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 20d) {
+                        AnimationUtil.playPose(player, "agito.burning_henshin");
+                    } else if (tick == 2d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.setHenshinTick(20).setFormDelay(1).isGlowing().IsBeltGlowing().useBasicModel().setModelName("agito_burning").addToList(AGITO_TAB_ITEM));
+
+
     public static final DeferredItem<Item> MIRAGE_AGITO = ITEMS.register("agito_miracle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), "", "mirage_agito", "alter_ring_mirage_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4, true, false),
@@ -517,6 +541,9 @@ public class AgitoRiderItems {
     public static final DeferredItem<Item> V1_BELT = ITEMS.register("v1_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "v1", V1_CHIP, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().addToList(AGITO_TAB_ITEM).changeRepairItem(BLANK_G_SYSTEM_CHIP.get()));
+
+    public static final DeferredItem<Item> ALTERING_MIRACLE_WORLD = ITEMS.register("alter_ring_miracle_world",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "agito_miracle_world", AGITO_MIRACLE_WORLD, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties().rarity(Rarity.EPIC)).hideBeltFormInfo().useBasicModel().addToList(AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
     public static final DeferredItem<Item> ALTERING_MIRAGE = ITEMS.register("alter_ring_miracle",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mirage_agito", MIRAGE_AGITO, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties().rarity(Rarity.EPIC)).addToList(AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));

@@ -1,8 +1,9 @@
-// 1.21.1	2026-10-19T00:34:16.8045926	Item Models: kamenridercraft
+// 1.21.1	2026-10-20T01:15:07.1489555	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
 7d4b1a29fa5dd6041434bcfeaf3cd36fa83516d8 assets/kamenridercraft/models/item/agito_gochizo.json
+23007cf96d9d5dec5e8249e7ec940f120505dd39 assets/kamenridercraft/models/item/agito_miracle_world.json
 a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agito_ride_chemy_card.json
 530e5ba778dd4e7d9f6fa47d8a7a0d2de245dbb1 assets/kamenridercraft/models/item/agito_ring.json
 6d5634426eeb42c0d0b168f6237855cc5b6d9aee assets/kamenridercraft/models/item/agito_shining_ride_chemy_card.json
@@ -12,6 +13,7 @@ a9a12013ccbc0d6683a57e21a10424ced50291c9 assets/kamenridercraft/models/item/agit
 f37454f2188e9645571e5f203373e90858403e13 assets/kamenridercraft/models/item/almondtirol_gochizo.json
 cbcfef6e1dd9bc816ee1ba3f1191091abe04e866 assets/kamenridercraft/models/item/alpha_driver.json
 4544ed64b5ca8d3edd751cd6d03f9a9910be47ca assets/kamenridercraft/models/item/alpha_mission_memory.json
+22ba70e5672a6d71bb098c8174d64e0254516d8b assets/kamenridercraft/models/item/alter_ring_miracle_world.json
 1f8a7cadfb067713e154036dceb24a46514d7a02 assets/kamenridercraft/models/item/amazingummy_gochizo.json
 feab0d48b27c8f624e97fdb09f4a749bb3f08e36 assets/kamenridercraft/models/item/amazing_circus.json
 ce973dd1513cd696dc0c0e5de5b64821c34c0e66 assets/kamenridercraft/models/item/amazon_gochizo.json
