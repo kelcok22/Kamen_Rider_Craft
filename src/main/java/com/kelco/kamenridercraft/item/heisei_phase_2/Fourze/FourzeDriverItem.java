@@ -155,7 +155,7 @@ public class FourzeDriverItem extends RiderDriverItem {
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
         super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
         double henshin_tick = getHenshinTick(itemStack, rider);
-        if (slot==EquipmentSlot.HEAD&&isTransformingFromBlank(itemStack,rider)&&henshin_tick<21)layerInfo.add(new FourzeRingRenderLayerInfo());
+        if (slot==EquipmentSlot.HEAD&&isTransformingFromBlank(itemStack,rider)&&henshin_tick<23)layerInfo.add(new FourzeRingRenderLayerInfo());
     }
 
         @Override

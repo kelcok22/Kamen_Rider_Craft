@@ -16,7 +16,7 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 public class FourzeRingRenderLayerInfo extends RenderLayerInfo {
     public FourzeRingRenderLayerInfo() {
-        super("fourze_ring", "fourze_ring","fourze_ring");
+        super("fourze_ring", "fourze_ring","fourze_ring_glowmask");
     }
 
     private float xOffset(float tickCount) {
@@ -28,10 +28,10 @@ public class FourzeRingRenderLayerInfo extends RenderLayerInfo {
         GeoBone storm = model.getBone("spin").orElse(null);
         GeoBone henshin_ring = model.getBone("henshin_ring").orElse(null);
         if (storm != null) {
-            double henshin_tick = -entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue()+partialTick;
+            double henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue()-partialTick;
             if (henshin_tick<10 ){henshin_tick=10;}
             storm.setRotY((entity.tickCount + partialTick)/2.5f);
-            henshin_ring.setPosY((float) henshin_tick);
+            henshin_ring.setPosY((float)-henshin_tick+25);
         }
     }
 

@@ -65,10 +65,13 @@ public class FourzeRiderItems {
                         AnimationUtil.playPose(player, "fourze.henshin");
                     }
                         if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
-                            if (tick == 10d) {
+                            if (tick> 15d&tick<25d) {
                                 ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                                         player.getX(), player.getY() + 0.5,
-                                        player.getZ(), 100, 0, 0, 0, 0.05);
+                                        player.getZ(), 10, 0.5, 0.5, 0.5, 0.01);
+                            }
+
+                            if (tick == 10d) {
                                 ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                                         player.getX(), player.getY() + 1,
                                         player.getZ(), 7, 0, 0, 0, 0.05);
