@@ -292,10 +292,11 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
                         }
                     }
                 }
@@ -313,10 +314,11 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
                         }
                     }
                 }
@@ -326,10 +328,11 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
                         }
                     }
                 }
@@ -339,10 +342,11 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
                         }
                     }
                 }
@@ -838,7 +842,7 @@ public class FourzeRiderItems {
                         if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_shield_module", "module/fourze_shield_module",Color.WHITE.getColor(),4));
+                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem()!=SHIELD_MODULE.asItem())layerInfo.add(new ModuleRenderLayerInfo("module/fourze_shield_module", "module/fourze_shield_module",Color.WHITE.getColor(),4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));

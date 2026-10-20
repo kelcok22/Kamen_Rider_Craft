@@ -1,6 +1,8 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.Fourze;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.FourzeRingRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
@@ -104,8 +106,7 @@ public class FourzeDriverItem extends RiderDriverItem {
             setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
         }
 
-            if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()
-                    || getFormItem(belt, 5) == FourzeRiderItems.FOURZE_FUSION_STATES.get()) {
+            if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()) {
                 if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
                         || getFormItem(belt, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() && getFormItem(belt, 2) != FourzeRiderItems.NADESHIKO_ASTROSWITCH_FUSION.get()
                         || getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get()) {
@@ -119,7 +120,15 @@ public class FourzeDriverItem extends RiderDriverItem {
             if (getFormItem(belt, 2) == FourzeRiderItems.NADESHIKO_ASTROSWITCH_FUSION.get() & getFormItem(belt, 5) != FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()) {
                 setFormItemNoExtra(belt, FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.asItem(), 2);
             }
-
+        if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_FUSION_STATES.get()) {
+            if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()) {
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+                setFormItemNoExtra(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
+            } else if (getFormItem(belt, 4) != FourzeRiderItems.FUSION_ASTROSWITCH.get()
+                    & getFormItem(belt, 4) != FourzeRiderItems.FUSION_ASTROSWITCH_OG.get()) {
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+            }
+        }
 
 
             if ((getFormItem(belt, 1) == FourzeRiderItems.MAGNET_ASTROSWITCH_N.get()
@@ -143,7 +152,13 @@ public class FourzeDriverItem extends RiderDriverItem {
 
     }
 
-    @Override
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        double henshin_tick = getHenshinTick(itemStack, rider);
+        if (slot==EquipmentSlot.HEAD&&isTransformingFromBlank(itemStack,rider)&&henshin_tick<21)layerInfo.add(new FourzeRingRenderLayerInfo());
+    }
+
+        @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity livingEntity, String riderName) {
         boolean fly = livingEntity.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1;
         double henshin_tick = getHenshinTick(itemstack, livingEntity);
