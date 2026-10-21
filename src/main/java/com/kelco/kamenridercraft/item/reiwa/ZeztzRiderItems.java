@@ -957,6 +957,11 @@ public class ZeztzRiderItems {
                 }
             } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> SHADOW_CAPSEM_NIGHTMARE = ITEMS.register("shadow_capsem_nightmare",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","shadow_nightmare","shadow_nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).isGlowing());
+
+
     public static final DeferredItem<Item> SHADOW_CAPSEM = ITEMS.register("shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nox","nox_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -972,7 +977,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addAlternative(SHADOW_CAPSEM_NIGHTMARE.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_CAPSEM = ITEMS.register("gun_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_gun","nox","nox_driver_belt_gun",
@@ -1003,6 +1008,12 @@ public class ZeztzRiderItems {
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE = ITEMS.register("midnight_shadow_capsem_nightmare",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_midnight","shadow_nightmare","shadow_nightmare_midnight_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).changeModel("shadow_nightmare.geo.json"));
+
     public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM = ITEMS.register("midnight_shadow_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_midnight_shadow","nox","nox_driver_belt_midnight_shadow",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
@@ -1019,7 +1030,7 @@ public class ZeztzRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addAlternative(MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_CAPSEM = ITEMS.register("catastrophe_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","catastrophe_gore_nightmare","catastrophe_gore_nightmare_belt",
@@ -1206,13 +1217,6 @@ public class ZeztzRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(),"","nightmare","nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).isGlowing());
 
-    public static final DeferredItem<Item> NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW = ITEMS.register("nightmare_capsem_midnight",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_midnight","shadow_nightmare","shadow_nightmare_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).changeModel("shadow_nightmare.geo.json"));
-
-
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
             () -> new RiderFormChangeItem(new Item.Properties(),"ider","code_zero","blank",
                     new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 4,true,false),
@@ -1364,8 +1368,8 @@ public class ZeztzRiderItems {
                     .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_NIGHTMARE_BELT = ITEMS.register("shadow_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().overrideBeltText("shadow_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_nightmare", SHADOW_CAPSEM_NIGHTMARE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_GORE_NIGHTMARE_BELT = ITEMS.register("catastrophe_gore_nightmare_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"catastrophe_gore_nightmare", CATASTROPHE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
