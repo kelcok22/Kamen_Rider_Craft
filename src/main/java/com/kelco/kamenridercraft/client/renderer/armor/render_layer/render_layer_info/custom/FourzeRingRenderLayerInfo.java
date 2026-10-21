@@ -30,7 +30,7 @@ public class FourzeRingRenderLayerInfo extends RenderLayerInfo {
         if (storm != null) {
             double henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue()-partialTick;
             if (henshin_tick<10 ){henshin_tick=10;}
-            storm.setRotY((entity.tickCount + partialTick)/2.5f);
+            storm.setRotY((entity.tickCount + partialTick)/5f);
             henshin_ring.setPosY((float)-henshin_tick+25);
         }
     }

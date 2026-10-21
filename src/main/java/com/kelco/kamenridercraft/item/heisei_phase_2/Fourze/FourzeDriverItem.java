@@ -9,11 +9,15 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -26,6 +30,9 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
+
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.IS_TRANSFORMING;
 
 public class FourzeDriverItem extends RiderDriverItem {
     public FourzeDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
@@ -62,6 +69,22 @@ public class FourzeDriverItem extends RiderDriverItem {
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
+    public void beltTick(ItemStack itemstack, Level level, LivingEntity player, int slotId) {
+        super.beltTick(itemstack,level,player,slotId);
+        if (itemstack.has(DataComponents.CUSTOM_DATA)) {
+            if (!player.level().isClientSide()) {
+                double tick = Objects.requireNonNull(player.getAttribute(IS_TRANSFORMING)).getBaseValue();
+                if (RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "fourze.henshin");
+                    }
+                    if (tick> 15d&tick<25d) {
+                       ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                player.getX(), player.getY() + 0.5,
+                                player.getZ(), 10, 0.5, 0.5, 0.5, 0.01);
+                    }
+            }}
+        } }
 
     @Override
     public void inventoryTick(ItemStack itemStack, Level level, Entity entity, int slotId, boolean isSelected) {
@@ -215,9 +238,6 @@ public class FourzeDriverItem extends RiderDriverItem {
         switch (currentSlot) {
             case HEAD -> {
                 return true;
-            }
-            case CHEST-> {
-                return false;
             }
         }
         return false;
