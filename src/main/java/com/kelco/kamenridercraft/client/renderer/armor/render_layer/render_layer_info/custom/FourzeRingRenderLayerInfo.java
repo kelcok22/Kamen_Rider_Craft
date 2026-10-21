@@ -16,7 +16,7 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 public class FourzeRingRenderLayerInfo extends RenderLayerInfo {
     public FourzeRingRenderLayerInfo() {
-        super("fourze_ring", "fourze_ring","fourze_ring_glowmask");
+        super("fourze_ring", "transforming/fourze_ring","fourze_ring_glowmask");
     }
 
     private float xOffset(float tickCount) {
