@@ -9,7 +9,6 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.HyperZecterBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterBeltItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kabuto.WristZecterRBeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -549,50 +548,50 @@ public class KabutoRiderItems {
                     .useBasicModel().setModelName("kickhopper_zecter"));
 
 
-    public static final DeferredItem<Item> KABUTOHELMET = ITEMS.register("kabutohead",
+    public static final DeferredItem<Item> KABUTO_HELMET = ITEMS.register("kabutohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
-    public static final DeferredItem<Item> KABUTOCHESTPLATE = ITEMS.register("kabutotroso",
+    public static final DeferredItem<Item> KABUTO_CHESTPLATE = ITEMS.register("kabutotroso",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
-    public static final DeferredItem<Item> KABUTOLEGGINGS = ITEMS.register("kabutolegs",
+    public static final DeferredItem<Item> KABUTO_LEGGINGS = ITEMS.register("kabutolegs",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
 
 
     public static final DeferredItem<Item> KABUTO_RIDER_BELT = ITEMS.register("kabuto_rider_belt",
-            () -> new HyperZecterBeltItem(ArmorMaterials.DIAMOND, "kabuto", KABUTO_ZECTER_MASK, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new HyperZecterBeltItem(ArmorMaterials.DIAMOND, "kabuto", KABUTO_ZECTER_MASK, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> GATACK_RIDER_BELT = ITEMS.register("gatack_rider_belt",
-            () -> new HyperZecterBeltItem(ArmorMaterials.DIAMOND, "gatack", GATACK_ZECTER_MASK, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new HyperZecterBeltItem(ArmorMaterials.DIAMOND, "gatack", GATACK_ZECTER_MASK, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> THEBEE_RIDER_BELT = ITEMS.register("thebee_rider_belt",
-            () -> new WristZecterBeltItem(ArmorMaterials.DIAMOND, "thebee", THEBEE_ZECTER_MASK, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new WristZecterBeltItem(ArmorMaterials.DIAMOND, "thebee", THEBEE_ZECTER_MASK, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> DRAKE_RIDER_BELT = ITEMS.register("drake_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "drake", DRAKE_ZECTER_MASK, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "drake", DRAKE_ZECTER_MASK, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> SASWORD_RIDER_BELT = ITEMS.register("sasword_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "sasword", SASWORD_ZECTER_MASK, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "sasword", SASWORD_ZECTER_MASK, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> KICKHOPPER_RIDER_BELT = ITEMS.register("kickhopper_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kickhopper", KICKHOPPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kickhopper", KICKHOPPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> PUNCHHOPPER_RIDER_BELT = ITEMS.register("puchhopper_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "punchhopper", PUNCHHOPPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "punchhopper", PUNCHHOPPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> DARK_KABUTO_RIDER_BELT = ITEMS.register("dark_kabuto_rider_belt",
-            () -> new HyperZecterBeltItem(ArmorMaterials.DIAMOND, "dark_kabuto", DARK_KABUTO_ZECTER_MASK, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new HyperZecterBeltItem(ArmorMaterials.DIAMOND, "dark_kabuto", DARK_KABUTO_ZECTER_MASK, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> CAUCASUS_RIDER_BELT = ITEMS.register("caucasus_rider_belt",
-            () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "caucasus", CAUCASUS_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "caucasus", CAUCASUS_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> HERCUS_RIDER_BELT = ITEMS.register("hercus_rider_belt",
-            () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "hercus", HERCUS_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "hercus", HERCUS_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> KETAROS_RIDER_BELT = ITEMS.register("ketaros_rider_belt",
-            () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "ketaros", KETAROS_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new WristZecterRBeltItem(ArmorMaterials.DIAMOND, "ketaros", KETAROS_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> GIRAFFA_RIDER_BELT = ITEMS.register("giraffa_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "giraffa", GIRAFFA_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "giraffa", GIRAFFA_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> LADY_RIDER_BELT = ITEMS.register("lady_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lady", LADY_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lady", LADY_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> ZECTROOPER_BELT = ITEMS.register("zectrooper_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zectrooper", ZECTROOPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zectrooper", ZECTROOPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> SHADOW_TROOPER_BELT = ITEMS.register("shadow_trooper_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "shadow_trooper", ZECTROOPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "shadow_trooper", ZECTROOPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> BRIGHTROOPER_BELT = ITEMS.register("brightrooper_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "brightrooper", BRIGHTROOPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "brightrooper", BRIGHTROOPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> NEOTROOPER_BELT = ITEMS.register("neotrooper_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "neotrooper", NEOTROOPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "neotrooper", NEOTROOPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()));
     public static final DeferredItem<Item> CHOPHOPPER_RIDER_BELT = ITEMS.register("chophopper_rider_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chophopper", CHOPHOPPER_ZECTER, KABUTOHELMET, KABUTOCHESTPLATE, KABUTOLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()).useBasicModel());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "chophopper", CHOPHOPPER_ZECTER, KABUTO_HELMET, KABUTO_CHESTPLATE, KABUTO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM).changeRepairItem(MINI_ZECTER.get()).useBasicModel());
 
     public static final DeferredItem<Item> CLOCK_UP_PAD = ITEMS.register("clock_up_pad",
             () -> new ClockUpPadItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM));

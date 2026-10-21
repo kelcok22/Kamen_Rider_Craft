@@ -1,20 +1,21 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.effect.SealingEntity;
-import com.kelco.kamenridercraft.entity.mobs.bosses.AceUndeadEntity;
-import com.kelco.kamenridercraft.entity.mobs.bosses.AlbinoJokerUndeadEntity;
-import com.kelco.kamenridercraft.entity.mobs.bosses.JokerUndeadEntity;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
@@ -23,10 +24,13 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
+import org.jetbrains.annotations.NotNull;
 
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.UUID_STORE;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
+import static com.kelco.kamenridercraft.attachments.AttachmentTypes.UUID_STORE;
 import static com.kelco.kamenridercraft.entity.mobs.MobsCore.SEALING_EFFECT;
+import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+import static net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH;
 
 public class UndeadEntity extends BaseHenchmenEntity {
     HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = level().registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
@@ -114,49 +118,107 @@ public class UndeadEntity extends BaseHenchmenEntity {
                 .add(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED, 0.23F)
                 .add(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE, 4.0D)
                 .add(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR, -17.0D)
-                .add(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH, 45.0D);
+                .add(MAX_HEALTH, 45.0D);
     }
 
     public void sealUndead(ServerPlayer sealer) {
         SealingEntity undeadEffect = new SealingEntity(SEALING_EFFECT.get(), level());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
         level().addFreshEntity(undeadEffect);
-        if (this instanceof AceUndeadEntity) {
-            undeadEffect.setData(MOB_STATE, "ace_undead");
-        } else if (this instanceof JokerUndeadEntity) {
-            undeadEffect.setData(MOB_STATE, "joker");
-        } else if (this instanceof AlbinoJokerUndeadEntity) {
-            undeadEffect.setData(MOB_STATE, "albino_joker");
-        }else {
-            undeadEffect.setData(MOB_STATE, "normal_undead");
+        switch (getData(MOB_STATE)) {
+            case "beetle_sealable" -> undeadEffect.setData(MOB_STATE, "beetle");
+            case "stag_sealable" -> undeadEffect.setData(MOB_STATE, "stag");
+            case "mantis_sealable" -> undeadEffect.setData(MOB_STATE, "mantis");
+            case "spider_sealable" -> undeadEffect.setData(MOB_STATE, "spider");
+            case "eagle_sealable" -> undeadEffect.setData(MOB_STATE, "eagle");
+            case "peacock_sealable" -> undeadEffect.setData(MOB_STATE, "peacock");
+            case "wolf_sealable" -> undeadEffect.setData(MOB_STATE, "wolf");
+            case "elephant_sealable" -> undeadEffect.setData(MOB_STATE, "elephant");
+            case "capricorn_sealable" -> undeadEffect.setData(MOB_STATE, "capricorn");
+            case "serpent_sealable" -> undeadEffect.setData(MOB_STATE, "serpent");
+            case "orchid_sealable" -> undeadEffect.setData(MOB_STATE, "orchid");
+            case "tiger_sealable" -> undeadEffect.setData(MOB_STATE, "tiger");
+            case "caucasus_sealable" -> undeadEffect.setData(MOB_STATE, "caucasus");
+            case "giraffa_sealable" -> undeadEffect.setData(MOB_STATE, "giraffa");
+            case "paradoxa_sealable" -> undeadEffect.setData(MOB_STATE, "paradoxa");
+            case "tarantula_sealable" -> undeadEffect.setData(MOB_STATE, "tarantula");
+            case "joker_sealable" -> undeadEffect.setData(MOB_STATE, "joker");
+            case "albino_joker_sealable" -> undeadEffect.setData(MOB_STATE, "albino_joker");
+            case "kerberos_sealable" -> undeadEffect.setData(MOB_STATE, "kerberos");
+            default -> undeadEffect.setData(MOB_STATE, "normal_undead");
         }
         undeadEffect.setData(UUID_STORE, sealer.getStringUUID());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
+
+        if (getClass() == UndeadEntity.class) {
+            double chance = random.nextDouble();
+            int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            if ((chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer))
+                    || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                Mob boss = MobsCore.JACK_UNDEAD.get().create(level());
+                if (lastHurtByPlayer != null && (getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
+                        (RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                .toString().toLowerCase().contains("jack") ||
+                                RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                        .toString().toLowerCase().contains("wild")) ||
+                        lastHurtByPlayer.getInventory().countItem(BladeRiderItems.ROUZE_ABSORBER.get()) != 0)) {
+                    boss = MobsCore.QUEEN_UNDEAD.get().create(level());
+                }
+                if (boss != null) {
+                    boss.moveTo(getX(), getY(), getZ(), getYRot(), 0.0F);
+                    level().addFreshEntity(boss);
+                }
+            }
+        }
+
         setLastHurtByPlayer(null);
         setLastHurtByMob(null);
     }
 
     @Override
+    public void die(@NotNull DamageSource damageSource) {
+        if (isSealable()) {
+            setSealable();
+        } else {
+            super.die(damageSource);
+        }
+    }
+
+    @Override
     public void onDamageTaken(DamageContainer damageContainer) {
-        if (getHealth() < 15 && !getData(MOB_STATE).contains("sealable") && getLastAttacker() instanceof Player player &&
-                player.getInventory().countItem(BladeRiderItems.BLANK_ROUZECARD.get()) > 0) {
-            setData(MOB_STATE, getData(MOB_STATE) + "_sealable");
-            setHealth(3);
-            getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).setBaseValue(3);
+        setSealable();
+        super.onDamageTaken(damageContainer);
+    }
 
-            addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 255, true, false));
-            addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 80, 10, true, false));
-            addEffect(new MobEffectInstance(MobEffects.REGENERATION, 80, 10, true, false));
-            addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 255, true, false));
-            addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, true, false));
-            addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 255, true, false));
-            addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, true, false));
-            addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 255, true, false));
+    public boolean isSealable() {
+        return getHealth() < 15 && !getData(MOB_STATE).contains("sealable") && getLastAttacker() instanceof Player player &&
+                player.getInventory().countItem(BladeRiderItems.BLANK_ROUZECARD.get()) > 0;
+    }
 
-            removeFreeWill();
-            setNoAi(true);
+    public void giveSealableStats() {
+        setData(MOB_STATE, getData(MOB_STATE) + "_sealable");
+        setHealth(3);
+        getAttribute(MAX_HEALTH).setBaseValue(3);
 
-            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
+        addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 80, 10, true, false));
+        addEffect(new MobEffectInstance(MobEffects.REGENERATION, 80, 10, true, false));
+        addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 255, true, false));
+
+        removeFreeWill();
+        setNoAi(true);
+
+        RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
+    }
+
+    public void setSealable() {
+        if (isSealable()) {
+            giveSealableStats();
             switch (getData(MOB_STATE)) {
                 case "locust_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_KICK_LOCUST.get(), 1);
@@ -188,20 +250,38 @@ public class UndeadEntity extends BaseHenchmenEntity {
                 case "mole_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_SCREW_MOLE.get(), 1);
                     break;
-                case "beetle_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_BEETLE.get(), 1);
-                    break;
-                case "stag_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
-                    break;
-                case "spider_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FLOAT_DRAGONFLY.get(), 1);
-                    break;
-                case "mantis_sealable":
-                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_MANTIS.get(), 1);
-                    break;
+//                case "kerberos_sealable":
+//                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_KERBEROS.get(), 1);
+//                    break;
             }
         }
-        super.onDamageTaken(damageContainer);
+    }
+
+    @Override
+    public void remove(RemovalReason reason) {
+        if (isDeadOrDying()) {
+            if (getClass() == UndeadEntity.class) {
+                double chance = random.nextDouble();
+                int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+                if ((chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer))
+                        || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+                    Mob boss = MobsCore.JACK_UNDEAD.get().create(level());
+                    if (lastHurtByPlayer != null && (getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
+                            (RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                    .toString().toLowerCase().contains("jack") ||
+                                    RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                            .toString().toLowerCase().contains("wild")) ||
+                            lastHurtByPlayer.getInventory().countItem(BladeRiderItems.ROUZE_ABSORBER.get()) != 0)) {
+                        boss = MobsCore.QUEEN_UNDEAD.get().create(level());
+                    }
+                    if (boss != null) {
+                        boss.moveTo(getX(), getY(), getZ(), getYRot(), 0.0F);
+                        level().addFreshEntity(boss);
+                    }
+                }
+            }
+        }
+        super.remove(reason);
     }
 }

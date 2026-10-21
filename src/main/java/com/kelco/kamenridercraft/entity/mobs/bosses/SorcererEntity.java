@@ -15,7 +15,7 @@ public class SorcererEntity extends BaseHenchmenEntity {
 		public SorcererEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="sorcerer";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.SORCERER_DRIVER.get()));

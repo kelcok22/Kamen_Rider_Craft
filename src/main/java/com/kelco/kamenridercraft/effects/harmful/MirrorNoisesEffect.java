@@ -8,19 +8,16 @@ import com.kelco.kamenridercraft.sounds.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.levelgen.Heightmap;
 
 import java.util.Random;
 
-import static com.kelco.kamenridercraft.effects.EffectCore.FALL_CANCEL;
+import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static com.kelco.kamenridercraft.effects.EffectCore.MIRROR_NOISES;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
@@ -84,7 +81,7 @@ public class MirrorNoisesEffect extends MobEffect {
                 boss.finalizeSpawn(serverLevel, serverLevel.getCurrentDifficultyAt(livingEntity.blockPosition()), MobSpawnType.MOB_SUMMONED, null);
                 livingEntity.level().addFreshEntity(boss);
                 if (!boss.onGround()) {
-                    boss.addEffect(new MobEffectInstance(FALL_CANCEL, MobEffectInstance.INFINITE_DURATION,
+                    boss.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
                             255, true, false));
                 }
                 livingEntity.removeEffect(MIRROR_NOISES);

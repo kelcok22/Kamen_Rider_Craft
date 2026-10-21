@@ -46,7 +46,7 @@ public class WisemanEntity extends BaseHenchmenEntity {
     public WisemanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "wiseman";
-        setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HELMET.get()));
         setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
         setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
         setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.WHITE_WIZARD_DRIVER.get()));

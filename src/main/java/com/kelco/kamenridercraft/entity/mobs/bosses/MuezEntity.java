@@ -18,9 +18,9 @@ public class MuezEntity extends BaseHenchmenEntity {
 		public MuezEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="muez";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZ_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZ_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZ_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.MUEZ_DRIVER.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FaizRiderItems.MUEZ_EDGE.get()));
         this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(FaizRiderItems.MUEZ_EDGE.get()));

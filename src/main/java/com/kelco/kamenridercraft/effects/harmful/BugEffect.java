@@ -20,7 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_SPAWN_AGGRESSION;
-import static com.kelco.kamenridercraft.effects.EffectCore.FALL_CANCEL;
+import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
@@ -96,7 +96,7 @@ public class BugEffect extends MobEffect {
                 }
                 livingEntity.level().addFreshEntity(bugster);
                 if (!bugster.onGround()) {
-                    bugster.addEffect(new MobEffectInstance(FALL_CANCEL, MobEffectInstance.INFINITE_DURATION,
+                    bugster.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
                             255, true, false));
                 }
                 livingEntity.setData(MOB_SPAWN_AGGRESSION, 0);

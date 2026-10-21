@@ -59,8 +59,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "kamenridercraft:bladecard",
-          "weight": 5
+          "name": "kamenridercraft:golden_spider",
+          "weight": 3
         },
         {
           "type": "minecraft:item",

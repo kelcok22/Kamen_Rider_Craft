@@ -11,10 +11,10 @@
 			"item": "kamenridercraft:bladecard"
 		},
 		"M": {
-			"item": "kamenridercraft:absorb_orchid"
+			"tag": "kamenridercraft:gear/rouze_cards/category_queen"
 		}
 	},
 	"result": {
-		"id": "kamenridercraft:rouze_absorber"
+		"id": "kamenridercraft:category_king_undead_boss_block"
 	}
 }

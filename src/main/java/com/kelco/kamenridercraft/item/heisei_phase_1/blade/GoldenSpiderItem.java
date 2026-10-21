@@ -75,7 +75,7 @@ public class GoldenSpiderItem extends BaseItem {
             level.addFreshEntity(undead);
             serverPlayer.awardStat(Stats.ITEM_USED.get(this));
             serverPlayer.setItemInHand(usedHand, serverPlayer.getItemInHand(usedHand));
-            serverPlayer.getItemInHand(usedHand).consume(1, serverPlayer);
+            serverPlayer.getCooldowns().addCooldown(this, 400);
         }
         return super.use(level, player, usedHand);
     }

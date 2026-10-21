@@ -257,98 +257,98 @@ public class IchigoRiderItems {
 
 
 
-    public static final DeferredItem<Item> ICHIGOHELMET = ITEMS.register("ichigohead",
+    public static final DeferredItem<Item> ICHIGO_HELMET = ITEMS.register("ichigohead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
-    public static final DeferredItem<Item> ICHIGOCHESTPLATE = ITEMS.register("ichigotroso",
+    public static final DeferredItem<Item> ICHIGO_CHESTPLATE = ITEMS.register("ichigotroso",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
-    public static final DeferredItem<Item> ICHIGOLEGGINGS = ITEMS.register("ichigolegs",
+    public static final DeferredItem<Item> ICHIGO_LEGGINGS = ITEMS.register("ichigolegs",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_ICHIGO = ITEMS.register("typhoon_ichigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ichigo",TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_NIGO = ITEMS.register("typhoon_nigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo",TYPHOON_CORE_NIGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo",TYPHOON_CORE_NIGO, ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SANGO = ITEMS.register("typhoon_sango",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sango",TYPHOON_CORE_SANGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"sango",TYPHOON_CORE_SANGO, ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_YONGO = ITEMS.register("typhoon_yongo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yongo",TYPHOON_CORE_YONGO,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"yongo",TYPHOON_CORE_YONGO, ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_1 = ITEMS.register("typhoon_shocker_rider_1",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_1",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_2 = ITEMS.register("typhoon_shocker_rider_2",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_2",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_3 = ITEMS.register("typhoon_shocker_rider_3",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_3",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_3",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_4 = ITEMS.register("typhoon_shocker_rider_4",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_4",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_4",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_5 = ITEMS.register("typhoon_shocker_rider_5",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_5",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_5",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_6 = ITEMS.register("typhoon_shocker_rider_6",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_6",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_6",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_7 = ITEMS.register("typhoon_shocker_rider_7",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_7",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_7",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_8 = ITEMS.register("typhoon_shocker_rider_8",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_8",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_8",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_9 = ITEMS.register("typhoon_shocker_rider_9",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_9",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_9",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_10 = ITEMS.register("typhoon_shocker_rider_10",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_10",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_10",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_11 = ITEMS.register("typhoon_shocker_rider_11",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_11",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_11",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_SHOCKER_RIDER_12 = ITEMS.register("typhoon_shocker_rider_12",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_12",SHOCKER_RIDER_TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_12",SHOCKER_RIDER_TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> NOPHOON_KAMEN_NORIDER = ITEMS.register("nophoon_kamen_norider",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_norider",NOPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"kamen_norider",NOPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_DARK_ICHIGO = ITEMS.register("typhoon_dark_ichigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo()
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_ichigo",TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo()
                     .overrideBeltText("dark_typhoon_belt").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_DARK_NIGO = ITEMS.register("typhoon_dark_nigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_nigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo()
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_nigo",TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo()
                     .overrideBeltText("dark_typhoon_belt").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TYPHOON_FAKE_ICHIGO = ITEMS.register("typhoon_fake_ichigo",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_ichigo",TYPHOON_CORE ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_ichigo",TYPHOON_CORE , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> TAKI_BELT = ITEMS.register("taki_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taki_rider",TAKI_VAMPIRE_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"taki_rider",TAKI_VAMPIRE_CORE, ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIA_BELT = ITEMS.register("gaia_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gaia",GAIA_CORE, ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> CYBORG_SUPER_ENERGY_CONVERTER = ITEMS.register("cyborg_super_energy_converter",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eins",CYBORG_SUPER_ENERGY_CONVERTER_CORE,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"eins",CYBORG_SUPER_ENERGY_CONVERTER_CORE, ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOCKER_BELT = ITEMS.register("shocker_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM ,ICHIGOHELMET, ICHIGOCHESTPLATE,ICHIGOLEGGINGS , new Item.Properties()).hasSDForm().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_combatman",SHOCKER_EMBLEM , ICHIGO_HELMET, ICHIGO_CHESTPLATE, ICHIGO_LEGGINGS, new Item.Properties()).hasSDForm().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.ICHIGO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_MANGA = ITEMS.register("ichigo_manga",
             () -> new RiderFormChangeItem(new Item.Properties(),"_manga","ichigo","typhoon_belt",

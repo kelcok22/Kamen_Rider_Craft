@@ -9,12 +9,10 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
@@ -29,7 +27,7 @@ public class AceUndeadEntity extends UndeadEntity {
 
     public AceUndeadEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        if (getData(MOB_STATE).isEmpty() && !level().isClientSide()) {
+        if (getData(MOB_STATE).isEmpty()&& !level().isClientSide() ) {
             setItemSlot(EquipmentSlot.HEAD, new ItemStack(BladeRiderItems.BLADEHELMET.get()));
             getItemBySlot(EquipmentSlot.HEAD).enchant(enchantmentRegistryLookup.get(Enchantments.UNBREAKING).get(), 255);
             setItemSlot(EquipmentSlot.CHEST, new ItemStack(BladeRiderItems.BLADECHESTPLATE.get()));
@@ -74,9 +72,31 @@ public class AceUndeadEntity extends UndeadEntity {
         }
     }
 
+    @Override
+    public void setSealable() {
+        if (isSealable()) {
+            giveSealableStats();
+            System.out.println(getData(MOB_STATE));
+            switch (getData(MOB_STATE)) {
+                case "beetle_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_BEETLE.get(), 1);
+                    break;
+                case "stag_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_STAG.get(), 1);
+                    break;
+                case "mantis_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_MANTIS.get(), 1);
+                    break;
+                case "spider_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_SPIDER.get(), 1);
+                    break;
+            }
+        }
+    }
+
     public void setSpider() {
         setData(MOB_STATE, "spider");
-        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_SPIDER.get(), 1);
+        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.UNDEAD_CHANGE_SPIDER.get(), 1);
         getItemInHand(InteractionHand.MAIN_HAND).shrink(1);
         goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.6F));
         addEffect(new MobEffectInstance(EffectCore.CLIMBING, MobEffectInstance.INFINITE_DURATION, 4, true, false));

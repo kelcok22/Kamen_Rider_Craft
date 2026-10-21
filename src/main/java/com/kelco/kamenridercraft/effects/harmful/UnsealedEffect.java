@@ -16,7 +16,7 @@ import net.minecraft.world.entity.player.Player;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_SPAWN_AGGRESSION;
-import static com.kelco.kamenridercraft.effects.EffectCore.FALL_CANCEL;
+import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
@@ -76,7 +76,7 @@ public class UnsealedEffect extends MobEffect {
                     }
                     livingEntity.level().addFreshEntity(undead);
                     if (!undead.onGround()) {
-                        undead.addEffect(new MobEffectInstance(FALL_CANCEL, MobEffectInstance.INFINITE_DURATION,
+                        undead.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
                                 255, true, false));
                     }
                     livingEntity.setData(MOB_SPAWN_AGGRESSION, 0);

@@ -55,7 +55,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.rider_blocks_decor")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> IchigoTab = CREATIVE_MODE_TABS.register("krc_010_ichigo_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(IchigoRiderItems.ICHIGO_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.ichigo_items")).build());
 
@@ -105,7 +105,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.zx_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BLACKTab = CREATIVE_MODE_TABS.register("krc_100_black_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(BlackRiderItems.BLACKHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(BlackRiderItems.BLACK_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.black_items")).build());
 
@@ -145,7 +145,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.ryuki_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FaizTab = CREATIVE_MODE_TABS.register("krc_240_faiz_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(FaizRiderItems.FAIZHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(FaizRiderItems.FAIZ_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_faiz_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.faiz_items")).build());
 
@@ -160,7 +160,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.hibiki_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> KabutoTab = CREATIVE_MODE_TABS.register("krc_270_kabuto_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(KabutoRiderItems.KABUTOHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kabuto_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.kabuto_items")).build());
 
@@ -195,7 +195,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.fourze_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WIZARDTab = CREATIVE_MODE_TABS.register("krc_340_wizard_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(WizardRiderItems.WIZARD_HEAD.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(WizardRiderItems.WIZARD_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_wizard_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.wizard_items")).build());
 

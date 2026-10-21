@@ -5,11 +5,11 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 
-import static com.kelco.kamenridercraft.effects.EffectCore.FALL_CANCEL;
+import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 
 
-public class FallCancelEffect extends MobEffect {
-    public FallCancelEffect(MobEffectCategory mobEffectCategory, int color) {
+public class SafeLandingEffect extends MobEffect {
+    public SafeLandingEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
 
@@ -24,7 +24,7 @@ public class FallCancelEffect extends MobEffect {
 
         if (livingEntity.onGround()
                 || livingEntity instanceof Player player && (player.isSpectator() || player.isCreative())) {
-            livingEntity.removeEffect(FALL_CANCEL);
+            livingEntity.removeEffect(SAFE_LANDING);
         }
         return true;
     }

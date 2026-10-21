@@ -39,25 +39,35 @@ public class SealingEntity extends Entity implements GeoEntity {
         if (level() instanceof ServerLevel serverLevel) {
             if (TTL == 0) {
                 Random generator = new Random();
-                if (getData(MOB_STATE).equals("normal_undead")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                obtainedCard = switch (getData(MOB_STATE)) {
+                    case "normal_undead" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(NORMAL_UNDEAD_DROPS.get(generator.nextInt(NORMAL_UNDEAD_DROPS.size()))), 0, 0, 0);
-                } else if (getData(MOB_STATE).equals("ace_undead")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                    case "spider", "beetle", "stag", "mantis" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(ACE_UNDEAD_DROPS.get(generator.nextInt(ACE_UNDEAD_DROPS.size()))), 0, 0, 0);
-                } else if (getData(MOB_STATE).equals("joker")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                            new ItemStack(BLACK_JOKER_SEALED.get()), 0, 0, 0);
-                } else if (getData(MOB_STATE).equals("albino_joker")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                            new ItemStack(ALBINO_JOKER_SEALED.get()), 0, 0, 0);
-                }
+                    case "eagle", "peacock", "wolf", "elephant" ->
+                            new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                                    new ItemStack(JACK_UNDEAD_DROPS.get(generator.nextInt(JACK_UNDEAD_DROPS.size()))), 0, 0, 0);
+                    case "serpent", "capricorn", "orchid", "tiger" ->
+                            new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                                    new ItemStack(QUEEN_UNDEAD_DROPS.get(generator.nextInt(QUEEN_UNDEAD_DROPS.size()))), 0, 0, 0);
+                    case "caucasus" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_CAUCASUS.get()), 0, 0, 0);
+                    case "giraffa" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_GIRAFFA.get()), 0, 0, 0);
+                    case "paradoxa" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_PARADOXA.get()), 0, 0, 0);
+                    case "tarantula" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_TARANTULA.get()), 0, 0, 0);
+                    case "joker" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(SEALABLE_BLACK_JOKER.get()), 0, 0, 0);
+                    case "albino_joker" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(SEALABLE_ALBINO_JOKER.get()), 0, 0, 0);
+                    default -> throw new IllegalStateException("Unexpected value: " + getData(MOB_STATE));
+                };
 
-                if (obtainedCard != null) {
-                    obtainedCard.setPickUpDelay(60);
-                    obtainedCard.setNoGravity(true);
-                    level().addFreshEntity(obtainedCard);
-                }
+                obtainedCard.setPickUpDelay(60);
+                obtainedCard.setNoGravity(true);
+                level().addFreshEntity(obtainedCard);
             } else if (TTL == 60) {
                 try {
                     if (!getData(UUID_STORE).isEmpty()

@@ -8,7 +8,6 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -74,7 +73,7 @@ public class GreeedEffect extends MobEffect {
                     }
                     livingEntity.level().addFreshEntity(yummy);
                     if (!yummy.onGround()) {
-                        yummy.addEffect(new MobEffectInstance(FALL_CANCEL, MobEffectInstance.INFINITE_DURATION,
+                        yummy.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
                                 255, true, false));
                     }
                     livingEntity.setData(MOB_SPAWN_AGGRESSION, 0);

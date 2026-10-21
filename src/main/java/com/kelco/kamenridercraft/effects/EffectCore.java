@@ -150,8 +150,8 @@ public class EffectCore {
     public static final Holder<MobEffect> BLIZZARD = EFFECT.register("blizzard",
             () -> new BlizzardEffect(MobEffectCategory.BENEFICIAL, 0x5feaff));
 
-    public static final Holder<MobEffect> FALL_CANCEL = EFFECT.register("fall_cancel",
-            () -> new FallCancelEffect(MobEffectCategory.BENEFICIAL, 0x5feaff));
+    public static final Holder<MobEffect> SAFE_LANDING = EFFECT.register("safe_landing",
+            () -> new SafeLandingEffect(MobEffectCategory.BENEFICIAL, 0x5feaff));
 
 
     public static final Holder<MobEffect> NOTE = EFFECT.register("note",
