@@ -35,14 +35,15 @@ public class UnsealedEffect extends MobEffect {
         Random rand = new Random();
         if (livingEntity instanceof Player player && (!player.isCreative() && !player.isSpectator())) {
             if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL) {
-                UndeadEntity undead = MobsCore.UNDEAD.get().create(livingEntity.level());
+                if (((amplifier < 50 ? (rand.nextInt(2000) - (amplifier + 1) * 15) : 0))
+                        - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.1) <= 0) {
 
-                if (rand.nextInt(500) == 0) {
-                    undead =  MobsCore.ACE_UNDEAD.get().create(livingEntity.level());
-                }
+                    UndeadEntity undead = MobsCore.UNDEAD.get().create(livingEntity.level());
 
-                if (((amplifier < 50 ? rand.nextInt(1500 - (amplifier * 5)) : 0))
-                        - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.3) <= 0 && undead != null) {
+                    if (rand.nextInt(500) == 0) {
+                        undead =  MobsCore.ACE_UNDEAD.get().create(livingEntity.level());
+                    }
+
                     int tempRandX = (livingEntity.getBlockX()
                             + (rand.nextInt(3, 10))
                             * (rand.nextInt(3) > 1 ? 1 : -1));
@@ -66,10 +67,8 @@ public class UnsealedEffect extends MobEffect {
                                 * (rand.nextInt(3) > 1 ? 1 : -1));
 
                         BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
-                        if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
-                            undead.setPos(randX, randY, randZ);
-                        }
-                        if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
+                        if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ)) &&
+                                SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
                             undead.setPos(randX, randY, randZ);
                             break;
                         }

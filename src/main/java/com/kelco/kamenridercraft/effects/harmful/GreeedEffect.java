@@ -21,8 +21,6 @@ import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
 public class GreeedEffect extends MobEffect {
-
-
     public GreeedEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
@@ -37,9 +35,10 @@ public class GreeedEffect extends MobEffect {
         Random rand = new Random();
         if (livingEntity instanceof Player player && (!player.isCreative() && !player.isSpectator())) {
             if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL) {
-                YummyEntity yummy = MobsCore.YUMMY.get().create(livingEntity.level());
-                if (((amplifier < 50 ? rand.nextInt(500 - (amplifier * 10)) : 0))
-                        - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.3) <= 0 && yummy != null) {
+                if (((amplifier < 50 ? (rand.nextInt(2000) - (amplifier + 1) * 15) : 0))
+                        - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.1) <= 0) {
+                    YummyEntity yummy = MobsCore.YUMMY.get().create(livingEntity.level());
+
                     int tempRandX = (livingEntity.getBlockX()
                             + (rand.nextInt(3, 10))
                             * (rand.nextInt(3) > 1 ? 1 : -1));

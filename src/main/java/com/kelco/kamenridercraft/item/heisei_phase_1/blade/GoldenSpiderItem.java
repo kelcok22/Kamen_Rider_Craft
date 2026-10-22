@@ -32,7 +32,6 @@ public class GoldenSpiderItem extends BaseItem {
     public @NotNull InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
         if (player instanceof ServerPlayer serverPlayer && usedHand == InteractionHand.MAIN_HAND) {
             AceUndeadEntity undead = ACE_UNDEAD.get().create(level);
-            undead.setSpider();
             Random rand = new Random();
 
             int tempRandX = (serverPlayer.getBlockX()
@@ -57,11 +56,9 @@ public class GoldenSpiderItem extends BaseItem {
                         + (rand.nextInt(5, 20))
                         * (rand.nextInt(3) > 1 ? 1 : -1));
 
-                if (level.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
-                    undead.setPos(randX, randY, randZ);
-                }
                 BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
-                if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, level, potentialPosition)) {
+                if (level.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))
+                        && SpawnPlacements.isSpawnPositionOk(ZOMBIE, level, potentialPosition)) {
                     undead.setPos(randX, randY, randZ);
                     break;
                 }

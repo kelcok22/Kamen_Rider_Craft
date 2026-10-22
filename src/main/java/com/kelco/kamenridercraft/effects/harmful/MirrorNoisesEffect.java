@@ -17,14 +17,12 @@ import net.minecraft.world.item.ItemStack;
 
 import java.util.Random;
 
-import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static com.kelco.kamenridercraft.effects.EffectCore.MIRROR_NOISES;
+import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
 public class MirrorNoisesEffect extends MobEffect {
-
-
     public MirrorNoisesEffect(MobEffectCategory mobEffectCategory, int color) {
         super(mobEffectCategory, color);
     }
@@ -42,7 +40,7 @@ public class MirrorNoisesEffect extends MobEffect {
             livingEntity.level().playLocalSound(livingEntity, ModSounds.MIRROR_NOISES.get(), SoundSource.RECORDS, 1, new Random().nextInt(10));
         }
         if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL
-                && (livingEntity.getEffect(MIRROR_NOISES).getDuration() < 2||livingEntity.hasEffect(EffectCore.AGITO_FACTOR))) {
+                && (livingEntity.getEffect(MIRROR_NOISES).getDuration() < 2 || livingEntity.hasEffect(EffectCore.AGITO_FACTOR))) {
             BaseHenchmenEntity boss = MobsCore.MIRROR_RIDER.get().create(livingEntity.level());
             if (boss != null) {
                 livingEntity.level().addFreshEntity(boss);
@@ -69,15 +67,14 @@ public class MirrorNoisesEffect extends MobEffect {
                             * (rand.nextInt(3) > 1 ? 1 : -1));
 
                     BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
-                    if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
-                        boss.setPos(randX, randY, randZ);
-                    }
-                    if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
+                    if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ)) &&
+                            SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
                         boss.setPos(randX, randY, randZ);
                         break;
                     }
                 }
-                if (livingEntity.hasEffect(EffectCore.AGITO_FACTOR)) boss.setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.ALTERING_MIRACLE_WORLD.asItem()));
+                if (livingEntity.hasEffect(EffectCore.AGITO_FACTOR))
+                    boss.setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.ALTERING_MIRACLE_WORLD.asItem()));
                 boss.finalizeSpawn(serverLevel, serverLevel.getCurrentDifficultyAt(livingEntity.blockPosition()), MobSpawnType.MOB_SUMMONED, null);
                 livingEntity.level().addFreshEntity(boss);
                 if (!boss.onGround()) {
