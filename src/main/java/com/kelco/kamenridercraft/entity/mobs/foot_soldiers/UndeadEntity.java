@@ -2,6 +2,9 @@ package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.effect.SealingEntity;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.entity.mobs.bosses.AlbinoJokerUndeadEntity;
+import com.kelco.kamenridercraft.entity.mobs.bosses.JokerUndeadEntity;
+import com.kelco.kamenridercraft.entity.mobs.bosses.KingUndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
@@ -190,14 +193,19 @@ public class UndeadEntity extends BaseHenchmenEntity {
         setHealth(3);
         getAttribute(MAX_HEALTH).setBaseValue(3);
 
-        addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 255, true, false));
-        addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 80, 10, true, false));
-        addEffect(new MobEffectInstance(MobEffects.REGENERATION, 80, 10, true, false));
-        addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 255, true, false));
-        addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, true, false));
-        addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200, 255, true, false));
-        addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 255, true, false));
-        addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 255, true, false));
+        int duration = 200;
+        if (this instanceof JokerUndeadEntity || this instanceof AlbinoJokerUndeadEntity || this instanceof KingUndeadEntity) {
+            duration = 600;
+        }
+
+        addEffect(new MobEffectInstance(MobEffects.WITHER, duration, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, duration - 120, 10, true, false));
+        addEffect(new MobEffectInstance(MobEffects.REGENERATION, duration - 120, 10, true, false));
+        addEffect(new MobEffectInstance(MobEffects.WEAKNESS, duration, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, duration, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, duration, 255, true, false));
+        addEffect(new MobEffectInstance(MobEffects.GLOWING, duration, duration, true, false));
 
         removeFreeWill();
         setNoAi(true);

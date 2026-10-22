@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -19,6 +20,7 @@ import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
+import static com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems.WONDERSWAN;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
@@ -34,7 +36,7 @@ public class BugEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity instanceof Player player && player.level() instanceof ServerLevel serverLevel) {
+        if (livingEntity instanceof ServerPlayer player && player.level() instanceof ServerLevel serverLevel) {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeroOneRiderItems.ZAIA_THOUSANDRIVER.get()) {
                 if (player.getInventory().countItem(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) > 0) {
                     if (player.getInventory().getItem(40).getItem() == ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) {
@@ -54,6 +56,9 @@ public class BugEffect extends MobEffect {
             boolean gamerule = serverLevel.getGameRules().getBoolean(ModGameRules.RULE_SPAWN_EFFECT_MOBS_IN_CREATIVE);
 
             if ((!player.isSpectator()) && serverLevel.getDifficulty() != Difficulty.PEACEFUL && (gamerule || !player.isCreative())) {
+                if (player.getInventory().countItem(WONDERSWAN.get()) != 0) {
+                    return true;
+                }
                 if (((amplifier < 50 ? (rand.nextInt(3000) - (amplifier + 1) * 5) : 0) <= 0)) {
                     List<Mob> nearbyEnemies = serverLevel.getEntitiesOfClass(Mob.class, player.getBoundingBox().inflate(10), Objects::nonNull);
                     if (nearbyEnemies.size() > 10){

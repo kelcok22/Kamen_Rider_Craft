@@ -215,6 +215,10 @@ public class RiderDriverItem extends RiderArmorItem {
                         } else if (effect.getEffect() == EffectCore.SMALL || effect.getEffect() == EffectCore.BIG) {
                             duration = 1;
                         }
+                        if (effect.getEffect() == MobEffects.REGENERATION && rider.hasEffect(MobEffects.REGENERATION)
+                                && rider.getEffect(MobEffects.REGENERATION).getDuration() > 1){
+                            return;
+                        }
                         rider.addEffect(new MobEffectInstance(effect.getEffect(), duration, effect.getAmplifier(), true, false));
                     }
                 }
