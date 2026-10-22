@@ -130,6 +130,17 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
     }
 
     private boolean hasAnyOutputRoom() {
+        int filledSlots = 0;
+        for (int i = 3; i <= 11; ++i) {
+            if (items.get(i) != ItemStack.EMPTY) {
+                ++filledSlots;
+            }
+        }
+
+        if (filledSlots >= 9 && getCurrentRecipe(getLevel()).get().value().outputs().size() > 1) {
+            return false;
+        }
+
         for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
             ItemStack stack = items.get(slot);
 
@@ -205,11 +216,13 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
     }
 
     private void insertOutput(ItemStack output) {
-        ItemStack remainder = output.copy();
-
         for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
-            remainder = items.set(slot, remainder);
-            if (remainder.isEmpty()) {
+            if (items.get(slot) == ItemStack.EMPTY) {
+                items.set(slot, output);
+                return;
+            } else if (items.get(slot).getItem() == output.getItem() && output.isStackable() && items.get(slot).isStackable() &&
+                    items.get(slot).getCount() + output.getCount() <= output.getMaxStackSize()) {
+                items.get(slot).setCount(items.get(slot).getCount() + output.getCount());
                 return;
             }
         }
