@@ -2,8 +2,8 @@ package com.kelco.kamenridercraft.effects.harmful;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.Difficulty;
@@ -14,9 +14,10 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 
+import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_SPAWN_AGGRESSION;
 import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
@@ -30,7 +31,6 @@ public class BugEffect extends MobEffect {
     public boolean shouldApplyEffectTickThisTick(int tickCount, int amplifier) {
         return true;
     }
-
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
@@ -51,9 +51,14 @@ public class BugEffect extends MobEffect {
 
 
             Random rand = new Random();
-            if ((!player.isCreative() && !player.isSpectator()) && serverLevel.getDifficulty() != Difficulty.PEACEFUL){
-                if (((amplifier < 50 ? (rand.nextInt(2000) - (amplifier + 1) * 15) : 0))
-                        - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.1) <= 0) {
+            boolean gamerule = serverLevel.getGameRules().getBoolean(ModGameRules.RULE_SPAWN_EFFECT_MOBS_IN_CREATIVE);
+
+            if ((!player.isSpectator()) && serverLevel.getDifficulty() != Difficulty.PEACEFUL && (gamerule || !player.isCreative())) {
+                if (((amplifier < 50 ? (rand.nextInt(3000) - (amplifier + 1) * 5) : 0) <= 0)) {
+                    List<Mob> nearbyEnemies = serverLevel.getEntitiesOfClass(Mob.class, player.getBoundingBox().inflate(10), Objects::nonNull);
+                    if (nearbyEnemies.size() > 10){
+                        return true;
+                    }
 
                     Mob bugster;
                     if (livingEntity.hasEffect(EffectCore.HAZARD_LEVEL)) {
@@ -96,9 +101,6 @@ public class BugEffect extends MobEffect {
                         bugster.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
                                 255, true, false));
                     }
-                    livingEntity.setData(MOB_SPAWN_AGGRESSION, 0);
-                } else {
-                    livingEntity.setData(MOB_SPAWN_AGGRESSION, livingEntity.getData(MOB_SPAWN_AGGRESSION) + 1);
                 }
             }
         }

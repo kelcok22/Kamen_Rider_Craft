@@ -50,6 +50,8 @@ public class SealingEntity extends Entity implements GeoEntity {
                             new ItemStack(CHANGE_MANTIS.get()), 0, 0, 0);
                     case "spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(CHANGE_SPIDER.get()), 0, 0, 0);
+                    case "proper_seal_spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_SPIDER_PROPER_SEAL.get()), 0, 0, 0);
                     case "eagle", "peacock", "wolf", "elephant" ->
                             new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                                     new ItemStack(JACK_UNDEAD_DROPS.get(generator.nextInt(JACK_UNDEAD_DROPS.size()))), 0, 0, 0);

@@ -130,11 +130,16 @@ public class UndeadEntity extends BaseHenchmenEntity {
         SealingEntity undeadEffect = new SealingEntity(SEALING_EFFECT.get(), level());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
         level().addFreshEntity(undeadEffect);
+        if (getData(MOB_STATE).equals("spider_sealable") &&
+                sealer.getInventory().countItem(BladeRiderItems.EVOLUTION_TARANTULA.get()) != 0) {
+            setData(MOB_STATE, "proper_seal_spider");
+        }
         switch (getData(MOB_STATE)) {
             case "beetle_sealable" -> undeadEffect.setData(MOB_STATE, "beetle");
             case "stag_sealable" -> undeadEffect.setData(MOB_STATE, "stag");
             case "mantis_sealable" -> undeadEffect.setData(MOB_STATE, "mantis");
             case "spider_sealable" -> undeadEffect.setData(MOB_STATE, "spider");
+            case "proper_seal_spider" -> undeadEffect.setData(MOB_STATE, "proper_seal_spider");
             case "eagle_sealable" -> undeadEffect.setData(MOB_STATE, "eagle");
             case "peacock_sealable" -> undeadEffect.setData(MOB_STATE, "peacock");
             case "wolf_sealable" -> undeadEffect.setData(MOB_STATE, "wolf");
