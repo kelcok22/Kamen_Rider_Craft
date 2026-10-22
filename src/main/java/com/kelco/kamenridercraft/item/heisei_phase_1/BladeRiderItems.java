@@ -53,7 +53,7 @@ public class BladeRiderItems {
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLDEN_SPIDER = ITEMS.register("golden_spider",
-            () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1)).useBasicModel().addToList(BLADE_TAB_ITEM));
+            () -> new GoldenSpiderItem(new Item.Properties().rarity(Rarity.RARE).stacksTo(1)).useBasicModel().addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_CHANGE_BEETLE = ITEMS.register("sealable_change_beetle",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_beetle", "undead", "sealable_undead_buckle_belt",

@@ -2,20 +2,25 @@ package com.kelco.kamenridercraft.effects.harmful;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.UndeadEntity;
+import com.kelco.kamenridercraft.entity.vehicles.baseBikeEntity;
+import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.Mth;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.player.Player;
 
+import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_SPAWN_AGGRESSION;
 import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
@@ -33,16 +38,22 @@ public class UnsealedEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         Random rand = new Random();
-        if (livingEntity instanceof Player player && (!player.isCreative() && !player.isSpectator())) {
+        boolean gamerule = livingEntity.level().getGameRules().getBoolean(ModGameRules.RULE_SPAWN_EFFECT_MOBS_IN_CREATIVE);
+
+        if (livingEntity instanceof Player player && ((gamerule || !player.isCreative()) && !player.isSpectator())) {
             if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL) {
-                UndeadEntity undead = MobsCore.UNDEAD.get().create(livingEntity.level());
+                if (((amplifier < 50 ? (rand.nextInt(3000) - (amplifier + 1) * 5) : 0) <= 0)) {
+                    List<Mob> nearbyEnemies = serverLevel.getEntitiesOfClass(Mob.class, player.getBoundingBox().inflate(10), Objects::nonNull);
+                    if (nearbyEnemies.size() > 10){
+                        return true;
+                    }
 
-                if (rand.nextInt(500) == 0) {
-                    undead =  MobsCore.ACE_UNDEAD.get().create(livingEntity.level());
-                }
+                    UndeadEntity undead = MobsCore.UNDEAD.get().create(livingEntity.level());
 
-                if (((amplifier < 50 ? rand.nextInt(1500 - (amplifier * 5)) : 0))
-                        - (livingEntity.getData(MOB_SPAWN_AGGRESSION) * 0.3) <= 0 && undead != null) {
+                    if (rand.nextInt(500) == 0) {
+                        undead = MobsCore.ACE_UNDEAD.get().create(livingEntity.level());
+                    }
+
                     int tempRandX = (livingEntity.getBlockX()
                             + (rand.nextInt(3, 10))
                             * (rand.nextInt(3) > 1 ? 1 : -1));
@@ -66,10 +77,8 @@ public class UnsealedEffect extends MobEffect {
                                 * (rand.nextInt(3) > 1 ? 1 : -1));
 
                         BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
-                        if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
-                            undead.setPos(randX, randY, randZ);
-                        }
-                        if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
+                        if (serverLevel.noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ)) &&
+                                SpawnPlacements.isSpawnPositionOk(ZOMBIE, livingEntity.level(), potentialPosition)) {
                             undead.setPos(randX, randY, randZ);
                             break;
                         }
@@ -79,9 +88,6 @@ public class UnsealedEffect extends MobEffect {
                         undead.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
                                 255, true, false));
                     }
-                    livingEntity.setData(MOB_SPAWN_AGGRESSION, 0);
-                } else {
-                    livingEntity.setData(MOB_SPAWN_AGGRESSION, livingEntity.getData(MOB_SPAWN_AGGRESSION) + 1);
                 }
             }
         }

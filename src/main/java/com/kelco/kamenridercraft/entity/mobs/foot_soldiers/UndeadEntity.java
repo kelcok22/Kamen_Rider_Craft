@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.BladeRiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerPlayer;
@@ -16,6 +17,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
@@ -26,10 +28,13 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.common.damagesource.DamageContainer;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Random;
+
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.UUID_STORE;
 import static com.kelco.kamenridercraft.entity.mobs.MobsCore.SEALING_EFFECT;
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+import static net.minecraft.world.entity.EntityType.ZOMBIE;
 import static net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH;
 
 public class UndeadEntity extends BaseHenchmenEntity {
@@ -125,11 +130,16 @@ public class UndeadEntity extends BaseHenchmenEntity {
         SealingEntity undeadEffect = new SealingEntity(SEALING_EFFECT.get(), level());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
         level().addFreshEntity(undeadEffect);
+        if (getData(MOB_STATE).equals("spider_sealable") &&
+                sealer.getInventory().countItem(BladeRiderItems.EVOLUTION_TARANTULA.get()) != 0) {
+            setData(MOB_STATE, "proper_seal_spider");
+        }
         switch (getData(MOB_STATE)) {
             case "beetle_sealable" -> undeadEffect.setData(MOB_STATE, "beetle");
             case "stag_sealable" -> undeadEffect.setData(MOB_STATE, "stag");
             case "mantis_sealable" -> undeadEffect.setData(MOB_STATE, "mantis");
             case "spider_sealable" -> undeadEffect.setData(MOB_STATE, "spider");
+            case "proper_seal_spider" -> undeadEffect.setData(MOB_STATE, "proper_seal_spider");
             case "eagle_sealable" -> undeadEffect.setData(MOB_STATE, "eagle");
             case "peacock_sealable" -> undeadEffect.setData(MOB_STATE, "peacock");
             case "wolf_sealable" -> undeadEffect.setData(MOB_STATE, "wolf");
@@ -150,28 +160,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
         undeadEffect.setData(UUID_STORE, sealer.getStringUUID());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
 
-        if (getClass() == UndeadEntity.class) {
-            double chance = random.nextDouble();
-            int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
-
-            if ((chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer))
-                    || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                Mob boss = MobsCore.JACK_UNDEAD.get().create(level());
-                if (lastHurtByPlayer != null && (getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
-                        (RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
-                                .toString().toLowerCase().contains("jack") ||
-                                RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
-                                        .toString().toLowerCase().contains("wild")) ||
-                        lastHurtByPlayer.getInventory().countItem(BladeRiderItems.ROUZE_ABSORBER.get()) != 0)) {
-                    boss = MobsCore.QUEEN_UNDEAD.get().create(level());
-                }
-                if (boss != null) {
-                    boss.moveTo(getX(), getY(), getZ(), getYRot(), 0.0F);
-                    level().addFreshEntity(boss);
-                }
-            }
-        }
-
+        summonUpperClassUndead();
         setLastHurtByPlayer(null);
         setLastHurtByMob(null);
     }
@@ -257,30 +246,67 @@ public class UndeadEntity extends BaseHenchmenEntity {
         }
     }
 
+    public void summonUpperClassUndead() {
+        if (getClass() == UndeadEntity.class) {
+            double chance = random.nextDouble();
+            Random rand = new Random();
+            int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            Mob boss = MobsCore.JACK_UNDEAD.get().create(level());
+
+            if ((chance * 100.0 <= gamerule && (lastHurtByPlayer != null && canSpawnBoss(lastHurtByPlayer))
+                    || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+
+                if (lastHurtByPlayer != null && (getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
+                        (RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                .toString().toLowerCase().contains("jack") ||
+                                RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                        .toString().toLowerCase().contains("wild")) ||
+                        lastHurtByPlayer.getInventory().countItem(BladeRiderItems.ROUZE_ABSORBER.get()) != 0)) {
+                    boss = MobsCore.QUEEN_UNDEAD.get().create(level());
+                }
+
+                if (boss != null) {
+                    int tempRandX = (getBlockX()
+                            + (rand.nextInt(8, 25))
+                            * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                    int tempRandZ = (getBlockZ()
+                            + (rand.nextInt(8, 25))
+                            * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                    boss.setPos(tempRandX, getY(), tempRandZ);
+
+                    for (int i = 0; i < 400; ++i) {
+                        int randX = (getBlockX()
+                                + (rand.nextInt(8, 25))
+                                * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                        int randY = (getBlockY()
+                                + rand.nextInt(-10, 10));
+
+                        int randZ = (getBlockZ()
+                                + (rand.nextInt(8, 25))
+                                * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                        BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
+                        if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, level(), potentialPosition) &&
+                                level().noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
+                            boss.setPos(randX, randY, randZ);
+                            break;
+                        }
+                    }
+                    level().addFreshEntity(boss);
+                }
+            }
+        }
+    }
+
+
     @Override
     public void remove(RemovalReason reason) {
         if (isDeadOrDying()) {
-            if (getClass() == UndeadEntity.class) {
-                double chance = random.nextDouble();
-                int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
-
-                if ((chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer))
-                        || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                    Mob boss = MobsCore.JACK_UNDEAD.get().create(level());
-                    if (lastHurtByPlayer != null && (getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
-                            (RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
-                                    .toString().toLowerCase().contains("jack") ||
-                                    RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
-                                            .toString().toLowerCase().contains("wild")) ||
-                            lastHurtByPlayer.getInventory().countItem(BladeRiderItems.ROUZE_ABSORBER.get()) != 0)) {
-                        boss = MobsCore.QUEEN_UNDEAD.get().create(level());
-                    }
-                    if (boss != null) {
-                        boss.moveTo(getX(), getY(), getZ(), getYRot(), 0.0F);
-                        level().addFreshEntity(boss);
-                    }
-                }
-            }
+            summonUpperClassUndead();
         }
         super.remove(reason);
     }

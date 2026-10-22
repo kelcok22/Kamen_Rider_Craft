@@ -6,44 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kamenridercraft:bladecard",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "kamenridercraft:change_beetle"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "kamenridercraft:change_stag"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "kamenridercraft:change_mantis"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "kamenridercraft:change_spider"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 1,
           "name": "kamenridercraft:bladecard"
         }

@@ -42,8 +42,16 @@ public class SealingEntity extends Entity implements GeoEntity {
                 obtainedCard = switch (getData(MOB_STATE)) {
                     case "normal_undead" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(NORMAL_UNDEAD_DROPS.get(generator.nextInt(NORMAL_UNDEAD_DROPS.size()))), 0, 0, 0);
-                    case "spider", "beetle", "stag", "mantis" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                            new ItemStack(ACE_UNDEAD_DROPS.get(generator.nextInt(ACE_UNDEAD_DROPS.size()))), 0, 0, 0);
+                    case "beetle" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_BEETLE.get()), 0, 0, 0);
+                    case "stag" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_STAG.get()), 0, 0, 0);
+                    case "mantis" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_MANTIS.get()), 0, 0, 0);
+                    case "spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_SPIDER.get()), 0, 0, 0);
+                    case "proper_seal_spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_SPIDER_PROPER_SEAL.get()), 0, 0, 0);
                     case "eagle", "peacock", "wolf", "elephant" ->
                             new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                                     new ItemStack(JACK_UNDEAD_DROPS.get(generator.nextInt(JACK_UNDEAD_DROPS.size()))), 0, 0, 0);
