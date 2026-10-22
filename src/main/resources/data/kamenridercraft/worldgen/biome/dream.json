@@ -12,12 +12,6 @@
     "grass_color": 7119193,
     "foliage_color": 7119193,
     "ambient_sound": "kamenridercraft:dream_maze",
-    "music": {
-      "sound": "kamenridercraft:visions",
-      "min_delay": 0,
-      "max_delay": 0,
-      "replace_current_music": true
-    },
     "particle": {
       "options": {
         "type": "kamenridercraft:butterfly_particles"
