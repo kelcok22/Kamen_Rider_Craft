@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.blade;
 
 
+import com.kelco.kamenridercraft.effects.harmful.UnsealedEffect;
 import com.kelco.kamenridercraft.entity.mobs.bosses.AceUndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.BlockPos;
@@ -18,6 +19,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 
+import static com.kelco.kamenridercraft.effects.EffectCore.UNSEALED;
 import static com.kelco.kamenridercraft.entity.mobs.MobsCore.ACE_UNDEAD;
 import static net.minecraft.world.effect.MobEffects.MOVEMENT_SPEED;
 import static net.minecraft.world.entity.EntityType.ZOMBIE;
@@ -63,6 +65,7 @@ public class GoldenSpiderItem extends BaseItem {
                     break;
                 }
             }
+            undead.setSpider();
 
             if (!serverPlayer.isSpectator() && !serverPlayer.isCreative()) {
                 undead.setTarget(serverPlayer);
@@ -72,7 +75,8 @@ public class GoldenSpiderItem extends BaseItem {
             level.addFreshEntity(undead);
             serverPlayer.awardStat(Stats.ITEM_USED.get(this));
             serverPlayer.setItemInHand(usedHand, serverPlayer.getItemInHand(usedHand));
-            serverPlayer.getCooldowns().addCooldown(this, 400);
+            serverPlayer.addEffect(new MobEffectInstance(UNSEALED, 300, 10, true, false));
+            serverPlayer.getCooldowns().addCooldown(this, 1600);
         }
         return super.use(level, player, usedHand);
     }
