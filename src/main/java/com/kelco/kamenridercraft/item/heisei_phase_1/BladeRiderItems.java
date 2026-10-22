@@ -802,8 +802,29 @@ public class BladeRiderItems {
                 }
             }.hasCape().addAlternative(FUSION_WOLF_UNDEAD.get()).addToList(JACK_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
 
+    public static final DeferredItem<Item> SEALABLE_ABSORB_ORCHID = ITEMS.register("sealable_absorb_orchid",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_orchid", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.useBasicModel().setModelName("absorb_serpent"));
+
     public static final DeferredItem<Item> ABSORB_ORCHID = ITEMS.register("absorb_orchid",
-            () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(QUEEN_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_orchid", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.addSwitchForm(SEALABLE_ABSORB_ORCHID.get()).addToList(QUEEN_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_EVOLUTION_PARADOXA = ITEMS.register("sealable_evolution_paradoxa",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_paradoxa", "undead", "sealable_undead_buckle_royal_belt",

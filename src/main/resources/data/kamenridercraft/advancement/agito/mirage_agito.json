@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "id": "kamenridercraft:alter_ring_miracle"
+    },
+    "title": {
+      "translate": "advancements.kamenridercraft.agito.mirage_agito.title"
+    },
+    "description": {
+      "translate": "advancements.kamenridercraft.agito.mirage_agito.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "kamenridercraft:agito/another_agito_kouji_majima",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "head": {
+              "items": [
+                "kamenridercraft:agitohead"
+              ]
+            },
+            "chest": {
+              "items": [
+                "kamenridercraft:agitotroso"
+              ]
+            },
+            "legs": {
+              "items": [
+                "kamenridercraft:agitolegs"
+              ]
+            },
+            "feet": {
+              "items": [
+                "kamenridercraft:alter_ring_miracle_world"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -448,6 +448,8 @@
 "effect.kamenridercraft.insomnia":"不眠症",
 "effect.kamenridercraft.dreaming":"夢",
 "effect.kamenridercraft.agito_factor":"アギト因子",
+"effect.kamenridercraft.unsealed":"封印溶け",
+"effect.kamenridercraft.fall_cancel":"落下しキャンセル",
 
 "item.minecraft.potion.effect.agito_factor_potion": "アギト因子のポーション",
 "item.minecraft.splash_potion.effect.agito_factor_potion": "アギト因子のスプラッシュポーション",
@@ -651,6 +653,10 @@
 "effect.kamenridercraft.dreaming.description":"プレイヤーが夢の世界に入ることができるようにする",
 "effect.kamenridercraft.agito_factor.desc":"プレイヤーとモブにアギトの力を与える",
 "effect.kamenridercraft.agito_factor.description":"プレイヤーとモブにアギトの力を与える",
+"effect.kamenridercraft.unsealed.desc": "周りにアンデッドがスポーンする",
+"effect.kamenridercraft.unsealed.description": "周りにアンデッドがスポーンする",
+"effect.kamenridercraft.fall_cancel.desc": "最初の落下しのダメージを無しにする",
+"effect.kamenridercraft.fall_cancel.description": "最初の落下しのダメージを無しにする",
 
 "attribute.kamenridercraftcore.has_bug": "バグスタースポーンチャンス",
 "attribute.kamenridercraftcore.head_size": "頭部の大きさ",
@@ -2525,7 +2531,6 @@
 "item.kamenridercraft.g1_belt": "Gバックル",
 "item.kamenridercraft.v1_belt": "V-1ベルト",
 
-
 "kamenridercraft.name.g3":"ライダー: 仮面ライダーG3",
 "kamenridercraft.name.g3_x":"ライダー: 仮面ライダーG3-X",
 "kamenridercraft.name.g3_mild":"ライダー: 仮面ライダーG3マイルド",
@@ -2536,7 +2541,8 @@
 "kamenridercraft.name.g1":"ライダー: 仮面ライダーG1",
 "kamenridercraft.name.v1":"疑似ライダー: V1",
 
-
+"item.kamenridercraft.alter_ring_miracle_world": "オルタリング（幻）",
+"kamenridercraft.name.agito_miracle_world":"ライダー: 仮面ライダーアギト（幻）",
 "item.kamenridercraft.alter_ring_miracle": "オルタリング",
 "kamenridercraft.name.mirage_agito":"ライダー: 仮面ライダーミラージュアギト",
 
@@ -2588,6 +2594,7 @@
 "item.kamenridercraft.another_agito": "アナザーアギト賢者の石",
 "item.kamenridercraft.another_agito_koji": "アナザーアギト賢者の石（真島浩二）",
 
+"item.kamenridercraft.agito_miracle_world": "アギト（幻）賢者の石",
 "item.kamenridercraft.agito_miracle": "ミラージュアギト賢者の石",
 "item.kamenridercraft.another_agito_burning_form": "アナザーアギトバーニング賢者の石",
 
@@ -2626,6 +2633,10 @@
 "kamenridercraft:g4x.form": "フォーム: 基本フォーム",
 "kamenridercraft:g1.form": "フォーム: 基本フォーム",
 "kamenridercraft:v1.form": "フォーム: 基本フォーム",
+
+"item.kamenridercraft.gill_agito": "ギル・アギト賢者の石",
+"item.kamenridercraft.gill_agito_trinity": "トリニティ・ギル・アギト賢者の石",
+"item.kamenridercraft.gill_agito_shining": "シャイニング・・ギル・アギト賢者の石",
 
 "item.kamenridercraft.ryuki_logo": "龍騎クレスト",
 "item.kamenridercraft.advent_card": "コントラクト",
@@ -4580,6 +4591,8 @@
 "kamenridercraft.name.meteor": "ライダー: 仮面ライダーメテオ",
 "item.kamenridercraft.nadeshiko_driver": "なでしこドライバー",
 "kamenridercraft.name.nadeshiko": "ライダー: 仮面ライダーなでしこ",
+"item.kamenridercraft.boot_driver": "ブートドライバー",
+"kamenridercraft.name.boot": "疑似ライダー: ライダーハンターブート",
 "item.kamenridercraft.ikaros_driver": "イカロスドライバー",
 "kamenridercraft.name.ikaros": "ライダー: 仮面ライダーイカロス",
 "item.kamenridercraft.ginga_oh_driver": "ギンガオードライバー",
@@ -4639,6 +4652,7 @@
 "item.kamenridercraft.meteor_switch": "メテオスイッチ",
 "item.kamenridercraft.meteor_storm_switch": "メテオストームスイッチ",
 "item.kamenridercraft.nadeshiko_switch": "なでしこスイッチ",
+"item.kamenridercraft.boot_switch": "ブートスイッチ",
 "item.kamenridercraft.ikaros_switch": "イカロススイッチ",
 
 "item.kamenridercraft.solu_switch": "SOLUスイッチ",
@@ -4786,6 +4800,8 @@
 
 "kamenridercraft:nadeshiko_switch.form": "モジュールなし",
 "kamenridercraft:rocket_nadeshiko_switch.form": "ロケットモジュール",
+
+"kamenridercraft:boot_switch.form": "フォーム: ベースステイツ",
 
 "item.kamenridercraft.wizard_logo": "ウィザードクレスト",
 "item.kamenridercraft.wizard_head": "ウィザードのヘルメット",
@@ -6574,6 +6590,8 @@
 "kamenridercraft.name.another_ryuga": "怪人: アナザーリュウガ",
 "item.kamenridercraft.another_quiz_driver": "アナザークイズドライバー",
 "kamenridercraft.name.another_quiz": "怪人: アナザークイズ",
+"item.kamenridercraft.another_arcle": "アナザーアークル",
+"kamenridercraft.name.another_kuuga": "怪人: アナザークウガ",
 
 "item.kamenridercraft.zikan_girade": "ジカンギレード",
 "item.kamenridercraft.zikan_zax": "ジカンザックス",
@@ -6801,6 +6819,10 @@
 "item.kamenridercraft.another_shinobi_watch": "アナザーシノビウォッチ",
 "item.kamenridercraft.another_quiz_watch": "アナザークイズウォッチ",
 "item.kamenridercraft.another_kikai_watch": "アナザーキカイウォッチ",
+"item.kamenridercraft.another_kuuga_ultimate_watch": "アナザークウガアルティメットウォッチ",
+
+"kamenridercraft:another_kuuga_watch.form": "フォーム: 基本フォーム",
+"kamenridercraft:kuuga_ultimate_another.form": "フォーム: アルティメット",
 
 "item.kamenridercraft.shuriken_starter": "メンキョカイデンプレート（シノビ）",
 "item.kamenridercraft.shuriken_starter_hattari": "メンキョカイデンプレート（ハッタリ）",
@@ -9346,6 +9368,8 @@
 "item.kamenridercraft.v3_mask": "V3お面",
 "item.kamenridercraft.riderman_helmet": "ライダーマンヘルメット",
 "item.kamenridercraft.tojima_takoyaki": "東島たこ焼き",
+"item.kamenridercraft.another_agito_helmet": "アナザーアギトヘルメット",
+
 
 "item.kamenridercraft.kuuga_amazing_mighty_artist": "S.I.C. ヒーローサーガ",
 
@@ -9674,6 +9698,7 @@
 "entity.kamenridercraft.zeztz_darkness_nightmare": "ゼッツダークネスナイトメア",
 "entity.kamenridercraft.phantom_gore_nightmare": "ファントムゴアナイトメア",
 "entity.kamenridercraft.oblivion_gore_nightmare": "オブリビオンゴアナイトメア",
+"entity.kamenridercraft.catastrophe_gore_nightmare": "カタストロフゴアナイトメア",
 "entity.kamenridercraft.code_zero": "ゼロ",
 
 "entity.kamenridercraft.bicycle": "自転車",
@@ -10007,6 +10032,7 @@
 "item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "ゼッツダークネスナイトメアポーンエッグ",
 "item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "ファントムゴアナイトメアポーンエッグ",
 "item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "オブリビオンゴアナイトメアポーンエッグ",
+"item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "カタストロフゴアナイトメアポーンエッグ",
 
 "item.kamenridercraft.bicycle_spawn_egg": "自転車",
 "item.kamenridercraft.acrobatter_spawn_egg": "アクロバッター",
@@ -10213,6 +10239,12 @@
 "block.kamenridercraft.cyan_wallplate_wall": "青緑色のウォールプレートの塀",
 "block.kamenridercraft.blue_wallplate_wall": "青色のウォールプレートの塀",
 "block.kamenridercraft.light_blue_wallplate_wall": "空色のウォールプレートの塀",
+"block.kamenridercraft.green_wallplate_wall": "緑色のウォールプレートの塀",
+"block.kamenridercraft.light_green_wallplate_wall": "黄緑色のウォールプレートの塀",
+"block.kamenridercraft.black_wallplate_wall": "黒色のウォールプレートの塀",
+"block.kamenridercraft.grey_wallplate_wall": "灰色のウォールプレートの塀",
+"block.kamenridercraft.red_wallplate_wall": "赤色のウォールプレートの塀",
+"block.kamenridercraft.wallplate_wall": "ウォールプレートの塀",
 "block.kamenridercraft.yellow_wallplate_grate_stairs": "黄色のウォールプレート格子の階段",
 "block.kamenridercraft.red_wallplate": "赤色のウォールプレート",
 "block.kamenridercraft.grey_wallplate": "灰色のウォールプレート",
@@ -10935,6 +10967,8 @@
 "advancements.kamenridercraft.555.psyga.title": "Let the Game Begin",
 "advancements.kamenridercraft.agito.agito_burning.description": "アギトバーニングフォームに変身",
 "advancements.kamenridercraft.agito.agito_burning.title": "Burning Down the House",
+"advancements.kamenridercraft.agito.agito_miracle_world.description": "仮面ライダーアギト（幻）に変身",
+"advancements.kamenridercraft.agito.agito_miracle_world.title": "ミラクルワールドの支配者",
 "advancements.kamenridercraft.agito.agito_reiko_takano.description": "仮面ライダーアギト（高野玲子）に変身",
 "advancements.kamenridercraft.agito.agito_reiko_takano.title": "太陽のアイドル",
 "advancements.kamenridercraft.agito.agito_shining.description": "アギトシャイニングフォームに変身",
@@ -10967,8 +11001,8 @@
 "advancements.kamenridercraft.agito.g6.title": "翼を広げて",
 "advancements.kamenridercraft.agito.g7.description": "仮面ライダーG7に変身",
 "advancements.kamenridercraft.agito.g7.title": "箸で豆腐を持つプロ",
-"advancements.kamenridercraft.agito.gill_agito.description": "ギル・アギトに変身",
-"advancements.kamenridercraft.agito.gill_agito.title": "ギルスかアギトか？",
+"advancements.kamenridercraft.agito.gill_agito.description": "ギル・アギトを倒す",
+"advancements.kamenridercraft.agito.gill_agito.title": "ギル・村ギト",
 "advancements.kamenridercraft.agito.gill_agito_shining.description": "シャイニング・ギル・アギトを倒す",
 "advancements.kamenridercraft.agito.gill_agito_shining.title": "「俺はきっと蘇る、何でも、何度でも」",
 "advancements.kamenridercraft.agito.gill_agito_trinity.description": "トリニティ・ギル・アギトに変身",
@@ -10979,6 +11013,8 @@
 "advancements.kamenridercraft.agito.gills_exceed.title": "エクセルシオール",
 "advancements.kamenridercraft.agito.gx_launcher.description": "GXランチャーに変身",
 "advancements.kamenridercraft.agito.gx_launcher.title": "ロケット・ジャンプは含まれないよ",
+"advancements.kamenridercraft.agito.mirage_agito.description": "仮面ライダーミラージュアギトに変身",
+"advancements.kamenridercraft.agito.mirage_agito.title": "ΑにしてΩ",
 "advancements.kamenridercraft.agito.shining_caliber_single.description": "シャイニングカリバー（シングル）を入手",
 "advancements.kamenridercraft.agito.shining_caliber_single.title": "バーニングボンバー",
 "advancements.kamenridercraft.agito.shining_caliber_twin.description": "シャイニングカリバー（ツインモード）を入手",

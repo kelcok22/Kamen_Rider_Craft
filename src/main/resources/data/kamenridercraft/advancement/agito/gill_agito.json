@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:gill_agito_alter_ring"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.agito.gill_agito.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.agito.gill_agito.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:agito/gills",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "kamenridercraft:gill_agito"
+        }
+      }
+    }
+  }
+}

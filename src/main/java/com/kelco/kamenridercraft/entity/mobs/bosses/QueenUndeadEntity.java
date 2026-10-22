@@ -42,7 +42,7 @@ public class QueenUndeadEntity extends UndeadEntity {
 
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
-            switch (getRandom().nextInt(2)) {
+            switch (getRandom().nextInt(3)) {
                 case 0:
                     setData(MOB_STATE, "capricorn");
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
@@ -53,6 +53,11 @@ public class QueenUndeadEntity extends UndeadEntity {
                     setData(MOB_STATE, "serpent");
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.ABSORB_SERPENT.get(), 1);
+                    break;
+                case 2:
+                    setData(MOB_STATE, "orchid");
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.ABSORB_ORCHID.get(), 1);
                     break;
             }
         }

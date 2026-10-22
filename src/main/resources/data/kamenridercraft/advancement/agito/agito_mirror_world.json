@@ -1,20 +1,20 @@
 {
 	"display": {
 		"icon": {
-			"id": "kamenridercraft:ank_point_burning"
+			"id": "kamenridercraft:alter_ring_miracle_world"
 		},
 		"title": {
-			"translate": "advancements.kamenridercraft.agito.another_agito_kouji_majima.title"
+			"translate": "advancements.kamenridercraft.agito.agito_miracle_world.title"
 		},
 		"description": {
-			"translate": "advancements.kamenridercraft.agito.another_agito_kouji_majima.description"
+			"translate": "advancements.kamenridercraft.agito.agito_miracle_world.description"
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "kamenridercraft:agito/another_agito",
+	"parent": "kamenridercraft:agito/another_agito_kouji_majima",
 	"criteria": {
 		"requirement": {
 			"trigger": "minecraft:inventory_changed",
@@ -38,7 +38,7 @@
 						},
 						"feet": {
 							"items": [
-								"kamenridercraft:ank_point_burning"
+								"kamenridercraft:alter_ring_miracle_world"
 							]
 						}
 					}
