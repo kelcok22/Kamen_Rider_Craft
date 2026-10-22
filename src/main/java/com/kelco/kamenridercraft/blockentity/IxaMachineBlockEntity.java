@@ -1,31 +1,31 @@
 package com.kelco.kamenridercraft.blockentity;
 
-import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipe;
 import com.kelco.kamenridercraft.recipe.IxaMachineRecipeInput;
 import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.world.inventory.IxaMachineBlockGuiMenu;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.Connection;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.world.Containers;
+import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.MenuProvider;
-import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.StackedContents;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.inventory.RecipeCraftingHolder;
+import net.minecraft.world.inventory.StackedContentsCompatible;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
@@ -33,26 +33,29 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Random;
 
-public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
-
+public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements MenuProvider, WorldlyContainer, RecipeCraftingHolder, StackedContentsCompatible {
     private static final int INPUT_SLOT = 0;
     private static final int OPTIONAL_INPUT_SLOT = 1;
     private static final int FIRST_OUTPUT_SLOT = 2;
     private static final int INVENTORY_SIZE = 11;
     private static final int MAX_PROGRESS = 72;
 
-    private static final String DATA_TAG = "kamenridercraft_data";
-    private static final String INVENTORY_TAG = "Inventory";
     private static final String PROGRESS_TAG = "Progress";
+
+    private static final int[] SLOTS_FOR_UP = new int[]{0};
+    private static final int[] SLOTS_FOR_SIDES = new int[]{1};
+    private static final int[] SLOTS_FOR_DOWN = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+    protected NonNullList<ItemStack> items;
+
 
     private final ItemStackHandler inventory = new ItemStackHandler(INVENTORY_SIZE) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
-
-            if(level == null || level.isClientSide) return;
+            if (level == null || level.isClientSide()) {
+                return;
+            }
             level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
         }
     };
@@ -62,7 +65,7 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     protected final ContainerData data = new ContainerData() {
         @Override
         public int get(int index) {
-            return switch(index) {
+            return switch (index) {
                 case 0 -> progress;
                 case 1 -> MAX_PROGRESS;
                 default -> 0;
@@ -71,7 +74,9 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
         @Override
         public void set(int index, int value) {
-            if(index == 0) progress = value;
+            if (index == 0) {
+                progress = value;
+            }
         }
 
         @Override
@@ -82,37 +87,34 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
 
     public IxaMachineBlockEntity(BlockPos pos, BlockState blockState) {
         super(ModBlockEntities.IXA_MACHINE_BLOCK_BE.get(), pos, blockState);
+        items = NonNullList.withSize(INVENTORY_SIZE + 1, ItemStack.EMPTY);
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, IxaMachineBlockEntity forge) {
-        if(level.isClientSide()) return;
+        if (!level.isClientSide()) {
+            Optional<RecipeHolder<IxaMachineRecipe>> currentRecipe = forge.getCurrentRecipe(level);
 
-        Optional<RecipeHolder<IxaMachineRecipe>> currentRecipe = forge.getCurrentRecipe(level);
+            if (currentRecipe.isEmpty() || !forge.hasAnyOutputRoom()) {
+                forge.resetProgress();
+                return;
+            }
+            forge.progress++;
+            setChanged(level, pos, state);
+            level.sendBlockUpdated(pos, state, state, 3);
 
-        if(currentRecipe.isEmpty()) {
-            forge.resetProgress();
-            return;
+            if (forge.progress < MAX_PROGRESS) {
+                return;
+            }
+
+            forge.replicateFuestle(currentRecipe.get().value());
+            forge.progress = 0;
         }
-
-        if(!forge.hasAnyOutputRoom()) {
-            forge.resetProgress();
-            return;
-        }
-
-        forge.progress++;
-        setChanged(level, pos, state);
-        level.sendBlockUpdated(pos, state, state, 3);
-
-        if(forge.progress < MAX_PROGRESS) return;
-
-        forge.replicateFuestle(currentRecipe.get().value());
-        forge.progress = 0;
     }
 
     private Optional<RecipeHolder<IxaMachineRecipe>> getCurrentRecipe(Level level) {
         IxaMachineRecipeInput recipeInput = new IxaMachineRecipeInput(
-                this.inventory.getStackInSlot(INPUT_SLOT),
-                this.inventory.getStackInSlot(OPTIONAL_INPUT_SLOT)
+                items.get(INPUT_SLOT),
+                items.get(OPTIONAL_INPUT_SLOT)
         );
 
         return level.getRecipeManager()
@@ -120,33 +122,47 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private void resetProgress() {
-        if(this.progress == 0) return;
-        this.progress = 0;
+        if (progress == 0) {
+            return;
+        }
+        progress = 0;
         setChanged();
     }
 
     private boolean hasAnyOutputRoom() {
-        for(int slot = FIRST_OUTPUT_SLOT; slot < this.inventory.getSlots(); slot++) {
-            ItemStack stack = this.inventory.getStackInSlot(slot);
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
+            ItemStack stack = items.get(slot);
 
-            if(stack.isEmpty()) return true;
-            if(stack.getCount() < stack.getMaxStackSize()) return true;
+            if (stack.isEmpty()) {
+                return true;
+            }
+            if (stack.getCount() < stack.getMaxStackSize()) {
+                return true;
+            }
         }
 
         return false;
     }
 
     private boolean canOutputFit(ItemStack output) {
-        if(output.isEmpty()) return false;
+        if (output.isEmpty()) {
+            return false;
+        }
 
-        for(int slot = FIRST_OUTPUT_SLOT; slot < this.inventory.getSlots(); slot++) {
-            ItemStack slotStack = this.inventory.getStackInSlot(slot);
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
+            ItemStack slotStack = items.get(slot);
 
-            if(slotStack.isEmpty()) return true;
-            if(!ItemStack.isSameItemSameComponents(slotStack, output)) continue;
+            if (slotStack.isEmpty()) {
+                return true;
+            }
+            if (!ItemStack.isSameItemSameComponents(slotStack, output)) {
+                continue;
+            }
 
             int combinedCount = slotStack.getCount() + output.getCount();
-            if(combinedCount <= slotStack.getMaxStackSize()) return true;
+            if (combinedCount <= slotStack.getMaxStackSize()) {
+                return true;
+            }
         }
 
         return false;
@@ -155,25 +171,33 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     private void replicateFuestle(IxaMachineRecipe recipe) {
         ItemStack chosenOutput = selectRandomOutput(recipe.outputs());
 
-        if(chosenOutput.isEmpty()) return;
-        if(!canOutputFit(chosenOutput)) return;
+        if (chosenOutput.isEmpty()) {
+            return;
+        }
+        if (!canOutputFit(chosenOutput)) {
+            return;
+        }
 
-        this.inventory.getStackInSlot(INPUT_SLOT).shrink(1);
+        items.get(INPUT_SLOT).shrink(1);
         consumeOptionalInput(recipe);
         insertOutput(chosenOutput);
     }
 
     private void consumeOptionalInput(IxaMachineRecipe recipe) {
-        if(recipe.optionalInput().isEmpty()) return;
+        if (recipe.optionalInput().isEmpty()) {
+            return;
+        }
 
-        ItemStack modifierStack = this.inventory.getStackInSlot(OPTIONAL_INPUT_SLOT);
+        ItemStack modifierStack = items.get(OPTIONAL_INPUT_SLOT);
 
         // This acts as a reusable modifier.
-        if(modifierStack.is(KivaRiderItems.KIVA_LOGO.get())) return;
+        if (modifierStack.is(KivaRiderItems.KIVA_LOGO.get())) {
+            return;
+        }
 
-        if(modifierStack.getItem().hasCraftingRemainingItem()) {
+        if (modifierStack.getItem().hasCraftingRemainingItem()) {
             ItemStack remainder = new ItemStack(modifierStack.getItem().getCraftingRemainingItem());
-            this.inventory.setStackInSlot(OPTIONAL_INPUT_SLOT, remainder);
+            items.set(OPTIONAL_INPUT_SLOT, remainder);
             return;
         }
 
@@ -183,29 +207,41 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     private void insertOutput(ItemStack output) {
         ItemStack remainder = output.copy();
 
-        for(int slot = FIRST_OUTPUT_SLOT; slot < this.inventory.getSlots(); slot++) {
-            remainder = this.inventory.insertItem(slot, remainder, false);
-            if(remainder.isEmpty()) return;
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
+            remainder = items.set(slot, remainder);
+            if (remainder.isEmpty()) {
+                return;
+            }
         }
     }
 
     private ItemStack selectRandomOutput(List<IxaMachineRecipe.WeightedOutput> pool) {
-        if(pool.isEmpty() || this.level == null) return ItemStack.EMPTY;
-
-        int totalWeight = 0;
-        for(IxaMachineRecipe.WeightedOutput output : pool) {
-            if(output.weight() > 0) totalWeight += output.weight();
+        if (pool.isEmpty() || level == null) {
+            return ItemStack.EMPTY;
         }
 
-        if(totalWeight <= 0) return ItemStack.EMPTY;
+        int totalWeight = 0;
+        for (IxaMachineRecipe.WeightedOutput output : pool) {
+            if (output.weight() > 0) {
+                totalWeight += output.weight();
+            }
+        }
 
-        int roll = this.level.random.nextInt(totalWeight);
+        if (totalWeight <= 0) {
+            return ItemStack.EMPTY;
+        }
 
-        for(IxaMachineRecipe.WeightedOutput output : pool) {
-            if(output.weight() <= 0) continue;
+        int roll = level.random.nextInt(totalWeight);
+
+        for (IxaMachineRecipe.WeightedOutput output : pool) {
+            if (output.weight() <= 0) {
+                continue;
+            }
 
             roll -= output.weight();
-            if(roll < 0) return output.stack().copy();
+            if (roll < 0) {
+                return output.stack().copy();
+            }
         }
 
         return ItemStack.EMPTY;
@@ -214,42 +250,51 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
     @Override
     protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
         super.saveAdditional(tag, registries);
-
-        CompoundTag modData = new CompoundTag();
-        modData.put(INVENTORY_TAG, this.inventory.serializeNBT(registries));
-        modData.putInt(PROGRESS_TAG, this.progress);
-
-        tag.put(DATA_TAG, modData);
+        tag.putInt(PROGRESS_TAG, progress);
+        ContainerHelper.saveAllItems(tag, items, registries);
     }
 
     @Override
     protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
         super.loadAdditional(tag, registries);
-
-        if(!tag.contains(DATA_TAG)) return;
-
-        CompoundTag modData = tag.getCompound(DATA_TAG);
-
-        if(modData.contains(INVENTORY_TAG)) {
-            this.inventory.deserializeNBT(registries, modData.getCompound(INVENTORY_TAG));
-        }
-
-        this.progress = modData.getInt(PROGRESS_TAG);
+        items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);
+        ContainerHelper.loadAllItems(tag, items, registries);
+        progress = tag.getInt(PROGRESS_TAG);
     }
 
     public ItemStackHandler getInventory() {
-        return this.inventory;
+        return inventory;
     }
 
     @Override
-    public Component getDisplayName() {
+    public @NotNull Component getDisplayName() {
         return Component.translatable("block.kamenridercraft.ixa_machine_block");
+    }
+
+    @Override
+    protected @NotNull Component getDefaultName() {
+        return Component.translatable("block.kamenridercraft.ixa_machine_block");
+    }
+
+    @Override
+    protected @NotNull NonNullList<ItemStack> getItems() {
+        return items;
+    }
+
+    @Override
+    protected void setItems(@NotNull NonNullList<ItemStack> items) {
+        this.items = items;
     }
 
     @Nullable
     @Override
-    public AbstractContainerMenu createMenu(int id, Inventory playerInventory, Player player) {
-        return new IxaMachineBlockGuiMenu(id, playerInventory, this, this.data);
+    public AbstractContainerMenu createMenu(int id, @NotNull Inventory playerInventory, @NotNull Player player) {
+        return new IxaMachineBlockGuiMenu(id, playerInventory, this, data);
+    }
+
+    @Override
+    protected @NotNull AbstractContainerMenu createMenu(int id, @NotNull Inventory inventory) {
+        return new IxaMachineBlockGuiMenu(id, inventory, this, data);
     }
 
     @Nullable
@@ -263,5 +308,51 @@ public class IxaMachineBlockEntity extends BlockEntity implements MenuProvider {
         CompoundTag tag = super.getUpdateTag(registries);
         saveAdditional(tag, registries);
         return tag;
+    }
+
+    @Override
+    public int getContainerSize() {
+        return items.size();
+    }
+
+    @Override
+    public int @NotNull [] getSlotsForFace(@NotNull Direction direction) {
+        if (direction == Direction.UP) {
+            return SLOTS_FOR_UP;
+        } else if (direction == Direction.DOWN) {
+            return SLOTS_FOR_DOWN;
+        } else {
+            return SLOTS_FOR_SIDES;
+        }
+    }
+
+    @Override
+    public boolean canPlaceItemThroughFace(int i, @NotNull ItemStack itemStack, @Nullable Direction direction) {
+        return canPlaceItem(i, itemStack);
+    }
+
+    @Override
+    public boolean canTakeItemThroughFace(int i, @NotNull ItemStack itemStack, @NotNull Direction direction) {
+        if (direction == Direction.DOWN && i >= 2 && i <= INVENTORY_SIZE) {
+            return canTakeItem(this, i, itemStack);
+        }
+        return false;
+    }
+
+    @Override
+    public void setRecipeUsed(@Nullable RecipeHolder<?> recipeHolder) {
+
+    }
+
+    @Override
+    public @Nullable RecipeHolder<?> getRecipeUsed() {
+        return null;
+    }
+
+    @Override
+    public void fillStackedContents(StackedContents stackedContents) {
+        for (ItemStack itemstack : items) {
+            stackedContents.accountStack(itemstack);
+        }
     }
 }

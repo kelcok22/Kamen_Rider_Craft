@@ -27,16 +27,14 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class IxaMachineBlock extends BaseEntityBlock {
-
     public static final MapCodec<IxaMachineBlock> CODEC = simpleCodec(IxaMachineBlock::new);
-
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-
     private static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
 
     @Override
@@ -58,7 +56,6 @@ public class IxaMachineBlock extends BaseEntityBlock {
     public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
         return new IxaMachineBlockEntity(blockPos, blockState);
     }
-
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_53681_) {
         p_53681_.add(FACING);
@@ -91,9 +88,9 @@ public class IxaMachineBlock extends BaseEntityBlock {
         if (!pState.is(pNewState.getBlock())) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
             if (blockEntity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
-                for (int i = 0; i < ixaMachineBlockEntity.getInventory().getSlots(); i++) {
+                for (int i = 0; i < ixaMachineBlockEntity.getContainerSize(); i++) {
                     net.minecraft.world.Containers.dropItemStack(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(),
-                            ixaMachineBlockEntity.getInventory().getStackInSlot(i));
+                            ixaMachineBlockEntity.getItem(i));
                 }
             }
         }
@@ -102,8 +99,8 @@ public class IxaMachineBlock extends BaseEntityBlock {
     }
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack pStack, BlockState pState, Level pLevel, BlockPos pPos,
-                                              Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult) {
+    protected @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack pStack, @NotNull BlockState pState, Level pLevel, @NotNull BlockPos pPos,
+                                                       @NotNull Player pPlayer, @NotNull InteractionHand pHand, @NotNull BlockHitResult pHitResult) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
             if (entity instanceof IxaMachineBlockEntity ixaMachineBlockEntity) {
