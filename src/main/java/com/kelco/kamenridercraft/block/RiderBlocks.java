@@ -1135,6 +1135,10 @@ public class RiderBlocks {
     public static final DeferredBlock<Block> FERBUS = registerBlock("ferbus",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
 
+    public static final DeferredBlock<Block> YURUSEN_PLUSH = registerBlock("yurusen_plush",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+
+
 
 
     public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",

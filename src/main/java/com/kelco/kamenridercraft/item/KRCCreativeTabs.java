@@ -782,6 +782,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.GHOST_ORE);
             event.accept(RiderBlocks.DEEPSLATE_GHOST_ORE);
             event.accept(RiderBlocks.MONOLITH);
+            event.accept(RiderBlocks.YURUSEN_PLUSH);
 
         } else if (event.getTab() == EX_AIDTab.get()) {
             for (int i = 0; i < EX_AID_TAB_ITEM.size(); ++i) {

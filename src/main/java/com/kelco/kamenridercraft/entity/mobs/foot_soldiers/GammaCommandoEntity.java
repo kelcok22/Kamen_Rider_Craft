@@ -1,16 +1,21 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import java.time.LocalDate;
 
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
@@ -21,6 +26,13 @@ public class GammaCommandoEntity extends BaseHenchmenEntity {
     public GammaCommandoEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "gamma_commandos";
+
+        LocalDate localdate = LocalDate.now();
+        int day = localdate.getDayOfMonth();
+        if (localdate.getMonthValue() == 10 && day >= 24) {
+            this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(RiderBlocks.YURUSEN_PLUSH.get()));
+        }
+
         getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
     }
 
