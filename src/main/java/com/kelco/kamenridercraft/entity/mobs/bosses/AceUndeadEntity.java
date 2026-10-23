@@ -96,7 +96,7 @@ public class AceUndeadEntity extends UndeadEntity {
 
     public void setSpider() {
         setData(MOB_STATE, "spider");
-        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.UNDEAD_CHANGE_SPIDER.get(), 1);
+        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_SPIDER_UNDEAD.get(), 1);
         getItemInHand(InteractionHand.MAIN_HAND).shrink(1);
         goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.6F));
         addEffect(new MobEffectInstance(EffectCore.CLIMBING, MobEffectInstance.INFINITE_DURATION, 4, true, false));

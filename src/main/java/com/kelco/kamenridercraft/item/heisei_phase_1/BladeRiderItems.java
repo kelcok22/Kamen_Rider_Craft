@@ -34,7 +34,6 @@ public class BladeRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
     public final static List<Item> NORMAL_UNDEAD_DROPS = new ArrayList<>();
     public final static List<Item> ACE_UNDEAD_DROPS = new ArrayList<>();
-    public final static List<Item> JACK_UNDEAD_DROPS = new ArrayList<>();
     public final static List<Item> QUEEN_UNDEAD_DROPS = new ArrayList<>();
 
 
@@ -238,7 +237,7 @@ public class BladeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.isGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
-                    .hasFlyingWings("blade_jack_wing.geo.json").addToList(JACK_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
+                    .hasFlyingWings("blade_jack_wing.geo.json").addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_CAPRICORN = ITEMS.register("sealable_absorb_capricorn",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_capricorn", "undead", "sealable_undead_buckle_royal_belt",
@@ -459,10 +458,11 @@ public class BladeRiderItems {
 
     public static final DeferredItem<Item> SEALABLE_FUSION_PEACOCK = ITEMS.register("sealable_fusion_peacock",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_peacock", "undead", "sealable_undead_buckle_royal_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)) {
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -473,10 +473,11 @@ public class BladeRiderItems {
 
     public static final DeferredItem<Item> FUSION_PEACOCK_UNDEAD = ITEMS.register("fusion_peacock_undead",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_peacock", "undead", "unsealed_undead_buckle_royal_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false)) {
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
@@ -499,7 +500,7 @@ public class BladeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.isGlowing().addAlternative(FUSION_PEACOCK_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
-                    .hasFlyingWings("garren_jack_wing.geo.json").addToList(JACK_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
+                    .hasFlyingWings("garren_jack_wing.geo.json").addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_SERPENT = ITEMS.register("sealable_absorb_serpent",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_serpent", "undead", "sealable_undead_buckle_royal_belt",
@@ -764,8 +765,9 @@ public class BladeRiderItems {
                     .addToList(NORMAL_UNDEAD_DROPS));
 
     public static final DeferredItem<Item> SEALABLE_FUSION_WOLF = ITEMS.register("sealable_fusion_wolf",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wolf", "undead", "sealable_undead_buckle_royal_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_wolf", "undead", "sealable_undead_buckle_royal_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -777,8 +779,9 @@ public class BladeRiderItems {
             }.hasCape().useBasicModel().setModelName("fusion_wolf"));
 
     public static final DeferredItem<Item> FUSION_WOLF_UNDEAD = ITEMS.register("fusion_wolf_undead",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wolf", "undead", "unsealed_undead_buckle_royal_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_wolf", "undead", "unsealed_undead_buckle_royal_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
@@ -790,7 +793,7 @@ public class BladeRiderItems {
             }.hasCape().addSwitchForm(SEALABLE_FUSION_WOLF.get()).useBasicModel().setModelName("fusion_wolf"));
 
     public static final DeferredItem<Item> FUSION_WOLF = ITEMS.register("fusion_wolf",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_wolf_undead", "chalice", "chalice_rouzer_belt",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_wolf_undead", "chalice", "chalice_rouzer_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)){
@@ -800,7 +803,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasCape().addAlternative(FUSION_WOLF_UNDEAD.get()).addToList(JACK_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
+            }.hasCape().addAlternative(FUSION_WOLF_UNDEAD.get()).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_ORCHID = ITEMS.register("sealable_absorb_orchid",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_orchid", "undead", "sealable_undead_buckle_royal_belt",
@@ -881,7 +884,7 @@ public class BladeRiderItems {
                 }
             }.isGlowing().useBasicModel().setModelName("change_spider"));
 
-    public static final DeferredItem<Item> UNDEAD_CHANGE_SPIDER = ITEMS.register("undead_change_spider",
+    public static final DeferredItem<Item> CHANGE_SPIDER_UNDEAD = ITEMS.register("change_spider_undead",
             () -> new RiderFormChangeItem(new Item.Properties(), "_spider", "undead", "unsealed_undead_buckle_belt",
                     new MobEffectInstance(EffectCore.CLIMBING, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
@@ -905,7 +908,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(UNDEAD_CHANGE_SPIDER.get()).addToList(ACE_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
+            }.isGlowing().addAlternative(CHANGE_SPIDER_UNDEAD.get()).addToList(ACE_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_SPIDER_PROPER_SEAL = ITEMS.register("change_spider_proper_seal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_proper_seal", "leangle", "leangle_buckle_belt",
@@ -1016,6 +1019,34 @@ public class BladeRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(BLADE_TAB_ITEM)
                     .addToList(NORMAL_UNDEAD_DROPS));
 
+    public static final DeferredItem<Item> SEALABLE_FUSION_ELEPHANT = ITEMS.register("sealable_fusion_elephant",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_elephant", "undead", "sealable_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape().useBasicModel().setModelName("fusion_elephant"));
+
+    public static final DeferredItem<Item> FUSION_ELEPHANT_UNDEAD = ITEMS.register("fusion_elephant_undead",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_elephant", "undead", "unsealed_undead_buckle_royal_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape().addSwitchForm(SEALABLE_FUSION_WOLF.get()).useBasicModel().setModelName("fusion_elephant"));
+
     public static final DeferredItem<Item> FUSION_ELEPHANT = ITEMS.register("fusion_elephant",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "leangle", "leangle_buckle_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
@@ -1028,7 +1059,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addNeedItem(ROUZE_ABSORBER.get()).addToList(JACK_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
+            }.isGlowing().addAlternative(FUSION_ELEPHANT_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> ABSORB_TIGER = ITEMS.register("absorb_tiger",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(QUEEN_UNDEAD_DROPS).addToList(BLADE_TAB_ITEM));
@@ -1259,8 +1290,8 @@ public class BladeRiderItems {
             () -> new BaseSwordItem(Tiers.DIAMOND, 19, -2.4F, new Item.Properties().rarity(Rarity.EPIC)).addToList(BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
     public static final DeferredItem<Item> MOLE_SHIELD = ITEMS.register("mole_shield",
             () -> new BaseShieldItem(new Item.Properties()).addToList(BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
-//	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
-//			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(RiderTabs.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
+	public static final DeferredItem<Item> ELEPHANT_EARTHQUAKE = ITEMS.register("elephant_earthquake",
+			() -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(BLADE_TAB_ITEM).changeRepairItem(BLANK_ROUZECARD.get()));
 //	public static final DeferredItem<Item> SPIDER_THREAD = ITEMS.register("spider_thread",
 //			() -> new BaseSwordItem(Tiers.DIAMOND, 13, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(RiderTabs.BLADE_TAB_ITEM).changeRepairItem(BLADECARD.get()));
 

@@ -3022,8 +3022,8 @@
 "item.kamenridercraft.glaiverouzer": "グレイブラウザー",
 "item.kamenridercraft.larcrouzer": "ラルクラウザー",
 "item.kamenridercraft.lancerouzer": "ランスラウザー",
-
 "item.kamenridercraft.taiyaki_mold": "タイ焼き器",
+
 "item.kamenridercraft.jaguar_claws": "スラッシュクロー",
 "item.kamenridercraft.capricorn_crescent_edge": "クレセントエッジ",
 "item.kamenridercraft.caucasus_all_over": "オールオーバー",
@@ -3174,6 +3174,8 @@
 "kamenridercraft:sealable_absorb_orchid.form": "フォーム: オーキッドアンデッド",
 "kamenridercraft:evolution_paradoxa_undead.form": "フォーム: パラドキサアンデッド",
 "kamenridercraft:sealable_evolution_paradoxa.form": "フォーム: パラドキサアンデッド",
+"kamenridercraft:change_spider_undead.form": "フォーム: スパイダーフライアンデッド",
+"kamenridercraft:sealable_change_spider.form": "フォーム: スパイダーフライアンデッド",
 "kamenridercraft:screw_mole.form": "フォーム: モールフライアンデッド",
 "kamenridercraft:sealable_screw_mole.form": "フォーム: モールアンデッド",
 "kamenridercraft:gel_jellyfish.form": "フォーム: ジェリーフィッシュアンデッド",

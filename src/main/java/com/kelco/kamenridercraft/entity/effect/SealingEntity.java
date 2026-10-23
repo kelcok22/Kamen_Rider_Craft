@@ -52,9 +52,14 @@ public class SealingEntity extends Entity implements GeoEntity {
                             new ItemStack(CHANGE_SPIDER.get()), 0, 0, 0);
                     case "proper_seal_spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(CHANGE_SPIDER_PROPER_SEAL.get()), 0, 0, 0);
-                    case "eagle", "peacock", "wolf", "elephant" ->
-                            new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                                    new ItemStack(JACK_UNDEAD_DROPS.get(generator.nextInt(JACK_UNDEAD_DROPS.size()))), 0, 0, 0);
+                    case "eagle" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_EAGLE.get()), 0, 0, 0);
+                    case "peacock" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_PEACOCK.get()), 0, 0, 0);
+                    case "wolf" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_WOLF.get()), 0, 0, 0);
+                    case "elephant" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_ELEPHANT.get()), 0, 0, 0);
                     case "serpent", "capricorn", "orchid", "tiger" ->
                             new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                                     new ItemStack(QUEEN_UNDEAD_DROPS.get(generator.nextInt(QUEEN_UNDEAD_DROPS.size()))), 0, 0, 0);

@@ -3028,6 +3028,7 @@
 "item.kamenridercraft.wild_slasher": "Wild Slasher",
 "item.kamenridercraft.wild_chalice_arrow": "Wild Chalice Arrow",
 "item.kamenridercraft.taiyaki_mold": "Taiyaki Mold",
+
 "item.kamenridercraft.jaguar_claws": "Slash Claws",
 "item.kamenridercraft.capricorn_crescent_edge": "Crescent Edge",
 "item.kamenridercraft.caucasus_all_over": "All Over",
@@ -3181,6 +3182,8 @@
 "kamenridercraft:sealable_evolution_paradoxa.form": "Form: Paradoxa Undead",
 "kamenridercraft:screw_mole.form": "From: Mole Undead",
 "kamenridercraft:sealable_screw_mole.form": "From: Mole Undead",
+"kamenridercraft:change_spider_undead.form": "From: Spider Undead",
+"kamenridercraft:sealable_change_spider.form": "From: Spider Undead",
 "kamenridercraft:gel_jellyfish.form": "From: Jellyfish Undead",
 "kamenridercraft:sealable_gel_jellyfish.form": "From: Jellyfish Undead",
 "kamenridercraft:smog_squid.form": "From: Squid Undead",

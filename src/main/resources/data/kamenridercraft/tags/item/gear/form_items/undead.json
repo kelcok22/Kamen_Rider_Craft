@@ -20,9 +20,13 @@
         "kamenridercraft:reflect_moth",
         "kamenridercraft:shuffle_centipede",
         "kamenridercraft:fusion_wolf",
+        "kamenridercraft:absorb_orchid",
         "kamenridercraft:evolution_paradoxa",
+        "kamenridercraft:change_spider",
         "kamenridercraft:screw_mole",
         "kamenridercraft:gel_jellyfish",
-        "kamenridercraft:smog_squid"
+        "kamenridercraft:smog_squid",
+        "kamenridercraft:fusion_elephant",
+        "kamenridercraft:evolution_tarantula"
     ]
 }

@@ -42,7 +42,7 @@ public class JackUndeadEntity extends UndeadEntity {
 
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
-            switch (getRandom().nextInt(3)) {
+            switch (getRandom().nextInt(4)) {
                 case 0:
                     setData(MOB_STATE, "eagle");
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
@@ -58,6 +58,12 @@ public class JackUndeadEntity extends UndeadEntity {
                     setData(MOB_STATE, "wolf");
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.FUSION_WOLF_UNDEAD.get(), 1);
+                    break;
+                case 3:
+                    setData(MOB_STATE, "elephant");
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.FUSION_ELEPHANT_UNDEAD.get(), 1);
+                    setItemInHand(InteractionHand.OFF_HAND, new ItemStack(BladeRiderItems.ELEPHANT_EARTHQUAKE.get(), 1));
                     break;
             }
         }
@@ -77,9 +83,9 @@ public class JackUndeadEntity extends UndeadEntity {
                 case "wolf_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FUSION_WOLF.get(), 1);
                     break;
-//                case "elephant_sealable":
-//                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FUSION_ELEPHANT.get(), 1);
-//                    break;
+                case "elephant_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_FUSION_ELEPHANT.get(), 1);
+                    break;
             }
         }
     }
