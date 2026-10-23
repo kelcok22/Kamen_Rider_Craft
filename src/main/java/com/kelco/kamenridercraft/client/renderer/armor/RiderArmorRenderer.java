@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
@@ -86,10 +87,46 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         return RenderType.entityTranslucent(texture);
     }
 
+
+/**
+    String[] boneNames = new String[]{"armorHead", "armorBody", "armorRightArm", "armorLeftArm", "armorRightLeg", "armorLeftLeg"};
+        for (String boneName : boneNames) {
+        GeoBone bakedHead = bakedModel.getBone(boneName).orElse(null);
+        GeoBone head = newModel.getBone(boneName).orElse(null);
+        if (head != null & bakedHead != null) {
+            matchModelPartRot(bakedHead, head);
+            head.updatePosition(bakedHead.getPosX(), bakedHead.getPosY(), bakedHead.getPosZ());
+            head.setScaleX(bakedHead.getScaleX());
+            head.setScaleY(bakedHead.getScaleY());
+            head.setScaleZ(bakedHead.getScaleZ());
+        }
+    }
+   **/
+
     @Override
     protected void applyBaseTransformations(HumanoidModel<?> baseModel) {
         super.applyBaseTransformations(baseModel);
         if (body != null) {
+
+            head.setScaleX(baseModel.head.xScale);
+            head.setScaleY(baseModel.head.yScale);
+            head.setScaleZ(baseModel.head.zScale);
+            body.setScaleX(baseModel.body.xScale);
+            body.setScaleY(baseModel.body.yScale);
+            body.setScaleZ(baseModel.body.zScale);
+            leftArm.setScaleX(baseModel.leftArm.xScale);
+            leftArm.setScaleY(baseModel.leftArm.yScale);
+            leftArm.setScaleZ(baseModel.leftArm.zScale);
+            rightArm.setScaleX(baseModel.rightArm.xScale);
+            rightArm.setScaleY(baseModel.rightArm.yScale);
+            rightArm.setScaleZ(baseModel.rightArm.zScale);
+            leftLeg.setScaleX(baseModel.leftLeg.xScale);
+            leftLeg.setScaleY(baseModel.leftLeg.yScale);
+            leftLeg.setScaleZ(baseModel.leftLeg.zScale);
+            rightLeg.setScaleX(baseModel.rightLeg.xScale);
+            rightLeg.setScaleY(baseModel.rightLeg.yScale);
+            rightLeg.setScaleZ(baseModel.rightLeg.zScale);
+
             ModelPart bodyPart = baseModel.body;
             RenderUtil.matchModelPartRot(bodyPart, body);
             body.updatePosition(bodyPart.x, -bodyPart.y, bodyPart.z);

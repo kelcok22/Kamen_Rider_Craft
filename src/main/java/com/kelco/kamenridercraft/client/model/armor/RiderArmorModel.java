@@ -13,6 +13,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animation.AnimationState;
@@ -150,13 +151,14 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
             GeoBone tire2 = getAnimationProcessor().getBone("tire2");
             GeoBone tire3 = getAnimationProcessor().getBone("tire3");
 
-            GeoBone bipedHead = getAnimationProcessor().getBone("armorHead");
-            if (bipedHead != null) {
-                bipedHead.setScaleX((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
-                bipedHead.setScaleY((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
-                bipedHead.setScaleZ((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
+            if (!(entity instanceof Player)) {
+                GeoBone bipedHead = getAnimationProcessor().getBone("armorHead");
+                if (bipedHead != null) {
+                    bipedHead.setScaleX((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
+                    bipedHead.setScaleY((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
+                    bipedHead.setScaleZ((float) RIDER.getAttribute(KRCAttributes.HEAD_SIZE).getValue());
+                }
             }
-
             if (cape != null & Cape < 0) {
                 cape.setRotX(Cape);
             }
