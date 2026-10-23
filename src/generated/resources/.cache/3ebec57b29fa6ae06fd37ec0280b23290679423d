@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-23T16:34:58.9074125	Item Models: kamenridercraft
+// 1.21.1	2026-10-23T13:34:25.7064553	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -643,7 +643,7 @@ b8e24158c537fa91553081c93e6e2c1dd9af59c6 assets/kamenridercraft/models/item/rhin
 148898e65206158bc092068b1a853fdc9bc464b3 assets/kamenridercraft/models/item/rider_ticket_shin_o.json
 83601cc67f1d9c217d4cd395b0e7c133c4f2fd2c assets/kamenridercraft/models/item/ridestriker_ridewatch.json
 3a6f6ee2bf7be669061ba4f3bfbe478df91fa076 assets/kamenridercraft/models/item/ride_x_eggs_1.json
-f6543005c3253689c95de7a2c106619c4953a28e assets/kamenridercraft/models/item/ride_x_eggs_10_kei.json
+623e40c2466358583000463526b763762ac3203b assets/kamenridercraft/models/item/ride_x_eggs_10.json
 f6543005c3253689c95de7a2c106619c4953a28e assets/kamenridercraft/models/item/ride_x_eggs_11_vanken.json
 7ffe15efdd6f6f46babcdef409a7f5859728276b assets/kamenridercraft/models/item/ride_x_eggs_1_maou.json
 3a6f6ee2bf7be669061ba4f3bfbe478df91fa076 assets/kamenridercraft/models/item/ride_x_eggs_1_rid.json
