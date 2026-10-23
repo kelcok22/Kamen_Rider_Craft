@@ -107,25 +107,34 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     protected void applyBaseTransformations(HumanoidModel<?> baseModel) {
         super.applyBaseTransformations(baseModel);
         if (body != null) {
-
-            head.setScaleX(baseModel.head.xScale);
-            head.setScaleY(baseModel.head.yScale);
-            head.setScaleZ(baseModel.head.zScale);
-            body.setScaleX(baseModel.body.xScale);
-            body.setScaleY(baseModel.body.yScale);
-            body.setScaleZ(baseModel.body.zScale);
-            leftArm.setScaleX(baseModel.leftArm.xScale);
-            leftArm.setScaleY(baseModel.leftArm.yScale);
-            leftArm.setScaleZ(baseModel.leftArm.zScale);
-            rightArm.setScaleX(baseModel.rightArm.xScale);
-            rightArm.setScaleY(baseModel.rightArm.yScale);
-            rightArm.setScaleZ(baseModel.rightArm.zScale);
-            leftLeg.setScaleX(baseModel.leftLeg.xScale);
-            leftLeg.setScaleY(baseModel.leftLeg.yScale);
-            leftLeg.setScaleZ(baseModel.leftLeg.zScale);
-            rightLeg.setScaleX(baseModel.rightLeg.xScale);
-            rightLeg.setScaleY(baseModel.rightLeg.yScale);
-            rightLeg.setScaleZ(baseModel.rightLeg.zScale);
+            if (head != null) {
+                head.setScaleX(baseModel.head.xScale);
+                head.setScaleY(baseModel.head.yScale);
+                head.setScaleZ(baseModel.head.zScale);
+            }
+            if (body != null) {
+                body.setScaleX(baseModel.body.xScale);
+                body.setScaleY(baseModel.body.yScale);
+                body.setScaleZ(baseModel.body.zScale);
+            }
+            if (leftArm != null) {
+                leftArm.setScaleX(baseModel.leftArm.xScale);
+                leftArm.setScaleY(baseModel.leftArm.yScale);
+                leftArm.setScaleZ(baseModel.leftArm.zScale);
+            }   if (rightArm != null){
+                rightArm.setScaleX(baseModel.rightArm.xScale);
+                rightArm.setScaleY(baseModel.rightArm.yScale);
+                rightArm.setScaleZ(baseModel.rightArm.zScale);
+            } if (leftLeg != null){
+                leftLeg.setScaleX(baseModel.leftLeg.xScale);
+                leftLeg.setScaleY(baseModel.leftLeg.yScale);
+                leftLeg.setScaleZ(baseModel.leftLeg.zScale);
+            }
+            if (rightLeg != null){
+                rightLeg.setScaleX(baseModel.rightLeg.xScale);
+                rightLeg.setScaleY(baseModel.rightLeg.yScale);
+                rightLeg.setScaleZ(baseModel.rightLeg.zScale);
+            }
 
             ModelPart bodyPart = baseModel.body;
             RenderUtil.matchModelPartRot(bodyPart, body);
