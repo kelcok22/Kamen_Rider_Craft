@@ -266,7 +266,7 @@ public class KRCCreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> My_thTab = CREATIVE_MODE_TABS.register("krc_480_my_th_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(MyThRiderItems.MY_TH_HELMET.get()))
-                    .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                    .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_my_th_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.my_th_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> GTab = CREATIVE_MODE_TABS.register("krc_800_g_tab", () ->
