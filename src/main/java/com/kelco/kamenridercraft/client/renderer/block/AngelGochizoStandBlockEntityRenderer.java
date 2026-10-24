@@ -29,8 +29,17 @@ public class AngelGochizoStandBlockEntityRenderer implements BlockEntityRenderer
         ItemStack stack = pBlockEntity.inventory.getStackInSlot(0);
         pPoseStack.pushPose();
 
-        pPoseStack.translate(0.5f, 0.4f, 0.54f);
-        pPoseStack.scale(0.3f, 0.3f, 1f);
+        float X = switch ((int) pBlockEntity.getRenderingRotation(pBlockEntity)) {
+            case 0, 180 -> 0.3f;
+            default -> 2;
+        };
+        float Y = switch ((int) pBlockEntity.getRenderingRotation(pBlockEntity)) {
+            case  90, 270 -> 0.3f;
+            default -> 2;
+        };
+        pPoseStack.translate(0.5f, 0.4f, 0.5f);
+        pPoseStack.scale(X, 0.3f, Y);
+
         pPoseStack.mulPose(Axis.YP.rotationDegrees(pBlockEntity.getRenderingRotation(pBlockEntity)));
         pPoseStack.mulPose(Axis.ZP.rotationDegrees(0));
         pPoseStack.mulPose(Axis.XP.rotationDegrees(0));
