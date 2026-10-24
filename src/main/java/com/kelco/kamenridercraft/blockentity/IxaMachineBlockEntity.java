@@ -25,8 +25,11 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.RecipeCraftingHolder;
 import net.minecraft.world.inventory.StackedContentsCompatible;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -195,15 +198,17 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
 
     private void insertOutput(ItemStack output) {
         for (int slot : SLOTS_FOR_DOWN) {
-            if (items.get(slot) == ItemStack.EMPTY) {
-                items.set(slot, output);
-                return;
-            } else if (items.get(slot).getItem() == output.getItem() && output.isStackable() && items.get(slot).isStackable() &&
+          if (items.get(slot).getItem() == output.getItem() && output.isStackable() && items.get(slot).isStackable() &&
                     items.get(slot).getCount() + output.getCount() <= output.getMaxStackSize()) {
                 items.get(slot).setCount(items.get(slot).getCount() + output.getCount());
                 return;
             }
-            System.err.println(slot);
+        };
+        for (int slot : SLOTS_FOR_DOWN) {
+            if (items.get(slot) == ItemStack.EMPTY||items.get(slot).getItem()== Blocks.AIR.asItem()) {
+                items.set(slot, output);
+                return;
+            }
         };
         if (getLevel()!=null) {
             ItemEntity key = new ItemEntity(getLevel(), getBlockPos().below().getX(), getBlockPos().below().getY(), getBlockPos().below().getZ(), output, 0, 0, 0);
@@ -236,6 +241,14 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
             }
         }
         return ItemStack.EMPTY;
+    }
+
+    public boolean canPlaceItem(int index, ItemStack stack) {
+
+        for (int slot : SLOTS_FOR_DOWN) {
+            if (index == slot)return false;
+        }
+            return true;
     }
 
     @Override
