@@ -163,6 +163,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
 
         summonUpperClassUndead();
+        summonJoker();
         setLastHurtByPlayer(null);
         setLastHurtByMob(null);
     }
@@ -309,11 +310,63 @@ public class UndeadEntity extends BaseHenchmenEntity {
         }
     }
 
+    public void summonJoker() {
+        if (getClass() == KingUndeadEntity.class) {
+            double chance = random.nextDouble();
+            Random rand = new Random();
+            int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
+
+            Mob boss = MobsCore.JOKER_UNDEAD.get().create(level());
+
+            if (rand.nextInt(2) == 1) {
+                boss = MobsCore.ALBINO_JOKER_UNDEAD.get().create(level());
+            }
+
+            if ((chance * 100.0 <= gamerule && (lastHurtByPlayer != null && canSpawnBoss(lastHurtByPlayer))
+                    || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
+
+                if (boss != null) {
+                    int tempRandX = (getBlockX()
+                            + (rand.nextInt(8, 25))
+                            * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                    int tempRandZ = (getBlockZ()
+                            + (rand.nextInt(8, 25))
+                            * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                    boss.setPos(tempRandX, getY(), tempRandZ);
+
+                    for (int i = 0; i < 400; ++i) {
+                        int randX = (getBlockX()
+                                + (rand.nextInt(8, 25))
+                                * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                        int randY = (getBlockY()
+                                + rand.nextInt(-10, 10));
+
+                        int randZ = (getBlockZ()
+                                + (rand.nextInt(8, 25))
+                                * (rand.nextInt(3) > 1 ? 1 : -1));
+
+                        BlockPos potentialPosition = new BlockPos(randX, randY, randZ);
+                        if (SpawnPlacements.isSpawnPositionOk(ZOMBIE, level(), potentialPosition) &&
+                                level().noCollision(EntityType.ZOMBIE.getSpawnAABB(randX, randY, randZ))) {
+                            boss.setPos(randX, randY, randZ);
+                            break;
+                        }
+                    }
+                    level().addFreshEntity(boss);
+                }
+            }
+        }
+    }
+
 
     @Override
     public void remove(RemovalReason reason) {
         if (isDeadOrDying()) {
             summonUpperClassUndead();
+            summonJoker();
         }
         super.remove(reason);
     }
