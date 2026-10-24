@@ -219,12 +219,15 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
 
     private void insertOutput(ItemStack output) {
         for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); ++slot) {
-            if (items.get(slot).isEmpty()) {
-                items.set(slot, output);
-                return;
-            } else if (items.get(slot).getItem() == output.getItem() && output.isStackable() && items.get(slot).isStackable() &&
+           if (items.get(slot).getItem() == output.getItem() && output.isStackable() && items.get(slot).isStackable() &&
                     items.get(slot).getCount() + output.getCount() <= output.getMaxStackSize()) {
                 items.get(slot).setCount(items.get(slot).getCount() + output.getCount());
+                return;
+            }
+        }
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); ++slot) {
+            if (items.get(slot).isEmpty()) {
+                items.set(slot, output);
                 return;
             }
         }
