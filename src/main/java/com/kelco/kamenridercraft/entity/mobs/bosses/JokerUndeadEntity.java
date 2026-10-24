@@ -61,6 +61,7 @@ public class JokerUndeadEntity extends UndeadEntity {
             setDropChance(EquipmentSlot.FEET, 0.0f);
 
             setData(MOB_STATE, "joker");
+            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
         }
     }
 

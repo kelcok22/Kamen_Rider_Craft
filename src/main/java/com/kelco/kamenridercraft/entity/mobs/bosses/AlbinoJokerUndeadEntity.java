@@ -60,6 +60,7 @@ public class AlbinoJokerUndeadEntity extends UndeadEntity {
             setDropChance(EquipmentSlot.FEET, 0.0f);
 
             setData(MOB_STATE, "albino_joker");
+            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
         }
     }
 

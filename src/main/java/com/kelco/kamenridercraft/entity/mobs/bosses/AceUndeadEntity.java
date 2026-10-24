@@ -42,7 +42,6 @@ public class AceUndeadEntity extends UndeadEntity {
             setDropChance(EquipmentSlot.LEGS, 0.0f);
             setDropChance(EquipmentSlot.FEET, 0.0f);
 
-            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
             switch (getRandom().nextInt(4)) {
                 case 0:
                     setData(MOB_STATE, "beetle");
@@ -61,6 +60,7 @@ public class AceUndeadEntity extends UndeadEntity {
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.CHANGE_MANTIS_UNDEAD.get(), 1);
                     break;
             }
+            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
         }
     }
 

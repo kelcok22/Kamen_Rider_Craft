@@ -62,8 +62,6 @@ public class UndeadEntity extends BaseHenchmenEntity {
             setDropChance(EquipmentSlot.LEGS, 0.0f);
             setDropChance(EquipmentSlot.FEET, 0.0f);
 
-            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
-
             switch (getRandom().nextInt(12)) {
                 case 0:
                     setData(MOB_STATE, "locust");
@@ -117,6 +115,7 @@ public class UndeadEntity extends BaseHenchmenEntity {
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SMOG_SQUID.get(), 1);
                     break;
             }
+            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
         }
     }
 

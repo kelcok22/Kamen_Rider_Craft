@@ -64,7 +64,6 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
         }
     }
 
-
     protected void customServerAiStep() {
         super.customServerAiStep();
         bossEvent.setProgress(getHealth() / getMaxHealth());
@@ -92,21 +91,12 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
         bossEvent.removePlayer(serverPlayer);
     }
 
-
     protected void defineSynchedData(SynchedEntityData.@NotNull Builder builder) {
         super.defineSynchedData(builder);
         builder.define(DATA_FLAGS_ID, (byte) 0);
     }
 
-    void setCharged(boolean p_32241_) {
-        byte b0 = entityData.get(DATA_FLAGS_ID);
-        if (p_32241_) {
-            b0 = (byte) (b0 | 1);
-        }
-    }
-
     public static AttributeSupplier.Builder setAttributes() {
-
         return Monster.createMonsterAttributes()
                 .add(Attributes.FOLLOW_RANGE, 135.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.23F)
@@ -114,5 +104,4 @@ public class ZeztzDarknessNightmareEntity extends BaseHenchmenEntity {
                 .add(Attributes.ARMOR, 3.0D)
                 .add(Attributes.MAX_HEALTH, 60.0D);
     }
-
 }

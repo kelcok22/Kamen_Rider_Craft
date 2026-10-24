@@ -2,13 +2,16 @@
 	"type": "minecraft:crafting_shaped",
 	"group": "blade",
 	"pattern": [
-		"XXX",
-		"XMX",
-		"XXX"
+		"CLC",
+		"LML",
+		"CLC"
 	],
 	"key": {
+		"C": {
+			"item": "minecraft:chain"
+		},
 		"X": {
-			"item": "kamenridercraft:bladecard"
+			"item": "minecraft:lapis_lazuli"
 		},
 		"M": {
 			"tag": "kamenridercraft:gear/rouze_cards/category_queen"

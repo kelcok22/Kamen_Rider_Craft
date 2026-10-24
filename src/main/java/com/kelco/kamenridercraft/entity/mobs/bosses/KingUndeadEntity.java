@@ -69,6 +69,7 @@ public class KingUndeadEntity extends UndeadEntity {
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.EVOLUTION_TARANTULA_UNDEAD.get(), 1);
                     break;
             }
+            RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
         }
     }
 
