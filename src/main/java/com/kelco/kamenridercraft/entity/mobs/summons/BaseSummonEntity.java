@@ -129,22 +129,24 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 		if (this.level() instanceof ServerLevel server) {
 		   this.updatePersistentAnger(server, true);
 			if (this.isAlive() && this.getOwner() != null) {
-				if(!this.getOwner().isAlive() || !this.armorMatches(this.getOwner())) {
+				LivingEntity owner = this.getOwner();
+
+				if(!owner.isAlive() || !this.armorMatches(owner) || this.level().dimension() != owner.level().dimension()) {
 					this.despawn();
 				} else {
-					if (!this.REQUIRED_FORMS.isEmpty() && this.getOwner().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+					if (!this.REQUIRED_FORMS.isEmpty() && owner.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 						boolean formFound = false;
 						if (!this.matchAllForms) for (int i = 0; i < belt.numBaseFormItems; ++i) {
 							CompoundTag tag = new CompoundTag();
 							tag.putInt("Slot", i + 1);
-							tag.putString("Form", RiderDriverItem.getFormItem(this.getOwner().getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
+							tag.putString("Form", RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
 							if (this.REQUIRED_FORMS.contains(tag)) formFound = true;
 						} else {
 							ListTag OWNER_FORMS = new ListTag();
 							for (int i = 0; i < belt.numBaseFormItems; ++i) {
 								CompoundTag tag = new CompoundTag();
 								tag.putInt("Slot", i + 1);
-								tag.putString("Form", RiderDriverItem.getFormItem(this.getOwner().getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
+								tag.putString("Form", RiderDriverItem.getFormItem(owner.getItemBySlot(EquipmentSlot.FEET), i + 1).toString());
 								OWNER_FORMS.add(tag);
 							}
 							if (this.REQUIRED_FORMS.equals(OWNER_FORMS)) formFound = true;
