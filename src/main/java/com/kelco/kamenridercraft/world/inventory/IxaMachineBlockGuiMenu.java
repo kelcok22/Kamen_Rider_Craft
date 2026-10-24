@@ -3,14 +3,18 @@ package com.kelco.kamenridercraft.world.inventory;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.blockentity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.init.ModMenus;
+import com.kelco.kamenridercraft.recipe.IxaMachineRecipe;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+
+import java.util.Optional;
 
 public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
     private final IxaMachineBlockEntity bEntity;
@@ -38,7 +42,11 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
         int slotIndex = 2;
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
-                this.addSlot(new Slot((Container) blockEntity, slotIndex, 95 + (col * 18), 17 + (row * 18)));
+                this.addSlot(new Slot((Container) blockEntity, slotIndex, 95 + (col * 18), 17 + (row * 18)){
+                    public boolean mayPlace(ItemStack stack) {
+                        return false;
+                    }
+                });
                 slotIndex++;
             }
         }
@@ -62,7 +70,7 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
                 return ItemStack.EMPTY;
             }
         } else {
-            if (!this.moveItemStackTo(sourceStack, 0, 2, false)) {
+            if (!this.moveItemStackTo(sourceStack, 0, 1, false)) {
                 return ItemStack.EMPTY;
             }
         }
