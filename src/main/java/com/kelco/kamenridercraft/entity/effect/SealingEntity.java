@@ -60,9 +60,14 @@ public class SealingEntity extends Entity implements GeoEntity {
                             new ItemStack(FUSION_WOLF.get()), 0, 0, 0);
                     case "elephant" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(FUSION_ELEPHANT.get()), 0, 0, 0);
-                    case "serpent", "capricorn", "orchid", "tiger" ->
-                            new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                                    new ItemStack(QUEEN_UNDEAD_DROPS.get(generator.nextInt(QUEEN_UNDEAD_DROPS.size()))), 0, 0, 0);
+                    case "capricorn" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_CAPRICORN.get()), 0, 0, 0);
+                    case "serpent" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_SERPENT.get()), 0, 0, 0);
+                    case "orchid" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_ORCHID.get()), 0, 0, 0);
+                    case "tiger" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_TIGER.get()), 0, 0, 0);
                     case "caucasus" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(EVOLUTION_CAUCASUS.get()), 0, 0, 0);
                     case "giraffa" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
