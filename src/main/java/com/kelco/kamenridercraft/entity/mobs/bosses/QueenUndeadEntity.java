@@ -40,7 +40,7 @@ public class QueenUndeadEntity extends UndeadEntity {
             setDropChance(EquipmentSlot.LEGS, 0.0f);
             setDropChance(EquipmentSlot.FEET, 0.0f);
 
-            switch (getRandom().nextInt(3)) {
+            switch (getRandom().nextInt(4)) {
                 case 0:
                     setData(MOB_STATE, "capricorn");
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
