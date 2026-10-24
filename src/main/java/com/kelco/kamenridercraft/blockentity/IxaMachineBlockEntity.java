@@ -98,7 +98,7 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
                 forge.resetProgress();
                 return;
             }
-            forge.progress++;
+            ++forge.progress;
             setChanged(level, pos, state);
             level.sendBlockUpdated(pos, state, state, 3);
 
@@ -131,17 +131,18 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
 
     private boolean hasAnyOutputRoom() {
         int filledSlots = 0;
-        for (int i = 3; i <= 11; ++i) {
-            if (items.get(i) != ItemStack.EMPTY) {
+        for (int i = 2; i <= 11; ++i) {
+            if (!items.get(i).isEmpty()) {
                 ++filledSlots;
             }
         }
 
         if (filledSlots >= 9 && getCurrentRecipe(getLevel()).get().value().outputs().size() > 1) {
+            resetProgress();
             return false;
         }
 
-        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); ++slot) {
             ItemStack stack = items.get(slot);
 
             if (stack.isEmpty()) {
@@ -152,6 +153,7 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
             }
         }
 
+        resetProgress();
         return false;
     }
 
@@ -160,7 +162,7 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
             return false;
         }
 
-        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); ++slot) {
             ItemStack slotStack = items.get(slot);
 
             if (slotStack.isEmpty()) {
@@ -216,8 +218,8 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
     }
 
     private void insertOutput(ItemStack output) {
-        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); slot++) {
-            if (items.get(slot) == ItemStack.EMPTY) {
+        for (int slot = FIRST_OUTPUT_SLOT; slot < items.size(); ++slot) {
+            if (items.get(slot).isEmpty()) {
                 items.set(slot, output);
                 return;
             } else if (items.get(slot).getItem() == output.getItem() && output.isStackable() && items.get(slot).isStackable() &&
@@ -261,14 +263,14 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
     }
 
     @Override
-    protected void saveAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+    protected void saveAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.saveAdditional(tag, registries);
         tag.putInt(PROGRESS_TAG, progress);
         ContainerHelper.saveAllItems(tag, items, registries);
     }
 
     @Override
-    protected void loadAdditional(CompoundTag tag, HolderLookup.Provider registries) {
+    protected void loadAdditional(@NotNull CompoundTag tag, HolderLookup.@NotNull Provider registries) {
         super.loadAdditional(tag, registries);
         items = NonNullList.withSize(getContainerSize(), ItemStack.EMPTY);
         ContainerHelper.loadAllItems(tag, items, registries);
@@ -317,7 +319,7 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
     }
 
     @Override
-    public CompoundTag getUpdateTag(HolderLookup.Provider registries) {
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider registries) {
         CompoundTag tag = super.getUpdateTag(registries);
         saveAdditional(tag, registries);
         return tag;
@@ -363,7 +365,7 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
     }
 
     @Override
-    public void fillStackedContents(StackedContents stackedContents) {
+    public void fillStackedContents(@NotNull StackedContents stackedContents) {
         for (ItemStack itemstack : items) {
             stackedContents.accountStack(itemstack);
         }
