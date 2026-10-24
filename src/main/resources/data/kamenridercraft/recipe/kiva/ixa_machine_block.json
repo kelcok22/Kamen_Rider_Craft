@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "kr_ixa",
+	"pattern": [
+		"RFR",
+		"FMF",
+		"RFR"
+	],
+	"key": {
+		"F": {
+			"item": "kamenridercraft:fuestle"
+		},
+		"M": {
+			"item": "kamenridercraft:monitor"
+		},
+		"R": {
+			"item": "kamenridercraft:rider_circuit"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:ixa_machine_block"
+	}
+}

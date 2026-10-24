@@ -50,7 +50,7 @@ public class UnsealedEffect extends MobEffect {
 
                     UndeadEntity undead = MobsCore.UNDEAD.get().create(livingEntity.level());
 
-                    if (rand.nextInt(500) == 0) {
+                    if (rand.nextInt(15) == 0) {
                         undead = MobsCore.ACE_UNDEAD.get().create(livingEntity.level());
                     }
 

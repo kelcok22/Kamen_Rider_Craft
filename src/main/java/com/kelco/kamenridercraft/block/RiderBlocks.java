@@ -35,6 +35,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+import static com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK;
+
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
 
 public class RiderBlocks {
@@ -43,13 +45,13 @@ public class RiderBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredBlock<Block> ICHIGO_CHAIR = registerBlock("ichigo_chair",
-            () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 10, 15)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 10, 15)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> RED_ICHIGO_CHAIR = registerBlock("red_ichigo_chair",
-            () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 10, 15)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 10, 15)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> KIVA_THRONE = registerBlock("kiva_throne",
-            () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 10, 15)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).lightLevel((p_152632_) -> 1).strength(2f).dynamicShape(), Block.box(2, 0, 1, 14, 10, 15)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<LadderBlock> WINDOW_PLANKS = registerBlock("window_planks",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER)));
@@ -57,12 +59,12 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> GASHAPON_MACHINE = registerBlock("gashapon_machine",
             () -> new GashaponMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> SHOCKER_MONITOR = registerBlock("shocker_monitor",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<LadderBlock> SHOCKER_LOGO = registerBlock("shocker_logo",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON).lightLevel((p_152632_) -> 100)));
@@ -70,15 +72,15 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> AMAZON_CELL_EXTRACTOR = registerBlock("amazon_cell_extractor",
             () -> new AmazonCellExtractor(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> AMAZON_CELL_MUTATOR = registerBlock("amazon_cell_mutator",
             () -> new AmazonCellMutator(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> KAIJIN_STONE_GENERATOR = registerBlock("kaijin_stone_generator",
             () -> new KaijinStoneGenerator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> BLUE_ROSE = registerBlock("blue_rose",
             () -> new FlowerBlock(MobEffects.MOVEMENT_SPEED, 5,
@@ -93,53 +95,53 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> KUUGA_ORE = registerBlock("stone_kuuga",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_KUUGA_ORE = registerBlock("deepslate_stone_kuuga",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> G_SYSTEM_CHIP_PROGRAMMER = registerBlock("g_chip_programer",
             () -> new GSystemChipProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GLASS_RYUKI = registerBlock("glass_ryuki",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_STAINED_GLASS)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6), DyeColor.RED).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6), DyeColor.RED).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_GLASS_RYUKI = registerBlock("deepslate_glass_ryuki",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6), DyeColor.BLACK).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6), DyeColor.BLACK).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> BLADE_ORE = registerBlock("stone_blade",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_BLADE_ORE = registerBlock("deepslate_stone_blade",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> HIBIKI_ORE = registerBlock("stone_hibiki",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_HIBIKI_ORE = registerBlock("deepslate_stone_hibiki",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> IXA_MACHINE_BLOCK = registerBlock("ixa_machine_block",
-            () -> new IxaMachineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> 0).strength(2f).noOcclusion().dynamicShape()).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new IxaMachineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> 0).strength(2f).noOcclusion().dynamicShape()).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> KIVA_ORE = registerBlock("stone_kiva",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_KIVA_ORE = registerBlock("deepslate_stone_kiva",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> FANGIRE_GLASS = registerBlock("fangire_glass",
-            () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel((glow) -> 15), UniformInt.of(0, 0), DyeColor.YELLOW).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel((glow) -> 15), UniformInt.of(0, 0), DyeColor.YELLOW).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> PURE_GAIA_MEMORY_BLOCK = registerBlock("pure_gaia_memory_block",
@@ -149,42 +151,42 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> GAIA_MEMORY_ORE = registerBlock("gaiamemoryblock",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> DEEPSLATE_GAIA_MEMORY_ORE = registerBlock("deepslate_gaiamemoryblock",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> WIZARD_GEM_ORE = registerBlock("wizardgemblock",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6))
-                    .AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_WIZARD_GEM_ORE = registerBlock("deepslate_wizardgemblock",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GHOST_ORE = registerBlock("ghost_eyecon_stone",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEEPSLATE_GHOST_ORE = registerBlock("deepslate_ghost_eyecon_stone",
             () -> new BaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2f).requiresCorrectToolForDrops().strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GAIA_MEMORY_REFINER = registerBlock("gaia_memory_refiner",
             () -> new GaiaMemoryRefinerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> CELL_MEDAL_PROGRAMMER = registerBlock("cell_medal_programer",
             () -> new CellMedalProgramer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ASTROSWITCH_PROGRAMMER = registerBlock("astroswitch_programmer",
             () -> new AstroswitchProgrammer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
 //	public static final DeferredBlock<AstroswitchRackBlock> ASTROSWITCH_RACK = registerBlock("astroswitch_rack", TODO: Make this work
 //			() -> new AstroswitchRackBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.PLING).strength(2.5F).sound(SoundType.METAL), ModBlockEntities.ASTROSWITCH_RACK_BE::get));
@@ -195,15 +197,15 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> ARTIFICIAL_GRAVITY_BLOCK = registerBlock("artificial_gravity_block",
             () -> new ArtificialGravityBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> MONOLITH = registerBlock("monolith",
             () -> new Monolith(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> SHIFT_CHASSIS_ASSEMBLER = registerBlock("shift_chassis_assembler",
             () -> new ShiftChassisAssembler(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).noOcclusion()).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
@@ -212,36 +214,36 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> BANG_BANG_DRUM = registerBlock("bang_bang_drum",
             () -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> BAKUSOU_TROPHY = registerBlock("bakusou_trophy",
             () -> new DespawnBlockNotCube(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE).dynamicShape(), Block.box(4, 0, 6, 12, 16, 10)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .strength(2.0F, 6.0F).sound(SoundType.STONE).dynamicShape(), Block.box(4, 0, 6, 12, 16, 10)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GENM_CONTINUE = registerBlock("genm_continue",
             () -> new BaseFacingBlockNotCube(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape(), Block.box(1, 0, 1, 16, 4, 16)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape(), Block.box(1, 0, 1, 16, 4, 16)).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> GAME_CREATOR = registerBlock("gamecreator",
             () -> new GameCreator(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GANBERIZING_MACHINE = registerBlock("ganbarizing_machine",
             () -> new GanbarizingMachine(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape().lightLevel((p_152632_) -> 10), Block.box(1, 0, 1, 14, 32, 14)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL).dynamicShape().lightLevel((p_152632_) -> 10), Block.box(1, 0, 1, 14, 32, 14)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> PANDORA_BOX = registerBlock("pandora_box",
             () -> new PandoraBox(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> FULLBOTTLE_PURIFIER = registerBlock("fullbottle_purifier",
             () -> new FullbottlePurifier(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> FULLBOTTLE_SOLIDIFIER = registerBlock("fullbottle_solidifier",
             () -> new FullbottleSolidifier(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<WhiteboardBlock> WHITEBOARD = registerBlock("whiteboard",
             () -> new WhiteboardBlock(BlockBehaviour.Properties.of().noOcclusion().lightLevel((p_152632_) -> 2)));
@@ -253,22 +255,22 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> HIDEN_3D_PRINTER = registerBlock("hiden_3d_printer",
             () -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ZAIA_3D_PRINTER = registerBlock("zaia_3d_printer",
             () -> new ProgrisekeyPrinter(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<PlinthBlock> PLINTH = registerBlock("sword_plinth",
             () -> new PlinthBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_BOOK_ANALYZER = registerBlock("sword_of_logos_book_analyzer",
             () -> new SwordOfLogosBookAnalyzer(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> VISTAMP_BAR = registerBlock("vistamp_bar",
             () -> new VistampBar(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> HEATPRESS_EXTRACTOR = registerBlock("heatpress_extractor",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
@@ -279,14 +281,14 @@ public class RiderBlocks {
                     .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
 
     public static final DeferredBlock<Block> DARK_TREAT_GLASS = registerBlock("dark_treat",
-            () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0, 0), DyeColor.BROWN).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0, 0), DyeColor.BROWN).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<GochizoJarBlock> GOCHIZO_JAR = registerBlock("gochizo_jar",
             () -> new GochizoJarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).noOcclusion()));
 
     public static final DeferredBlock<Block> CAPSEM_DROPPER = registerBlock("capsem_dropper",
             () -> new CapsemDropper(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",
@@ -452,7 +454,7 @@ public class RiderBlocks {
             () -> new FlowerPotBlock(RiderBlocks.HELHEIM_PLANT_4.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> HELHEIM_CRACK = registerBlock("helheim_crack",
-            () -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> 10).strength(10f).dynamicShape(), Block.box(2, 0, 1, 14, 30, 15)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new HelheimCrack(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).noCollission().noLootTable().lightLevel((p_152632_) -> 10).strength(10f).dynamicShape(), Block.box(2, 0, 1, 14, 30, 15)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> PANDORA_FIRE = registerBlock("pandora_fire",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED)
@@ -480,11 +482,11 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> OVERLORD_OOPART = registerBlock("overlord_oopart",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> OVERLORD_OOPART2 = registerBlock("overlord_oopart2",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> PLANKS_BIG_OAK_GOLDEN_TRIM = registerBlock("planks_big_oak_golden_trim",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
@@ -850,11 +852,11 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> TADDLE_BRICK = registerBlock("taddle_brick",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> TADDLE_WALL = registerBlock("taddle_wall",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> WALLPLATE = registerBlock("wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -1143,187 +1145,187 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.N_DAGUVA_ZEBA, Blocks.SNOW).addLine(Component.translatable("henshin.kamenridercraft.n_daguva_zeba")).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.N_DAGUVA_ZEBA, Blocks.SNOW).addLine(Component.translatable("henshin.kamenridercraft.n_daguva_zeba")).is_basic_cube().addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ODIN_BOSS_BLOCK = registerBlock("odin_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(1f)
-                    , MobsCore.ODIN).addLine(Component.translatable("henshin.kamenridercraft.odin")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ODIN).addLine(Component.translatable("henshin.kamenridercraft.odin")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> FAIZ_BOSS_BLOCK = registerBlock("faiz_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.FAIZ).addLine(Component.translatable("henshin.kamenridercraft.faiz")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.FAIZ).addLine(Component.translatable("henshin.kamenridercraft.faiz")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> CATEGORY_KING_UNDEAD_BOSS_BLOCK = registerBlock("category_king_undead_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.KING_UNDEAD).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.KING_UNDEAD).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GAOH_BOSS_BLOCK = registerBlock("gaoh_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.GAOH).addLine(Component.translatable("henshin.kamenridercraft.gaoh")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ARC_BOSS_BLOCK = registerBlock("arc_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ARC).addLine(Component.translatable("henshin.kamenridercraft.arc")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ARC).addLine(Component.translatable("henshin.kamenridercraft.arc")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DECADE_VIOLENT_BLOCK = registerBlock("decade_violent_emotion_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.DECADE_VIOLENT).addLine(Component.translatable("henshin.kamenridercraft.decade_violent_emotion")).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.DECADE_VIOLENT).addLine(Component.translatable("henshin.kamenridercraft.decade_violent_emotion")).is_basic_cube().addToList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<Block> TABOO_BOSS_BLOCK = registerBlock("taboo_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.TABOO_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.taboo")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.TABOO_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.taboo")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> TERROR_BOSS_BLOCK = registerBlock("terror_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.TERROR_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.terror")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.TERROR_DOPANT).addLine(Component.translatable("henshin.kamenridercraft.terror")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> POSEIDON_BOSS_BLOCK = registerBlock("poseidon_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.POSEIDON).addLine(Component.translatable("henshin.kamenridercraft.poseidon")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.POSEIDON).addLine(Component.translatable("henshin.kamenridercraft.poseidon")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> CORE_BOSS_BLOCK = registerBlock("core_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.CORE, Blocks.FIRE).addLine(Component.translatable("henshin.kamenridercraft.henshin").withStyle(ChatFormatting.RED)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.CORE, Blocks.FIRE).addLine(Component.translatable("henshin.kamenridercraft.henshin").withStyle(ChatFormatting.RED)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> POWERED_UP_CORE_BOSS_BLOCK = registerBlock("powered_up_core_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.POWERED_UP_CORE, Blocks.FIRE).addLine(Component.translatable("henshin.kamenridercraft.henshin").withStyle(ChatFormatting.DARK_PURPLE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.POWERED_UP_CORE, Blocks.FIRE).addLine(Component.translatable("henshin.kamenridercraft.henshin").withStyle(ChatFormatting.DARK_PURPLE)).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ANCIENT_OOO_BOSS_BLOCK = registerBlock("ancient_ooo_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ANCIENT_OOO).addLine(Component.translatable("henshin.kamenridercraft.ancient_ooo")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ANCIENT_OOO).addLine(Component.translatable("henshin.kamenridercraft.ancient_ooo")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GODA_BOSS_BLOCK = registerBlock("goda_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.GODA).addLine(Component.translatable("henshin.kamenridercraft.goda")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.GODA).addLine(Component.translatable("henshin.kamenridercraft.goda")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> SUPER_GINGAOH_BOSS_BLOCK = registerBlock("super_gingaoh_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.SUPER_GINGAOH).addLine(Component.translatable("henshin.kamenridercraft.super_gingaoh")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.SUPER_GINGAOH).addLine(Component.translatable("henshin.kamenridercraft.super_gingaoh")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> WISEMAN_BOSS_BLOCK = registerBlock("wiseman_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.WISEMAN).addLine(Component.translatable("henshin.kamenridercraft.wiseman")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.WISEMAN).addLine(Component.translatable("henshin.kamenridercraft.wiseman")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ROSYUO_BOSS_BLOCK = registerBlock("rosyuo_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ROSYUO).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ROSYUO).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> REDYUE_BOSS_BLOCK = registerBlock("redyue_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.REDYUE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.REDYUE).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DEMUSHU_BOSS_BLOCK = registerBlock("demushu_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.DEMUSHU).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.DEMUSHU).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> LORD_BARON_BOSS_BLOCK = registerBlock("lord_baron_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.LORD_BARON).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.LORD_BARON).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> MEGAHEX_BOSS_BLOCK = registerBlock("megahex_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.MEGAHEX).addLine(Component.translatable("henshin.kamenridercraft.megahex")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.MEGAHEX).addLine(Component.translatable("henshin.kamenridercraft.megahex")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GORD_DRIVE_BOSS_BLOCK = registerBlock("gord_drive_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.GORD_DRIVE).addLine(Component.translatable("henshin.kamenridercraft.gord_drive")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.GORD_DRIVE).addLine(Component.translatable("henshin.kamenridercraft.gord_drive")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> CRONUS_BOSS_BLOCK = registerBlock("cronus_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.CRONUS, MIGHTY_BLOCK.get(), BANG_BANG_DRUM.get(), BAKUSOU_TROPHY.get()).addLine(Component.translatable("henshin.kamenridercraft.cronus")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.CRONUS, MIGHTY_BLOCK.get(), BANG_BANG_DRUM.get(), BAKUSOU_TROPHY.get()).addLine(Component.translatable("henshin.kamenridercraft.cronus")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> NIGHT_ROGUE_BOSS_BLOCK = registerBlock("night_rogue_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.NIGHT_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.night_rogue")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.NIGHT_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.night_rogue")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> HOKUTO_TRIO_BOSS_BLOCK = registerBlock("hokuto_trio_boss_block",
             () -> new BossBlockHokutoTrio(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-            ).addLine(Component.translatable("henshin.kamenridercraft.hokuto_trio")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            ).addLine(Component.translatable("henshin.kamenridercraft.hokuto_trio")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> HELL_BROS_BOSS_BLOCK = registerBlock("hell_bros_boss_block",
-            () -> new BossBlockHellBros(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)).addLine(Component.translatable("henshin.kamenridercraft.hell_bros")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            () -> new BossBlockHellBros(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)).addLine(Component.translatable("henshin.kamenridercraft.hell_bros")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> MAD_ROGUE_BOSS_BLOCK = registerBlock("mad_rogue_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.MAD_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.mad_rogue")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.MAD_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.mad_rogue")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> EVOL_BOSS_BLOCK = registerBlock("evol_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.EVOL).addLine(Component.translatable("henshin.kamenridercraft.evol")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.EVOL).addLine(Component.translatable("henshin.kamenridercraft.evol")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> BIKAISER_BOSS_BLOCK = registerBlock("bikaiser_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.BIKAISER).addLine(Component.translatable("henshin.kamenridercraft.bikaiser")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.BIKAISER).addLine(Component.translatable("henshin.kamenridercraft.bikaiser")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> WOZ_BOSS_BLOCK = registerBlock("woz_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.WOZ).addLine(Component.translatable("henshin.kamenridercraft.woz")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.WOZ).addLine(Component.translatable("henshin.kamenridercraft.woz")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ANOTHER_DEN_O_BOSS_BLOCK = registerBlock("another_den_o_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ANOTHER_DEN_O).addLine(Component.translatable("henshin.kamenridercraft.another_den_o")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ANOTHER_DEN_O).addLine(Component.translatable("henshin.kamenridercraft.another_den_o")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> YAMININ_BOSS_BLOCK = registerBlock("yaminin_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.YAMININ).addLine(Component.translatable("henshin.kamenridercraft.yaminin")).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.YAMININ).addLine(Component.translatable("henshin.kamenridercraft.yaminin")).is_basic_cube().addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> GINGA_BOSS_BLOCK = registerBlock("ginga_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.GINGA).addLine(Component.translatable("henshin.kamenridercraft.ginga")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.GINGA).addLine(Component.translatable("henshin.kamenridercraft.ginga")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> QUARTZER_BOSS_BLOCK = registerBlock("quartzer_boss_block",
             () -> new BossBlockQuartzer(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).strength(1f)
-            ).addLine(Component.translatable("henshin.kamenridercraft.quartzer")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+            ).addLine(Component.translatable("henshin.kamenridercraft.quartzer")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> HOROBI_BOSS_BLOCK = registerBlock("horobi_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.HOROBI).addLine(Component.translatable("henshin.kamenridercraft.horobi")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.HOROBI).addLine(Component.translatable("henshin.kamenridercraft.horobi")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> IKAZUCHI_BOSS_BLOCK = registerBlock("ikazuchi_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.IKAZUCHI).addLine(Component.translatable("henshin.kamenridercraft.ikazuchi")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.IKAZUCHI).addLine(Component.translatable("henshin.kamenridercraft.ikazuchi")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ARK_ONE_BOSS_BLOCK = registerBlock("ark_one_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ARK_ZERO).addLine(Component.translatable("henshin.kamenridercraft.ark_zero_msg")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ARK_ZERO).addLine(Component.translatable("henshin.kamenridercraft.ark_zero_msg")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ZEIN_BOSS_BLOCK = registerBlock("zein_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ZEIN).addLine(Component.translatable("henshin.kamenridercraft.zein")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ZEIN).addLine(Component.translatable("henshin.kamenridercraft.zein")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> SABELA_BOSS_BLOCK = registerBlock("sabela_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.SABELA).addLine(Component.translatable("henshin.kamenridercraft.sabela")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.SABELA).addLine(Component.translatable("henshin.kamenridercraft.sabela")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> DURENDAL_BOSS_BLOCK = registerBlock("durendal_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.DURENDAL).addLine(Component.translatable("henshin.kamenridercraft.durendal")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.DURENDAL).addLine(Component.translatable("henshin.kamenridercraft.durendal")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> SOLOMON_BOSS_BLOCK = registerBlock("solomon_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.SOLOMON).addLine(Component.translatable("henshin.kamenridercraft.solomon")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.SOLOMON).addLine(Component.translatable("henshin.kamenridercraft.solomon")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> STORIOUS_BOSS_BLOCK = registerBlock("storious_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.STORIOUS_RIDER).addLine(Component.translatable("henshin.kamenridercraft.storious_rider")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> ELD_BOSS_BLOCK = registerBlock("eld_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.ELD).addLine(Component.translatable("henshin.kamenridercraft.eld")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.ELD).addLine(Component.translatable("henshin.kamenridercraft.eld")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> BOCCA_BOSS_BLOCK = registerBlock("bocca_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.BOCCA_JALDAK).addLine(Component.translatable("henshin.kamenridercraft.bocca_jaldak")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.BOCCA_JALDAK).addLine(Component.translatable("henshin.kamenridercraft.bocca_jaldak")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> CARIES_BOSS_BLOCK = registerBlock("caries_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.CARIES).addLine(Component.translatable("henshin.kamenridercraft.caries")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.CARIES).addLine(Component.translatable("henshin.kamenridercraft.caries")).addToList(RIDER_BLOCK));
 
     public static final DeferredBlock<Block> LORD_THREE_BOSS_BLOCK = registerBlock("lord_three_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
-                    , MobsCore.LORD_THREE).addLine(Component.translatable("henshin.kamenridercraft.lord_three")).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK));
+                    , MobsCore.LORD_THREE).addLine(Component.translatable("henshin.kamenridercraft.lord_three")).addToList(RIDER_BLOCK));
 
 
     public static final DeferredBlock<PandoraPanelBlock> PANDORA_PANEL_BLOCK = registerBlock("pandora_panel_block",

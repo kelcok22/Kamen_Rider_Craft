@@ -40,7 +40,6 @@ import java.util.List;
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.KIVA_TAB_ITEM;
 
 public class KivaRiderItems {
-
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> KIVA_LOGO = ITEMS.register("kiva_logo",
