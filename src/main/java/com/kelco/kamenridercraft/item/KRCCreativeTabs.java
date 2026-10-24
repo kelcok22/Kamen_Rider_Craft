@@ -1017,6 +1017,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.BOCCA_BOSS_BLOCK);
             event.accept(RiderBlocks.CARIES_BOSS_BLOCK);
             event.accept(RiderBlocks.GOCHIZO_JAR);
+            event.accept(RiderBlocks.ANGEL_GOCHIZO_STAND);
             event.accept(RiderBlocks.DARK_TREAT_GLASS);
             event.accept(RiderBlocks.CANDY_SHOP);
             event.accept(RiderBlocks.HEATPRESS_EXTRACTOR);
@@ -1168,6 +1169,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.GLASS_DOOR);
             event.accept(RiderBlocks.PLINTH);
             event.accept(RiderBlocks.GOCHIZO_JAR);
+            event.accept(RiderBlocks.ANGEL_GOCHIZO_STAND);
 
 
         } else if (event.getTab() == RiderEggTab.get()) {

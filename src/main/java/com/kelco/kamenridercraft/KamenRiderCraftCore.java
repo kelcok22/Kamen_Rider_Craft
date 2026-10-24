@@ -11,10 +11,7 @@ import com.kelco.kamenridercraft.client.gui.item.RideBookerGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.IxaMachineBlockGuiScreen;
 import com.kelco.kamenridercraft.client.gui.overlays.AbilityHudOverlay;
 import com.kelco.kamenridercraft.client.gui.storage_item.*;
-import com.kelco.kamenridercraft.client.renderer.block.GochizoJarBlockEntityRenderer;
-import com.kelco.kamenridercraft.client.renderer.block.MindDoorRenderer;
-import com.kelco.kamenridercraft.client.renderer.block.PandoraPanelBlockEntityRenderer;
-import com.kelco.kamenridercraft.client.renderer.block.PlinthBlockEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.block.*;
 import com.kelco.kamenridercraft.client.renderer.entity.*;
 import com.kelco.kamenridercraft.client.renderer.entity.allies.*;
 import com.kelco.kamenridercraft.client.renderer.entity.bikes.BikeRenderer;
@@ -287,6 +284,7 @@ public class KamenRiderCraftCore {
             event.registerBlockEntityRenderer(ModBlockEntities.PANDORA_PANEL_BE.get(), PandoraPanelBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.PLINTH_BE.get(), PlinthBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.GOCHIZO_JAR_BE.get(), GochizoJarBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.ANGEL_GOCHIZO_STAND_BE.get(), AngelGochizoStandBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MIND_DOOR_BE.get(), MindDoorRenderer::new);
 
         }

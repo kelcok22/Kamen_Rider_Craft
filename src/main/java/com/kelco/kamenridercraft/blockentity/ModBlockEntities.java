@@ -39,6 +39,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("gochizo_jar_be", () -> BlockEntityType.Builder.of(
                     GochizoJarBlockEntity::new, RiderBlocks.GOCHIZO_JAR.get()).build(null));
 
+    public static final Supplier<BlockEntityType<AngelGochizoStandBlockEntity>> ANGEL_GOCHIZO_STAND_BE =
+            BLOCK_ENTITIES.register("angel_gochizo_stand_be", () -> BlockEntityType.Builder.of(
+                    AngelGochizoStandBlockEntity::new, RiderBlocks.ANGEL_GOCHIZO_STAND.get()).build(null));
+
     public static final Supplier<BlockEntityType<MindDoorBlockEntity>> MIND_DOOR_BE =
             BLOCK_ENTITIES.register("mind_door_be", () -> BlockEntityType.Builder.of(
                     MindDoorBlockEntity::new, RiderBlocks.MIND_DOOR.get()).build(null));

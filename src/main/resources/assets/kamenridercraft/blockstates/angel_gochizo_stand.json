@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/angel_gochizo_stand"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/angel_gochizo_stand",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/angel_gochizo_stand",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/angel_gochizo_stand",
+			"y": 90
+		}
+	}
+}

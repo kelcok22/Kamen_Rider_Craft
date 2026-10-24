@@ -286,6 +286,9 @@ public class RiderBlocks {
     public static final DeferredBlock<GochizoJarBlock> GOCHIZO_JAR = registerBlock("gochizo_jar",
             () -> new GochizoJarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).noOcclusion()));
 
+    public static final DeferredBlock<AngelGochizoStandBlock> ANGEL_GOCHIZO_STAND = registerBlock("angel_gochizo_stand",
+            () -> new AngelGochizoStandBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).noOcclusion()));
+
     public static final DeferredBlock<Block> CAPSEM_DROPPER = registerBlock("capsem_dropper",
             () -> new CapsemDropper(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_BLOCK));
