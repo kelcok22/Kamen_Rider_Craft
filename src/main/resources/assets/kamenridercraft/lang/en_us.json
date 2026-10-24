@@ -426,7 +426,6 @@
 "effect.kamenridercraft.drill":"Drill",
 "effect.kamenridercraft.swift_swim":"Swift Swim",
 "effect.kamenridercraft.safe_landing":"Safe Landing",
-"effect.kamenridercraft.unsealed":"Unsealed",
 "effect.kamenridercraft.fish":"Fish!",
 "effect.kamenridercraft.warp":"Warp",
 "effect.kamenridercraft.step":"Step",
@@ -453,6 +452,11 @@
 "effect.kamenridercraft.unsealed":"Unsealed",
 "effect.kamenridercraft.fall_cancel":"Fall Cancel",
 
+  "item.minecraft.potion.effect.unsealed_potion": "Potion of Unsealed",
+  "item.minecraft.splash_potion.effect.unsealed_potion": "Splash Potion of Unsealed",
+  "item.minecraft.lingering_potion.effect.unsealed_potion": "Lingering Potion of Unsealed",
+  "item.minecraft.tipped_arrow.effect.unsealed_potion": "Arrow of Unsealed",
+  
 "item.minecraft.potion.effect.agito_factor_potion": "Potion of Agito Factor",
 "item.minecraft.splash_potion.effect.agito_factor_potion": "Splash Potion of Agito Factor",
 "item.minecraft.lingering_potion.effect.agito_factor_potion": "Lingering Potion of Agito Factor",

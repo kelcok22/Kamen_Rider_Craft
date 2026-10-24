@@ -24,6 +24,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.ZeinCard;
 import com.kelco.kamenridercraft.item.heisei_phase_2.*;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
+import com.kelco.kamenridercraft.item.reboots.AmazonsRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.GotchardRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ReviceRiderItems;
@@ -685,6 +686,7 @@ public class ModCommonEvents {
             PotionBrewing.Builder builder = event.getBuilder();
 
             builder.addMix(Potions.AWKWARD, AgitoRiderItems.GILLS.asItem(), AGITO_FACTOR_POTION);
+            builder.addMix(Potions.AWKWARD, BladeRiderItems.BLANK_ROUZECARD.asItem(), UNSEALED_POTION);
             builder.addMix(Potions.AWKWARD, ExAidRiderItems.BUGSTER_VIRUS_DNA.asItem(), BUGSTER_POTION);
             builder.addMix(Potions.AWKWARD, ExAidRiderItems.SAVE_ENERGY_ITEM.asItem(), MUTEKI_POTION);
             builder.addMix(Potions.AWKWARD, BuildRiderItems.NEBULA_GAS_SAMPLE.asItem(), HAZARD_LEVEL_POTION);

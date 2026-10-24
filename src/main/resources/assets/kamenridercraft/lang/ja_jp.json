@@ -451,6 +451,11 @@
 "effect.kamenridercraft.unsealed":"封印溶け",
 "effect.kamenridercraft.fall_cancel":"落下しキャンセル",
 
+  "item.minecraft.potion.effect.unsealed_potion": "封印溶けのポーション",
+  "item.minecraft.splash_potion.effect.unsealed_potion": "封印溶けのスプラッシュポーション",
+  "item.minecraft.lingering_potion.effect.unsealed_potion": "封印溶けの残留ポーション",
+  "item.minecraft.tipped_arrow.effect.unsealed_potion": "封印溶けの矢",
+
 "item.minecraft.potion.effect.agito_factor_potion": "アギト因子のポーション",
 "item.minecraft.splash_potion.effect.agito_factor_potion": "アギト因子のスプラッシュポーション",
 "item.minecraft.lingering_potion.effect.agito_factor_potion": "アギト因子の残留ポーション",

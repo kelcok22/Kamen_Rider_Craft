@@ -157,7 +157,7 @@ public class EffectCore {
     public static final Holder<MobEffect> NOTE = EFFECT.register("note",
             () -> new NoteEffect(MobEffectCategory.BENEFICIAL, 0x2d2d2d));
 
-    public static final Holder<Potion> NOTE_POTION = POTIONS.register("note_potion",()-> new Potion(new MobEffectInstance(NOTE,2000,0)));
+    public static final Holder<Potion> NOTE_POTION = POTIONS.register("note_potion",()-> new Potion(new MobEffectInstance(NOTE,8000,0)));
 
     public static final Holder<MobEffect> DRILL = EFFECT.register("drill",
             () -> new DrillEffect(MobEffectCategory.BENEFICIAL, 0xe5d90e));
@@ -221,7 +221,7 @@ public class EffectCore {
     public static final Holder<MobEffect> INSOMNIA = EFFECT.register("insomnia",
             () -> new InsomniaEffect(MobEffectCategory.HARMFUL, 0xffffff));
 
-    public static final Holder<Potion>  INSOMNIA_POTION = POTIONS.register("insomnia_potion",()-> new Potion(new MobEffectInstance(INSOMNIA ,2000,0)));
+    public static final Holder<Potion>  INSOMNIA_POTION = POTIONS.register("insomnia_potion",()-> new Potion(new MobEffectInstance(INSOMNIA ,8000,0)));
 
     public static final Holder<MobEffect> REFLECT = EFFECT.register("reflect",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xd1d1d1));
@@ -246,19 +246,21 @@ public class EffectCore {
     public static final Holder<Potion> AGITO_FACTOR_POTION = POTIONS.register("agito_factor_potion",()-> new Potion(new MobEffectInstance(AGITO_FACTOR,500,0)));
 
     public static final Holder<MobEffect> UNSEALED = EFFECT.register("unsealed",
-            () -> new UnsealedEffect(MobEffectCategory.HARMFUL, 0xc9c6c1));
+            () -> new UnsealedEffect(MobEffectCategory.HARMFUL, 0x006818));
+
+    public static final Holder<Potion> UNSEALED_POTION = POTIONS.register("unsealed_potion",()-> new Potion(new MobEffectInstance(UNSEALED,8000,0)));
+
 
     public static final Holder<MobEffect> GREEED = EFFECT.register("greeed",
             () -> new GreeedEffect(MobEffectCategory.HARMFUL, 0x7CFC00));
 
-    public static final Holder<Potion> GREEED_POTION = POTIONS.register("greeed_potion",()-> new Potion(new MobEffectInstance(GREEED,2000,0)));
+    public static final Holder<Potion> GREEED_POTION = POTIONS.register("greeed_potion",()-> new Potion(new MobEffectInstance(GREEED,8000,0)));
 
     public static final Holder<MobEffect> BUGSTER = EFFECT.register("bug",
             () -> new BugEffect(MobEffectCategory.HARMFUL, 0xe8842e)
                     .addAttributeModifier(KRCAttributes.HAS_BUG, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.bug"), 1F, AttributeModifier.Operation.ADD_VALUE));
 
-    public static final Holder<Potion> BUGSTER_POTION = POTIONS.register("bug_potion",()-> new Potion(new MobEffectInstance(BUGSTER,2000,0)));
-
+    public static final Holder<Potion> BUGSTER_POTION = POTIONS.register("bug_potion",()-> new Potion(new MobEffectInstance(BUGSTER,8000,0)));
 
     public static final Holder<MobEffect> MIRROR_NOISES = EFFECT.register("mirror_noises",
             () -> new MirrorNoisesEffect(MobEffectCategory.HARMFUL, 0xc4c4c4));
@@ -283,7 +285,7 @@ public class EffectCore {
     public static final Holder<MobEffect> HAPPY_MODE = EFFECT.register("happy_mode",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xfff764));
 
-    public static final Holder<Potion> HAPPY_MODE_POTION = POTIONS.register("happy_mode_potion",()-> new Potion(new MobEffectInstance(HAPPY_MODE,2000,0)));
+    public static final Holder<Potion> HAPPY_MODE_POTION = POTIONS.register("happy_mode_potion",()-> new Potion(new MobEffectInstance(HAPPY_MODE,8000,0)));
 
     public static final Holder<MobEffect> SD = EFFECT.register("sd", () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0x77b72e)
             .addAttributeModifier(KRCAttributes.HEAD_SIZE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.sd"), 1F, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
@@ -293,11 +295,9 @@ public class EffectCore {
     public static final Holder<MobEffect> FLOWER = EFFECT.register("flower",
             () -> new FlowerEffect(MobEffectCategory.BENEFICIAL, 0xff0028));
 
-
     public static final Holder<MobEffect> HAZARD_LEVEL = EFFECT.register("hazard_level",
             () -> new BasicEffect(MobEffectCategory.BENEFICIAL, 0xff0000));
-    public static final Holder<Potion>  HAZARD_LEVEL_POTION  = POTIONS.register("hazard_level_potion",()-> new Potion(new MobEffectInstance(HAZARD_LEVEL,2000,0)));
-
+    public static final Holder<Potion>  HAZARD_LEVEL_POTION  = POTIONS.register("hazard_level_potion",()-> new Potion(new MobEffectInstance(HAZARD_LEVEL,8000,0)));
 
     public static final Holder<MobEffect> DARK_AURA = EFFECT.register("dark_aura",
             () -> new DarkAuraEffect(MobEffectCategory.HARMFUL, 0x55FFFF));
@@ -308,20 +308,17 @@ public class EffectCore {
     public static final Holder<MobEffect> GHOST = EFFECT.register("ghost",
             () -> new GhostEffect(MobEffectCategory.BENEFICIAL, 0xf59b14));
 
-    public static final Holder<Potion>  GHOST_POTION = POTIONS.register("ghost_potion",()-> new Potion(new MobEffectInstance(GHOST,2000,0)));
-
+    public static final Holder<Potion>  GHOST_POTION = POTIONS.register("ghost_potion",()-> new Potion(new MobEffectInstance(GHOST,8000,0)));
 
     public static final Holder<MobEffect> MUTEKI = EFFECT.register("muteki",
             () -> new SaveEffect(MobEffectCategory.BENEFICIAL, 0xffce00)
                     .addAttributeModifier(KRCAttributes.MUTEKI, ResourceLocation.fromNamespaceAndPath(MOD_ID, "effect.muteki")
                             , 1F, AttributeModifier.Operation.ADD_VALUE));
 
-    public static final Holder<Potion>  MUTEKI_POTION = POTIONS.register("muteki_potion",()-> new Potion(new MobEffectInstance(MUTEKI,2000,0)));
-
+    public static final Holder<Potion>  MUTEKI_POTION = POTIONS.register("muteki_potion",()-> new Potion(new MobEffectInstance(MUTEKI,8000,0)));
 
     public static final Holder<MobEffect> RESET = EFFECT.register("reset",
             () -> new ResetEffect(MobEffectCategory.HARMFUL, 0x4eff00));
-
 
     public static final Holder<MobEffect> PAUSE = EFFECT.register("pause",
             () -> new BasicEffect(MobEffectCategory.HARMFUL, 0x4eff00)
