@@ -43,7 +43,7 @@ public class QueenUndeadEntity extends UndeadEntity {
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));
 
             switch (getRandom().nextInt(3)) {
-                case 0:
+                case 4:
                     setData(MOB_STATE, "capricorn");
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.ABSORB_CAPRICORN.get(), 1);
@@ -59,6 +59,11 @@ public class QueenUndeadEntity extends UndeadEntity {
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.ABSORB_ORCHID.get(), 1);
                     break;
+                case 3:
+                    setData(MOB_STATE, "tiger");
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(BladeRiderItems.UNDEAD_BUCKLE.get()));
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.ABSORB_TIGER.get(), 1);
+                    break;
             }
         }
     }
@@ -73,12 +78,12 @@ public class QueenUndeadEntity extends UndeadEntity {
                 case "serpent_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_ABSORB_SERPENT.get(), 1);
                     break;
-//                case "orchid_sealable":
-//                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_ABSORB_ORCHID.get(), 1);
-//                    break;
-//                case "tiger_sealable":
-//                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_ABSORB_TIGER.get(), 1);
-//                    break;
+                case "orchid_sealable":
+                    RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_ABSORB_ORCHID.get(), 1);
+                   break;
+                case "tiger_sealable":
+                  RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_ABSORB_TIGER.get(), 1);
+                    break;
             }
         }
     }
