@@ -30,14 +30,14 @@ public class MiscAbilities {
 
     public static void flightBoost(LivingEntity user) {
         if (!user.level().isClientSide()) {
-            user.setData(ABILITY_COOLDOWN, 75);
+            user.setData(ABILITY_COOLDOWN, 40);
             user.setData(ABILITY_TICK, 1);
             if (!user.isFallFlying() && user instanceof Player player) {
                 user.teleportTo(user.getX(), user.getY() + 2, user.getZ());
                 user.jumpFromGround();
                 player.startFallFlying();
             }
-            user.setDeltaMovement(user.getDeltaMovement().add(user.getLookAngle().scale(2)));
+            user.setDeltaMovement(user.getDeltaMovement().add(user.getLookAngle().scale(1.75)));
             user.hurtMarked = true;
             AbilityUtil.cancelAbility(user, "", 0);
         }

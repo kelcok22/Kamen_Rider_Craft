@@ -151,7 +151,9 @@ public class ZeztzRiderItems {
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }}
-            }.setSlotOneAbility("flight_boost", 1).setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+            }.setGlidingPosition("wing_capsem.gliding").setSlotOneAbility("flight_boost", 1).setFormDelay(19)
+                    .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5)
+                    .useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",

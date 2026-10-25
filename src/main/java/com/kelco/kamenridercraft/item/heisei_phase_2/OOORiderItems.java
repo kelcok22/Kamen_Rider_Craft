@@ -84,7 +84,7 @@ public class OOORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 30, 0, 0, 0, 0.1);
 				}}
-			}.setFormDelay(1d).changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+			}.setGlidingPosition("tajadol.gliding").setFormDelay(1d).changeSlot(2).hasFlyingWings( "ooo_kujaku.geo.json").addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> CONDOR_MEDAL = ITEMS.register("condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor","ooo","ooodriver_belt",
@@ -758,7 +758,7 @@ public class OOORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 10, 0, 0, 0, 0.1);
 				}
-			}}.setFormDelay(1d).changeSlot(2).hasCape().hasFlyingWings( "ooo_kujaku.geo.json").addToList(OOO_TAB_ITEM));
+			}}.setGlidingPosition("tajadol.gliding").setFormDelay(1d).changeSlot(2).hasCape().hasFlyingWings( "ooo_kujaku.geo.json").addToList(OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> CONDOR_ETERNITY_MEDAL = ITEMS.register("condor_eternity_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_condor_eternity","ooo","ooodriver_belt",
@@ -937,7 +937,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
                             player.getX(), player.getY()+1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }}
-        }.setFormDelay(1d).changeSlot(2).changeModel("ooo_kujaku.geo.json").hasFlyingWings( "ooo_kujaku.geo.json").addToList(OOO_TAB_ITEM).useBasicModel().addToList(SPECIAL_NAME_MEDALS));
+        }.setGlidingPosition("tajadol.gliding").setFormDelay(1d).changeSlot(2).changeModel("ooo_kujaku.geo.json").hasFlyingWings( "ooo_kujaku.geo.json").addToList(OOO_TAB_ITEM).useBasicModel().addToList(SPECIAL_NAME_MEDALS));
 
 	public static final DeferredItem<Item> BLOKEES_CONDOR_MEDAL = ITEMS.register("blokees_condor_medal",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_condor_blokees","ooo","ooodriver_belt",

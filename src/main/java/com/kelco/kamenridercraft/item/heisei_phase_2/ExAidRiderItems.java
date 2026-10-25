@@ -1431,8 +1431,11 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.addSwitchForm(MAXIMUM_MIGHTY_X_GASHAT_lv2.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
+            }.setModifiedPosition("maximum_mighty.modifier")
+                    .setModifiedPositionLayer("position_1").addSwitchForm(MAXIMUM_MIGHTY_X_GASHAT_lv2.get())
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json")
+                    .changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+                    .addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 20));
 
 
     public static final DeferredItem<Item> GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0 = ITEMS.register("god_maximum_mighty_x_gashat_lv0",
@@ -1479,12 +1482,14 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
+                    .setModifiedPosition("maximum_mighty.modifier")
+                    .setModifiedPositionLayer("position_1").
+                    addSwitchForm(GOD_MAXIMUM_MIGHTY_X_GASHAT_lv0.get())
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_lv99.geo.json").changeBeltModel("geo/belts/gamer_driver_belt_maximum.geo.json")
+                    .alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_MAXIMUM_GASHAT, 5));
 
     public static final DeferredItem<Item> MAXIMUM_ZOMBIE_GASHAT = ITEMS.register("maximum_zombie_gashat",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.RARE)).addToList(EX_AID_TAB_ITEM));
-
 
     public static final DeferredItem<Item> UNFINISHED_HYPER_MUTEKI_GASHAT = ITEMS.register("unfinished_hyper_muteki_gashat",
             () -> new BaseItem(new Item.Properties()).addToList(EX_AID_TAB_ITEM));

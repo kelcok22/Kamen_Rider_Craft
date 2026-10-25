@@ -267,7 +267,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().hasCape().setModelName("ride_x_eggs_10"));
+            }.setGlidingPosition("arm_wing.gliding").isGlowing().IsBeltGlowing().hasCape().setModelName("ride_x_eggs_10"));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_10 = ITEMS.register("ride_x_eggs_10",
             () -> new RiderFormChangeItem(new Item.Properties(),"_salmon_frame","empty","my_th_driver_belt_salmon",
@@ -320,7 +320,7 @@ public class MyThRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }
                 }
-            }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_11_VANKEN.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().setSlotOneAbility("flight_boost", 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+            }.setGlidingPosition("my-th.gliding").isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_11_VANKEN.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().setSlotOneAbility("flight_boost", 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> HARINEZUMI_SEED_X_EGGS = ITEMS.register("harinezumi_seed_x_egg",
             () -> new RiderFormChangeItem(new Item.Properties(),"_hedgehog","my_th","my_th_driver_belt_hedgehog",

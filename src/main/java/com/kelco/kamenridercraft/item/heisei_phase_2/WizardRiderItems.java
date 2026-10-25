@@ -261,14 +261,17 @@ public class WizardRiderItems {
 					,new MobEffectInstance(MobEffects.JUMP, 40, 6,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)
 					,new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)
-					,new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
+					,new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addNeedForm(HURRICANE_DRAGON_WIZARD_RING.get(),1).addAlternative(WATER_DRAGON_WIZARD_SPECIAL_RING.get()).changeModel("wizard_flame_dragon_all_dragon.geo.json"));
+			}.setGlidingPosition("hurricane_dragon.gliding").setSlotOneAbility("flight_boost", 1)
+					.isGlowing().addNeedForm(HURRICANE_DRAGON_WIZARD_RING.get(),1)
+					.addAlternative(WATER_DRAGON_WIZARD_SPECIAL_RING.get())
+					.changeModel("wizard_flame_dragon_all_dragon.geo.json"));
 
 	public static final DeferredItem<Item> LAND_DRAGON_WIZARD_SPECIAL_RING = ITEMS.register("land_ring_dragon_special_ring",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_land_dragon_special","wizard","wizardriver_belt",

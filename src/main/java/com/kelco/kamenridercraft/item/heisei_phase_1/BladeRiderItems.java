@@ -234,7 +234,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
+            }.setGlidingPosition("jack.gliding").isGlowing().addAlternative(FUSION_EAGLE_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
                     .hasFlyingWings("blade_jack_wing.geo.json").addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_CAPRICORN = ITEMS.register("sealable_absorb_capricorn",
@@ -497,7 +497,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(FUSION_PEACOCK_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
+            }.setGlidingPosition("jack.gliding").isGlowing().addAlternative(FUSION_PEACOCK_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape()
                     .hasFlyingWings("garren_jack_wing.geo.json").addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SEALABLE_ABSORB_SERPENT = ITEMS.register("sealable_absorb_serpent",

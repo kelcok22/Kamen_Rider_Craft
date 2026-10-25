@@ -317,14 +317,19 @@ public class KivaRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_BAT_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).useBasicModel().setModelName("keyfuestle"));
+			}.setModifiedPosition("flight_style.modifier")
+					.setModifiedPositionLayer("position_1")
+					.setModifiedPositionConditions("on_ground")
+					.setGlidingPosition("flight_style.gliding")
+					.setSlotOneAbility("flight_boost", 1)
+					.isGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).useBasicModel().setModelName("keyfuestle"));
 
 
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",

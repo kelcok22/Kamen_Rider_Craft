@@ -88,7 +88,7 @@ public class LivingEntityMixin {
                 if (rider.isFallFlying() && !rider.isCrouching() && driverItem.getGlidingPosition() != null
                         && !(driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
                     PacketDistributor.sendToAllPlayers(
-                            new AnimPayload(driverItem.getFlyingPosition(), "gliding", true, rider.getStringUUID()));
+                            new AnimPayload(driverItem.getGlidingPosition(), "gliding", true, rider.getStringUUID()));
                 }
                 if (!rider.isCrouching() && driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
                     for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
@@ -123,10 +123,7 @@ public class LivingEntityMixin {
                                         break;
                                 }
                             }
-                        } else {
-                            canTakePose = false;
                         }
-                        System.out.println(formItemDataList);
                         if (canTakePose) {
                             PacketDistributor.sendToAllPlayers
                                     (new AnimPayload(formItemDataList.get(0).getFirst().toLowerCase(),
