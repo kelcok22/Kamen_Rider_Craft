@@ -738,30 +738,6 @@
 				}
 			}
 		},
-		"fourze.parachute": {
-			"animation_length": 0.25,
-			"bones": {
-				"left_arm": {
-					"rotation": [-178.6251, 5.7358, 4.4407]
-				}
-			}
-		},
-		"fourze.triangle_module": {
-			"animation_length": 0.25,
-			"bones": {
-				"left_leg": {
-					"position": [0, 5, -3]
-				}
-			}
-		},
-		"fourze.x_module": {
-			"animation_length": 0.25,
-			"bones": {
-				"right_leg": {
-					"position": [0, 3, -3]
-				}
-			}
-		},
 		"fourze.wheel_module": {
 			"animation_length": 0.25,
 			"bones": {

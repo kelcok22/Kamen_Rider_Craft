@@ -9,77 +9,206 @@
 				}
 			}
 		},
-		"sd_modifier": {
+		"sd.modifier": {
 			"animation_length": 0.25,
 			"bones": {
 				"head": {
 					"scale": {
 						"0.0": [2, 2, 2],
-						"0.0417": [2, 2, 2],
-						"0.0833": [2, 2, 2],
-						"0.125": [2, 2, 2],
-						"0.1667": [2, 2, 2],
-						"0.2083": [2, 2, 2],
 						"0.25": [2, 2, 2]
 					}
 				}
 			}
 		},
 		"odin.flying": {
-			"animation_length": 0.25,
+			"animation_length": 0.125,
 			"bones": {
 				"body": {
 					"rotation": {
 						"0.0": [-10, 0, 0],
-						"0.25": [-10, 0, 0]
+						"0.125": [-10, 0, 0]
 					},
 					"position": {
 						"0.0": [0, -1, 0],
-						"0.25": [0, -1, 0]
+						"0.125": [0, -1, 0]
 					}
 				},
 				"head": {
 					"rotation": {
 						"0.0": [13, 0, 0],
-						"0.25": [13, 0, 0]
+						"0.125": [13, 0, 0]
 					}
 				},
 				"torso": {
 					"rotation": {
 						"0.0": [5, 0, 3],
-						"0.25": [5, 0, 3]
+						"0.125": [5, 0, 3]
 					}
 				},
 				"right_arm": {
 					"rotation": {
 						"0.0": [-73, -48, 17],
-						"0.25": [-73, -48, 17]
+						"0.125": [-73, -48, 17]
 					},
 					"position": {
 						"0.0": [0, -1, 0],
-						"0.25": [0, -1, 0]
+						"0.125": [0, -1, 0]
 					}
 				},
 				"left_arm": {
 					"rotation": {
 						"0.0": [-80, 51, -10],
-						"0.25": [-80, 51, -10]
+						"0.125": [-80, 51, -10]
 					},
 					"position": {
 						"0.0": [0, -1, 0],
-						"0.25": [0, -1, 0]
+						"0.125": [0, -1, 0]
 					}
 				},
 				"right_leg": {
 					"rotation": {
 						"0.0": [25, 27, 5],
-						"0.25": [25, 27, 5]
+						"0.125": [25, 27, 5]
 					}
 				},
 				"left_leg": {
 					"rotation": {
 						"0.0": [0, -13, 0],
-						"0.25": [0, -13, 0]
+						"0.125": [0, -13, 0]
+					}
+				}
+			}
+		},
+		"leg_up.left_20.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"left_leg": {
+					"position": {
+						"0.0": [0, 3, -4],
+						"0.125": [0, 3, -4]
+					}
+				}
+			}
+		},
+		"leg_up.right_20.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"right_leg": {
+					"position": {
+						"0.0": [0, 3, -4],
+						"0.125": [0, 3, -4]
+					}
+				}
+			}
+		},
+		"leg_up.left_75.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"left_leg": {
+					"position": {
+						"0.0": [0, 4, -4],
+						"0.125": [0, 4, -4]
+					}
+				}
+			}
+		},
+		"leg_up.right_75.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"right_leg": {
+					"position": {
+						"0.0": [0, 4, -4],
+						"0.125": [0, 4, -4]
+					}
+				}
+			}
+		},
+		"leg_up.left_100.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"left_leg": {
+					"position": {
+						"0.0": [0, 9, -4],
+						"0.125": [0, 9, -4]
+					}
+				}
+			}
+		},
+		"leg_up.right_100.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"right_leg": {
+					"position": {
+						"0.0": [0, 9, -4],
+						"0.125": [0, 9, -4]
+					}
+				}
+			}
+		},
+		"arm_up.right.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"0.0": [-174.24, -24.37, -13.75],
+						"0.125": [-174.2367, -24.3683, -13.7454]
+					}
+				}
+			}
+		},
+		"arm_up.left.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"left_arm": {
+					"rotation": {
+						"0.0": [-174.24, 24.37, 13.75],
+						"0.125": [-174.2367, 24.3683, 13.7454]
+					}
+				}
+			}
+		},
+		"wheel_module.modifier": {
+			"animation_length": 0.25,
+			"bones": {
+				"left_leg": {
+					"rotation": [5, 0, 0],
+					"position": [0, 1.5, -3]
+				},
+				"torso": {
+					"rotation": [7.5, 0, 5]
+				},
+				"right_leg": {
+					"rotation": [15.9146, 5.2337, 9.2208],
+					"position": [0.15, 2.203, 0.44]
+				}
+			}
+		},
+		"board_module.modifier": {
+			"animation_length": 0.25,
+			"bones": {
+				"left_leg": {
+					"rotation": [0, 20, 0],
+					"position": [0, 0.25, 0]
+				},
+				"right_leg": {
+					"rotation": [7.35, 17.78, 7.9],
+					"position": [0, 0.25, 0]
+				},
+				"body": {
+					"rotation": [0, 70, 0]
+				},
+				"head": {
+					"rotation": [0, -70, 0]
+				}
+			}
+		},
+		"hibiki_module.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"left_arm": {
+					"rotation": {
+						"0.0": [360, -90, -450],
+						"0.125": [360, -90, -450]
 					}
 				}
 			}

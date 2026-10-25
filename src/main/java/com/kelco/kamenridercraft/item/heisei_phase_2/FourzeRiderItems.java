@@ -6,20 +6,16 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
-import com.kelco.kamenridercraft.entity.vehicles.RidevendorVendingModeEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.Fourze.*;
-import com.kelco.kamenridercraft.item.heisei_phase_2.ooo.CandroidItem;
 import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import com.kelco.kamenridercraft.item.showa.V3RiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -38,10 +34,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import software.bernie.geckolib.util.Color;
 
 import java.util.List;
-import java.util.jar.Attributes;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.FOURZE_TAB_ITEM;
-import static com.kelco.kamenridercraft.item.KRCCreativeTabs.OOO_TAB_ITEM;
 
 public class FourzeRiderItems {
 
@@ -61,21 +55,21 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
-                            if (tick == 10d) {
-                                ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                                        player.getX(), player.getY() + 1,
-                                        player.getZ(), 7, 0, 0, 0, 0.05);
-                                ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                                        player.getX(), player.getY() + 1,
-                                        player.getZ(), 7, 0, 0, 0, 0.05);
-                                ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                        player.getX(), player.getY() + 1,
-                                        player.getZ(), 7, 0, 0, 0, 0.05);
-                                ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                                        player.getX(), player.getY() + 1,
-                                        player.getZ(), 7, 0, 0, 0, 0.05);
-                            }
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 10d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 7, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 7, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 7, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 7, 0, 0, 0, 0.05);
+                        }
                     }
                 }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
@@ -88,8 +82,8 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
-                      if (tick == 10d) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 10d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 100, 0, 0, 0, 0.1);
@@ -109,15 +103,17 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false)
-                    , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1, true, false))  {
+                    , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.1);
-                }}}
+                            ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 0.1);
+                        }
+                    }
+                }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_MAGNET_STATES = ITEMS.register("fourze_magnetstates",
@@ -128,23 +124,25 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
 
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new MagnetCannonRenderLayerInfo("fourze_magnet", "module/fourze_magnet_cannon"));
+                    }
                 }
 
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 50, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 50, 0, 0, 0, 0.1);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 50, 0, 0, 0, 0.1);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 50, 0, 0, 0, 0.1);
 
-                }}}
+                        }
+                    }
+                }
             }.setFormDelay(10).setSlotOneAbility("cannon", 1).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
@@ -158,13 +156,15 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 300, 0, 0, 0, 0.1);
 
-                }}}
+                        }
+                    }
+                }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
@@ -174,16 +174,18 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
-                            player.getX(), player.getY() + 0.5,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                    player.getX(), player.getY() + 0.5,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
 
-                }}}
+                        }
+                    }
+                }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_LAUNCHER_STATES = ITEMS.register("fourze_launcherstates",
@@ -193,17 +195,19 @@ public class FourzeRiderItems {
 
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
-                            player.getX(), player.getY() + 0.5,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                    player.getX(), player.getY() + 0.5,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
 
-                }}}
-            }.setSlotOneAbility("cannon",1).setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
+                        }
+                    }
+                }
+            }.setSlotOneAbility("cannon", 1).setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_FUSION_STATES = ITEMS.register("fourze_meteor_fusionstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_meteor_fusion", "fourze", "fourze_driver_belt",
@@ -214,15 +218,17 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 150, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 150, 0, 0, 0, 0.05);
-                }}}
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 150, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 150, 0, 0, 0, 0.05);
+                        }
+                    }
+                }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_METEOR_NADESHIKO_FUSION_STATES = ITEMS.register("fourze_meteor_nadeshiko_fusionstates",
@@ -236,19 +242,21 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 150, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 150, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 150, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 150, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RANDOM_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
 
-                }}}
+                        }
+                    }
+                }
             }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_ROCKET_DRILL_STATES = ITEMS.register("fourze_rocketdrillstates",
@@ -259,63 +267,71 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 10d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
 
-                }}}
+                        }
+                    }
+                }
             }.setFormDelay(10).setSlotOneAbility("rider_punch", 1).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> BLANK_CIRCLE_ASTROSWITCH = ITEMS.register("circle_astroswitch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) != FOURZE_FUSION_STATES.asItem()){
-                            if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem()==BILLY_THE_ROD.asItem()) layerInfo.add(new RenderLayerInfo("module/fourze_elek_module", "module/fourze_elek_module"));
-                            else if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem()==HEE_HACKGUN.asItem()) layerInfo.add(new RenderLayerInfo("module/fourze_fire_module", "default"));
-                                else layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) != FOURZE_FUSION_STATES.asItem()) {
+                            if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem() == BILLY_THE_ROD.asItem()) {
+                                layerInfo.add(new RenderLayerInfo("module/fourze_elek_module", "module/fourze_elek_module"));
+                            } else if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem() == HEE_HACKGUN.asItem()) {
+                                layerInfo.add(new RenderLayerInfo("module/fourze_fire_module", "default"));
+                            } else {
+                                layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
+                            }
                         }
-                }}
+                    }
+                }
             }.setFormDelay(20).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> BLANK_CROSS_ASTROSWITCH = ITEMS.register("cross_astroswitch",
-            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
                         }
                     }
                 }
             }.setFormDelay(20).changeSlot(2).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> BLANK_TRIANGLE_ASTROSWITCH = ITEMS.register("triangle_astroswitch",
-            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
                         }
                     }
                 }
@@ -325,19 +341,22 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                            RiderDriverItem.updateOldFormItemSlot(itemstack,getSlot());
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
                     }
                 }
             }.setFormDelay(20).changeSlot(4).setModelName("astroswitch").useBasicModel());
@@ -349,15 +368,16 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
-                    , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)){
+                    , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
 
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_1.hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }if (tick == 2d) {
+                        }
+                        if (tick == 2d) {
                             AnimationUtil.playPose(player, "fourze.rocket_switch.pose");
                             ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                                     player.getX(), player.getY() + 0.5,
@@ -368,9 +388,9 @@ public class FourzeRiderItems {
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                      {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
                     }
                 }
@@ -381,11 +401,12 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }if (tick == 2d) {
+                        }
+                        if (tick == 2d) {
                             AnimationUtil.playPose(player, "fourze.rocket_switch.pose");
                             ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                                     player.getX(), player.getY() + 0.5,
@@ -396,11 +417,14 @@ public class FourzeRiderItems {
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
 
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
-                          if (slot == EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
+                        if (slot == EquipmentSlot.HEAD) {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
+                        }
                     }
                 }
             }.setFormDelay(20).setSlotTwoAbility("fourze_kick", 0).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addAlternative(NADESHIKO_ROCKET_ASTROSWITCH.get())
@@ -412,21 +436,21 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                      {
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_launcher_module", "module/fourze_launcher_module", Color.BLUE.getColor(),2));
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_launcher_module", "module/fourze_launcher_module", Color.BLUE.getColor(), 2));
                     }
                 }
             }.setFormDelay(20).setSlotTwoAbility("cannon", 1).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
@@ -436,48 +460,54 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.DRILL, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                      {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new DrillRenderLayerInfo("module/fourze_drill_module", "module/fourze_drill_module"));
                     }
                 }
-            }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
+            }.setModifiedPosition("leg_up.left_100.modifier")
+                    .setModifiedPositionLayer("position_1")
+                    .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get())
+                    .addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
 
     public static final DeferredItem<Item> RADAR_ASTROSWITCH = ITEMS.register("radar_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.RADAR, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
 
-                        if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
-                            if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_radar_module", "module/fourze_radar_module",Color.BLACK.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_radar_module", "module/fourze_radar_module", Color.BLACK.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 20));
@@ -487,19 +517,20 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
 
                         layerInfo.add(new MagichandRenderLayerInfo("module/fourze_magichand_module", "module/fourze_magichand_module"));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
@@ -512,24 +543,27 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_camera_module", "module/fourze_camera_module",Color.DARK_GRAY.getColor(),4));
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_camera_module", "module/fourze_camera_module", Color.DARK_GRAY.getColor(), 4));
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
@@ -539,48 +573,55 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
                         layerInfo.add(new ParachuteRenderLayerInfo("module/fourze_parachute_module", "module/fourze_parachute_module"));
                     }
                 }
-            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
+            }.setModifiedPosition("arm_up.left.modifier")
+                    .setModifiedPositionLayer("position_2")
+                    .setModifiedPositionConditions("in_air").setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get())
+                    .addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
     public static final DeferredItem<Item> CHAINSAW_ASTROSWITCH = ITEMS.register("chainsaw_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_chainsaw_module", "module/fourze_chainsaw_module",Color.BLUE.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_chainsaw_module", "module/fourze_chainsaw_module", Color.BLUE.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
@@ -589,44 +630,49 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_hopping_module", "module/fourze_hopping_module",Color.PINK.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_hopping_module", "module/fourze_hopping_module", Color.PINK.getColor(), 3));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
+            }.setModifiedPosition("leg_up.left_100.modifier")
+                    .setModifiedPositionLayer("position_1")
+                    .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get())
+                    .addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
     public static final DeferredItem<Item> ELEK_ASTROSWITCH = ITEMS.register("elek_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "_elek_module", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.THUNDER_SLASH, 40, 0, true, false)){
+                    new MobEffectInstance(EffectCore.THUNDER_SLASH, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_elek_module", "module/fourze_elek_module"));
+                    }
                 }
             }.setFormDelay(20).alsoChange5thSlot(FOURZE_ELEK_STATES.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 15));
 
@@ -635,23 +681,26 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
                         layerInfo.add(new ScissorsRenderLayerInfo("module/fourze_scissors_module", "module/fourze_scissors_module"));
                     }
                 }
@@ -662,21 +711,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.NOTE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_beat_module", "module/fourze_beat_module",Color.RED.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_beat_module", "module/fourze_beat_module", Color.RED.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
@@ -685,19 +735,20 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
 
                         layerInfo.add(new ChainArrayRenderLayerInfo("module/fourze_chain_array_module", "module/fourze_chain_array_module"));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
@@ -710,21 +761,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SMOKE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_smoke_module", "module/fourze_smoke_module",Color.MAGENTA.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_smoke_module", "module/fourze_smoke_module", Color.MAGENTA.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
@@ -733,21 +785,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_spike_module", "module/fourze_spike_module",Color.GREEN.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_spike_module", "module/fourze_spike_module", Color.GREEN.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
@@ -756,24 +809,27 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_winch_module", "module/fourze_winch_module",Color.GREEN.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_winch_module", "module/fourze_winch_module", Color.GREEN.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
@@ -783,21 +839,22 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_flash_module", "module/fourze_flash_module", "module/fourze_flash_module_glowmask",Color.YELLOW.getColor(),1));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_flash_module", "module/fourze_flash_module", "module/fourze_flash_module_glowmask", Color.YELLOW.getColor(), 1));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
                     }
                 }
@@ -808,24 +865,29 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem()!=SHIELD_MODULE.asItem())layerInfo.add(new ModuleRenderLayerInfo("module/fourze_shield_module", "module/fourze_shield_module",Color.WHITE.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem() != SHIELD_MODULE.asItem()) {
+                            layerInfo.add(new ModuleRenderLayerInfo("module/fourze_shield_module", "module/fourze_shield_module", Color.WHITE.getColor(), 4));
+                        }
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
@@ -834,43 +896,46 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_gatling_module", "module/fourze_gatling_module",Color.CYAN.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_gatling_module", "module/fourze_gatling_module", Color.CYAN.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).setSlotOneAbility("gatling", 1).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
     public static final DeferredItem<Item> FIRE_ASTROSWITCH = ITEMS.register("fire_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.FIRE_SHOT, 40, 0, true, false)){
+                    new MobEffectInstance(EffectCore.FIRE_SHOT, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_fire_module", "default"));
+                    }
                 }
             }.setFormDelay(20).alsoChange5thSlot(FOURZE_FIRE_STATES.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 10));
 
@@ -879,46 +944,51 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.STEALTH, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_stealth_module", "module/fourze_stealth_module",Color.DARK_GRAY.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_stealth_module", "module/fourze_stealth_module", Color.DARK_GRAY.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> HAMMER_ASTROSWITCH = ITEMS.register("hammer_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) { public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                super.transformationEffect(itemstack, player, tick);
-                if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
-                    if (tick == 30d) {
-                        AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
-                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                    }else if (tick == 2d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY() + 1,
-                                player.getZ(), 10, 0, 0, 0, 0.05);
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
+                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                        } else if (tick == 2d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 10, 0, 0, 0, 0.05);
+                        }
                     }
                 }
-            }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_hammer_module", "module/fourze_hammer_module",Color.YELLOW.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_hammer_module", "module/fourze_hammer_module", Color.YELLOW.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
@@ -928,46 +998,50 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_water_module", "module/fourze_water_module",Color.CYAN.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_water_module", "module/fourze_water_module", Color.CYAN.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> MEDICAL_ASTROSWITCH = ITEMS.register("medical_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 0, true, false)) {
-        public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                super.transformationEffect(itemstack, player, tick);
-                if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
-                    if (tick == 30d) {
-                        AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
-                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                    }else if (tick == 2d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY() + 1,
-                                player.getZ(), 10, 0, 0, 0, 0.05);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
+                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                        } else if (tick == 2d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 10, 0, 0, 0, 0.05);
+                        }
                     }
                 }
-            }
-            public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
                         layerInfo.add(new MedicalRenderLayerInfo("module/fourze_medical_module", "module/fourze_medical_module"));
                     }
                 }
@@ -978,67 +1052,77 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SMOKE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_pen_module", "module/fourze_pen_module",Color.DARK_GRAY.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_pen_module", "module/fourze_pen_module", Color.DARK_GRAY.getColor(), 2));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+            }.setModifiedPosition("leg_up.left_75.modifier")
+                    .setModifiedPositionLayer("position_1")
+                    .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).
+                    addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> WHEEL_ASTROSWITCH = ITEMS.register("wheel_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new WheelRenderLayerInfo("module/fourze_wheel_module", "module/fourze_wheel_module"));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(3).isBike().addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
+            }.setModifiedPosition("wheel_module.modifier")
+                    .setModifiedPositionLayer("position_1")
+                    .setModifiedPositionConditions("on_ground")
+                    .setFormDelay(20).changeSlot(3).isBike().addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM)
+                    .addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> SCREW_ASTROSWITCH = ITEMS.register("screw_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.SWIFT_SWIM, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new ScrewRenderLayerInfo("module/fourze_screw_module", "module/fourze_screw_module"));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
@@ -1047,44 +1131,46 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new HandRenderLayerInfo("module/fourze_hand_module", "module/fourze_hand_module"));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
     public static final DeferredItem<Item> SCHOOP_ASTROSWITCH = ITEMS.register("scoop_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-        public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                super.transformationEffect(itemstack, player, tick);
-                if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
-                    if (tick == 30d) {
-                        AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
-                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                    }else if (tick == 2d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY() + 1,
-                                player.getZ(), 10, 0, 0, 0, 0.05);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
+                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                        } else if (tick == 2d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 10, 0, 0, 0, 0.05);
+                        }
                     }
                 }
-            }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_scoop_module", "module/fourze_scoop_module",Color.GREEN.getColor(),1));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_scoop_module", "module/fourze_scoop_module", Color.GREEN.getColor(), 1));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
                     }
                 }
@@ -1095,19 +1181,20 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PULL, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10){
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_magnet_n", "default"));
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_n_module", "module/fourze_magnet_n_module", Color.RED.getColor(), 1));
                     }
@@ -1115,27 +1202,27 @@ public class FourzeRiderItems {
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).useBasicModel().addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
 
 
-
     public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_switch_n",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
                     , new MobEffectInstance(EffectCore.PULL, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10){
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_magnet_n", "default"));
-                            layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_n_module", "module/fourze_magnet_n_module", Color.RED.getColor(), 1));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_n_module", "module/fourze_magnet_n_module", Color.RED.getColor(), 1));
                     }
                 }
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1146,19 +1233,20 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUSH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10){
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_magnet_s", "default"));
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_s_module", "module/fourze_magnet_s_module", Color.BLUE.getColor(), 4));
                     }
@@ -1170,21 +1258,22 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUSH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10){
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_magnet_s", "default"));
-                            layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_s_module", "module/fourze_magnet_s_module", Color.BLUE.getColor(), 4));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_magnet_s_module", "module/fourze_magnet_s_module", Color.BLUE.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1194,21 +1283,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.BLIZZARD, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new FreezeRenderLayerInfo("module/fourze_freeze_module", "module/fourze_freeze_module"));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).canSnowWalk().addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
@@ -1217,21 +1307,22 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_claw_module", "module/fourze_claw_module",Color.MAGENTA.getColor(),1));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_claw_module", "module/fourze_claw_module", Color.MAGENTA.getColor(), 1));
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
                     }
                 }
@@ -1242,44 +1333,50 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_board_module", "module/fourze_board_module",Color.ORANGE.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_board_module", "module/fourze_board_module", Color.ORANGE.getColor(), 3));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).canSnowWalk().addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
+            }.setModifiedPosition("board_module.modifier")
+                    .setModifiedPositionLayer("position_1")
+                    .setModifiedPositionConditions("on_ground")
+                    .setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get())
+                    .canSnowWalk().addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
     public static final DeferredItem<Item> GIANTFOOT_ASTROSWITCH = ITEMS.register("giantfoot_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.GRAVITY, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_giantfoot_module", "module/fourze_giantfoot_module",Color.RED.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_giantfoot_module", "module/fourze_giantfoot_module", Color.RED.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
@@ -1288,21 +1385,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 5, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_aero_module", "module/fourze_aero_module",Color.BLUE.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_aero_module", "module/fourze_aero_module", Color.BLUE.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
@@ -1311,47 +1409,54 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
 
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
                         layerInfo.add(new GyroRenderLayerInfo("module/fourze_gyro_module", "module/fourze_gyro_module"));
                     }
                 }
-            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
+            }.setModifiedPosition("arm_up.left.modifier")
+                    .setModifiedPositionLayer("position_2")
+                    .setModifiedPositionConditions("in_air").setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get())
+                    .addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
     public static final DeferredItem<Item> NET_ASTROSWITCH = ITEMS.register("net_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new NetRenderLayerInfo("module/fourze_net_module", "module/fourze_net_module"));
+                    }
                 }
             }.setFormDelay(20).setSlotOneAbility("fish", 1).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
@@ -1360,44 +1465,49 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.RAM, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_stamper_module", "module/fourze_stamper_module",Color.ORANGE.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_stamper_module", "module/fourze_stamper_module", Color.ORANGE.getColor(), 3));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
+            }.setModifiedPosition("leg_up.left_75.modifier")
+                    .setModifiedPositionLayer("position_1")
+                    .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(3)
+                    .addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 2));
 
     public static final DeferredItem<Item> COSMIC_ASTROSWITCH = ITEMS.register("cosmic_switch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_circle", "default"));
+                    }
                 }
             }.setFormDelay(20).alsoChange5thSlot(FOURZE_COSMIC_STATES.get()).addToList(FOURZE_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS).addToList(AstroswitchProgrammer.ASTROSWITCH, 1));
 
@@ -1405,8 +1515,7 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                      {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_super_rocket_module", "module/fourze_super_rocket_module"));
                     }
                 }
@@ -1415,10 +1524,10 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> SUPER_LAUNCHER_ASTROSWITCH = ITEMS.register("super_launcher_switch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt") {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
-                          layerInfo.add(new ModuleRenderLayerInfo("fourze_launcher", "fourze_launcher_arms", Color.BLUE.getColor(), 3));
-                          layerInfo.add(new ModuleRenderLayerInfo("module/fourze_super_launcher_module", "module/fourze_super_launcher_module", Color.BLUE.getColor(), 3));
-                      }
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("fourze_launcher", "fourze_launcher_arms", Color.BLUE.getColor(), 3));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_super_launcher_module", "module/fourze_super_launcher_module", Color.BLUE.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).setSlotTwoAbility("cannon", 1).changeSlot(3).alsoChange5thSlot(FOURZE_LAUNCHER_STATES.get()).alsoChange2ndSlot(LAUNCHER_ASTROSWITCH.get()).resetFormToBase().addToList(FOURZE_TAB_ITEM));
 
@@ -1431,9 +1540,9 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_rocket_drill_module", "module/fourze_rocket_drill_module",Color.ORANGE.getColor(),1));
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_rocket_drill_module", "module/fourze_rocket_drill_module", Color.ORANGE.getColor(), 1));
+                    }
                 }
             }.setFormDelay(20).addNeedItem(ROCKET_ASTROSWITCH.get()).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).alsoChange5thSlot(FOURZE_ROCKET_DRILL_STATES.get()).alsoChange3rdSlot(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -1445,21 +1554,23 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD)
+                    if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                    }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
-                AnimationUtil.playPose(player, "meteor.henshin");
-                player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-            } else if (tick == 2d) {
-                ((ServerLevel) player.level()).sendParticles(ParticleTypes.SOUL_FIRE_FLAME,
-                        player.getX(), player.getY() + 1,
-                        player.getZ(), 200, 0, 0, 0, 0.1);
-            }
-        }
-    }.setHenshinTick(35).setFormDelay(1).setSlotTwoAbility("meteor_kick", 0).isGlowing().addToList(FOURZE_TAB_ITEM));
+                        AnimationUtil.playPose(player, "meteor.henshin");
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    } else if (tick == 2d) {
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.SOUL_FIRE_FLAME,
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 200, 0, 0, 0, 0.1);
+                    }
+                }
+            }.setHenshinTick(35).setFormDelay(1).setSlotTwoAbility("meteor_kick", 0).isGlowing().addToList(FOURZE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
@@ -1472,23 +1583,26 @@ public class FourzeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
-                            if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 10&&RiderDriverItem.getFormItem(itemStack,1)==this) layerInfo.add(new MeteorStormRenderLayerInfo("transforming/meteor_storm"));
+                        if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 10 && RiderDriverItem.getFormItem(itemStack, 1) == this) {
+                            layerInfo.add(new MeteorStormRenderLayerInfo("transforming/meteor_storm"));
+                        }
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
                         AnimationUtil.playPose(player, "meteor.henshin");
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
                     } else if (tick == 2d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.05);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.05);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.05);
 
-                }
+                    }
                 }
             }.setHenshinTick(35).setFormDelay(10).isGlowing().addToList(FOURZE_TAB_ITEM));
 
@@ -1497,10 +1611,11 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_nadeshiko_module", "module/fourze_nadeshiko_module",Color.LIGHT_GRAY.getColor(),2));
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_nadeshiko_module", "module/fourze_nadeshiko_module", Color.LIGHT_GRAY.getColor(), 2));
+                    }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
@@ -1510,7 +1625,7 @@ public class FourzeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 0.05);
                 }
-            }.setFormDelay(20).changeSlot(2).addNeedForm(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get(),5).canSnowWalk());
+            }.setFormDelay(20).changeSlot(2).addNeedForm(FOURZE_METEOR_NADESHIKO_FUSION_STATES.get(), 5).canSnowWalk());
 
     public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "nadeshiko", "nadeshiko_driver_belt",
@@ -1520,12 +1635,14 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())&&!RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                            AnimationUtil.playPose(player, "fourze.switch_1.hit");
-                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else  AnimationUtil.forcePlayPose(player, "fourze.henshin");
+                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot()) && !RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        AnimationUtil.playPose(player, "fourze.switch_1.hit");
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
+                    } else {
+                        AnimationUtil.forcePlayPose(player, "fourze.henshin");
+                    }
 
-                    if (RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                                 player.getX(), player.getY() + 0.5,
                                 player.getZ(), 100, 0, 0, 0, 0.05);
@@ -1544,12 +1661,14 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
-                    if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())&&!RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                    if (RiderDriverItem.wasSlotChanged(itemstack, getSlot()) && !RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         AnimationUtil.playPose(player, "fourze.switch_1.hit");
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                    }else  AnimationUtil.forcePlayPose(player, "fourze.henshin");
+                    } else {
+                        AnimationUtil.forcePlayPose(player, "fourze.henshin");
+                    }
 
-                    if (RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
                                 player.getX(), player.getY() + 0.5,
                                 player.getZ(), 100, 0, 0, 0, 0.05);
@@ -1578,7 +1697,7 @@ public class FourzeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            }.setSlotTwoAbility("flight_boost",1).isGlowing().hasCape().addToList(FOURZE_TAB_ITEM));
+            }.setSlotTwoAbility("flight_boost", 1).isGlowing().hasCape().addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "super_gingaoh", "blank",
@@ -1587,13 +1706,13 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false))
-                    .setSlotOneAbility("warp",1).addToList(FOURZE_TAB_ITEM));
+                    .setSlotOneAbility("warp", 1).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> FUSION_ASTROSWITCH_OG = ITEMS.register("fusion_switch_og",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
 
                         layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
@@ -1606,9 +1725,8 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.BOOST, 40, 3, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                      {
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_fusion_nadeshiko_module", "module/fourze_fusion_nadeshiko_module",Color.LIGHT_GRAY.getColor(),4));
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_fusion_nadeshiko_module", "module/fourze_fusion_nadeshiko_module", Color.LIGHT_GRAY.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).resetFormToBase()
@@ -1634,21 +1752,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_ichigo_module", "module/fourze_ichigo_module", "module/fourze_ichigo_module_glowmask",Color.LIGHT_GRAY.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_ichigo_module", "module/fourze_ichigo_module", "module/fourze_ichigo_module_glowmask", Color.LIGHT_GRAY.getColor(), 2));
+                    }
                 }
             }.setSummonBelt((RiderDriverItem) IchigoRiderItems.TYPHOON_ICHIGO.get()).setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -1657,24 +1776,26 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_nigo_module", "module/fourze_nigo_module", "module/fourze_nigo_module_glowmask",Color.RED.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_nigo_module", "module/fourze_nigo_module", "module/fourze_nigo_module_glowmask", Color.RED.getColor(), 4));
                     }
                 }
             }.setSummonBelt((RiderDriverItem) IchigoRiderItems.TYPHOON_NIGO.get()).setSummonForm((RiderFormChangeItem) IchigoRiderItems.ORIGINAL_TYPHOON_CORE_NIGO.get()).setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1684,21 +1805,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_v3_module", "module/fourze_v3_module", "module/fourze_v3_module_glowmask",Color.GREEN.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_v3_module", "module/fourze_v3_module", "module/fourze_v3_module_glowmask", Color.GREEN.getColor(), 3));
+                    }
                 }
             }.setSummonBelt((RiderDriverItem) V3RiderItems.DOUBLE_TYPHOON.get()).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -1707,22 +1829,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_riderman_module", "module/fourze_riderman_module", "module/fourze_riderman_module_glowmask",Color.BLUE.getColor(),1));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_riderman_module", "module/fourze_riderman_module", "module/fourze_riderman_module_glowmask", Color.BLUE.getColor(), 1));
                     }
                 }
             }.setSummonBelt((RiderDriverItem) V3RiderItems.RIDERMAN_BELT.get()).setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1732,47 +1854,52 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_x_module", "module/fourze_x_module", "module/fourze_x_module_glowmask",Color.DARK_GRAY.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_x_module", "module/fourze_x_module", "module/fourze_x_module_glowmask", Color.DARK_GRAY.getColor(), 2));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setModifiedPosition("leg_up.left_75.modifier")
+                    .setModifiedPositionLayer("position_2")
+                    .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> AMAZON_ASTROSWITCH = ITEMS.register("amazon_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_amazon_module", "module/fourze_amazon_module", "module/fourze_amazon_module_glowmask",Color.GREEN.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_amazon_module", "module/fourze_amazon_module", "module/fourze_amazon_module_glowmask", Color.GREEN.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1782,20 +1909,20 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
                         layerInfo.add(new StrongerModuleRenderLayerInfo("module/fourze_stronger_module", "module/fourze_stronger_module", "module/fourze_stronger_module_glowmask"));
                     }
@@ -1807,47 +1934,50 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_skyrider_module", "module/fourze_skyrider_module", "module/fourze_skyrider_module_glowmask",Color.GREEN.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_skyrider_module", "module/fourze_skyrider_module", "module/fourze_skyrider_module_glowmask", Color.GREEN.getColor(), 2));
+                    }
                 }
-            }.setSlotTwoAbility("flight_boost",2).setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setSlotTwoAbility("flight_boost", 2).setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_1_ASTROSWITCH = ITEMS.register("super_1_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_super_1_module", "module/fourze_super_1_module", "module/fourze_super_1_module_glowmask",Color.LIGHT_GRAY.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_super_1_module", "module/fourze_super_1_module", "module/fourze_super_1_module_glowmask", Color.LIGHT_GRAY.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1856,22 +1986,22 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_zx_module", "module/fourze_zx_module", "module/fourze_zx_module_glowmask",Color.ORANGE.getColor(),1));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_zx_module", "module/fourze_zx_module", "module/fourze_zx_module_glowmask", Color.ORANGE.getColor(), 1));
                     }
                 }
             }.setFormDelay(20).setSlotTwoAbility("cannon", 1).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1881,21 +2011,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_black_module", "module/fourze_black_module", "module/fourze_black_module_glowmask",Color.BLACK.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_black_module", "module/fourze_black_module", "module/fourze_black_module_glowmask", Color.BLACK.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -1904,22 +2035,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_black_rx_module", "module/fourze_black_rx_module", "module/fourze_black_rx_module_glowmask",Color.RED.getColor(),1));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_black_rx_module", "module/fourze_black_rx_module", "module/fourze_black_rx_module_glowmask", Color.RED.getColor(), 1));
                     }
                 }
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -1929,21 +2060,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kuuga_module", "module/fourze_kuuga_module", "module/fourze_kuuga_module_glowmask",Color.RED.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kuuga_module", "module/fourze_kuuga_module", "module/fourze_kuuga_module_glowmask", Color.RED.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -1952,21 +2084,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_agito_module", "module/fourze_agito_module", "module/fourze_agito_module_glowmask",Color.YELLOW.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_agito_module", "module/fourze_agito_module", "module/fourze_agito_module_glowmask", Color.YELLOW.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -1975,22 +2108,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_ryuki_module", "module/fourze_ryuki_module", "module/fourze_ryuki_module_glowmask",Color.RED.getColor(),1));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_ryuki_module", "module/fourze_ryuki_module", "module/fourze_ryuki_module_glowmask", Color.RED.getColor(), 1));
                     }
                 }
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -2000,21 +2133,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_faiz_module", "module/fourze_faiz_module", "module/fourze_faiz_module_glowmask",Color.RED.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_faiz_module", "module/fourze_faiz_module", "module/fourze_faiz_module_glowmask", Color.RED.getColor(), 2));
+                    }
                 }
             }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -2023,70 +2157,79 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.THUNDER_SLASH, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_blade_module", "module/fourze_blade_module", "module/fourze_blade_module_glowmask",Color.BLUE.getColor(),2));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_blade_module", "module/fourze_blade_module", "module/fourze_blade_module_glowmask", Color.BLUE.getColor(), 2));
+                    }
                 }
-            }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setModifiedPosition("leg_up.right_75.modifier")
+                    .setModifiedPositionLayer("position_2")
+                    .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get())
+                    .addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_ASTROSWITCH = ITEMS.register("hibiki_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.NOTE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_hibiki_module", "module/fourze_hibiki_module", "module/fourze_hibiki_module_glowmask",Color.MAGENTA.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_hibiki_module", "module/fourze_hibiki_module", "module/fourze_hibiki_module_glowmask", Color.MAGENTA.getColor(), 4));
                     }
                 }
-            }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setModifiedPosition("hibiki_module.modifier")
+                    .setModifiedPositionLayer("position_3")
+                    .setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_ASTROSWITCH = ITEMS.register("kabuto_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kabuto_module", "module/fourze_kabuto_module", "module/fourze_kabuto_module_glowmask",Color.RED.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kabuto_module", "module/fourze_kabuto_module", "module/fourze_kabuto_module_glowmask", Color.RED.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).setSlotOneAbility("kabuto_kick", 2).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -2095,22 +2238,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
                         layerInfo.add(new RenderLayerInfo("module/fourze_module_circle", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_den_o_module", "module/fourze_den_o_module", "module/fourze_den_o_module_glowmask",Color.RED.getColor(),1));
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_den_o_module", "module/fourze_den_o_module", "module/fourze_den_o_module_glowmask", Color.RED.getColor(), 1));
                     }
                 }
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -2119,21 +2262,22 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_BAT_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kiva_module", "module/fourze_kiva_module", "module/fourze_kiva_module_glowmask",Color.YELLOW.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kiva_module", "module/fourze_kiva_module", "module/fourze_kiva_module_glowmask", Color.YELLOW.getColor(), 3));
+                    }
                 }
             }.setSlotTwoAbility("kiva_kick", 2).setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -2142,21 +2286,22 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
                         }
                     }
                 }
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_decade_module", "module/fourze_decade_module", "module/fourze_decade_module_glowmask",Color.MAGENTA.getColor(),3));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_decade_module", "module/fourze_decade_module", "module/fourze_decade_module_glowmask", Color.MAGENTA.getColor(), 3));
+                    }
                 }
             }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
@@ -2165,11 +2310,11 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 10, 0, 0, 0, 0.05);
@@ -2179,13 +2324,15 @@ public class FourzeRiderItems {
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_double_module", "module/fourze_double_module", "module/fourze_double_module_glowmask",Color.BLACK.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_double_module", "module/fourze_double_module", "module/fourze_double_module_glowmask", Color.BLACK.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -2194,11 +2341,11 @@ public class FourzeRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
                         if (tick == 30d) {
                             AnimationUtil.playPose(player, "fourze.switch_" + getSlot() + ".hit");
                             player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.UI_BUTTON_CLICK, SoundSource.PLAYERS, 1.0F, 8F);
-                        }else if (tick == 2d) {
+                        } else if (tick == 2d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
                                     player.getZ(), 4, 0, 0, 0, 0.05);
@@ -2211,13 +2358,15 @@ public class FourzeRiderItems {
                         }
                     }
                 }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                      if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
-                       {
-                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem())
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransformingFromBlank(itemStack, rider) || slot == EquipmentSlot.HEAD && RiderDriverItem.isTransformingFromBlank(itemStack, rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() < 10) {
+                        if (RiderDriverItem.getFormItem(itemStack, 5) == FOURZE_COSMIC_STATES.asItem()) {
                             layerInfo.add(new RenderLayerInfo("module/fourze_cosmic_module_square", "default"));
-                        else layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
-                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_ooo_module", "module/fourze_ooo_module", "module/fourze_ooo_module_glowmask",Color.RED.getColor(),4));
+                        } else {
+                            layerInfo.add(new RenderLayerInfo("module/fourze_module_square", "default"));
+                        }
+                        layerInfo.add(new ModuleRenderLayerInfo("module/fourze_ooo_module", "module/fourze_ooo_module", "module/fourze_ooo_module_glowmask", Color.RED.getColor(), 4));
                     }
                 }
             }.setFormDelay(20).setSlotTwoAbility("cannon", 1).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
@@ -2269,21 +2418,25 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> NADESHIKO_DRIVER = ITEMS.register("nadeshiko_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "nadeshiko", NADESHIKO_ASTROSWITCH, FOURZE_HELMET, FOURZE_CHESTPLATE, FOURZE_LEGGINGS,
-                    new Item.Properties()){
+                    new Item.Properties()) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     double henshin_tick = getHenshinTick(itemStack, rider);
-                    if (slot==EquipmentSlot.HEAD&&isTransformingFromBlank(itemStack,rider)&&henshin_tick<23)layerInfo.add(new FourzeRingRenderLayerInfo());
+                    if (slot == EquipmentSlot.HEAD && isTransformingFromBlank(itemStack, rider) && henshin_tick < 23) {
+                        layerInfo.add(new FourzeRingRenderLayerInfo());
+                    }
                 }
             }.addToList(FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
     public static final DeferredItem<Item> BOOT_DRIVER = ITEMS.register("boot_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "boot", BOOT_ASTROSWITCH, FOURZE_HELMET, FOURZE_CHESTPLATE, FOURZE_LEGGINGS,
-                    new Item.Properties()){
+                    new Item.Properties()) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     double henshin_tick = getHenshinTick(itemStack, rider);
-                    if (slot==EquipmentSlot.HEAD&&isTransformingFromBlank(itemStack,rider)&&henshin_tick<23)layerInfo.add(new FourzeRingRenderLayerInfo());
+                    if (slot == EquipmentSlot.HEAD && isTransformingFromBlank(itemStack, rider) && henshin_tick < 23) {
+                        layerInfo.add(new FourzeRingRenderLayerInfo());
+                    }
                 }
             }.addToList(FOURZE_TAB_ITEM).useBasicModel().changeRepairItem(BLANK_ASTROSWITCH.get()));
 

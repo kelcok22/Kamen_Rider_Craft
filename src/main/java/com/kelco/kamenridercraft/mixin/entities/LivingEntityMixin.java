@@ -75,54 +75,63 @@ public class LivingEntityMixin {
         if (rider instanceof ServerPlayer serverPlayer) {
             if (serverPlayer.hasEffect(SD)) {
                 PacketDistributor.sendToAllPlayers(
-                        new AnimPayload("sd_modifier", "sd", true, rider.getStringUUID()));
+                        new AnimPayload("sd.modifier", "sd", true, rider.getStringUUID()));
             }
 
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
                     driverItem.isTransformed(rider)) {
-                if (driverItem.getFlyingPosition() != null && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
-                    if (rider.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0) {
-                        PacketDistributor.sendToAllPlayers(
-                                new AnimPayload(driverItem.getFlyingPosition(), "flying", true, rider.getStringUUID()));
-                    }
+                if (!rider.isCrouching() && rider.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0 && driverItem.getFlyingPosition() != null
+                        && !rider.isCrouching() && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
+                    PacketDistributor.sendToAllPlayers(
+                            new AnimPayload(driverItem.getFlyingPosition(), "flying", true, rider.getStringUUID()));
                 }
-                if (driverItem.getGlidingPosition() != null && !(driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
-                    if (rider.isFallFlying()) {
-                        PacketDistributor.sendToAllPlayers(
-                                new AnimPayload(driverItem.getFlyingPosition(), "gliding", true, rider.getStringUUID()));
-                    }
+                if (rider.isFallFlying() && !rider.isCrouching() && driverItem.getGlidingPosition() != null
+                        && !(driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
+                    PacketDistributor.sendToAllPlayers(
+                            new AnimPayload(driverItem.getFlyingPosition(), "gliding", true, rider.getStringUUID()));
                 }
-                if (driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
+                if (!rider.isCrouching() && driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
                     for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
-                       if (formItemDataList.get(0) == null  || formItemDataList.get(0).isEmpty()) {
-                           return;
-                       }
-                        if (formItemDataList.get(1) == null  || formItemDataList.get(1).isEmpty()) {
-                            return;
+                        if (formItemDataList.get(0) == null || formItemDataList.get(0).isEmpty()) {
+                            break;
                         }
+                        if (formItemDataList.get(1) == null || formItemDataList.get(1).isEmpty()) {
+                            break;
+                        }
+                        boolean canTakePose = true;
                         if (formItemDataList.get(2) != null && !formItemDataList.get(2).isEmpty()) {
                             for (String condition : formItemDataList.get(2)) {
-                                if (condition.equalsIgnoreCase("in_air")) {
-                                    if (rider.onGround()) {
-                                        return;
-                                    }
-                                }
-                                if (condition.equalsIgnoreCase("in_water")) {
-                                    if (!rider.isInWater()) {
-                                        return;
-                                    }
-                                }
-                                if (condition.equalsIgnoreCase("on_land")) {
-                                    if (!rider.onGround()) {
-                                        return;
-                                    }
+                                switch (condition) {
+                                    case "in_air":
+                                        if (rider.onGround() || rider.isInWater()) {
+                                            canTakePose = false;
+                                        }
+                                        break;
+                                    case "in_water":
+                                        if (condition.equalsIgnoreCase("in_water")) {
+                                            if (!rider.isInWater()) {
+                                                canTakePose = false;
+                                            }
+                                        }
+                                        break;
+                                    case "on_ground":
+                                        if (condition.equalsIgnoreCase("on_ground")) {
+                                            if (!rider.onGround()) {
+                                                canTakePose = false;
+                                            }
+                                        }
+                                        break;
                                 }
                             }
+                        } else {
+                            canTakePose = false;
                         }
-                        PacketDistributor.sendToAllPlayers
-                                (new AnimPayload(formItemDataList.get(1).getFirst().toLowerCase(),
-                                        formItemDataList.get(1).getFirst().toLowerCase(), true, rider.getStringUUID()));
-
+                        System.out.println(formItemDataList);
+                        if (canTakePose) {
+                            PacketDistributor.sendToAllPlayers
+                                    (new AnimPayload(formItemDataList.get(0).getFirst().toLowerCase(),
+                                            formItemDataList.get(1).getFirst().toLowerCase(), true, rider.getStringUUID()));
+                        }
                     }
                 }
             }

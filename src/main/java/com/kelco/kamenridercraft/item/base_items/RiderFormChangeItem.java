@@ -403,7 +403,7 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem setModifiedPositionConditions(String[] conditions) {
+    public RiderFormChangeItem setModifiedPositionConditions(String... conditions) {
         ArrayList<String> newConditions = new ArrayList<>();
         for (String condition : conditions) {
             if (!condition.isEmpty()) {

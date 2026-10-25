@@ -45,7 +45,7 @@ public class IxaMachineBlockEntity extends BaseContainerBlockEntity implements M
 
     private static final int[] SLOTS_FOR_UP = new int[]{0};
     private static final int[] SLOTS_FOR_SIDES = new int[]{1};
-    private static final int[] SLOTS_FOR_DOWN = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+    private static final int[] SLOTS_FOR_DOWN = new int[]{2, 3, 4, 5, 6, 7, 8, 9, 10};
     protected NonNullList<ItemStack> items;
 
 

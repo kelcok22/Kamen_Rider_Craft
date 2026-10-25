@@ -123,6 +123,15 @@ public class ModCommonEvents {
         }
 
         @SubscribeEvent
+        public void onPlayerConnect(PlayerEvent.PlayerLoggedInEvent event) {
+            if (event.getEntity() instanceof ServerPlayer player &&
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem) {
+                riderDriverItem.clearPoseData();
+                riderDriverItem.setPoseData(player);
+            }
+        }
+
+        @SubscribeEvent
         public void DropsEvent(BlockDropsEvent event) {
             if (event.getState().is(BlockTags.create(ResourceLocation.withDefaultNamespace("logs")))) {
                 if (event.getBreaker() instanceof Player player) {
