@@ -451,10 +451,10 @@
 "effect.kamenridercraft.unsealed":"封印溶け",
 "effect.kamenridercraft.fall_cancel":"落下しキャンセル",
 
-  "item.minecraft.potion.effect.unsealed_potion": "封印溶けのポーション",
-  "item.minecraft.splash_potion.effect.unsealed_potion": "封印溶けのスプラッシュポーション",
-  "item.minecraft.lingering_potion.effect.unsealed_potion": "封印溶けの残留ポーション",
-  "item.minecraft.tipped_arrow.effect.unsealed_potion": "封印溶けの矢",
+"item.minecraft.potion.effect.unsealed_potion": "封印溶けのポーション",
+"item.minecraft.splash_potion.effect.unsealed_potion": "封印溶けのスプラッシュポーション",
+"item.minecraft.lingering_potion.effect.unsealed_potion": "封印溶けの残留ポーション",
+"item.minecraft.tipped_arrow.effect.unsealed_potion": "封印溶けの矢",
 
 "item.minecraft.potion.effect.agito_factor_potion": "アギト因子のポーション",
 "item.minecraft.splash_potion.effect.agito_factor_potion": "アギト因子のスプラッシュポーション",
@@ -2077,6 +2077,7 @@
 "item.kamenridercraft.donut": "ドーナツ",
 "item.kamenridercraft.mayo": "マヨネーズ",
 "item.kamenridercraft.mayo_donut": "マヨドーナツ",
+"item.kamenridercraft.oronamin_c": "オロナミンC",
 "item.kamenridercraft.pudding": "プリン",
 "item.kamenridercraft.heat_heaven": "ヒートヘブン",
 "item.kamenridercraft.icepop1": "アイス",
@@ -10338,7 +10339,7 @@
 "block.kamenridercraft.gochizo_jar": "ゴチゾウジャー",
 "block.kamenridercraft.granute_glass": "グラニュートガラス",
 "block.kamenridercraft.granute_glass_pane": "グラニュートガラス板",
-  "block.kamenridercraft.angel_gochizo_stand": "ゴチゾウエンジェル",
+"block.kamenridercraft.angel_gochizo_stand": "ゴチゾウエンジェル",
 
 "block.kamenridercraft.helheim_crack": "ヘルヘイムクラック",
 "block.kamenridercraft.ginga_meteor": "ギンガ隕石の石",

@@ -301,7 +301,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(EVOLUTION_CAUCASUS_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get())
+            }.isGlowing().isGold().addAlternative(EVOLUTION_CAUCASUS_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get())
                     .addNeedItem(ABSORB_CAPRICORN.get()).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> SILVER_EVOLUTION_CAUCASUS = ITEMS.register("silver_evolution_caucasus",
@@ -564,7 +564,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(EVOLUTION_GIRAFFA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addToList(BLADE_TAB_ITEM));
+            }.isGlowing().isGold().addAlternative(EVOLUTION_GIRAFFA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get()).addNeedItem(ABSORB_SERPENT.get()).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIYAKI_MASTER = ITEMS.register("taiyaki_master",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ultimate_form", "taiyaki_master", "blank",
@@ -1125,7 +1125,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addAlternative(EVOLUTION_TARANTULA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get())
+            }.isGlowing().isGold().addAlternative(EVOLUTION_TARANTULA_UNDEAD.get()).addNeedItem(ROUZE_ABSORBER.get())
                     .addNeedItem(ABSORB_TIGER.get()).addToList(BLADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHANGE_KERBEROS_GLAIVE = ITEMS.register("change_kerberos_glaive",

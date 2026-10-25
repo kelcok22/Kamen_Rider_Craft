@@ -395,6 +395,12 @@ public class MyThRiderItems {
     public static final DeferredItem<Item> FRAME_MY_TH_BACK = ITEMS.register("frame_my_th_back",
             () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
+    public static final DeferredItem<Item> RID_MAGNUM = ITEMS.register("rid_magnum",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> MAOU_BLADE = ITEMS.register("maou_blade",
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
     public static final DeferredItem<Item> RABBIT_SWORD = ITEMS.register("rabbit_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
@@ -403,6 +409,15 @@ public class MyThRiderItems {
 
     public static final DeferredItem<Item> DOG_GUN = ITEMS.register("dog_gun",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> SHEEP_HAMMER = ITEMS.register("sheep_hammer",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> TIGER_DAO = ITEMS.register("tiger_dao",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> KEI_TRIDENT = ITEMS.register("kei_trident",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

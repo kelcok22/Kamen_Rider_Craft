@@ -2,8 +2,13 @@
 	"values": [
 		"kamenridercraft:my_th_edge",
 		"kamenridercraft:frame_my_th_back",
+        "kamenridercraft:rid_magnum",
+        "kamenridercraft:maou_blade",
 		"kamenridercraft:rabbit_sword",
-		"kamenridercraft:dog_gun",
-		"kamenridercraft:snake_scythe"
-	]
+		"kamenridercraft:snake_scythe",
+        "kamenridercraft:dog_gun",
+        "kamenridercraft:sheep_hammer",
+        "kamenridercraft:tigre_dao",
+        "kamenridercraft:kei_trident"
+    ]
 }
