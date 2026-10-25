@@ -57,7 +57,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> FOURZE_BASE_STATES = ITEMS.register("fourze_basestates",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
@@ -83,6 +83,8 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> FOURZE_ELEK_STATES = ITEMS.register("fourze_elekstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_elek", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)
+                    , new MobEffectInstance(EffectCore.THUNDER_SLASH, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
@@ -104,8 +106,10 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> FOURZE_FIRE_STATES = ITEMS.register("fourze_firestates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_fire", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)
-                    , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false))  {
+                    , new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1, true, false))  {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
@@ -119,6 +123,8 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> FOURZE_MAGNET_STATES = ITEMS.register("fourze_magnetstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_magnet", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)
+                    , new MobEffectInstance(EffectCore.REFLECT, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
 
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -144,8 +150,11 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> FOURZE_COSMIC_STATES = ITEMS.register("fourze_cosmicstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_cosmic", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.COSMIC_ENERGY, 40, 0, true, false)
-                    , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 4, true, false)
                     , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
@@ -160,8 +169,9 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> FOURZE_ROCKET_STATES = ITEMS.register("fourze_rocketstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_rocket", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
-                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (RiderDriverItem.wasSlotChanged(itemstack, 5)||RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
@@ -193,13 +203,14 @@ public class FourzeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }}}
-            }.setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
+            }.setSlotOneAbility("cannon",1).setFormDelay(10).changeSlot(5).setModelName("astroswitch").useBasicModel());
 
     public static final DeferredItem<Item> FOURZE_FUSION_STATES = ITEMS.register("fourze_meteor_fusionstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_meteor_fusion", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.COSMIC_ENERGY, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)
                     , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
@@ -219,6 +230,9 @@ public class FourzeRiderItems {
                     new MobEffectInstance(EffectCore.COSMIC_ENERGY, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
+                    , new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
@@ -240,6 +254,8 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> FOURZE_ROCKET_DRILL_STATES = ITEMS.register("fourze_rocketdrillstates",
             () -> new RiderFormChangeItem(new Item.Properties(), "_rocket_drill", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
+                    , new MobEffectInstance(EffectCore.DRILL, 40, 2, true, false)
+                    , new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
@@ -329,9 +345,9 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> NADESHIKO_ROCKET_ASTROSWITCH = ITEMS.register("rocket_nadeshiko_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "nadeshiko", "nadeshiko_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
-                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)){
 
@@ -358,7 +374,7 @@ public class FourzeRiderItems {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
                     }
                 }
-            }.setFormDelay(20).changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().setModelName("rocket_switch").useBasicModel());
+            }.setFormDelay(20).setSlotOneAbility("rider_kick", 1).changeBeltModel("geo/belts/eins_belt.geo.json").isGlowing().setModelName("rocket_switch").useBasicModel());
 
     public static final DeferredItem<Item> ROCKET_ASTROSWITCH = ITEMS.register("rocket_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
@@ -520,7 +536,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> PARACHUTE_ASTROSWITCH = ITEMS.register("parachute_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 6, true, false)) {
+                    new MobEffectInstance(MobEffects.SLOW_FALLING, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -570,7 +586,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> HOPPING_ASTROSWITCH = ITEMS.register("hopping_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 5, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -666,7 +682,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> CHAIN_ARRAY_ASTROSWITCH = ITEMS.register("chain_array_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
-                    , new MobEffectInstance(EffectCore.PUNCH, 40, 5, true, false)) {
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -737,7 +753,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> WINCH_ASTROSWITCH = ITEMS.register("winch_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -789,7 +805,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> SHIELD_ASTROSWITCH = ITEMS.register("shield_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -883,7 +899,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> HAMMER_ASTROSWITCH = ITEMS.register("hammer_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) { public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) { public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                 super.transformationEffect(itemstack, player, tick);
                 if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
                     if (tick == 30d) {
@@ -932,7 +948,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> MEDICAL_ASTROSWITCH = ITEMS.register("medical_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0, true, false)) {
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 0, true, false)) {
         public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                 super.transformationEffect(itemstack, player, tick);
                 if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -982,7 +998,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> WHEEL_ASTROSWITCH = ITEMS.register("wheel_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1028,7 +1044,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> HAND_ASTROSWITCH = ITEMS.register("hand_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 5, true, false)) {
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1051,7 +1067,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> SCHOOP_ASTROSWITCH = ITEMS.register("scoop_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
-                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 4, true, false)) {
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
         public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                 super.transformationEffect(itemstack, player, tick);
                 if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1076,7 +1092,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> INCOMPLETE_MAGNET_ASTROSWITCH_N = ITEMS.register("incomplete_magnet_switch_n",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
-                    , new MobEffectInstance(EffectCore.PULL, 40, 2, true, false)) {
+                    , new MobEffectInstance(EffectCore.PULL, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1102,7 +1118,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> MAGNET_ASTROSWITCH_N = ITEMS.register("magnet_switch_n",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "fourze", "fourze_driver_belt"
-                    , new MobEffectInstance(EffectCore.PULL, 40, 2, true, false)) {
+                    , new MobEffectInstance(EffectCore.PULL, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1198,7 +1214,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> CLAW_ASTROSWITCH = ITEMS.register("claw_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt"
-                    , new MobEffectInstance(EffectCore.PUNCH, 40, 4, true, false)) {
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1341,7 +1357,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> STAMPER_ASTROSWITCH = ITEMS.register("stamper_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false)) {
+                    new MobEffectInstance(EffectCore.RAM, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1423,10 +1439,11 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> METEOR_ASTROSWITCH = ITEMS.register("meteor_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "meteor", "meteor_driver_belt",
-            new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
-                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)
-                    , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    , new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD)
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
@@ -1448,7 +1465,8 @@ public class FourzeRiderItems {
     public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_storm", "meteor", "meteor_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
-                    , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
+                    , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 5, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1477,7 +1495,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH_FUSION = ITEMS.register("nadeshiko_switch_fusion",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                       if (slot == EquipmentSlot.HEAD&&!RiderDriverItem.isTransformingFromBlank(itemStack,rider)||slot == EquipmentSlot.HEAD&&RiderDriverItem.isTransformingFromBlank(itemStack,rider)&& rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() <10)
 
@@ -1496,9 +1514,9 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> NADESHIKO_ASTROSWITCH = ITEMS.register("nadeshiko_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "nadeshiko", "nadeshiko_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
-                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1520,10 +1538,10 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> BOOT_ASTROSWITCH = ITEMS.register("boot_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "boot", "boot_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
-                    , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     if(RiderDriverItem.wasSlotChanged(itemstack,getSlot())&&!RiderDriverItem.isTransformingFromBlank(itemstack,player)){
@@ -1545,9 +1563,10 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> IKAROS_ASTROSWITCH = ITEMS.register("ikaros_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ikaros", "ikaros_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)
-                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
@@ -1559,15 +1578,16 @@ public class FourzeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.05);
 
                 }
-            }.isGlowing().hasCape().addToList(FOURZE_TAB_ITEM));
+            }.setSlotTwoAbility("flight_boost",1).isGlowing().hasCape().addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SOLU_ASTROSWITCH = ITEMS.register("solu_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "super_gingaoh", "blank",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
-                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
+                    , new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)
                     , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false))
-                    .addToList(FOURZE_TAB_ITEM));
+                    .setSlotOneAbility("warp",1).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> FUSION_ASTROSWITCH_OG = ITEMS.register("fusion_switch_og",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
@@ -1611,7 +1631,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> RIDER_1_ASTROSWITCH = ITEMS.register("rider1_switch",
             () -> new ShowaSwitchItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1634,7 +1654,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> RIDER_2_ASTROSWITCH = ITEMS.register("rider2_switch",
             () -> new ShowaSwitchItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1661,7 +1681,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> V3_ASTROSWITCH = ITEMS.register("v3_switch",
             () -> new ShowaSwitchItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1684,7 +1704,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> RIDERMAN_ASTROSWITCH = ITEMS.register("riderman_switch",
             () -> new ShowaSwitchItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 4, true, false)) {
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1709,7 +1729,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> X_ASTROSWITCH = ITEMS.register("x_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.SLASH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.SLASH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1732,7 +1752,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> AMAZON_ASTROSWITCH = ITEMS.register("amazon_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1759,7 +1779,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> STRONGER_ASTROSWITCH = ITEMS.register("stronger_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1784,7 +1804,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> SKYRIDER_ASTROSWITCH = ITEMS.register("skyrider_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1803,11 +1823,11 @@ public class FourzeRiderItems {
 
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_skyrider_module", "module/fourze_skyrider_module", "module/fourze_skyrider_module_glowmask",Color.GREEN.getColor(),2));
                 }
-            }.setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setSlotTwoAbility("flight_boost",2).setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> SUPER_1_ASTROSWITCH = ITEMS.register("super_1_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1858,7 +1878,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> BLACK_ASTROSWITCH = ITEMS.register("black_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1906,7 +1926,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> KUUGA_ASTROSWITCH = ITEMS.register("kuuga_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1929,7 +1949,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> AGITO_ASTROSWITCH = ITEMS.register("agito_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1952,7 +1972,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> RYUKI_ASTROSWITCH = ITEMS.register("ryuki_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -1977,7 +1997,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> FAIZ_ASTROSWITCH = ITEMS.register("faiz_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -2049,8 +2069,7 @@ public class FourzeRiderItems {
             }.setFormDelay(20).changeSlot(4).addSwitchForm(BLANK_SQUARE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_ASTROSWITCH = ITEMS.register("kabuto_switch",
-            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 6, true, false)) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -2069,11 +2088,11 @@ public class FourzeRiderItems {
 
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kabuto_module", "module/fourze_kabuto_module", "module/fourze_kabuto_module_glowmask",Color.RED.getColor(),3));
                 }
-            }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setFormDelay(20).setSlotOneAbility("kabuto_kick", 2).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_ASTROSWITCH = ITEMS.register("den_o_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -2097,8 +2116,7 @@ public class FourzeRiderItems {
             }.setFormDelay(20).addSwitchForm(BLANK_CIRCLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_ASTROSWITCH = ITEMS.register("kiva_switch",
-            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 7, true, false)) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt") {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
@@ -2117,7 +2135,7 @@ public class FourzeRiderItems {
 
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_kiva_module", "module/fourze_kiva_module", "module/fourze_kiva_module_glowmask",Color.YELLOW.getColor(),3));
                 }
-            }.setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
+            }.setSlotTwoAbility("kiva_kick", 2).setFormDelay(20).changeSlot(3).addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_ASTROSWITCH = ITEMS.register("decade_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
@@ -2144,7 +2162,7 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> DOUBLE_ASTROSWITCH = ITEMS.register("double_switch",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if(!RiderDriverItem.isTransformingFromBlank(itemstack,player)&&RiderDriverItem.wasSlotChanged(itemstack,getSlot())){
