@@ -90,7 +90,7 @@ public class LivingEntityMixin {
                     PacketDistributor.sendToAllPlayers(
                             new AnimPayload(driverItem.getGlidingPosition(), "gliding", true, rider.getStringUUID()));
                 }
-                if (!rider.isCrouching() && driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
+                if (driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
                     for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
                         if (formItemDataList.get(0) == null || formItemDataList.get(0).isEmpty()) {
                             break;

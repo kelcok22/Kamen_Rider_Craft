@@ -1415,6 +1415,7 @@ public class ExAidRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.BIG, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.SMALL, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
@@ -1465,6 +1466,7 @@ public class ExAidRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.BIG, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.SMALL, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
