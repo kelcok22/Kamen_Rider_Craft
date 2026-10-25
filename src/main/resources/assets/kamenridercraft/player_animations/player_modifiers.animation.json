@@ -21,7 +21,7 @@
 			}
 		},
 		"odin.flying": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -80,7 +80,7 @@
 			}
 		},
 		"leg_up.left_20.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"left_leg": {
 					"position": {
@@ -91,7 +91,7 @@
 			}
 		},
 		"leg_up.right_20.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"right_leg": {
 					"position": {
@@ -102,7 +102,7 @@
 			}
 		},
 		"leg_up.left_75.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"left_leg": {
 					"position": {
@@ -113,7 +113,7 @@
 			}
 		},
 		"leg_up.right_75.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"right_leg": {
 					"position": {
@@ -124,7 +124,7 @@
 			}
 		},
 		"leg_up.left_100.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"left_leg": {
 					"position": {
@@ -135,7 +135,7 @@
 			}
 		},
 		"leg_up.right_100.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"right_leg": {
 					"position": {
@@ -146,7 +146,7 @@
 			}
 		},
 		"arm_up.right.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"right_arm": {
 					"rotation": {
@@ -157,7 +157,7 @@
 			}
 		},
 		"arm_up.left.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"left_arm": {
 					"rotation": {
@@ -203,7 +203,7 @@
 			}
 		},
 		"hibiki_module.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"left_arm": {
 					"rotation": {
@@ -214,7 +214,7 @@
 			}
 		},
 		"skyrider.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -269,7 +269,7 @@
 			}
 		},
 		"flight_style.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"position": [0, -3, 0]
@@ -307,7 +307,7 @@
 			}
 		},
 		"flight_style.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": [-40, 0, 0]
@@ -333,7 +333,7 @@
 			}
 		},
 		"jack.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -388,7 +388,7 @@
 			}
 		},
 		"tajadol.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -443,7 +443,7 @@
 			}
 		},
 		"hurricane_dragon.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -498,7 +498,7 @@
 			}
 		},
 		"arm_wing.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -561,7 +561,7 @@
 			}
 		},
 		"wing_capsem.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -624,7 +624,7 @@
 			}
 		},
 		"my-th.gliding": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -683,7 +683,7 @@
 			}
 		},
 		"my-th.gliding2": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"body": {
 					"rotation": {
@@ -742,7 +742,7 @@
 			}
 		},
 		"another_kuuga.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"rightItem": {
 					"position": {
@@ -767,7 +767,7 @@
 			}
 		},
 		"maximum_mighty.modifier": {
-			"animation_length": 0.125,
+			"animation_length": 0.25,
 			"bones": {
 				"rightItem": {
 					"position": {
