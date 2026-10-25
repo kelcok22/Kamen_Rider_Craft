@@ -26,7 +26,6 @@
 			}
 		},
 		"odin.flying": {
-			"loop": true,
 			"animation_length": 0.25,
 			"bones": {
 				"body": {

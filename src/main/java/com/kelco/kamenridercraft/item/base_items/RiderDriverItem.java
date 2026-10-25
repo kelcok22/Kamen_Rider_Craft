@@ -327,8 +327,10 @@ public class RiderDriverItem extends RiderArmorItem {
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(0);
-            clearPoseData();
-            setPoseData(rider);
+            if (rider instanceof ServerPlayer) {
+                clearPoseData();
+                setPoseData(rider);
+            }
         }
     }
 
@@ -433,16 +435,12 @@ public class RiderDriverItem extends RiderArmorItem {
             if (numBaseFormItems != 0) {
                 for (int n = 1; n <= numBaseFormItems; n++) {
                     if (getFormItem(driver, n) != null && getFormItem(driver, n) instanceof RiderFormChangeItem item) {
-                        if (glidingPosition != null && !(item.getGlidingPosition().isEmpty()
-                                || !item.getGlidingPosition().equalsIgnoreCase("blank"))) {
-                            if (!item.getGlidingPosition().isEmpty()) {
-                                glidingPosition = item.getGlidingPosition();
-                            }                        }
-                        if (flyingPosition != null && !(item.getFlyingPosition().isEmpty()
-                                || !item.getFlyingPosition().equalsIgnoreCase("blank"))) {
-                            if (!item.getFlyingPosition().isEmpty()) {
-                                flyingPosition = item.getFlyingPosition();
-                            }                        }
+                        if (glidingPosition != null && !item.getGlidingPosition().isEmpty()) {
+                            glidingPosition = item.getGlidingPosition();
+                        }
+                        if (flyingPosition != null && !item.getFlyingPosition().isEmpty()) {
+                            flyingPosition = item.getFlyingPosition();
+                        }
                         if (modifiedPositionData != null) {
                             List<List<String>> positionData = new ArrayList<>(List.of());
                             positionData.add(Collections.singletonList(item.getModifiedPosition()));
@@ -454,18 +452,12 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
             } else {
                 if (getFormItem(driver, 1) != null && getFormItem(driver, 1) instanceof RiderFormChangeItem item) {
-                    if (glidingPosition != null && !(item.getGlidingPosition().isEmpty()
-                            || !item.getGlidingPosition().equalsIgnoreCase("blank"))) {
-                        if (!item.getGlidingPosition().isEmpty()) {
-                            glidingPosition = item.getGlidingPosition();
-                        }
+                    if (glidingPosition != null && !item.getGlidingPosition().isEmpty()) {
+                        glidingPosition = item.getGlidingPosition();
                     }
-                    if (flyingPosition != null && !(item.getFlyingPosition().isEmpty()
-                            || !item.getFlyingPosition().equalsIgnoreCase("blank"))) {
-                        System.out.println(item.getFlyingPosition());
-                        if (!item.getFlyingPosition().isEmpty()) {
-                            flyingPosition = item.getFlyingPosition();
-                        }                        }
+                    if (flyingPosition != null && !item.getFlyingPosition().isEmpty()) {
+                        flyingPosition = item.getFlyingPosition();
+                    }
                     if (modifiedPositionData != null) {
                         List<List<String>> positionData = new ArrayList<>(List.of());
                         positionData.add(Collections.singletonList(item.getModifiedPosition()));
