@@ -80,6 +80,7 @@ public class LivingEntityMixin {
 
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
                     driverItem.isTransformed(rider)) {
+                System.out.println(driverItem.getFlyingPosition());
                 if (driverItem.getFlyingPosition() != null && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
                     if (rider.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0) {
                         PacketDistributor.sendToAllPlayers(
