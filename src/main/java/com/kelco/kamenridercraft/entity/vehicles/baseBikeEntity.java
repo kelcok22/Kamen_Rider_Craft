@@ -83,7 +83,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
 
     public static AttributeSupplier.Builder setAttributes() {
         return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D)
-                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(KRCAttributes.WHEEL_ROT, 0D);
+                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(Attributes.KNOCKBACK_RESISTANCE, 2.0D).add(KRCAttributes.WHEEL_ROT, 0D);
     }
 
     @Nullable
@@ -216,6 +216,10 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
 
     @Override
     public void travel(@NotNull Vec3 pos) {
+        LivingEntity passenger = getControllingPassenger();
+        if (!this.hasControllingPassenger()){
+            this.setDeltaMovement(this.getDeltaMovement().x/2,this.getDeltaMovement().y/2,this.getDeltaMovement().z/2);
+        }
         getAttribute(KRCAttributes.WHEEL_ROT_OLD).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue());
         if ( getAttribute(KRCAttributes.WHEEL_ROT).getValue()>6.3000000938773155){
             getAttribute(KRCAttributes.WHEEL_ROT).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue() -6.3000000938773155);
@@ -228,8 +232,6 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                 float z = 0;
                 this.fallDistance = 0;
                 if (this.isVehicle()) {
-                    LivingEntity passenger = getControllingPassenger();
-                    this.setDiscardFriction(true);
                     if (passenger != null) {
                         this.yRotO = getYRot();
                         this.xRotO = getXRot();
@@ -267,11 +269,6 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                                 this.executeRidersJump(this.playerJumpPendingScale, new Vec3(0, pos.y, z));
                             }
                             this.playerJumpPendingScale = 0.0F;
-                        }
-                    } else {
-                        if (this.getSpeed() != 0) {
-                            this.setSpeed(0f);
-                            this.setDiscardFriction(false);
                         }
                     }
                 }
