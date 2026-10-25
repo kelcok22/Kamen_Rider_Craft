@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.item.base_items;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.ModuleRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
@@ -39,6 +40,7 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
+import software.bernie.geckolib.util.Color;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -144,7 +146,7 @@ public class RiderDriverItem extends RiderArmorItem {
     public static Boolean isTransformingFromBlank(ItemStack itemStack, LivingEntity rider) {
         RiderFormChangeItem form = getFormItem(itemStack, 1);
         Double form_time = form.getHenshinTick();
-        return getFormItem(itemStack, 1, form_time + 1) == ModdedItemCore.BLANK_FORM.asItem();
+        return getFormItem(itemStack, 1, form_time + 1) == ModdedItemCore.BLANK_FORM.asItem()&isTransforming(rider) ;
     }
 
     public double getRenderType(ItemStack stack, double num) {
@@ -506,6 +508,8 @@ public class RiderDriverItem extends RiderArmorItem {
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
 
         //if(slot==EquipmentSlot.HEAD&isTransformed(rider))layerInfo.add(new RenderLayerInfo("ferbus", "ferbus"));
+        //if(slot==EquipmentSlot.HEAD&isTransformed(rider))layerInfo.add(new ModuleRenderLayerInfo("ferbus", "ferbus", Color.MAGENTA.getColor(),1));
+
         double henshin_tick = getHenshinTick(itemStack, rider);
         for (int n = 0; n < numBaseFormItems; n++) {
             RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, henshin_tick);
