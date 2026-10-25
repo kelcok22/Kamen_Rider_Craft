@@ -30,9 +30,9 @@ import java.util.List;
 import java.util.Objects;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
-import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
-import static com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems.*;
-import static com.kelco.kamenridercraft.util.AnimationUtil.*;
+import static com.kelco.kamenridercraft.effects.EffectCore.SD;
+import static com.kelco.kamenridercraft.util.AnimationUtil.canPose;
+import static com.kelco.kamenridercraft.util.AnimationUtil.stopPosing;
 import static com.kelco.kamenridercraft.util.DimensionUtil.teleportToDreamDimension;
 
 @Mixin(value = LivingEntity.class, priority = 899)
@@ -71,29 +71,55 @@ public class LivingEntityMixin {
     public void post_Tick(CallbackInfo ci) {
         var rider = ((LivingEntity) (Object) this);
 
-        if (!rider.level().isClientSide() && rider.getItemBySlot(EquipmentSlot.FEET).getItem() == FOURZE_DRIVER.get() &&
-             rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
-                driverItem.isTransformed(rider)) {
-            if ((!rider.onGround() && !rider.isInWater() && !(rider.getData(ABILITY_TICK) > 0) &&
-                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == GYRO_ASTROSWITCH.get()) ||
-                    (!rider.onGround() && !rider.isInWater() &&
-                            getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 4).asItem() == PARACHUTE_ASTROSWITCH.get())) {
-                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.parachute", "position", false, rider.getStringUUID()));
+        if (rider instanceof ServerPlayer serverPlayer) {
+            if (serverPlayer.hasEffect(SD)) {
+                PacketDistributor.sendToAllPlayers(
+                        new AnimPayload("sd_modifier", "sd", true, rider.getStringUUID()));
             }
-            if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() && !(rider.getData(ABILITY_TICK) > 0) &&
-                    ((getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == HOPPING_ASTROSWITCH.get() ||
-                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == DRILL_ASTROSWITCH.get() ||
-                    getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == STAMPER_ASTROSWITCH.get() ||
-            getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == SCREW_ASTROSWITCH.get()))) {
-                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.triangle_module", "position_fourze", false, rider.getStringUUID()));
-            }
-            if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() && !(rider.getData(ABILITY_TICK) > 0) &&
-                    ((getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == BOARD_ASTROSWITCH.get()))) {
-                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.board_module", "position_fourze", false, rider.getStringUUID()));
-            }
-            if (rider.onGround() && !rider.isInWater() && !rider.isCrouching() && !(rider.getData(ABILITY_TICK) > 0) &&
-                    (getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), 3).asItem() == WHEEL_ASTROSWITCH.get()))  {
-                PacketDistributor.sendToAllPlayers(new AnimPayload("fourze.wheel_module", "position_fourze", false, rider.getStringUUID()));
+
+            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
+                    driverItem.isTransformed(rider)) {
+                if (driverItem.getFlyingPosition() != null && (driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
+                    PacketDistributor.sendToAllPlayers(
+                            new AnimPayload(driverItem.getFlyingPosition(), "flying", true, rider.getStringUUID()));
+                }
+                if (driverItem.getGlidingPosition() != null && (driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
+                    PacketDistributor.sendToAllPlayers(
+                            new AnimPayload(driverItem.getFlyingPosition(), "gliding", true, rider.getStringUUID()));
+                }
+                if (driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
+                    for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
+                       if (formItemDataList.get(0).isEmpty()) {
+                           return;
+                       }
+                        if (formItemDataList.get(1).isEmpty()) {
+                            return;
+                        }
+                        if (!formItemDataList.get(2).isEmpty()) {
+                            for (String condition : formItemDataList.get(2)) {
+                                if (condition.equalsIgnoreCase("in_air")) {
+                                    if (rider.onGround()) {
+                                        return;
+                                    }
+                                }
+                                if (condition.equalsIgnoreCase("in_water")) {
+                                    if (!rider.isInWater()) {
+                                        return;
+                                    }
+                                }
+                                if (condition.equalsIgnoreCase("on_land")) {
+                                    if (!rider.onGround()) {
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                        PacketDistributor.sendToAllPlayers
+                                (new AnimPayload(formItemDataList.get(1).getFirst().toLowerCase(),
+                                        formItemDataList.get(1).getFirst().toLowerCase(), true, rider.getStringUUID()));
+
+                    }
+                }
             }
         }
 

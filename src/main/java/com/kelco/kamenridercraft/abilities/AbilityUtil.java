@@ -197,6 +197,7 @@ public class AbilityUtil {
 
     public static void cancelAbility(LivingEntity user, String afterAnimation, int delayAnimationEndTicks) {
         if (!user.level().isClientSide()) {
+            user.getAttribute(KRCAttributes.CHANGE_KICK_MODEL).setBaseValue(1);
             user.setData(USED_ABILITY, "");
             user.setData(ABILITY_TICK, 0);
             user.setInvulnerable(false);

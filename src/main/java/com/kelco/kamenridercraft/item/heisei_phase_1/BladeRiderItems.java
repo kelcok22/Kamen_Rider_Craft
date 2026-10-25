@@ -1043,7 +1043,7 @@ public class BladeRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.hasCape().addSwitchForm(SEALABLE_FUSION_WOLF.get()).useBasicModel().setModelName("fusion_elephant"));
+            }.hasCape().addSwitchForm(SEALABLE_FUSION_ELEPHANT.get()).useBasicModel().setModelName("fusion_elephant"));
 
     public static final DeferredItem<Item> FUSION_ELEPHANT = ITEMS.register("fusion_elephant",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_jack", "leangle", "leangle_buckle_belt",

@@ -17,6 +17,7 @@ import static com.kelco.kamenridercraft.attachments.AttachmentTypes.*;
 public class GenericRiderKicks {
     public static void genericRiderKick(LivingEntity user) {
         if (user.getData(ABILITY_TICK) == 0) {
+            user.getAttribute(KRCAttributes.CHANGE_KICK_MODEL).setBaseValue(1);
             user.setData(ABILITY_COOLDOWN, 100);
             PacketDistributor.sendToAllPlayers(new AnimPayload(user.onGround() ? "default.rider_floor_jump" : "default.rider_jump", "attack", false, user.getStringUUID()));
 

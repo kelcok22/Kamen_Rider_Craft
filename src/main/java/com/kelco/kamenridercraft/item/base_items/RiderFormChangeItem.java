@@ -110,6 +110,14 @@ public class RiderFormChangeItem extends BaseItem {
     private String slotTwoAbility = "";
     private int slotTwoAbilityPriority = 0;
 
+    private String glidingPosition = "";
+    private String flyingPosition = "";
+
+    private String modifiedPosition = "";
+    private String modifiedPositionLayer = "postion_1";
+    private List<String> modifiedPositionConditions;
+
+
     private Double formDelay = 30d;
     private Double henshinTick = 30d;
 
@@ -166,8 +174,9 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public String getModel(String riderName) {
-        if (updatedModel != null)
+        if (updatedModel != null) {
             return updatedModel;
+        }
         ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getRiderName(riderName) + formName + ".geo.json");
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
@@ -216,9 +225,13 @@ public class RiderFormChangeItem extends BaseItem {
         return useBike;
     }
 
-    public Boolean getIsBeltGlowing() {return isBeltGlowing;}
+    public Boolean getIsBeltGlowing() {
+        return isBeltGlowing;
+    }
 
-    public Boolean getIsGlowing() {return isGlowing;}
+    public Boolean getIsGlowing() {
+        return isGlowing;
+    }
 
     public Boolean getHasStaticWings() {
         return hasStaticWings;
@@ -246,8 +259,9 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public String getFlyingModel(String riderName) {
-        if (flyingModel != null)
+        if (flyingModel != null) {
             return flyingModel;
+        }
         ResourceLocation FORM_MODEL = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getRiderName(riderName) + formName + "_wing.geo.json");
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + "_wing.geo.json" : "rider_plusbelt_and_wings.geo.json");
     }
@@ -322,7 +336,7 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
-    public RiderFormChangeItem setHenshinTick (double num) {
+    public RiderFormChangeItem setHenshinTick(double num) {
         henshinTick = num;
         return this;
     }
@@ -346,6 +360,58 @@ public class RiderFormChangeItem extends BaseItem {
     public RiderFormChangeItem setSlotTwoAbility(String abilityChange, int abilityPriority) {
         slotTwoAbility = abilityChange.toLowerCase();
         slotTwoAbilityPriority = abilityPriority;
+        return this;
+    }
+
+    public String getGlidingPosition() {
+        return glidingPosition;
+    }
+
+    public String getFlyingPosition() {
+        return flyingPosition;
+    }
+
+    public String getModifiedPosition() {
+        return modifiedPosition;
+    }
+
+    public String getModifiedPositionLayer() {
+        return modifiedPositionLayer;
+    }
+
+    public List<String> getPositionModifierConditions() {
+        return modifiedPositionConditions;
+    }
+
+    public RiderFormChangeItem setGlidingPosition(String poseName) {
+        glidingPosition = poseName.toLowerCase();
+        return this;
+    }
+
+    public RiderFormChangeItem setFlyingPosition(String poseName) {
+        flyingPosition = poseName.toLowerCase();
+        return this;
+    }
+
+    public RiderFormChangeItem setModifiedPosition(String poseName) {
+        modifiedPosition = poseName.toLowerCase();
+        return this;
+    }
+
+    public RiderFormChangeItem setModifiedPositionLayer(String positionLayer) {
+        modifiedPositionLayer = positionLayer.toLowerCase();
+        return this;
+    }
+
+    public RiderFormChangeItem setModifiedPositionConditions(String[] conditions) {
+        ArrayList<String> newConditions = new ArrayList<>();
+        for (String condition : conditions) {
+            if (!condition.isEmpty()) {
+                condition = condition.toLowerCase();
+            }
+            newConditions.add(condition);
+        }
+        modifiedPositionConditions = newConditions;
         return this;
     }
 
@@ -392,8 +458,9 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem hasFlyingWings(@Nullable String model) {
         flyingText = true;
-        if (model != null)
+        if (model != null) {
             flyingModel = model;
+        }
         return this;
     }
 
@@ -413,7 +480,7 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public RiderFormChangeItem isAttackForm() {
-        attackForm= true;
+        attackForm = true;
         return this;
     }
 
@@ -475,16 +542,17 @@ public class RiderFormChangeItem extends BaseItem {
 
     public RiderFormChangeItem addNeedForm(Item item, int slot) {
 
-        if (slot == 1)
+        if (slot == 1) {
             needFormSlot1 = ((RiderFormChangeItem) item);
-        else if (slot == 2)
+        } else if (slot == 2) {
             needFormSlot2 = ((RiderFormChangeItem) item);
-        else if (slot == 3)
+        } else if (slot == 3) {
             needFormSlot3 = ((RiderFormChangeItem) item);
-        else if (slot == 4)
+        } else if (slot == 4) {
             needFormSlot4 = ((RiderFormChangeItem) item);
-        else if (slot == 5)
+        } else if (slot == 5) {
             needFormSlot5 = ((RiderFormChangeItem) item);
+        }
         return this;
     }
 
@@ -515,11 +583,13 @@ public class RiderFormChangeItem extends BaseItem {
 
 
     public Boolean isCompatible(RiderDriverItem belt) {
-        if (Objects.equals(belt.riderName, riderName))
+        if (Objects.equals(belt.riderName, riderName)) {
             return true;
+        }
         for (String str : compatibilityList) {
-            if (Objects.equals(str, belt.riderName))
+            if (Objects.equals(str, belt.riderName)) {
                 return true;
+            }
         }
         ItemStack itemStack = new ItemStack(belt);
         return itemStack.is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "form_change_item/works_with/" + riderName + formName)));
@@ -539,19 +609,23 @@ public class RiderFormChangeItem extends BaseItem {
         inv.addAll(player.getInventory().armor);
         inv.add(player.getInventory().offhand.getFirst());
 
-        if (player.getInventory().countItem(item) != 0)
+        if (player.getInventory().countItem(item) != 0) {
             return true;
-        else
+        } else {
             for (ItemStack itemStack : inv) {
                 if (itemStack.has(DataComponents.CONTAINER)) {
                     for (ItemStack stack : itemStack.getComponents().get(DataComponents.CONTAINER).nonEmptyItems())
-                        if (stack.getItem() == item)
+                        if (stack.getItem() == item) {
                             return true;
-                } else if (itemStack.has(DataComponents.BUNDLE_CONTENTS))
+                        }
+                } else if (itemStack.has(DataComponents.BUNDLE_CONTENTS)) {
                     for (ItemStack stack : itemStack.getComponents().get(DataComponents.BUNDLE_CONTENTS).items())
-                        if (stack.getItem() == item)
+                        if (stack.getItem() == item) {
                             return true;
+                        }
+                }
             }
+        }
         return false;
     }
 
@@ -560,8 +634,12 @@ public class RiderFormChangeItem extends BaseItem {
         if (this == ModdedItemCore.BLANK_FORM.get()) {
             return true;
         }
-        if (this.GetIsAttackForm()&& Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getValue()!=0)return false;
-        if (this.GetIsAttackForm()&& !belt.isTransformed(player))return false;
+        if (this.GetIsAttackForm() && Objects.requireNonNull(player.getAttribute(KRCAttributes.IS_TRANSFORMING)).getValue() != 0) {
+            return false;
+        }
+        if (this.GetIsAttackForm() && !belt.isTransformed(player)) {
+            return false;
+        }
 
 
         if (hasIncompatibleForms) {
@@ -579,32 +657,46 @@ public class RiderFormChangeItem extends BaseItem {
         }
         if (!needItem.isEmpty()) {
             for (Item item : needItem) {
-                if (!inventoryOrHolderContains(player, item))
+                if (!inventoryOrHolderContains(player, item)) {
                     return false;
+                }
             }
         }
-        if (needBaseForm)
-            if (RiderDriverItem.getFormItem(stack, 1) != belt.baseFormItem)
+        if (needBaseForm) {
+            if (RiderDriverItem.getFormItem(stack, 1) != belt.baseFormItem) {
                 return false;
-        if (needFormSlot1 != null)
-            if (RiderDriverItem.getFormItem(stack, 1) != needFormSlot1)
+            }
+        }
+        if (needFormSlot1 != null) {
+            if (RiderDriverItem.getFormItem(stack, 1) != needFormSlot1) {
                 return false;
-        if (needFormSlot2 != null)
-            if (RiderDriverItem.getFormItem(stack, 2) != needFormSlot2)
+            }
+        }
+        if (needFormSlot2 != null) {
+            if (RiderDriverItem.getFormItem(stack, 2) != needFormSlot2) {
                 return false;
-        if (needFormSlot3 != null)
-            if (RiderDriverItem.getFormItem(stack, 3) != needFormSlot3)
+            }
+        }
+        if (needFormSlot3 != null) {
+            if (RiderDriverItem.getFormItem(stack, 3) != needFormSlot3) {
                 return false;
-        if (needFormSlot4 != null)
-            if (RiderDriverItem.getFormItem(stack, 4) != needFormSlot4)
+            }
+        }
+        if (needFormSlot4 != null) {
+            if (RiderDriverItem.getFormItem(stack, 4) != needFormSlot4) {
                 return false;
-        if (needFormSlot5 != null)
-            if (RiderDriverItem.getFormItem(stack, 5) != needFormSlot5)
+            }
+        }
+        if (needFormSlot5 != null) {
+            if (RiderDriverItem.getFormItem(stack, 5) != needFormSlot5) {
                 return false;
+            }
+        }
         if (!needItemList.isEmpty()) {
             for (Item item : needItemList) {
-                if (!inventoryOrHolderContains(player, item))
+                if (!inventoryOrHolderContains(player, item)) {
                     return false;
+                }
             }
         }
         return true;
@@ -616,38 +708,49 @@ public class RiderFormChangeItem extends BaseItem {
             ItemStack BELT = interactionTarget.getItemBySlot(EquipmentSlot.FEET);
 
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-                if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.canChange(player, belt, BELT))
+                if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown() && form.canChange(player, belt, BELT)) {
                     shiftItem.interactLivingEntity(new ItemStack(form), player, summon, usedHand);
-                else if (canChange(player, belt, BELT)) {
+                } else if (canChange(player, belt, BELT)) {
                     int SLOT = slot;
 
-                    if (resetForm)
+                    if (resetForm) {
                         RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
-                    if (resetToMainForm & Objects.equals(belt.riderName, riderName))
+                    }
+                    if (resetToMainForm & Objects.equals(belt.riderName, riderName)) {
                         RiderDriverItem.resetFormItem(summon.getItemBySlot(EquipmentSlot.FEET));
-                    if (alsoChange1stSlot != null)
+                    }
+                    if (alsoChange1stSlot != null) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange1stSlot, 1);
-                    if (alsoChange2ndSlot != null)
+                    }
+                    if (alsoChange2ndSlot != null) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange2ndSlot, 2);
-                    if (alsoChange3rdSlot != null)
+                    }
+                    if (alsoChange3rdSlot != null) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange3rdSlot, 3);
-                    if (alsoChange4thSlot != null)
+                    }
+                    if (alsoChange4thSlot != null) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
-                    if (setToArmorForm)
+                    }
+                    if (setToArmorForm) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
+                    }
 
 
-                    if (usedHand == InteractionHand.OFF_HAND & offhand)
+                    if (usedHand == InteractionHand.OFF_HAND & offhand) {
                         SLOT = offhandSlot;
+                    }
 
-                    if (switchItem != null & RiderDriverItem.getFormItem(summon.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
+                    if (switchItem != null & RiderDriverItem.getFormItem(summon.getItemBySlot(EquipmentSlot.FEET), SLOT) == this) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), switchItem, SLOT);
-                    else
+                    } else {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), this, SLOT);
-                    if (alsoChange5thSlot != null)
+                    }
+                    if (alsoChange5thSlot != null) {
                         RiderDriverItem.setFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoChange5thSlot, 5);
-                    if (alsoUpdateOld != null)
+                    }
+                    if (alsoUpdateOld != null) {
                         RiderDriverItem.setOldFormItem(summon.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
+                    }
 
                 } else if (!alternative.isEmpty()) {
 
@@ -669,40 +772,51 @@ public class RiderFormChangeItem extends BaseItem {
 
         if (!level.isClientSide() && !player.hasEffect(EffectCore.FORM_LOCK)) {
             if (BELT.getItem() instanceof RiderDriverItem belt) {
-                if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown())
+                if (shiftItem instanceof RiderFormChangeItem form && player.isShiftKeyDown()) {
                     shiftItem.use(level, player, usedHand);
-                else if (canChange(player, belt, BELT)) {
+                } else if (canChange(player, belt, BELT)) {
                     if (!player.isCreative()) {
                         player.getCooldowns().addCooldown(this, 60);
                         player.addEffect(new MobEffectInstance(EffectCore.FORM_LOCK, 20, 0, true, false));
                     }
                     int SLOT = slot;
-                    if (resetForm)
+                    if (resetForm) {
                         RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (resetToMainForm & Objects.equals(belt.riderName, riderName))
+                    }
+                    if (resetToMainForm & Objects.equals(belt.riderName, riderName)) {
                         RiderDriverItem.resetFormItem(player.getItemBySlot(EquipmentSlot.FEET));
-                    if (alsoChange1stSlot != null)
+                    }
+                    if (alsoChange1stSlot != null) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange1stSlot, 1);
-                    if (alsoChange2ndSlot != null)
+                    }
+                    if (alsoChange2ndSlot != null) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange2ndSlot, 2);
-                    if (alsoChange3rdSlot != null)
+                    }
+                    if (alsoChange3rdSlot != null) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange3rdSlot, 3);
-                    if (alsoChange4thSlot != null)
+                    }
+                    if (alsoChange4thSlot != null) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange4thSlot, 4);
-                    if (alsoUpdateOld != null)
+                    }
+                    if (alsoUpdateOld != null) {
                         RiderDriverItem.setOldFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoUpdateOld, SLOT);
-                    if (setToArmorForm)
+                    }
+                    if (setToArmorForm) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), belt.armorFormItem, 1);
+                    }
 
-                    if (usedHand == InteractionHand.OFF_HAND & offhand)
+                    if (usedHand == InteractionHand.OFF_HAND & offhand) {
                         SLOT = offhandSlot;
+                    }
 
-                    if (switchItem != null & RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), SLOT) == this)
+                    if (switchItem != null & RiderDriverItem.getFormItem(player.getItemBySlot(EquipmentSlot.FEET), SLOT) == this) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), switchItem, SLOT);
-                    else
+                    } else {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), this, SLOT);
-                    if (alsoChange5thSlot != null)
+                    }
+                    if (alsoChange5thSlot != null) {
                         RiderDriverItem.setFormItem(player.getItemBySlot(EquipmentSlot.FEET), alsoChange5thSlot, 5);
+                    }
 
                 } else if (!alternative.isEmpty()) {
 
@@ -718,10 +832,12 @@ public class RiderFormChangeItem extends BaseItem {
 
     public void OnTransformation(ItemStack itemStack, LivingEntity entity) {
         if (timeoutDuration != 0) {
-            if (!(entity instanceof ArmorStand))
+            if (!(entity instanceof ArmorStand)) {
                 entity.addEffect(new MobEffectInstance(EffectCore.FORM_TIMEOUT, this.timeoutDuration, 0, true, false));
-            if (entity instanceof Player player && !player.isCreative())
+            }
+            if (entity instanceof Player player && !player.isCreative()) {
                 player.getCooldowns().addCooldown(this, this.lockDuration);
+            }
         }
     }
 
@@ -732,10 +848,12 @@ public class RiderFormChangeItem extends BaseItem {
     }
 
     public void transformationEffect(ItemStack itemStack, LivingEntity entity, Double tick) {
-        if (tick == 30)
+        if (tick == 30) {
             transformationEffect(itemStack, entity);
-        if (tick == 1)
+        }
+        if (tick == 1) {
             RiderDriverItem.updateOldFormItem(itemStack);
+        }
     }
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {

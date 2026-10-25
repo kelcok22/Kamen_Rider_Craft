@@ -28,7 +28,7 @@ import java.util.Objects;
 import java.util.UUID;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
-import static com.kelco.kamenridercraft.KamenRiderCraftCoreClient.*;
+import static com.kelco.kamenridercraft.KamenRiderCraftClientCore.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.util.AnimationUtil.*;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
@@ -136,12 +136,28 @@ public class ClientPayloadHandler {
                 AbstractClientPlayer animationTarget = (AbstractClientPlayer) Minecraft.getInstance().level.getPlayerByUUID(UUID.fromString(data.UUID()));
                 assert animationTarget != null;
                 PlayerAnimationController controller = switch (data.controller()) {
-                    case "attack", "fourze_position" ->
+                    case "attack" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
                     case "pose" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
-                    case "position" ->
-                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID);
+                    case "position_1" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_1);
+                    case "position_2" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_2);
+                    case "position_3" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_3);
+                    case "position_4" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_4);
+                    case "position_5" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_5);
+                    case "full_body" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, FULL_BODY_POSITIONING_ID);
+                    case "flying" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, GLIDING_POSITIONING_ID);
+                    case "gliding" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, FLYING_POSITIONING_ID);
+                    case "sd" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, SD_LAYER_ID);
                     default ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 };
@@ -150,7 +166,7 @@ public class ClientPayloadHandler {
                 if (!data.forceNextPose() && Objects.requireNonNull(controller).isPlayingTriggeredAnimation()) {
                     controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
                 } else {
-                    if (!data.controller().contains("position")) {
+                    if (data.controller().contains("attack") || data.controller().contains("pose") ) {
                         controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
                     }
                     controller.triggerAnimation(animation);
@@ -171,8 +187,24 @@ public class ClientPayloadHandler {
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ATTACK_LAYER_ID);
                     case "pose" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, POSE_LAYER_ID);
-                    case "position" ->
-                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID);
+                    case "position_1" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_1);
+                    case "position_2" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_2);
+                    case "position_3" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_3);
+                    case "position_4" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_4);
+                    case "position_5" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, RIDER_POSITIONING_ID_5);
+                    case "full_body" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, FULL_BODY_POSITIONING_ID);
+                    case "gliding" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, GLIDING_POSITIONING_ID);
+                    case "flying" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, FLYING_POSITIONING_ID);
+                    case "sd" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, SD_LAYER_ID);
                     default ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 };

@@ -23,22 +23,41 @@ import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.network.PacketDistributor;
 
-import java.util.Objects;
-
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 
 @Mod(value = KamenRiderCraftCore.MOD_ID, dist = Dist.CLIENT)
-public class KamenRiderCraftCoreClient {
-    public static final ResourceLocation POSE_LAYER_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "pose_layer");
-    public static final ResourceLocation HENSHIN_LAYER_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "henshin_layer");
-    public static final ResourceLocation ATTACK_LAYER_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "attack_layer");
-    public static final ResourceLocation RIDER_POSITIONING_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer");
-    public static final ResourceLocation RIDER_WALK_ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_walk_layer");
+public class KamenRiderCraftClientCore {
+    public static final ResourceLocation POSE_LAYER_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "pose_layer");
+    public static final ResourceLocation HENSHIN_LAYER_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "henshin_layer");
+    public static final ResourceLocation ATTACK_LAYER_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "attack_layer");
+
+    public static final ResourceLocation SD_LAYER_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer");
+    public static final ResourceLocation FULL_BODY_POSITIONING_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "full_body_positioning_layer");
+    public static final ResourceLocation GLIDING_POSITIONING_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "gliding_positioning_layer");
+    public static final ResourceLocation FLYING_POSITIONING_ID =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "flying_positioning_layer");
+
+    public static final ResourceLocation RIDER_POSITIONING_ID_1 =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer_1");
+    public static final ResourceLocation RIDER_POSITIONING_ID_2 =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer_2");
+    public static final ResourceLocation RIDER_POSITIONING_ID_3 =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer_3");
+    public static final ResourceLocation RIDER_POSITIONING_ID_4 =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer_4");
+    public static final ResourceLocation RIDER_POSITIONING_ID_5 =
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, "rider_positioning_layer_5");
 
     public int ability_one_key_held_ticks = 0;
     public int ability_two_key_held_ticks = 0;
 
-    public KamenRiderCraftCoreClient(ModContainer container) {
+    public KamenRiderCraftClientCore(ModContainer container) {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
     }
 
@@ -47,7 +66,7 @@ public class KamenRiderCraftCoreClient {
     }
 
     public static void eventSetup(IEventBus eventBus) {
-        NeoForge.EVENT_BUS.addListener(KamenRiderCraftCoreClient::clientTick);
+        NeoForge.EVENT_BUS.addListener(KamenRiderCraftClientCore::clientTick);
     }
 
     @SubscribeEvent
@@ -89,13 +108,13 @@ public class KamenRiderCraftCoreClient {
     @SubscribeEvent
     public static void registerPlayerAnimations() {
 
-        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(POSE_LAYER_ID, 17500,
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(POSE_LAYER_ID, 21000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
 
-        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(HENSHIN_LAYER_ID, 18500,
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(HENSHIN_LAYER_ID, 22000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
@@ -107,13 +126,50 @@ public class KamenRiderCraftCoreClient {
                 )
         );
 
-        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID, 20000,
+
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(FULL_BODY_POSITIONING_ID, 24000,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(FLYING_POSITIONING_ID, 24200,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(GLIDING_POSITIONING_ID, 24100,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(SD_LAYER_ID, 30000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )
         );
 
-        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_WALK_ID, 16000,
+
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID_1, 20400,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID_2, 20300,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID_3, 20200,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID_4, 20100,
+                player -> new PlayerAnimationController(player,
+                        (controller, state, animSetter) -> PlayState.STOP
+                )
+        );
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(RIDER_POSITIONING_ID_5, 20000,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )

@@ -29,7 +29,6 @@ import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.init.RiderPotPattern;
 import com.kelco.kamenridercraft.item.KRCCreativeTabs;
-import com.kelco.kamenridercraft.item.KRCItemLists;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.*;
@@ -58,17 +57,11 @@ import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -86,8 +79,6 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
 import net.neoforged.neoforge.network.registration.HandlerThread;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -194,7 +185,7 @@ public class KamenRiderCraftCore {
         modEventBus.addListener(ModCommonEvents::entitySpawnRestriction);
 
         if (dist == Dist.CLIENT) {
-            KamenRiderCraftCoreClient.clientInit(modEventBus);
+            KamenRiderCraftClientCore.clientInit(modEventBus);
         }
 
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
@@ -276,7 +267,7 @@ public class KamenRiderCraftCore {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(RegisterItemProperties::addCustomItemProperties);
-            event.enqueueWork(KamenRiderCraftCoreClient::registerPlayerAnimations);
+            event.enqueueWork(KamenRiderCraftClientCore::registerPlayerAnimations);
 
         }
 
