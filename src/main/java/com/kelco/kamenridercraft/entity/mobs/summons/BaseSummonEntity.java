@@ -128,12 +128,10 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
 	public void aiStep() {
 		if (this.level() instanceof ServerLevel server) {
 		   this.updatePersistentAnger(server, true);
-			if (this.isAlive() && this.getOwner() != null) {
-				LivingEntity owner = this.getOwner();
-
-				if(!owner.isAlive() || !this.armorMatches(owner) || this.level().dimension() != owner.level().dimension()) {
-					this.despawn();
-				} else {
+			if (this.isAlive() && this.getOwnerUUID() != null) {
+				if (this.getOwner() == null || !this.getOwner().isAlive() || !this.armorMatches(this.getOwner())) this.despawn();
+				else {
+					LivingEntity owner = this.getOwner();
 					if (!this.REQUIRED_FORMS.isEmpty() && owner.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
 						boolean formFound = false;
 						if (!this.matchAllForms) for (int i = 0; i < belt.numBaseFormItems; ++i) {
@@ -160,18 +158,17 @@ public class BaseSummonEntity extends TamableAnimal implements NeutralMob, Range
    
 		super.aiStep();
 	}
-   
+
 	public void despawn() {
 		this.setHealth(0);
-		if (!this.SUMMON_ITEM.isEmpty()) this.spawnAtLocation(this.SUMMON_ITEM);	
+		if (!this.SUMMON_ITEM.isEmpty()) this.spawnAtLocation(this.SUMMON_ITEM);
 	}
-   
+
 	@Override
 	public void die(DamageSource p_21809_) {
 		this.setOwnerUUID(null);
 		super.die(p_21809_);
 		if (!this.SUMMON_ITEM.isEmpty() && !this.level().isClientSide()) this.spawnAtLocation(this.SUMMON_ITEM);
-	
 	}
    
 	   public boolean getMeleeOnly() {
