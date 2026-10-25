@@ -24,6 +24,35 @@
 					}
 				}
 			}
+		},
+		"odin.flying": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-10, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"rotation": [13, 0, 0]
+				},
+				"torso": {
+					"rotation": [5, 0, 3]
+				},
+				"right_arm": {
+					"rotation": [-73, -48, 17],
+					"position": [0, -1, 0]
+				},
+				"left_arm": {
+					"rotation": [-80, 51, -10],
+					"position": [0, -1, 0]
+				},
+				"right_leg": {
+					"rotation": [25, 27, 5]
+				},
+				"left_leg": {
+					"rotation": [0, -13, 0]
+				}
+			}
 		}
 	}
 }

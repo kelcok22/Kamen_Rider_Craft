@@ -153,9 +153,9 @@ public class ClientPayloadHandler {
                     case "full_body" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, FULL_BODY_POSITIONING_ID);
                     case "flying" ->
-                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, GLIDING_POSITIONING_ID);
-                    case "gliding" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, FLYING_POSITIONING_ID);
+                    case "gliding" ->
+                            (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, GLIDING_POSITIONING_ID);
                     case "sd" ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, SD_LAYER_ID);
                     default ->

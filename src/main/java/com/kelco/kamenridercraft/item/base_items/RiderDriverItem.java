@@ -433,11 +433,15 @@ public class RiderDriverItem extends RiderArmorItem {
             if (numBaseFormItems != 0) {
                 for (int n = 1; n <= numBaseFormItems; n++) {
                     if (getFormItem(driver, n) != null && getFormItem(driver, n) instanceof RiderFormChangeItem item) {
-                        if (!glidingPosition.isEmpty()) {
+                        if (glidingPosition != null && glidingPosition.isEmpty()) {
                             glidingPosition = item.getGlidingPosition();
+                        } else if (glidingPosition == null) {
+                                glidingPosition = item.getGlidingPosition();
                         }
-                        if (!flyingPosition.isEmpty()) {
+                        if (flyingPosition != null && !flyingPosition.isEmpty()) {
                             flyingPosition = item.getFlyingPosition();
+                        } else if (flyingPosition == null) {
+                            flyingPosition = item.getGlidingPosition();
                         }
                         if (!modifiedPositionData.isEmpty()) {
                             List<List<String>> positionData = new ArrayList<>(List.of());

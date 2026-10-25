@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -79,13 +80,17 @@ public class LivingEntityMixin {
 
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
                     driverItem.isTransformed(rider)) {
-                if (driverItem.getFlyingPosition() != null && (driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
-                    PacketDistributor.sendToAllPlayers(
-                            new AnimPayload(driverItem.getFlyingPosition(), "flying", true, rider.getStringUUID()));
+                if (driverItem.getFlyingPosition() != null && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
+                    if (rider.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0) {
+                        PacketDistributor.sendToAllPlayers(
+                                new AnimPayload(driverItem.getFlyingPosition(), "flying", true, rider.getStringUUID()));
+                    }
                 }
-                if (driverItem.getGlidingPosition() != null && (driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
-                    PacketDistributor.sendToAllPlayers(
-                            new AnimPayload(driverItem.getFlyingPosition(), "gliding", true, rider.getStringUUID()));
+                if (driverItem.getGlidingPosition() != null && !(driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
+                    if (rider.isFallFlying()) {
+                        PacketDistributor.sendToAllPlayers(
+                                new AnimPayload(driverItem.getFlyingPosition(), "gliding", true, rider.getStringUUID()));
+                    }
                 }
                 if (driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
                     for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
