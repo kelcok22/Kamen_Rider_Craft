@@ -157,7 +157,7 @@ public class EffectCore {
     public static final Holder<MobEffect> NOTE = EFFECT.register("note",
             () -> new NoteEffect(MobEffectCategory.BENEFICIAL, 0x2d2d2d));
 
-    public static final Holder<Potion> NOTE_POTION = POTIONS.register("note_potion",()-> new Potion(new MobEffectInstance(NOTE,8000,0)));
+    public static final Holder<Potion> NOTE_POTION = POTIONS.register("note_potion",()-> new Potion(new MobEffectInstance(NOTE,800,0)));
 
     public static final Holder<MobEffect> DRILL = EFFECT.register("drill",
             () -> new DrillEffect(MobEffectCategory.BENEFICIAL, 0xe5d90e));
