@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -77,17 +78,38 @@ public class MyThRiderItems {
                 }
             }.isGlowing().IsBeltGlowing().hasCape().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
-    public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","maou","maou_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+    public static final DeferredItem<Item> RIDE_X_EGGS_1_EN_MY_TH = ITEMS.register("ride_x_eggs_1_en_my_th",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_fire_flame","my_th","my_th_driver_belt_fire_flame",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.CLIMBING, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 0,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+            }.isGlowing().hasCape().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").setModelName("ride_x_eggs_1_maou"));
+
+
+    public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","maou","maou_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.FIRE_SLASH, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().addAlternative(RIDE_X_EGGS_1_EN_MY_TH.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_3_TIGRE = ITEMS.register("ride_x_eggs_3_tigre",
             () -> new RiderFormChangeItem(new Item.Properties(),"","jyao","my_th_driver_belt_tigre",
