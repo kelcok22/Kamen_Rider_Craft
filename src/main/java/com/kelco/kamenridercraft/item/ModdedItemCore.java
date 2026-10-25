@@ -47,7 +47,7 @@ public class ModdedItemCore {
 
     public static final DeferredItem<Item> ORONAMIN_C = ITEMS.register("oronamin_c",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(2).fast().saturationModifier(3f).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).alwaysEdible().build()))
-                    .useBasicModel().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    .setItemAnimation(UseAnim.DRINK).useBasicModel().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> PUDDING = ITEMS.register("pudding",
             () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
