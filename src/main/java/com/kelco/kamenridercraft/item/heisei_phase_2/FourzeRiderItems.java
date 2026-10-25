@@ -1556,9 +1556,11 @@ public class FourzeRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
                         layerInfo.add(new RenderLayerInfo("module/meteor_galaxy", "module/meteor_galaxy"));
+                        if (rider.isCrouching()||(RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 10&&RiderDriverItem.getFormItem(itemStack,1)==this) ){
+                            layerInfo.add(new MeteorBallLayerInfo());
+                        }
                     }
                 }
-
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -1570,7 +1572,7 @@ public class FourzeRiderItems {
                                 player.getZ(), 200, 0, 0, 0, 0.1);
                     }
                 }
-            }.setHenshinTick(35).setFormDelay(1).setSlotTwoAbility("meteor_kick", 0).isGlowing().addToList(FOURZE_TAB_ITEM));
+            }.setHenshinTick(35).setFormDelay(10).setSlotTwoAbility("meteor_kick", 0).isGlowing().addToList(FOURZE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> METEOR_STORM_ASTROSWITCH = ITEMS.register("meteor_storm_switch",
