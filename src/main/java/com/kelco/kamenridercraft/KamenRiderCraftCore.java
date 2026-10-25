@@ -57,6 +57,7 @@ import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
@@ -211,9 +212,9 @@ public class KamenRiderCraftCore {
 
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
-        if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
+        if (event.getRenderer().getModel() instanceof HumanoidModel<?> model) {
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
-                Double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
+                double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
                 double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET),tf);
                 if (tag != 0) {
                     model.setAllVisible(false);
