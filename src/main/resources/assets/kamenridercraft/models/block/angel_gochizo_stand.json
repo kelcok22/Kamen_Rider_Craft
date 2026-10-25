@@ -1,5 +1,6 @@
 {
 	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"textures": {
 		"0": "kamenridercraft:block/angel_gochizo_stand",
@@ -46,9 +47,9 @@
 			}
 		},
 		{
-			"from": [2.76956, 5, 8.84149],
-			"to": [6.76956, 8, 8.85149],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [4.76956, 5, 7.84149]},
+			"from": [2.76956, 5, 9.84149],
+			"to": [6.76956, 8, 9.85149],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [4.76956, 5, 8.84149]},
 			"faces": {
 				"north": {"uv": [1, 10, 5, 13], "texture": "#0"},
 				"east": {"uv": [1, 10, 1, 13], "texture": "#0"},
@@ -59,9 +60,9 @@
 			}
 		},
 		{
-			"from": [9.23044, 5, 8.84149],
-			"to": [13.23044, 8, 8.85149],
-			"rotation": {"angle": -22.5, "axis": "y", "origin": [11.23044, 5, 7.84149]},
+			"from": [9.23044, 5, 9.84149],
+			"to": [13.23044, 8, 9.85149],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [11.23044, 5, 8.84149]},
 			"faces": {
 				"north": {"uv": [5, 6, 1, 9], "texture": "#0"},
 				"east": {"uv": [5, 6, 5, 9], "texture": "#0"},

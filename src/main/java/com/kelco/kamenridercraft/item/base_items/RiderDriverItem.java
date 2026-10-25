@@ -201,7 +201,8 @@ public class RiderDriverItem extends RiderArmorItem {
                             effect.getEffect() != EffectCore.SLASH &&
                             effect.getEffect() != EffectCore.PUNCH &&
                             effect.getEffect() != EffectCore.GREEED &&
-                            effect.getEffect() != EffectCore.BUGSTER)
+                            effect.getEffect() != EffectCore.BUGSTER &&
+                            effect.getEffect() != EffectCore.UNSEALED)
                             || ((rider instanceof BaseSummonEntity || rider instanceof EnemySummonEntity)
                             && (effect.getEffect() != MobEffects.DAMAGE_RESISTANCE || effect.getAmplifier() < 3)
                             && effect.getEffect() != EffectCore.GREEED &&
@@ -233,7 +234,8 @@ public class RiderDriverItem extends RiderArmorItem {
                                 effect.getEffect() != EffectCore.SLASH &&
                                 effect.getEffect() != EffectCore.PUNCH &&
                                 effect.getEffect() != EffectCore.GREEED &&
-                                effect.getEffect() != EffectCore.BUGSTER)
+                                effect.getEffect() != EffectCore.BUGSTER &&
+                                effect.getEffect() != EffectCore.UNSEALED)
                                 || ((rider instanceof BaseSummonEntity || rider instanceof EnemySummonEntity)
                                 && (effect.getEffect() != MobEffects.DAMAGE_RESISTANCE || effect.getAmplifier() < 3)
                                 && effect.getEffect() != EffectCore.GREEED &&
