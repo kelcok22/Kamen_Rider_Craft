@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-25T20:27:29.580512	Item Models: kamenridercraft
+// 1.21.1	2026-10-25T14:00:26.1615597	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
 5ab15435c56c553cedb64ed08ebf4fb551449dca assets/kamenridercraft/models/item/agito_capsem.json
@@ -239,6 +239,7 @@ b1f2db05f3dde80bb56b7108e7ce45b34f9c9e58 assets/kamenridercraft/models/item/evol
 59c1ca0b3493b1fe88211eed23baf15f01ba4f70 assets/kamenridercraft/models/item/exdreamrise_capsem.json
 59c1ca0b3493b1fe88211eed23baf15f01ba4f70 assets/kamenridercraft/models/item/exdreamrise_capsem_dawn.json
 87cd3c4f65090b1679873d35aa4c78c9d99187fc assets/kamenridercraft/models/item/extra_capsem.json
+48c4c6ed727990ea3bc4ec9e69e15ae249938f7f assets/kamenridercraft/models/item/extra_shadow_capsem.json
 793ee052b2e77a04f05fcc13f66d0563398573eb assets/kamenridercraft/models/item/ex_aid_capsem.json
 26658d18be3506f769879eb838bc3370a2f7472b assets/kamenridercraft/models/item/ex_aid_full_bottle.json
 c630174706759fafdc1d8ece3dbe3a368ebd1b79 assets/kamenridercraft/models/item/ex_aid_gochizo.json

@@ -1036,6 +1036,25 @@ public class ZeztzRiderItems {
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addAlternative(MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> EXTRA_SHADOW_CAPSEM = ITEMS.register("extra_shadow_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_extra_shadow","nox","nox_driver_belt_extra_shadow",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> CATASTROPHE_CAPSEM = ITEMS.register("catastrophe_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"","catastrophe_gore_nightmare","catastrophe_gore_nightmare_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
@@ -1422,6 +1441,9 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> BREAKAM_BUSTER = ITEMS.register("breakam_buster",
             () -> new BaseBlasterItem(Tiers.DIAMOND, 4, -2F, new Item.Properties()).IsSwordGun().addToList(ZEZTZ_TAB_ITEM)
                     .changeRepairItem(CODE_CAPSEM.get()));
+
+    public static final DeferredItem<Item> EXTRA_SHADOW_SHIELD = ITEMS.register("extra_shadow_shield",
+            () -> new BaseShieldItem(new Item.Properties()).addToList(ZEZTZ_TAB_ITEM).changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> BREAKAM_DAWN_TAIKEN = ITEMS.register("breakam_dawn_taiken",
             () -> new BreakamDawnTaikenItem(KRCTiers.SPLITTING_SWORD, 11, -2.2F, new Item.Properties()).addToList(ZEZTZ_TAB_ITEM));

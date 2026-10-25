@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "nox",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:extra_capsem"
+		},
+		{
+			"item": "kamenridercraft:midnight_shadow_capsem"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:extra_shadow_capsem"
+	}
+}
