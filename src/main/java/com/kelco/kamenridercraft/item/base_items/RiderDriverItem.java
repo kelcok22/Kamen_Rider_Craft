@@ -75,7 +75,7 @@ public class RiderDriverItem extends RiderArmorItem {
 
     private String glidingPosition = "";
     private String flyingPosition = "";
-    private List<List<List<String>>> modifiedPositionData;
+    private List<List<List<String>>> modifiedPositionData = new ArrayList<>(10);
 
     /**
      * Constructor for the main armor piece used by a Kamen Rider, kaijin, or other transforming character. This item uses the foot armor slot in all cases.
@@ -433,13 +433,15 @@ public class RiderDriverItem extends RiderArmorItem {
             if (numBaseFormItems != 0) {
                 for (int n = 1; n <= numBaseFormItems; n++) {
                     if (getFormItem(driver, n) != null && getFormItem(driver, n) instanceof RiderFormChangeItem item) {
-                        if (glidingPosition != null && glidingPosition.isEmpty()) {
+                        if (!item.getGlidingPosition().isEmpty()) {
                             glidingPosition = item.getGlidingPosition();
                         }
                         if (flyingPosition != null && !flyingPosition.isEmpty()) {
-                            flyingPosition = item.getFlyingPosition();
+                            if (!item.getFlyingPosition().isEmpty()) {
+                                flyingPosition = item.getFlyingPosition();
+                            }
                         }
-                        if (!modifiedPositionData.isEmpty()) {
+                        if (modifiedPositionData != null && !modifiedPositionData.isEmpty()) {
                             List<List<String>> positionData = new ArrayList<>(List.of());
                             positionData.add(Collections.singletonList(item.getModifiedPosition()));
                             positionData.add(Collections.singletonList(item.getModifiedPositionLayer()));
