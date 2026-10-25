@@ -1069,7 +1069,7 @@ public class FourzeRiderItems {
                         layerInfo.add(new ModuleRenderLayerInfo("module/fourze_pen_module", "module/fourze_pen_module", Color.DARK_GRAY.getColor(), 2));
                     }
                 }
-            }.setModifiedPosition("leg_up.left_75.modifier")
+            }.setModifiedPosition("leg_up.right_75.modifier")
                     .setModifiedPositionLayer("position_1")
                     .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(2).addSwitchForm(BLANK_CROSS_ASTROSWITCH.get()).
                     addToList(FOURZE_TAB_ITEM).addToList(AstroswitchProgrammer.ASTROSWITCH, 5));
