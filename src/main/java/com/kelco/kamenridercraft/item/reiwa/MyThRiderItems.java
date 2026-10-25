@@ -211,7 +211,8 @@ public class MyThRiderItems {
 
     public static final DeferredItem<Item> RIDE_X_EGGS_8_MUTN = ITEMS.register("ride_x_eggs_8_mutn",
             () -> new RiderFormChangeItem(new Item.Properties(),"","mutn","my_th_driver_belt_mutn",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 0,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
