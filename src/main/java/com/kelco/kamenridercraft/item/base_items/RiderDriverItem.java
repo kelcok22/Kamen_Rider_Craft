@@ -433,15 +433,17 @@ public class RiderDriverItem extends RiderArmorItem {
             if (numBaseFormItems != 0) {
                 for (int n = 1; n <= numBaseFormItems; n++) {
                     if (getFormItem(driver, n) != null && getFormItem(driver, n) instanceof RiderFormChangeItem item) {
-                        if (!item.getGlidingPosition().isEmpty()) {
-                            glidingPosition = item.getGlidingPosition();
-                        }
-                        if (flyingPosition != null && !flyingPosition.isEmpty()) {
+                        if (glidingPosition != null && !(item.getGlidingPosition().isEmpty()
+                                || !item.getGlidingPosition().equalsIgnoreCase("blank"))) {
+                            if (!item.getGlidingPosition().isEmpty()) {
+                                glidingPosition = item.getGlidingPosition();
+                            }                        }
+                        if (flyingPosition != null && !(item.getFlyingPosition().isEmpty()
+                                || !item.getFlyingPosition().equalsIgnoreCase("blank"))) {
                             if (!item.getFlyingPosition().isEmpty()) {
                                 flyingPosition = item.getFlyingPosition();
-                            }
-                        }
-                        if (modifiedPositionData != null && !modifiedPositionData.isEmpty()) {
+                            }                        }
+                        if (modifiedPositionData != null) {
                             List<List<String>> positionData = new ArrayList<>(List.of());
                             positionData.add(Collections.singletonList(item.getModifiedPosition()));
                             positionData.add(Collections.singletonList(item.getModifiedPositionLayer()));
@@ -452,13 +454,19 @@ public class RiderDriverItem extends RiderArmorItem {
                 }
             } else {
                 if (getFormItem(driver, 1) != null && getFormItem(driver, 1) instanceof RiderFormChangeItem item) {
-                    if (!glidingPosition.isEmpty()) {
-                        glidingPosition = item.getGlidingPosition();
+                    if (glidingPosition != null && !(item.getGlidingPosition().isEmpty()
+                            || !item.getGlidingPosition().equalsIgnoreCase("blank"))) {
+                        if (!item.getGlidingPosition().isEmpty()) {
+                            glidingPosition = item.getGlidingPosition();
+                        }
                     }
-                    if (!flyingPosition.isEmpty()) {
-                        flyingPosition = item.getFlyingPosition();
-                    }
-                    if (!modifiedPositionData.isEmpty()) {
+                    if (flyingPosition != null && !(item.getFlyingPosition().isEmpty()
+                            || !item.getFlyingPosition().equalsIgnoreCase("blank"))) {
+                        System.out.println(item.getFlyingPosition());
+                        if (!item.getFlyingPosition().isEmpty()) {
+                            flyingPosition = item.getFlyingPosition();
+                        }                        }
+                    if (modifiedPositionData != null) {
                         List<List<String>> positionData = new ArrayList<>(List.of());
                         positionData.add(Collections.singletonList(item.getModifiedPosition()));
                         positionData.add(Collections.singletonList(item.getModifiedPositionLayer()));

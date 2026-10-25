@@ -80,7 +80,6 @@ public class LivingEntityMixin {
 
             if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
                     driverItem.isTransformed(rider)) {
-                System.out.println(driverItem.getFlyingPosition());
                 if (driverItem.getFlyingPosition() != null && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
                     if (rider.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0) {
                         PacketDistributor.sendToAllPlayers(
@@ -95,13 +94,13 @@ public class LivingEntityMixin {
                 }
                 if (driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
                     for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
-                       if (formItemDataList.get(0).isEmpty()) {
+                       if (formItemDataList.get(0) == null  || formItemDataList.get(0).isEmpty()) {
                            return;
                        }
-                        if (formItemDataList.get(1).isEmpty()) {
+                        if (formItemDataList.get(1) == null  || formItemDataList.get(1).isEmpty()) {
                             return;
                         }
-                        if (!formItemDataList.get(2).isEmpty()) {
+                        if (formItemDataList.get(2) != null && !formItemDataList.get(2).isEmpty()) {
                             for (String condition : formItemDataList.get(2)) {
                                 if (condition.equalsIgnoreCase("in_air")) {
                                     if (rider.onGround()) {
