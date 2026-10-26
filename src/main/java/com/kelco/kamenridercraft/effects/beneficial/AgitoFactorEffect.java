@@ -78,6 +78,6 @@ public class AgitoFactorEffect extends MobEffect {
                 livingEntity.discard();
             }
         }
-        return false;
+        return true;
     }
 }
