@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-26T03:06:42.304278	Item Models: kamenridercraft
+// 1.21.1	2026-10-26T17:14:06.8836947	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 9a45b56d01503e3df8042d31b1b262e7ea0027fc assets/kamenridercraft/models/item/advance_capsem.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
@@ -137,6 +137,7 @@ f77e0e5554a849e103e560b18e1b1e4559c541d3 assets/kamenridercraft/models/item/chan
 a7f1f076806759dc921d4f5fd315f28ebb6013c7 assets/kamenridercraft/models/item/change_spider_undead.json
 a75a81a28e9f91a58c2daee9a8293d9e51b4ce95 assets/kamenridercraft/models/item/change_stag_undead.json
 87323e18027204035d3b3d39047b8554e7e578b5 assets/kamenridercraft/models/item/chaos_capsem.json
+640072ec2393ad4c5a0681235c3b70346c50e486 assets/kamenridercraft/models/item/chaos_dawn_capsem.json
 5703c3e49182ecf645772120c10a35b2d83b5d8e assets/kamenridercraft/models/item/chaos_ring_loq_q.json
 e0e58137aa23426a3b8595ddf99e9c7e8517b289 assets/kamenridercraft/models/item/charadeco_capsem.json
 ccb37b425aa269f6e4bd359601237daeabd88e21 assets/kamenridercraft/models/item/charge_capsem.json

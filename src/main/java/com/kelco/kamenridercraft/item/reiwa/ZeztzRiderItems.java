@@ -990,6 +990,24 @@ public class ZeztzRiderItems {
                 }
             } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> CHAOS_DAWN_CAPSEM = ITEMS.register("chaos_dawn_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_chaos","dawn","dawn_belt_chaos",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 3,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> SHADOW_CAPSEM_NIGHTMARE = ITEMS.register("shadow_capsem_nightmare",
             () -> new RiderFormChangeItem(new Item.Properties(),"","shadow_nightmare","shadow_nightmare_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).isGlowing());
@@ -1345,7 +1363,7 @@ public class ZeztzRiderItems {
 
     public static final DeferredItem<Item> DAWN_BELT = ITEMS.register("dawn_belt",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dawn", PUNISH_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
+                    .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER = ITEMS.register("knight_invoker",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
