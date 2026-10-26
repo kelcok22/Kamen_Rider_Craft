@@ -627,6 +627,35 @@ public class ZeztzRiderItems {
                 }
                 }.setFormDelay(189).setHenshinTick(200).addIncompatibleForm(HEART_OF_IMPACT_CAPSEM_IMPACT.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
+    public static final DeferredItem<Item> ADVANCE_CAPSEM = ITEMS.register("advance_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_physicam_advance","zeztz","zeztz_driver_belt_physicam_advance",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2,true,false),
+                    new MobEffectInstance(EffectCore.FIRE_ARMOR, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
+                    }
+                    if (tick == 18d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 3d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY()+1,
+                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+            }.setFormDelay(3).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+
     public static final DeferredItem<Item> ZEZTZ_AND_CODE_ZEROIDER_CAPSEM = ITEMS.register("zeztz_and_code_zeroider_capsem",
             () -> new RiderFormChangeItem(new Item.Properties(),"_impact_zeroider","zeztz","zeztz_driver_belt_impact_zeroider",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
@@ -1019,7 +1048,7 @@ public class ZeztzRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).changeModel("shadow_nightmare.geo.json"));
 
     public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM = ITEMS.register("midnight_shadow_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_midnight_shadow","nox","nox_driver_belt_midnight_shadow",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_midnight_shadow","nox","nox_driver_belt_midnight_shadow",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
@@ -1037,7 +1066,7 @@ public class ZeztzRiderItems {
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addAlternative(MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> EXTRA_SHADOW_CAPSEM = ITEMS.register("extra_shadow_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_extra_shadow","nox","nox_driver_belt_extra_shadow",
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_extra_shadow","nox","nox_driver_belt_extra_shadow",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
