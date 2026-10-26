@@ -6,21 +6,18 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.heisei_phase_1.AgitoRiderItems;
 import com.kelco.kamenridercraft.sounds.ModSounds;
 import com.kelco.kamenridercraft.util.MiscUtil;
-import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.effects.EffectCore.MIRROR_NOISES;
-import static com.kelco.kamenridercraft.effects.EffectCore.SAFE_LANDING;
-import static net.minecraft.world.entity.EntityType.ZOMBIE;
 
 
 public class MirrorNoisesEffect extends MobEffect {
@@ -35,18 +32,18 @@ public class MirrorNoisesEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        Random rand = new Random();
-
         if (livingEntity.getEffect(MIRROR_NOISES).getDuration() > 200) {
             livingEntity.level().playLocalSound(livingEntity, ModSounds.MIRROR_NOISES.get(), SoundSource.RECORDS, 1, new Random().nextInt(10));
         }
         if (livingEntity.level() instanceof ServerLevel serverLevel && serverLevel.getDifficulty() != Difficulty.PEACEFUL
-                && (livingEntity.getEffect(MIRROR_NOISES).getDuration() < 2 || livingEntity.hasEffect(EffectCore.AGITO_FACTOR))) {
+                && (livingEntity.getEffect(MIRROR_NOISES).getDuration() < 2)) {
             BaseHenchmenEntity boss = MobsCore.MIRROR_RIDER.get().create(livingEntity.level());
-                if (livingEntity.hasEffect(EffectCore.AGITO_FACTOR)) boss.setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.ALTERING_MIRACLE_WORLD.asItem()));
-                MiscUtil.spawnEnemy(livingEntity, boss, 10);
-                livingEntity.removeEffect(MIRROR_NOISES);
+            if (livingEntity.hasEffect(EffectCore.AGITO_FACTOR)) {
+                boss.setItemSlot(EquipmentSlot.FEET, new ItemStack(AgitoRiderItems.ALTERING_MIRACLE_WORLD.asItem()));
             }
+            MiscUtil.spawnEnemy(livingEntity, boss, 10);
+            livingEntity.removeEffect(MIRROR_NOISES);
+        }
         return true;
     }
 }
