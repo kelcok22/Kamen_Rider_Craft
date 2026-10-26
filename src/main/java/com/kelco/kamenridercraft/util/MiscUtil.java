@@ -64,6 +64,7 @@ public class MiscUtil {
                     break;
                 }
             }
+            enemy.finalizeSpawn(serverLevel, serverLevel.getCurrentDifficultyAt(spawner.blockPosition()), MobSpawnType.MOB_SUMMONED, null);
             spawner.level().addFreshEntity(enemy);
             if (!enemy.onGround()) {
                 enemy.addEffect(new MobEffectInstance(SAFE_LANDING, MobEffectInstance.INFINITE_DURATION,
