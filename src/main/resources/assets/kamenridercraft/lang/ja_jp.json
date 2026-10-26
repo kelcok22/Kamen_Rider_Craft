@@ -10079,6 +10079,7 @@
 "block.kamenridercraft.lovekov_plush": "ラブコフのぬいぐるみ",
 "block.kamenridercraft.vice_ducky": "バイスラバー・ダック",
 "block.kamenridercraft.ferbus": "ファーバス",
+"block.kamenridercraft.yurusen_plush": "ユルセンぬいぐるみ",
 
 "block.kamenridercraft.window_planks": "木の坂材のバリケード",
 
@@ -11037,6 +11038,8 @@
 "advancements.kamenridercraft.agito.storm_halberd.title": "ハルバードスピン",
 "advancements.kamenridercraft.agito.v1.description": "V1に変身",
 "advancements.kamenridercraft.agito.v1.title": "絶対宇宙刑事じゃない、絶対",
+"advancements.kamenridercraft.blade.ace_undead.description": "カテゴリーAアンデッドを封印する",
+"advancements.kamenridercraft.blade.ace_undead.title": "「カテゴリーAは俺のものだ！！」",
 "advancements.kamenridercraft.blade.blade_king.description": "ブレイドキングフォームに変身",
 "advancements.kamenridercraft.blade.blade_king.title": "ロイヤル・ストレート・フラッシュ",
 "advancements.kamenridercraft.blade.blade.description": "仮面ライダーブレイドに変身",
@@ -11061,6 +11064,8 @@
 "advancements.kamenridercraft.blade.leangle.title": "「追っかけて、睦月！」",
 "advancements.kamenridercraft.blade.rouze_absorber.description": "ラウズアブゾーバーを入手",
 "advancements.kamenridercraft.blade.rouze_absorber.title": "Wanna Be Stronger",
+"advancements.kamenridercraft.blade.undead.description": "アンデッドを封印する",
+"advancements.kamenridercraft.blade.undead.title": "Round Zero 始まってる",
 "advancements.kamenridercraft.blade.wild_chalice.description": "カリスワイルドに変身",
 "advancements.kamenridercraft.blade.wild_chalice.title": "take it a try",
 "advancements.kamenridercraft.build.4koma_ninpoutou.description": "4コマ忍法刀を入手",
