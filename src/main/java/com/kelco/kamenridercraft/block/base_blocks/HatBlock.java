@@ -10,31 +10,33 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 public class HatBlock extends BaseFacingBlock implements Equipable {
+    public static VoxelShape SHAPE = Block.box(4, 0, 6, 12, 16, 10);
 
+    public HatBlock(Properties prop, VoxelShape shape) {
+        super(prop);
+        SHAPE = shape;
+    }
 
-    public static VoxelShape SHAPE = Block.box(4, 0, 6, 12,16, 10);
-
-	public HatBlock(Properties prop,VoxelShape shape) {
-		super(prop);
-        SHAPE =shape;
-	}
     @Override
-    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+    public @NotNull VoxelShape getShape(@NotNull BlockState blockState, @NotNull BlockGetter blockGetter,
+                                        @NotNull BlockPos blockPos, @NotNull CollisionContext collisionContext) {
         return SHAPE;
     }
 
     @Override
-    public RenderShape getRenderShape(BlockState pState) {
+    public @NotNull RenderShape getRenderShape(BlockState blockState) {
         return RenderShape.MODEL;
     }
 
-    public static boolean isShapeFullBlock(VoxelShape p_49917_) {
+    public static boolean isShapeFullBlock(VoxelShape voxelShape) {
         return false;
     }
+
     @Override
-    public EquipmentSlot getEquipmentSlot() {
+    public @NotNull EquipmentSlot getEquipmentSlot() {
         return EquipmentSlot.HEAD;
     }
 }
