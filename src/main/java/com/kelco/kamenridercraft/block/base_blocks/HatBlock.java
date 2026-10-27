@@ -37,5 +37,4 @@ public class HatBlock extends BaseFacingBlock implements Equipable {
     public EquipmentSlot getEquipmentSlot() {
         return EquipmentSlot.HEAD;
     }
-
 }

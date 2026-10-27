@@ -1143,8 +1143,12 @@ public class RiderBlocks {
     public static final DeferredBlock<Block> YURUSEN_PLUSH = registerBlock("yurusen_plush",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
 
-
-
+    public static final DeferredBlock<Block> HOPPER1_PLUSH = registerBlock("hopper1_plush",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+    public static final DeferredBlock<Block> HOPPER1_PLUSH_DAYBREAK = registerBlock("hopper1_plush_daybreak",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+    public static final DeferredBlock<Block> HOPPER1_PLUSH_WITHER = registerBlock("hopper1_plush_wither",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
 
     public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
