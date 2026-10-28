@@ -2,11 +2,14 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
@@ -17,12 +20,15 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -36,6 +42,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.KIVA_TAB_ITEM;
 
@@ -85,13 +92,15 @@ public class KivaRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.GLASS_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 200, 0, 0, 0, 1);
-				}
-			}.setSlotTwoAbility("kiva_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KIVA_TAB_ITEM));
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+					super.transformationEffect(itemstack, player, tick);
+					if (tick == 30d) {
+						AnimationUtil.playPose(player, "kiva.henshin");
+					}
+					if (tick == 3d) {
+						((ServerLevel) player.level()).sendParticles(ModParticles.GLASS_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+					}}
+			}.setFormDelay(3).setSlotTwoAbility("kiva_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARULU_FUESTLE = ITEMS.register("garulufuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_garulu","kiva","kivat_belt_g",
