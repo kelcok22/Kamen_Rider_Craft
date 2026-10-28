@@ -540,6 +540,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
+                    if (tick==50d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -577,6 +578,7 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.SATURATION, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
+                    if (tick==50d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,

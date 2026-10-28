@@ -110,9 +110,9 @@ public class OOODriverItem extends RiderDriverItem {
         super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
         if (slot == EquipmentSlot.HEAD) {
             if ( RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 30) {
-                layerInfo.add(new oooHenshinRenderLayerInfo("transforming/ooo_henshin"+getFormItem(itemStack,3).getFormName(false)));
-                layerInfo.add(new oooHenshinRenderLayerInfo("transforming/ooo_henshin"+getFormItem(itemStack,2).getFormName(false)));
-                layerInfo.add(new oooHenshinRenderLayerInfo("transforming/ooo_henshin"+getFormItem(itemStack,1).getFormName(false)));
+                layerInfo.add(new oooHenshinRenderLayerInfo("transforming/"+riderName+"_henshin"+getFormItem(itemStack,3).getFormName(false)));
+                layerInfo.add(new oooHenshinRenderLayerInfo("transforming/"+riderName+"_henshin"+getFormItem(itemStack,2).getFormName(false)));
+                layerInfo.add(new oooHenshinRenderLayerInfo("transforming/"+riderName+"_henshin"+getFormItem(itemStack,1).getFormName(false)));
             }
         }
     }
