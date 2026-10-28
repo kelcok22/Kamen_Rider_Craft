@@ -8,6 +8,7 @@ import com.kelco.kamenridercraft.client.gui.driver.*;
 import com.kelco.kamenridercraft.client.gui.item.LegendRideMagnumGuiScreen;
 import com.kelco.kamenridercraft.client.gui.item.NeoDiendriverGuiScreen;
 import com.kelco.kamenridercraft.client.gui.item.RideBookerGuiScreen;
+import com.kelco.kamenridercraft.client.gui.machine_block.AstroswitchProgrammerGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.IxaMachineBlockGuiScreen;
 import com.kelco.kamenridercraft.client.gui.overlays.AbilityHudOverlay;
 import com.kelco.kamenridercraft.client.gui.storage_item.*;
@@ -743,6 +744,7 @@ public class KamenRiderCraftCore {
             event.register(ModMenus.LEGEND_RIDE_MAGNUM_GUI.get(), LegendRideMagnumGuiScreen::new);
             event.register(ModMenus.CAPSEM_CYLINDER_GUI.get(), CapsemCylinderGuiScreen::new);
             event.register(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), IxaMachineBlockGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_PROGRAMMER_GUI.get(), AstroswitchProgrammerGuiScreen::new);
             // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }
     }

@@ -27,6 +27,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("ixa_machine_block_be", () -> BlockEntityType.Builder.of(
                     IxaMachineBlockEntity::new, RiderBlocks.IXA_MACHINE_BLOCK.get()).build(null));
 
+    public static final Supplier<BlockEntityType<AstroswitchProgrammerEntity>> ASTROSWITCH_PROGRAMMER_BE =
+            BLOCK_ENTITIES.register("astroswitch_programmer_be", () -> BlockEntityType.Builder.of(
+                    AstroswitchProgrammerEntity::new, RiderBlocks.ASTROSWITCH_PROGRAMMER.get()).build(null));
+
     public static final Supplier<BlockEntityType<PandoraPanelBlockEntity>> PANDORA_PANEL_BE =
             BLOCK_ENTITIES.register("pandora_panel_be", () -> BlockEntityType.Builder.of(
                     PandoraPanelBlockEntity::new, RiderBlocks.PANDORA_PANEL_BLOCK.get()).build(null));

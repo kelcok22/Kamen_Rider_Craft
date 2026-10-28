@@ -49,6 +49,7 @@ public class ModMenus {
     public static final DeferredHolder<MenuType<?>, MenuType<CapsemCylinderGuiMenu>> CAPSEM_CYLINDER_GUI = REGISTRY.register("capsem_cylinder_gui", () -> IMenuTypeExtension.create(CapsemCylinderGuiMenu::new));
 
     public static final DeferredHolder<MenuType<?>, MenuType<IxaMachineBlockGuiMenu>> IXA_MACHINE_BLOCK_GUI = REGISTRY.register("ixa_machine_block_gui", () -> IMenuTypeExtension.create(IxaMachineBlockGuiMenu::new));
+    public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchProgrammerGuiMenu>> ASTROSWITCH_PROGRAMMER_GUI = REGISTRY.register("astroswitch_programmer_gui", () -> IMenuTypeExtension.create(AstroswitchProgrammerGuiMenu::new));
 
 //	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchRackGuiMenu>> ASTROSWITCH_RACK_GUI = REGISTRY.register("astroswitch_rack_gui", () -> IMenuTypeExtension.create(AstroswitchRackGuiMenu::new));
 
