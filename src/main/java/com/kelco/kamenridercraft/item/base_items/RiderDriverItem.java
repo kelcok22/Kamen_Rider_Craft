@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.item.base_items;
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.ModuleRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.EnemySummonEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
@@ -40,7 +39,6 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
-import software.bernie.geckolib.util.Color;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -325,7 +323,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putBoolean("Update_form", false);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
-            Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).setBaseValue(getFormItem(itemStack, 1).getHenshinTick());
+            Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).setBaseValue(getBaseHenshinTick(itemStack));
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(0);
@@ -699,10 +697,14 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemStack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             if (tag.getBoolean("Update_form")) {
-                transformingTick = getFormItem(itemStack, 1).getHenshinTick();
+                transformingTick = getBaseHenshinTick(itemStack);
             }
         }
         return transformingTick;
+    }
+
+    public double getBaseHenshinTick(ItemStack stack){
+        return getFormItem(stack, 1).getHenshinTick();
     }
 
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
