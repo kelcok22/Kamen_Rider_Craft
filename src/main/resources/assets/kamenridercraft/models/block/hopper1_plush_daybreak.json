@@ -1,0 +1,6 @@
+{
+  "parent": "kamenridercraft:block/hopper1_plush",
+  "textures": {
+    "0": "kamenridercraft:block/hopper1_daybreak"
+  }
+}

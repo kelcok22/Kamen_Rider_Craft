@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/hopper1_plush_daybreak"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/hopper1_plush_daybreak",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/hopper1_plush_daybreak",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/hopper1_plush_daybreak",
+			"y": 90
+		}
+	}
+}

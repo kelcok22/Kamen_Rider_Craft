@@ -36,6 +36,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_BLOCK;
+import static com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR;
 
 /*import com.kelco.kamenridercraft.block.storageBlocks.AstroswitchPanelBlock;*/
 
@@ -146,7 +147,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> PURE_GAIA_MEMORY_BLOCK = registerBlock("pure_gaia_memory_block",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).lightLevel((glow) -> 15)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> GAIA_MEMORY_ORE = registerBlock("gaiamemoryblock",
@@ -193,7 +194,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> GINGA_METEOR = registerBlock("ginga_meteor",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> ARTIFICIAL_GRAVITY_BLOCK = registerBlock("artificial_gravity_block",
             () -> new ArtificialGravityBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -210,7 +211,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> MIGHTY_BLOCK = registerBlock("mighty_block",
             () -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> BANG_BANG_DRUM = registerBlock("bang_bang_drum",
             () -> new DespawnBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
@@ -250,7 +251,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> COUNTER_95DO = registerBlock("counter_95do",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> HIDEN_3D_PRINTER = registerBlock("hiden_3d_printer",
@@ -274,11 +275,11 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> HEATPRESS_EXTRACTOR = registerBlock("heatpress_extractor",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> CANDY_SHOP = registerBlock("candy_shop",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DARK_TREAT_GLASS = registerBlock("dark_treat",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).sound(SoundType.HONEY_BLOCK), UniformInt.of(0, 0), DyeColor.BROWN).AddToTabList(RIDER_BLOCK));
@@ -296,7 +297,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> KURUMA_BRICK = registerBlock("kuruma_brick",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<LadderBlock> DRIVE_PIT_LADDER = registerBlock("drive_pit_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
@@ -309,55 +310,55 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> ORANGE_GEM_BLOCK = registerBlock("orange_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.ORANGE).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.ORANGE).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> RED_GEM_BLOCK = registerBlock("red_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.RED).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.RED).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> BLUE_GEM_BLOCK = registerBlock("blue_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.BLUE).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.BLUE).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GREEN_GEM_BLOCK = registerBlock("green_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.GREEN).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.GREEN).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> YELLOW_GEM_BLOCK = registerBlock("yellow_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.YELLOW).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.YELLOW).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> CYAN_GEM_BLOCK = registerBlock("cyan_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.CYAN).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.CYAN).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PURPLE_GEM_BLOCK = registerBlock("purple_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.PURPLE).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.PURPLE).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> BLACK_GEM_BLOCK = registerBlock("black_gem_block",
             () -> new GlassBaseBlockDropExperience(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.BLACK).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f), UniformInt.of(0, 0), DyeColor.BLACK).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> HELHEIM_LOG = registerBlock("helheim_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> HELHEIM_WOOD = registerBlock("helheim_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> STRIPPED_HELHEIM_LOG = registerBlock("stripped_helheim_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> STRIPPED_HELHEIM_WOOD = registerBlock("stripped_helheim_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> HELHEIM_PLANKS = registerBlock("helheim_planks",
-            () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> HELHEIM_STAIRS = registerBlock("helheim_stairs",
             () -> new StairBlock(RiderBlocks.HELHEIM_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(2f)));
@@ -467,21 +468,21 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> KAMEN_CAFE_COUNTER = registerBlock("kamen_cafe_counter",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> CAFE_COUNTER = registerBlock("cafe_counter",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> MONITOR = registerBlock("monitor",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_DECOR));
     //.lightLevel((glow) -> { return 15; })
 
     public static final DeferredBlock<Block> KUUGA_TOMB = registerBlock("kuuga_tomb",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> OVERLORD_OOPART = registerBlock("overlord_oopart",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
@@ -493,360 +494,360 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> PLANKS_BIG_OAK_GOLDEN_TRIM = registerBlock("planks_big_oak_golden_trim",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PLANKS_BROWN = registerBlock("planks_brown",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PLANKS_DARK_BLUE = registerBlock("planks_dark_blue",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PLANKS_LIGHT_BLUE = registerBlock("planks_light_blue",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PLANKS_WHITE = registerBlock("planks_white",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> QUARTZ_BLOCK_GOLD_TRIM = registerBlock("quartz_block_gold_trim",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SPRUCE_FLOORING = registerBlock("spruce_flooring",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> IMAGIN_SAND_BLOCK = registerBlock("imagin_sand_block",
             () -> new BaseFallingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)
-                    .strength(0.5f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(0.5f)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> DENLINER_INTERIOR = registerBlock("denliner_interior",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_INTERIOR_DARKER = registerBlock("denliner_interior_darker",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_INTERIOR_WITH_LINE = registerBlock("denliner_interior_with_line",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> DENLINER_INTERIOR_WINDOW = registerBlock("denliner_interior_windo",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE = registerBlock("denliner_side_with_line",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_SIDE_WITH_START_LINE = registerBlock("denliner_side_with_start_line",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE_IKAZUCHI = registerBlock("denliner_side_with_line_ikazuchi",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_SIDE_WITH_LINE_REKKOU = registerBlock("denliner_side_with_line_rekkou",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_ROOF = registerBlock("denliner_roof",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_LOGO_TOP = registerBlock("denliner_logo_top",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_LOGO_BOTTOM = registerBlock("denliner_logo_bottom",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_LOGO_SIDE = registerBlock("denliner_logo_side",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_LOGO_SIDER = registerBlock("denliner_logo_sider",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_GLASS = registerBlock("denliner_glass",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_GLASS2 = registerBlock("denliner_glass2",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_GLASS3 = registerBlock("denliner_glass3",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_GLASS_IKAZUCHI = registerBlock("denliner_glass_ikazuchi",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_GLASS_REKKOU = registerBlock("denliner_glass_rekkou",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEGA_DENLINER_GLASS = registerBlock("nega_denliner_glass",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_GOLD = registerBlock("denliner_gold",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_MATEL = registerBlock("denliner_matel",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_MATEL_TOP = registerBlock("denliner_matel_top",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_MATEL_TOP2 = registerBlock("denliner_matel_top2",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_MATEL_SIDE = registerBlock("denliner_matel_side",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_MATEL_DARK = registerBlock("denliner_matel_dark",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> DENLINER_MATEL_DARK_LINE = registerBlock("denliner_matel_dark_line",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_INTERIOR = registerBlock("new_denliner_interior",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_SIDE_WITH_LINE = registerBlock("new_denliner_side_with_line",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_SIDE_WITH_START_LINE = registerBlock("new_denliner_side_with_start_line",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_LOGO_TOP = registerBlock("new_denliner_logo_top",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_LOGO_BOTTOM = registerBlock("new_denliner_logo_bottom",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_MATEL_TOP = registerBlock("new_denliner_matel_top",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_MATEL_TOP2 = registerBlock("new_denliner_matel_top2",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> NEW_DENLINER_MATEL_SIDE = registerBlock("new_denliner_matel_side",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> KING_LINER_RED = registerBlock("king_liner_red",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> KING_LINER_LOGO_TOP = registerBlock("king_liner_logo_top",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> KING_LINER_LOGO_BOTTOM = registerBlock("king_liner_logo_bottom",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> KING_LINER_LOGO_SIDE = registerBlock("king_liner_logo_side",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> KING_LINER_LOGO_SIDER = registerBlock("king_liner_logo_sider",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> KING_LINER_WINDOW = registerBlock("king_liner_windo",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> GAOH_LINER_GOLD = registerBlock("gaoh_liner_gold",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GAOH_LINER_GREEN = registerBlock("gaoh_liner_green",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GAOH_LINER_WINDOW = registerBlock("gaoh_liner_windo",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> GAOHLINER_LOGO_TOP = registerBlock("gaohliner_logo_top",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GAOHLINER_LOGO_BOTTOM = registerBlock("gaohliner_logo_bottom",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GAOHLINER_LOGO_SIDE = registerBlock("gaohliner_logo_side",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GAOHLINER_LOGO_SIDER = registerBlock("gaohliner_logo_sider",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> ZERO_LINER_GREEN = registerBlock("zero_liner_green",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> ANOTHER_DENLINER_WINDOW = registerBlock("another_denliner_windo",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> ANOTHER_DENLINER_SIDE_WITH_LINE = registerBlock("another_denliner_side_with_line",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> DORAN_SCALE = registerBlock("doran_scale",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> CELL_ALLOY_BLOCK = registerBlock("cell_alloy_block",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> RABBIT_HUTCH_LIGHT = registerBlock("rabbit_hutch_light",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> RABBIT_HUTCH_CYAN = registerBlock("rabbit_hutch_cyan",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> RABBIT_HUTCH_CYAN_LIGHT = registerBlock("rabbit_hutch_cyan_light",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> RABBIT_HUTCH_CYAN2 = registerBlock("rabbit_hutch_cyan2",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> RABBIT_HUTCH_COMPUTER_STAIRS = registerBlock("rabbit_hutch_computer_stairs",
             () -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<LadderBlock> RABBIT_HUTCH_LADDER = registerBlock("rabbit_hutch_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON).strength(2F)));
 
     public static final DeferredBlock<Block> SHIFT_ALLOY_BLOCK = registerBlock("shift_alloy_block",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> MEGAHEX_LIGHT = registerBlock("megahex_light",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> HIDEN_METAL_BLOCK = registerBlock("hiden_metal_block",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> STONE_FLOORING = registerBlock("stone_flooring",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_BOOKSHELF = registerBlock("sword_of_logos_bookshelf",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_BRICK = registerBlock("sword_of_logos_brick",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_BLOCK = registerBlock("sword_of_logos_gold_block",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
                     .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE))
-                    .is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .is_basic_cube().addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_TRIM = registerBlock("sword_of_logos_gold_trim",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_LOGO = registerBlock("sword_of_logos_logo",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_SWORD_BLADE = registerBlock("sword_of_logos_sword_blade",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.STONE)).AddToTabList(RIDER_DECOR));
 
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_STAIRS = registerBlock("sword_of_logos_stairs",
             () -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD_STAIRS = registerBlock("sword_of_logos_wood_stairs",
             () -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_GOLD_STAIRS = registerBlock("sword_of_logos_gold_stairs",
             () -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_TABEL_STAIRS = registerBlock("sword_of_logos_tabel_stairs",
             () -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_TABEL_TOP = registerBlock("sword_of_logos_tabel_top",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).lightLevel((glow) -> 15)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD_TRIM = registerBlock("sword_of_logos_wood_trim",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD = registerBlock("sword_of_logos_wood",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_WOOD2 = registerBlock("sword_of_logos_wood2",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2.0F, 6.0F).sound(SoundType.STONE)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> SWORD_OF_LOGOS_ARCH = registerBlock("sword_of_logos_arch",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GRANUTE_GLASS = registerBlock("granute_glass",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)
-                    .strength(0.5F)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(0.5F)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<IronBarsBlock> GRANUTE_GLASS_PANE = registerBlock("granute_glass_pane",
             () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE)
@@ -863,7 +864,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> WALLPLATE = registerBlock("wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> WALLPLATE_STAIRS = registerBlock("wallplate_stairs",
             () -> new StairBlock(RiderBlocks.WALLPLATE.get().defaultBlockState(),
@@ -879,7 +880,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> HAZARD_WALLPLATE = registerBlock("hazard_wallplate",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> GHOST_LINER_WHEEL = registerBlock("ghostliner_wheel",
             () -> new StairBlock(RiderBlocks.WALLPLATE.get().defaultBlockState(),
@@ -888,7 +889,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> BLACK_WALLPLATE = registerBlock("black_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> BLACK_WALLPLATE_STAIRS = registerBlock("black_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.BLACK_WALLPLATE.get().defaultBlockState(),
@@ -907,7 +908,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> WHITE_WALLPLATE = registerBlock("white_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> WHITE_WALLPLATE_STAIRS = registerBlock("white_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.WHITE_WALLPLATE.get().defaultBlockState(),
@@ -928,7 +929,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> GREY_WALLPLATE = registerBlock("grey_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> GREY_WALLPLATE_STAIRS = registerBlock("grey_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.GREY_WALLPLATE.get().defaultBlockState(),
@@ -943,7 +944,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> YELLOW_WALLPLATE = registerBlock("yellow_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> YELLOW_WALLPLATE_STAIRS = registerBlock("yellow_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.YELLOW_WALLPLATE.get().defaultBlockState(),
@@ -963,7 +964,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> RED_WALLPLATE = registerBlock("red_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> RED_WALLPLATE_STAIRS = registerBlock("red_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.RED_WALLPLATE.get().defaultBlockState(),
@@ -979,7 +980,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> GREEN_WALLPLATE = registerBlock("green_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> GREEN_WALLPLATE_STAIRS = registerBlock("green_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.GREEN_WALLPLATE.get().defaultBlockState(),
@@ -995,7 +996,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> LIGHT_GREEN_WALLPLATE = registerBlock("light_green_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> LIGHT_GREEN_WALLPLATE_STAIRS = registerBlock("light_green_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.LIGHT_GREEN_WALLPLATE.get().defaultBlockState(),
@@ -1016,7 +1017,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> CYAN_WALLPLATE = registerBlock("cyan_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> CYAN_WALLPLATE_STAIRS = registerBlock("cyan_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.CYAN_WALLPLATE.get().defaultBlockState(),
@@ -1032,7 +1033,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> LIGHT_BLUE_WALLPLATE = registerBlock("light_blue_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> LIGHT_BLUE_WALLPLATE_STAIRS = registerBlock("light_blue_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.LIGHT_BLUE_WALLPLATE.get().defaultBlockState(),
@@ -1048,7 +1049,7 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> BLUE_WALLPLATE = registerBlock("blue_wallplate",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<StairBlock> BLUE_WALLPLATE_STAIRS = registerBlock("blue_wallplate_stairs",
             () -> new StairBlock(RiderBlocks.BLUE_WALLPLATE.get().defaultBlockState(),
@@ -1065,11 +1066,11 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> WOODEN_PANEL = registerBlock("wooden_panel",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> WOODEN_PANEL2 = registerBlock("wooden_panel2",
             () -> new BaseFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<DoorBlock> GLASS_DOOR = registerBlock("glass_door",
             () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
@@ -1085,27 +1086,27 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> CORNERSTORE_SIGN = registerBlock("cornerstore_sign",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> VERTICAL_PANEL = registerBlock("vertical_panel",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)
-                    .strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> CHECKERED_TILE = registerBlock("checkered_tile",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> YELLOW_CHECKERED_TILE = registerBlock("yellow_checkered_tile",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> LIME_CHECKERED_TILE = registerBlock("lime_checkered_tile",
             () -> new BaseBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_GLAZED_TERRACOTTA)
-                    .requiresCorrectToolForDrops().strength(2f)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PAVEMENT_ROADLINE = registerBlock("pavement_roadline",
             () -> new RotatableSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
-                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PAVEMENT = registerBlock("pavement",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB)
@@ -1113,38 +1114,44 @@ public class RiderBlocks {
 
     public static final DeferredBlock<Block> MEGAHEX_MATEL = registerBlock("megahex_matel",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> MEGAHEX_MATEL_LINES = registerBlock("megahex_matel_lines",
             () -> new BaseBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
-                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)).is_basic_cube().addToList(RIDER_DECOR));
 
 
 
     public static final DeferredBlock<Block> HAYABUSA_KUN = registerBlock("hayabusa_kun",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> UTAN = registerBlock("utan",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> PUNKJACKOLANTERN = registerBlock("punkjackolantern",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.JACK_O_LANTERN)
-                    .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1), Block.box(3, 0, 3, 13, 7, 13)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+                    .strength(2f).dynamicShape().lightLevel((p_152632_) -> 1), Block.box(3, 0, 3, 13, 7, 13)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> LOVEKOV_PLUSH = registerBlock("lovekov_plush",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLUE_WOOL), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> VICE_DUCKY = registerBlock("vice_ducky",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).sound(new SoundType(1.0F, 1.0F, SoundEvents.BAT_DEATH, SoundEvents.BAT_AMBIENT, SoundEvents.BAT_HURT, SoundEvents.BAT_HURT, SoundEvents.BAT_DEATH)), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.YELLOW_WOOL).sound(new SoundType(1.0F, 1.0F, SoundEvents.BAT_DEATH, SoundEvents.BAT_AMBIENT, SoundEvents.BAT_HURT, SoundEvents.BAT_HURT, SoundEvents.BAT_DEATH)), Block.box(4, 0, 4, 18, 10, 12)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> FERBUS = registerBlock("ferbus",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> YURUSEN_PLUSH = registerBlock("yurusen_plush",
-            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(com.kelco.kamenridercraft.item.KRCCreativeTabs.RIDER_DECOR));
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
 
+    public static final DeferredBlock<Block> HOPPER1_PLUSH = registerBlock("hopper1_plush",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GREEN_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
 
+    public static final DeferredBlock<Block> HOPPER1_PLUSH_DAYBREAK = registerBlock("hopper1_plush_daybreak",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ORANGE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
 
+    public static final DeferredBlock<Block> HOPPER1_PLUSH_WITHER = registerBlock("hopper1_plush_wither",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
 
     public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)

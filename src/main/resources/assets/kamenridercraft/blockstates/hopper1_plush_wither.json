@@ -1,0 +1,19 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "kamenridercraft:block/hopper1_plush_wither"
+		},
+		"facing=south": {
+			"model": "kamenridercraft:block/hopper1_plush_wither",
+			"y": 180
+		},
+		"facing=west": {
+			"model": "kamenridercraft:block/hopper1_plush_wither",
+			"y": 270
+		},
+		"facing=east": {
+			"model": "kamenridercraft:block/hopper1_plush_wither",
+			"y": 90
+		}
+	}
+}
