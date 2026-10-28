@@ -69,11 +69,15 @@ public class GamerDriverItem extends RiderDriverItem {
         }
         if ((this == ExAidRiderItems.GAMER_DRIVER_EX_AID.get()) || (this == ExAidRiderItems.GAMER_DRIVER_BRAVE.get()) || (this == ExAidRiderItems.GAMER_DRIVER_SNIPE.get()) || (this == ExAidRiderItems.GAMER_DRIVER_LAZER.get()) || (this == ExAidRiderItems.GAMER_DRIVER_GENM.get())){
             if (slot == EquipmentSlot.HEAD) {
-                if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 10) {
+                if (henshin_tick > 30) {
                     layerInfo.add(new LevelOneRingRenderLayerInfo("transforming/lv1_ring_" + riderName));
                 }
             }
         }
+    }
+    public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+        if (getFormItem(stack, 1, 60) == ModdedItemCore.BLANK_FORM.asItem())return 60;
+        return 30;
     }
 
     public void summonParaDX(Player player) {
@@ -143,19 +147,19 @@ public class GamerDriverItem extends RiderDriverItem {
 
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        double henshinTick = getHenshinTick(itemstack,rider);
         if (equipmentSlot == EquipmentSlot.FEET) {
             String belt = ((RiderDriverItem) itemstack.getItem()).beltText;
             if (((RiderDriverItem) itemstack.getItem()).beltText == null) {
                 belt = getFormItem(itemstack, 1).getBeltTex();
             }
-
             if (itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_GENM.get() && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR.get()))
                 belt = "bugster_buckle";
             if ((itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()
                     || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_POPPY.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_LAZER.get())
                     && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR_II.get())) belt = "bugster_buckle_ii";
 
-            if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
+            if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)||Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") &&henshinTick > 30) {
                 belt = getFormItem(itemstack, 1).getBeltTex() + "_un";
             }
 
@@ -166,47 +170,46 @@ public class GamerDriverItem extends RiderDriverItem {
             return "belts/" + belt;
         } else if (equipmentSlot == EquipmentSlot.HEAD) {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
-            return getFormItem(itemstack, 2).getFormName(false);
+            return getFormItem(itemstack, 2,henshinTick).getFormName(false);
         }else {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
             if (belt == ExAidRiderItems.GAMER_DRIVER_SNIPE.get()) {
-                if (getFormItem(itemstack, 2) == ExAidRiderItems.JET_COMBAT_GASHAT.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_TANK_GASHAT.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.XEVIOUS_GASHAT.get()) {
+                if (getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.JET_COMBAT_GASHAT.get() ||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.BANG_BANG_TANK_GASHAT.get() ||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.XEVIOUS_GASHAT.get()) {
                     return riderName + "_jet";
-                } else if (getFormItem(itemstack, 2) == ExAidRiderItems.BANG_BANG_SIMULATION_GASHAT.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_JET_COMBAT_GASHAT.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()){
+                } else if (getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.BANG_BANG_SIMULATION_GASHAT.get() ||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.PROTO_JET_COMBAT_GASHAT.get() ||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get() ||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_SNIPE.get()){
                     return riderName + "_nocape";
                 }
 
             }
 
             if (belt == ExAidRiderItems.GAMER_DRIVER_BRAVE.get()) {
-                if (getFormItem(itemstack, 2) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get() ||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get()||
-                        getFormItem(itemstack, 2) == ExAidRiderItems.NIGHT_OF_SAFARI_GASHAT.get()){
+                if (getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get() ||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.PROTO_DRAGO_KNIGHT_HUNTER_Z_GASHAT_BRAVE.get()||
+                        getFormItem(itemstack, 2,henshinTick) == ExAidRiderItems.NIGHT_OF_SAFARI_GASHAT.get()){
                     return riderName + "_hunter";
                 }
             }
 
-            if (getFormItem(itemstack, 2).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats")))) {
+            if (getFormItem(itemstack, 2,henshinTick).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats")))) {
                 return riderName + "_lv3";
             }
 
-            if (getFormItem(itemstack, 2).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats_visor")))) {
+            if (getFormItem(itemstack, 2,henshinTick).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/lv3_gashats_visor")))) {
                 return riderName + "_lv3_visor";
             }
         }
-        return riderName + getFormItem(itemstack, 1).getFormName(false);
-
+        return super.getText(itemstack,equipmentSlot,rider,riderName) ;
     }
 
 
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
-
-        if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)) {
+        double henshinTick = getHenshinTick(itemstack,rider);
+        if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)||Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") &&henshinTick > 30) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/gamer_driver_belt.geo.json");
         }
 

@@ -74,7 +74,7 @@ public class ExAidRiderItems {
                         }
                     }
                 }
-            }.setFormDelay(15d).changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.setFormDelay(30d).changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> MIGHTY_ACTION_X_GASHAT = ITEMS.register("mighty_action_x_gashat",
