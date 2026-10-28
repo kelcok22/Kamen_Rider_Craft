@@ -168,8 +168,9 @@ public class GamerDriverItem extends RiderDriverItem {
             }
 
             return "belts/" + belt;
-        } else if (equipmentSlot == EquipmentSlot.HEAD) {
-            RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
+        }
+        if (henshinTick > 30)return "blank";
+        if (equipmentSlot == EquipmentSlot.HEAD) {
             return getFormItem(itemstack, 2,henshinTick).getFormName(false);
         }else {
             RiderDriverItem belt = ((RiderDriverItem) itemstack.getItem());
