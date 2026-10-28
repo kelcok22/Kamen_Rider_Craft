@@ -1317,8 +1317,16 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 	public static final DeferredItem<Item> AQUA_CORE = ITEMS.register("aqua_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","aqua","aqua_driver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
-					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2,true,false))
-					.isGlowing().addToList(OOO_TAB_ITEM));
+					,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false),new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2,true,false)) {
+                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                        super.transformationEffect(itemstack, player,tick);
+                        if (tick==30d) AnimationUtil.playPose(player,"zeztz.pose");
+                        if (tick==1d) {
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }}.setFormDelay(1).isGlowing().addToList(OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> PURPLE_MEDALS_SEALED = ITEMS.register("purple_medals_sealed",
@@ -1387,8 +1395,15 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 					.hideBeltFormInfo().overrideBeltText("rebirth_driver_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> AQUA_DRIVER = ITEMS.register("aqua_driver",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aqua",AQUA_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
-					.hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"aqua",AQUA_CORE ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties()){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels( layerInfo,  itemStack,  rider,  slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider))
+                            layerInfo.add(new AquaRenderLayerInfo("transforming/meteor_storm"));
+                    }
+                }
+            }.hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> POSEIDONDRIVER = ITEMS.register("poseidon_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"poseidon",SAME_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties())
@@ -1495,8 +1510,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 						}
 					});
 				}
-			}
-					.hasInventoryGui().hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(OOO_TAB_ITEM));
+			}.hasInventoryGui().hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
@@ -1506,7 +1520,6 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 	public static final DeferredItem<Item> POWERED_UP_CORE_DRIVER = ITEMS.register("powered_up_core_driver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"powered_up_core",EBI_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.UNCOMMON))
 					.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL,SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
-
 
 	public static final DeferredItem<Item> GREEED_BLET_ANKH_LOST = ITEMS.register("greeed_blet_ankh_lost",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ankh_lost",TAKA_MEDAL ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().rarity(Rarity.RARE))
