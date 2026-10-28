@@ -323,7 +323,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 form.putBoolean("Update_form", false);
             };
             CustomData.update(DataComponents.CUSTOM_DATA, itemStack, data);
-            Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).setBaseValue(getBaseHenshinTick(itemStack));
+            Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).setBaseValue(getBaseHenshinTick(itemStack,rider));
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(0);
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(0);
@@ -697,13 +697,13 @@ public class RiderDriverItem extends RiderArmorItem {
         if (itemStack.has(DataComponents.CUSTOM_DATA)) {
             CompoundTag tag = Objects.requireNonNull(itemStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
             if (tag.getBoolean("Update_form")) {
-                transformingTick = getBaseHenshinTick(itemStack);
+                transformingTick = getBaseHenshinTick(itemStack,rider);
             }
         }
         return transformingTick;
     }
 
-    public double getBaseHenshinTick(ItemStack stack){
+    public double getBaseHenshinTick(ItemStack stack, LivingEntity ride){
         return getFormItem(stack, 1).getHenshinTick();
     }
 

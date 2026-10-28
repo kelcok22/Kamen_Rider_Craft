@@ -3,8 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.CellMedalProgramer;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.MeteorBallLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.vehicles.RidevendorVendingModeEntity;
@@ -839,8 +838,10 @@ public class OOORiderItems {
 					new MobEffectInstance(MobEffects.REGENERATION, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+					super.transformationEffect(itemstack, player,tick);
+                    if (tick==50d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
@@ -848,7 +849,7 @@ public class OOORiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 50, 0, 0, 0, 0.1);
 				}
-			}.changeSlot(1).addToList(OOO_TAB_ITEM));
+			}}.setFormDelay(1d).changeSlot(1).addToList(OOO_TAB_ITEM));
 
 	public static final DeferredItem<Item> HACHI_GODA_MEDAL = ITEMS.register("hachi_goda_medal",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_hachi","goda","goda_driver_belt",
@@ -1142,7 +1143,7 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)) {
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
-                    if (tick==50d&itemstack.getItem()==OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==50d&itemstack.getItem()==OOODRIVER.asItem()||tick==50d&itemstack.getItem()==SHOCKER_OOODRIVER.asItem()) AnimationUtil.playPose(player,"ooo.pose");
                     if (tick==1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -1189,8 +1190,11 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 			() -> new RiderFormChangeItem(new Item.Properties(),"","oooooo","oooooodriver_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)) {
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+				public void transformationEffect(ItemStack itemstack, LivingEntity player,Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==50d) AnimationUtil.playPose(player,"ooo.pose");
+                    if (tick==1d) {
+                        if (tick==50d) AnimationUtil.playPose(player,"oooooo.pose");
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 300, 0, 0, 0, 0.1);
@@ -1201,9 +1205,8 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 					thunder.setVisualOnly(true);
 					thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
 					player.level().addFreshEntity(thunder);
-
 				}
-			}.isGlowing().changeBeltModel("geo/belts/ooo_belt.geo.json").useBasicModel().setModelName("shocker_medal"));
+			}}.setFormDelay(1).isGlowing().changeBeltModel("geo/belts/ooo_belt.geo.json").useBasicModel().setModelName("shocker_medal"));
 
 	public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","birth","birth_driver_belt",
@@ -1299,8 +1302,16 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_tora_greeed_absorption","ooo_ancient","ooodriver_belt",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false),
-					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false))
-					.changeSlot(2).addToList(OOO_TAB_ITEM));
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+                    super.transformationEffect(itemstack, player,tick);
+                    if (tick==1d) {
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                    player.level().addFreshEntity(thunder);
+                }
+            }}.setFormDelay(1d).changeSlot(2).addToList(OOO_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> AQUA_CORE = ITEMS.register("aqua_core",
@@ -1455,6 +1466,18 @@ public static final DeferredItem<Item> BLOKEES_KUJAKU_MEDAL = ITEMS.register("bl
 	public static final DeferredItem<Item> OOOOOODRIVER = ITEMS.register("oooooodriver",
 			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oooooo",HEXA_OOOOOO ,OOOHELMET,OOOCHESTPLATE,OOOLEGGINGS , new Item.Properties().component(DataComponents.CONTAINER, ItemContainerContents.EMPTY))
 			{
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin =rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
+                        if ( RiderDriverItem.isTransforming(rider) && henshin < 30) {
+                            layerInfo.add(new ooooooHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" ));
+                        }
+                    }
+                }
+                public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+                    return 60;
+                }
 				@Override
 				public void openInventory(ServerPlayer player, InteractionHand hand, ItemStack itemstack) {
 					player.openMenu(new MenuProvider() {
