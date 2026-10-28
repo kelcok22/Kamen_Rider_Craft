@@ -11,10 +11,13 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -63,6 +66,11 @@ public class ExAidRiderItems {
                                 ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                         player.getX(), player.getY() + 1,
                                         player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 15d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
                         }
                     }
                 }
