@@ -56,13 +56,17 @@ public class ExAidRiderItems {
                     }
                 }
 
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 15d) {
+                                ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                        player.getX(), player.getY() + 1,
+                                        player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
                 }
-            }.changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.setFormDelay(15d).changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> MIGHTY_ACTION_X_GASHAT = ITEMS.register("mighty_action_x_gashat",

@@ -4,6 +4,8 @@ import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.LevelOneRingRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
@@ -51,6 +53,7 @@ public class GamerDriverItem extends RiderDriverItem {
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
         super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        double henshin_tick = getHenshinTick(itemStack, rider);
         if(slot==EquipmentSlot.FEET){
             String texture;
             RiderFormChangeItem formItem = getFormItem(itemStack, 2);
@@ -64,8 +67,14 @@ public class GamerDriverItem extends RiderDriverItem {
                 else layerInfo.add(new RenderLayerInfo(texture,null,texture+ "_glowmask"));
             }
         }
+        if ((this == ExAidRiderItems.GAMER_DRIVER_EX_AID.get()) || (this == ExAidRiderItems.GAMER_DRIVER_BRAVE.get()) || (this == ExAidRiderItems.GAMER_DRIVER_SNIPE.get()) || (this == ExAidRiderItems.GAMER_DRIVER_LAZER.get()) || (this == ExAidRiderItems.GAMER_DRIVER_GENM.get())){
+            if (slot == EquipmentSlot.HEAD) {
+                if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 10) {
+                    layerInfo.add(new LevelOneRingRenderLayerInfo("transforming/lv1_ring_" + riderName));
+                }
+            }
+        }
     }
-
 
     public void summonParaDX(Player player) {
         ParaDXSummonEntity paradx = MobsCore.PARADX_SUMMON.get().create(player.level());
