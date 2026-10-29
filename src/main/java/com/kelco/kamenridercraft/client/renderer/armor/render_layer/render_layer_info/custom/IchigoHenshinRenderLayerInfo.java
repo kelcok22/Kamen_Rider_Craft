@@ -2,6 +2,7 @@ package com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_laye
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -24,21 +25,23 @@ public class IchigoHenshinRenderLayerInfo extends RenderLayerInfo {
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
                                  MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
         GeoBone storm = model.getBone("storm").orElse(null);
-        if (storm != null) {
-                storm.setRotZ((entity.tickCount + partialTick)/5f);
+        if (storm != null && entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() <= 76D) {
+            storm.setRotZ((entity.tickCount + partialTick) / 5f);
         }
     }
 
     public RenderType getRenderType(float partialTick, LivingEntity livingEntity) {
         float f = (float) livingEntity.tickCount + partialTick;
-        return RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/ichigo_henshin.png"), 0, f/10);
+        return RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/ichigo_henshin.png"), 0, f / 10);
     }
 
     public float getScaleX() {
         return 1.5f;
     }
 
-    public float getScaleY() {return 1.5f;}
+    public float getScaleY() {
+        return 1.5f;
+    }
 
     public float getScaleZ() {
         return 1.5f;
@@ -55,6 +58,4 @@ public class IchigoHenshinRenderLayerInfo extends RenderLayerInfo {
     public float getZ() {
         return 0f;
     }
-
-
 }

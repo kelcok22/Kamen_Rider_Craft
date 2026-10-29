@@ -1589,6 +1589,8 @@ public class FourzeRiderItems {
                     }
                 }
 
+                //TODO MAKE ANIMATION FOR METEOR STORM HENSHIN
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
