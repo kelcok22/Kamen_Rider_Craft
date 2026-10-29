@@ -28,6 +28,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
@@ -1435,11 +1437,15 @@ public class OOORiderItems {
                     super.transformationEffect(itemstack, player, tick);
 					if (tick == 30d) {
 						AnimationUtil.playPose(player, "aqua.henshin");
-					}
-                    if (tick == 1d) {
+
+                    } else if (tick > 1d && tick < 25d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BUCKET_FILL, SoundSource.PLAYERS, 0.75F, 1.1F + ((20 - tick.floatValue()) / 20));
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BUCKET_EMPTY, SoundSource.PLAYERS, 0.5F, 0.9F + ((20 - tick.floatValue()) / 20));
+                    } else if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.TRIDENT_RETURN, SoundSource.PLAYERS, 1.0F, 1F);
                     }
                 }
             }.setFormDelay(1).isGlowing().addToList(OOO_TAB_ITEM));
