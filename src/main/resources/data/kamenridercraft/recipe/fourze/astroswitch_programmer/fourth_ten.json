@@ -1,0 +1,81 @@
+{
+	"type": "kamenridercraft:astroswitch_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:astroswitch"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:cosmic_switch"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:incomplete_magnet_switch_s"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:freeze_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:claw_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:board_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:giantfoot_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:aero_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:gyro_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:net_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:stamper_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:incomplete_cosmic_switch"
+			},
+			"weight": 5
+		}
+	]
+}

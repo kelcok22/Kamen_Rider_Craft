@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:astroswitch_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:drill_switch"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:solu_switch"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:super_drill_switch"
+			},
+			"weight": 15
+		}
+	]
+}

@@ -1485,6 +1485,9 @@ public class FourzeRiderItems {
                     .setModifiedPositionConditions("on_ground").setFormDelay(20).changeSlot(3)
                     .addSwitchForm(BLANK_TRIANGLE_ASTROSWITCH.get()).addToList(FOURZE_TAB_ITEM));
 
+    public static final DeferredItem<Item> INCOMPLETE_COSMIC_ASTROSWITCH = ITEMS.register("incomplete_cosmic_switch",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(FOURZE_TAB_ITEM));
+
     public static final DeferredItem<Item> COSMIC_ASTROSWITCH = ITEMS.register("cosmic_switch",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "fourze", "fourze_driver_belt",
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {

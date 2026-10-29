@@ -9,28 +9,28 @@
 				"count": 1,
 				"id": "kamenridercraft:rocket_switch"
 			},
-			"weight": 15
+			"weight": 17
 		},
 		{
 			"result": {
 				"count": 1,
 				"id": "kamenridercraft:launcher_switch"
 			},
-			"weight": 15
+			"weight": 17
 		},
 		{
 			"result": {
 				"count": 1,
 				"id": "kamenridercraft:drill_switch"
 			},
-			"weight": 15
+			"weight": 17
 		},
 		{
 			"result": {
 				"count": 1,
 				"id": "kamenridercraft:radar_switch"
 			},
-			"weight": 15
+			"weight": 17
 		},
 		{
 			"result": {
@@ -72,7 +72,7 @@
 				"count": 1,
 				"id": "kamenridercraft:elek_switch"
 			},
-			"weight": 15
+			"weight": 12
 		},
 		{
 			"result": {
@@ -142,7 +142,7 @@
 				"count": 1,
 				"id": "kamenridercraft:fire_switch"
 			},
-			"weight": 15
+			"weight": 12
 		},
 		{
 			"result": {
@@ -212,14 +212,14 @@
 				"count": 1,
 				"id": "kamenridercraft:incomplete_magnet_switch_n"
 			},
-			"weight": 15
+			"weight": 10
 		},
 		{
 			"result": {
 				"count": 1,
 				"id": "kamenridercraft:incomplete_magnet_switch_s"
 			},
-			"weight": 15
+			"weight": 10
 		},
 		{
 			"result": {
@@ -276,6 +276,13 @@
 				"id": "kamenridercraft:stamper_switch"
 			},
 			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:incomplete_cosmic_switch"
+			},
+			"weight": 5
 		}
 	]
 }

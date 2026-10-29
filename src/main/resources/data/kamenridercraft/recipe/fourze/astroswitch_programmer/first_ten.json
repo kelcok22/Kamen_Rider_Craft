@@ -1,0 +1,74 @@
+{
+	"type": "kamenridercraft:astroswitch_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:astroswitch"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:elek_switch"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:rocket_switch"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:launcher_switch"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:drill_switch"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:radar_switch"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:magic_hand_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:camera_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:parachute_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:chainsaw_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:hopping_switch"
+			},
+			"weight": 15
+		}
+	]
+}

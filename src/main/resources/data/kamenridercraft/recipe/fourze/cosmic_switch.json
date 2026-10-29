@@ -1,0 +1,41 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "fourze",
+	"pattern": [
+		"XYZ",
+		"ABC",
+		"DIE"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rocket_switch"
+		},
+		"A": {
+			"item": "kamenridercraft:magnet_switch_n"
+		},
+		"B": {
+			"item": "kamenridercraft:incomplete_cosmic_switch"
+		},
+		"C": {
+			"item": "kamenridercraft:magnet_switch_s"
+		},
+		"Y": {
+			"item": "kamenridercraft:elek_switch"
+		},
+		"Z": {
+			"item": "kamenridercraft:radar_switch"
+		},
+		"D": {
+			"item": "kamenridercraft:launcher_switch"
+		},
+		"I": {
+			"item": "kamenridercraft:fire_switch"
+		},
+		"E": {
+			"item": "kamenridercraft:drill_switch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:cosmic_switch"
+	}
+}

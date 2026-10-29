@@ -205,7 +205,16 @@ public class AstroswitchProgrammerEntity extends BaseContainerBlockEntity implem
         ItemStack modifierStack = items.get(OPTIONAL_INPUT_SLOT);
 
         // This acts as a reusable modifier.
-        if (modifierStack.is(FourzeRiderItems.FOURZE_LOGO.get())) {
+        if (modifierStack.is(FourzeRiderItems.ELEK_ASTROSWITCH.get())) {
+            return;
+        }
+        if (modifierStack.is(FourzeRiderItems.FIRE_ASTROSWITCH.get())) {
+            return;
+        }
+        if (modifierStack.is(FourzeRiderItems.MAGNET_ASTROSWITCH_N.get())) {
+            return;
+        }
+        if (modifierStack.is(FourzeRiderItems.MAGNET_ASTROSWITCH_S.get())) {
             return;
         }
 

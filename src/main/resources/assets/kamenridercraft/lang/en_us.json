@@ -4663,7 +4663,8 @@
 "item.kamenridercraft.gyro_switch": "Gyro Switch",
 "item.kamenridercraft.net_switch": "Net Switch",
 "item.kamenridercraft.stamper_switch": "Stamper Switch",
-"item.kamenridercraft.cosmic_switch": "Cosmic Switch",
+  "item.kamenridercraft.incomplete_cosmic_switch": "Unfinished Cosmic Switch",
+  "item.kamenridercraft.cosmic_switch": "Cosmic Switch",
 "item.kamenridercraft.fusion_switch": "Fusion Switch",
 
 "item.kamenridercraft.meteor_switch": "Meteor Switch",

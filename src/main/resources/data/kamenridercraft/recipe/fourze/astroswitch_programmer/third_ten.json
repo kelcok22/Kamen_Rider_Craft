@@ -1,0 +1,81 @@
+{
+	"type": "kamenridercraft:astroswitch_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:astroswitch"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:magnet_switch_n"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:stealth_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:hammer_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:water_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:medical_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:pen_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:wheel_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:screw_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:hand_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:scoop_switch"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:incomplete_magnet_switch_n"
+			},
+			"weight": 10
+		}
+	]
+}
