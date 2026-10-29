@@ -1438,7 +1438,7 @@ public class OOORiderItems {
 					if (tick == 30d) {
 						AnimationUtil.playPose(player, "aqua.henshin");
 
-                    } else if (tick > 1d && tick < 25d) {
+                    } else if (tick > 1d && tick < 18d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BUCKET_FILL, SoundSource.PLAYERS, 0.75F, 1.1F + ((20 - tick.floatValue()) / 20));
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BUCKET_EMPTY, SoundSource.PLAYERS, 0.5F, 0.9F + ((20 - tick.floatValue()) / 20));
                     } else if (tick == 1d) {

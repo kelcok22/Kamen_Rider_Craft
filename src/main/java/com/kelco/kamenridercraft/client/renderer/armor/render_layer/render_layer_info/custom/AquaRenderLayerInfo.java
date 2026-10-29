@@ -24,14 +24,17 @@ public class AquaRenderLayerInfo extends RenderLayerInfo {
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick,
                                  MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
-        double tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue()-partialTick;
+        double tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() - partialTick;
 
         GeoBone storm = model.getBone("storm").orElse(null);
-        if (storm != null) {
-                storm.setRotZ((entity.tickCount + partialTick)/2.5f);
-                storm.setScaleX((float) ((30-tick)/20));
-            storm.setScaleY((float) ((30-tick)/20));
-            storm.setScaleZ((float) ((30-tick)/20));
+        if (storm != null && entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() <= 18D) {
+            storm.setRotZ((entity.tickCount + partialTick) / 2.5f);
+            storm.setHidden(false);
+            storm.setScaleX((float) ((30 - tick) / 20));
+            storm.setScaleY((float) ((30 - tick) / 20));
+            storm.setScaleZ((float) ((30 - tick) / 20));
+        } else if (storm != null) {
+            storm.setHidden(true);
         }
     }
 
@@ -44,7 +47,9 @@ public class AquaRenderLayerInfo extends RenderLayerInfo {
         return 1f;
     }
 
-    public float getScaleY() {return 1f;}
+    public float getScaleY() {
+        return 1f;
+    }
 
     public float getScaleZ() {
         return 1f;
