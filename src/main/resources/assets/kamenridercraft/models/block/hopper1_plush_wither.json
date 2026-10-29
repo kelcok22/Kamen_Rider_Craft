@@ -1,6 +1,7 @@
 {
 	"parent": "kamenridercraft:block/hopper1_plush",
 	"textures": {
-		"0": "kamenridercraft:block/hopper1_withered"
+		"0": "kamenridercraft:block/hopper1_withered",
+		"particle": "kamenridercraft:block/hopper1_withered"
 	}
 }

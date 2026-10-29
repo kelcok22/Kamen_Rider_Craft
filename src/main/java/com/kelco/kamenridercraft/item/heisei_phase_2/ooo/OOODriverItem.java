@@ -1,12 +1,20 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GodaRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.MeteorStormRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooSuperHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,6 +27,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
+
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.IS_TRANSFORMING;
 
 public class OOODriverItem extends RiderDriverItem {
 
@@ -97,6 +107,36 @@ public class OOODriverItem extends RiderDriverItem {
             }
         }
         return "blank";
+    }
+
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        if (slot == EquipmentSlot.HEAD) {
+            double henshin =rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
+
+            if ( RiderDriverItem.isTransforming(rider) && henshin < 30) {
+                String combo = getCombo(getFormItem(itemStack, 1), getFormItem(itemStack, 2), getFormItem(itemStack, 3));
+
+                if (riderName=="goda"&& henshin< 25 && henshin> 5){
+                    layerInfo.add(new GodaRenderLayerInfo("transforming/meteor_storm"));
+                }
+                if (combo=="super_tatoba"){
+                    layerInfo.add(new oooSuperHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 3).getFormName(false)));
+                    layerInfo.add(new oooSuperHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 2).getFormName(false)));
+                    layerInfo.add(new oooSuperHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 1).getFormName(false)));
+                }else {
+                    layerInfo.add(new oooHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 3).getFormName(false)));
+                    layerInfo.add(new oooHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 2).getFormName(false)));
+                    if (combo.contains("tajadol") & (getFormItem(itemStack, 1) == OOORiderItems.TAKA_MEDAL.asItem() || getFormItem(itemStack, 1) == OOORiderItems.TAKA_ANKH_MEDAL.asItem())) {
+                        layerInfo.add(new oooHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 1).getFormName(false) + "_tajado"));
+                    } else
+                        layerInfo.add(new oooHenshinRenderLayerInfo("transforming/" + riderName + "_henshin" + getFormItem(itemStack, 1).getFormName(false)));
+                }
+            }
+        }
+    }
+    public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+        return 60;
     }
 
 

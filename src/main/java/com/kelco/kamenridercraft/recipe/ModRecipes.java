@@ -36,6 +36,28 @@ public class ModRecipes {
                 }
             });
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_SERIALIZER =
+            SERIALIZERS.register("astroswitch_programmer", () -> new RecipeSerializer<AstroswitchProgrammerRecipe>() {
+                @Override
+                public com.mojang.serialization.MapCodec<AstroswitchProgrammerRecipe> codec() {
+                    return AstroswitchProgrammerRecipe.CODEC;
+                }
+
+                @Override
+                public net.minecraft.network.codec.StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf, AstroswitchProgrammerRecipe> streamCodec() {
+                    return AstroswitchProgrammerRecipe.STREAM_CODEC;
+                }
+            });
+
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_TYPE =
+            TYPES.register("astroswitch_programmer", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "astroswitch_programmer";
+                }
+            });
+
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);

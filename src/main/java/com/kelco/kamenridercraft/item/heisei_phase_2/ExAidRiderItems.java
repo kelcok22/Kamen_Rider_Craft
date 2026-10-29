@@ -11,10 +11,13 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ex_aid.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -56,13 +59,22 @@ public class ExAidRiderItems {
                     }
                 }
 
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                                ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                        player.getX(), player.getY() + 1,
+                                        player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }.changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.setFormDelay(30d).changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> MIGHTY_ACTION_X_GASHAT = ITEMS.register("mighty_action_x_gashat",
@@ -83,13 +95,22 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_lv1", "brave", "gamer_driver_taddle_quest_lv_1",
                     new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false),
                     new MobEffectInstance(EffectCore.SLASH, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }.changeModel("brave_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.setFormDelay(30d).changeModel("brave_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> TADDLE_QUEST_X_GASHAT = ITEMS.register("taddle_quest_gashat",
@@ -110,13 +131,22 @@ public class ExAidRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }.changeModel("snipe_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.setFormDelay(30d).changeModel("snipe_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT = ITEMS.register("bang_bang_shooting_gashat",
@@ -137,13 +167,22 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_lv1", "lazer", "gamer_driver_bakusou_bike_lv_1",
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }.changeModel("lazer_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
+            }.setFormDelay(30d).changeModel("lazer_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_UNDER = ITEMS.register("bakusou_bike_gashat_under",
@@ -195,13 +234,22 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> GEKITOTSU_ROBOTS_GASHAT = ITEMS.register("gekitotsu_robots_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "robot_gamer", "ex_aid", "gamer_driver_mighty_action_x",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }.setFormToArmor().changeSlot(2).isGlowing().changeModel("robot_gamer.geo.json").addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
+            }.setFormDelay(30d).setFormToArmor().changeSlot(2).isGlowing().changeModel("robot_gamer.geo.json").addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> DOREMIFA_BEAT_GASHAT = ITEMS.register("doremifa_beat_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "beat_gamer", "ex_aid", "gamer_driver_mighty_action_x",
@@ -215,13 +263,22 @@ public class ExAidRiderItems {
                     }
                 }
 
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }.setFormToArmor().changeSlot(2)
+            }.setFormDelay(30d).setFormToArmor().changeSlot(2)
                     .isGlowing().changeModel("beat_gamer.geo.json").addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 10));
 
     public static final DeferredItem<Item> JET_COMBAT_GASHAT = ITEMS.register("jet_combat_gashat",
@@ -414,14 +471,22 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_lv1", "genm", "gamer_driver_proto_mighty_action_x_lv_1",
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
+                        }
+                    }
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            RiderDriverItem.updateOldFormItemSlot(itemstack, getSlot());
+                        }
+                    }
                 }
-            }
-                    .isGlowing().changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
+            }.setFormDelay(30d).isGlowing().changeModel("ex_aid_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> PROTO_MIGHTY_ACTION_X_GASHAT = ITEMS.register("proto_mighty_action_x_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "genm", "gamer_driver_proto_mighty_action_x",
