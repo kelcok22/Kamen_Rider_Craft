@@ -2,6 +2,10 @@
 	"values": [
 		"kamenridercraft:chocolate_bar",
 		{
+			"id": "ultracraft:nice_choco",
+			"required": false
+		},
+		{
 			"id": "#c:chocolatebar",
 			"required": false
 		},
