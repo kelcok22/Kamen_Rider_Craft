@@ -50,11 +50,25 @@ public class TheSeriesRiderItems {
 
     public static final DeferredItem<Item> THE_TYPHOON_CORE_NIGO = ITEMS.register("the_typhoon_core_nigo",
             () -> new RiderFormChangeItem(new Item.Properties(),"","nigo_the_first","typhoon_belt_the_first_nigo",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
                     ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.THE_TAB_ITEM));
+
+    public static final DeferredItem<Item> THE_TYPHOON_CORE_SHOCKER_RIDER = ITEMS.register("the_typhoon_core_shocker_rider",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","shocker_rider_the_next","typhoon_belt_the_next_shocker",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
@@ -87,6 +101,9 @@ public class TheSeriesRiderItems {
 
     public static final DeferredItem<Item> THE_TYPHOON_NIGO = ITEMS.register("the_typhoon_nigo",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nigo_the_first",THE_TYPHOON_CORE_NIGO ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.THE_TAB_ITEM));
+
+    public static final DeferredItem<Item> THE_TYPHOON_SHOCKER_RIDER = ITEMS.register("the_typhoon_shocker_rider",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shocker_rider_the_next",THE_TYPHOON_CORE_SHOCKER_RIDER ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.THE_TAB_ITEM));
 
     public static final DeferredItem<Item> THE_DOUBLE_TYPHOON = ITEMS.register("the_double_typhoon",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"v3_the_next",THE_DOUBLE_TYPHOON_CORE ,THE_ICHIGO_HELMET, THE_ICHIGO_CHESTPLATE,THE_ICHIGO_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.THE_TAB_ITEM));
