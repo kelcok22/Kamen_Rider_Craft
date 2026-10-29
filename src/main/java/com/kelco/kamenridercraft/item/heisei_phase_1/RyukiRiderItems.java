@@ -575,9 +575,6 @@ public class RyukiRiderItems {
 	public static final DeferredItem<Item> DEST_CLAW = ITEMS.register("dest_claw",
 			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).addToList(RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
-	public static final DeferredItem<Item> DEST_CLAW1 = ITEMS.register("dest_claw1",
-			() -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.6F, new Item.Properties()).addToList(RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
-
 	public static final DeferredItem<Item> GAZELLE_VISOR = ITEMS.register("gazelle_visor",
 			() -> new BaseItem(new Item.Properties().stacksTo(1)).addToList(RYUKI_TAB_ITEM));
 
@@ -755,7 +752,7 @@ public class RyukiRiderItems {
 					.useBasicModel().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DEST_CLAW_VENT = ITEMS.register("dest_claw_vent",
-			() -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), DEST_CLAW.get(), DEST_CLAW1.get()).addToList(RYUKI_TAB_ITEM));
+			() -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), DEST_CLAW.get(), DEST_CLAW.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> FREEZE_VENT = ITEMS.register("freeze_vent",
 			() -> new AdventCardItem(new Item.Properties(), "tiger", DEST_VISOR.get(), "freeze_vent")

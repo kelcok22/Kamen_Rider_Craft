@@ -353,7 +353,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                 int rand = random.nextInt(3);
                 if (rand == 1) {
                     setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_CLAW.get()));
-                    setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DEST_CLAW1.get()));
+                    setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DEST_CLAW.get()));
                 } else {
                     setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_VISOR.get()));
                     getItemBySlot(EquipmentSlot.OFFHAND).consume(1, this);
