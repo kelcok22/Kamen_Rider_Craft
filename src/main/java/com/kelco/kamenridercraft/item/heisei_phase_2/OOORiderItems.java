@@ -4,6 +4,8 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.CellMedalProgramer;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.AquaRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.CoreRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.PoseidonHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.ooooooHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
@@ -418,13 +420,15 @@ public class OOORiderItems {
     public static final DeferredItem<Item> EBI_MEDAL = ITEMS.register("ebi_medal",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "core", "core_driver_belt",
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 1d) {
+                        AnimationUtil.playPose(player, "core.pose");
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY() + 1,
-                            player.getZ(), 30, 0, 0, 0, 0.1);
+                            player.getZ(), 300, 0, 0, 0, 0.1);
                 }
-            }.isGlowing().changeSlot(1).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+            }}.setFormDelay(1).isGlowing().changeSlot(1).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
     public static final DeferredItem<Item> MUKADE_MEDAL = ITEMS.register("mukade_medal",
@@ -1527,8 +1531,17 @@ public class OOORiderItems {
             }.hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> POSEIDONDRIVER = ITEMS.register("poseidon_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "poseidon", SAME_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(KUJIRA_MEDAL, OOKAMIUO_MEDAL).overrideBeltText("poseidon_driver_belt")
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "poseidon", SAME_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin = rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
+                        if (RiderDriverItem.isTransforming(rider) && henshin < 30) {
+                            layerInfo.add(new PoseidonHenshinRenderLayerInfo("transforming/" + riderName + "_henshin"));
+                        }
+                    }
+                }
+            } .hideBeltFormInfo().addExtraBaseFormItems(KUJIRA_MEDAL, OOKAMIUO_MEDAL).overrideBeltText("poseidon_driver_belt")
                     .changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> ANCIENT_OOODRIVER = ITEMS.register("ancient_ooodriver",
@@ -1633,12 +1646,49 @@ public class OOORiderItems {
 
 
     public static final DeferredItem<Item> CORE_DRIVER = ITEMS.register("core_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()) {
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET&isTransforming(rider)) {
+                        return "blank";
+                    }
+                    else return super.getText(itemStack,  equipmentSlot,  rider, riderName);
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("core_henshin"));
+                        }
+                    }
+                }}.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> POWERED_UP_CORE_DRIVER = ITEMS.register("powered_up_core_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "powered_up_core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "powered_up_core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET&isTransforming(rider)) {
+                        return "blank";
+                    }
+                    else return super.getText(itemStack,  equipmentSlot,  rider, riderName);
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("powered_up_core_henshin"));
+                        }
+                    }
+                }
+            } .hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_ANKH_LOST = ITEMS.register("greeed_blet_ankh_lost",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_lost", TAKA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.RARE))
