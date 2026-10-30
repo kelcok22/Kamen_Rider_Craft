@@ -2,6 +2,8 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 
 import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.BirthBallLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -61,31 +63,50 @@ public class BirthDriverItem extends RiderDriverItem {
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+        super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+        if (slot == EquipmentSlot.HEAD) {
+            double henshin_tick = getHenshinTick(itemStack, rider);
+            if (RiderDriverItem.isTransformingFromBlank(itemStack,rider)&&henshin_tick<15) {
+                layerInfo.add(new BirthBallLayerInfo("birth_henshin"));
+            }
+        }
+    }
+
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        double henshin_tick = getHenshinTick(itemstack, rider);
         if (equipmentSlot == EquipmentSlot.FEET) {
+            if (isTransforming(rider)&&henshin_tick>15) {
+                return "belts/birth_driver_belt_cl";
+            }
             String belt = ((RiderDriverItem) itemstack.getItem()).beltText;
             if (((RiderDriverItem) itemstack.getItem()).beltText == null) {
                 belt = getFormItem(itemstack, 1).getBeltTex();
             }
             return "belts/" + belt;
-
-        } else if (equipmentSlot == EquipmentSlot.CHEST) return "birth_claws_1";
-        else if (equipmentSlot == EquipmentSlot.LEGS) return "birth_claws_2";
-        else return riderName + getFormItem(itemstack, 1).getFormName(false);
+        } else if (equipmentSlot == EquipmentSlot.CHEST&&!isTransformingFromBlank(itemstack,rider)){
+            return "birth_claws_1";
+        }
+        else if (equipmentSlot == EquipmentSlot.LEGS&&!isTransformingFromBlank(itemstack,rider)){
+            return "birth_claws_2";
+        }
+        else return super.getText(itemstack,  equipmentSlot, rider,riderName);
 
     }
 
     public boolean getGlowForSlot(ItemStack itemstack, EquipmentSlot currentSlot, LivingEntity livingEntity) {
+        double henshin_tick = getHenshinTick(itemstack, livingEntity);
         if (currentSlot == EquipmentSlot.FEET) {
             return getFormItem(itemstack, 1).getIsBeltGlowing();
         }
         if (isTransformed(livingEntity) && currentSlot == EquipmentSlot.HEAD)
-            return getFormItem(itemstack, 1).getIsGlowing();
+            return getFormItem(itemstack, 1, henshin_tick).getIsGlowing();
         return false;
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
+        if (isTransformingFromBlank(itemstack,rider))return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 1).getModel(this.riderName));
         switch (slot) {
             case CHEST -> {
                 return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/claws_1.geo.json");

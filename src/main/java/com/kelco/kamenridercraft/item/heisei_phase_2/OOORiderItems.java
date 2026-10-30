@@ -3,10 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.CellMedalProgramer;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.AquaRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.CoreRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.PoseidonHenshinRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.ooooooHenshinRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.vehicles.RidevendorVendingModeEntity;
@@ -494,8 +491,11 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "accel.henshin_pose");
+                    } if (tick == 1d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
@@ -505,7 +505,7 @@ public class OOORiderItems {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
-                }
+                }}
             }.isGlowing().changeModel("birth.geo.json").addToList(SPECIAL_NAME_MEDALS));
 
     public static final DeferredItem<Item> EBI_NEW_MEDAL = ITEMS.register("ebi_new_medal",
@@ -1320,13 +1320,11 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d) {
+                        AnimationUtil.playPose(player, "oooooo.pose");
+                    }
                     if (tick == 1d) {
-						if (tick == 50d) {
-							AnimationUtil.playPose(player, "oooooo.pose");
-						}
+
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 300, 0, 0, 0, 0.1);
@@ -1345,13 +1343,16 @@ public class OOORiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "birth_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "accel.henshin_pose");
+                    } if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
-                }
-            }.changeModel("birth.geo.json").addToList(OOO_TAB_ITEM));
+                }}
+            }.setFormDelay(5).changeModel("birth.geo.json").addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BIRTH_CORE = ITEMS.register("proto_birth_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth_prototype", "birth_driver_belt",
@@ -1363,20 +1364,26 @@ public class OOORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 30, 0, 0, 0, 0.1);
                 }
-            }.changeModel("birth.geo.json").addToList(OOO_TAB_ITEM));
+            }.setFormDelay(10).changeModel("birth.geo.json").addToList(OOO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> REBIRTH_CORE = ITEMS.register("rebirth_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "re_birth", "rebirth_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "accel.henshin_pose");
+                    } if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }.addToList(OOO_TAB_ITEM));
+            }}.setFormDelay(10).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_EYES = ITEMS.register("birth_core_eyes",
             () -> new RiderFormChangeItem(new Item.Properties(), "_eyes", "birth", "birth_driver_belt",
@@ -1389,8 +1396,7 @@ public class OOORiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            }
-                    .addSwitchForm(OOORiderItems.BIRTH_CORE.get())
+            }.setFormDelay(10).addSwitchForm(OOORiderItems.BIRTH_CORE.get())
                     .changeModel("birth.geo.json").isGlowing().addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_BREAST_CANNON = ITEMS.register("birth_core_breast_cannon",
@@ -1510,7 +1516,7 @@ public class OOORiderItems {
 
     public static final DeferredItem<Item> BIRTH_DRIVER = ITEMS.register("birth_driver",
             () -> new BirthDriverItem(ArmorMaterials.DIAMOND, "birth", BIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+            .changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
     public static final DeferredItem<Item> PROTO_BIRTH_DRIVER = ITEMS.register("proto_birth_driver",
             () -> new BirthDriverItem(ArmorMaterials.DIAMOND, "birth_prototype", BIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
@@ -1518,6 +1524,17 @@ public class OOORiderItems {
 
     public static final DeferredItem<Item> BIRTH_DRIVER_X = ITEMS.register("birth_driver_x",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "birth_x", EBI_NEW_MEDAL_BIRTH_X, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)) {
+
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick = getHenshinTick(itemStack, rider);
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack,rider)&&henshin_tick<15) {
+                            layerInfo.add(new BirthBallLayerInfo("birth_x_henshin"));
+                        }
+                    }
+                }
+
                 @Override
                 public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     hasBasicBeltInfo = false;
@@ -1530,8 +1547,18 @@ public class OOORiderItems {
             }.changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> REBIRTH_DRIVER = ITEMS.register("rebirth_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "re_birth", REBIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .hideBeltFormInfo().overrideBeltText("rebirth_driver_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "re_birth", REBIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick = getHenshinTick(itemStack, rider);
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack,rider)&&henshin_tick<15) {
+                            layerInfo.add(new BirthBallLayerInfo("rebirth_henshin"));
+                        }
+                    }
+                }
+
+            }.hideBeltFormInfo().overrideBeltText("rebirth_driver_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> AQUA_DRIVER = ITEMS.register("aqua_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "aqua", AQUA_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()) {

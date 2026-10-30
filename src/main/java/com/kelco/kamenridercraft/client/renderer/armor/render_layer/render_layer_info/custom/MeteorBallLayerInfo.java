@@ -33,7 +33,7 @@ public class MeteorBallLayerInfo extends RenderLayerInfo {
 
     public RenderType getRenderType(float partialTick, LivingEntity livingEntity) {
         float f = (float) livingEntity.tickCount + partialTick;
-        return RenderType.energySwirl(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/meteor_ball.png"), 0, 0.0F);
+        return RenderType.energySwirl(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/meteor_ball.png"), f, 0.0F);
     }
 
     public float getScaleX() {
