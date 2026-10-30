@@ -20,11 +20,11 @@ import net.minecraft.world.level.Level;
 
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 
-public class StageshowRiderEntity extends BaseHenchmenEntity {
-    public StageshowRiderEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
+public class StageshowEnemyEntity extends BaseHenchmenEntity {
+    public StageshowEnemyEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "rider_summon";
-        if (getData(MOB_STATE).isEmpty() && !level().isClientSide()) {
+        if (!level().isClientSide() && getData(MOB_STATE).isEmpty()) {
             switch (getRandom().nextInt(10)) {
                 case 0:
                     setData(MOB_STATE, "red_cheeseman");
@@ -48,12 +48,14 @@ public class StageshowRiderEntity extends BaseHenchmenEntity {
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZ_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZ_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.ALPHA_DRIVER.get()));
+                    break;
                 case 3:
                     setData(MOB_STATE, "beta");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZ_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZ_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZ_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.BETA_DRIVER.get()));
+                    break;
                 case 4:
                     setData(MOB_STATE, "uzai");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HELMET.get()));
@@ -67,12 +69,14 @@ public class StageshowRiderEntity extends BaseHenchmenEntity {
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.DARK_WIZARDRIVER.get()));
+                    break;
                 case 6:
                     setData(MOB_STATE, "fake_ichigo");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGO_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGO_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGO_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(IchigoRiderItems.TYPHOON_FAKE_ICHIGO.get()));
+                    break;
                 case 7:
                     setData(MOB_STATE, "chophopper");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()));

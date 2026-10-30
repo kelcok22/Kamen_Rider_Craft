@@ -9460,6 +9460,8 @@
 "kamenridercraft:bakuen_no_senshi_ryuga.form": "Form: Bakuen no Warrior",
 "kamenridercraft:bakuen_no_senshi.form": "Form: Bakuen no Warrior",
 
+"item.kamenridercraft.stageshow_enemy_spawn_egg": "Stageshow Enemy Spawn Egg",
+
 
 "entity.kamenridercraft.shocker_combatman":"Shocker Combatman",
 "entity.minecraft.villager.kamenridercraft.shocker_villager":"Shocker",
@@ -9805,6 +9807,8 @@
 "entity.kamenridercraft.tojima_takoyaki": "Tojima Takoyaki",
 "entity.kamenridercraft.batta_augment":"Phase Variation Batta Augment",
 "entity.kamenridercraft.shin_no_0":"Kamen Rider No.0",
+
+"entity.kamenridercraft.stageshow_enemy":"Stageshow Enemy",
 
 "entity.kamenridercraft.base_projectile":"KRC Projectile",
 "entity.kamenridercraft.sealing_effect":"Sealing Effect",

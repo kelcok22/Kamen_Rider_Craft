@@ -1833,6 +1833,12 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> CODE_ZEROIDER_SPAWN_EGG = ITEMS.register("code_zeroider_spawn_egg",
             () -> new BaseSpawnEggItem(CODE_ZEROIDER, 0xffffff, 0x222222, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<StageshowEnemyEntity>> STAGESHOW_ENEMY = MOBLIST.register("stageshow_enemy",
+            () -> EntityType.Builder.of(StageshowEnemyEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":stageshow_enemy"));
+
+    public static final DeferredItem<BaseSpawnEggItem> STAGESHOW_ENEMY_SPAWN_EGG = ITEMS.register("stageshow_enemy_spawn_egg",
+            () -> new BaseSpawnEggItem(STAGESHOW_ENEMY, 0x9f9789, 0x161616, new Item.Properties()));
+
 
     public static final DeferredHolder<EntityType<?>, EntityType<RiderSummonEntity>> RIDER_SUMMON = MOBLIST.register("rider_summon",
             () -> EntityType.Builder.of(RiderSummonEntity::new, MobCategory.CREATURE).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":rider_summon"));

@@ -38,6 +38,9 @@ public class EntityAttributes {
 
         event.put(MobsCore.BATTA_AUGMENT.get(), BattaAugmentEntity.setAttributes().build());
         event.put(MobsCore.SHIN_NO_0.get(), ShinNo0Entity.setAttributes().build());
+
+        event.put(MobsCore.STAGESHOW_ENEMY.get(), StageshowEnemyEntity.setAttributes().build());
+
     }
 
 
