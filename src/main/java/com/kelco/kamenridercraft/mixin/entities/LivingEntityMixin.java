@@ -124,7 +124,7 @@ public class LivingEntityMixin {
                                 }
                             }
                         }
-                        if (canTakePose) {
+                        if (canTakePose && !formItemDataList.get(0).getFirst().isEmpty()) {
                             PacketDistributor.sendToAllPlayers
                                     (new AnimPayload(formItemDataList.get(0).getFirst().toLowerCase(),
                                             formItemDataList.get(1).getFirst().toLowerCase(), true, rider.getStringUUID()));

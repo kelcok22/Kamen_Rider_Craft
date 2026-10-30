@@ -23,6 +23,7 @@ import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.inventory.OMedalNestGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
@@ -46,6 +47,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemContainerContents;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -422,11 +424,24 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 1d) {
-                        AnimationUtil.playPose(player, "core.pose");
+                    if (tick != 0) {
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 1, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.ELECTRIC_SPARK,
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 5, 0, 0, 0, .3);
+                    }
+                    if (tick == 30d) {
+                        AnimationUtil.forcePlayPose(player, "core.henshin");
+
+                    } else if (tick == 1d) {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY() + 1,
-                            player.getZ(), 300, 0, 0, 0, 0.1);
+                            player.getZ(), 150, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.LAVA,
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 150, 0, 0, 0, 0.1);
                 }
             }}.setFormDelay(1).isGlowing().changeSlot(1).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
