@@ -30,7 +30,7 @@ public class VBuckleItem extends RiderDriverItem {
         if (slot == EquipmentSlot.HEAD) {
             double henshin =rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
 
-            if ( RiderDriverItem.isTransformingFromBlank(itemStack,rider) && henshin < 10) {
+            if ( RiderDriverItem.isTransforming(rider) && henshin < 10) {
                 layerInfo.add(new RyukiRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),1));
                 layerInfo.add(new RyukiRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),2));
                 layerInfo.add(new RyukiRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),3));
@@ -49,6 +49,7 @@ public class VBuckleItem extends RiderDriverItem {
         double henshin_tick = getHenshinTick(itemstack, rider);
         if (equipmentSlot == EquipmentSlot.FEET) {
             if (RiderDriverItem.isTransformingFromBlank(itemstack,rider) && henshin_tick > 15) {
+                if (riderName.contains("alternative"))return "belts/v_buckle_belt_empty_alternative";
                 if (riderName.contains("odin"))return "belts/v_buckle_belt_empty_odin";
                 return "belts/v_buckle_belt_empty";
             }

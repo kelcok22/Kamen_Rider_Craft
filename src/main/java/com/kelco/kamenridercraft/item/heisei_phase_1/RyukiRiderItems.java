@@ -17,6 +17,8 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -53,6 +55,7 @@ public class RyukiRiderItems {
                         if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
                             AnimationUtil.playPose(player, riderName+".henshin");
                         }
+                        if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ANVIL_HIT, SoundSource.PLAYERS, 1.0F, 8F);
                         if (tick == 1d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,

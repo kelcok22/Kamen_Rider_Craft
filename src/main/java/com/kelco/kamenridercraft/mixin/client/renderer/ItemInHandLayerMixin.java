@@ -42,7 +42,7 @@ public class ItemInHandLayerMixin {
                 && riderDriverItem.isTransformed(livingEntity)) {
             if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() != 0) {
                 boolean replaceRender = false;
-                if (riderDriverItem.riderName.equals("ooo")) {
+                if (riderDriverItem.riderName.equals("ooo")||riderDriverItem.riderName.equals("goda")||riderDriverItem.riderName.equals("oooooo")||riderDriverItem.riderName.equals("shocker_ooo")||riderDriverItem.riderName.equals("ooo_ancient")) {
                     if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(OOORiderItems.O_SCANNER.get());
                     } else {
@@ -52,6 +52,13 @@ public class ItemInHandLayerMixin {
                 } else if (riderDriverItem.riderName.equals("kiva")) {
                     if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(KivaRiderItems.KIVAT_BELT.get());
+                    } else {
+                        tango = new ItemStack(Items.AIR);
+                    }
+                    replaceRender = true;
+                } else if (riderDriverItem.riderName.equals("poseidon")) {
+                    if (arm == HumanoidArm.RIGHT) {
+                        tango = new ItemStack(OOORiderItems.DEEPEST_HARPOON.get());
                     } else {
                         tango = new ItemStack(Items.AIR);
                     }

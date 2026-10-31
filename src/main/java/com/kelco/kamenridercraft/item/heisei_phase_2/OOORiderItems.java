@@ -1372,7 +1372,7 @@ public class OOORiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 50d) {
-                        AnimationUtil.playPose(player, "oooooo.henshin");
+                        AnimationUtil.playPose(player, "ooo.henshin");
                     }
                     if (tick == 1d) {
 
@@ -1388,7 +1388,7 @@ public class OOORiderItems {
                         player.level().addFreshEntity(thunder);
                     }
                 }
-            }.setFormDelay(1).isGlowing().changeBeltModel("geo/belts/ooo_belt.geo.json").useBasicModel().setModelName("shocker_medal"));
+            }.setHenshinTick(50).setFormDelay(1).isGlowing().changeBeltModel("geo/belts/ooo_belt.geo.json").useBasicModel().setModelName("shocker_medal"));
 
     public static final DeferredItem<Item> BIRTH_CORE = ITEMS.register("birth_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "birth_driver_belt",
