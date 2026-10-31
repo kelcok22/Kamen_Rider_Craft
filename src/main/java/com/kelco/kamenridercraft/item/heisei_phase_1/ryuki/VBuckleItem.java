@@ -43,4 +43,17 @@ public class VBuckleItem extends RiderDriverItem {
     }
 
 
+    @Override
+    public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        double henshin_tick = getHenshinTick(itemstack, rider);
+        if (equipmentSlot == EquipmentSlot.FEET) {
+            if (isTransforming(rider) && henshin_tick > 15) {
+                if (riderName.contains("odin"))return "belts/v_buckle_belt_empty_odin";
+                return "belts/v_buckle_belt_empty";
+            }
+        }
+         return super.getText(itemstack,  equipmentSlot, rider,riderName);
+    }
+
+
 }

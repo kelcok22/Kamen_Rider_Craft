@@ -79,7 +79,7 @@ public class RenderLayerInfo {
     }
 
     public String getModel(float partialTick, LivingEntity RIDER) {
-        return model+".geo.json";
+        return model != null ? model+".geo.json" : null;
     }
 
     public boolean isGlowing() {
