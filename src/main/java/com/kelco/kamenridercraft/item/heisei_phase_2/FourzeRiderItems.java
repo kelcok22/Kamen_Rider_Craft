@@ -1710,8 +1710,18 @@ public class FourzeRiderItems {
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)
                     , new MobEffectInstance(EffectCore.LONG_ARM, 40, 1, true, false)
-                    , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false))
-                    .setSlotOneAbility("warp", 1).addToList(FOURZE_TAB_ITEM));
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
+                        if (tick == 30d) {
+                            ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                    player.getX(), player.getY() + 0.5,
+                                    player.getZ(), 100, 0, 0, 0, 0.05);
+                        }
+                    }
+                }
+            }.setFormDelay(20).setSlotOneAbility("warp", 1).addToList(FOURZE_TAB_ITEM));
 
     public static final DeferredItem<Item> FUSION_ASTROSWITCH_OG = ITEMS.register("fusion_switch_og",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fourze", "fourze_driver_belt",
@@ -2452,7 +2462,21 @@ public class FourzeRiderItems {
 
     public static final DeferredItem<Item> GINGA_OH_DRIVER = ITEMS.register("ginga_oh_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "super_gingaoh", SOLU_ASTROSWITCH, FOURZE_HELMET, FOURZE_CHESTPLATE, FOURZE_LEGGINGS,
-                    new Item.Properties()).hideBeltFormInfo().addExtraBaseFormItems(OOORiderItems.SAME_MEDAL, OOORiderItems.KUJIRA_MEDAL, OOORiderItems.OOKAMIUO_MEDAL).addToList(FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
+                    new Item.Properties()){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {{
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick= rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
+                        if (RiderDriverItem.isTransforming(rider) && henshin_tick < 30) {
+                            layerInfo.add(new PoseidonHenshinRenderLayerInfo("transforming/poseidon_henshin"));
+                        }
+                        if (isTransformingFromBlank(itemStack, rider) && henshin_tick < 23) {
+                            layerInfo.add(new FourzeRingRenderLayerInfo());
+                        }
+                    }
+                }
+                }
+    }.hideBeltFormInfo().addExtraBaseFormItems(OOORiderItems.SAME_MEDAL, OOORiderItems.KUJIRA_MEDAL, OOORiderItems.OOKAMIUO_MEDAL).addToList(FOURZE_TAB_ITEM).changeRepairItem(BLANK_ASTROSWITCH.get()));
 
 
     public static final DeferredItem<Item> ASTROSWITCH_CASE = ITEMS.register("astroswitch_case",

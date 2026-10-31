@@ -519,7 +519,7 @@ public class OOORiderItems {
                                 player.getZ(), 30, 0, 0, 0, 0.1);
                     }
                 }
-            }.isGlowing().changeModel("birth.geo.json").addToList(SPECIAL_NAME_MEDALS));
+            }.setFormDelay(10).isGlowing().changeModel("birth.geo.json").addToList(SPECIAL_NAME_MEDALS));
 
     public static final DeferredItem<Item> EBI_NEW_MEDAL = ITEMS.register("ebi_new_medal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ebi", "ooo", "ooodriver_belt",
@@ -544,13 +544,24 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 30, 0, 0, 0, 0.1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "birth.henshin");
+                    }
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.1);
+                    }
                 }
-            }.setSlotOneAbility("cannon", 1).addToList(SPECIAL_NAME_MEDALS));
+            }.setFormDelay(10).setSlotOneAbility("cannon", 1).addToList(SPECIAL_NAME_MEDALS));
 
     public static final DeferredItem<Item> KANI_NEW_MEDAL = ITEMS.register("kani_new_medal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_kani", "ooo", "ooodriver_belt",
@@ -1555,12 +1566,25 @@ public class OOORiderItems {
     public static final DeferredItem<Item> BIRTH_DRIVER_X = ITEMS.register("birth_driver_x",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "birth_x", EBI_NEW_MEDAL_BIRTH_X, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)) {
 
+                @Override
+                public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    double henshin_tick = getHenshinTick(itemstack, rider);
+                    if (equipmentSlot == EquipmentSlot.FEET) {
+                        if (isTransforming(rider)&&henshin_tick>15) {
+                            return "belts/birth_driver_x_belt_cl";
+                        }
+                    }
+                     return super.getText(itemstack,  equipmentSlot, rider,riderName);
+                }
+
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
                         double henshin_tick = getHenshinTick(itemStack, rider);
                         if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 15) {
                             layerInfo.add(new BirthBallLayerInfo("birth_x_henshin"));
+                            layerInfo.add(new BirthXHenshinRenderLayerInfo("transforming/powered_up_core_henshin"));
+
                         }
                     }
                 }
@@ -1578,7 +1602,18 @@ public class OOORiderItems {
 
     public static final DeferredItem<Item> REBIRTH_DRIVER = ITEMS.register("rebirth_driver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "re_birth", REBIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)) {
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                @Override
+                public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    double henshin_tick = getHenshinTick(itemstack, rider);
+                    if (equipmentSlot == EquipmentSlot.FEET) {
+                        if (isTransforming(rider)&&henshin_tick>15) {
+                            return "belts/rebirth_driver_belt_cl";
+                        }
+                    }
+                    return super.getText(itemstack,  equipmentSlot, rider,riderName);
+                }
+
+        public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
                         double henshin_tick = getHenshinTick(itemStack, rider);
@@ -1772,8 +1807,27 @@ public class OOORiderItems {
                     .hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL, CONDOR_MEDAL).overrideBeltText("ankh_lost_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_ANKH = ITEMS.register("greeed_blet_ankh",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_complete", TAKA_ANKH_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL, CONDOR_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_complete", TAKA_ANKH_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("ankh_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL, CONDOR_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_UVA = ITEMS.register("greeed_blet_uva",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "uva_complete", KUWAGATA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
