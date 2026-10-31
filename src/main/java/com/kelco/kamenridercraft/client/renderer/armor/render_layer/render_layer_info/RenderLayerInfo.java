@@ -51,7 +51,7 @@ public class RenderLayerInfo {
 
         float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - partialTick);
 
-        if (getModel().toLowerCase().contains("orichalcum")) {
+        if (getModel(partialTick, entity).toLowerCase().contains("orichalcum")) {
             Transforming = (float) Mth.lerp(1, GetTransforming + 15, ((GetTransforming + 15) - 1) - partialTick);
         }
 
@@ -78,8 +78,8 @@ public class RenderLayerInfo {
         return GlowTexture;
     }
 
-    public String getModel() {
-        return model;
+    public String getModel(float partialTick, LivingEntity RIDER) {
+        return model+".geo.json";
     }
 
     public boolean isGlowing() {

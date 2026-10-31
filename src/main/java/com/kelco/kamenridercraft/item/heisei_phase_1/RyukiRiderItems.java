@@ -1,11 +1,16 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.DrillRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RyukiRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventCardItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventDeckItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.VBuckleItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -13,11 +18,14 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.RYUKI_TAB_ITEM;
 
@@ -43,7 +51,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.isGlowing().addToList(RYUKI_TAB_ITEM));
+			}.setFormDelay(1).isGlowing().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DARKWING_ADVENT = ITEMS.register("darkwing_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","knight","v_buckle_belt_knight",
@@ -404,75 +412,75 @@ public class RyukiRiderItems {
 			() -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(RYUKI_TAB_ITEM).changeRepairItem(ADVENT_CARD.get()));
 
 	public static final DeferredItem<Item> RYUKIDRIVER = ITEMS.register("v_buckle_ryuki",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ryuki",DRAGREDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"ryuki",DRAGREDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIGHTDRIVER = ITEMS.register("v_buckle_knight",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight",DARKWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"knight",DARKWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SCISSORSDRIVER = ITEMS.register("v_buckle_scissors",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"scissors",VOLCANCER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"scissors",VOLCANCER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ZOLDADRIVER = ITEMS.register("v_buckle_zolda",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zolda",MAGNUGIGA_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"zolda",MAGNUGIGA_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> RAIADRIVER = ITEMS.register("v_buckle_raia",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"raia",EVILDIVER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"raia",EVILDIVER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GAIDRIVER = ITEMS.register("v_buckle_gai",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gai",METALGELAS_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"gai",METALGELAS_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> OUJADRIVER = ITEMS.register("v_buckle_ouja",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ouja",VENOSNAKER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"ouja",VENOSNAKER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ODINDRIVER = ITEMS.register("v_buckle_odin",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"odin",GOLDPHOENIX_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"odin",GOLDPHOENIX_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> TIGERDRIVER = ITEMS.register("v_buckle_tiger",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tiger",DESTWILDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"tiger",DESTWILDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> IMPERERDRIVER = ITEMS.register("v_buckle_imperer",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"imperer",GIGAZELLE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"imperer",GIGAZELLE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> FEMMEDRIVER = ITEMS.register("v_buckle_femme",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"femme",BLANCWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"femme",BLANCWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> RYUGADRIVER = ITEMS.register("v_buckle_ryuga",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"ryuga",DRAGBLACKER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"ryuga",DRAGBLACKER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> VERDEDRIVER = ITEMS.register("v_buckle_verde",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"verde",BIOGREEZA_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"verde",BIOGREEZA_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABYSSDRIVER = ITEMS.register("v_buckle_abyss",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"abyss",ABYSSLASHER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"abyss",ABYSSLASHER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> FATALEDRIVER = ITEMS.register("v_buckle_fatale",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fatale",BLANCWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"fatale",BLANCWING_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().overrideBeltText("v_buckle_belt_fatale").changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM)); //TODO: Add a new card and remove Override_belt_text
 
     public static final DeferredItem<Item> ALTERNATIVEDRIVER = ITEMS.register("alternative_v_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alternative",PSYCOROGUE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"alternative",PSYCOROGUE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ALTERNATIVEZERODRIVER = ITEMS.register("alternative_zero_v_buckle",
-			() -> new RiderDriverItem(ArmorMaterials.DIAMOND,"alternative_zero",PSYCOROGUE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+			() -> new VBuckleItem(ArmorMaterials.DIAMOND,"alternative_zero",PSYCOROGUE_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
 					.hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADEDRIVER = ITEMS.register("v_buckle_blade",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"blade_mirror",GULDTHUNDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
+            () -> new VBuckleItem(ArmorMaterials.DIAMOND,"blade_mirror",GULDTHUNDER_ADVENT ,RYUKIHELMET,RYUKICHESTPLATE,RYUKILEGGINGS , new Item.Properties())
                     .hideBeltFormInfo().changeRepairItem(ADVENT_CARD.get()).addToList(RYUKI_TAB_ITEM));
 
 

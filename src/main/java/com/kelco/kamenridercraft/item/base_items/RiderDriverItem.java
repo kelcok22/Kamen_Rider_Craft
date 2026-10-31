@@ -551,7 +551,6 @@ public class RiderDriverItem extends RiderArmorItem {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, transformingTick).getModel(this.riderName));
     }
 
-
     public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
 
     }
