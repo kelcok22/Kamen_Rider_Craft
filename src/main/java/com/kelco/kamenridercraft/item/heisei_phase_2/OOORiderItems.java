@@ -122,6 +122,20 @@ public class OOORiderItems {
                         AnimationUtil.playPose(player, "ooo.henshin");
                         PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
                     }
+                    if (tick == 50d & itemstack.getItem() != OOODRIVER.asItem()) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BREEZE_IDLE_GROUND, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if ((tick != 0 && itemstack.getItem() != OOODRIVER.asItem())) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.CHAIN_BREAK,
+                                SoundSource.PLAYERS, 0.8F, (1F + (player.getRandom().nextFloat() / 4)
+                                        * player.getRandom().nextInt(1) > 1 ? 1:-1));
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
+                                SoundEvents.CHAIN_HIT, SoundSource.PLAYERS, 0.8F, (1F + (player.getRandom().nextFloat() / 4)
+                                        * player.getRandom().nextInt(1) > 1 ? 1:-1));
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(),
+                                SoundEvents.CHAIN_PLACE, SoundSource.PLAYERS, 0.8F, (1F + (player.getRandom().nextFloat() / 4)
+                                        * player.getRandom().nextInt(1) > 1 ? 1:-1));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
