@@ -26,16 +26,20 @@ public class ItemInHandLayerMixin {
     ItemStack tango = new ItemStack(Items.APPLE);
 
     @Inject(method = "renderArmWithItem", at = @At("HEAD"), cancellable = true)
-    public void renderArmWithItemMixin(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext, HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight, CallbackInfo ci) {
-        if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem && riderDriverItem.isTransformed(livingEntity)) {
+    public void renderArmWithItemMixin(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext,
+                                       HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight, CallbackInfo ci) {
+        if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem
+                && riderDriverItem.isTransformed(livingEntity)) {
             if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 0) {
                 ci.cancel();
             }
         }
     }
 
-    public void renderArmWithItemModification(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext, HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
-        if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem && riderDriverItem.isTransformed(livingEntity)) {
+    public void renderArmWithItemModification(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext,
+                                              HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
+        if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem
+                && riderDriverItem.isTransformed(livingEntity)) {
             if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() != 0) {
                 boolean replaceRender = false;
                 if (riderDriverItem.riderName.equals("ooo")) {
@@ -64,7 +68,8 @@ public class ItemInHandLayerMixin {
                     poseStack.translate((float) (flag ? -1 : 1) / 16.0F, 0.125F, -0.625F);
                     renderer.itemInHandRenderer.renderItem(livingEntity, tango, displayContext, flag, poseStack, buffer, packedLight);
                     poseStack.popPose();
-                }}
+                }
+            }
         }
     }
 
@@ -76,7 +81,6 @@ public class ItemInHandLayerMixin {
                     HumanoidArm.LEFT, poseStack, buffer, packedLight);
             renderArmWithItemModification(livingEntity, new ItemStack(Items.AIR), ItemDisplayContext.THIRD_PERSON_LEFT_HAND,
                     HumanoidArm.RIGHT, poseStack, buffer, packedLight);
-
         }
     }
 }
