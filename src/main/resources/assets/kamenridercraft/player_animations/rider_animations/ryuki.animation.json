@@ -105,6 +105,7 @@
 			}
 		},
 		"ryuki.henshin": {
+			"loop": "hold_on_last_frame",
 			"animation_length": 2.0417,
 			"bones": {
 				"body": {
