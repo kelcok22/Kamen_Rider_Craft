@@ -38,4 +38,9 @@ public class VBuckleItem extends RiderDriverItem {
         }
     }
 
+    public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+        return 40;
+    }
+
+
 }
