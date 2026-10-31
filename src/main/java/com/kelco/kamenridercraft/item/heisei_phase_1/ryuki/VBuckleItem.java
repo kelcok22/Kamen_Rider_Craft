@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RyukiRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooSuperHenshinRenderLayerInfo;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
@@ -29,17 +30,17 @@ public class VBuckleItem extends RiderDriverItem {
         if (slot == EquipmentSlot.HEAD) {
             double henshin =rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
 
-            if ( RiderDriverItem.isTransforming(rider) && henshin < 10) {
+            if ( RiderDriverItem.isTransformingFromBlank(itemStack,rider) && henshin < 10) {
                 layerInfo.add(new RyukiRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),1));
                 layerInfo.add(new RyukiRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),2));
                 layerInfo.add(new RyukiRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),3));
-
             }
         }
     }
 
     public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
-        return 40;
+        if (getFormItem(stack, 1, 60) == ModdedItemCore.BLANK_FORM.asItem())return 40;
+        else return super.getBaseHenshinTick(stack, rider);
     }
 
 
@@ -47,7 +48,7 @@ public class VBuckleItem extends RiderDriverItem {
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
         double henshin_tick = getHenshinTick(itemstack, rider);
         if (equipmentSlot == EquipmentSlot.FEET) {
-            if (isTransforming(rider) && henshin_tick > 15) {
+            if (RiderDriverItem.isTransformingFromBlank(itemstack,rider) && henshin_tick > 15) {
                 if (riderName.contains("odin"))return "belts/v_buckle_belt_empty_odin";
                 return "belts/v_buckle_belt_empty";
             }

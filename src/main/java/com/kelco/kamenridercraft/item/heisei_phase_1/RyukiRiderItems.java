@@ -50,7 +50,7 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
                     public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                         super.transformationEffect(itemstack, player, tick);
-                        if (tick == 40d) {
+                        if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
                             AnimationUtil.playPose(player, riderName+".henshin");
                         }
                         if (tick == 1d) {
@@ -66,78 +66,100 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> VOLCANCER_ADVENT = ITEMS.register("volcancer_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","scissors","v_buckle_belt_scissors",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			{
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)) {
+                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                        super.transformationEffect(itemstack, player, tick);
+                        if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                            AnimationUtil.playPose(player, riderName+".henshin");
+                        }
+                        if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> MAGNUGIGA_ADVENT = ITEMS.register("magnugiga_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","zolda","v_buckle_belt_zolda",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVILDIVER_ADVENT = ITEMS.register("evildiver_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","raia","v_buckle_belt_raia",
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> METALGELAS_ADVENT = ITEMS.register("metalgelas_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","gai","v_buckle_belt_gai",
 					new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> VENOSNAKER_ADVENT = ITEMS.register("venosnaker_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","ouja","v_buckle_belt_ouja",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false))
-			{
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT_SIC = ITEMS.register("goldphoenix_advent_sic",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_sic","odin","v_buckle_belt_odin",
@@ -147,8 +169,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false),
 					new MobEffectInstance (MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -156,7 +182,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.isGold().setFlyingPosition("odin.flying").useBasicModel().setModelName("goldphoenix_advent"));
+			}}.setFormDelay(1).isGold().setFlyingPosition("odin.flying").useBasicModel().setModelName("goldphoenix_advent"));
 
 	public static final DeferredItem<Item> GOLDPHOENIX_ADVENT = ITEMS.register("goldphoenix_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","odin","v_buckle_belt_odin",
@@ -166,8 +192,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false),
 					new MobEffectInstance (MobEffects.DAMAGE_RESISTANCE, 40, 3,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -175,33 +205,41 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.isGold().setFlyingPosition("odin.flying").addSwitchForm(GOLDPHOENIX_ADVENT_SIC.get()).addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).isGold().setFlyingPosition("odin.flying").addSwitchForm(GOLDPHOENIX_ADVENT_SIC.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DESTWILDER_ADVENT = ITEMS.register("destwilder_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","tiger","v_buckle_belt_tiger",
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGAZELLE_ADVENT = ITEMS.register("gigazelle_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","imperer","v_buckle_belt_imperer",
 					new MobEffectInstance(MobEffects.JUMP, 40, 3,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLANCWING_ADVENT = ITEMS.register("blancwing_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","femme","v_buckle_belt_femme",
@@ -209,80 +247,102 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.changeModel("femme.geo.json").hasCape().addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).changeModel("femme.geo.json").hasCape().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGBLACKER_ADVENT = ITEMS.register("dragblacker_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","ryuga","v_buckle_belt_ryuga",
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}
-					.isGlowing().addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).isGlowing().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BIOGREEZA_ADVENT = ITEMS.register("biogreeza_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","verde","v_buckle_belt_verde",
 					new MobEffectInstance(MobEffects.JUMP, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> ABYSSLASHER_ADVENT = ITEMS.register("abysslasher_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","abyss","v_buckle_belt_abyss",
 					new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false))
-			{
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> PSYCOROGUE_ADVENT = ITEMS.register("psycorogue_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","alternative","v_buckle_alternative_belt",
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
     public static final DeferredItem<Item> GULDTHUNDER_ADVENT = ITEMS.register("guldthunder_advent",
             () -> new RiderFormChangeItem(new Item.Properties(),"","blade","v_buckle_belt_blade",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGold().addToList(RYUKI_TAB_ITEM));
+            }}.setFormDelay(1).isGold().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA_RYUGA = ITEMS.register("survive_rekka_ryuga",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_survive","ryuga","v_buckle_belt_ryuga_s",
@@ -291,14 +351,17 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 0.1);
 				}
-			}
-					.isGlowing().changeModel("ryuki_survive.geo.json"));
+			}}.setFormDelay(1).isGlowing().changeModel("ryuki_survive.geo.json"));
 
 	public static final DeferredItem<Item> SURVIVE_REKKA = ITEMS.register("survive_rekka",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive","ryuki","v_buckle_belt_ryuki_s",
@@ -307,8 +370,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -316,8 +383,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.addAlternative(SURVIVE_REKKA_RYUGA.get())
-					.isGlowing().addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addAlternative(SURVIVE_REKKA_RYUGA.get()).isGlowing().addToList(RYUKI_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU_RAIA = ITEMS.register("survive_shippu_raia",
@@ -327,8 +393,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -336,7 +406,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			});
+			}}.setFormDelay(1));
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU_OUJA = ITEMS.register("survive_shippu_ouja",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_survive","ouja","v_buckle_belt_ouja",
@@ -345,8 +415,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -354,7 +428,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.addAlternative(SURVIVE_SHIPPU_RAIA.get()));
+			}}.setFormDelay(1).addAlternative(SURVIVE_SHIPPU_RAIA.get()));
 
 	public static final DeferredItem<Item> SURVIVE_SHIPPU = ITEMS.register("survive_shippu",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive","knight","v_buckle_belt_knight_s",
@@ -363,8 +437,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -372,7 +450,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.addAlternative(SURVIVE_SHIPPU_OUJA.get()).addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addAlternative(SURVIVE_SHIPPU_OUJA.get()).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_MUGEN = ITEMS.register("survive_mugen",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive_mugen","ouja","v_buckle_belt_ouja_s",
@@ -381,8 +459,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -390,7 +472,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}.addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> SURVIVE_BLACK = ITEMS.register("survive_black",
 			() -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_survive_black","ryuki","v_buckle_belt_ryuki",
@@ -399,8 +481,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }
+                    if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 100, 0, 0, 0, 1);
@@ -408,8 +494,7 @@ public class RyukiRiderItems {
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 0.1);
 				}
-			}
-					.isGlowing().addToList(RYUKI_TAB_ITEM));
+			}}.setFormDelay(1).isGlowing().addToList(RYUKI_TAB_ITEM));
 
 
 	public static final DeferredItem<Item> RYUKIHELMET = ITEMS.register("ryukihead",
