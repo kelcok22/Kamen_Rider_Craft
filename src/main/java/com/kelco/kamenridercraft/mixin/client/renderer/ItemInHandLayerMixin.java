@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.mixin.client.renderer;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -22,12 +23,21 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = ItemInHandLayer.class)
 public class ItemInHandLayerMixin {
+    ItemStack tango = new ItemStack(Items.APPLE);
+
     @Inject(method = "renderArmWithItem", at = @At("HEAD"), cancellable = true)
     public void renderArmWithItemMixin(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext, HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight, CallbackInfo ci) {
         if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem && riderDriverItem.isTransformed(livingEntity)) {
             if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 0) {
+                ci.cancel();
+            }
+        }
+    }
+
+    public void renderArmWithItemModification(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext, HumanoidArm arm, PoseStack poseStack, MultiBufferSource buffer, int packedLight) {
+        if (livingEntity instanceof Player && livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem && riderDriverItem.isTransformed(livingEntity)) {
+            if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() != 0) {
                 boolean replaceRender = false;
-                ItemStack tango = new ItemStack(Items.APPLE);
                 if (riderDriverItem.riderName.equals("ooo")) {
                     if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(OOORiderItems.O_SCANNER.get());
@@ -35,7 +45,15 @@ public class ItemInHandLayerMixin {
                         tango = new ItemStack(Items.AIR);
                     }
                     replaceRender = true;
+                } else if (riderDriverItem.riderName.equals("kiva")) {
+                    if (arm == HumanoidArm.RIGHT) {
+                        tango = new ItemStack(KivaRiderItems.KIVAT_BELT.get());
+                    } else {
+                        tango = new ItemStack(Items.AIR);
+                    }
+                    replaceRender = true;
                 }
+
                 if (replaceRender) {
                     var renderer = ((ItemInHandLayer) (Object) this);
                     poseStack.pushPose();
@@ -46,9 +64,19 @@ public class ItemInHandLayerMixin {
                     poseStack.translate((float) (flag ? -1 : 1) / 16.0F, 0.125F, -0.625F);
                     renderer.itemInHandRenderer.renderItem(livingEntity, tango, displayContext, flag, poseStack, buffer, packedLight);
                     poseStack.popPose();
-                    ci.cancel();
-                }
-            }
+                }}
+        }
+    }
+
+    @Inject(method = "render", at = @At("TAIL"))
+    public void renderMixin(PoseStack poseStack, MultiBufferSource buffer, int packedLight, LivingEntity livingEntity, float limbSwing,
+                            float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch, CallbackInfo ci) {
+        if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() != 0) {
+            renderArmWithItemModification(livingEntity, new ItemStack(Items.AIR), ItemDisplayContext.THIRD_PERSON_LEFT_HAND,
+                    HumanoidArm.LEFT, poseStack, buffer, packedLight);
+            renderArmWithItemModification(livingEntity, new ItemStack(Items.AIR), ItemDisplayContext.THIRD_PERSON_LEFT_HAND,
+                    HumanoidArm.RIGHT, poseStack, buffer, packedLight);
+
         }
     }
 }

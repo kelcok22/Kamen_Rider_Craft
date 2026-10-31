@@ -14,13 +14,13 @@ import com.kelco.kamenridercraft.item.heisei_phase_2.ooo.*;
 import com.kelco.kamenridercraft.item.showa.AmazonRiderItems;
 import com.kelco.kamenridercraft.item.showa.StrongerRiderItems;
 import com.kelco.kamenridercraft.item.showa.XRiderItems;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.inventory.OMedalNestGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
@@ -44,8 +44,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.ItemContainerContents;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -73,9 +73,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -117,9 +118,10 @@ public class OOORiderItems {
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -135,9 +137,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -179,9 +182,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -222,9 +226,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -267,9 +272,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -310,9 +316,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -339,9 +346,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -356,9 +364,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -433,14 +442,15 @@ public class OOORiderItems {
                         AnimationUtil.forcePlayPose(player, "core.henshin");
 
                     } else if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 150, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 150, 0, 0, 0, 0.1);
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.LAVA,
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 150, 0, 0, 0, 0.1);
+                    }
                 }
-            }}.setFormDelay(1).isGlowing().changeSlot(1).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+            }.setFormDelay(1).isGlowing().changeSlot(1).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
     public static final DeferredItem<Item> MUKADE_MEDAL = ITEMS.register("mukade_medal",
@@ -448,9 +458,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -494,18 +505,20 @@ public class OOORiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
-                        AnimationUtil.playPose(player, "accel.henshin_pose");
-                    } if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 30, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 30, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 30, 0, 0, 0, 0.1);
-                }}
+                        AnimationUtil.playPose(player, "birth.henshin");
+                    }
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 30, 0, 0, 0, 0.1);
+                    }
+                }
             }.isGlowing().changeModel("birth.geo.json").addToList(SPECIAL_NAME_MEDALS));
 
     public static final DeferredItem<Item> EBI_NEW_MEDAL = ITEMS.register("ebi_new_medal",
@@ -513,9 +526,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -543,9 +557,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -573,9 +588,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -616,9 +632,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -659,9 +676,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.SATURATION, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -762,9 +780,10 @@ public class OOORiderItems {
                     new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -818,9 +837,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.SATURATION, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -899,9 +919,10 @@ public class OOORiderItems {
                     new MobEffectInstance(EffectCore.FLYING, 40, 6, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -946,9 +967,10 @@ public class OOORiderItems {
                     new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -999,9 +1021,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -1041,9 +1064,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -1210,9 +1234,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -1267,9 +1292,10 @@ public class OOORiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem() || tick == 50d & itemstack.getItem() == SHOCKER_OOODRIVER.asItem()) {
-						AnimationUtil.playPose(player, "ooo.pose");
-					}
+                    if (tick == 50d & itemstack.getItem() == OOODRIVER.asItem() || tick == 50d & itemstack.getItem() == SHOCKER_OOODRIVER.asItem()) {
+                        AnimationUtil.playPose(player, "ooo.henshin");
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("ooo.henshin_moving", "attack", false, player.getStringUUID()));
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -1321,7 +1347,7 @@ public class OOORiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 50d) {
-                        AnimationUtil.playPose(player, "oooooo.pose");
+                        AnimationUtil.playPose(player, "oooooo.henshin");
                     }
                     if (tick == 1d) {
 
@@ -1346,12 +1372,14 @@ public class OOORiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
-                        AnimationUtil.playPose(player, "accel.henshin_pose");
-                    } if (tick == 1d) {
+                        AnimationUtil.playPose(player, "birth.henshin");
+                    }
+                    if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.1);
-                }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
+                }
             }.setFormDelay(5).changeModel("birth.geo.json").addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BIRTH_CORE = ITEMS.register("proto_birth_core",
@@ -1374,16 +1402,18 @@ public class OOORiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
-                        AnimationUtil.playPose(player, "accel.henshin_pose");
-                    } if (tick == 1d) {
+                        AnimationUtil.playPose(player, "birth.henshin");
+                    }
+                    if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
                 }
-            }}.setFormDelay(10).addToList(OOO_TAB_ITEM));
+            }.setFormDelay(10).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_EYES = ITEMS.register("birth_core_eyes",
             () -> new RiderFormChangeItem(new Item.Properties(), "_eyes", "birth", "birth_driver_belt",
@@ -1460,8 +1490,8 @@ public class OOORiderItems {
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false), new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-					if (tick == 30d) {
-						AnimationUtil.playPose(player, "aqua.henshin");
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "aqua.henshin");
 
                     } else if (tick > 1d && tick < 18d) {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BUCKET_FILL, SoundSource.PLAYERS, 0.75F, 1.1F + ((20 - tick.floatValue()) / 20));
@@ -1516,7 +1546,7 @@ public class OOORiderItems {
 
     public static final DeferredItem<Item> BIRTH_DRIVER = ITEMS.register("birth_driver",
             () -> new BirthDriverItem(ArmorMaterials.DIAMOND, "birth", BIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-            .changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
+                    .changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS));
 
     public static final DeferredItem<Item> PROTO_BIRTH_DRIVER = ITEMS.register("proto_birth_driver",
             () -> new BirthDriverItem(ArmorMaterials.DIAMOND, "birth_prototype", BIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
@@ -1529,7 +1559,7 @@ public class OOORiderItems {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
                         double henshin_tick = getHenshinTick(itemStack, rider);
-                        if (RiderDriverItem.isTransformingFromBlank(itemStack,rider)&&henshin_tick<15) {
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 15) {
                             layerInfo.add(new BirthBallLayerInfo("birth_x_henshin"));
                         }
                     }
@@ -1547,12 +1577,12 @@ public class OOORiderItems {
             }.changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> REBIRTH_DRIVER = ITEMS.register("rebirth_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "re_birth", REBIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)){
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "re_birth", REBIRTH_CORE, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
                         double henshin_tick = getHenshinTick(itemStack, rider);
-                        if (RiderDriverItem.isTransformingFromBlank(itemStack,rider)&&henshin_tick<15) {
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 15) {
                             layerInfo.add(new BirthBallLayerInfo("rebirth_henshin"));
                         }
                     }
@@ -1565,15 +1595,15 @@ public class OOORiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
-						if (RiderDriverItem.isTransforming(rider)) {
-							layerInfo.add(new AquaRenderLayerInfo("transforming/meteor_storm"));
-						}
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new AquaRenderLayerInfo("transforming/meteor_storm"));
+                        }
                     }
                 }
             }.hideBeltFormInfo().changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> POSEIDONDRIVER = ITEMS.register("poseidon_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "poseidon", SAME_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "poseidon", SAME_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
@@ -1583,7 +1613,7 @@ public class OOORiderItems {
                         }
                     }
                 }
-            } .hideBeltFormInfo().addExtraBaseFormItems(KUJIRA_MEDAL, OOKAMIUO_MEDAL).overrideBeltText("poseidon_driver_belt")
+            }.hideBeltFormInfo().addExtraBaseFormItems(KUJIRA_MEDAL, OOKAMIUO_MEDAL).overrideBeltText("poseidon_driver_belt")
                     .changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> ANCIENT_OOODRIVER = ITEMS.register("ancient_ooodriver",
@@ -1691,11 +1721,13 @@ public class OOORiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()) {
 
                 public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-                    if (equipmentSlot == EquipmentSlot.FEET&isTransforming(rider)) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
                         return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
-                    else return super.getText(itemStack,  equipmentSlot,  rider, riderName);
                 }
+
                 public double getRenderType(ItemStack stack, double num) {
                     return 1;
                 }
@@ -1707,17 +1739,20 @@ public class OOORiderItems {
                             layerInfo.add(new CoreRenderLayerInfo("core_henshin"));
                         }
                     }
-                }}.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> POWERED_UP_CORE_DRIVER = ITEMS.register("powered_up_core_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "powered_up_core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)){
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "powered_up_core", EBI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON)) {
 
                 public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
-                    if (equipmentSlot == EquipmentSlot.FEET&isTransforming(rider)) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
                         return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
-                    else return super.getText(itemStack,  equipmentSlot,  rider, riderName);
                 }
+
                 public double getRenderType(ItemStack stack, double num) {
                     return 1;
                 }
@@ -1730,7 +1765,7 @@ public class OOORiderItems {
                         }
                     }
                 }
-            } .hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            }.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_ANKH_LOST = ITEMS.register("greeed_blet_ankh_lost",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_lost", TAKA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.RARE))
