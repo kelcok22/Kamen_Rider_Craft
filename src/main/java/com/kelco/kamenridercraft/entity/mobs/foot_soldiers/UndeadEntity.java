@@ -265,10 +265,10 @@ public class UndeadEntity extends BaseHenchmenEntity {
             if ((chance * 100.0 <= gamerule && (lastHurtByPlayer != null && canSpawnBoss(lastHurtByPlayer))
                     || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
 
-                if (lastHurtByPlayer != null && (getLastAttacker().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
-                        (RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                if (lastHurtByPlayer != null && (lastHurtByPlayer.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem &&
+                        (RiderDriverItem.getFormItem(lastHurtByPlayer.getItemBySlot(EquipmentSlot.FEET), 1).asItem()
                                 .toString().toLowerCase().contains("jack") ||
-                                RiderDriverItem.getFormItem(getLastAttacker().getItemBySlot(EquipmentSlot.FEET), 1).asItem()
+                                RiderDriverItem.getFormItem(lastHurtByPlayer.getItemBySlot(EquipmentSlot.FEET), 1).asItem()
                                         .toString().toLowerCase().contains("wild")) ||
                         lastHurtByPlayer.getInventory().countItem(BladeRiderItems.ROUZE_ABSORBER.get()) != 0)) {
                     boss = MobsCore.QUEEN_UNDEAD.get().create(level());
