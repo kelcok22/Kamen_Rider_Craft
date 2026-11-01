@@ -1228,7 +1228,7 @@ public class ExAidRiderItems {
                     .isGlowing().changeModel("galaxian_gamer.geo.json").changeSlot(2).addToList(GameCreator.BLANK_GASHAT, 1).addToList(EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> TAIKO_NO_TATSUJIN_GASHAT = ITEMS.register("taiko_no_tatsujin_gashat",
-            () -> new BaseItem(new Item.Properties()).addToList(EX_AID_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GameCreator.BLANK_GASHAT, 2).addToList(EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> GANBERIZING_GASHAT = ITEMS.register("ganbarizing_gashat",
             () -> new BaseItem(new Item.Properties()).addToList(GameCreator.BLANK_GASHAT, 2).addToList(EX_AID_TAB_ITEM));

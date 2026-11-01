@@ -112,7 +112,7 @@ public class RegisterItemProperties {
                     if (p_174637_ == null) {
                         return 0.0F;
                     } else {
-                        if (p_174637_.isOnFire()) {
+                        if (p_174637_.level().dayTime()%24000 > 12000 && p_174637_.level().dayTime()%24000 < 23000) {
                                     return 1;
                         }
                         return 0;
