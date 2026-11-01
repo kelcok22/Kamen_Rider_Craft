@@ -43,7 +43,12 @@ public class RyukiRiderItems {
 
 	public static final DeferredItem<Item> ADVENT_CARD = ITEMS.register("advent_card",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_blank","ryuki","v_buckle_belt",
-					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)).isGlowing().addToList(RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.WEAKNESS, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).isGlowing().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAGREDER_ADVENT = ITEMS.register("dragreder_advent",
 			() -> new RiderFormChangeItem(new Item.Properties(),"","ryuki","v_buckle_belt_ryuki",
@@ -750,8 +755,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.isGlowing().addToList(RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).isGlowing().addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> DRAG_VISOR_ZWEI_VENT = ITEMS.register("drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuki", DRAG_VISOR.get(), DRAG_VISOR_ZWEI.get()).addToList(RYUKI_TAB_ITEM));
@@ -778,8 +787,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.addToList(RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIGHT_TRICK_VENT = ITEMS.register("knight_trick_vent",
 			() -> new AdventCardItem(new Item.Properties(), "knight", DARK_VISOR.get(), "trick_vent_knight").addToList(RYUKI_TAB_ITEM));
@@ -817,8 +830,12 @@ public class RyukiRiderItems {
 			() -> new RiderFormChangeItem(new Item.Properties(),"_giga_cannon","zolda","v_buckle_belt_zolda",
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false))
-					.addToList(RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> GIGA_ARMOR_VENT = ITEMS.register("giga_armor_vent",
 			() -> new AdventCardItem(new Item.Properties(), "zolda", MAGNA_VISOR.get(), GIGA_ARMOR.get()).addToList(RYUKI_TAB_ITEM));
@@ -828,7 +845,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)).changeModel("zolda.geo.json").addToList(RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).changeModel("zolda.geo.json").addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> EVIL_WHIP_VENT = ITEMS.register("evil_whip_vent",
 			() -> new AdventCardItem(new Item.Properties(), "raia", EVIL_VISOR.get(), EVIL_WHIP.get()).addToList(RYUKI_TAB_ITEM));
@@ -885,8 +907,12 @@ public class RyukiRiderItems {
 					new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false))
-					.isGlowing().changeModel("ryuki_drag_shield.geo.json").addToList(RYUKI_TAB_ITEM));
+					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).isGlowing().changeModel("ryuki_drag_shield.geo.json").addToList(RYUKI_TAB_ITEM));
 
 	public static final DeferredItem<Item> BLACK_DRAG_VISOR_ZWEI_VENT = ITEMS.register("black_drag_visor_zwei_vent",
 			() -> new AdventCardItem(new Item.Properties(), "ryuga", BLACK_DRAG_VISOR.get(), BLACK_DRAG_VISOR_ZWEI.get()).addToList(RYUKI_TAB_ITEM));

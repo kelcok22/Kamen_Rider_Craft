@@ -1817,8 +1817,27 @@ public class OOORiderItems {
             }.hideBeltFormInfo().addExtraBaseFormItems(KANI_MEDAL, SASORI_MEDAL, ModdedItemCore.BLANK_FORM).overrideBeltText("powered_up_gaia_core_typhoon_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_ANKH_LOST = ITEMS.register("greeed_blet_ankh_lost",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_lost", TAKA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.RARE))
-                    .hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL, CONDOR_MEDAL).overrideBeltText("ankh_lost_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_lost", TAKA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties().rarity(Rarity.RARE)){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("ankh_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL, CONDOR_MEDAL).overrideBeltText("ankh_lost_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_ANKH = ITEMS.register("greeed_blet_ankh",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "ankh_complete", TAKA_ANKH_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
@@ -1844,32 +1863,165 @@ public class OOORiderItems {
             }.hideBeltFormInfo().addExtraBaseFormItems(KUJAKU_MEDAL, CONDOR_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_UVA = ITEMS.register("greeed_blet_uva",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "uva_complete", KUWAGATA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(KAMAKIRI_MEDAL, BATTA_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "uva_complete", KUWAGATA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("uva_henshin"));
+                        }
+                    }
+                }
+            } .hideBeltFormInfo().addExtraBaseFormItems(KAMAKIRI_MEDAL, BATTA_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_KAZARI = ITEMS.register("greeed_blet_kazari",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kazari_complete", LION_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(TORA_MEDAL, CHEETAH_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kazari_complete", LION_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("kazari_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(TORA_MEDAL, CHEETAH_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_MEZOOL = ITEMS.register("greeed_blet_mezool",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mezool_complete", SHACHI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(UNAGI_MEDAL, TAKO_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mezool_complete", SHACHI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("mezool_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(UNAGI_MEDAL, TAKO_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_GAMEL = ITEMS.register("greeed_blet_gamel",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gamel_complete", SAI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(GORILLA_MEDAL, ZOU_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gamel_complete", SAI_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("gamel_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(GORILLA_MEDAL, ZOU_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_MUCHIRI = ITEMS.register("greeed_blet_muchiri",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "muchiri_complete", MUKADE_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(HACHI_MEDAL, ARI_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "muchiri_complete", MUKADE_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("muchiri_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(HACHI_MEDAL, ARI_MEDAL).overrideBeltText("ankh_belt").changeRepairItem(CELL_MEDAL.get()).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_KYORYU = ITEMS.register("greeed_blet_kyoryu",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kyoryu_complete", PTERA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(TRICERA_MEDAL, TYRANNO_MEDAL).overrideBeltText("kyoryu_belt").changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "kyoryu_complete", PTERA_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("kyoryu_greeed_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(TRICERA_MEDAL, TYRANNO_MEDAL).overrideBeltText("kyoryu_belt").changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_BLET_SHOCKER = ITEMS.register("greeed_blet_shocker",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "shocker_complete", SHOCKER_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addExtraBaseFormItems(GEL_SHOCKER_MEDAL, DESTRON_MEDAL).overrideBeltText("shocker_greeed_belt").changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(OOO_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "shocker_complete", SHOCKER_MEDAL, OOOHELMET, OOOCHESTPLATE, OOOLEGGINGS, new Item.Properties()){
+
+                public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+                    if (equipmentSlot == EquipmentSlot.FEET & isTransforming(rider)) {
+                        return "blank";
+                    } else {
+                        return super.getText(itemStack, equipmentSlot, rider, riderName);
+                    }
+                }
+                public double getRenderType(ItemStack stack, double num) {
+                    return 1;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider)) {
+                            layerInfo.add(new CoreRenderLayerInfo("shocker_greeed_henshin"));
+                        }
+                    }
+                }
+            }.hideBeltFormInfo().addExtraBaseFormItems(GEL_SHOCKER_MEDAL, DESTRON_MEDAL).overrideBeltText("shocker_greeed_belt").changeRepairItem(CELL_MEDAL.get()).useBasicModel().addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> MEDAJALIBUR = ITEMS.register("medajalibur",
             () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(OOO_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).changeRepairItem(CELL_MEDAL.get()));

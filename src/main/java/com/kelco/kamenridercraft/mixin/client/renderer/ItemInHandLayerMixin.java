@@ -69,7 +69,7 @@ public class ItemInHandLayerMixin {
                         tango = new ItemStack(Items.AIR);
                     }
                     replaceRender = true;
-                } else if (riderDriverItem.riderName.equals("ryuki") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("ryuki") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.RYUKI_DECK.get());
                     } else {
