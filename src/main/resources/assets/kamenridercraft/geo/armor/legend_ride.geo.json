@@ -12,7 +12,12 @@
 			},
 			"bones": [
 				{
+					"name": "body",
+					"pivot": [-0.16667, 19.33333, 0]
+				},
+				{
 					"name": "bipedBody",
+					"parent": "body",
 					"pivot": [0, 24, 0]
 				},
 				{
@@ -50,6 +55,7 @@
 				},
 				{
 					"name": "bipedRightLeg",
+					"parent": "body",
 					"pivot": [-2, 12, 0]
 				},
 				{

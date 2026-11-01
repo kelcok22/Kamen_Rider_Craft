@@ -18,6 +18,7 @@
 				{
 					"name": "bipedHead",
 					"parent": "body",
+					"parent": "body",
 					"pivot": [0, 24, 0]
 				},
 				{

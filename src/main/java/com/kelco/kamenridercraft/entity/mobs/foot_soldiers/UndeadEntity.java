@@ -159,6 +159,10 @@ public class UndeadEntity extends BaseHenchmenEntity {
             case "kerberos_sealable" -> undeadEffect.setData(MOB_STATE, "kerberos");
             default -> undeadEffect.setData(MOB_STATE, "normal_undead");
         }
+        if (getData(MOB_STATE).equals("peacock_sealable") &&
+                sealer.getItemBySlot(EquipmentSlot.FEET).getItem() == BladeRiderItems.GARRENBUCKLE.get()) {
+            undeadEffect.setData(MOB_STATE, "peacock_garren");
+        }
         undeadEffect.setData(UUID_STORE, sealer.getStringUUID());
         undeadEffect.moveTo(getX(), getY() + 1, getZ(), 0, 0);
 

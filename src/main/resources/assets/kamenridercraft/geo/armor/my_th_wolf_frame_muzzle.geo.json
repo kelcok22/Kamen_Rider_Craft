@@ -12,7 +12,12 @@
 			},
 			"bones": [
 				{
+					"name": "body",
+					"pivot": [-0.16667, 19.33333, 0]
+				},
+				{
 					"name": "bipedHead",
+					"parent": "body",
 					"pivot": [0, 24, 0]
 				},
 				{

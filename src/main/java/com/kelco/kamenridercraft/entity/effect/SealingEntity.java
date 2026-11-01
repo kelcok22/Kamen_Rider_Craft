@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entity.effect;
 
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -54,7 +55,7 @@ public class SealingEntity extends Entity implements GeoEntity {
                             new ItemStack(CHANGE_SPIDER_PROPER_SEAL.get()), 0, 0, 0);
                     case "eagle" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(FUSION_EAGLE.get()), 0, 0, 0);
-                    case "peacock" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                    case "peacock", "peacock_garren" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(FUSION_PEACOCK.get()), 0, 0, 0);
                     case "wolf" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(FUSION_WOLF.get()), 0, 0, 0);
@@ -82,6 +83,11 @@ public class SealingEntity extends Entity implements GeoEntity {
                             new ItemStack(SEALABLE_ALBINO_JOKER.get()), 0, 0, 0);
                     default -> throw new IllegalStateException("Unexpected value: " + getData(MOB_STATE));
                 };
+
+                if (getData(MOB_STATE).equalsIgnoreCase("peacock_garren")) {
+                    level().addFreshEntity(new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(MusicDiscItems.REBIRTH_MUSIC_DISC.get()), 0, 0, 0));
+                }
 
                 obtainedCard.setPickUpDelay(60);
                 obtainedCard.setNoGravity(true);

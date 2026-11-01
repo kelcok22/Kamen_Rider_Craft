@@ -1,12 +1,16 @@
 package com.kelco.kamenridercraft.mixin.client.renderer;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.zigythebird.playeranim.accessors.IAnimatedPlayer;
+import com.zigythebird.playeranim.animation.PlayerAnimManager;
+import com.zigythebird.playeranimcore.bones.PlayerAnimBone;
 import net.minecraft.client.model.ArmedModel;
+import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.layers.ItemInHandLayer;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -17,6 +21,7 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -24,6 +29,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(value = ItemInHandLayer.class)
 public class ItemInHandLayerMixin {
     ItemStack tango = new ItemStack(Items.APPLE);
+    @Unique
+    private final PlayerAnimBone palRightItem = new PlayerAnimBone("right_item");
+    @Unique
+    private final PlayerAnimBone palLeftItem = new PlayerAnimBone("left_item");
 
     @Inject(method = "renderArmWithItem", at = @At("HEAD"), cancellable = true)
     public void renderArmWithItemMixin(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext displayContext,
@@ -42,16 +51,13 @@ public class ItemInHandLayerMixin {
                 && riderDriverItem.isTransformed(livingEntity)) {
             if (livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() != 0) {
                 boolean replaceRender = false;
-                if (riderDriverItem.riderName.equals("ooo")||riderDriverItem.riderName.equals("goda")||riderDriverItem.riderName.equals("oooooo")||riderDriverItem.riderName.equals("shocker_ooo")||riderDriverItem.riderName.equals("ooo_ancient")) {
+                boolean palOverride = false;
+
+                if (riderDriverItem.riderName.equals("ooo") || riderDriverItem.riderName.equals("goda")
+                        || riderDriverItem.riderName.equals("oooooo") || riderDriverItem.riderName.equals("shocker_ooo")
+                        || riderDriverItem.riderName.equals("ooo_ancient")) {
                     if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(OOORiderItems.O_SCANNER.get());
-                    } else {
-                        tango = new ItemStack(Items.AIR);
-                    }
-                    replaceRender = true;
-                } else if (riderDriverItem.riderName.equals("kiva")) {
-                    if (arm == HumanoidArm.RIGHT) {
-                        tango = new ItemStack(KivaRiderItems.KIVAT_BELT.get());
                     } else {
                         tango = new ItemStack(Items.AIR);
                     }
@@ -63,6 +69,14 @@ public class ItemInHandLayerMixin {
                         tango = new ItemStack(Items.AIR);
                     }
                     replaceRender = true;
+                } else if (riderDriverItem.riderName.equals("ryuki") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                    if (arm == HumanoidArm.LEFT) {
+                        tango = new ItemStack(RyukiRiderItems.RYUKI_DECK.get());
+                    } else {
+                        tango = new ItemStack(Items.AIR);
+                    }
+                    replaceRender = true;
+                    palOverride = true;
                 }
 
                 if (replaceRender) {
@@ -73,6 +87,38 @@ public class ItemInHandLayerMixin {
                     poseStack.mulPose(Axis.YP.rotationDegrees(180.0F));
                     boolean flag = arm == HumanoidArm.LEFT;
                     poseStack.translate((float) (flag ? -1 : 1) / 16.0F, 0.125F, -0.625F);
+                    if (palOverride && livingEntity instanceof AbstractClientPlayer player && ((IAnimatedPlayer) player).playerAnimLib$getAnimProcessor() != null
+                            && ((IAnimatedPlayer) player).playerAnimLib$getAnimManager().isActive()) {
+                        //code copy from PAL mixin
+
+                        PlayerAnimManager anim = ((IAnimatedPlayer) player).playerAnimLib$getAnimManager();
+
+                        if (anim == null) return;
+                        PlayerAnimBone bone;
+
+                        if (arm == HumanoidArm.LEFT) bone = palLeftItem;
+                        else bone = palRightItem;
+
+                        bone.setToInitialPose();
+                        anim.get3DTransform(bone);
+
+                        poseStack.translate(bone.getPosX() / 16, -bone.getPosY() / 16, bone.getPosZ() / 16);
+                        if (anim == null) return;
+
+                        if (arm == HumanoidArm.LEFT) bone = palLeftItem;
+                        else bone = palRightItem;
+
+                        if (bone.getRotY() != 0)
+                            poseStack.mulPose(Axis.ZP.rotation(-bone.getRotY()));
+
+                        if (bone.getRotZ() != 0)
+                            poseStack.mulPose(Axis.YP.rotation(-bone.getRotZ()));
+
+                        if (bone.getRotX() != 0)
+                            poseStack.mulPose(Axis.XP.rotation(-bone.getRotX()));
+
+                        poseStack.scale(bone.getScaleX(), bone.getScaleY(), bone.getScaleZ());
+                    }
                     renderer.itemInHandRenderer.renderItem(livingEntity, tango, displayContext, flag, poseStack, buffer, packedLight);
                     poseStack.popPose();
                 }
