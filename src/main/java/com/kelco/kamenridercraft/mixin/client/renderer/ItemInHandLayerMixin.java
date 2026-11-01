@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.mixin.client.renderer;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
@@ -74,6 +75,14 @@ public class ItemInHandLayerMixin {
                         tango = new ItemStack(RyukiRiderItems.RYUKI_DECK.get());
                     } else {
                         tango = new ItemStack(Items.AIR);
+                    }
+                    replaceRender = true;
+                    palOverride = true;
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("kiva") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                    if (arm == HumanoidArm.LEFT) {
+                        tango = new ItemStack(Items.AIR);
+                    } else {
+                        tango = new ItemStack(KivaRiderItems.KIVAT_THE_BAT_3RD.get());
                     }
                     replaceRender = true;
                     palOverride = true;

@@ -653,5 +653,8 @@ public class KivaRiderItems {
 	public static final DeferredItem<Item> DOGGA_STATUE = ITEMS.register("dogga_statue",
 			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.DOGGA).addToList(KIVA_TAB_ITEM).useBasicModel());
 
+	public static final DeferredItem<Item> KIVAT_THE_BAT_3RD = ITEMS.register("kivat_the_bat_3rd",
+			() -> new BaseItem(new Item.Properties()).useBasicModel());
+
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
