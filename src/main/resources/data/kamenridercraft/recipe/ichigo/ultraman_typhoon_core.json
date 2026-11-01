@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "ichigo",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:typhoon_core"
+		},
+      {
+        "item": "ultracraft:ultraman_energy"
+      }
+	],
+	"result": {
+		"id": "kamenridercraft:ultraman_typhoon_core"
+	}
+}

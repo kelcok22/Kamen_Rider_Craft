@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "shadow_moon",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:green_king_stone"
+    },
+    {
+      "item": "minecraft:painting"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:green_king_stone_hajime_sorayama"
+  }
+}

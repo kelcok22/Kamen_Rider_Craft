@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "kuuga",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:kuuga_mighty"
+    },
+    {
+      "item": "minecraft:painting"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:kuuga_touma"
+  }
+}

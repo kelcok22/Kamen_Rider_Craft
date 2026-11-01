@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "gavv",
+	"pattern": [
+		"XMX",
+		"XSX",
+		"XCX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_gochizo"
+		},
+		"S": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"M": {
+			"item": "kamenridercraft:zakuzakuchips_gochizo"
+		},
+      "C": {
+        "item": "kamenridercraft:chocodan_gochizo"
+      }
+	},
+	"result": {
+		"id": "kamenridercraft:zakuzakuchipslasher_choco"
+	}
+}
+

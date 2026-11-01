@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "kamenridercraft:albino_joker_sealed"
+		},
+		"title": {
+			"translate": "advancements.kamenridercraft.blade.albino_joker_undead.title"
+		},
+		"description": {
+			"translate": "advancements.kamenridercraft.blade.albino_joker_undead.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "kamenridercraft:blade/king_undead",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"kamenridercraft:albino_joker_sealed"
+						]
+					}
+				]
+			}
+		}
+	}
+}

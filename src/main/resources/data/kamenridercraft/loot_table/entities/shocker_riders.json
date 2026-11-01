@@ -16,6 +16,21 @@
 		}
 	  ]
 	},
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:saikyo_kaijin_typhoon_core"
+        }
+      ]
+    },
 	{
 	  "rolls": 1,
 	  "entries": [

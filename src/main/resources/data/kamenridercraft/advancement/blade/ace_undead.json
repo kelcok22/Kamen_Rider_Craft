@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "kamenridercraft:bladecard"
+      "id": "kamenridercraft:proper_blank_ace_wild"
     },
     "title": {
-      "translate": "advancements.kamenridercraft.blade.undead.title"
+      "translate": "advancements.kamenridercraft.blade.ace_undead.title"
     },
     "description": {
-      "translate": "advancements.kamenridercraft.blade.undead.description"
+      "translate": "advancements.kamenridercraft.blade.ace_undead.description"
     },
     "frame": "task",
     "show_toast": true,
