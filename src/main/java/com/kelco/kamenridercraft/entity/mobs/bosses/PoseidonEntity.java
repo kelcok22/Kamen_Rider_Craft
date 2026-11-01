@@ -16,7 +16,7 @@ public class PoseidonEntity extends BaseHenchmenEntity {
 
     public PoseidonEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="poseidon";
+        NAME="steve";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(OOORiderItems.OOOHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(OOORiderItems.OOOCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(OOORiderItems.OOOLEGGINGS.get()));

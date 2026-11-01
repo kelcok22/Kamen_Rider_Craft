@@ -24,7 +24,7 @@ public class ShockerRidersEntity extends BaseHenchmenEntity {
 	
     public ShockerRidersEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="shocker_rider";
+        NAME="steve";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGO_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGO_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGO_LEGGINGS.get()));

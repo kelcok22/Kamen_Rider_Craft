@@ -2,12 +2,15 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.MagichandRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -21,6 +24,9 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.time.LocalDate;
+import java.util.List;
 
 public class ModdedItemCore {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -128,8 +134,16 @@ public class ModdedItemCore {
 
     public static final DeferredItem<Item> SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "shocker_combatman", "shocker_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
-                    .hasSD().setShowFace().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        LocalDate localdate = LocalDate.now();
+                        int day = localdate.getDayOfMonth();
+                        if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) layerInfo.add(new RenderLayerInfo("shocker_combatman_christmas", null));
+                        ;
+                    }
+                }
+            }.hasSD().setShowFace().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
