@@ -734,6 +734,7 @@
 		},
 		"lovekov.modifier": {
 			"loop": true,
+			"animation_length": 0.25,
 			"bones": {
 				"rightItem": {
 					"position": [-4, -4.5, 0]
