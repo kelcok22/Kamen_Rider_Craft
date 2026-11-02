@@ -575,6 +575,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHIN_NO_0.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.STAGESHOW_GRUNT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.STAGESHOW_ENEMY.get(), BasicEntityRenderer::new);
 
 

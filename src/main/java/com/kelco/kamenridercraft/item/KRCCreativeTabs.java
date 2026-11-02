@@ -1437,6 +1437,7 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.CATASTROPHE_GORE_NIGHTMARE_SPAWN_EGG);
             event.accept(MobsCore.OBLIVION_GORE_NIGHTMARE_SPAWN_EGG);
 
+            event.accept(MobsCore.STAGESHOW_GRUNT_SPAWN_EGG);
             event.accept(MobsCore.STAGESHOW_ENEMY_SPAWN_EGG);
 
         } else if (event.getTab() == RiderMiscTab.get()) {
