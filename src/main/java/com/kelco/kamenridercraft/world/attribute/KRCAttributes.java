@@ -19,9 +19,11 @@ public class KRCAttributes extends Event implements IModBusEvent {
     public static final DeferredRegister<Attribute> REGISTRY = DeferredRegister.create(BuiltInRegistries.ATTRIBUTE, KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredHolder<Attribute, Attribute> WIND = REGISTRY.register("wind",
-            () -> new BooleanAttribute(
+            () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wind",
-                    false
+                    0,
+                    0,
+                    3000
             ).setSyncable(true)
     );
 
@@ -33,9 +35,11 @@ public class KRCAttributes extends Event implements IModBusEvent {
     );
 
     public static final DeferredHolder<Attribute, Attribute> WINGS_OUT = REGISTRY.register("wing_out",
-            () -> new BooleanAttribute(
+            () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wings_out",
-                    false
+                    0,
+                    0,
+                    1
             ).setSyncable(true)
     );
 
@@ -118,7 +122,7 @@ public class KRCAttributes extends Event implements IModBusEvent {
                     "attribute.kamenridercraftcore.is_transforming",
                     0,
                     0,
-                    30
+                    300
             ).setSyncable(true)
     );
 

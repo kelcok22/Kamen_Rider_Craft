@@ -210,16 +210,10 @@ public class ModCommonEvents {
                         livingEntity.addEffect(new MobEffectInstance(LOW_GRAVITY, 20, 7, false, false));
                     }
                 }
-
-                if (livingEntity.getAttribute(WIND).getBaseValue() > 0) {
-                    livingEntity.getAttribute(WIND).setBaseValue(livingEntity.getAttribute(WIND).getValue() - 1);
-                } else if (livingEntity.getAttribute(WIND).getValue() < 0) {
-                    livingEntity.getAttribute(WIND).setBaseValue(0);
-                }
-
                 if (livingEntity.level().isClientSide()) {
                     float X = 0;
                     float Z = 0;
+
 
                     if (livingEntity instanceof Mob mob) {
                         if (livingEntity.getDeltaMovement().x != 0 || livingEntity.getDeltaMovement().z != 0) {
@@ -282,6 +276,12 @@ public class ModCommonEvents {
                         }
                     }
                 }
+                if (livingEntity.getAttribute(WIND).getBaseValue() > 0) {
+                    livingEntity.getAttribute(WIND).setBaseValue(livingEntity.getAttribute(WIND).getValue() - 1);
+                } else if (livingEntity.getAttribute(WIND).getValue() < 0) {
+                    livingEntity.getAttribute(WIND).setBaseValue(0);
+                }
+
                 if (livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() != 0)
                     livingEntity.getAttribute(IS_TRANSFORMING).setBaseValue(livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() - 1);
                 if (livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() <= 0)

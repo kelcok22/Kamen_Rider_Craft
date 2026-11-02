@@ -44,12 +44,12 @@ public class LocalPlayerMixin {
         if (Minecraft.getInstance().level != null && Minecraft.getInstance().level.isClientSide()) {
             float X = rider.xxa;
             float Z = rider.zza;
-            if (rider instanceof Player pl && (pl.getAbilities().flying || rider.isFallFlying())) {
+            if (rider instanceof LocalPlayer pl && (pl.getAbilities().flying || rider.isFallFlying())) {
                 Objects.requireNonNull(rider.getAttribute(KRCAttributes.WINGS_OUT)).setBaseValue(1);
-                PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wing_out", 1.0));
+               PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wing_out", 1.0));
             } else {
                 Objects.requireNonNull(rider.getAttribute(KRCAttributes.WINGS_OUT)).setBaseValue(0);
-                PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wing_out", (double) 0));
+                PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wing_out", 0.0));
             }
 
             Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue());
