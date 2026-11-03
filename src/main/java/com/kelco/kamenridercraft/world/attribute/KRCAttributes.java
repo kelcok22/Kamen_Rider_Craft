@@ -40,7 +40,7 @@ public class KRCAttributes extends Event implements IModBusEvent {
                     0,
                     0,
                     1
-            ).setSyncable(true)
+            ).setSyncable(false)
     );
 
     public static final DeferredHolder<Attribute, Attribute> POSE_MODEL_MODIFIER = REGISTRY.register("pose_model_modifier",
