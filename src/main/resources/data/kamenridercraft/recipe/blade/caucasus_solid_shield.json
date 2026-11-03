@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "undead",
+	"pattern": [
+		"XXX",
+		"XMX",
+		"XCX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:bladecard"
+		},
+		"M": {
+			"item": "minecraft:shield"
+		},
+		"C": {
+			"item": "kamenridercraft:evolution_caucasus"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:caucasus_solid_shield"
+	}
+}
