@@ -9461,6 +9461,7 @@
 "kamenridercraft:bakuen_no_senshi_ryuga.form": "Form: Bakuen no Warrior",
 "kamenridercraft:bakuen_no_senshi.form": "Form: Bakuen no Warrior",
 
+"item.kamenridercraft.stageshow_grunt_spawn_egg": "Stageshow Grunt Spawn Egg",
 "item.kamenridercraft.stageshow_enemy_spawn_egg": "Stageshow Enemy Spawn Egg",
 
 
@@ -9809,6 +9810,7 @@
 "entity.kamenridercraft.batta_augment":"Phase Variation Batta Augment",
 "entity.kamenridercraft.shin_no_0":"Kamen Rider No.0",
 
+"entity.kamenridercraft.stageshow_grunt":"Stageshow Grunt",
 "entity.kamenridercraft.stageshow_enemy":"Stageshow Enemy",
 
 "entity.kamenridercraft.base_projectile":"KRC Projectile",

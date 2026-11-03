@@ -3,6 +3,8 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.w;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.BirthBallLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WHenshinRingRenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -29,6 +31,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredItem;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
+import software.bernie.geckolib.util.Color;
 
 import java.util.List;
 import java.util.Objects;
@@ -45,7 +48,7 @@ public class WDriverItem extends RiderDriverItem {
 
 
     @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
         Item formItem = getFormItem(stack, 1);
         Item formItem2 = getFormItem(stack, 2);
@@ -72,7 +75,6 @@ public class WDriverItem extends RiderDriverItem {
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/w_riderbelt.geo.json");
     }
-
     @Override
     public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag tag) {
         if (getFormItem(belt, 1) == WRiderItems.XTREME_MEMORY.get() || getFormItem(belt, 1) == WRiderItems.XTREME_GOLD_MEMORY.get() || getFormItem(belt, 1) == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
@@ -147,9 +149,18 @@ public class WDriverItem extends RiderDriverItem {
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
     super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        Item formItem = getFormItem(itemStack, 1);
+        if (slot == EquipmentSlot.HEAD) {
+            if (formItem != WRiderItems.XTREME_MEMORY.get() && formItem != WRiderItems.XTREME_GOLD_MEMORY.get() && formItem != WRiderItems.XTREME_ACCEL_MEMORY.get()) {
+                double henshin_tick = getHenshinTick(itemStack, rider);
+                if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 31 && henshin_tick > 11) {
+                    layerInfo.add(new WHenshinRingRenderLayerInfo(getRingColor(getFormItem(itemStack, 1)), getRingColor(getFormItem(itemStack, 2))));
+                }
+            }
+        }
         if(slot==EquipmentSlot.FEET){
             String texture;
-            Item formItem = getFormItem(itemStack, 1);
+
             if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
                 texture="belts/wdriver_belt_xtreme";
             } else {
@@ -162,6 +173,22 @@ public class WDriverItem extends RiderDriverItem {
             }
             else layerInfo.add(new RenderLayerInfo(texture,null,texture+ "_glowmask"));
         }
+    }
+
+    public int getRingColor(Item item){
+
+        if (item==WRiderItems.CYCLONE_MEMORY.get()||item==WRiderItems.CYCLONE_CYCLONE_MEMORY.get())return Color.GREEN.getColor();
+        if (item==WRiderItems.JOKER_MEMORY.get()||item==WRiderItems.JOKER_JOKER_MEMORY.get()||item==WRiderItems.CYCLONE_SKULL_MEMORY.get())return 0x669200FF;
+        if (item==WRiderItems.HEAT_MEMORY.get())return Color.RED.getColor();
+        if (item==WRiderItems.LUNA_MEMORY.get())return Color.YELLOW.getColor();
+        if (item==WRiderItems.METAL_MEMORY.get())return Color.GRAY.getColor();
+        if (item==WRiderItems.TRIGGER_MEMORY.get())return Color.BLUE.getColor();
+
+        return Color.WHITE.getColor();
+    }
+
+    public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+        return 50;
     }
 
     @Override
