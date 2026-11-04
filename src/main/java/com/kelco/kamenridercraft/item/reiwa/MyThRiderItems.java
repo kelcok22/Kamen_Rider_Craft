@@ -112,9 +112,10 @@ public class MyThRiderItems {
             }.isGlowing().addAlternative(RIDE_X_EGGS_1_EN_MY_TH.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_3_TIGRE = ITEMS.register("ride_x_eggs_3_tigre",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","jyao","my_th_driver_belt_tigre",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","tigre","my_th_driver_belt_tigre",
                     new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40,3 ,true,false)){
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40,1 ,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
