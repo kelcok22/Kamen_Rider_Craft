@@ -2,6 +2,9 @@ package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.GaiaMemoryRefinerBlock;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.AccelRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.MeteorStormRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
@@ -32,6 +35,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 public class WRiderItems {
 
@@ -293,6 +298,7 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
                     new MobEffectInstance(EffectCore.STEP, 40, 0,true,false)){
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
                     super.transformationEffect(itemstack, player,tick);
 
@@ -864,6 +870,13 @@ public class WRiderItems {
 
     public static final DeferredItem<Item> ACCELDRIVER = ITEMS.register("acceldriver",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"accel",ACCEL_MEMORY ,WHELMET,WCHESTPLATE,WLEGGINGS , new Item.Properties()) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        if (RiderDriverItem.isTransforming(rider) && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() < 20 && rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 1&& getFormItem(itemStack, 1) == ACCEL_MEMORY.asItem()&& getFormItem(itemStack, 1,60) != ACCEL_MEMORY_BIKE.asItem()) {
+                            layerInfo.add(new AccelRenderLayerInfo());
+                        }
+                    }
+                }
                 public String getText(ItemStack itemStack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
                     // getFormItem(itemstack,2,rider.getAttribute(Attributes.IS_TRANSFORMING).getBaseValue())
                     if (equipmentSlot != EquipmentSlot.FEET&&getFormItem(itemStack,1)==TRIAL_MEMORY.asItem()&&rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()!=0){
