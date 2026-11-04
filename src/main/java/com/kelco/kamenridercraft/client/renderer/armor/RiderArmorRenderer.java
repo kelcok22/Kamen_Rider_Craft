@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
@@ -28,6 +29,9 @@ import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendTo
 
 
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
+
+    protected GeoBone cape = null;
+
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
         super(new RiderArmorModel<>());
         if (equipmentSlot != EquipmentSlot.FEET) {

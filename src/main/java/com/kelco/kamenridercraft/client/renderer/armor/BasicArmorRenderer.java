@@ -11,14 +11,15 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.util.RenderUtil;
 
 import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendToPath;
 
-
 public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
+
     public BasicArmorRenderer(LivingEntity livingEntity, EquipmentSlot equipmentSlot) {
         super(new BasicArmorModel());
         if (livingEntity.getItemBySlot(equipmentSlot).getItem() instanceof BasicArmorItem belt) {

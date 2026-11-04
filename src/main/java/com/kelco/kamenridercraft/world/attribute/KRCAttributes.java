@@ -40,7 +40,7 @@ public class KRCAttributes extends Event implements IModBusEvent {
                     0,
                     0,
                     1
-            ).setSyncable(false)
+            ).setSyncable(true)
     );
 
     public static final DeferredHolder<Attribute, Attribute> POSE_MODEL_MODIFIER = REGISTRY.register("pose_model_modifier",
@@ -67,6 +67,14 @@ public class KRCAttributes extends Event implements IModBusEvent {
                     30
             ).setSyncable(true)
     );
+    public static final DeferredHolder<Attribute, Attribute> CAPE_ROT_NEXT = REGISTRY.register("cape_rotation_next",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.cape_rotation_next",
+                    0,
+                    -30,
+                    30
+            ).setSyncable(false)
+    );
 
 
     public static final DeferredHolder<Attribute, Attribute> CAPE_ROT = REGISTRY.register("cape_rotation",
@@ -86,6 +94,16 @@ public class KRCAttributes extends Event implements IModBusEvent {
                     30
             ).setSyncable(true)
     );
+    public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT_NEXT = REGISTRY.register("wheel_rotation_next",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.wheel_rotation_next",
+                    0,
+
+                    -30,
+                    30
+            ).setSyncable(false)
+    );
+
 
 
     public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT = REGISTRY.register("wheel_rotation",
@@ -106,6 +124,14 @@ public class KRCAttributes extends Event implements IModBusEvent {
             ).setSyncable(true)
     );
 
+    public static final DeferredHolder<Attribute, Attribute> BALL_ROT_NEXT = REGISTRY.register("ball_rotation_next",
+            () -> new RangedAttribute(
+                    "attribute.kamenridercraftcore.ball_rotation_next",
+                    0,
+                    -30,
+                    30
+            ).setSyncable(false)
+    );
 
     public static final DeferredHolder<Attribute, Attribute> BALL_ROT = REGISTRY.register("ball_rotation",
             () -> new RangedAttribute(

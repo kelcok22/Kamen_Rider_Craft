@@ -31,6 +31,7 @@ import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.KamenRiderCraftClientCore.*;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.util.AnimationUtil.*;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.*;
 import static com.zigythebird.playeranim.PlayerAnimLibMod.ANIMATION_LAYER_ID;
 
 @Mod(value = MOD_ID, dist = Dist.CLIENT)
@@ -49,25 +50,10 @@ public class ClientPayloadHandler {
     }
 
     public static void handleAttributeClientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
-        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity entity) {
-            if (!context.player().getStringUUID().equals(data.id())) {
-                switch (data.attributeName()) {
-                    case "ball_rot" -> {
-                        Objects.requireNonNull(entity.getAttribute(KRCAttributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(entity.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue());
-                        Objects.requireNonNull(entity.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(data.valueChange());
-                    }
-                    case "wheel_rot" -> {
-                        Objects.requireNonNull(entity.getAttribute(KRCAttributes.WHEEL_ROT_OLD)).setBaseValue(Objects.requireNonNull(entity.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue());
-                        Objects.requireNonNull(entity.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(data.valueChange());
-                    }
-                    case "cape_rot" -> {
-                        Objects.requireNonNull(entity.getAttribute(KRCAttributes.CAPE_ROT_OLD)).setBaseValue(Objects.requireNonNull(entity.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue());
-                        Objects.requireNonNull(entity.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(data.valueChange());
-                    }
-                    case "wing_out" ->
-                            Objects.requireNonNull(entity.getAttribute(KRCAttributes.WINGS_OUT)).setBaseValue(data.valueChange());
-                }
-            }
+        if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity livingEntity) {
+                    Objects.requireNonNull(livingEntity.getAttribute(BALL_ROT_NEXT)).setBaseValue(data.ball());
+                    Objects.requireNonNull(livingEntity.getAttribute(WHEEL_ROT_NEXT)).setBaseValue(data.wheel());
+                    Objects.requireNonNull(livingEntity.getAttribute(CAPE_ROT_NEXT)).setBaseValue(data.cape());
         }
     }
 

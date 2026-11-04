@@ -819,6 +819,13 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         return false;
     }
+    public boolean hasBikeForm(ItemStack itemStack){
+        for (int n = 0; n < numBaseFormItems; n++) {
+            if (getFormItem(itemStack, n+1).getIsBike())
+                return true;
+        }
+        return false;
+    }
 
     public boolean hasCape(ItemStack itemStack) {
         for (int n = 0; n < numBaseFormItems; n++) {

@@ -26,12 +26,9 @@ public class LocalPlayerMixin {
         if (rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 0) return false;
         return original;
     }
+    @Inject(method = "tick", at = @At("HEAD"))
+    public void pre_Tick(CallbackInfo ci) {
 
-    boolean hasBikeForm(RiderDriverItem belt, LivingEntity rider){
-        for (int n = 0; n < belt.numBaseFormItems; n++) {
-            if (RiderDriverItem.getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n).getIsBike()) return true;
-        }
-        return false;
     }
 
     @Inject(method = "tick", at = @At("TAIL"))
@@ -40,89 +37,15 @@ public class LocalPlayerMixin {
         if (rider.horizontalCollision && Objects.requireNonNull(rider.getAttribute(KRCAttributes.CLIMBING)).getValue() != 0) {
             PacketDistributor.sendToServer(new ClimbCollisionPayload(rider.getStringUUID()));
         }
-
         if (Minecraft.getInstance().level != null && Minecraft.getInstance().level.isClientSide()) {
             float X = rider.xxa;
             float Z = rider.zza;
             if (rider instanceof LocalPlayer pl && (pl.getAbilities().flying || rider.isFallFlying())) {
-                Objects.requireNonNull(rider.getAttribute(KRCAttributes.WINGS_OUT)).setBaseValue(1);
-               PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wing_out", 1.0));
+                PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), 1.0,X,Z));
             } else {
-                Objects.requireNonNull(rider.getAttribute(KRCAttributes.WINGS_OUT)).setBaseValue(0);
-                PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wing_out", 0.0));
+                PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), 0.0,X,Z));
             }
 
-            Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue());
-            Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT_OLD)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue());
-            Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT_OLD)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue());
-
-            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-
-                if (belt.hasCape(rider.getItemBySlot(EquipmentSlot.FEET))) {
-
-                    float cape = (float) Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue();
-                    float ball = 0;
-                    if (Z > 0 & cape > -0.7 & !rider.isSwimming()) {
-                        cape = cape - 0.01f - (rider.getSpeed() / 10);
-                    } else if (Z > 0 & cape > -0.7 & !rider.isSwimming()) {
-                        cape = 0;
-                    } else if (X == 0 & Z < 0 & cape < 0) {
-                        cape = cape + 0.2f;
-                    } else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & Z == 0 & cape < -0.7 || X == 0 & cape < 0 & rider.isSwimming()) {
-                        cape = cape + 0.02f;
-                    }
-                    if (X > 0) {
-                        if (Z == 0 & cape > -0.7) {
-                            cape = cape - 0.02f - (rider.getSpeed() / 10);
-                        }
-                    }
-                    if (X < 0) {
-                        ball = -0.2f;
-                        if (Z == 0 & cape > -0.7) {
-                            cape = cape - 0.02f - (rider.getSpeed() / 10);
-                        }
-                    }
-                    if (rider.fallDistance > 0 & !rider.isSwimming() & cape > -2) {
-                        cape = cape - 0.05f;
-                    }
-
-                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(ball);
-                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(cape);
-
-                    PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "ball_rot", Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue()));
-                    PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "cape_rot", Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue()));
-                }
-                if (hasBikeForm(belt,rider)) {
-                    float wheel = 0;
-                    if (Z > 0) {
-                        wheel = -0.1f;
-                    }
-                    if (Z < 0) {
-                        wheel = 0.1f;
-                    }
-                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue() + wheel);
-                    PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wheel_rot", Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue()));
-                    float ball = 0;
-                    if (X > 0) {
-                        ball = 0.5f;
-                        if (Z == 0) {
-                            wheel = -0.1f;
-                        }
-                    }
-                    if (X < 0) {
-                        ball = -0.5f;
-                        if (Z == 0) {
-                            wheel = -0.1f;
-                        }
-                    }
-                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(ball);
-                    PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "ball_rot", (double) ball));
-
-                    Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue() + wheel);
-                    PacketDistributor.sendToServer(new AttributeChangePayload(rider.getStringUUID(), "wheel_rot", Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue()));
-                }
-
-        }
         }
     }
 }

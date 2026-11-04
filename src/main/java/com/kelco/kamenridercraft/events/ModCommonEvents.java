@@ -32,10 +32,13 @@ import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.gavv.GochipodItem;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.level.ModGameRules;
+import com.kelco.kamenridercraft.network.payload.AttributeChangePayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.DimensionUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -94,9 +97,11 @@ import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
@@ -225,11 +230,11 @@ public class ModCommonEvents {
                             else if (look.z < 0 & livingEntity.getDeltaMovement().z < 0) Z = 1;
                             else Z = -1;
                         }
-                        livingEntity.getAttribute(BALL_ROT_OLD).setBaseValue(livingEntity.getAttribute(BALL_ROT).getBaseValue());
-                        livingEntity.getAttribute(WHEEL_ROT_OLD).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue());
-                        livingEntity.getAttribute(CAPE_ROT_OLD).setBaseValue(livingEntity.getAttribute(CAPE_ROT).getBaseValue());
-
                         if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                            livingEntity.getAttribute(BALL_ROT_OLD).setBaseValue(livingEntity.getAttribute(BALL_ROT).getBaseValue());
+                            livingEntity.getAttribute(WHEEL_ROT_OLD).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue());
+                            livingEntity.getAttribute(CAPE_ROT_OLD).setBaseValue(livingEntity.getAttribute(CAPE_ROT).getBaseValue());
+
                             if (belt.hasCape(livingEntity.getItemBySlot(EquipmentSlot.FEET))) {
                                 float cape = (float) livingEntity.getAttribute(CAPE_ROT).getBaseValue();
                                 float ball = 0;
@@ -274,6 +279,13 @@ public class ModCommonEvents {
                                 livingEntity.getAttribute(WHEEL_ROT).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue() + wheel);
                             }
                         }
+                    }else if (livingEntity instanceof Player){
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(BALL_ROT_NEXT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(WHEEL_ROT_NEXT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(CAPE_ROT_NEXT)).getBaseValue());
                     }
                 }
                 if (livingEntity.getAttribute(WIND).getBaseValue() > 0) {

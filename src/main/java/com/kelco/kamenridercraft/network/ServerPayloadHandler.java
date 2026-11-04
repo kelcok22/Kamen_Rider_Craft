@@ -75,7 +75,74 @@ public class ServerPayloadHandler {
     public static void handleAttributeChange(final AttributeChangePayload data, final IPayloadContext context) {
         if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) != null) {
             if (context.player().getStringUUID().equals(data.id())) {
-                PacketDistributor.sendToAllPlayers(new AttributeChangeClientPayload(data.id(), data.attributeName(), data.valueChange()));
+                Objects.requireNonNull(Objects.requireNonNull(context.player().level().getPlayerByUUID(UUID.fromString(data.id()))).getAttribute(KRCAttributes.WINGS_OUT)).setBaseValue(data.valueChange());
+
+                Player rider =context.player().level().getPlayerByUUID(UUID.fromString(data.id()));
+                float Z = data.z();
+                float X = data.x();
+
+                if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+
+                    if (belt.hasCape(rider.getItemBySlot(EquipmentSlot.FEET))) {
+                        double cape = Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT_NEXT)).getBaseValue();
+                        double ball = 0;
+                        if (Z > 0 & cape > -0.7 & !rider.isSwimming()) {
+                            cape = cape - 0.01f - (rider.getSpeed() / 10);
+                        } else if (Z > 0 & cape > -0.7 & !rider.isSwimming()) {
+                            cape = 0;
+                        } else if (X == 0 & Z < 0 & cape < 0) {
+                            cape = cape + 0.2f;
+                        } else if (X == 0 & Z == 0 & cape < 0 & X == 0 || X == 0 & cape < 0 & rider.isSwimming()) {
+                            cape = cape + 0.02f;
+                        }
+                        if (X > 0) {
+                            ball = 0.2f;
+                            if (Z == 0 & cape > -0.7) {
+                                cape = cape - 0.02f - (rider.getSpeed() / 10);
+                            }
+                        }
+                        if (X < 0) {
+                            ball = -0.2f;
+                            if (Z == 0 & cape > -0.7) {
+                                cape = cape - 0.02f - (rider.getSpeed() / 10);
+                            }
+                        }
+                        if (rider.fallDistance > 0 & !rider.isSwimming() & cape > -2) {
+                            cape = cape - 0.05f;
+                        }
+
+                        Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT_NEXT)).setBaseValue(ball);
+                        Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT_NEXT)).setBaseValue(cape);
+
+                    }
+                    if (belt.hasBikeForm(rider.getItemBySlot(EquipmentSlot.FEET))) {
+                        float wheel = 0;
+                        if (Z > 0) {
+                            wheel = -0.1f;
+                        }
+                        if (Z < 0) {
+                            wheel = 0.1f;
+                        }
+                        Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT_NEXT)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT_NEXT)).getBaseValue() + wheel);
+                        float ball = 0;
+                        if (X > 0) {
+                            ball = 0.5f;
+                            if (Z == 0) {
+                                wheel = -0.1f;
+                            }
+                        }
+                        if (X < 0) {
+                            ball = -0.5f;
+                            if (Z == 0) {
+                                wheel = -0.1f;
+                            }
+                        }
+                        Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT_NEXT)).setBaseValue(ball);
+                        Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT_NEXT)).setBaseValue(Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT_NEXT)).getBaseValue() + wheel);
+
+                    }
+                    PacketDistributor.sendToAllPlayers(new AttributeChangeClientPayload(data.id(), Objects.requireNonNull(rider.getAttribute(KRCAttributes.BALL_ROT_NEXT)).getBaseValue(), Objects.requireNonNull(rider.getAttribute(KRCAttributes.WHEEL_ROT_NEXT)).getBaseValue(), Objects.requireNonNull(rider.getAttribute(KRCAttributes.CAPE_ROT_NEXT)).getBaseValue()));
+                }
             }
         }
     }
