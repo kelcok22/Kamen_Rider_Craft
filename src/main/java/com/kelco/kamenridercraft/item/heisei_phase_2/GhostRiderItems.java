@@ -1247,7 +1247,7 @@ public class GhostRiderItems {
 			}.changeModel("gamma_superior_damashii.geo.json").hasCape().changeSlot(2).useBasicModel().setModelName("transform_gamma_eyecon").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));
 
 	public static final DeferredItem<Item> KNIFE_GAMMA_EYECON = ITEMS.register("knife_gamma_eyecon",
-			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_knife_damashii","gamma_superior","gamma_superior_belt_knife_damashii",
+			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_knife_damashii","gamma_superior","gamma_superior_belt_gamma_knife_damashii",
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
 					,new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
@@ -1258,6 +1258,20 @@ public class GhostRiderItems {
 							player.getZ(), 70, 0, 0, 0, 1);
 				}}
 			}.changeModel("gamma_knife_damashii.geo.json").changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));
+
+	public static final DeferredItem<Item> ONPU_GAMMA_EYECON = ITEMS.register("onpu_gamma_eyecon",
+			() -> new RiderFormChangeItem(new Item.Properties(),"gamma_onpu_damashii","gamma_superior","gamma_superior_belt_gamma_onpu_damashii",
+					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)
+					,new MobEffectInstance(EffectCore.NOTE, 40, 0,true,false)){
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
+					super.transformationEffect(itemstack, player,tick);
+					if (tick==1d) {
+						((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+								player.getX(), player.getY()+1,
+								player.getZ(), 70, 0, 0, 0, 1);
+					}}
+			}.addNum(2).isGlowing().hasCape().changeModel("gamma_onpu_damashii.geo.json").changeSlot(2).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));
+
 
 	public static final DeferredItem<Item> YURUSEN_GAMMA_EYECON = ITEMS.register("yurusen_gamma_eyecon",
 			() -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GHOST_TAB_ITEM));

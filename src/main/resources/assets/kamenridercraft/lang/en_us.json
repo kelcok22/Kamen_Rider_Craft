@@ -5697,6 +5697,7 @@
 "item.kamenridercraft.transform_gamma_eyecon": "Transform Gamma Eyecon",
 "item.kamenridercraft.transform_gamma_eyecon_camille": "Transform Gamma Eyecon (Camille)",
 "item.kamenridercraft.knife_gamma_eyecon": "Knife Gamma Eyecon",
+"item.kamenridercraft.onpu_gamma_eyecon":"Onpu Gamma Eyecon",
 "item.kamenridercraft.yurusen_gamma_eyecon": "Yurusen Gamma Eyecon",
 "item.kamenridercraft.sister_gamma_eyecon": "Sister Gamma Eyecon",
 
@@ -5743,6 +5744,7 @@
 "kamenridercraft:gamma_superior_damashii.form": "Damashii: Perfect",
 "kamenridercraft:transform_gamma_eyecon_camille.form": "Damashii: Perfect (Camille)",
 "kamenridercraft:knife_gamma_eyecon.form": "Damashii: Knife",
+"kamenridercraft:onpu_gamma_eyecon.form": "Damashii: Onpu",
 
 "kamenridercraft:boost_damashii.form": "Damashii: Toucon Boost",
 "kamenridercraft:mugen_damashii.form": "Damashii: Mugen",
