@@ -92,21 +92,6 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
     }
 
 
-/**
-    String[] boneNames = new String[]{"armorHead", "armorBody", "armorRightArm", "armorLeftArm", "armorRightLeg", "armorLeftLeg"};
-        for (String boneName : boneNames) {
-        GeoBone bakedHead = bakedModel.getBone(boneName).orElse(null);
-        GeoBone head = newModel.getBone(boneName).orElse(null);
-        if (head != null & bakedHead != null) {
-            matchModelPartRot(bakedHead, head);
-            head.updatePosition(bakedHead.getPosX(), bakedHead.getPosY(), bakedHead.getPosZ());
-            head.setScaleX(bakedHead.getScaleX());
-            head.setScaleY(bakedHead.getScaleY());
-            head.setScaleZ(bakedHead.getScaleZ());
-        }
-    }
-   **/
-
     @Override
     protected void applyBaseTransformations(HumanoidModel<?> baseModel) {
         super.applyBaseTransformations(baseModel);

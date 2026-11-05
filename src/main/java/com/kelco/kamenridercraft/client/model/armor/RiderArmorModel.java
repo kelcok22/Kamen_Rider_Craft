@@ -88,7 +88,6 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
             double GetWheel = RIDER.getAttribute(KRCAttributes.WHEEL_ROT).getBaseValue();
             double GetCapeOld = RIDER.getAttribute(KRCAttributes.CAPE_ROT_OLD).getBaseValue();
             double GetCape = RIDER.getAttribute(KRCAttributes.CAPE_ROT).getBaseValue();
-            if(an.getEquipmentSlot()==EquipmentSlot.FEET)System.err.println(GetWheel+"_part_"+state.getPartialTick());
 
             float Transforming = (float) Mth.lerp(1, GetTransforming, (GetTransforming - 1) - state.getPartialTick());
             float wheel = (float) Mth.lerp(state.getPartialTick(), GetWheelOld, GetWheel);
