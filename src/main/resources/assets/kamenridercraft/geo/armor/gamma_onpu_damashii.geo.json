@@ -130,23 +130,6 @@
 					"name": "armorRightBoot",
 					"parent": "bipedRightLeg",
 					"pivot": [-2, 12, 0]
-				},
-				{
-					"name": "parkaGhost2",
-					"pivot": [-34.8333, 19.33333, 0]
-				},
-				{
-					"name": "bipedBody2",
-					"parent": "parkaGhost2",
-					"pivot": [0, 24, 0]
-				},
-				{
-					"name": "armorBody2",
-					"parent": "bipedBody2",
-					"pivot": [0, 24, 0],
-					"cubes": [
-						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.2, "uv": [16, 16], "mirror": true}
-					]
 				}
 			]
 		}
