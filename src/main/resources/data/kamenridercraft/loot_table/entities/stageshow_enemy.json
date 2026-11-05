@@ -1,0 +1,513 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:boot_switch"
+		}
+	  ],
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"feet": {
+							"items": "kamenridercraft:boot_driver"
+						}
+					}
+				}
+			}
+		]
+	},
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:astroswitch",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 1,
+				"max": 3
+			  }
+			}
+		  ]
+		}
+	  ],
+		"conditions": [
+			{
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"equipment": {
+						"feet": {
+							"items": "kamenridercraft:boot_driver"
+						}
+					}
+				}
+			}
+		]
+	},
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:creation_king_stone"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:shadow_charger"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:rider_circuit",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:shadow_charger"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:alpha_mission_memory"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:alpha_driver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:blank_mission_memory",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:alpha_driver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:beta_mission_memory"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:beta_driver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:blank_mission_memory",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:beta_driver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:uzai_belt"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:uzai_belt"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:wizardgem",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:uzai_belt"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:dark_ring"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:dark_wizardriver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:wizardgem",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:dark_wizardriver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:typhoon_fake_ichigo"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:typhoon_fake_ichigo"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:rider_circuit",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:typhoon_fake_ichigo"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:chophopper_zecter"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:chophopper_rider_belt"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:mini_zecter",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:chophopper_rider_belt"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:lady_zecter"
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:lady_rider_belt"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:maja_lockseed",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:sengoku_driver_maja"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:himawari_lockseed",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:sengoku_driver_maja"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  }
+  ]
+}
