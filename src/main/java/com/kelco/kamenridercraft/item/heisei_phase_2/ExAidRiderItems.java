@@ -63,9 +63,9 @@ public class ExAidRiderItems {
                     super.transformationEffect(itemstack, player, tick);
                     if (RiderDriverItem.wasSlotChanged(itemstack, 5) || RiderDriverItem.isTransformingFromBlank(itemstack, player)) {
                         if (tick == 30d) {
-                                ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                                        player.getX(), player.getY() + 1,
-                                        player.getZ(), 100, 0, 0, 0, 1);
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 100, 0, 0, 0, 1);
                         }
                     }
                     if (!RiderDriverItem.isTransformingFromBlank(itemstack, player) && RiderDriverItem.wasSlotChanged(itemstack, getSlot())) {
@@ -208,7 +208,8 @@ public class ExAidRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
+            }.setModifiedPosition("hide_items.modifier")
+                    .setModifiedPositionLayer("position_1").addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
                     .changeModel("lazer_lv2.geo.json").isBike().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .isGlowing().addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
 

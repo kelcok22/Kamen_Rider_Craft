@@ -1738,7 +1738,8 @@ public class DecadeRiderItems {
                             player.getX(), player.getY(),
                             player.getZ(), 200, 0, 0, 0, 1);
                 }
-            }.isBike().isGlowing().useBasicModel().addToList(DECADE_TAB_ITEM));
+            }.setModifiedPosition("hide_items.modifier")
+                    .setModifiedPositionLayer("position_1").isBike().isGlowing().useBasicModel().addToList(DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> CHALICE_FINAL_FORM_RIDE = ITEMS.register("final_form_ride_chalice_choco",
             () -> new RiderFormChangeItem(new Item.Properties(), "_final_form_ride", "chalice", "blank",
@@ -1751,7 +1752,8 @@ public class DecadeRiderItems {
                             player.getX(), player.getY(),
                             player.getZ(), 200, 0, 0, 0, 1);
                 }
-            }.hasCape().useBasicModel().addToList(DECADE_TAB_ITEM));
+            }.setModifiedPosition("hide_items.modifier")
+                    .setModifiedPositionLayer("position_1").hasCape().useBasicModel().addToList(DECADE_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",

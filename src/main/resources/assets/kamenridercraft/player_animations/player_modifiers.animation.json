@@ -733,14 +733,24 @@
 			}
 		},
 		"lovekov.modifier": {
-			"loop": true,
 			"animation_length": 0.25,
 			"bones": {
 				"rightItem": {
-					"position": [-4, -4.5, 0]
+					"position": [-3.75, -4.5, 0]
 				},
 				"leftItem": {
-					"position": [4, -4.5, 0]
+					"position": [3.75, -4.5, 0]
+				}
+			}
+		},
+		"hide_items.modifier": {
+			"animation_length": 0.125,
+			"bones": {
+				"rightItem": {
+					"scale": 0
+				},
+				"leftItem": {
+					"scale": 0
 				}
 			}
 		}

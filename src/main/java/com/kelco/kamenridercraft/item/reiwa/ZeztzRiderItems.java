@@ -44,12 +44,12 @@ public class ZeztzRiderItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
-    public static final DeferredItem<Item> ZEZTZ_LOGO = ITEMS.register("zeztz_logo",() -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zeztz")), new Item.Properties()).addToList(ZEZTZ_TAB_ITEM));
+    public static final DeferredItem<Item> ZEZTZ_LOGO = ITEMS.register("zeztz_logo", () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/zeztz")), new Item.Properties()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_CAPSEM = ITEMS.register("code_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","knight_seventeen","knight_invoker_belt_seventeen",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "knight_seventeen", "knight_invoker_belt_seventeen",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -60,37 +60,40 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_CAPSEM_SEVENTEEN = ITEMS.register("code_capsem_seventeen",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_seventeen","lord_invoker_seventeen_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false)){
-                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                        super.transformationEffect(itemstack, player, tick);
-                        if (tick == 30d) {
-                            AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
-                        }
-                        if (tick == 18d) {
-                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                        }
-                        if (tick == 3d) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_seventeen", "lord_invoker_seventeen_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
+                    }
+                    if (tick == 18d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().setModelName("code_capsem"));
 
     public static final DeferredItem<Item> IMPACT_CAPSEM = ITEMS.register("impact_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "zeztz", "zeztz_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
 
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -101,21 +104,23 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,10).addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 10).addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> TRANSFORM_CAPSEM = ITEMS.register("transform_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_physicam_transform","zeztz","zeztz_driver_belt_physicam_transform",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_physicam_transform", "zeztz", "zeztz_driver_belt_physicam_transform",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -126,20 +131,22 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addToList(CapsemDropper.CAPSEM,5).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
-
-    public static final DeferredItem<Item> WING_CAPSEM = ITEMS.register("wing_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_physicam_wing","zeztz","zeztz_driver_belt_wing",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false)){
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addToList(CapsemDropper.CAPSEM, 5).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> WING_CAPSEM = ITEMS.register("wing_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_physicam_wing", "zeztz", "zeztz_driver_belt_wing",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
+                    }
+                }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -150,22 +157,24 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setGlidingPosition("wing_capsem.gliding").setSlotOneAbility("flight_boost", 1).setFormDelay(19)
-                    .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM,5)
+                    .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing().IsBeltGlowing().addToList(CapsemDropper.CAPSEM, 5)
                     .useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> STREAM_CAPSEM = ITEMS.register("stream_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_stream","zeztz","zeztz_driver_belt_technolom_stream",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_technolom_stream", "zeztz", "zeztz_driver_belt_technolom_stream",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -176,20 +185,22 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(ZEZTZ_TAB_ITEM));
-
-    public static final DeferredItem<Item> MACHINERY_CAPSEM = ITEMS.register("machinery_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_machinery","zeztz","zeztz_driver_belt_technolom_machinery",
-                    new MobEffectInstance(EffectCore.DRILL, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
                     }
                 }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 7).addToList(ZEZTZ_TAB_ITEM));
+
+    public static final DeferredItem<Item> MACHINERY_CAPSEM = ITEMS.register("machinery_capsem",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_technolom_machinery", "zeztz", "zeztz_driver_belt_technolom_machinery",
+                    new MobEffectInstance(EffectCore.DRILL, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
+                    }
+                }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -200,29 +211,31 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 5).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PROJECTION_CAPSEM_METAMATERIAM = ITEMS.register("projection_capsem_metamateriam",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","metamateriam","metamateriam_belt",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "metamateriam", "metamateriam_belt",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                }
             }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing());
 
     public static final DeferredItem<Item> PROJECTION_CAPSEM = ITEMS.register("projection_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_technolom_projection","zeztz","zeztz_driver_belt_technolom_projection",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_technolom_projection", "zeztz", "zeztz_driver_belt_technolom_projection",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -232,39 +245,41 @@ public class ZeztzRiderItems {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
                     if (tick == 3d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
-                    if (player instanceof Player play) {
-                        RiderSummonEntity meta = MobsCore.RIDER_SUMMON.get().create(player.level());
-                        if (meta != null) {
-                            meta.moveTo(player.getX(), player.getY()+1, player.getZ(), player.getYRot(), player.getXRot());
-                            meta.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
-                            meta.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
-                            meta.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
-                            meta.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.METAMATERIAM_BELT.get()));
-                            meta.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeztzRiderItems.BREAKAM_ZEZTZER_GUN.get()));
-                            player.level().addFreshEntity(meta);
-                            meta.bindToPlayer(play);
-                            meta.addRequiredForm(this, 1);
+                        if (player instanceof Player play) {
+                            RiderSummonEntity meta = MobsCore.RIDER_SUMMON.get().create(player.level());
+                            if (meta != null) {
+                                meta.moveTo(player.getX(), player.getY() + 1, player.getZ(), player.getYRot(), player.getXRot());
+                                meta.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ZeztzRiderItems.ZEZTZ_HELMET.get()));
+                                meta.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ZeztzRiderItems.ZEZTZ_CHESTPLATE.get()));
+                                meta.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ZeztzRiderItems.ZEZTZ_LEGGINGS.get()));
+                                meta.setItemSlot(EquipmentSlot.FEET, new ItemStack(ZeztzRiderItems.METAMATERIAM_BELT.get()));
+                                meta.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZeztzRiderItems.BREAKAM_ZEZTZER_GUN.get()));
+                                player.level().addFreshEntity(meta);
+                                meta.bindToPlayer(play);
+                                meta.addRequiredForm(this, 1);
+                            }
                         }
                     }
                 }
-            }}.setFormDelay(19).addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(ZEZTZ_TAB_ITEM));
+            }.setFormDelay(19).addAlternative(PROJECTION_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 5).addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> RECOVERY_CAPSEM = ITEMS.register("recovery_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_esprim_recovery","zeztz","zeztz_driver_belt_esprim_recovery",
-                    new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.SELF_MENDING, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "_esprim_recovery", "zeztz", "zeztz_driver_belt_esprim_recovery",
+                    new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.SELF_MENDING, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -275,19 +290,21 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 7).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BARRIER_CAPSEM = ITEMS.register("barrier_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_esprim_barrier","zeztz","zeztz_driver_belt_esprim_barrier",
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)) {
+            () -> new RiderFormChangeItem(new Item.Properties(), "_esprim_barrier", "zeztz", "zeztz_driver_belt_esprim_barrier",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -298,19 +315,21 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 5).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WONDER_CAPSEM = ITEMS.register("wonder_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_wonder","zeztz","zeztz_driver_belt_paradigm_wonder",
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_paradigm_wonder", "zeztz", "zeztz_driver_belt_paradigm_wonder",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -321,19 +340,21 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).setSlotOneAbility("wonder_shrink", 1).setSlotTwoAbility("wonder_grow", 1).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,7).addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).setSlotOneAbility("wonder_shrink", 1).setSlotTwoAbility("wonder_grow", 1).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 7).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GRAVITY_CAPSEM = ITEMS.register("gravity_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_paradigm_gravity","zeztz","zeztz_driver_belt_paradigm_gravity",
-                    new MobEffectInstance(EffectCore.LOW_GRAVITY, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_paradigm_gravity", "zeztz", "zeztz_driver_belt_paradigm_gravity",
+                    new MobEffectInstance(EffectCore.LOW_GRAVITY, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -344,15 +365,16 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
-            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM,5).addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(CapsemDropper.CAPSEM, 5).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PLASMA_CAPSEM_METAMATERIAM = ITEMS.register("plasma_capsem_metamateriam",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_inazuma_plasma","metamateriam","metamateriam_belt_inazuma_plasma",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_inazuma_plasma", "metamateriam", "metamateriam_belt_inazuma_plasma",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -362,22 +384,23 @@ public class ZeztzRiderItems {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
                     if (tick == 3d) {
-                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
                         thunder.setVisualOnly(true);
-                        thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                        thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                         player.level().addFreshEntity(thunder);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(3).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").isGlowing());
 
     public static final DeferredItem<Item> PLASMA_CAPSEM = ITEMS.register("plasma_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_inazuma_plasma","zeztz","zeztz_driver_belt_inazuma_plasma",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_inazuma_plasma", "zeztz", "zeztz_driver_belt_inazuma_plasma",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -387,23 +410,24 @@ public class ZeztzRiderItems {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
                     if (tick == 3d) {
-                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
                         thunder.setVisualOnly(true);
-                        thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                        thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                         player.level().addFreshEntity(thunder);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(3).addAlternative(PLASMA_CAPSEM_METAMATERIAM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BOOSTER_CAPSEM = ITEMS.register("booster_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_plasma_booster","zeztz","zeztz_driver_belt_plasma_booster",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_plasma_booster", "zeztz", "zeztz_driver_belt_plasma_booster",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.THUNDER_PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -413,121 +437,127 @@ public class ZeztzRiderItems {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
                     if (tick == 3d) {
-                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT,player.level());
+                        LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
                         thunder.setVisualOnly(true);
-                        thunder.setPos( player.getX(),  -1 + player.getY(),  player.getZ() );
+                        thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                         player.level().addFreshEntity(thunder);
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(3).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DUALMARE_CAPSEM_ORDERM = ITEMS.register("dualmare_capsem_orderm",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_orderm","zeztz","zeztz_driver_belt_orderm",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+            () -> new RiderFormChangeItem(new Item.Properties(), "_orderm", "zeztz", "zeztz_driver_belt_orderm",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
-                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                        super.transformationEffect(itemstack, player, tick);
-                        if (tick == 30d) {
-                            AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
-                        }
-                        if (tick == 18d) {
-                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                        }
-                        if (tick == 3d) {
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
+                    }
+                    if (tick == 18d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
 
     public static final DeferredItem<Item> DUALMARE_CAPSEM = ITEMS.register("dualmare_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_catastrom","zeztz","zeztz_driver_belt_catastrom",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_catastrom", "zeztz", "zeztz_driver_belt_catastrom",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false)){
-                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                        super.transformationEffect(itemstack, player, tick);
-                        if (tick == 30d) {
-                            AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
-                        }
-                        if (tick == 18d) {
-                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                        }
-                        if (tick == 3d) {
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
+                    }
+                    if (tick == 18d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
+                    if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(3).addSwitchForm(DUALMARE_CAPSEM_ORDERM.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> EXDREAMRISE_CAPSEM_DAWN = ITEMS.register("exdreamrise_capsem_dawn",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_exdream",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.FIRE_SLASH, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.SLASH, 40, 3,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "dawn", "dawn_belt_exdream",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.FIRE_SLASH, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
-            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().setModelName("exdreamrise_capsem"));
+            }.changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().setModelName("exdreamrise_capsem"));
 
     public static final DeferredItem<Item> EXDREAMRISE_CAPSEM = ITEMS.register("exdreamrise_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"","zeztz_exdream","zeztz_exdream_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "", "zeztz_exdream", "zeztz_exdream_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -538,26 +568,28 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(3).addAlternative(EXDREAMRISE_CAPSEM_DAWN.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> AGENT_CAPSEM = ITEMS.register("agent_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_agendream","zeztz_exdream","zeztz_agendream_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_agendream", "zeztz_exdream", "zeztz_agendream_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false)){
+                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -568,43 +600,46 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> HEART_OF_IMPACT_CAPSEM_IMPACT = ITEMS.register("heart_of_impact_capsem_impact",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_impact","zeztz_exdream","zeztz_exdream_driver_belt_impact",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_impact", "zeztz_exdream", "zeztz_exdream_driver_belt_impact",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                 }
-                }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
+            }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
 
     public static final DeferredItem<Item> HEART_OF_IMPACT_CAPSEM = ITEMS.register("heart_of_impact_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_heart_of_impact","zeztz_exdream","zeztz_agendream_driver_belt_impact",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_heart_of_impact", "zeztz_exdream", "zeztz_agendream_driver_belt_impact",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>175&transformationTick<190){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 175 & transformationTick < 190) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
-                        public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
-                            super.transformationEffect(itemStack, player, tick);
+
+                public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemStack, player, tick);
                     if (tick == 200d) {
                         AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
                     }
@@ -614,28 +649,28 @@ public class ZeztzRiderItems {
                     if (tick == 173d) {
                         if (tick == 2) RiderDriverItem.updateOldFormItem(itemStack);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                     }
-                    if (tick == 2) RiderDriverItem.setFormItem(itemStack,HEART_OF_IMPACT_CAPSEM_IMPACT.get(), 1);
+                    if (tick == 2) RiderDriverItem.setFormItem(itemStack, HEART_OF_IMPACT_CAPSEM_IMPACT.get(), 1);
                 }
-                }.setFormDelay(189).setHenshinTick(200).addIncompatibleForm(HEART_OF_IMPACT_CAPSEM_IMPACT.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+            }.setFormDelay(189).setHenshinTick(200).addIncompatibleForm(HEART_OF_IMPACT_CAPSEM_IMPACT.get()).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ADVANCE_CAPSEM = ITEMS.register("advance_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE),"_physicam_advance","zeztz","zeztz_driver_belt_physicam_advance",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_physicam_advance", "zeztz", "zeztz_driver_belt_physicam_advance",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.FIRE_ARMOR, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                    new MobEffectInstance(EffectCore.FIRE_PUNCH, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.FIRE_ARMOR, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -646,22 +681,24 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 50, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 50, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(3).changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_AND_CODE_ZEROIDER_CAPSEM = ITEMS.register("zeztz_and_code_zeroider_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_impact_zeroider","zeztz","zeztz_driver_belt_impact_zeroider",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_impact_zeroider", "zeztz", "zeztz_driver_belt_impact_zeroider",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
@@ -674,22 +711,24 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.SMALL_FLAME, player.getX(), player.getY() + 1, player.getZ(), 100, 0.5, 0.5, 0.5, 0.1);
                         ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME, player.getX(), player.getY() + 1, player.getZ(), 100, 0.5, 0.5, 0.5, 0.1);
 
-                    }}
+                    }
+                }
             }.setFormDelay(3).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").needBaseForm().IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHARGE_CAPSEM = ITEMS.register("charge_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_charge","zeztz","zeztz_driver_belt_charge",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_charge", "zeztz", "zeztz_driver_belt_charge",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.HAPPY_MODE, 40, 0, true, false)) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (transformationTick>10&transformationTick<21){
-                        if (slot==EquipmentSlot.HEAD)layerInfo.add(new RenderLayerInfo("zeztz_darkness","zeztz"));
+                    if (transformationTick > 10 & transformationTick < 21) {
+                        if (slot == EquipmentSlot.HEAD) layerInfo.add(new RenderLayerInfo("zeztz_darkness", "zeztz"));
                     }
                 }
-        public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 30d) {
                         AnimationUtil.playPose(player, "zeztz.generic_zeztz.henshin");
@@ -699,32 +738,34 @@ public class ZeztzRiderItems {
                     }
                     if (tick == 3d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 20, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 20, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 20, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 20, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 20, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
-                                player.getZ(), 20, 0, 0, 0, 1);                    }}
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
+                    }
+                }
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ERASE_CAPSEM = ITEMS.register("erase_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","nox_knight","knight_invoker_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
-                    super.transformationEffect(itemstack, player,tick);
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "nox_knight", "knight_invoker_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
                     if (tick == 12d) {
                         AnimationUtil.playPose(player, "nox_knight.henshin_pose");
                     }
@@ -732,42 +773,44 @@ public class ZeztzRiderItems {
                         player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
                     }
 
-                        if (tick == 1d) {
+                    if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(3d).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> EXTRA_CAPSEM = ITEMS.register("extra_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_three","lord_invoker_three_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-                    public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                        super.transformationEffect(itemstack, player, tick);
-                        if (tick == 22d) {
-                            AnimationUtil.playPose(player, "lord_three.henshin_pose");
-                        }
-                        if (tick == 20d) {
-                            player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
-                        }
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_three", "lord_invoker_three_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 22d) {
+                        AnimationUtil.playPose(player, "lord_three.henshin_pose");
+                    }
+                    if (tick == 20d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.AXE_SCRAPE, SoundSource.PLAYERS, 1.0F, 8F);
+                    }
 
-                        if (tick == 19d) {
+                    if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-                        }}
-                }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+                    }
+                }
+            }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> IMPACT_CAPSEM_SHOCK = ITEMS.register("impact_capsem_shock",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz","zeztz_driver_belt_shock",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "zeztz", "zeztz_driver_belt_shock",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemStack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemStack, player, tick);
 
@@ -780,16 +823,17 @@ public class ZeztzRiderItems {
                     if (tick == 189d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                     }
-                 if (tick < 189d&tick > 20d) {
-                     ((ServerLevel) player.level()).sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 20, 0.5, 0.5, 0.5, 1);
-                }if (tick == 2) RiderDriverItem.revertFormItem(itemStack,1);
+                    if (tick < 189d & tick > 20d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ELECTRIC_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 20, 0.5, 0.5, 0.5, 1);
+                    }
+                    if (tick == 2) RiderDriverItem.revertFormItem(itemStack, 1);
                 }
             }.setFormDelay(1).setHenshinTick(200).isAttackForm().needBaseForm().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().setModelName("shock_capsem"));
 
     public static final DeferredItem<Item> SHOCK_CAPSEM = ITEMS.register("shock_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_five","lord_invoker_five_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_five", "lord_invoker_five_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.ELECTRIC_PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -801,14 +845,15 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).addAlternative(IMPACT_CAPSEM_SHOCK.asItem()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> PANIC_CAPSEM = ITEMS.register("panic_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_six","lord_invoker_six_belt",
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_six", "lord_invoker_six_belt",
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -820,13 +865,14 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CLEAR_CAPSEM = ITEMS.register("clear_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_three","lord_invoker_three_belt_clear",
-                    new MobEffectInstance(EffectCore.STEALTH, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_three", "lord_invoker_three_belt_clear",
+                    new MobEffectInstance(EffectCore.STEALTH, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -838,43 +884,44 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_three.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_BOOSTER_CAPSEM = ITEMS.register("lord_booster_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_booster","lord_three","lord_invoker_three_belt_booster",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.POISON_PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_booster", "lord_three", "lord_invoker_three_belt_booster",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.POISON_PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_ZERO = ITEMS.register("break_code_down_capsem_zero",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_zero","blank",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_zero", "blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -888,13 +935,14 @@ public class ZeztzRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
 
-                    }}
+                    }
+                }
             }.setFormDelay(19).changeModel("lord_zero.geo.json").isGlowing());
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_TWO = ITEMS.register("break_code_down_capsem_two",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","lord_two","lord_invoker_movie_belt",
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "lord_two", "lord_invoker_movie_belt",
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -906,14 +954,15 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_ZERO.get()).changeModel("lord_six_movie.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
 
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_SIX = ITEMS.register("break_code_down_capsem_six",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_six","lord_invoker_movie_belt",
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_movie", "lord_six", "lord_invoker_movie_belt",
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.SHOT_BOOST, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -925,13 +974,14 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_TWO.get()).changeModel("lord_six_movie.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing());
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM_FIVE = ITEMS.register("break_code_down_capsem_five",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_five","lord_invoker_movie_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 4,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_movie", "lord_five", "lord_invoker_movie_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 4, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -943,13 +993,14 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_SIX.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing());
 
     public static final DeferredItem<Item> BREAK_CODE_DOWN_CAPSEM = ITEMS.register("break_code_down_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_movie","lord_three","lord_invoker_movie_belt",
-                    new MobEffectInstance(EffectCore.STEALTH, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_movie", "lord_three", "lord_invoker_movie_belt",
+                    new MobEffectInstance(EffectCore.STEALTH, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 22d) {
@@ -961,206 +1012,207 @@ public class ZeztzRiderItems {
 
                     if (tick == 19d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-                    }}
+                    }
+                }
             }.setFormDelay(19).addAlternative(BREAK_CODE_DOWN_CAPSEM_FIVE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").changeModel("lord_six_movie.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PUNISH_CAPSEM = ITEMS.register("punish_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","dawn","dawn_belt_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "dawn", "dawn_belt_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_DAWN_CAPSEM = ITEMS.register("chaos_dawn_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_chaos","dawn","dawn_belt_chaos",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.SLASH, 40, 3,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_chaos", "dawn", "dawn_belt_chaos",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            } .changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+            }.changeBeltModel("geo/belts/dawn_riderbelt.geo.json").isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_CAPSEM_NIGHTMARE = ITEMS.register("shadow_capsem_nightmare",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","shadow_nightmare","shadow_nightmare_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).isGlowing());
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "shadow_nightmare", "shadow_nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)).isGlowing());
 
 
     public static final DeferredItem<Item> SHADOW_CAPSEM = ITEMS.register("shadow_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","nox","nox_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "nox", "nox_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addAlternative(SHADOW_CAPSEM_NIGHTMARE.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_CAPSEM = ITEMS.register("gun_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_gun","nox","nox_driver_belt_gun",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_gun", "nox", "nox_driver_belt_gun",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSlotOneAbility("gatling", 1).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WOLF_CAPSEM = ITEMS.register("wolf_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_wolf","nox","nox_driver_belt_wolf",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "_wolf", "nox", "nox_driver_belt_wolf",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE = ITEMS.register("midnight_shadow_capsem_nightmare",
-            () -> new RiderFormChangeItem(new Item.Properties(),"_midnight","shadow_nightmare","shadow_nightmare_midnight_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false)).changeModel("shadow_nightmare.geo.json"));
+            () -> new RiderFormChangeItem(new Item.Properties(), "_midnight", "shadow_nightmare", "shadow_nightmare_midnight_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false)).changeModel("shadow_nightmare.geo.json"));
 
     public static final DeferredItem<Item> MIDNIGHT_SHADOW_CAPSEM = ITEMS.register("midnight_shadow_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_midnight_shadow","nox","nox_driver_belt_midnight_shadow",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_midnight_shadow", "nox", "nox_driver_belt_midnight_shadow",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().addAlternative(MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> EXTRA_SHADOW_CAPSEM = ITEMS.register("extra_shadow_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_extra_shadow","nox","nox_driver_belt_extra_shadow",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 3,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_extra_shadow", "nox", "nox_driver_belt_extra_shadow",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_CAPSEM = ITEMS.register("catastrophe_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","catastrophe_gore_nightmare","catastrophe_gore_nightmare_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false)));
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "catastrophe_gore_nightmare", "catastrophe_gore_nightmare_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2, true, false)));
 
     public static final DeferredItem<Item> PHANTOM_CAPSEM = ITEMS.register("phantom_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","phantom_gore_nightmare","phantom_gore_nightmare_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "phantom_gore_nightmare", "phantom_gore_nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false))
                     .useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CHAOS_CAPSEM = ITEMS.register("chaos_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","oblivion_gore_nightmare","oblivion_gore_nightmare_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
-                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "oblivion_gore_nightmare", "oblivion_gore_nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false))
                     .useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DARKNESS_CAPSEM_DRIVER = ITEMS.register("darkness_capsem_driver",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz_darkness","zeztz_driver_belt_darkness",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "zeztz_darkness", "zeztz_driver_belt_darkness",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing());
 
     public static final DeferredItem<Item> DARKNESS_CAPSEM = ITEMS.register("darkness_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","zeztz_darkness","metamateriam_belt_inazuma_plasma",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.PUNCH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "zeztz_darkness", "metamateriam_belt_inazuma_plasma",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.changeModel("zeztz.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").addSwitchForm(DARKNESS_CAPSEM_DRIVER.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DAYDREAM_CAPSEM = ITEMS.register("daydream_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","mugen","mugen_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
-                    new MobEffectInstance(EffectCore.SLASH, 40, 2,true,false)){
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "mugen", "mugen_driver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
+                            player.getX(), player.getY() + 1,
                             player.getZ(), 50, 0, 0, 0, 1);
                 }
             }.changeModel("mugen.geo.json").changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").IsBeltGlowing().isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
@@ -1276,26 +1328,26 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> GAVV_CAPSEM = ITEMS.register("gavv_capsem",
             () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(ZEZTZ_TAB_ITEM));
 
-    public static final DeferredItem<Item>LEGEND_CAPSEM = ITEMS.register("legend_capsem",
+    public static final DeferredItem<Item> LEGEND_CAPSEM = ITEMS.register("legend_capsem",
             () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(CapsemDropper.LEGEND_CAPSEM).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CODE_SOMNIA_CAPSEM = ITEMS.register("code_somnia_capsem",
             () -> new SomniaCapsemItem(new Item.Properties()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NIGHTMARE_CAPSEM = ITEMS.register("nightmare_capsem",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","nightmare","nightmare_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)).isGlowing());
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "nightmare", "nightmare_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false)).isGlowing());
 
     public static final DeferredItem<Item> ZEROIDER_CORE_BIKE = ITEMS.register("zeroider_core_bike",
-            () -> new RiderFormChangeItem(new Item.Properties(),"ider","code_zero","blank",
-                    new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 4,true,false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4,true,false),
-                    new MobEffectInstance(EffectCore.STEP, 40, 0,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick)  {
-                    super.transformationEffect(itemstack, player,tick);
+            () -> new RiderFormChangeItem(new Item.Properties(), "ider", "code_zero", "blank",
+                    new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 4, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4, true, false),
+                    new MobEffectInstance(EffectCore.STEP, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
 
-                    if (tick==30d){
+                    if (tick == 30d) {
                         if (player instanceof Player && player.onGround()) {
                             Vec3 initialVec = player.getDeltaMovement();
                             Vec3 climbVec = new Vec3(initialVec.x, 1, initialVec.z);
@@ -1303,22 +1355,24 @@ public class ZeztzRiderItems {
                             player.hurtMarked = true;
                             PacketDistributor.sendToAllPlayers(new AnimPayload("accel.henshin_bike_pose", "attack", false, player.getStringUUID()));
                         }
-                        RiderDriverItem.setOldFormItem(itemstack,ZEROIDER_CORE.get(),1);
+                        RiderDriverItem.setOldFormItem(itemstack, ZEROIDER_CORE.get(), 1);
                     }
-                    if (tick==20d){
+                    if (tick == 20d) {
                         if (player instanceof Player) {
                             PacketDistributor.sendToAllPlayers(new EndAnimationPayload(player.getStringUUID(), "attack", true));
                         }
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY()+1,
+                                player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
-                    }}
-            }.setFormDelay(20).changeModel("code_zeroider.geo.json").isBike().isGlowing().useBasicModel().setModelName("zeroider_core"));
+                    }
+                }
+            }.setModifiedPosition("hide_items.modifier")
+                    .setModifiedPositionLayer("position_1").setFormDelay(20).changeModel("code_zeroider.geo.json").isBike().isGlowing().useBasicModel().setModelName("zeroider_core"));
 
     public static final DeferredItem<Item> ZEROIDER_CORE = ITEMS.register("zeroider_core",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","code_zero","blank",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-                    new MobEffectInstance(EffectCore.BOOST, 40, 1,true,false))
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "code_zero", "blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2, true, false),
+                    new MobEffectInstance(EffectCore.BOOST, 40, 1, true, false))
                     .changeModel("zero.geo.json").addSwitchForm(ZEROIDER_CORE_BIKE.get()).isGlowing().useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER_BUCKLE = ITEMS.register("zeztz_exdream_driver_buckle",
@@ -1336,8 +1390,7 @@ public class ZeztzRiderItems {
 
 
     public static final DeferredItem<Item> ZEZTZ_DRIVER = ITEMS.register("zeztz_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz", IMPACT_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
-            {
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zeztz", IMPACT_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties()) {
                 public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
                     var transformingTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
 
@@ -1354,107 +1407,108 @@ public class ZeztzRiderItems {
             }.useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_EXDREAM_DRIVER = ITEMS.register("zeztz_exdream_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_exdream", EXDREAMRISE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zeztz_exdream", EXDREAMRISE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> NOX_DRIVER = ITEMS.register("nox_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox", SHADOW_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "nox", SHADOW_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> DAWN_BELT = ITEMS.register("dawn_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dawn", PUNISH_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "dawn", PUNISH_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER = ITEMS.register("knight_invoker",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"nox_knight", ERASE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "nox_knight", ERASE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THREE = ITEMS.register("lord_invoker_three",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_three", EXTRA_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_three", EXTRA_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_FIVE = ITEMS.register("lord_invoker_five",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_five", SHOCK_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_five", SHOCK_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_SIX = ITEMS.register("lord_invoker_six",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_six", PANIC_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_six", PANIC_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_ZERO = ITEMS.register("lord_invoker_zero",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_zero", BREAK_CODE_DOWN_CAPSEM_ZERO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties()){
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_zero", BREAK_CODE_DOWN_CAPSEM_ZERO, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties()) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     double transformationTick = Objects.requireNonNull(rider.getAttribute(KRCAttributes.IS_TRANSFORMING)).getBaseValue();
-                    if (itemStack.getItem() instanceof RiderDriverItem belt &&!belt.isTransformed(rider)||transformationTick>19) {
-                    if (slot == EquipmentSlot.FEET) layerInfo.add(new RenderLayerInfo("belts/lord_invoker_movie_belt", "zeztz_riderbelt","belts/lord_invoker_movie_belt_glowmask"));
+                    if (itemStack.getItem() instanceof RiderDriverItem belt && !belt.isTransformed(rider) || transformationTick > 19) {
+                        if (slot == EquipmentSlot.FEET)
+                            layerInfo.add(new RenderLayerInfo("belts/lord_invoker_movie_belt", "zeztz_riderbelt", "belts/lord_invoker_movie_belt_glowmask"));
                     }
                 }
-            } .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
+            }.hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_TWO = ITEMS.register("lord_invoker_two",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_two", BREAK_CODE_DOWN_CAPSEM_TWO,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_two", BREAK_CODE_DOWN_CAPSEM_TWO, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> METAMATERIAM_BELT = ITEMS.register("metamateriam_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"metamateriam", PROJECTION_CAPSEM_METAMATERIAM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "metamateriam", PROJECTION_CAPSEM_METAMATERIAM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> ZEZTZ_DARKNESS_BELT = ITEMS.register("zeztz_darkness_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"zeztz_darkness", DARKNESS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zeztz_darkness", DARKNESS_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MUGEN_DRIVER = ITEMS.register("mugen_driver",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"mugen", DAYDREAM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "mugen", DAYDREAM_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> KNIGHT_INVOKER_SEVENTEEN = ITEMS.register("knight_invoker_seventeen",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"knight_seventeen", CODE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "knight_seventeen", CODE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_SEVENTEEN = ITEMS.register("lord_invoker_seventeen",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_seventeen", CODE_CAPSEM_SEVENTEEN,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_seventeen", CODE_CAPSEM_SEVENTEEN, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_INVOKER_THIRTEEN = ITEMS.register("lord_invoker_thirteen",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"lord_thirteen", CLEAR_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "lord_thirteen", CLEAR_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BABY_NIGHTMARE_BELT = ITEMS.register("baby_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"baby_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "baby_nightmare", NIGHTMARE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().overrideBeltText("baby_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> GUN_NIGHTMARE_BELT = ITEMS.register("gun_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"gun_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gun_nightmare", NIGHTMARE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().overrideBeltText("gun_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> WOLF_NIGHTMARE_BELT = ITEMS.register("wolf_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"wolf_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "wolf_nightmare", NIGHTMARE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().overrideBeltText("wolf_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CAT_NIGHTMARE_BELT = ITEMS.register("cat_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"cat_nightmare", NIGHTMARE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cat_nightmare", NIGHTMARE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().overrideBeltText("cat_nightmare_belt").useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(LadyGauntletItem.nightmareBelt).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> SHADOW_NIGHTMARE_BELT = ITEMS.register("shadow_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"shadow_nightmare", SHADOW_CAPSEM_NIGHTMARE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "shadow_nightmare", SHADOW_CAPSEM_NIGHTMARE, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> CATASTROPHE_GORE_NIGHTMARE_BELT = ITEMS.register("catastrophe_gore_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"catastrophe_gore_nightmare", CATASTROPHE_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "catastrophe_gore_nightmare", CATASTROPHE_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> PHANTOM_GORE_NIGHTMARE_BELT = ITEMS.register("phantom_gore_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"phantom_gore_nightmare", PHANTOM_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "phantom_gore_nightmare", PHANTOM_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> OBLIVION_GORE_NIGHTMARE_BELT = ITEMS.register("oblivion_gore_nightmare_belt",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"oblivion_gore_nightmare", CHAOS_CAPSEM,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "oblivion_gore_nightmare", CHAOS_CAPSEM, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().useBasicModel().changeRepairItem(CODE_CAPSEM.get()).addToList(ZEZTZ_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ZEROIDER_CONTROL = ITEMS.register("zeroider_control",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"code_zero", ZEROIDER_CORE,ZEZTZ_HELMET,ZEZTZ_CHESTPLATE,ZEZTZ_LEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "code_zero", ZEROIDER_CORE, ZEZTZ_HELMET, ZEZTZ_CHESTPLATE, ZEZTZ_LEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().changeRepairItem(CODE_CAPSEM.get()).useBasicModel().addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> BREAKAM_ZEZTZER_SWORD = ITEMS.register("breakam_zeztzer_sword",
@@ -1514,8 +1568,8 @@ public class ZeztzRiderItems {
                     .changeRepairItem(CODE_CAPSEM.get()));
 
     public static final DeferredItem<Item> ZEZTZ_HORSE_ARMOR = ITEMS.register("zeztz_horse_armor",
-            () -> new  BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
-                    false, new Item.Properties().stacksTo(1),"zeztz_horse_armor").addToList(ZEZTZ_TAB_ITEM));
+            () -> new BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1), "zeztz_horse_armor").addToList(ZEZTZ_TAB_ITEM));
 
     public static final DeferredItem<Item> MUGEN_SWORD = ITEMS.register("mugen_sword",
             () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2F, new Item.Properties()).addToList(ZEZTZ_TAB_ITEM)
@@ -1565,5 +1619,7 @@ public class ZeztzRiderItems {
     public static final DeferredItem<Item> SEVENTEEN_NECKLACE = ITEMS.register("seventeen_necklace",
             () -> new BaseItem(new Item.Properties()).addToList(ZEZTZ_TAB_ITEM));
 
-    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
 }

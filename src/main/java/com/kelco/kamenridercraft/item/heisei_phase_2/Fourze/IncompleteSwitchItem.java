@@ -37,11 +37,9 @@ public class IncompleteSwitchItem extends BaseItem {
                         player.getZ(), 10, 0, 0, 0, 0.05);
                 player.displayClientMessage(Component.literal("§l§4GOODBYE!"), true);
             } else if (tag.getInt("danger") > 7) {
-                player.displayClientMessage(Component.literal("§l§D-D-D-D-DANGER!"), true);
-
-
-            }
-            else {
+                player.displayClientMessage(Component.literal("§l§4D-D-D-D-DANGER!"), true);
+                tag.putInt("danger", tag.getInt("danger") + 1);
+            } else {
                 tag.putInt("danger", tag.getInt("danger") + 1);
                 player.displayClientMessage(Component.literal("§l§4DANGER!"), true);
             }
