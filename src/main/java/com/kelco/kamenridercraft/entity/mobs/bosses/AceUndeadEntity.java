@@ -76,7 +76,6 @@ public class AceUndeadEntity extends UndeadEntity {
     public void setSealable() {
         if (isSealable()) {
             giveSealableStats();
-            System.out.println(getData(MOB_STATE));
             switch (getData(MOB_STATE)) {
                 case "beetle_sealable":
                     RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), BladeRiderItems.SEALABLE_CHANGE_BEETLE.get(), 1);

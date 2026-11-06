@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.mixin;
 
 import net.minecraft.ReportType;
-import net.minecraft.Util;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -16,12 +15,20 @@ public class ReportTypeMixin {
             "Noopi Noopi!",
             "Bool bum bum...",
             "Ki ka kooey die!",
-            "ｵﾝﾄﾞｩﾙﾙﾗｷﾞｯﾀﾝﾃﾞｨｽｶｰ!",
+            "ｵﾝﾄﾞｩﾙﾙﾗｷﾞｯﾀﾝﾃﾞｨｽｶｰ!!",
+            "ｳｿﾀﾞﾄﾞﾝﾄﾞｺﾄﾞｰﾝ!!",
+            "ﾅｽﾞｪﾐﾃﾙﾝﾃﾞｨｽ!!",
             "Ferbus has escaped containment.",
             "おのれディケイド!",
             "ONORE DECADE!",
             "DANGER! DANGER! DANGER! D-D-D-DANGER! GOODBYE!",
             "The zorse is loose!",
+            "Overdrive... Overdrive... Overdrive... Overload.",
+            "See you Next game...",
+            "Emu, you have to save Parkour Civilization...",
+            "I'm God! My dreams are...IMMORTAL!!!",
+            "YABEIIII!",
+            "Grappu Hissatsu Dokuha! Rekka Battou! Crash Hissatsu Giri!",
             "Just a witty crash..."));
 
     @Inject(method = "getErrorComment", at = @At("HEAD"), cancellable = true)
