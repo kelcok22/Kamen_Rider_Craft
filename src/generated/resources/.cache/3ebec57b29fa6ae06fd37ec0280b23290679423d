@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-01T11:08:37.3186712	Item Models: kamenridercraft
+// 1.21.1	2026-11-06T15:36:45.9397472	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 9a45b56d01503e3df8042d31b1b262e7ea0027fc assets/kamenridercraft/models/item/advance_capsem.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
@@ -919,5 +919,6 @@ daf113a70f41d9682a6d61f01cf423a0424ecc54 assets/kamenridercraft/models/item/zi_o
 9a338769372039a871bbcd05d650987290a3b380 assets/kamenridercraft/models/item/zi_o_gochizo.json
 3870f1b69438ca4d863bcd8ad669b72c0d766edd assets/kamenridercraft/models/item/zi_o_ride_chemy_card.json
 3d8860a93b7f52ab1283b3d785d5e97f84a76317 assets/kamenridercraft/models/item/zo_gochizo.json
+2f284dcb7b23cb1c01745e2147fb1fdafd7b84ee assets/kamenridercraft/models/item/zuccocade_card.json
 17fb57fab3a8b21904f87a0e988cc54ba138d08a assets/kamenridercraft/models/item/zukyumpire_ride_chemy_card.json
 b864e4692932c5c378463ea4d20b433fbd48bb20 assets/kamenridercraft/models/item/zx_gochizo.json

@@ -1755,6 +1755,18 @@ public class DecadeRiderItems {
             }.setModifiedPosition("hide_items.modifier")
                     .setModifiedPositionLayer("position_1").hasCape().useBasicModel().addToList(DECADE_TAB_ITEM));
 
+    public static final DeferredItem<Item> ZUCCOCADE_CARD = ITEMS.register("zuccocade_card",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "zuccocade", "zuccocade_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().useBasicModel().addToList(DECADE_TAB_ITEM));
+
 
     public static final DeferredItem<Item> DECADEHELMET = ITEMS.register("decadehead",
             () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
@@ -1778,6 +1790,11 @@ public class DecadeRiderItems {
     public static final DeferredItem<Item> DARK_DECADRIVER = ITEMS.register("dark_decadriver",
             () -> new DecadriverItem(ArmorMaterials.DIAMOND, "dark_decade", DARK_DECADE_CARD, DECADEHELMET, DECADECHESTPLATE, DECADELEGGINGS, new Item.Properties())
                     .overrideBeltText("dark_decadriver_belt").addToList(DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+
+    public static final DeferredItem<Item> ZUCCOCADE_BELT = ITEMS.register("zuccocade_belt",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "zuccocade", ZUCCOCADE_CARD, DECADEHELMET, DECADECHESTPLATE, DECADELEGGINGS, new Item.Properties())
+                    .hideBeltFormInfo().addToList(DECADE_TAB_ITEM).changeRepairItem(BLANK_CARD.get()));
+
 
     public static final DeferredItem<Item> RIDE_BOOKER = ITEMS.register("ride_booker",
             () -> new RideBookerItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).IsSwordGun().addToList(DECADE_TAB_ITEM)

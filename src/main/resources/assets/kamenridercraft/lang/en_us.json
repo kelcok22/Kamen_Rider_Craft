@@ -3648,6 +3648,8 @@
 "item.kamenridercraft.dark_decadriver": "Dark Decadriver",
 "kamenridercraft.name.dark_decade": "Rider: Kamen Rider Dark Decade",
 "item.kamenridercraft.neo_decadriver": "NeoDecadriver",
+"item.kamenridercraft.zuccocade_belt": "Zuccocade Belt",
+"kamenridercraft.name.zuccocade": "Rider: Kamen Rider Zuccocade",
 
 "item.kamenridercraft.blank_card": "Blank Rider Card",
 "item.kamenridercraft.decade_card": "KamenRide Decade",
@@ -3923,6 +3925,7 @@
 "item.kamenridercraft.kuuga_ball": "Final FormRide Kuuga Ball",
 "item.kamenridercraft.decade_ooo_armor_card": "Final FormRide OOO Armor",
 "item.kamenridercraft.final_form_ride_chalice_choco": "Final FormRide Chalice Choco",
+"item.kamenridercraft.zuccocade_card": "KamenRide Zuccocade",
 
 "kamenridercraft:kuuga_growing_card.form": "Form: Kuuga Growing Form",
 "kamenridercraft:kuuga_dragon_card.form": "Form: Kuuga Dragon Form",
