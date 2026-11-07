@@ -677,6 +677,7 @@
 "owner.kamenridercraft.legend":"レジェンドの%s",
 
 "henshin.kamenridercraft.henshin":"変身！",
+"henshin.kamenridercraft.stageshow_boss":"オンステージ！",
 "henshin.kamenridercraft.shocker_rider":"<ショッカーライダー> §e変身！",
 "henshin.kamenridercraft.shin_no_0":"<仮面ライダー第0号> §1変身！",
 "henshin.kamenridercraft.apollogeist":"<アポロガイスト> §cアポロガイストの名誉にかけて、お前を殺す！",
@@ -3380,6 +3381,7 @@
 "item.kamenridercraft.gatack_zecter": "ガタックゼクター",
 "item.kamenridercraft.kickhopper_zecter": "ホッパーゼクター（キックホッパー）",
 "item.kamenridercraft.punchhopper_zecter": "ホッパーゼクター（パンチホッパー）",
+"item.kamenridercraft.chophopper_zecter": "ホッパーゼクター（チョップホッパー）",
 "item.kamenridercraft.dark_kabuto_zecter": "ダークカブトゼクター",
 "item.kamenridercraft.caucasus_zecter": "コーカサスゼクター",
 "item.kamenridercraft.hercus_zecter": "ヘルクスゼクター",
@@ -3638,6 +3640,8 @@
 "item.kamenridercraft.dark_decadriver": "ダークディケイドライバー",
 "kamenridercraft.name.dark_decade": "ライダー: 仮面ライダーダークディケイド",
 "item.kamenridercraft.neo_decadriver": "ネオディケイドライバー",
+"item.kamenridercraft.zuccocade_belt": "ズッコケイドベルト",
+"kamenridercraft.name.zuccocade": "ライダー: 仮面ライダーズッコケイド",
 
 "item.kamenridercraft.blank_card": "ブランク",
 "item.kamenridercraft.decade_card": "カメンライド ディケイド",
@@ -3879,6 +3883,7 @@
 "item.kamenridercraft.diend_chinomanako_card": "カメンライド ディエンド（チノマナコディエンド変身体）",
 "item.kamenridercraft.diend_power_up_card": "カメンライド ディエンド（パワーアップ）",
 "item.kamenridercraft.dark_decade_card": "カメンライド ダークディケイド",
+"item.kamenridercraft.zuccocade_card": "カメンライド ズッコケイド",
 
 "item.kamenridercraft.kiva_garulu_card": "フォームライド キバ ガルルフォーム",
 "item.kamenridercraft.kiva_basshaa_card": "フォームライド キバ バッシャーフォーム",
@@ -5689,6 +5694,7 @@
 "item.kamenridercraft.transform_gamma_eyecon": "眼魔眼魂（眼魔スペルオル変身用）",
 "item.kamenridercraft.transform_gamma_eyecon_camille": "眼魔眼魂（眼魔スペルオル変身用）（カミーユ）",
 "item.kamenridercraft.knife_gamma_eyecon": "眼魔眼魂（ナイフ）",
+"item.kamenridercraft.onpu_gamma_eyecon":"眼魔眼魂（眼魔スペルオル・音符変身用）",
 "item.kamenridercraft.yurusen_gamma_eyecon": "眼魔眼魂（ユルセン）",
 "item.kamenridercraft.sister_gamma_eyecon": "眼魔眼魂（妹）",
 
@@ -5735,6 +5741,7 @@
 "kamenridercraft:gamma_superior_damashii.form": "魂: パーフクト",
 "kamenridercraft:transform_gamma_eyecon_camille.form": "魂: パーフクト（カミーユ）",
 "kamenridercraft:knife_gamma_eyecon.form": "魂: ナイフ",
+"kamenridercraft:knife_gamma_eyecon.form": "魂: 音符",
 
 "kamenridercraft:boost_damashii.form": "魂: 闘魂ブースト",
 "kamenridercraft:mugen_damashii.form": "魂: ムゲン",
@@ -9440,7 +9447,6 @@
 "kamenridercraft:bakuen_no_senshi_ryuga.form": "フォーム: 爆炎のウォリアー",
 "kamenridercraft:bakuen_no_senshi.form": "フォーム: 爆炎のウォリアー",
 
-
 "entity.kamenridercraft.shocker_combatman":"ショッカー戦闘員",
 "entity.minecraft.villager.kamenridercraft.shocker_villager":"ショッカー",
 "entity.minecraft.villager.kamenridercraft.humagear_villager":"ヒューマギア",
@@ -9784,6 +9790,9 @@
 "entity.kamenridercraft.batta_augment":"大量発生形相変異バッタオーグ",
 "entity.kamenridercraft.shin_no_0":"仮面ライダー第0号",
 
+"entity.kamenridercraft.stageshow_grunt":"ヒーローショー下っ端",
+"entity.kamenridercraft.stageshow_enemy":"ヒーローショー敵",
+
 "entity.kamenridercraft.base_projectile": "KRC飛び道具",
 "entity.kamenridercraft.sealing_effect":"封印エフェクト",
 
@@ -10044,12 +10053,15 @@
 "item.kamenridercraft.nightmare_spawn_egg": "ナイトメアスポーンエッグ",
 "item.kamenridercraft.shadow_nightmare_spawn_egg": "シャドウナイトメアスポーンエッグ",
 "item.kamenridercraft.nox_spawn_egg": "ノクスナイトスポーンエッグ",
-"item.kamenridercraft.dawn_spawn_egg": "仮面ライダードォーンポーンエッグ",
-"item.kamenridercraft.lord_three_spawn_egg": "ロードスリーポーンエッグ",
-"item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "ゼッツダークネスナイトメアポーンエッグ",
-"item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "ファントムゴアナイトメアポーンエッグ",
-"item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "オブリビオンゴアナイトメアポーンエッグ",
-"item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "カタストロフゴアナイトメアポーンエッグ",
+"item.kamenridercraft.dawn_spawn_egg": "仮面ライダードォーンスポーンエッグ",
+"item.kamenridercraft.lord_three_spawn_egg": "ロードスリースポーンエッグ",
+"item.kamenridercraft.zeztz_darkness_nightmare_spawn_egg": "ゼッツダークネスナイトメアスポーンエッグ",
+"item.kamenridercraft.phantom_gore_nightmare_spawn_egg": "ファントムゴアナイトメアスポーンエッグ",
+"item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "オブリビオンゴアナイトメアスポーンエッグ",
+"item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "カタストロフゴアナイトメアスポーンエッグ",
+
+"item.kamenridercraft.stageshow_grunt_spawn_egg": "ヒーローショー下っ端ポーンエッグ",
+"item.kamenridercraft.stageshow_enemy_spawn_egg": "ヒーローショー敵スポーンエッグ",
 
 "item.kamenridercraft.bicycle_spawn_egg": "自転車",
 "item.kamenridercraft.acrobatter_spawn_egg": "アクロバッター",
@@ -11735,6 +11747,8 @@
 "advancements.kamenridercraft.hibiki.zanki.title": "A Flash of the Blade",
 "advancements.kamenridercraft.kabuto.caucasus.description": "仮面ライダーコーカサスを倒す",
 "advancements.kamenridercraft.kabuto.caucasus.title": "God, Speed, Love",
+"advancements.kamenridercraft.kabuto.chophopper.description": "仮面ライダーチョップホッパーに変身",
+"advancements.kamenridercraft.kabuto.chophopper.title": "地獄兄弟の末っ子",
 "advancements.kamenridercraft.kabuto.dark_kabuto.description": "仮面ライダーダークカブトに変身",
 "advancements.kamenridercraft.kabuto.dark_kabuto.title": "我々の間にインポスター",
 "advancements.kamenridercraft.kabuto.drake.description": "仮面ライダードレイクに変身",

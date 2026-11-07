@@ -8,6 +8,7 @@
 		"kamenridercraft:amazon_scythe",
 		"kamenridercraft:amazon_whip",
 		"kamenridercraft:amazon_spear",
+        "kamenridercraft:shadow_sword",
 		"kamenridercraft:satansabre",
 		"kamenridercraft:flaresalamander_sword",
 		"kamenridercraft:grandgouram_rod",
@@ -345,6 +346,9 @@
 		"kamenridercraft:breakam_breaker_knuckle",
 		"kamenridercraft:mugen_sword",
 		"kamenridercraft:rabbit_sword",
-		"kamenridercraft:snake_scythe"
+		"kamenridercraft:snake_scythe",
+        "kamenridercraft:sheep_hammer",
+        "kamenridercraft:tiger_dao",
+        "kamenridercraft:kei_trident"
 	]
 }

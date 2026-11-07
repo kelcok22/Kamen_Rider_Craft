@@ -1,20 +1,20 @@
 {
 	"display": {
 		"icon": {
-			"id": "kamenridercraft:vision_driver_jyamato_glare"
+			"id": "kamenridercraft:chophopper_rider_belt"
 		},
 		"title": {
-			"translate": "advancements.kamenridercraft.geats.jyamato_gazer.title"
+			"translate": "advancements.kamenridercraft.kabuto.chophopper.title"
 		},
 		"description": {
-			"translate": "advancements.kamenridercraft.geats.jyamato_gazer.description"
+			"translate": "advancements.kamenridercraft.kabuto.chophopper.description"
 		},
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "kamenridercraft:geats/regad",
+	"parent": "kamenridercraft:kabuto/punchhopper",
 	"criteria": {
 		"requirement": {
 			"trigger": "minecraft:inventory_changed",
@@ -23,22 +23,22 @@
 					"equipment": {
 						"head": {
 							"items": [
-								"kamenridercraft:geatshead"
+								"kamenridercraft:kabutohead"
 							]
 						},
 						"chest": {
 							"items": [
-								"kamenridercraft:geatstroso"
+								"kamenridercraft:kabutotroso"
 							]
 						},
 						"legs": {
 							"items": [
-								"kamenridercraft:geatslegs"
+								"kamenridercraft:kabutolegs"
 							]
 						},
 						"feet": {
 							"items": [
-								"kamenridercraft:vision_driver_jyamato_glare"
+								"kamenridercraft:chophopper_rider_belt"
 							]
 						}
 					}
@@ -47,4 +47,3 @@
 		}
 	}
 }
-  

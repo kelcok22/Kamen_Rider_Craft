@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "chophopper",
+	"pattern": [
+		"XXX",
+		"XZX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:mini_zecter"
+		},
+		"Z": {
+			"item": "kamenridercraft:chophopper_zecter"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:chophopper_rider_belt"
+	}
+}

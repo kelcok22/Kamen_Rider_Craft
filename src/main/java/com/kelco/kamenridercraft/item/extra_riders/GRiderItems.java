@@ -44,6 +44,7 @@ public class GRiderItems {
                         //AnimationUtil.playPose(player, riderName+".henshin");
                         AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 34d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BOTTLE_FILL, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,

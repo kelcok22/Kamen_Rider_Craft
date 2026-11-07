@@ -192,7 +192,7 @@ public class ItemInHandLayerMixin {
                     replaceRender = true;
                     palOverride = true;
                 }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("blade_mirror") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
-                    if (arm == HumanoidArm.LEFT) {
+                    if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(RyukiRiderItems.BLADE_DECK.get());
                     } else {
                         tango = new ItemStack(Items.AIR);

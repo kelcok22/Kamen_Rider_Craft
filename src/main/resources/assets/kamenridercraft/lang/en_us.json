@@ -678,7 +678,7 @@
 "owner.kamenridercraft.legend":"Legend's %s",
 
 "henshin.kamenridercraft.henshin":"Henshin!",
-  "henshin.kamenridercraft.stageshow_boss":"On Stage!",
+"henshin.kamenridercraft.stageshow_boss":"On Stage!",
 "henshin.kamenridercraft.shocker_rider":"<Shocker Rider> §eHenshin!",
 "henshin.kamenridercraft.shin_no_0":"<No. 0> §1Henshin!",
 "henshin.kamenridercraft.apollogeist":"<Apollogeist> §cOn the honor of Apollogeist, I will have you slain!",
@@ -3387,6 +3387,7 @@
 "item.kamenridercraft.gatack_zecter": "Gatack Zecter",
 "item.kamenridercraft.kickhopper_zecter": "Hopper Zecter (KickHopper)",
 "item.kamenridercraft.punchhopper_zecter": "Hopper Zecter (PunchHopper)",
+"item.kamenridercraft.chophopper_zecter": "Hopper Zecter (ChopHopper)",
 "item.kamenridercraft.dark_kabuto_zecter": "Dark Kabuto Zecter",
 "item.kamenridercraft.caucasus_zecter": "Caucasus Zecter",
 "item.kamenridercraft.hercus_zecter": "Hercus Zecter",
@@ -3891,6 +3892,7 @@
 "item.kamenridercraft.diend_chinomanako_card": "KamenRide Diend (Chinomanako Diend Formation)",
 "item.kamenridercraft.diend_power_up_card": "KamenRide Diend (Power Up)",
 "item.kamenridercraft.dark_decade_card": "KamenRide Dark Decade",
+"item.kamenridercraft.zuccocade_card": "KamenRide Zuccocade",
 
 "item.kamenridercraft.kiva_garulu_card": "FormRide Kiva Garulu Form",
 "item.kamenridercraft.kiva_basshaa_card": "FormRide Kiva Basshaa Form",
@@ -3925,7 +3927,6 @@
 "item.kamenridercraft.kuuga_ball": "Final FormRide Kuuga Ball",
 "item.kamenridercraft.decade_ooo_armor_card": "Final FormRide OOO Armor",
 "item.kamenridercraft.final_form_ride_chalice_choco": "Final FormRide Chalice Choco",
-"item.kamenridercraft.zuccocade_card": "KamenRide Zuccocade",
 
 "kamenridercraft:kuuga_growing_card.form": "Form: Kuuga Growing Form",
 "kamenridercraft:kuuga_dragon_card.form": "Form: Kuuga Dragon Form",
@@ -9467,10 +9468,6 @@
 "kamenridercraft:bakuen_no_senshi_ryuga.form": "Form: Bakuen no Warrior",
 "kamenridercraft:bakuen_no_senshi.form": "Form: Bakuen no Warrior",
 
-"item.kamenridercraft.stageshow_grunt_spawn_egg": "Stageshow Grunt Spawn Egg",
-"item.kamenridercraft.stageshow_enemy_spawn_egg": "Stageshow Enemy Spawn Egg",
-
-
 "entity.kamenridercraft.shocker_combatman":"Shocker Combatman",
 "entity.minecraft.villager.kamenridercraft.shocker_villager":"Shocker",
 "entity.minecraft.villager.kamenridercraft.humagear_villager":"Humagear",
@@ -10086,6 +10083,8 @@
 "item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "Oblivion Gore Nightmare Spawn Egg",
 "item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "Catastrophe Gore Nightmare Spawn Egg",
 
+"item.kamenridercraft.stageshow_grunt_spawn_egg": "Stageshow Grunt Spawn Egg",
+"item.kamenridercraft.stageshow_enemy_spawn_egg": "Stageshow Enemy Spawn Egg",
 
 "item.kamenridercraft.bicycle_spawn_egg": "Bicycle",
 "item.kamenridercraft.acrobatter_spawn_egg": "Acrobatter",
@@ -11774,6 +11773,8 @@
 "advancements.kamenridercraft.hibiki.zanki.title": "A Flash of the Blade",
 "advancements.kamenridercraft.kabuto.caucasus.description": "Defeat Kamen Rider Caucasus",
 "advancements.kamenridercraft.kabuto.caucasus.title": "God, Speed, Love",
+"advancements.kamenridercraft.kabuto.chophopper.description": "Transform into Kamen Rider ChopHopper",
+"advancements.kamenridercraft.kabuto.chophopper.title": "Youngest of the Hell Brothers",
 "advancements.kamenridercraft.kabuto.dark_kabuto.description": "Transform into Kamen Rider Dark Kabuto",
 "advancements.kamenridercraft.kabuto.dark_kabuto.title": "An Imposter Among Us",
 "advancements.kamenridercraft.kabuto.drake.description": "Transform into Kamen Rider Drake",

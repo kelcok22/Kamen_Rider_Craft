@@ -7,6 +7,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
 import net.minecraft.world.InteractionHand;
@@ -25,7 +26,7 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "rider_summon";
         if (!level().isClientSide() && getData(MOB_STATE).isEmpty()) {
-            switch (getRandom().nextInt(10)) {
+            switch (getRandom().nextInt(11)) {
                 case 0:
                     setData(MOB_STATE, "red_cheeseman");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(BlackRiderItems.BLACK_HELMET.get()));
@@ -98,6 +99,13 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(GaimRiderItems.GAIM_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(GaimRiderItems.SENGOKU_DRIVER_MAJA.get()));
                     setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(GaimRiderItems.MAJAS_SWORD.get(), 1));
+                    break;
+                case 10:
+                    setData(MOB_STATE, "chronicle_bugster");
+                    setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
+                    setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
+                    setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()));
                     break;
             }
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));

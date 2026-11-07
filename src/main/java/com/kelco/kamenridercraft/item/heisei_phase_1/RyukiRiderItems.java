@@ -60,7 +60,7 @@ public class RyukiRiderItems {
                         if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
                             AnimationUtil.playPose(player, riderName+".henshin");
                         }
-                        if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.ANVIL_HIT, SoundSource.PLAYERS, 1.0F, 8F);
+                        if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                         if (tick == 1d) {
                             ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                     player.getX(), player.getY() + 1,
@@ -77,8 +77,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -94,8 +95,9 @@ public class RyukiRiderItems {
                     public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                         super.transformationEffect(itemstack, player, tick);
                         if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                            AnimationUtil.playPose(player, riderName+".henshin");
+                            AnimationUtil.playPose(player, "ryuki.henshin");
                         }
+                        if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                         if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -111,8 +113,9 @@ public class RyukiRiderItems {
                     public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -128,8 +131,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -144,8 +148,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -160,8 +165,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -180,8 +186,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -203,8 +210,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -223,8 +231,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -240,8 +249,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -258,8 +268,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -275,8 +286,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -292,8 +304,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -309,8 +322,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -326,8 +340,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 2F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -336,15 +351,16 @@ public class RyukiRiderItems {
 			}}.setFormDelay(1).addToList(RYUKI_TAB_ITEM));
 
     public static final DeferredItem<Item> GULDTHUNDER_ADVENT = ITEMS.register("guldthunder_advent",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","blade","v_buckle_belt_blade",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","blade_mirror","v_buckle_belt_blade",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)){
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                    if (tick == 30d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, "blade.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
                             player.getX(), player.getY()+1,
@@ -362,8 +378,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -381,8 +398,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -404,8 +422,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -426,8 +445,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -448,8 +468,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -470,8 +491,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
@@ -492,8 +514,9 @@ public class RyukiRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
-                        AnimationUtil.playPose(player, riderName+".henshin");
+                        AnimationUtil.playPose(player, "ryuki.henshin");
                     }
+                    if (tick == 15d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.WOODEN_TRAPDOOR_CLOSE, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
 							player.getX(), player.getY()+1,
