@@ -801,6 +801,9 @@ public class ModCommonEvents {
                 trades.get(5).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(IchigoRiderItems.ICHIGO_MANGA.get(), 1), 10, 8, 0.02F));
+                trades.get(5).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 2),
+                        new ItemStack(BlackRiderItems.BLACK_MANGA.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),

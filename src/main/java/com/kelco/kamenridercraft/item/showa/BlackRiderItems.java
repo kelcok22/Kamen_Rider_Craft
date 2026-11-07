@@ -60,6 +60,24 @@ public class BlackRiderItems {
             }.isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
 
 
+    public static final DeferredItem<Item> BLACK_MANGA = ITEMS.register("black_manga",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_manga", "black", "blank",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)
+                    , new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)
+                    , new MobEffectInstance(EffectCore.FLAT, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 50, 0, 0, 0, 1);
+                }
+            }.changeModel("black_manga.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.BLACK_TAB_ITEM));
+
     public static final DeferredItem<Item> GREEN_KING_STONE = ITEMS.register("green_king_stone",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "shadow_moon", "shadow_charger_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
