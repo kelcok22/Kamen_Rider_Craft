@@ -1,13 +1,9 @@
 package com.kelco.kamenridercraft.effects.beneficial;
 
-import com.kelco.kamenridercraft.sounds.ModMusic;
-import com.kelco.kamenridercraft.sounds.ModSounds;
-import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.effect.InstantenousMobEffect;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;

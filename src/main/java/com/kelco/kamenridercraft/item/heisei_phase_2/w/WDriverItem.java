@@ -1,9 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.w;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.BirthBallLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WHenshinRingRenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;

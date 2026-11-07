@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.blade;
 
 
-import com.kelco.kamenridercraft.effects.harmful.UnsealedEffect;
 import com.kelco.kamenridercraft.entity.mobs.bosses.AceUndeadEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.BlockPos;

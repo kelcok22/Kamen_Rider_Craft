@@ -1,7 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.network.chat.Component;

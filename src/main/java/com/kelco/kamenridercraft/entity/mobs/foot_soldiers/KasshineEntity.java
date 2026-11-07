@@ -1,10 +1,8 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
-import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
-import com.kelco.kamenridercraft.item.showa.V3RiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityType;

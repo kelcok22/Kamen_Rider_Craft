@@ -71,7 +71,7 @@ public class ItemInHandLayerMixin {
                         tango = new ItemStack(Items.AIR);
                     }
                     replaceRender = true;
-                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("ryuki") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("ryuki") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.RYUKI_DECK.get());
                     } else {
@@ -79,7 +79,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("knight") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("knight") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.KNIGHT_DECK.get());
                     } else {
@@ -87,7 +87,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("scissors") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("scissors") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.SCISSORS_DECK.get());
                     } else {
@@ -95,7 +95,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("zolda") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("zolda") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.ZOLDA_DECK.get());
                     } else {
@@ -103,7 +103,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("raia") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("raia") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.RAIA_DECK.get());
                     } else {
@@ -111,7 +111,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("ouja") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("ouja") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.OUJA_DECK.get());
                     } else {
@@ -119,7 +119,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("odin") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("odin") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.ODIN_DECK.get());
                     } else {
@@ -127,7 +127,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("imperer") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("imperer") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.IMPERER_DECK.get());
                     } else {
@@ -135,7 +135,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("tiger") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("tiger") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.TIGER_DECK.get());
                     } else {
@@ -143,7 +143,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("gai") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("gai") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.GAI_DECK.get());
                     } else {
@@ -151,7 +151,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("verde") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("verde") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.VERDE_DECK.get());
                     } else {
@@ -159,7 +159,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("femme") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("femme") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.FEMME_DECK.get());
                     } else {
@@ -167,7 +167,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("fatale") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("fatale") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.FATALE_DECK.get());
                     } else {
@@ -175,7 +175,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("ryuga") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("ryuga") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.RYUGA_DECK.get());
                     } else {
@@ -183,7 +183,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("abyss") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("abyss") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.ABYSS_DECK.get());
                     } else {
@@ -191,7 +191,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("blade_mirror") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("blade_mirror") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(RyukiRiderItems.BLADE_DECK.get());
                     } else {
@@ -199,7 +199,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("alternative") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("alternative") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.ALTERNATIVE_DECK.get());
                     } else {
@@ -207,7 +207,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("alternative_zero") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("alternative_zero") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.ALTERNATIVE_DECK.get());
                     } else {
@@ -215,7 +215,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("kamen_rider_g") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("kamen_rider_g") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(GRiderItems.GORO_WINE_BOTTLE.get());
                     } else {
@@ -223,7 +223,7 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("kiva") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("kiva") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(Items.AIR);
                     } else {

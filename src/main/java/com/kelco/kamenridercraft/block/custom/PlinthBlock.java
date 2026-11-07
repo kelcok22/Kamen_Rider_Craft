@@ -125,12 +125,12 @@ public class PlinthBlock extends BaseEntityBlock {
 					plinthBlockEntity.inventory.getStackInSlot(0).isEmpty() && stack.getItem() instanceof BaseBlasterItem){
 				plinthBlockEntity.inventory.insertItem(0, stack.copy(), false);
 				stack.shrink(1);
-				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
+				level.playSound(player, pos, SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS, 1f, 2f);
 			} else if (stack.isEmpty()) {
 				ItemStack stackOnPlinth = plinthBlockEntity.inventory.extractItem(0,1, false);
 				player.setItemInHand(InteractionHand.MAIN_HAND, stackOnPlinth);
 				plinthBlockEntity.clearContents();
-				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
+				level.playSound(player, pos, SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS, 1f, 1f);
 			}
 		}
 		return ItemInteractionResult.SUCCESS;

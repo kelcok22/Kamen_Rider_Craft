@@ -8,7 +8,6 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.*;
 import com.kelco.kamenridercraft.item.showa.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
-import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;

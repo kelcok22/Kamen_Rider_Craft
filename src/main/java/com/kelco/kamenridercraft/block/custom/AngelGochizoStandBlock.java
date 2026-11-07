@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.block.custom;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.blockentity.AngelGochizoStandBlockEntity;
-import com.kelco.kamenridercraft.blockentity.GochizoJarBlockEntity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -124,12 +123,12 @@ public class AngelGochizoStandBlock extends BaseEntityBlock {
 			if(AngelGochizoStandBlockEntity.inventory.getStackInSlot(0).isEmpty() && stack.is(TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/gochizo")))){
 				AngelGochizoStandBlockEntity.inventory.insertItem(0, stack.copy(), false);
 				stack.shrink(1);
-				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 2f);
+				level.playSound(player, pos, SoundEvents.ALLAY_DEATH, SoundSource.BLOCKS, 1f, 2f);
 			} else if (stack.isEmpty()) {
 				ItemStack stackOnPlinth = AngelGochizoStandBlockEntity.inventory.extractItem(0,1, false);
 				player.setItemInHand(InteractionHand.MAIN_HAND, stackOnPlinth);
 				AngelGochizoStandBlockEntity.clearContents();
-				level.playSound(player, pos, SoundEvents.ITEM_PICKUP, SoundSource.BLOCKS, 1f, 1f);
+				level.playSound(player, pos, SoundEvents.ALLAY_ITEM_GIVEN, SoundSource.BLOCKS, 1f, 1f);
 			}
 		}
 		return ItemInteractionResult.SUCCESS;

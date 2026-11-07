@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.world.inventory;
 
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.blockentity.AstroswitchProgrammerEntity;
-import com.kelco.kamenridercraft.blockentity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.init.ModMenus;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.Container;

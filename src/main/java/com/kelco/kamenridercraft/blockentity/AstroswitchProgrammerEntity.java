@@ -1,11 +1,10 @@
 package com.kelco.kamenridercraft.blockentity;
 
-import com.kelco.kamenridercraft.block.machine.AstroswitchProgrammer;
-import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
-import com.kelco.kamenridercraft.recipe.*;
+import com.kelco.kamenridercraft.recipe.AstroswitchProgrammerRecipe;
+import com.kelco.kamenridercraft.recipe.AstroswitchProgrammerRecipeInput;
+import com.kelco.kamenridercraft.recipe.ModRecipes;
 import com.kelco.kamenridercraft.world.inventory.AstroswitchProgrammerGuiMenu;
-import com.kelco.kamenridercraft.world.inventory.IxaMachineBlockGuiMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;

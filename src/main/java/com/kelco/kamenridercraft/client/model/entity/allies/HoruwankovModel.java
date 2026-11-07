@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.client.model.entity.allies;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.allies.HoruwankovEntity;
-import com.kelco.kamenridercraft.entity.mobs.allies.HulashakeEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

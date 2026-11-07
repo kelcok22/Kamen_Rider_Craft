@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.ServerConfig;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.LevelOneRingRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.entity.mobs.summons.ParaDXSummonEntity;
 import com.kelco.kamenridercraft.item.ModdedItemCore;

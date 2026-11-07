@@ -5,7 +5,6 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.RiderArmorRenderer;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-
 import com.kelco.kamenridercraft.item.heisei_phase_2.DriveRiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.resources.ResourceLocation;
@@ -22,7 +21,8 @@ import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.renderer.GeoRenderer;
 
-import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.*;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.CHANGE_KICK_MODEL;
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.WINGS_OUT;
 
 public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
     public RiderArmorModel() {

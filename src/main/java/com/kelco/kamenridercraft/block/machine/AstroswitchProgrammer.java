@@ -2,16 +2,13 @@ package com.kelco.kamenridercraft.block.machine;
 
 
 import com.kelco.kamenridercraft.blockentity.AstroswitchProgrammerEntity;
-import com.kelco.kamenridercraft.blockentity.IxaMachineBlockEntity;
 import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
-import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -34,9 +31,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 
 public class AstroswitchProgrammer extends BaseEntityBlock {

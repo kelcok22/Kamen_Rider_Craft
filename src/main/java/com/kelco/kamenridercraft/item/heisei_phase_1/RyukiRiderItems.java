@@ -1,18 +1,13 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.DrillRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RyukiRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventCardItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.AdventDeckItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.ryuki.VBuckleItem;
-import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
-import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -22,15 +17,11 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.RYUKI_TAB_ITEM;
 

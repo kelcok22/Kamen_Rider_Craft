@@ -2,12 +2,9 @@ package com.kelco.kamenridercraft.item.reiwa.zeztz;
 
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
-import com.kelco.kamenridercraft.item.reiwa.GavvRiderItems;
 import com.kelco.kamenridercraft.item.reiwa.ZeztzRiderItems;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
@@ -21,7 +18,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.portal.DimensionTransition;
@@ -31,7 +27,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
-import java.util.function.Consumer;
 
 public class DreamTestItem extends BaseItem {
         public DreamTestItem(Properties properties) {

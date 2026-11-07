@@ -27,8 +27,8 @@ import net.neoforged.neoforge.network.handling.IPayloadContext;
 import java.util.Objects;
 import java.util.UUID;
 
-import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.KamenRiderCraftClientCore.*;
+import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
 import static com.kelco.kamenridercraft.item.base_items.RiderDriverItem.getFormItem;
 import static com.kelco.kamenridercraft.util.AnimationUtil.*;
 import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.*;

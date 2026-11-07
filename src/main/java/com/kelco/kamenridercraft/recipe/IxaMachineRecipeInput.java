@@ -3,9 +3,6 @@ package com.kelco.kamenridercraft.recipe;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeInput;
 
-import java.util.List;
-import java.util.Objects;
-
 public record IxaMachineRecipeInput(ItemStack primary, ItemStack modifier) implements RecipeInput {
 
         @Override

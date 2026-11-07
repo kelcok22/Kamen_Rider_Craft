@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.ooo;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GodaRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.MeteorStormRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooSuperHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
@@ -11,10 +10,7 @@ import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Holder;
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -27,8 +23,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
-
-import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.IS_TRANSFORMING;
 
 public class OOODriverItem extends RiderDriverItem {
 

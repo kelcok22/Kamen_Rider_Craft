@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.block.machine.AstroswitchProgrammer;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.*;
 import com.kelco.kamenridercraft.effects.EffectCore;

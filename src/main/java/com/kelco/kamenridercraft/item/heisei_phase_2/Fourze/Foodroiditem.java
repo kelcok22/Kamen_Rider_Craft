@@ -1,11 +1,9 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.Fourze;
 
 
-import com.google.common.collect.Lists;
 import com.kelco.kamenridercraft.entity.mobs.allies.BaseAllyEntity;
 import com.kelco.kamenridercraft.item.base_items.BaseItem;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
@@ -14,7 +12,6 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 

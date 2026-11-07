@@ -1,14 +1,9 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1.ryuki;
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GodaRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RyukiRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooHenshinRenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.oooSuperHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.EquipmentSlot;

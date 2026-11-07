@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.client.gui.machine_block;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.world.inventory.AstroswitchProgrammerGuiMenu;
-import com.kelco.kamenridercraft.world.inventory.IxaMachineBlockGuiMenu;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;

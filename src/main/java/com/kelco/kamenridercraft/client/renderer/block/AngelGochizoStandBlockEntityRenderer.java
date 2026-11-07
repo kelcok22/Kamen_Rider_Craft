@@ -1,7 +1,6 @@
 package com.kelco.kamenridercraft.client.renderer.block;
 
 import com.kelco.kamenridercraft.blockentity.AngelGochizoStandBlockEntity;
-import com.kelco.kamenridercraft.blockentity.GochizoJarBlockEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 import net.minecraft.client.Minecraft;
