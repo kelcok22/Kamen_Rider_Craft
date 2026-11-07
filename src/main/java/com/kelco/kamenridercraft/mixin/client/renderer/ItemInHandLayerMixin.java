@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.mixin.client.renderer;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.extra_riders.GRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
@@ -209,6 +210,14 @@ public class ItemInHandLayerMixin {
                 }else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("alternative_zero") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
                     if (arm == HumanoidArm.LEFT) {
                         tango = new ItemStack(RyukiRiderItems.ALTERNATIVE_DECK.get());
+                    } else {
+                        tango = new ItemStack(Items.AIR);
+                    }
+                    replaceRender = true;
+                    palOverride = true;
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET),livingEntity)&&riderDriverItem.riderName.equals("kamen_rider_g") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
+                    if (arm == HumanoidArm.LEFT) {
+                        tango = new ItemStack(GRiderItems.GORO_WINE_BOTTLE.get());
                     } else {
                         tango = new ItemStack(Items.AIR);
                     }

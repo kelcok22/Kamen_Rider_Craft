@@ -2,21 +2,36 @@ package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.GSystemChipProgrammer;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.BirthBallLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.BirthXHenshinRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GlowHenshinRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RyukiRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
+import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
+import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM;
 import static com.kelco.kamenridercraft.item.base_items.NeoBaseBlasterItem.BlasterPreset.AUTO_BLASTER;
@@ -125,6 +140,11 @@ public class AgitoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false)) {
+
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 20d) {
@@ -138,19 +158,23 @@ public class AgitoRiderItems {
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }
                 }
-            }.setHenshinTick(20).setFormDelay(1).isGlowing().addToList(AGITO_TAB_ITEM));
+            }.setHenshinTick(20).setFormDelay(1).isGlowing().IsBeltGlowing().addToList(AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> ICONGA_NO_AKAI_AGITO = ITEMS.register("iconga_no_akai_agito",
             () -> new RiderFormChangeItem(new Item.Properties(), "_iconga_no_akai", "agito", "alter_ring_belt_f",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 33d) {
+                        AnimationUtil.playPose(player, "agito.henshin");
+                    } else if (tick == 2d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }.isGlowing().IsBeltGlowing().useBasicModel().addToList(AGITO_TAB_ITEM));
+            }.setHenshinTick(37).isGlowing().IsBeltGlowing().useBasicModel().addToList(AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GILLS = ITEMS.register("gills",
@@ -158,13 +182,15 @@ public class AgitoRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
                 }
-            }.isGlowing().addToList(AGITO_TAB_ITEM));
+            }.setFormDelay(0).isGlowing().addToList(AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> EXCEED_GILLS = ITEMS.register("exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_exceed", "gills", "meta_factor_belt_e",
@@ -172,17 +198,19 @@ public class AgitoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }.isGlowing().addToList(AGITO_TAB_ITEM));
+            }.setFormDelay(0).isGlowing().addToList(AGITO_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLD_EXCEED_GILLS = ITEMS.register("gold_exceed_gills",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_gold_exceed", "gills", "meta_factor_belt_g",
@@ -190,17 +218,19 @@ public class AgitoRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }.isGold().isGlowing().changeModel("gills_exceed.geo.json").addToList(AGITO_TAB_ITEM));
+            }.setFormDelay(0).isGold().isGlowing().changeModel("gills_exceed.geo.json").addToList(AGITO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ANOTHER_AGITO = ITEMS.register("another_agito",
@@ -500,7 +530,17 @@ public class AgitoRiderItems {
 
 
     public static final DeferredItem<Item> META_FACTOR = ITEMS.register("meta_factor",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gills", GILLS, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()).addToList(AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gills", GILLS, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin =rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
+                        if ( RiderDriverItem.isTransforming(rider) && henshin < 10) {
+                            layerInfo.add(new GlowHenshinRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),1));
+                          }
+                    }
+                }
+            }.addToList(AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));
 
     public static final DeferredItem<Item> ANK_POINT = ITEMS.register("ank_point",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "another_agito", ANOTHER_AGITO, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties())
