@@ -3,7 +3,7 @@ package com.kelco.kamenridercraft.item.heisei_phase_2;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.GaiaMemoryRefinerBlock;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.AccelRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.*;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
@@ -176,7 +176,11 @@ public class WRiderItems {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 5d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                        if (RiderDriverItem.getFormItem(itemstack, 1)==WRiderItems.XTREME_ACCEL_MEMORY.asItem()){
+                            ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                    player.getX(), player.getY() + 1,
+                                    player.getZ(), 50, 0, 0, 0, 0.1);
+                        }else ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 0.1);
                     }
@@ -237,13 +241,15 @@ public class WRiderItems {
 
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 22d) AnimationUtil.playPose(player, "w.xtreme_henshin_pose");
+                    if (tick == 42d) AnimationUtil.playPose(player, "w.xtreme_henshin_pose");
 
-                    if (tick == 28d) ((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANT,
+                    if (tick == 48d) ((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANT,
                             player.getX(), player.getY() + 1.6,
                             player.getZ(), 1000, 0, 0, 0, 2);
-
-                    if (tick == 1d) {
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 200, 0, 0, 0, 0.1);
@@ -253,7 +259,7 @@ public class WRiderItems {
                                 player.getZ(), 50, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
+            }.setFormDelay(11d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
 
     public static final DeferredItem<Item> XTREME_GOLD_MEMORY = ITEMS.register("xtreme_gold_memory",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.EPIC), "_cyclone_xtreme_gold", "w", "wdriver_belt",
@@ -267,18 +273,29 @@ public class WRiderItems {
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 22d) AnimationUtil.playPose(player, "w.henshin_pose");
-                    if (tick == 1d) {
+                    if (tick == 42d) AnimationUtil.playPose(player, "w.xtreme_henshin_pose");
+
+                    if (tick == 48d) ((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANT,
+                            player.getX(), player.getY() + 1.6,
+                            player.getZ(), 1000, 0, 0, 0, 2);
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 25d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BREEZE_IDLE_GROUND, SoundSource.PLAYERS, 1.0F, 1F);
+                        player.getAttribute(KRCAttributes.WIND).setBaseValue(30);
+                    }
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
-                                player.getZ(), 240, 0, 0, 0, 0.1);
+                                player.getZ(), 200, 0, 0, 0, 0.1);
 
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 50, 0, 0, 0, 0.1);
                     }
                 }
-            }.hasCape().setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM));
+            }.setFormDelay(11d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM));
 
     public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_cyclone_xtreme_accel", "w", "wdriver_belt",
@@ -291,18 +308,25 @@ public class WRiderItems {
                     new MobEffectInstance(EffectCore.SLASH, 40, 4, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 22d) AnimationUtil.playPose(player, "w.henshin_pose");
-                    if (tick == 1d) {
+                    if (tick == 42d) AnimationUtil.playPose(player, "w.xtreme_henshin_pose");
+
+                    if (tick == 48d) ((ServerLevel) player.level()).sendParticles(ParticleTypes.ENCHANT,
+                            player.getX(), player.getY() + 1.6,
+                            player.getZ(), 1000, 0, 0, 0, 2);
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
-                                player.getZ(), 240, 0, 0, 0, 0.1);
+                                player.getZ(), 200, 0, 0, 0, 0.1);
 
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
-                                player.getZ(), 30, 0, 0, 0, 0.1);
+                                player.getZ(), 50, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM));
+            }.setFormDelay(11d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM));
 
 
     public static final DeferredItem<Item> ACCEL_MEMORY_BIKE = ITEMS.register("accel_memory_bike",
@@ -473,14 +497,17 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 12d) AnimationUtil.playPose(player, "skull.henshin_pose");
-                    if (tick == 1d) {
+                    if (tick == 42d) AnimationUtil.playPose(player, "skull.henshin_pose");
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").hasCape().addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
+            }.setFormDelay(11d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").hasCape().addSwitchForm(SKULL_MEMORY_CRYSTAL.get()).addAlternative(CYCLONE_SKULL_MEMORY.get()).addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 5));
 
 
     public static final DeferredItem<Item> ETERNAL_MEMORY = ITEMS.register("eternal_memory",
@@ -490,14 +517,17 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.WEAKNESS, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 12d) AnimationUtil.playPose(player, "eternal.henshin_pose");
-                    if (tick == 1d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                    if (tick == 42d) AnimationUtil.playPose(player, "eterna.henshin_pose");
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
+            }.setFormDelay(11d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_S, 1));
 
 
     public static final DeferredItem<Item> PRISM_MEMORY = ITEMS.register("prism_memory",
@@ -550,14 +580,17 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 12d) AnimationUtil.playPose(player, "cyclone.henshin_pose");
-                    if (tick == 1d) {
+                    if (tick == 42d) AnimationUtil.playPose(player, "cyclone.henshin_pose");
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
+            }.setFormDelay(11d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
     public static final DeferredItem<Item> DUMMY_T2_MEMORY = ITEMS.register("dummy_t2_memory",
             () -> new BaseItem(new Item.Properties()).addToList(W_TAB_ITEM)
@@ -570,14 +603,17 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 12d) AnimationUtil.playPose(player, "eternal.henshin_pose");
-                    if (tick == 1d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                    if (tick == 42d) AnimationUtil.playPose(player, "eternal.henshin_pose");
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").hasCape().isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+            }.setFormDelay(11d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").hasCape().isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
 
     public static final DeferredItem<Item> FANG_T2_MEMORY = ITEMS.register("fang_t2_memory",
@@ -602,14 +638,17 @@ public class WRiderItems {
                     new MobEffectInstance(EffectCore.KNOCKBACK_BOOST, 40, 1, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 12d) AnimationUtil.playPose(player, "joker.henshin_pose");
-                    if (tick == 1d) {
+                    if (tick == 42d) AnimationUtil.playPose(player, "joker.henshin_pose");
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
+            }.setFormDelay(11d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 5));
 
     public static final DeferredItem<Item> KEY_T2_MEMORY = ITEMS.register("key_t2_memory",
             () -> new BaseItem(new Item.Properties()).addToList(W_TAB_ITEM)
@@ -681,9 +720,9 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 5, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 30d) RiderDriverItem.setOldFormItem(itemstack, ETERNAL_T2_MEMORY.get(), 1);
-                    if (tick == 12d) AnimationUtil.playPose(player, "w.maximum_drive_start");
-                    if (tick == 1d) {
+                    if (tick == 50d) RiderDriverItem.setOldFormItem(itemstack, ETERNAL_T2_MEMORY.get(), 1);
+                    if (tick == 42d) AnimationUtil.playPose(player, "w.maximum_drive_start");
+                    if (tick == 11d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
@@ -729,7 +768,7 @@ public class WRiderItems {
 
                     }
                 }
-            }.getAlsoUpdateOld(ETERNAL_T2_MEMORY.get()).needBaseForm().hasCape().setFormDelay(1d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
+            }.getAlsoUpdateOld(ETERNAL_T2_MEMORY.get()).needBaseForm().hasCape().setFormDelay(11d).changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(W_TAB_ITEM).addToList(GaiaMemoryRefinerBlock.GAIA_MEMORY_T2, 1));
 
 
     public static final DeferredItem<Item> TERROR_MEMORY = ITEMS.register("terror_memory",
@@ -919,20 +958,68 @@ public class WRiderItems {
 
 
     public static final DeferredItem<Item> LOSTDRIVER_JOKER = ITEMS.register("lostdriver_joker",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "joker", JOKER_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()).addToList(W_TAB_ITEM)
-                    .changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "joker", JOKER_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()){
+                public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+                    return 50;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    Item formItem = getFormItem(itemStack, 1);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick = getHenshinTick(itemStack, rider);
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 31 && henshin_tick > 11) {
+                            layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/joker_henshin"));
+                        }
+                    }}
+            }.addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
 
     public static final DeferredItem<Item> LOSTDRIVER_CYCLONE = ITEMS.register("lostdriver_cyclone",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cyclone", CYCLONE_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()).addToList(W_TAB_ITEM)
-                    .changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cyclone", CYCLONE_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()){
+                public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+                    return 50;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    Item formItem = getFormItem(itemStack, 1);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick = getHenshinTick(itemStack, rider);
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 31 && henshin_tick > 11) {
+                            layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/cyclone_henshin"));
+                        }
+                    }}
+            }.addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
 
     public static final DeferredItem<Item> LOSTDRIVER_SKULL = ITEMS.register("lostdriver_skull",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "skull", SKULL_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()).addToList(W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS)
-                    .changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "skull", SKULL_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()){
+                public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+                    return 50;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    Item formItem = getFormItem(itemStack, 1);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick = getHenshinTick(itemStack, rider);
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 31 && henshin_tick > 11) {
+                            layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/joker_henshin"));
+                        }
+                    }}
+            }.addToList(W_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
 
     public static final DeferredItem<Item> LOSTDRIVER_ETERNAL = ITEMS.register("lostdriver_eternal",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "eternal", ETERNAL_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()).addToList(W_TAB_ITEM)
-                    .changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "eternal", ETERNAL_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()){
+                public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+                    return 50;
+                }
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    Item formItem = getFormItem(itemStack, 1);
+                    if (slot == EquipmentSlot.HEAD) {
+                        double henshin_tick = getHenshinTick(itemStack, rider);
+                        if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 31 && henshin_tick > 11) {
+                            layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/eternal_henshin"));
+                        }
+                    }}
+            }.addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
 
     public static final DeferredItem<Item> GAIA_DRIVER_TERROR = ITEMS.register("gaia_driver_terror",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "terror_dopant", TERROR_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()).hideBeltFormInfo().addToList(W_TAB_ITEM)

@@ -59,7 +59,7 @@ public class IchigoRiderItems {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
                     if (slot == EquipmentSlot.HEAD) {
                         if (RiderDriverItem.isTransforming(rider) && RiderDriverItem.getFormItem(itemStack, 1) == this) {
-                            layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/meteor_storm"));
+                            layerInfo.add(new IchigoHenshinRenderLayerInfo("ichigo_henshin"));
                         }
                     }
                 }

@@ -14,8 +14,10 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 
 public class IchigoHenshinRenderLayerInfo extends RenderLayerInfo {
-    public IchigoHenshinRenderLayerInfo(String model) {
-        super(RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/meteor_storm_test.png")), model);
+    private static String Texture;
+    public IchigoHenshinRenderLayerInfo(String texture) {
+        super(RenderType.breezeEyes(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/meteor_storm_test.png")), "transforming/meteor_storm");
+        Texture=texture;
     }
 
     private float xOffset(float tickCount) {
@@ -32,7 +34,7 @@ public class IchigoHenshinRenderLayerInfo extends RenderLayerInfo {
 
     public RenderType getRenderType(float partialTick, LivingEntity livingEntity) {
         float f = (float) livingEntity.tickCount + partialTick;
-        return RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/ichigo_henshin.png"), 0, f / 10);
+        return RenderType.breezeWind(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+Texture+".png"), 0, f / 16);
     }
 
     public float getScaleX() {

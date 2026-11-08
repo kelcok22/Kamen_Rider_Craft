@@ -9,6 +9,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.*;
 import com.kelco.kamenridercraft.item.heisei_phase_2.*;
 import com.kelco.kamenridercraft.item.reiwa.gotchard.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.inventory.GotchandrawHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
@@ -19,6 +20,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.MenuProvider;
@@ -2469,14 +2472,20 @@ public class GotchardRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 0.1);
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 42d) AnimationUtil.playPose(player, "eternal.henshin_pose");
+                    if (tick == 34d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.IRON_TRAPDOOR_OPEN, SoundSource.PLAYERS, 1.0F, 1F);
+                    }
+                    if (tick == 11d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 0.1);
+                    }
                 }
             }.setSummonBelt((RiderDriverItem) WRiderItems.LOSTDRIVER_ETERNAL.get()).addSummonWeapon(WRiderItems.ETERNAL_EDGE.get())
-                    .hasCape().needBaseForm().changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").isGlowing().addToList(GOTCHARD_TAB_ITEM).useBasicModel());
+                    .hasCape().needBaseForm().changeBeltModel("geo/belts/lostdriver_riderbelt.geo.json").setFormDelay(11d).isGlowing().addToList(GOTCHARD_TAB_ITEM).useBasicModel());
 
 
     public static final DeferredItem<Item> GOTCHAR_IGNITER_DB = ITEMS.register("gotchar_igniter_db",
