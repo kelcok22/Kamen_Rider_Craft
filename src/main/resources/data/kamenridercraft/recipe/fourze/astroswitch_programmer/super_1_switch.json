@@ -1,0 +1,18 @@
+{
+  "type": "kamenridercraft:astroswitch_programmer",
+  "primary_input": {
+    "item": "kamenridercraft:astroswitch"
+  },
+  "optional_input": {
+    "item": "kamenridercraft:cyclode_core"
+  },
+  "outputs": [
+    {
+      "result": {
+        "count": 1,
+        "id": "kamenridercraft:super_1_switch"
+      },
+      "weight": 15
+    }
+  ]
+}
