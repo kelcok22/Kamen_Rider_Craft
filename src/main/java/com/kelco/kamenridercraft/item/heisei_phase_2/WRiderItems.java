@@ -270,7 +270,8 @@ public class WRiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false),
                     new MobEffectInstance(EffectCore.SLASH, 40, 2, true, false),
-                    new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false)) {
+                    new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.GLIDE, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 42d) AnimationUtil.playPose(player, "w.xtreme_henshin_pose");
@@ -295,7 +296,7 @@ public class WRiderItems {
                                 player.getZ(), 50, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(11d).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM));
+            }.setFormDelay(25d).setSlotOneAbility("flight_boost", 1).isGlowing().alsoChange2ndSlot(JOKER_MEMORY.get()).addToList(W_TAB_ITEM));
 
     public static final DeferredItem<Item> XTREME_ACCEL_MEMORY = ITEMS.register("xtreme_accel_memory",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "_cyclone_xtreme_accel", "w", "wdriver_belt",

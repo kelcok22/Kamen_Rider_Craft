@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WHenshinRingRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WXtremeHenshinRingRenderLayerInfo;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -18,6 +19,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -67,6 +69,7 @@ public class WDriverItem extends RiderDriverItem {
         if (entity instanceof Player player) {
             if (RiderDriverItem.getFormItem(stack, 1) == WRiderItems.XTREME_MEMORY.get() & player.fallDistance > 10) {
                 RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) WRiderItems.XTREME_GOLD_MEMORY.get();
+                player.addEffect(new MobEffectInstance(EffectCore.SAFE_LANDING,1000,0));
                 alternativeItem_form_change.use(level, player, InteractionHand.MAIN_HAND);
             }
         }

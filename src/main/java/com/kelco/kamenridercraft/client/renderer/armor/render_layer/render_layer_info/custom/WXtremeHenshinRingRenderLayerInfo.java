@@ -35,9 +35,9 @@ public class WXtremeHenshinRingRenderLayerInfo extends RenderLayerInfo {
         if (storm != null) {
             storm.setRotY((entity.tickCount + partialTick) / 5f);
             storm.setPosY((float) (tick/10));
-            storm.setScaleX((float) (tick/20)+1);
-            storm.setScaleY((float) (tick/20)+1);
-            storm.setScaleZ((float) (tick/20)+1);
+            storm.setScaleX((float) ((30-tick)/20)+1);
+            storm.setScaleY((float) ((30-tick)/20)+1);
+            storm.setScaleZ((float) ((30-tick)/20)+1);
         }
     }
 
