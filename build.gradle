@@ -24,6 +24,9 @@ repositories {
         name = "RedlanceMinecraft"
         url = "https://repo.redlance.org/public"
     }
+    maven {
+        url = "https://maven.tamaized.com/releases"
+    }
     exclusiveContent {
         forRepository {
             maven {
@@ -109,6 +112,7 @@ dependencies {
     implementation "com.zigythebird.playeranim:PlayerAnimationLibNeo:$pal_version"
     compileOnly "maven.modrinth:just-more-cakes:lnhTlZIP"
     compileOnly "maven.modrinth:better-combat:EtfeNxsw"
+    compileOnly "team-twilight:twilightforest:4.8.3345:universal"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
