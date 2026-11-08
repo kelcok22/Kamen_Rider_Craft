@@ -1,6 +1,7 @@
 {
 	"values": [
 		"kamenridercraft:condorer",
+        "kamenridercraft:fake_condorer",
 		"kamenridercraft:dark_condorer"
 	]
 }

@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "zeztz",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:charge_capsem"
+		},
+		{
+			"item": "kamenridercraft:extra_shadow_capsem"
+		},
+      {
+        "item": "kamenridercraft:chaos_dawn"
+      }
+    ],
+	"result": {
+		"id": "kamenridercraft:advance_capsem"
+	}
+}

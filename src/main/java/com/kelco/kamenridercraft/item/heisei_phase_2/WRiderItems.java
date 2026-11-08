@@ -972,7 +972,7 @@ public class WRiderItems {
                             layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/joker_henshin"));
                         }
                     }}
-            }.addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
+            }.hideBeltFormInfo().addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
 
     public static final DeferredItem<Item> LOSTDRIVER_CYCLONE = ITEMS.register("lostdriver_cyclone",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "cyclone", CYCLONE_T2_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()){
@@ -988,7 +988,7 @@ public class WRiderItems {
                             layerInfo.add(new IchigoHenshinRenderLayerInfo("transforming/cyclone_henshin"));
                         }
                     }}
-            }.addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
+            }.hideBeltFormInfo().addToList(W_TAB_ITEM).changeRepairItem(GAIA_MEMORY.get()).changeRepairItem(GAIA_MEMORY.get()));
 
     public static final DeferredItem<Item> LOSTDRIVER_SKULL = ITEMS.register("lostdriver_skull",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "skull", SKULL_MEMORY, WHELMET, WCHESTPLATE, WLEGGINGS, new Item.Properties()){
