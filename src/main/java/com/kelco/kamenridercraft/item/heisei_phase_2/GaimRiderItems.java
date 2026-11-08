@@ -846,11 +846,8 @@ public class GaimRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
-
-
                 }
-            }
-                    .resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KING_DURIAN_LOCKSEED = ITEMS.register("king_durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "king_durian_arms", "bravo", "sengoku_driver_belt",
