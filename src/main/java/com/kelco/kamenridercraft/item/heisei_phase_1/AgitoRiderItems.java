@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GlowHenshinRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
@@ -17,13 +18,17 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 
+import static com.kelco.kamenridercraft.abilities.AbilityUtil.cancelAbility;
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.AGITO_TAB_ITEM;
 import static com.kelco.kamenridercraft.item.base_items.NeoBaseBlasterItem.BlasterPreset.AUTO_BLASTER;
 
@@ -180,6 +185,18 @@ public class AgitoRiderItems {
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 0.1);
                     }
+                    if (tick == 30d) {
+                        PacketDistributor.sendToAllPlayers(new AnimPayload("gills.henshin", "attack", false, player.getStringUUID()));
+                    }
+                    if (tick == 10d) {
+                        if (player instanceof Player && player.onGround()) {
+                            Vec3 initialVec = player.getDeltaMovement();
+                            Vec3 climbVec = new Vec3(initialVec.x, 1, initialVec.z);
+                            player.setDeltaMovement(climbVec.scale(0.97D));
+                            player.hurtMarked = true;
+                        }
+
+                    }
                 }
             }.setFormDelay(0).isGlowing().addToList(AGITO_TAB_ITEM));
 
@@ -237,7 +254,7 @@ public class AgitoRiderItems {
                 }
             }.isGlowing().hasCape().addToList(AGITO_TAB_ITEM));
 
-    public static final DeferredItem<Item> AGITO_MIRACLE_WORLD= ITEMS.register("agito_miracle_world",
+    public static final DeferredItem<Item> AGITO_MIRACLE_WORLD = ITEMS.register("agito_miracle_world",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "", "agito_miracle_world", "alter_ring_belt_b",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
@@ -521,14 +538,14 @@ public class AgitoRiderItems {
 
 
     public static final DeferredItem<Item> META_FACTOR = ITEMS.register("meta_factor",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gills", GILLS, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()){
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "gills", GILLS, AGITOHELMET, AGITOCHESTPLATE, AGITOLEGGINGS, new Item.Properties()) {
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD) {
-                        double henshin =rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
-                        if ( RiderDriverItem.isTransforming(rider) && henshin < 10) {
-                            layerInfo.add(new GlowHenshinRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false),getFormItem(itemStack, 1).getModel(this.riderName),1));
-                          }
+                        double henshin = rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue();
+                        if (RiderDriverItem.isTransforming(rider) && henshin < 10) {
+                            layerInfo.add(new GlowHenshinRenderLayerInfo(getFormItem(itemStack, 1).getRiderName(riderName) + getFormItem(itemStack, 1).getFormName(false), getFormItem(itemStack, 1).getModel(this.riderName), 1));
+                        }
                     }
                 }
             }.addToList(AGITO_TAB_ITEM).changeRepairItem(SEED_OF_AGITO.get()));

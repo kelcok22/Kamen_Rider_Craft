@@ -41,7 +41,7 @@ public class GRiderItems {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 59d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
                         //AnimationUtil.playPose(player, riderName+".henshin");
-                        AnimationUtil.playPose(player, "ryuki.henshin");
+                        AnimationUtil.playPose(player, "kamen_rider_g.henshin");
                     }
                     if (tick == 34d) player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.BOTTLE_FILL, SoundSource.PLAYERS, 1.0F, 1F);
                     if (tick == 1d) {

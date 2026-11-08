@@ -215,8 +215,8 @@ public class ItemInHandLayerMixin {
                     }
                     replaceRender = true;
                     palOverride = true;
-                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("kamen_rider_g") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 5) {
-                    if (arm == HumanoidArm.LEFT) {
+                } else if (RiderDriverItem.isTransformingFromBlank(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity) && riderDriverItem.riderName.equals("kamen_rider_g") && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 46) {
+                    if (arm == HumanoidArm.RIGHT) {
                         tango = new ItemStack(GRiderItems.GORO_WINE_BOTTLE.get());
                     } else {
                         tango = new ItemStack(Items.AIR);
