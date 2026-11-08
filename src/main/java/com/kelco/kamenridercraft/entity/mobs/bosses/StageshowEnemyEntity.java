@@ -4,12 +4,14 @@ import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
 import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import com.kelco.kamenridercraft.item.showa.IchigoRiderItems;
+import com.kelco.kamenridercraft.item.showa.V3RiderItems;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -26,7 +28,7 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "rider_summon";
         if (!level().isClientSide() && getData(MOB_STATE).isEmpty()) {
-            switch (getRandom().nextInt(11)) {
+            switch (getRandom().nextInt(13)) {
                 case 0:
                     setData(MOB_STATE, "red_cheeseman");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(BlackRiderItems.BLACK_HELMET.get()));
@@ -58,41 +60,55 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.BETA_DRIVER.get()));
                     break;
                 case 4:
+                    setData(MOB_STATE, "zuccocade");
+                    setItemSlot(EquipmentSlot.HEAD, new ItemStack(DecadeRiderItems.DECADEHELMET.get()));
+                    setItemSlot(EquipmentSlot.CHEST, new ItemStack(DecadeRiderItems.DECADECHESTPLATE.get()));
+                    setItemSlot(EquipmentSlot.LEGS, new ItemStack(DecadeRiderItems.DECADELEGGINGS.get()));
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(DecadeRiderItems.ZUCCOCADE_BELT.get()));
+                    break;
+                case 5:
+                    setData(MOB_STATE, "fake_v3");
+                    setItemSlot(EquipmentSlot.HEAD, new ItemStack(V3RiderItems.V3HELMET.get()));
+                    setItemSlot(EquipmentSlot.CHEST, new ItemStack(V3RiderItems.V3CHESTPLATE.get()));
+                    setItemSlot(EquipmentSlot.LEGS, new ItemStack(V3RiderItems.V3LEGGINGS.get()));
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(V3RiderItems.FAKE_DOUBLE_TYPHOON.get()));
+                    break;
+                case 6:
                     setData(MOB_STATE, "uzai");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.UZAI_BELT.get()));
                     break;
-                case 5:
+                case 7:
                     setData(MOB_STATE, "dark_wizard");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.DARK_WIZARDRIVER.get()));
                     break;
-                case 6:
+                case 8:
                     setData(MOB_STATE, "fake_ichigo");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGO_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGO_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGO_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(IchigoRiderItems.TYPHOON_FAKE_ICHIGO.get()));
                     break;
-                case 7:
+                case 9:
                     setData(MOB_STATE, "chophopper");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTO_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTO_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(KabutoRiderItems.CHOPHOPPER_RIDER_BELT.get()));
                     break;
-                case 8:
+                case 10:
                     setData(MOB_STATE, "lady");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTO_CHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTO_LEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(KabutoRiderItems.LADY_RIDER_BELT.get()));
                     break;
-                case 9:
+                case 11:
                     setData(MOB_STATE, "maja");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(GaimRiderItems.GAIM_HELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(GaimRiderItems.GAIM_CHESTPLATE.get()));
@@ -100,7 +116,7 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(GaimRiderItems.SENGOKU_DRIVER_MAJA.get()));
                     setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(GaimRiderItems.MAJAS_SWORD.get(), 1));
                     break;
-                case 10:
+                case 12:
                     setData(MOB_STATE, "chronicle_bugster");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
