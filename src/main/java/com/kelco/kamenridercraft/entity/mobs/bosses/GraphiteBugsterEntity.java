@@ -2,7 +2,9 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
+import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
+import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,12 +19,13 @@ public class GraphiteBugsterEntity extends BaseHenchmenEntity {
 	
     public GraphiteBugsterEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME="graphite_bugster";
+        NAME="rider_summon";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_GRAPHITE.get()));
+        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_BUGSTER.get()));
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.GRAPHITE_FANG.get()));
+        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), ExAidRiderItems.DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR.get(), 1);
     }
 
 
