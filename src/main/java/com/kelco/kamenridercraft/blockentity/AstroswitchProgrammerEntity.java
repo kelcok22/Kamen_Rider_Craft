@@ -216,6 +216,9 @@ public class AstroswitchProgrammerEntity extends BaseContainerBlockEntity implem
         if (modifierStack.is(FourzeRiderItems.MAGNET_ASTROSWITCH_S.get())) {
             return;
         }
+        if (modifierStack.is(FourzeRiderItems.COSMIC_ASTROSWITCH.get())) {
+            return;
+        }
 
         if (modifierStack.getItem().hasCraftingRemainingItem()) {
             ItemStack remainder = new ItemStack(modifierStack.getItem().getCraftingRemainingItem());
