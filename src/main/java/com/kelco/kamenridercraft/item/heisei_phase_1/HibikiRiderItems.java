@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.item.heisei_phase_1;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.hibiki.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
@@ -394,6 +395,23 @@ public class HibikiRiderItems {
                 }
             }.changeBeltModel("geo/belts/todoroki_belt.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM));
 
+    public static final DeferredItem<Item> HENSHIN_KIGEN_MUJAKI = ITEMS.register("henshin_kigen_mujaki",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","mujaki","mujakidriver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                    player.level().addFreshEntity(thunder);
+                }
+            }.changeBeltModel("geo/belts/todoroki_belt.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM));
+
     public static final DeferredItem<Item> ARMOR_OF_THE_OGRE = ITEMS.register("armor_of_the_ogre",
             () -> new RiderFormChangeItem(new Item.Properties(),"","armor_of_the_ogre","armor_of_the_ogre_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -455,6 +473,8 @@ public class HibikiRiderItems {
             () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"habataki",HENSHIN_ONSA_HABATAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONSA_HABATAKI, "henshin_onsa").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> FUBUKIDRIVER = ITEMS.register("fubukidriver",
             () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"fubuki",HENSHIN_ONIBUE_FUBUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONIBUE_FUBUKI, "henshin_onibue_fubuki").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
+    public static final DeferredItem<Item> MUJAKIDRIVER = ITEMS.register("mujakidriver",
+            () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"mujaki",HENSHIN_KIGEN_MUJAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_KIGEN_MUJAKI, "henshin_kigen").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> KAGAYAKIDRIVER = ITEMS.register("kagayakidriver",
             () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"kagayaki",HENSHIN_ONIBUE_KAGAYAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONIBUE_KAGAYAKI, "henshin_onibue_kagayaki").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> AKATSUKIDRIVER = ITEMS.register("akatsukidriver",
