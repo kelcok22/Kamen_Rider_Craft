@@ -105,7 +105,6 @@ public class KRCAttributes extends Event implements IModBusEvent {
     );
 
 
-
     public static final DeferredHolder<Attribute, Attribute> WHEEL_ROT = REGISTRY.register("wheel_rotation",
             () -> new RangedAttribute(
                     "attribute.kamenridercraftcore.wheel_rotation",

@@ -26,19 +26,19 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
     public IxaMachineBlockGuiMenu(int containerId, Inventory playerInventory, BlockEntity blockEntity, ContainerData data) {
         super(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), containerId);
         checkContainerDataCount(data, 2);
-        this.bEntity = (IxaMachineBlockEntity) blockEntity;
-        this.level = playerInventory.player.level();
+        bEntity = (IxaMachineBlockEntity) blockEntity;
+        level = playerInventory.player.level();
         this.data = data;
 
         addDataSlots(data);
 
-        this.addSlot(new Slot((Container) blockEntity, 0, 36, 25));
-        this.addSlot(new Slot((Container) blockEntity, 1, 36, 50));
+        addSlot(new Slot((Container) blockEntity, 0, 36, 25));
+        addSlot(new Slot((Container) blockEntity, 1, 36, 50));
 
         int slotIndex = 2;
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
-                this.addSlot(new Slot((Container) blockEntity, slotIndex, 95 + (col * 18), 17 + (row * 18)){
+                addSlot(new Slot((Container) blockEntity, slotIndex, 95 + (col * 18), 17 + (row * 18)) {
                     public boolean mayPlace(ItemStack stack) {
                         return false;
                     }
@@ -62,11 +62,11 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
         ItemStack copyStack = sourceStack.copy();
 
         if (index < 11) {
-            if (!this.moveItemStackTo(sourceStack, 14, 47, true)) {
+            if (!moveItemStackTo(sourceStack, 14, 47, true)) {
                 return ItemStack.EMPTY;
             }
         } else {
-            if (!this.moveItemStackTo(sourceStack, 0, 1, false)) {
+            if (!moveItemStackTo(sourceStack, 0, 1, false)) {
                 return ItemStack.EMPTY;
             }
         }
@@ -95,8 +95,8 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
     }
 
     public int getScaledArrowProgress() {
-        int progress = this.data.get(0);
-        int maxProgress = this.data.get(1);
+        int progress = data.get(0);
+        int maxProgress = data.get(1);
         int arrowPixelSize = 24;
 
         return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
@@ -105,14 +105,14 @@ public class IxaMachineBlockGuiMenu extends AbstractContainerMenu {
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 9; j++) {
-                this.addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
+                addSlot(new Slot(playerInventory, j + i * 9 + 9, 8 + j * 18, 84 + i * 18));
             }
         }
     }
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; i++) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
+            addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
 }

@@ -7,6 +7,7 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 
 public class ModRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
@@ -17,12 +18,12 @@ public class ModRecipes {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<IxaMachineRecipe>> IXA_MACHINE_BLOCK_SERIALIZER =
             SERIALIZERS.register("fuestle_replicator", () -> new RecipeSerializer<IxaMachineRecipe>() {
                 @Override
-                public com.mojang.serialization.MapCodec<IxaMachineRecipe> codec() {
+                public com.mojang.serialization.@NotNull MapCodec<IxaMachineRecipe> codec() {
                     return IxaMachineRecipe.CODEC;
                 }
 
                 @Override
-                public net.minecraft.network.codec.StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf, IxaMachineRecipe> streamCodec() {
+                public net.minecraft.network.codec.@NotNull StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf, IxaMachineRecipe> streamCodec() {
                     return IxaMachineRecipe.STREAM_CODEC;
                 }
             });
@@ -39,16 +40,16 @@ public class ModRecipes {
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_SERIALIZER =
             SERIALIZERS.register("astroswitch_programmer", () -> new RecipeSerializer<AstroswitchProgrammerRecipe>() {
                 @Override
-                public com.mojang.serialization.MapCodec<AstroswitchProgrammerRecipe> codec() {
+                public com.mojang.serialization.@NotNull MapCodec<AstroswitchProgrammerRecipe> codec() {
                     return AstroswitchProgrammerRecipe.CODEC;
                 }
 
                 @Override
-                public net.minecraft.network.codec.StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf, AstroswitchProgrammerRecipe> streamCodec() {
+                public net.minecraft.network.codec.@NotNull StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf,
+                        AstroswitchProgrammerRecipe> streamCodec() {
                     return AstroswitchProgrammerRecipe.STREAM_CODEC;
                 }
             });
-
 
     public static final DeferredHolder<RecipeType<?>, RecipeType<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_TYPE =
             TYPES.register("astroswitch_programmer", () -> new RecipeType<>() {
@@ -57,7 +58,6 @@ public class ModRecipes {
                     return "astroswitch_programmer";
                 }
             });
-
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);

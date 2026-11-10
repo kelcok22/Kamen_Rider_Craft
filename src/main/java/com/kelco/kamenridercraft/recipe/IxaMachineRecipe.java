@@ -13,13 +13,13 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Optional;
 
-public record IxaMachineRecipe(Ingredient primaryInput, Optional<Ingredient> optionalInput, List<WeightedOutput> outputs) implements Recipe<IxaMachineRecipeInput> {
-
-
+public record IxaMachineRecipe(Ingredient primaryInput, Optional<Ingredient> optionalInput,
+                               List<WeightedOutput> outputs) implements Recipe<IxaMachineRecipeInput> {
     public static final MapCodec<IxaMachineRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
             Ingredient.CODEC.fieldOf("primary_input").forGetter(IxaMachineRecipe::primaryInput),
 
@@ -41,17 +41,13 @@ public record IxaMachineRecipe(Ingredient primaryInput, Optional<Ingredient> opt
         ItemStack slot0 = input.getItem(0);
         ItemStack slot1 = input.getItem(1);
 
-        if (!this.primaryInput.test(slot0)) return false;
+        if (!primaryInput.test(slot0)) return false;
 
-        if (this.optionalInput.isPresent()) {
-            return this.optionalInput.get().test(slot1);
-        } else {
-            return slot1.isEmpty();
-        }
+        return optionalInput.map(ingredient -> ingredient.test(slot1)).orElseGet(slot1::isEmpty);
     }
 
     @Override
-    public ItemStack assemble(IxaMachineRecipeInput input, HolderLookup.Provider provider) {
+    public @NotNull ItemStack assemble(@NotNull IxaMachineRecipeInput input, HolderLookup.@NotNull Provider provider) {
         return ItemStack.EMPTY;
     }
 
@@ -61,17 +57,17 @@ public record IxaMachineRecipe(Ingredient primaryInput, Optional<Ingredient> opt
     }
 
     @Override
-    public ItemStack getResultItem(HolderLookup.Provider provider) {
+    public @NotNull ItemStack getResultItem(HolderLookup.@NotNull Provider provider) {
         return ItemStack.EMPTY;
     }
 
     @Override
-    public RecipeSerializer<?> getSerializer() {
+    public @NotNull RecipeSerializer<?> getSerializer() {
         return ModRecipes.IXA_MACHINE_BLOCK_SERIALIZER.get();
     }
 
     @Override
-    public RecipeType<?> getType() {
+    public @NotNull RecipeType<?> getType() {
         return ModRecipes.IXA_MACHINE_BLOCK_TYPE.get();
     }
 
