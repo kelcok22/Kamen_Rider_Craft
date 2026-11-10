@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:crafting_shapeless",
 	"category": "equipment",
-	"group": "emperor",
+	"group": "ixa",
 	"ingredients": [
 		{
 			"item": "kamenridercraft:knucklefuestle"

@@ -1185,6 +1185,7 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.APOLLOGEIST_SPAWN_EGG);
             event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
             event.accept(MobsCore.BLACK_SATAN_SOLDIER_SPAWN_EGG);
+            event.accept(MobsCore.GENERAL_SHADOW_SPAWN_EGG);
             event.accept(MobsCore.ARI_COMMANDO_SPAWN_EGG);
             event.accept(MobsCore.DOGMA_FIGHTER_SPAWN_EGG);
             event.accept(MobsCore.COMBAT_ROID_SPAWN_EGG);

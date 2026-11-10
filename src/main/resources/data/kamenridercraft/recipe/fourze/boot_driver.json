@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "boot",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:astroswitch"
+		},
+		"C": {
+			"item": "kamenridercraft:boot_switch"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:boot_driver"
+	}
+}

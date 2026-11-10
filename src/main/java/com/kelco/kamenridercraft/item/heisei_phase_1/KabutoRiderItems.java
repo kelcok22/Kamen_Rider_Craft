@@ -562,7 +562,7 @@ public class KabutoRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "chophopper", "chophopper_zect_buckle_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false))
-                    .useBasicModel().setModelName("kickhopper_zecter"));
+                    .useBasicModel().setModelName("kickhopper_zecter").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.KABUTO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> KABUTO_HELMET = ITEMS.register("kabutohead",
