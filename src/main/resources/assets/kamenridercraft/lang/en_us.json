@@ -5854,6 +5854,7 @@
 "item.kamenridercraft.deus_rampart": "Deus Rampart",
 "item.kamenridercraft.machina_rampart": "Machina Rampart",
 "item.kamenridercraft.graphite_fang": "Graphite Fang",
+"item.kamenridercraft.alhambra_staff": "Alhambra Staff",
 
 "item.kamenridercraft.mighty_action_x_gashat": "Mighty Action X Gashat",
 "item.kamenridercraft.taddle_quest_gashat": "Taddle Quest Gashat",
@@ -5897,6 +5898,7 @@
 "kamenridercraft:drago_knight_hunter_z_gashat_graphite.form": "Form: Graphite Bugster",
 "kamenridercraft:drago_knight_hunter_z_gashat_graphite_bugvisor.form": "Form: Graphite Bugster",
 "kamenridercraft:mighty_action_x_gashat_bugster.form": "Form: Salty Bugster",
+"kamenridercraft:taddle_quest_gashat_bugster.form": "Form: Alhambra Bugster",
 
 "item.kamenridercraft.proto_mighty_action_x_gashat": "Proto Mighty Action X Gashat",
 "item.kamenridercraft.proto_taddle_quest_gashat": "Proto Taddle Quest Gashat",

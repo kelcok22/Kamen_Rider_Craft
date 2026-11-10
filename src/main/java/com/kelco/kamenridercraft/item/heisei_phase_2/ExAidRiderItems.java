@@ -125,6 +125,23 @@ public class ExAidRiderItems {
             }.setFormDelay(30d).changeModel("brave_lv1.geo.json").changeBeltModel("geo/belts/lv_1_belt.geo.json")
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
+    public static final DeferredItem<Item> TADDLE_QUEST_GASHAT_BUGSTER = ITEMS.register("taddle_quest_gashat_bugster",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_alhambra", "bugster", "blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.hasCape());
+
+
     public static final DeferredItem<Item> TADDLE_QUEST_X_GASHAT = ITEMS.register("taddle_quest_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "brave", "gamer_driver_taddle_quest",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
@@ -135,7 +152,7 @@ public class ExAidRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.addSwitchForm(TADDLE_QUEST_GASHAT_LV_1.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
+            }.addSwitchForm(TADDLE_QUEST_GASHAT_LV_1.get()).addAlternative(TADDLE_QUEST_GASHAT_BUGSTER.get()).changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .isGlowing().IsBeltGlowing().addToList(EX_AID_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_FORMS).addToList(GameCreator.BLANK_GASHAT, 15));
 
     public static final DeferredItem<Item> BANG_BANG_SHOOTING_GASHAT_LV_1 = ITEMS.register("bang_bang_shooting_gashat_lv_1",
@@ -2198,6 +2215,10 @@ public class ExAidRiderItems {
 
     public static final DeferredItem<Item> BUGSTER_TRIDENT = ITEMS.register("bugster_trident",
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.4F, new Item.Properties()).addToList(EX_AID_TAB_ITEM)
+                    .changeRepairItem(BLANK_GASHAT.get()));
+
+    public static final DeferredItem<Item> ALHAMBRA_STAFF = ITEMS.register("alhambra_staff",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2F, new Item.Properties()).addToList(EX_AID_TAB_ITEM)
                     .changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GRAPHITE_FANG = ITEMS.register("graphite_fang",
