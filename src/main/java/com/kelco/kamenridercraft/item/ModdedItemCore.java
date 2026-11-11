@@ -147,6 +147,7 @@ public class ModdedItemCore {
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 
+
     public static final DeferredItem<Item> CARD_WARRIOR_KAMEN_RIDER_MANGA = ITEMS.register("card_warrior_kamen_rider_manga",
             () -> new BaseItem(new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS).keepItem());
 

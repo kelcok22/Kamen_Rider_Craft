@@ -141,7 +141,6 @@ public class ExAidRiderItems {
                 }
             }.hasCape());
 
-
     public static final DeferredItem<Item> TADDLE_QUEST_X_GASHAT = ITEMS.register("taddle_quest_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "brave", "gamer_driver_taddle_quest",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
@@ -225,6 +224,21 @@ public class ExAidRiderItems {
                 }
             }.isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json"));
 
+    public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_BUGSTER = ITEMS.register("bakusou_bike_gashat_bugster",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_motors", "bugster", "motors_bugster_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            });
+
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT = ITEMS.register("bakusou_bike_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "_lv2_bike", "lazer", "blank",
                     new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 4, true, false),
@@ -238,7 +252,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setModifiedPosition("hide_items.modifier")
-                    .setModifiedPositionLayer("position_1").addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
+                    .setModifiedPositionLayer("position_1").addAlternative(BAKUSOU_BIKE_GASHAT_BUGSTER.get()).addSwitchForm(BAKUSOU_BIKE_GASHAT_LV_1.get())
                     .changeModel("lazer_lv2.geo.json").isBike().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
                     .isGlowing().addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_GASHAT, 15));
 
