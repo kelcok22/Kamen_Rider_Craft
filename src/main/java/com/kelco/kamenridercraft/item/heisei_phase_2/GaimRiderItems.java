@@ -227,7 +227,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).hasCape().resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DURIAN_LOCKSEED = ITEMS.register("durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "durian_arms", "gaim", "sengoku_driver_belt",
