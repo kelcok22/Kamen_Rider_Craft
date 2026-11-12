@@ -945,7 +945,7 @@ public class GaimRiderItems {
 
                 }
             }
-                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+                    .addCompatibilityList(canUseBasicLockseed).resetFormToBase().changeModel("banana_arms.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BUDOU_LOCKSEED = ITEMS.register("proto_budou_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_budou_arms", "gaim", "sengoku_driver_belt",
@@ -1585,7 +1585,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_BLACK_BARON_CORE = ITEMS.register("basic_black_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "black_baron", "sengoku_driver_belt_black_baron",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .setModelName("gaim_logo").useBasicModel());
+                    .changeModel("baron.geo.json").setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BLACK_BARON = ITEMS.register("sengoku_driver_black_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "black_baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
@@ -1634,7 +1634,7 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> BASIC_PROTO_BARON_CORE = ITEMS.register("basic_proto_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_baron", "sengoku_driver_belt_proto_baron",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .setModelName("gaim_logo").useBasicModel());
+                    .changeModel("baron.geo.json").setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_BARON = ITEMS.register("sengoku_driver_proto_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_baron", PROTO_BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
