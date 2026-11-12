@@ -1,6 +1,47 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "kamenridercraft:item/ultimate_titan_sword"
-    }
+	"format_version": "26.3",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/ultimate_titan_sword"
+	},
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 21.25, -3],
+			"scale": [2.4, 2.4, 1.2]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 21.25, -3],
+			"scale": [2.4, 2.4, 1.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [3, 16.5, 3.85],
+			"scale": [2.4, 2.4, 1.2]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [3.4, 16.45, 3.63],
+			"scale": [2.4, 2.4, 1.2]
+		},
+		"ground": {
+			"translation": [3, 4.25, 0],
+			"scale": [1, 1, 0.6]
+		},
+		"gui": {
+			"translation": [6.5, 6.5, 0],
+			"scale": [1.8, 1.8, 1]
+		},
+		"head": {
+			"rotation": [0, 0, -135],
+			"translation": [0, -4.75, 0],
+			"scale": [4, 4, 1]
+		},
+		"fixed": {
+			"translation": [6, 6.75, 0],
+			"scale": [1.8, 1.8, 1]
+		}
+	}
 }
