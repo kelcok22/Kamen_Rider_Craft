@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"mujaki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 35, 0],
+					"position": [1.14715, -1.25, 1.6383]
+				},
+				"head": {
+					"rotation": [38.2151, -17.7435, -23.5492]
+				},
+				"torso": {
+					"rotation": [-22.5, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-120.1665, 9.0556, 82.7084],
+					"position": [-1.23151, -1.88003, -1.98717]
+				},
+				"left_arm": {
+					"rotation": [-24.5182, 4.7511, 11.5752],
+					"position": [0.48815, -0.09998, -0.04141]
+				},
+				"right_leg": {
+					"rotation": [7.5, 0, 0],
+					"position": [0, 0.5, -4.5]
+				},
+				"left_leg": {
+					"rotation": [11.7937, -30.4415, -17.5337],
+					"position": [0, 0.5, -4]
+				}
+			}
+		}
+	}
+}

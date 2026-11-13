@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"kagayaki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"position": [0, -1.5, 0]
+				},
+				"head": {
+					"rotation": [2.5, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-100.1534, 20.5128, -0.8536],
+					"position": [0, 0, 2]
+				},
+				"left_arm": {
+					"rotation": [-150.671, 23.4024, -74.8972],
+					"position": [1, -2, -1]
+				},
+				"right_leg": {
+					"rotation": [7.5, 55, 22.5]
+				},
+				"left_leg": {
+					"rotation": [-10, -17.5, -22.5]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"jaki.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 10, 0],
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"rotation": [8.5168, -22.1516, -2.6763]
+				},
+				"right_arm": {
+					"rotation": [-117.4107, 2.3065, 4.4374],
+					"position": [0, -2.23577, -0.03649]
+				},
+				"left_arm": {
+					"rotation": [-98.1987, 30.4396, 55.991],
+					"position": [1.08113, -1.24772, 1.42668]
+				},
+				"right_leg": {
+					"rotation": [5, 17.5, 7.5]
+				},
+				"left_leg": {
+					"rotation": [-7.5, -7.5, -7.5]
+				}
+			}
+		}
+	}
+}
