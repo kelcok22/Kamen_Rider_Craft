@@ -54,7 +54,7 @@ public class GaimRiderItems {
 
 
     public static String[] canUseBasicLockseed = new String[]{"gaim", "baron", "ryugen", "zangetsu", "gridon", "kurokage"
-            , "bravo", "knuckle", "bujin_gaim", "fifteen", "mars", "kamuro", "jam", "kurokage_troopers", "idunn", "sengoku_duke", "baron_black",
+            , "bravo", "knuckle", "bujin_gaim", "fifteen", "mars", "kamuro", "jam", "kurokage_troopers", "idunn", "duke_sengoku", "baron_black",
             "saver", "maja", "proto_gaim", "proto_ryugen", "proto_baron", "proto_gridon", "proto_bravo", "sylphi", "gaim_natsumikan"};
 
 
