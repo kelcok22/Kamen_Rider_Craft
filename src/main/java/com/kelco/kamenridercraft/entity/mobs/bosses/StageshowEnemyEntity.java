@@ -2,9 +2,10 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.FaizRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_1.KabutoRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
@@ -28,7 +29,7 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "rider_summon";
         if (!level().isClientSide() && getData(MOB_STATE).isEmpty()) {
-            switch (getRandom().nextInt(13)) {
+            switch (getRandom().nextInt(15)) {
                 case 0:
                     setData(MOB_STATE, "red_cheeseman");
                     setItemSlot(EquipmentSlot.HEAD, new ItemStack(BlackRiderItems.BLACK_HELMET.get()));
@@ -122,6 +123,20 @@ public class StageshowEnemyEntity extends BaseHenchmenEntity {
                     setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
                     setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
                     setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()));
+                    break;
+                case 13:
+                    setData(MOB_STATE, "jaki");
+                    setItemSlot(EquipmentSlot.HEAD, new ItemStack(HibikiRiderItems.HIBIKIHELMET.get()));
+                    setItemSlot(EquipmentSlot.CHEST, new ItemStack(HibikiRiderItems.HIBIKICHESTPLATE.get()));
+                    setItemSlot(EquipmentSlot.LEGS, new ItemStack(HibikiRiderItems.HIBIKILEGGINGS.get()));
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(HibikiRiderItems.JAKIDRIVER.get()));
+                    break;
+                case 14:
+                    setData(MOB_STATE, "mujaki");
+                    setItemSlot(EquipmentSlot.HEAD, new ItemStack(HibikiRiderItems.HIBIKIHELMET.get()));
+                    setItemSlot(EquipmentSlot.CHEST, new ItemStack(HibikiRiderItems.HIBIKICHESTPLATE.get()));
+                    setItemSlot(EquipmentSlot.LEGS, new ItemStack(HibikiRiderItems.HIBIKILEGGINGS.get()));
+                    setItemSlot(EquipmentSlot.FEET, new ItemStack(HibikiRiderItems.MUJAKIDRIVER.get()));
                     break;
             }
             RiderDriverItem.setUpdateForm(getItemBySlot(EquipmentSlot.FEET));

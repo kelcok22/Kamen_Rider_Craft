@@ -658,6 +658,124 @@
           }
         }
       ]
-    }
+    },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:henshin_onsa_jaki",
+				  "weight": 3
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:henshin_onibue_kagayaki",
+				  "weight": 1
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:jakidriver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:oni_ore",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:jakidriver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:henshin_kigen_mujaki",
+				  "weight": 3
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:henshin_onibue_kagayaki",
+				  "weight": 1
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:mujakidriver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  },
+	  {
+		  "rolls": 1,
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "name": "kamenridercraft:oni_ore",
+				  "functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 3
+						  }
+					  }
+				  ]
+			  }
+		  ],
+		  "conditions": [
+			  {
+				  "condition": "minecraft:entity_properties",
+				  "entity": "this",
+				  "predicate": {
+					  "equipment": {
+						  "feet": {
+							  "items": "kamenridercraft:mujakidriver"
+						  }
+					  }
+				  }
+			  }
+		  ]
+	  }
   ]
 }
