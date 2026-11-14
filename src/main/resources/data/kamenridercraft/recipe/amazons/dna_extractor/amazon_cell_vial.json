@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:dna_extractor",
+	"primary_input": {
+		"item": "minecraft:beef"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:empty_vial"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:amazon_cell_vial"
+			},
+			"weight": 15
+		}
+	]
+}

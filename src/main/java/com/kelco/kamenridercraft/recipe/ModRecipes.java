@@ -15,6 +15,29 @@ public class ModRecipes {
     public static final DeferredRegister<RecipeType<?>> TYPES =
             DeferredRegister.create(Registries.RECIPE_TYPE, KamenRiderCraftCore.MOD_ID);
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<AmazonCellExtractorRecipe>> AMAZON_CELL_EXTRACTOR_SERIALIZER =
+            SERIALIZERS.register("dna_extractor", () -> new RecipeSerializer<AmazonCellExtractorRecipe>() {
+                @Override
+                public com.mojang.serialization.@NotNull MapCodec<AmazonCellExtractorRecipe> codec() {
+                    return AmazonCellExtractorRecipe.CODEC;
+                }
+
+                @Override
+                public net.minecraft.network.codec.@NotNull StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf,
+                        AmazonCellExtractorRecipe> streamCodec() {
+                    return AmazonCellExtractorRecipe.STREAM_CODEC;
+                }
+            });
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<AmazonCellExtractorRecipe>> AMAZON_CELL_EXTRACTOR_TYPE =
+            TYPES.register("dna_extractor", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "dna_extractor";
+                }
+            });
+
+
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<IxaMachineRecipe>> IXA_MACHINE_BLOCK_SERIALIZER =
             SERIALIZERS.register("fuestle_replicator", () -> new RecipeSerializer<IxaMachineRecipe>() {
                 @Override
@@ -36,6 +59,7 @@ public class ModRecipes {
                     return "fuestle_replicator";
                 }
             });
+
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_SERIALIZER =
             SERIALIZERS.register("astroswitch_programmer", () -> new RecipeSerializer<AstroswitchProgrammerRecipe>() {

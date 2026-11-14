@@ -23,6 +23,10 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             RiderBlocks.HELHEIM_HANGING_SIGN.get(), RiderBlocks.HELHEIM_WALL_HANGING_SIGN.get()).build(null));
 
+    public static final Supplier<BlockEntityType<AmazonCellExtractorEntity>> AMAZON_CELL_EXTRACTOR_BE =
+            BLOCK_ENTITIES.register("amazon_cell_extractor_be", () -> BlockEntityType.Builder.of(
+                    AmazonCellExtractorEntity::new, RiderBlocks.AMAZON_CELL_EXTRACTOR.get()).build(null));
+
     public static final Supplier<BlockEntityType<IxaMachineBlockEntity>> IXA_MACHINE_BLOCK_BE =
             BLOCK_ENTITIES.register("ixa_machine_block_be", () -> BlockEntityType.Builder.of(
                     IxaMachineBlockEntity::new, RiderBlocks.IXA_MACHINE_BLOCK.get()).build(null));
