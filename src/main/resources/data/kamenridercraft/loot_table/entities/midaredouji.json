@@ -46,11 +46,11 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "attacking_player",
+              "entity": "this",
               "predicate": {
                 "slots": {
-                  "container.*": {
-                    "items": "kamenridercraft:henshin_onsa_kurenai"
+                  "weapon.*": {
+                    "items": "kamenridercraft:midaredouji_blade"
                   }
                 }
               }
