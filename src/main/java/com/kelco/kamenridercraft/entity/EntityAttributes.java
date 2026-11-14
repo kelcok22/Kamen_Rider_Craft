@@ -173,6 +173,7 @@ public class EntityAttributes {
 
         event.put(MobsCore.BUGSTERVIRUS.get(), BugsterVirusEntity.setAttributes().build());
         event.put(MobsCore.NEBULA_BUGSTERVIRUS.get(), NebulaBugsterVirusEntity.setAttributes().build());
+        event.put(MobsCore.BUGSTER_BOSS.get(), BugsterBossEntity.setAttributes().build());
         event.put(MobsCore.GRAPHITE_BUGSTER.get(), GraphiteBugsterEntity.setAttributes().build());
         event.put(MobsCore.GENM.get(), GenmEntity.setAttributes().build());
         event.put(MobsCore.POPPY_RED.get(), PoppyRedEntity.setAttributes().build());

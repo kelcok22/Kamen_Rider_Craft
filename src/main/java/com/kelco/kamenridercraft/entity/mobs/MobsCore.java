@@ -846,6 +846,13 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> NEBULA_BUGSTERVIRUS_SPAWN_EGG = ITEMS.register("nebulabugstervirus_spawn_egg",
             () -> new BaseSpawnEggItem(NEBULA_BUGSTERVIRUS, 0x4DD1E4, 0xE9E9E9, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<BugsterBossEntity>> BUGSTER_BOSS = MOBLIST.register("bugster_boss_mob",
+            () -> EntityType.Builder.of(BugsterBossEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":bugster_boss_mob"));
+
+    public static final DeferredItem<BaseSpawnEggItem> BUGSTER_BOSS_SPAWN_EGG = ITEMS.register("bugster_boss_spawn_egg",
+            () -> new BaseSpawnEggItem(BUGSTER_BOSS, 0x364C9C, 0xBFBD9C, new Item.Properties()));
+
+
     /**
      * public static final DeferredHolder<EntityType<?>, EntityType<MightyBugsterEntity>> MIGHTY_BUGSTER = MOBLIST.register("mighty_bugster_mob",
      * () -> EntityType.Builder.of(MightyBugsterEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build( KamenRiderCraftCore.MOD_ID + ":mighty_bugster_mob"));
