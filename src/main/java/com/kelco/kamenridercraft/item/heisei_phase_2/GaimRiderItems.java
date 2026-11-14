@@ -190,7 +190,7 @@ public class GaimRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().changeModel("budou_arms.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SUIKA_LOCKSEED = ITEMS.register("suika_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "suika_arms", "gaim", "sengoku_driver_belt",
@@ -962,7 +962,7 @@ public class GaimRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().changeModel("budou_arms.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DURIAN_LOCKSEED = ITEMS.register("proto_durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_durian_arms", "gaim", "sengoku_driver_belt",

@@ -9797,8 +9797,8 @@
 "entity.kamenridercraft.batta_augment":"大量発生形相変異バッタオーグ",
 "entity.kamenridercraft.shin_no_0":"仮面ライダー第0号",
 
-"entity.kamenridercraft.stageshow_grunt":"ヒーローショー下っ端",
-"entity.kamenridercraft.stageshow_enemy":"ヒーローショー敵",
+"entity.kamenridercraft.stageshow_grunt":"ステージ下っ端",
+"entity.kamenridercraft.stageshow_enemy":"ステージ敵",
 
 "entity.kamenridercraft.base_projectile": "KRC飛び道具",
 "entity.kamenridercraft.sealing_effect":"封印エフェクト",
@@ -10067,8 +10067,8 @@
 "item.kamenridercraft.oblivion_gore_nightmare_spawn_egg": "オブリビオンゴアナイトメアスポーンエッグ",
 "item.kamenridercraft.catastrophe_gore_nightmare_spawn_egg": "カタストロフゴアナイトメアスポーンエッグ",
 
-"item.kamenridercraft.stageshow_grunt_spawn_egg": "ヒーローショー下っ端ポーンエッグ",
-"item.kamenridercraft.stageshow_enemy_spawn_egg": "ヒーローショー敵スポーンエッグ",
+"item.kamenridercraft.stageshow_grunt_spawn_egg": "ステージ下っ端ポーンエッグ",
+"item.kamenridercraft.stageshow_enemy_spawn_egg": "ステージ敵スポーンエッグ",
 
 "item.kamenridercraft.bicycle_spawn_egg": "自転車",
 "item.kamenridercraft.acrobatter_spawn_egg": "アクロバッター",
