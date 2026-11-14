@@ -9,6 +9,7 @@
 		"kamenridercraft:kiramekidriver",
 		"kamenridercraft:habatakidriver",
 		"kamenridercraft:nishikidriver",
+		"kamenridercraft:akiradriver",
 		"kamenridercraft:kyosukedriver",
 		"kamenridercraft:dankidriver",
 		"kamenridercraft:eikidriver",
@@ -20,6 +21,10 @@
 		"kamenridercraft:bankidriver",
 		"kamenridercraft:sabakidriver",
 		"kamenridercraft:fubukidriver",
+		"kamenridercraft:jakidriver",
+		"kamenridercraft:mujakidriver",
+		"kamenridercraft:kagayakidriver",
+		"kamenridercraft:akatsukidriver",
 		"kamenridercraft:armor_of_the_ogre_belt"
 	]
 }
