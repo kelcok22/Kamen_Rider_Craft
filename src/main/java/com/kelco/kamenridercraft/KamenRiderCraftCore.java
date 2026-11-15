@@ -57,13 +57,29 @@ import com.kelco.kamenridercraft.util.RegisterItemProperties;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
+import com.mojang.brigadier.Command;
+import com.mojang.brigadier.arguments.StringArgumentType;
 import net.minecraft.client.model.HeadedModel;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -76,6 +92,7 @@ import net.neoforged.neoforge.client.event.*;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
@@ -85,6 +102,10 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import static com.kelco.kamenridercraft.block.RiderBlocks.FERBUS;
+import static com.kelco.kamenridercraft.sounds.ModMusic.MASKED_RIDER;
+import static com.kelco.kamenridercraft.util.AnimationUtil.playPose;
 
 
 @Mod(KamenRiderCraftCore.MOD_ID)
@@ -204,16 +225,98 @@ public class KamenRiderCraftCore {
     }
 
     @SubscribeEvent
+    public void registerCommands(RegisterCommandsEvent event) {
+        // Temporary
+//        event.getDispatcher().register(
+//                Commands.literal("krcdata")
+//                        .then(Commands.literal("get")
+//                                .executes(context -> {
+//                                    // Perform the command logic here
+//                                    return Command.SINGLE_SUCCESS;
+//                                })
+//                                .then(Commands.literal("force")
+//                                        .executes(context -> {
+//                                            // Perform the command logic here
+//                                            return Command.SINGLE_SUCCESS;
+//                                        })
+//                                )
+//                        )
+//                        .then(Commands.literal("modify")
+//                                .executes(context -> {
+//                                    // Perform the command logic here
+//                                    return Command.SINGLE_SUCCESS;
+//                                })
+//                                .then(Commands.literal("force")
+//                                        .executes(context -> {
+//                                            // Perform the command logic here
+//                                            return Command.SINGLE_SUCCESS;
+//                                        })
+//                                )
+//                        )
+//        );
+//        event.getDispatcher().register(
+//                Commands.literal("krcpose")
+//
+//        );
+        event.getDispatcher().register(
+                Commands.literal("krctriggerability")
+                        .then(Commands.argument("target", EntityArgument.entities())
+                                .requires(context -> context.hasPermission(Commands.LEVEL_ADMINS))
+                                .then(Commands.argument("ability", StringArgumentType.string())
+                                        .executes(context -> {
+                                            for (Entity entity : EntityArgument.getEntities(context, "target")) {
+                                                if (entity instanceof LivingEntity livingEntity) {
+                                                    livingEntity.setData(AttachmentTypes.ABILITY_TICK, 0);
+                                                    livingEntity.setData(AttachmentTypes.USED_ABILITY, StringArgumentType.getString(context, "ability"));
+                                                    System.out.println(livingEntity);
+                                                }
+                                            }
+                                            return Command.SINGLE_SUCCESS;
+                                        }))));
+        event.getDispatcher().register(
+                Commands.literal("ferbus")
+                        .then(Commands.argument("target", EntityArgument.entities())
+                                .requires(context -> context.hasPermission(Commands.LEVEL_ADMINS))
+                                .executes(context -> {
+                                    for (Entity entity : EntityArgument.getEntities(context, "target")) {
+                                        if (entity instanceof LivingEntity livingEntity) {
+                                            playPose(livingEntity, "ferbus.dance");
+
+                                            livingEntity.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FERBUS.get()));
+                                            HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = livingEntity.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
+                                            livingEntity.getItemBySlot(EquipmentSlot.HEAD).enchant(enchantmentRegistryLookup.get(Enchantments.BINDING_CURSE).get(), 255);
+
+                                            livingEntity.playSound(MASKED_RIDER.get());
+
+                                            livingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 300, 11, true, false));
+                                            livingEntity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 300, 11, true, false));
+                                            livingEntity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 300, 11, true, false));
+                                            livingEntity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 300, 11, true, false));
+                                            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 11, true, false));
+                                            livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON, 300, 11, true, false));
+
+                                            if (livingEntity instanceof ServerPlayer serverPlayer) {
+                                                serverPlayer.displayClientMessage(Component.literal("<Ferbus> §jKI KA KOOEY DIE!"), false);
+                                                serverPlayer.playNotifySound(MASKED_RIDER.get(), SoundSource.MASTER, 1F, 1F);
+                                            }
+                                        }
+                                    }
+                                    return Command.SINGLE_SUCCESS;
+                                }))
+        );
+    }
+
+    @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
         if (event.getRenderer().getModel() instanceof HumanoidModel<?> model) {
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
-                double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
-                double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET),tf);
+                double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET), event.getEntity());
+                double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET), tf);
                 if (tag != 0) {
                     model.setAllVisible(false);
                     if (tag != 1) {
                         model.head.visible = true;
-                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity || event.getEntity() instanceof BaseSummonEntity) {
                         model.head.visible = false;
                     }
                     if (tag == 3) {
@@ -222,7 +325,7 @@ public class KamenRiderCraftCore {
                         model.leftArm.visible = true;
                         model.rightArm.visible = true;
                         model.body.visible = true;
-                    } else if (event.getEntity() instanceof BaseHenchmenEntity||event.getEntity() instanceof BaseSummonEntity) {
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity || event.getEntity() instanceof BaseSummonEntity) {
                         model.leftLeg.visible = false;
                         model.rightLeg.visible = false;
                         model.leftArm.visible = false;
@@ -232,9 +335,9 @@ public class KamenRiderCraftCore {
                 } else {
                     model.setAllVisible(true);
                 }
-            } else if (!event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft")&&
-            !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("powerrangerscraft")&&
-                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("ultracraft")&&
+            } else if (!event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("supersentaicraft") &&
+                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("powerrangerscraft") &&
+                    !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("ultracraft") &&
                     !event.getEntity().getItemBySlot(EquipmentSlot.FEET).toString().contains("tmntcraft")) {
                 model.setAllVisible(true);
             }
@@ -243,8 +346,8 @@ public class KamenRiderCraftCore {
         if (event.getRenderer().getModel() instanceof HeadedModel model) {
             float sd = (float) Objects.requireNonNull(event.getEntity().getAttribute(KRCAttributes.HEAD_SIZE)).getValue();
             model.getHead().xScale = sd;
-            model.getHead().yScale  = sd;
-            model.getHead().zScale  = sd;
+            model.getHead().yScale = sd;
+            model.getHead().zScale = sd;
         }
 
         float sizeX = (float) Objects.requireNonNull(event.getEntity().getAttribute(KRCAttributes.PLAYER_SIZE_X)).getValue();
@@ -766,48 +869,48 @@ public class KamenRiderCraftCore {
             registrar = registrar.executesOn(HandlerThread.MAIN);
 
             registrar.playBidirectional(CompleteSwingPayload.TYPE,
-            CompleteSwingPayload.STREAM_CODEC,
-            new DirectionalPayloadHandler<>(ClientPayloadHandler::handleCompleteSwing, ServerPayloadHandler::handleCompleteSwing));
+                    CompleteSwingPayload.STREAM_CODEC,
+                    new DirectionalPayloadHandler<>(ClientPayloadHandler::handleCompleteSwing, ServerPayloadHandler::handleCompleteSwing));
 
             registrar.commonToClient(EndAnimationPayload.TYPE,
-            EndAnimationPayload.STREAM_CODEC,
-            ClientPayloadHandler::endAnimations);
+                    EndAnimationPayload.STREAM_CODEC,
+                    ClientPayloadHandler::endAnimations);
 
             registrar.commonToClient(StartPosePayload.TYPE,
-            StartPosePayload.STREAM_CODEC,
-            ClientPayloadHandler::startPoseAnimations);
+                    StartPosePayload.STREAM_CODEC,
+                    ClientPayloadHandler::startPoseAnimations);
 
             registrar.commonToClient(AnimPayload.TYPE,
-            AnimPayload.STREAM_CODEC,
-            ClientPayloadHandler::startAnim);
+                    AnimPayload.STREAM_CODEC,
+                    ClientPayloadHandler::startAnim);
 
             registrar.playToServer(BeltKeyPayload.TYPE,
-            BeltKeyPayload.STREAM_CODEC,
-            ServerPayloadHandler::handleBeltKeyPress);
+                    BeltKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleBeltKeyPress);
 
             registrar.playToClient(AttributeChangeClientPayload.TYPE,
-            AttributeChangeClientPayload.STREAM_CODEC,
-            ClientPayloadHandler::handleAttributeClientChange);
+                    AttributeChangeClientPayload.STREAM_CODEC,
+                    ClientPayloadHandler::handleAttributeClientChange);
 
             registrar.playToServer(AttributeChangePayload.TYPE,
-            AttributeChangePayload.STREAM_CODEC,
-            ServerPayloadHandler::handleAttributeChange);
+                    AttributeChangePayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleAttributeChange);
 
             registrar.playToServer(ClimbCollisionPayload.TYPE,
-            ClimbCollisionPayload.STREAM_CODEC,
-            ServerPayloadHandler::handleClimbing);
+                    ClimbCollisionPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleClimbing);
 
             registrar.playToServer(AbilityKeyPayload.TYPE,
-            AbilityKeyPayload.STREAM_CODEC,
-            ServerPayloadHandler::handleAbilityKeyPress);
+                    AbilityKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleAbilityKeyPress);
 
             registrar.playToServer(PoseKeyPayload.TYPE,
-            PoseKeyPayload.STREAM_CODEC,
-            ServerPayloadHandler::handlePoseKeyPress);
+                    PoseKeyPayload.STREAM_CODEC,
+                    ServerPayloadHandler::handlePoseKeyPress);
 
             registrar.playToServer(BikeMovePayload.TYPE,
-            BikeMovePayload.STREAM_CODEC,
-            ServerPayloadHandler::handleBikeMove);
+                    BikeMovePayload.STREAM_CODEC,
+                    ServerPayloadHandler::handleBikeMove);
         }
     }
 }

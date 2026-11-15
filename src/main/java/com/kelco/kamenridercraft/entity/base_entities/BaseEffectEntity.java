@@ -54,6 +54,10 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
         ownerUUID = user.getUUID();
     }
 
+    public BaseEffectEntity setEntity() {
+        return this;
+    }
+
 
     public void refreshDimensions() {
         double d0 = getX();
@@ -94,7 +98,7 @@ public class BaseEffectEntity extends Entity implements GeoEntity, TraceableEnti
         return this.entityData.get(GLOWING);
     }
 
-    public void setOwner(@javax.annotation.Nullable LivingEntity owner) {
+    public void setOwner(@Nullable LivingEntity owner) {
         this.owner = owner;
         this.ownerUUID = owner == null ? null : owner.getUUID();
     }
