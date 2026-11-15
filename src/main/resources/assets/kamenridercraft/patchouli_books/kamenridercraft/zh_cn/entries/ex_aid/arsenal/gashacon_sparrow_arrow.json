@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由Lazer的 $(l:ex_aid/riders/lazer#chambara_bike)剑斗机车玩家 Lv. 3$(/l) 使用"
+			"text": "登场于：$(li)假面骑士Ex-Aid（2016年，电视剧）$(br2)由Lazer的 $(l:#chambara)剑斗机车玩家 Lv. 3$(/l) 使用"
 		},
 		{
 			"type": "patchouli:crafting",

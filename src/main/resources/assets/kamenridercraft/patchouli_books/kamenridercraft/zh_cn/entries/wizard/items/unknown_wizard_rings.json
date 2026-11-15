@@ -82,7 +82,7 @@
 			"type": "patchouli:text",
 			"anchor": "unknown_black_ring",
 			"title": "未知巫师指环",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，:wizard/items_rings#sorcerer_ring)巫师指环$(/l)$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#sorcerer_ring)金色魔法师指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#black_ring)黑Wizard指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#create_ring)创造巫师指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#cerberus_ring)伽鲁贝洛斯巫师指环$(/l) (25%)"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，:wizard/items_rings#sorcerer_ring)巫师指环$(br2)掉落物：$(li)$(l:wizard/items/wizard_rings#sorcerer_ring)金色魔法师指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#black_ring)黑Wizard指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#create_ring)创造巫师指环$(/l) (25%)$(li)$(l:wizard/items/wizard_rings#cerberus_ring)伽鲁贝洛斯巫师指环$(/l) (25%)"
 		},
 		{
 			"type": "patchouli:crafting",

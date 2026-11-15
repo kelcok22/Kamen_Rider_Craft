@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_baron",
 			"title": "战极驱动器（巴隆）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/baron#banana)假面骑士巴隆"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/baron#banana)假面骑士巴隆$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_ryugen",
 			"title": "战极驱动器（龙玄）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/ryugen#budou)假面骑士龙玄"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/ryugen#budou)假面骑士龙玄$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_zangetsu",
 			"title": "战极驱动器（斩月）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/zangetsu#melon)假面骑士斩月"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/zangetsu#melon)假面骑士斩月$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_gridon",
 			"title": "战极驱动器（古列顿）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/gridon#donguri)假面骑士古列顿"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/gridon#donguri)假面骑士古列顿$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -62,7 +62,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_kurokage",
 			"title": "战极驱动器（黑影）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/kurokage#matsubokkuri)假面骑士黑影"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/kurokage#matsubokkuri)假面骑士黑影$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -73,7 +73,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_bravo",
 			"title": "战极驱动器（布拉沃）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/bravo#durian)假面骑士布拉沃"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/bravo#durian)假面骑士布拉沃$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_knuckle",
 			"title": "战极驱动器（纳高尔）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/knuckle#kurumi)假面骑士纳高尔"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/knuckle#kurumi)假面骑士纳高尔$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -95,7 +95,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_bujin_gaim",
 			"title": "战极驱动器（武神铠武）",
-			"text": "登场于：$(li)假面骑士×假面骑士 铠武&巫骑 命运的战国电影大决战（2013年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/bujin_gaim#blood_orange)假面骑士武神铠武"
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武&巫骑 命运的战国电影大决战（2013年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/bujin_gaim#blood_orange)假面骑士武神铠武$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -106,7 +106,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_fifteen",
 			"title": "战极驱动器（十五）",
-			"text": "登场于：$(li)平成骑士对昭和骑士 假面骑士大战 feat.超级战队（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/fifteen)假面骑士十五"
+			"text": "登场于：$(li)平成骑士对昭和骑士 假面骑士大战 feat.超级战队（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/fifteen)假面骑士十五$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -117,7 +117,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_mars",
 			"title": "战极驱动器（玛尔）",
-			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/mars)假面骑士玛尔"
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/mars)假面骑士玛尔$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -128,7 +128,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_kamuro",
 			"title": "战极驱动器（冠）",
-			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/kamuro)假面骑士冠"
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/kamuro)假面骑士冠$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -139,7 +139,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_jam",
 			"title": "战极驱动器（邪武）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/jam)假面骑士邪武"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/jam)假面骑士邪武$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -150,7 +150,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_kurokage_troopers",
 			"title": "战极驱动器（黑影卫兵）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)配合使用，可变身成为$(l:gaim/riders/kurokage_trooper)黑影卫兵"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)配合使用，可变身成为$(l:gaim/riders/kurokage_trooper)黑影卫兵$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -163,7 +163,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_idunn",
 			"title": "战极驱动器（伊登）",
-			"text": "登场于：$(li)铠武外传：假面骑士斩月（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/idunn)假面骑士伊登"
+			"text": "登场于：$(li)铠武外传：假面骑士斩月（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/idunn)假面骑士伊登$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -174,7 +174,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_duke",
 			"title": "战极驱动器（公爵）",
-			"text": "登场于：$(li)铠武外传：假面骑士公爵（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/duke#lemon)假面骑士公爵"
+			"text": "登场于：$(li)铠武外传：假面骑士公爵（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/duke#lemon)假面骑士公爵$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -185,7 +185,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_black_baron",
 			"title": "战极驱动器（黑色巴隆）",
-			"text": "登场于：$(li)铠武外传：假面骑士纳高尔（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/black_baron)假面骑士黑色巴隆"
+			"text": "登场于：$(li)铠武外传：假面骑士纳高尔（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/black_baron)假面骑士黑色巴隆$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -198,7 +198,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_saver",
 			"title": "战极驱动器（Saver）",
-			"text": "登场于：$(li)铠武外传：假面骑士公爵（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/saver)假面骑士Saver"
+			"text": "登场于：$(li)铠武外传：假面骑士公爵（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/saver)假面骑士Saver$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -209,7 +209,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_maja",
 			"title": "战极驱动器（魔蛇）",
-			"text": "登场于：$(li)假面骑士铠武：最终舞台（2014年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/maja)假面骑士魔蛇"
+			"text": "登场于：$(li)假面骑士铠武：最终舞台（2014年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/maja)假面骑士魔蛇$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -220,7 +220,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_sylphi",
 			"title": "战极驱动器（希尔芙）",
-			"text": "登场于：$(li)铠武外传：假面骑士古列顿VS假面骑士布拉沃（2020年，网络剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/sylphi)假面骑士希尔芙"
+			"text": "登场于：$(li)铠武外传：假面骑士古列顿VS假面骑士布拉沃（2020年，网络剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/sylphi)假面骑士希尔芙$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -231,7 +231,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_gaim_natsumikan",
 			"title": "战极驱动器（铠武·夏蜜柑）",
-			"text": "登场于：$(li)OOO的世界（2015年，S.I.C.英雄传奇）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/gaim_natsumikan)假面骑士铠武·夏蜜柑武装"
+			"text": "登场于：$(li)OOO的世界（2015年，S.I.C.英雄传奇）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/gaim_natsumikan)假面骑士铠武·夏蜜柑武装$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -242,7 +242,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_proto_gaim",
 			"title": "战极驱动器（原型铠武）",
-			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_gaim)假面骑士原型铠武"
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_gaim)假面骑士原型铠武$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -253,7 +253,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_proto_baron",
 			"title": "战极驱动器（原型巴隆）",
-			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_baron)假面骑士原型巴隆"
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_baron)假面骑士原型巴隆$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -264,7 +264,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_proto_ryugen",
 			"title": "战极驱动器（原型龙玄）",
-			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_ryugen)假面骑士原型龙玄"
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_ryugen)假面骑士原型龙玄$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -275,7 +275,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_proto_gridon",
 			"title": "战极驱动器（原型古列顿）",
-			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_gridon)假面骑士原型古列顿"
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_gridon)假面骑士原型古列顿$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -286,7 +286,7 @@
 			"type": "patchouli:text",
 			"anchor": "sengoku_driver_proto_bravo",
 			"title": "战极驱动器（原型布拉沃）",
-			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_bravo)假面骑士原型布拉沃"
+			"text": "登场于：$(li)假面骑士斩月：-铠武外传-（2019年，舞台剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/proto_bravo)假面骑士原型布拉沃$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -305,4 +305,4 @@
 			"recipe": "kamenridercraft:gaim/sengoku_driver_incomplete"
 		}
 	]
-}
+		}

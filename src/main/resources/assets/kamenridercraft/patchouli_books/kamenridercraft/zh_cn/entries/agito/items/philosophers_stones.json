@@ -75,7 +75,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:iconga_no_akai_agito",
-			"text": "该物品目前无法获取"
+			"text": "掉落自：$(li)$(l:agito/mobs/gill_agito)基尔亚极陀$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -123,7 +123,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gold_exceed_gills",
 			"title": " ",
-			"text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+			"text": "$(br2)通过和大师级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
 		},
 		{
 			"type": "patchouli:text",
@@ -145,11 +145,9 @@
 			"text": "登场于：$(li)天堂之门 (2003年，S.I.C.英雄传奇)$(br2)用于合成幻影亚极陀的$(l:agito/devices/altering#alter_ring_miracle)变幻圆环(幻影)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:agito_miracle",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "该物品目前无法获取"
+			"recipe": "kamenridercraft:agito/agito_miracle"
 		},
 		{
 			"type": "patchouli:text",
@@ -158,11 +156,9 @@
 			"text": "登场于：$(li)成为假面骑士的男人 (2012年，S.I.C.英雄传奇)$(br2)用于合成另类亚极陀的$(l:agito/devices/ank_point#ank_point_burning)安可核心(真岛浩二)$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:another_agito_koji",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "该物品目前无法获取"
+			"recipe": "kamenridercraft:agito/another_agito_koji"
 		},
 		{
 			"type": "patchouli:text",
@@ -171,11 +167,59 @@
 			"text": "登场于：$(li)成为假面骑士的男人 (2012年，S.I.C.英雄传奇)$(br2)用于切换另类亚极陀的$(l:agito/riders/another_agito_kouji_majima#burning)燃烧形态$(/l)"
 		},
 		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/another_agito_burning_form"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "agito_miracle_world",
+			"title": "镜像亚极陀之石",
+			"text": "登场于：$(li)假面骑士龙骑：龙骑VS假面骑士亚极陀 (2002年，超战斗DVD)$(br2)用于合成$(l:agito/devices/altering#alter_ring_miracle_world)变幻圆环(镜像世界)$(/l)$(br2)用于切换$(l:agito/riders/agito_miracle_world)假面骑士镜像亚极陀$(/l)"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:another_agito_burning_form",
+			"item": "kamenridercraft:agito_miracle_world",
 			"title": " ",
 			"text": "该物品目前无法获取"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gill_agito",
+			"title": "基尔亚极陀之石",
+			"text": "登场于：$(li)超能战争 (2026年，电影)$(br2)用于合成$(l:agito/devices/gill_agito_belt#gill_agito_alter_ring)基尔亚极陀腰带$(/l)$(br2)用于合成$(l:agito/items/philosophers_stones#gill_agito_trinity)三位一体基尔亚极陀之石$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gill_agito",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/gill_agito)基尔亚极陀$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gill_agito_trinity",
+			"title": "三位一体基尔亚极陀之石",
+			"text": "登场于：$(li)超能战争 (2026年，电影)$(br2)用于合成$(l:agito/devices/gill_agito_belt#gill_agito_trinity_alter_ring)三位一体基尔亚极陀腰带$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/gill_agito_trinity"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gill_agito_shining",
+			"title": "闪耀基尔亚极陀之石",
+			"text": "登场于：$(li)超能战争 (2026年，电影)$(br2)用于合成$(l:agito/devices/gill_agito_belt#gill_agito_shining_alter_ring)闪耀基尔亚极陀腰带$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gill_agito_shining",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:agito/mobs/shining_gill_agito)闪耀基尔亚极陀$(/l)"
 		}
 	]
 }

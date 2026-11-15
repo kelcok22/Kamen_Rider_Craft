@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度 II$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)速度 II$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量（持武器时）$(li)炎拳$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量$(li)炎拳$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)急迫 II"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)急迫 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)力量 III（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)推进 III"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)力量 III$(li)速度 VI$(li)抗性提升 IV$(li)推进 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 IV（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VI$(li)抗火"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 IV$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)可通过按住潜行键点击 $(l:gotchard/items/ride_chemy_cards)骑士驾驭凯米卡$(/l) 召唤 $(l:gotchard/riders/gotcharbrothers)歌查兄弟$(/l)$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 VII（持武器时）$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)推进 III$(li)抗火$(li)飞行"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)可通过按住潜行键点击 $(l:gotchard/items/ride_chemy_cards)骑士驾驭凯米卡$(/l) 召唤 $(l:gotchard/riders/gotcharbrothers)歌查兄弟$(/l)$(br2)状态效果：$(li)拳力提升 VII$(li)力量 VII$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)推进 III$(li)抗火$(li)飞行"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德：未来拂晓 (2024年，电影)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 VII（持武器时）$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+			"text": "登场于：$(li)假面骑士歌查德：未来拂晓 (2024年，电影)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 VII$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 X$(li)力量 XIII（空手时）$(li)力量 X（持武器时）$(li)速度 X$(li)抗性提升 X$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 X$(li)力量 X$(li)速度 X$(li)抗性提升 X$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德：最终舞台剧 (2024年，舞台剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 VII（持武器时）$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
+			"text": "登场于：$(li)假面骑士歌查德：最终舞台剧 (2024年，舞台剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 VII$(li)速度 VII$(li)抗性提升 VII$(li)水下呼吸$(li)夜视$(li)生命恢复$(li)急迫 V$(li)饱和$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)力量 III（持武器时）$(li)抗性提升$(li)夜视"
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 III$(li)抗性提升$(li)夜视"
 		},
 		{
 			"type": "patchouli:entity",
@@ -436,7 +436,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士歌查德",
-			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)夜视 II$(li)急迫 II$(li)跳跃提升 III"
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver)歌查德驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 II$(li)速度 II$(li)夜视 II$(li)急迫 II$(li)跳跃提升 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -501,7 +501,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "宏伟毒蝎",
-			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#greatonbo_ride_chemy_card)灵敏蜻蜓驾驭凯米卡$(/l) 或 $(l:gotchard/items/rlie_chemy_cards#bussasorry_ride_chemy_card)穿刺毒蝎驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
+			"text": "通过使用 $(l:gotchard/items/ride_chemy_cards#greatonbo_ride_chemy_card)灵敏蜻蜓驾驭凯米卡$(/l) 或 $(l:gotchard/items/ride_chemy_cards#bussasorry_ride_chemy_card)穿刺毒蝎驾驭凯米卡$(/l)（需背包中同时持有两张卡片）"
 		},
 		{
 			"type": "patchouli:text",

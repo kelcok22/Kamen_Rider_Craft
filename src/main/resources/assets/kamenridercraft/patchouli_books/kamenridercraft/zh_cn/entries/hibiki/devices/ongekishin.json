@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "todorokidriver",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/todoroki)假面骑士轰鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/todoroki)假面骑士轰鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "zankidriver",
 			"title": "音击震·斩撤",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/zanki)假面骑士斩鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/zanki)假面骑士斩鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "sabakidriver",
 			"title": "音击震·极乐",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/sabaki)假面骑士裁鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/sabaki)假面骑士裁鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -39,7 +39,7 @@
 			"type": "patchouli:text",
 			"anchor": "shukidriver",
 			"title": "音击弦(朱鬼)",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/shuki)假面骑士朱鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/shuki)假面骑士朱鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -50,7 +50,7 @@
 			"type": "patchouli:text",
 			"anchor": "bankidriver",
 			"title": "音击震·地狱",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/banki)假面骑士蛮鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/banki)假面骑士蛮鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -58,4 +58,4 @@
 			"recipe": "kamenridercraft:hibiki/bankidriver"
 		}
 	]
-}
+		}

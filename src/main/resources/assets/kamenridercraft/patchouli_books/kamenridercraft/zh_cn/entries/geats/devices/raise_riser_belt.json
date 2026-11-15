@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_ziin",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/ziin)假面骑士吉恩"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/ziin)假面骑士吉恩$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_kekera",
 			"title": "镭射升华器(呱呱拉)",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/kekera)假面骑士呱呱拉"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/kekera)假面骑士呱呱拉$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -33,7 +33,7 @@
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_kyuun",
 			"title": "镭射升华器(秋恩)",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/kyuun)假面骑士秋恩"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/kyuun)假面骑士秋恩$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -46,7 +46,7 @@
 			"type": "patchouli:text",
 			"anchor": "raise_riser_belt_beroba",
 			"title": "镭射升华器(贝洛芭)",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/beroba)假面骑士贝洛芭"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/beroba)假面骑士贝洛芭$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -56,4 +56,4 @@
 			"text": "在未装备腰带且副手持有$(l:geats/items/raise_riser_cards#beroba_raise_riser_card)提升升华器卡片(贝洛芭)$(/l)或$(l:geats/items/raise_riser_cards#beroba_black_raise_riser_card)黑提升升华器卡片(贝洛芭)$(/l)的情况下，发射$(l:geats/arsenal/laser_raise_riser)镭射升华器$(/l)即可获得$(br2)掉落自：$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l)的装备"
 		}
 	]
-}
+		}

@@ -9,16 +9,22 @@
 			"text": "与The First系列骑士的腰带配合使用，可变身为对应骑士"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:the_series/the_ichigo_head"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:the_ichigo_head",
+		    "text": "物品目前无法获得"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:the_series/the_ichigo_troso"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:the_ichigo_troso",
+		    "text": "物品目前无法获得"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:the_series/the_ichigo_legs"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:the_ichigo_legs",
+		    "text": "物品目前无法获得"
 		}
 	]
 }

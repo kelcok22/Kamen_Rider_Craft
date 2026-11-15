@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "punchhopper_zecter",
 			"title": "拳蝗昆虫仪",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作拳蝗的$(l:kabuto/devices/zect_buckle#punchhopper_rider_belt)ZECT代扣(拳蝗)$(/l)"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)用于制作拳蝗的$(l:kabuto/devices/zect_buckle#puchhopper_rider_belt)ZECT代扣(拳蝗)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:lady_zecter",
 			"title": " ",
-			"text": "通过从$(l:kabuto/structures/god_speed_love)神速爱$(/l)结构中获取试炼战利品获得"
+			"text": "掉落自：$(li)$(l:misc/stageshow#lady)假面骑士Lady$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giraffa_zecter",
 			"title": " ",
-			"text": "该物品目前无法获取"
+			"text": "通过从$(l:kabuto/structures/god_speed_love)神速爱$(/l)结构中获取试炼战利品获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "atlas_zecter",
+			"title": "阿特拉斯昆虫仪",
+			"text": "登场于：$(li)假面骑士甲斗 20周年 承天之人 (2026年，电影)$(br2)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:atlas_zecter",
+			"title": " ",
+			"text": "通过从$(l:kabuto/structures/god_speed_love)神速爱$(/l)结构中获取试炼战利品获得"
 		},
 		{
 			"type": "patchouli:text",
@@ -222,6 +235,19 @@
 			"item": "kamenridercraft:perfectsasword_zecter",
 			"title": " ",
 			"text": "掉落自：$(li)$(l:kabuto/mobs/neotrooper)新生蚁兵$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chophopper_zecter",
+			"title": "蝗虫昆虫仪(ChopHopper)",
+			"text": "登场于：$(li)假面骑士甲斗：特别秀 (2006年，舞台秀)$(br2)用于制作ChopHopper的$(l:kabuto/devices/zect_buckle#chophopper_rider_belt)ZECT代扣$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chophopper_zecter",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/stageshow#chophopper)ChopHopper$(/l)"
 		}
 	]
-}
+		}

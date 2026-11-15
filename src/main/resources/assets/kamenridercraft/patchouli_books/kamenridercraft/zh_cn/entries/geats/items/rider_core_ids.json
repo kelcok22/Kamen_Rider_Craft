@@ -94,7 +94,7 @@
 			"type": "patchouli:text",
 			"anchor": "nudge_sparrow_rider_core_id",
 			"title": "灵雀ID核心",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成灵雀的 $(l:geats/devices/desire_driver#desire_driver_nudge_sparrow)欲望驱动器(灵雀)$(/l)$(br2)用于将 $(l:geats/riders/nudge_sparrow)假面骑士灵雀$(/l)还原为登录形态"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成灵雀的 $(l:geats/devices/desire_driver#desire_driver_nudge_sparrow)欲望驱动器(灵雀)$(/l)$(br2)用于将 $(l:geats/riders/nadge_sparrow)假面骑士灵雀$(/l)还原为登录形态"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -159,7 +159,7 @@
 			"type": "patchouli:text",
 			"anchor": "keirou_rider_core_id",
 			"title": "鸮老ID核心",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成鸮老的 $(l:geats/devices/desire_driver#desire_driver_keirou)欲望驱动器(鸮老)$(/l)$(br2)用于将 $(l:geats/riders/keirou)假面骑士鸮老$(/l)还原为登录形态"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)用于合成鸮老的 $(l:geats/devices/desire_driver#desire_driver_keirou)欲望驱动器(鸮老)$(/l)$(br2)用于将 $(l:geats/riders/keilow)假面骑士鸮老$(/l)还原为登录形态"
 		},
 		{
 			"type": "patchouli:spotlight",

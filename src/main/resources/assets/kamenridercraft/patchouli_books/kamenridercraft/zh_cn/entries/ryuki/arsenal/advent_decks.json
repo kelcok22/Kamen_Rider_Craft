@@ -11,7 +11,6 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"anchor": "advent_deck_blank",
 			"recipe": "kamenridercraft:ryuki/advent_deck_blank",
 			"text": "可在地牢和废弃传送门中找到"
 		},
@@ -178,7 +177,7 @@
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
-			"recipe": "kamenridercraft:ryuki/advent_deck_fatale"
+			"recipe": "kamenridercraft:ryuki/advent_deck_femme"
 		},
 		{
 			"type": "patchouli:text",
@@ -258,4 +257,4 @@
 			"recipe": "kamenridercraft:ryuki/advent_deck_ryuga_survive"
 		}
 	]
-}
+		}

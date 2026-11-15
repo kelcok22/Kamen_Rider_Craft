@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于进入城市维度",
-			"future_text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于进入$(l:misc/city/city)城市维度$(/l)"
+			"future_text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于进入城市维度"
 		},
 		{
 			"type": "patchouli:spotlight",

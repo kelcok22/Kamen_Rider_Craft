@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "完全形态",
-			"text": "在 $(l:kiva/riders/arc)恶王的基础形态$(/l) 下，前往 $(l:fourze/dimensions/moon)月球$(/l) 解锁"
+			"text": "在 $(l:kiva/riders/arc)恶王的基础形态$(/l) 下，前往 月球 解锁"
 		},
 		{
 			"type": "patchouli:text",

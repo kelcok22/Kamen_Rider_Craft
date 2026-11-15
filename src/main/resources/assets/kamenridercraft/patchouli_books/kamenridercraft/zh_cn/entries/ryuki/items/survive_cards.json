@@ -52,7 +52,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:survive_black",
 			"title": " ",
-			"text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+			"text": "$(br2)通过和大师级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
 		}
 	]
 }

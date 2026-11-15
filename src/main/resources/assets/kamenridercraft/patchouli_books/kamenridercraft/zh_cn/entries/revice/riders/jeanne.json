@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士贞德",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/libera_driver)解放驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)速度 II$(li)毒药抗性$(li)急迫 II"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/libera_driver)解放驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)速度 II$(li)毒药抗性$(li)急迫 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士贞德",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/libera_driver)解放驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)力量 XII（空手时）$(li)力量 IV（持武器时）$(li)速度 IV$(li)毒药抗性$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VII"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/libera_driver)解放驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)力量 IV$(li)速度 IV$(li)毒药抗性$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VII"
 		}
 	]
 }

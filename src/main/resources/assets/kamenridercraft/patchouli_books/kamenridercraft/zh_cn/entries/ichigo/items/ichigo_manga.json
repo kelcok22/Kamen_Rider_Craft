@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ichigo_manga",
 			"title": " ",
-			"text": "当前无法获取该物品"
+			"text": "通过和大师级$(l:misc/villagers#shocker_villager)修卡村民$(/l)交易获取"
 		}
 	]
-}
+		}

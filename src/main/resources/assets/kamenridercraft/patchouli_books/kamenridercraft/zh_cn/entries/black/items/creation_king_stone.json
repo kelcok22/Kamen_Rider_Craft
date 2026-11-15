@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:black/creation_king_stone"
+			"recipe": "kamenridercraft:black/creation_king_stone",
+			"text": "掉落自：$(li)$(l:misc/stageshow#red_shadow_moon)红色影月$(/l)"
 		}
 	]
 }

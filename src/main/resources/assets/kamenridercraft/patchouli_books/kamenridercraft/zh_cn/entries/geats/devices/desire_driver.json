@@ -62,7 +62,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_nudge_sparrow",
 			"title": "欲望驱动器(灵雀)",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/nudge_sparrow)假面骑士灵雀$(/l)$(br2)最多可存储2组升级带扣"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/nadge_sparrow)假面骑士灵雀$(/l)$(br2)最多可存储2组升级带扣"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -117,7 +117,7 @@
 			"type": "patchouli:text",
 			"anchor": "desire_driver_keirou",
 			"title": "欲望驱动器(鸮老)",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/keirou)假面骑士鸮老$(/l)$(br2)最多可存储2组升级带扣"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)与$(l:geats/devices/armor)极狐装甲$(/l)一起穿戴，可变身为$(l:geats/riders/keilow)假面骑士鸮老$(/l)$(br2)最多可存储2组升级带扣"
 		},
 		{
 			"type": "patchouli:crafting",

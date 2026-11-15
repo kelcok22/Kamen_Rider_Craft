@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)抗性提升 III$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量 II（持武器）"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)抗性提升 III$(li)拳力提升 VI$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 VII$(li)抗性提升$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量（持武器）"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)跳跃提升 VII$(li)抗性提升$(li)拳力提升 VI$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)抗性提升$(li)烈焰环身 VI$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量（持武器）"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)抗性提升$(li)烈焰环身 VI$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze：Movie War Ultimatum (2012年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)抗性提升$(li)烈焰环身 VI$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量（持武器）"
+			"text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze：Movie War Ultimatum (2012年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗火$(li)抗性提升$(li)烈焰环身 VI$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)拳力提升 VI$(li)夜视$(li)力量 IX（空手）$(li)力量 V（持武器）"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)拳力提升 VI$(li)夜视$(li)力量 V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士Wizard in Magic Land (2013年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)烈焰环身$(li)飞行$(li)海豚的恩惠$(li)夜视$(li)拳力提升 VI$(li)力量 IX（空手）$(li)力量 VI（持武器）"
+			"text": "登场于：$(li)假面骑士Wizard in Magic Land (2013年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)烈焰环身$(li)飞行$(li)海豚的恩惠$(li)夜视$(li)拳力提升 VI$(li)力量 VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Wizard",
-			"text": "登场于：$(li)假面骑士×假面骑士 铠武 & Wizard：The Fateful Sengoku Movie Battle (2013年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)烈焰环身$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)夜视$(li)力量 IX（空手）$(li)力量 V（持武器）"
+			"text": "登场于：$(li)假面骑士×假面骑士 铠武 & Wizard：The Fateful Sengoku Movie Battle (2013年，电影)$(br2)通过穿戴 $(l:wizard/devices/wizardriver#wizardriver)Wizar驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗火$(li)抗性提升 IV$(li)烈焰环身$(li)飞行$(li)海豚的恩惠$(li)拳力提升 VI$(li)夜视$(li)力量 V"
 		},
 		{
 			"type": "patchouli:entity",

@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士花音Specter",
-			"text": "登场于：$(li)假面骑士Specter x Blades (2021年，TTFC特别篇)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#kanon_specter_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度"
+			"text": "登场于：$(li)假面骑士Specter x Blades (2021年，TTFC特别篇)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#kanon_specter_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)生命提升 II$(li)跳跃提升 II$(li)力量 II"
 		}
 	]
-}
+		}

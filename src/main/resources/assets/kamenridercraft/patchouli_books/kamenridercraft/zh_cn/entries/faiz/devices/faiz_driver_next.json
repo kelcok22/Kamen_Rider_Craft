@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/next_faiz)假面骑士Next Faiz"
+			"text": "登场于：$(li)假面骑士555 20th：复活的乐园 (2024年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/next_faiz)假面骑士Next Faiz$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:faiz/faiz_driver_next"
 		}
 	]
-}
+		}

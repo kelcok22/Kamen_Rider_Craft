@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "alter_ring",
-			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito#ground)假面骑士亚极陀"
+			"text": "登场于：$(li)假面骑士亚极陀 (2001年，电视剧)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito#ground)假面骑士亚极陀$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "alter_ring_reiko",
 			"title": "变幻圆环(高野玲子)",
-			"text": "登场于：$(li)假面骑士空我 (2015年，漫画)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito_reiko)假面骑士亚极陀(高野玲子)"
+			"text": "登场于：$(li)假面骑士空我 (2015年，漫画)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito_reiko)假面骑士亚极陀(高野玲子)$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -29,12 +29,23 @@
 			"type": "patchouli:text",
 			"anchor": "alter_ring_miracle",
 			"title": "变幻圆环(幻影)",
-			"text": "登场于：$(li)天堂之门 (2003年，S.I.C.英雄传奇)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/mirage_agito)假面骑士幻影亚极陀"
+			"text": "登场于：$(li)天堂之门 (2003年，S.I.C.英雄传奇)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/mirage_agito)假面骑士幻影亚极陀$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:agito/alter_ring_miracle"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "alter_ring_miracle_world",
+			"title": "变幻圆环(镜像世界)",
+			"text": "登场于：$(li)假面骑士龙骑：龙骑VS假面骑士亚极陀 (2002年，超战斗DVD)$(br2)与$(l:agito/devices/armor)亚极陀装甲$(/l)一起穿戴，可变身为$(l:agito/riders/agito_miracle_world)假面骑士镜像亚极陀$(/l)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:agito/alter_ring_miracle_world"
 		}
 	]
-}
+		}

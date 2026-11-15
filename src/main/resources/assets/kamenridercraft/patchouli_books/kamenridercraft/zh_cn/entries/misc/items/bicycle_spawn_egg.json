@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:misc/bicycle_spawn_egg",
-			"text": "完美适合恶魔或倒霉鬼$(br2)放置于方块上可召唤摩托车$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+			"text": "完美适合恶魔或倒霉鬼$(br2)放置于方块上可召唤摩托车$(br2)通过和学徒级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
 		},
 		{
 			"type": "patchouli:entity",

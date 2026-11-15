@@ -292,7 +292,7 @@
             "type": "patchouli:text",
             "anchor": "wolf_full_bottle",
             "title": "狼满装瓶罐",
-            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#wolfsmapho)狼$(/l) 形态"
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build)狼$(/l) 形态"
         },
         {
             "type": "patchouli:spotlight",
@@ -305,7 +305,7 @@
             "type": "patchouli:text",
             "anchor": "smapho_full_bottle",
             "title": "智能机满装瓶罐",
-            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build#wolfsmapho)智能机$(/l) 形态"
+            "text": "登场于：$(li)假面骑士Build (2017年，电视剧)$(br2)用于切换Build的 $(l:build/riders/build)智能机$(/l) 形态"
         },
         {
             "type": "patchouli:spotlight",

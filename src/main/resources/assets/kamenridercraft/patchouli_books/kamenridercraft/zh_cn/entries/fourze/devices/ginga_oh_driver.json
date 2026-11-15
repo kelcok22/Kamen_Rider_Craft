@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)与$(l:fourze/devices/armor)Fourze装甲$(/l)一起穿戴，可变身为$(l:fourze/riders/super_gingaoh)超级银河王"
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)与$(l:fourze/devices/armor)Fourze装甲$(/l)一起穿戴，可变身为$(l:fourze/riders/super_gingaoh)超级银河王$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:ginga_oh_driver",
 			"title": " ",
-            "text": "掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
+			"text": "掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
 		}
 	]
-}
+		}
