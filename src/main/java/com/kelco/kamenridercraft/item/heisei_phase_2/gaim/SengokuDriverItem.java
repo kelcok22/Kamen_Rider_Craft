@@ -73,7 +73,7 @@ public class SengokuDriverItem extends RiderDriverItem {
                 return "jimbar_arms_" + riderName;
             } else return "blank";
 
-        if (isTransforming(rider)& Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() > 10) return "blank_arms";
+        if (isTransforming(rider)& (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() > 10||Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() == 0)) return "blank_arms";
         else return getFormItem(itemstack, 1).getFormName(fly);
     }
 
