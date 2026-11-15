@@ -142,8 +142,8 @@ public class RiderDriverItem extends RiderArmorItem {
 
 
     public static Boolean isTransformingFromBlank(ItemStack itemStack, LivingEntity rider) {
-        RiderFormChangeItem form = getFormItem(itemStack, 1);
-        Double form_time = form.getHenshinTick();
+        Double form_time = 30D;
+        if (itemStack.getItem() instanceof RiderDriverItem belt) form_time = belt.getBaseHenshinTick(itemStack,rider);
         return getFormItem(itemStack, 1, form_time + 1) == ModdedItemCore.BLANK_FORM.asItem()&isTransforming(rider) ;
     }
 
