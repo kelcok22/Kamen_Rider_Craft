@@ -137,7 +137,8 @@ public class RiderDriverItem extends RiderArmorItem {
         ItemStack beltStack  = rider.getItemBySlot(EquipmentSlot.FEET);
         Double form_time = 30D;
         if (beltStack.getItem() instanceof RiderDriverItem belt) form_time = belt.getBaseHenshinTick(beltStack,rider);
-        if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() == 0)return getFormItem(beltStack, 1, form_time+ 1) != getFormItem(beltStack, 1);
+        //if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1)return getFormItem(beltStack, 1,22072012 ) != getFormItem(beltStack, 1);
+        if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 0) return false;
         return true;
     }
 
@@ -795,7 +796,6 @@ public class RiderDriverItem extends RiderArmorItem {
             if (BuiltInRegistries.ITEM.get(UsedFormItem) instanceof RiderFormChangeItem formItem) {
                 if (BuiltInRegistries.ITEM.get(UsedFormItemOld) instanceof RiderFormChangeItem formItem2 && (num > formItem.getFormDelay())) {
                     return formItem2;
-
                 } else if (num > formItem.getFormDelay()) {
                     return (RiderFormChangeItem) ModdedItemCore.BLANK_FORM.asItem();
                 }
