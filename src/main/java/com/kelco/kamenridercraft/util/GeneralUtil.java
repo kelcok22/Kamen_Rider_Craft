@@ -81,10 +81,16 @@ public class GeneralUtil {
                     nearbyPlayer.displayClientMessage(Component.translatable(translatableKey), true);
                 }
                 break;
-            case "vicinity_as_user":
+            case "vicinity_actionbar_as_user":
                 for (ServerPlayer nearbyPlayer : nearbyPlayers) {
                     nearbyPlayer.displayClientMessage(Component.literal("<").append(sender.getName()).append(Component.literal("> ")).
                             append(Component.translatable(translatableKey)), true);
+                }
+                break;
+            case "vicinity_chat_as_user":
+                for (ServerPlayer nearbyPlayer : nearbyPlayers) {
+                    nearbyPlayer.displayClientMessage(Component.literal("<").append(sender.getName()).append(Component.literal("> ")).
+                            append(Component.translatable(translatableKey)), false);
                 }
                 break;
             case "global":
