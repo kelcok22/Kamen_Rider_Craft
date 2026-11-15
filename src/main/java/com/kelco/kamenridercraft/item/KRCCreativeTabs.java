@@ -794,6 +794,7 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.PROTO_SPORTS_GAMER_SPAWN_EGG);
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
+            event.accept(MobsCore.BUGSTER_BOSS_SPAWN_EGG);
             event.accept(MobsCore.RIDEPLAYER_SPAWN_EGG);
             event.accept(MobsCore.GENM_SPAWN_EGG);
             event.accept(MobsCore.GRAPHITE_BUGSTER_SPAWN_EGG);
@@ -1315,6 +1316,7 @@ public class KRCCreativeTabs {
 
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
+            event.accept(MobsCore.BUGSTER_BOSS_SPAWN_EGG);
             event.accept(MobsCore.RIDEPLAYER_SPAWN_EGG);
             event.accept(MobsCore.GENM_SPAWN_EGG);
             event.accept(MobsCore.GRAPHITE_BUGSTER_SPAWN_EGG);
