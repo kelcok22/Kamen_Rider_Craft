@@ -37,15 +37,17 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 
+import static com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM;
+
 public class GaimRiderItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
     public static final DeferredItem<Item> GAIM_LOGO = ITEMS.register("gaim_logo",
-            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/gaim")), new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseBannerPatternItem(TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "pattern_item/gaim")), new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HIMAWRI_LOCKSEED = ITEMS.register("himawari_lockseed",
-            () -> new HimawariLockseedItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new HimawariLockseedItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> INCOMPLETE_GAIM_FORM = ITEMS.register("incomplete_gaim_form",
@@ -72,125 +74,133 @@ public class GaimRiderItems {
     public static final DeferredItem<Item> MATSUBOKKURI_LOCKSEED = ITEMS.register("matsubokkuri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "matsubokkuri_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KURUMI_LOCKSEED = ITEMS.register("kurumi_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kurumi_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(EffectCore.PUNCH, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DONGURI_LOCKSEED = ITEMS.register("donguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "donguri_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MELON_LOCKSEED = ITEMS.register("melon_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "melon_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PINE_LOCKSEED = ITEMS.register("pine_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "pine_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ICHIGO_LOCKSEED = ITEMS.register("ichigo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "ichigo_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ORANGE_LOCKSEED = ITEMS.register("orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "orange_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BANANA_LOCKSEED = ITEMS.register("banana_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "banana_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BUDOU_LOCKSEED = ITEMS.register("budou_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "budou_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SUIKA_LOCKSEED = ITEMS.register("suika_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "suika_arms", "gaim", "sengoku_driver_belt",
@@ -199,139 +209,148 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MANGO_LOCKSEED = ITEMS.register("mango_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "mango_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).hasCape().resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).hasCape().resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DURIAN_LOCKSEED = ITEMS.register("durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "durian_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KIWI_LOCKSEED = ITEMS.register("kiwi_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kiwi_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> LEMON_LOCKSEED = ITEMS.register("lemon_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "lemon_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_GAIM_CORE = ITEMS.register("jimber_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "_jimber", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+            }.addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> JIMBER_LEMON_ENERGY_LOCKSEED = ITEMS.register("jimber_lemon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_lemon_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+            }.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("lemon_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> LEMON_ENERGY_LOCKSEED = ITEMS.register("lemon_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_lemon_arms", "zangetsu_shin", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_LEMON_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_LEMON_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_CHERRY_ENERGY_LOCKSEED = ITEMS.register("jimber_cherry_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_cherry_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+            }.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("cherry_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> CHERRY_ENERGY_LOCKSEED = ITEMS.register("cherry_energy_lockseed",
@@ -339,30 +358,32 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_CHERRY_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_CHERRY_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_PEACH_ENERGY_LOCKSEED = ITEMS.register("jimber_peach_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_peach_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+            }.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("peach_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> PEACH_ENERGY_LOCKSEED = ITEMS.register("peach_energy_lockseed",
@@ -370,15 +391,16 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_PEACH_ENERGY_LOCKSEED.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_PEACH_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_MELON_ENERGY_LOCKSEED = ITEMS.register("jimber_melon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_melon_arms", "gaim", "sengoku_driver_belt",
@@ -387,15 +409,16 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+            }.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("melon_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> MELON_ENERGY_LOCKSEED = ITEMS.register("melon_energy_lockseed",
@@ -405,45 +428,48 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_MELON_ENERGY_LOCKSEED.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_MELON_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MATSUBOKKURI_ENERGY_LOCKSEED = ITEMS.register("matsubokkuri_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_matsubokkuri_arms", "zangetsu_shin", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("jimber_dragon_fruits_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_dragon_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
+            }.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get())
                     .setModelName("dragon_fruits_energy_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("dragon_fruits_energy_lockseed",
@@ -451,81 +477,86 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("proto_dragon_fruits_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_prototype_dragon_fruits_arms", "zangetsu_shin", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MARRON_ENERGY_LOCKSEED = ITEMS.register("marron_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "jimbar_marron_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(EffectCore.PUNCH, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseJimberArms).resetFormToBase().alsoChange2ndSlot(JIMBER_GAIM_CORE.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KACHIDOKI_LOCKSEED = ITEMS.register("kachidoki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "kachidoki_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ZANGETSU_KACHIDOKI_LOCKSEED = ITEMS.register("zangetsu_kachidoki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "zangetsu_kachidoki_arms", "zangetsu", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KIWAMI_LOCKSEED = ITEMS.register("kiwami_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "kiwami_arms", "gaim", "sengoku_driver_belt",
@@ -537,15 +568,16 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addNeedForm(KACHIDOKI_LOCKSEED.get(), 1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
+            }.setFormDelay(1).resetFormToBase().addNeedForm(KACHIDOKI_LOCKSEED.get(), 1).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
 
     public static final DeferredItem<Item> LORD_BARON = ITEMS.register("lord_baron",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "lord_baron_arms", "baron", "blank",
@@ -557,21 +589,22 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
                     new MobEffectInstance(EffectCore.ANTIPOISON, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().useBasicModel().setModelName("helheim_fruit"));
+            }.setFormDelay(1).resetFormToBase().useBasicModel().setModelName("helheim_fruit"));
 
     public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "yomotsu_heguri_arms", "ryugen", "sengoku_driver_belt",
@@ -581,53 +614,56 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLOOD_ORANGE_LOCKSEED = ITEMS.register("blood_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "blood_orange_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> OCHIMUSHA_LOCKSEED = ITEMS.register("blood_orange_lockseed_ochimusha",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "ochimusha_arms", "bujin_gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FIFTEEN_LOCKSEED = ITEMS.register("fifteen_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "fifteen_arms", "gaim", "sengoku_driver_belt",
@@ -635,18 +671,19 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> GOLDEN_RINGO_LOCKSEED = ITEMS.register("golden_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "golden_arms", "gaim", "sengoku_driver_belt",
@@ -654,18 +691,19 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).isGold().addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).isGold().addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SILVER_RINGO_LOCKSEED = ITEMS.register("silver_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "silver_arms", "gaim", "sengoku_driver_belt",
@@ -673,18 +711,19 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.CYAN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_RINGO_LOCKSEED = ITEMS.register("black_ringo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "darkness_arms", "gaim", "sengoku_driver_belt",
@@ -692,18 +731,19 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FORBIBBEN_LOCKSEED_BASE = ITEMS.register("forbidden_ringo_lockseed_base",
             () -> new RiderFormChangeItem(new Item.Properties(), "ringo_arms", "gaim", "sengoku_driver_belt",
@@ -711,16 +751,17 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase()
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase()
                     .setModelName("forbidden_ringo_lockseed").useBasicModel());
 
     public static final DeferredItem<Item> FORBIBBEN_LOCKSEED = ITEMS.register("forbidden_ringo_lockseed",
@@ -729,16 +770,17 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1) .addAlternative(FORBIBBEN_LOCKSEED_BASE.get()).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addAlternative(FORBIBBEN_LOCKSEED_BASE.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> WATERMELON_LOCKSEED = ITEMS.register("watermelon_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "watermelon_arms", "zangetsu", "sengoku_driver_belt",
@@ -747,19 +789,20 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ZAKURO_LOCKSEED = ITEMS.register("zakuro_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "blood_zakuro_arms", "saver", "sengoku_driver_belt",
@@ -767,19 +810,20 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).addNeedItem(BLOOD_ORANGE_LOCKSEED.get()).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addNeedItem(BLOOD_ORANGE_LOCKSEED.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MAJA_LOCKSEED = ITEMS.register("maja_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "maja_arms", "gaim", "sengoku_driver_belt",
@@ -787,304 +831,321 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KABI_ORANGE_LOCKSEED = ITEMS.register("kabi_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kabi_orange_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.WEAKNESS, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FRESH_ORANGE_LOCKSEED = ITEMS.register("fresh_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "fresh_orange_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FRESH_PINE_LOCKSEED = ITEMS.register("fresh_pine_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> LYCHEE_LOCKSEED = ITEMS.register("lychee_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "lychee_arms", "gridon", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KING_DURIAN_LOCKSEED = ITEMS.register("king_durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "king_durian_arms", "bravo", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HELEIM_LOCKSEED = ITEMS.register("helheim_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "hells_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> NATSUMIKAN_LOCKSEED = ITEMS.register("natsumikan_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "natsumikan_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLACK_BANANA_LOCKSEED = ITEMS.register("black_banana_lockseed",
-            () -> new CopyFormChangeItem(new Item.Properties(),BANANA_LOCKSEED.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new CopyFormChangeItem(new Item.Properties(), BANANA_LOCKSEED.get()).useBasicModel().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DONGURI_LOCKSEED = ITEMS.register("proto_donguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_donguri_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BROWN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_ORANGE_LOCKSEED = ITEMS.register("proto_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_orange_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BANANA_LOCKSEED = ITEMS.register("proto_banana_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_banana_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().changeModel("banana_arms.geo.json").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().changeModel("banana_arms.geo.json").addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_BUDOU_LOCKSEED = ITEMS.register("proto_budou_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_budou_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DURIAN_LOCKSEED = ITEMS.register("proto_durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_durian_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DARK_ORANGE_LOCKSEED = ITEMS.register("dark_orange_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_YAMI_CORE = ITEMS.register("gaim_yami",
             () -> new RiderFormChangeItem(new Item.Properties(), "_yami", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.changeSlot(2).setModelName("gaim_logo").useBasicModel());
+            }.changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> DARK_LEMON_ENERGY_LOCKSEED = ITEMS.register("dark_lemon_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "jimbar_black_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).resetFormToBase().alsoChange2ndSlot(GAIM_YAMI_CORE.get()).addNeedItem(DARK_ORANGE_LOCKSEED.get()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().alsoChange2ndSlot(GAIM_YAMI_CORE.get()).addNeedItem(DARK_ORANGE_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> CHISTMAS_LOCKSEED = ITEMS.register("christmas_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ROULETTE_LOCKSEED = ITEMS.register("roulette_lockseed",
-            () -> new RouletteLockseedItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new RouletteLockseedItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_DONGURI_LOCKSEED = ITEMS.register("fake_donguri_lockseed",
-            () -> new FakeLockseedItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new FakeLockseedItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SID_LOCKSEED = ITEMS.register("sid_lockseed",
-            () -> new SidLockseedItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new SidLockseedItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> XIAOLONGBAO_LOCKSEED = ITEMS.register("xiaolongbao_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HSIAO_LUNG_PAO_LOCKSEED = ITEMS.register("hsiao_lung_pao_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> TOM_YUM_KUNG_LOCKSEED = ITEMS.register("tom_yum_kung_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> YUMMY_LOCKSEED = ITEMS.register("yummy_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HERO_LOCKSEED = ITEMS.register("hero_lockseed",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> DRIVE_LOCKSEED = ITEMS.register("drive_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "drive_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_LOCKSEED = ITEMS.register("gaim_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "gaim_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> WIZARD_LOCKSEED = ITEMS.register("wizard_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "wizard_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
                     , new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FOURZE_LOCKSEED = ITEMS.register("fourze_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "fourze_arms", "gaim", "sengoku_driver_belt",
@@ -1095,39 +1156,42 @@ public class GaimRiderItems {
                         layerInfo.add(new RocketRenderLayerInfo("module/fourze_rocket_module", "module/fourze_rocket_module"));
                     }
                 }
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                    super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
 
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
+
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> OOO_LOCKSEED = ITEMS.register("ooo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "ooo_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> W_LOCKSEED = ITEMS.register("w_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "w_arms", "gaim", "sengoku_driver_belt",
@@ -1135,235 +1199,249 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(EffectCore.PUNCH, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DECADE_LOCKSEED = ITEMS.register("decade_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "decade_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PINK_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KIVA_LOCKSEED = ITEMS.register("kiva_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kiva_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DEN_O_LOCKSEED = ITEMS.register("den_o_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "den_o_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_LOCKSEED = ITEMS.register("kabuto_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kabuto_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HIBIKI_LOCKSEED = ITEMS.register("hibiki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "hibiki_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.PURPLE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLADE_LOCKSEED = ITEMS.register("blade_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "blade_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FAIZ_LOCKSEED = ITEMS.register("faiz_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "faiz_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> RYUKI_LOCKSEED = ITEMS.register("ryuki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "ryuki_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 20, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 20, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> AGITO_LOCKSEED = ITEMS.register("agito_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "agito_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KUUGA_LOCKSEED = ITEMS.register("kuuga_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "kuuga_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(EffectCore.PUNCH, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_ICHIGO_LOCKSEED = ITEMS.register("rider_ichigo_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOWA_RIDER_LOCKSEED = ITEMS.register("showa_rider_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1) .addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HEISEI_RIDER_LOCKSEED = ITEMS.register("heisei_rider_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "gaim_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                        if (tick == 1d) {
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+                    if (tick == 1d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
 
+                    }
                 }
-            }}.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SAKURA_HURRICANE = ITEMS.register("sakura_hurricane",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.SAKURA_HURRICANE)
-                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+                    .useBasicModel().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ROSE_ATTACKER = ITEMS.register("rose_attacker",
             () -> new SummonBikeItem(new Item.Properties(), MobsCore.ROSE_ATTACKER)
-                    .useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+                    .useBasicModel().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> DANDELINER = ITEMS.register("dandeliner",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> TULIP_HOPPER = ITEMS.register("tulip_hopper",
-            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(GAIM_TAB_ITEM));
 
     /**
      * dandeliner
@@ -1377,7 +1455,7 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
@@ -1400,7 +1478,7 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.REGENERATION, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)) {
-                      public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.GREY_SPARK_PARTICLES.get(),
                             player.getX(), player.getY() + 1,
@@ -1410,15 +1488,15 @@ public class GaimRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
-            }.addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).useBasicModel().setModelName("megahex_core").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            }.addAlternative(MEGAHEX_CORE.get()).addNeedItem(KIWAMI_LOCKSEED.get()).useBasicModel().setModelName("megahex_core").addToList(GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GAIM_HELMET = ITEMS.register("gaimhead",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
     public static final DeferredItem<Item> GAIM_CHESTPLATE = ITEMS.register("gaimtroso",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
     public static final DeferredItem<Item> GAIM_LEGGINGS = ITEMS.register("gaimlegs",
-            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new RiderArmorItem(ArmorMaterials.DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_GAIM_CORE = ITEMS.register("basic_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gaim", "sengoku_driver_belt",
@@ -1448,7 +1526,7 @@ public class GaimRiderItems {
                         buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
                     });
                 }
-            }.hasInventoryGui().addExtraBaseFormItems(BASIC_GAIM_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            }.hasInventoryGui().addExtraBaseFormItems(BASIC_GAIM_CORE).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BARON_CORE = ITEMS.register("basic_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "baron", "sengoku_driver_belt_baron",
@@ -1457,7 +1535,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BARON = ITEMS.register("sengoku_driver_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BARON_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BARON_CORE).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_BELTS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_RYUGEN_CORE = ITEMS.register("basic_ryugen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "ryugen", "sengoku_driver_belt_ryugen",
@@ -1466,7 +1544,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_RYUGEN = ITEMS.register("sengoku_driver_ryugen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "ryugen", BUDOU_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_RYUGEN_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_RYUGEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_ZENGETSU_CORE = ITEMS.register("basic_zangetsu_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "zangetsu", "sengoku_driver_belt_zangetsu",
@@ -1475,7 +1553,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_ZENGETSU = ITEMS.register("sengoku_driver_zangetsu",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "zangetsu", MELON_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_ZENGETSU_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_ZENGETSU_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_GRIDON_CORE = ITEMS.register("basic_gridon_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gridon", "sengoku_driver_belt_gridon",
@@ -1484,7 +1562,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GRIDON = ITEMS.register("sengoku_driver_gridon",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gridon", DONGURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_GRIDON_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_GRIDON_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KUROKAGE_CORE = ITEMS.register("basic_kurokage_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kurokage", "sengoku_driver_belt_kurokage",
@@ -1493,7 +1571,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KUROKAGE = ITEMS.register("sengoku_driver_kurokage",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage", MATSUBOKKURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KUROKAGE_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KUROKAGE_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BRAVO_CORE = ITEMS.register("basic_bravo_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "bravo", "sengoku_driver_belt_bravo",
@@ -1502,7 +1580,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BRAVO = ITEMS.register("sengoku_driver_bravo",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "bravo", DURIAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BRAVO_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BRAVO_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KNUCKLE_CORE = ITEMS.register("basic_knuckle_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "knuckle", "sengoku_driver_belt_knuckle",
@@ -1511,7 +1589,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KNUCKLE = ITEMS.register("sengoku_driver_knuckle",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "knuckle", KURUMI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KNUCKLE_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KNUCKLE_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BUJIN_GAIM_CORE = ITEMS.register("basic_bujin_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "bujin_gaim", "sengoku_driver_belt_bujin_gaim",
@@ -1520,7 +1598,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BUJIN_GAIM = ITEMS.register("sengoku_driver_bujin_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "bujin_gaim", BLOOD_ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BUJIN_GAIM_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BUJIN_GAIM_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_FIFTEEN_CORE = ITEMS.register("basic_fifteen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "fifteen", "sengoku_driver_belt_fifteen",
@@ -1529,7 +1607,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_FIFTEEN = ITEMS.register("sengoku_driver_fifteen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_MARS_CORE = ITEMS.register("basic_mars_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "mars", "sengoku_driver_belt_mars",
@@ -1538,7 +1616,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_MARS = ITEMS.register("sengoku_driver_mars",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "mars", GOLDEN_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_MARS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_MARS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KAMURO_CORE = ITEMS.register("basic_kamuro_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kamuro", "sengoku_driver_belt_kamuro",
@@ -1547,7 +1625,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KAMURO = ITEMS.register("sengoku_driver_kamuro",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kamuro", SILVER_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KAMURO_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KAMURO_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_JAM_CORE = ITEMS.register("basic_jam_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "jam", "sengoku_driver_belt_jam",
@@ -1556,7 +1634,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_JAM = ITEMS.register("sengoku_driver_jam",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "jam", BLACK_RINGO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_JAM_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_JAM_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_KUROKAGE_TOOPERS_CORE = ITEMS.register("basic_kurokage_troopers_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "kurokage_troopers", "sengoku_driver_belt_kurokage_trooper",
@@ -1565,7 +1643,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_KUROKAGE_TOOPERS = ITEMS.register("sengoku_driver_kurokage_troopers",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage_troopers", MATSUBOKKURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_KUROKAGE_TOOPERS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_KUROKAGE_TOOPERS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_IDUNN_CORE = ITEMS.register("basic_idunn_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "idunn", "sengoku_driver_belt_idunn",
@@ -1574,7 +1652,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_IDUNN = ITEMS.register("sengoku_driver_idunn",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "idunn", FORBIBBEN_LOCKSEED_BASE, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_IDUNN_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_IDUNN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_DUKE_CORE = ITEMS.register("basic_duke_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "duke_sengoku", "sengoku_driver_belt_duke",
@@ -1583,7 +1661,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_DUKE = ITEMS.register("sengoku_driver_duke",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "duke_sengoku", LEMON_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_DUKE_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_DUKE_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_BLACK_BARON_CORE = ITEMS.register("basic_black_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "black_baron", "sengoku_driver_belt_black_baron",
@@ -1592,7 +1670,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_BLACK_BARON = ITEMS.register("sengoku_driver_black_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "black_baron", BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_BLACK_BARON_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_BLACK_BARON_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_SAVER_CORE = ITEMS.register("basic_saver_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "saver", "sengoku_driver_belt_saver",
@@ -1601,7 +1679,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_SAVER = ITEMS.register("sengoku_driver_saver",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "saver", ZAKURO_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_SAVER_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_SAVER_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_MAJA_CORE = ITEMS.register("basic_maja_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "maja", "sengoku_driver_belt_maja",
@@ -1610,7 +1688,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_MAJA = ITEMS.register("sengoku_driver_maja",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "maja", MAJA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_MAJA_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_MAJA_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_SYLPHI_CORE = ITEMS.register("basic_sylphi_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "sylphi", "sengoku_driver_belt_sylphi",
@@ -1619,11 +1697,11 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_SYLPHI = ITEMS.register("sengoku_driver_sylphi",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "sylphi", HELEIM_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_SYLPHI_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_SYLPHI_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GAIM_NATSUMIKAN = ITEMS.register("sengoku_driver_gaim_natsumikan",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gaim_natsumikan", NATSUMIKAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_GAIM_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_GAIM_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_GAIM_CORE = ITEMS.register("basic_proto_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_gaim", "sengoku_driver_belt_proto_gaim",
@@ -1632,7 +1710,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GAIM = ITEMS.register("sengoku_driver_proto_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_gaim", PROTO_ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_GAIM_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_GAIM_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_BARON_CORE = ITEMS.register("basic_proto_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_baron", "sengoku_driver_belt_proto_baron",
@@ -1641,7 +1719,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_BARON = ITEMS.register("sengoku_driver_proto_baron",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_baron", PROTO_BANANA_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_BARON_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_BARON_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_RYUGEN_CORE = ITEMS.register("basic_proto_ryugen_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_ryugen", "sengoku_driver_belt_proto_ryugen",
@@ -1650,7 +1728,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_RYUGEN = ITEMS.register("sengoku_driver_proto_ryugen",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_ryugen", PROTO_BUDOU_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_RYUGEN_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_RYUGEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_GRIDON_CORE = ITEMS.register("basic_proto_gridon_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_gridon", "sengoku_driver_belt_proto_gridon",
@@ -1659,7 +1737,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_GRIDON = ITEMS.register("sengoku_driver_proto_gridon",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_gridon", PROTO_DONGURI_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_GRIDON_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_GRIDON_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_PROTO_BRAVO_CORE = ITEMS.register("basic_proto_bravo_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "proto_bravo", "sengoku_driver_belt_proto_bravo",
@@ -1669,11 +1747,11 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_PROTO_KUROKAGE = ITEMS.register("sengoku_driver_proto_bravo",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "proto_bravo", PROTO_DURIAN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_PROTO_BRAVO_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(BASIC_PROTO_BRAVO_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_INCOMPLETE = ITEMS.register("sengoku_driver_incomplete",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "incomplete_gaim", INCOMPLETE_GAIM_FORM, GAIM_HELMET, GAIM_HELMET, GAIM_HELMET, new Item.Properties())
-                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .hideBeltFormInfo().addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
     public static final DeferredItem<Item> GENESIS_CORE = ITEMS.register("genesis_core",
@@ -1683,199 +1761,199 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> GENESIS_DRIVER_ZANGETSU_SHIN = ITEMS.register("genesis_driver_zangetsu_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "zangetsu_shin", MELON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_DUKE = ITEMS.register("genesis_driver_duke",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "duke", LEMON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_SIGURD = ITEMS.register("genesis_driver_sigurd",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "sigurd", CHERRY_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_MARIKA = ITEMS.register("genesis_driver_marika",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "marika", PEACH_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_BARON_SHIN = ITEMS.register("genesis_driver_baron_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "baron_shin", LEMON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_KUROKAGE_SHIN = ITEMS.register("genesis_driver_kurokage_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "kurokage_shin", MATSUBOKKURI_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_TYRANT = ITEMS.register("genesis_driver_tyrant",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "tyrant", PROTO_DRAGON_FRUITS_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GENESIS_DRIVER_RYUGEN = ITEMS.register("genesis_driver_ryugen_shin",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "ryugen_shin", MELON_ENERGY_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
-                    .addExtraBaseFormItems(GENESIS_CORE).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .addExtraBaseFormItems(GENESIS_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MEGAHEX = ITEMS.register("megahex",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "megahex", MEGAHEX_CORE, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).useBasicModel().changeRepairItem(HIMAWRI_LOCKSEED.get()));
+                    .hideBeltFormInfo().addToList(GAIM_TAB_ITEM).useBasicModel().changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
 
     public static final DeferredItem<Item> MUSOU_SABER = ITEMS.register("musou_saber",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MUSOU_SABER_NAGINATA = ITEMS.register("musou_saber_naginata",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BLOOD_MUSOU_SABER_NAGINATA = ITEMS.register("blood_musou_saber_naginata",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MUSOU_SABER_KUSARIGAMA = ITEMS.register("musou_saber_kusarigama",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 10, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DJ_GUN = ITEMS.register("dj_gun",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DJ_GUN_TAIKEN_MODE = ITEMS.register("dj_gun_taiken_mode",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> KACHIDOKI_BATA = ITEMS.register("kachidoki_bata",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     // public static final DeferredItem<Item> DJ_GUN_SOJINTO_MODE = ITEMS.register("dj_gun_sojinto_mode",
     // 		() -> new BaseSwordItem(Tiers.DIAMOND, 22, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(RiderTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> ZANGETSU_DJ_GUN = ITEMS.register("zangetsu_dj_gun",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 11, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> ZANGETSU_DJ_GUN_TAIKEN_MODE = ITEMS.register("zangetsu_dj_gun_taiken_mode",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> ZANGETSU_KACHIDOKI_BATA = ITEMS.register("zangetsu_kachidoki_bata",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> JOESHUIMU = ITEMS.register("joeshuimu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SHEIMU = ITEMS.register("sheimu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DAU = ITEMS.register("dau",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DIMUBU = ITEMS.register("dimubu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 14, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GURONBARYAMU = ITEMS.register("guronbaryamu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SHINE_DONKACHI = ITEMS.register("shine_donkachi",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SHINE_LYCHEE_SWORD = ITEMS.register("shine_lychee_sword",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> HELLS_CANE = ITEMS.register("hells_cane",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 18, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> KAGEMATSU = ITEMS.register("kagematsu",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DONKACHI = ITEMS.register("donkachi",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MELON_DEFENDER = ITEMS.register("melon_defender",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> PINE_IRON = ITEMS.register("pine_iron",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 7, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<SwordItem> ICHIGO_KUNAI = ITEMS.register("ichigo_kunai",
-            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseThrowableItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DAIDAIMARU = ITEMS.register("daidaimaru",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BANA_SPEAR = ITEMS.register("banana_spear",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.NEO_DIEND_SUMMON_WEAPONS).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BUDOU_RYUHOU = ITEMS.register("budou_ryuhou",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 3, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MANGO_PUNISHER = ITEMS.register("mango_punisher",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DURI_NOKO = ITEMS.register("duri_noko",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> KIWI_GEKIRIN = ITEMS.register("kiwi_gekirin",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_WEAPONS).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SONIC_ARROW = ITEMS.register("sonic_arrow",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> KAGEMATSU_SHIN = ITEMS.register("kagematsu_shin",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SUIKA_SOJINTO = ITEMS.register("suika_sojinto",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SUIKA_SOJINTO_BARON_VER = ITEMS.register("suika_sojinto_baron_ver",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SUIKA_SOJINTO_KNUCKLE_VER = ITEMS.register("suika_sojinto_knuckle_ver",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> GIGA_DURI_NOKO = ITEMS.register("king_duri_noko",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties().rarity(Rarity.UNCOMMON)).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BLOOD_DAIDAIMARU = ITEMS.register("blood_daidaimaru",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> YOMIMARU = ITEMS.register("yomimaru",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SWORD_BRINGER = ITEMS.register("sword_bringer",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> APPLE_REFLECTER = ITEMS.register("apple_reflecter",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> LEMON_RAPIER = ITEMS.register("lemon_rapier",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SOUGINJOU = ITEMS.register("souginjou",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 8, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> DARK_DAIDAIMARU = ITEMS.register("dark_daidaimaru",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 5, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> WATERMELON_DEFENDER = ITEMS.register("watermelon_defender",
-            () -> new BaseShieldItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseShieldItem(new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> SAVER_ARROW = ITEMS.register("saver_arrow",
-            () -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseBlasterItem(Tiers.DIAMOND, 12, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> KABI_DAIDAIMARU = ITEMS.register("kabi_daidaimaru",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 0, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> MAJAS_SWORD = ITEMS.register("maja_yomimaru",
-            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties()).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> LORD_BARON_FRAGMENT = ITEMS.register("lord_baron_fragment",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_BARON_FRAGMENT_2 = ITEMS.register("lord_baron_fragment_2",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> LORD_BARON_FRAGMENT_3 = ITEMS.register("lord_baron_fragment_3",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+            () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
 
 
     public static final DeferredItem<Item> GAIM_HORSE_ARMOR = ITEMS.register("gaim_horse_armor",
             () -> new BaseAnimalArmorItem(ArmorMaterials.DIAMOND, AnimalArmorItem.BodyType.EQUESTRIAN,
-                    false, new Item.Properties().stacksTo(1), "horse_armor_gaim").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+                    false, new Item.Properties().stacksTo(1), "horse_armor_gaim").addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HELHEIM_FRUIT = ITEMS.register("helheim_fruit",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(4).fast().saturationModifier(0.8f).alwaysEdible().effect(() -> new MobEffectInstance(MobEffects.POISON, 500, 2), 1.0F).build()))
-                    .useHoverTex().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM));
+                    .useHoverTex().addToList(GAIM_TAB_ITEM));
 
 
     public static void register(IEventBus eventBus) {
