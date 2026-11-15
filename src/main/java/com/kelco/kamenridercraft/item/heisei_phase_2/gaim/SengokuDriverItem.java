@@ -27,6 +27,8 @@ import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 import java.util.List;
 import java.util.Objects;
 
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.IS_TRANSFORMING;
+
 public class SengokuDriverItem extends RiderDriverItem {
     public SengokuDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
         super(material, rider, baseFormItem, head, torso, legs, properties);
@@ -43,7 +45,7 @@ public class SengokuDriverItem extends RiderDriverItem {
             if (Objects.equals(riderName, "ryugen") & getFormItem(itemstack, 1) == GaimRiderItems.YOMOTSU_HEGURI_LOCKSEED.get())
                 return "belts/sengoku_driver_belt_ryugen_y";
             return "belts/" + getFormItem(itemstack, 2).getBeltTex();
-        } else if (isTransformingFromBlank(itemstack,rider)) {
+        } else if (isTransformingFromBlank(itemstack,rider)&Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() > 8) {
             return "blank";
         } else if (equipmentSlot == EquipmentSlot.HEAD) {
             if (Objects.equals(riderName, "baron") & getFormItem(itemstack, 1) == GaimRiderItems.LORD_BARON.get())
