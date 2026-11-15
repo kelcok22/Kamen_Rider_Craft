@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "banno_driver_gord_drive",
-			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/gold_drive)黄金Drive"
+			"text": "登场于：$(li)假面骑士Drive (2014年，电视剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/gold_drive)黄金Drive$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "banno_driver_bronze_drive",
 			"title": "蛮野驱动器",
-			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/bronze_drive)蛮野drive"
+			"text": "登场于：$(li)假面骑士Outsiders (2022年，网络剧)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/bronze_drive)蛮野drive$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -27,4 +27,4 @@
 			"recipe": "kamenridercraft:drive/banno_driver_bronze_drive"
 		}
 	]
-}
+		}

@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于制作Birth的 $(l:ooo/devices/birth_driver#rebirth_driver)ReBirth驱动器$(/l)"
+            "text": "用于制作Birth的 $(l:#birth_driver_x)ReBirth驱动器$(/l)"
         },
         {
             "type": "patchouli:crafting",

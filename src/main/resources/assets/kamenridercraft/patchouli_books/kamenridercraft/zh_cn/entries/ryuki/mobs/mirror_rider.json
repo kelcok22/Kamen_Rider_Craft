@@ -24,7 +24,7 @@
         {
             "type": "patchouli:text",
             "title": "假面骑士铁兵",
-            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：桦木森林、黑森林、繁花森林、森林、雪林、原始桦木森林、苍白花园$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#magnugiga_advent)庞然巨牛降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/shoot_vent_cards#giga_launcher_vent)巨大发射器射击降临卡$(/l)、$(l:ryuki/arsenal/other_form_advent_cards#giga_cannon_vent)巨大加农发射器降临卡$(/l)、$(l:ryuki/arsenal/guard_vent_cards#giga_armor_vent)巨大护甲防御降临卡$(/l)、$(l:ryuki/arsenal/other_form_advent_cards#giga_tector_vent)巨大铁臂防卫降临卡$(/l) 或 $(l:ryuki/arsenal/strike_vent_cards#giga_horn_vent)巨大号角降临卡$(/l)"
+            "text": "特殊能力：$(li)可以使用降临卡获取武器$(br2)生成群系：桦木森林、黑森林、繁花森林、森林、雪林、原始桦木森林、苍白花园$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#magnugiga_advent)庞然巨牛降临卡$(/l)$(li)1-2张 $(l:ryuki/arsenal/shoot_vent_cards#giga_launcher_vent)巨大发射器射击降临卡$(/l)、巨大加农发射器降临卡、$(l:ryuki/arsenal/guard_vent_cards#giga_armor_vent)巨大护甲防御降临卡$(/l)、巨大铁臂防卫降临卡 或 $(l:ryuki/arsenal/strike_vent_cards#giga_horn_vent)巨大号角降临卡$(/l)"
         },
         {
             "type": "patchouli:entity",
@@ -244,7 +244,7 @@
         {
             "type": "patchouli:text",
             "title": "假面骑士剑",
-            "text": "生成群系：$(l:den_o/dimensions/sands_of_time)时间沙漠$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#guldthunder_advent)金凤雷霆降临卡$(/l)"
+            "text": "生成群系：$(l:den_o/dimensions/sands_of_time)时间沙漠$(/l)$(br2)掉落$(li)1张 $(l:ryuki/items/contract_advent_cards#guldthunder_advent)金凤雷霆降临卡$(/l)"
         }
     ]
 }

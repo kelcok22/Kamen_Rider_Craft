@@ -13,7 +13,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bio_winder_vent",
 			"title": " ",
-			"text": "掉落自:$(li)$(l:misc/blocks/deepslate_glass_ryuki)深层降临玻璃$(/l)"
+			"text": "掉落自:$(li)深层降临玻璃"
 		}
 	]
 }

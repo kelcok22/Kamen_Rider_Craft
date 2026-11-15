@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "通过挖掘$(l:misc/blocks/boss_blocks#evol_boss_block)Evol BOSS召唤方块$(/l)召唤而来$(br2)特殊机制：$(li)若背包中有$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)，生命值低于100时将切换$(l:build/riders/evol#black_hole)黑洞$(/l)形态$(li)若背包中有$(l:misc/blocks/last_pandora_panel_black)潘多拉嵌板(黑)$(/l)，生命值低于50时将变身为$(l:build/riders/evol#phantom_state)Evol怪人状态$(/l)$(li)处于黑洞形态或怪人形态时可以飞行$(br2)掉落物见下一页"
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#evol_boss_block)Evol BOSS召唤方块$(/l)召唤而来$(br2)特殊机制：$(li)若背包中有$(l:misc/blocks/machine_blocks#pandora_box)潘多拉魔盒$(/l)，生命值低于100时将切换$(l:build/riders/evol#black_hole)黑洞$(/l)形态$(li)若背包中有$(l:build/arsenal/last_pandora_panel_black)潘多拉嵌板(黑)$(/l)，生命值低于50时将变身为$(l:build/riders/evol#phantom_state)Evol怪人状态$(/l)$(li)处于黑洞形态或怪人形态时可以飞行$(br2)掉落物见下一页"
 		},
 		{
 			"type": "patchouli:text",

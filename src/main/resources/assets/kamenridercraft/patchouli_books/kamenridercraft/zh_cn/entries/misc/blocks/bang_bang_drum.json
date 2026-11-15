@@ -17,7 +17,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "$(li)$(l:ex_aid/arsenal/energy_items#end_energy_item)终末能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#halt_energy_item)停止能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#flatten_energy_item)平面化能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#lucky_energy能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#sleep_energy_item)睡眠能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#recover_energy_item)回复能力$(/l)（4%）"
+            "text": "$(li)$(l:ex_aid/arsenal/energy_items#end_energy_item)终末能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#halt_energy_item)停止能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#flatten_energy_item)平面化能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#lucky_energy_item)幸运能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#sleep_energy_item)睡眠能力$(/l)（4%）$(li)$(l:ex_aid/arsenal/energy_items#recover_energy_item)回复能力$(/l)（4%）"
         }
     ]
 }

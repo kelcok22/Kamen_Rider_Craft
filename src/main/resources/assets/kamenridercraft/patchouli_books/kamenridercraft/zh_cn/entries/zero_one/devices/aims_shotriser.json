@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "shotriser_vulcan",
-			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/vulcan)假面骑士巴尔坎"
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/vulcan)假面骑士巴尔坎$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "shotriser_valkyrie",
 			"title": "艾姆斯射击升华器(瓦尔基里)",
-			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/valkyrie)假面骑士瓦尔基里"
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)与$(l:zero_one/devices/armor)01装甲$(/l)一起穿戴，可变身为$(l:zero_one/riders/valkyrie)假面骑士瓦尔基里$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -26,4 +26,4 @@
 			"recipe": "kamenridercraft:zero_one/shotriser_valkyrie"
 		}
 	]
-}
+		}

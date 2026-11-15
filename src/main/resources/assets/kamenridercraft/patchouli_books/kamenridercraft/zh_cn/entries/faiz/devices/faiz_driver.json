@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/faiz#faiz)假面骑士Faiz"
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/faiz#faiz)假面骑士Faiz$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -14,4 +14,4 @@
 			"recipe2": "kamenridercraft:faiz/faiz_driver_drive"
 		}
 	]
-}
+		}

@@ -9,12 +9,16 @@
 			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)由$(l:zeztz/riders/dawn)假面骑士黎明$(/l)使用"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zeztz/breakam_dawn_souken"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:breakam_dawn_souken_r",
+		    "text": "物品目前无法获得"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:zeztz/breakam_dawn_souken2"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:breakam_dawn_souken_r",
+		    "text": "物品目前无法获得"
 		}
 	]
 }

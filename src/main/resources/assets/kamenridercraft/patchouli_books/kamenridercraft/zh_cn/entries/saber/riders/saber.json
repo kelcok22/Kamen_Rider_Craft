@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)风暴猎鹰效果：$(li)夜视$(li)飞行"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)风暴猎鹰效果：$(li)夜视$(li)飞行"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)西游记效果：$(li)跳跃提升 III$(li)力量 II"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)西游记效果：$(li)跳跃提升 III$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -53,12 +53,12 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "绯红飞龙形态",
-			"text": "通过使用 $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)风暴猎鹰$(/l) 与 $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)西游记 奇幻驾驭书 进行形态切换"
+			"text": "通过使用 $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)风暴猎鹰$(/l) 与 $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)西游记 奇幻驾驭书 进行形态切换$(/l)"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)风暴猎鹰效果：$(li)夜视$(li)飞行$(br2)西游记效果：$(li)跳跃提升 III$(li)力量 II"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)风暴猎鹰效果：$(li)夜视$(li)飞行$(br2)西游记效果：$(li)跳跃提升 III$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，剧场版)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 IV$(li)抗性提升 III$(li)跳跃提升 VI$(li)抗火$(li)力量（持剑时）"
+			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，剧场版)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 IV$(li)抗性提升 III$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -137,7 +137,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "绯红圣刃形态",
-			"text": "通过使用 $(l:saber/arsenal/haouken_xross_saber)刃王剑十圣刃$(/l) 与 $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)风暴猎鹰$(/l) 及 $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)西游记 奇幻驾驭书 进行形态切换"
+			"text": "通过使用 $(l:saber/arsenal/haouken_xross_saber)刃王剑十圣刃$(/l) 与 $(l:saber/items/wonder_ride_books#storm_eagle_wonder_ride_book)风暴猎鹰$(/l) 及 $(l:saber/items/wonder_ride_books#saiyuu_journey_wonder_ride_book)西游记 奇幻驾驭书 进行形态切换$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -151,7 +151,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "特装三册形态",
-			"text": "通过使用 $(l:saber/arsenal/haouken_xross_saber)刃王剑十圣刃$(/l) 与 $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记$(/l) 及 $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯 奇幻驾驭书 进行形态切换"
+			"text": "通过使用 $(l:saber/arsenal/haouken_xross_saber)刃王剑十圣刃$(/l) 与 $(l:saber/items/wonder_ride_books#lion_senki_wonder_ride_book)雄狮战记$(/l) 及 $(l:saber/items/wonder_ride_books#lamp_do_alngina_wonder_ride_book)阿兰基那神灯 奇幻驾驭书 进行形态切换$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃：Final Stage (2021年，舞台剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)力量（持剑时）$(li)速度 IV$(li)抗性提升 IV$(li)急迫 VI$(li)跳跃提升 VI$(li)抗火"
+			"text": "登场于：$(li)假面骑士圣刃：Final Stage (2021年，舞台剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)速度 IV$(li)抗性提升 IV$(li)急迫 VI$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 × Ghost (2021年，TTFC特别篇)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)力量（持剑时）$(li)灵体漂浮$(li)跳跃提升 III$(li)抗火"
+			"text": "登场于：$(li)假面骑士圣刃 × Ghost (2021年，TTFC特别篇)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升$(li)灵体漂浮$(li)跳跃提升 III$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)雄狮战记效果：$(li)斩击提升$(li)力量（持剑时）$(li)水下呼吸$(li)急迫"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)雄狮战记效果：$(li)斩击提升$(li)水下呼吸$(li)急迫"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)尖针刺猬效果：$(li)速度 II$(li)抗性提升"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)尖针刺猬效果：$(li)速度 II$(li)抗性提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)杰克与豌豆效果：$(li)急迫$(li)饱和"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)杰克与豌豆效果：$(li)急迫$(li)饱和"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)彼得幻想曲效果：$(li)速度 III"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)彼得幻想曲效果：$(li)速度 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)亚瑟王效果：$(li)速度 III$(li)力量 II"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)亚瑟王效果：$(li)速度 III$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)不莱梅摇滚乐队效果：$(li)速度 V$(li)急迫 V"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)不莱梅摇滚乐队效果：$(li)速度 V$(li)急迫 V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)力量（持剑时）$(li)夜视$(li)急迫 II"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)阿兰基那神灯效果：$(li)斩击提升$(li)夜视$(li)急迫 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,9 +338,9 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)猿飞忍者传奇效果：$(li)速度 III$(li)跳跃提升 VII"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)猿飞忍者传奇效果：$(li)速度 III$(li)跳跃提升 VII"
 		},
-				{
+		{
 			"type": "patchouli:entity",
 			"anchor": "kobuta_3_kyoudai",
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:seiken_swordriver_saber\",components:{custom_data:{slot_tex1:\"kamenridercraft:brave_dragon_wonder_ride_book\",slot_tex2:\"kamenridercraft:saber_blank_2\",slot_tex3:\"kamenridercraft:kobuta_3_kyoudai_wonder_ride_book\"}},Count:1b},{id:\"kamenridercraft:saberlegs\",Count:1b},{id:\"kamenridercraft:sabertroso\",Count:1b},{id:\"kamenridercraft:saberhead\",Count:1b}]}",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)三只小猪效果：$(li)抗性提升 II"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)三只小猪效果：$(li)抗性提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)汉森纳茨和格雷特效果：$(li)速度 II$(li)急迫 III$(li)饱和"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)汉森纳茨和格雷特效果：$(li)速度 II$(li)急迫 III$(li)饱和"
 		},
 		{
 			"type": "patchouli:entity",
@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)DX长颈鹿的报恩奇幻驾驭书 (2020年，玩具系列)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)长颈鹿的报恩效果：$(li)速度 III$(li)急迫 III"
+			"text": "登场于：$(li)DX长颈鹿的报恩奇幻驾驭书 (2020年，玩具系列)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)长颈鹿的报恩效果：$(li)速度 III$(li)急迫 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)超级电视君 (2020年12月，杂志)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)猿蟹战争效果：$(li)抗性提升 II$(li)力量 II"
+			"text": "登场于：$(li)超级电视君 (2020年12月，杂志)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)猿蟹战争效果：$(li)抗性提升 II$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)龟兔赛跑效果：$(li)速度 VI"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)龟兔赛跑效果：$(li)速度 VI"
 		},
 		{
 			"type": "patchouli:entity",
@@ -422,7 +422,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)DX封神假面演艺奇幻驾驭书 (2020年，玩具系列)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)封神假面演艺效果：$(li)速度 II$(li)跳跃提升 IV"
+			"text": "登场于：$(li)DX封神假面演艺奇幻驾驭书 (2020年，玩具系列)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)封神假面演艺效果：$(li)速度 II$(li)跳跃提升 IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -436,7 +436,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)月之公主辉夜效果：$(li)夜视 II$(li)急迫 III$(li)速度 II"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)月之公主辉夜效果：$(li)夜视 II$(li)急迫 III$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -450,7 +450,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)时髦的地藏先生效果：$(li)饱和 II$(li)幸运 III"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)时髦的地藏先生效果：$(li)饱和 II$(li)幸运 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -464,7 +464,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)一寸武士效果：$(li)急迫 V$(li)速度 V"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)一寸武士效果：$(li)急迫 V$(li)速度 V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -478,7 +478,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)大将军桃一郎效果：$(li)饱和 III$(li)急迫 II$(li)速度 II"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)大将军桃一郎效果：$(li)饱和 III$(li)急迫 II$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -492,7 +492,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)大剑豪浦岛二郎效果：$(li)饱和 III$(li)抗性提升 II$(li)速度 II"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)大剑豪浦岛二郎效果：$(li)饱和 III$(li)抗性提升 II$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -506,7 +506,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Saber",
-			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)力量（持剑时）$(li)急迫$(li)抗火$(br2)大横钢金三郎效果：$(li)急迫 II$(li)力量 II"
+			"text": "登场于：$(li)拔剑！圣剑驱动器大百科 (2020年，网站)$(br2)通过穿戴$(l:saber/devices/seiken_swordriver#seiken_swordriver_saber)圣刃剑驱动器$(/l)进行变身$(br2)勇气飞龙效果：$(li)斩击提升$(li)急迫$(li)抗火$(br2)大横钢金三郎效果：$(li)急迫 II$(li)力量 II"
 		}
 	]
-}
+		}

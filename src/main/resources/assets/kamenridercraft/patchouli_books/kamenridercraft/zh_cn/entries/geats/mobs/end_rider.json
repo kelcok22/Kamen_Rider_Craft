@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "生成群系：末地高地$(br2)掉落$(items/blank_rider_core_id)空白ID核心$(/l)$(li)1个$(l:geats/devices/desire_driver#desire_driver_the_end_riders)欲望驱动器(The End骑士)$(/l) (20%)$(li)1个$(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l) (30%)$(li)1个$(l:geats/items/hatena_mission_box)代扣任务盒$(/l) (50%)$(br2)欲望进化$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l) (5%)$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l) (5%)"
+			"text": "生成群系：末地高地$(br2)掉落$(items/blank_rider_core_id)空白ID核心$(li)1个$(l:geats/devices/desire_driver#desire_driver_the_end_riders)欲望驱动器(The End骑士)$(/l) (20%)$(li)1个$(l:geats/items/gigant_mission_box)超级任务盒极狐类型$(/l) (30%)$(li)1个$(l:geats/items/hatena_mission_box)代扣任务盒$(/l) (50%)$(br2)欲望进化$(li)$(l:geats/mobs/premium_kekera)至尊呱呱拉$(/l) (5%)$(li)$(l:geats/mobs/premium_beroba)至尊贝洛芭$(/l) (5%)"
 		}
 	]
 }

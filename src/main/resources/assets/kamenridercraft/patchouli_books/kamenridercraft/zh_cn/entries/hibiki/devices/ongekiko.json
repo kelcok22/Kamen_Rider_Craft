@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "hibikidriver",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/hibiki)假面骑士响鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/hibiki)假面骑士响鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "eikidriver",
 			"title": "音击鼓·白绿",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/eiki)假面骑士锐鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/eiki)假面骑士锐鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "dankidriver",
 			"title": "音击鼓·御影盘",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/danki)假面骑士弹鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/danki)假面骑士弹鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -39,7 +39,7 @@
 			"type": "patchouli:text",
 			"anchor": "goukidriver",
 			"title": "音击子·金刚",
-			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/gouki)假面骑士刚鬼"
+			"text": "登场于：$(li)假面骑士响鬼 (2005年，电视剧)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/gouki)假面骑士刚鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -61,7 +61,7 @@
 			"type": "patchouli:text",
 			"anchor": "kabukidriver",
 			"title": "音击子(歌舞鬼)",
-			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/kabuki)假面骑士歌舞鬼"
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/kabuki)假面骑士歌舞鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -73,7 +73,7 @@
 			"type": "patchouli:text",
 			"anchor": "toukidriver",
 			"title": "音击子(冻鬼)",
-			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/touki)假面骑士冻鬼"
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/touki)假面骑士冻鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -84,7 +84,7 @@
 			"type": "patchouli:text",
 			"anchor": "nishikidriver",
 			"title": "音击子(西鬼)",
-			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/nishiki)假面骑士西鬼"
+			"text": "登场于：$(li)假面骑士响鬼与7人的战鬼 (2005年，电影)$(br2)与$(l:hibiki/devices/armor)响鬼装甲$(/l)一起穿戴，可变身为$(l:hibiki/riders/nishiki)假面骑士西鬼$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -92,4 +92,4 @@
 			"recipe": "kamenridercraft:hibiki/nishikidriver"
 		}
 	]
-}
+		}

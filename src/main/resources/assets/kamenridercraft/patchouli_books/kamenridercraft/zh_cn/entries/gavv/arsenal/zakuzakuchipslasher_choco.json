@@ -10,7 +10,8 @@
 		},
 		{
 			"type": "patchouli:crafting",
+			"title": " ",
 			"recipe": "kamenridercraft:gavv/zakuzakuchipslasher_choco"
 		}
 	]
-}
+		}

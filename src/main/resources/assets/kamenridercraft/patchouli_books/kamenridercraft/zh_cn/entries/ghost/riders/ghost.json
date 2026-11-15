@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)夜视$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持有武器时）$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 IV$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)急迫 II$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)射击推进 II$(li)夜视 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)灵体漂浮$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)射击推进$(li)灵体漂浮$(li)跳跃提升 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)失重 VIII$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)失重 IV$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)急迫 II$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)射击推进 II$(li)急迫 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -100,7 +100,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)急迫$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)手臂加长 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)力量"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)斩击提升 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)灵体漂浮$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)雷达$(li)射击推进 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 III$(li)抗性提升 II$(li)灵体漂浮$(li)跳跃提升 VI$(li)力量 II$(li)飞行"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 II$(li)夜视$(li)生命恢复 III$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)手臂加长 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 II$(li)灵体漂浮$(li)跳跃提升 VI$(li)力量 III"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)灵体漂浮$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -198,7 +198,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)灵体漂浮$(li)抗火$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)炎拳 II$(li)灵体漂浮$(li)生命提升$(li)抗火$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)急迫 II$(li)灵体漂浮$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)拳力提升 II$(li)灵体漂浮$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)夜视$(li)灵体漂浮$(li)跳跃提升$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)水下呼吸$(li)夜视$(li)灵体漂浮$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -240,7 +240,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)生命恢复 IV$(li)灵体漂浮$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 III$(li)生命恢复 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/eyecon_driver_g)眼魂驱动器G$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 III$(li)水下呼吸$(li)夜视 II$(li)生命恢复 II$(li)灵体漂浮$(li)抗火$(li)力量 III"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/eyecon_driver_g)眼魂驱动器G$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)水下呼吸$(li)抗性提升 II$(li)夜视$(li)生命恢复$(li)灵体漂浮$(li)抗火$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 IV$(li)灵体漂浮$(li)力量 VI"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)滑翔$(li)抗性提升 IV$(li)灵体漂浮$(li)生命提升 IV$(li)饱和 III$(li)跳跃提升 II$(li)力量 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man对Ex-Aid & Ghost with传说骑士 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 IV$(li)夜视$(li)生命恢复 III$(li)急迫 III$(li)灵体漂浮$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man对Ex-Aid & Ghost with传说骑士 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 III$(li)抗性提升$(li)夜视$(li)生命恢复 II$(li)灵体漂浮$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升 III$(li)生命恢复 III$(li)灵体漂浮$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)生命恢复 II$(li)灵体漂浮$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：最终舞台 (2017年，舞台表演)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升 V$(li)急迫 III$(li)灵体漂浮$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Ghost：最终舞台 (2017年，舞台表演)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 III$(li)夜视$(li)灵体漂浮$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)生命恢复 II$(li)灵体漂浮$(li)饱和 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)圣诞快乐$(li)灵体漂浮$(li)饱和 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)灵体漂浮$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)反胃 II$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)反射 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)雷达$(li)海豚的恩惠$(li)夜视$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -422,7 +422,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)生命恢复 II$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)生命恢复 II$(li)灵体漂浮$(li)范围修复"
 		},
 		{
 			"type": "patchouli:entity",
@@ -436,7 +436,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)夜视$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -464,7 +464,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Buttobasoul (2016年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)水下呼吸 II$(li)灵体漂浮$(li)力量 III"
+			"text": "登场于：$(li)假面骑士Buttobasoul (2016年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)水下呼吸$(li)灵体漂浮$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -478,7 +478,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，DVD)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)灵体漂浮$(li)抗火"
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，DVD)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)拳力提升$(li)灵体漂浮$(li)跳跃提升 II$(br2)专属技能：$(li)骑士$(li)骑士拳"
 		},
 		{
 			"type": "patchouli:entity",
@@ -492,7 +492,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)灵体漂浮$(li)跳跃提升 III$(li)力量 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)拳力提升$(li)灵体漂浮$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -506,7 +506,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)拳力提升 III$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -520,7 +520,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)力量"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)灵体漂浮$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -548,7 +548,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)抗性提升$(li)夜视$(li)灵体漂浮$(li)力量 III"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)夜视$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -562,7 +562,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)急迫 II$(li)灵体漂浮$(li)力量 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 II$(li)急迫 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -590,7 +590,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 IV$(li)急迫 IV$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)急迫 II$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -604,7 +604,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)急迫$(li)灵体漂浮$(li)力量 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)灵体漂浮$(li)力量 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -618,7 +618,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)灵体漂浮$(li)力量"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)抗性提升$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -646,7 +646,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持有武器时）$(li)速度 II$(li)灵体漂浮$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)拳力提升$(li)灵体漂浮$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -660,7 +660,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视 II$(li)急迫 II$(li)灵体漂浮$(li)跳跃提升 III"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)夜视$(li)急迫 II$(li)灵体漂浮$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -674,7 +674,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -688,7 +688,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)抗火"
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)灵体漂浮$(li)抗火 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -702,7 +702,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)急迫$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)斩击提升 II$(li)抗性提升$(li)灵体漂浮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -716,7 +716,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)灵体漂浮$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，网络剧)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)灵体漂浮$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -730,7 +730,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，DVD)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升 II$(li)夜视$(li)急迫 II$(li)力量 II"
+			"text": "登场于：$(li)假面骑士Ghost：传说！骑士之魂！ (2016年，DVD)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 IV$(li)抗性提升 III$(li)夜视$(li)灵体漂浮$(li)跳跃提升 III$(li)力量 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -744,7 +744,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Ghost",
-			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man对Ex-Aid & Ghost with传说骑士 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度$(li)急迫$(li)灵体漂浮"
+			"text": "登场于：$(li)假面骑士平成世代：Dr. Pac-Man对Ex-Aid & Ghost with传说骑士 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/ghost_driver#ghost_driver)Ghost驱动器$(/l)进行变身$(br2)该形态可由任何Ghost驱动器或兆目润泽器使用者使用$(br2)状态效果：$(li)速度 II$(li)游戏病$(li)灵体漂浮"
 		}
 	]
-}
+		}

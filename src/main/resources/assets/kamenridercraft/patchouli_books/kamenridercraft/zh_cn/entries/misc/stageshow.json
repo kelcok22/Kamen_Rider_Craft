@@ -1,33 +1,232 @@
 {
-    "name": "舞台剧",
-    "icon": "minecraft:red_wool",
-    "category": "kamenridercraft:misc/misc",
-    "sortnum": 2,
-    "pages": [
-        {
-            "type": "patchouli:text",
-            "title": "舞台剧",
-            "text": "生成地点：森林、平原、热带草原、向日葵平原$(br2)不同骑士系列对应多种箱子战利品表（战利品见下页）"
-        },
-        {
-            "type": "patchouli:image",
-            "border": true,
-            "images": [
-                "kamenridercraft:patchouli_books/kamenridercraft/images/stageshow.png"
-            ],
-            "title": " "
-        },
-        {
-            "type": "patchouli:text",
-            "text": "Wizard战利品：$(li)3-7个 $(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)（x1-2）$(li)1个 $(l:wizard/items/wizard_rings#dark_ring)黑暗Wizard指环$(/l)$(br2)铠武战利品：$(li)3-7个 $(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)（x1-2）$(li)1个 $(l:gaim/items/lockseeds#maja_lockseed)魔蛇锁种$(/l)（83.3%）$(li)1个 $(l:gaim/items/lockseeds#kabi_orange_lockseed)卡比橙锁种$(/l)（16.7%）$(br2)Ghost战利品：$(li)3-7个 $(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（x1-2）$(li)1个 $(l:ghost/items/ghost_eyecons#new_ore_ghost_eyecon)新Ghost眼魂$(/l)"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "利维斯战利品：$(li)3-7个 $(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（x1-2）$(li)1个 $(l:revice/items/vistamps#blood_vade_vistamp)血腥贝德罪恶印章$(/l)$(br2)极狐战利品：$(li)3-7个 $(l:geats/items/blank_rider_core_id)空白ID核心$(/l)（x1-2）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)大阪极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)福冈极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)名古屋极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)东京极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/arsenal/laser_raise_bazooka)镭射升华巴祖卡$(/l)（11.1%）"
-        },
-        {
-            "type": "patchouli:text",
-            "text": "加布战利品：$(li)3-7个 $(l:gavv/items/blank_gochizo)空白饱藏$(/l)（x1-2）$(li)1个 $(l:gavv/items/gochizo#partea_gochizo)派对司康饱藏$(/l)（20%）$(li)1个 $(lvchizo#达巧克力20:#_ch$()（20%）$(li)1个 $(l:gavv/items/gochizo#mensen_gochizo)人形烧饱藏$(/l)（20%）$(li)1个 $(l:gavv/items/gochizo#takosen_gochizo)章鱼烧饱藏$(/l)（10%）$(li)1个 $(l:gavv/items/gochizo#ningyo_gochizo)人鱼饱藏$(/l)（10%）$(br2)Zeztz战利品：$(li)3-7个 $(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)（x1-2）$(li)1个 $(l:zeztz/items/capsems#charge_capsem)充能梦境胶囊$(/l)"
-        }
-    ]
-}
+	"name": "舞台剧",
+	"icon": "minecraft:red_wool",
+	"category": "kamenridercraft:misc/misc",
+	"sortnum": 2,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"title": "舞台剧",
+			"text": "生成地点：森林、平原、热带草原、向日葵平原$(br2)不同骑士系列对应多种箱子战利品表（战利品见下页）$(br2)跳转舞台剧$(l:misc/stageshow#stageshow_grunt)杂兵$(/l)页面"
+		},
+		{
+			"type": "patchouli:image",
+			"border": true,
+			"images": [
+				"kamenridercraft:patchouli_books/kamenridercraft/images/stageshow.png"
+			],
+			"title": " "
+		},
+		{
+			"type": "patchouli:text",
+			"text": "Wizard战利品：$(li)3-7个 $(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)（x1-2）$(li)1个 $(l:wizard/items/wizard_rings#dark_ring)黑暗Wizard指环$(/l)$(br2)铠武战利品：$(li)3-7个 $(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)（x1-2）$(li)1个 $(l:gaim/items/lockseeds#maja_lockseed)魔蛇锁种$(/l)（83.3%）$(li)1个 $(l:gaim/items/lockseeds#kabi_orange_lockseed)卡比橙锁种$(/l)（16.7%）$(br2)Ghost战利品：$(li)3-7个 $(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（x1-2）$(li)1个 $(l:ghost/items/ghost_eyecons#new_ore_ghost_eyecon)新Ghost眼魂$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "利维斯战利品：$(li)3-7个 $(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（x1-2）$(li)1个 $(l:revice/items/vistamps#blood_vade_vistamp)血腥贝德罪恶印章$(/l)$(br2)极狐战利品：$(li)3-7个 $(l:geats/items/blank_rider_core_id)空白ID核心$(/l)（x1-2）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_osaka)大阪极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_fukuoka)福冈极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_nagoya)名古屋极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/items/rider_core_ids#geats_rider_core_id_tokyo)东京极狐ID核心$(/l)（22.2%）$(li)1个 $(l:geats/arsenal/laser_raise_bazooka)镭射升华巴祖卡$(/l)（11.1%）"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "加布战利品：$(li)3-7个 $(l:gavv/items/blank_gochizo)空白饱藏$(/l)（x1-2）$(li)1个 $(l:gavv/items/gochizo#partea_gochizo)派对司康饱藏$(/l)（20%）$(li)1个 $(lvchizo#达巧克力20:#_ch$()（20%）$(li)1个 $(l:gavv/items/gochizo#mensen_gochizo)人形烧饱藏$(/l)（20%）$(li)1个 $(l:gavv/items/gochizo#takosen_gochizo)章鱼烧饱藏$(/l)（10%）$(li)1个 $(l:gavv/items/gochizo#ningyo_gochizo)人鱼饱藏$(/l)（10%）$(br2)Zeztz战利品：$(li)3-7个 $(l:zeztz/items/code_capsem)暗码组织胶囊$(/l)（x1-2）$(li)1个 $(l:zeztz/items/capsems#charge_capsem)充能梦境胶囊$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "舞台剧时间",
+			"text": "接下来是舞台剧杂兵和首领时间."
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "stageshow_grunt",
+			"entity": "kamenridercraft:stageshow_grunt",
+			"name": "杂兵",
+			"text": "生成于$(l:misc/stageshow)舞台剧$(/l)结构的刷怪笼$(br)生命值: 45"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "舞台剧杂兵",
+			"text": "掉落$(li)2-4个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(br2)圣诞彩蛋：$(li)12月21日至28日期间被击杀,额外掉落1个$(l:misc/items/gift)礼物$(/l)$(br2)交换表演:$(li)红色影月,骑士猎人Boot,假面骑士Alpha,假面骑士Beta,假面骑士Zuccocade,假V3,假面骑士Uzai,假面骑士黑暗Wizard,假一号,ChopHopper,假面骑士Lady,假面骑士魔蛇,cronus崩原体"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "red_shadow_moon",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:shadow_charger\",components:{custom_data:{slot_tex1:\"kamenridercraft:creation_king_stone\"}},Count:1b},{id:\"kamenridercraft:blacklegs\",Count:1b},{id:\"kamenridercraft:blacktorso\",Count:1b},{id:\"kamenridercraft:blackhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "红色影月",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:misc/items/rider_circuit)骑士电路$(/l)$(li)1个$(l:black/items/creation_king_stone)帝王石(红色影月)$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "boot",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:boot_driver\",Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "骑士猎人Boot",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:fourze/items/astroswitch)空白开关$(/l)$(li)1个$(l:fourze/items/astroswitches#boot_switch)Boot开关$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "alpha",
+			"entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:alpha_driver\",Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假面骑士Alpha",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#alpha_mission_memory)Alpha使命芯片$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "beta",
+			  "entity": "kamenridercraft:rider_summon{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:beta_driver\",Count:1b},{id:\"kamenridercraft:faizlegs\",Count:1b},{id:\"kamenridercraft:faiztroso\",Count:1b},{id:\"kamenridercraft:faizhead\",Count:1b}]}",
+            "scale": -1,
+            "offset": 0.1,
+			"name": "假面骑士Beta",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:faiz/items/blank_mission_memory)空白使命芯片$(/l)$(li)1个$(l:faiz/items/mission_memories#beta_mission_memory)Beta使命芯片$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "zuccocade",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:zuccocade_belt\",Count:1b},{id:\"kamenridercraft:decadelegs\",Count:1b},{id:\"kamenridercraft:decadetroso\",Count:1b},{id:\"kamenridercraft:decadehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假面骑士Zuccocade",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:decade/items/blank_card)空白骑士驾驭卡$(/l)$(li)1个$(l:decade/items/zuccocade_card#zuccocade_card)Zuccocade假面驾驭卡$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fake_v3",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fake_double_typhoon\",Count:1b},{id:\"kamenridercraft:v3legs\",Count:1b},{id:\"kamenridercraft:v3troso\",Count:1b},{id:\"kamenridercraft:v3head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假V3",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:v3/devices/double_typhoon#fake_double_typhoon)假双重台风腰带$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "uzai",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:uzai_belt\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假面骑士Uzai",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)1个$(l:wizard/devices/uzai_belt)Uzai腰带$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "dark_wizard",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:dark_wizardriver\",Count:1b},{id:\"kamenridercraft:wizard_legs\",Count:1b},{id:\"kamenridercraft:wizard_troso\",Count:1b},{id:\"kamenridercraft:wizard_head\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假面骑士黑暗Wizard",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:wizard/items/magic_stones#wizardgem)橙魔法石$(/l)$(li)1个$(l:wizard/items/wizard_rings#dark_ring)黑暗Wizard指环$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "fake_ichigo",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:typhoon_fake_ichigo\",Count:1b},{id:\"kamenridercraft:ichigolegs\",Count:1b},{id:\"kamenridercraft:ichigotroso\",Count:1b},{id:\"kamenridercraft:ichigohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假一号",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:misc/items/rider_circuit)骑士电路板$(/l)$(li)1个$(l:ichigo/devices/typhoon#typhoon_fake_ichigo)台风腰带 (假一号)$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chophopper",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:chophopper_rider_belt\",Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "ChopHopper",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:kabuto/items/mini_zecter)原虫外壳$(/l)$(li)1个$(l:kabuto/items/zecters#chophopper_zecter)蝗虫昆虫仪(ChopHopper)$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "lady",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:lady_rider_belt\",Count:1b},{id:\"kamenridercraft:kabutolegs\",Count:1b},{id:\"kamenridercraft:kabutotroso\",Count:1b},{id:\"kamenridercraft:kabutohead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假面骑士Lady",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1个$(l:kabuto/items/zecters#lady_zecter)瓢虫昆虫仪$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "maja",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:sengoku_driver_maja\",components:{custom_data:{slot_tex1:\"kamenridercraft:maja_lockseed\",slot_tex2:\"kamenridercraft:basic_maja_core\"}},Count:1b},{id:\"kamenridercraft:gaimlegs\",Count:1b},{id:\"kamenridercraft:gaimtroso\",Count:1b},{id:\"kamenridercraft:gaimhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "假面骑士魔蛇",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:gaim/items/himawari_lockseed)瓜子锁种$(/l)$(li)1个$(l:gaim/items/lockseeds#maja_lockseed)魔蛇锁种$(/l)"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chronicle_bugster",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:gashacon_bugvisor_ii_chronicle_bugster\",Count:1b},{id:\"kamenridercraft:ex_aidlegs\",Count:1b},{id:\"kamenridercraft:ex_aidtroso\",Count:1b},{id:\"kamenridercraft:ex_aidhead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "cronus崩原体",
+			"text": "有20%的几率代替$(l:misc/stageshow#stageshow_grunt)舞台剧杂兵$(/l)表演$(br)生命值: 75"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "掉落$(li)1-3个$(l:ex_aid/items/blank_gashat)未完成的卡带$(/l)$(li)1个$(l:ex_aid/items/rider_gashats#unfinished_kamen_rider_chronicle_gashat)未完成的编年史卡带$(/l)"
+		}
+	]
+		}

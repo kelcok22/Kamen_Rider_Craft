@@ -235,7 +235,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "迅疾战士",
-			"text": "通过使用 $(l:misc/items/card_warrior_cards#jinrai_no_senshi)生存卡 迅疾$(/l) 进行形态切换"
+			"text": "通过使用 $(l:misc/items/ride_monster_cards#jinrai_no_senshi)生存卡 迅疾$(/l) 进行形态切换"
 		},
 		{
 			"type": "patchouli:text",
@@ -263,7 +263,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "超级模式",
-			"text": "通过使用 $(l:misc/items/card_warrior_cards#grandgouram)格莱姆怪物驾驭卡$(/l) 进行形态切换"
+			"text": "通过使用 $(l:misc/items/ride_monster_cards#grandgouram)格莱姆怪物驾驭卡$(/l) 进行形态切换"
 		},
 		{
 			"type": "patchouli:text",

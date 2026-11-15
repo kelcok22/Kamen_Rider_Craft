@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_zangetsu_shin",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/zangetsu_shin)假面骑士斩月·真"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/zangetsu_shin)假面骑士斩月·真$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -19,7 +19,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_duke",
 			"title": "创世纪驱动器（公爵）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/duke)假面骑士公爵"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/duke)假面骑士公爵$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -31,7 +31,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_sigurd",
 			"title": "创世纪驱动器（西格德）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/sigurd)假面骑士西格德"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/sigurd)假面骑士西格德$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -43,7 +43,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_marika",
 			"title": "创世纪驱动器（女王）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/marika)假面骑士女王"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/marika)假面骑士女王$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -55,7 +55,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_baron_shin",
 			"title": "创世纪驱动器（巴隆）",
-			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/baron#lemon_energy)假面骑士巴隆"
+			"text": "登场于：$(li)假面骑士铠武（2013年，电视剧）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/baron#lemon_energy)假面骑士巴隆$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -66,7 +66,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_kurokage_shin",
 			"title": "创世纪驱动器（黑影·真）",
-			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/kurokage_shin)假面骑士黑影·真"
+			"text": "登场于：$(li)假面骑士铠武：足球大决战！黄金果实杯！（2014年，电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/kurokage_shin)假面骑士黑影·真$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -77,7 +77,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_tyrant",
 			"title": "创世纪驱动器（暴君）",
-			"text": "登场于：$(li)铠武外传：假面骑士巴隆（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/tyrant)假面骑士暴君"
+			"text": "登场于：$(li)铠武外传：假面骑士巴隆（2015年，V-Cinema电影）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/tyrant)假面骑士暴君$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -88,7 +88,7 @@
 			"type": "patchouli:text",
 			"anchor": "genesis_driver_ryugen_shin",
 			"title": "创世纪驱动器（龙玄）",
-			"text": "登场于：$(li)假面骑士：斗骑大战II 未使用文件（2014年，PS3游戏）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/ryugen#melon_energy)假面骑士龙玄"
+			"text": "登场于：$(li)假面骑士：斗骑大战II 未使用文件（2014年，PS3游戏）$(br2)与$(l:gaim/devices/armor)铠武装甲$(/l)一起穿戴，可变身为$(l:gaim/riders/ryugen#melon_energy)假面骑士龙玄$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -96,4 +96,4 @@
 			"recipe": "kamenridercraft:gaim/genesis_driver_ryugen_shin"
 		}
 	]
-}
+		}

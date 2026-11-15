@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由假面骑士01的 $(l:zero_one/riders/zero-one#metalcluster_hopper)金属原子簇蝗虫形态$(/l) 使用"
+			"text": "登场于：$(li)假面骑士01（2019年，电视剧）$(br2)由假面骑士01的 $(l:zero_one/riders/zero_one#metalcluster_hopper)金属原子簇蝗虫形态$(/l) 使用"
 		},
 		{
 			"type": "patchouli:crafting",

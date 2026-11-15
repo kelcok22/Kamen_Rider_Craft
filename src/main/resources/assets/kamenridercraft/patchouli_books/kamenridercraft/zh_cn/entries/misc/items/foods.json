@@ -39,7 +39,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:pudding",
             "title": " ",
-            "text": "可在 $(l:den_o/structures/denliner_gouka)时之列车的餐车$(/l)中找到$(br2)由熟练级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+            "text": "可在 $(l:den_o/structures/denliner_gouka)时之列车的餐车$(/l)中找到$(br2)由老手级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
         },
         {
             "type": "patchouli:text",
@@ -129,7 +129,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:mayo",
             "title": " ",
-            "text": "通过钓鱼获得$(br2)由熟练级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
+            "text": "通过钓鱼获得$(br2)由老手级 $(l:misc/villagers#candyshop_villager)糖果供应商$(/l) 交易"
         },
         {
             "type": "patchouli:text",
@@ -288,6 +288,18 @@
             "item": "kamenridercraft:helheim_fruit",
             "title": " ",
             "text": "可在$(l:gaim/structures/rosyuo_helheim_city)霸主$(/l)$(l:gaim/structures/redyue_helheim_city)们的$(/l)$(l:gaim/structures/demushu_helheim_city)建筑$(/l)周围的可疑沙砾中找到$(br2)掉落自：$(li)赫尔海姆树叶"
+        },
+        {
+            "type": "patchouli:text",
+            "anchor": "takoyaki",
+            "title": "章鱼烧",
+            "text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)食用时恢复4点饥饿值"
+        },
+        {
+            "type": "patchouli:spotlight",
+            "link_recipe": true,
+            "item": "kamenridercraft:takoyaki",
+            "text": "可与新手级 $(l:misc/villagers#shocker_villager)修卡村民$(/l) 交易获得"
         }
     ]
 }

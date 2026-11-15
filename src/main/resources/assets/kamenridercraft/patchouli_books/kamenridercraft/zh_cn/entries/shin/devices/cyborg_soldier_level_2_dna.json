@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)真·假面骑士 序章 (1992年，电影)$(br2)与$(l:shin/devices/armor)真装甲$(/l)一起穿戴，可变身为$(l:shin/riders/cyborg_soldier_level_2)改造士兵Level 2"
+			"text": "登场于：$(li)真·假面骑士 序章 (1992年，电影)$(br2)与$(l:shin/devices/armor)真装甲$(/l)一起穿戴，可变身为$(l:shin/riders/cyborg_soldier_level_2)改造士兵Level 2$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:shin/cyborg_soldier_level_2_dna"
 		}
 	]
-}
+		}

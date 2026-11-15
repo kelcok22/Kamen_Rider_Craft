@@ -13,7 +13,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:riderman_helmet",
             "title": " ",
-            "text": "通过和新手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+            "text": "通过和新手级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
         }
     ]
 }

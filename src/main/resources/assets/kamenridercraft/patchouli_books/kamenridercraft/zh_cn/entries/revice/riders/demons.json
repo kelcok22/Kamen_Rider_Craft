@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士蒂蒙斯",
-			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)通过穿戴$(l:revice/devices/demons_driver#demons_driver)蒂蒙斯驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)中毒$(li)抗性提升 II$(li)力量 III$(br2)鳄鱼罪恶印章效果：$(li)拳力提升 V$(li)力量 IX（空手时）"
+			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)通过穿戴$(l:revice/devices/demons_driver#demons_driver)蒂蒙斯驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)中毒$(li)抗性提升 II$(li)力量 III$(br2)鳄鱼罪恶印章效果：$(li)拳力提升 V"
 		},
 		{
 			"type": "patchouli:entity",

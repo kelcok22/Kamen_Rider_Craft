@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)雷霆斩$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)雷霆斩 II$(li)抗性提升$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -38,13 +38,13 @@
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:fire_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_firestates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "烈火形态",
+			"name": "火焰形态",
 			"text": "通过使用 $(l:fourze/items/astroswitches#fire_switch)火开关$(/l) 进行形态切换"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)火焰射击$(li)跳跃提升 II$(li)抗火"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)夜视$(li)火焰射击$(li)跳跃提升 II$(li)抗火 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)大炮 III$(li)推 III$(li)拉 III$(li)缓慢$(li)抗性提升 III"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)推 III$(li)缓慢$(li)抗性提升 III$(li)拉 II$(li)反射$(li)力量$(br2)专属技能：$(li)大炮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)§b宇宙能量$(li)抗性提升 III$(li)抗火 II$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 IV$(li)§b宇宙能量$(li)抗性提升 IV$(li)夜视 II$(li)急迫 III$(li)跳跃提升 VI$(li)抗火 II$(li)力量 IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)推 II"
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO: Movie War Mega Max (2011年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)推进 II$(br2)专属技能：$(li)骑士踢"
 		},
 		{
 			"type": "patchouli:entity",
@@ -94,13 +94,13 @@
 			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:fourze_driver\",components:{custom_data:{slot_tex1:\"kamenridercraft:clear_drill_switch\",slot_tex2:\"kamenridercraft:cross_astroswitch\",slot_tex3:\"kamenridercraft:triangle_astroswitch\",slot_tex4:\"kamenridercraft:square_astroswitch\",slot_tex5:\"kamenridercraft:fourze_rocketdrillstates\"}},Count:1b},{id:\"kamenridercraft:fourze_legs\",Count:1b},{id:\"kamenridercraft:fourze_troso\",Count:1b},{id:\"kamenridercraft:fourze_head\",Count:1b}]}",
 			"scale": -1,
 			"offset": 0.1,
-			"name": "火箭旋钻形态",
+			"name": "火箭钻头形态",
 			"text": "背包中持有 $(l:fourze/items/astroswitches#rocket_switch)火箭开关$(/l) 时，通过使用 $(l:fourze/items/astroswitches#clear_drill_switch)清澈钻头开关$(/l) 进行形态切换"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze: Rocket Drill States of Friendship (2012年，超战斗DVD)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 III$(li)跳跃提升 II$(li)推 II"
+			"text": "登场于：$(li)假面骑士Fourze: Rocket Drill States of Friendship (2012年，超战斗DVD)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)急迫 III$(li)钻头 III$(li)跳跃提升 II$(li)推进 II$(br2)专属技能：$(li)骑士拳"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze: ~Ama High Graduation~ (2014年，小说)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)跳跃提升 II$(li)大炮 VII"
+			"text": "登场于：$(li)假面骑士Fourze: ~Ama High Graduation~ (2014年，小说)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)跳跃提升 II$(li)力量$(br2)专属技能：$(li)大炮x2"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)Kamen Rider Fourze the Movie: Everyone! Let's Feel The Universe! (2012年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度$(li)§b宇宙能量$(li)抗性提升 III$(li)跳跃提升 II$(li)抗火$(li)力量 IV"
+			"text": "登场于：$(li)Kamen Rider Fourze the Movie: Everyone! Let's Feel The Universe! (2012年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)斩击提升 IV$(li)§b宇宙能量$(li)抗性提升 IV$(li)抗火 II$(li)力量 V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -142,7 +142,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 III$(li)速度$(li)§b宇宙能量$(li)抗性提升 III$(li)跳跃提升 II$(li)抗火$(li)力量 IV"
+			"text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 V$(li)§b宇宙能量$(li)抗性提升 IV$(li)跳跃提升 IV$(li)推进 V$(li)抗火 II$(li)力量 V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -156,7 +156,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze × 蜡笔小新 (2012年，特别篇)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)二次元$(li)跳跃提升 II$(li)推 II$(li)§d快乐模式 V"
+			"text": "登场于：$(li)假面骑士Fourze × 蜡笔小新 (2012年，特别篇)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)速度$(li)二次元$(li)跳跃提升 II$(li)推进 II$(li)§d快乐模式 V"
 		},
 		{
 			"type": "patchouli:entity",
@@ -170,7 +170,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)推"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)推进$(br2)专属技能：$(li)骑士踢"
 		},
 		{
 			"type": "patchouli:entity",
@@ -184,7 +184,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)大炮"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)大炮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)缓降 VII"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)缓降 IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 VI"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升$(li)力量（持剑状态）"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -324,7 +324,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 VI$(li)力量 IX（空手状态）"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -366,7 +366,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 IV"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -394,7 +394,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)抗性提升 IV"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)抗性提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -408,7 +408,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)加特林"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)加特林"
 		},
 		{
 			"type": "patchouli:entity",
@@ -436,7 +436,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升$(li)力量（持剑状态）"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -464,7 +464,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)毒药抗性"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)生命恢复"
 		},
 		{
 			"type": "patchouli:entity",
@@ -478,7 +478,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)水下呼吸"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)烟雾"
 		},
 		{
 			"type": "patchouli:entity",
@@ -492,7 +492,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 IV"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -520,7 +520,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 VI"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -534,7 +534,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)急迫 V"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)急迫 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -548,7 +548,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拉 III"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拉 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -590,7 +590,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 V$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -604,7 +604,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -618,7 +618,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跨步"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)重力 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -660,7 +660,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)鱼!"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)鱼"
 		},
 		{
 			"type": "patchouli:entity",
@@ -674,7 +674,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)水下呼吸"
+			"text": "登场于：$(li)假面骑士Fourze (2011年，电视剧)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)肉弹冲击"
 		},
 		{
 			"type": "patchouli:entity",
@@ -688,7 +688,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 III"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -702,7 +702,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -716,7 +716,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 IV"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -730,7 +730,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 V"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)手臂加长 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -744,7 +744,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升 IV$(li)力量 IV（持剑状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -758,7 +758,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -772,7 +772,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)雷电拳 IV"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)雷电拳 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -786,7 +786,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)推"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)滑翔$(br2)专属技能：$(li)滑翔"
 		},
 		{
 			"type": "patchouli:entity",
@@ -800,7 +800,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -814,7 +814,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)大炮 IV"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)大炮"
 		},
 		{
 			"type": "patchouli:entity",
@@ -828,7 +828,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -842,7 +842,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升 III$(li)力量 III（持武器状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)斩击提升 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -856,7 +856,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -870,7 +870,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -884,7 +884,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)炎拳 IV"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)炎拳 III"
 		},
 		{
 			"type": "patchouli:entity",
@@ -898,7 +898,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 IV"
 		},
 		{
 			"type": "patchouli:entity",
@@ -940,7 +940,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)速度 VII"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)骑士踢"
 		},
 		{
 			"type": "patchouli:entity",
@@ -954,7 +954,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -968,7 +968,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)跳跃提升 VIII"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)骑士踢"
 		},
 		{
 			"type": "patchouli:entity",
@@ -996,7 +996,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 IV$(li)力量 VIII（空手状态）"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)拳力提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -1010,7 +1010,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Fourze",
-			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外效果$(li)大炮 II"
+			"text": "登场于：$(li)假面骑士Battle: Ganbaride (2008年，街机游戏)$(br2)通过穿戴$(l:fourze/devices/fourze_driver)Fourze驱动器$(/l)进行变身$(br2)状态效果：$(li)基础状态效果 + 以下额外技能$(li)大炮"
 		}
 	]
 }

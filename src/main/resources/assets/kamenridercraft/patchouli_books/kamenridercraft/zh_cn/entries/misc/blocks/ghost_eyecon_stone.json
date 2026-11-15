@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "挖掘此方块可获得 $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ghost眼魂$(/l)$(br2)需要铁镐或更好的镐子$(br2)$(l)自2025年万圣节更新起不再自然生成$(/l)$(br2)掉落：$(li)$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（47.5%）$(li)$(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)俺魂$(/l)（9.5%）$(li)$(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)武藏眼魂$(/l)（3.2%）$(li)$(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)爱迪生眼魂$(/l)（3.2%）"
+            "text": "挖掘此方块可获得 $(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)Ghost眼魂$(/l)$(br2)需要铁镐或更好的镐子$(br2)$(l)自2025年万圣节更新起不再自然生成$(br2)掉落：$(li)$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（47.5%）$(li)$(l:ghost/items/ghost_eyecons#ore_ghost_eyecon)俺魂$(/l)（9.5%）$(li)$(l:ghost/items/ghost_eyecons#musashi_ghost_eyecon)武藏眼魂$(/l)（3.2%）$(li)$(l:ghost/items/ghost_eyecons#edison_ghost_eyecon)爱迪生眼魂$(/l)（3.2%）"
         },
         {
             "type": "patchouli:spotlight",

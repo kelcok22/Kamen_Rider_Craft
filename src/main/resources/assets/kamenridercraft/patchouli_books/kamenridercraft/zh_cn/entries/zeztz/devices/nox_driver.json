@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/nox)假面骑士诺克斯"
+			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/nox)假面骑士诺克斯$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:zeztz/nox_driver"
 		}
 	]
-}
+		}

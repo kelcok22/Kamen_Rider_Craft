@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士鹿探",
-			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀（2022年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_seeker)欲望驱动器(鹿探)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)抗性提升 II$(br2)完善工程代扣效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)抗性提升 II$(li)爆裂射击$(li)炎拳 II$(br2)千兆武装代扣效果：$(li)飞行"
+			"text": "登场于：$(li)假面骑士极狐×利维斯：电影大逃杀（2022年，电影）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_seeker)欲望驱动器(鹿探)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)抗性提升 II$(br2)完善工程代扣效果：$(li)斩击提升 II$(li)抗性提升 II$(li)爆裂射击$(li)炎拳 II$(br2)千兆武装代扣效果：$(li)飞行"
 		}
 	]
 }

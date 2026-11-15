@@ -347,7 +347,7 @@
             "type": "patchouli:text",
             "anchor": "rampage_gatling_progrisekey",
             "title": "狂暴加特林程式升华钥",
-            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换巴尔坎的 $(l:zero_one/riders/vulcan#rampagevulcan)狂暴巴尔坎$(/l) 形态"
+            "text": "登场于：$(li)假面骑士01 (2019年，电视剧)$(br2)用于切换巴尔坎的 $(l:#rampage_gatling)狂暴巴尔坎$(/l) 形态"
         },
         {
             "type": "patchouli:crafting",

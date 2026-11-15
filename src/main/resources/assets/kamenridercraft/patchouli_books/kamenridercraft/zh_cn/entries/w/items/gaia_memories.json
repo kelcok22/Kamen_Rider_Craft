@@ -59,9 +59,9 @@
             "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)用于切换W的 $(l:w/riders/double#jokerjoker)王牌王牌$(/l) 形态，但也可与任何其他右侧盖亚记忆体搭配使用"
         },
         {
-            "type": "patchouli:crafting",
+            "type": "patchouli:spotlight",
             "title": " ",
-            "recipe": "kamenridercraft:w/joker_joker_memory",
+            "item": "kamenridercraft:joker_joker_memory",
             "text": "掉落自：$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
         },
         {
@@ -110,9 +110,9 @@
             "text": "登场于：$(li)假面骑士×假面骑士 W & Decade: Movie War 2010 (2009年，电影)$(br2)用于切换W的 $(l:w/riders/double#cyclonecyclone)疾风疾风$(/l) 形态，但也可与任何其他右侧盖亚记忆体搭配使用"
         },
         {
-            "type": "patchouli:crafting",
+            "type": "patchouli:spotlight",
             "title": " ",
-            "recipe": "kamenridercraft:w/cyclone_cyclone_memory",
+            "item": "kamenridercraft:cyclone_cyclone_memory",
             "text": "掉落自：$(li)$(l:decade/mobs/decade_violent)假面骑士Decade激情态$(/l)"
         },
         {

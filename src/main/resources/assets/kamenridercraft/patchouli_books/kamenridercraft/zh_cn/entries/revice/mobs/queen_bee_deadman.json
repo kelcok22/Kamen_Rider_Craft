@@ -11,7 +11,7 @@
         },
         {
             "type": "patchouli:text",
-            "text": "有2%概率从$(l:revice/mobs/giff_junior)基础恶魔$(/l)进化而来$(br2)掉落$(li)2-4个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)$(li)1个$(l:revice/items/vistamps#proto_queen_bee_vistamp)女王蜂原始罪恶印章$(/l)$(li)1个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（66.7%）$(li)1个$(l:revice/items/vistamps#koala_vistamp)水母原始罪恶印章$(/l)（16.7%）$(li)1个$(l:revice/items/vistamps#rafflesia_vistamp)蜗牛原始罪恶印章$(/l)（16.7%）"
+            "text": "有2%概率从$(l:revice/mobs/giff_junior)基础恶魔$(/l)进化而来$(br2)掉落$(li)2-4个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)$(li)1个$(l:revice/items/vistamps#proto_queen_bee_vistamp)女王蜂原始罪恶印章$(/l)$(li)1个$(l:revice/items/proto_vistamp)空白罪恶印章$(/l)（66.7%）$(li)1个$(l:revice/items/vistamps#koala_vistamp)水母原始罪恶印章$(/l)（16.7%）$(li)1个$(l:#raflessia_vistamp)蜗牛原始罪恶印章$(/l)（16.7%）"
         }
     ]
 }

@@ -49,7 +49,7 @@
       "link_recipe": true,
       "item": "kamenridercraft:tora_candroid",
       "anchor": "tora_candroid",
-      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换$(br2)可用于将$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)转换为$(l:ooo/arsenal/toridevendor)虎驾驭贩卖号$(/l)"
+      "text": "登场于：$(li)假面骑士OOO (2010年，电视剧)$(br2)会像驯服的狼一样攻击你击中的任何目标$(br2)右键可在罐头模式与动物模式之间切换$(br2)可用于将$(l:ooo/arsenal/ridevendor)驾驭贩卖号$(/l)转换为$(l:ooo/arsenal/ridevendor)虎驾驭贩卖号$(/l)"
     },
     {
       "type": "patchouli:entity",

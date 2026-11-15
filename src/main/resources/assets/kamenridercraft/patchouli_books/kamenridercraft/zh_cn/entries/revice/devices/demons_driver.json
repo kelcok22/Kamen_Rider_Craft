@@ -40,7 +40,7 @@
 			"type": "patchouli:text",
 			"anchor": "demons_driver_demons_trooper_a",
 			"title": "戴蒙斯驱动器（戴蒙斯士兵α版）",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons_trooper_a)假面骑士戴蒙斯士兵α"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons_trooper_a)假面骑士戴蒙斯士兵α$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -51,7 +51,7 @@
 			"type": "patchouli:text",
 			"anchor": "demons_driver_demons_trooper_b",
 			"title": "戴蒙斯驱动器（戴蒙斯士兵β版）",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons_trooper_b)假面骑士戴蒙斯士兵β"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/demons_trooper_b)假面骑士戴蒙斯士兵β$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -62,7 +62,7 @@
 			"type": "patchouli:text",
 			"anchor": "demons_driver_orteca",
 			"title": "戴蒙斯驱动器（欧鲁特加版）",
-			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/orteca)假面骑士欧鲁特加"
+			"text": "登场于：$(li)假面骑士十牙VS假面骑士欧鲁特加 (2023年，网络剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/orteca)假面骑士欧鲁特加$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -70,4 +70,4 @@
 			"recipe": "kamenridercraft:revice/demons_driver_orteca"
 		}
 	]
-}
+		}

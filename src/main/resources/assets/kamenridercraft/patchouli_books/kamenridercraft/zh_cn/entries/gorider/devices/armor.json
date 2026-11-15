@@ -9,16 +9,22 @@
 			"text": "与假面战队系列骑士的腰带配合使用，可变身为对应骑士"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gorider/akariderhead"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:akariderhead",
+		    "text": "物品目前无法获得"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gorider/akaridertroso"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:akaridertroso",
+		    "text": "物品目前无法获得"
 		},
 		{
-			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:gorider/akariderlegs"
+		    "type": "patchouli:spotlight",
+		    "link_recipe": false,
+		    "item": "kamenridercraft:akariderlegs",
+		    "text": "物品目前无法获得"
 		}
 	]
 }

@@ -360,7 +360,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:maja_lockseed",
 			"title": " ",
-			"text": "可在铠武系列$(l:misc/stageshow)舞台剧$(/l)中找到$(br2)掉落自：$(li)$(l:gaim/mobs/lord_baron)勋爵巴隆$(/l)"
+			"text": "可在铠武系列$(l:misc/stageshow)舞台剧$(/l)中找到$(br2)掉落自：$(li)$(l:gaim/mobs/lord_baron)勋爵巴隆$(/l)$(li)$(l:misc/stageshow#maja)假面骑士魔蛇$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -881,4 +881,4 @@
 			"text": "该物品目前无法获得"
 		}
 	]
-}
+		}

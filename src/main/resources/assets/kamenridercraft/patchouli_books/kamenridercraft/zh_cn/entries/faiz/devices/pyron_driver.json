@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "pyron_driver",
-			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/pyron#grand_prix_blue)假面骑士白龙"
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/pyron#grand_prix_blue)假面骑士白龙$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "pyron_driver_sr",
 			"title": "白龙驱动器(智慧红)",
-			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/pyron#sonia_red)假面骑士白龙"
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/pyron#sonia_red)假面骑士白龙$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "pyron_driver_mb",
 			"title": "白龙驱动器(午夜黑)",
-			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/pyron#midnight_black)假面骑士白龙"
+			"text": "登场于：$(li)ICON：筱原保角色艺术集 (2006年，画册)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/pyron#midnight_black)假面骑士白龙$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -36,4 +36,4 @@
 			"recipe": "kamenridercraft:faiz/pyron_driver_mb"
 		}
 	]
-}
+		}

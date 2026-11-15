@@ -13,7 +13,8 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:rocket_switch",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"title": " ",
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 11.9%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.9%"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +27,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:launcher_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 11.9%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.9%"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +40,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:drill_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 11.9%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.9%"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +53,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:radar_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 11.9%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.9%"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +66,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:magic_hand_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 10.5%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +79,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:camera_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 10.5%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +92,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:parachute_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 10.5%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +105,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chainsaw_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 10.5%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,20 +118,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hopping_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电力开关：约 10.5%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "elek_switch",
 			"title": "电力开关",
-			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#elek)电力状态$(/l)"
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#elekstates)电力状态$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:elek_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +144,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scissors_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +157,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:beat_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +170,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:chain_array_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +183,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:smoke_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +196,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:spike_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -208,7 +209,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:winch_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +222,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:flash_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -234,7 +235,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:shield_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -247,20 +248,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gatling_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放火开关：约 11.1%"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "fire_switch",
 			"title": "火开关",
-			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#fire)火焰状态$(/l)"
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#firestates)火焰状态$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:fire_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.1%"
 		},
 		{
 			"type": "patchouli:text",
@@ -273,7 +274,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:stealth_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -286,7 +287,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hammer_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -299,7 +300,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:water_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -312,7 +313,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:medical_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -325,7 +326,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:pen_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -338,7 +339,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wheel_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -351,7 +352,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:screw_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -364,7 +365,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hand_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
 		},
 		{
 			"type": "patchouli:text",
@@ -377,7 +378,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:scoop_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 10.3%"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "incomplete_magnet_switch_n",
+			"title": "未完成的北磁极开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)制作$(l:fourze/items/astroswitches#magnet_switch_n)北磁极开关$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:incomplete_magnet_switch_n",
+			"title": " ",
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 1.7%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放北磁极开关：约 6.9%"
 		},
 		{
 			"type": "patchouli:text",
@@ -386,11 +400,22 @@
 			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#magnetstates)磁极状态$(/l)和$(l:fourze/riders/fourze#n_magnet)北磁极组件$(/l)"
 		},
 		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:fourze/magnet_switch_n"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "incomplete_magnet_switch_s",
+			"title": "未完成的南磁极开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)制作$(l:fourze/items/astroswitches#magnet_switch_s)南磁极开关$(/l)"
+		},
+		{
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
-			"item": "kamenridercraft:magnet_switch_n",
+			"item": "kamenridercraft:incomplete_magnet_switch_s",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 7.4%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 1.7%"
 		},
 		{
 			"type": "patchouli:text",
@@ -399,11 +424,9 @@
 			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#magnetstates)磁极状态$(/l)和$(l:fourze/riders/fourze#s_magnet)南磁极组件$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:magnet_switch_s",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"recipe": "kamenridercraft:fourze/magnet_switch_s"
 		},
 		{
 			"type": "patchouli:text",
@@ -416,7 +439,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:freeze_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -429,7 +452,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:claw_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -442,7 +465,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:board_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -455,7 +478,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:giantfoot_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -468,7 +491,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:aero_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -481,7 +504,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:gyro_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -494,7 +517,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:net_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
 		},
 		{
 			"type": "patchouli:text",
@@ -507,7 +530,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:stamper_switch",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 11.1%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 2.6%"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "incomplete_cosmic_switch",
+			"title": "未完成的宇宙开关",
+			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)制作$(l:fourze/items/astroswitches#cosmic_switch)宇宙开关$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:incomplete_cosmic_switch",
+			"title": " ",
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放宇宙开关：约 3.7%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格留空：约 0.9%"
 		},
 		{
 			"type": "patchouli:text",
@@ -516,11 +552,9 @@
 			"text": "登场于：$(li)假面骑士Fourze（2011年，电视剧）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#cosmicstates)宇宙状态$(/l)"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:cosmic_switch",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "将$(l:fourze/items/astroswitch)空白开关$(/l)对准$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)右键抽取获得"
+			"recipe": "kamenridercraft:fourze/cosmic_switch"
 		},
 		{
 			"type": "patchouli:text",
@@ -529,9 +563,11 @@
 			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#rocketstates)火箭状态$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_rocket_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/super_rocket_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放火箭开关，第二格放解决开关：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -540,9 +576,11 @@
 			"text": "登场于：$(li)假面骑士Fourze：天高毕业（2014年，小说）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#launcherstates)发射器状态$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_launcher_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/super_launcher_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放发射器开关，第二格放解决开关：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -551,9 +589,11 @@
 			"text": "登场于：$(li)假面骑士×超级战队：超级英雄大战（2012年，电影）"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_drill_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/super_drill_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放钻头开关，第二格放解决开关：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -566,7 +606,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:clear_drill_switch",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:amazon/mobs/red_follower)红色追随者$(/l)"
+			"text": "掉落自：$(li)$(l:amazon/mobs/red_follower)红色咒者$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -579,7 +619,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:meteor_switch",
 			"title": " ",
-			"text": "可在$(l:fourze/structures/m_bus)流星备份卫星$(/l)内找到"
+			"text": "可在$(l:fourze/structures/m_bus)流星备份卫星$(/l)结构内的箱子中找到"
 		},
 		{
 			"type": "patchouli:text",
@@ -603,7 +643,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:nadeshiko_switch",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超级银河王$(/l)"
+			"text": "掉落自：$(li)$(l:fourze/mobs/super_gingaoh)超银河王$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -616,7 +656,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:ikaros_switch",
 			"title": " ",
-			"text": "物品目前无法获得"
+			"text": "该物品目前无法获得"
 		},
 		{
 			"type": "patchouli:text",
@@ -651,7 +691,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:core_switch",
 			"title": " ",
-			"text": "物品目前无法获得"
+			"text": "该物品目前无法获得"
 		},
 		{
 			"type": "patchouli:text",
@@ -664,7 +704,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rocket_switch_christmas_ver",
 			"title": " ",
-			"text": "打开$(l:misc/items/gift)圣诞礼盒$(/l)获得"
+			"text": "打开$(l:misc/items/gift)礼物$(/l)随机获得（约 4.3%）"
 		},
 		{
 			"type": "patchouli:text",
@@ -673,20 +713,24 @@
 			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#ichigo)一号组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:ichigo/riders/ichigo)假面骑士一号$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider1_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/rider1_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放台风核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "rider2_switch",
 			"title": "二号开关",
-			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#nigo)二号组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:nigo/riders/nigo)假面骑士二号$(/l)"
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#nigo)二号组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:ichigo/riders/nigo)假面骑士二号$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rider2_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/rider2_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放台风核心(二号)：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -695,20 +739,24 @@
 			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#v3)V3组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:v3/riders/v3)假面骑士V3$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:v3_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/v3_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放双重台风核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "riderman_switch",
 			"title": "骑士人开关",
-			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#riderman)骑士人组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:riderman/riders/riderman)假面骑士骑士人$(/l)"
+			"text": "登场于：$(li)假面骑士×假面骑士 Fourze & OOO：Movie War Mega Max（2011年，电影）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#riderman)骑士人组件$(/l)$(br2)变身成$(l:fourze/riders/fourze)假面骑士Fourze$(/l)后右键使用，可召唤$(l:v3/riders/riderman)假面骑士骑士人$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:riderman_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/riderman_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放骑士代扣核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -717,9 +765,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#x)X组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:x_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/x_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放莱德尔核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -728,9 +778,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#amazon)Amazon组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:amazon_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/amazon_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放印加腕轮：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -739,9 +791,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#stronger)强人组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stronger_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/stronger_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放电气核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -750,9 +804,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#skyrider)天空骑士组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:skyrider_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/skyrider_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放重力核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -761,9 +817,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#super_1)超一号组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:super_1_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/super_1_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放转换核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -772,9 +830,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#zx)ZX组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:zx_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/zx_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放ZX腰带核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -783,9 +843,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#black)Black组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/black_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放红色帝王石：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -794,9 +856,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#rx)Black RX组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rx_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/rx_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放Black RX核心：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -805,9 +869,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#kuuga)空我组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kuuga_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/kuuga_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放空我全能灵石：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -816,9 +882,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#agito)亚极陀组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:agito_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/agito_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放亚极陀 大地：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -827,9 +895,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#ryuki)龙骑组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ryuki_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/ryuki_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放无双龙降临卡：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -838,9 +908,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#faiz)Faiz组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:faiz_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/faiz_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放Faiz使命芯片：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -849,9 +921,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#blade)剑组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blade_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/blade_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放觉醒卡片·变化长戟大兜虫：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -860,9 +934,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#hibiki)响鬼组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:hibiki_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/hibiki_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放变身音叉·音角：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -871,9 +947,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#kabuto)甲斗组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kabuto_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/kabuto_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放甲斗昆虫仪：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -882,9 +960,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#den_o)电王组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:den_o_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/den_o_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放骑士车票(桃塔罗斯)：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -893,9 +973,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#kiva)Kiva组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kiva_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/kiva_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放觉醒笛哨(Kiva)：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -904,20 +986,24 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#decade)Decade组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:decade_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/decade_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放Decade 假面驾驭卡：约 100%"
 		},
 		{
 			"type": "patchouli:text",
 			"anchor": "double_switch",
 			"title": "W开关",
-			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#double)W组件$(/l)"
+			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#w)W组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:double_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/double_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放疾风记忆体：约 100%$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放王牌记忆体：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -926,9 +1012,11 @@
 			"text": "登场于：$(li)假面骑士战斗：Ganbaride（2008年，街机游戏）$(br2)用于切换Fourze的$(l:fourze/riders/fourze#ooo)OOO组件$(/l)"
 		},
 		{
-			"type": "patchouli:crafting",
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:ooo_switch",
 			"title": " ",
-			"recipe": "kamenridercraft:fourze/ooo_switch"
+			"text": "在$(l:misc/blocks/machine_blocks#astroswitch_programmer)天文开关编程器$(/l)内抽取：$(li)输入槽放$(l:fourze/items/astroswitch)空白开关$(/l)，第二格放鹰核心硬币：约 100%"
 		},
 		{
 			"type": "patchouli:text",
@@ -954,7 +1042,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:zodiarts_switch",
 			"title": " ",
-			"text": "物品目前无法获得"
+			"text": "该物品目前无法获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "boot_switch",
+			"title": "Boot开关",
+			"text": "登场于：$(li))假面骑士超级舞台～宇·宙·大·战来了！～（2012年，舞台剧）"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:boot_switch",
+			"title": " ",
+			"text": "掉落自：$(li)$(l:misc/stageshow#boot)骑士猎人Boot$(/l)"
 		}
 	]
-}
+		}

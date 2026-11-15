@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "迷影蚁兵",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)通过穿戴$(l:kabuto/devices/shadow_trooper_belt)ZECT蚁兵腰带(迷影队员版)$(l)进行变身$(br2)状态效果：$(li)夜视"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)通过穿戴$(l:kabuto/devices/shadow_trooper_belt)ZECT蚁兵腰带(迷影队员版)$(l)进行变身$(/l)$(br2)状态效果：$(li)夜视"
 		}
 	]
 }

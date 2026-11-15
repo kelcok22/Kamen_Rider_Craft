@@ -104,7 +104,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kiva_says_fuestle",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+			"text": "掉落自：$(li)$(l:misc/blocks/stone_kiva)笛哨矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_kiva)深板岩笛哨矿石$(/l)$(br2)通过和大师级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
 		},
 		{
 			"type": "patchouli:text",

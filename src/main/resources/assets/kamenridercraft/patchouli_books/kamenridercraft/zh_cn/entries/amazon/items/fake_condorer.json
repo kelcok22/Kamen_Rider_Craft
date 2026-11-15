@@ -1,0 +1,20 @@
+{
+	"name": "孔德拉(假Amazon)",
+	"icon": "kamenridercraft:fake_condorer",
+	"category": "kamenridercraft:amazon/items",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_condorer",
+			"text": "登场于:$(li)假面骑士Amazon (1974年, 电视剧)$(br2)与Amazon装甲一起穿戴，可变身为$(l:amazon/riders/fake_amazon)假Amazon$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": " ",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_condorer",
+			"text": "该物品目前无法获取"
+		}
+	]
+}
