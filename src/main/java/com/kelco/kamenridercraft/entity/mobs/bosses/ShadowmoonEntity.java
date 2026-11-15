@@ -3,7 +3,6 @@ package com.kelco.kamenridercraft.entity.mobs.bosses;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
-import com.kelco.kamenridercraft.item.heisei_phase_2.BuildRiderItems;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
 import net.minecraft.core.particles.ParticleTypes;
@@ -21,7 +20,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 import java.time.LocalDate;
-import java.util.Random;
 
 public class ShadowmoonEntity extends BaseHenchmenEntity {
 	
@@ -31,9 +29,9 @@ public class ShadowmoonEntity extends BaseHenchmenEntity {
     public ShadowmoonEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME="shadow_moon";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BlackRiderItems.BLACKHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BlackRiderItems.BLACKCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BlackRiderItems.BLACKLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(BlackRiderItems.BLACK_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(BlackRiderItems.BLACK_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(BlackRiderItems.BLACK_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(BlackRiderItems.SATANSABER.get()));
         ItemStack rider = new ItemStack(BlackRiderItems.SHADOW_CHARGER.get());
         RiderDriverItem.setUpdateForm(rider);

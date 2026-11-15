@@ -24,14 +24,11 @@ import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 public class ShockerCombatmanEntity extends BaseHenchmenEntity {
     public ShockerCombatmanEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        LocalDate localdate = LocalDate.now();
-        int day = localdate.getDayOfMonth();
-        if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) NAME = "shocker_combatman_christmas";
-        else NAME = "shocker_combatman";
+        NAME = "steve";
         getAttribute(KRCAttributes.REINFORCEMENT_CHANCE).setBaseValue(12D);
-        setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()));
-        setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGOCHESTPLATE.get()));
-        setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGOLEGGINGS.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(IchigoRiderItems.ICHIGO_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(IchigoRiderItems.ICHIGO_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(IchigoRiderItems.ICHIGO_LEGGINGS.get()));
         setItemSlot(EquipmentSlot.FEET, new ItemStack(IchigoRiderItems.SHOCKER_BELT.get()));
     }
 

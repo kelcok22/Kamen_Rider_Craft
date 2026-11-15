@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:astroswitch_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:astroswitch"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:rider_ticket_sword"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:den_o_switch"
+			},
+			"weight": 15
+		}
+	]
+}

@@ -18,11 +18,11 @@ import java.util.List;
 public class ModPlacedFeature {
     public static final ResourceKey<PlacedFeature> HELHEIM_TREE_PLACED_KEY = registerKey("helheim_tree_placed");
 
-    public  static void bootstrap(BootstrapContext<PlacedFeature> context) {
+    public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, HELHEIM_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HELHEIM_TREE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f, 2),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         RiderBlocks.HELHEIM_SAPLING.get()));
     }
 
@@ -30,7 +30,8 @@ public class ModPlacedFeature {
         return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, name));
     }
 
-    private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key, Holder<ConfiguredFeature<?, ?>> configuration,
+    private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,
+                                 Holder<ConfiguredFeature<?, ?>> configuration,
                                  List<PlacementModifier> modifiers) {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }

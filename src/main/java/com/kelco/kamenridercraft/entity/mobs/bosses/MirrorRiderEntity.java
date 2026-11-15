@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.entity.mobs.summons.BaseSummonEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.AgitoRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
@@ -116,8 +117,13 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData) {
         ResourceKey<Level> SANDS_OF_TIME = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:sands_of_time"));
         ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
-        
-        if (serverLevelAccessor.getLevel().dimension() == SANDS_OF_TIME) {
+
+        if (getItemBySlot(EquipmentSlot.FEET).getItem() ==AgitoRiderItems.ALTERING_MIRACLE_WORLD.asItem()) {
+            setItemSlot(EquipmentSlot.HEAD, new ItemStack(AgitoRiderItems.AGITOHELMET.get()));
+            setItemSlot(EquipmentSlot.CHEST, new ItemStack(AgitoRiderItems.AGITOCHESTPLATE.get()));
+            setItemSlot(EquipmentSlot.LEGS, new ItemStack(AgitoRiderItems.AGITOLEGGINGS.get()));
+
+        }else if (serverLevelAccessor.getLevel().dimension() == SANDS_OF_TIME) {
             setItemSlot(EquipmentSlot.FEET, new ItemStack(RyukiRiderItems.BLADEDRIVER.get()));
             setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.GULD_VISOR.get()));
         } else if (serverLevelAccessor.getLevel().dimension() == CITY) {
@@ -347,7 +353,7 @@ public class MirrorRiderEntity extends BaseHenchmenEntity {
                 int rand = random.nextInt(3);
                 if (rand == 1) {
                     setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_CLAW.get()));
-                    setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DEST_CLAW1.get()));
+                    setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(RyukiRiderItems.DEST_CLAW.get()));
                 } else {
                     setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(RyukiRiderItems.DEST_VISOR.get()));
                     getItemBySlot(EquipmentSlot.OFFHAND).consume(1, this);

@@ -27,55 +27,53 @@ public class CapsemCylinderGuiMenu extends AbstractContainerMenu {
 
     public CapsemCylinderGuiMenu(int containerId, Inventory inventory, ItemStack itemStack) {
         super(ModMenus.CAPSEM_CYLINDER_GUI.get(), containerId);
-        this.container = new BasicContainer(itemStack, 5);
+        container = new BasicContainer(itemStack, 5);
         container.startOpen(inventory.player);
 
-        this.addSlot(new SlotByTag(container, 0, 34, 35, "gear/capsems"));
-        this.addSlot(new SlotByTag(container, 1, 57, 35, "gear/capsems"));
-        this.addSlot(new SlotByTag(container, 2, 80, 35, "gear/capsems"));
-        this.addSlot(new SlotByTag(container, 3, 103, 35, "gear/capsems"));
-        this.addSlot(new SlotByTag(container, 4, 126, 35, "gear/capsems"));
+        addSlot(new SlotByTag(container, 0, 34, 35, "gear/capsems"));
+        addSlot(new SlotByTag(container, 1, 57, 35, "gear/capsems"));
+        addSlot(new SlotByTag(container, 2, 80, 35, "gear/capsems"));
+        addSlot(new SlotByTag(container, 3, 103, 35, "gear/capsems"));
+        addSlot(new SlotByTag(container, 4, 126, 35, "gear/capsems"));
 
         for (int i1 = 0; i1 < 3; ++i1) {
             for (int k1 = 0; k1 < 9; ++k1) {
-                this.addSlot(new Slot(inventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18) {
+                addSlot(new Slot(inventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18) {
                     @Override
                     public boolean mayPickup(@NotNull Player player) {
-                        return !(this.getItem().getItem() instanceof CapsemCylinderItem);
+                        return !(getItem().getItem() instanceof CapsemCylinderItem);
                     }
                 });
             }
         }
 
         for (int j1 = 0; j1 < 9; ++j1) {
-            this.addSlot(new Slot(inventory, j1, 8 + j1 * 18, 142) {
+            addSlot(new Slot(inventory, j1, 8 + j1 * 18, 142) {
                 @Override
                 public boolean mayPickup(@NotNull Player player) {
-                    return !(this.getItem().getItem() instanceof CapsemCylinderItem);
+                    return !(getItem().getItem() instanceof CapsemCylinderItem);
                 }
             });
         }
     }
 
-
     @Override
     public boolean stillValid(@NotNull Player player) {
-        return this.container.stillValid(player);
+        return container.stillValid(player);
     }
-
 
     @Override
     public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(index);
+        Slot slot = slots.get(index);
         if (slot.hasItem()) {
             ItemStack itemStackTwo = slot.getItem();
             itemStack = itemStackTwo.copy();
-            if (index < this.container.getContainerSize()) {
-                if (!this.moveItemStackTo(itemStackTwo, this.container.getContainerSize(), this.slots.size(), true)) {
+            if (index < container.getContainerSize()) {
+                if (!moveItemStackTo(itemStackTwo, container.getContainerSize(), slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.moveItemStackTo(itemStackTwo, 0, this.container.getContainerSize(), false)) {
+            } else if (!moveItemStackTo(itemStackTwo, 0, container.getContainerSize(), false)) {
                 return ItemStack.EMPTY;
             }
 
@@ -91,6 +89,6 @@ public class CapsemCylinderGuiMenu extends AbstractContainerMenu {
     @Override
     public void removed(@NotNull Player player) {
         super.removed(player);
-        this.container.stopOpen(player);
+        container.stopOpen(player);
     }
 }

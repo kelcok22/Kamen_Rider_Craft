@@ -2,18 +2,18 @@ package com.kelco.kamenridercraft.item;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.RiderBlocks;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ShockerCombatmanEntity;
-import com.kelco.kamenridercraft.item.base_items.BaseItem;
-import com.kelco.kamenridercraft.item.base_items.BaseSwordItem;
-import com.kelco.kamenridercraft.item.base_items.RiderCaseItem;
-import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
@@ -22,6 +22,9 @@ import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.time.LocalDate;
+import java.util.List;
 
 public class ModdedItemCore {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
@@ -44,6 +47,10 @@ public class ModdedItemCore {
     public static final DeferredItem<Item> VIENNA_COFFEE = ITEMS.register("vienna_coffee",
             () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.8f).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).alwaysEdible().build()))
                     .setItemAnimation(UseAnim.DRINK).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+
+    public static final DeferredItem<Item> ORONAMIN_C = ITEMS.register("oronamin_c",
+            () -> new BaseItem(new Item.Properties().food((new FoodProperties.Builder()).nutrition(2).fast().saturationModifier(3f).effect(() -> new MobEffectInstance(EffectCore.INSOMNIA, 150, 0), 1.0F).alwaysEdible().build()))
+                    .setItemAnimation(UseAnim.DRINK).useBasicModel().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> PUDDING = ITEMS.register("pudding",
             () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
@@ -125,11 +132,20 @@ public class ModdedItemCore {
 
     public static final DeferredItem<Item> SHOCKER_EMBLEM = ITEMS.register("shocker_emblem",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "shocker_combatman", "shocker_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false))
-                    .hasSD().setShowFace().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)){
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD) {
+                        LocalDate localdate = LocalDate.now();
+                        int day = localdate.getDayOfMonth();
+                        if (localdate.getMonthValue() == 12 && day >= 21 && day <= 28) layerInfo.add(new RenderLayerInfo("shocker_combatman_christmas", null));
+                        ;
+                    }
+                }
+            }.hasSD().setShowFace().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> SINISTER_PACHINKO_BALL = ITEMS.register("sinister_pachinko_ball",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+
 
 
     public static final DeferredItem<Item> CARD_WARRIOR_KAMEN_RIDER_MANGA = ITEMS.register("card_warrior_kamen_rider_manga",
@@ -141,8 +157,12 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().hasStaticWings().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d& RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).isGlowing().hasStaticWings().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> STAGTORNADOR = ITEMS.register("stagtornador",
             () -> new RiderFormChangeItem(new Item.Properties(), "_stagtornador", "agito", "alter_ring_belt",
@@ -163,8 +183,12 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
-                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> GREYWOLCH = ITEMS.register("greywolch",
@@ -228,8 +252,12 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
-                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false))
-                    .isGlowing().hasStaticWings().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).isGlowing().hasStaticWings().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
 
     public static final DeferredItem<Item> SCISSORBEETER = ITEMS.register("scissorbeeter",
@@ -296,8 +324,12 @@ public class ModdedItemCore {
                     new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false),
-                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)
-            ).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
+                    new MobEffectInstance(EffectCore.FLYING, 40, 1, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 40d&RiderDriverItem.isTransformingFromBlank(itemstack,player)){
+                        AnimationUtil.playPose(player, riderName+".henshin");
+                    }}}.setFormDelay(1).hasStaticWings().addAlternative(BAKUEN_NO_SENSHI_HIBIKI.get()));
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI = ITEMS.register("bakuen_no_senshi",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_bakuen_no_senshi", "faiz", "faiz_driver_belt_bakuen_no_senshi",

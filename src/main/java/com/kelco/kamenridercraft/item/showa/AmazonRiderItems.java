@@ -41,6 +41,20 @@ public class AmazonRiderItems {
                 }
             }.hasSD().changeModel("amazon.geo.json").isGlowing().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AMAZON_TAB_ITEM));
 
+    public static final DeferredItem<Item> FAKE_CONDORER_WHEEL = ITEMS.register("fake_condorer_wheel",
+            () -> new RiderFormChangeItem(new Item.Properties(),"","fake_amazon","condorer_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.REGENERATION,200, 1,true,false)
+                    ,new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false)
+                    ,new MobEffectInstance(MobEffects.JUMP, 40, 2,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.changeModel("amazon.geo.json").isGlowing());
+
     public static final DeferredItem<Item> GIGI_ARMLET = ITEMS.register("gigi_armlet",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AMAZON_TAB_ITEM));
 
@@ -57,6 +71,10 @@ public class AmazonRiderItems {
     public static final DeferredItem<Item> CONDORER = ITEMS.register("condorer",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties())
                     .hasSDForm().isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AMAZON_TAB_ITEM));
+
+    public static final DeferredItem<Item> FAKE_CONDORER = ITEMS.register("fake_condorer",
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_amazon",FAKE_CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties())
+                    .hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AMAZON_TAB_ITEM));
 
     public static final DeferredItem<Item> DARK_CONDORER = ITEMS.register("dark_condorer",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"dark_amazon",CONDORER_WHEEL ,AMAZONHELMET,AMAZONCHESTPLATE,AMAZONLEGGINGS , new Item.Properties()).hideBeltFormInfo()

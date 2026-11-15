@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "equipment",
+	"group": "aguilera",
+  "ingredients": [
+    {
+      "item": "kamenridercraft:week_endriver"
+    },
+    {
+      "item": "minecraft:ominous_bottle"
+    }
+  ],
+  "result": {
+    "id": "kamenridercraft:dark_week_endriver"
+  }
+}

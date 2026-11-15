@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.decoration.ArmorStand;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
@@ -27,6 +28,9 @@ import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendTo
 
 
 public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
+
+    protected GeoBone cape = null;
+
     public RiderArmorRenderer(EquipmentSlot equipmentSlot) {
         super(new RiderArmorModel<>());
         if (equipmentSlot != EquipmentSlot.FEET) {
@@ -86,10 +90,40 @@ public class RiderArmorRenderer extends GeoArmorRenderer<RiderArmorItem> {
         return RenderType.entityTranslucent(texture);
     }
 
+
     @Override
     protected void applyBaseTransformations(HumanoidModel<?> baseModel) {
         super.applyBaseTransformations(baseModel);
         if (body != null) {
+            if (head != null) {
+                head.setScaleX(baseModel.head.xScale);
+                head.setScaleY(baseModel.head.yScale);
+                head.setScaleZ(baseModel.head.zScale);
+            }
+            if (body != null) {
+                body.setScaleX(baseModel.body.xScale);
+                body.setScaleY(baseModel.body.yScale);
+                body.setScaleZ(baseModel.body.zScale);
+            }
+            if (leftArm != null) {
+                leftArm.setScaleX(baseModel.leftArm.xScale);
+                leftArm.setScaleY(baseModel.leftArm.yScale);
+                leftArm.setScaleZ(baseModel.leftArm.zScale);
+            }   if (rightArm != null){
+                rightArm.setScaleX(baseModel.rightArm.xScale);
+                rightArm.setScaleY(baseModel.rightArm.yScale);
+                rightArm.setScaleZ(baseModel.rightArm.zScale);
+            } if (leftLeg != null){
+                leftLeg.setScaleX(baseModel.leftLeg.xScale);
+                leftLeg.setScaleY(baseModel.leftLeg.yScale);
+                leftLeg.setScaleZ(baseModel.leftLeg.zScale);
+            }
+            if (rightLeg != null){
+                rightLeg.setScaleX(baseModel.rightLeg.xScale);
+                rightLeg.setScaleY(baseModel.rightLeg.yScale);
+                rightLeg.setScaleZ(baseModel.rightLeg.zScale);
+            }
+
             ModelPart bodyPart = baseModel.body;
             RenderUtil.matchModelPartRot(bodyPart, body);
             body.updatePosition(bodyPart.x, -bodyPart.y, bodyPart.z);

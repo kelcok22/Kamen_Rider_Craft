@@ -2,30 +2,38 @@ package com.kelco.kamenridercraft.recipe;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeInput;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-import java.util.Objects;
-
-public record IxaMachineRecipeInput(List<ItemStack> inputs) implements RecipeInput {
-
-    public IxaMachineRecipeInput {
-        Objects.requireNonNull(inputs, "inputItem");
-        ItemStack first = Objects.requireNonNullElse(inputs.get(0), ItemStack.EMPTY);
-        ItemStack second = Objects.requireNonNullElse(inputs.get(1), ItemStack.EMPTY);
-        inputs = List.of(first, second);
-    }
-
-    public IxaMachineRecipeInput(ItemStack first, ItemStack second) {
-        this(List.of(first, second));
-    }
-
+public record IxaMachineRecipeInput(ItemStack primary, ItemStack modifier) implements RecipeInput {
     @Override
-    public ItemStack getItem(int i) {
-        return inputs.get(i);
+    public @NotNull ItemStack getItem(int index) {
+        return index == 0 ? primary : (index == 1 ? modifier : ItemStack.EMPTY);
     }
 
     @Override
     public int size() {
-        return inputs.size();
+        return 2;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return primary.isEmpty() && modifier.isEmpty();
+    }
+
+    // CRITICAL FIX: Explicitly enforce value-based equivalence checks.
+    // Minecraft's recipe manager cache checks this heavily during the server tick loop!
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof IxaMachineRecipeInput(ItemStack primary1, ItemStack modifier1))) return false;
+        return ItemStack.isSameItemSameComponents(this.primary, primary1)
+                && ItemStack.isSameItemSameComponents(this.modifier, modifier1);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = ItemStack.hashItemAndComponents(primary);
+        result = 31 * result + ItemStack.hashItemAndComponents(modifier);
+        return result;
     }
 }

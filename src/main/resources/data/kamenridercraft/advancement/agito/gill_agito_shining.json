@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"id": "kamenridercraft:gill_agito_shining_altering"
+			"id": "kamenridercraft:gill_agito_shining_alter_ring"
 		},
 		"title": {
 			"translate": "advancements.kamenridercraft.agito.gill_agito_shining.title"
@@ -14,13 +14,13 @@
 		"announce_to_chat": true,
 		"hidden": false
 	},
-	"parent": "kamenridercraft:agito/gill_agito_trinity",
+  "parent": "kamenridercraft:agito/another_agito",
 	"criteria": {
 		"requirement": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": {
-					"type": "kamenridercraft:gill_agito_shining"
+					"type": "kamenridercraft:shining_gill_agito"
 				}
 			}
 		}

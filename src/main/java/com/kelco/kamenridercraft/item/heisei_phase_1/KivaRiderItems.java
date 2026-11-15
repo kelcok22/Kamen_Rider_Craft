@@ -5,8 +5,10 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.base_items.*;
-import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.ArmMonsterStatueItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.kiva.IxabeltItem;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.inventory.FueslotGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
@@ -40,7 +42,6 @@ import java.util.List;
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.KIVA_TAB_ITEM;
 
 public class KivaRiderItems {
-
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
 
 	public static final DeferredItem<Item> KIVA_LOGO = ITEMS.register("kiva_logo",
@@ -86,13 +87,15 @@ public class KivaRiderItems {
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
 					new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0,true,false)){
-				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-					super.transformationEffect(itemstack, player);
-					((ServerLevel) player.level()).sendParticles(ModParticles.GLASS_PARTICLES.get(),
-							player.getX(), player.getY()+1,
-							player.getZ(), 200, 0, 0, 0, 1);
-				}
-			}.setSlotTwoAbility("kiva_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KIVA_TAB_ITEM));
+				public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+					super.transformationEffect(itemstack, player, tick);
+					if (tick == 30d) {
+						AnimationUtil.playPose(player, "kiva.henshin");
+					}
+					if (tick == 3d) {
+						((ServerLevel) player.level()).sendParticles(ModParticles.GLASS_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+					}}
+			}.setFormDelay(3).setSlotTwoAbility("kiva_kick", 1).addShiftForm(DOGABAKI.get()).IsBeltGlowing().isGlowing().addToList(NEED_ITEM_DOGABAKI).addToList(KIVA_TAB_ITEM));
 
 	public static final DeferredItem<Item> GARULU_FUESTLE = ITEMS.register("garulufuestle",
 			() -> new RiderFormChangeItem(new Item.Properties(),"_garulu","kiva","kivat_belt_g",
@@ -318,14 +321,19 @@ public class KivaRiderItems {
 					new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
 					new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
-					new MobEffectInstance(EffectCore.FLYING, 40, 0,true,false)){
+					new MobEffectInstance(EffectCore.GLIDE, 40, 0,true,false)){
 				public void transformationEffect(ItemStack itemstack, LivingEntity player) {
 					super.transformationEffect(itemstack, player);
 					((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_BAT_PARTICLES.get(),
 							player.getX(), player.getY()+1,
 							player.getZ(), 200, 0, 0, 0, 1);
 				}
-			}.isGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).useBasicModel().setModelName("keyfuestle"));
+			}.setModifiedPosition("flight_style.modifier")
+					.setModifiedPositionLayer("position_1")
+					.setModifiedPositionConditions("on_ground")
+					.setGlidingPosition("flight_style.gliding")
+					.setSlotOneAbility("flight_boost", 1)
+					.isGlowing().IsBeltGlowing().addNeedForm(TATSULOT.get()).useBasicModel().setModelName("keyfuestle"));
 
 
 	public static final DeferredItem<Item> WAKE_UP_FUESTLE_ARC = ITEMS.register("keyfuestle_arc",
@@ -639,6 +647,9 @@ public class KivaRiderItems {
 
 	public static final DeferredItem<Item> DOGGA_STATUE = ITEMS.register("dogga_statue",
 			() -> new ArmMonsterStatueItem(new Item.Properties(), MobsCore.DOGGA).addToList(KIVA_TAB_ITEM).useBasicModel());
+
+	public static final DeferredItem<Item> KIVAT_THE_BAT_3RD = ITEMS.register("kivat_the_bat_3rd",
+			() -> new BaseItem(new Item.Properties()).useBasicModel());
 
 	public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.client.model.entity.allies;
 
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.entity.mobs.allies.BurgermealEntity;
 import com.kelco.kamenridercraft.entity.mobs.allies.PotechokinEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;

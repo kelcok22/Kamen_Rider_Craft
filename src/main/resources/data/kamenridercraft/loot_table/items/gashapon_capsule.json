@@ -112,6 +112,16 @@
           "type": "minecraft:item",
           "name": "kamenridercraft:roulette_lockseed",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:proto_jackal_vistamp",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:dan_o_belt",
+          "weight": 1
         }
       ]
     }

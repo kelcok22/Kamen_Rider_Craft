@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "ixa",
+	"pattern": [
+		"XCX",
+		"XMX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:fuestlefake"
+		},
+		"M": {
+			"item": "kamenridercraft:knucklefuestle"
+		},
+      "C": {
+        "item": "kamenridercraft:kuuga_amazing_mighty_artist"
+      }
+	},
+	"result": {
+		"id": "kamenridercraft:proto_ixa_belt_first"
+	}
+}

@@ -19,9 +19,9 @@ public class NeotrooperEntity extends BaseHenchmenEntity {
         NAME = "neotrooper";
         BOW_COOLDOWN = 35;
         HARD_BOW_COOLDOWN = 15;
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTOHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTOCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTOLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTO_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTO_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(KabutoRiderItems.NEOTROOPER_BELT.get()));
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(KabutoRiderItems.MACHINEGUN_BLADE.get()));
         this.setMeleeOnSpawn(50.0D);

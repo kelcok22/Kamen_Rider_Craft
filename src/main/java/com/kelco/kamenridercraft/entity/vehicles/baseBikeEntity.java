@@ -83,7 +83,7 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
 
     public static AttributeSupplier.Builder setAttributes() {
         return Mob.createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.3F).add(Attributes.MAX_HEALTH, 20.0D)
-                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(KRCAttributes.WHEEL_ROT, 0D);
+                .add(Attributes.ATTACK_DAMAGE, 2.0D).add(Attributes.KNOCKBACK_RESISTANCE, 2.0D).add(KRCAttributes.WHEEL_ROT, 0D);
     }
 
     @Nullable
@@ -216,12 +216,22 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
 
     @Override
     public void travel(@NotNull Vec3 pos) {
+        LivingEntity passenger = getControllingPassenger();
+        if (!this.hasControllingPassenger()){
+            this.setDeltaMovement(this.getDeltaMovement().x/2,this.getDeltaMovement().y/2,this.getDeltaMovement().z/2);
+        }
+        getAttribute(KRCAttributes.WHEEL_ROT_OLD).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue());
+        if ( getAttribute(KRCAttributes.WHEEL_ROT).getValue()>6.3000000938773155){
+            getAttribute(KRCAttributes.WHEEL_ROT).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue() -6.3000000938773155);
+        }
+        if (getAttribute(KRCAttributes.WHEEL_ROT).getValue()<-6.3000000938773155) {
+            getAttribute(KRCAttributes.WHEEL_ROT).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue() + 6.3000000938773155);
+        }
         if (this.level().isClientSide) {
             if (this.isAlive()) {
                 float z = 0;
                 this.fallDistance = 0;
                 if (this.isVehicle()) {
-                    LivingEntity passenger = getControllingPassenger();
                     if (passenger != null) {
                         this.yRotO = getYRot();
                         this.xRotO = getXRot();
@@ -344,14 +354,15 @@ public class baseBikeEntity extends Mob implements GeoEntity, PlayerRideableJump
                     front_fork = 0.25f;
                 }
                 if (this.getControllingPassenger().zza > 0) {
-                    wheel = -0.1f;
+                    wheel = -1f;
                 }
                 if (this.getControllingPassenger().zza < 0) {
-                    wheel = 0.05f;
+                    wheel = 0.5f;
                 }
             }
 
-            getAttribute(KRCAttributes.WHEEL_ROT).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT).getValue() + wheel);
+
+            getAttribute(KRCAttributes.WHEEL_ROT).setBaseValue(getAttribute(KRCAttributes.WHEEL_ROT_OLD).getValue() + Mth.lerp(state.getPartialTick(), 0, wheel));
 
             assert entityData != null;
             EntityModelData newEntityData = new EntityModelData(false, false, entityData.netHeadYaw() + wheel, front_fork);

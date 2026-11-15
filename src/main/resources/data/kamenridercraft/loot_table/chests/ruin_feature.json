@@ -53,14 +53,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 6.0,
-                "min": 2.0
+                "max": 2.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "kamenridercraft:bladecard",
-          "weight": 5
+          "name": "kamenridercraft:golden_spider",
+          "weight": 3
         },
         {
           "type": "minecraft:item",

@@ -19,9 +19,9 @@ public class CaucasusEntity extends BaseHenchmenEntity {
     public CaucasusEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "caucasus";
-        setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTOHELMET.get()));
-        setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTOCHESTPLATE.get()));
-        setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTOLEGGINGS.get()));
+        setItemSlot(EquipmentSlot.HEAD, new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()));
+        setItemSlot(EquipmentSlot.CHEST, new ItemStack(KabutoRiderItems.KABUTO_CHESTPLATE.get()));
+        setItemSlot(EquipmentSlot.LEGS, new ItemStack(KabutoRiderItems.KABUTO_LEGGINGS.get()));
         setItemSlot(EquipmentSlot.FEET, new ItemStack(KabutoRiderItems.CAUCASUS_RIDER_BELT.get()));
     }
 

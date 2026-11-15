@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "blade",
+	"pattern": [
+		"CLC",
+		"LML",
+		"CLC"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:chain"
+		},
+		"L": {
+			"item": "minecraft:lapis_lazuli"
+		},
+		"M": {
+			"tag": "kamenridercraft:gear/rouze_cards/category_queen"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:category_king_undead_boss_block"
+	}
+}

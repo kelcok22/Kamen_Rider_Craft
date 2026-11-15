@@ -17,8 +17,8 @@ import software.bernie.geckolib.util.RenderUtil;
 
 import static software.bernie.geckolib.cache.texture.GeoAbstractTexture.appendToPath;
 
-
 public class BasicArmorRenderer extends GeoArmorRenderer<BasicArmorItem> {
+
     public BasicArmorRenderer(LivingEntity livingEntity, EquipmentSlot equipmentSlot) {
         super(new BasicArmorModel());
         if (livingEntity.getItemBySlot(equipmentSlot).getItem() instanceof BasicArmorItem belt) {

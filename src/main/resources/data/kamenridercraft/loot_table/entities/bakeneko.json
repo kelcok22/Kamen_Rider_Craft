@@ -27,23 +27,11 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:pointed_dripstone"
+              "name": "minecraft:raw_copper"
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:flint"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:redstone"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:bone"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:brick"
             }
           ],
           "conditions": [
@@ -66,19 +54,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:wind_charge"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:copper_ingot"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:arrow"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:gunpowder"
+              "name": "minecraft:dandelion"
             }
           ],
           "conditions": [

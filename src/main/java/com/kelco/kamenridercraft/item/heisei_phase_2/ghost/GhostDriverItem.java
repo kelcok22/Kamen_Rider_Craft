@@ -109,8 +109,6 @@ public class GhostDriverItem extends RiderDriverItem {
 
         if (wispHorn == item.getStoredNum()) {
             return "_base";
-        } else if (Objects.equals(rider, "gamma_superior")) {
-            return "_base";
         } else if (Objects.equals(rider, "ghost") & getFormItem(itemstack, 1) == GhostRiderItems.ORE_GHOST_EYECON.get() & item.getStoredNum() == 2 ||
                 Objects.equals(rider, "ghost") & getFormItem(itemstack, 1) == GhostRiderItems.MUGEN_GHOST_EYECON.get()
                 || Objects.equals(rider, "specter") & getFormItem(itemstack, 1) == GhostRiderItems.SIN_SPECTER_GHOST_EYECON.get()

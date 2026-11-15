@@ -24,7 +24,7 @@ public class AmazonsRiderItems {
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> AMAZON_CELL_VIAL = ITEMS.register("amazon_cell_vial",
-            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AMAZONS_TAB_ITEM).addToList(AmazonCellExtractor.CELL_EXTRACTOR, 5).changeKeptItem(EMPTY_VIAL.get()));
+            () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.AMAZONS_TAB_ITEM).changeKeptItem(EMPTY_VIAL.get()));
 
     public static final DeferredItem<Item> OMEGA_AMAZON_CELL_VIAL = ITEMS.register("omega_amazon_cell_vial",
             () -> new RiderFormChangeItem(new Item.Properties(),"_origin","amazon_omega","blank",

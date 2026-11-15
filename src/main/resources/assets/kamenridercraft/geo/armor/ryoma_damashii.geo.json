@@ -17,6 +17,7 @@
 				},
 				{
 					"name": "bipedHead",
+					"parent": "body",
 					"parent": "parkaGhost",
 					"pivot": [0, 24, 0]
 				},
@@ -33,6 +34,7 @@
 				},
 				{
 					"name": "bipedBody",
+					"parent": "body",
 					"parent": "parkaGhost",
 					"pivot": [0, 24, 0]
 				},
@@ -55,6 +57,7 @@
 				},
 				{
 					"name": "bipedRightArm",
+					"parent": "body",
 					"parent": "parkaGhost",
 					"pivot": [-5, 22, 0]
 				},
@@ -69,6 +72,7 @@
 				},
 				{
 					"name": "bipedLeftArm",
+					"parent": "body",
 					"parent": "parkaGhost",
 					"pivot": [5, 22, 0]
 				},
@@ -83,6 +87,7 @@
 				},
 				{
 					"name": "bipedLeftLeg",
+					"parent": "body",
 					"parent": "parkaGhost",
 					"pivot": [2, 12, 0]
 				},
@@ -101,6 +106,7 @@
 				},
 				{
 					"name": "bipedRightLeg",
+					"parent": "body",
 					"parent": "parkaGhost",
 					"pivot": [-2, 12, 0]
 				},

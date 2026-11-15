@@ -55,7 +55,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.rider_blocks_decor")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> IchigoTab = CREATIVE_MODE_TABS.register("krc_010_ichigo_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(IchigoRiderItems.ICHIGOHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(IchigoRiderItems.ICHIGO_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.ichigo_items")).build());
 
@@ -105,7 +105,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.zx_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BLACKTab = CREATIVE_MODE_TABS.register("krc_100_black_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(BlackRiderItems.BLACKHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(BlackRiderItems.BLACK_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.black_items")).build());
 
@@ -145,7 +145,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.ryuki_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> FaizTab = CREATIVE_MODE_TABS.register("krc_240_faiz_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(FaizRiderItems.FAIZHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(FaizRiderItems.FAIZ_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_faiz_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.faiz_items")).build());
 
@@ -160,7 +160,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.hibiki_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> KabutoTab = CREATIVE_MODE_TABS.register("krc_270_kabuto_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(KabutoRiderItems.KABUTOHELMET.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(KabutoRiderItems.KABUTO_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_kabuto_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.kabuto_items")).build());
 
@@ -195,7 +195,7 @@ public class KRCCreativeTabs {
                     .title(Component.translatable("tab.kamenridercraft.fourze_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WIZARDTab = CREATIVE_MODE_TABS.register("krc_340_wizard_tab", () ->
-            CreativeModeTab.builder().icon(() -> new ItemStack(WizardRiderItems.WIZARD_HEAD.get()))
+            CreativeModeTab.builder().icon(() -> new ItemStack(WizardRiderItems.WIZARD_HELMET.get()))
                     .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_wizard_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.wizard_items")).build());
 
@@ -266,7 +266,7 @@ public class KRCCreativeTabs {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> My_thTab = CREATIVE_MODE_TABS.register("krc_480_my_th_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(MyThRiderItems.MY_TH_HELMET.get()))
-                    .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_iichigo_items.png"))
+                    .backgroundTexture(ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/gui/tab_my_th_items.png"))
                     .title(Component.translatable("tab.kamenridercraft.my_th_items")).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> GTab = CREATIVE_MODE_TABS.register("krc_800_g_tab", () ->
@@ -782,6 +782,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.GHOST_ORE);
             event.accept(RiderBlocks.DEEPSLATE_GHOST_ORE);
             event.accept(RiderBlocks.MONOLITH);
+            event.accept(RiderBlocks.YURUSEN_PLUSH);
 
         } else if (event.getTab() == EX_AIDTab.get()) {
             for (int i = 0; i < EX_AID_TAB_ITEM.size(); ++i) {
@@ -793,6 +794,7 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.PROTO_SPORTS_GAMER_SPAWN_EGG);
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
+            event.accept(MobsCore.BUGSTER_BOSS_SPAWN_EGG);
             event.accept(MobsCore.RIDEPLAYER_SPAWN_EGG);
             event.accept(MobsCore.GENM_SPAWN_EGG);
             event.accept(MobsCore.GRAPHITE_BUGSTER_SPAWN_EGG);
@@ -847,6 +849,7 @@ public class KRCCreativeTabs {
             for (int i = 0; i < ZI_O_TAB_ITEM.size(); ++i) {
                 event.accept(ZI_O_TAB_ITEM.get(i));
             }
+            event.accept(ExtraRiderItems.ANOTHER_AGITO_HELMET);
             event.accept(MusicDiscItems.OVER_QUARTZER_MUSIC_DISC);
             event.accept(MusicDiscItems.IZANAGI_MUSIC_DISC);
             event.accept(MusicDiscItems.P_A_R_T_Y_UNIVERSE_FESTIVAL_MUSIC_DISC);
@@ -1015,6 +1018,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.BOCCA_BOSS_BLOCK);
             event.accept(RiderBlocks.CARIES_BOSS_BLOCK);
             event.accept(RiderBlocks.GOCHIZO_JAR);
+            event.accept(RiderBlocks.ANGEL_GOCHIZO_STAND);
             event.accept(RiderBlocks.DARK_TREAT_GLASS);
             event.accept(RiderBlocks.CANDY_SHOP);
             event.accept(RiderBlocks.HEATPRESS_EXTRACTOR);
@@ -1166,6 +1170,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.GLASS_DOOR);
             event.accept(RiderBlocks.PLINTH);
             event.accept(RiderBlocks.GOCHIZO_JAR);
+            event.accept(RiderBlocks.ANGEL_GOCHIZO_STAND);
 
 
         } else if (event.getTab() == RiderEggTab.get()) {
@@ -1181,6 +1186,7 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.APOLLOGEIST_SPAWN_EGG);
             event.accept(MobsCore.RED_FOLLWER_SPAWN_EGG);
             event.accept(MobsCore.BLACK_SATAN_SOLDIER_SPAWN_EGG);
+            event.accept(MobsCore.GENERAL_SHADOW_SPAWN_EGG);
             event.accept(MobsCore.ARI_COMMANDO_SPAWN_EGG);
             event.accept(MobsCore.DOGMA_FIGHTER_SPAWN_EGG);
             event.accept(MobsCore.COMBAT_ROID_SPAWN_EGG);
@@ -1310,6 +1316,7 @@ public class KRCCreativeTabs {
 
             event.accept(MobsCore.BUGSTERVIRUS_SPAWN_EGG);
             event.accept(MobsCore.NEBULA_BUGSTERVIRUS_SPAWN_EGG);
+            event.accept(MobsCore.BUGSTER_BOSS_SPAWN_EGG);
             event.accept(MobsCore.RIDEPLAYER_SPAWN_EGG);
             event.accept(MobsCore.GENM_SPAWN_EGG);
             event.accept(MobsCore.GRAPHITE_BUGSTER_SPAWN_EGG);
@@ -1432,6 +1439,10 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.PHANTOM_GORE_NIGHTMARE_SPAWN_EGG);
             event.accept(MobsCore.CATASTROPHE_GORE_NIGHTMARE_SPAWN_EGG);
             event.accept(MobsCore.OBLIVION_GORE_NIGHTMARE_SPAWN_EGG);
+
+            event.accept(MobsCore.STAGESHOW_GRUNT_SPAWN_EGG);
+            event.accept(MobsCore.STAGESHOW_ENEMY_SPAWN_EGG);
+
         } else if (event.getTab() == RiderMiscTab.get()) {
 
             event.accept(MobsCore.BICYCLE_SPAWN_EGG);

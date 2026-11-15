@@ -96,6 +96,7 @@ import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 import static com.kelco.kamenridercraft.KamenRiderCraftCore.MOD_ID;
@@ -118,6 +119,15 @@ public class ModCommonEvents {
                         summon.despawn();
                     }
                 });
+            }
+        }
+
+        @SubscribeEvent
+        public void onPlayerConnect(PlayerEvent.PlayerLoggedInEvent event) {
+            if (event.getEntity() instanceof ServerPlayer player &&
+                    player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem) {
+                riderDriverItem.clearPoseData();
+                riderDriverItem.setPoseData(player);
             }
         }
 
@@ -200,16 +210,10 @@ public class ModCommonEvents {
                         livingEntity.addEffect(new MobEffectInstance(LOW_GRAVITY, 20, 7, false, false));
                     }
                 }
-
-                if (livingEntity.getAttribute(WIND).getBaseValue() > 0) {
-                    livingEntity.getAttribute(WIND).setBaseValue(livingEntity.getAttribute(WIND).getValue() - 1);
-                } else if (livingEntity.getAttribute(WIND).getValue() < 0) {
-                    livingEntity.getAttribute(WIND).setBaseValue(0);
-                }
-
                 if (livingEntity.level().isClientSide()) {
                     float X = 0;
                     float Z = 0;
+
 
                     if (livingEntity instanceof Mob mob) {
                         if (livingEntity.getDeltaMovement().x != 0 || livingEntity.getDeltaMovement().z != 0) {
@@ -221,11 +225,11 @@ public class ModCommonEvents {
                             else if (look.z < 0 & livingEntity.getDeltaMovement().z < 0) Z = 1;
                             else Z = -1;
                         }
-                        livingEntity.getAttribute(BALL_ROT_OLD).setBaseValue(livingEntity.getAttribute(BALL_ROT).getBaseValue());
-                        livingEntity.getAttribute(WHEEL_ROT_OLD).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue());
-                        livingEntity.getAttribute(CAPE_ROT_OLD).setBaseValue(livingEntity.getAttribute(CAPE_ROT).getBaseValue());
-
                         if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                            livingEntity.getAttribute(BALL_ROT_OLD).setBaseValue(livingEntity.getAttribute(BALL_ROT).getBaseValue());
+                            livingEntity.getAttribute(WHEEL_ROT_OLD).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue());
+                            livingEntity.getAttribute(CAPE_ROT_OLD).setBaseValue(livingEntity.getAttribute(CAPE_ROT).getBaseValue());
+
                             if (belt.hasCape(livingEntity.getItemBySlot(EquipmentSlot.FEET))) {
                                 float cape = (float) livingEntity.getAttribute(CAPE_ROT).getBaseValue();
                                 float ball = 0;
@@ -270,8 +274,21 @@ public class ModCommonEvents {
                                 livingEntity.getAttribute(WHEEL_ROT).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue() + wheel);
                             }
                         }
+                    }else if (livingEntity instanceof Player){
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(BALL_ROT_NEXT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(WHEEL_ROT_NEXT)).getBaseValue());
+                        Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(CAPE_ROT_NEXT)).getBaseValue());
                     }
                 }
+                if (livingEntity.getAttribute(WIND).getBaseValue() > 0) {
+                    livingEntity.getAttribute(WIND).setBaseValue(livingEntity.getAttribute(WIND).getValue() - 1);
+                } else if (livingEntity.getAttribute(WIND).getValue() < 0) {
+                    livingEntity.getAttribute(WIND).setBaseValue(0);
+                }
+
                 if (livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() != 0)
                     livingEntity.getAttribute(IS_TRANSFORMING).setBaseValue(livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() - 1);
                 if (livingEntity.getAttribute(IS_TRANSFORMING).getBaseValue() <= 0)
@@ -685,6 +702,7 @@ public class ModCommonEvents {
             PotionBrewing.Builder builder = event.getBuilder();
 
             builder.addMix(Potions.AWKWARD, AgitoRiderItems.GILLS.asItem(), AGITO_FACTOR_POTION);
+            builder.addMix(Potions.AWKWARD, BladeRiderItems.BLANK_ROUZECARD.asItem(), UNSEALED_POTION);
             builder.addMix(Potions.AWKWARD, ExAidRiderItems.BUGSTER_VIRUS_DNA.asItem(), BUGSTER_POTION);
             builder.addMix(Potions.AWKWARD, ExAidRiderItems.SAVE_ENERGY_ITEM.asItem(), MUTEKI_POTION);
             builder.addMix(Potions.AWKWARD, BuildRiderItems.NEBULA_GAS_SAMPLE.asItem(), HAZARD_LEVEL_POTION);
@@ -771,12 +789,21 @@ public class ModCommonEvents {
                 trades.get(3).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 4),
                         new ItemStack(ModdedItemCore.SINISTER_PACHINKO_BALL.get(), 1), 10, 8, 0.02F));
+                trades.get(3).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 4),
+                        new ItemStack(IchigoRiderItems.TAKI_VAMPIRE_CORE.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(RiderBlocks.ICHIGO_CHAIR.get(), 1), 10, 8, 0.02F));
                 trades.get(4).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 2),
                         new ItemStack(IchigoRiderItems.NOPHOON_CORE.get(), 1), 10, 8, 0.02F));
+                trades.get(5).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 2),
+                        new ItemStack(IchigoRiderItems.ICHIGO_MANGA.get(), 1), 10, 8, 0.02F));
+                trades.get(5).add((trader, rand) -> new MerchantOffer(
+                        new ItemCost(Items.EMERALD, 2),
+                        new ItemStack(BlackRiderItems.BLACK_MANGA.get(), 1), 10, 8, 0.02F));
             } else if (event.getType() == RiderVillagers.HUMAGEAR_VILLAGER.get()) {
                 trades.get(1).add((trader, rand) -> new MerchantOffer(
                         new ItemCost(Items.EMERALD, 1),

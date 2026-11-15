@@ -61,8 +61,8 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
             @Override
             public ResourceLocation getModelResource(RiderArmorItem animatable) {
                 if (slot == EquipmentSlot.FEET)
-                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/" + name + ".geo.json");
-                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + name + ".geo.json");
+                    return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/" + name);
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + name);
             }
         };
     }
@@ -97,7 +97,7 @@ public class RiderRenderLayer<T extends RiderArmorItem> extends GeoRenderLayer<T
                         for (RenderLayerInfo renderLayerInfo : layerInfo) {
 
                             renderType = renderLayerInfo.getRenderType(partialTick, RIDER);
-                            String model = renderLayerInfo.getModel();
+                            String model = renderLayerInfo.getModel(partialTick, RIDER);
 
                             BakedGeoModel bakedGeoModel = model != null ? getBakedModel(animatable, getGeoModel(model, renderer2.getCurrentSlot())) : bakedModel;
                             poseStack.scale(renderLayerInfo.getScaleX(), renderLayerInfo.getScaleY(), renderLayerInfo.getScaleZ());

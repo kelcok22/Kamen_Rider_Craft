@@ -1,0 +1,15 @@
+{
+	"type": "kamenridercraft:fuestle_replicator",
+	"primary_input": {
+		"item": "kamenridercraft:fuestle"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:fuestlefake"
+			},
+			"weight": 15
+		}
+	]
+}

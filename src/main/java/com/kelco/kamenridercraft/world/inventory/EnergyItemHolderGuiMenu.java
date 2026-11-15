@@ -27,75 +27,73 @@ public class EnergyItemHolderGuiMenu extends AbstractContainerMenu {
 
     public EnergyItemHolderGuiMenu(int containerId, Inventory inventory, ItemStack itemStack) {
         super(ModMenus.ENERGY_ITEM_HOLDER_GUI.get(), containerId);
-        this.container = new BasicContainer(itemStack, 24);
+        container = new BasicContainer(itemStack, 24);
         container.startOpen(inventory.player);
 
-        this.addSlot(new SlotByTag(container, 0, 30, 17, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 1, 48, 17, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 2, 66, 17, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 3, 30, 35, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 4, 48, 35, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 5, 66, 35, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 6, 30, 53, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 7, 48, 53, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 8, 66, 53, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 9, 30, 71, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 10, 48, 71, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 11, 66, 71, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 0, 30, 17, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 1, 48, 17, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 2, 66, 17, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 3, 30, 35, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 4, 48, 35, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 5, 66, 35, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 6, 30, 53, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 7, 48, 53, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 8, 66, 53, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 9, 30, 71, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 10, 48, 71, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 11, 66, 71, "gear/energy_items"));
 
-        this.addSlot(new SlotByTag(container, 12, 94, 17, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 13, 112, 17, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 14, 130, 17, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 15, 94, 35, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 16, 112, 35, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 17, 130, 35, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 18, 94, 53, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 19, 112, 53, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 20, 130, 53, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 21, 94, 71, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 22, 112, 71, "gear/energy_items"));
-        this.addSlot(new SlotByTag(container, 23, 130, 71, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 12, 94, 17, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 13, 112, 17, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 14, 130, 17, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 15, 94, 35, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 16, 112, 35, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 17, 130, 35, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 18, 94, 53, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 19, 112, 53, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 20, 130, 53, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 21, 94, 71, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 22, 112, 71, "gear/energy_items"));
+        addSlot(new SlotByTag(container, 23, 130, 71, "gear/energy_items"));
 
         for (int i1 = 0; i1 < 3; ++i1) {
             for (int k1 = 0; k1 < 9; ++k1) {
-                this.addSlot(new Slot(inventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 102 + i1 * 18) {
+                addSlot(new Slot(inventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 102 + i1 * 18) {
                     @Override
                     public boolean mayPickup(@NotNull Player player) {
-                        return !(this.getItem().getItem() instanceof EnergyItemHolderItem);
+                        return !(getItem().getItem() instanceof EnergyItemHolderItem);
                     }
                 });
             }
         }
 
         for (int j1 = 0; j1 < 9; ++j1) {
-            this.addSlot(new Slot(inventory, j1, 8 + j1 * 18, 160) {
+            addSlot(new Slot(inventory, j1, 8 + j1 * 18, 160) {
                 @Override
                 public boolean mayPickup(@NotNull Player player) {
-                    return !(this.getItem().getItem() instanceof EnergyItemHolderItem);
+                    return !(getItem().getItem() instanceof EnergyItemHolderItem);
                 }
             });
         }
     }
 
-
     @Override
     public boolean stillValid(@NotNull Player player) {
-        return this.container.stillValid(player);
+        return container.stillValid(player);
     }
-
 
     @Override
     public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(index);
+        Slot slot = slots.get(index);
         if (slot.hasItem()) {
             ItemStack itemStackTwo = slot.getItem();
             itemStack = itemStackTwo.copy();
-            if (index < this.container.getContainerSize()) {
-                if (!this.moveItemStackTo(itemStackTwo, this.container.getContainerSize(), this.slots.size(), true)) {
+            if (index < container.getContainerSize()) {
+                if (!moveItemStackTo(itemStackTwo, container.getContainerSize(), slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.moveItemStackTo(itemStackTwo, 0, this.container.getContainerSize(), false)) {
+            } else if (!moveItemStackTo(itemStackTwo, 0, container.getContainerSize(), false)) {
                 return ItemStack.EMPTY;
             }
 
@@ -108,10 +106,9 @@ public class EnergyItemHolderGuiMenu extends AbstractContainerMenu {
         return itemStack;
     }
 
-
     @Override
     public void removed(@NotNull Player player) {
         super.removed(player);
-        this.container.stopOpen(player);
+        container.stopOpen(player);
     }
 }

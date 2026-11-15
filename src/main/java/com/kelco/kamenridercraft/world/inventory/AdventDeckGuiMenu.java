@@ -27,56 +27,54 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
 
     public AdventDeckGuiMenu(int containerId, Inventory inventory, ItemStack itemStack) {
         super(ModMenus.ADVENT_DECK_GUI.get(), containerId);
-        this.container = new BasicContainer(itemStack, 6);
+        container = new BasicContainer(itemStack, 6);
         container.startOpen(inventory.player);
 
-        this.addSlot(new SlotByTag(container, 0, 94, 21, "gear/advent_cards"));
-        this.addSlot(new SlotByTag(container, 1, 117, 21, "gear/advent_cards"));
-        this.addSlot(new SlotByTag(container, 2, 140, 21, "gear/advent_cards"));
-        this.addSlot(new SlotByTag(container, 3, 94, 44, "gear/advent_cards"));
-        this.addSlot(new SlotByTag(container, 4, 117, 44, "gear/advent_cards"));
-        this.addSlot(new SlotByTag(container, 5, 140, 44, "gear/advent_cards"));
+        addSlot(new SlotByTag(container, 0, 94, 21, "gear/advent_cards"));
+        addSlot(new SlotByTag(container, 1, 117, 21, "gear/advent_cards"));
+        addSlot(new SlotByTag(container, 2, 140, 21, "gear/advent_cards"));
+        addSlot(new SlotByTag(container, 3, 94, 44, "gear/advent_cards"));
+        addSlot(new SlotByTag(container, 4, 117, 44, "gear/advent_cards"));
+        addSlot(new SlotByTag(container, 5, 140, 44, "gear/advent_cards"));
 
         for (int i1 = 0; i1 < 3; ++i1) {
             for (int k1 = 0; k1 < 9; ++k1) {
-                this.addSlot(new Slot(inventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18) {
+                addSlot(new Slot(inventory, k1 + i1 * 9 + 9, 8 + k1 * 18, 84 + i1 * 18) {
                     @Override
                     public boolean mayPickup(@NotNull Player player) {
-                        return !(this.getItem().getItem() instanceof AdventDeckItem);
+                        return !(getItem().getItem() instanceof AdventDeckItem);
                     }
                 });
             }
         }
 
         for (int j1 = 0; j1 < 9; ++j1) {
-            this.addSlot(new Slot(inventory, j1, 8 + j1 * 18, 142) {
+            addSlot(new Slot(inventory, j1, 8 + j1 * 18, 142) {
                 @Override
                 public boolean mayPickup(@NotNull Player player) {
-                    return !(this.getItem().getItem() instanceof AdventDeckItem);
+                    return !(getItem().getItem() instanceof AdventDeckItem);
                 }
             });
         }
     }
 
-
     @Override
     public boolean stillValid(@NotNull Player player) {
-        return this.container.stillValid(player);
+        return container.stillValid(player);
     }
-
 
     @Override
     public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(index);
+        Slot slot = slots.get(index);
         if (slot.hasItem()) {
             ItemStack itemStackTwo = slot.getItem();
             itemStack = itemStackTwo.copy();
-            if (index < this.container.getContainerSize()) {
-                if (!this.moveItemStackTo(itemStackTwo, this.container.getContainerSize(), this.slots.size(), true)) {
+            if (index < container.getContainerSize()) {
+                if (!moveItemStackTo(itemStackTwo, container.getContainerSize(), slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.moveItemStackTo(itemStackTwo, 0, this.container.getContainerSize(), false)) {
+            } else if (!moveItemStackTo(itemStackTwo, 0, container.getContainerSize(), false)) {
                 return ItemStack.EMPTY;
             }
 
@@ -89,10 +87,9 @@ public class AdventDeckGuiMenu extends AbstractContainerMenu {
         return itemStack;
     }
 
-
     @Override
     public void removed(@NotNull Player player) {
         super.removed(player);
-        this.container.stopOpen(player);
+        container.stopOpen(player);
     }
 }

@@ -8,13 +8,12 @@ import com.kelco.kamenridercraft.client.gui.driver.*;
 import com.kelco.kamenridercraft.client.gui.item.LegendRideMagnumGuiScreen;
 import com.kelco.kamenridercraft.client.gui.item.NeoDiendriverGuiScreen;
 import com.kelco.kamenridercraft.client.gui.item.RideBookerGuiScreen;
+import com.kelco.kamenridercraft.client.gui.machine_block.AmazonCellExtractorGuiScreen;
+import com.kelco.kamenridercraft.client.gui.machine_block.AstroswitchProgrammerGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.IxaMachineBlockGuiScreen;
 import com.kelco.kamenridercraft.client.gui.overlays.AbilityHudOverlay;
 import com.kelco.kamenridercraft.client.gui.storage_item.*;
-import com.kelco.kamenridercraft.client.renderer.block.GochizoJarBlockEntityRenderer;
-import com.kelco.kamenridercraft.client.renderer.block.MindDoorRenderer;
-import com.kelco.kamenridercraft.client.renderer.block.PandoraPanelBlockEntityRenderer;
-import com.kelco.kamenridercraft.client.renderer.block.PlinthBlockEntityRenderer;
+import com.kelco.kamenridercraft.client.renderer.block.*;
 import com.kelco.kamenridercraft.client.renderer.entity.*;
 import com.kelco.kamenridercraft.client.renderer.entity.allies.*;
 import com.kelco.kamenridercraft.client.renderer.entity.bikes.BikeRenderer;
@@ -32,7 +31,6 @@ import com.kelco.kamenridercraft.events.ModServerEvents;
 import com.kelco.kamenridercraft.init.ModMenus;
 import com.kelco.kamenridercraft.init.RiderPotPattern;
 import com.kelco.kamenridercraft.item.KRCCreativeTabs;
-import com.kelco.kamenridercraft.item.KRCItemLists;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.extra_riders.*;
@@ -60,17 +58,12 @@ import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.kelco.kamenridercraft.world.level.CustomDimensionEffect;
 import com.kelco.kamenridercraft.world.level.levelgen.feature.ModConfiguredFeatures;
 import net.minecraft.client.model.HeadedModel;
-import net.minecraft.client.model.PlayerModel;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -88,8 +81,6 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
 import net.neoforged.neoforge.network.registration.HandlerThread;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -196,7 +187,7 @@ public class KamenRiderCraftCore {
         modEventBus.addListener(ModCommonEvents::entitySpawnRestriction);
 
         if (dist == Dist.CLIENT) {
-            KamenRiderCraftCoreClient.clientInit(modEventBus);
+            KamenRiderCraftClientCore.clientInit(modEventBus);
         }
 
         modContainer.registerConfig(ModConfig.Type.SERVER, ServerConfig.SPEC);
@@ -214,9 +205,9 @@ public class KamenRiderCraftCore {
 
     @SubscribeEvent
     public void addRenderLivingEvent(RenderLivingEvent.Pre<?, ?> event) {
-        if (event.getRenderer().getModel() instanceof PlayerModel<?> model) {
+        if (event.getRenderer().getModel() instanceof HumanoidModel<?> model) {
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
-                Double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
+                double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET),event.getEntity());
                 double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET),tf);
                 if (tag != 0) {
                     model.setAllVisible(false);
@@ -278,7 +269,7 @@ public class KamenRiderCraftCore {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(RegisterItemProperties::addCustomItemProperties);
-            event.enqueueWork(KamenRiderCraftCoreClient::registerPlayerAnimations);
+            event.enqueueWork(KamenRiderCraftClientCore::registerPlayerAnimations);
 
         }
 
@@ -287,6 +278,7 @@ public class KamenRiderCraftCore {
             event.registerBlockEntityRenderer(ModBlockEntities.PANDORA_PANEL_BE.get(), PandoraPanelBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.PLINTH_BE.get(), PlinthBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.GOCHIZO_JAR_BE.get(), GochizoJarBlockEntityRenderer::new);
+            event.registerBlockEntityRenderer(ModBlockEntities.ANGEL_GOCHIZO_STAND_BE.get(), AngelGochizoStandBlockEntityRenderer::new);
             event.registerBlockEntityRenderer(ModBlockEntities.MIND_DOOR_BE.get(), MindDoorRenderer::new);
 
         }
@@ -452,6 +444,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEBULA_BUGSTERVIRUS.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.BUGSTER_BOSS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GRAPHITE_BUGSTER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GENM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POPPY_RED.get(), BasicEntityRenderer::new);
@@ -584,6 +577,10 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BATTA_AUGMENT.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.SHIN_NO_0.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.STAGESHOW_GRUNT.get(), BasicEntityRenderer::new);
+            event.registerEntityRenderer(MobsCore.STAGESHOW_ENEMY.get(), BasicEntityRenderer::new);
+
+
             event.registerEntityRenderer(MobsCore.BICYCLE.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.ACROBATTER.get(), BikeRenderer::new);
             event.registerEntityRenderer(MobsCore.RIDORON.get(), BikeRenderer::new);
@@ -706,6 +703,7 @@ public class KamenRiderCraftCore {
             event.registerSpriteSet(ModParticles.MY_TH_GEM_TURTLE_PARTICLES.get(), My_ThGemTurtleParticles.Provider::new);
             event.registerSpriteSet(ModParticles.MY_TH_GEM_WOLF_PARTICLES.get(), My_ThGemWolfParticles.Provider::new);
             event.registerSpriteSet(ModParticles.MY_TH_GEM_EAGLE_PARTICLES.get(), My_ThGemEagleParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MY_TH_GEM_ORCA_PARTICLES.get(), My_ThGemOrcaParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), RealizingParticles.Provider::new);
 
         }
@@ -752,7 +750,9 @@ public class KamenRiderCraftCore {
             event.register(ModMenus.CHEMY_RISER_GUI.get(), ChemyRiserGuiScreen::new);
             event.register(ModMenus.LEGEND_RIDE_MAGNUM_GUI.get(), LegendRideMagnumGuiScreen::new);
             event.register(ModMenus.CAPSEM_CYLINDER_GUI.get(), CapsemCylinderGuiScreen::new);
+            event.register(ModMenus.DNA_EXTRACTOR_GUI.get(), AmazonCellExtractorGuiScreen::new);
             event.register(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), IxaMachineBlockGuiScreen::new);
+            event.register(ModMenus.ASTROSWITCH_PROGRAMMER_GUI.get(), AstroswitchProgrammerGuiScreen::new);
             // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }
     }

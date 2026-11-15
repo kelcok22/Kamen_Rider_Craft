@@ -1,0 +1,118 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [-0.16667, 19.33333, 0]
+				},
+				{
+					"name": "bipedHead",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "armorHead",
+					"parent": "bipedHead",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.05, "uv": [0, 0]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.15, "uv": [32, 0]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [0, 48]},
+						{"origin": [-6.9, 27.4, 1], "size": [2, 5, 2], "pivot": [-5.65, 32.15, 2], "rotation": [0, 0, -30], "uv": [24, 1], "mirror": true},
+						{"origin": [-5.9, 32.4, 1.5], "size": [1, 2, 1], "pivot": [-5.65, 32.15, 2.5], "rotation": [0, 0, -30], "uv": [31, 0], "mirror": true},
+						{"origin": [4.9, 32.4, 1.5], "size": [1, 2, 1], "pivot": [5.65, 32.15, 2.5], "rotation": [0, 0, 30], "uv": [31, 0]},
+						{"origin": [4.9, 27.4, 1], "size": [2, 5, 2], "pivot": [5.65, 32.15, 2], "rotation": [0, 0, 30], "uv": [24, 1]}
+					]
+				},
+				{
+					"name": "bipedBody",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "armorBody",
+					"parent": "bipedBody",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.5, "uv": [16, 16]},
+						{"origin": [-4, 25, -2], "size": [8, 12, 4], "inflate": 0.5, "uv": [40, 48]},
+						{"origin": [4, 23, -2], "size": [3, 2, 4], "uv": [0, 16], "mirror": true},
+						{"origin": [-7, 23, -2], "size": [3, 2, 4], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "bipedRightArm",
+					"parent": "body",
+					"pivot": [-4, 22, 0]
+				},
+				{
+					"name": "armorRightArm",
+					"parent": "bipedRightArm",
+					"pivot": [-5, 22, 0],
+					"cubes": [
+						{"origin": [-12.6, 26.4, -2], "size": [4, 5, 4], "inflate": 0.5, "pivot": [-14.6, 25.4, 0], "rotation": [0, -180, 157.5], "uv": [48, 39], "mirror": true},
+						{"origin": [-10.8, 21.1, -2], "size": [2, 5, 4], "pivot": [-9.8, 21.1, -1], "rotation": [0, 0, -22.5], "uv": [0, 22], "mirror": true},
+						{"origin": [-9.8, 26.5, -1], "size": [1, 2, 2], "pivot": [-8.8, 21.1, 0], "rotation": [0, 0, -22.5], "uv": [8, 22], "mirror": true},
+						{"origin": [-10.5, 19.6, -2], "size": [4, 5, 4], "inflate": 0.7, "pivot": [-8.5, 18.6, 0], "rotation": [0, 0, 32.5], "uv": [39, 25], "mirror": true}
+					]
+				},
+				{
+					"name": "bipedLeftArm",
+					"parent": "body",
+					"pivot": [4, 22, 0]
+				},
+				{
+					"name": "armorLeftArm",
+					"parent": "bipedLeftArm",
+					"pivot": [5, 22, 0],
+					"cubes": [
+						{"origin": [6.5, 19.6, -2], "size": [4, 5, 4], "inflate": 0.7, "pivot": [8.5, 18.6, 0], "rotation": [0, 0, -32.5], "uv": [39, 25]},
+						{"origin": [8.6, 26.4, -2], "size": [4, 5, 4], "inflate": 0.5, "pivot": [14.6, 25.4, 0], "rotation": [0, 180, -157.5], "uv": [48, 39]},
+						{"origin": [8.8, 21.1, -2], "size": [2, 5, 4], "pivot": [9.8, 21.1, -1], "rotation": [0, 0, 22.5], "uv": [0, 22]},
+						{"origin": [8.8, 26.5, -1], "size": [1, 2, 2], "pivot": [8.8, 21.1, 0], "rotation": [0, 0, 22.5], "uv": [8, 22]}
+					]
+				},
+				{
+					"name": "bipedLeftLeg",
+					"parent": "body",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "armorLeftLeg",
+					"parent": "bipedLeftLeg",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "armorLeftBoot",
+					"parent": "bipedLeftLeg",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "bipedRightLeg",
+					"parent": "body",
+					"pivot": [-2, 12, 0]
+				},
+				{
+					"name": "armorRightLeg",
+					"parent": "bipedRightLeg",
+					"pivot": [-2, 12, 0]
+				},
+				{
+					"name": "armorRightBoot",
+					"parent": "bipedRightLeg",
+					"pivot": [2, 12, 0]
+				}
+			]
+		}
+	]
+}

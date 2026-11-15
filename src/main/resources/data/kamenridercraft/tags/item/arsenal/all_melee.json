@@ -8,6 +8,7 @@
 		"kamenridercraft:amazon_scythe",
 		"kamenridercraft:amazon_whip",
 		"kamenridercraft:amazon_spear",
+        "kamenridercraft:shadow_sword",
 		"kamenridercraft:satansabre",
 		"kamenridercraft:flaresalamander_sword",
 		"kamenridercraft:grandgouram_rod",
@@ -56,7 +57,6 @@
 		"kamenridercraft:gold_saber",
 		"kamenridercraft:dest_visor",
 		"kamenridercraft:dest_claw",
-		"kamenridercraft:dest_claw1",
 		"kamenridercraft:gazelle_stab",
 		"kamenridercraft:blanc_visor",
 		"kamenridercraft:wing_slasher",
@@ -94,6 +94,7 @@
 		"kamenridercraft:albino_joker_death_scythe",
 		"kamenridercraft:giraffa_helltar",
 		"kamenridercraft:giraffa_skeltar",
+        "kamenridercraft:elephant_earthquake",
 		"kamenridercraft:joker_mantis",
 		"kamenridercraft:taiyaki_mold",
 		"kamenridercraft:ongekibo_rekka",
@@ -236,6 +237,7 @@
 		"kamenridercraft:genin_weapon",
 		"kamenridercraft:bugster_trident",
 		"kamenridercraft:graphite_fang",
+		"kamenridercraft:alhambra_staff",
 		"kamenridercraft:deus_rusher",
 		"kamenridercraft:deus_rusher_red",
 		"kamenridercraft:4koma_ninpoutou",
@@ -345,6 +347,9 @@
 		"kamenridercraft:breakam_breaker_knuckle",
 		"kamenridercraft:mugen_sword",
 		"kamenridercraft:rabbit_sword",
-		"kamenridercraft:snake_scythe"
+		"kamenridercraft:snake_scythe",
+        "kamenridercraft:sheep_hammer",
+        "kamenridercraft:tiger_dao",
+        "kamenridercraft:kei_trident"
 	]
 }

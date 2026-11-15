@@ -11,19 +11,20 @@ import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 
 public class HelheimVineFeature extends Feature<NoneFeatureConfiguration> {
-    public HelheimVineFeature(Codec<NoneFeatureConfiguration> p_67337_) {
-        super(p_67337_);
+    public HelheimVineFeature(Codec<NoneFeatureConfiguration> featureConfiguration) {
+        super(featureConfiguration);
     }
 
-    public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> p_160628_) {
-        WorldGenLevel worldgenlevel = p_160628_.level();
-        BlockPos blockpos = p_160628_.origin();
+    public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> featureConfiguration) {
+        WorldGenLevel worldgenlevel = featureConfiguration.level();
+        BlockPos blockpos = featureConfiguration.origin();
         if (worldgenlevel.isEmptyBlock(blockpos)) {
             Direction[] var4 = Direction.values();
 
             for (Direction direction : var4) {
                 if (direction != Direction.DOWN && VineBlock.isAcceptableNeighbour(worldgenlevel, blockpos.relative(direction), direction)) {
-                    worldgenlevel.setBlock(blockpos, RiderBlocks.HELHEIM_VINE.get().defaultBlockState().setValue(VineBlock.getPropertyForFace(direction), true), 2);
+                    worldgenlevel.setBlock(blockpos, RiderBlocks.HELHEIM_VINE.get().defaultBlockState()
+                            .setValue(VineBlock.getPropertyForFace(direction), true), 2);
                     return true;
                 }
             }

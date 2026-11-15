@@ -71,8 +71,8 @@ public class AbilityUtil {
                     }
                     break;
                 case "wonder_grow", "wonder_shrink", "fish", "warp", "flight_boost":
-                    if (costMeter && abilityMeter.getValue() >= 30) {
-                        abilityMeter.setBaseValue(abilityMeter.getValue() - 30);
+                    if (costMeter && abilityMeter.getValue() >= 15) {
+                        abilityMeter.setBaseValue(abilityMeter.getValue() - 15);
                         user.setData(USED_ABILITY, ability);
                     } else if (!costMeter) {
                         user.setData(USED_ABILITY, ability);
@@ -197,6 +197,7 @@ public class AbilityUtil {
 
     public static void cancelAbility(LivingEntity user, String afterAnimation, int delayAnimationEndTicks) {
         if (!user.level().isClientSide()) {
+            user.getAttribute(KRCAttributes.CHANGE_KICK_MODEL).setBaseValue(1);
             user.setData(USED_ABILITY, "");
             user.setData(ABILITY_TICK, 0);
             user.setInvulnerable(false);

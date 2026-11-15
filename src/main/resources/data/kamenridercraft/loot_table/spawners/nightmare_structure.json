@@ -11,6 +11,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:play_back_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "kamenridercraft:insomnia_visor",
           "weight": 2
         },

@@ -81,10 +81,10 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
         super.actuallyHurt(source, amount);
         if (!level().isClientSide() && source.getEntity() instanceof Player playerIn && getHealth() < 30 && playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) >= 1) {
             if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0) {
-                if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()) {
+                if (playerIn.getInventory().countItem(ZeztzRiderItems.PHANTOM_CAPSEM.get()) != 0 && RiderDriverItem.getFormItem(getItemBySlot(EquipmentSlot.FEET), 1) != ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get()) {
                     if (level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                         playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.midnight_shadow_nightmare"));
-                        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get(), 1);
+                        RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get(), 1);
                     }
                 }
             }
@@ -94,7 +94,7 @@ public class ShadowNightmareEntity extends BaseHenchmenEntity {
         super.customServerAiStep();
         if(getItemBySlot(EquipmentSlot.FEET).getItem()== ZeztzRiderItems.SHADOW_NIGHTMARE_BELT.get()){
             ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
-            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.NIGHTMARE_CAPSEM_MIDNIGHT_SHADOW.get()&bossEvent.getColor()!= BossEvent.BossBarColor.BLUE) {
+            if (RiderDriverItem.getFormItem(belt,1)== ZeztzRiderItems.MIDNIGHT_SHADOW_CAPSEM_NIGHTMARE.get()&bossEvent.getColor()!= BossEvent.BossBarColor.BLUE) {
                 bossEvent.setColor(BossEvent.BossBarColor.BLUE);
                 bossEvent.setName(Component.translatable("entity.kamenridercraft.midnight_shadow_nightmare").withStyle(ChatFormatting.DARK_BLUE));
             }

@@ -36,9 +36,9 @@ public class RiotrooperEntity extends BaseHenchmenEntity {
     public RiotrooperEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
         NAME = "riotrooper";
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZHELMET.get()));
-        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZCHESTPLATE.get()));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZLEGGINGS.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(FaizRiderItems.FAIZ_HELMET.get()));
+        this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(FaizRiderItems.FAIZ_CHESTPLATE.get()));
+        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(FaizRiderItems.FAIZ_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(FaizRiderItems.SMARTBUCKLE.get()));
     }
 

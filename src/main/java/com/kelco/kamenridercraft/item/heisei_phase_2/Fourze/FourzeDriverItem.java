@@ -1,17 +1,23 @@
 package com.kelco.kamenridercraft.item.heisei_phase_2.Fourze;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.FourzeRingRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.FourzeRiderItems;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -24,6 +30,9 @@ import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
+import java.util.Objects;
+
+import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.IS_TRANSFORMING;
 
 public class FourzeDriverItem extends RiderDriverItem {
     public FourzeDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
@@ -60,6 +69,22 @@ public class FourzeDriverItem extends RiderDriverItem {
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
+    public void beltTick(ItemStack itemstack, Level level, LivingEntity player, int slotId) {
+        super.beltTick(itemstack,level,player,slotId);
+        if (itemstack.has(DataComponents.CUSTOM_DATA)) {
+            if (!player.level().isClientSide()) {
+                double tick = Objects.requireNonNull(player.getAttribute(IS_TRANSFORMING)).getBaseValue();
+                if (RiderDriverItem.isTransformingFromBlank(itemstack,player)) {
+                    if (tick == 30d) {
+                        AnimationUtil.playPose(player, "fourze.henshin");
+                    }
+                    if (tick> 15d&tick<25d) {
+                       ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                                player.getX(), player.getY() + 0.5,
+                                player.getZ(), 10, 0.5, 0.5, 0.5, 0.01);
+                    }
+            }}
+        } }
 
     @Override
     public void inventoryTick(ItemStack itemStack, Level level, Entity entity, int slotId, boolean isSelected) {
@@ -104,8 +129,7 @@ public class FourzeDriverItem extends RiderDriverItem {
             setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
         }
 
-            if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()
-                    || getFormItem(belt, 5) == FourzeRiderItems.FOURZE_FUSION_STATES.get()) {
+            if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()) {
                 if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()
                         || getFormItem(belt, 2) != FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.get() && getFormItem(belt, 2) != FourzeRiderItems.NADESHIKO_ASTROSWITCH_FUSION.get()
                         || getFormItem(belt, 3) != FourzeRiderItems.BLANK_TRIANGLE_ASTROSWITCH.get()) {
@@ -119,7 +143,15 @@ public class FourzeDriverItem extends RiderDriverItem {
             if (getFormItem(belt, 2) == FourzeRiderItems.NADESHIKO_ASTROSWITCH_FUSION.get() & getFormItem(belt, 5) != FourzeRiderItems.FOURZE_METEOR_NADESHIKO_FUSION_STATES.get()) {
                 setFormItemNoExtra(belt, FourzeRiderItems.BLANK_CROSS_ASTROSWITCH.asItem(), 2);
             }
-
+        if (getFormItem(belt, 5) == FourzeRiderItems.FOURZE_FUSION_STATES.get()) {
+            if (getFormItem(belt, 1) != FourzeRiderItems.BLANK_CIRCLE_ASTROSWITCH.get()) {
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+                setFormItemNoExtra(belt, FourzeRiderItems.BLANK_SQUARE_ASTROSWITCH.asItem(), 4);
+            } else if (getFormItem(belt, 4) != FourzeRiderItems.FUSION_ASTROSWITCH.get()
+                    & getFormItem(belt, 4) != FourzeRiderItems.FUSION_ASTROSWITCH_OG.get()) {
+                setFormItemNoExtra(belt, FourzeRiderItems.FOURZE_BASE_STATES.asItem(), 5);
+            }
+        }
 
 
             if ((getFormItem(belt, 1) == FourzeRiderItems.MAGNET_ASTROSWITCH_N.get()
@@ -143,7 +175,13 @@ public class FourzeDriverItem extends RiderDriverItem {
 
     }
 
-    @Override
+    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        double henshin_tick = getHenshinTick(itemStack, rider);
+        if (slot==EquipmentSlot.HEAD&&isTransformingFromBlank(itemStack,rider)&&henshin_tick<23)layerInfo.add(new FourzeRingRenderLayerInfo());
+    }
+
+        @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity livingEntity, String riderName) {
         boolean fly = livingEntity.getAttribute(KRCAttributes.WINGS_OUT).getBaseValue() == 1;
         double henshin_tick = getHenshinTick(itemstack, livingEntity);
@@ -200,9 +238,6 @@ public class FourzeDriverItem extends RiderDriverItem {
         switch (currentSlot) {
             case HEAD -> {
                 return true;
-            }
-            case CHEST-> {
-                return false;
             }
         }
         return false;

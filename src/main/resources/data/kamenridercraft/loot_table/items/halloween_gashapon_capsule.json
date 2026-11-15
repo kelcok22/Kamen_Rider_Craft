@@ -7,6 +7,14 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "kamenridercraft:angel_gochizo_stand",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:another_agito_helmet",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
           "name": "kamenridercraft:punkjackolantern",
           "weight": 1
         },{
@@ -40,6 +48,10 @@
         },{
           "type": "minecraft:item",
           "name": "kamenridercraft:sweets_capsem",
+          "weight": 1
+        },{
+          "type": "minecraft:item",
+          "name": "kamenridercraft:yurusen_plush",
           "weight": 1
         }
       ]

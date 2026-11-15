@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+	{
+	  "rolls": 1,
+	  "entries": [
+		
+		{
+		  "type": "minecraft:item",
+		  "weight": 5,
+		  "name": "kamenridercraft:mighty_action_x_gashat"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:taddle_quest_gashat"
+		},
+		{
+		  "type": "minecraft:item",
+		  "weight": 3,
+		  "name": "kamenridercraft:bang_bang_shooting_gashat"
+		},
+        {
+          "name": "kamenridercraft:bakusou_bike_gashat",
+          "type": "minecraft:item",
+          "weight": 3
+        }
+	  ]
+	},
+	  {
+		"rolls": 1,
+		  "conditions": [
+			  {
+				  "condition": "minecraft:random_chance",
+				  "chance": 0.20
+			  }
+		  ],
+		  "entries": [
+			  {
+				  "type": "minecraft:item",
+				  "weight": 3,
+				  "name": "kamenridercraft:gekitotsu_robots_gashat"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:doremifa_beat_gashat"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:jet_combat_gashat"
+			  },
+			  {
+				  "type": "minecraft:item",
+				  "weight": 2,
+				  "name": "kamenridercraft:giri_giri_chambara_gashat"
+			  }
+		  ]
+	  },
+	{
+	  "rolls": 1,
+	  "entries": [
+		{
+		  "type": "minecraft:item",
+		  "name": "kamenridercraft:bugster_virus_dna",
+		  "functions": [
+			{
+			  "function": "minecraft:set_count",
+			  "count": {
+				"min": 2,
+				"max": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+		"rolls": 1,
+		"entries": [
+			{
+				"type": "minecraft:item",
+				"name": "kamenridercraft:blank_gashat",
+				"functions": [
+					  {
+						  "function": "minecraft:set_count",
+						  "count": {
+							  "min": 1,
+							  "max": 2
+						  }
+					  }
+				]
+			}
+		]
+	}
+  ]
+}

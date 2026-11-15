@@ -95,7 +95,7 @@ public class CrossSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().addNeedForm(EVOLUTION_GIRAFFA.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_king_sic_wing.geo.json").addNeedItem(ABSORB_SERPENT.get()));
+            }.isGlowing().isGold().addNeedForm(EVOLUTION_GIRAFFA.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_king_sic_wing.geo.json").addNeedItem(ABSORB_SERPENT.get()));
 
     public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
@@ -111,7 +111,7 @@ public class CrossSeriesRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(EVOLUTION_GIRAFFA_SIC.get()).addAlternative(TACKLE_CORE_ARTIST.get())
-                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+                    .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS).keepItem());
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

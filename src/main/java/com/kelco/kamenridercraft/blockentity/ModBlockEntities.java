@@ -23,9 +23,17 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
                             RiderBlocks.HELHEIM_HANGING_SIGN.get(), RiderBlocks.HELHEIM_WALL_HANGING_SIGN.get()).build(null));
 
+    public static final Supplier<BlockEntityType<AmazonCellExtractorEntity>> AMAZON_CELL_EXTRACTOR_BE =
+            BLOCK_ENTITIES.register("amazon_cell_extractor_be", () -> BlockEntityType.Builder.of(
+                    AmazonCellExtractorEntity::new, RiderBlocks.AMAZON_CELL_EXTRACTOR.get()).build(null));
+
     public static final Supplier<BlockEntityType<IxaMachineBlockEntity>> IXA_MACHINE_BLOCK_BE =
             BLOCK_ENTITIES.register("ixa_machine_block_be", () -> BlockEntityType.Builder.of(
                     IxaMachineBlockEntity::new, RiderBlocks.IXA_MACHINE_BLOCK.get()).build(null));
+
+    public static final Supplier<BlockEntityType<AstroswitchProgrammerEntity>> ASTROSWITCH_PROGRAMMER_BE =
+            BLOCK_ENTITIES.register("astroswitch_programmer_be", () -> BlockEntityType.Builder.of(
+                    AstroswitchProgrammerEntity::new, RiderBlocks.ASTROSWITCH_PROGRAMMER.get()).build(null));
 
     public static final Supplier<BlockEntityType<PandoraPanelBlockEntity>> PANDORA_PANEL_BE =
             BLOCK_ENTITIES.register("pandora_panel_be", () -> BlockEntityType.Builder.of(
@@ -38,6 +46,10 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<GochizoJarBlockEntity>> GOCHIZO_JAR_BE =
             BLOCK_ENTITIES.register("gochizo_jar_be", () -> BlockEntityType.Builder.of(
                     GochizoJarBlockEntity::new, RiderBlocks.GOCHIZO_JAR.get()).build(null));
+
+    public static final Supplier<BlockEntityType<AngelGochizoStandBlockEntity>> ANGEL_GOCHIZO_STAND_BE =
+            BLOCK_ENTITIES.register("angel_gochizo_stand_be", () -> BlockEntityType.Builder.of(
+                    AngelGochizoStandBlockEntity::new, RiderBlocks.ANGEL_GOCHIZO_STAND.get()).build(null));
 
     public static final Supplier<BlockEntityType<MindDoorBlockEntity>> MIND_DOOR_BE =
             BLOCK_ENTITIES.register("mind_door_be", () -> BlockEntityType.Builder.of(

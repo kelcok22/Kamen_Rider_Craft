@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"group": "zuccocade",
+	"pattern": [
+		"XXX",
+		"XCX",
+		"XXX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:blank_card"
+		},
+		"C": {
+			"item": "kamenridercraft:zuccocade_card"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:zuccocade_belt"
+	}
+}

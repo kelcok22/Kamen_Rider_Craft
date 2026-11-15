@@ -17,7 +17,7 @@ public class BasicArmorModel extends GeoModel<BasicArmorItem> {
 
     @Override
     public ResourceLocation getTextureResource(BasicArmorItem animatable) {
-        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + animatable.model + ".png");
+        return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + animatable.name + ".png");
     }
 
 

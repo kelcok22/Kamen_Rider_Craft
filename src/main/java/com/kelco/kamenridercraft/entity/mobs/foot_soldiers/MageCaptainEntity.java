@@ -19,7 +19,7 @@ public class MageCaptainEntity extends BaseHenchmenEntity {
         NAME = "mage_captain";
         BOW_COOLDOWN = 35;
         HARD_BOW_COOLDOWN = 15;
-        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HEAD.get()));
+        this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(WizardRiderItems.WIZARD_HELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(WizardRiderItems.WIZARD_CHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(WizardRiderItems.WIZARD_LEGGINGS.get()));
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(WizardRiderItems.MAGE_DRIVER_CAPTAIN.get()));

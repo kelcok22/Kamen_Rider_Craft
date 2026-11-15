@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.entity.effect;
 
+import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -39,25 +40,58 @@ public class SealingEntity extends Entity implements GeoEntity {
         if (level() instanceof ServerLevel serverLevel) {
             if (TTL == 0) {
                 Random generator = new Random();
-                if (getData(MOB_STATE).equals("normal_undead")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                obtainedCard = switch (getData(MOB_STATE)) {
+                    case "normal_undead" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
                             new ItemStack(NORMAL_UNDEAD_DROPS.get(generator.nextInt(NORMAL_UNDEAD_DROPS.size()))), 0, 0, 0);
-                } else if (getData(MOB_STATE).equals("ace_undead")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                            new ItemStack(ACE_UNDEAD_DROPS.get(generator.nextInt(ACE_UNDEAD_DROPS.size()))), 0, 0, 0);
-                } else if (getData(MOB_STATE).equals("joker")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                            new ItemStack(BLACK_JOKER_SEALED.get()), 0, 0, 0);
-                } else if (getData(MOB_STATE).equals("albino_joker")) {
-                    obtainedCard = new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
-                            new ItemStack(ALBINO_JOKER_SEALED.get()), 0, 0, 0);
+                    case "beetle" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_BEETLE.get()), 0, 0, 0);
+                    case "stag" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_STAG.get()), 0, 0, 0);
+                    case "mantis" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_MANTIS.get()), 0, 0, 0);
+                    case "spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_SPIDER.get()), 0, 0, 0);
+                    case "proper_seal_spider" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(CHANGE_SPIDER_PROPER_SEAL.get()), 0, 0, 0);
+                    case "eagle" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_EAGLE.get()), 0, 0, 0);
+                    case "peacock", "peacock_garren" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_PEACOCK.get()), 0, 0, 0);
+                    case "wolf" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_WOLF.get()), 0, 0, 0);
+                    case "elephant" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(FUSION_ELEPHANT.get()), 0, 0, 0);
+                    case "capricorn" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_CAPRICORN.get()), 0, 0, 0);
+                    case "serpent" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_SERPENT.get()), 0, 0, 0);
+                    case "orchid" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_ORCHID.get()), 0, 0, 0);
+                    case "tiger" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(ABSORB_TIGER.get()), 0, 0, 0);
+                    case "caucasus" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_CAUCASUS.get()), 0, 0, 0);
+                    case "giraffa" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_GIRAFFA.get()), 0, 0, 0);
+                    case "paradoxa" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_PARADOXA.get()), 0, 0, 0);
+                    case "tarantula" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(EVOLUTION_TARANTULA.get()), 0, 0, 0);
+                    case "joker" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(SEALABLE_BLACK_JOKER.get()), 0, 0, 0);
+                    case "albino_joker" -> new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(SEALABLE_ALBINO_JOKER.get()), 0, 0, 0);
+                    default -> throw new IllegalStateException("Unexpected value: " + getData(MOB_STATE));
+                };
+
+                if (getData(MOB_STATE).equalsIgnoreCase("peacock_garren")) {
+                    level().addFreshEntity(new ItemEntity(level(), getX(), getY() - 0.35, getZ(),
+                            new ItemStack(MusicDiscItems.REBIRTH_MUSIC_DISC.get()), 0, 0, 0));
                 }
 
-                if (obtainedCard != null) {
-                    obtainedCard.setPickUpDelay(60);
-                    obtainedCard.setNoGravity(true);
-                    level().addFreshEntity(obtainedCard);
-                }
+                obtainedCard.setPickUpDelay(60);
+                obtainedCard.setNoGravity(true);
+                level().addFreshEntity(obtainedCard);
             } else if (TTL == 60) {
                 try {
                     if (!getData(UUID_STORE).isEmpty()

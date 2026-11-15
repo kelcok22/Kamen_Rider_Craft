@@ -3,6 +3,9 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.w;
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WHenshinRingRenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.WXtremeHenshinRingRenderLayerInfo;
+import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -16,6 +19,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -29,6 +33,7 @@ import net.minecraft.world.level.Level;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredItem;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
+import software.bernie.geckolib.util.Color;
 
 import java.util.List;
 import java.util.Objects;
@@ -45,15 +50,15 @@ public class WDriverItem extends RiderDriverItem {
 
 
     @Override
-    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.translatable("kamenridercraft.name." + riderName));
         Item formItem = getFormItem(stack, 1);
         Item formItem2 = getFormItem(stack, 2);
-		if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
-			tooltipComponents.add(Component.translatable(formItem + ".form"));
-		} else {
-			tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " " + Component.translatable(formItem.toString() + ".form").getString() + Component.translatable(formItem2.toString() + ".form").getString()));
-		}
+        if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
+            tooltipComponents.add(Component.translatable(formItem + ".form"));
+        } else {
+            tooltipComponents.add(Component.literal(Component.translatable("kamenridercraft.name.form").getString() + " " + Component.translatable(formItem.toString() + ".form").getString() + Component.translatable(formItem2.toString() + ".form").getString()));
+        }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
@@ -64,6 +69,7 @@ public class WDriverItem extends RiderDriverItem {
         if (entity instanceof Player player) {
             if (RiderDriverItem.getFormItem(stack, 1) == WRiderItems.XTREME_MEMORY.get() & player.fallDistance > 10) {
                 RiderFormChangeItem alternativeItem_form_change = (RiderFormChangeItem) WRiderItems.XTREME_GOLD_MEMORY.get();
+                player.addEffect(new MobEffectInstance(EffectCore.SAFE_LANDING,1000,0));
                 alternativeItem_form_change.use(level, player, InteractionHand.MAIN_HAND);
             }
         }
@@ -72,7 +78,6 @@ public class WDriverItem extends RiderDriverItem {
     public ResourceLocation getBeltModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/belts/w_riderbelt.geo.json");
     }
-
     @Override
     public void setExtraFormItem(ItemStack belt, Item ITEM, int SLOT, CompoundTag tag) {
         if (getFormItem(belt, 1) == WRiderItems.XTREME_MEMORY.get() || getFormItem(belt, 1) == WRiderItems.XTREME_GOLD_MEMORY.get() || getFormItem(belt, 1) == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
@@ -100,40 +105,40 @@ public class WDriverItem extends RiderDriverItem {
 
             return "belts/" + getFormItem(itemstack, 1).getBeltTex();
         }
-		if (getFormItem(itemstack, 1, henshinTick) == ModdedItemCore.BLANK_FORM.asItem()) {
-			return "blank";
-		} else if (equipmentSlot == EquipmentSlot.HEAD) {
-			if (Objects.equals(getFormItem(itemstack, 2, henshinTick).getFormName(fly), "_skull")) {
-				return riderName + getFormItem(itemstack, 1, henshinTick).getFormName(fly) + "_skull";
-			} else {
-				return riderName + getFormItem(itemstack, 1, henshinTick).getFormName(fly);
-			}
-		} else {
-			if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_fang")) {
-				return riderName + "_fang" + getFormItem(itemstack, 2, henshinTick).getFormName(fly);
-			} else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme")) {
-				return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly) + "_xtreme";
-			} else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme_gold")) {
-				return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly) + "_xtreme_gold";
-			} else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme_accel")) {
-				return riderName + "_accel_xtreme";
-			} else {
-				return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly);
-			}
-		}
+        if (getFormItem(itemstack, 1, henshinTick) == ModdedItemCore.BLANK_FORM.asItem()) {
+            return "blank";
+        } else if (equipmentSlot == EquipmentSlot.HEAD) {
+            if (Objects.equals(getFormItem(itemstack, 2, henshinTick).getFormName(fly), "_skull")) {
+                return riderName + getFormItem(itemstack, 1, henshinTick).getFormName(fly) + "_skull";
+            } else {
+                return riderName + getFormItem(itemstack, 1, henshinTick).getFormName(fly);
+            }
+        } else {
+            if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_fang")) {
+                return riderName + "_fang" + getFormItem(itemstack, 2, henshinTick).getFormName(fly);
+            } else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme")) {
+                return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly) + "_xtreme";
+            } else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme_gold")) {
+                return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly) + "_xtreme_gold";
+            } else if (Objects.equals(getFormItem(itemstack, 1, henshinTick).getFormName(fly), "_cyclone_xtreme_accel")) {
+                return riderName + "_accel_xtreme";
+            } else {
+                return riderName + getFormItem(itemstack, 2, henshinTick).getFormName(fly);
+            }
+        }
     }
 
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         double henshinTick = getHenshinTick(itemstack,rider);
         Item formItem = getFormItem(itemstack, 1, henshinTick);
-		if (slot != EquipmentSlot.HEAD) {
-			if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
-				return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/w_joker_xtreme.geo.json");
-			}
-			return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/w_joker.geo.json");
-		} else {
-			return super.getModelResource(itemstack, animatable, slot, rider);
-		}
+        if (slot != EquipmentSlot.HEAD) {
+            if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
+                return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/w_joker_xtreme.geo.json");
+            }
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/w_joker.geo.json");
+        } else {
+            return super.getModelResource(itemstack, animatable, slot, rider);
+        }
     }
 
     public boolean getGlowForSlot(ItemStack itemStack, EquipmentSlot currentSlot, LivingEntity rider) {
@@ -146,10 +151,27 @@ public class WDriverItem extends RiderDriverItem {
     }
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-    super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        super.SetUnlimitedModels(layerInfo,itemStack,rider,slot);
+        Item formItem = getFormItem(itemStack, 1);
+        if (slot == EquipmentSlot.HEAD) {
+
+            double henshin_tick = getHenshinTick(itemStack, rider);
+            if (formItem != WRiderItems.XTREME_MEMORY.get() && formItem != WRiderItems.XTREME_GOLD_MEMORY.get() && formItem != WRiderItems.XTREME_ACCEL_MEMORY.get()) {
+                if (RiderDriverItem.isTransformingFromBlank(itemStack, rider) && henshin_tick < 31 && henshin_tick > 11) {
+                    layerInfo.add(new WHenshinRingRenderLayerInfo(getRingColor(getFormItem(itemStack, 1)), getRingColor(getFormItem(itemStack, 2))));
+                }
+            }else {
+                if (henshin_tick < 20 && henshin_tick > 1) {
+                    if (formItem == WRiderItems.XTREME_MEMORY.get())layerInfo.add(new WXtremeHenshinRingRenderLayerInfo(getRingColor(WRiderItems.CYCLONE_MEMORY.get()), getRingColor(WRiderItems.JOKER_MEMORY.get())));
+                    if (formItem == WRiderItems.XTREME_ACCEL_MEMORY.get())layerInfo.add(new WXtremeHenshinRingRenderLayerInfo(getRingColor(WRiderItems.CYCLONE_MEMORY.get()), getRingColor(WRiderItems.HEAT_MEMORY.get())));
+                    if (formItem == WRiderItems.XTREME_GOLD_MEMORY.get())layerInfo.add(new WXtremeHenshinRingRenderLayerInfo(Color.YELLOW.getColor(), Color.ORANGE.getColor()));
+
+                }
+            }
+        }
         if(slot==EquipmentSlot.FEET){
             String texture;
-            Item formItem = getFormItem(itemStack, 1);
+
             if (formItem == WRiderItems.XTREME_MEMORY.get() || formItem == WRiderItems.XTREME_GOLD_MEMORY.get() || formItem == WRiderItems.XTREME_ACCEL_MEMORY.get()) {
                 texture="belts/wdriver_belt_xtreme";
             } else {
@@ -164,41 +186,57 @@ public class WDriverItem extends RiderDriverItem {
         }
     }
 
+    public int getRingColor(Item item){
+
+        if (item==WRiderItems.CYCLONE_MEMORY.get()||item==WRiderItems.CYCLONE_CYCLONE_MEMORY.get())return Color.GREEN.getColor();
+        if (item==WRiderItems.JOKER_MEMORY.get()||item==WRiderItems.JOKER_JOKER_MEMORY.get()||item==WRiderItems.CYCLONE_SKULL_MEMORY.get())return 0x669200FF;
+        if (item==WRiderItems.HEAT_MEMORY.get())return Color.RED.getColor();
+        if (item==WRiderItems.LUNA_MEMORY.get())return Color.YELLOW.getColor();
+        if (item==WRiderItems.METAL_MEMORY.get())return Color.GRAY.getColor();
+        if (item==WRiderItems.TRIGGER_MEMORY.get())return Color.BLUE.getColor();
+
+        return Color.WHITE.getColor();
+    }
+
+    public double getBaseHenshinTick(ItemStack stack, LivingEntity rider){
+        return 50;
+    }
+
     @Override
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
 
         switch (currentSlot) {
             case HEAD -> {
-				if (Objects.equals(part, "head")) {
-					return true;
-				}
-				if (Objects.equals(part, "body")) {
-					return true;
-				}
-				if (Objects.equals(part, "rightArm")) {
-					return true;
-				}
-				if (Objects.equals(part, "rightLeg")) {
-					return true;
-				}
+                if (Objects.equals(part, "head")) {
+                    return true;
+                }
+                if (Objects.equals(part, "body")) {
+                    return true;
+                }
+                if (Objects.equals(part, "rightArm")) {
+                    return true;
+                }
+                if (Objects.equals(part, "rightLeg")) {
+                    return true;
+                }
 
             }
             case CHEST -> {
-				if (Objects.equals(part, "body")) {
-					return true;
-				}
+                if (Objects.equals(part, "body")) {
+                    return true;
+                }
 
             }
             case LEGS -> {
-				if (Objects.equals(part, "head")) {
-					return true;
-				}
-				if (Objects.equals(part, "leftLeg")) {
-					return true;
-				}
-				if (Objects.equals(part, "leftArm")) {
-					return true;
-				}
+                if (Objects.equals(part, "head")) {
+                    return true;
+                }
+                if (Objects.equals(part, "leftLeg")) {
+                    return true;
+                }
+                if (Objects.equals(part, "leftArm")) {
+                    return true;
+                }
 
             }
             default -> {

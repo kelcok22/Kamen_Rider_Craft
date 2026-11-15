@@ -1,6 +1,7 @@
 package com.kelco.kamenridercraft.entity.mobs.foot_soldiers;
 
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.item.extra_riders.ExtraRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ZiORiderItems;
 import com.kelco.kamenridercraft.level.ModGameRules;
 import net.minecraft.network.chat.Component;
@@ -13,6 +14,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
+import java.time.LocalDate;
+
 import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
 
 public class KasshineEntity extends BaseHenchmenEntity {
@@ -23,6 +26,11 @@ public class KasshineEntity extends BaseHenchmenEntity {
         super(type, level);
         NAME = "kasshine";
 
+        LocalDate localdate = LocalDate.now();
+        int day = localdate.getDayOfMonth();
+        if (localdate.getMonthValue() == 10 && day >= 24) {
+            this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExtraRiderItems.ANOTHER_AGITO_HELMET.get()));
+        }
 
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZiORiderItems.KASSHINE_TRIDENT.get()));
     }

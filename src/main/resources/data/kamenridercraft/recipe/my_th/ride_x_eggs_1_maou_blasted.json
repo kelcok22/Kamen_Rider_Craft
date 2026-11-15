@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:blasting",
+	"group": "maou",
+	"ingredient": {
+		"item": "kamenridercraft:ride_x_eggs_1"
+	},
+	"result": {
+		"id": "kamenridercraft:ride_x_eggs_1_maou"
+	},
+	"experience": 1,
+	"cookingtime": 200
+}

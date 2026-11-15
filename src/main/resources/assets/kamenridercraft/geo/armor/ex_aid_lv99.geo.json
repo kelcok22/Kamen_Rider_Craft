@@ -12,7 +12,12 @@
 			},
 			"bones": [
 				{
+					"name": "body",
+					"pivot": [-0.16667, 19.33333, 0]
+				},
+				{
 					"name": "bipedHead",
+					"parent": "body",
 					"pivot": [0.09608, 25.28039, 0]
 				},
 				{
@@ -170,6 +175,7 @@
 				},
 				{
 					"name": "bipedBody",
+					"parent": "body",
 					"pivot": [0.09608, 27.28039, 0]
 				},
 				{
@@ -451,6 +457,7 @@
 				},
 				{
 					"name": "bipedRightArm",
+					"parent": "body",
 					"pivot": [-7.54804, 23.883, 0]
 				},
 				{
@@ -514,6 +521,7 @@
 				},
 				{
 					"name": "bipedLeftArm",
+					"parent": "body",
 					"pivot": [7.74019, 23.883, 0]
 				},
 				{
@@ -577,6 +585,7 @@
 				},
 				{
 					"name": "bipedLeftLeg",
+					"parent": "body",
 					"pivot": [2.19216, 13.8, 0]
 				},
 				{
@@ -645,6 +654,7 @@
 				},
 				{
 					"name": "bipedRightLeg",
+					"parent": "body",
 					"pivot": [-2, 13.8, 0]
 				},
 				{

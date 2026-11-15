@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "undead",
+	"pattern": [
+		"XCX",
+		"CMC",
+		"XCX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:bladecard"
+		},
+		"M": {
+			"item": "kamenridercraft:base_sword"
+		},
+		"C": {
+			"item": "kamenridercraft:evolution_caucasus"
+		}
+	},
+	"result": {
+		"id": "kamenridercraft:caucasus_all_over"
+	}
+}

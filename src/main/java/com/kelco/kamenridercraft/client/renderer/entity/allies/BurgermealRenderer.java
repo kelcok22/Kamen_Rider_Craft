@@ -1,9 +1,7 @@
 package com.kelco.kamenridercraft.client.renderer.entity.allies;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
-import com.kelco.kamenridercraft.client.model.entity.allies.BattaCanModel;
 import com.kelco.kamenridercraft.client.model.entity.allies.BurgermealModel;
-import com.kelco.kamenridercraft.entity.mobs.allies.BattaCanEntity;
 import com.kelco.kamenridercraft.entity.mobs.allies.BurgermealEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;

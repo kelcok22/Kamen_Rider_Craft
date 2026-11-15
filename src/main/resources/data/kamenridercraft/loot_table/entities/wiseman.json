@@ -23,6 +23,21 @@
 				}
 			]
 		},
+      {
+        "rolls": 1,
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance",
+            "chance": 0.5
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "kamenridercraft:white_garuda_ring"
+          }
+        ]
+      },
 		{
 			"rolls": 1,
 			"entries": [
