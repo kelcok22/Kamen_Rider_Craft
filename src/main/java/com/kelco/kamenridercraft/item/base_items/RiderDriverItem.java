@@ -138,7 +138,7 @@ public class RiderDriverItem extends RiderArmorItem {
         Double form_time = 30D;
         if (beltStack.getItem() instanceof RiderDriverItem belt) form_time = belt.getBaseHenshinTick(beltStack,rider);
         //if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1)return getFormItem(beltStack, 1,22072012 ) != getFormItem(beltStack, 1);
-        if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 0) return false;
+        if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1) return false;
         return true;
     }
 
