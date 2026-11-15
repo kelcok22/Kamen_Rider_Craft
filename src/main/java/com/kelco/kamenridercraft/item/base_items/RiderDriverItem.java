@@ -135,13 +135,12 @@ public class RiderDriverItem extends RiderArmorItem {
 
     public static boolean isTransforming(LivingEntity rider) {
         ItemStack beltStack  = rider.getItemBySlot(EquipmentSlot.FEET);
-        Double form_time = 30D;
-        if (beltStack.getItem() instanceof RiderDriverItem belt) form_time = belt.getBaseHenshinTick(beltStack,rider);
-        //if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1)return getFormItem(beltStack, 1,22072012 ) != getFormItem(beltStack, 1);
-        if (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1) return false;
-        return true;
+        if (beltStack.has(DataComponents.CUSTOM_DATA)) {
+            CompoundTag tag = Objects.requireNonNull(beltStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+            if (tag.getBoolean("Update_form")) return true;
+        }
+        return !(Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1);
     }
-
 
     public static Boolean isTransformingFromBlank(ItemStack itemStack, LivingEntity rider) {
         Double form_time = 30D;
