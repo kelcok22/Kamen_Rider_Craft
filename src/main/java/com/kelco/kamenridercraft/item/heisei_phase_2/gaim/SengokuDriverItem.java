@@ -68,12 +68,12 @@ public class SengokuDriverItem extends RiderDriverItem {
                 return "bujin_gaim_ochimusha";
             else return riderName + getFormItem(itemstack, 2).getFormName(fly);
         } else if (equipmentSlot == EquipmentSlot.CHEST)
-            if (isTransforming(rider) && !isTransformingFromBlank(itemstack, rider)) return "blank_arms";
+            if (isTransforming(rider) && !isTransformingFromBlank(itemstack, rider)& Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() > 10) return "blank_arms";
             else if (getFormItem(itemstack, 2) == GaimRiderItems.JIMBER_GAIM_CORE.get()) {
                 return "jimbar_arms_" + riderName;
             } else return "blank";
 
-        if (isTransforming(rider)) return "blank_arms";
+        if (isTransforming(rider)& Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() > 10) return "blank_arms";
         else return getFormItem(itemstack, 1).getFormName(fly);
     }
 
@@ -91,7 +91,7 @@ public class SengokuDriverItem extends RiderDriverItem {
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
         super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
         double henshin_tick = getHenshinTick(itemStack, rider);
-        if (slot == EquipmentSlot.HEAD && isTransforming(rider) && henshin_tick < 23)
+        if (slot == EquipmentSlot.HEAD && isTransforming(rider) && henshin_tick < 23&& henshin_tick > 0)
             layerInfo.add(new GaimArmsRenderLayerInfo());
         if (slot == EquipmentSlot.FEET) {
             String texture;
@@ -127,7 +127,7 @@ public class SengokuDriverItem extends RiderDriverItem {
     public ResourceLocation getModelResource(ItemStack itemstack, RiderArmorItem animatable, EquipmentSlot slot, LivingEntity rider) {
         double transformingTick = getHenshinTick(itemstack, rider);
         if (slot == EquipmentSlot.LEGS) {
-            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 1, transformingTick).getModel(""));
+            return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 1).getModel(""));
         } else if (slot == EquipmentSlot.CHEST && getFormItem(itemstack, 2) == GaimRiderItems.JIMBER_GAIM_CORE.get() && itemstack.getItem() instanceof RiderDriverItem belt) {
             return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + belt.baseFormItem.getModel(""));
         }
@@ -139,8 +139,16 @@ public class SengokuDriverItem extends RiderDriverItem {
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
 
         switch (currentSlot) {
-            case HEAD, LEGS -> {
-                return true;
+            case LEGS-> {
+                if (itemstack.getItem() instanceof RiderDriverItem belt) {
+                    if (getFormItem(itemstack, 1, getFormItem(itemstack, 1).getHenshinTick() + 1) != getFormItem(itemstack, 1)) {
+                        return Objects.equals(part, "head");
+                    }
+                    return true;
+                }
+            }
+            case HEAD-> {
+                    return true;
             }
             case CHEST -> {
                 if (Objects.equals(part, "head")) return true;
