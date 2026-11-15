@@ -6,14 +6,14 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/dawn)假面骑士黎明"
+			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/dawn)假面骑士黎明$(/l)"
 		},
 		{
-		"type": "patchouli:spotlight",
+			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:dawn_belt",
 			"title": " ",
 			"text": "腿部不装备护甲时，右键点击$(l:zeztz/arsenal/breakam_dawn_taiken)噬梦曙光(单剑模式)$(/l)即可获得"
 		}
 	]
-}
+		}

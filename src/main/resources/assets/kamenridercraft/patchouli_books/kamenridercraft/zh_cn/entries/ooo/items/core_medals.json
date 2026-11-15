@@ -670,7 +670,7 @@
 			"type": "patchouli:text",
 			"anchor": "mukade_goda_medal",
 			"title": "戈达蜈蚣核心硬币",
-			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)"
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -683,7 +683,7 @@
 			"type": "patchouli:text",
 			"anchor": "hachi_goda_medal",
 			"title": "戈达蜜蜂核心硬币",
-			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)"
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -696,7 +696,7 @@
 			"type": "patchouli:text",
 			"anchor": "ari_goda_medal",
 			"title": "戈达蚂蚁核心硬币",
-			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)"
+			"text": "登场于：$(li)假面骑士OOO 10周年 复活的核心硬币 (2022年，V-Cinema电影)$(br2)用于合成戈达的$(l:ooo/devices/ooo_driver#goda_ooodriver)OOO驱动器(戈达)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -937,4 +937,4 @@
 			"text": "该物品目前无法获得"
 		}
 	]
-}
+		}

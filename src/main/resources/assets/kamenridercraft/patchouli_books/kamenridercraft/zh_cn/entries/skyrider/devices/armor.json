@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "与$(l:skyrider/devices/tornado#tornado)龙卷风$(/l)一起穿戴，变身为$(l:skyrider/riders/skyrider)天空骑士"
+			"text": "与$(l:skyrider/devices/tornado#tornado)龙卷风$(/l)一起穿戴，变身为$(l:skyrider/riders/skyrider)天空骑士$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -21,4 +21,4 @@
 			"recipe": "kamenridercraft:skyrider/skyriderlegs"
 		}
 	]
-}
+		}

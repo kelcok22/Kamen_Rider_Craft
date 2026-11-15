@@ -14,13 +14,6 @@
 			"item": "kamenridercraft:dest_claw",
 			"title": " ",
 			"text": "通过$(l:ryuki/arsenal/strike_vent_cards#dest_claw_vent)死亡利爪攻击降临$(/l)获得"
-		},
-		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:dest_claw1",
-			"title": " ",
-			"text": "通过$(l:ryuki/arsenal/strike_vent_cards#dest_claw_vent)死亡利爪攻击降临$(/l)获得"
 		}
 	]
-}
+		}

@@ -1,0 +1,20 @@
+{
+	"name": "孔德拉腕轮",
+	"icon": "kamenridercraft:fake_condorer_wheel",
+	"category": "kamenridercraft:amazon/items",
+	"sortnum": 5,
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_condorer_wheel",
+			"text": "登场于:$(li)假面骑士Amazon (1974年, 电视剧)$(br2)用于切换$(l:amazon/riders/fake_amazon)假Amazon$(/l)的形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": " ",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_condorer_wheel",
+			"text": "该物品目前无法获取"
+		}
+	]
+}

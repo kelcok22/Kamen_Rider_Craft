@@ -6,14 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由南洋高加索斯大兜虫不死生物使用"
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由$(l:blade/mobs/king_undead#undead_king_caucasus)高加索大兜虫不死兽$(/l)使用"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:caucasus_all_over",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "物品目前无法获得"
+			"recipe": "kamenridercraft:blade/caucasus_all_over"
 		}
 	]
-}
+		}

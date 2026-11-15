@@ -14,7 +14,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:gashapon_capsule",
             "title": "扭蛋胶囊",
-            "text": "$(li)$(l:ooo/items/tomorrows_underwear)明日的内裤$(/l)（5%）$(li)$(l:fourze/items/astroswitches#shin_chan_switch)新酱开关$(/l)（5%）$(li)$(l:ghost/items/gamma_eyecons#yurusen_gamma_eyecon)游流仙眼魔眼魂$(/l)（5%）$(li)$(l:ghost/items/gamma_eyecons#sister_gamma_eyecon)姐妹眼魔眼魂$(/l)（5%）$(li)$(l:misc/blocks/decor_blocks#genm_continue)Continue水管$(/l)（5%）$(li)$(l:revice/items/vistamps#kirin_vistamp)长颈鹿罪恶印章$(/l)（5%）$(li)$(l:revice/items/vistamps#niwatori_vistamp)家鸡罪恶印章$(/l)（5%）$(li)$(l:revice/items/vistamps#funkorogashi_vistamp)蜣螂罪恶印章$(/l)（5%）$(li)$(l:geats/items/raise_buckles#shark_raise_buckle)鲨鱼代扣$(/l)（5%）$(li)$(l:gavv/items/gochizo#gumgumgum_gochizo)橡皮糖饱藏$(/l)（5%）$(li)$(l:zeztz/arsenal/zeztz_horse_armor)Zeztz马铠$(/l)（5%）$(br2)在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和新手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+            "text": "$(li)$(l:ooo/items/tomorrows_underwear)明日的内裤$(/l)（5%）$(li)$(l:fourze/items/astroswitches#shin_chan_switch)新酱开关$(/l)（5%）$(li)$(l:ghost/items/gamma_eyecons#yurusen_gamma_eyecon)游流仙眼魔眼魂$(/l)（5%）$(li)$(l:ghost/items/gamma_eyecons#sister_gamma_eyecon)姐妹眼魔眼魂$(/l)（5%）$(li)$(l:misc/blocks/decor_blocks#genm_continue)Continue水管$(/l)（5%）$(li)$(l:revice/items/vistamps#kirin_vistamp)长颈鹿罪恶印章$(/l)（5%）$(li)$(l:revice/items/vistamps#niwatori_vistamp)家鸡罪恶印章$(/l)（5%）$(li)$(l:revice/items/vistamps#funkorogashi_vistamp)蜣螂罪恶印章$(/l)（5%）$(li)$(l:geats/items/raise_buckles#shark_raise_buckle)鲨鱼代扣$(/l)（5%）$(li)$(l:gavv/items/gochizo#gumgumgum_gochizo)橡皮糖饱藏$(/l)（5%）$(li)$(l:zeztz/arsenal/zeztz_horse_armor)Zeztz马铠$(/l)（5%）$(br2)在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和新手级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
         },
         {
             "type": "patchouli:text",
@@ -27,7 +27,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:halloween_gashapon_capsule",
             "title": " ",
-            "text": "$(li)$(l:zeztz/items/capsems#sweets_capsem)Zeztz梦境胶囊(甜点版)$(/l)（11.1%）$(li)$(l:misc/blocks/ferbus)费布斯$(/l)（11.1%）$(br2)在10月24日至31日期间，在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和老手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+            "text": "$(li)$(l:zeztz/items/capsems#sweets_capsem)Zeztz梦境胶囊(甜点版)$(/l)（11.1%）$(li)$(l:misc/blocks/ferbus)费布斯$(/l)（11.1%）$(br2)在10月24日至31日期间，在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和老手级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
         },
         {
             "type": "patchouli:text",
@@ -40,7 +40,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:valentine_gashapon_capsule",
             "title": " ",
-            "text": "$(li)$(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card_televikun)Firemars驾驭凯米卡(电视君版)（11.1%）$(li)$(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card_televikun)Inphoenix驾驭凯米卡(电视君版)（11.1%）$(br2)在2月13日至18日期间，在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和老手级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+            "text": "$(li)$(l:gotchard/items/ride_chemy_cards#firemars_ride_chemy_card_televikun)Firemars驾驭凯米卡(电视君版)（11.1%）$(/l)$(li)$(l:gotchard/items/ride_chemy_cards#inphoenix_ride_chemy_card_televikun)Inphoenix驾驭凯米卡(电视君版)（11.1%）$(/l)$(br2)在2月13日至18日期间，在 $(l:misc/blocks/machine_blocks#gashapon_machine)扭蛋机$(/l) 上使用绿宝石获得$(br2)通过和老手级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
         }
     ]
 }

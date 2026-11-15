@@ -58,7 +58,7 @@
 			"type": "patchouli:text",
 			"anchor": "ginga_miridewatch",
 			"title": "银河未来骑士表盘",
-			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换沃兹的$(l:zi_o/riders/woz#ginga)银河终结形态$(/l)"
+			"text": "登场于：$(li)假面骑士时王 (2018年，电视剧)$(br2)用于切换沃兹的$(l:#gingafinaly)银河终结形态$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",

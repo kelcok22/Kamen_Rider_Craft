@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/zeztz)假面骑士Zeztz"
+			"text": "登场于：$(li)假面骑士Zeztz (2025年，电视剧)$(br2)与$(l:zeztz/devices/armor)Zeztz装甲$(/l)一起穿戴，可变身为$(l:zeztz/riders/zeztz)假面骑士Zeztz$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:zeztz/zeztz_driver"
 		}
 	]
-}
+		}

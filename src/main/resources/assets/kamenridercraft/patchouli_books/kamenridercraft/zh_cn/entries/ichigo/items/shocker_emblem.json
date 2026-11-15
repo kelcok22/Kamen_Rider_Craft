@@ -8,7 +8,7 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:shocker_emblem",
-			"text": "掉落自:$(li)$(l:ichigo/mobs/shocker_rider)修卡骑士$(/l)"
+			"text": "掉落自:$(li)修卡骑士"
 		}
 	]
 }

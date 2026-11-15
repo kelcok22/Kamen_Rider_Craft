@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)搭配 $(l:saber/riders/saber#arthur)亚瑟王$(/l) 形态使用"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)搭配 $(l:saber/riders/saber)亚瑟王$(/l) 形态使用"
 		},
 		{
 			"type": "patchouli:crafting",

@@ -91,7 +91,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:rider_ticket_nega",
 			"title": " ",
-			"text": "可在 $(l:den_o/structures/negaliner)负电班列$(/l) 中找到"
+			"text": "可在 负电班列 中找到"
 		},
 		{
 			"type": "patchouli:text",

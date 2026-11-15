@@ -26,7 +26,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:red_ichigo_chair",
         "title": " ",
-        "text": "获取方式：开启 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取$(br2)小知识：这款座椅的现实原型，早于红骑士的登场时间推出"
+        "text": "获取方式：开启 $(l:misc/items/gashapon_capsules)扭蛋胶囊$(/l)获得$(br2)通过和学徒级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取$(br2)小知识：这款座椅的现实原型，早于红骑士的登场时间推出"
       },
       {
         "type": "patchouli:text",

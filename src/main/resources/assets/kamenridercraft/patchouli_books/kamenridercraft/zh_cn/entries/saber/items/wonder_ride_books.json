@@ -110,7 +110,7 @@
 			"type": "patchouli:text",
 			"anchor": "lamp_do_alngina_wonder_ride_book",
 			"title": "阿兰基那神灯奇幻驾驭书",
-			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)用于合成刀剑的 $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器（刀剑款）$(/l)$(br2)用于切换圣刃的 $(l:saber/riders/saber#lamp_do_alngina)阿兰基那神灯$(/l)形态$(br)用于切换剑锋的 $(l:saber/riders/blades#lamp_do_alngina)阿兰基那神灯$(/l)形态$(br)用于切换刀剑的 $(l:saber/riders/espada#lamp_do_alngina)阿兰基那神灯$(/l)形态"
+			"text": "登场于：$(li)假面骑士圣刃 (2020年，电视剧)$(br2)用于合成刀剑的 $(l:saber/devices/seiken_swordriver#seiken_swordriver_espada)圣刃剑驱动器（刀剑款）$(/l)$(br2)用于切换圣刃的 $(l:#lamp_do_alangina)阿兰基那神灯$(/l)形态$(br)用于切换剑锋的 $(l:saber/riders/blades)阿兰基那神灯$(/l)形态$(br)用于切换刀剑的 $(l:#lamp_do_alangina)阿兰基那神灯$(/l)形态"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -156,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sarutobi_ninjaden_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kobuta_3_kyoudai_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:hanselnuts_to_gretel_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +195,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bremen_no_rock_band_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -316,7 +316,7 @@
 			"type": "patchouli:text",
 			"anchor": "eternal_phoenix_wonder_ride_book",
 			"title": "永恒不死鸟奇幻驾驭书",
-			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，电影)$(br2)用于合成霸剑的 $(l:saber/devices/haken_bladriver_falchion)霸剑剑锋驱动器$(/l)$(br2)用于切换剑锋的 $(l:saber/riders/blades#eternal_phoenix)永恒不死鸟$(/l)形态$(br)用于切换刀剑的 $(l:saber/riders/espada#eternal_phoenix)永恒不死鸟$(/l)形态$(br)用于切换霸剑的 $(l:saber/riders/falchion#eternal_phoenix)永恒不死鸟$(/l)形态"
+			"text": "登场于：$(li)假面骑士圣刃：不死鸟剑士与破灭之书 (2020年，电影)$(br2)用于合成霸剑的 霸剑剑锋驱动器$(br2)用于切换剑锋的 $(l:saber/riders/blades#eternal_phoenix)永恒不死鸟$(/l)形态$(br)用于切换刀剑的 $(l:saber/riders/espada#eternal_phoenix)永恒不死鸟$(/l)形态$(br)用于切换霸剑的 $(l:saber/riders/falchion#eternal_phoenix)永恒不死鸟$(/l)形态"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -349,7 +349,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:kirin_no_ongaeshi_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -362,7 +362,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:sarukani_wars_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -375,7 +375,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:bakusou_usagi_to_kame_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -388,7 +388,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:houshin_kamen_engi_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -401,7 +401,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:tsuki_no_hime_kaguyan_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -414,7 +414,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:osha_jizou_san_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -427,7 +427,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:issun_bushi_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -440,7 +440,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daishougun_momoichirou_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：在 $(l:saber/structures/northern_base)北部基地$(/l) 内发现$(br2)或使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：在 $(l:saber/structures/northern_base)北部基地$(/l) 内发现$(br2)或使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -453,7 +453,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daikengou_urashimajirou_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：在 $(l:saber/structures/northern_base)北部基地$(/l) 内发现$(br2)或使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：在 $(l:saber/structures/northern_base)北部基地$(/l) 内发现$(br2)或使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -466,7 +466,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:daiyokozuna_kinzaburou_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：在 $(l:saber/structures/northern_base)北部基地$(/l) 内发现$(br2)或使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：在 $(l:saber/structures/northern_base)北部基地$(/l) 内发现$(br2)或使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -479,7 +479,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:king_of_arthur_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -598,7 +598,7 @@
 			"type": "patchouli:text",
 			"anchor": "gaikotsu_ninjaden_wonder_ride_book",
 			"title": "骸骨忍者传奇幻驾驭书",
-			"text": "登场于：$(li)假面骑士 Outsiders (2022年，网络剧)$(br2)用于合成天灾的 $(l:saber/devices/seiken_swordriver#seiken_swordriver_desast)圣刃剑驱动器（天灾款）"
+			"text": "登场于：$(li)假面骑士 Outsiders (2022年，网络剧)$(br2)用于合成天灾的 $(l:saber/devices/seiken_swordriver#seiken_swordriver_desast)圣刃剑驱动器（天灾款）$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -618,7 +618,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:televi_kun_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_ride_book)空白奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -644,7 +644,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_kaenken_rekka_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -657,7 +657,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_suiseiken_nagare_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -670,7 +670,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_raimeiken_ikazuchi_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -683,7 +683,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_ankokuken_kurayami_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -696,7 +696,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_dogouken_gekido_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -709,7 +709,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_fuusouken_hayate_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -722,7 +722,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_onjuuken_suzune_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -735,7 +735,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_kougouken_saikou_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -748,7 +748,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_mumeiken_kyomu_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -761,55 +761,55 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:wonder_world_story_of_eneiken_noroshi_wonder_ride_book",
 			"title": " ",
-			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
 		},
 		{
-	"type": "patchouli:text",
-	"anchor": "wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
-	"title": "时国剑界时奇幻世界故事奇幻驾驭书",
-	"text": ""
-         },
-         {
-	"type": "patchouli:spotlight",
-	"link_recipe": true,
-	"item": "kamenridercraft:wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
-	"title": " ",
-	"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器"
-         },
-         {
-	"type": "patchouli:text",
-	"anchor": "happy_brave_dragon_wonder_ride_book",
-	"title": "快乐勇气飞龙奇幻驾驭书",
-	"text": "登场于：$(li)假面骑士圣刃 Charadeco蛋糕系列 (2020年，糕点系列)"
-          },
-          {
-	"type": "patchouli:spotlight",
-	"link_recipe": true,
-	"item": "kamenridercraft:happy_brave_dragon_wonder_ride_book",
-	"title": " ",
-	"text": "获取方式：打开 $(l:misc/items/gift)礼物$(/l) 获得"
-           },
-           {
-	"type": "patchouli:text",
-	"anchor": "ghost_ijinroku_wonder_ride_book",
-	"title": "Ghos伟人录奇幻驾驭书",
-	"text": "登场于：$(li)假面骑士圣刃×Ghost (2021年，TTFC特别篇)$(br2)用于切换圣刃的 $(l:saber/riders/saber#ghost_ijinroku)Ghos伟人录$(/l)形态"
-          },
-          {
-	"type": "patchouli:crafting",
-	"title": " ",
-	"recipe": "kamenridercraft:saber/ghost_ijinroku_wonder_ride_book"
-          },
-          {
-	"type": "patchouli:text",
-	"anchor": "specter_gekikou_senki_wonder_ride_book",
-	"title": "Specter激昂战纪奇幻驾驭书",
-	"text": "登场于：$(li)假面骑士Specter×剑锋 (2021年，TTFC特别篇)$(br2)用于切换剑锋的 $(l:saber/riders/blades#specter_gekikou_senki)Specter激昂战纪$(/l)形态"
-          },
-          {
-	"type": "patchouli:crafting",
-	"title": " ",
-	"recipe": "kamenridercraft:saber/specter_gekikou_senki_wonder_ride_book"
-           }
-      ]
-}
+			"type": "patchouli:text",
+			"anchor": "wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
+			"title": "时国剑界时奇幻世界故事奇幻驾驭书",
+			"text": ""
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:wonder_world_story_of_jikokuken_kaiji_wonder_ride_book",
+			"title": " ",
+			"text": "获取方式：使用 $(l:saber/items/blank_wonder_world_story_wonder_ride_book)空白奇幻世界故事奇幻驾驭书$(/l) 作用于 $(l:misc/blocks/machine_blocks#sword_of_logos_book_analyzer)真理之剑书籍分析器$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "happy_brave_dragon_wonder_ride_book",
+			"title": "快乐勇气飞龙奇幻驾驭书",
+			"text": "登场于：$(li)假面骑士圣刃 Charadeco蛋糕系列 (2020年，糕点系列)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:happy_brave_dragon_wonder_ride_book",
+			"title": " ",
+			"text": "获取方式：打开 $(l:misc/items/gift)礼物$(/l) 获得"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "ghost_ijinroku_wonder_ride_book",
+			"title": "Ghos伟人录奇幻驾驭书",
+			"text": "登场于：$(li)假面骑士圣刃×Ghost (2021年，TTFC特别篇)$(br2)用于切换圣刃的 $(l:saber/riders/saber#ghost_ijinroku)Ghos伟人录$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/ghost_ijinroku_wonder_ride_book"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "specter_gekikou_senki_wonder_ride_book",
+			"title": "Specter激昂战纪奇幻驾驭书",
+			"text": "登场于：$(li)假面骑士Specter×剑锋 (2021年，TTFC特别篇)$(br2)用于切换剑锋的 $(l:saber/riders/blades#specter_gekikou_senki)Specter激昂战纪$(/l)形态"
+		},
+		{
+			"type": "patchouli:crafting",
+			"title": " ",
+			"recipe": "kamenridercraft:saber/specter_gekikou_senki_wonder_ride_book"
+		}
+	]
+		}

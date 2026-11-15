@@ -11,7 +11,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:geats/magnum_shooter_40x",
-          "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/mobs/the_end_rider)The End骑士$(/l)的装备"
+          "text": "掉落自：$(li)$(l:geats/mobs/gmrider)GM骑士$(/l)的装备$(li)$(l:geats/riders/the_end_rider)The End骑士$(/l)的装备"
 		}
 	]
 }

@@ -6,14 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由长颈鹿锯锹形虫不死生物使用"
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由$(l:blade/mobs/king_undead#undead_king_giraffa)长颈鹿锯锹形虫不死兽$(/l)使用"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:giraffa_skeltar",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "物品目前无法获得"
+			"recipe": "kamenridercraft:blade/giraffa_skeltar"
 		}
 	]
-}
+		}

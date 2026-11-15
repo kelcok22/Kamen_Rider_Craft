@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "smartbuckle",
-			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/riotrooper)莱欧骑兵"
+			"text": "登场于：$(li)假面骑士555 (2003年，电视剧)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/riotrooper)莱欧骑兵$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -20,7 +20,7 @@
 			"type": "patchouli:text",
 			"anchor": "smartbuckle_v2",
 			"title": "智脑带扣v2(莱欧骑兵 V2)",
-			"text": "登场于：$(li)失落的世界 (2005年，S.I.C.英雄传奇)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/riotrooper_v2)莱欧骑兵 V2"
+			"text": "登场于：$(li)失落的世界 (2005年，S.I.C.英雄传奇)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/riotrooper_v2)莱欧骑兵 V2$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -30,4 +30,4 @@
 			"text": "物品目前无法获得"
 		}
 	]
-}
+		}

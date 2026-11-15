@@ -39,7 +39,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "超级模式",
-			"text": "通过使用$(l:misc/items/card_warrior_cards#shadowmantis)影螳螂怪物驾驭卡$(/l)进行形态切换"
+			"text": "通过使用$(l:misc/items/ride_monster_cards#shadowmantis)影螳螂怪物驾驭卡$(/l)进行形态切换"
 		},
 		{
 			"type": "patchouli:text",
@@ -59,6 +59,20 @@
 			"type": "patchouli:text",
 			"title": "假面骑士卡利斯",
 			"text": "登场于：$(li)OOO、电王、全骑士：大家一起宇宙来了 ～看！只有你的48位骑士～ (2011年，网络电影)$(br2)通过穿戴$(l:blade/devices/chalice_rouzer)卡利斯觉醒器$(/l)进行变身$(br2)状态效果：$(li)缩小 VI$(li)缓慢 III$(li)饱和"
+		},
+		{
+			"type": "patchouli:entity",
+			"anchor": "chalice_rouze_spirit",
+			"entity": "kamenridercraft:shocker_combatman{CustomName:\"Grumm\",ArmorItems:[{id:\"kamenridercraft:undead_buckle\",components:{custom_data:{slot_tex1:\"kamenridercraft:chalice_rouze_spirit\"}},Count:1b},{id:\"kamenridercraft:bladelegs\",Count:1b},{id:\"kamenridercraft:bladetroso\",Count:1b},{id:\"kamenridercraft:bladehead\",Count:1b}]}",
+			"scale": -1,
+			"offset": 0.1,
+			"name": "相川始",
+			"text": "由$(l:blade/items/rouze_cards)觉醒卡片·灵魂人类$(/l)切换为相川始的人类外形"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "相川始",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)通过穿戴卡利斯觉醒器进行变身$(br2)状态效果：$(li)村庄英雄 I"
 		}
 	]
 }

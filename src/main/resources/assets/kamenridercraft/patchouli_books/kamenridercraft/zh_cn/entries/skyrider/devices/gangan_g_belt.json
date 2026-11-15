@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br2)与$(l:skyrider/devices/armor)天空骑士装甲$(/l)一起穿戴，可变身为$(l:skyrider/riders/gangan_g)钢勘次"
+			"text": "登场于:$(li)假面骑士（1979年，电视剧）$(br2)与$(l:skyrider/devices/armor)天空骑士装甲$(/l)一起穿戴，可变身为$(l:skyrider/riders/gangan_g)钢勘次$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:skyrider/gangan_g_belt"
 		}
 	]
-}
+		}

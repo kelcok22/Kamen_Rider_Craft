@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士G",
-			"text": "登场于：$(li)假面骑士G (2009年，电视特别篇)$(br2)通过穿戴$(l:g/devices/g_belt)G腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫 I$(li)跳跃提升 II$(li)力量 V（空手时）$(li)力量 II（持武器时）"
+			"text": "登场于：$(li)假面骑士G (2009年，电视特别篇)$(br2)通过穿戴$(l:g/devices/g_belt)G腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)急迫 I$(li)跳跃提升 II$(li)力量 II"
 		}
 	]
 }

@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于:$(li)假面骑士J (1994年, 电影)$(br2)与$(l:j/devices/armor)J装甲$(/l)一起穿戴，可变身为$(l:j/riders/j)假面骑士J。"
+			"text": "登场于:$(li)假面骑士J (1994年, 电影)$(br2)与$(l:j/devices/armor)J装甲$(/l)一起穿戴，可变身为$(l:j/riders/j)假面骑士J。$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:j/j_spirit"
 		}
 	]
-}
+		}

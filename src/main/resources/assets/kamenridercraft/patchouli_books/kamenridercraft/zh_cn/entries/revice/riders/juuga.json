@@ -15,7 +15,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Juuga",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/juuga_driver)Juuga驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 IV（持武器时）$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)急迫 III$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/juuga_driver)Juuga驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 IV$(li)速度 IV$(li)抗性提升 IV$(li)水下呼吸$(li)夜视$(li)急迫 III$(li)跳跃提升"
 		}
 	]
 }

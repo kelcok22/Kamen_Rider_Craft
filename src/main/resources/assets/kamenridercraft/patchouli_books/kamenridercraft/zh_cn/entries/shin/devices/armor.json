@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "与$(l:shin/devices/grasshopper_dna)蝗虫基因$(/l)一起穿戴，可变身为$(l:shin/riders/shin)假面骑士真"
+			"text": "与$(l:shin/devices/grasshopper_dna)蝗虫基因$(/l)一起穿戴，可变身为$(l:shin/riders/shin)假面骑士真$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -21,4 +21,4 @@
 			"recipe": "kamenridercraft:shin/shinlegs"
 		}
 	]
-}
+		}

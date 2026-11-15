@@ -701,7 +701,7 @@
 			"type": "patchouli:text",
 			"anchor": "double_driver_raise_buckle",
 			"title": "W驱动器代扣",
-			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats#double_driver)W$(/l)形态"
+			"text": "登场于：$(li)假面骑士极狐带扣模拟器 (2022年，网站)$(br2)用于切换欲望驱动器使用者的 $(l:geats/riders/geats)W$(/l)形态"
 		},
 		{
 			"type": "patchouli:crafting",

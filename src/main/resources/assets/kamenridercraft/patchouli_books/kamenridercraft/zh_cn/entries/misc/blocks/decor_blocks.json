@@ -13,7 +13,7 @@
 			"anchor": "kuuga_tomb",
 			"link_recipe": true,
 			"item": "kamenridercraft:kuuga_tomb",
-			"text": "可在$(l:kuuga/structures/kuuga_tomb)空我遗迹$(/l)内找到"
+			"text": "可在$(l:kuuga/structures/kuuga_ruin)空我遗迹$(/l)内找到"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -96,7 +96,7 @@
 			"anchor": "dark_treat",
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_treat",
-			"text": "可与新手级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易获得"
+			"text": "可与学徒级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易获得"
 		},
 		{
 			"type": "patchouli:spotlight",

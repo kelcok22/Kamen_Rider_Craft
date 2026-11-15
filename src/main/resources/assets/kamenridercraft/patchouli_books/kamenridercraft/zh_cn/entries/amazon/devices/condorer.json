@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "condorer",
-			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)$(br2)与$(l:amazon/devices/armor)Amazon装甲$(/l)配合穿戴，可变身为$(l:amazon/riders/amazon)假面骑士Amazon"
+			"text": "登场于:$(li)假面骑士Amazon (1974, 电视剧)$(br2)与$(l:amazon/devices/armor)Amazon装甲$(/l)配合穿戴，可变身为$(l:amazon/riders/amazon)假面骑士Amazon$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,12 +18,25 @@
 			"type": "patchouli:text",
 			"anchor": "dark_condorer",
 			"title": "孔德拉 (黑暗Amazon)",
-			"text": "登场于:$(li)弹珠机假面骑士：全速前进（2015年，弹珠机游戏）$(br2)与$(l:amazon/devices/armor)Amazon装甲$(/l)配合穿戴，可变身为$(l:amazon/riders/dark_amazon)黑暗Amazon"
+			"text": "登场于:$(li)弹珠机假面骑士：全速前进（2015年，弹珠机游戏）$(br2)与$(l:amazon/devices/armor)Amazon装甲$(/l)配合穿戴，可变身为$(l:amazon/riders/dark_amazon)黑暗Amazon$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"title": " ",
 			"recipe": "kamenridercraft:amazon/dark_condorer"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fake_condorer",
+			"title": "孔德拉(假Amazon)",
+			"text": "登场于:$(li)假面骑士Amazon (1974年, 电视剧)$(br2)与Amazon装甲一起穿戴，可变身为$(l:amazon/riders/fake_amazon)假Amazon$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"title": " ",
+			"link_recipe": true,
+			"item": "kamenridercraft:fake_condorer",
+			"text": "该物品目前无法获取"
 		}
 	]
-}
+		}

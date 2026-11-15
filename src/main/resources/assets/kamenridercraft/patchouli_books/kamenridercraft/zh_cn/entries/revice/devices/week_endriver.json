@@ -21,11 +21,9 @@
 			"text": "登场于：$(li)假面骑士Jeanne&假面骑士阿基蕾拉 女骑外传 (2022年，网络剧)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/dark_aguilera)假面骑士黑暗阿基蕾拉$(/l)$(br2)最多可存储2组罪恶印章"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:dark_week_endriver",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "该物品目前无法获取"
+			"recipe": "kamenridercraft:revice/dark_week_endriver"
 		}
 	]
-}
+		}

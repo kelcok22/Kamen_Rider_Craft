@@ -13,7 +13,124 @@
 			"type": "patchouli:spotlight",
 			"link_recipe": true,
 			"item": "kamenridercraft:change_beetle",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/ace_undead)类别Ace不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "slash_lizard",
+			"title": "觉醒卡片·斩击蜥蜴",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:slash_lizard",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "beat_lion",
+			"title": "觉醒卡片·拳击雄狮",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:beat_lion",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tackle_boar",
+			"title": "觉醒卡片·冲锋野猪",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tackle_boar",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "kick_locust",
+			"title": "觉醒卡片·踢击蝗虫",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:kick_locust",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "thunder_deer",
+			"title": "觉醒卡片·雷霆麋鹿",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thunder_deer",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "metal_trilobite",
+			"title": "觉醒卡片·金属三叶虫",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:metal_trilobite",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "magnet_buffalo",
+			"title": "觉醒卡片·磁力野牛",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:magnet_buffalo",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mach_jaguar",
+			"title": "觉醒卡片·马赫美洲豹",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mach_jaguar",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "time_scarab",
+			"title": "觉醒卡片·时间圣甲虫",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:time_scarab",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -26,7 +143,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fusion_eagle",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/jack_undead)类别Jack不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -39,7 +156,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:absorb_capricorn",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/queen_undead)类别Queen不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -52,7 +169,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evolution_caucasus",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/king_undead)类别King不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -65,7 +182,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:silver_evolution_caucasus",
 			"title": " ",
-			"text": "$(br2)通过和大师级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+			"text": "$(br2)通过和大师级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
 		},
 		{
 			"type": "patchouli:text",
@@ -78,7 +195,124 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:change_stag",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/ace_undead)类别Ace不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bullet_armadillo",
+			"title": "觉醒卡片·子弹犰狳",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bullet_armadillo",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "upper_frog",
+			"title": "觉醒卡片·攀升青蛙",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:upper_frog",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rapid_pecker",
+			"title": "觉醒卡片·极速啄木鸟",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rapid_pecker",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drop_whale",
+			"title": "觉醒卡片·坠落巨鲸",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drop_whale",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rouze_firefly",
+			"title": "觉醒卡片·赤焰萤火虫",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rouze_firefly",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rock_tortoise",
+			"title": "觉醒卡片·岩石陆龟",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rock_tortoise",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "scope_bat",
+			"title": "觉醒卡片·视觉蝙蝠",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:scope_bat",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gemini_zebra",
+			"title": "觉醒卡片·双子斑马",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gemini_zebra",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "thief_chameleon",
+			"title": "觉醒卡片·窃取变色龙",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:thief_chameleon",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -91,7 +325,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fusion_peacock",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/jack_undead)类别Jack不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -104,7 +338,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:absorb_serpent",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/queen_undead)类别Queen不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -117,7 +351,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evolution_giraffa",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/king_undead)类别King不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -130,7 +364,150 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:change_mantis",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/ace_undead)类别Ace不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rouze_spirit",
+			"title": "觉醒卡片·灵魂人类",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于切换$(l:blade/riders/chalice#chalice_rouze_spirit)相川始$(/l)和$(l:#chalice_rouze_spirit)人类不死兽$(/l)形态"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rouze_spirit",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "chop_head",
+			"title": "觉醒卡片·切裂锤头鲨",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:chop_head",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "float_dragonfly",
+			"title": "觉醒卡片·浮游蜻蜓",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:float_dragonfly",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "drill_shell",
+			"title": "觉醒卡片·钻击海螺",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:drill_shell",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "tornado_hawk",
+			"title": "觉醒卡片·龙卷猎鹰",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:tornado_hawk",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bio_plant",
+			"title": "觉醒卡片·生化藤蔓",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bio_plant",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "reflect_moth",
+			"title": "觉醒卡片·反射飞蛾",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:reflect_moth",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "recover_camel",
+			"title": "觉醒卡片·治愈骆驼",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:recover_camel",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "shuffle_centipede",
+			"title": "觉醒卡片·洗牌蜈蚣",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:shuffle_centipede",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "fusion_wolf",
+			"title": "觉醒卡片·融合野狼",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:fusion_wolf",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/jack_undead)类别Jack不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "absorb_orchid",
+			"title": "觉醒卡片·吸收兰花",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:absorb_orchid",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/queen_undead)类别Queen不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -143,7 +520,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evolution_paradoxa",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/king_undead)类别King不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -156,7 +533,137 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:change_spider",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/ace_undead)类别Ace不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "change_spider_proper_seal",
+			"title": "觉醒卡片·变化蜘蛛(完全封印)",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于切换假面骑士连格尔的$(l:blade/riders/leangle#leangle)基础形态$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:change_spider_proper_seal",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/ace_undead)类别Ace不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "stab_bee",
+			"title": "觉醒卡片·刺击蜜蜂",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:stab_bee",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "screw_mole",
+			"title": "觉醒卡片·回旋鼹鼠",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:screw_mole",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "rush_rhinoceros",
+			"title": "觉醒卡片·突进犀牛",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:rush_rhinoceros",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "bite_cobra",
+			"title": "觉醒卡片·撕咬眼镜蛇",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:bite_cobra",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "blizzard_polar",
+			"title": "觉醒卡片·暴雪北极熊",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:blizzard_polar",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "gel_jellyfish",
+			"title": "觉醒卡片·凝胶水母",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:gel_jellyfish",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "poison_scorpion",
+			"title": "觉醒卡片·猛毒蝎子",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:poison_scorpion",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "smog_squid",
+			"title": "觉醒卡片·烟雾枪乌贼",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:smog_squid",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "remote_tapir",
+			"title": "觉醒卡片·操控貘",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:remote_tapir",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/undead)不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -169,7 +676,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:fusion_elephant",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/jack_undead)类别Jack不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -182,7 +689,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:absorb_tiger",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/queen_undead)类别Queen不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -195,7 +702,20 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:evolution_tarantula",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "封印自：$(li)$(l:blade/mobs/king_undead)类别King不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "black_joker_sealed",
+			"title": "觉醒卡片·Joker",
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)用于制作Joker不死兽的$(l:blade/devices/black_jokerrouzer)不死兽觉醒器$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:black_joker_sealed",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/joker_undead)Joker不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -208,7 +728,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:change_kerberos_glaive",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "掉落自：$(li)$(l:blade/mobs/albino_joker_undead)白化Joker不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -221,7 +741,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:change_kerberos_larc",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "掉落自：$(li)$(l:blade/mobs/albino_joker_undead)白化Joker不死兽$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -234,7 +754,88 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:change_kerberos_lance",
 			"title": " ",
-			"text": "掉落自：$(li)$(l:misc/blocks/stone_blade)觉醒卡矿石$(/l)$(li)$(l:misc/blocks/deepslate_stone_blade)深层觉醒卡矿石$(/l)"
+			"text": "掉落自：$(li)$(l:blade/mobs/albino_joker_undead)白化Joker不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_gravity",
+			"title": "觉醒卡片·强劲裂斩",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_gravity",
+			"title": " ",
+			"text": "暂时无法获得喵"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_impact",
+			"title": "觉醒卡片·强劲冲击",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_impact",
+			"title": " ",
+			"text": "暂时无法获得喵"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "mighty_ray",
+			"title": "觉醒卡片·强劲镭射",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:mighty_ray",
+			"title": " ",
+			"text": "暂时无法获得喵"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "albino_joker_sealed",
+			"title": "觉醒卡片·白化Joker",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)$(br2)用于制作白色Joker不死兽的$(l:blade/devices/black_jokerrouzer)不死兽觉醒器(白色Joker)$(/l)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:albino_joker_sealed",
+			"title": " ",
+			"text": "封印自：$(li)$(l:blade/mobs/albino_joker_undead)白化Joker不死兽$(/l)"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vanity_blank",
+			"title": "觉醒卡片·虚无(空白)",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)"
+		},
+		{
+			"type": "patchouli:crafting",
+			"recipe": "kamenridercraft:blade/vanity_blank"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "vanity_sealed",
+			"title": "觉醒卡片·虚无",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"link_recipe": true,
+			"item": "kamenridercraft:vanity_sealed",
+			"title": " ",
+			"text": "暂时无法获得喵"
+		},
+		{
+			"type": "patchouli:text",
+			"anchor": "jashin_fourteen_sealed",
+			"title": "觉醒卡片·邪神14",
+			"text": "登场于：$(li)假面骑士剑：失踪的王牌 (2004年，电影)"
 		}
 	]
 }

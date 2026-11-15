@@ -11,7 +11,7 @@
 		},
 		{
 			"type": "patchouli:text",
-			"text": "通过挖掘$(l:misc/blocks/boss_blocks#gaoh_boss_block)牙王Boss方块$(/l)召唤而来$(br2)掉落$(li)6-10个$(l:den_o:/items/rider_tickets#rider_ticket)骑士车票$(/l)$(li)1个$(l:den_o:/items/rider_tickets#rider_ticket_gaoh)骑士车票(牙王)$(/l)$(li)1个$(l:den_o:/devices/gaoh_belt)牙王腰带$(/l)$(li)1个$(l:den_o:/arsenal/gaoh_gasher)牙王电切裂者$(/l)$(li)1个$(l:den_o:/arsenal/master_pass)管理员车票$(/l)"
+			"text": "通过挖掘$(l:misc/blocks/boss_blocks#gaoh_boss_block)牙王Boss方块$(/l)召唤而来$(br2)掉落$(li)6-10个$(l:den_o/items/rider_tickets#rider_ticket)骑士车票$(/l)$(li)1个$(l:den_o/items/rider_tickets#rider_ticket_gaoh)骑士车票(牙王)$(/l)$(li)1个$(l:den_o/devices/gaoh_belt)牙王腰带$(/l)$(li)1个$(l:den_o/arsenal/gaoh_gasher)牙王电切裂者$(/l)$(li)1个$(l:den_o/arsenal/master_pass)管理员车票$(/l)"
 		}
 	]
 }

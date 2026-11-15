@@ -390,7 +390,7 @@
         "link_recipe": true,
         "item": "kamenridercraft:ningyo_gochizo",
         "title": " ",
-        "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到$(/l)"
+        "text": "可在加布 $(l:misc/stageshow)舞台剧$(/l) 中找到"
 		},
 		{
             "type": "patchouli:text",
@@ -585,7 +585,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:purujelly_noir_gochizo",
             "title": " ",
-            "text": "由熟练级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易"
+            "text": "由老手级 $(l:misc/villagers#agent_villager)斯托马克公司特工$(/l) 交易"
         },
         {
             "type": "patchouli:text",

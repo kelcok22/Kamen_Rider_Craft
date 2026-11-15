@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士Kiva",
-			"text": "登场于：$(li)假面骑士Kiva：冒险战斗DVD ~你也能成为Kiva~ (2008年，超战斗视频)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)凋零 II$(li)抗性提升 IV$(li)生命恢复$(li)急迫 III$(li)跳跃提升 II$(li)力量 V"
+			"text": "登场于：$(li)假面骑士Kiva：冒险战斗DVD ~你也能成为Kiva~ (2008年，超战斗视频)$(br2)通过穿戴$(l:kiva/devices/kivadriver)Kivat腰带$(/l)进行变身$(br2)状态效果：$(li)速度 V$(li)饥饿 II$(li)抗性提升 IV$(li)生命恢复$(li)急迫 III$(li)跳跃提升 II$(li)力量 V"
 		},
 		{
 			"type": "patchouli:entity",

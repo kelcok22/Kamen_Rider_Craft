@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/riders/geats#powered_builder)动力建造者$(/l) 形态使用"
+			"text": "登场于：$(li)假面骑士极狐 (2022年，电视剧)$(br2)搭配 $(l:geats/items/raise_buckles#powered_builder_raise_buckle)动力建造者$(/l) 形态使用"
 		},
 		{
 			"type": "patchouli:crafting",

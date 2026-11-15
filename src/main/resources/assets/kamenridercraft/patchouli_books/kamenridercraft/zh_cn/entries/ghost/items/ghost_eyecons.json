@@ -45,7 +45,7 @@
             "type": "patchouli:text",
             "anchor": "specter_ghost_eyecon",
             "title": "Specter眼魂",
-            "text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)用于制作Specter的 $(l:ghost/devices/specter_driver)Ghost驱动器$(/l)$(br2)用于切换 $(l:ghost/riders/specter#specter)Specter魂$(/l)"
+            "text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)用于制作Specter的 $(l:ghost/devices/ghost_driver)Ghost驱动器$(/l)$(br2)用于切换 $(l:ghost/riders/specter#specter)Specter魂$(/l)"
         },
         {
             "type": "patchouli:spotlight",
@@ -149,7 +149,7 @@
             "type": "patchouli:text",
             "anchor": "kanon_specter_ghost_eyecon",
             "title": "花音Specter眼魂",
-            "text": "登场于：$(li)假面骑士Specter × Blades (2021年，TTFC特别篇)$(br2)用于制作花音Specter的 $(l:ghost/devices/kanon_specter_driver)Ghost驱动器$(/l)$(br2)用于切换 $(l:ghost/riders/kanon_specter)花音Specter魂$(/l)"
+            "text": "登场于：$(li)假面骑士Specter × Blades (2021年，TTFC特别篇)$(br2)用于制作花音Specter的 Ghost驱动器$(br2)用于切换 $(l:ghost/riders/kanon_specter)花音Specter魂$(/l)"
         },
         {
             "type": "patchouli:spotlight",
@@ -214,7 +214,7 @@
             "type": "patchouli:text",
             "anchor": "new_ore_ghost_eyecon",
             "title": "新Ghost眼魂",
-            "text": "登场于：$(li)假面骑士Ghost：最终舞台 (2017年，舞台剧)$(br2)用于制作新Ghost的 $(l:ghost/devices/new_ghost_driver)Ghost驱动器$(/l)$(br2)用于切换 $(l:ghost/riders/new_ghost)新俺魂$(/l)"
+            "text": "登场于：$(li)假面骑士Ghost：最终舞台 (2017年，舞台剧)$(br2)用于制作新Ghost的 $(l:ghost/devices/ghost_driver)Ghost驱动器$(/l)$(br2)用于切换 $(l:ghost/riders/new_ghost)新俺魂$(/l)"
         },
         {
             "type": "patchouli:spotlight",
@@ -520,7 +520,7 @@
             "link_recipe": true,
             "item": "kamenridercraft:ore_specter_ghost_eyecon",
             "title": " ",
-            "text": "$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+            "text": "$(br2)通过和学徒级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
         },
         {
             "type": "patchouli:text",

@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/ghost#grateful)假面骑士Ghost"
+			"text": "登场于：$(li)假面骑士Ghost (2015年，电视剧)$(br2)与$(l:ghost/devices/armor)Ghost装甲$(/l)一起穿戴，可变身为$(l:ghost/riders/ghost#grateful)假面骑士Ghost$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:ghost/eyecon_driver_g"
 		}
 	]
-}
+		}
