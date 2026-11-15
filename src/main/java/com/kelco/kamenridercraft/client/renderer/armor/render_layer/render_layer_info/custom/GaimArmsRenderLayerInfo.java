@@ -12,7 +12,7 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
     public GaimArmsRenderLayerInfo() {
-        super("ferbus", "ferbus");
+        super("transforming/orange_arms_fruit", "transforming/orange_arms_fruit");
     }
 
     private float xOffset(float tickCount) {

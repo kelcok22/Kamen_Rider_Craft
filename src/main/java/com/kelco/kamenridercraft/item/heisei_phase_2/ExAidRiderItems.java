@@ -77,7 +77,8 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_salty", "bugster", "blank",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -129,7 +130,8 @@ public class ExAidRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "_alhambra", "bugster", "blank",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false)) {
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -227,7 +229,8 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> BAKUSOU_BIKE_GASHAT_BUGSTER = ITEMS.register("bakusou_bike_gashat_bugster",
             () -> new RiderFormChangeItem(new Item.Properties(), "_motors", "bugster", "motors_bugster_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
-                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.HEALTH_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
@@ -2125,7 +2128,7 @@ public class ExAidRiderItems {
                     .overrideBeltText("gashacon_bugvisor").addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_BUGSTER = ITEMS.register("gashacon_bugvisor_bugster",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "bugster", DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "bugster", DRAGO_KNIGHT_HUNTER_Z_GASHAT_GRAPHITE_BUGVISOR, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
                     .addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONOS = ITEMS.register("gashacon_bugvisor_ii_chronos",

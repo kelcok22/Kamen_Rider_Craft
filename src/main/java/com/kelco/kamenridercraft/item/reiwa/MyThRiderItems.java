@@ -125,16 +125,21 @@ public class MyThRiderItems {
             }.isGlowing().IsBeltGlowing().hasCape().setModelName("ride_x_egg_3"));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_3 = ITEMS.register("ride_x_eggs_3",
-            () -> new RiderFormChangeItem(new Item.Properties(),"","empty","my_th_driver_belt_orca",
-                    new MobEffectInstance(MobEffects.JUMP, 40, 0,true,false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
-                    new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0,true,false)){
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.OMINOUS_BOTTLE_DISPOSE, SoundSource.PLAYERS, 1.0F, 1F);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.MY_TH_GEM_TURTLE_PARTICLES.get(),
-                            player.getX(), player.getY()+1,
-                            player.getZ(), 100, 0, 0, 0, 1);
+            () -> new RiderFormChangeItem(new Item.Properties(),"_orca_frame","my_th","my_th_driver_belt_orca",
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 40, 1,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d) {
+                        player.level().playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.OMINOUS_BOTTLE_DISPOSE, SoundSource.PLAYERS, 1.0F, 1F);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.MY_TH_GEM_ORCA_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.YELLOW_SPARK_PARTICLES.get(), player.getX(), player.getY() + 1, player.getZ(), 100, 0, 0, 0, 1);
+                    }
                 }
             }.isGlowing().IsBeltGlowing().addAlternative(RIDE_X_EGGS_3_TIGRE.get()).changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").hasCape().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 

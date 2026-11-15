@@ -444,6 +444,7 @@ public class KamenRiderCraftCore {
             event.registerEntityRenderer(MobsCore.BUGSTERVIRUS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.NEBULA_BUGSTERVIRUS.get(), BasicEntityRenderer::new);
 
+            event.registerEntityRenderer(MobsCore.BUGSTER_BOSS.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GRAPHITE_BUGSTER.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.GENM.get(), BasicEntityRenderer::new);
             event.registerEntityRenderer(MobsCore.POPPY_RED.get(), BasicEntityRenderer::new);
@@ -702,6 +703,7 @@ public class KamenRiderCraftCore {
             event.registerSpriteSet(ModParticles.MY_TH_GEM_TURTLE_PARTICLES.get(), My_ThGemTurtleParticles.Provider::new);
             event.registerSpriteSet(ModParticles.MY_TH_GEM_WOLF_PARTICLES.get(), My_ThGemWolfParticles.Provider::new);
             event.registerSpriteSet(ModParticles.MY_TH_GEM_EAGLE_PARTICLES.get(), My_ThGemEagleParticles.Provider::new);
+            event.registerSpriteSet(ModParticles.MY_TH_GEM_ORCA_PARTICLES.get(), My_ThGemOrcaParticles.Provider::new);
             event.registerSpriteSet(ModParticles.REALIZING_PARTICLES.get(), RealizingParticles.Provider::new);
 
         }

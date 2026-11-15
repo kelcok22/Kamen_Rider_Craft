@@ -176,6 +176,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> MY_TH_GEM_EAGLE_PARTICLES =
             PARTICLE_TYPES.register("my_th_gem_eagle_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> MY_TH_GEM_ORCA_PARTICLES =
+            PARTICLE_TYPES.register("my_th_gem_orca_particles", () -> new SimpleParticleType(true));
+
 
     public static void register(IEventBus eventBus) {
         PARTICLE_TYPES.register(eventBus);
