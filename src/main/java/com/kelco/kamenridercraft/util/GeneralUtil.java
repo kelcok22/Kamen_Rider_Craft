@@ -1,6 +1,5 @@
 package com.kelco.kamenridercraft.util;
 
-import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.SimpleParticleType;
@@ -21,7 +20,7 @@ import java.util.Objects;
 import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 
 public class GeneralUtil {
-    public static void spawnEntity (LivingEntity livingEntity, String effectEntityName) {
+    public static void spawnEntity(LivingEntity livingEntity, String effectEntityName) {
         BaseEffectEntity effectEntity = new BaseEffectEntity(livingEntity.level(), 32, livingEntity);
         effectEntity.setData(MOB_STATE, effectEntityName);
         effectEntity.setEntity();
@@ -30,7 +29,7 @@ public class GeneralUtil {
     }
 
     public static void addParticle(LivingEntity livingEntity, String particle, int particleAmount, float particleXOffset, float particleYOffset,
-                     float particleZOffset, float particleSpeed) {
+                                   float particleZOffset, float particleSpeed) {
         if (BuiltInRegistries.PARTICLE_TYPE.get(ResourceLocation.parse(particle)) != null && livingEntity.level() instanceof ServerLevel serverLevel) {
             serverLevel.sendParticles(Objects.requireNonNull((SimpleParticleType) BuiltInRegistries.PARTICLE_TYPE
                             .get(ResourceLocation.parse(particle))),
@@ -54,7 +53,7 @@ public class GeneralUtil {
         }
     }
 
-    public static void sendMesssage(LivingEntity sender, String messageType, String translatableKey) {
+    public static void sendMessage(LivingEntity sender, String messageType, String translatableKey) {
         List<ServerPlayer> nearbyPlayers = sender.level().getEntitiesOfClass(ServerPlayer.class, sender.getBoundingBox().inflate(10));
         switch (messageType.toLowerCase()) {
             case "client_chat":

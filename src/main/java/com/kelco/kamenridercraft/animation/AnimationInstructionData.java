@@ -1,24 +1,7 @@
 package com.kelco.kamenridercraft.animation;
 
-import com.kelco.kamenridercraft.entity.base_entities.BaseEffectEntity;
 import com.kelco.kamenridercraft.util.GeneralUtil;
-import net.minecraft.core.Holder;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
-
-import java.util.List;
-import java.util.Objects;
-
-import static com.kelco.kamenridercraft.attachments.AttachmentTypes.MOB_STATE;
 
 public class AnimationInstructionData {
     public int startTick = 0;
@@ -65,7 +48,7 @@ public class AnimationInstructionData {
                 GeneralUtil.playSound(livingEntity, sound, volume, pitch);
             }
             if (!messageType.isEmpty() && !translatableKey.isEmpty()) {
-                GeneralUtil.sendMesssage(livingEntity, messageType, translatableKey);
+                GeneralUtil.sendMessage(livingEntity, messageType, translatableKey);
             }
         }
     }
