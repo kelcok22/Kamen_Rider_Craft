@@ -132,14 +132,13 @@ public class RiderDriverItem extends RiderArmorItem {
                 && rider.getItemBySlot(EquipmentSlot.FEET).getItem() == this;
     }
 
-
     public static boolean isTransforming(LivingEntity rider) {
-        ItemStack beltStack  = rider.getItemBySlot(EquipmentSlot.FEET);
-        if (beltStack.has(DataComponents.CUSTOM_DATA)) {
-            CompoundTag tag = Objects.requireNonNull(beltStack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
-            if (tag.getBoolean("Update_form")) return true;
+        if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+            ItemStack stack = rider.getItemBySlot(EquipmentSlot.FEET);
+            double henshin_tick = belt.getHenshinTick(stack, rider);
+            return !(henshin_tick < 1);
         }
-        return !(Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() < 1);
+        return false;
     }
 
     public static Boolean isTransformingFromBlank(ItemStack itemStack, LivingEntity rider) {

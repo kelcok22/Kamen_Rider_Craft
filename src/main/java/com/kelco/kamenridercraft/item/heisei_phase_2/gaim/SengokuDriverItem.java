@@ -10,6 +10,8 @@ import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import net.minecraft.core.Holder;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,6 +32,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 
     @Override
     public String getText(ItemStack itemstack, EquipmentSlot equipmentSlot, LivingEntity rider, String riderName) {
+        double henshin_tick = getHenshinTick(itemstack, rider);
         boolean fly = Objects.requireNonNull(rider.getAttribute(KRCAttributes.WINGS_OUT)).getBaseValue() == 1;
         if (equipmentSlot == EquipmentSlot.FEET) {
             if (Objects.equals(riderName, "baron") & getFormItem(itemstack, 1) == GaimRiderItems.LORD_BARON.get())
@@ -73,7 +76,7 @@ public class SengokuDriverItem extends RiderDriverItem {
                 return "jimbar_arms_" + riderName;
             } else return "blank";
 
-        if (isTransforming(rider)& (Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() > 10||Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue() == 0)) return "blank_arms";
+        if (isTransforming(rider)&henshin_tick> 10) return "blank_arms";
         else return getFormItem(itemstack, 1).getFormName(fly);
     }
 
@@ -142,7 +145,10 @@ public class SengokuDriverItem extends RiderDriverItem {
             case LEGS-> {
                 if (itemstack.getItem() instanceof RiderDriverItem belt) {
                     if (getFormItem(itemstack, 1, getFormItem(itemstack, 1).getHenshinTick() + 1) != getFormItem(itemstack, 1)) {
-                        return Objects.equals(part, "head");
+                        if (itemstack.has(DataComponents.CUSTOM_DATA)) {
+                            CompoundTag tag = Objects.requireNonNull(itemstack.get(DataComponents.CUSTOM_DATA)).getUnsafe();
+                            if (!tag.getBoolean("Update_form")) return Objects.equals(part, "head");
+                        }
                     }
                     return true;
                 }
