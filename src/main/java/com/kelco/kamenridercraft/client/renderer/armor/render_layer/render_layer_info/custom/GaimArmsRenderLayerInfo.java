@@ -12,8 +12,8 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 
 public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
-    public GaimArmsRenderLayerInfo() {
-        super("transforming/orange_arms_fruit", "transforming/orange_arms_fruit");
+    public GaimArmsRenderLayerInfo(String texture, String model) {
+        super("transforming/"+texture, "transforming/"+model);
     }
 
     private float xOffset(float tickCount) {

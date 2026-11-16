@@ -93,11 +93,7 @@ public class SengokuDriverItem extends RiderDriverItem {
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
         super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
-        double henshin_tick = getHenshinTick(itemStack, rider);
-        if (slot == EquipmentSlot.HEAD && isTransforming(rider) && henshin_tick < 23&& henshin_tick > 0)
-            layerInfo.add(new GaimArmsRenderLayerInfo());
         if (slot == EquipmentSlot.FEET) {
-            String texture;
             RiderFormChangeItem formItem = getFormItem(itemStack, 1);
             if (getFormItem(itemStack, 2) == GaimRiderItems.JIMBER_GAIM_CORE.get() && itemStack.getItem() instanceof RiderDriverItem belt)
                 layerInfo.add(new RenderLayerInfo("belts/parts/sengoku_driver_" + belt.baseFormItem.getFormName(false), null));

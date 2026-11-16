@@ -513,7 +513,12 @@ public class RiderDriverItem extends RiderArmorItem {
             RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1, henshin_tick);
             form.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
         }
-
+        if (henshin_tick>0){
+            for (int n = 0; n < numBaseFormItems; n++) {
+                RiderFormChangeItem form = getFormItem(rider.getItemBySlot(EquipmentSlot.FEET), n + 1);
+                form.SetTransformationUnlimitedModels(layerInfo, itemStack, rider, slot,henshin_tick);
+            }
+        }
         if (slot == EquipmentSlot.FEET) {
             String texture = getText(itemStack, EquipmentSlot.FEET, rider, riderName);
             ResourceLocation location = ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + texture + ".png");
