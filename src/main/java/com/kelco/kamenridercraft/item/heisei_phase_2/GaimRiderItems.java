@@ -307,7 +307,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+            }.setFormDelay(10).addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> JIMBER_LEMON_ENERGY_LOCKSEED = ITEMS.register("jimber_lemon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_lemon_arms", "gaim", "sengoku_driver_belt",
