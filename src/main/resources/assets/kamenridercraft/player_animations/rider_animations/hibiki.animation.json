@@ -140,6 +140,35 @@
 					"rotation": [0, 27.5, 0]
 				}
 			}
+		},
+		"hibiki.henshin_onsa_asumu.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [0, 30, 0],
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"rotation": [4.5675, -22.4097, -5.4096]
+				},
+				"torso": {
+					"rotation": [0, 0, 2.5]
+				},
+				"right_arm": {
+					"rotation": [-97.2081, 20.5769, 11.8802]
+				},
+				"left_arm": {
+					"rotation": [-66.5113, -38.3584, 16.4234],
+					"position": [0, 0, 1]
+				},
+				"right_leg": {
+					"rotation": [-5, 30, 0],
+					"position": [-0.4981, 0.08716, -0.86273]
+				},
+				"left_leg": {
+					"rotation": [3.3607, -17.1322, -13.0779]
+				}
+			}
 		}
 	}
 }

@@ -309,6 +309,20 @@ public class DecadeRiderItems {
             }.setSummonBelt((RiderDriverItem) BladeRiderItems.BLAYBUCKLE.get()).addSummonWeapon(BladeRiderItems.BLAYROUZER.get())
                     .IsBeltGlowing().isGlowing().addCompatibilityList(BaseDecadeUsers).changeRiderName("blade").addToList(DECADE_TAB_ITEM));
 
+    public static final DeferredItem<Item> HENSHIN_ONSA_ASUMU = ITEMS.register("henshin_onsa_asumu",
+            () -> new RiderCardItem(new Item.Properties(), "_transformed_asumu", "hibiki", "kyosukedriver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(EffectCore.SMALL, 40, 1,true,false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.changeBeltModel("geo/belts/hibiki_belt.geo.json").setShowFace());
+
     public static final DeferredItem<Item> HIBIKI_CARD = ITEMS.register("hibiki_card",
             () -> new RiderCardItem(new Item.Properties(), "", "decade", "decadriver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
@@ -321,7 +335,7 @@ public class DecadeRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }.setSummonBelt((RiderDriverItem) HibikiRiderItems.HIBIKIDRIVER.get()).addSummonWeapon(HibikiRiderItems.ONGEKIBO_REKKA.get()).addSummonWeapon(HibikiRiderItems.ONGEKIBO_REKKA.get())
-                    .IsBeltGlowing().isGlowing().addCompatibilityList(BaseDecadeUsers).changeRiderName("hibiki").addToList(DECADE_TAB_ITEM));
+                    .IsBeltGlowing().isGlowing().addAlternative(HENSHIN_ONSA_ASUMU.get()).addCompatibilityList(BaseDecadeUsers).changeRiderName("hibiki").addToList(DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> KABUTO_RIDER_CARD = ITEMS.register("kabuto_rider_card",
             () -> new RiderCardItem(new Item.Properties(), "", "decade", "decadriver_belt",

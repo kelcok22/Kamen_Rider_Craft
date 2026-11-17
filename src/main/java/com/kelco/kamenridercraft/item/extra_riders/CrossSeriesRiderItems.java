@@ -5,6 +5,7 @@ import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
 import com.kelco.kamenridercraft.item.heisei_phase_1.KuugaRiderItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -95,7 +96,20 @@ public class CrossSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 1);
                 }
-            }.isGlowing().isGold().addNeedForm(EVOLUTION_GIRAFFA.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_king_sic_wing.geo.json").addNeedItem(ABSORB_SERPENT.get()));
+            }.isGlowing().isGold().addNeedForm(EVOLUTION_GIRAFFA.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_king_sic_wing.geo.json").addNeedItem(ABSORB_SERPENT.get()).addAlternative(TACKLE_CORE_ARTIST.get()));
+
+    public static final DeferredItem<Item> HENSHIN_ONIBUE_AKIRA_SIC = ITEMS.register("henshin_onibue_akira_sic",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_sic","transformed_akira","akiradriver_belt_sic",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.WATER_BREATHING, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 25, 0, 0, 0, 0.1);}
+            }.changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addAlternative(EVOLUTION_GIRAFFA_SIC.get()));
 
     public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
@@ -110,7 +124,7 @@ public class CrossSeriesRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(EVOLUTION_GIRAFFA_SIC.get()).addAlternative(TACKLE_CORE_ARTIST.get())
+            }.IsBeltGlowing().isGlowing().addNeedForm(KuugaRiderItems.KUUGA_AMAZING_MIGHTY.get(),1).addAlternative(HENSHIN_ONIBUE_AKIRA_SIC.get())
                     .addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS).keepItem());
 
     public static void register(IEventBus eventBus) {
