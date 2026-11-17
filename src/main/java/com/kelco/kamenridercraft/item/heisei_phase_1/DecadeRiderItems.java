@@ -321,7 +321,7 @@ public class DecadeRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/hibiki_belt.geo.json").setShowFace());
+            }.changeBeltModel("geo/belts/hibiki_belt.geo.json").setShowHead());
 
     public static final DeferredItem<Item> HIBIKI_CARD = ITEMS.register("hibiki_card",
             () -> new RiderCardItem(new Item.Properties(), "", "decade", "decadriver_belt",
