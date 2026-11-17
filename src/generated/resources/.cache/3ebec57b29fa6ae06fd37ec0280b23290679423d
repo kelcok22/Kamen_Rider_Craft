@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-06T15:36:45.9397472	Item Models: kamenridercraft
+// 1.21.1	2026-11-15T16:18:44.3074549	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 9a45b56d01503e3df8042d31b1b262e7ea0027fc assets/kamenridercraft/models/item/advance_capsem.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
@@ -304,6 +304,7 @@ fd7533820b275b5082d41bcf045d7f6416a318a7 assets/kamenridercraft/models/item/gaia
 55be7aa2b088cae6c945ff23ad7e053c1b0c26a1 assets/kamenridercraft/models/item/gaim_kiwami_ride_chemy_card.json
 25357bcfce195914955d678ae691ea9a369be85c assets/kamenridercraft/models/item/gaim_ride_chemy_card.json
 9eb17b03a174f237f9800d20fe58137d0da83edc assets/kamenridercraft/models/item/gaim_yami.json
+9bb99f4465d858a4573a995e853357c67336eb1b assets/kamenridercraft/models/item/game_scope.json
 ca66443fb1aad8f485c50c5a8551796f8b6ba0b1 assets/kamenridercraft/models/item/gamma_superior_damashii.json
 ee625e82bdc5b0ec77a1eb9dab68940a43b3d192 assets/kamenridercraft/models/item/ganbarizing_full_bottle.json
 bbcdfd72ea49b3879e4c7e91a8c141a1bc5894f3 assets/kamenridercraft/models/item/gangan_g_belt.json
