@@ -959,6 +959,9 @@ public class GaimRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "natsumikan_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
+                public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("natsumikan_arms_fruit","orange_arms_fruit"));
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
