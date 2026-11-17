@@ -2458,6 +2458,9 @@ public class ExAidRiderItems {
     public static final DeferredItem<Item> ENERGY_ITEM_HOLDER = ITEMS.register("energy_item_holder",
             () -> new EnergyItemHolderItem().addToList(EX_AID_TAB_ITEM));
 
+    public static final DeferredItem<Item> GAME_SCOPE = ITEMS.register("game_scope",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(EX_AID_TAB_ITEM));
+
     public static final DeferredItem<Item> WONDERSWAN = ITEMS.register("wonderswan",
             () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(EX_AID_TAB_ITEM));
 
