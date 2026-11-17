@@ -150,6 +150,9 @@ public class RiderDriverItem extends RiderArmorItem {
     public double getRenderType(ItemStack stack, double num) {
         double form_double = 1;
         RiderFormChangeItem form = getFormItem(stack, 1, num);
+        if (form.getShowHead()) {
+            form_double = 4;
+        }
         if (form.getShowFace()) {
             form_double = 2;
         }

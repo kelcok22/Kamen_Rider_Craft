@@ -51,6 +51,8 @@ public class RiderFormChangeItem extends BaseItem {
     private String updatedBeltModel;
     private String updatedModel;
     private String flyingModel;
+
+    private Boolean setShowHead = false;
     private Boolean setShowFace = false;
     private Boolean setShowUnder = false;
     private Boolean setShowPlayer = false;
@@ -181,6 +183,9 @@ public class RiderFormChangeItem extends BaseItem {
         return (GeckoLibCache.getBakedModels().get(FORM_MODEL) != null ? getRiderName(riderName) + formName + ".geo.json" : (getHasStaticWings() ? "default_wings_armor.geo.json" : "default.geo.json"));
     }
 
+    public Boolean getShowHead() {
+        return setShowHead;
+    }
     public Boolean getShowFace() {
         return setShowFace;
     }
@@ -316,6 +321,10 @@ public class RiderFormChangeItem extends BaseItem {
         return this;
     }
 
+    public RiderFormChangeItem setShowHead() {
+        setShowHead = true;
+        return this;
+    }
     public RiderFormChangeItem setShowFace() {
         setShowFace = true;
         return this;

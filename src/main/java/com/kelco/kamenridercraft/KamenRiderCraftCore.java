@@ -332,6 +332,13 @@ public class KamenRiderCraftCore {
                         model.rightArm.visible = false;
                         model.body.visible = false;
                     }
+                    if (tag == 4) {
+                        model.head.visible = true;
+                        model.hat.visible = true;
+                    } else if (event.getEntity() instanceof BaseHenchmenEntity || event.getEntity() instanceof BaseSummonEntity) {
+                        model.head.visible = false;
+                        model.hat.visible = false;
+                    }
                 } else {
                     model.setAllVisible(true);
                 }
