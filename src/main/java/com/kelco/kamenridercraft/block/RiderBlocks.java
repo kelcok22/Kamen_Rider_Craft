@@ -1153,6 +1153,9 @@ public class RiderBlocks {
     public static final DeferredBlock<Block> HOPPER1_PLUSH_WITHER = registerBlock("hopper1_plush_wither",
             () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
 
+    public static final DeferredBlock<Block> SALTY_HAT = registerBlock("salty_hat",
+            () -> new HatBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL), Block.box(4, 0, 4, 12, 10, 12)).AddToTabList(RIDER_DECOR));
+
     public static final DeferredBlock<Block> N_DAGUVA_ZEBA_BOSS_BLOCK = registerBlock("n_daguva_zeba_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     , MobsCore.N_DAGUVA_ZEBA, Blocks.SNOW).addLine(Component.translatable("henshin.kamenridercraft.n_daguva_zeba")).is_basic_cube().addToList(RIDER_BLOCK));
