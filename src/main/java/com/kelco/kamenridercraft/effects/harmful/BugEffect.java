@@ -33,7 +33,7 @@ public class BugEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity.level() instanceof ServerLevel serverLevel && livingEntity instanceof ArmorStand) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && !(livingEntity instanceof ArmorStand)) {
             serverLevel.sendParticles(ModParticles.BUGSTER_INFECTION_PARTICLES.get(),
                     livingEntity.getX(), livingEntity.getY() + 1.5,
                     livingEntity.getZ(), 1, 0, 0.5F, 0, 0.2F);
