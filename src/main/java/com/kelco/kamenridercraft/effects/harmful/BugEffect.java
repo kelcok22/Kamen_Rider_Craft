@@ -36,7 +36,7 @@ public class BugEffect extends MobEffect {
         if (livingEntity.level() instanceof ServerLevel serverLevel && !(livingEntity instanceof ArmorStand)) {
             serverLevel.sendParticles(ModParticles.BUGSTER_INFECTION_PARTICLES.get(),
                     livingEntity.getX(), livingEntity.getY() + 1.5,
-                    livingEntity.getZ(), 1, 0, 0.5F, 0, 0.2F);
+                    livingEntity.getZ(), 1, 0, 0, 0, 0.3F);
         }
         if (livingEntity instanceof ServerPlayer player && player.level() instanceof ServerLevel serverLevel) {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeroOneRiderItems.ZAIA_THOUSANDRIVER.get()) {
