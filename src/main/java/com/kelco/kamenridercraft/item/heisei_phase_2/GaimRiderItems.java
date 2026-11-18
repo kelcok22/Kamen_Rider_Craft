@@ -988,7 +988,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().changeModel("donguri_arms.geo.json").addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_ORANGE_LOCKSEED = ITEMS.register("proto_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "proto_orange_arms", "gaim", "sengoku_driver_belt",
