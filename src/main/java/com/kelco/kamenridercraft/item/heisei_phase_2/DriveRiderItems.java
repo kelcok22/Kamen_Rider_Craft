@@ -88,8 +88,8 @@ public class DriveRiderItems {
 
     public static final DeferredItem<Item> SHIFT_SPEED = ITEMS.register("speedshift",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "drive", "drivedriver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false)
-                    , new MobEffectInstance(MobEffects.JUMP, 40, 1, true, false)) {
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
+                    , new MobEffectInstance(MobEffects.JUMP, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
                     super.transformationEffect(itemstack, player);
                     AnimationUtil.playPose(player, "drive.henshin");

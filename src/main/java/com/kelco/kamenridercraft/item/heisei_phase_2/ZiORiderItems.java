@@ -214,6 +214,7 @@ public class ZiORiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 6, true, false),
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 6, true, false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 6, true, false),
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player) {
