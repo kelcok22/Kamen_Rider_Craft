@@ -338,7 +338,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_LEMON_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.hasCape().setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).addAlternative(JIMBER_LEMON_ENERGY_LOCKSEED.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> JIMBER_CHERRY_ENERGY_LOCKSEED = ITEMS.register("jimber_cherry_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_cherry_arms", "gaim", "sengoku_driver_belt",
