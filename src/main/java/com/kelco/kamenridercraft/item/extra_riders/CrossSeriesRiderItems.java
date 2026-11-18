@@ -9,6 +9,8 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -98,6 +100,51 @@ public class CrossSeriesRiderItems {
                 }
             }.isGlowing().isGold().addNeedForm(EVOLUTION_GIRAFFA.get()).addNeedItem(ROUZE_ABSORBER.get()).hasCape().hasFlyingWings("garren_king_sic_wing.geo.json").addNeedItem(ABSORB_SERPENT.get()).addAlternative(TACKLE_CORE_ARTIST.get()));
 
+    public static final DeferredItem<Item> HENSHIN_ONSA_GOUKI_SIC = ITEMS.register("henshin_onsa_gouki_sic",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_sic","gouki","goukidriver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.changeModel("gouki.geo.json").changeBeltModel("geo/belts/hibiki_belt.geo.json").isGlowing().addAlternative(EVOLUTION_GIRAFFA_SIC.get()));
+
+    public static final DeferredItem<Item> HENSHIN_ONIBUE_TOKI_SIC = ITEMS.register("henshin_onibue_toki_sic",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_sic","touki","tokidriver_belt",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 1,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 25, 0, 0, 0, 0.1);}
+            }.changeModel("touki.geo.json").changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addAlternative(HENSHIN_ONSA_GOUKI_SIC.get()));
+
+    public static final DeferredItem<Item> HENSHIN_KIGEN_BANKI_SIC = ITEMS.register("henshin_kigen_banki_sic",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_sic","banki","bankidriver_belt",
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE,
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                    player.level().addFreshEntity(thunder);
+                }
+            }.changeModel("banki.geo.json").changeBeltModel("geo/belts/todoroki_belt.geo.json").isGlowing().addAlternative(HENSHIN_ONIBUE_TOKI_SIC.get()));
+
     public static final DeferredItem<Item> HENSHIN_ONIBUE_AKIRA_SIC = ITEMS.register("henshin_onibue_akira_sic",
             () -> new RiderFormChangeItem(new Item.Properties(),"_sic","transformed_akira","akiradriver_belt_sic",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1,true,false),
@@ -109,7 +156,7 @@ public class CrossSeriesRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
                             player.getX(), player.getY()+1,
                             player.getZ(), 25, 0, 0, 0, 0.1);}
-            }.changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addAlternative(EVOLUTION_GIRAFFA_SIC.get()));
+            }.changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addAlternative(HENSHIN_KIGEN_BANKI_SIC.get()));
 
     public static final DeferredItem<Item> KUUGA_AMAZING_MIGHTY_ARTIST = ITEMS.register("kuuga_amazing_mighty_artist",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON),"_artist","kuuga","arcle_belt_r",
