@@ -125,6 +125,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> MISS_PARTICLES =
             PARTICLE_TYPES.register("miss_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> CLEAR_PARTICLES =
+            PARTICLE_TYPES.register("clear_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> REALIZING_PARTICLES =
             PARTICLE_TYPES.register("realize_hopper_lines", () -> new SimpleParticleType(true));
 

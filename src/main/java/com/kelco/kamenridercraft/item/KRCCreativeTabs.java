@@ -808,6 +808,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.GENM_CONTINUE);
             event.accept(RiderBlocks.GAME_CREATOR);
             event.accept(RiderBlocks.GANBERIZING_MACHINE);
+            event.accept(RiderBlocks.SALTY_HAT);
 
         } else if (event.getTab() == BUILDTab.get()) {
             for (int i = 0; i < BUILD_TAB_ITEM.size(); ++i) {
