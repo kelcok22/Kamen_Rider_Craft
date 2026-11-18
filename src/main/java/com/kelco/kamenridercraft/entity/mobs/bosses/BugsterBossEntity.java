@@ -1,32 +1,26 @@
 package com.kelco.kamenridercraft.entity.mobs.bosses;
 
-import com.kelco.kamenridercraft.effects.EffectCore;
-import com.kelco.kamenridercraft.entity.mobs.MobsCore;
+import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.BaseHenchmenEntity;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
 import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
-import com.kelco.kamenridercraft.item.heisei_phase_2.GhostRiderItems;
-import com.kelco.kamenridercraft.item.showa.BlackRiderItems;
-import com.kelco.kamenridercraft.level.ModGameRules;
-import net.minecraft.network.chat.Component;
+import com.kelco.kamenridercraft.particle.ModParticles;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
-
-import static com.kelco.kamenridercraft.util.MiscUtil.canSpawnBoss;
+import java.util.UUID;
 
 public class BugsterBossEntity extends BaseHenchmenEntity {
 
@@ -39,6 +33,30 @@ public class BugsterBossEntity extends BaseHenchmenEntity {
         this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GASHACON_BUGVISOR_BUGSTER.get()));
         RiderDriverItem.setFormItem(getItemBySlot(EquipmentSlot.FEET), ExAidRiderItems.MIGHTY_ACTION_X_GASHAT_BUGSTER.get(), 1);
         RiderDriverItem.setUpdateForm(this.getItemBySlot(EquipmentSlot.FEET));
+    }
+
+    public void remove(@NotNull RemovalReason removalReason) {
+        if (isDeadOrDying()) {
+            try {
+                if (level() instanceof ServerLevel serverLevel && hasData(AttachmentTypes.UUID_STORE.get())
+                        && serverLevel.getEntity(UUID.fromString(getData(AttachmentTypes.UUID_STORE.get()))) != null) {
+                    Entity infected = serverLevel.getEntity(UUID.fromString(getData(AttachmentTypes.UUID_STORE.get())));
+                    if (infected instanceof LivingEntity livingEntity) {
+                        livingEntity.removeAllEffects();
+                    }
+                    serverLevel.sendParticles(ModParticles.HIT_PARTICLES.get(),
+                            infected.getX() + 0.5, infected.getY() + 1.5,
+                            infected.getZ() + 0.5, 1, 0, 0, 0, 3);
+                    serverLevel.playSound(null, infected.getX(), infected.getY(), infected.getZ(), SoundEvents.ZOMBIE_VILLAGER_CURE,
+                            SoundSource.VOICE, 3.0F, 1.0F / (level().getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+
+                    infected.setData(AttachmentTypes.MOB_STATE, "normal");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        super.remove(removalReason);
     }
 
 

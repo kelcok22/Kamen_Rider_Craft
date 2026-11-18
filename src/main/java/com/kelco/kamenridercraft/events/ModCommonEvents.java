@@ -1,5 +1,6 @@
 package com.kelco.kamenridercraft.events;
 
+import com.kelco.kamenridercraft.attachments.AttachmentTypes;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.client.model.entity.allies.DoggaModel;
 import com.kelco.kamenridercraft.client.model.entity.allies.MidaredoujiModel;
@@ -52,6 +53,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades.ItemListing;
 import net.minecraft.world.entity.player.Inventory;
@@ -124,10 +126,27 @@ public class ModCommonEvents {
 
         @SubscribeEvent
         public void onPlayerConnect(PlayerEvent.PlayerLoggedInEvent event) {
-            if (event.getEntity() instanceof ServerPlayer player &&
-                    player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem) {
-                riderDriverItem.clearPoseData();
-                riderDriverItem.setPoseData(player);
+            if (event.getEntity() instanceof ServerPlayer player) {
+                if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem riderDriverItem) {
+                    riderDriverItem.clearPoseData();
+                    riderDriverItem.setPoseData(player);
+                }
+            }
+        }
+
+        @SubscribeEvent
+        public void onFinalizeSpawnEvent(FinalizeSpawnEvent event) {
+            if (event.getEntity() instanceof Villager villager && villager.getData(AttachmentTypes.MOB_STATE).isEmpty()) {
+                int chance = villager.getRandom().nextInt(0, 11);
+                if (chance < 3) {
+                    villager.setData(AttachmentTypes.MOB_STATE, "infected");
+                } else if (chance == 3 || chance == 4) {
+                    villager.setData(AttachmentTypes.MOB_STATE, "worm");
+                } else if (chance == 5) {
+                    villager.setData(AttachmentTypes.MOB_STATE, "natural_worm");
+                } else {
+                    villager.setData(AttachmentTypes.MOB_STATE, "normal");
+                }
             }
         }
 
@@ -274,7 +293,7 @@ public class ModCommonEvents {
                                 livingEntity.getAttribute(WHEEL_ROT).setBaseValue(livingEntity.getAttribute(WHEEL_ROT).getBaseValue() + wheel);
                             }
                         }
-                    }else if (livingEntity instanceof Player){
+                    } else if (livingEntity instanceof Player) {
                         Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.BALL_ROT)).getBaseValue());
                         Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.WHEEL_ROT)).getBaseValue());
                         Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT_OLD)).setBaseValue(Objects.requireNonNull(livingEntity.getAttribute(KRCAttributes.CAPE_ROT)).getBaseValue());

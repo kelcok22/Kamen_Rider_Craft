@@ -3,6 +3,7 @@ package com.kelco.kamenridercraft.effects.harmful;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.MobsCore;
 import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
+import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.MiscUtil;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -31,6 +32,11 @@ public class BugEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel) {
+            serverLevel.sendParticles(ModParticles.BUGSTER_INFECTION_PARTICLES.get(),
+                    livingEntity.getX(), livingEntity.getY() + 1,
+                    livingEntity.getZ(), 1, 0, 0.5F, 0, 0.3F);
+        }
         if (livingEntity instanceof ServerPlayer player && player.level() instanceof ServerLevel serverLevel) {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeroOneRiderItems.ZAIA_THOUSANDRIVER.get()) {
                 if (player.getInventory().countItem(ZeroOneRiderItems.HUMAGEAR_PROGRISEKEY.get()) > 0) {
