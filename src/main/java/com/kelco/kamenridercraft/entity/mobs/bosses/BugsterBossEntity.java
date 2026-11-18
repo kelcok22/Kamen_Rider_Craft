@@ -48,7 +48,7 @@ public class BugsterBossEntity extends BaseHenchmenEntity {
                             infected.getX() + 0.5, infected.getY() + 1.5,
                             infected.getZ() + 0.5, 1, 0, 0, 0, 3);
                     serverLevel.playSound(null, infected.getX(), infected.getY(), infected.getZ(), SoundEvents.ZOMBIE_VILLAGER_CURE,
-                            SoundSource.VOICE, 3.0F, 1.0F / (level().getRandom().nextFloat() * 0.4F + 1.2F) + 1 * 0.5F);
+                            SoundSource.VOICE, 1.0F, 1.0F);
 
                     infected.setData(AttachmentTypes.MOB_STATE, "normal");
                 }
