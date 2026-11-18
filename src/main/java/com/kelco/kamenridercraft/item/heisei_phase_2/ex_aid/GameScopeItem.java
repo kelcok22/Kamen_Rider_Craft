@@ -38,7 +38,7 @@ public class GameScopeItem extends BaseItem {
             for (Villager villager : nearbyVillagers) {
                 if (serverPlayer.hasLineOfSight(villager) && !villager.hasEffect(EffectCore.BUGSTER)) {
                     if (villager.getData(AttachmentTypes.MOB_STATE).equalsIgnoreCase("infected")) {
-                        villager.addEffect(new MobEffectInstance(EffectCore.BUGSTER, 500, 0, true, false));
+                        villager.addEffect(new MobEffectInstance(EffectCore.BUGSTER, 500, 4, true, false));
                         villager.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0, true, false));
                         BugsterBossEntity bugster = MobsCore.BUGSTER_BOSS.get().create(serverPlayer.level());
                         bugster.setData(AttachmentTypes.UUID_STORE, villager.getStringUUID());

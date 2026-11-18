@@ -13,6 +13,7 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.Random;
@@ -32,10 +33,10 @@ public class BugEffect extends MobEffect {
 
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
-        if (livingEntity.level() instanceof ServerLevel serverLevel) {
+        if (livingEntity.level() instanceof ServerLevel serverLevel && livingEntity instanceof ArmorStand) {
             serverLevel.sendParticles(ModParticles.BUGSTER_INFECTION_PARTICLES.get(),
-                    livingEntity.getX(), livingEntity.getY() + 1,
-                    livingEntity.getZ(), 1, 0, 0.5F, 0, 0.3F);
+                    livingEntity.getX(), livingEntity.getY() + 1.5,
+                    livingEntity.getZ(), 1, 0, 0.5F, 0, 0.2F);
         }
         if (livingEntity instanceof ServerPlayer player && player.level() instanceof ServerLevel serverLevel) {
             if (player.getItemBySlot(EquipmentSlot.FEET).getItem() == ZeroOneRiderItems.ZAIA_THOUSANDRIVER.get()) {
