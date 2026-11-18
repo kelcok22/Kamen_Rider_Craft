@@ -164,6 +164,9 @@ public class ModParticles {
     public static final Supplier<SimpleParticleType> BUTTERFLY_PARTICLES =
             PARTICLE_TYPES.register("butterfly_particles", () -> new SimpleParticleType(true));
 
+    public static final Supplier<SimpleParticleType> BUGSTER_INFECTION_PARTICLES =
+            PARTICLE_TYPES.register("bugster_infection_particles", () -> new SimpleParticleType(true));
+
     public static final Supplier<SimpleParticleType> MY_TH_GEM_PARTICLES =
             PARTICLE_TYPES.register("my_th_gem_particles", () -> new SimpleParticleType(true));
 
