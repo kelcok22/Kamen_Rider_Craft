@@ -60,13 +60,11 @@ public class BugsterBossEntity extends BaseHenchmenEntity {
             }
             if (!this.level().isClientSide() && this.getItemBySlot(EquipmentSlot.FEET).getItem() == ExAidRiderItems.GASHACON_BUGVISOR_BUGSTER.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)== ExAidRiderItems.MIGHTY_ACTION_X_GASHAT_BUGSTER.get()) {
                 ItemEntity hat = new ItemEntity(level(), getX(), getY(), getZ(), new ItemStack(RiderBlocks.SALTY_HAT.get(), 1), 0, 0, 0);
-                int rand = this.random.nextInt(3);
+                int rand = this.random.nextInt(2);
                 switch (rand) {
                     case 1:
                         hat.setPickUpDelay(0);
                         level().addFreshEntity(hat);
-                        break;
-                    case 2:
                         break;
                     default:
                         break;

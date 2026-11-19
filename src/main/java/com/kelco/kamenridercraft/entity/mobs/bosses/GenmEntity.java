@@ -25,7 +25,7 @@ public class GenmEntity extends BaseHenchmenEntity {
 
     public GenmEntity(EntityType<? extends BaseHenchmenEntity> type, Level level) {
         super(type, level);
-        NAME = "genm";
+        NAME = "rider_summon";
         this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ExAidRiderItems.EX_AIDHELMET.get()));
         this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(ExAidRiderItems.EX_AIDCHESTPLATE.get()));
         this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(ExAidRiderItems.EX_AIDLEGGINGS.get()));
@@ -42,7 +42,15 @@ public class GenmEntity extends BaseHenchmenEntity {
     public void actuallyHurt(DamageSource source, float amount) {
         super.actuallyHurt(source, amount);
         if (!this.level().isClientSide() && source.getEntity() instanceof Player player) {
-            if (this.getHealth() < 30 && player.getInventory().countItem(ExAidRiderItems.BAKUSOU_BIKE_GASHAT.get().asItem()) != 0 && this.getItemBySlot(EquipmentSlot.FEET).getItem() != ExAidRiderItems.GASHACON_BUGVISOR_GENM.get()) {
+            if (this.getHealth() < 30 && player.getInventory().countItem(ExAidRiderItems.BAKUSOU_BIKE_GASHAT_TURBO.get().asItem()) != 0 && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= ExAidRiderItems.GOD_MAXIMUM_MIGHTY_X_GASHAT.get()) {
+                if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
+                    player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm_god_maximum"));
+                this.setHealth(60);
+                this.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(9.0D);
+                this.setItemSlot(EquipmentSlot.FEET, new ItemStack(ExAidRiderItems.GAMER_DRIVER_GENM.get()));
+                RiderDriverItem.setFormItem(this.getItemBySlot(EquipmentSlot.FEET), ExAidRiderItems.GOD_MAXIMUM_MIGHTY_X_GASHAT.get(), 1);
+            }
+            else if (this.getHealth() < 30 && player.getInventory().countItem(ExAidRiderItems.BAKUSOU_BIKE_GASHAT.get().asItem()) != 0 && this.getItemBySlot(EquipmentSlot.FEET).getItem() != ExAidRiderItems.GASHACON_BUGVISOR_GENM.get() && RiderDriverItem.getFormItem(this.getItemBySlot(EquipmentSlot.FEET),1)!= ExAidRiderItems.GOD_MAXIMUM_MIGHTY_X_GASHAT.get()) {
                 if (this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS))
                     player.sendSystemMessage(Component.translatable("henshin.kamenridercraft.genm_dangerous_zombie"));
                 this.setHealth(45);
@@ -51,7 +59,7 @@ public class GenmEntity extends BaseHenchmenEntity {
                 ResourceKey<Level> CITY = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("kamenridercraft:city"));
                 if (this.level().dimension() == Level.OVERWORLD || this.level().dimension() == CITY) {
                     if (player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem && driverItem.isTransformed(player) && driverItem.riderName.toLowerCase().contains("lazer"))
-                    ServerLifecycleHooks.getCurrentServer().getLevel(this.level().dimension()).setWeatherParameters(10, 5000, true, false);
+                        ServerLifecycleHooks.getCurrentServer().getLevel(this.level().dimension()).setWeatherParameters(10, 5000, true, false);
                 }
             }
         }
@@ -76,7 +84,7 @@ public class GenmEntity extends BaseHenchmenEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.23F)
                 .add(Attributes.ATTACK_DAMAGE, 6.0D)
                 .add(Attributes.ARMOR, 0.0D)
-                .add(Attributes.MAX_HEALTH, 45.0D);
+                .add(Attributes.MAX_HEALTH, 60.0D);
     }
 
 
