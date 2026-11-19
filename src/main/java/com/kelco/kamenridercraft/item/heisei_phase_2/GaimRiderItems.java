@@ -933,7 +933,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.hasCape().setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HELEIM_LOCKSEED = ITEMS.register("helheim_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "hells_arms", "gaim", "sengoku_driver_belt",
