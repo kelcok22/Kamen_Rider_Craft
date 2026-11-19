@@ -490,7 +490,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
+            }.hasCape().setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("proto_dragon_fruits_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_prototype_dragon_fruits_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -506,7 +506,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.hasCape().setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> MARRON_ENERGY_LOCKSEED = ITEMS.register("marron_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "jimbar_marron_arms", "gaim", "sengoku_driver_belt",
