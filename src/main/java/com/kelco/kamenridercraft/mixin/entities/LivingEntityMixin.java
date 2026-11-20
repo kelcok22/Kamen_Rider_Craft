@@ -40,11 +40,11 @@ import static com.kelco.kamenridercraft.util.DimensionUtil.teleportToDreamDimens
 public class LivingEntityMixin {
     double oldBlockX = ((LivingEntity) (Object) this).getX();
     double oldBlockZ = ((LivingEntity) (Object) this).getZ();
+    LivingEntity livingEntity = ((LivingEntity) (Object) this);
     boolean wasSitting = false;
 
     @Inject(method = "startSleeping", at = @At("HEAD"), cancellable = true)
     public void preSleeping(BlockPos bedPos, CallbackInfo ci) {
-        LivingEntity livingEntity = ((LivingEntity) (Object) this);
         if (livingEntity instanceof ServerPlayer rider &&
                 (rider.level().dimension() == Level.OVERWORLD && !rider.hasEffect(EffectCore.INSOMNIA) && !rider.isCreative() || rider.isCreative()) &&
                 rider.getItemBySlot(EquipmentSlot.FEET).is(ItemTags.create(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "gear/can_dream")))) {
@@ -70,25 +70,23 @@ public class LivingEntityMixin {
 
     @Inject(method = "tick", at = @At("TAIL"))
     public void post_Tick(CallbackInfo ci) {
-        var rider = ((LivingEntity) (Object) this);
-
-        if (rider instanceof ServerPlayer serverPlayer) {
+        if (livingEntity instanceof ServerPlayer serverPlayer) {
             if (serverPlayer.hasEffect(SD)) {
                 PacketDistributor.sendToAllPlayers(
-                        new AnimPayload("sd.modifier", "sd", true, rider.getStringUUID()));
+                        new AnimPayload("sd.modifier", "sd", true, livingEntity.getStringUUID()));
             }
 
-            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
-                    driverItem.isTransformed(rider)) {
-                if (!rider.isCrouching() && rider.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0 && driverItem.getFlyingPosition() != null
-                        && !rider.isCrouching() && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
+            if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem driverItem &&
+                    driverItem.isTransformed(livingEntity)) {
+                if (!livingEntity.isCrouching() && livingEntity.getAttribute(KRCAttributes.WINGS_OUT).getValue() > 0 && driverItem.getFlyingPosition() != null
+                        && !livingEntity.isCrouching() && !(driverItem.getFlyingPosition().equals("blank") || driverItem.getFlyingPosition().isEmpty())) {
                     PacketDistributor.sendToAllPlayers(
-                            new AnimPayload(driverItem.getFlyingPosition(), "flying", true, rider.getStringUUID()));
+                            new AnimPayload(driverItem.getFlyingPosition(), "flying", true, livingEntity.getStringUUID()));
                 }
-                if (rider.isFallFlying() && !rider.isCrouching() && driverItem.getGlidingPosition() != null
+                if (livingEntity.isFallFlying() && !livingEntity.isCrouching() && driverItem.getGlidingPosition() != null
                         && !(driverItem.getGlidingPosition().equals("blank") || driverItem.getGlidingPosition().isEmpty())) {
                     PacketDistributor.sendToAllPlayers(
-                            new AnimPayload(driverItem.getGlidingPosition(), "gliding", true, rider.getStringUUID()));
+                            new AnimPayload(driverItem.getGlidingPosition(), "gliding", true, livingEntity.getStringUUID()));
                 }
                 if (driverItem.getModifiedPositionData() != null && !driverItem.getModifiedPositionData().isEmpty()) {
                     for (List<List<String>> formItemDataList : driverItem.getModifiedPositionData()) {
@@ -103,20 +101,20 @@ public class LivingEntityMixin {
                             for (String condition : formItemDataList.get(2)) {
                                 switch (condition) {
                                     case "in_air":
-                                        if (rider.onGround() || rider.isInWater()) {
+                                        if (livingEntity.onGround() || livingEntity.isInWater()) {
                                             canTakePose = false;
                                         }
                                         break;
                                     case "in_water":
                                         if (condition.equalsIgnoreCase("in_water")) {
-                                            if (!rider.isInWater()) {
+                                            if (!livingEntity.isInWater()) {
                                                 canTakePose = false;
                                             }
                                         }
                                         break;
                                     case "on_ground":
                                         if (condition.equalsIgnoreCase("on_ground")) {
-                                            if (!rider.onGround()) {
+                                            if (!livingEntity.onGround()) {
                                                 canTakePose = false;
                                             }
                                         }
@@ -127,48 +125,48 @@ public class LivingEntityMixin {
                         if (canTakePose && !formItemDataList.get(0).getFirst().isEmpty()) {
                             PacketDistributor.sendToAllPlayers
                                     (new AnimPayload(formItemDataList.get(0).getFirst().toLowerCase(),
-                                            formItemDataList.get(1).getFirst().toLowerCase(), true, rider.getStringUUID()));
+                                            formItemDataList.get(1).getFirst().toLowerCase(), true, livingEntity.getStringUUID()));
                         }
                     }
                 }
             }
         }
 
-        if (!(rider instanceof ArmorStand) && !rider.level().isClientSide()) {
-            if (rider.getData(USED_ABILITY).isEmpty() && rider.getData(ABILITY_COOLDOWN) > 0) {
-                rider.setData(ABILITY_COOLDOWN, rider.getData(ABILITY_COOLDOWN) - 1);
+        if (!(livingEntity instanceof ArmorStand) && !livingEntity.level().isClientSide()) {
+            if (livingEntity.getData(USED_ABILITY).isEmpty() && livingEntity.getData(ABILITY_COOLDOWN) > 0) {
+                livingEntity.setData(ABILITY_COOLDOWN, livingEntity.getData(ABILITY_COOLDOWN) - 1);
             }
-            if (rider.getData(IS_POSING)) {
-                if (!canPose(rider) || Math.abs(rider.getX() - this.oldBlockX) > 0.05 || Math.abs(rider.getZ() - this.oldBlockZ) > 0.05) {
-                    stopPosing(rider);
+            if (livingEntity.getData(IS_POSING)) {
+                if (!canPose(livingEntity) || Math.abs(livingEntity.getX() - this.oldBlockX) > 0.05 || Math.abs(livingEntity.getZ() - this.oldBlockZ) > 0.05) {
+                    stopPosing(livingEntity);
                 }
-            } else if (rider.getData(POSE_COOLDOWN) > 0) {
-                rider.setData(POSE_COOLDOWN, rider.getData(POSE_COOLDOWN) - 1);
+            } else if (livingEntity.getData(POSE_COOLDOWN) > 0) {
+                livingEntity.setData(POSE_COOLDOWN, livingEntity.getData(POSE_COOLDOWN) - 1);
             }
         }
 
-        if (!rider.getData(USED_ABILITY).isEmpty()) {
-            AbilityUtil.useAbility(rider);
-        } else if (rider.getData(ABILITY_TICK) > 0) {
-            rider.setData(ABILITY_TICK, 0);
+        if (!livingEntity.getData(USED_ABILITY).isEmpty()) {
+            AbilityUtil.useAbility(livingEntity);
+        } else if (livingEntity.getData(ABILITY_TICK) > 0) {
+            livingEntity.setData(ABILITY_TICK, 0);
         }
 
-        if (rider.getData(DELAY_ANIMATION_END) && rider instanceof Player) {
-            if (!(rider.getData(DELAY_ANIMATION_END_TICKS) > 1)) {
-                rider.setData(DELAY_ANIMATION_END, false);
-                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(rider.getStringUUID(), "attack", false));
+        if (livingEntity.getData(DELAY_ANIMATION_END) && livingEntity instanceof Player) {
+            if (!(livingEntity.getData(DELAY_ANIMATION_END_TICKS) > 1)) {
+                livingEntity.setData(DELAY_ANIMATION_END, false);
+                PacketDistributor.sendToAllPlayers(new EndAnimationPayload(livingEntity.getStringUUID(), "attack", false));
             } else {
-                rider.setData(DELAY_ANIMATION_END_TICKS, rider.getData(DELAY_ANIMATION_END_TICKS) - 1);
+                livingEntity.setData(DELAY_ANIMATION_END_TICKS, livingEntity.getData(DELAY_ANIMATION_END_TICKS) - 1);
             }
         }
 
-        this.oldBlockX = rider.getX();
-        this.oldBlockZ = rider.getZ();
+        this.oldBlockX = livingEntity.getX();
+        this.oldBlockZ = livingEntity.getZ();
 
-        if (!(rider instanceof Player)) {
-            if (rider.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                belt.beltTick(rider.getItemBySlot(EquipmentSlot.FEET), rider.level(), rider, 36);
-                belt.giveEffects(rider);
+        if (!(livingEntity instanceof Player)) {
+            if (livingEntity.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
+                belt.beltTick(livingEntity.getItemBySlot(EquipmentSlot.FEET), livingEntity.level(), livingEntity, 36);
+                belt.giveEffects(livingEntity);
             }
         }
     }

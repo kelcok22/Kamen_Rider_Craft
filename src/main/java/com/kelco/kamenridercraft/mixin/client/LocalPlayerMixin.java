@@ -4,7 +4,9 @@ import com.kelco.kamenridercraft.network.payload.AttributeChangePayload;
 import com.kelco.kamenridercraft.network.payload.ClimbCollisionPayload;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import com.zigythebird.playeranim.accessors.IAnimatedPlayer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.player.LocalPlayer;
 import net.neoforged.neoforge.network.PacketDistributor;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +21,10 @@ public class LocalPlayerMixin {
     @ModifyReturnValue(method = "isCrouching", at = @At("RETURN"))
     public boolean isCrouching(boolean original) {
         var rider = ((LocalPlayer) (Object) this);
-        if (rider.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 0) return false;
+        if (rider instanceof AbstractClientPlayer player && ((IAnimatedPlayer) player).playerAnimLib$getAnimProcessor() != null
+                && ((IAnimatedPlayer) player).playerAnimLib$getAnimManager().isActive()) {
+            return false;
+        }
         return original;
     }
 
