@@ -3,8 +3,7 @@
 	"conditions": [
 		{
 			"condition": "minecraft:random_chance",
-			"chance": 100,
-			"rolls": 5
+			"chance": 1
 		},
 		{
 			"condition": "neoforge:loot_table_id",
