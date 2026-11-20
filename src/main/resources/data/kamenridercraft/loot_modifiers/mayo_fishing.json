@@ -2,12 +2,26 @@
 	"type": "kamenridercraft:add_item",
 	"conditions": [
 		{
+			"condition": "minecraft:random_chance",
+			"chance": 100,
+			"rolls": 5
+		},
+		{
 			"condition": "neoforge:loot_table_id",
 			"loot_table_id": "minecraft:gameplay/fishing"
-		}, {
-			"condition": "minecraft:random_chance",
-			"chance": 2
+		},
+		{
+			"condition": "minecraft:location_check",
+			"predicate": {
+				"biomes": [
+					"minecraft:jungle",
+					"minecraft:bamboo_jungle",
+					"minecraft:sparse_jungle",
+					"minecraft:swamp",
+					"minecraft:mangrove_swamp"
+				]
+			}
 		}
 	],
-	"item": "kamenridercraft:mayo"
+	"item": "kamenridercraft:piranha"
 }

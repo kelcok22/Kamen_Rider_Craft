@@ -120,6 +120,11 @@ public class ModdedItemCore {
     public static final DeferredItem<Item> CORN_SNACK = ITEMS.register("corn_snack",
             () -> new BaseItem(new Item.Properties().food(Foods.COOKIE)).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
+    public static final DeferredItem<Item> PIRANHA = ITEMS.register("piranha",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
+
+    public static final DeferredItem<Item> GRASSHOPPER = ITEMS.register("grasshopper",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));
 
     public static final DeferredItem<Item> BASE_SWORD = ITEMS.register("base_sword",
             () -> new BaseItem(new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MISC_TAB_ITEMS));

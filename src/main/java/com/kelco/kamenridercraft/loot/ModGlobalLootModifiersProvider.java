@@ -6,11 +6,16 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.WizardRiderItems;
+import net.minecraft.advancements.critereon.LocationPredicate;
+import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.storage.loot.predicates.*;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
 import net.neoforged.neoforge.common.loot.LootTableIdCondition;
 
@@ -64,7 +69,15 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
         add("mayo",new AddItemModifier(new LootItemCondition[]{
                 LootTableIdCondition.builder(ResourceLocation.parse("gameplay/fishing")).build(),
-                LootItemRandomChanceCondition.randomChance(0.3f).build()},
+                LootItemRandomChanceCondition.randomChance(0.1f).build()},
                 ModdedItemCore.MAYO.get()));
+
+        add("grasshopper",new AddItemModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(ResourceLocation.parse("blocks/tall_grass")).build(),
+                LootItemRandomChanceCondition.randomChance(0.1f).build()},
+                ModdedItemCore.GRASSHOPPER.get()));
+
+
+
     }
 }

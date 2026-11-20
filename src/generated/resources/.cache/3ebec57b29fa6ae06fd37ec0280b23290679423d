@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-20T11:10:38.1504989	Item Models: kamenridercraft
+// 1.21.1	2026-11-20T19:46:56.537411	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 9a45b56d01503e3df8042d31b1b262e7ea0027fc assets/kamenridercraft/models/item/advance_capsem.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
@@ -375,6 +375,7 @@ b67839c6138e027e28b5825701fc5a6575857950 assets/kamenridercraft/models/item/gotc
 1e682f9da7eda94647df9c2d5432b78550e56d20 assets/kamenridercraft/models/item/grand_zi_o_ride_chemy_card.json
 bc58ef73a50485581df0a6721eaaadef22d0c275 assets/kamenridercraft/models/item/granute_glass_pane.json
 e20684956169cce8421f69e6980543ed6a2e80ae assets/kamenridercraft/models/item/granute_tooth.json
+395d3dbd1b9d879527bea042c21e649324d30624 assets/kamenridercraft/models/item/grasshopper.json
 fb1272d5493192915dfff1e3a685e61d947bf4ab assets/kamenridercraft/models/item/grasshopper_man_core.json
 7608288f708c160f223651069e7a3fe0483eedd5 assets/kamenridercraft/models/item/gravity_capsem.json
 52bb4b265ff6274e6eb324f7a547ecbae4bcbfbb assets/kamenridercraft/models/item/greatonbo_ride_chemy_card.json
@@ -611,6 +612,7 @@ ab97a5f28d9fbc19e148070e53967bc20212fe0a assets/kamenridercraft/models/item/peop
 67ced0bd7bc6615d46432fdaad242711e1812e61 assets/kamenridercraft/models/item/pienomi_gochizo.json
 43bd408a10b1669203e4e7e6a47c8415e52ac4df assets/kamenridercraft/models/item/pikahotaru_ride_chemy_card.json
 5e14182024b9f643c8f583e8267b82fe26792e4e assets/kamenridercraft/models/item/pilets_ride_chemy_card.json
+137d176c7f5527def4c63cc045cdc24cccef9988 assets/kamenridercraft/models/item/piranha.json
 0063a92d0024aaf19bfa2145b59e9df75cd0328b assets/kamenridercraft/models/item/plasma_capsem.json
 256863d6920be110cc98fc41a4989ac7b89172c2 assets/kamenridercraft/models/item/ple_dummy_gochizo.json
 a2dbf137300b6a2829e5e8addd43111119d17912 assets/kamenridercraft/models/item/popburn_gochizo.json

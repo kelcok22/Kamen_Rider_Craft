@@ -6,7 +6,7 @@
       "loot_table_id": "minecraft:gameplay/fishing"
     },
     {
-      "chance": 0.3,
+      "chance": 0.1,
       "condition": "minecraft:random_chance"
     }
   ],

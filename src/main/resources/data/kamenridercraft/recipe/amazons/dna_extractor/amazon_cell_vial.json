@@ -1,7 +1,7 @@
 {
 	"type": "kamenridercraft:dna_extractor",
 	"primary_input": {
-		"item": "minecraft:beef"
+		"item": "kamenridercraft:piranha"
 	},
 	"optional_input": {
 		"item": "kamenridercraft:empty_vial"
