@@ -1628,12 +1628,8 @@ public class GaimRiderItems {
                     .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_FIFTEEN = ITEMS.register("sengoku_driver_fifteen",
-            () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties()){
-                public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state, AnimationProcessor<RiderArmorItem> animationProcessor) {
-                    GeoBone head = animationProcessor.getBone("fifteen");
-                    if (head!=null)head.setHidden(true);
-                }
-            } .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
+                    .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_MARS_CORE = ITEMS.register("basic_mars_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "mars", "sengoku_driver_belt_mars",

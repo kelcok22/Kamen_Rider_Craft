@@ -18,6 +18,9 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredItem;
+import software.bernie.geckolib.animation.AnimationProcessor;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.cache.object.GeoBone;
 
 import java.util.List;
 import java.util.Objects;
@@ -136,6 +139,10 @@ public class SengokuDriverItem extends RiderDriverItem {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemstack, 2, transformingTick).getModel(this.riderName));
     }
 
+    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state, AnimationProcessor<RiderArmorItem> animationProcessor) {
+        GeoBone head = animationProcessor.getBone("fifteen");
+        if (head!=null)head.setHidden(Objects.equals(riderName, "fifteen"));
+    }
 
     @Override
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
