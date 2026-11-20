@@ -78,7 +78,12 @@ public class SengokuDriverItem extends RiderDriverItem {
     }
 
     public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
-        if (num < 8) return 0;
+        double tf = getHenshinTick(stack, rider);
+        if (isTransformingFromBlank(stack,rider)){
+        if (tf < 9) {
+            return 1;
+        }else return 0;
+        }
         return super.getRenderType(stack, num, rider);
     }
 
