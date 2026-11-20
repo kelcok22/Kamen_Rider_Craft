@@ -26,8 +26,23 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 
+import static com.kelco.kamenridercraft.item.KRCCreativeTabs.EX_AID_TAB_ITEM;
+import static com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM;
+
 public class MyThRiderItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(KamenRiderCraftCore.MOD_ID);
+
+    public static final DeferredItem<Item> HAMMER_BORN_BUCKLE = ITEMS.register("hammer_born_buckle",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> SLASH_BORN_BUCKLE = ITEMS.register("slash_born_buckle",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> BITE_BORN_BUCKLE = ITEMS.register("bite_born_buckle",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(MY_TH_TAB_ITEM));
+
+    public static final DeferredItem<Item> SHOT_BORN_BUCKLE = ITEMS.register("shot_born_buckle",
+            () -> new BaseItem(new Item.Properties()).useBasicModel().addToList(MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_1_RID = ITEMS.register("ride_x_eggs_1_rid",
             () -> new RiderFormChangeItem(new Item.Properties(),"","rid","my_th_driver_belt_rid",
@@ -92,7 +107,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY() + 1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().hasCape().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").setModelName("ride_x_eggs_1_maou"));
+            }.isGlowing().IsBeltGlowing().hasCape().changeBeltModel("geo/belts/zeztz_riderbelt.geo.json").setModelName("ride_x_eggs_1_maou"));
 
 
     public static final DeferredItem<Item> RIDE_X_EGGS_1_MAOU = ITEMS.register("ride_x_eggs_1_maou",
@@ -111,6 +126,19 @@ public class MyThRiderItems {
                 }
             }.isGlowing().addAlternative(RIDE_X_EGGS_1_EN_MY_TH.get()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
+    public static final DeferredItem<Item> RIDE_X_EGGS_3_RID = ITEMS.register("ride_x_eggs_3_rid",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_tiger","rid","my_th_driver_belt_tigre",
+                    new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40,1 ,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }.isGlowing().IsBeltGlowing().hasCape().addNeedItem(SLASH_BORN_BUCKLE.get()).setModelName("ride_x_egg_3"));
+
     public static final DeferredItem<Item> RIDE_X_EGGS_3_TIGRE = ITEMS.register("ride_x_eggs_3_tigre",
             () -> new RiderFormChangeItem(new Item.Properties(),"","tigre","my_th_driver_belt_tigre",
                     new MobEffectInstance(EffectCore.SLASH, 40, 1,true,false),
@@ -122,7 +150,7 @@ public class MyThRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.isGlowing().IsBeltGlowing().hasCape().setModelName("ride_x_egg_3"));
+            }.isGlowing().IsBeltGlowing().hasCape().addAlternative(RIDE_X_EGGS_3_RID.get()).setModelName("ride_x_egg_3"));
 
     public static final DeferredItem<Item> RIDE_X_EGGS_3 = ITEMS.register("ride_x_eggs_3",
             () -> new RiderFormChangeItem(new Item.Properties(),"_orca_frame","my_th","my_th_driver_belt_orca",
@@ -372,7 +400,7 @@ public class MyThRiderItems {
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"black_my_th",RIDE_X_EGGS_1_ORIGIN ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_HAMMER_ON = ITEMS.register("my_th_driver_hammer_on",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDE_X_EGGS_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"rid",RIDE_X_EGGS_1_RID ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).useBasicModel().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
 
     public static final DeferredItem<Item> MY_TH_DRIVER_SLASH_ON_TIGRE = ITEMS.register("my_th_driver_slash_on_tigre",
             () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"tigre",RIDE_X_EGGS_3_TIGRE ,MY_TH_HELMET,MY_TH_CHESTPLATE,MY_TH_LEGGINGS , new Item.Properties()).hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.MY_TH_TAB_ITEM));
