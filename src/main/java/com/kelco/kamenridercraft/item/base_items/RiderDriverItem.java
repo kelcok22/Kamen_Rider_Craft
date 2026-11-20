@@ -37,6 +37,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoItem;
+import software.bernie.geckolib.animation.AnimationProcessor;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.texture.AutoGlowingTexture;
 
@@ -559,7 +560,7 @@ public class RiderDriverItem extends RiderArmorItem {
         return ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "geo/armor/" + getFormItem(itemStack, 1, transformingTick).getModel(this.riderName));
     }
 
-    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
+    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state, AnimationProcessor<RiderArmorItem> animationProcessor) {
 
     }
 
@@ -842,4 +843,5 @@ public class RiderDriverItem extends RiderArmorItem {
         }
         return false;
     }
+
 }

@@ -35,6 +35,9 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import software.bernie.geckolib.animation.AnimationProcessor;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.cache.object.GeoBone;
 
 import java.util.List;
 
@@ -891,7 +894,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FRESH_PINE_LOCKSEED = ITEMS.register("fresh_pine_lockseed",
             () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
@@ -953,7 +956,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).resetFormToBase().addCompatibilityList(canUseBasicLockseed).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> NATSUMIKAN_LOCKSEED = ITEMS.register("natsumikan_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "natsumikan_arms", "gaim", "sengoku_driver_belt",
@@ -1625,8 +1628,12 @@ public class GaimRiderItems {
                     .setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_FIFTEEN = ITEMS.register("sengoku_driver_fifteen",
-            () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties())
-                    .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
+            () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "fifteen", FIFTEEN_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS, new Item.Properties()){
+                public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state, AnimationProcessor<RiderArmorItem> animationProcessor) {
+                    GeoBone head = animationProcessor.getBone("fifteen");
+                    if (head!=null)head.setHidden(true);
+                }
+            } .addExtraBaseFormItems(BASIC_FIFTEEN_CORE).addToList(GAIM_TAB_ITEM).changeRepairItem(HIMAWRI_LOCKSEED.get()));
 
     public static final DeferredItem<Item> BASIC_MARS_CORE = ITEMS.register("basic_mars_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "mars", "sengoku_driver_belt_mars",

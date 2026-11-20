@@ -120,7 +120,4 @@ public class DriveDriverItem extends RiderDriverItem {
         return false;
     }
 
-    @Override
-    public void setCustomAnimations(RiderArmorItem an, long instanceId, AnimationState<RiderArmorItem> state) {
-    }
 }

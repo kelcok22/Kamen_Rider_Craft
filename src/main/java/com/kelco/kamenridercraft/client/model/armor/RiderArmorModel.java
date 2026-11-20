@@ -15,6 +15,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.animation.AnimationProcessor;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
 import software.bernie.geckolib.constant.DataTickets;
@@ -173,7 +174,7 @@ public class RiderArmorModel<T extends RiderArmorItem> extends GeoModel<T> {
             }
 
             if (RIDER.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt) {
-                belt.setCustomAnimations(an, instanceId, (AnimationState<RiderArmorItem>) state);
+                belt.setCustomAnimations(an, instanceId, (AnimationState<RiderArmorItem>) state, (AnimationProcessor<RiderArmorItem>) getAnimationProcessor());
 
                 GeoBone parkaGhost = getAnimationProcessor().getBone("parkaGhost");
                 if (parkaGhost != null) {
