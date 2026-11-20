@@ -61,9 +61,9 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
         RenderSystem.enableBlend();
 
         if (shouldShowAbilityMeter(player)) {
-            guiGraphics.blit(UNFILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 49, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, 49, 5, 49, 5);
+            guiGraphics.blit(UNFILLED_ACTION_BAR, ((int) (screenXCenter * 0.2)), (screenYCenter + (int) (screenYCenter * .65)), 0, 0, 49, 5, 49, 5);
             if (actionProgress > 0) {
-                guiGraphics.blit(FILLED_ACTION_BAR, ((int) (screenXCenter * 0.405)) - 49, (screenYCenter + (int) (screenYCenter * .65)) - 5, 0, 0, meterDisplay, 5, 49, 5);
+                guiGraphics.blit(FILLED_ACTION_BAR, ((int) (screenXCenter * 0.2)), (screenYCenter + (int) (screenYCenter * .65)), 0, 0, meterDisplay, 5, 49, 5);
             }
         }
 
@@ -90,17 +90,17 @@ public class AbilityHudOverlay implements LayeredDraw.Layer {
 
         if (shouldShowIcons(player)) {
             if (ABILITY_ONE != null && ABILITY_TWO != null) {
-                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.35)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
-                guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.35)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.2)), (screenYCenter + (int) (screenYCenter * .65) + 10), 0, 0, 18, 18, 18, 18);
+                guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.2) + 2), (screenYCenter + (int) (screenYCenter * .65) + 12), 0, 0, 14, 14, 14, 14);
 
-                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.25)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
-                guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.25)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.2) + 30), (screenYCenter + (int) (screenYCenter * .65) + 10), 0, 0, 18, 18, 18, 18);
+                guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.2) + 32), (screenYCenter + (int) (screenYCenter * .65) + 12), 0, 0, 14, 14, 14, 14);
             } else if (ABILITY_ONE != null || ABILITY_TWO != null) {
-                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.3)) - 9, (screenYCenter + (int) (screenYCenter * .75)) - 9, 0, 0, 18, 18, 18, 18);
+                guiGraphics.blit(ABILITY_HOLDER, ((int) (screenXCenter * 0.2) + 15), (screenYCenter + (int) (screenYCenter * .65) + 10), 0, 0, 18, 18, 18, 18);
                 if (ABILITY_ONE != null) {
-                    guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.3)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+                    guiGraphics.blit(ABILITY_ONE, ((int) (screenXCenter * 0.2) + 17), (screenYCenter + (int) (screenYCenter * .65) + 12), 0, 0, 14, 14, 14, 14);
                 } else if (ABILITY_TWO != null) {
-                    guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.3)) - 7, (screenYCenter + (int) (screenYCenter * .75)) - 7, 0, 0, 14, 14, 14, 14);
+                    guiGraphics.blit(ABILITY_TWO, ((int) (screenXCenter * 0.2) + 17), (screenYCenter + (int) (screenYCenter * .65) + 12), 0, 0, 14, 14, 14, 14);
                 }
             }
         }
