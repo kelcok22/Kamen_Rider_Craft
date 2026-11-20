@@ -311,7 +311,7 @@ public class KamenRiderCraftCore {
         if (event.getRenderer().getModel() instanceof HumanoidModel<?> model) {
             if (event.getEntity().getItemBySlot(EquipmentSlot.FEET).getItem() instanceof RiderDriverItem belt && belt.isTransformed(event.getEntity())) {
                 double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET), event.getEntity());
-                double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET), tf);
+                double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET), tf, event.getEntity());
                 if (tag != 0) {
                     model.setAllVisible(false);
                     if (tag != 1) {

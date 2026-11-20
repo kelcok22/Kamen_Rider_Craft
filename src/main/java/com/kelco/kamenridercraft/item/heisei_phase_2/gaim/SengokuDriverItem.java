@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.heisei_phase_2.gaim;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GaimArmsRenderLayerInfo;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.RiderArmorItem;
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
@@ -22,8 +21,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import java.util.List;
 import java.util.Objects;
-
-import static com.kelco.kamenridercraft.world.attribute.KRCAttributes.IS_TRANSFORMING;
 
 public class SengokuDriverItem extends RiderDriverItem {
     public SengokuDriverItem(Holder<ArmorMaterial> material, String rider, DeferredItem<Item> baseFormItem, DeferredItem<Item> head, DeferredItem<Item> torso, DeferredItem<Item> legs, Properties properties) {
@@ -80,9 +77,9 @@ public class SengokuDriverItem extends RiderDriverItem {
         else return getFormItem(itemstack, 1).getFormName(fly);
     }
 
-    public double getRenderType(ItemStack stack, double num) {
-        if (RiderDriverItem.getFormItem(stack, 1, num) == ModdedItemCore.BLANK_FORM.asItem()) return 0;
-        return super.getRenderType(stack, num);
+    public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
+        if (num < 8) return 0;
+        return super.getRenderType(stack, num, rider);
     }
 
     public double getBaseHenshinTick(ItemStack stack, LivingEntity rider) {
@@ -93,7 +90,8 @@ public class SengokuDriverItem extends RiderDriverItem {
 
     public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
         super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
-        if (slot == EquipmentSlot.FEET) {
+        double henshin_tick = getHenshinTick(itemStack, rider);
+        if (slot == EquipmentSlot.FEET&&henshin_tick<39) {
             RiderFormChangeItem formItem = getFormItem(itemStack, 1);
             if (getFormItem(itemStack, 2) == GaimRiderItems.JIMBER_GAIM_CORE.get() && itemStack.getItem() instanceof RiderDriverItem belt)
                 layerInfo.add(new RenderLayerInfo("belts/parts/sengoku_driver_" + belt.baseFormItem.getFormName(false), null));

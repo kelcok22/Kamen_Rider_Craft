@@ -205,7 +205,7 @@ public class FourzeDriverItem extends RiderDriverItem {
         return super.getModelResource(itemstack, animatable, slot, livingEntity);
     }
 
-    public double getRenderType(ItemStack stack, double num) {
+    public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
         double form_double = 1;
         RiderFormChangeItem form = getFormItem(stack, 1, 31);
         if (form == ModdedItemCore.BLANK_FORM.asItem()&num>10) form_double = 0;

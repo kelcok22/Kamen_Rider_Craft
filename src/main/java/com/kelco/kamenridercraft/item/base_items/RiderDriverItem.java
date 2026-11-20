@@ -147,7 +147,7 @@ public class RiderDriverItem extends RiderArmorItem {
         return getFormItem(itemStack, 1, form_time + 1) == ModdedItemCore.BLANK_FORM.asItem()&isTransforming(rider) ;
     }
 
-    public double getRenderType(ItemStack stack, double num) {
+    public double getRenderType(ItemStack stack, double num , LivingEntity rider) {
         double form_double = 1;
         RiderFormChangeItem form = getFormItem(stack, 1, num);
         if (form.getShowHead()) {
@@ -179,7 +179,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 tag.putBoolean("Update_form", true);
             }
             if (isTransformed(rider)) {
-                tag.putDouble("render_type", getRenderType(stack, rider.getAttribute(IS_TRANSFORMING).getBaseValue()));
+                tag.putDouble("render_type", getRenderType(stack, rider.getAttribute(IS_TRANSFORMING).getBaseValue(),rider));
             }
             if (!isTransformed(rider)) {
                 tag.putDouble("render_type", 0);

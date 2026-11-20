@@ -1777,7 +1777,7 @@ public class OOORiderItems {
                     }
                 }
 
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
 
@@ -1802,7 +1802,7 @@ public class OOORiderItems {
                     }
                 }
 
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
 
@@ -1826,7 +1826,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1849,7 +1849,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1872,7 +1872,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1895,7 +1895,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1918,7 +1918,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1941,7 +1941,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1964,7 +1964,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -1987,7 +1987,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
@@ -2010,7 +2010,7 @@ public class OOORiderItems {
                         return super.getText(itemStack, equipmentSlot, rider, riderName);
                     }
                 }
-                public double getRenderType(ItemStack stack, double num) {
+                public double getRenderType(ItemStack stack, double num, LivingEntity rider) {
                     return 1;
                 }
                 public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
