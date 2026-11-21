@@ -3,19 +3,19 @@
 	"category": "equipment",
 	"group": "para_dx",
 	"pattern": [
-		"XXX",
-		"CXP",
+		"XPX",
+		"XCX",
 		"XXX"
 	],
 	"key": {
 		"X": {
-			"item": "kamenridercraft:blank_gashat"
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
 		},
 		"C": {
 			"item": "kamenridercraft:perfect_puzzle_gashat"
 		},
 		"P": {
-			"item": "kamenridercraft:knock_out_fighter_gashat"
+			"item": "kamenridercraft:unfinished_maximum_mighty_x_gashat"
 		}
 	},
 	"result": {

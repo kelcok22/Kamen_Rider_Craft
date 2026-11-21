@@ -35,7 +35,7 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
             int gamerule = level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
             if (chance * 100.0 <= gamerule && (lastHurtByPlayer != null && canSpawnBoss(lastHurtByPlayer) || !(getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                int bossChoice = random.nextInt(2);
+                int bossChoice = random.nextInt(3);
                 switch (bossChoice) {
                     case 0:
                         boss = MobsCore.GENM.get().create(level());
@@ -60,6 +60,12 @@ public class BugsterVirusEntity extends BaseHenchmenEntity {
                         boss = MobsCore.GRAPHITE_BUGSTER.get().create(level());
                         if (boss != null && getLastAttacker() instanceof Player playerIn && level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
                             playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.graphite"));
+                        }
+                        break;
+                    case 2:
+                        boss = MobsCore.PARADX.get().create(level());
+                        if (boss != null && getLastAttacker() instanceof Player playerIn && level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_1"));
                         }
                         break;
                     default:

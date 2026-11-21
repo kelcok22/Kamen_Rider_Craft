@@ -31,6 +31,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("ixa_machine_block_be", () -> BlockEntityType.Builder.of(
                     IxaMachineBlockEntity::new, RiderBlocks.IXA_MACHINE_BLOCK.get()).build(null));
 
+    public static final Supplier<BlockEntityType<CellMedalProgrammerEntity>> CELL_MEDAL_PROGRAMMER_BE =
+            BLOCK_ENTITIES.register("cell_medal_programmer_be", () -> BlockEntityType.Builder.of(
+                    CellMedalProgrammerEntity::new, RiderBlocks.CELL_MEDAL_PROGRAMMER.get()).build(null));
+
     public static final Supplier<BlockEntityType<AstroswitchProgrammerEntity>> ASTROSWITCH_PROGRAMMER_BE =
             BLOCK_ENTITIES.register("astroswitch_programmer_be", () -> BlockEntityType.Builder.of(
                     AstroswitchProgrammerEntity::new, RiderBlocks.ASTROSWITCH_PROGRAMMER.get()).build(null));

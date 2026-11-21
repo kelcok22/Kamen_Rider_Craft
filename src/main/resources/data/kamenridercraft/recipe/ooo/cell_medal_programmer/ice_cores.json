@@ -1,0 +1,32 @@
+{
+	"type": "kamenridercraft:cell_medal_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:cellmedal"
+	},
+	"optional_input": {
+		"item": "minecraft:blue_ice"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:seiuchi_medal"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:shirokuma_medal"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:penguin_medal"
+			},
+			"weight": 15
+		}
+	]
+}
