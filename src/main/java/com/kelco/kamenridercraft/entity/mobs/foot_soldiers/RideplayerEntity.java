@@ -44,11 +44,15 @@ public class RideplayerEntity extends BaseHenchmenEntity {
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
             if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                boss = MobsCore.POPPY_RED.get().create(this.level());
-                if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
+                BaseHenchmenEntity boss = MobsCore.POPPY_RED.get().create(this.level());
+                if (boss != null) {
+                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
+                    this.level().addFreshEntity(boss);
+                    if (this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                        playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
+                    }
                 }
-                }
+            }
         }
         super.remove(p_149847_);
     }
