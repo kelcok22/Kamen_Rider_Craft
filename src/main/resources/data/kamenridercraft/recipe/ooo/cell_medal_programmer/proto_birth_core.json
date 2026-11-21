@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:cell_medal_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:cellmedal"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:rider_circuit"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_birth_core"
+			},
+			"weight": 15
+		}
+	]
+}

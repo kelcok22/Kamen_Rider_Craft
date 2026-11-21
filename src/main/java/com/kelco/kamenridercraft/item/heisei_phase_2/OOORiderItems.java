@@ -711,7 +711,7 @@ public class OOORiderItems {
                                 player.getZ(), 30, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeSlot(1).addToList(CellMedalProgramer.SEISHIROGIN).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+            }.setFormDelay(1d).changeSlot(1).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
     public static final DeferredItem<Item> SHIROKUMA_MEDAL = ITEMS.register("shirokuma_medal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_shirokuma", "ooo", "ooodriver_belt",
@@ -724,7 +724,7 @@ public class OOORiderItems {
                                 player.getZ(), 30, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeSlot(2).addToList(CellMedalProgramer.SEISHIROGIN).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+            }.setFormDelay(1d).changeSlot(2).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
     public static final DeferredItem<Item> PENGUIN_MEDAL = ITEMS.register("penguin_medal",
             () -> new RiderFormChangeItem(new Item.Properties(), "_penguin", "ooo", "ooodriver_belt",
@@ -737,7 +737,7 @@ public class OOORiderItems {
                                 player.getZ(), 30, 0, 0, 0, 0.1);
                     }
                 }
-            }.setFormDelay(1d).changeSlot(3).canSnowWalk().addToList(CellMedalProgramer.SEISHIROGIN).addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
+            }.setFormDelay(1d).changeSlot(3).canSnowWalk().addToList(OOO_TAB_ITEM).addToList(SPECIAL_NAME_MEDALS));
 
 
     public static final DeferredItem<Item> PANDA_MEDAL = ITEMS.register("panda_medal",
@@ -1452,45 +1452,45 @@ public class OOORiderItems {
                             player.getZ(), 100, 0, 0, 0, 0.1);
                 }
             }.setFormDelay(10).addSwitchForm(OOORiderItems.BIRTH_CORE.get())
-                    .changeModel("birth.geo.json").isGlowing().addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .changeModel("birth.geo.json").isGlowing().addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_BREAST_CANNON = ITEMS.register("birth_core_breast_cannon",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "",
                     new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 40, 1, true, false))
                     .changeSlot(2).addSwitchForm(ModdedItemCore.BLANK_FORM.get())
-                    .addCompatibilityList(new String[]{"birth_prototype"}).addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .addCompatibilityList(new String[]{"birth_prototype"}).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_CRANE_ARM = ITEMS.register("birth_core_crane_arm",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2, true, false))
                     .changeSlot(3).addSwitchForm(ModdedItemCore.BLANK_FORM.get())
-                    .addCompatibilityList(new String[]{"birth_prototype"}).addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .addCompatibilityList(new String[]{"birth_prototype"}).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_SHOVEL_ARM = ITEMS.register("birth_core_shovel_arm",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "",
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false))
                     .changeSlot(4).addSwitchForm(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_CATERPILLAR_LEG = ITEMS.register("birth_core_catepillar_leg",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "",
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false))
                     .changeSlot(5).addSwitchForm(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> BIRTH_CORE_DRILL_ARM = ITEMS.register("birth_core_drill_arm",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(EffectCore.DRILL, 40, 0, true, false))
                     .changeSlot(6).addSwitchForm(ModdedItemCore.BLANK_FORM.get())
-                    .addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .addToList(OOO_TAB_ITEM));
 
 
     public static final DeferredItem<Item> BIRTH_CORE_CUTTER_WING = ITEMS.register("birth_core_cutter_wing",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "birth", "",
                     new MobEffectInstance(EffectCore.FLYING, 40, 0, true, false))
                     .changeSlot(7).addSwitchForm(ModdedItemCore.BLANK_FORM.get())
-                    .addCompatibilityList(new String[]{"birth_prototype"}).addToList(CellMedalProgramer.CELL_MEDAL).addToList(OOO_TAB_ITEM));
+                    .addCompatibilityList(new String[]{"birth_prototype"}).addToList(OOO_TAB_ITEM));
 
     public static final DeferredItem<Item> GREEED_ABSORPTION_CORE = ITEMS.register("greeed_absorption_core",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "_tora_greeed_absorption", "ooo_ancient", "ooodriver_belt",

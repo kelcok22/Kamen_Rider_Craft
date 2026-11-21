@@ -61,6 +61,29 @@ public class ModRecipes {
             });
 
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<CellMedalProgrammerRecipe>> CELL_MEDAL_PROGRAMMER_SERIALIZER =
+            SERIALIZERS.register("cell_medal_programmer", () -> new RecipeSerializer<CellMedalProgrammerRecipe>() {
+                @Override
+                public com.mojang.serialization.@NotNull MapCodec<CellMedalProgrammerRecipe> codec() {
+                    return CellMedalProgrammerRecipe.CODEC;
+                }
+
+                @Override
+                public net.minecraft.network.codec.@NotNull StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf,
+                        CellMedalProgrammerRecipe> streamCodec() {
+                    return CellMedalProgrammerRecipe.STREAM_CODEC;
+                }
+            });
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<CellMedalProgrammerRecipe>> CELL_MEDAL_PROGRAMMER_TYPE =
+            TYPES.register("cell_medal_programmer", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "cell_medal_programmer";
+                }
+            });
+
+
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_SERIALIZER =
             SERIALIZERS.register("astroswitch_programmer", () -> new RecipeSerializer<AstroswitchProgrammerRecipe>() {
                 @Override

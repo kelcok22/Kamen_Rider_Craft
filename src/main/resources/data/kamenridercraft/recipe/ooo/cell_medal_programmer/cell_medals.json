@@ -1,0 +1,57 @@
+{
+	"type": "kamenridercraft:cell_medal_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:cellmedal"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_breast_cannon"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_crane_arm"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_shovel_arm"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_catepillar_leg"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_drill_arm"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_cutter_wing"
+			},
+			"weight": 15
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:birth_core_eyes"
+			},
+			"weight": 15
+		}
+	]
+}
