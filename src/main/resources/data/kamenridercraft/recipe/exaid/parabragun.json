@@ -5,20 +5,17 @@
 	"pattern": [
 		"XMX",
 		"XSX",
-		"XPX"
+		"XXX"
 	],
 	"key": {
 		"X": {
-			"item": "kamenridercraft:blank_gashat"
+			"item": "kamenridercraft:unfinished_kamen_rider_chronicle_gashat"
 		},
 		"S": {
 			"item": "kamenridercraft:base_sword"
 		},
 		"M": {
 			"item": "kamenridercraft:perfect_puzzle_gashat"
-		},
-		"P": {
-			"item": "kamenridercraft:knock_out_fighter_gashat"
 		}
 	},
 	"result": {

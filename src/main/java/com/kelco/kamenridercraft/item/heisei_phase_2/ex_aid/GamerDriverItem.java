@@ -152,11 +152,6 @@ public class GamerDriverItem extends RiderDriverItem {
             if (((RiderDriverItem) itemstack.getItem()).beltText == null) {
                 belt = getFormItem(itemstack, 1).getBeltTex();
             }
-            if (itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_GENM.get() && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR.get()))
-                belt = "bugster_buckle";
-            if ((itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONICLE_BUGTER.get()
-                    || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_POPPY.get() || itemstack.getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_LAZER.get())
-                    && rider.isHolding(ExAidRiderItems.GASHACON_BUGVISOR_II.get())) belt = "bugster_buckle_ii";
 
             if (Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") && !isTransformed(rider)||Objects.equals(getFormItem(itemstack, 1).getBeltModel(), "geo/belts/lv_1_belt.geo.json") &&henshinTick > 30) {
                 belt = getFormItem(itemstack, 1).getBeltTex() + "_un";

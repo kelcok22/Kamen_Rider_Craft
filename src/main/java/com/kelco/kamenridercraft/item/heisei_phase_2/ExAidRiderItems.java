@@ -1380,7 +1380,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .setFormToArmor().changeSlot(2).hasCape().changeModel("fantasy_gamer.geo.json").addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .setFormToArmor().changeSlot(2).hasCape().changeModel("fantasy_gamer.geo.json"));
 
     public static final DeferredItem<Item> BANG_BANG_SIMULATION_GASHAT = ITEMS.register("bang_bang_simulation_gashat",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "simulation_gamer", "snipe", "gamer_driver_taddle_fantasy",
@@ -1398,7 +1398,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .setSlotTwoAbility("cannon", 1).setFormToArmor().changeSlot(2).changeModel("simulation_gamer.geo.json").addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
+                    .setSlotTwoAbility("cannon", 1).setFormToArmor().changeSlot(2).addAlternative(TADDLE_FANTASY_GASHAT.get()).changeModel("simulation_gamer.geo.json").addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 15));
 
     public static final DeferredItem<Item> GASHAT_GEAR_DUAL = ITEMS.register("gashat_gear_dual",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "para_dx_lv99", "gamer_driver_gashat_gear_dual",
@@ -1420,23 +1420,7 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
-
-    public static final DeferredItem<Item> PERFECT_PUZZLE_GASHAT = ITEMS.register("perfect_puzzle_gashat",
-            () -> new RiderFormChangeItem(new Item.Properties(), "", "para_dx", "paradoxbelt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
-                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false),
-                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
-                    super.transformationEffect(itemstack, player);
-                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
-                            player.getX(), player.getY() + 1,
-                            player.getZ(), 100, 0, 0, 0, 1);
-
-                }
-            }
-                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
+                    .isGlowing().IsBeltGlowing().changeBeltModel("geo/belts/gamer_driver_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
 
     public static final DeferredItem<Item> KNOCK_OUT_FIGHTER_GASHAT = ITEMS.register("knock_out_fighter_gashat",
             () -> new RiderFormChangeItem(new Item.Properties(), "_fighter", "para_dx", "paradoxbelt",
@@ -1452,7 +1436,24 @@ public class ExAidRiderItems {
 
                 }
             }
-                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
+                    .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()));
+
+
+    public static final DeferredItem<Item> PERFECT_PUZZLE_GASHAT = ITEMS.register("perfect_puzzle_gashat",
+            () -> new RiderFormChangeItem(new Item.Properties(), "", "para_dx", "paradoxbelt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
+                    new MobEffectInstance(EffectCore.LONG_ARM, 40, 2, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLUE_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+
+                }
+            }
+                    .isGlowing().addAlternative(GASHAT_GEAR_DUAL.get()).addSwitchForm(KNOCK_OUT_FIGHTER_GASHAT.get()).alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM).addToList(GameCreator.BLANK_DOUBLE_GASHAT, 10));
 
     public static final DeferredItem<Item> GASHAT_GEAR_DUAL_ANOTHER = ITEMS.register("gashat_gear_dual_another",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "another_para_dx", "gamer_driver_gashat_gear_dual_another",
@@ -2099,7 +2100,7 @@ public class ExAidRiderItems {
                     .addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_PARA_DX = ITEMS.register("gamer_driver_paradx",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "para_dx_lv99", GASHAT_GEAR_DUAL, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "para_dx_lv99", GASHAT_GEAR_DUAL, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
                     .addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GAMER_DRIVER_TRUE_BRAVE = ITEMS.register("gamer_driver_truebrave",
@@ -2124,7 +2125,7 @@ public class ExAidRiderItems {
 
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_GENM = ITEMS.register("gashacon_bugvisor_genmu",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "genm_bugvisor", DANGEROUS_ZOBIE_GASHAT_BD, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
+            () -> new BuggleDriverItem(ArmorMaterials.DIAMOND, "genm_bugvisor", DANGEROUS_ZOBIE_GASHAT_BD, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
                     .overrideBeltText("gashacon_bugvisor").addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_BUGSTER = ITEMS.register("gashacon_bugvisor_bugster",
@@ -2132,23 +2133,23 @@ public class ExAidRiderItems {
                     .addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONOS = ITEMS.register("gashacon_bugvisor_ii_chronos",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "chronos", KAMEN_RIDER_CHRONICLE_GASHAT, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
+            () -> new BuggleDriverItem(ArmorMaterials.DIAMOND, "chronos", KAMEN_RIDER_CHRONICLE_GASHAT, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties().rarity(Rarity.UNCOMMON))
                     .overrideBeltText("gashacon_bugvisor_ii").addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_POPPY = ITEMS.register("gashacon_bugvisor_ii_poppy",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "poppy", TOKI_MEKI_CRISIS_GASHAT, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
+            () -> new BuggleDriverItem(ArmorMaterials.DIAMOND, "poppy", TOKI_MEKI_CRISIS_GASHAT, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_LAZER = ITEMS.register("gashacon_bugvisor_ii_lazer",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "lazer_lvx_", GIRI_GIRI_CHAMBARA_GASHAT_X, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
+            () -> new BuggleDriverItem(ArmorMaterials.DIAMOND, "lazer_lvx_", GIRI_GIRI_CHAMBARA_GASHAT_X, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().overrideBeltText("gashacon_bugvisor_ii_lazer").addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> GASHACON_BUGVISOR_II_CHRONICLE_BUGTER = ITEMS.register("gashacon_bugvisor_ii_chronicle_bugster",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "chronicle_bugster", KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
+            () -> new BuggleDriverItem(ArmorMaterials.DIAMOND, "chronicle_bugster", KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
                     .hideBeltFormInfo().addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> PARA_DX_BELT = ITEMS.register("paradoxbelt",
-            () -> new GamerDriverItem(ArmorMaterials.DIAMOND, "para_dx", PERFECT_PUZZLE_GASHAT, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND, "para_dx", PERFECT_PUZZLE_GASHAT, EX_AIDHELMET, EX_AIDCHESTPLATE, EX_AIDLEGGINGS, new Item.Properties())
                     .addToList(EX_AID_TAB_ITEM).changeRepairItem(BLANK_GASHAT.get()));
 
     public static final DeferredItem<Item> RIDE_PLAYER_BELT = ITEMS.register("rideplayerbelt",

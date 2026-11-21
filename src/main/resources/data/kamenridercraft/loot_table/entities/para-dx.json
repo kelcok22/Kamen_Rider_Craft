@@ -1,61 +1,102 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-	{
-	  "rolls": 1,
-	  "entries": [
+	"pools": [
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:perfect_puzzle_gasha_trophy",
-		  "weight": 1
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:perfect_puzzle_gashat",
+					"weight": 1
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_gashat",
+					"weight": 2
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:knockout_fighter_gasha_trophy",
-		  "weight": 1
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_gashat",
+					"weight": 5
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:taiko_no_tatsujin_gashat",
+					"weight": 1
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
-		  "weight": 1
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:perfect_puzzle_gasha_trophy"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:knockout_fighter_gasha_trophy"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "attacking_player",
+					"predicate": {
+						"slots": {
+							"container.*": {
+								"items": "kamenridercraft:maximum_mighty_x_gashat"
+							}
+						}
+					}
+				}
+			]
+		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_gashat",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 2,
-				"max": 4
-			  }
-			}
-		  ]
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_gashat",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 3,
+								"max": 5
+							}
+						}
+					]
+				}
+			]
+		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 1,
-				"max": 2
-			  }
-			}
-		  ]
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.5
+						}
+					],
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				}
+			]
 		}
-	  ]
-	}
-  ]
+	]
 }

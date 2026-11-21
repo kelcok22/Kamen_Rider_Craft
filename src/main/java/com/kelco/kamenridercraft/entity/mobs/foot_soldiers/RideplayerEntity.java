@@ -44,27 +44,11 @@ public class RideplayerEntity extends BaseHenchmenEntity {
             int gamerule = this.level().getGameRules().getInt(ModGameRules.RULE_BOSS_SPAWN_PERCENTAGE);
 
             if (chance * 100.0 <= gamerule && (this.lastHurtByPlayer != null && canSpawnBoss(this.lastHurtByPlayer) || !(this.getLastAttacker() instanceof Player) && chance * 200.0 <= gamerule)) {
-                int bossChoice = this.random.nextInt(2);
-                switch (bossChoice) {
-                    case 0:
-                        boss = MobsCore.PARADX.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.paradx_1"));
-                        }
-                        break;
-                    case 1:
-                        boss = MobsCore.POPPY_RED.get().create(this.level());
-                        if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
-                            playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
-                        }
-                        break;
-                    default:
+                boss = MobsCore.POPPY_RED.get().create(this.level());
+                if (boss != null && this.getLastAttacker() instanceof Player playerIn && this.level().getGameRules().getBoolean(ModGameRules.RULE_BOSS_HENSHIN_ANNOUNCEMENTS)) {
+                    playerIn.sendSystemMessage(Component.translatable("henshin.kamenridercraft.poppy"));
                 }
-                if (boss != null) {
-                    boss.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
-                    this.level().addFreshEntity(boss);
                 }
-            }
         }
         super.remove(p_149847_);
     }
