@@ -24,60 +24,89 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                                  MultiBufferSource bufferSource, PoseStack poseStack, int packedLight) {
         GeoBone bone = model.getBone("body").orElse(null);
         double henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() - partialTick;
-        GeoBone peel_1 = model.getBone("peel_1").orElse(null);
-        GeoBone peel_1_upper = model.getBone("peel_1_upper").orElse(null);
-        GeoBone peel_2 = model.getBone("peel_2").orElse(null);
-        GeoBone peel_2_upper = model.getBone("peel_2_upper").orElse(null);
-        GeoBone peel_3 = model.getBone("peel_3").orElse(null);
-        GeoBone peel_3_upper = model.getBone("peel_3_upper").orElse(null);
-        GeoBone peel_4 = model.getBone("peel_4").orElse(null);
-        GeoBone peel_4_upper = model.getBone("peel_4_upper").orElse(null);
+        GeoBone orange_1 = model.getBone("orange_1").orElse(null);
+        GeoBone orange_1_upper = model.getBone("orange_1_upper").orElse(null);
+        GeoBone orange_2 = model.getBone("orange_2").orElse(null);
+        GeoBone orange_2_upper = model.getBone("orange_2_upper").orElse(null);
+        GeoBone orange_3 = model.getBone("orange_3").orElse(null);
+        GeoBone orange_3_upper = model.getBone("orange_3_upper").orElse(null);
+        GeoBone orange_4 = model.getBone("orange_4").orElse(null);
+        GeoBone orange_4_upper = model.getBone("orange_4_upper").orElse(null);
 
-        if (peel_1 != null && henshin_tick < 8) {
-            peel_1.setRotZ(Mth.clamp(peel_1.getRotZ() + 10f * Mth.DEG_TO_RAD, 0, 140 * Mth.DEG_TO_RAD));
-            if (peel_1_upper != null && henshin_tick < 4) {
-                peel_1_upper.setRotZ(Mth.clamp(peel_1_upper.getRotZ() - 20f * Mth.DEG_TO_RAD, -150 * Mth.DEG_TO_RAD, 0));
+        GeoBone pine_1 = model.getBone("pine_1").orElse(null);
+        GeoBone pine_1_upper = model.getBone("pine_1_upper").orElse(null);
+        GeoBone pine_2 = model.getBone("pine_2").orElse(null);
+        GeoBone pine_2_upper = model.getBone("pine_2_upper").orElse(null);
+
+        if (orange_1 != null && henshin_tick < 8) {
+            orange_1.setRotZ(Mth.clamp(orange_1.getRotZ() + 10f * Mth.DEG_TO_RAD, 0, 140 * Mth.DEG_TO_RAD));
+            if (orange_1_upper != null && henshin_tick < 4) {
+                orange_1_upper.setRotZ(Mth.clamp(orange_1_upper.getRotZ() - 20f * Mth.DEG_TO_RAD, -150 * Mth.DEG_TO_RAD, 0));
             }
-        } else if (peel_1 != null && henshin_tick >= 8) {
-            peel_1.setRotZ(0);
-            if (peel_1_upper != null) {
-                peel_1_upper.setRotZ(0);
+        } else if (orange_1 != null && henshin_tick >= 8) {
+            orange_1.setRotZ(0);
+            if (orange_1_upper != null) {
+                orange_1_upper.setRotZ(0);
             }
         }
 
-        if (peel_2 != null && henshin_tick < 8) {
-            peel_2.setRotZ(Mth.clamp(peel_2.getRotZ() - 10f * Mth.DEG_TO_RAD, -140 * Mth.DEG_TO_RAD, 0));
-            if (peel_2_upper != null && henshin_tick < 4) {
-                peel_2_upper.setRotZ(Mth.clamp(peel_2_upper.getRotZ() + 20f * Mth.DEG_TO_RAD, 0, 150 * Mth.DEG_TO_RAD));
+        if (orange_2 != null && henshin_tick < 8) {
+            orange_2.setRotZ(Mth.clamp(orange_2.getRotZ() - 10f * Mth.DEG_TO_RAD, -140 * Mth.DEG_TO_RAD, 0));
+            if (orange_2_upper != null && henshin_tick < 4) {
+                orange_2_upper.setRotZ(Mth.clamp(orange_2_upper.getRotZ() + 20f * Mth.DEG_TO_RAD, 0, 150 * Mth.DEG_TO_RAD));
             }
-        } else if (peel_2 != null && henshin_tick >= 8) {
-            peel_2.setRotZ(0);
-            if (peel_2_upper != null) {
-                peel_2_upper.setRotZ(0);
-            }
-        }
-
-        if (peel_3 != null && henshin_tick < 8) {
-            peel_3.setRotX(Mth.clamp(peel_3.getRotX() + 10f * Mth.DEG_TO_RAD, 0, 180 * Mth.DEG_TO_RAD));
-            if (peel_3_upper != null && henshin_tick < 6) {
-                peel_3_upper.setRotX(Mth.clamp(peel_3_upper.getRotX() - 40f * Mth.DEG_TO_RAD, -145 * Mth.DEG_TO_RAD, 0));
-            }
-        } else if (peel_3 != null && henshin_tick >= 8) {
-            peel_3.setRotX(0);
-            if (peel_3_upper != null) {
-                peel_3_upper.setRotX(0);
+        } else if (orange_2 != null && henshin_tick >= 8) {
+            orange_2.setRotZ(0);
+            if (orange_2_upper != null) {
+                orange_2_upper.setRotZ(0);
             }
         }
 
-        if (peel_4 != null && henshin_tick < 8) {
-            peel_4.setRotX(Mth.clamp(peel_4.getRotX() - 10f * Mth.DEG_TO_RAD, -155 * Mth.DEG_TO_RAD, 0));
-            if (peel_4_upper != null && henshin_tick < 6) {
-                peel_4_upper.setRotX(Mth.clamp(peel_4_upper.getRotX() + 20f * Mth.DEG_TO_RAD, 0, 125 * Mth.DEG_TO_RAD));
+        if (orange_3 != null && henshin_tick < 8) {
+            orange_3.setRotX(Mth.clamp(orange_3.getRotX() + 10f * Mth.DEG_TO_RAD, 0, 180 * Mth.DEG_TO_RAD));
+            if (orange_3_upper != null && henshin_tick < 6) {
+                orange_3_upper.setRotX(Mth.clamp(orange_3_upper.getRotX() - 40f * Mth.DEG_TO_RAD, -145 * Mth.DEG_TO_RAD, 0));
             }
-        } else if (peel_4 != null && henshin_tick >= 8) {
-            peel_4.setRotX(0);
-            if (peel_4_upper != null) {
-                peel_4_upper.setRotX(0);
+        } else if (orange_3 != null && henshin_tick >= 8) {
+            orange_3.setRotX(0);
+            if (orange_3_upper != null) {
+                orange_3_upper.setRotX(0);
+            }
+        }
+
+        if (orange_4 != null && henshin_tick < 8) {
+            orange_4.setRotX(Mth.clamp(orange_4.getRotX() - 10f * Mth.DEG_TO_RAD, -155 * Mth.DEG_TO_RAD, 0));
+            if (orange_4_upper != null && henshin_tick < 6) {
+                orange_4_upper.setRotX(Mth.clamp(orange_4_upper.getRotX() + 20f * Mth.DEG_TO_RAD, 0, 125 * Mth.DEG_TO_RAD));
+            }
+        } else if (orange_4 != null && henshin_tick >= 8) {
+            orange_4.setRotX(0);
+            if (orange_4_upper != null) {
+                orange_4_upper.setRotX(0);
+            }
+        }
+
+        if (pine_1 != null && henshin_tick < 8) {
+            pine_1.setRotZ(Mth.clamp(pine_1.getRotZ() + 10f * Mth.DEG_TO_RAD, 0, 90 * Mth.DEG_TO_RAD));
+            if (pine_1_upper != null && henshin_tick < 4) {
+                pine_1_upper.setRotZ(Mth.clamp(pine_1_upper.getRotZ() - 20f * Mth.DEG_TO_RAD, -90 * Mth.DEG_TO_RAD, 0));
+            }
+        } else if (pine_1 != null && henshin_tick >= 8) {
+            pine_1.setRotZ(0);
+            if (pine_1_upper != null) {
+                pine_1_upper.setRotZ(0);
+            }
+        }
+
+        if (pine_2 != null && henshin_tick < 8) {
+            pine_2.setRotZ(Mth.clamp(pine_2.getRotZ() - 10f * Mth.DEG_TO_RAD, -90 * Mth.DEG_TO_RAD, 0));
+            if (pine_2_upper != null && henshin_tick < 4) {
+                pine_2_upper.setRotZ(Mth.clamp(pine_2_upper.getRotZ() + 20f * Mth.DEG_TO_RAD, 0, 90 * Mth.DEG_TO_RAD));
+            }
+        } else if (pine_2 != null && henshin_tick >= 8) {
+            pine_2.setRotZ(0);
+            if (pine_2_upper != null) {
+                pine_2_upper.setRotZ(0);
             }
         }
 
