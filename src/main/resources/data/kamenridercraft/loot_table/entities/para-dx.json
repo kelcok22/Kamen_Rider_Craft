@@ -5,13 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "kamenridercraft:perfect_puzzle_gashat",
-					"weight": 1
-				},
-				{
-					"type": "minecraft:item",
-					"name": "kamenridercraft:blank_gashat",
-					"weight": 2
+					"name": "kamenridercraft:perfect_puzzle_gashat"
 				}
 			]
 		},
@@ -93,6 +87,21 @@
 								"min": 1,
 								"max": 2
 							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:energy_item_holder",
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.05
 						}
 					]
 				}
