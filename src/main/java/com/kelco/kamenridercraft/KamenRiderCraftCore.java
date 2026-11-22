@@ -78,6 +78,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.decoration.ArmorStand;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -315,7 +316,7 @@ public class KamenRiderCraftCore {
                 double tf = belt.getHenshinTick(event.getEntity().getItemBySlot(EquipmentSlot.FEET), event.getEntity());
                 double tag = belt.getRenderType(event.getEntity().getItemBySlot(EquipmentSlot.FEET), tf, event.getEntity());
 
-                if (tag != 0) {
+                if (tag != 0&!(event.getEntity() instanceof ArmorStand)) {
                     model.setAllVisible(false);
                     if (tag != 1) {
                         model.head.visible = true;
