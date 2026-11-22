@@ -103,7 +103,7 @@ public class V3RiderItems {
                     .overrideBeltText("dark_riderman_belt").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> FAKE_DOUBLE_TYPHOON = ITEMS.register("fake_double_typhoon",
-            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.V3_TAB_ITEM).useBasicModel());
+            () -> new RiderDriverItem(ArmorMaterials.DIAMOND,"fake_v3",DOUBLE_TYPHOON_CORE ,V3HELMET,V3CHESTPLATE,V3LEGGINGS , new Item.Properties()).isA1().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.V3_TAB_ITEM));
 
     public static final DeferredItem<Item> ROPE_ARM = ITEMS.register("rope_arm",
             () -> new BaseSwordItem(Tiers.DIAMOND, 2, -2.6F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.V3_TAB_ITEM));

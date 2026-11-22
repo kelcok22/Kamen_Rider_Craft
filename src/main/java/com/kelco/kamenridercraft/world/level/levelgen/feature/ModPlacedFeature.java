@@ -17,13 +17,20 @@ import java.util.List;
 
 public class ModPlacedFeature {
     public static final ResourceKey<PlacedFeature> HELHEIM_TREE_PLACED_KEY = registerKey("helheim_tree_placed");
+    public static final ResourceKey<PlacedFeature> WARPED_HELHEIM_TREE_PLACED_KEY = registerKey("warped_helheim_tree_placed");
+
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, HELHEIM_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.HELHEIM_TREE_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2, 0.05f, 2),
                         RiderBlocks.HELHEIM_SAPLING.get()));
+
+
+        register(context, WARPED_HELHEIM_TREE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WARPED_HELHEIM_TREE_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        RiderBlocks.WARPED_HELHEIM_SAPLING.get()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

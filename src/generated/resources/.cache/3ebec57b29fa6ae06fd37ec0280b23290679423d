@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-20T19:46:56.537411	Item Models: kamenridercraft
+// 1.21.1	2026-11-21T17:09:59.5484356	Item Models: kamenridercraft
 1568c82cfc9ae3d6f035455e62c5e7a91960999b assets/kamenridercraft/models/item/accel_memory_bike.json
 9a45b56d01503e3df8042d31b1b262e7ea0027fc assets/kamenridercraft/models/item/advance_capsem.json
 ee7958c4e7c26d0f6dfbe8b5cce32000810ea502 assets/kamenridercraft/models/item/agent_capsem.json
@@ -257,7 +257,6 @@ dcaf6dffd0487000b0a3b8456219590cb6117ecc assets/kamenridercraft/models/item/faiz
 d952db9f3479b5a555833205978e358eb7056cdd assets/kamenridercraft/models/item/fakebasshaafuestle.json
 56b4e3831a87ad4e1753cf0868e2032ed31dc61c assets/kamenridercraft/models/item/fakedoggafuestle.json
 55a3eaa2337e76bd60f4218b1b6df60f447bf655 assets/kamenridercraft/models/item/fakegarulufuestle.json
-a14c95391c809d2b9c8295605cf00d92c7b0a3d1 assets/kamenridercraft/models/item/fake_double_typhoon.json
 3774060ae4a752684b486148143783bd26689b9b assets/kamenridercraft/models/item/fake_tornado.json
 1fff0e950a26e677a3719982708aa5e4cb12dfc3 assets/kamenridercraft/models/item/final_form_ride_chalice_choco.json
 b03c37f222b4e4051a21ca0b92e3d7bc952fcb9c assets/kamenridercraft/models/item/firemars_ride_chemy_card.json

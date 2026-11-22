@@ -1106,6 +1106,7 @@ public class KRCCreativeTabs {
             event.accept(ModdedItemCore.HELHEIM_SIGN_ITEM);
             event.accept(ModdedItemCore.HELHEIM_HANGING_SIGN_ITEM);
             event.accept(RiderBlocks.HELHEIM_SAPLING);
+            event.accept(RiderBlocks.WARPED_HELHEIM_SAPLING);
             event.accept(RiderBlocks.HELHEIM_LEAVES);
             event.accept(RiderBlocks.HELHEIM_VINE);
 
@@ -1114,6 +1115,7 @@ public class KRCCreativeTabs {
             event.accept(RiderBlocks.WHITE_FENCE);
 
             event.accept(RiderBlocks.STEEL_LADDER);
+            event.accept(RiderBlocks.M_BUS_PANEL);
             event.accept(RiderBlocks.RABBIT_HUTCH_LADDER);
 
             event.accept(RiderBlocks.JAIL_DOOR);

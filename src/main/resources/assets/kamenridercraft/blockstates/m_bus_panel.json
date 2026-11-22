@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"type=bottom": {
+			"model": "kamenridercraft:block/m_bus_panel"
+		},
+		"type=double": {
+			"model": "kamenridercraft:block/m_bus_panel_full"
+		},
+		"type=top": {
+			"model": "kamenridercraft:block/m_bus_panel_top"
+		}
+	}
+}

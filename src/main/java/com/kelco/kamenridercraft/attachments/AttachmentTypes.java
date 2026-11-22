@@ -1,6 +1,8 @@
 package com.kelco.kamenridercraft.attachments;
 
 import com.mojang.serialization.Codec;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
@@ -13,7 +15,7 @@ public class AttachmentTypes {
     public static final DeferredRegister<AttachmentType<?>> REGISTRY = DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, MOD_ID);
 
     public static final Supplier<AttachmentType<Boolean>> IS_POSING = REGISTRY.register(
-            "is_posing", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
+            "is_posing", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).sync(ByteBufCodecs.BOOL).build()
     );
 
     public static final Supplier<AttachmentType<Integer>> POSE_COOLDOWN = REGISTRY.register(
@@ -21,7 +23,7 @@ public class AttachmentTypes {
     );
 
     public static final Supplier<AttachmentType<Integer>> ABILITY_COOLDOWN = REGISTRY.register(
-            "ability_cooldown", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
+            "ability_cooldown", () -> AttachmentType.builder(() -> 0).sync(ByteBufCodecs.INT).serialize(Codec.INT).build()
     );
 
     public static final Supplier<AttachmentType<Integer>> ABILITY_TICK = REGISTRY.register(
@@ -29,11 +31,11 @@ public class AttachmentTypes {
     );
 
     public static final Supplier<AttachmentType<String>> USED_ABILITY = REGISTRY.register(
-            "used_ability", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
+            "used_ability", () -> AttachmentType.builder(() -> "").sync(ByteBufCodecs.STRING_UTF8).serialize(Codec.STRING).build()
     );
 
     public static final Supplier<AttachmentType<String>> MOB_STATE = REGISTRY.register(
-            "mob_state", () -> AttachmentType.builder(() -> "").serialize(Codec.STRING).build()
+            "mob_state", () -> AttachmentType.builder(() -> "").sync(ByteBufCodecs.STRING_UTF8).serialize(Codec.STRING).build()
     );
 
     public static final Supplier<AttachmentType<String>> UUID_STORE = REGISTRY.register(
@@ -41,15 +43,11 @@ public class AttachmentTypes {
     );
 
     public static final Supplier<AttachmentType<Boolean>> WINGS_OUT = REGISTRY.register(
-            "wings_out", () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL).build()
+            "wings_out", () -> AttachmentType.builder(() -> false).sync(ByteBufCodecs.BOOL).serialize(Codec.BOOL).build()
     );
 
     public static final Supplier<AttachmentType<Integer>> TOJIMA_TRAINING = REGISTRY.register(
             "tojima_training", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
-    );
-
-    public static final Supplier<AttachmentType<Integer>> MOB_SPAWN_AGGRESSION = REGISTRY.register(
-            "mob_spawn_aggression", () -> AttachmentType.builder(() -> 0).serialize(Codec.INT).build()
     );
 
     public static final Supplier<AttachmentType<Boolean>> DELAY_ANIMATION_END = REGISTRY.register(

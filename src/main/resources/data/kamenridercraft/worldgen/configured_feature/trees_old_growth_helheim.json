@@ -4,12 +4,16 @@
 		"default": "kamenridercraft:helheim_tree_checked",
 		"features": [
 			{
-				"chance": 0.33333334,
+				"chance": 0.25,
 				"feature": "kamenridercraft:helheim_mega_tree_checked"
 			},
 			{
 				"chance": 0.33333334,
 				"feature": "kamenridercraft:helheim_pine_checked"
+			},
+			{
+				"chance": 0.43333334,
+				"feature": "kamenridercraft:warped_helheim_tree_placed"
 			}
 		]
 	}

@@ -397,7 +397,13 @@ public class RiderBlocks {
     public static final DeferredBlock<SaplingBlock> HELHEIM_SAPLING = registerBlock("helheim_sapling",
             () -> new SaplingBlock(ModTreeGrowers.HELHEIM_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
+    public static final DeferredBlock<SaplingBlock> WARPED_HELHEIM_SAPLING = registerBlock("warped_helheim_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.WARPED_HELHEIM_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
     public static final DeferredBlock<Block> POTTED_HELHEIM_SAPLING = registerBlock("potted_helheim_sapling",
+            () -> new FlowerPotBlock(RiderBlocks.HELHEIM_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<Block> POTTED_WARPED_HELHEIM_SAPLING = registerBlock("potted_warped_helheim_sapling",
             () -> new FlowerPotBlock(RiderBlocks.HELHEIM_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<LeavesBlock> HELHEIM_LEAVES = registerBlock("helheim_leaves",
@@ -417,7 +423,6 @@ public class RiderBlocks {
                     return 30;
                 }
             });
-
 
     public static final DeferredBlock<DoorBlock> WONDERWOOD_DOOR = registerBlock("wonderwood_door",
             () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).noOcclusion()));
@@ -759,6 +764,10 @@ public class RiderBlocks {
     public static final DeferredBlock<Block> RABBIT_HUTCH_COMPUTER_STAIRS = registerBlock("rabbit_hutch_computer_stairs",
             () -> new BaseStairsBlock(PLANKS_BROWN.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
                     .requiresCorrectToolForDrops().strength(2f)).AddToTabList(RIDER_DECOR));
+
+    public static final DeferredBlock<SlabBlock> M_BUS_PANEL = registerBlock("m_bus_panel",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE_SLAB).sound(SoundType.BONE_BLOCK)
+                    .noOcclusion().requiresCorrectToolForDrops().strength(2f)));
 
     public static final DeferredBlock<LadderBlock> RABBIT_HUTCH_LADDER = registerBlock("rabbit_hutch_ladder",
             () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON).strength(2F)));

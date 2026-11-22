@@ -10282,6 +10282,7 @@
 "block.kamenridercraft.rabbit_hutch_cyan_light": "Rabbit Hutch Lamp",
 "block.kamenridercraft.rabbit_hutch_cyan2": "Rabbit Hutch Panel",
 "block.kamenridercraft.rabbit_hutch_computer_stairs": "Rabbit Hutch Computer",
+"block.kamenridercraft.m_bus_panel": "M-BUS Panel",
 "block.kamenridercraft.artificial_gravity_block": "Artificial Gravity Block",
 
 "block.kamenridercraft.steel_ladder": "Steel Ladder",
@@ -10314,6 +10315,7 @@
 "block.kamenridercraft.helheim_door": "Helheim Door",
 "block.kamenridercraft.helheim_trapdoor": "Helheim Wood Trapdoor",
 "block.kamenridercraft.helheim_sapling": "Helheim Sapling",
+"block.kamenridercraft.warped_helheim_sapling": "Warped Helheim Sapling",
 "block.kamenridercraft.helheim_vine": "Helheim Vine",
 "block.kamenridercraft.helheim_plant": "Purple Helheim Fern",
 "block.kamenridercraft.helheim_plant_2": "Helheim Flower",
