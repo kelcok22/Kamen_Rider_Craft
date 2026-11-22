@@ -169,6 +169,32 @@
 					"rotation": [3.3607, -17.1322, -13.0779]
 				}
 			}
+		},
+		"hibiki.henshin_onsa_armed_sengoku.pose": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"body": {
+					"rotation": [30.3117, -9.2318, -3.8602],
+					"position": [0, -3, -2]
+				},
+				"head": {
+					"rotation": [32.8987, 8.4215, 5.4121]
+				},
+				"right_arm": {
+					"rotation": [0, 42.5, 50],
+					"position": [0, -2, 0]
+				},
+				"left_arm": {
+					"rotation": [60.5016, -24.285, -108.5161],
+					"position": [1.25803, -1.42151, -0.54656]
+				},
+				"right_leg": {
+					"rotation": [1.4811, 77.2504, 24.1951]
+				},
+				"left_leg": {
+					"rotation": [-55.119, -11.0869, -10.863]
+				}
+			}
 		}
 	}
 }

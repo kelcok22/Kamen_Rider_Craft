@@ -90,6 +90,20 @@ public class HibikiRiderItems {
                             player.getZ(), 300, 0, 0, 0, 0.1);}
             }.changeBeltModel("geo/belts/hibiki_belt_armed.geo.json"));
 
+    public static final DeferredItem<Item> HENSHIN_ONSA_ARMED_SENGOKU = ITEMS.register("henshin_onsa_armed_sengoku",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_armed_sengoku","hibiki","hibikidriver_belt_armed",
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1,true,false),
+                    new MobEffectInstance(MobEffects.REGENERATION, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 300, 0, 0, 0, 0.1);}
+            }.changeBeltModel("geo/belts/hibiki_belt_armed.geo.json"));
+
     public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","danki","dankidriver_belt",
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1,true,false),
@@ -503,7 +517,7 @@ public class HibikiRiderItems {
     public static final DeferredItem<Item> SABAKIDRIVER = ITEMS.register("sabakidriver",
             () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"sabaki",HENSHIN_KIGEN_SABAKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_KIGEN_SABAKI, "henshin_kigen").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> SHUKIDRIVER = ITEMS.register("shukidriver",
-            () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"shuki",HENSHIN_KIGEN_SHUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_KIGEN_SHUKI, "henshin_kigen_shuki").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
+            () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"shuki",HENSHIN_KIGEN_SHUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_KIGEN_SHUKI, "henshin_kigen").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> GOUKIDRIVER = ITEMS.register("goukidriver",
             () -> new GoukiEquipmentBeltItem(ArmorMaterials.DIAMOND,"gouki",HENSHIN_ONSA_GOUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONSA_GOUKI, "henshin_onsa_gouki").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> TOKIDRIVER = ITEMS.register("tokidriver",
@@ -545,6 +559,8 @@ public class HibikiRiderItems {
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> ARMED_SABER = ITEMS.register("armed_saber",
             () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).isFormItem(HENSHIN_ONSA_ARMED.get()).changeRepairItem(ONI_ORE.get()));
+    public static final DeferredItem<Item> ARMED_SABER_SENGOKU = ITEMS.register("armed_saber_sengoku",
+            () -> new BaseSwordItem(Tiers.DIAMOND, 9, -2.4F, new Item.Properties().rarity(Rarity.RARE)).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).isFormItem(HENSHIN_ONSA_ARMED_SENGOKU.get()).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> ONGEKIBO_YAMASE = ITEMS.register("ongekibo_yamase",
             () -> new BaseSwordItem(Tiers.DIAMOND, 4, -2.4F, new Item.Properties()).addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> ONGEKIBO_RAKURAI = ITEMS.register("ongekibo_rakurai",
