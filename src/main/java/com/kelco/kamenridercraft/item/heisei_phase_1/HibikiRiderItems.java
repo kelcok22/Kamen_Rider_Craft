@@ -102,7 +102,7 @@ public class HibikiRiderItems {
                     ((ServerLevel) player.level()).sendParticles(ParticleTypes.FLAME,
                             player.getX(), player.getY()+1,
                             player.getZ(), 300, 0, 0, 0, 0.1);}
-            }.changeBeltModel("geo/belts/hibiki_belt_armed.geo.json"));
+            }.changeBeltModel("geo/belts/hibiki_belt.geo.json"));
 
     public static final DeferredItem<Item> HENSHIN_ONSA_DANKI = ITEMS.register("henshin_onsa_danki",
             () -> new RiderFormChangeItem(new Item.Properties(),"","danki","dankidriver_belt",
