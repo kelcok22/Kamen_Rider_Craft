@@ -10,6 +10,7 @@ import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.DecadeRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.gaim.*;
 import com.kelco.kamenridercraft.particle.ModParticles;
+import com.kelco.kamenridercraft.util.AnimationUtil;
 import com.kelco.kamenridercraft.world.inventory.LockseedHolderGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.component.DataComponents;
@@ -1525,8 +1526,12 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> BASIC_GAIM_CORE = ITEMS.register("basic_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
-                    .setModelName("gaim_logo").useBasicModel());
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 60d) AnimationUtil.playPose(player, "gaim.henshin");
+                }
+            }.changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> SENGOKU_DRIVER_GAIM = ITEMS.register("sengoku_driver_gaim",
             () -> new SengokuDriverItem(ArmorMaterials.DIAMOND, "gaim", ORANGE_LOCKSEED, GAIM_HELMET, GAIM_CHESTPLATE, GAIM_LEGGINGS,

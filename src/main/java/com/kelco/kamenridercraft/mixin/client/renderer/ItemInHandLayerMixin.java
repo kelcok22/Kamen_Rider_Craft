@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.item.heisei_phase_1.KivaRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_1.RyukiRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.GaimRiderItems;
 import com.kelco.kamenridercraft.item.heisei_phase_2.OOORiderItems;
+import com.kelco.kamenridercraft.item.heisei_phase_2.gaim.SengokuDriverItem;
 import com.kelco.kamenridercraft.world.attribute.KRCAttributes;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.ItemInHandRenderer;
@@ -47,9 +48,9 @@ public class ItemInHandLayerMixin {
                     } else {
                         tango = new ItemStack(Items.AIR);
                     }
-                } else if (riderDriverItem.riderName.equals("gaim")&& livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 30) {
+                } else if (riderDriverItem instanceof SengokuDriverItem && livingEntity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() > 30) {
                     if (arm == HumanoidArm.RIGHT) {
-                        tango = new ItemStack(GaimRiderItems.ORANGE_LOCKSEED.get());
+                        tango = new ItemStack(SengokuDriverItem.getFormItem(livingEntity.getItemBySlot(EquipmentSlot.FEET),1));
                     } else {
                         tango = new ItemStack(Items.AIR);
                     }
