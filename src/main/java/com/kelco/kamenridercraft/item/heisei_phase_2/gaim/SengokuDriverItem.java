@@ -35,41 +35,11 @@ public class SengokuDriverItem extends RiderDriverItem {
         double henshin_tick = getHenshinTick(itemstack, rider);
         boolean fly = Objects.requireNonNull(rider.getAttribute(KRCAttributes.WINGS_OUT)).getBaseValue() == 1;
         if (equipmentSlot == EquipmentSlot.FEET) {
-            if (Objects.equals(riderName, "baron") & getFormItem(itemstack, 1) == GaimRiderItems.LORD_BARON.get())
-                return "belts/blank";
-            if (Objects.equals(riderName, "zangetsu") & getFormItem(itemstack, 1) == GaimRiderItems.WATERMELON_LOCKSEED.get())
-                return "belts/sengoku_driver_belt_zangetsu_w";
-            if (Objects.equals(riderName, "ryugen") & getFormItem(itemstack, 1) == GaimRiderItems.YOMOTSU_HEGURI_LOCKSEED.get())
-                return "belts/sengoku_driver_belt_ryugen_y";
             return "belts/" + getFormItem(itemstack, 2).getBeltTex();
         } else if (isTransformingFromBlank(itemstack, rider) &henshin_tick > 8) {
             return "blank";
         } else if (equipmentSlot == EquipmentSlot.HEAD) {
-            if (Objects.equals(riderName, "baron") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.LORD_BARON.get())
-                return "baron_lord_baron";
-            else if (Objects.equals(riderName, "ryugen") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.YOMOTSU_HEGURI_LOCKSEED.get())
-                return "ryugen_yomi";
-            else if (Objects.equals(riderName, "duke") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.DRAGON_FRUITS_ENERGY_LOCKSEED.get())
-                return "duke_hex";
-            else if (Objects.equals(riderName, "zangetsu") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.WATERMELON_LOCKSEED.get())
-                return "zangetsu_watermelon";
-            else if (Objects.equals(riderName, "zangetsu") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.ZANGETSU_KACHIDOKI_LOCKSEED.get())
-                return "zangetsu_kachidoki";
-            else if (Objects.equals(riderName, "gridon") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.LYCHEE_LOCKSEED.get())
-                return "gridon_lychee";
-            else if (Objects.equals(riderName, "gaim") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.FRESH_ORANGE_LOCKSEED.get())
-                return "gaim_fresh";
-            else if (Objects.equals(riderName, "gaim") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.DRIVE_LOCKSEED.get())
-                return "gaim_drive";
-            else if (Objects.equals(riderName, "gaim") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.KACHIDOKI_LOCKSEED.get())
-                return "gaim_kachidoki";
-            else if (Objects.equals(riderName, "gaim") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.KIWAMI_LOCKSEED.get())
-                return "gaim_kiwami";
-            else if (Objects.equals(riderName, "bravo") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.KING_DURIAN_LOCKSEED.get())
-                return "bravo_king";
-            else if (Objects.equals(riderName, "bujin_gaim") & getFormItem(itemstack, 1,henshin_tick) == GaimRiderItems.OCHIMUSHA_LOCKSEED.get())
-                return "bujin_gaim_ochimusha";
-            else return riderName + getFormItem(itemstack, 2,henshin_tick).getFormName(fly);
+           return riderName + getFormItem(itemstack, 2,henshin_tick).getFormName(fly);
         } else if (equipmentSlot == EquipmentSlot.CHEST)
             if (isTransforming(rider) && !isTransformingFromBlank(itemstack, rider)& henshin_tick> 10) return "blank_arms";
             else if (getFormItem(itemstack, 2) == GaimRiderItems.JIMBER_GAIM_CORE.get()) {

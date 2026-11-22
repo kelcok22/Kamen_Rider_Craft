@@ -41,6 +41,7 @@ import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;
 
 import java.util.List;
+import java.util.Objects;
 
 import static com.kelco.kamenridercraft.item.KRCCreativeTabs.GAIM_TAB_ITEM;
 
@@ -59,7 +60,6 @@ public class GaimRiderItems {
             () -> new RiderFormChangeItem(new Item.Properties(), "", "incomplete_gaim", "sengoku_driver_belt_incomplete")
                     .setShowUnder());
 
-
     public static String[] canUseBasicLockseed = new String[]{"gaim", "baron", "ryugen", "zangetsu", "gridon", "kurokage"
             , "bravo", "knuckle", "bujin_gaim", "fifteen", "mars", "kamuro", "jam", "kurokage_troopers", "idunn", "duke_sengoku", "baron_black",
             "saver", "maja", "proto_gaim", "proto_ryugen", "proto_baron", "proto_gridon", "proto_bravo", "sylphi", "gaim_natsumikan"};
@@ -75,6 +75,152 @@ public class GaimRiderItems {
 
     public static String[] canUseJimberArms = new String[]{"gaim", "ryugen", "zangetsu", "bravo", "knuckle"};
 
+    public static final DeferredItem<Item> LORD_BARON_CORE= ITEMS.register("lord_baron_core",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_lord_baron", "baron", "blank").changeSlot(2)
+                    .setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> BRAVO_CORE_KING= ITEMS.register("bravo_core_king",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_king", "bravo", "blank").changeSlot(2)
+                    .setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+
+    public static final DeferredItem<Item> RYUGEN_CORE_YOMI = ITEMS.register("ryugen_core_yomi",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_yomi", "ryugen", "sengoku_driver_belt_ryugen_y",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
+                    .setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> GRIDON_CORE_LYCHEE = ITEMS.register("gridon_core_lychee",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_lychee", "gridon", "sengoku_driver_belt_gridon",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)).changeSlot(2)
+                    .setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> ZENGETSU_CORE_WATERMELON = ITEMS.register("zangetsu_core_watermelon",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_watermelon", "zangetsu", "sengoku_driver_belt_zangetsu_w",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> ZENGETSU_CORE_KACHIDOKI = ITEMS.register("zangetsu_core_kachidoki",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_kachidoki", "zangetsu", "sengoku_driver_belt_zangetsu",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+
+    public static final DeferredItem<Item> JIMBER_GAIM_CORE = ITEMS.register("jimber_gaim_core",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_jimber", "gaim", "sengoku_driver_belt",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false))
+            .changeSlot(2).setFormDelay(10).addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> GAIM_CORE_FRESH = ITEMS.register("gaim_core_fresh",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_fresh", "gaim", "sengoku_driver_belt",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> GAIM_CORE_KIWAMI = ITEMS.register("gaim_core_kiwami",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_kiwami", "gaim", "sengoku_driver_belt",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                     if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+
+    public static final DeferredItem<Item> GAIM_CORE_DRIVE = ITEMS.register("gaim_core_drive",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_drive", "gaim", "sengoku_driver_belt",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    //if (tick == 30d)if (itemstack.getItem() instanceof SengokuDriverItem belt&& !Objects.equals(belt.riderName, "gaim"))RiderDriverItem.setFormItemNoExtra(itemstack,GaimRiderItems.GENESIS_CORE.asItem(),2);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+
+
+    public static final DeferredItem<Item> GAIM_CORE_KACHIDOKI = ITEMS.register("gaim_core_kachidoki",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_kachidoki", "gaim", "sengoku_driver_belt_gaim",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.DARK_BLUE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).setModelName("gaim_logo").useBasicModel());
+
+
+    public static final DeferredItem<Item> BUJIN_GAIM_CORE_OCHIMUSHA = ITEMS.register("bujin_gaim_core_ochimusha",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_ochimusha", "bujin_gaim", "sengoku_driver_belt_bujin_gaim",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+
+
+    public static final DeferredItem<Item> GENESIS_CORE_HEX = ITEMS.register("genesis_core_hex",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_hex", "duke", "genesis_driver_belt",
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
+                    super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30d)if (itemstack.getItem() instanceof SengokuDriverItem belt&& !Objects.equals(belt.riderName, "duke"))RiderDriverItem.setFormItemNoExtra(itemstack,GaimRiderItems.GENESIS_CORE.asItem(),2);
+                    if (tick == 10d) {
+                        ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                                player.getX(), player.getY() + 1,
+                                player.getZ(), 100, 0, 0, 0, 1);
+
+                    }
+                }
+            }.changeSlot(2).setFormDelay(10).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> MATSUBOKKURI_LOCKSEED = ITEMS.register("matsubokkuri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "matsubokkuri_arms", "gaim", "sengoku_driver_belt",
@@ -300,22 +446,6 @@ public class GaimRiderItems {
                 }
             }.setFormDelay(1).addCompatibilityList(canUseBasicLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
-    public static final DeferredItem<Item> JIMBER_GAIM_CORE = ITEMS.register("jimber_gaim_core",
-            () -> new RiderFormChangeItem(new Item.Properties(), "_jimber", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
-                public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
-                    super.transformationEffect(itemstack, player, tick);
-                    if (tick == 1d) {
-                        ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
-                                player.getX(), player.getY() + 1,
-                                player.getZ(), 100, 0, 0, 0, 1);
-
-                    }
-                }
-            }.setFormDelay(10).addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
-
     public static final DeferredItem<Item> JIMBER_LEMON_ENERGY_LOCKSEED = ITEMS.register("jimber_lemon_energy",
             () -> new RiderFormChangeItem(new Item.Properties(), "jimbar_lemon_arms", "gaim", "sengoku_driver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
@@ -497,7 +627,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.hasCape().setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
+            }.hasCape().setFormDelay(1).addCompatibilityList(canUseEnergyLockseed).alsoChange2ndSlot(GENESIS_CORE_HEX.asItem()).resetFormToBase().addAlternative(JIMBER_DRAGON_FRUITS_ENERGY_LOCKSEED.get()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> PROTO_DRAGON_FRUITS_ENERGY_LOCKSEED = ITEMS.register("proto_dragon_fruits_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "energy_prototype_dragon_fruits_arms", "zangetsu_shin", "sengoku_driver_belt",
@@ -548,7 +678,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(GAIM_CORE_KACHIDOKI.asItem()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ZANGETSU_KACHIDOKI_LOCKSEED = ITEMS.register("zangetsu_kachidoki_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "zangetsu_kachidoki_arms", "zangetsu", "sengoku_driver_belt",
@@ -567,7 +697,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(ZENGETSU_CORE_KACHIDOKI.get()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KIWAMI_LOCKSEED = ITEMS.register("kiwami_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "kiwami_arms", "gaim", "sengoku_driver_belt",
@@ -588,7 +718,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addNeedForm(KACHIDOKI_LOCKSEED.get(), 1).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
+            }.setFormDelay(1).resetFormToBase().alsoChange2ndSlot(GAIM_CORE_KIWAMI.asItem()).addNeedForm(KACHIDOKI_LOCKSEED.get(), 1).addToList(GAIM_TAB_ITEM).addToList(DecadeRiderItems.COMPLETE_21_FORMS));
 
     public static final DeferredItem<Item> LORD_BARON = ITEMS.register("lord_baron",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.RARE), "lord_baron_arms", "baron", "blank",
@@ -615,7 +745,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().useBasicModel().setModelName("helheim_fruit"));
+            }.setFormDelay(1).alsoChange2ndSlot(LORD_BARON_CORE.asItem()).resetFormToBase().useBasicModel().setModelName("helheim_fruit"));
 
     public static final DeferredItem<Item> YOMOTSU_HEGURI_LOCKSEED = ITEMS.register("yomotsu_heguri_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "yomotsu_heguri_arms", "ryugen", "sengoku_driver_belt",
@@ -637,7 +767,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(RYUGEN_CORE_YOMI.asItem()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> BLOOD_ORANGE_LOCKSEED = ITEMS.register("blood_orange_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "blood_orange_arms", "gaim", "sengoku_driver_belt",
@@ -677,7 +807,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(BUJIN_GAIM_CORE_OCHIMUSHA.asItem()).addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FIFTEEN_LOCKSEED = ITEMS.register("fifteen_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "fifteen_arms", "gaim", "sengoku_driver_belt",
@@ -812,11 +942,9 @@ public class GaimRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-
-
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(ZENGETSU_CORE_WATERMELON.asItem()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> ZAKURO_LOCKSEED = ITEMS.register("zakuro_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "blood_zakuro_arms", "saver", "sengoku_driver_belt",
@@ -895,10 +1023,9 @@ public class GaimRiderItems {
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 20, 0, 0, 0, 1);
 
-
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(GAIM_CORE_FRESH.asItem()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> FRESH_PINE_LOCKSEED = ITEMS.register("fresh_pine_lockseed",
             () -> new BaseItem(new Item.Properties()).addToList(GAIM_TAB_ITEM));
@@ -918,7 +1045,7 @@ public class GaimRiderItems {
                                 player.getZ(), 100, 0, 0, 0, 1);
                     }
                 }
-            }.setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(GRIDON_CORE_LYCHEE.asItem()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> KING_DURIAN_LOCKSEED = ITEMS.register("king_durian_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "king_durian_arms", "bravo", "sengoku_driver_belt",
@@ -936,11 +1063,9 @@ public class GaimRiderItems {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
-
-
                     }
                 }
-            }.hasCape().setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.hasCape().alsoChange2ndSlot(BRAVO_CORE_KING.asItem()).setFormDelay(1).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> HELEIM_LOCKSEED = ITEMS.register("helheim_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "hells_arms", "gaim", "sengoku_driver_belt",
@@ -1076,7 +1201,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.changeSlot(2).setModelName("gaim_logo").useBasicModel());
+            }.setFormDelay(10).changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> DARK_LEMON_ENERGY_LOCKSEED = ITEMS.register("dark_lemon_energy_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties().rarity(Rarity.UNCOMMON), "jimbar_black_arms", "gaim", "sengoku_driver_belt",
@@ -1138,7 +1263,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).alsoChange2ndSlot(GAIM_CORE_DRIVE.asItem()).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> GAIM_LOCKSEED = ITEMS.register("gaim_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "gaim_arms", "gaim", "sengoku_driver_belt",
