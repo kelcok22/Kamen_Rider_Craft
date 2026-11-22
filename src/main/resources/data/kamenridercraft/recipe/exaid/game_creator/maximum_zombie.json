@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:unfinished_maximum_mighty_x_gashat"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:maximum_zombie_gashat"
+			},
+			"weight": 1
+		}
+	]
+}

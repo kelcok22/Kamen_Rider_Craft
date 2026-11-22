@@ -35,6 +35,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("cell_medal_programmer_be", () -> BlockEntityType.Builder.of(
                     CellMedalProgrammerEntity::new, RiderBlocks.CELL_MEDAL_PROGRAMMER.get()).build(null));
 
+    public static final Supplier<BlockEntityType<GameCreatorEntity>> GAME_CREATOR_BE =
+            BLOCK_ENTITIES.register("game_creator_be", () -> BlockEntityType.Builder.of(
+                    GameCreatorEntity::new, RiderBlocks.GAME_CREATOR.get()).build(null));
+
     public static final Supplier<BlockEntityType<AstroswitchProgrammerEntity>> ASTROSWITCH_PROGRAMMER_BE =
             BLOCK_ENTITIES.register("astroswitch_programmer_be", () -> BlockEntityType.Builder.of(
                     AstroswitchProgrammerEntity::new, RiderBlocks.ASTROSWITCH_PROGRAMMER.get()).build(null));

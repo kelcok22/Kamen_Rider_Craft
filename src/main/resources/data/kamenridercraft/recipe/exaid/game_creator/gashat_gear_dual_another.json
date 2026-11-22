@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:perfect_puzzle_gashat"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:kamen_rider_chronicle_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:gashat_gear_dual_another"
+			},
+			"weight": 1
+		}
+	]
+}

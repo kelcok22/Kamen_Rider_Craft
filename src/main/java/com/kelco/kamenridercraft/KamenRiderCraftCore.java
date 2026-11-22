@@ -11,6 +11,7 @@ import com.kelco.kamenridercraft.client.gui.item.RideBookerGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.AmazonCellExtractorGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.AstroswitchProgrammerGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.CellMedalProgrammerGuiScreen;
+import com.kelco.kamenridercraft.client.gui.machine_block.GameCreatorGuiScreen;
 import com.kelco.kamenridercraft.client.gui.machine_block.IxaMachineBlockGuiScreen;
 import com.kelco.kamenridercraft.client.gui.overlays.AbilityHudOverlay;
 import com.kelco.kamenridercraft.client.gui.storage_item.*;
@@ -868,6 +869,7 @@ public class KamenRiderCraftCore {
             event.register(ModMenus.DNA_EXTRACTOR_GUI.get(), AmazonCellExtractorGuiScreen::new);
             event.register(ModMenus.IXA_MACHINE_BLOCK_GUI.get(), IxaMachineBlockGuiScreen::new);
             event.register(ModMenus.CELL_MEDAL_PROGRAMMER_GUI.get(), CellMedalProgrammerGuiScreen::new);
+            event.register(ModMenus.GAME_CREATOR_GUI.get(), GameCreatorGuiScreen::new);
             event.register(ModMenus.ASTROSWITCH_PROGRAMMER_GUI.get(), AstroswitchProgrammerGuiScreen::new);
             // event.register(ModMenus.ASTROSWITCH_RACK_GUI.get(), AstroswitchRackGuiScreen::new);
         }

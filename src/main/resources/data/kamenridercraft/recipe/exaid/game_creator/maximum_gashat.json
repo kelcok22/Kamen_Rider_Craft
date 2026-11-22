@@ -1,0 +1,15 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:unfinished_maximum_mighty_x_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:maximum_mighty_x_gashat"
+			},
+			"weight": 1
+		}
+	]
+}

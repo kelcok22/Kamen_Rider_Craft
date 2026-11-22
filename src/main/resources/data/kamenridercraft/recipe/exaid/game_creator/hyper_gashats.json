@@ -1,0 +1,22 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:unfinished_hyper_muteki_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:hyper_muteki_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:gamedeus_hyper_muteki_gashat"
+			},
+			"weight": 3
+		}
+	]
+}

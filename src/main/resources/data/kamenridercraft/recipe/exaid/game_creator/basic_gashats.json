@@ -1,0 +1,99 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:blank_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:mighty_action_x_gashat"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:taddle_quest_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:bang_bang_shooting_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:bakusou_bike_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:gekitotsu_robots_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:doremifa_beat_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:jet_combat_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:giri_giri_chambara_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:shakariki_sports_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:ju_ju_burger_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:night_of_safari_gashat"
+			},
+			"weight": 8
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:bang_bang_tank_gashat"
+			},
+			"weight": 8
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:ganbarizing_gashat"
+			},
+			"weight": 3
+		}
+	]
+}

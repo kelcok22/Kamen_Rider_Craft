@@ -51,6 +51,7 @@ public class ModMenus {
     public static final DeferredHolder<MenuType<?>, MenuType<AmazonCellExtractorGuiMenu>> DNA_EXTRACTOR_GUI = REGISTRY.register("amazon_cell_extractor_gui", () -> IMenuTypeExtension.create(AmazonCellExtractorGuiMenu::new));
     public static final DeferredHolder<MenuType<?>, MenuType<IxaMachineBlockGuiMenu>> IXA_MACHINE_BLOCK_GUI = REGISTRY.register("ixa_machine_block_gui", () -> IMenuTypeExtension.create(IxaMachineBlockGuiMenu::new));
     public static final DeferredHolder<MenuType<?>, MenuType<CellMedalProgrammerGuiMenu>> CELL_MEDAL_PROGRAMMER_GUI = REGISTRY.register("cell_medal_programmer_gui", () -> IMenuTypeExtension.create(CellMedalProgrammerGuiMenu::new));
+    public static final DeferredHolder<MenuType<?>, MenuType<GameCreatorGuiMenu>> GAME_CREATOR_GUI = REGISTRY.register("game_creator_gui", () -> IMenuTypeExtension.create(GameCreatorGuiMenu::new));
     public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchProgrammerGuiMenu>> ASTROSWITCH_PROGRAMMER_GUI = REGISTRY.register("astroswitch_programmer_gui", () -> IMenuTypeExtension.create(AstroswitchProgrammerGuiMenu::new));
 
 //	public static final DeferredHolder<MenuType<?>, MenuType<AstroswitchRackGuiMenu>> ASTROSWITCH_RACK_GUI = REGISTRY.register("astroswitch_rack_gui", () -> IMenuTypeExtension.create(AstroswitchRackGuiMenu::new));

@@ -1,0 +1,36 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:mighty_brothers_xx_unfinished_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:mighty_brothers_xx_gashat"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:bang_bang_simulation_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:doctor_mighty_xx_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:knock_out_fighter_2_gashat"
+			},
+			"weight": 10
+		}
+	]
+}

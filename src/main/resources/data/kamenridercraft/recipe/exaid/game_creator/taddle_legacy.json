@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:taddle_quest_gashat"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:kamen_rider_chronicle_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:taddle_legacy_gashat"
+			},
+			"weight": 1
+		}
+	]
+}

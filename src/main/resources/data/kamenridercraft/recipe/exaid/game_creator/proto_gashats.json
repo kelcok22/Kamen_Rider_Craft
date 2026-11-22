@@ -1,0 +1,67 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:blank_gashat"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:proto_mighty_action_x_gashat_origin"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_taddle_quest_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_bang_bang_shooting_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_bakusou_bike_gashat"
+			},
+			"weight": 14
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_gekitotsu_robots_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_doremifa_beat_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_jet_combat_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_giri_giri_chambara_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_shakariki_sports_gashat"
+			},
+			"weight": 10
+		}
+	]
+}

@@ -83,6 +83,28 @@ public class ModRecipes {
                 }
             });
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<GameCreatorRecipe>> GAME_CREATOR_SERIALIZER =
+            SERIALIZERS.register("game_creator", () -> new RecipeSerializer<GameCreatorRecipe>() {
+                @Override
+                public com.mojang.serialization.@NotNull MapCodec<GameCreatorRecipe> codec() {
+                    return GameCreatorRecipe.CODEC;
+                }
+
+                @Override
+                public net.minecraft.network.codec.@NotNull StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf,
+                        GameCreatorRecipe> streamCodec() {
+                    return GameCreatorRecipe.STREAM_CODEC;
+                }
+            });
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<GameCreatorRecipe>> GAME_CREATOR_TYPE =
+            TYPES.register("game_creator", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "game_creator";
+                }
+            });
+
 
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<AstroswitchProgrammerRecipe>> ASTROSWITCH_PROGRAMMER_SERIALIZER =
             SERIALIZERS.register("astroswitch_programmer", () -> new RecipeSerializer<AstroswitchProgrammerRecipe>() {

@@ -1,0 +1,39 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:blank_gashat"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:taiko_no_tatsujin_gashat"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:pac_adventure_gashat"
+			},
+			"weight": 12
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:famitsa_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:xevious_gashat"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:galaxian_gashat"
+			},
+			"weight": 10
+		}
+	]
+}

@@ -1,119 +1,137 @@
 package com.kelco.kamenridercraft.block.machine;
 
 
-import com.kelco.kamenridercraft.item.heisei_phase_2.ExAidRiderItems;
-import com.kelco.kamenridercraft.item.reiwa.ZeroOneRiderItems;
+import com.kelco.kamenridercraft.blockentity.GameCreatorEntity;
+import com.kelco.kamenridercraft.blockentity.ModBlockEntities;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
+import javax.annotation.Nullable;
 import java.util.List;
-import java.util.Random;
 
 
-public class GameCreator extends MachineBlock {
-	
-	  public static List<Item> BLANK_GASHAT= new ArrayList<>();
-	  public static List<Item> BLANK_DOUBLE_GASHAT= new ArrayList<>();
-	  public static List<Item> BLANK_MAXIMUM_GASHAT= new ArrayList<>();
-	  public static List<Item> BLANK_HYPER_GASHAT= new ArrayList<>();
-		 
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-
-    public GameCreator(Properties properties) {
-        super(properties);
-    }
-
-
-
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_53681_) {
-        p_53681_.add(FACING);
-     }
-
-     public BlockState getStateForPlacement(BlockPlaceContext p_53679_) {
-        return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
-     }
-
-    private Item getgashatDrop(int num, Player player) {
- 		Random generator = new Random();
-
-        List<Item> BLANK_GASHAT_PLUS = new ArrayList<>(BLANK_GASHAT);
-
-		 if (player.getInventory().countItem(ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get())!=0){
-			 for (int i = 0; i < 20; ++i) {
-				 BLANK_GASHAT_PLUS.add(ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get());
-				 BLANK_GASHAT_PLUS.add(ExAidRiderItems.TOKI_MEKTI_BRIDAL_GASHAT.get());
-			 }
-			 	 }
-
- 		if (num==1){
- 			int rand = generator.nextInt(BLANK_GASHAT_PLUS.size());
- 			return BLANK_GASHAT_PLUS.get(rand);
- 		} else if (num==2){
- 			int rand = generator.nextInt(BLANK_DOUBLE_GASHAT.size());
- 			return BLANK_DOUBLE_GASHAT.get(rand);
- 		} else if (num==3){
-            if (player.getInventory().countItem(ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get())!=0){
-                return ExAidRiderItems.HYPER_FUMESTU_GASHAT.get();
-            }
- 			int rand = generator.nextInt(BLANK_HYPER_GASHAT.size());
- 			return BLANK_HYPER_GASHAT.get(rand);
- 		}  else{
-            if (player.getInventory().countItem(ExAidRiderItems.PROTO_MIGHTY_ACTION_X_GASHAT_ORIGIN_REMAKE.get())!=0){
-                return ExAidRiderItems.MAXIMUM_ZOMBIE_GASHAT.get();
-            }
- 			int rand = generator.nextInt(BLANK_MAXIMUM_GASHAT.size());
- 			return BLANK_MAXIMUM_GASHAT.get(rand);
- 		}
- 	}
-
+public class GameCreator extends BaseEntityBlock {
+	public static final MapCodec<GameCreator> CODEC = simpleCodec(GameCreator::new);
+	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+	public static VoxelShape SHAPE = Block.box(1, 0, 1, 14,15, 14);
 
 	@Override
-	protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
+	protected VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+		return SHAPE;
+	}
 
-		if (!level.isClientSide()) {
-            if (player.getItemInHand(hand).getItem() == ExAidRiderItems.UNFINISHED_MAXIMUM_MIGHTY_X_GASHAT.get()) {
-				process(player, level, pos, hand, getgashatDrop(0, player));
-				return ItemInteractionResult.SUCCESS;
-			}
-			else if (player.getItemInHand(hand).getItem() == ExAidRiderItems.BLANK_GASHAT.get()) {
-				process(player, level, pos, hand, getgashatDrop(1, player));
-				return ItemInteractionResult.SUCCESS;
-			}
-			else if (player.getItemInHand(hand).getItem() == ExAidRiderItems.MIGHTY_BROTHERS_XX_UNFINISHED_GASHAT.get()){
-				process(player, level, pos, hand, getgashatDrop(2, player));
-				return ItemInteractionResult.SUCCESS;
-			}
-			else if (player.getItemInHand(hand).getItem() == ExAidRiderItems.UNFINISHED_HYPER_MUTEKI_GASHAT.get()){
-				process(player, level, pos, hand, getgashatDrop(3, player));
-				return ItemInteractionResult.SUCCESS;
-			}
-			else if (player.getItemInHand(hand).getItem() == ZeroOneRiderItems.PRESIDENT_DAN_KUROTO_PROGRISEKEY.get()) {
-				process(player, level, pos, hand, ExAidRiderItems.GENM_MUSOU_GASHAT.get());
-				return ItemInteractionResult.SUCCESS;
-			}
+	public GameCreator(Properties properties) {
+		super(properties);
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+	}
 
-        }
-		return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
-    }
+	@Override
+	protected MapCodec<? extends BaseEntityBlock> codec() {
+		return CODEC;
+	}
 
+	@Override
+	public @Nullable BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
+		return new GameCreatorEntity(blockPos, blockState);
+	}
 
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_53681_) {
+		p_53681_.add(FACING);
+	}
+
+	public BlockState getStateForPlacement(BlockPlaceContext p_53679_) {
+		return this.defaultBlockState().setValue(FACING, p_53679_.getHorizontalDirection().getOpposite());
+	}
+
+	public PushReaction getPistonPushReaction(BlockState p_53683_) {
+		return PushReaction.PUSH_ONLY;
+	}
+
+	public BlockState rotate(BlockState p_48722_, Rotation p_48723_) {
+		return p_48722_.setValue(FACING, p_48723_.rotate(p_48722_.getValue(FACING)));
+	}
+
+	@Override
+	protected RenderShape getRenderShape(BlockState state) {
+		return RenderShape.MODEL;
+	}
 
 	public GameCreator AddToTabList(List<Block> TabList) {
 		TabList.add(this);
 		return this;
 	}
 
+	@Override
+	public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
+		if (!pState.is(pNewState.getBlock())) {
+			BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
+			if (blockEntity instanceof GameCreatorEntity gameCreatorEntity) {
+				for (int i = 0; i < gameCreatorEntity.getContainerSize(); i++) {
+					net.minecraft.world.Containers.dropItemStack(pLevel, pPos.getX(), pPos.getY(), pPos.getZ(),
+							gameCreatorEntity.getItem(i));
+				}
+			}
+		}
+
+		super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+	}
+
+	@Override
+	protected @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack pStack, @NotNull BlockState pState, Level pLevel, @NotNull BlockPos pPos,
+	                                                   @NotNull Player pPlayer, @NotNull InteractionHand pHand, @NotNull BlockHitResult pHitResult) {
+		if (!pLevel.isClientSide()) {
+			BlockEntity entity = pLevel.getBlockEntity(pPos);
+			if (entity instanceof GameCreatorEntity gameCreatorEntity) {
+				pPlayer.openMenu(gameCreatorEntity, pPos);
+			} else {
+				throw new IllegalStateException("Our Container provider is missing!");
+			}
+		}
+
+		return ItemInteractionResult.sidedSuccess(pLevel.isClientSide());
+	}
+
+	@Override
+	public @Nullable <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
+		if (level.isClientSide()) {
+			return null;
+		}
+
+		return createTickerHelper(blockEntityType, ModBlockEntities.GAME_CREATOR_BE.get(),
+				GameCreatorEntity::tick);
+	}
+
+	@Override
+	protected boolean propagatesSkylightDown(BlockState pState, BlockGetter pReader, BlockPos pPos) {
+		return true;
+	}
+
+	@Override
+	protected float getShadeBrightness(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+		return 1.0F;
+	}
 }

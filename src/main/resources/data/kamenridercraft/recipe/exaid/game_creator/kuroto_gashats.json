@@ -1,0 +1,25 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:blank_gashat"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:president_dan_kuroto_progrisekey"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:proto_mighty_action_x_gashat_origin_remake"
+			},
+			"weight": 12
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:toki_meki_bridal_gashat"
+			},
+			"weight": 10
+		}
+	]
+}
