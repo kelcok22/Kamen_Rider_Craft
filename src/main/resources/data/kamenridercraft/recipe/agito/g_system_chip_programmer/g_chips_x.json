@@ -1,0 +1,32 @@
+{
+	"type": "kamenridercraft:g_chip_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:g3"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:g4"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:g3x"
+			},
+			"weight": 20
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:g4x"
+			},
+			"weight": 10
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:g6"
+			},
+			"weight": 5
+		}
+	]
+}

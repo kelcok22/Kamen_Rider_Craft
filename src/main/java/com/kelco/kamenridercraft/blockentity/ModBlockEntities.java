@@ -27,6 +27,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("amazon_cell_extractor_be", () -> BlockEntityType.Builder.of(
                     AmazonCellExtractorEntity::new, RiderBlocks.AMAZON_CELL_EXTRACTOR.get()).build(null));
 
+    public static final Supplier<BlockEntityType<GChipProgrammerEntity>> G_CHIP_PROGRAMMER_BE =
+            BLOCK_ENTITIES.register("g_chip_programmer_be", () -> BlockEntityType.Builder.of(
+                    GChipProgrammerEntity::new, RiderBlocks.G_SYSTEM_CHIP_PROGRAMMER.get()).build(null));
+
     public static final Supplier<BlockEntityType<IxaMachineBlockEntity>> IXA_MACHINE_BLOCK_BE =
             BLOCK_ENTITIES.register("ixa_machine_block_be", () -> BlockEntityType.Builder.of(
                     IxaMachineBlockEntity::new, RiderBlocks.IXA_MACHINE_BLOCK.get()).build(null));

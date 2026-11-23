@@ -1,0 +1,29 @@
+{
+	"type": "kamenridercraft:g_chip_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:g3core"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:g3mild"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:g1"
+			},
+			"weight": 17
+		},
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:v1"
+			},
+			"weight": 17
+		}
+	]
+}

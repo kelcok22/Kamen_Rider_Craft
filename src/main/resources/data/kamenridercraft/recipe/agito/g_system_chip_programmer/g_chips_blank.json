@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:g_chip_programmer",
+	"primary_input": {
+		"item": "kamenridercraft:rider_circuit"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:kuuga_growing"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:g3core"
+			},
+			"weight": 20
+		}
+	]
+}

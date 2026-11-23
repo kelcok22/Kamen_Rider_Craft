@@ -38,6 +38,29 @@ public class ModRecipes {
             });
 
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<GChipProgrammerRecipe>> G_CHIP_PROGRAMMER_SERIALIZER =
+            SERIALIZERS.register("g_chip_programmer", () -> new RecipeSerializer<GChipProgrammerRecipe>() {
+                @Override
+                public com.mojang.serialization.@NotNull MapCodec<GChipProgrammerRecipe> codec() {
+                    return GChipProgrammerRecipe.CODEC;
+                }
+
+                @Override
+                public net.minecraft.network.codec.@NotNull StreamCodec<net.minecraft.network.RegistryFriendlyByteBuf,
+                        GChipProgrammerRecipe> streamCodec() {
+                    return GChipProgrammerRecipe.STREAM_CODEC;
+                }
+            });
+
+    public static final DeferredHolder<RecipeType<?>, RecipeType<GChipProgrammerRecipe>> G_CHIP_PROGRAMMER_TYPE =
+            TYPES.register("g_chip_programmer", () -> new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "g_chip_programmer";
+                }
+            });
+
+
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<IxaMachineRecipe>> IXA_MACHINE_BLOCK_SERIALIZER =
             SERIALIZERS.register("fuestle_replicator", () -> new RecipeSerializer<IxaMachineRecipe>() {
                 @Override
