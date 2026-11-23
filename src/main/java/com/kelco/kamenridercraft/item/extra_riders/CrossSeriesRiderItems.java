@@ -125,6 +125,19 @@ public class CrossSeriesRiderItems {
                             player.getZ(), 25, 0, 0, 0, 0.1);}
             }.changeModel("touki.geo.json").changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addAlternative(HENSHIN_ONSA_GOUKI_SIC.get()));
 
+    public static final DeferredItem<Item> HENSHIN_ONIBUE_SHOUKI_SIC = ITEMS.register("henshin_onibue_shouki_sic",
+            () -> new RiderFormChangeItem(new Item.Properties(),"_sic","shouki","shoukidriver_belt",
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 2,true,false),
+                    new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0,true,false),
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0,true,false)){
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    ((ServerLevel) player.level()).sendParticles(ParticleTypes.GUST_EMITTER_SMALL,
+                            player.getX(), player.getY()+1,
+                            player.getZ(), 25, 0, 0, 0, 0.1);}
+            }.changeBeltModel("geo/belts/ibuki_belt.geo.json").isGlowing().addAlternative(HENSHIN_ONIBUE_TOKI_SIC.get()));
+
     public static final DeferredItem<Item> HENSHIN_KIGEN_BANKI_SIC = ITEMS.register("henshin_kigen_banki_sic",
             () -> new RiderFormChangeItem(new Item.Properties(),"_sic","banki","bankidriver_belt",
                     new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0,true,false),
@@ -143,7 +156,7 @@ public class CrossSeriesRiderItems {
                     thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
                     player.level().addFreshEntity(thunder);
                 }
-            }.changeModel("banki.geo.json").changeBeltModel("geo/belts/todoroki_belt.geo.json").isGlowing().addAlternative(HENSHIN_ONIBUE_TOKI_SIC.get()));
+            }.changeModel("banki.geo.json").changeBeltModel("geo/belts/todoroki_belt.geo.json").isGlowing().addAlternative(HENSHIN_ONIBUE_SHOUKI_SIC.get()));
 
     public static final DeferredItem<Item> HENSHIN_ONIBUE_AKIRA_SIC = ITEMS.register("henshin_onibue_akira_sic",
             () -> new RiderFormChangeItem(new Item.Properties(),"_sic","transformed_akira","akiradriver_belt_sic",

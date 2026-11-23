@@ -523,7 +523,7 @@ public class HibikiRiderItems {
     public static final DeferredItem<Item> TOKIDRIVER = ITEMS.register("tokidriver",
             () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"touki",HENSHIN_ONIBUE_TOKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONIBUE_TOKI, "henshin_onibue_toki").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> SHOUKIDRIVER = ITEMS.register("shoukidriver",
-            () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"shouki",HENSHIN_ONIBUE_SHOUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONIBUE_SHOUKI, "henshin_onibue_shouki").hideBeltFormInfo().addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
+            () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"shouki",HENSHIN_ONIBUE_SHOUKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_ONIBUE_SHOUKI, "henshin_onibue_shouki").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> BANKIDRIVER = ITEMS.register("bankidriver",
             () -> new OniEquipmentBeltItem(ArmorMaterials.DIAMOND,"banki",HENSHIN_KIGEN_BANKI ,HIBIKIHELMET,HIBIKICHESTPLATE,HIBIKILEGGINGS, new Item.Properties(), HENSHIN_KIGEN_BANKI, "henshin_kigen").addToList(com.kelco.kamenridercraft.item.KRCCreativeTabs.HIBIKI_TAB_ITEM).changeRepairItem(ONI_ORE.get()));
     public static final DeferredItem<Item> AKIRADRIVER = ITEMS.register("akiradriver",
