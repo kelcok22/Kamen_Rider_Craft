@@ -12,11 +12,11 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 
 public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
-    String Model;
+    String texture;
 
     public GaimArmsRenderLayerInfo(String texture, String model) {
-        super("transforming/"+texture, "transforming/"+model);
-        this.Model = model;
+        super("transforming/" + texture, "transforming/" + model);
+        this.texture = texture.toLowerCase();
     }
 
     private float xOffset(float tickCount) {
@@ -29,14 +29,14 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
         double henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() - partialTick;
 
         if (bone != null) {
-            double drop =henshin_tick;
+            double drop = henshin_tick;
             if (henshin_tick < 10) {
                 drop = 10;
             }
-            bone.setPosY((float) (drop- 10) * 3);
+            bone.setPosY((float) (drop - 10) * 3);
         }
 
-        if (Model.contains("orange") || Model.contains("ringo") || Model.contains("melon")) {
+        if (texture.contains("orange") || texture.contains("ringo") || texture.contains("melon")) {
             GeoBone orange_1 = model.getBone("orange_1").orElse(null);
             GeoBone orange_1_upper = model.getBone("orange_1_upper").orElse(null);
             GeoBone orange_2 = model.getBone("orange_2").orElse(null);
@@ -93,11 +93,7 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                     orange_4_upper.setRotX(0);
                 }
             }
-            return;
-        }
-
-        if (Model.contains("pine")) {
-            System.err.println("is pine");
+        } else if (texture.contains("pine")) {
             GeoBone pine_1 = model.getBone("pine_1").orElse(null);
             GeoBone pine_1_upper = model.getBone("pine_1_upper").orElse(null);
             GeoBone pine_2 = model.getBone("pine_2").orElse(null);
@@ -154,10 +150,7 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                     orange_4_upper.setRotX(0);
                 }
             }
-            return;
-        }
-
-        if (Model.contains("kachidoki")) {
+        } else if (texture.contains("kachidoki")) {
             GeoBone kachidoki_legs_1 = model.getBone("kachidoki_legs_1").orElse(null);
             GeoBone kachidoki_legs_2 = model.getBone("kachidoki_legs_2").orElse(null);
             GeoBone kachidoki_arms_1 = model.getBone("kachidoki_arms_1").orElse(null);
@@ -193,9 +186,6 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                 kachidoki_arms_2.setPosX(0);
                 kachidoki_arms_1.setPosY(0);
                 kachidoki_arms_2.setPosY(0);
-                for (GeoBone boneReset : model.topLevelBones()) {
-                    boneReset.resetStateChanges();
-                }
             }
 
             if (kachidoki_legs_1 != null && kachidoki_legs_2 != null && henshin_tick < 20) {
@@ -213,7 +203,6 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                 kachidoki_chest.setPosY(0);
                 kachidoki_chest.setPosZ(0);
             }
-            return;
         }
     }
 
