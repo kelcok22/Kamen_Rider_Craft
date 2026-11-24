@@ -190,6 +190,7 @@ public class RiderDriverItem extends RiderArmorItem {
                 for (int n = 0; n < numBaseFormItems; n++) {
                     RiderFormChangeItem form = getFormItem(stack, n + 1);
                     form.transformationEffect(stack, rider, Objects.requireNonNull(rider.getAttribute(IS_TRANSFORMING)).getBaseValue());
+                    if (getFormItem(stack, n + 1, getFormItem(stack, n + 1).getHenshinTick() + 1) != getFormItem(stack, n + 1))RiderDriverItem.updateOldFormItemSlot(stack,n + 1);
                 }
             }
         } else {
