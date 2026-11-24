@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "kamenridercraft:block/m_bus_panel",
+    "side": "kamenridercraft:block/m_bus_panel_side",
+    "front": "kamenridercraft:block/m_bus_panel_side",
+    "top": "kamenridercraft:block/m_bus_panel"
+  }
+}

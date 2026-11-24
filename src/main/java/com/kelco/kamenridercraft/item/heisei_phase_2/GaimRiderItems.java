@@ -2,7 +2,6 @@ package com.kelco.kamenridercraft.item.heisei_phase_2;
 
 import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
-import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.FourzeRingRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GaimArmsRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RocketRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
@@ -37,9 +36,6 @@ import net.minecraft.world.item.component.ItemContainerContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import software.bernie.geckolib.animation.AnimationProcessor;
-import software.bernie.geckolib.animation.AnimationState;
-import software.bernie.geckolib.cache.object.GeoBone;
 
 import java.util.List;
 import java.util.Objects;
@@ -76,11 +72,11 @@ public class GaimRiderItems {
 
     public static String[] canUseJimberArms = new String[]{"gaim", "ryugen", "zangetsu", "bravo", "knuckle"};
 
-    public static final DeferredItem<Item> LORD_BARON_CORE= ITEMS.register("lord_baron_core",
+    public static final DeferredItem<Item> LORD_BARON_CORE = ITEMS.register("lord_baron_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "_lord_baron", "baron", "blank").changeSlot(2)
                     .setFormDelay(10).setModelName("gaim_logo").useBasicModel());
 
-    public static final DeferredItem<Item> BRAVO_CORE_KING= ITEMS.register("bravo_core_king",
+    public static final DeferredItem<Item> BRAVO_CORE_KING = ITEMS.register("bravo_core_king",
             () -> new RiderFormChangeItem(new Item.Properties(), "_king", "bravo", "blank").changeSlot(2)
                     .setFormDelay(10).setModelName("gaim_logo").useBasicModel());
 
@@ -97,7 +93,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> ZENGETSU_CORE_WATERMELON = ITEMS.register("zangetsu_core_watermelon",
             () -> new RiderFormChangeItem(new Item.Properties(), "_watermelon", "zangetsu", "sengoku_driver_belt_zangetsu_w",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 10d) {
@@ -113,7 +109,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> ZENGETSU_CORE_KACHIDOKI = ITEMS.register("zangetsu_core_kachidoki",
             () -> new RiderFormChangeItem(new Item.Properties(), "_kachidoki", "zangetsu", "sengoku_driver_belt_zangetsu",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 10d) {
@@ -133,11 +129,11 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false))
-            .changeSlot(2).setFormDelay(10).addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
+                    .changeSlot(2).setFormDelay(10).addCompatibilityList(canUseJimberArms).changeSlot(2).setModelName("gaim_logo").useBasicModel());
 
     public static final DeferredItem<Item> GAIM_CORE_FRESH = ITEMS.register("gaim_core_fresh",
             () -> new RiderFormChangeItem(new Item.Properties(), "_fresh", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 10d) {
@@ -150,10 +146,10 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> GAIM_CORE_KIWAMI = ITEMS.register("gaim_core_kiwami",
             () -> new RiderFormChangeItem(new Item.Properties(), "_kiwami", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                     if (tick == 10d) {
+                    if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.WHITE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
@@ -163,7 +159,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> GAIM_CORE_DRIVE = ITEMS.register("gaim_core_drive",
             () -> new RiderFormChangeItem(new Item.Properties(), "_drive", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     //if (tick == 30d)if (itemstack.getItem() instanceof SengokuDriverItem belt&& !Objects.equals(belt.riderName, "gaim"))RiderDriverItem.setFormItemNoExtra(itemstack,GaimRiderItems.GENESIS_CORE.asItem(),2);
@@ -179,7 +175,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> GAIM_CORE_KACHIDOKI = ITEMS.register("gaim_core_kachidoki",
             () -> new RiderFormChangeItem(new Item.Properties(), "_kachidoki", "gaim", "sengoku_driver_belt_gaim",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 10d) {
@@ -196,7 +192,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> BUJIN_GAIM_CORE_OCHIMUSHA = ITEMS.register("bujin_gaim_core_ochimusha",
             () -> new RiderFormChangeItem(new Item.Properties(), "_ochimusha", "bujin_gaim", "sengoku_driver_belt_bujin_gaim",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 10d) {
@@ -210,10 +206,12 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> GENESIS_CORE_HEX = ITEMS.register("genesis_core_hex",
             () -> new RiderFormChangeItem(new Item.Properties(), "_hex", "duke", "genesis_driver_belt",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
-                    if (tick == 30d)if (itemstack.getItem() instanceof SengokuDriverItem belt&& !Objects.equals(belt.riderName, "duke"))RiderDriverItem.setFormItemNoExtra(itemstack,GaimRiderItems.GENESIS_CORE.asItem(),2);
+                    if (tick == 30d)
+                        if (itemstack.getItem() instanceof SengokuDriverItem belt && !Objects.equals(belt.riderName, "duke"))
+                            RiderDriverItem.setFormItemNoExtra(itemstack, GaimRiderItems.GENESIS_CORE.asItem(), 2);
                     if (tick == 10d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -284,8 +282,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("pine_arms_fruit","pine_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("pine_arms_fruit", "pine_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -317,8 +317,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("orange_arms_fruit","orange_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("orange_arms_fruit", "orange_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -667,12 +669,16 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
-
-                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
-                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransforming( rider)) {
-                        if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem()!=KACHIDOKI_BATA.asItem()) layerInfo.add(new RenderLayerInfo("part/kachidoki_bata","part/kachidoki_bata_l"));
-                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem()!=KACHIDOKI_BATA.asItem()) layerInfo.add(new RenderLayerInfo("part/kachidoki_bata","part/kachidoki_bata_r"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("kachidoki_arms_fruit", "kachidoki_arms_fruit"));
+
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransforming(rider)) {
+                        if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem() != KACHIDOKI_BATA.asItem())
+                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_l"));
+                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem() != KACHIDOKI_BATA.asItem())
+                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_r"));
                     }
                 }
 
@@ -784,8 +790,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("blood_orange_arms_fruit","orange_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("blood_orange_arms_fruit", "orange_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -1003,8 +1011,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.WEAKNESS, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 40, 0, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("kabi_orange_arms_fruit","orange_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("kabi_orange_arms_fruit", "orange_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -1021,8 +1031,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("fresh_orange_arms_fruit","orange_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("fresh_orange_arms_fruit", "orange_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -1102,8 +1114,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("natsumikan_arms_fruit","orange_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("natsumikan_arms_fruit", "orange_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -1137,8 +1151,10 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 0, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23&& RiderDriverItem.isTransforming(rider) ) layerInfo.add(new GaimArmsRenderLayerInfo("proto_orange_arms_fruit","orange_arms_fruit"));
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("proto_orange_arms_fruit", "orange_arms_fruit"));
                 }
+
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -1661,7 +1677,7 @@ public class GaimRiderItems {
 
     public static final DeferredItem<Item> BASIC_GAIM_CORE = ITEMS.register("basic_gaim_core",
             () -> new RiderFormChangeItem(new Item.Properties(), "", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)){
+                    new MobEffectInstance(MobEffects.SATURATION, 40, 0, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 60d) AnimationUtil.playPose(player, "gaim.henshin");
