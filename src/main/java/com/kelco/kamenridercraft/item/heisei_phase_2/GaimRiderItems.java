@@ -673,14 +673,14 @@ public class GaimRiderItems {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
                     if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider)) {
                         layerInfo.add(new GaimArmsRenderLayerInfo("kachidoki_arms_fruit", "kachidoki_arms_fruit"));
-                     }
+                    }
                 }
-                    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
-                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransforming( rider)) {
-                        if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem()!=KACHIDOKI_BATA.asItem())
-                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata","part/kachidoki_bata_l"));
-                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem()!=KACHIDOKI_BATA.asItem())
-                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata","part/kachidoki_bata_r"));
+                public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransforming(rider)) {
+                        if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem() != KACHIDOKI_BATA.asItem())
+                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_l"));
+                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem() != KACHIDOKI_BATA.asItem())
+                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_r"));
                     }
                 }
 
