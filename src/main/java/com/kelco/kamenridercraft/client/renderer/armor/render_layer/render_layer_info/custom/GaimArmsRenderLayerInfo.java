@@ -36,7 +36,6 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
             bone.setPosY((float) (drop- 10) * 3);
         }
 
-
         if (Model.contains("orange") || Model.contains("ringo") || Model.contains("melon")) {
             GeoBone orange_1 = model.getBone("orange_1").orElse(null);
             GeoBone orange_1_upper = model.getBone("orange_1_upper").orElse(null);
