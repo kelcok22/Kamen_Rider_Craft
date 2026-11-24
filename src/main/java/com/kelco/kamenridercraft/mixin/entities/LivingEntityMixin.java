@@ -138,6 +138,7 @@ public class LivingEntityMixin {
             }
             if (livingEntity.getData(IS_POSING)) {
                 if (!canPose(livingEntity) || Math.abs(livingEntity.getX() - this.oldBlockX) > 0.05 || Math.abs(livingEntity.getZ() - this.oldBlockZ) > 0.05) {
+                    livingEntity.setData(IS_POSING, false);
                     stopPosing(livingEntity);
                 }
             } else if (livingEntity.getData(POSE_COOLDOWN) > 0) {

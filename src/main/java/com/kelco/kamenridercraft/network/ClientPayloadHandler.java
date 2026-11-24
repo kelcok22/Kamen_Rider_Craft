@@ -51,9 +51,9 @@ public class ClientPayloadHandler {
 
     public static void handleAttributeClientChange(final AttributeChangeClientPayload data, final IPayloadContext context) {
         if (context.player().level().getPlayerByUUID(UUID.fromString(data.id())) instanceof LivingEntity livingEntity) {
-                    Objects.requireNonNull(livingEntity.getAttribute(BALL_ROT_NEXT)).setBaseValue(data.ball());
-                    Objects.requireNonNull(livingEntity.getAttribute(WHEEL_ROT_NEXT)).setBaseValue(data.wheel());
-                    Objects.requireNonNull(livingEntity.getAttribute(CAPE_ROT_NEXT)).setBaseValue(data.cape());
+            Objects.requireNonNull(livingEntity.getAttribute(BALL_ROT_NEXT)).setBaseValue(data.ball());
+            Objects.requireNonNull(livingEntity.getAttribute(WHEEL_ROT_NEXT)).setBaseValue(data.wheel());
+            Objects.requireNonNull(livingEntity.getAttribute(CAPE_ROT_NEXT)).setBaseValue(data.cape());
         }
     }
 
@@ -147,15 +147,23 @@ public class ClientPayloadHandler {
                     default ->
                             (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(animationTarget, ANIMATION_LAYER_ID);
                 };
-                assert controller != null;
 
-                if (!data.forceNextPose() && Objects.requireNonNull(controller).isPlayingTriggeredAnimation()) {
-                    controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
-                } else {
-                    if (data.controller().contains("attack") || data.controller().contains("pose") ) {
-                        controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+                assert controller != null;
+                controller.removeAllModifiers();
+
+                if (Objects.requireNonNull(controller).isPlayingTriggeredAnimation()) {
+                    if (data.forceNextPose()) {
+                        controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
+                    } else {
+                        controller.triggerAnimation(animation);
                     }
-                    controller.triggerAnimation(animation);
+                } else {
+                    if (data.forceNextPose()) {
+                        controller.triggerAnimation(animation);
+                    } else {
+                        controller.addModifierBefore(AbstractFadeModifier.standardFadeIn(5, EasingType.EASE_IN_ELASTIC));
+                        controller.triggerAnimation(animation);
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -196,14 +204,12 @@ public class ClientPayloadHandler {
                 };
 
                 if (controller != null && controller.isPlayingTriggeredAnimation()) {
-                    controller.removeAllModifiers();
                     if (data.abruptStop()) {
                         controller.stopTriggeredAnimation();
                     } else {
-                        Animation animation = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.reset"));
-                        controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), animation);
+                        Animation resetPose = PlayerAnimResources.getAnimation(ResourceLocation.fromNamespaceAndPath(MOD_ID, "default.reset"));
+                        controller.replaceAnimationWithFade(AbstractFadeModifier.standardFadeIn(10, EasingType.EASE_IN_ELASTIC), resetPose);
                     }
-
                 }
             }
         } catch (Exception e) {

@@ -30,7 +30,7 @@ public class AnimationUtil {
     }
 
     public static void playPose(LivingEntity poser, String poseName) {
-        if (poser instanceof Player && poser.level() instanceof ServerLevel) {
+        if (poser instanceof Player && poser.level() instanceof ServerLevel && canPose(poser)) {
             PacketDistributor.sendToAllPlayers(new StartPosePayload(poseName.toLowerCase(), poser.getStringUUID()));
             poser.setData(IS_POSING, true);
         }
