@@ -29,13 +29,13 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
         double henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() - partialTick;
 
         if (bone != null) {
+            double drop =henshin_tick;
             if (henshin_tick < 10) {
-                henshin_tick = 10;
+                drop = 10;
             }
-            bone.setPosY((float) (henshin_tick - 10) * 3);
+            bone.setPosY((float) (drop- 10) * 3);
         }
 
-        henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() - partialTick;
 
         if (Model.contains("orange") || Model.contains("ringo") || Model.contains("melon")) {
             GeoBone orange_1 = model.getBone("orange_1").orElse(null);
