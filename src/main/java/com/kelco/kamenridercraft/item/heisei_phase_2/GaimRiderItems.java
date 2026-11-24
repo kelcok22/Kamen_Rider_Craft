@@ -671,14 +671,16 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
                 public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
                     super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
-                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider)) {
                         layerInfo.add(new GaimArmsRenderLayerInfo("kachidoki_arms_fruit", "kachidoki_arms_fruit"));
-
-                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransforming(rider)) {
-                        if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem() != KACHIDOKI_BATA.asItem())
-                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_l"));
-                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem() != KACHIDOKI_BATA.asItem())
-                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_r"));
+                     }
+                }
+                    public void SetUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot) {
+                    if (slot == EquipmentSlot.HEAD && !RiderDriverItem.isTransforming( rider)) {
+                        if (rider.getItemBySlot(EquipmentSlot.MAINHAND).getItem()!=KACHIDOKI_BATA.asItem())
+                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata","part/kachidoki_bata_l"));
+                        if (rider.getItemBySlot(EquipmentSlot.OFFHAND).getItem()!=KACHIDOKI_BATA.asItem())
+                            layerInfo.add(new RenderLayerInfo("part/kachidoki_bata","part/kachidoki_bata_r"));
                     }
                 }
 

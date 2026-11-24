@@ -126,13 +126,7 @@ public class BirthDriverItem extends RiderDriverItem {
     public boolean getPartsForSlot(ItemStack itemstack, EquipmentSlot currentSlot, String part) {
         switch (currentSlot) {
             case HEAD -> {
-                if (Objects.equals(part, "head")) return true;
-                if (Objects.equals(part, "body")) return true;
-                if (Objects.equals(part, "rightArm")) return true;
-                if (Objects.equals(part, "leftArm")) return true;
-                if (Objects.equals(part, "leftLeg")) return true;
-                if (Objects.equals(part, "rightLeg")) return true;
-
+                 return true;
             }
             case CHEST -> {
                 if (Objects.equals(part, "body"))

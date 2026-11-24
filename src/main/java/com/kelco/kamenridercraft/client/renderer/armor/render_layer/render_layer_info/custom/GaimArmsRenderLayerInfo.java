@@ -12,11 +12,11 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 
 public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
-    String texture;
+    String Model;
 
     public GaimArmsRenderLayerInfo(String texture, String model) {
         super("transforming/"+texture, "transforming/"+model);
-        this.texture = texture;
+        this.Model = model;
     }
 
     private float xOffset(float tickCount) {
@@ -35,7 +35,9 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
             bone.setPosY((float) (henshin_tick - 10) * 3);
         }
 
-        if (texture.contains("orange") || texture.contains("ringo") || texture.contains("melon")) {
+        henshin_tick = entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getValue() - partialTick;
+
+        if (Model.contains("orange") || Model.contains("ringo") || Model.contains("melon")) {
             GeoBone orange_1 = model.getBone("orange_1").orElse(null);
             GeoBone orange_1_upper = model.getBone("orange_1_upper").orElse(null);
             GeoBone orange_2 = model.getBone("orange_2").orElse(null);
@@ -95,7 +97,8 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
             return;
         }
 
-        if (texture.contains("pine")) {
+        if (Model.contains("pine")) {
+            System.err.println("is pine");
             GeoBone pine_1 = model.getBone("pine_1").orElse(null);
             GeoBone pine_1_upper = model.getBone("pine_1_upper").orElse(null);
             GeoBone pine_2 = model.getBone("pine_2").orElse(null);
@@ -155,7 +158,7 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
             return;
         }
 
-        if (texture.contains("kachidoki")) {
+        if (Model.contains("kachidoki")) {
             GeoBone kachidoki_legs_1 = model.getBone("kachidoki_legs_1").orElse(null);
             GeoBone kachidoki_legs_2 = model.getBone("kachidoki_legs_2").orElse(null);
             GeoBone kachidoki_arms_1 = model.getBone("kachidoki_arms_1").orElse(null);
