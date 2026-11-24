@@ -6,6 +6,7 @@ import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.entity.mobs.foot_soldiers.ShockerCombatmanEntity;
 import com.kelco.kamenridercraft.item.base_items.*;
+import com.kelco.kamenridercraft.item.heisei_phase_1.hibiki.OniFormChangeItem;
 import com.kelco.kamenridercraft.item.misc_items.MusicDiscItems;
 import com.kelco.kamenridercraft.particle.ModParticles;
 import com.kelco.kamenridercraft.util.AnimationUtil;
@@ -275,7 +276,7 @@ public class ModdedItemCore {
 
 
     public static final DeferredItem<Item> AKANETAKA = ITEMS.register("akanetaka",
-            () -> new RiderFormChangeItem(new Item.Properties(), "_akanetaka", "hibiki", "hibikidriver_belt",
+            () -> new OniFormChangeItem(new Item.Properties(), "_akanetaka", "hibiki", "hibikidriver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0, true, false),
@@ -311,7 +312,7 @@ public class ModdedItemCore {
 
 
     public static final DeferredItem<Item> BAKUEN_NO_SENSHI_HIBIKI = ITEMS.register("bakuen_no_senshi_hibiki",
-            () -> new RiderFormChangeItem(new Item.Properties(), "_bakuen_no_senshi", "hibiki", "hibikidriver_belt",
+            () -> new OniFormChangeItem(new Item.Properties(), "_bakuen_no_senshi", "hibiki", "hibikidriver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 4, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 3, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),

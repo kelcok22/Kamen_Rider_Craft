@@ -1,6 +1,8 @@
 package com.kelco.kamenridercraft.util;
 
 import com.kelco.kamenridercraft.item.base_items.RiderDriverItem;
+import com.kelco.kamenridercraft.item.base_items.RiderFormChangeItem;
+import com.kelco.kamenridercraft.item.heisei_phase_1.HibikiRiderItems;
 import com.kelco.kamenridercraft.network.payload.AnimPayload;
 import com.kelco.kamenridercraft.network.payload.EndAnimationPayload;
 import com.kelco.kamenridercraft.network.payload.StartPosePayload;
@@ -87,6 +89,19 @@ public class AnimationUtil {
             case "kamenridercraft:riderman_helmet" -> getAnim("mitsuba.pose");
             default -> null;
         };
+    }
+
+    public static @Nullable Animation hibikiAnimCheck(LivingEntity posingRider) {
+        ItemStack belt = posingRider.getItemBySlot(EquipmentSlot.FEET);
+        RiderFormChangeItem onsa = getFormItem(belt, 1);
+        RiderFormChangeItem mask = getFormItem(belt, 2);
+        String pose;
+
+        if (onsa == HibikiRiderItems.HENSHIN_ONSA.get() && mask == HibikiRiderItems.MASKLESS_ONI.get())
+            pose = "unmasked.pose";
+        else if (onsa != HibikiRiderItems.HENSHIN_ONSA.get()) pose = onsa.toString().replace("kamenridercraft:", "") + ".pose";
+        else pose = "pose";
+        return getAnim("hibiki." + pose);
     }
 
     public static @Nullable Animation oooAnimCheck(LivingEntity posingRider) {

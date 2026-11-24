@@ -77,7 +77,9 @@ public class ClientPayloadHandler {
                     animation = getAnim(riderName + "." + formItemName + ".pose");
                 }
 
-                if (riderName.equals("ooo")) {
+                if (riderName.equals("hibiki")) {
+                    animation = hibikiAnimCheck(posingRider);
+                } else if (riderName.equals("ooo")) {
                     animation = oooAnimCheck(posingRider);
                 } else if (riderName.equals("ghost") || riderName.equals("specter") || riderName.equals("necrom")) {
                     if (Objects.requireNonNull(posingRider.getAttribute(KRCAttributes.POSE_MODEL_MODIFIER)).getValue() >= 1) {

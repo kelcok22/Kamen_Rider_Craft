@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.RiderBlocks;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
+import com.kelco.kamenridercraft.item.ModdedItemCore;
 import com.kelco.kamenridercraft.item.base_items.*;
 import com.kelco.kamenridercraft.item.heisei_phase_1.decade.*;
 import com.kelco.kamenridercraft.item.showa.*;
@@ -310,7 +311,7 @@ public class DecadeRiderItems {
                     .IsBeltGlowing().isGlowing().addCompatibilityList(BaseDecadeUsers).changeRiderName("blade").addToList(DECADE_TAB_ITEM));
 
     public static final DeferredItem<Item> HENSHIN_ONSA_ASUMU = ITEMS.register("henshin_onsa_asumu",
-            () -> new RiderCardItem(new Item.Properties(), "_transformed_asumu", "hibiki", "kyosukedriver_belt",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_transformed_asumu", "hibiki", "kyosukedriver_belt",
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DIG_SPEED, 40, 1, true, false),
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
@@ -321,7 +322,7 @@ public class DecadeRiderItems {
                             player.getX(), player.getY()+1,
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
-            }.changeBeltModel("geo/belts/hibiki_belt.geo.json").setShowHead());
+            }.changeBeltModel("geo/belts/hibiki_belt.geo.json").alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).setShowHead());
 
     public static final DeferredItem<Item> HIBIKI_CARD = ITEMS.register("hibiki_card",
             () -> new RiderCardItem(new Item.Properties(), "", "decade", "decadriver_belt",
