@@ -987,6 +987,54 @@ public class ExAidRiderItems {
             }
                     .isGlowing().alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get()).addToList(EX_AID_TAB_ITEM));
 
+    public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER_MACHINA = ITEMS.register("kamen_rider_chronicle_gashat_bugster_machina",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_gamedeus_machina", "bugster", "blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 5, true, false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                    player.level().addFreshEntity(thunder);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }
+                    .changeModel("bugster_gamedeus.geo.json"));
+
+    public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER_GEMEDEUS = ITEMS.register("kamen_rider_chronicle_gashat_bugster_gamedeus",
+            () -> new RiderFormChangeItem(new Item.Properties(), "_gamedeus", "bugster", "blank",
+                    new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 4, true, false),
+                    new MobEffectInstance(MobEffects.DIG_SPEED, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 3, true, false),
+                    new MobEffectInstance(EffectCore.BUGSTER, 40, 3, true, false),
+                    new MobEffectInstance(MobEffects.JUMP, 40, 3, true, false)) {
+                public void transformationEffect(ItemStack itemstack, LivingEntity player) {
+                    super.transformationEffect(itemstack, player);
+                    LightningBolt thunder = new LightningBolt(EntityType.LIGHTNING_BOLT, player.level());
+                    thunder.setVisualOnly(true);
+                    thunder.setPos(player.getX(), -1 + player.getY(), player.getZ());
+                    player.level().addFreshEntity(thunder);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.GOLD_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                    ((ServerLevel) player.level()).sendParticles(ModParticles.BLACK_SPARK_PARTICLES.get(),
+                            player.getX(), player.getY() + 1,
+                            player.getZ(), 100, 0, 0, 0, 1);
+                }
+            }
+                    .isGold().addSwitchForm(KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER_MACHINA.get()));
+
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER = ITEMS.register("kamen_rider_chronicle_gashat_bugster",
             () -> new RiderFormChangeItem(new Item.Properties(), "_cronus", "chronicle_bugster", "gashacon_bugvisor_ii_chronicle_bugster_belt",
@@ -1005,8 +1053,7 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
                 }
             }
-                    .isGlowing().changeModel("chronicle_bugster.geo.json"));
-
+                    .isGlowing().addAlternative(KAMEN_RIDER_CHRONICLE_GASHAT_BUGSTER_GEMEDEUS.get()).changeModel("chronicle_bugster.geo.json"));
 
     public static final DeferredItem<Item> KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS = ITEMS.register("kamen_rider_chronicle_gashat_gamedeus",
             () -> new RiderFormChangeItem(new Item.Properties(), "_gamedeus", "chronos", "gamer_driver_chronicle",
