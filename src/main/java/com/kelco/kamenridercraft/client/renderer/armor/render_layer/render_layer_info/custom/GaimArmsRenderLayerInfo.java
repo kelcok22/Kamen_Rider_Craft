@@ -12,11 +12,11 @@ import software.bernie.geckolib.cache.object.GeoBone;
 
 
 public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
-    String texture;
+    String model;
 
     public GaimArmsRenderLayerInfo(String texture, String model) {
         super("transforming/" + texture, "transforming/" + model);
-        this.texture = texture.toLowerCase();
+        this.model = model.toLowerCase();
     }
 
     private float xOffset(float tickCount) {
@@ -36,7 +36,7 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
             bone.setPosY((float) (drop - 10) * 3);
         }
 
-        if (texture.contains("orange") || texture.contains("ringo") || texture.contains("melon")) {
+        if (this.model.contains("orange") || this.model.contains("ringo") || this.model.contains("melon")) {
             GeoBone orange_1 = model.getBone("orange_1").orElse(null);
             GeoBone orange_1_upper = model.getBone("orange_1_upper").orElse(null);
             GeoBone orange_2 = model.getBone("orange_2").orElse(null);
@@ -93,7 +93,7 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                     orange_4_upper.setRotX(0);
                 }
             }
-        } else if (texture.contains("pine")) {
+        } else if (this.model.contains("pine")) {
             GeoBone pine_1 = model.getBone("pine_1").orElse(null);
             GeoBone pine_1_upper = model.getBone("pine_1_upper").orElse(null);
             GeoBone pine_2 = model.getBone("pine_2").orElse(null);
@@ -150,7 +150,7 @@ public class GaimArmsRenderLayerInfo extends RenderLayerInfo {
                     orange_4_upper.setRotX(0);
                 }
             }
-        } else if (texture.contains("kachidoki")) {
+        } else if (this.model.contains("kachidoki")) {
             GeoBone kachidoki_legs_1 = model.getBone("kachidoki_legs_1").orElse(null);
             GeoBone kachidoki_legs_2 = model.getBone("kachidoki_legs_2").orElse(null);
             GeoBone kachidoki_arms_1 = model.getBone("kachidoki_arms_1").orElse(null);

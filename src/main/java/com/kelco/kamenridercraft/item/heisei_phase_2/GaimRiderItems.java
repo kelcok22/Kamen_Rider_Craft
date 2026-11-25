@@ -683,7 +683,6 @@ public class GaimRiderItems {
                             layerInfo.add(new RenderLayerInfo("part/kachidoki_bata", "part/kachidoki_bata_r"));
                     }
                 }
-
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
@@ -1555,13 +1554,12 @@ public class GaimRiderItems {
             }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> RIDER_ICHIGO_LOCKSEED = ITEMS.register("rider_ichigo_lockseed",
-            () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt",
-                    new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, true, false)
-                    , new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 1, true, false)
+            () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt"
                     , new MobEffectInstance(MobEffects.JUMP, 40, 2, true, false)) {
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
                     if (tick == 1d) {
+                            AnimationUtil.playPose(player,"ichigo.pose");
                         ((ServerLevel) player.level()).sendParticles(ModParticles.RED_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
                                 player.getZ(), 100, 0, 0, 0, 1);
@@ -1571,7 +1569,7 @@ public class GaimRiderItems {
 
                     }
                 }
-            }.setFormDelay(1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
+            }.setFormDelay(1).setSlotOneAbility("rider_punch", 1).setSlotTwoAbility("rider_kick", 1).addCompatibilityList(canUseLegendLockseed).resetFormToBase().addToList(GAIM_TAB_ITEM));
 
     public static final DeferredItem<Item> SHOWA_RIDER_LOCKSEED = ITEMS.register("showa_rider_lockseed",
             () -> new RiderFormChangeItem(new Item.Properties(), "rider_ichigo_arms", "gaim", "sengoku_driver_belt",
