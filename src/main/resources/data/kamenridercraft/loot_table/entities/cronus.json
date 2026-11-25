@@ -1,65 +1,78 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-	{
-	  "rolls": 1,
-	  "entries": [
+	"pools": [
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_gashat",
-		  "weight": 4
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:kamen_rider_chronicle_gashat"
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:kamen_rider_chronicle_gashat_gamedeus",
-		  "weight": 1
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_gashat"
+				}
+			],
+			"functions": [
+				{
+					"function": "minecraft:set_count",
+					"count": {
+						"min": 3,
+						"max": 5
+					}
+				}
+			]
+		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_gashat",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 2,
-				"max": 4
-			  }
-			}
-		  ]
-		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:gekitotsu_robots_gasha_trophy",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:jet_combat_gasha_trophy",
+					"weight": 2
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
+					"weight": 3
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:bakusou_bike_gashat_turbo",
+					"weight": 4
+				}
+			]
+		},
 		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:mighty_brothers_xx_unfinished_gashat",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 1,
-				"max": 2
-			  }
-			}
-		  ]
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:kamen_rider_chronicle_gashat_gamedeus",
+					"conditions": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "attacking_player",
+							"predicate": {
+								"slots": {
+									"container.*": {
+										"items": "kamenridercraft:hyper_muteki_gashat"
+									}
+								}
+							}
+						}
+					]
+				}
+			]
 		}
-	  ]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:kamen_rider_chronicle_gashat"
-		}
-	  ]
-	}
-  ]
+	]
 }

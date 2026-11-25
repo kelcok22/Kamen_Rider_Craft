@@ -1,23 +1,31 @@
 {
-	"type": "minecraft:crafting_shapeless",
+	"type": "minecraft:crafting_shaped",
 	"group": "cronus",
-	"ingredients": [
-		{
-			"item": "kamenridercraft:drago_knight_hunter_z_gasha_trophy"
+	"pattern": [
+		"XMX",
+		"GST",
+		"XBX"
+	],
+	"key": {
+		"X": {
+			"item": "kamenridercraft:rider_circuit"
 		},
-		{
-			"item": "kamenridercraft:perfect_puzzle_gasha_trophy"
+		"M": {
+			"item": "kamenridercraft:proto_mighty_action_x_gashat"
 		},
-		{
-			"item": "kamenridercraft:knockout_fighter_gasha_trophy"
+		"T": {
+			"item": "kamenridercraft:proto_drago_knight_hunter_z_gashat"
 		},
-		{
-			"item": "kamenridercraft:toki_meki_crisis_gasha_trophy"
+		"B": {
+			"item": "kamenridercraft:dangerous_zombie_gashat"
 		},
-		{
+		"G": {
+			"item": "kamenridercraft:proto_bakusou_bike_gashat"
+		},
+		"S": {
 			"item": "kamenridercraft:chronus_clock"
 		}
-	],
+	},
 	"result": {
 		"id": "kamenridercraft:cronus_boss_block"
 	}

@@ -13,6 +13,7 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -64,22 +65,24 @@ public class CronusEntity extends BaseHenchmenEntity {
 	}
 
 
+	@Override
+	public void actuallyHurt(DamageSource source, float amount) {
+		super.actuallyHurt(source, amount);
+		if (!this.level().isClientSide() && source.getEntity() instanceof Player player) {
+			if ((this.getHealth()<100) && player.getInventory().countItem(ExAidRiderItems.HYPER_MUTEKI_GASHAT.get().asItem()) != 0) {
+				if (getItemBySlot(EquipmentSlot.FEET).getItem() == ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()) {
+					ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
 
-	public void tick() {
-		if (this.getHealth()<100) {
-			if(getItemBySlot(EquipmentSlot.FEET).getItem()== ExAidRiderItems.GASHACON_BUGVISOR_II_CHRONOS.get()){
-				ItemStack belt = getItemBySlot(EquipmentSlot.FEET);
+					if (RiderDriverItem.getFormItem(belt, 1) != ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
+						RiderDriverItem.setFormItem(belt, ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get(), 1);
+						this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ExAidRiderItems.DEUS_RUSHER.get()));
+						this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ExAidRiderItems.DEUS_RAMPART.get()));
+					}
 
-				if (RiderDriverItem.getFormItem(belt,1)!= ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get()) {
-					RiderDriverItem.setFormItem(belt, ExAidRiderItems.KAMEN_RIDER_CHRONICLE_GASHAT_GEMEDEUS.get(), 1);
-					this.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ExAidRiderItems.DEUS_RUSHER.get()));
-					this.setItemSlot(EquipmentSlot.OFFHAND,new ItemStack(ExAidRiderItems.DEUS_RAMPART.get()));
+
 				}
-
-
 			}
 		}
-		super.tick();
 	}
 
 	protected void customServerAiStep() {
@@ -123,11 +126,11 @@ public class CronusEntity extends BaseHenchmenEntity {
 		return Monster.createMonsterAttributes()
 				.add(Attributes.FOLLOW_RANGE, 135.0D)
 				.add(Attributes.MOVEMENT_SPEED, 0.3F)
-				.add(Attributes.ATTACK_DAMAGE, 12.0D)
+				.add(Attributes.ATTACK_DAMAGE, 9.0D)
 				.add(Attributes.ARMOR, 3.0D)
 				.add(Attributes.KNOCKBACK_RESISTANCE, 4.0D)
 				.add(Attributes.ATTACK_KNOCKBACK, 2.0D)
-				.add(Attributes.MAX_HEALTH, 300.0D);
+				.add(Attributes.MAX_HEALTH, 200.0D);
 	}
 
 	protected void defineSynchedData(SynchedEntityData.Builder builder) {

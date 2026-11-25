@@ -970,6 +970,13 @@ public class MobsCore {
     public static final DeferredItem<BaseSpawnEggItem> CRONUS_SPAWN_EGG = ITEMS.register("cronus_spawn_egg",
             () -> new BaseSpawnEggItem(CRONUS, 0x000000, 0x44df00, new Item.Properties()));
 
+    public static final DeferredHolder<EntityType<?>, EntityType<GamedeusEntity>> GAMEDEUS = MOBLIST.register("gamedeus",
+            () -> EntityType.Builder.of(GamedeusEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":gamedeus_mob"));
+
+    public static final DeferredItem<BaseSpawnEggItem> GAMEDEUS_SPAWN_EGG = ITEMS.register("gamedeus_spawn_egg",
+            () -> new BaseSpawnEggItem(GAMEDEUS, 0x282828, 0xc3a726, new Item.Properties()));
+
+
     public static final DeferredHolder<EntityType<?>, EntityType<GuardianEntity>> TOUTOGUARDIAN = MOBLIST.register("touto_guardian",
             () -> EntityType.Builder.of(GuardianEntity::new, MobCategory.MONSTER).sized(0.6F, 1.95F).clientTrackingRange(8).build(KamenRiderCraftCore.MOD_ID + ":touto_guardian"));
 

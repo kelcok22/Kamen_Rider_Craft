@@ -754,6 +754,8 @@
 "henshin.kamenridercraft.para_dx_iron":"§7Iron!",
 "henshin.kamenridercraft.para_dx_muscle":"§4Muscle!",
 "henshin.kamenridercraft.cronus":"§bBuggle Up! §aTen wo tsukame Rider! Kizame chronicle! Ima koso toki wa kiwamareri!",
+"henshin.kamenridercraft.gamedeus":"<Gamedeus Bugster> §6I will destroy every last bit of life on this Earth!",
+"henshin.kamenridercraft.gamedeus_doctor_mighty_xx":"Doctor Mighty §6X§5X§f!",
 "henshin.kamenridercraft.smash":"<Sento Kiryu> §9It's a Smash, a transformed human!",
 "henshin.kamenridercraft.night_rogue":"§8Mist Match! §eBat! Bat-Ba-Bat! Fire!",
 "henshin.kamenridercraft.blood_stalk":"§8Mist Match! §4Co-Co-Cobra! Cobra! Fire!",
@@ -9681,6 +9683,8 @@
 "entity.kamenridercraft.rideplayer": "Ride-Player",
 "entity.kamenridercraft.cronus": "Kamen Rider Chronos",
 "entity.kamenridercraft.cronus_gamedeus": "Kamen Rider Chronos (Gamedeus)",
+"entity.kamenridercraft.gamedeus": "Gamedeus Bugster",
+"entity.kamenridercraft.gamedeus_machina": "Gamedeus Machina",
 
 "entity.kamenridercraft.nebula_bugstervirus_mob": "Nebula Bugster",
 "entity.kamenridercraft.kaiser": "Kaiser",
@@ -10025,6 +10029,7 @@
 "item.kamenridercraft.paradx_spawn_egg": "Kamen Rider Para-DX Spawn Egg",
 "item.kamenridercraft.rideplayer_spawn_egg": "Ride-Player Spawn Egg",
 "item.kamenridercraft.cronus_spawn_egg": "Kamen Rider Cronus Spawn Egg",
+"item.kamenridercraft.gamedeus_spawn_egg": "Gamedeus Bugster Spawn Egg",
 
 "item.kamenridercraft.nebulabugstervirus_spawn_egg": "Nebula Bugster Spawn Egg",
 "item.kamenridercraft.kaiser_spawn_egg": "Kaiser Spawn Egg",
@@ -10510,6 +10515,7 @@
 "block.kamenridercraft.megahex_boss_block": "Megahex Boss Block",
 "block.kamenridercraft.gord_drive_boss_block": "Gold Drive Boss Block",
 "block.kamenridercraft.cronus_boss_block": "Cronus Boss Block",
+"block.kamenridercraft.gamedeus_boss_block": "Gamedeus Bugster Boss Block",
 "block.kamenridercraft.night_rogue_boss_block": "Night Rogue Boss Block",
 "block.kamenridercraft.hokuto_trio_boss_block": "Hokuto Trio Boss Block",
 "block.kamenridercraft.hell_bros_boss_block": "Hell Bros. Boss Block",

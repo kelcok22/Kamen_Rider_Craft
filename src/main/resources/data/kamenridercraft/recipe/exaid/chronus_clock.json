@@ -1,35 +1,31 @@
 {
-	"type": "minecraft:crafting_shapeless",
+	"type": "minecraft:crafting_shaped",
 	"group": "cronus",
-	"ingredients": [
-		{
+	"pattern": [
+		"XMX",
+		"GST",
+		"XBX"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:clock"
+		},
+		"M": {
 			"item": "kamenridercraft:mighty_action_x_gasha_trophy"
 		},
-		{
+		"T": {
 			"item": "kamenridercraft:taddle_quest_gasha_trophy"
 		},
-		{
+		"B": {
 			"item": "kamenridercraft:bang_bang_shooting_gasha_trophy"
 		},
-		{
+		"G": {
 			"item": "kamenridercraft:bakusou_bike_gasha_trophy"
 		},
-		{
-			"item": "kamenridercraft:shakariki_sports_gasha_trophy"
-		},
-		{
-			"item": "kamenridercraft:gekitotsu_robots_gasha_trophy"
-		},
-		{
-			"item": "kamenridercraft:doremifa_beat_gasha_trophy"
-		},
-		{
-			"item": "kamenridercraft:giri_giri_chambara_gasha_trophy"
-		},
-		{
-			"item": "kamenridercraft:jet_combat_gasha_trophy"
+		"S": {
+			"item": "kamenridercraft:toki_meki_crisis_gasha_trophy"
 		}
-	],
+	},
 	"result": {
 		"id": "kamenridercraft:chronus_clock"
 	}

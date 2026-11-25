@@ -1,115 +1,139 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-	{
-	  "rolls": 2,
-	  "entries": [
-
+	"type": "minecraft:entity",
+	"pools": [
 		{
-		  "type": "minecraft:item",
-		  "weight": 4,
-		  "name": "kamenridercraft:shakariki_sports_gashat"
+			"rolls": 2,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "kamenridercraft:shakariki_sports_gashat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "kamenridercraft:proto_bang_bang_shooting_gashat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "kamenridercraft:proto_taddle_quest_gashat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 2,
+					"name": "kamenridercraft:proto_bakusou_bike_gashat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "kamenridercraft:shakariki_sports_gasha_trophy"
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "weight": 2,
-		  "name": "kamenridercraft:proto_bang_bang_shooting_gashat"
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "kamenridercraft:proto_mighty_action_x_gashat"
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "weight": 2,
-		  "name": "kamenridercraft:proto_taddle_quest_gashat"
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:blank_gashat",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"min": 2,
+								"max": 4
+							}
+						}
+					]
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "weight": 2,
-		  "name": "kamenridercraft:proto_bakusou_bike_gashat"
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:kuroto_dan_card"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "attacking_player",
+					"predicate": {
+						"slots": {
+							"container.*": {
+								"items": "kamenridercraft:hyper_fumetsu_gashat"
+							}
+						}
+					}
+				}
+			]
 		},
 		{
-		  "type": "minecraft:item",
-		  "weight": 1,
-		  "name": "kamenridercraft:shakariki_sports_gasha_trophy"
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 4,
+					"name": "kamenridercraft:god_maximum_mighty_x_gashat"
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 1,
+					"name": "kamenridercraft:mighty_novel_x_gashat"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "attacking_player",
+					"predicate": {
+						"slots": {
+							"container.*": {
+								"items": "kamenridercraft:bakusou_bike_gashat_turbo"
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:giri_giri_chambara_gasha_trophy"
+				},
+				{
+					"type": "minecraft:item",
+					"name": "kamenridercraft:shakariki_sports_gasha_trophy"
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "attacking_player",
+					"predicate": {
+						"slots": {
+							"container.*": {
+								"items": "kamenridercraft:kamen_rider_chronicle_gashat"
+							}
+						}
+					}
+				}
+			]
 		}
-	  ]
-	},
-	{
-		"rolls": 1,
-		"entries": [
-
-			{
-				"type": "minecraft:item",
-				"weight": 1,
-				"name": "kamenridercraft:proto_mighty_action_x_gashat"
-			}
-		]
-	},
-	{
-	  "rolls": 1,
-	  "entries": [
-		{
-		  "type": "minecraft:item",
-		  "name": "kamenridercraft:blank_gashat",
-		  "functions": [
-			{
-			  "function": "minecraft:set_count",
-			  "count": {
-				"min": 2,
-				"max": 4
-			  }
-			}
-		  ]
-		}
-	  ]
-	},
-	  {
-		  "rolls": 1,
-		  "entries": [
-			  {
-				  "type": "minecraft:item",
-				  "name": "kamenridercraft:kuroto_dan_card"
-			  }
-		  ],
-		  "conditions": [
-			  {
-				  "condition": "minecraft:entity_properties",
-				  "entity": "attacking_player",
-				  "predicate": {
-					  "slots": {
-						  "container.*": {
-							  "items": "kamenridercraft:hyper_fumetsu_gashat"
-						  }
-					  }
-				  }
-			  }
-		  ]
-	  },
-	  {
-		  "rolls": 1,
-		  "entries": [
-			  {
-				  "type": "minecraft:item",
-				  "weight": 4,
-				  "name": "kamenridercraft:god_maximum_mighty_x_gashat"
-			  },
-			  {
-				  "type": "minecraft:item",
-				  "weight": 1,
-				  "name": "kamenridercraft:mighty_novel_x_gashat"
-			  }
-		  ],
-		  "conditions": [
-			  {
-				  "condition": "minecraft:entity_properties",
-				  "entity": "attacking_player",
-				  "predicate": {
-					  "slots": {
-						  "container.*": {
-							  "items": "kamenridercraft:bakusou_bike_gashat_turbo"
-						  }
-					  }
-				  }
-			  }
-		  ]
-	  }
-  ]
+	]
 }

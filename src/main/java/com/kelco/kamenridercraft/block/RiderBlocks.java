@@ -1258,6 +1258,10 @@ public class RiderBlocks {
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     , MobsCore.CRONUS, MIGHTY_BLOCK.get(), BANG_BANG_DRUM.get(), BAKUSOU_TROPHY.get()).addLine(Component.translatable("henshin.kamenridercraft.cronus")).addToList(RIDER_BLOCK));
 
+    public static final DeferredBlock<Block> GAMEDEUS_BOSS_BLOCK = registerBlock("gamedeus_boss_block",
+            () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
+                    , MobsCore.GAMEDEUS).addLine(Component.translatable("henshin.kamenridercraft.gamedeus")).addToList(RIDER_BLOCK));
+
     public static final DeferredBlock<Block> NIGHT_ROGUE_BOSS_BLOCK = registerBlock("night_rogue_boss_block",
             () -> new BossBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).strength(2f)
                     , MobsCore.NIGHT_ROGUE).addLine(Component.translatable("henshin.kamenridercraft.night_rogue")).addToList(RIDER_BLOCK));

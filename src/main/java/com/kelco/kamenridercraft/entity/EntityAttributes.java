@@ -180,6 +180,7 @@ public class EntityAttributes {
         event.put(MobsCore.RIDEPLAYER.get(), RideplayerEntity.setAttributes().build());
         event.put(MobsCore.PARADX.get(), ParaDxEntity.setAttributes().build());
         event.put(MobsCore.CRONUS.get(), CronusEntity.setAttributes().build());
+        event.put(MobsCore.GAMEDEUS.get(), GamedeusEntity.setAttributes().build());
 
         event.put(MobsCore.HOKUTOGUARDIAN.get(), HokutoGuardianEntity.setAttributes().build());
         event.put(MobsCore.TOUTOGUARDIAN.get(), GuardianEntity.setAttributes().build());

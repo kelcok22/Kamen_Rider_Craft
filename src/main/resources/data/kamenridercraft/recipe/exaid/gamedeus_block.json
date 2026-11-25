@@ -1,0 +1,36 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "gamedeus",
+	"ingredients": [
+		{
+			"item": "kamenridercraft:chronus_clock"
+		},
+		{
+			"item": "kamenridercraft:gekitotsu_robots_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:doremifa_beat_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:jet_combat_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:giri_giri_chambara_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:drago_knight_hunter_z_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:shakariki_sports_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:perfect_puzzle_gasha_trophy"
+		},
+		{
+			"item": "kamenridercraft:knockout_fighter_gasha_trophy"
+		}
+	],
+	"result": {
+		"id": "kamenridercraft:gamedeus_boss_block"
+	}
+}

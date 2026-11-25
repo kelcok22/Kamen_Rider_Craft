@@ -801,7 +801,9 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.POPPY_RED_SPAWN_EGG);
             event.accept(MobsCore.PARADX_SPAWN_EGG);
             event.accept(MobsCore.CRONUS_SPAWN_EGG);
+            event.accept(MobsCore.GAMEDEUS_SPAWN_EGG);
             event.accept(RiderBlocks.CRONUS_BOSS_BLOCK);
+            event.accept(RiderBlocks.GAMEDEUS_BOSS_BLOCK);
             event.accept(RiderBlocks.MIGHTY_BLOCK);
             event.accept(RiderBlocks.BANG_BANG_DRUM);
             event.accept(RiderBlocks.BAKUSOU_TROPHY);
@@ -1326,6 +1328,7 @@ public class KRCCreativeTabs {
             event.accept(MobsCore.POPPY_RED_SPAWN_EGG);
             event.accept(MobsCore.PARADX_SPAWN_EGG);
             event.accept(MobsCore.CRONUS_SPAWN_EGG);
+            event.accept(MobsCore.GAMEDEUS_SPAWN_EGG);
 
             event.accept(MobsCore.GUARDIAN_SPAWN_EGG);
             event.accept(MobsCore.HOKUTO_GUARDIAN_SPAWN_EGG);
