@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:piranha",
+          "weight": 10,
+          "quality": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "unenchanted_chance": 0.2,
+              "enchanted_chance": 0.3,
+              "enchantment": "minecraft:luck_of_the_sea"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biomes": [
+              "minecraft:jungle",
+              "minecraft:bamboo_jungle",
+              "minecraft:sparse_jungle",
+              "minecraft:swamp",
+              "minecraft:mangrove_swamp"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kamenridercraft:mayo",
+          "weight": 10,
+          "quality": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_enchanted_bonus",
+              "unenchanted_chance": 0.2,
+              "enchanted_chance": 0.3,
+              "enchantment": "minecraft:luck_of_the_sea"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}
