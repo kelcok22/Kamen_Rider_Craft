@@ -1,0 +1,15 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:president_dan_kuroto_progrisekey"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:genm_musou_gashat"
+			},
+			"weight": 1
+		}
+	]
+}

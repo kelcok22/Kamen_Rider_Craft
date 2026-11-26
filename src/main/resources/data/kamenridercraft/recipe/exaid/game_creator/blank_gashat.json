@@ -1,0 +1,18 @@
+{
+	"type": "kamenridercraft:game_creator",
+	"primary_input": {
+		"item": "kamenridercraft:rider_circuit"
+	},
+	"optional_input": {
+		"item": "kamenridercraft:bugster_virus_dna"
+	},
+	"outputs": [
+		{
+			"result": {
+				"count": 1,
+				"id": "kamenridercraft:blank_gashat"
+			},
+			"weight": 20
+		}
+	]
+}
