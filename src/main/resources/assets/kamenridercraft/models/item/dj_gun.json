@@ -1,6 +1,41 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "kamenridercraft:item/dj_gun"
-  }
+	"format_version": "26.3",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "kamenridercraft:item/dj_gun"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, -2.25, -7.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, -2.25, -7.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 5.95, -4.37]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 5.95, -4.37]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"translation": [-3.25, 2.25, 0],
+			"scale": [1.25, 1.25, 1.25]
+		},
+		"head": {
+			"translation": [-9.5, 7.75, 0],
+			"scale": [4, 1, 1]
+		},
+		"fixed": {
+			"rotation": [0, -180, 0],
+			"translation": [2, 2, 0]
+		}
+	}
 }

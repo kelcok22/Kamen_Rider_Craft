@@ -19,27 +19,27 @@ public class GlowHenshinRenderLayerInfo extends RenderLayerInfo {
 
     public GlowHenshinRenderLayerInfo(String texture, String model, int num) {
         super(texture, model);
-        Text=texture;
-        Model=model;
+        Text = texture;
+        Model = model;
     }
 
     public void ApplyRenderLayer(BakedGeoModel model, ItemStack stack, LivingEntity entity, float partialTick, MultiBufferSource pBufferSource, PoseStack poseStack, int packedLight) {
         for (GeoBone head : model.topLevelBones()) {
             if (head != null) {
-                float scale = (float) (1.1-(entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue()-partialTick)/25);
-                head.setScaleX(scale );
-                head.setScaleY(scale );
-                head.setScaleZ(scale );
+                float scale = (float) (1.1 - (entity.getAttribute(KRCAttributes.IS_TRANSFORMING).getBaseValue() - partialTick) / 25);
+                head.setScaleX(scale);
+                head.setScaleY(scale);
+                head.setScaleZ(scale);
             }
         }
 
     }
+
     public RenderType getRenderType(float partialTick, LivingEntity livingEntity) {
-        return RenderType.energySwirl(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/"+Text+".png"),0,0);
+        return RenderType.energySwirl(ResourceLocation.fromNamespaceAndPath(KamenRiderCraftCore.MOD_ID, "textures/armor/" + Text + ".png"), 0, 0);
     }
 
     public String getModel(float partialTick, LivingEntity RIDER) {
         return Model;
     }
-
 }

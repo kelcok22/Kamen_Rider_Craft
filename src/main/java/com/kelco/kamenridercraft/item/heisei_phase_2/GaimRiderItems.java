@@ -685,6 +685,9 @@ public class GaimRiderItems {
                 }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30) {
+                        AnimationUtil.playPose(player,"gaim.henshin_standard_or_switch");
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.ORANGE_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
@@ -702,8 +705,17 @@ public class GaimRiderItems {
                     new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 40, 0, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 2, true, false),
                     new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 2, true, false)) {
+                public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
+                    super.SetUnlimitedModels(layerInfo, itemStack, rider, slot);
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider)) {
+                        layerInfo.add(new GaimArmsRenderLayerInfo("zangetsu_kachidoki_arms_fruit", "kachidoki_arms_fruit"));
+                    }
+                }
                 public void transformationEffect(ItemStack itemstack, LivingEntity player, Double tick) {
                     super.transformationEffect(itemstack, player, tick);
+                    if (tick == 30) {
+                        AnimationUtil.playPose(player,"zangetsu.henshin_kachidoki");
+                    }
                     if (tick == 1d) {
                         ((ServerLevel) player.level()).sendParticles(ModParticles.GREEN_SPARK_PARTICLES.get(),
                                 player.getX(), player.getY() + 1,
