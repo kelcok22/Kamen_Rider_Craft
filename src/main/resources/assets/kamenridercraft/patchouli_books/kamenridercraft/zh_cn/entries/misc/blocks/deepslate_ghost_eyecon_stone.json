@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "挖掘此方块可获得 $(l:ghost/items/ghost_eyecons#necrom_ghost_eyecon)Ghost眼魂$(/l)$(br2)需要铁镐或更好的镐子$(br2)$(l)自2025年万圣节更新起不再自然生成$(/l)$(br2)掉落：$(li)$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（32.1%）$(li)$(l:ghost/items/ghost_eyecons#necrom_ghost_eyecon)黑暗幽冥眼魂$(/l)（16%）$(li)$(l:ghost/items/ghost_eyecons#dark_ghost_eyecon)黑暗Ghost眼魂$(/l)（5.3%）"
+            "text": "挖掘此方块可获得 $(l:ghost/items/ghost_eyecons#necrom_ghost_eyecon)Ghost眼魂$(/l)$(br2)需要铁镐或更好的镐子$(br2)$(l)自2025年万圣节更新起不再自然生成$(br2)掉落：$(li)$(l:ghost/items/blank_ghost_eyecon)空白眼魂$(/l)（32.1%）$(li)$(l:ghost/items/ghost_eyecons#necrom_ghost_eyecon)黑暗幽冥眼魂$(/l)（16%）$(li)$(l:ghost/items/ghost_eyecons#dark_ghost_eyecon)黑暗Ghost眼魂$(/l)（5.3%）"
         },
         {
             "type": "patchouli:spotlight",

@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "magewizardriver",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#amber)假面骑士Mage"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#amber)假面骑士Mage$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_b",
 			"title": "Mage腰带(蓝Mage)",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#blue)假面骑士Mage"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#blue)假面骑士Mage$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -27,7 +27,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_g",
 			"title": "Mage腰带(绿Mage)",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#green)假面骑士Mage"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage#green)假面骑士Mage$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -37,7 +37,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_foot_soldiers",
 			"title": "Mage腰带(近卫队士兵)",
-			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage_imperial_guard)假面骑士Mage（近卫队士兵）"
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage_imperial_guard)假面骑士Mage（近卫队士兵）$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -50,7 +50,7 @@
 			"type": "patchouli:text",
 			"anchor": "magewizardriver_captain",
 			"title": "Mage腰带(近卫队队长)",
-			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage_imperial_captain)假面骑士Mage（近卫队队长）"
+			"text": "登场于：$(li)假面骑士Wizard 魔法之地 (2013年，电影)$(br2)与$(l:wizard/devices/armor)Wizard装甲$(/l)一起穿戴，可变身为$(l:wizard/riders/mage_imperial_captain)假面骑士Mage（近卫队队长）$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -60,4 +60,4 @@
 			"text": "掉落自：$(li)$(l:wizard/mobs/mage_captain)近卫队队长$(/l)"
 		}
 	]
-}
+		}

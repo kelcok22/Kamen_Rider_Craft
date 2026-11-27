@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度 II$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)速度 II$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量（持武器时）$(li)炎拳$(li)跳跃提升"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量$(li)炎拳$(li)跳跃提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -128,7 +128,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)急迫 II"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)急迫 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -254,7 +254,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 IV（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VI$(li)抗火"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 IV$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VI$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)力量 III（持武器时）$(li)抗性提升$(li)夜视"
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 III$(li)抗性提升$(li)夜视"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "歌查兄弟",
-			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 IV（空手时）$(li)力量 II（持武器时）$(li)速度 II$(li)夜视 II$(li)急迫 II$(li)跳跃提升 III"
+			"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多 (2023年，网络剧)$(br2)通过穿戴$(l:gotchard/devices/gotchardriver_brother)歌查兄弟驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升$(li)力量 II$(li)速度 II$(li)夜视 II$(li)急迫 II$(li)跳跃提升 III"
 		},
 		{
 			"type": "patchouli:entity",

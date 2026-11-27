@@ -53,7 +53,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "爆炎战士",
-			"text": "通过使用 $(l:misc/items/card_warrior_cards#bakuen_no_senshi)爆炎战士卡牌战士卡牌$(/l) 进行形态切换"
+			"text": "通过使用 $(l:misc/items/ride_monster_cards#bakuen_no_senshi)爆炎战士卡牌战士卡牌$(/l) 进行形态切换"
 		},
 		{
 			"type": "patchouli:text",

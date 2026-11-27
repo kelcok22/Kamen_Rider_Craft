@@ -16,7 +16,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士黑暗幽冥(红)",
-			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)原型兆目润泽器(黑暗幽冥·红)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)力量 II"
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)原型兆目润泽器(黑暗幽冥·红)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)拳力提升 II$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士黑暗幽冥(红)",
-			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)原型兆目润泽器(黑暗幽冥·红)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度 II$(li)抗性提升$(li)力量 II"
+			"text": "登场于：$(li)假面骑士Ghost：100个眼魂与Ghost的命运时刻 (2016年，电影)$(br2)通过穿戴$(l:ghost/devices/proto_mega_ulorder#proto_mega_ulorder_red)原型兆目润泽器(黑暗幽冥·红)$(/l)进行变身$(br2)任何Ghost驱动器或兆目润泽器使用者均可使用此形态$(br2)状态效果：$(li)速度$(li)力量 II"
 		}
 	]
-}
+		}

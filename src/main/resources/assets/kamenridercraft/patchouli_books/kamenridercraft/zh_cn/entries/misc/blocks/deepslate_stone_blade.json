@@ -6,6 +6,10 @@
     "pages": [
         {
             "type": "patchouli:text",
+            "text": "1.1.5版本更新后不在生成"
+        },
+        {
+            "type": "patchouli:text",
             "text": "挖掘此方块可获得剑的 $(l:blade/items/bladecard)觉醒卡片$(/l)$(br2)需要铁镐或更好的镐子$(br2)掉落：$(li)$(l:blade/items/bladecard)空白觉醒卡$(/l)（16%）$(li)$(l:blade/items/rouze_cards#change_beetle)觉醒卡片·变化长戟大兜虫$(/l)（9%）$(li)$(l:blade/items/rouze_cards#fusion_eagle)觉醒卡片·融合鹰鹫$(/l)（5%）$(li)$(l:blade/items/rouze_cards#absorb_capricorn)觉醒卡片·吸收山羊$(/l)（5%）$(li)$(l:blade/items/rouze_cards#evolution_caucasus)觉醒卡片·进化高加索$(/l)（2%）$(li)$(l:blade/items/rouze_cards#change_stag)觉醒卡片·变化锹形虫$(/l)（9%）"
         },
         {

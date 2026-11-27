@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "kabuto_rider_belt",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/kabuto)假面骑士甲斗"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/kabuto)假面骑士甲斗$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -17,7 +17,7 @@
 			"type": "patchouli:text",
 			"anchor": "gatack_rider_belt",
 			"title": "骑士代扣(钢斗)",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/gatack)假面骑士钢斗"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/gatack)假面骑士钢斗$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -28,7 +28,7 @@
 			"type": "patchouli:text",
 			"anchor": "dark_kabuto_rider_belt",
 			"title": "骑士代扣(黑暗甲斗)",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/dark_kabuto)假面骑士黑暗甲斗"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/dark_kabuto)假面骑士黑暗甲斗$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -36,4 +36,4 @@
 			"recipe": "kamenridercraft:kabuto/dark_kabuto_rider_belt"
 		}
 	]
-}
+		}

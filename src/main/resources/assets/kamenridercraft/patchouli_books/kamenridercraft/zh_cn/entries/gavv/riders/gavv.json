@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 VII（空手时）$(li)拳力提升 IV$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 VII（空手时）$(li)拳力提升 IV$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -58,7 +58,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)力量 VII（空手时）$(li)拳力提升 IV$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IV$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -72,7 +72,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)跳跃提升 II$(li)力量 II（持剑时）"
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)力量 V（持武器时）$(li)爆裂拳$(li)重力$(li)缓慢 II$(li)抗性提升 IV$(li)跳跃提升 II"
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 V$(li)爆裂拳$(li)重力$(li)缓慢 II$(li)抗性提升 IV$(li)跳跃提升 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -235,12 +235,12 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "惊异软糖",
-			"text": "通过使用 $(l:gavv/items/amazingummy_gochizo)惊异软糖饱藏$(/l) 进行形态切换"
+			"text": "通过使用 $(l:gavv/items/gochizo#amazingummy_gochizo)惊异软糖饱藏$(/l) 进行形态切换"
 		},
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)雷达$(li)速度 II$(li)抗性提升 III$(li)火焰斩$(li)跳跃提升 III"
+			"text": "登场于：$(li)假面骑士加布 (2024年，电视剧)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)雷达$(li)速度 II$(li)抗性提升 III$(li)火焰斩$(li)跳跃提升 III"
 		},
 		{
         "type": "patchouli:entity",
@@ -268,7 +268,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布：零食美食家 呜！-舞和纸！！ (2025年，超战斗影像)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)抗性提升"
+			"text": "登场于：$(li)假面骑士加布：零食美食家 呜！-舞和纸！！ (2025年，超战斗影像)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)抗性提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -282,7 +282,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布：零食美食家 呜！-舞和纸！！ (2025年，超战斗影像)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)抗性提升"
+			"text": "登场于：$(li)假面骑士加布：零食美食家 呜！-舞和纸！！ (2025年，超战斗影像)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)抗性提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -296,7 +296,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)DX骑士饱藏特别套装 - 美味棒联名款 (2025年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)力量 VI（空手时）$(li)抗性提升"
+			"text": "登场于：$(li)DX骑士饱藏特别套装 - 美味棒联名款 (2025年，玩具系列)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 III$(li)抗性提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -310,7 +310,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布：趣味甜点茶会 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)力量 V（空手时）$(li)抗性提升"
+			"text": "登场于：$(li)假面骑士加布：趣味甜点茶会 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)拳力提升 II$(li)抗性提升"
 		},
 		{
 			"type": "patchouli:entity",
@@ -338,7 +338,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度 II"
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)速度 II"
 		},
 		{
 			"type": "patchouli:entity",
@@ -380,7 +380,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士加布",
-			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)力量 II（持剑时）$(li)速度"
+			"text": "登场于：$(li)假面骑士加布：最终舞台 (2025年，舞台 show)$(br2)通过穿戴$(l:gavv/devices/henshin_belt_gavv)加布变身腰带$(/l)进行变身$(br2)状态效果：$(li)斩击提升 II$(li)速度"
 		},
 		{
 			"type": "patchouli:entity",

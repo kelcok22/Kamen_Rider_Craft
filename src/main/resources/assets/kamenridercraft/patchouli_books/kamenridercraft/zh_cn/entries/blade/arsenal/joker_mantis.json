@@ -6,14 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由Joker不死生物使用"
+			"text": "登场于：$(li)假面骑士剑 (2004年，电视剧)$(br2)由$(l:blade/mobs/joker_undead#undead_joker)Joker不死兽$(/l)使用"
 		},
 		{
-			"type": "patchouli:spotlight",
-			"link_recipe": true,
-			"item": "kamenridercraft:joker_mantis",
+			"type": "patchouli:crafting",
 			"title": " ",
-			"text": "物品目前无法获得"
+			"recipe": "kamenridercraft:blade/joker_mantis"
 		}
 	]
-}
+		}

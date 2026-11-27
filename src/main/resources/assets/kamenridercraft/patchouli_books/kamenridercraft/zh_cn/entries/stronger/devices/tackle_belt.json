@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:text",
 			"anchor": "tackle_belt",
-			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br2)与$(l:stronger/devices/armor)强人装甲$(/l)一起穿戴，可变身为$(l:stronger/riders/tackle#tackle)电波人"
+			"text": "登场于:$(li)假面骑士强人（1975年，电视剧）$(br2)与$(l:stronger/devices/armor)强人装甲$(/l)一起穿戴，可变身为$(l:stronger/riders/tackle#tackle)电波人$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -18,7 +18,7 @@
 			"type": "patchouli:text",
 			"anchor": "black_tackle_belt",
 			"title": "黑色电波腰带",
-			"text": "登场于:$(li)假面骑士Jeanne& 假面骑士Aguilera with Girls Remix（2022年，网络剧）$(br2)与$(l:stronger/devices/armor)强人装甲$(/l)一起穿戴，可变身为$(l:stronger/riders/black_tackle)黑电波人"
+			"text": "登场于:$(li)假面骑士Jeanne& 假面骑士Aguilera with Girls Remix（2022年，网络剧）$(br2)与$(l:stronger/devices/armor)强人装甲$(/l)一起穿戴，可变身为$(l:stronger/riders/black_tackle)黑电波人$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -28,4 +28,4 @@
 			"text": "该物品目前无法获取"
 		}
 	]
-}
+		}

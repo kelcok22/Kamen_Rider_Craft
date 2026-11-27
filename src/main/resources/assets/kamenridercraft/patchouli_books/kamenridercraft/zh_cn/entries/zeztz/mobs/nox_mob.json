@@ -7,7 +7,7 @@
 		{
 			"type": "patchouli:entity",
 			"entity": "kamenridercraft:nox_mob",
-			"text": "登场于：$(li)假面骑士Zeztz（2025年，电视剧）$(br)生命值：60"
+			"text": "登场于：$(li)假面骑士亚极陀骑士Zeztz（2025年，电视剧）$(br)生命值：60"
 		},
 		{
 			"type": "patchouli:text",

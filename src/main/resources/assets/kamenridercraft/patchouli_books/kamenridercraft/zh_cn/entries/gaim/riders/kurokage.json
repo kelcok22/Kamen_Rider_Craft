@@ -44,7 +44,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士黑影",
-			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_kurokage)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)拳力提升 II$(li)力量 V（空手）$(li)饱和"
+			"text": "登场于：$(li)假面骑士战斗：Ganbarizing (2013年，街机游戏)$(br2)通过穿戴$(l:gaim/devices/sengoku_driver#sengoku_driver_kurokage)战极驱动器$(/l)进行变身$(br2)任何战极驱动器使用者均可使用此形态$(br2)状态效果：$(li)拳力提升 II$(li)饱和"
 		},
 		{
 			"type": "patchouli:entity",

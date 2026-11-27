@@ -97,7 +97,7 @@
 			"type": "patchouli:text",
 			"anchor": "land_ring_dragon",
 			"title": "大地魔龙巫师指环",
-			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于切换Wizard的 $(l:wizard/riders/wizard#land_dragon)大地魔龙风格$(/l)$(br2)用于切换Beast的 $(l:wizard/riders/beast#wizard)Beast风格$(/l)"
+			"text": "登场于：$(li)假面骑士Wizard (2012年，电视剧)$(br2)用于切换Wizard的 $(l:wizard/riders/wizard#land_dragon)大地魔龙风格$(/l)$(br2)用于切换Beast的 $(l:wizard/riders/beast)Beast风格$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -332,7 +332,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:dark_ring",
 			"title": " ",
-			"text": "可在魔法师 $(l:misc/stageshow)舞台秀$(/l) 中获得$(br2)掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)未知巫师指环(紫)$(/l)"
+			"text": "可在魔法师 $(l:misc/stageshow)舞台秀$(/l) 中获得$(br2)掉落自：$(li)$(l:wizard/items/unknown_wizard_rings#unknown_violet_ring)未知巫师指环(紫)$(/l)$(li)$(l:misc/stageshow#dark_wizard)假面骑士黑暗Wizard$(/l)"
 		},
 		{
 			"type": "patchouli:text",
@@ -673,4 +673,4 @@
 			"text": "物品目前无法获得"
 		}
 	]
-}
+		}

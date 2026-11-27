@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)Kamen Rider: Beyond Generations (2021年，电影)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/century)假面骑士世纪"
+			"text": "登场于：$(li)Kamen Rider: Beyond Generations (2021年，电影)$(br2)与$(l:revice/devices/armor)利维斯装甲$(/l)一起穿戴，可变身为$(l:revice/riders/century)假面骑士世纪$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:revice/cyclotron_driver"
 		}
 	]
-}
+		}

@@ -41,7 +41,7 @@
 			"type": "patchouli:text",
 			"anchor": "volcano_vistamp",
 			"title": "火山暴龙罪恶印章",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#volcano_rex)熔岩暴龙 基因组$(/l)$(br2)用于切换维斯的$(l:revice/riders/vice#volcano_rex)熔岩暴龙 基因组$(/l)"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)用于切换利维的$(l:revice/riders/revi#volcano_rex)熔岩暴龙 基因组$(/l)$(br2)用于切换维斯的$(l:#barid_rex)熔岩暴龙 基因组$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -380,7 +380,7 @@
 			"type": "patchouli:text",
 			"anchor": "giant_spider_vistamp",
 			"title": "巨大蜘蛛罪恶印章",
-			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons#giant_spider)帝国蒂蒙斯$(/l)形态"
+			"text": "登场于：$(li)利维斯向前：假面骑士Live&Evil&Demons (2023年，V-Cinema电影)$(br2)用于切换蒂蒙斯的$(l:revice/riders/demons)帝国蒂蒙斯$(/l)形态"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1207,7 +1207,7 @@
 			"link_recipe": true,
 			"item": "kamenridercraft:toysaurus_vistamp",
 			"title": " ",
-			"text": "$(br2)通过和学徒级$(l:misc/villagers#candyshop_villager)玩具收藏家$(/l)交易获取"
+			"text": "$(br2)通过和学徒级$(l:misc/villagers#collector_villager)玩具收藏家$(/l)交易获取"
 		},
 		{
 			"type": "patchouli:text",

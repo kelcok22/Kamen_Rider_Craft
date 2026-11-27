@@ -25,7 +25,7 @@
 			"scale": -1,
 			"offset": 0.1,
 			"name": "史前",
-			"text": "通过使用(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. 英雄传奇$(/l)进行形态切换"
+			"text": "通过使用(l:misc/items/kuuga_amazing_mighty_artist)S.I.C. 英雄传奇进行形态切换"
 		},
 		{
 			"type": "patchouli:text",

@@ -10,7 +10,7 @@
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "kamenridercraft:ex_aid/rider_gashat_case"
+			"recipe": "kamenridercraft:exaid/rider_gashat_case"
 		}
 	]
 }

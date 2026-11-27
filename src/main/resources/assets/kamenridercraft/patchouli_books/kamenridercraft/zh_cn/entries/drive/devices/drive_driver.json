@@ -29,7 +29,7 @@
 			"type": "patchouli:text",
 			"anchor": "drivedriver_heart",
 			"title": "Drive驱动器（Heart版）",
-			"text": "登场于：$(li)Drive Saga：假面骑士Heart (2016年，V-Cinema电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/heart)假面骑士Heart"
+			"text": "登场于：$(li)Drive Saga：假面骑士Heart (2016年，V-Cinema电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/heart)假面骑士Heart$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -62,4 +62,4 @@
 			"text": "该物品目前无法获取"
 		}
 	]
-}
+		}

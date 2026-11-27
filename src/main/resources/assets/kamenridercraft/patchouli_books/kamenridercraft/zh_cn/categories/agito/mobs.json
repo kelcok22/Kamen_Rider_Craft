@@ -1,7 +1,7 @@
 {
 	"parent": "kamenridercraft:agito/main",
     "name": "相关生物",
-    "description": "来自《假面骑士亚极陀》或与其相关的所有生物.",
+    "description": "来自《假面骑士亚极陀》或与其相关的所有生物.$(br2)龙酱贴心小提醒:基尔亚极陀和闪耀基尔亚极陀不会自然生成，需要酿造$(l:misc/potion#agito_factor)亚极陀因子$(/l)药水",
     "icon": "kamenridercraft:agito_logo",
     "sortnum": 4
 }

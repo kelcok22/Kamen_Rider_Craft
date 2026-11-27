@@ -30,7 +30,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士灵雀",
-			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_nudge_sparrow)欲望驱动器(灵雀)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)夜视$(br2)怪兽代扣效果：$(li)拳力提升 V$(li)力量 VIII（空手时）$(li)抗性提升 II"
+			"text": "登场于：$(li)假面骑士极狐（2022年，电视剧）$(br2)通过穿戴$(l:geats/devices/desire_driver#desire_driver_nudge_sparrow)欲望驱动器(灵雀)$(/l)进行变身$(br2)除 $(l:geats/riders/xgeats)X极狐$(/l) 和 $(l:geats/riders/dooms_geats)灾厄极狐$(/l) 外，任何欲望驱动器使用者均可使用此形态$(br2)核心ID效果：$(li)夜视$(br2)怪兽代扣效果：$(li)拳力提升 V$(li)抗性提升 II"
 		},
 		{
 			"type": "patchouli:entity",

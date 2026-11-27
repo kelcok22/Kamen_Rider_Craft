@@ -27,6 +27,12 @@
             "text": "可在 $(l:misc/city/centers#shocker_base)修卡基地$(/l) 中找到$(br2)挖掘此方块可以召唤 $(l:faiz/mobs/faiz)假面骑士Faiz$(/l)"
         },
         {
+            "type": "patchouli:crafting",
+            "anchor": "category_king_undead_boss_block",
+            "recipe": "kamenridercraft:blade/category_king_undead_boss_block",
+            "text": "挖掘此方块可以召唤 $(l:blade/mobs/king_undead)类别King不死兽$(/l)"
+        },
+        {
             "type": "patchouli:spotlight",
             "link_recipe": true,
             "anchor": "gaoh_boss_block",
@@ -222,7 +228,7 @@
             "type": "patchouli:crafting",
             "anchor": "quartzer_boss_block",
             "recipe": "kamenridercraft:zi_o/quartzer_boss_block",
-            "text": "挖掘此方块可以召唤 $(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)、$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l) 和 $(l:zi_o/m)假面骑士扎莫纳斯$(/l)"
+            "text": "挖掘此方块可以召唤 $(l:zi_o/mobs/barlckxs)假面骑士巴尔克斯$(/l)、$(l:zi_o/mobs/zonjis)假面骑士宗吉斯$(/l) 和 假面骑士扎莫纳斯"
         },
         {
             "type": "patchouli:spotlight",

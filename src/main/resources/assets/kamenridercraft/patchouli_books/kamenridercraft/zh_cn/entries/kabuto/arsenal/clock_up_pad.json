@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)被所有$(l:kabuto/riders)甲斗系列骑士$(/l)$(br2)使用技能可以获得12秒的速度 XXI,海帕形态为12秒速度 XLI"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)被所有甲斗系列骑士$(br2)使用技能可以获得12秒的速度 XXI,海帕形态为12秒速度 XLI"
 		},
 		{
 			"type": "patchouli:crafting",

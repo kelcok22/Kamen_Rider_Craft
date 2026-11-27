@@ -526,7 +526,7 @@
         "type": "patchouli:text",
         "anchor": "birth_ring",
         "title": "Birth巫师指环",
-        "text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)召唤 $(l:w/riders/birth)假面骑士Birth$(/l)"
+        "text": "登场于：$(li)假面骑士×假面骑士 Wizard & Fourze: Movie War Ultimatum (2012年，电影)$(br2)召唤 假面骑士Birth"
       },
       {
         "type": "patchouli:spotlight",

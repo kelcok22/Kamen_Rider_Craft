@@ -41,7 +41,7 @@
 			"type": "patchouli:text",
 			"anchor": "build_driver_rogue",
 			"title": "Build驱动器(鳄霸)",
-			"text": "登场于：$(li)假面骑士至尊鳄霸 (2018年，特别战斗影像)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:build/riders/rogue#prime_rogue)假面骑士至尊鳄霸$(/l)$(br2)最多可存储3组满装瓶罐"
+			"text": "登场于：$(li)假面骑士至尊鳄霸 (2018年，特别战斗影像)$(br2)与$(l:build/devices/armor)Build装甲$(/l)一起穿戴，可变身为$(l:#prime)假面骑士至尊鳄霸$(/l)$(br2)最多可存储3组满装瓶罐"
 		},
 		{
 			"type": "patchouli:crafting",

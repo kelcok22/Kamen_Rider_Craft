@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/lupin)假面骑士鲁邦"
+			"text": "登场于：$(li)假面骑士×假面骑士 Drive & 铠武：电影大战全速前进 (2014年，电影)$(br2)与$(l:drive/devices/armor)Drive装甲$(/l)一起穿戴，可变身为$(l:drive/riders/lupin)假面骑士鲁邦$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -16,4 +16,4 @@
 			"text": "通过不佩戴任何腰带或驱动器发射$(l:drive/arsenal/lupin_gunner)鲁邦枪手$(/l)获得"
 		}
 	]
-}
+		}

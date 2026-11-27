@@ -94,7 +94,7 @@
 			"type": "patchouli:text",
 			"anchor": "greywolch",
 			"title": "光子灰狼 驾驭怪物卡牌",
-			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换555的 $(l:faiz/riders/faiz#greywolch)光子灰狼$(/l) 形态"
+			"text": "登场于：$(li)卡牌战士假面骑士（2009年，漫画/玩具系列）$(br2)可以切换555的 $(l:faiz/riders/faiz)光子灰狼$(/l) 形态"
 		},
 		{
 			"type": "patchouli:crafting",

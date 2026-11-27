@@ -16,7 +16,12 @@
 				"kamenridercraft:patchouli_books/kamenridercraft/images/god_speed_love.png"
 			],
 			"title": " ",
-			"text": "$(li)1个$(l:kabuto/devices/zect_buckle#chophopper_rider_belt)ZECT带扣$(/l) (28.6%)$(li)1个$(l:misc/items/music_discs#next_level_music_disc)NEXT LEVEL 音乐唱片$(/l) (14.3%)"
+			"text": "$(li)1个$(l:misc/items/music_discs#next_level_music_disc)NEXT LEVEL 音乐唱片$(/l) (14.3%)"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "",
+			"text": "$(li)1个$(l:kabuto/items/zecters#atlas_zecter)阿特拉斯昆虫仪$(/l) (14.3%)$(li)1个$(l:kabuto/items/zecters#giraffa_zecter)长颈鹿锯楸昆虫仪$(/l) (14.3%)"
 		}
 	]
 }

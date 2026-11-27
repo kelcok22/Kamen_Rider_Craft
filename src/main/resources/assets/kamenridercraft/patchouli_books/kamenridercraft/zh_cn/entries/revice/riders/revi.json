@@ -86,7 +86,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士利维",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)力量 X（空手时）$(li)夜视"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VII$(li)夜视"
 		},
 		{
 			"type": "patchouli:entity",
@@ -114,7 +114,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士利维",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)力量（持武器时）"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量"
 		},
 		{
 			"type": "patchouli:entity",
@@ -212,7 +212,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士五十岚",
-			"text": "登场于：$(li)假面骑士利维斯：战斗家族 (2022年，电影)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IX（空手时）$(li)力量 IV$(li)速度 VI$(li)毒药抗性$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VII$(li)抗火$(li)飞行"
+			"text": "登场于：$(li)假面骑士利维斯：战斗家族 (2022年，电影)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VI$(li)力量 IV$(li)速度 VI$(li)毒药抗性$(li)抗性提升 IV$(li)夜视$(li)跳跃提升 VII$(li)抗火$(li)飞行"
 		},
 		{
 			"type": "patchouli:entity",
@@ -226,7 +226,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士利维",
-			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IX$(li)力量 XII（空手时）$(li)力量 V（持武器时）$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)跳跃提升 VII$(li)抗火"
+			"text": "登场于：$(li)假面骑士利维斯 (2021年，电视剧)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 IX$(li)力量 V$(li)速度 VI$(li)抗性提升 IV$(li)夜视$(li)急迫 IV$(li)跳跃提升 VII$(li)抗火"
 		},
 		{
 			"type": "patchouli:entity",
@@ -352,7 +352,7 @@
 		{
 			"type": "patchouli:text",
 			"title": "假面骑士利维",
-			"text": "登场于：$(li)DX白狮与风神翼龙罪恶印章套装 (2021年，玩具系列)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)力量 XI（空手时）$(li)力量 III（持武器时）$(li)夜视$(li)跳跃提升 IV"
+			"text": "登场于：$(li)DX白狮与风神翼龙罪恶印章套装 (2021年，玩具系列)$(br2)通过穿戴$(l:revice/devices/revice_driver#revice_driver)利维斯驱动器$(/l)进行变身$(br2)状态效果：$(li)拳力提升 VIII$(li)力量 III$(li)夜视$(li)跳跃提升 IV"
 		},
 		{
 			"type": "patchouli:entity",

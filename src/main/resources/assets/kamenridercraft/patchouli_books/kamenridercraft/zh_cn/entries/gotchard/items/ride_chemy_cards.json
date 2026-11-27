@@ -341,7 +341,7 @@
 			"type": "patchouli:text",
 			"anchor": "machwheel_ride_chemy_card",
 			"title": "马赫车轮驾驭凯米卡",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成瓦尔巴拉德的$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad#valvarad)基础$(/l)形态"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成瓦尔巴拉德的$(l:gotchard/devices/valvaradriver)瓦尔巴拉德驱动器$(/l)$(br2)可切换瓦尔巴拉德的$(l:gotchard/riders/valvarad)基础$(/l)形态"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -903,7 +903,7 @@
 			"type": "patchouli:text",
 			"anchor": "ufo_x_ride_chemy_card",
 			"title": "UFO-X驾驭凯米卡",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#super_ufo_x)超级歌查德 交叉十幽浮$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cross_ufo_x)歌查兄弟 超级交叉十幽浮$(/l)"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard)超级歌查德 交叉十幽浮$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cross_ufo_x)歌查兄弟 超级交叉十幽浮$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1031,7 +1031,7 @@
 			"type": "patchouli:text",
 			"anchor": "x_rex_ride_chemy_card",
 			"title": "X暴龙驾驭凯米卡",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard#super_x_rex)超级歌查德 交叉十暴龙$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cross_x_rex)歌查兄弟 超级交叉十暴龙$(/l)"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)可切换歌查德的$(l:gotchard/riders/gotchard)超级歌查德 交叉十暴龙$(/l)形态$(br2)可切换或召唤$(l:gotchard/riders/gotcharbrothers#cross_x_rex)歌查兄弟 超级交叉十暴龙$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
@@ -1170,7 +1170,7 @@
 			"type": "patchouli:text",
 			"anchor": "gigabaham_ride_chemy_card",
 			"title": "千兆巴哈姆驾驭凯米卡",
-			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成Wind的$(l:gotchard/devices/alchemisdriver_wind)炼金术士驱动器(Wind)$(/l)"
+			"text": "登场于：$(li)假面骑士歌查德 (2023年，电视剧)$(br2)用于合成Wind的$(l:gotchard/devices/alchemisdriver)炼金术士驱动器(Wind)$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -1876,7 +1876,7 @@
 	"type": "patchouli:text",
 	"anchor": "den_o_ride_chemy_card",
 	"title": "电王骑士凯米驾驭卡",
-	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#den_o)华丽电王$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:den_o/riders/den_o)假面骑士电王$(/l)"
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend)华丽电王$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:den_o/riders/den_o)假面骑士电王$(/l)"
 },
 {
 	"type": "patchouli:spotlight",
@@ -2006,7 +2006,7 @@
 	"type": "patchouli:text",
 	"anchor": "ex_aid_ride_chemy_card",
 	"title": "Ex-Aid骑士凯米驾驭卡",
-	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#ex_aid)华丽Ex-Aid$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:ex_aid/riders/ex_aid)假面骑士Ex-Aid$(/l)"
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend)华丽Ex-Aid$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:ex_aid/riders/ex_aid)假面骑士Ex-Aid$(/l)"
 },
 {
 	"type": "patchouli:spotlight",
@@ -2032,7 +2032,7 @@
 	"type": "patchouli:text",
 	"anchor": "zi_o_ride_chemy_card",
 	"title": "时王骑士凯米驾驭卡",
-	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#zi_o)华丽时王$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:zi_o/riders/zi_o)假面骑士时王$(/l)"
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend)华丽时王$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:zi_o/riders/zi_o)假面骑士时王$(/l)"
 },
 {
 	"type": "patchouli:spotlight",
@@ -2045,7 +2045,7 @@
 	"type": "patchouli:text",
 	"anchor": "zero_one_ride_chemy_card",
 	"title": "01骑士凯米驾驭卡",
-	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#zero_one)华丽01$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:zero_one/riders/zero_one)假面骑士01$(/l)"
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:#zero-one)华丽01$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:zero_one/riders/zero_one)假面骑士01$(/l)"
 },
 {
 	"type": "patchouli:spotlight",
@@ -2071,7 +2071,7 @@
 	"type": "patchouli:text",
 	"anchor": "revi_ride_chemy_card",
 	"title": "利维骑士凯米驾驭卡",
-	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#revi)华丽利维$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:revi/riders/revi)假面骑士利维$(/l)"
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#revi)华丽利维$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤假面骑士利维"
 },
 {
 	"type": "patchouli:spotlight",
@@ -2084,7 +2084,7 @@
 	"type": "patchouli:text",
 	"anchor": "vice_ride_chemy_card",
 	"title": "维斯骑士凯米驾驭卡",
-	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#vice)华丽维斯$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:vice/riders/vice)假面骑士维斯$(/l)"
+	"text": "登场于：$(li)假面骑士歌查德VS假面骑士雷杰多(2023年，网络剧)$(br2)可切换雷杰多的$(l:gotchard/riders/legend#vice)华丽维斯$(/l)形态$(br2)变身假面骑士雷杰多后，将其插入$(l:gotchard/arsenal/legend_ride_magnum)传说驾驭马格南$(/l)并发射，可召唤$(l:revice/riders/vice)假面骑士维斯$(/l)"
 },
 {
 	"type": "patchouli:spotlight",

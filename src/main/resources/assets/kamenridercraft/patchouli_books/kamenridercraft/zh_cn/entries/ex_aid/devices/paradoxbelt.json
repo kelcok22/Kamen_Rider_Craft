@@ -6,12 +6,12 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/para_dx)假面骑士Para-DX"
+			"text": "登场于：$(li)假面骑士Ex-Aid (2016年，电视剧)$(br2)与$(l:ex_aid/devices/armor)Ex-Aid装甲$(/l)一起穿戴，可变身为$(l:ex_aid/riders/para_dx)假面骑士Para-DX$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:exaid/paradoxbelt",
-          "text": "掉落自：$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)的装备"
+			"text": "掉落自：$(li)$(l:ex_aid/mobs/para-dx)假面骑士Para-DX$(/l)的装备"
 		}
 	]
-}
+		}

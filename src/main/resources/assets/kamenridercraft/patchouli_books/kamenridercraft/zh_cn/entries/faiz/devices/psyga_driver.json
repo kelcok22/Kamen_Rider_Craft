@@ -6,11 +6,11 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士555：失落的乐园 (2003年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/psyga)假面骑士天帝"
+			"text": "登场于：$(li)假面骑士555：失落的乐园 (2003年，电影)$(br2)与$(l:faiz/devices/armor)Faiz装甲$(/l)一起穿戴，可变身为$(l:faiz/riders/psyga)假面骑士天帝$(/l)"
 		},
 		{
 			"type": "patchouli:crafting",
 			"recipe": "kamenridercraft:faiz/psyga_driver"
 		}
 	]
-}
+		}

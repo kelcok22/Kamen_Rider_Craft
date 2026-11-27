@@ -6,7 +6,7 @@
 	"pages": [
 		{
 			"type": "patchouli:text",
-			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/shadow_trooper)幻影ZECT蚁兵"
+			"text": "登场于：$(li)假面骑士甲斗 (2006年，电视剧)$(br2)与$(l:kabuto/devices/armor)甲斗装甲$(/l)一起穿戴，可变身为$(l:kabuto/riders/shadow_trooper)幻影ZECT蚁兵$(/l)"
 		},
 		{
 			"type": "patchouli:spotlight",
@@ -16,4 +16,4 @@
 			"text": "掉落自：$(li)$(l:kabuto/mobs/shadow_trooper)幻影ZECT蚁兵$(/l)的装备"
 		}
 	]
-}
+		}
