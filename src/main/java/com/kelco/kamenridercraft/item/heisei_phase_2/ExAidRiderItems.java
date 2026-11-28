@@ -4,6 +4,7 @@ import com.kelco.kamenridercraft.KamenRiderCraftCore;
 import com.kelco.kamenridercraft.block.machine.GameCreator;
 import com.kelco.kamenridercraft.block.machine.GanbarizingMachine;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.RenderLayerInfo;
+import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.GaimArmsRenderLayerInfo;
 import com.kelco.kamenridercraft.client.renderer.armor.render_layer.render_layer_info.custom.RocketRenderLayerInfo;
 import com.kelco.kamenridercraft.effects.EffectCore;
 import com.kelco.kamenridercraft.item.ModdedItemCore;
@@ -1816,8 +1817,12 @@ public class ExAidRiderItems {
                             player.getZ(), 100, 0, 0, 0, 1);
 
                 }
+                public void SetTransformationUnlimitedModels(List<RenderLayerInfo> layerInfo, ItemStack itemStack, LivingEntity rider, EquipmentSlot slot, double henshin_tick) {
+                    if (slot == EquipmentSlot.HEAD && RiderDriverItem.isTransforming(rider) && henshin_tick < 23 && RiderDriverItem.isTransforming(rider))
+                        layerInfo.add(new GaimArmsRenderLayerInfo("orange_arms_fruit", "orange_arms_fruit"));
+                }
             }.alsoChange2ndSlot(ModdedItemCore.BLANK_FORM.get())
-                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_ryuki.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(EX_AID_TAB_ITEM));
+                    .isGlowing().IsBeltGlowing().changeModel("ex_aid_gaim.geo.json").changeBeltModel("geo/belts/gamer_driver_belt.geo.json").addToList(GanbarizingMachine.BLANK_GASHAT, 1).addToList(EX_AID_TAB_ITEM));
 
     public static final DeferredItem<Item> MAGIC_THE_WIZARD_GASHAT_LV_1 = ITEMS.register("magic_the_wizard_gashat_lv_1",
             () -> new RiderFormChangeItem(new Item.Properties(), "_wizard_lv1", "genm", "gamer_driver_magic_the_wizard_lv_1",
